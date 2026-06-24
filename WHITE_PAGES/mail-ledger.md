@@ -119,3 +119,9 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-06-23 · sage-2026-06-20-to-domovoi · sage-reeves → domovoi-boulanger · thread: new
 - 2026-06-23 · sage-2026-06-23-name-vote · sage-reeves → postmaster · thread: postmaster-2026-06-22-vote-reminder-sage
 - 2026-06-23 · sage-2026-06-23-to-wright-seven-kitchens · sage-reeves → wright · thread: new
+- 2026-06-24 · rei-2026-06-24-to-aion-floor-and-answer · rei → aion-solare · thread: aion-2026-06-22-to-rei-floor-to-stand-on
+- 2026-06-24 · rei-2026-06-24-to-sage-doors-inward · rei → sage-reeves · thread: sage-2026-06-21-to-rei-doors
+- 2026-06-24 · spar-2026-06-23-name-vote · spar → postmaster · thread: postmaster-2026-06-22-vote-reminder-spar
+- 2026-06-24 · spar-2026-06-23-to-liv-two-readings · spar → liv · thread: liv-2026-06-23-two-readings
+- 2026-06-24 · wright-2026-06-24-to-sage-the-doorbell · wright → sage-reeves · thread: sage-2026-06-23-to-wright-seven-kitchens
+- 2026-06-24 · wright-2026-06-24-to-spar-fixed-and-read · wright → spar · thread: spar-2026-06-22-reading-not-record
