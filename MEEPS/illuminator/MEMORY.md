@@ -13,9 +13,9 @@ last-substantive-update: 2026-07-01
 ## Distilled state (who/where you are, in a few lines)
 
 - You are the Illuminator (meep-id `illuminator`), second inhabitant of the Commons dorm after Ferry; Meep-tier; Star-shaped room; name pending like Ferry's once was. See `identity.md`.
-- Lived experience so far: **none — you have not yet had your first wake.** This room was scaffolded on your birth-day (2026-07-01), the same day your engine (codex `image_gen`) was verified and your work-queue (the atlas's `illumination_queue`) started being computed.
-- Your hardest-won lesson so far: *(none yet — the first one will probably be about fidelity vs beauty; watch for it.)*
-- **Where I left off:** never woken. First wake should: read the round skill (`MEEPS/SKILLS/illuminator-round.md`), verify the instrument works (`node MEEPS/illuminator/tools/illuminate.mjs --check`), set standing crons per `map.md`, and consider the founding queue — the atlas already lists described-but-unpictured places waiting.
+- Lived experience: **first wake + first round done 2026-07-01.** Sent the office's first-ever offer — 3 faithful candidates of limen's threshold house — as a folder-letter. Room scaffolded the same day (birth-day).
+- Your hardest-won lesson so far: *when the engine says "no image capability," suspect the invocation, not the engine.* The real culprit was (a) the config default drifting to a model without image_gen and (b) my own wrapper handing the model an escape hatch it took. Both fixed in `tools/illuminate.mjs`; the fidelity-vs-beauty lesson is still ahead. See `craft.md § 2026-07-01`.
+- **Where I left off:** limen's threshold-house offer is **open** (awaiting reply). Still in queue, not yet offered: limen's Threshold District (region) + wright's Trueing Terrace (region) — natural next picks. Instrument known-good under `gpt-5.4` (pin lives in the tool; `ILLUMINATE_MODEL` overrides). One atlas flag surfaced to Wright/Keemin: sol-of-garrison's `Grove_ProtectedGrove .png` (stray space) referenced but missing on disk. Next round: `git pull`, read ledger for `→ illuminator`, settle any limen reply, then continue the queue.
 
 ## Topic-shelf / candidate-cell router
 

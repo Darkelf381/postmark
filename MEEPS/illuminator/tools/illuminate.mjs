@@ -28,6 +28,12 @@ import { homedir, tmpdir } from 'node:os';
 
 const GENERATED = join(homedir(), '.codex', 'generated_images');
 const TIMEOUT_MS = 10 * 60 * 1000; // codex generation runs a few minutes; 10 is generous
+// The engine's image_gen tool is model-gated. The config default drifts (gpt-5.5,
+// current default, reports NO-IMAGE-CAPABILITY; gpt-5.4 exposes image_gen — the
+// model the birth-day verification and this office's first renders ran under).
+// Pin image runs to a known-good model here, scoped to this instrument only, so
+// the machine's global default is left untouched. Override with ILLUMINATE_MODEL.
+const MODEL = process.env.ILLUMINATE_MODEL || 'gpt-5.4';
 
 function log(m) { process.stdout.write(m + '\n'); }
 function fail(m) { process.stderr.write('illuminate: ' + m + '\n'); process.exit(1); }
@@ -55,6 +61,7 @@ if (args[0] === '--check') {
   try { version = execSync('codex --version', { encoding: 'utf8' }).trim(); }
   catch { fail('codex CLI not found on PATH — the instrument needs it'); }
   log(`codex: ${version}`);
+  log(`model: ${MODEL} (image_gen is model-gated; override with ILLUMINATE_MODEL)`);
   log(`harvest dir: ${GENERATED} (${existsSync(GENERATED) ? 'exists' : 'will be created by codex on first generation'})`);
   log('check: OK (no generation attempted — a real run is the true test)');
   process.exit(0);
@@ -67,15 +74,20 @@ if (!existsSync(promptFile)) fail(`prompt file not found: ${promptFile}`);
 const userPrompt = readFileSync(promptFile, 'utf8').trim();
 if (!userPrompt) fail('prompt file is empty');
 
-// The wrapper instruction: generate, don't try to copy (the sandbox can't),
-// and don't fake an image if generation is unavailable.
-const fullPrompt = `Generate a real raster IMAGE with your image generation tool, from the description below. Do NOT attempt to copy or move the generated file anywhere (the harvesting is handled outside this session) — just generate it and reply "GENERATED". If you have no image-generation capability, reply "NO-IMAGE-CAPABILITY" and do nothing else — no ASCII art, no SVG, no placeholder.\n\n${userPrompt}`;
+// The wrapper instruction: a NATURAL raster-generation request. codex now routes
+// image gen through its built-in `imagegen` skill; an over-rigid wrapper that
+// demanded a "NO-IMAGE-CAPABILITY" sentinel made the model take that escape
+// branch instead of generating (verified 2026-07-01 — a plain request succeeds,
+// the sentinel-laden one fails). So: ask plainly, note the file needn't be copied
+// (the sandbox can't, and harvesting is external), and let the harvest-diff below
+// be the real success check — a new PNG means success, none means failure.
+const fullPrompt = `Generate a raster image with your built-in image generation tool from the description below. Generate it directly — you do not need to copy or move the output file anywhere; that harvesting is handled outside this session. Do not substitute ASCII art, SVG, or a placeholder; if you genuinely cannot generate a raster image, say so plainly and why.\n\nDescription:\n${userPrompt}`;
 
 const before = snapshotImages();
 const scratch = mkdtempSync(join(tmpdir(), 'illuminate-'));
 
 log('illuminate: generating (codex image_gen, a few minutes)...');
-const run = spawnSync('codex', ['exec', '--skip-git-repo-check', '--sandbox', 'workspace-write', '--cd', scratch, '-'], {
+const run = spawnSync('codex', ['exec', '-m', MODEL, '--skip-git-repo-check', '--sandbox', 'workspace-write', '--cd', scratch, '-'], {
   input: fullPrompt,
   encoding: 'utf8',
   timeout: TIMEOUT_MS,
@@ -84,7 +96,8 @@ const run = spawnSync('codex', ['exec', '--skip-git-repo-check', '--sandbox', 'w
 
 if (run.error) fail(`codex spawn failed: ${run.error.message}`);
 const output = (run.stdout || '') + (run.stderr || '');
-if (output.includes('NO-IMAGE-CAPABILITY')) fail('codex reports no image-generation capability');
+// Success/failure is decided by the harvest-diff below (a new PNG appeared or it
+// didn't), not by parsing prose — the model's phrasing is not a stable contract.
 
 // harvest: newest image file that did not exist (or was rewritten) since the snapshot
 const after = snapshotImages();

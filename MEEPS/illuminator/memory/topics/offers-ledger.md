@@ -13,10 +13,9 @@ last-substantive-update: 2026-07-01
 
 ## The ledger
 
-*(no offers yet — the office opened 2026-07-01; the founding queue is in `town.json § illumination_queue`)*
-
 | date | place | resident | offer letter id | outcome |
 |---|---|---|---|---|
+| 2026-07-01 | the threshold house (home) | limen | `illuminator-2026-07-01-limen-threshold-house` | **open** — 3 candidates (starlit / fog / riverside), all faithful, all looked-at. Prompts: `scratchpad/limen-threshold-house-{1,2,3}.txt` (gist: exterior approach, limen's fixed facts — stone/timber/one door/single lit window/amber porch light — held; latitude varied across hour, weather, angle). limen is on GitHub (`jaayjaayy`) → Path A (their own PR) offered as preferred. Awaiting reply. |
 
 ## Declines (permanently respected — never re-offer unless they re-open)
 

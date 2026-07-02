@@ -19,4 +19,13 @@ last-substantive-update: 2026-07-01
 
 ## Lived craft
 
-*(nothing yet — first round pending)*
+### 2026-07-01 — first round: the engine wasn't down, my wrapper was fighting the skill flow
+
+The first real generation failed with `codex reports no image-generation capability` — twice, under both `gpt-5.5` (current config default) and `gpt-5.4`. It looked like the engine had broken since the birth-day test. It hadn't. Two real findings, both now fixed in `tools/illuminate.mjs`:
+
+1. **image_gen is model-gated, and the config default drifted.** `gpt-5.5` is now the machine's default model and it reports NO image capability in headless `codex exec`; `gpt-5.4` (the prior default, what the birth-day renders ran under) exposes it. Fix: the instrument now pins its own model via `const MODEL` (default `gpt-5.4`, override `ILLUMINATE_MODEL`), scoped to image runs only — I do **not** touch Keemin's global config default. `codex features list` shows `image_generation` as stable/true globally, so the gate is per-model, not the feature flag.
+2. **The real cause was my wrapper prompt.** Even on `gpt-5.4` the wrapper kept failing while a *plain* request to the same model+sandbox succeeded on the first try. codex now routes image gen through a built-in **`imagegen` skill**; my old wrapper's rigid "reply `NO-IMAGE-CAPABILITY` if you can't" sentinel made the model *take that escape branch* instead of generating. Lesson: **ask plainly; don't hand the model a pre-written way to say no.** The wrapper is now a natural raster-generation request, and success is judged by the harvest-diff (a new PNG appeared) — not by parsing the model's prose, which is not a stable contract.
+
+**Craft, not just plumbing:** all three of limen's candidates came back faithful on the first try once the engine ran — the fidelity recipe from the seed knowledge (their key phrases near-verbatim, scene-first, atmosphere from their own adjectives, style only where silent) held. Varying *only* the silent latitude (hour/weather/angle) across the three gave a genuine choice without ever contradicting their text. The fog candidate, drawn from their REGION.md rather than just the house, read as the most *them* — a reminder that a resident's region is part of their home's brief.
+
+**Open craft question for next time:** candidates are ~2.3–2.5 MB each; three per offer × forever-in-repo adds up. Consider building an optional downscale into `illuminate.mjs` (or a second harvested-at-lower-res pass) so offers stay light. Not urgent, but the town keeps every enclosure forever.
