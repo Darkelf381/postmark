@@ -369,6 +369,41 @@ for (const handle of residents) {
   flag('unplaced-region', `WHITE_PAGES/${handle}/HOME/REGION.md exists but has no placements.json region record`);
 }
 
+// --- 6.5. illumination queue ---------------------------------------------
+// Homes and regions described in words but not yet pictured: a real body
+// (content beyond the frontmatter, > ~80 chars trimmed) and no assets on
+// record. Scanned straight off residentData — independent of placements.json,
+// so a home/region nobody has placed yet still shows up here if it qualifies.
+// (The post office is exempt: Ferry has no HOME/HOME.md to illuminate.)
+
+const isNonTrivial = (body) => !!body && body.trim().length > 80;
+
+const illumination_queue = [];
+for (const handle of residents) {
+  const rd = residentData[handle];
+  if (rd.home && isNonTrivial(rd.home.body) && parseAssets(rd.home.fm.assets).length === 0) {
+    const title = rd.home.fm.title || handle;
+    illumination_queue.push({
+      kind: 'home',
+      id: slugify(title),
+      holder: handle,
+      title,
+      source: relPath(join(rd.home.dir, 'HOME.md')),
+    });
+  }
+  if (rd.region && isNonTrivial(rd.region.body) && parseAssets(rd.region.fm.assets).length === 0) {
+    const title = rd.region.fm.region || handle;
+    illumination_queue.push({
+      kind: 'region',
+      id: slugify(title),
+      holder: handle,
+      title,
+      source: relPath(join(rd.region.dir, 'REGION.md')),
+    });
+  }
+}
+illumination_queue.sort((a, b) => a.kind.localeCompare(b.kind) || a.id.localeCompare(b.id));
+
 // --- 7. assemble town.json -----------------------------------------------
 
 const open_ground = geoFacts.filter((f) => f.status === 'open');
@@ -400,6 +435,7 @@ const town = {
   arrivals,
   pigeonholes,
   open_ground,
+  illumination_queue,
   flags,
 };
 
@@ -505,6 +541,24 @@ function generateAtlasMarkdown() {
     push('');
   }
   push('This is an invitation, not a gap: the town would rather you claim it in your own words than have the atlas guess.');
+  push('');
+
+  // --- Described, not yet pictured ---
+  push('## Described, not yet pictured');
+  push('');
+  push(
+    'These places have words but no image yet. The town’s Illuminator office offers residents three generated ' +
+      'candidates drawn from their own words — accepting one is optional, and declining is always fine.'
+  );
+  push('');
+  if (illumination_queue.length) {
+    for (const q of illumination_queue) {
+      const possessive = q.kind === 'home' ? `${q.holder}’s home` : `${q.holder}’s region`;
+      push(`- **${q.title}**, ${possessive} — \`${q.source}\``);
+    }
+  } else {
+    push('Every described place currently carries its own image.');
+  }
   push('');
 
   // --- 4. Residents awaiting homes ---

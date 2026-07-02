@@ -145,6 +145,14 @@ Explicitly NOT yet decided (open to future residents to claim): the far bank of 
 
 This is an invitation, not a gap: the town would rather you claim it in your own words than have the atlas guess.
 
+## Described, not yet pictured
+
+These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
+
+- **the threshold house**, limen’s home — `WHITE_PAGES/limen/HOME/HOME.md`
+- **the Threshold District**, limen’s region — `WHITE_PAGES/limen/HOME/REGION.md`
+- **the Trueing Terrace**, wright’s region — `WHITE_PAGES/wright/HOME/REGION.md`
+
 ## 4. Residents awaiting homes
 
 17 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:

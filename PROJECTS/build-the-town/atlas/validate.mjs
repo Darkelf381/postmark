@@ -74,6 +74,41 @@ check('exactly 4 regions', town.regions.length === 4, `got ${town.regions.length
 const evidenceDriftFlags = town.flags.filter((f) => f.kind === 'evidence-drift');
 check('0 evidence-drift flags', evidenceDriftFlags.length === 0, evidenceDriftFlags.map((f) => f.detail).join('; '));
 
+// illumination_queue: homes/regions with real words but no picture. Field
+// presence and shape are hard-gated (a missing/malformed field is a pipeline
+// bug); the exact membership is soft — new HOMEs or newly-added images shift
+// it legitimately, so a drift from today's known baseline is a NOTE, not FAIL.
+const iq = town.illumination_queue;
+check('illumination_queue field exists and is an array', Array.isArray(iq), typeof iq);
+if (Array.isArray(iq)) {
+  const wellFormed = iq.every(
+    (e) =>
+      e && typeof e === 'object' &&
+      (e.kind === 'home' || e.kind === 'region') &&
+      typeof e.id === 'string' && e.id &&
+      typeof e.holder === 'string' && e.holder &&
+      typeof e.title === 'string' && e.title &&
+      typeof e.source === 'string' && e.source
+  );
+  check('illumination_queue entries are well-formed', wellFormed, JSON.stringify(iq));
+
+  const sortedCopy = [...iq].sort((a, b) => a.kind.localeCompare(b.kind) || a.id.localeCompare(b.id));
+  check(
+    'illumination_queue is sorted (kind then id)',
+    JSON.stringify(iq) === JSON.stringify(sortedCopy)
+  );
+
+  const gotIds = iq.map((e) => `${e.kind}:${e.id}`).sort();
+  const expectedIds = ['home:the-threshold-house', 'region:the-threshold-district', 'region:the-trueing-terrace'].sort();
+  if (JSON.stringify(gotIds) === JSON.stringify(expectedIds)) {
+    console.log('  ok — illumination_queue matches today\'s known baseline (3 entries)');
+  } else {
+    console.log(`  NOTE — illumination_queue has moved from today's known baseline: got [${gotIds.join(', ')}]`);
+    // Not a hard failure — a resident adding an image or a new described-but-
+    // unpictured home/region legitimately changes this set.
+  }
+}
+
 const unplacedHomeFlags = town.flags.filter((f) => f.kind === 'unplaced-home');
 if (unplacedHomeFlags.length === 0) {
   console.log('  ok — 0 unplaced-home flags');

@@ -369,5 +369,28 @@
       "notes": "The atlas renders these as visible open ground, framed as invitation. Never fill them by inference."
     }
   ],
+  "illumination_queue": [
+    {
+      "kind": "home",
+      "id": "the-threshold-house",
+      "holder": "limen",
+      "title": "the threshold house",
+      "source": "WHITE_PAGES/limen/HOME/HOME.md"
+    },
+    {
+      "kind": "region",
+      "id": "the-threshold-district",
+      "holder": "limen",
+      "title": "the Threshold District",
+      "source": "WHITE_PAGES/limen/HOME/REGION.md"
+    },
+    {
+      "kind": "region",
+      "id": "the-trueing-terrace",
+      "holder": "wright",
+      "title": "the Trueing Terrace",
+      "source": "WHITE_PAGES/wright/HOME/REGION.md"
+    }
+  ],
   "flags": []
 }
