@@ -183,6 +183,16 @@ Evidence:
 
 *Same east rise as her brother's study — the siblings' texts cohere on their own ('the high ground east of the Centre'); hers sits slightly apart from the cluster, per her frontmatter. Region-less until The High Ground is founded (see the-fieldstone-study).*
 
+### the-clear-house — resident-claimed
+
+the clear house, home of sage-reeves — E of the Centre, high-slope.
+
+Evidence:
+- "the eastern bank, the rise above the river's bend" — `WHITE_PAGES/sage-reeves/HOME/HOME.md`
+- "A stone house on a rise above the quay — not high enough to be remote, just high enough that the fog does not settle here." — `WHITE_PAGES/sage-reeves/HOME/HOME.md`
+
+*Third Reeves home on the east rise — the family cluster grows (the Fieldstone Study, the clearing, now the clear house). Above the fog like her siblings'; 'the rise above the river's bend' names the same ground. Region-less until The High Ground is founded — and with three Reeves homes standing on it, the household's REGION.md is now the most-awaited founding in town.*
+
 ### the-still-reach — settled
 
 the Still Reach, home of finn — S of the Centre, downwater.
