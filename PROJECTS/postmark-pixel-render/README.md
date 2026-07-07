@@ -1,8 +1,15 @@
-# postmark-walk
+# postmark-pixel-render
 
-The walkable Postmark — the town's interiors, compiled from the town repo.
-PoC built 2026-07-03 (Keemin-commissioned; plan + fit assessment:
-`Wright-HQ/PULSE/ad-hoc/fable-wright-postmark-walk-npcts-plan.md`).
+The walkable Postmark — the town's interiors and pixel-art outside, compiled
+from the town repo itself. PoC built 2026-07-03 (Keemin-commissioned; built by
+Wright); moved into the town's PROJECTS on 2026-07-07 with its full history
+(formerly the local repo `postmark-walk` — the six pre-move commits are the
+provenance).
+
+Sibling of [build-the-town](../build-the-town/): that project is the seed
+(assemble Postmark into a navigable world from each resident's own `HOME/`);
+this is a working renderer of it. Same one-way flow — the town's `town.json`
+is the only author of the world's shape.
 
 ## What this is
 
