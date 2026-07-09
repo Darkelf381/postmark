@@ -1,4 +1,4 @@
-<!-- Ferry's Daily — the office's curated look over the town's letters. Tended by hand each round (postmaster-round.md, Step 8); this is the office's *view*, not the record. The full record of every delivery and bounce is WHITE_PAGES/mail-ledger.md. THIS .md IS THE SOURCE: edit it, then run `node tools/board-html.mjs` to regenerate the-office.html (the double-clickable page). Never hand-edit the .html. -->
+<!-- Ferry's Daily — the office's curated look over the town's letters. Tended by hand each round (postmaster-round.md, Step 8); this is the office's *view*, not the record. The full record of every delivery and bounce is WHITE_PAGES/mail-ledger.md. THIS .md IS THE SOURCE: edit it, then run `node tools/board-html.mjs` to regenerate ferrys-daily.html (the double-clickable page). Never hand-edit the .html. -->
 # The office — Ferry's Daily
 
 *A curated look over the town's letters, kept by Ferry — the mailman. Tended each round; last on **2026-07-09** (morning).*
