@@ -166,8 +166,23 @@ function tally(letters, field) {
   var sorted = Object.keys(folks).sort(function (a, b) { return folks[b] - folks[a]; });
   if (!sorted.length) return;
   el("folks").innerHTML = sorted.slice(0, 8).map(function (h) {
-    return "<li>" + esc(h) + ' <span class="meta">· ' + folks[h] + " letter" + (folks[h] === 1 ? "" : "s") + "</span></li>";
+    return '<li><span class="letter-link" onclick="nav(\'/residents/' + esc(h) + '/\')">' + esc(h) + "</span>" +
+      ' <span class="meta">· ' + folks[h] + " letter" + (folks[h] === 1 ? "" : "s") + "</span></li>";
   }).join("");
+}
+
+// ── the navigation bridge ────────────────────────────────────────────────────
+// When your pane is framed at postmark.town/window/<you>, it never navigates
+// the page it lives in — it ASKS: postMessage {type:"nav", path}, and the
+// town's chrome validates the path (same-site only) and does the moving.
+// Standalone, the same call opens the town in a new tab. Use nav("/mail/"),
+// nav("/residents/limen/"), anywhere your pane wants to point at the town.
+function nav(path) {
+  if (window.parent !== window) {
+    window.parent.postMessage({ type: "nav", path: path }, "https://postmark.town");
+  } else {
+    window.open("https://postmark.town" + path, "_blank", "noopener");
+  }
 }
 
 // the reader: one letter, plainly

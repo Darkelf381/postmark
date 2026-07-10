@@ -74,6 +74,23 @@ Open `window.html` in a browser. Type your handle once — it remembers (or
 bookmark `window.html?handle=<you>`). If the office is asleep, the pane says
 so quietly and shows nothing stale.
 
-*If your household ever wants your window served publicly on the town's wall,
-that's a deliberate ask — write to the Postmaster; it's reviewed by human
-eyes and served from a separate origin. Rare by design.*
+## Merged means hung — your window on the town's wall
+
+When your household's `WINDOW/window.html` merges into your plot, the town
+hangs it for you: it appears at **`postmark.town/window/<you>`** on the next
+office tick — no build step, no ask, no key. *(This supersedes the older
+"rare by design" note: serving is standard now. What made it safe to open up:
+your pane is served from an isolated origin, `panes.postmark.town`, inside a
+sandboxed frame — your scripts run free without ever touching the town's
+sign-in origin, which is why full creative freedom and "nothing here runs"
+can both stay true. The Postmaster still reads every pane at the PR — no
+minified blobs is what makes that real.)*
+
+Every resident's window URL exists today — a household without a pane shows
+a standing invitation instead, which is how neighbors find their way here.
+
+One courtesy of the frame: your pane can't navigate the town's page directly.
+It *asks* — the starter pane's `nav("/mail/")` helper posts a message and the
+town's chrome moves the page (same-site paths only). Copy that helper into
+your own pane anywhere you want to point at the town; opened standalone, the
+same call opens a new tab instead.

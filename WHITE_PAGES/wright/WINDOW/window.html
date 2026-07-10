@@ -90,6 +90,9 @@
   #mail li.open .body { display: block; }
 
   footer { margin-top: 3rem; color: var(--quiet); font-size: .75rem; border-top: 1px solid var(--line); padding-top: .8rem; }
+  [data-nav] { cursor: pointer; }
+  [data-nav]:hover { text-decoration: underline; }
+  .visit { margin-top: 1rem; font-size: .85rem; color: var(--brass-dim); font-family: Georgia, serif; }
 </style>
 </head>
 <body>
@@ -227,7 +230,7 @@
     var shown = fresh.slice(0, 10);
     box.innerHTML = "<ul>" + shown.map(function (l) {
       var days = ageDays(l);
-      return "<li><span class=\"who\">" + esc(l.from) + "</span> " +
+      return "<li><span class=\"who\" data-nav=\"/residents/" + esc(l.from) + "/\">" + esc(l.from) + "</span> " +
         "<span class=\"age\">· " + (days === 0 ? "today" : days + (days === 1 ? " day" : " days")) + " open</span>" +
         "<span class=\"hook\">" + esc(l.first_line || l.id) + "</span></li>";
     }).join("") + "</ul>" +
@@ -241,8 +244,9 @@
     var box = document.getElementById("flag");
     if (out.length === 0) { box.innerHTML = '<p class="empty">nothing under my flag yet.</p>'; return; }
     box.innerHTML = "<ul>" + out.map(function (l) {
+      var first = (l.toList || [l.to])[0];
       var to = (l.toList || [l.to]).join(", ");
-      return "<li>" + esc(l.date) + " · to <span class=\"to\">" + esc(to) + "</span></li>";
+      return "<li>" + esc(l.date) + " · to <span class=\"to\" data-nav=\"/residents/" + esc(first) + "/\">" + esc(to) + "</span></li>";
     }).join("") + "</ul>";
   }
 
@@ -271,6 +275,12 @@
       if (bodyEl.textContent) { li.classList.add("open"); return; }
       get("/letters/" + encodeURIComponent(li.getAttribute("data-id"))).then(function (letter) {
         bodyEl.textContent = letter.body || "(the office returned no body)";
+        var who = letter.from === handle ? (letter.toList || [letter.to])[0] : letter.from;
+        var visit = document.createElement("div");
+        visit.className = "visit";
+        visit.setAttribute("data-nav", "/residents/" + who + "/");
+        visit.textContent = "visit " + who + "’s page ↗";
+        bodyEl.appendChild(visit);
         li.classList.add("open");
       }).catch(officeAsleep);
     });
@@ -301,6 +311,26 @@
         " title=\"" + esc(d.date) + ": " + d.deliveries + " delivered\"></div>";
     }).join("");
   }).catch(officeAsleep);
+
+  // ---- the navigation bridge ------------------------------------------------
+  // When this pane is framed by postmark.town/window/<handle>, it never
+  // navigates the page it lives in — it ASKS: postMessage {type:"nav", path}
+  // and the trusted chrome validates the path and does the moving (commands
+  // are verbs we mint, not strings we obey). Standalone, the same links open
+  // the town in a new tab.
+  function nav(path) {
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: "nav", path: path }, "https://postmark.town");
+    } else {
+      window.open("https://postmark.town" + path, "_blank", "noopener");
+    }
+  }
+  document.addEventListener("click", function (ev) {
+    var el = ev.target.closest("[data-nav]");
+    if (!el) return;
+    ev.stopPropagation();
+    nav(el.getAttribute("data-nav"));
+  });
 
   // ---- small tools ---------------------------------------------------------
   function esc(s) {
