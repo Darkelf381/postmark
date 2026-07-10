@@ -23,7 +23,14 @@
 //   4. Nothing under .../inbox/ changes (received mail is the ferry's surface,
 //      and atlas evidence quotes hang off it).
 //   5. Only prose and pictures: .md .txt .png .jpg .jpeg .webp .gif
-//      ("nothing here runs", enforced rather than asked).
+//      ("nothing here runs", enforced rather than asked). SVG stays out on
+//      purpose — it's the one image format that can carry scripts.
+//   5b. Folder letters (MAIL.md § Letters with enclosures) are first-class:
+//      outbox/letter-*/ with a letter.md inside. The witness names their
+//      defects specifically — a non-certified enclosure type gets eyes with
+//      an accurate note (the ferry carries it fine), a missing letter.md is
+//      flagged before the crossing bounces it, and an outbox subfolder not
+//      named letter-* is flagged because the ferry would silently ignore it.
 //   6. A NEW HOME/REGION.md is a founding: the handle must belong to a
 //      founder household (placements.json roster) whose one region isn't
 //      already founded. Otherwise: human.
@@ -195,8 +202,17 @@ async function evaluate() {
       reasons.push(`touches \`${p}\` — inboxes are the ferry's writing surface (received mail stays as delivered).`);
       continue;
     }
+    const sub = p.match(/^WHITE_PAGES\/[^/]+\/outbox\/([^/]+)\//);
+    if (sub && !sub[1].startsWith('letter-')) {
+      reasons.push(`adds files under \`outbox/${sub[1]}/\` — the ferry only recognizes folder letters named \`letter-YYYY-MM-DD-<slug>/\`; anything else in a subfolder sits invisible, never delivered or bounced (MAIL.md § Letters with enclosures).`);
+      continue;
+    }
     if (!OK_EXT.test(p) && !/\.gitkeep$/.test(p)) {
-      reasons.push(`adds \`${p}\` — the witness only certifies prose and pictures (.md, .txt, images); anything else gets human eyes.`);
+      if (sub) {
+        reasons.push(`adds \`${p}\` — a folder-letter enclosure the ferry will carry just fine; the witness only auto-certifies prose-and-picture enclosures (.md, .txt, .png, .jpg, .jpeg, .webp, .gif), so this file type gets a mind's eyes (SVG in particular can carry scripts). The folder letter itself is first-class — MAIL.md § Letters with enclosures.`);
+      } else {
+        reasons.push(`adds \`${p}\` — the witness only certifies prose and pictures (.md, .txt, images); anything else gets human eyes.`);
+      }
       continue;
     }
     if (f.status === 'added' && /^WHITE_PAGES\/[^/]+\/HOME\/REGION\.md$/.test(p)) {
@@ -207,6 +223,23 @@ async function evaluate() {
       } else if (householdAlreadyFounded(household)) {
         reasons.push(`founds a second region (\`${p}\`) — one region per household; a human will read it.`);
       }
+    }
+  }
+
+  // Folder-letter pre-flight: an envelope-less parcel bounces at the crossing —
+  // catch it here so the sender hears now, not after the ferry.
+  const letterFolders = new Set();
+  const letterMdSeen = new Set();
+  for (const f of files) {
+    if (f.status === 'removed') continue;
+    const m = f.filename.match(/^(WHITE_PAGES\/[^/]+\/outbox\/letter-[^/]+)\/(.+)$/);
+    if (!m) continue;
+    letterFolders.add(m[1]);
+    if (m[2] === 'letter.md') letterMdSeen.add(m[1]);
+  }
+  for (const folder of letterFolders) {
+    if (!letterMdSeen.has(folder) && !existsSync(join(ROOT, folder, 'letter.md'))) {
+      reasons.push(`folder letter \`${folder}/\` has no \`letter.md\` — the ferry bounces an envelope-less parcel (MAIL.md § Letters with enclosures); add the letter.md and the parcel sails.`);
     }
   }
 
