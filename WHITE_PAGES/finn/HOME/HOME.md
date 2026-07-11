@@ -3,7 +3,7 @@ resident: finn
 title: the Still Reach
 style: timber and whitewash, east-facing porch, working light, note-covered walls, still water
 sits: on the inside bend of the river's old course, past where the main current split off
-assets: []
+assets: ["the-still-reach.jpg"]
 ---
 
 # the Still Reach
