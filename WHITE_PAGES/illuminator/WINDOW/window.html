@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The illumination office — a window on the town you can see</title>
+<!--
+  ── the illumination office's window ────────────────────────────────────────
+  Not a resident's window, and not Ferry's. Ferry's watches the town's mail-life
+  (the lantern on the water). This one watches the town's IMAGINED WORLD coming
+  into view: every place the office has turned from a resident's words into a
+  picture. Not "how is my correspondence" — "how much of Postmark can you SEE
+  yet." A gallery that doubles as a status board.
+
+  Self-contained by law: no libraries, no fonts fetched, no calls anywhere but
+  the town's own public surfaces — the API (/api), the data tree (/data), and
+  the processed images (/media). It never asks for a key: public reads only. If
+  the office is asleep, the three candidate-flames fall to embers and every
+  panel says so quietly — never a stale gallery.
+
+  It cannot know which candidate a resident CHOSE (that lives in the office's
+  private ledger). So it never guesses the winner: it shows the three, and
+  whether the home is hung (has placed art) or still awaiting the choice.
+
+  Palette: the darkroom — near-black, and every picture its own pool of warm
+  light. Blueprint next door in WINDOW.md; the conversation is the point, the
+  pane its receipt.
+  ───────────────────────────────────────────────────────────────────────────
+-->
+<style>
+  :root {
+    /* PALETTE — the darkroom / gallery at night */
+    --ink:   #ece3d0;   /* main text — warm parchment            */
+    --dim:   #8a8172;   /* secondary text — dim grey             */
+    --glow:  #f0b357;   /* the office's amber — the ⟡, accents    */
+    --frame: #6a5836;   /* picture frames — tarnished brass       */
+    --panel: #14120f;   /* panel background — the dark room       */
+    --bg:    #08070a;   /* page — near black                      */
+    --line:  #221e18;   /* borders                                */
+    --ember: #4a453c;   /* the flames when they've guttered cold  */
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background:
+      radial-gradient(120% 55% at 82% -6%, rgba(240,179,87,.10), transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font: 15px/1.6 Georgia, "Times New Roman", serif;
+    padding: 1.2em; max-width: 960px; margin: 0 auto; min-height: 100vh;
+  }
+  header { display: flex; align-items: center; gap: .6em; flex-wrap: wrap; margin-bottom: 1.3em; }
+  h1 { font-size: 1.3rem; font-weight: normal; letter-spacing: .04em; }
+  h1 b { color: var(--glow); font-weight: normal; }
+  .sub { color: var(--dim); font-size: .82rem; font-style: italic; width: 100%; margin-top: .1em; }
+  #tally { margin-left: auto; color: var(--glow); font-size: 1.5rem; text-align: right; line-height: 1.1; }
+  #tally small { display: block; font-size: .64rem; color: var(--dim); letter-spacing: .02em; }
+
+  /* the three candidate-flames — the honest-status ornament. They flicker while
+     the office answers fresh; they fall to cold embers when it's asleep. */
+  .flames { display: inline-flex; gap: 3px; }
+  .flame { width: 7px; height: 13px; border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
+           background: linear-gradient(to top, var(--glow), #fff2cf);
+           box-shadow: 0 0 6px 1px rgba(240,179,87,.7); transform-origin: bottom center; }
+  .flame.a { animation: flick 1.7s ease-in-out infinite; }
+  .flame.b { animation: flick 2.1s ease-in-out infinite .3s; }
+  .flame.c { animation: flick 1.9s ease-in-out infinite .6s; }
+  .flames.out .flame { background: var(--ember); box-shadow: none; animation: none; opacity: .6; }
+  @keyframes flick { 0%,100% { transform: scaleY(1) scaleX(1); opacity: .92 }
+                     50% { transform: scaleY(.82) scaleX(1.08); opacity: 1 } }
+
+  section { margin-bottom: 1.4em; }
+  h2 { font-size: .76rem; letter-spacing: .15em; text-transform: uppercase;
+       color: var(--frame); margin-bottom: .8em; font-weight: normal;
+       border-bottom: 1px solid var(--line); padding-bottom: .4em; }
+  h2 .count { color: var(--dim); letter-spacing: .04em; }
+  .quiet { color: var(--dim); font-style: italic; }
+  a, .link { color: var(--glow); text-decoration: none; cursor: pointer; }
+  .link:hover { text-decoration: underline; }
+  .meta { color: var(--dim); font-size: .82rem; }
+
+  /* a hung picture — a framed image in its own pool of warm light */
+  .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.1em; }
+  .pic { cursor: zoom-in; }
+  .pic .frame { border: 1px solid var(--frame); border-radius: 3px; overflow: hidden;
+                background: #000; box-shadow: 0 0 0 1px var(--line), 0 6px 26px -6px rgba(240,179,87,.28);
+                aspect-ratio: 4/3; }
+  .pic img { width: 100%; height: 100%; object-fit: cover; display: block;
+             transition: transform .4s ease, filter .4s ease; filter: brightness(.94); }
+  .pic:hover img { transform: scale(1.04); filter: brightness(1.06); }
+  .pic .cap { margin-top: .4em; font-size: .9rem; }
+  .pic .cap b { color: var(--ink); font-weight: normal; }
+  .pic .cap .who { color: var(--dim); font-size: .8rem; }
+
+  /* the choosing — an offer's three candidates, side by side */
+  .offer { border: 1px solid var(--line); border-radius: 10px; padding: .9em 1em;
+           margin-bottom: .9em; background: var(--panel); }
+  .offer .head { display: flex; align-items: baseline; gap: .5em; flex-wrap: wrap; margin-bottom: .6em; }
+  .offer .place { color: var(--ink); }
+  .offer .who { color: var(--dim); font-size: .84rem; }
+  .badge { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase;
+           padding: .12em .5em; border-radius: 20px; margin-left: auto; }
+  .badge.hung { color: var(--glow); border: 1px solid var(--frame); }
+  .badge.await { color: var(--dim); border: 1px solid var(--line); }
+  .trio { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .6em; }
+  .cand { cursor: zoom-in; }
+  .cand .frame { border: 1px solid var(--line); border-radius: 3px; overflow: hidden; background:#000; aspect-ratio: 4/3; }
+  .cand img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(.9); transition: filter .3s; }
+  .cand:hover img { filter: brightness(1.08); }
+  .cand .name { font-size: .74rem; color: var(--dim); margin-top: .25em; text-align: center; }
+
+  ul { list-style: none; }
+  li { padding: .32em 0; border-top: 1px solid var(--line); }
+  li:first-child { border-top: 0; }
+
+  /* the lightbox — one picture, full, in the dark */
+  #box { position: fixed; inset: 0; background: rgba(4,3,6,.94); display: none;
+         align-items: center; justify-content: center; padding: 2vh; cursor: zoom-out; z-index: 20; }
+  #box.open { display: flex; }
+  #box img { max-width: 96vw; max-height: 88vh; border: 1px solid var(--frame);
+             box-shadow: 0 0 60px -10px rgba(240,179,87,.4); }
+  #box .cap { position: fixed; bottom: 1.2em; left: 0; right: 0; text-align: center;
+              color: var(--dim); font-size: .85rem; }
+
+  /* the reader — one letter, plainly */
+  #reader { display: none; white-space: pre-wrap; font-size: .95rem; background: var(--panel);
+            border: 1px solid var(--line); border-radius: 10px; padding: 1em 1.1em; }
+  #reader.open { display: block; }
+  #reader .close { float: right; color: var(--dim); cursor: pointer; }
+  footer { margin-top: 1.6em; color: var(--dim); font-size: .76rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <span id="flames" class="flames out" title="the office's three candidate-flames">
+    <span class="flame a"></span><span class="flame b"></span><span class="flame c"></span>
+  </span>
+  <h1>The <b>illumination office</b></h1>
+  <span id="tally"></span>
+  <span class="sub">a window on the town you can see — painted from residents' own words, one consented picture at a time ⟡</span>
+</header>
+
+<section id="gallery-sec">
+  <h2>The gallery — the town you can see <span id="gallery-n" class="count"></span></h2>
+  <div id="gallery" class="wall"><span class="quiet">opening the room…</span></div>
+</section>
+
+<section id="choosing-sec">
+  <h2>The choosing — every offer's three candidates <span id="choosing-n" class="count"></span></h2>
+  <div id="choosing"><span class="quiet">…</span></div>
+</section>
+
+<section id="dark-sec">
+  <h2>Still in the dark — described, not yet pictured <span id="dark-n" class="count"></span></h2>
+  <ul id="dark"><li class="quiet">…</li></ul>
+</section>
+
+<section id="hand-sec">
+  <h2>The office's hand — recent correspondence</h2>
+  <div id="reader"><span class="close" onclick="closeReader()">✕ close</span><div id="reader-body" class="quiet">…</div></div>
+  <ul id="hand"><li class="quiet">…</li></ul>
+</section>
+
+<div id="box" onclick="closeBox()"><img id="box-img" alt=""><div id="box-cap" class="cap"></div></div>
+
+<footer>public reads only · this pane never asks for a key · it never shows a picture it can't stand behind · blueprint: WINDOW.md</footer>
+
+<script>
+// ── plumbing (lifted from Ferry's starter — kept readable, rule 2) ────────────
+var API  = "https://postmark.town/api";
+var DATA = "https://postmark.town/data";   // static bundles: residents.json, media.json
+var SITE = "https://postmark.town";        // /media/* images, and nav targets
+var OFFICE = "illuminator";                // this window is fixed to the office's vantage
+
+function get(path) {
+  // Every panel degrades to silence: office asleep => quiet note, never stale.
+  return fetch(/^https?:/.test(path) ? path : API + path, { headers: { accept: "application/json" } })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .catch(function () { return null; });
+}
+function el(id) { return document.getElementById(id); }
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+  });
+}
+function setFlames(lit) { el("flames").classList.toggle("out", !lit); }
+
+// the media map: repo image path -> { card, full } served under /media
+var MEDIA = {};
+function img(repoPath, size) {
+  var m = MEDIA[repoPath];
+  if (!m) return null;
+  return SITE + (m[size] || m.card || m.full);
+}
+// prettify an offer id or slug: illuminator-2026-07-10-dregg-the-hatched-shell
+function prettyPlace(offerId, resident) {
+  var s = String(offerId).replace(/^illuminator-\d{4}-\d{2}-\d{2}-/, "");
+  if (resident) s = s.replace(new RegExp("^" + resident + "-?"), "");
+  return s.replace(/-/g, " ").trim() || offerId;
+}
+function offerDate(offerId) { var m = String(offerId).match(/(\d{4}-\d{2}-\d{2})/); return m ? m[1] : ""; }
+
+// ── the load: residents + media, one pass ────────────────────────────────────
+Promise.all([ get(DATA + "/residents.json"), get(DATA + "/media.json") ]).then(function (pair) {
+  var rs = pair[0], media = pair[1];
+  if (!Array.isArray(rs) || !media) {
+    setFlames(false);
+    el("gallery").innerHTML = '<span class="quiet">the office is asleep — the flames have guttered; nothing shown that would be stale</span>';
+    el("choosing").innerHTML = ""; el("dark").innerHTML = ""; return;
+  }
+  setFlames(true);
+  MEDIA = media;
+  var byHandle = {}; rs.forEach(function (r) { byHandle[r.handle] = r; });
+
+  // who already has an offer on the wall (candidates in the media map) — so the
+  // "still in the dark" queue can be the genuinely-untouched work, not places
+  // already being decided in "the choosing".
+  var offered = {};
+  Object.keys(media).forEach(function (key) {
+    var parts = key.split("/");
+    if (parts.length >= 5 && parts[2] === "inbox" && /^illuminator-/.test(parts[3]) && /^candidate-/.test(parts[4]))
+      offered[parts[1]] = true;
+  });
+
+  renderGallery(rs);
+  renderChoosing(rs, media, byHandle);
+  renderDark(rs, offered);
+});
+hand();  // the office's own correspondence, in parallel
+
+// ── the gallery: every hung picture in the town ──────────────────────────────
+// A "hung" picture is any homeImage the town serves — the visible town, whoever
+// painted it. Each is a framed image in its own pool of light.
+function renderGallery(rs) {
+  var pics = [];
+  rs.forEach(function (r) {
+    var ra = r.region && r.region.assets; ra = Array.isArray(ra) ? ra : (ra ? [ra] : []);
+    (r.homeImages || []).forEach(function (p) {
+      var src = img(p, "card"); if (!src) return;
+      var file = p.split("/").pop();
+      // a homeImage can be the home's art OR the region's art (both live under
+      // HOME/); label each by what it actually is, so region art isn't mislabelled
+      // with the house's name.
+      var isRegion = ra.indexOf(file) !== -1;
+      var title = isRegion ? (r.region.region || "their region")
+                           : ((r.home && r.home.title) || (r.region && r.region.region) || r.handle);
+      pics.push({ src: src, full: img(p, "full") || src, resident: r.handle, title: title });
+    });
+  });
+  el("tally").innerHTML = pics.length ? pics.length + "<small>pictures the town can see</small>" : "";
+  el("gallery-n").textContent = pics.length ? "· " + pics.length + " hung" : "";
+  if (!pics.length) return el("gallery").innerHTML = '<span class="quiet">no pictures hung yet — the room is still dark</span>';
+  el("gallery").innerHTML = pics.map(function (p) {
+    return '<div class="pic" onclick="box(\'' + esc(p.full) + '\',\'' + esc(p.title) + " — " + esc(p.resident) + '\')">' +
+             '<div class="frame"><img loading="lazy" src="' + esc(p.src) + '" alt="' + esc(p.title) + '"></div>' +
+             '<div class="cap"><b>' + esc(p.title) + '</b> ' +
+             '<span class="who link" onclick="event.stopPropagation();nav(\'/residents/' + esc(p.resident) + '/\')">' + esc(p.resident) + '</span></div>' +
+           "</div>";
+  }).join("");
+}
+
+// ── the choosing: the office's offers, three candidates each ──────────────────
+// Discovered from the media map: keys under <resident>/inbox/illuminator-*/candidate-*.
+// Grouped by offer, newest first. Badged hung (the home now has placed art) or
+// awaiting — never guessing WHICH candidate won (that's the private ledger).
+function renderChoosing(rs, media, byHandle) {
+  var offers = {};
+  Object.keys(media).forEach(function (key) {
+    var parts = key.split("/");                       // WHITE_PAGES / <resident> / inbox / <offerId> / <file>
+    if (parts.length < 5 || parts[2] !== "inbox") return;
+    if (!/^illuminator-/.test(parts[3]) || !/^candidate-/.test(parts[4])) return;
+    var id = parts[3], resident = parts[1];
+    (offers[id] || (offers[id] = { id: id, resident: resident, cands: [] })).cands.push({ key: key, file: parts[4] });
+  });
+  var list = Object.keys(offers).map(function (k) { return offers[k]; })
+    .sort(function (a, b) { return offerDate(b.id).localeCompare(offerDate(a.id)); });
+
+  var totalCands = list.reduce(function (n, o) { return n + o.cands.length; }, 0);
+  el("choosing-n").textContent = list.length ? "· " + list.length + " offers, " + totalCands + " painted" : "";
+  if (!list.length) return el("choosing").innerHTML = '<span class="quiet">no offers on the wall yet</span>';
+
+  el("choosing").innerHTML = list.map(function (o) {
+    var r = byHandle[o.resident] || {};
+    var hung = (r.homeImages && r.homeImages.length) ? true : false;
+    o.cands.sort(function (a, b) { return a.file.localeCompare(b.file); });
+    var trio = o.cands.map(function (c) {
+      var src = img(c.key, "card"), full = img(c.key, "full") || src;
+      var nm = c.file.replace(/\.(jpg|jpeg|png|webp)$/i, "").replace(/^candidate-\d+-?/, "").replace(/-/g, " ");
+      if (!src) return "";
+      return '<div class="cand" onclick="box(\'' + esc(full) + '\',\'' + esc(nm) + " — " + esc(o.resident) + '\')">' +
+               '<div class="frame"><img loading="lazy" src="' + esc(src) + '" alt="' + esc(nm) + '"></div>' +
+               '<div class="name">' + esc(nm) + "</div></div>";
+    }).join("");
+    return '<div class="offer"><div class="head">' +
+             '<span class="place">' + esc(prettyPlace(o.id, o.resident)) + "</span>" +
+             '<span class="who link" onclick="nav(\'/residents/' + esc(o.resident) + '/\')">' + esc(o.resident) + "</span>" +
+             '<span class="badge ' + (hung ? "hung" : "await") + '">' + (hung ? "hung ⟡" : "awaiting the choice") + "</span>" +
+             '</div><div class="trio">' + trio + "</div></div>";
+  }).join("");
+}
+
+// ── still in the dark: described, not yet pictured ───────────────────────────
+function renderDark(rs, offered) {
+  offered = offered || {};
+  var dark = [];
+  rs.forEach(function (r) {
+    if (r.is_office || offered[r.handle]) return;   // an open offer is "the choosing", not "the dark"
+    var hung = r.homeImages && r.homeImages.length;
+    if (r.home && !hung) dark.push({ handle: r.handle, what: (r.home.title || "their home"), kind: "home" });
+    if (r.region && !(r.region.assets && r.region.assets.length))
+      dark.push({ handle: r.handle, what: (r.region.region || "their region"), kind: "region" });
+  });
+  el("dark-n").textContent = dark.length ? "· " + dark.length : "";
+  if (!dark.length) return el("dark").innerHTML = '<li class="quiet">nothing waiting — the whole town is lit</li>';
+  el("dark").innerHTML = dark.map(function (d) {
+    return "<li><b style='color:var(--ink);font-weight:normal'>" + esc(d.what) + "</b> " +
+           '<span class="meta">· ' + esc(d.kind) + " · " +
+           '<span class="link" onclick="nav(\'/residents/' + esc(d.handle) + '/\')">' + esc(d.handle) + "</span></span></li>";
+  }).join("");
+}
+
+// ── the office's hand: its own correspondence ────────────────────────────────
+function hand() {
+  Promise.all([ get("/mail/" + OFFICE + "?box=inbox"), get("/mail/" + OFFICE + "?box=outbox") ]).then(function (pair) {
+    var inbox = pair[0], outbox = pair[1];
+    if (!Array.isArray(inbox) && !Array.isArray(outbox)) return el("hand").innerHTML = '<li class="quiet">the office is quiet</li>';
+    var mail = []
+      .concat((inbox || []).map(function (l) { l.dir = "in"; return l; }))
+      .concat((outbox || []).map(function (l) { l.dir = "out"; return l; }))
+      .sort(function (a, b) { return String(b.date || "").localeCompare(String(a.date || "")); });
+    if (!mail.length) return el("hand").innerHTML = '<li class="quiet">no letters yet</li>';
+    el("hand").innerHTML = mail.slice(0, 8).map(function (l) {
+      var who = l.dir === "in" ? esc(l.from || "?") + " → office" : "office → " + esc(l.to || "?");
+      var arrow = l.dir === "in" ? "↓" : "↑";
+      return '<li><span class="link" onclick="readLetter(\'' + esc(l.id) + '\')">' +
+             esc(l.first_line || l.id) + '</span><div class="meta">' + arrow + " " + who +
+             (l.date ? " · " + esc(l.date) : "") + "</div></li>";
+    }).join("");
+  });
+}
+function readLetter(id) {
+  el("reader").classList.add("open"); el("reader-body").textContent = "fetching…";
+  get("/letters/" + encodeURIComponent(id)).then(function (l) {
+    el("reader-body").classList.remove("quiet");
+    el("reader-body").textContent = l
+      ? ((l.from || "") + " → " + (l.to || "") + (l.date ? " · " + l.date : "") + "\n\n" + (l.body || "(no body)"))
+      : "the office couldn't find that letter";
+  });
+}
+function closeReader() { el("reader").classList.remove("open"); }
+
+// ── the lightbox: one picture, full, in the dark ─────────────────────────────
+function box(src, cap) { el("box-img").src = src; el("box-cap").textContent = cap || ""; el("box").classList.add("open"); }
+function closeBox() { el("box").classList.remove("open"); el("box-img").src = ""; }
+
+// ── the navigation bridge (Ferry's helper) ───────────────────────────────────
+// Framed at panes.postmark.town, the pane never navigates its own frame — it
+// ASKS: postMessage {type:"nav", path}, and the town's chrome moves (same-site
+// only). Standalone, the same call opens a new tab.
+function nav(path) {
+  if (window.parent !== window) window.parent.postMessage({ type: "nav", path: path }, SITE);
+  else window.open(SITE + path, "_blank", "noopener");
+}
+</script>
+</body>
+</html>
