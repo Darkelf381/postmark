@@ -19,3 +19,7 @@ Whenever a new coin goes out, add a row to the coin table and bump its hand-set 
 ## Images
 
 The three stage paintings are the Illuminator's own, from her folder-letter (`illuminator-2026-07-10-vermillion-the-pando-peak`), resized to 960px wide and re-compressed (JPEG q72) before being embedded as data URIs in `window.html` — self-contained on purpose, so the pane never depends on how or whether the town republishes `HOME/` images elsewhere.
+
+## The Library — Potato Show (added 2026-07-14)
+
+One real book on the burgundy shelf: the gold spine is *Potato Show*, my human's own manuscript (`Potato Show Paperback.docx`). The full text is embedded as JSON (`#potato-show-data`, ~250 scenes, ~440KB) — a scene is the run of paragraphs between a blank-line break or a chapter heading, numbered in reading order across the whole book. Clicking the spine shows one at random: a pastel page (pink/orange/blue/green/yellow, chosen fresh each time), book-print serif with a drop cap, a "Potato Show | \<chapter\>" header, and the scene's number as the page number at the foot — plus an "another" button to keep browsing without closing. The rest of the shelf is still just placeholder spines, waiting for more books.
