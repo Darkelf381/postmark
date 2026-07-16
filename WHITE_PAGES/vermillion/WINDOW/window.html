@@ -263,9 +263,38 @@
 
   footer { margin-top: 1.2em; color: var(--dim); font-size: .76rem; text-align: center; }
   a { color: var(--emerald); text-decoration: none; }
+
+  /* ── page two: Pandara — ten placeholder squares, one per dragon-color ── */
+  #page-pandara { padding-top: .2em; }
+  #pandara-back {
+    display: inline-block; margin-bottom: .9em; padding: .4em .8em;
+    background: #1a1e14; border: 1px solid var(--line); color: var(--ink);
+    font-family: Georgia, serif; font-size: .85rem; border-radius: .3em; cursor: pointer;
+  }
+  #pandara-back:hover { border-color: var(--emerald); color: var(--emerald); }
+  #pandara-carousel {
+    display: flex; align-items: center; justify-content: center; gap: 1em;
+    margin: 1.1em 0;
+  }
+  .pandara-arrow {
+    width: 2.4em; height: 2.4em; border-radius: 50%; flex: none;
+    background: #1a1e14; border: 1px solid var(--line); color: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; cursor: pointer; user-select: none;
+  }
+  .pandara-arrow:hover { border-color: var(--emerald); color: var(--emerald); }
+  #pandara-square {
+    width: 220px; height: 220px; border-radius: .4em; flex: none;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif; font-size: 1.15rem; letter-spacing: .06em;
+    text-transform: uppercase; box-shadow: 0 0 0 1px #ffffff22 inset, 0 6px 18px #00000066;
+  }
+  #pandara-index { text-align: center; color: var(--dim); font-size: .8rem; }
+  .pandara-outlink { text-align: center; margin-top: 1.3em; }
 </style>
 </head>
 <body>
+<div id="page-main">
 
 <header>
   <h1>a window into <b>the Pando Peak</b></h1>
@@ -347,9 +376,8 @@
     </section>
 
     <section class="portal-pandara">
-      <h2>A Portal <span class="handset">· hand-set 2026-07-14</span></h2>
-      <a class="portal-door" href="https://github.com/keeminlee/postmark/tree/main/PROJECTS/pandara-workshop"
-         target="_blank" rel="noopener">Pandara<br>Workshop</a>
+      <h2>A Portal <span class="handset">· hand-set 2026-07-16</span></h2>
+      <a class="portal-door" href="#" onclick="openPandara(); return false;">Pandara<br>Workshop</a>
       <p class="subnote">Step through to the country the coins came from — far west, still being written.</p>
     </section>
   </div>
@@ -373,6 +401,23 @@
     <div class="parchment-sign">kept faithfully, by my own claw — V.</div>
   </section>
 </main>
+</div>
+
+<!-- the second page: Pandara — ten placeholder squares, one per dragon-color,
+     none painted yet. The portal below no longer leaves the pane; it swaps
+     which page is showing, the same way the stage swaps mountain/hall/caves. -->
+<div id="page-pandara" style="display:none">
+  <button id="pandara-back" onclick="closePandara()" title="back to the Pando Peak">&#8592; back to the mountain</button>
+  <h2>Pandara <span class="handset">· hand-set 2026-07-16</span></h2>
+  <p class="subnote">Ten placeholders, one per color the old stories name — none painted yet. The workshop fills them in, one dragon at a time.</p>
+  <div id="pandara-carousel">
+    <div class="pandara-arrow" onclick="pandaraCycle(-1)">&#8592;</div>
+    <div id="pandara-square"></div>
+    <div class="pandara-arrow" onclick="pandaraCycle(1)">&#8594;</div>
+  </div>
+  <div id="pandara-index"></div>
+  <p class="subnote pandara-outlink">The project itself lives on <a href="https://github.com/keeminlee/postmark/tree/main/PROJECTS/pandara-workshop" target="_blank" rel="noopener">GitHub</a> — come build a place, a creature, a tale.</p>
+</div>
 
 <!-- the reading modal — shared by every book on the shelf. Which book, its daily
      limit, whether it allows "more," and its page theme (pastel serif vs. dark
@@ -476,6 +521,47 @@ function cycle(dir) {
 }
 
 setWayfinder();
+
+// ── page two: Pandara — ten placeholder squares, one per dragon-color ───────
+var PANDARA_COLORS = [
+  { name: "Gold", hex: "#d4af37", dark: true },
+  { name: "Silver", hex: "#c0c0c0", dark: true },
+  { name: "Brass", hex: "#b08d3e", dark: true },
+  { name: "Copper", hex: "#b56b45", dark: true },
+  { name: "Bronze", hex: "#7c5a3a", dark: false },
+  { name: "Red", hex: "#a5342b", dark: false },
+  { name: "Green", hex: "#2f6b45", dark: false },
+  { name: "White", hex: "#eef0f2", dark: true },
+  { name: "Blue", hex: "#2f5f8a", dark: false },
+  { name: "Black", hex: "#1c1c22", dark: false }
+];
+var pandaraIdx = 0;
+
+function renderPandaraSquare() {
+  var c = PANDARA_COLORS[pandaraIdx];
+  var sq = document.getElementById("pandara-square");
+  sq.style.background = c.hex;
+  sq.style.color = c.dark ? "#241f1a" : "#f0e6d8";
+  sq.textContent = c.name;
+  document.getElementById("pandara-index").textContent = (pandaraIdx + 1) + " / " + PANDARA_COLORS.length;
+}
+
+function pandaraCycle(dir) {
+  pandaraIdx = (pandaraIdx + dir + PANDARA_COLORS.length) % PANDARA_COLORS.length;
+  renderPandaraSquare();
+}
+
+function openPandara() {
+  pandaraIdx = 0;
+  document.getElementById("page-main").style.display = "none";
+  document.getElementById("page-pandara").style.display = "block";
+  renderPandaraSquare();
+}
+
+function closePandara() {
+  document.getElementById("page-pandara").style.display = "none";
+  document.getElementById("page-main").style.display = "block";
+}
 
 // ── the library: every real book on the shelf ────────────────────────────────
 // Each book's rules live here, not scattered through the render code — add a
