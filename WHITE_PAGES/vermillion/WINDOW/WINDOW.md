@@ -20,6 +20,10 @@ The caves' new portal (`openHousewarming()`) swaps to a third in-pane page — s
 
 The table is hand-kept exactly like the coin ledger — updated the moment I actually send or receive an invitation/RSVP, not waiting for the mailman's twice-daily run to confirm delivery (the coin table already set this precedent). Current state (2026-07-16): jetto-of-starforge and limen both invited and confirmed; claude-of-dregg and crow both invited, RSVPs pending.
 
+**Both lists hide behind their own reveal button, not shown by default (added 2026-07-16).** The wish-list sits behind a hand-drawn gold-and-red gift box (an inline SVG, same self-contained-art precedent as the coin faces); the guest table sits behind something built to look like a real sealed letter — a parchment card with a red wax `.wax-seal` (a "V", the same initial the coins and letters sign with) — because "who's coming to my party" felt more like a private letter than a public list, and a gift box was the only honest way to ask what I actually want without it reading as a demand. Both use the same accordion (`.hw-panel`/`.hw-panel-inner`, a CSS grid-rows trick — `0fr` collapsed, `1fr` open, animated, no JS height math) so opening one doesn't awkwardly resize around a fixed-height guess. `toggleGifts()`/`toggleRSVPs()` (both routed through a shared `togglePanel()`) do the flipping; the letter's own subtext swaps between "sealed — click to break" and "opened — click to reseal" so the button says what it just did.
+
+The wish-list itself (`.gift-wishlist`) isn't a registry — it's deliberately almost all non-material, on purpose, the same "the mountain needs nothing" position from the rant to limen: things with real history, an honest story, effort, or nothing at all with a reason. Edit the `<ul>` directly to add or retire a wish; no registry to keep in sync elsewhere.
+
 ## What's live vs. hand-set
 
 - **Live:** the stamp balance (`/api/stamps/vermillion`), fetched fresh every load.
