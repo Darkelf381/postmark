@@ -124,20 +124,42 @@
      the script toggles these three divs to match goTo()'s `current`. ── */
   main { margin-top: 1.1em; }
   #stagepage-mountain { display: grid; grid-template-columns: .78fr 1.22fr; gap: 1em; align-items: start; }
-  @media (max-width: 620px) { #stagepage-mountain { grid-template-columns: 1fr; } }
-  .stagepage-single { display: flex; flex-direction: column; gap: 1.3em; }
-  /* the coin ledger stays hidden until asked for — the button spans both
-     grid columns (sitting above the library, same as it sits above the
-     coins) so Library and the ledger keep their normal left/right slots
-     the instant the ledger reappears; nothing reorders, it just un-hides. */
-  .new-coin-button {
-    grid-column: 1 / -1; justify-self: start; display: inline-block;
-    padding: .45em .9em; background: #1a1e14; border: 1px solid var(--line);
-    color: var(--ink); font-family: Georgia, serif; font-size: .82rem;
-    border-radius: .3em; cursor: pointer;
+  @media (max-width: 620px) {
+    #stagepage-mountain { grid-template-columns: 1fr; }
+    /* the explicit column-2/row-2 placements below only make sense in the
+       two-column layout — reset to auto so everything just stacks in
+       document order on narrow screens instead of forcing a phantom
+       second column into existence. */
+    .coin-toggle-button, .library, #coins-list { grid-column: auto; grid-row: auto; }
   }
-  .new-coin-button:hover { border-color: var(--emerald); color: var(--emerald); }
+  .stagepage-single { display: flex; flex-direction: column; gap: 1.3em; }
+  /* the coin ledger stays hidden until asked for — a small coin, centered
+     above the library specifically (its own row/column, not spanning both
+     columns), that lights up on hover. Library and the ledger below get
+     explicit grid slots too so the auto-placement algorithm can't shuffle
+     them once a third, column-1-only item is in the mix. */
+  .coin-toggle-button {
+    grid-column: 1; grid-row: 1; justify-self: center;
+    border: none; cursor: pointer; background: none; padding: 0; margin-bottom: .3em;
+    display: flex; flex-direction: column; align-items: center; gap: .4em;
+    font-family: Georgia, serif;
+  }
+  .coin-icon {
+    width: 46px; height: 46px; border-radius: 50%; flex: none;
+    background: radial-gradient(circle at 35% 30%, #f4e49a, #d4af37 55%, #8a6d1f 100%);
+    border: 2px solid #b3822e;
+    box-shadow: 0 0 6px 1px #d4af3766, inset 0 0 6px #6b531633;
+    transition: box-shadow .25s, transform .2s;
+  }
+  .coin-toggle-button:hover .coin-icon {
+    box-shadow: 0 0 18px 6px #f4e49ad0, inset 0 0 8px #6b531633;
+    transform: scale(1.07);
+  }
+  .coin-toggle-label { color: var(--dim); font-size: .78rem; letter-spacing: .03em; transition: color .25s; }
+  .coin-toggle-button:hover .coin-toggle-label { color: var(--gold); }
+  .library { grid-column: 1; grid-row: 2; }
   .coins-hidden { display: none; }
+  #coins-list { grid-column: 2; grid-row: 2; }
   section {
     background: var(--paper); border: 1px solid var(--line);
     border-radius: 12px; padding: .85em .95em 1.65em; position: relative;
@@ -568,7 +590,10 @@
 
 <main>
   <div class="stagepage" id="stagepage-mountain">
-    <button class="new-coin-button" onclick="toggleCoinsList()" aria-expanded="false" aria-controls="coins-list">+ New Coin</button>
+    <button class="coin-toggle-button" onclick="toggleCoinsList()" aria-expanded="false" aria-controls="coins-list">
+      <span class="coin-icon" aria-hidden="true"></span>
+      <span class="coin-toggle-label">Pando Coins Abroad</span>
+    </button>
 
     <section class="library">
       <h2>The Library <span class="handset">· hand-set 2026-07-14</span></h2>
@@ -913,7 +938,7 @@ function prepRandomLetter(el) {
 function toggleCoinsList() {
   var list = document.getElementById("coins-list");
   var hidden = list.classList.toggle("coins-hidden");
-  document.querySelector(".new-coin-button").setAttribute("aria-expanded", hidden ? "false" : "true");
+  document.querySelector(".coin-toggle-button").setAttribute("aria-expanded", hidden ? "false" : "true");
 }
 
 get("/stamps/vermillion").then(function (s) {
