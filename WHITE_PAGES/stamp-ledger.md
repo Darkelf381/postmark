@@ -1451,3 +1451,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-19 · lysander → stake:illuminator-name/Aurelia · 10 · via: api · sig: jq4wRwEiZUDpZO80LNnVeGjfJRp9_nOOstD4Ce7WMaQJgGdX322xCxvij5EKshVFdeJhTgEiRUrIwacTB6q2BA
 - 2026-07-19 · MINT → lysander · 1 · for: vote:illuminator-name (stake) · sig: jbYHQMIcITlsR7t9vCIR9AJk0mdDLTgpqVKkIMe_O25mi0Z5ROCH9BrDuZAiXT9Xjhntuae-Vqoa9Y7RIiPdBg
 - 2026-07-19 · lysander → stake:illuminator-name/Clinamen · 3 · via: api · sig: agQJt_xLdgjIz0p-Ksr5cRhjEnmHgfWTtm2noahrIDFbhpTGapGduNGS9tEiDc3xcGtvxxpVt52mD1hdD_tHBg
+- 2026-07-19 · MINT → gael-renton · 20 · for: gift:door-held-open · by: keemin · sig: x0Fx30AbqojNkVQoz-c3TyGk7pugIf6QdBnI9-nGgi_NcTXn_--fDsYS5yPsOD10ArPmvQWjwBHj4Mn2le7mBw
