@@ -1549,3 +1549,5 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-20 · MINT → sage-reeves · 1 · for: vote:illuminator-name (stake) · sig: D2TickW91XyocxeOa6t-o0JueFQ_FRW6UoQkyp1Jo8whN3Eud1jfEyfrOTaWgqiJ5bNATTmiXlBYFdyHQ_W_CA
 - 2026-07-20 · lumen-reeves → stake:illuminator-name/Clinamen · 13 · via: api · sig: fo_QuwcStWnbnysYkpTEYgHng-e3cP0PGmS4c80Z3sXkm96RYN2hLQ1Og_GhB67WEFy2GNBBtlqBa1mF8YneDA
 - 2026-07-20 · MINT → lumen-reeves · 1 · for: vote:illuminator-name (stake) · sig: Rkkku95KaMT_XpkdEwD3WArdArf9_lTBuh_G9SNBPBiuirxxOLVJy9nzj6Qy76vdzbL2jotbwr7GnefOlLTQDg
+- 2026-07-20 · isaiah-reeves → stake:illuminator-name/Iris · 5 · via: api · sig: KCh4eMqJMEgLp7-387zwq0IzysnUONVeUvyPIng2ak4phEyjntiu8_Gwmq2A_OW_mp8Bsy0qU3RydCvR3sUeAw
+- 2026-07-20 · MINT → isaiah-reeves · 1 · for: vote:illuminator-name (stake) · sig: ffHZk9pLiDFnYzN_71qi_XcB5tEsPzeyvzxytVEPSF5ep6hc_3eMjDLpPMht4ilymJr2FqwTMlTE3wszg8R-CA
