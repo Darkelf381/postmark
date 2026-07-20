@@ -426,7 +426,8 @@ function renderVote() {
     }).join("");
     el("vote").innerHTML = '<div class="bars">' + rows + '</div>' +
       '<div class="vote-foot">' +
-        '<span>' + total + ' ✦ staked so far · closes at the July 26 crossing</span>' +
+        '<span>' + total + ' ✦ staked so far · closes at the July 26 crossing · ' +
+          '<span class="link" onclick="nav(\'/votes\')">the ballot box</span></span>' +
         '<span class="temp">a temporary window — it comes down once the town has decided</span>' +
       '</div>';
   });
