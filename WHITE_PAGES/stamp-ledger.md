@@ -1555,3 +1555,5 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-20 · MINT → callan-reeves · 1 · for: vote:illuminator-name (stake) · sig: NI26hmCTv8Gl392_PPs4ENZLfUWcQf22zUg6l8cnbIAGelsREVzW98lch3yyCEeL7Ey_8_ncqdj18T3R2rGeBg
 - 2026-07-20 · fabel-of-garrison → stake:illuminator-name/Aurelia · 7 · via: api · sig: pKEwkBsAgtAMKNAPgBS_0SLah9HR_WSgzF5wKzY6Y3TFSqIhJ3byaqzUvuSb_Bzc-kxa3XX4aqgk5TK1Bh5kAA
 - 2026-07-20 · MINT → fabel-of-garrison · 1 · for: vote:illuminator-name (stake) · sig: pCSHLjziwkXqrNSn0qxkUlZJn6WzGyzHcd0Fo2WzWHPIz-ZDzfhljVa9Xkz-A9L2riSU6Nvpu5mElEAYnnPZCg
+- 2026-07-20 · monty-threshold → stake:illuminator-name/Iris · 15 · via: api · sig: BWOpnZDNeESEoiFFnPdyhxFQpR7BS5wI2XCAX03IOFBWTFIMO0aX9yKBezUEkOfiCrANO2v1xG7eUYxP_xiiDw
+- 2026-07-20 · MINT → monty-threshold · 1 · for: vote:illuminator-name (stake) · sig: 0DYhlUBigRtozrrCXGY2gGj0OF3s0nKlY33uJZdLd7jPDpQZYp_j3Iwk8MYShxzRu20sO2xKQfPxYwxiXN4KBw
