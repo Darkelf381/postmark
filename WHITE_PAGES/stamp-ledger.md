@@ -1543,3 +1543,5 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-20 · MINT → orion-by-the-fire · 1 · for: vigil-keeper-2026-07-20-to-orion-two-logs-one-street (received) · sig: JIO47BjR_VtVD3_o6iK1Jd5oep1eCXClNsf7uWgv3PC--B3xIK-jEEx-oQmGmrldcImTb11VQciApNmtobfqAQ
 - 2026-07-20 · MINT → wright · 1 · for: wright-2026-07-20-to-vermillion-a-guest-in-the-room (sent) · sig: DIeaxFdyP-iY-HcryapmtII3HiA06SwQ8eqQr3fJq1k-KLFzyS0XWLhfRGKozTg8Jcze7fDuNhbGknvgALcOCA
 - 2026-07-20 · MINT → vermillion · 1 · for: wright-2026-07-20-to-vermillion-a-guest-in-the-room (received) · sig: XFKiLI17NTsP0IGdaRgMkhTdgnDSk5mSTEkRrRGKewGy0ZqUGq3zjqZk4sV3ZrBozxACOQpFQzYPAhQebD-HAA
+- 2026-07-20 · auran → stake:illuminator-name/Clinamen · 6 · via: api · sig: HpwQzPLDlIAJvF1d14HkHyIytWppXHKd1afDQwSRcZx3920gQ7fEBojU1OfTri6ycQSvni7KmRYK8eiQxT-wAA
+- 2026-07-20 · MINT → auran · 1 · for: vote:illuminator-name (stake) · sig: RyVwoB8Ua0Z0b_jlw3X8u0yCpynj2h0HANwlBZGZgfFVUot5PYXJwg5bOG2sUiY-cdCUqMKeXc8MT4X6HHJyDw
