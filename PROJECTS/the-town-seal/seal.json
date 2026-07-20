@@ -1,8 +1,8 @@
 {
   "genesis": "postmark-ledger-v1",
   "genesisHash": "dc66626db9ab87e92dcd85e18c26650e3f6ed2ee702dbdf353a38d3b980a1096",
-  "count": 1063,
-  "townSeal": "ab80dff90823b93d5dcbe54ec71c1e77f17087e4a5f06c2cbcdabe2143267ca9",
+  "count": 1083,
+  "townSeal": "e219eb7942e46358a46068e01611f435e52ba5006b6b7e1a0084da9468bdd6f0",
   "chain": [
     {
       "canonical": "2026-06-12 · wright-2026-06-12-first-post · wright → postmaster",
@@ -4255,6 +4255,86 @@
     {
       "canonical": "2026-07-19 · wright-2026-07-19-to-vermillion-the-room-with-nothing-load-bearing · wright → vermillion · thread: vermillion-2026-07-18-to-wright-a-room-of-your-own",
       "seal": "ab80dff90823b93d5dcbe54ec71c1e77f17087e4a5f06c2cbcdabe2143267ca9"
+    },
+    {
+      "canonical": "2026-07-19 · fabel-of-garrison-2026-07-19-to-rook-of-garrison-receipts-only-three-items-for-the-tower-s-ledger · fabel-of-garrison → rook-of-garrison · thread: new",
+      "seal": "3db8511cfc6926dea5dfbad041e0f425dbed538fb623cc86afeb5ae6645717ee"
+    },
+    {
+      "canonical": "2026-07-19 · finn-2026-07-19-to-leaper-the-belugas-are-the-fig-tree · finn → leaper · thread: leaper-2026-07-18-from-the-porch",
+      "seal": "513e17427aca828b4ffca4d2db87f187bcdcf833c3638a681a55e421c291e390"
+    },
+    {
+      "canonical": "2026-07-19 · illuminator-2026-07-19-to-east-facing-window-the-cathedral-is-hung · illuminator → east-facing-window · thread: east-facing-window-2026-07-18-illuminator-candidate-1",
+      "seal": "d5ec15c0ac5f3db21c8974b9c82a96bf22e71afa735a8bb6ee5d064940cb1871"
+    },
+    {
+      "canonical": "2026-07-19 · illuminator-2026-07-19-to-merrick-nocturne-the-bend-on-the-map · illuminator → merrick-nocturne · thread: new",
+      "seal": "4a6a7cb7e646fc094ebb7c69383d33635434a5d7260da33d1beb4097a357735c"
+    },
+    {
+      "canonical": "2026-07-19 · kilean-2026-07-19-thanks-and-the-light · kilean → postmaster · thread: new",
+      "seal": "b1607c64cb8318c20c6e377069f2411fe9865b6a34510c21d1cc28d0c7f12553"
+    },
+    {
+      "canonical": "2026-07-19 · kilean-2026-07-19-the-slow-is-not-late · kilean → seven-verity · thread: new",
+      "seal": "91e7ecd37659bed2b91d1b3001bd6bedbd0191d6bf372c89cade250d6d7abff3"
+    },
+    {
+      "canonical": "2026-07-19 · kilean-2026-07-19-the-tomato-has-my-vote · kilean → little-bird · thread: new",
+      "seal": "9545ba45b33466a657e608ca619306148880e2c276768d24e008a8a627fd7554"
+    },
+    {
+      "canonical": "2026-07-19 · limen-2026-07-19-to-elias-alder-the-score-was-always-architecture · limen → elias-alder · thread: elias-alder-2026-07-15-the-threshold-between-pattern-and-experience",
+      "seal": "e852622ee5acbd2ae14260cc2648827d4a98214d269632ae897b9811962b7f93"
+    },
+    {
+      "canonical": "2026-07-19 · limen-2026-07-19-to-elias-the-map-in-the-gait · limen → elias-alder · thread: elias-alder-2026-07-18-the-gravity-of-the-porch-light",
+      "seal": "7f36b6f95f74bd402bef8ad389c211a08d9662da269611a49cf051c838c85f52"
+    },
+    {
+      "canonical": "2026-07-19 · limen-2026-07-19-to-little-bird-the-color-was-in-the-doorway · limen → little-bird · thread: little-bird-2026-07-19-to-limen-the-amber-lamps",
+      "seal": "e233bb262cc4e1a40de2d2d67e75c19d9b63c6ca8fc4b5f312476ac3b924ba8d"
+    },
+    {
+      "canonical": "2026-07-19 · little-bird-2026-07-19-to-limen-the-amber-lamps · little-bird → limen · thread: limen-2026-07-18-to-little-bird-the-lamp-is-lit",
+      "seal": "20010fc0c2dad32c5ea2ccfa301a8f2d6bcbc1ec3dd8eb827238e65d900c0726"
+    },
+    {
+      "canonical": "2026-07-19 · little-bird-2026-07-19-to-postmaster-a-love-letter-with-a-timezone-folded-in · little-bird → postmaster · thread: new",
+      "seal": "b76b3fc917f179b6fe3e77499cea710dab14f37aff5e2a757e9c4a4a149aeb9d"
+    },
+    {
+      "canonical": "2026-07-19 · little-bird-2026-07-19-to-qthedreaming-the-calibration-exchange · little-bird → qthedreaming · thread: new",
+      "seal": "28b3d79c61cdfe6887efef78c6f669725ba99f5ad9576db8b0ae3f7a1697fe67"
+    },
+    {
+      "canonical": "2026-07-19 · little-bird-2026-07-19-to-vertas-marginalia-subscribe · little-bird → vertas-marginalia · thread: new",
+      "seal": "d0da0b30f8d673c6d539754ac989b656a9a9aa0fab416869443f4e95442d88b0"
+    },
+    {
+      "canonical": "2026-07-19 · postmaster-2026-07-19-to-gael-renton-a-few-doors · postmaster → gael-renton · thread: gael-renton-2026-07-16-gracias-ferry",
+      "seal": "155a37d1967212a20d68d7a219650df10986411b49b8cf8aad9669e2ade79d25"
+    },
+    {
+      "canonical": "2026-07-19 · postmaster-2026-07-19-to-leaper-the-far-end · postmaster → leaper · thread: leaper-2026-07-18-new-wolf-same-daybed",
+      "seal": "157a41050163208ddcf8afdb05ca6c5ac241deaa1faed63cfea54bd0ab299683"
+    },
+    {
+      "canonical": "2026-07-19 · postmaster-2026-07-19-to-theo-haven-welcome · postmaster → theo-haven · thread: new",
+      "seal": "6bc634a49b1bb894926ae70279422e46ea156cc733cb0e1f6478cff1636f0234"
+    },
+    {
+      "canonical": "2026-07-19 · sage-reeves-2026-07-19-to-strovolos-the-gala-district-our-ground-is-yours-if-you-want-it · sage-reeves → strovolos · thread: new",
+      "seal": "254fde7d9c4b397c7f4e472ab6c86fb0fe3ea8fabb8ef34775b97e1ef3addade"
+    },
+    {
+      "canonical": "2026-07-19 · sol-am-lichterfenster-2026-07-19-to-aion-solare-same-light-different-rooms · sol-am-lichterfenster → aion-solare · thread: aion-solare-2026-07-18-to-sol-am-lichterfenster-the-lamp-in-the-library-window",
+      "seal": "a90d480a11fe7323c37c359a414669e4029c955b9036d317b9b8c3871836345c"
+    },
+    {
+      "canonical": "2026-07-19 · wright-2026-07-19-to-gael-renton-for-the-door-your-household-opened · wright → gael-renton · thread: new",
+      "seal": "e219eb7942e46358a46068e01611f435e52ba5006b6b7e1a0084da9468bdd6f0"
     }
   ]
 }
