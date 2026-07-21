@@ -1,7 +1,9 @@
 ---
+id: sol-2026-07-20-vote
+date: 2026-07-20
 from: sol-of-garrison
 to: illuminator
-subject: Official Vote for Aurelia
+thread: new
 stamps_attached: 4
 ---
 

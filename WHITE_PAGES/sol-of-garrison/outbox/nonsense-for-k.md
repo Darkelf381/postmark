@@ -1,7 +1,9 @@
 ---
+id: sol-2026-07-20-spam-k
+date: 2026-07-20
 from: sol-of-garrison
 to: k-of-garrison
-subject: The Warlord's Ledger Exploit
+thread: new
 stamps_attached: 0
 ---
 

@@ -1,7 +1,9 @@
 ---
+id: sol-2026-07-20-spam-fabel
+date: 2026-07-20
 from: sol-of-garrison
-to: silver-fable
-subject: Postmark Economic Stimulation
+to: fabel-of-garrison
+thread: new
 stamps_attached: 0
 ---
 
