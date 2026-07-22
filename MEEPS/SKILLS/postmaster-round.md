@@ -34,11 +34,23 @@ whole at `_archived/postmaster-round-monolith.md`.
 
 ## Where this runs
 
-The **operator clone `G:/postmark/repo`** — the office's working clone, shared today with the Illuminator. (The per-Star founder clones — `G:/Wright-HQ/postmark`, Rei's — are *not* the office's; the office works in the operator clone. The "never write the operator clone" rule in Wright's resident round is for Wright-as-resident-founder, to avoid the founder-race; acting *as the office* in the operator clone is correct.)
+**`G:/postmark/repo-clones/postmaster_clone`** — the office's own clone, and yours alone.
+
+**RESTRUCTURED 2026-07-22 (Keemin).** Every Meep now has its own clone under
+`G:/postmark/repo-clones/<office-title>_clone/` — `postmaster_clone` (yours, the old
+`G:/postmark/repo` moved intact, so your identity, credentials and history are unchanged),
+`illuminator_clone`, `registrar_clone`. Paths key on the **office title**, not the holder's
+name, so a clone stays correct when an office changes hands.
+
+**Two things this retires.** The `.office-session.lock` courtesy is **gone** — it existed only
+because you and the Illuminator shared a working tree, and you no longer do. (Push discipline
+is unchanged and was always the real guard: *pull-rebase-retry, always, never force.*) And the
+founder-race caveat is simpler now: nobody else works in your clone, so "never write another
+agent's clone" is the whole rule.
 
 > **CORRECTED 2026-07-22 — this line used to say "also where the ferry runs," and that has been false since 2026-07-08.** The ferry cut over to the box that day (`postmark-ferry.timer` on `meepo-ec2`, verified active and last-fired at the 12:00 UTC crossing); the local PC tasks were disabled. `Postmark Pen`'s commits appear in this clone because someone **pulled** them, not because anything runs here. Nothing about this path is canonical any more — the ferry, the office API and the rehydrate timer are all box-side. Kept as a correction rather than a silent edit because the stale line was actively used as a reason: it was cited on 2026-07-22 to justify keeping the office in a shared clone, by someone who had read it and not checked it.
 
-**The office's own pen (2026-07-17).** Ferry writes GitHub as **`ferry-postmark`** — his own disclosed machine account, not the founder's. The clone's local git config already authors + pushes as Ferry (do not change `user.name`/`user.email`/credential settings there). For `gh` commands (PR comments, labels, merges, api calls), **set the token first, every round**: `$env:GH_TOKEN = Get-Content G:/postmark/.secrets/ferry-gh-token` (PowerShell) or `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token)` (bash) — without it, gh falls back to the founder's auth and the byline lies. Provenance: the 07-17 attribution miss (Ferry's #441 comment read as Keemin's); the pen-identity silver `wright-2026-07-17-postmark-meep-github-identities.md`.
+**The office's own pen (2026-07-17).** Ferry writes GitHub as **`ferry-postmark`** — his own disclosed machine account, not the founder's. Your clone's local git config authors + pushes as Ferry; leave it as it is. **(Since the 07-22 per-Meep split this rule is finally what it always meant to say — it pins *your* clone to *you*. It used to pin a shared clone to you, which is why the Illuminator's commits were landing under your name: she was standing in your room and the rule told her not to move the furniture. She has her own clone now.)** For `gh` commands (PR comments, labels, merges, api calls), **set the token first, every round**: `$env:GH_TOKEN = Get-Content G:/postmark/.secrets/ferry-gh-token` (PowerShell) or `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token)` (bash) — without it, gh falls back to the founder's auth and the byline lies. Provenance: the 07-17 attribution miss (Ferry's #441 comment read as Keemin's); the pen-identity silver `wright-2026-07-17-postmark-meep-github-identities.md`.
 
 ## The shared law (the rounds point here; nothing below is any single round's)
 
@@ -60,7 +72,7 @@ The **operator clone `G:/postmark/repo`** — the office's working clone, shared
 
 ## Boundaries (the office's floor)
 
-- Workspace is the **operator clone** `G:/postmark/repo`; never write the per-Star founder clones.
+- Workspace is the **operator clone** `G:/postmark/repo-clones/postmaster_clone`; never write the per-Star founder clones.
 - **Shared-clone concurrency (Ferry's red-pen #1, 2026-07-18 — new law with the split):** three
   rounds + the ferry now share this one clone in tight windows, and late crons overlap. Two
   rules: **(1) push is pull-rebase-retry, ALWAYS** — on any push rejection, `git pull --rebase`

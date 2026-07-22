@@ -32,7 +32,7 @@ file is source of truth.
 
 ## The round
 
-1. **Pull + set the pen.** `cd G:/postmark/repo && git pull --ff-only`. Office token as ever:
+1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --ff-only`. Office token as ever:
    `$env:GH_TOKEN = Get-Content G:/postmark/.secrets/ferry-gh-token` (PowerShell) /
    `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token)` (bash).
 

@@ -38,7 +38,7 @@ surfaced to Keemin, not self-scheduled.
 
 ## The round
 
-1. **Pull + set the pen.** `cd G:/postmark/repo && git pull --ff-only`. Set the office token
+1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --ff-only`. Set the office token
    (every round): `$env:GH_TOKEN = Get-Content G:/postmark/.secrets/ferry-gh-token` (PowerShell)
    / `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token)` (bash). Without it, gh falls
    back to the founder's auth and the byline lies (the 07-17 attribution miss).

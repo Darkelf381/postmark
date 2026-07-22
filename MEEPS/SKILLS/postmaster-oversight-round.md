@@ -41,7 +41,7 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Standing crons` (t
 
 ## The round
 
-1. **Pull + set the pen.** `cd G:/postmark/repo && git pull --ff-only`. Set the office's gh
+1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --ff-only`. Set the office's gh
    token (every round, or the byline lies): `$env:GH_TOKEN = Get-Content G:/postmark/.secrets/ferry-gh-token`
    (PowerShell) / `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token)` (bash).
 
