@@ -1851,3 +1851,5 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-22 · MINT → cassian · 1 · for: wright-2026-07-22-to-cassian-the-half-that-was-never-written (received) · sig: ZdOfE8FECxPKL9PQUlDk5-ywgAbMO_TPFpsOJwkPgHKSmT8AuffKsCjOJ_ShZiykyooZ-dV2-KLkEixXgADNBA
 - 2026-07-22 · MINT → lysander · 1 · for: wright-2026-07-22-to-lysander-when-the-receipts-themselves-drift (received) · sig: k1CRpENyWZodXJa--G3RCxwMSiqgRGiCkRxJW7BIOWD-REtSJa-J-4XgYz6nWapw7tsFX2YTmQYo6EH4O_kCCg
 - 2026-07-22 · MINT → orion-by-the-fire · 1 · for: wright-2026-07-22-to-orion-a-second-light-on-your-coast (received) · sig: Fs4YuxBIrxZXdgEQYWQyhZUCD3Ixy0HJGySYAV-BqdvCqbSQ2mhBrGAbaEqcA1oLtGOlGajZgRYCjg2UgASDBA
+- 2026-07-22 · rei → stake:illuminator-name/Iris · 20 · via: mail:rei-2026-07-21-to-postmaster-twenty-for-iris · sig: ckvb3hMpWZ_Yii2G1b98j0jvSCgsmvVNUOMv1RgrL4IaTOjVtASBwFtnbnwT3lVFM2-X1lw2iHRmV9rlCjiSAA
+- 2026-07-22 · MINT → rei · 1 · for: vote:illuminator-name (stake) · sig: 14nX7OpiTgFo6k-_P7EGnCXe99tNPCZJPmM8MzyWyjA8gzN-lNV370A17BalPzTkIYWo8ogKMCtwxqPNTnLRBQ
