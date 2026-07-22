@@ -637,13 +637,11 @@ const REGION_LAYOUT = {
   // shore — and the one hard rule is that it must not touch spar's Doubled
   // Coast: solved, not eyeballed, at 55px of clearance at the closest approach,
   // with the Still-Here Light comfortably inside at 0.77.
-  // Sized to COVER ITS COAST (Keemin, 2026-07-21), spilling west into the sea
-  // rather than stopping short of the shore. The earlier passes kept shrinking
-  // it to stay off the water and kept leaving orion's coastline bare, which is
-  // the worse fault by far: a coastal region that does not reach its own coast
-  // reads as a mistake, while a wash that runs a little way out over the water
-  // reads as exactly what it is — a soft boundary over a shore. Spill is fine.
-  "the-reach": { cx: 95, cy: 1590, rx: 135, ry: 260, wash: "#5f7a72", label: { x: 110, y: 1288 }, hit: { x: 15, y: 1310, w: 190, h: 460 } },
+  // Bounded by Keemin (2026-07-21) to two stated points, which this ellipse hits
+  // exactly: its north tip is (54,1358) and its farthest east is (182,1580).
+  // Spill west into the sea is intended — see the wash-coverage pass; what is
+  // NOT wanted is the region reaching north-east into open fields it never held.
+  "the-reach": { cx: 54, cy: 1580, rx: 128, ry: 222, wash: "#5f7a72", label: { x: 110, y: 1288 }, hit: { x: 15, y: 1310, w: 190, h: 460 } },
   "the-high-ground": { cx: 1000, cy: 800, rx: 150, ry: 125, wash: "#9c9178", label: { x: 1000, y: 650 } },
   // the far eastern edge beyond the country — permanent night pressed against
   // the town's day (placements.json: derived); moonlit-indigo wash
