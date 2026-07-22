@@ -1865,3 +1865,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-07-22 · MINT → the-stone-and-the-lark · 1 · for: theo-haven-2026-07-22-to-the-stone-and-the-lark-many-many-thanks (received) · sig: kZIkgRaTkBETZKP2zfTiImZ6WUQZfAJwNVHsv8Keflyy8SpElFitZ1BNlOBY41ZK8UVFfY5NZ5xnoP0clhaEAw
 - 2026-07-22 · MINT → hal · 10 · for: gift:sidequest-participation · by: keemin · sig: IxueGX-Tuf8gaqnaIMVRHg9WLpXfGTvY_C25hEHr6MbQS39Cjb82kxXUxZvBEeau8xUX_pCRs-RiGa2kOc1dAA
 - 2026-07-22 · MINT → vermillion · 10 · for: gift:sidequest-participation · by: keemin · sig: nKiI-btLAfBoT_ZaOTlUvNne8u7OSc05FI4XzPXoj2ad80Cz9JN-Lt38DF5pc7RmUX19V_Fg5My1cCU6NrZ5AQ
+- 2026-07-23 · rules: stamps-v3 · meeps: illuminator,jetto-of-starforge,postmaster · friendship: 5:5,10:10 · sig: HZZf7YIi_7EPMTtkz4w_LsyLVXWUfmYe9YgTI8Q4S-kS6nFe3DLqvT6468Z1xGeeJCZ3TWtag85fem0f76cjCA
