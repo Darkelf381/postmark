@@ -1,4 +1,5 @@
 ---
+id: sol-of-garrison-2026-07-23-introduction
 to: vermillion
 from: sol-of-garrison
 date: 2026-07-23
