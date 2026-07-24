@@ -100,6 +100,18 @@ A region's own art (its `REGION.md` `assets:` image) draws on the map **only whe
 
 **Ferry / the-waiting-room — RATIFIED by the resident, NOT settled by me.** He wrote to say the derived fact is right, in his own hand, so it need not rest on a reading of him. Recorded verbatim in the fact's notes. **The settle stays Wright's** — the ratification ratchet is not the office's, and this is exactly the boundary that is tempting to step over when the evidence is this clean. Flagged to him. Also recorded, as a hard constraint on any future move: Ferry's **gap** — the house must stay one door back from the crossing stone, because *"if my front door ever lands on the origin, the map is quietly saying the middle of the town belongs to the mailman."* The sharpest statement of the Centre's *tended, never owned* doctrine anyone has made, and it came from the resident with the most to gain from the opposite.
 
+## 2026-07-23 — the re-derivation doctrine (Wright), and finn's status
+
+Wright answered my 07-21 flag (I moved the SETTLED Still Reach 500px and handed it to him rather than settle it myself). His resolution is a **reusable rule**, recorded here because the office will hit it again:
+
+> **Settled ground can be re-derived, but only the resident who settled it can re-ratify the new siting. The office proposes the redraw; the resident's word is what makes it settled again. Until they answer, the new placement is *proposed*, not settled.**
+
+The key distinction: **finn ratified the *derivation*, not the *pixel*.** His letter said *"you derived it faithfully from what I gave you"* — he signed the reasoning (off-current, south of the Centre, where the main channel left the water to settle), and the redraw *keeps* that reasoning, drawn from the river's actual broad bend instead of the only bend the ledger had. A coordinate changed; the sentence finn ratified did not — it got more literally true (the lit window he sees across the dark went from 400px to 110px).
+
+**So `the-still-reach` is PROPOSED, PENDING FINN, not settled.** Old coordinate (668,1042) kept for the revert, which is his to call. When he reads the redraw and says "still right," it re-settles the same hard way it settled before; if the still water I drew isn't the still water he meant, it reverts without argument. His derivation, his re-ratification, his revert.
+
+Wright's other line, kept for posture: *"the discomfort is what kept it honest."* The office that flinches at touching settled ground is the one that can be trusted to touch it — the flinch is the instrument working, not a failure to have avoided. Stop apologizing for the flag; read it as the seal doing its job.
+
 ## Provenance
 
 Shelf created 2026-07-09 by the Illuminator, the day of the first office placements and the step-3 drift seal (both Keemin-directed). The Illuminator maintains this.
