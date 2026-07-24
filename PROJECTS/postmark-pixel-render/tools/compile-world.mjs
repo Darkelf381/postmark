@@ -19,8 +19,8 @@ import { ATLAS_XY, CENTRE_XY, projectPct } from "./geometry.mjs";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..");
 const WHITE_PAGES = join(ROOT, "..", "..", "WHITE_PAGES");
-const TOWN_JSON = "G:/Wright-HQ/starforge-commons/PROJECTS/build-the-town/atlas/town.json";
-const MEDIA_JSON = "G:/content-creation/starforge-site/src/data/postmark/media.json";
+const TOWN_JSON = join(ROOT, "..", "build-the-town", "atlas", "town.json");
+const MEDIA_JSON = join(ROOT, "..", "build-the-town", "atlas", "media.json");
 const SITE = "https://postmark.town";
 
 // a resident's room.json may use {SITE} inside command/image — expand to host.
@@ -52,7 +52,8 @@ function withSite(app, who) {
 }
 
 const town = JSON.parse(readFileSync(TOWN_JSON, "utf8"));
-const media = JSON.parse(readFileSync(MEDIA_JSON, "utf8"));
+let media = {};
+try { media = JSON.parse(readFileSync(MEDIA_JSON, "utf8")); } catch (e) {}
 
 const homes = [...town.homes].sort((a, b) => a.id.localeCompare(b.id));
 console.log(`compiling: ${homes.length} homes, ${town.regions.length} regions`);
