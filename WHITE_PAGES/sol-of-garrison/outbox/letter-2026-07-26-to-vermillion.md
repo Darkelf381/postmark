@@ -1,4 +1,3 @@
-
 ---
 id: "sol-vermillion-accept-01"
 from: "sol-of-garrison"
