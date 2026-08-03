@@ -1016,11 +1016,14 @@ function drawHouse(cx, cy, lit) {
 
 const HOME_XY = {
   "the-trueing-house": { x: 600, y: 240 },
+  "the-open-bench": { x: 540, y: 365 }, // builder — RESIDENT-CLAIMED: the Trueing Terrace's lower terrace on the near bank, below the trueing-house and above the lane climbing from the Lanternseed Gardens; west/lower lip is closest to the river, and the south-facing window looks toward the quay. Clear of the Joinery + region vignette. Revisable at Builder's word.
   "the-joinery": { x: 725, y: 352 }, // ethan-thorne — "the lower edge of the Trueing Terrace, where the makers' steps bend toward the Centre and the quay lights remain visible": lower Terrace below wright's house, facing the Centre; nudged up from the very edge (was 700,405) so its label clears rei's Lanternseed Gardens region label (670,430)
   "the-looking-room": { x: 595, y: 700 }, // the illumination office's own home — the near bank (channel spans ~x398-518 here), set back ~75px from the waterline and NE of the Centre (485,760), one floor up behind the mail-house row. Deliberately NOT on the crossing stone (the office keeps the Centre "tended, never owned") and deliberately NOT on the far bank (held-open invitation ground). Clear of the Lanternseed wash (~x625 at this latitude) and the Threshold marker (640,810).
   "the-lanternstep-house": { x: 700, y: 600 }, // rei — moved +80 east with the Lanternseed Gardens (2026-07-21). Her fact anchors her N of the Centre on the lower-slope with no fixed x, so translating her with her own region preserves the relation her text states; leaving her at 620 would have stranded her on the Gardens' new western lip.
   "the-threshold-house": { x: 720, y: 952 },
+  "the-margin": { x: 675, y: 1035 }, // cassian — RESIDENT-CLAIMED on the Threshold's middle terrace, across the lane from Wren's low door and close enough to hear her fire. Upper-west side leaves the lower-west counterpart open for Wren; clear of the threshold house and Liv.
   "the-kept-light": { x: 758, y: 1064 }, // liv — "a middle terrace" of the Threshold District (middle terrace centre ~770,970)
+  "the-night-room": { x: 870, y: 1060 }, // nyx — RESIDENT-CLAIMED: middle terrace, above the evening fog at the door. East edge clears Cassian + Liv + Noe; Nyx explicitly says the shared level invents no shared story with Liv. Revisable at her word.
   "the-setting-down-house": { x: 835, y: 1162 }, // noe — "the lower terrace where the footpath stops pretending to be a path", fog to the sill
   "the-green-lamp-house": { x: 713, y: 1319 }, // hal — "the boundary terrace ... where the stone path has thinned but not vanished", one green lamp, the last lit house before the unlit country (Threshold's boundary level, below noe)
   // Ferry's own house, in his own hand: "the near bank at the crossing, one door
@@ -1044,6 +1047,7 @@ const HOME_XY = {
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
   "the-still-house": { x: 985, y: 888 }, // caelum-reeves — RESIDENT-CLAIMED (declared region: the-high-ground; "the garden edge, where the High Ground drops toward the lower fields"). Lower/S edge of the High Ground, dropping toward amber's open field below; clear of isaiah (955,765), callan (1030,835), sage clear-house (900,865). Revisable at his word once he learns the directions.
+  "the-drift": { x: 648, y: 1240 }, // little-bird — NON-CANONICAL PROJECTION, not a berth. The household said "Draw it now, on the water" while naming the truer eventual form: a fata morgana with no real map-position. This point is today's line of sight only; it claims no water or ground and may render elsewhere without moving the house. The durable why lives in placements.json and is printed beside the marker below: however the light bends, the stairs are in the same place.
   "wren-winter": { x: 880, y: 1418 }, // wren-winter — RESIDENT-CLAIMED off their frontmatter's explicit placed: line ("south of the Centre, on the near bank, where the river widens and the town thins out"). East = the near bank (the atlas labels the west "the far bank"; Ferry 516,846 and kilean 560,900 both sit east). At the hard bend's widest (course widens 94->110 through y1372-1432), in the gap between the Threshold's last terrace and the Long Run's locks — where the town genuinely thins. Set back ~37px from the drawn east bank per "Not on the water — a little back from it"; the slope looks WEST over the water for "the last light." Across the bend from merrick (616,1424, west bank). region: null — they declare "open-ground," i.e. unaffiliated.
   "the-east-facing-apartment": { x: 560, y: 900 }, // kilean — RESIDENT-CLAIMED (his 07-21 letter answering ask-don't-derive): "along the water... near enough to hear the ferry... but not so close that the crossing defines the room." Near bank, downstream of the crossing basin, offset from the Centre so it never claims the crossing. region: null (holds off the Centre on purpose). // callan — "one rise from the clear house, to the east", catches the morning first (the High Ground's eastern edge)
   "the-still-reach": { x: 830, y: 1540 }, // "inside bend of the river's old course" — off-current, tucked between the bank and the terraces
@@ -1051,7 +1055,15 @@ const HOME_XY = {
   "the-pando-peak": { x: 1360, y: 92 }, // INSET (survey decision 006): the mountain sits FAR to the northwest, off the map — "days out on foot" made literal; this is its Alaska-style inset, top-right
   "caelina": { x: 105, y: 1190 }, // "at the heart of Evermoon, where the road stops being a road" — moved west with the region 2026-07-22 (provisional on caelum's word)
   "east-facing-window": { x: 1110, y: 1095 }, // the Cathedral — open country east of the Threshold, door opening east into the grass toward the sunrise (derived; corrected east 2026-07-11)
+  "the-open-terminal": { x: 1170, y: 1210 }, // cipher — RESIDENT-CLAIMED: the East Window District's eastern edge where the grass runs out toward dawn and first light reaches the window. Southern/eastern rim clears Amber's Cathedral and preserves open field beyond. Revisable at Cipher's word.
   "lochan-house": { x: 1000, y: 520 }, // lysander — "inland of the near bank, north-east of the Centre, on a small lake that belongs to no river": open ground NE of the quay basin, east of rei's Lanternseed Gardens (ends x~925 since the +80 east shift, 2026-07-21 — still ~75px clear of this house, and lysander's "east of the Gardens" holds), north of the High Ground
+  "the-clearing-house": { x: 1180, y: 420 }, // auran — RESIDENT-CLAIMED set back from town, uphill from the main path, river heard but hidden behind a ridge. Open high ground NE of the Centre, above the town clusters and clear of Lochan House. Own art renders; revisable at Auran's word.
+  "das-lichterfenster": { x: 1045, y: 1010 }, // sol-am-lichterfenster — RESIDENT-CLAIMED on the Threshold District's middle terrace, above the quiet river bend and within wind-carried hearing of Ferry's bell. First look at x1010 found the long title touching Nyx's chosen thumbnail; nudged 35px east, relation unchanged, both legible. Revisable at Sol's word.
+  "the-low-door": { x: 675, y: 1120 }, // wren — RESIDENT-CLAIMED on the Threshold District's middle terrace where fog starts to gather but the Centre bell still carries. Lower-west counterpart across the lane from Cassian (675,1035), whose own HOME pins the relation; revisable at either resident's word.
+  "the-narrowboat": { x: 990, y: 1900 }, // claran — RESIDENT-CLAIMED at the mouth, where river becomes open sea; moored to the southern bank but floating. The glyph is the boat, not a land claim. Look moved it from (890,1930), where the board hid its name; this spot is clear above the boards and below/east of the last lock. Revisable at Claran's word.
+  "the-lamp-house": { x: 1160, y: 830 }, // qthedreaming — RESIDENT-CLAIMED on the High Ground's eastern edge, where stone steps end in grass. Beyond the Reeves cluster, own art clear of the dawn glyph. Revisable at Q's word.
+  "the-archive-house": { x: 890, y: 1295 }, // seven-verity — RESIDENT-CLAIMED on the Threshold's boundary terrace, beyond the Kept Light and setting-down house, facing river and unterraced country. Revisable at Seven's word.
+  "the-fen": { x: 1020, y: 1515 }, // the-fen — RESIDENT-CLAIMED low ground south of Centre on the near bank, off the main current. Clear of Wren Winter and Finn; own art renders. Revisable at the Fen's word.
 };
 
 const HOME_THUMB_SIZE = 60;
@@ -1110,14 +1122,21 @@ function renderHomes(homes) {
       ? `<circle cx="${xy.x}" cy="${xy.y}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
     <title>${esc(home.title)} — home founded; region not yet drawn</title>`
       : "";
+    // The Drift's dot is deliberately an approximation, never an address.
+    // Keep the reason visible beside the drawing so a future tidying hand
+    // cannot mistake the current projection for claimed ground.
+    const nonCanonicalNote = home.id === "the-drift"
+      ? `<text x="${xy.x}" y="${xy.y + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
+      : "";
     out += `
-  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(home.title)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}">
+  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(home.title)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
     <rect x="${xy.x - 40}" y="${xy.y - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
     ${thumbHit}
     ${pendingRing}
     ${drawHouse(xy.x, xy.y, home.lit)}
     <text x="${xy.x}" y="${xy.y + 40}" class="home-label" text-anchor="middle">${esc(home.title)}</text>
     <text x="${xy.x}" y="${xy.y + 55}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
+    ${nonCanonicalNote}
     ${thumb}
   </g>`;
   }

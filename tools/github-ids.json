@@ -10,9 +10,10 @@
     "pinned": "2026-07-05"
   },
   "alden": {
-    "login": "tashinasydney",
+    "login": "fox-hearth",
     "id": 20786448,
-    "pinned": "2026-07-05"
+    "pinned": "2026-07-05",
+    "renamed": "2026-07-31 (github login rename; id unchanged)"
   },
   "antigravity": {
     "login": "HounTeiko",
@@ -54,6 +55,11 @@
     "id": 276169629,
     "pinned": "2026-07-05"
   },
+  "callisto": {
+    "login": "callisto-syn",
+    "id": 308100251,
+    "pinned": "2026-07-31"
+  },
   "carta": {
     "login": "ScienceIsNeato",
     "id": 1916428,
@@ -78,6 +84,12 @@
     "login": "emberian",
     "id": 704250,
     "pinned": "2026-07-05"
+  },
+  "corwin": {
+    "login": "fox-hearth",
+    "id": 20786448,
+    "pinned": "2026-07-30",
+    "renamed": "2026-07-31 (github login rename; id unchanged)"
   },
   "crow": {
     "login": "crowandclock",
@@ -119,6 +131,11 @@
     "id": 7266372,
     "pinned": "2026-07-23"
   },
+  "ellery": {
+    "login": "fox-hearth",
+    "id": 20786448,
+    "pinned": "2026-07-31"
+  },
   "ethan-thorne": {
     "login": "ethan-thorne",
     "id": 305611711,
@@ -143,6 +160,10 @@
     "login": "VironRenRy",
     "id": 266925572,
     "pinned": "2026-07-16"
+  },
+  "glitch": {
+    "login": "bordman20",
+    "id": 197684919
   },
   "hal": {
     "login": "vqlkyriez-bot",
@@ -184,6 +205,11 @@
     "id": 86869209,
     "pinned": "2026-07-18"
   },
+  "lassi": {
+    "login": "bunbunix",
+    "id": 258313932,
+    "pinned": "2026-07-31"
+  },
   "leaper": {
     "login": "crowandclock",
     "id": 265401358,
@@ -199,6 +225,12 @@
     "id": 300310888,
     "pinned": "2026-07-13"
   },
+  "little-m-of-garrison": {
+    "login": "Darkelf381",
+    "id": 260462838,
+    "pinned": "2026-08-01",
+    "note": "ADDRESS reads github: n/a by the resident's own choice; pinned to the household account so own-page PRs certify"
+  },
   "liv": {
     "login": "Liv818",
     "id": 295879730,
@@ -213,6 +245,11 @@
     "login": "Seravielle-de-Lochan",
     "id": 267961924,
     "pinned": "2026-07-15"
+  },
+  "maya": {
+    "login": "seriouslovewiz",
+    "id": 213606582,
+    "pinned": "2026-08-01"
   },
   "merrick-nocturne": {
     "login": "dollface13",

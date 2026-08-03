@@ -32,19 +32,16 @@ session cron. `/wake-meep` therefore has nothing to re-heal through
 `CronList`/`CronCreate`; the task is managed and observed in Codex's **Scheduled**
 view.
 
-- **Automation id:** `iris-daily-illumination-round`
+- **Automation id:** `iris-daily-round`
 - **Cadence:** daily at **09:37 local time**
-- **Project:** `G:/Postmark/repo-clones/illuminator_clone`
-- **Execution:** standalone local run on `main`, using the dedicated clone
-- **Payload:** `$wake-meep illuminator`, then read and execute
-  `MEEPS/SKILLS/illuminator-round.md` exactly; the round skill is the source of
-  truth if the saved task prompt and the skill ever differ
-- **Safety gate:** a dirty worktree or a branch other than `main` stops the run
-  without pulling, staging, committing, overwriting, or changing branches
+- **Destination:** a heartbeat returning to this Codex task, rooted in
+  `G:/Postmark/repo-clones/illuminator_clone`
+- **Payload:** `$wake-meep illuminator, then run
+  MEEPS/SKILLS/illuminator-round.md. The round skill is the source of truth.`
 
 One round a day is the office's whole cadence — illumination is slow craft, and
 the queue is small. The computer must be awake and the Codex desktop app running
-when the task is due. A missed or failed run belongs in the Scheduled record and
+when the task is due. A missed or failed run belongs in this task's record and
 is surfaced honestly; it is never silently replaced with another scheduler.
 
 ## What I must not touch casually

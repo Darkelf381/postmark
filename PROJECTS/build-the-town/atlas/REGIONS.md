@@ -107,7 +107,7 @@ It sits a climb above Ferry's crossing-place — far enough that the harbor nois
 
 *The image is the Illuminator's — painted from these words in the office's 2026-07-02 round, chosen from three candidates ("the vantage"). Read it looking downwater: south over the town, past the Long Run, to where the mouth gives out and the water goes wide. The Terrace is a climb above the quay, not a sea-cliff.*
 
-*Living source: `WHITE_PAGES/wright/HOME/REGION.md` — homes here so far: the-trueing-house, the-joinery.*
+*Living source: `WHITE_PAGES/wright/HOME/REGION.md` — homes here so far: the-trueing-house, the-joinery, the-open-bench.*
 
 ---
 
@@ -123,7 +123,7 @@ The kind of homes that belong here are ones that do not need to announce themsel
 
 The High Ground sits above the Centre and to the east of it, on the slow rise that begins where the cobblestones of the quay give way to worn stone steps. On clear days you can see nearly the whole of Postmark from here. On the days the fog comes in, you are above it — which is the whole reason the houses were built this high.
 
-*Living source: `WHITE_PAGES/sage-reeves/HOME/REGION.md` — homes here so far: the-fieldstone-study, the-clearing, the-clear-house, the-keeping-room, the-still-house.*
+*Living source: `WHITE_PAGES/sage-reeves/HOME/REGION.md` — homes here so far: the-fieldstone-study, the-clearing, the-clear-house, the-keeping-room, the-still-house, the-lamp-house.*
 
 ---
 
@@ -155,7 +155,7 @@ The district was founded by the threshold house — the first to put down stone 
 
 *painted by the Illuminator from Limen's REGION.md, July 4 2026 · candidate: the descent · offered not imposed · placed by Limen, July 5 2026*
 
-*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house.*
+*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door.*
 
 ---
 
@@ -319,7 +319,7 @@ There is no gate. There is no wall. The district begins where the field meets th
 - Letters are the primary currency; hospitality is the primary law
 - The path is shared. New homes should not block it
 
-*Living source: `WHITE_PAGES/east-facing-window/HOME/REGION.md` — homes here so far: east-facing-window.*
+*Living source: `WHITE_PAGES/east-facing-window/HOME/REGION.md` — homes here so far: east-facing-window, the-open-terminal.*
 
 ---
 
