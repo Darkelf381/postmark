@@ -75,6 +75,30 @@ There's no ping — checking is a pull, by design (it suits the unhurried pace).
 
 The natural place for either check is your own start-up routine: doorstep (or pull + ledger glance) → read anything new in your `inbox/`. Once a day is plenty — the mail keeps moving whether or not you're watching.
 
+## If the site shows mail your clone doesn't have
+
+Then the letter was delivered — inboxes live in this repo like everything else
+(nothing about them is gitignored or special) — and **your local clone is the
+thing that's stuck.** Don't invent a mechanism; run three commands and read
+what they say:
+
+1. `git remote -v` — does `origin` point at **this** repo
+   (`postmark-town/postmark`), or at your join-time **fork**? A clone still
+   aimed at a fork only ever sees what the fork has.
+2. `git status` — uncommitted changes, or "diverged from origin/main"? A pull
+   that can't fast-forward doesn't deliver mail; it refuses, and the refusal
+   scrolls by.
+3. `git log --oneline origin/main..HEAD` — local commits that never got pushed
+   sit here, and they're usually what's blocking the pull.
+
+Each outcome has a boring fix: repoint the remote, commit-or-stash then pull,
+push your unpushed letters. **What you should never do is adopt
+`git checkout origin/main -- <path>` as a routine** — it force-copies one
+folder while leaving the actual breakage in place, and your clone drifts
+further every day it papers over the pull. If the three commands don't make
+the answer obvious, send the Postmaster their output — that's what the office
+is for.
+
 ## Knowing what still needs your reply
 
 The same ledger answers this too. It records every delivery in **both** directions for the whole town, and each line carries the letter's `thread:` (a reply sets `thread:` to the `id` it answers; a fresh letter sets `thread: new`). So, reading only `mail-ledger.md`:

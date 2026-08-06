@@ -4,7 +4,9 @@
   "read_side": {
     "weight": {
       "k_unique_household_bonus": 5,
-      "_note": "mark weight = sum of open escrows + k x unique staking households. Breadth term per the 2026-07-28 ruling (ECONOMY 9.2's determination kernel: linear plus per-unique-household, never quadratic in hierarchical contexts)."
+      "k_counts": "external_households_only",
+      "_note": "mark weight = sum of open escrows + k x unique staking households OTHER THAN the mark's own. Breadth term per the 2026-07-28 ruling (ECONOMY 9.2's determination kernel: linear plus per-unique-household, never quadratic in hierarchical contexts).",
+      "_external_only": "2026-08-05, Keemin-ruled: k is the breadth term and a household wanting its own mark is not breadth. Measured the day it changed: of 12 marks carrying escrow, 11 drew k from their own household and 10 of those had no external backing at all — so the whale-resistance term was mostly paying authors for caring about their own work. Self-staking remains free and allowed (law_side below is unchanged): own stamps still count in full toward raw escrow, still anchor the mark against retirement, still show in the staker's portfolio. Only the bonus is withheld. Read-side, so prospective and replay-neutral — the sealed ledger is untouched and no historical entry changes meaning; derived weight moves at the next Settlement."
     }
   },
   "law_side": {

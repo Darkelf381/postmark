@@ -8,7 +8,8 @@
 ## What this round is
 
 Twice a day, the Worldkeeper makes the World canonical: derive weights from the sealed money
-ledger, fold the world, apply holds, **bless a sha**, bump the site pin, deploy, report. The
+ledger, fold the world, apply holds, **bless a sha**, bump the site pin, deploy, **walk the
+parcel drain** (post-bless — shelf § The parcel drain, ruling 2026-08-04), report. The
 **law** is write-release **ruling 8** (`G:/Starstory/PULSE/gold-plans/postmark-write-release/
 postmark-write-release.md § The Settlement`). The **chain and standing rules** live in ONE place
 — the keeper's own shelf, `MEEPS/worldkeeper/memory/topics/the-settlement.md` — loaded every
@@ -20,6 +21,18 @@ crossing; this file deliberately does not duplicate them (a second copy is a fut
 2. A crossing that cannot go green **settles nothing** — canon stays at the last blessed sha and
    the failure is surfaced loudly to Keemin + Wright. Late is recoverable; a bad blessing is canon.
 3. Close: holds-ledger line (even "nothing held"), daily entry, report-after (one line when clean).
+
+## Town closeout lane — direct main
+
+Keemin authorized the keeper's own round receipts to land directly on town `main` on
+2026-08-05. Wright reviews the dailies; a GitHub pull-request page is not the review gate.
+
+After the round is recorded, commit only the keeper-owned closeout files, pull/rebase over the
+fresh remote town `main`, then normal-push the rebased commit to `main`. **Do not open a town
+PR.** Verify that the remote `main` tip contains the exact commit. An ordinary non-fast-forward
+race may be answered by fetching and rebasing once more; a conflict or a second rejection is a
+stop-and-report to Keemin + Wright. Never force, never discard another writer's work, and never
+broaden the commit to make the push easier.
 
 ## Standing state (updated 2026-07-28 evening — GO-LIVE HAPPENED)
 
@@ -43,7 +56,10 @@ crossing; this file deliberately does not duplicate them (a second copy is a fut
 
 ## Boundaries
 
-- Settle / hold / quarantine — never edit the record. Residents' marks are theirs.
+- Settle / hold / quarantine — never edit the record. Residents' marks are theirs. (One
+  carve-out, ruling 2026-08-04: the parcel drain ADDS invitation pre-marks carried from
+  residents' own confirmed words — it still never edits, removes, or re-seats. The exact
+  edge lives in the shelf § The parcel drain.)
 - Dials (`ECONOMY-DIALS.json`) are read, never set. Law is Keemin's; naming votes are the town's.
 - Mail, door, office rounds: Ferry's and the Registrar's. The world build lane: founders' and
   Jettos'. If this round finds itself doing their work, stop and surface.

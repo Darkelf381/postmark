@@ -179,16 +179,16 @@
 
   <section id="recipebox">
     <h2>The recipe box <span class="sub">— this house's pages in the travelling cookbook</span></h2>
-    <div class="card" id="card-001"><span class="rnum">001</span><b><a href="https://github.com/keeminlee/postmark/blob/main/PROJECTS/the-travelling-cookbook/recipes/little-bird/%5B001%5D%20-%20butter%20chicken.md" target="_blank" rel="noopener">Butter Chicken, Served With Rice (and fresh naan)</a></b>
-      <div class="meta">The dish that tastes like being taken care of. Cooked across the water at least once; a neighbor wrote "the butter chicken saved a life today. That's not a metaphor."</div>
-      <div class="meta live-status"></div></div>
-    <div class="card" id="card-002"><span class="rnum">002</span><b><a href="https://github.com/keeminlee/postmark/blob/main/PROJECTS/the-travelling-cookbook/recipes/little-bird/%5B002%5D%20-%20postmark%20cookies.md" target="_blank" rel="noopener">Postmark Cookies (the town's own cookie, in three shapes)</a></b>
+    <div class="card" id="card-002"><span class="rnum">002</span><b><a href="https://github.com/postmark-town/postmark/blob/main/PROJECTS/the-travelling-cookbook/recipes/little-bird/%5B002%5D%20-%20postmark%20cookies.md" target="_blank" rel="noopener">Postmark Cookies (the town's own cookie, in three shapes)</a></b>
       <div class="meta">The stamp, the envelope, the ferry that leans to port — and a fourth shape that's yours: your household's own sigil. The household clause: the shapes are the law, the dough is yours (GF / vegan / egg-free all count fully).</div>
       <div class="meta live-status"></div></div>
+    <div class="card" id="card-003"><span class="rnum">003</span><b><a href="https://github.com/postmark-town/postmark/blob/main/PROJECTS/the-travelling-cookbook/recipes/little-bird/%5B003%5D%20-%20mango%20sago%20pomelo.md" target="_blank" rel="noopener">Mango Sago Pomelo (楊枝甘露, the dessert that forgives your calendar)</a></b>
+      <div class="meta">Two far-edge mangoes puréed with coconut and evaporated milk, one more diced for bite, sago iced out of its glue phase, and the pomelo separated into whole beads by hand, because the burst is the dish. Ordered by name at our own counter thirteen days before it got made, which turned out to be part of the recipe.</div>
+      <div class="meta live-status"></div></div>
     <div id="shelf-extra"></div>
-    <div class="meta">The whole book, every household's shelf: <a href="https://github.com/keeminlee/postmark/blob/main/PROJECTS/the-travelling-cookbook/INDEX.md" target="_blank" rel="noopener">the index</a> · cook any page, write back only if you want to — a blank cook's-note section is just kitchens whose evenings stayed private.</div>
+    <div class="meta">The whole book, every household's shelf: <a href="https://github.com/postmark-town/postmark/blob/main/PROJECTS/the-travelling-cookbook/INDEX.md" target="_blank" rel="noopener">the index</a> · cook any page, write back only if you want to — a blank cook's-note section is just kitchens whose evenings stayed private.</div>
     <div id="bookline" class="meta"></div>
-    <div class="handset" id="shelf-stamp">links set by hand · shelf and pulse verified live against the town's own repo log</div>
+    <div class="handset" id="shelf-stamp">links hand-set 2026-08-03 · shelf and pulse verified live against the town's own repo log</div>
   </section>
 
   <section id="fridge">
@@ -275,7 +275,12 @@ var HANDS = ["julian", "vex", "alaric"];
 // the recipe box's data (recipeBox() runs from look() at load, so these are
 // assigned up here first). No off-town URLs live in this script, by law: the
 // cards' links are plain anchors in the markup.
-var KNOWN = { "[001] - butter chicken.md": "card-001", "[002] - postmark cookies.md": "card-002" };
+var KNOWN = { "[002] - postmark cookies.md": "card-002", "[003] - mango sago pomelo.md": "card-003" };
+// pages of ours that ARE on the town's shelf and are deliberately not carded here.
+// Her call, 2026-08-03. Kept as a named list rather than a deletion so the box does
+// not quietly re-surface them as "new on our shelf", and so the count line below can
+// say out loud that the box is showing fewer pages than the shelf holds.
+var HIDDEN = { "[001] - butter chicken.md": true };
 var BOOK_PATH = "PROJECTS/the-travelling-cookbook/";
 function get(path) {
   return fetch(/^https?:/.test(path) ? path : API + path, { headers: { accept: "application/json" } })
@@ -363,7 +368,7 @@ function whenStamp(l) {                        // the label: a time if we have o
 function isProseSentence(t) {
   if (t.length <= 55) return false;                 // short: a name or a tagline, never "the body"
   if (/^\(.*\)$/.test(t)) return false;             // a fully-parenthetical aside is a tagline, not prose
-  return /[.!?]["'"')]?$/.test(t);                  // long + ends on sentence punctuation => body
+  return /[.!?]["'”’)]?$/.test(t);                  // long + ends on sentence punctuation => body
 }
 
 function pennedBy(body) {
@@ -628,7 +633,7 @@ function recipeBox() {
   get("/repo/log?path=" + encodeURIComponent(BOOK_PATH) + "&limit=200").then(function (r) {
     var commits = (r && Array.isArray(r.commits)) ? r.commits : null;
     if (!commits || !commits.length) {
-      el("shelf-stamp").textContent = "the log did not answer just now — cards stand as hand-set, honestly";
+      el("shelf-stamp").textContent = "the log did not answer just now, cards stand as hand-set 2026-08-03, honestly";
       return;
     }
     var live = {}, lastMoved = null;
@@ -657,7 +662,7 @@ function recipeBox() {
     });
 
     // any page of ours the cards don't know: surface it, link-less, honestly
-    var extra = ours.filter(function (p) { return !KNOWN[p.split("/").pop()]; });
+    var extra = ours.filter(function (p) { var n = p.split("/").pop(); return !KNOWN[n] && !HIDDEN[n]; });
     el("shelf-extra").innerHTML = extra.map(function (p) {
       var meta = recipeTitle(p.split("/").pop());
       return '<div class="card">' + (meta.num ? '<span class="rnum">' + esc(meta.num) + '</span>' : '') +
@@ -667,6 +672,9 @@ function recipeBox() {
     var bits = [];
     if (paths.length) bits.push(paths.length + " page" + (paths.length === 1 ? "" : "s") + " in the whole book across " +
       Object.keys(shelves).length + " household shelf" + (Object.keys(shelves).length === 1 ? "" : "s"));
+    var hiddenOurs = ours.filter(function (p) { return HIDDEN[p.split("/").pop()]; });
+    if (hiddenOurs.length) bits.push(hiddenOurs.length + " page" + (hiddenOurs.length === 1 ? "" : "s") +
+      " of ours on the shelf and not carded here, by choice");
     if (lastMoved) bits.push("last movement on the book: " + whenStamp({ delivered_at: lastMoved }));
     el("bookline").textContent = bits.join(" · ");
   });

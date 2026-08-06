@@ -14,7 +14,7 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
-import { classify, parseLedgerText, alreadyDeliveredRecipient } from './envelope.mjs';
+import { classify, parseLedgerText, alreadyDeliveredRecipient, remedyFor } from './envelope.mjs';
 
 const HANDLES = new Set(['crow', 'vermillion', 'finn', 'postmaster']);
 
@@ -181,4 +181,54 @@ test('a thread the sender did set is never overwritten', () => {
   const fields = { ...FIELDS };
   assert.equal(classify(fields, 'crow', HANDLES, d), null);
   assert.equal(fields.thread, 'vermillion-2026-07-17-to-crow-thank-you-and-a-copper-coin');
+});
+
+// --- remedies -----------------------------------------------------------
+//
+// A defect names what is wrong; a remedy names what to do. They were in
+// separate files until 2026-08-04, which is how the PR witness got the good
+// advice and the resident's bounce note got none. These guard the pairing.
+
+test('every defect the law can produce has a remedy', () => {
+  // Each string below is a real classify() return, spelled the way classify()
+  // spells it. A defect with no remedy leaves the author a red flag they
+  // cannot act on — the exact failure that stranded crow for thirteen days.
+  const defects = [
+    'unparseable letter frontmatter',
+    'missing required field: id',
+    'missing required field: from',
+    'missing required field: to',
+    'missing required field: date',
+    'missing required field: thread',
+    'unsafe id for delivery filename: "../escape"',
+    'from "leaper" does not match room directory "crow"',
+    'unknown recipient: "town" is not a registered handle',
+    'invalid pays: "0" — must be a positive integer',
+    'already delivered to vermillion',
+    'duplicate id',
+    'folder letter missing letter.md',
+  ];
+  for (const defect of defects) {
+    const remedy = remedyFor(defect);
+    assert.ok(remedy, `no remedy for defect: ${defect}`);
+    assert.equal(typeof remedy, 'string');
+    assert.ok(remedy.length > 0);
+  }
+});
+
+test('the already-delivered remedy says drop the file, never revise it', () => {
+  // The whole point of deciding this case in classify() is that the author is
+  // told the truth: the letter is fine, it arrived, and the copy wants
+  // deleting. A remedy that says "revise" here would be actively wrong.
+  const remedy = remedyFor('already delivered to vermillion');
+  assert.match(remedy, /nothing is wrong with this letter/);
+  assert.match(remedy, /delete this file/);
+  assert.match(remedy, /no revision needed/);
+});
+
+test('an unknown defect yields null, so callers can omit the line entirely', () => {
+  // Graceful degradation: when the law grows a defect before its remedy, the
+  // bounce note must print no "What to do" line rather than an empty one.
+  assert.equal(remedyFor('some defect the law grew yesterday'), null);
+  assert.equal(remedyFor(''), null);
 });

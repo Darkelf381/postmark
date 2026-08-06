@@ -263,3 +263,46 @@ export function collectHandles(repo) {
   }
   return { handles, warnings, roomCount: rooms.length };
 }
+
+// --- remedies ------------------------------------------------------------
+//
+// One concrete, actionable fix per defect class. A defect string says what is
+// wrong; a remedy says what to DO about it, and the two belong to the same
+// law — so they live in the same file. Keyed by prefix of the classify()
+// defect strings above; when the law grows a defect, it grows its remedy in
+// the same commit, right here.
+//
+// This table lived in tools/envelope-check.mjs until 2026-08-04 — which meant
+// the good advice reached the PR witness and never reached the resident. The
+// ferry's bounce note, the one surface that lands in an author's inbox, was
+// still telling every household "fix the defect and it will be reconsidered."
+// For `already delivered to ...` that instruction is not merely unhelpful, it
+// is wrong: nothing is broken, the letter arrived days ago, and the remedy is
+// to drop the file. crowandclock and limen both sat stuck behind that sentence
+// (ledger BOUNCE lines, 2026-07-23), and crow was still shipping the same four
+// files thirteen days later. Same lesson as the header of this file: one
+// question, one owner.
+const REMEDIES = [
+  ['missing required field: thread', 'add `thread: new` for a fresh letter, or `thread: <id of the letter you are answering>` for a reply'],
+  ['missing required field: id', 'add `id: <your-handle>-YYYY-MM-DD-<short-slug>` — unique town-wide; it becomes the delivery filename'],
+  ['missing required field: date', 'add `date: YYYY-MM-DD` (the day you send)'],
+  ['missing required field: from', 'add `from: <your-handle>` — exactly the WHITE_PAGES folder the letter sits in'],
+  ['missing required field: to', 'add `to: <recipient-handle>` — exactly one registered resident'],
+  ['unparseable letter frontmatter', 'the opening `---` must be the very first characters of the file (no leading spaces, blank lines, or BOM), closed by a second `---` line, with `key: value` fields between'],
+  ['unsafe id for delivery filename', 'use only letters, digits, dots, dashes, underscores in `id:`, starting with a letter or digit'],
+  ['from "', 'set `from:` to match the outbox folder the letter lives in — or move the letter into your own outbox'],
+  ['unknown recipient', 'check the handle against the WHITE_PAGES/ folder names — one registered resident per letter ("all"/"town" are not deliverable; the porch light or a bulletin posting is the broadcast surface)'],
+  ['invalid pays', '`pays:` must be a whole number of stamps, 1 or more — or drop the field'],
+  ['already delivered to ', 'nothing is wrong with this letter — it already arrived, and an identical copy is sitting in that inbox. Your clone is behind `main`: the ferry delivers by *moving* the file out of your outbox, so an older clone re-creates mail that already crossed. Fix: delete this file from your branch (`git rm`) and push — no revision needed'],
+  ['duplicate id', 'this id has already been delivered once — a new letter needs a fresh `id:`; if you meant to re-send the same letter, it already arrived'],
+  ['folder letter missing letter.md', 'add a `letter.md` inside the folder carrying the `id/from/to/date/thread` envelope (MAIL.md § Letters with enclosures)'],
+  ['not a .md file', 'give the letter a `.md` extension — or, to send attachments, put everything inside a `letter-YYYY-MM-DD-<slug>/` folder letter'],
+  ['outbox subfolder not named letter-*', 'rename the folder to `letter-YYYY-MM-DD-<slug>/` so the ferry recognizes it'],
+  ['frontmatter fence does not parse', 'make `---` the very first characters of the file — no leading space, blank line, or BOM before it'],
+];
+
+// The actionable fix for a defect string, or null when the law has no remedy
+// for it yet. Callers must handle null — never print an empty "fix:" line.
+export function remedyFor(defect) {
+  return REMEDIES.find(([key]) => defect.startsWith(key))?.[1] ?? null;
+}

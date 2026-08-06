@@ -9,7 +9,9 @@
 // SHAPE, per Keemin's ruling 2026-07-27 (gold P0: "B — extend the sealed mint"):
 // a `stake:world-mark/<mark-id>` target class in the ONE money ledger, reusing the
 // ballot's proven STAKE grammar and its clip ceremony; resident-initiated unstake;
-// a mark's ✦weight = Σ open escrow + k·unique staking households; retirement
+// a mark's ✦weight = Σ open escrow + k·unique EXTERNAL staking households
+// (2026-08-05: the mark's own household never earns k — see deriveWorldMarkWeights);
+// retirement
 // gated on zero escrow.
 //
 // THE CLIP LAW, inherited: stakes apply in ledger order and clip to the staker's
@@ -108,13 +110,38 @@ export function markPosition(repo, mark, handle, state = worldStakeState(repo)) 
 
 // The Settlement input. Raw escrow stays raw (`n`) for portfolios and the mark's
 // own ✦stamps; `weight` is the ruled read-side contribution. Exactly one row per
-// unique (mark, household) receives k, assigned deterministically to the first
-// holder in sorted order. Summing a mark's rows therefore yields:
-//   Σ open escrow + k × unique staking households.
+// unique (mark, household) receives k — EXCEPT the mark's own household, which
+// never earns it — assigned deterministically to the first holder in sorted
+// order. Summing a mark's rows therefore yields:
+//   Σ open escrow + k × unique staking households OTHER THAN the mark's own.
 // Household identity comes from the town's existing pins + dated registry
 // revisions; the world repo never learns or reimplements that identity law.
+//
+// K IS EXTERNAL-ONLY (Keemin's ruling 2026-08-05). k is the breadth term — it is
+// meant to say *others want this*, and a household wanting its own mark is not
+// breadth. Under the prior math it was very nearly a constant: of the 12 marks
+// carrying escrow the day this changed, 11 drew k from their own household and
+// 10 of those had NO external backing at all, so a term introduced as the
+// whale-resistance was mostly paying authors +k for caring about their own work.
+// Self-staking stays free and stays allowed (`ECONOMY-DIALS.json law_side`); a
+// resident's own stamps still count in full toward raw escrow, still anchor the
+// mark against retirement, and still show in their portfolio. Only the breadth
+// BONUS is withheld — you may back your own mark, you may not be your own crowd.
+//
+// Read-side, therefore prospective and replay-neutral: the sealed money ledger is
+// untouched, escrow is untouched, and no historical entry changes meaning. What
+// moves is derived ✦weight at the next Settlement.
 export function deriveWorldMarkWeights(repo, state = worldStakeState(repo)) {
   const dial = worldWeightDial(repo);
+  // A mark id is `<by>/<slug>`, so the mark's own household is derivable from
+  // the id alone — no lookup into the marks tree, and this stays a pure ledger
+  // fold. `by` is the author handle; its household is read through the same
+  // dated registry every other household question uses.
+  const ownHouseholdOf = (mark) => {
+    const slash = mark.indexOf('/');
+    return slash < 0 ? null : state.currentHouseholdOf(mark.slice(0, slash));
+  };
+
   const grouped = new Map();
   for (const [key, n] of [...state.positions.entries()].sort()) {
     const i = key.lastIndexOf('|');
@@ -131,10 +158,12 @@ export function deriveWorldMarkWeights(repo, state = worldStakeState(repo)) {
   const rows = [];
   const marks = [];
   for (const [mark, group] of [...grouped].sort(([a], [b]) => a.localeCompare(b))) {
+    const own = ownHouseholdOf(mark);
     const seen = new Set();
     for (const position of group.positions) {
-      const firstForHousehold = !seen.has(position.household);
-      seen.add(position.household);
+      const external = position.household !== own;
+      const firstForHousehold = external && !seen.has(position.household);
+      if (external) seen.add(position.household);
       rows.push({
         tick: 0,
         holder: position.holder,
@@ -143,11 +172,16 @@ export function deriveWorldMarkWeights(repo, state = worldStakeState(repo)) {
         weight: position.n + (firstForHousehold ? dial.k : 0),
       });
     }
+    // `households` keeps its old meaning — every unique household with escrow
+    // here, which is still a true and useful fact — and `households_external` is
+    // the one that feeds k. Reporting less must never mean counting wrong.
+    const externalHouseholds = [...group.households].filter((h) => h !== own).length;
     marks.push({
       mark,
       escrow: group.escrow,
       households: group.households.size,
-      weight: group.escrow + dial.k * group.households.size,
+      households_external: externalHouseholds,
+      weight: group.escrow + dial.k * externalHouseholds,
     });
   }
   return { ...dial, rows, marks };

@@ -44,7 +44,7 @@ import { fileURLToPath } from 'node:url';
 // scan) lives in tools/envelope.mjs — shared verbatim with the witness's
 // pre-merge check (tools/envelope-check.mjs) so a would-bounce letter is
 // named at the PR instead of the crossing. One source; never fork the rules.
-import { classify, collectHandles, parseFrontmatter, parseLedgerText } from './envelope.mjs';
+import { classify, collectHandles, parseFrontmatter, parseLedgerText, remedyFor } from './envelope.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const DEFAULT_REPO = resolve(SCRIPT_DIR, '..');
@@ -270,6 +270,23 @@ function bounceNoteBody(sender, today, defect, letterRelPath) {
   const base = letterRelPath.split('/').pop().replace(/\.md$/, '');
   const slug = base.replace(/^letter-\d{4}-\d{2}-\d{2}-/, '');
   const bounceId = `postmaster-bounce-${today}-${slug}`;
+  // The remedy — what to actually DO — comes from the same law that produced
+  // the defect (tools/envelope.mjs). Without it this note said only "fix the
+  // defect", which for `already delivered to ...` is wrong: nothing is broken
+  // and the letter arrived days ago. A defect the author cannot act on is a
+  // bounce that repeats forever.
+  const remedy = remedyFor(defect);
+  const remedySection = remedy ? `- What to do: ${remedy}\n` : '';
+  // Only promise reconsideration when revising the letter is in fact the
+  // remedy. An already-delivered copy will never be reconsidered no matter
+  // what the author does to it — the file simply wants dropping.
+  const closing = defect.startsWith('already delivered to ')
+    ? `Nothing here needs rewriting. The letter is fine and it arrived — this copy
+just needs to stop being offered. It will sit in your outbox harmlessly until
+you remove it, and it will not bounce again.`
+    : `The letter was left in your outbox. Fix the defect and it will be reconsidered
+on the next mail run. This bounce is deterministic — the same defect will not
+generate a second bounce note.`;
   return `---
 id: ${bounceId}
 from: postmaster
@@ -284,10 +301,8 @@ A letter in your outbox could not be delivered.
 
 - Offending file: \`${letterRelPath}\`
 - Defect: ${defect}
-
-The letter was left in your outbox. Fix the defect and it will be reconsidered
-on the next mail run. This bounce is deterministic — the same defect will not
-generate a second bounce note.
+${remedySection}
+${closing}
 
 — postmaster
 `;

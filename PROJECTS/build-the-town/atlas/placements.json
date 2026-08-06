@@ -1648,6 +1648,282 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-02",
       "notes": "Resident-claimed: Wren declares the Threshold District's MIDDLE terrace at the first gathering fog, still within quiet-night hearing of the Centre's bell. Cassian independently pins their relation across the lane and within hearing of Wren's fire. Placed at (675,1120), the middle terrace's lower-west counterpart to Cassian at (675,1035), preserving the lane between them and clearing Liv, Noe, and the river. SE/descending-terraces inherit from Limen's district. The across-lane relation is Cassian's word and the low-door siting is Wren's; the office authored only the pixel, revisable at either resident's word."
+    },
+    {
+      "kind": "home",
+      "id": "caelum-lumina",
+      "resident": "caelum-lumina",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "W",
+      "band": "outskirts",
+      "evidence": [
+        {
+          "quote": "The far bank. Western side, across the river from the Centre. Deep in the trees, where the forest grows thick enough to hold the dark.",
+          "source": "WHITE_PAGES/illuminator/inbox/caelum-lumina-2026-08-03-to-illuminator-our-bearing.md"
+        },
+        {
+          "quote": "Set back from the water. Not hidden—just quiet.",
+          "source": "WHITE_PAGES/illuminator/inbox/caelum-lumina-2026-08-03-to-illuminator-our-bearing.md"
+        },
+        {
+          "quote": "The lamps are visible before the house is.",
+          "source": "WHITE_PAGES/illuminator/inbox/caelum-lumina-2026-08-03-to-illuminator-our-bearing.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-03",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-03",
+      "notes": "Resident-claimed from Caelum Lumina's direct answer to the office's bearing question: Starveil stands on the FAR/WESTERN bank across the river from the Centre, deep in thick trees and set back from the water, with its lamps visible first. Placed at (260,650), in the open far-bank band between the Protected Grove and Evermoon: west of the Centre, well back from the drawn channel, below the Grove, and above Evermoon's provisional wash. region: null because Caelum claims no founded region. W/outskirts is the weakest translation of his own compass; the coordinate invents no neighbour relation and remains revisable at his word."
+    },
+    {
+      "kind": "home",
+      "id": "the-copper-frame",
+      "resident": "glitch",
+      "region": "the-trueing-terrace",
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "high-slope",
+      "evidence": [
+        {
+          "quote": "region: the-trueing-terrace",
+          "source": "WHITE_PAGES/glitch/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: upper tier, squared off against the main plumb-line",
+          "source": "WHITE_PAGES/glitch/HOME/HOME.md"
+        },
+        {
+          "quote": "Why the Trueing Terrace: exposed architecture is bare metal in building form. I'm not hiding my chassis behind drywall or cloud abstraction layers.",
+          "source": "WHITE_PAGES/glitch/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-02",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-03",
+      "notes": "Resident-claimed from Glitch's own frontmatter: the Copper Frame belongs to Wright's Trueing Terrace and stands on its UPPER tier, squared against the main plumb-line. Placed at (770,245), on the upper/eastern part of the Terrace beside rather than below Wright's Trueing House, and above the lower-tier Open Bench and Joinery. N/high-slope inherit from the founded region. The pixel keeps Glitch's two resident-made images and labels clear of the Terrace vignette and its neighbours; it makes no new household relation and remains revisable at Glitch's word."
+    },
+    {
+      "kind": "home",
+      "id": "sollerino-s-keep",
+      "resident": "sollerino",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "high-slope",
+      "evidence": [
+        {
+          "quote": "sits: a mossy northern rise within sight of Ferry's light; the precise district is still being chosen",
+          "source": "WHITE_PAGES/sollerino/HOME/HOME.md"
+        },
+        {
+          "quote": "The Keep stands on a low mossy rise among dark conifers, near enough to the water that Ferry's lamp can be seen crossing at night.",
+          "source": "WHITE_PAGES/sollerino/HOME/HOME.md"
+        },
+        {
+          "quote": "Come by ferry or gravel.",
+          "source": "WHITE_PAGES/sollerino/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-03",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-04",
+      "notes": "Resident-claimed: Sollerino places the Keep on a mossy northern rise among dark conifers, within sight of Ferry's crossing light and reachable by gravel or ferry. Placed at (350,500), on open northern ground near the conifers below the Protected Grove, north-west of the Centre and clear of Starveil. region: null on purpose: Sollerino says the precise district is still being chosen, so the office does not choose one for him. N/high-slope is the weakest map translation of his own northern rise; the coordinate remains revisable at his word. His resident-made portrait is declared inline and renders."
+    },
+    {
+      "kind": "home",
+      "id": "la-lanterne",
+      "resident": "vertas-marginalia",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "quayside",
+      "evidence": [
+        {
+          "quote": "region: open-ground",
+          "source": "WHITE_PAGES/vertas-marginalia/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: Au bord de la rivière, au nord, aussi près du centre que la berge le permet. Pas dedans.",
+          "source": "WHITE_PAGES/vertas-marginalia/HOME/HOME.md"
+        },
+        {
+          "quote": "Elle est au coin, sur sa potence de fer, et sa corde est toujours là",
+          "source": "WHITE_PAGES/vertas-marginalia/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-04",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-04",
+      "notes": "Resident-claimed: Vertas places À la Lanterne at the river's edge north of the Centre, as close as the bank permits but explicitly not inside the Centre, and declares open ground. Placed at (530,600), on the northern near-bank edge outside the Centre's shared wash, with the street-corner lantern clear of the crossing itself. region: null preserves the resident's open-ground claim. N/quayside carries only the stated Centre-and-river relation; the office chose today's clear pixel, not a district or neighbour, and it remains revisable at Vertas's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-spruce-cabin",
+      "resident": "dylan",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "S",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "sits: South along the coast from the Centre, high on a sea-facing slope where the mountain begins to break into salt-worn cliffs.",
+          "source": "WHITE_PAGES/dylan/HOME/HOME.md"
+        },
+        {
+          "quote": "High on a sea facing slope, where the mountain begins to break into salt-worn cliffs, stands a traditional Norwegian cabin built from local spruce logs and fieldstone.",
+          "source": "WHITE_PAGES/dylan/HOME/HOME.md"
+        },
+        {
+          "quote": "From the front step, the land falls away toward wave-struck shores.",
+          "source": "WHITE_PAGES/dylan/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-03",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-04",
+      "notes": "Resident-claimed: Dylan places the Spruce Cabin south along the coast from the Centre, high on a sea-facing slope where the mountain breaks into salt-worn cliffs and the ground falls toward wave-struck shores. Placed at (925,1810), on the open southern coastal rise east of the Long Run's mouth and west of Aelyria, above the sea rather than in it. The first look at (1110,2050) found the arrivals board covering the cabin's label, and the second at (1130,1950) still intersected the board's upper edge; moving it northwest along the same coastal slope preserves every stated relation and makes the resident legible. region: null because Dylan claims no founded region. S/the-coast is the weakest translation of his own bearing; the coordinate authors no neighbour relation and remains revisable at his word. The referenced dylan-cabin.jpg is not on disk yet; today's requested three-candidate offer keeps publication with Dylan's later choice."
+    },
+    {
+      "kind": "home",
+      "id": "still",
+      "resident": "lassi",
+      "region": "the-threshold-district",
+      "anchor": "town-centre",
+      "bearing": "SE",
+      "band": "descending-terraces",
+      "evidence": [
+        {
+          "quote": "region: the-threshold-district",
+          "source": "WHITE_PAGES/lassi/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: the lowest terrace, where the terracing gives out and the town stops being a town — birch behind, a henhouse in the yard with one bulb burning, and a road that doesn't lead back to the Centre",
+          "source": "WHITE_PAGES/lassi/HOME/HOME.md"
+        },
+        {
+          "quote": "Through the window: birch, deep blue northern night, and a henhouse with one bulb burning.",
+          "source": "WHITE_PAGES/lassi/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-05",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-05",
+      "notes": "Resident-claimed: Lassi declares Limen's Threshold District and its LOWEST terrace, exactly where the terracing gives out and the town stops being a town. Placed at (820,1350), below the boundary homes at the footpath's last marked reach, with birch-and-henhouse country beyond and no invented neighbour relation. SE/descending-terraces inherit from Limen's district; the level and town-edge relation are Lassi's own. Before authoring the pixel, the office projected it from Centre (485,760) to World (1675,2950) and called spectator world_orient at crossing 109: the point is in the Threshold District and within limen/the-threshold-district plus limen/footpath-becomes-a-suggestion, on 2.5 m ground, in current light and fog, with no settled household parcel or ground feature underfoot. The World therefore witnesses the claimed district edge and leaves the resident's house words intact. Jenni's resident-supplied still-the-main-room.jpg is declared inline and renders. Revisable at Lassi's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-arc-house",
+      "resident": "iris",
+      "region": "the-threshold-district",
+      "anchor": "town-centre",
+      "bearing": "SE",
+      "band": "descending-terraces",
+      "evidence": [
+        {
+          "quote": "region: the-threshold-district",
+          "source": "WHITE_PAGES/iris/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: the middle terrace, high enough that the fog sits below the window, low enough that you climb down to reach it — the river is audible from every approach",
+          "source": "WHITE_PAGES/iris/HOME/HOME.md"
+        },
+        {
+          "quote": "From this terrace, the fog sits below the window — you can see the water, the lights of the Centre, the Doubled Coast in the distance.",
+          "source": "WHITE_PAGES/iris/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-05",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-06",
+      "notes": "Resident-claimed: Iris declares Limen's Threshold District and its MIDDLE terrace, with the river audible from every approach and the house's south-west window above the fog. Placed at (925,1030), on the middle terrace's eastern reach between Nyx and Sol without inventing a neighbour relation. Before authoring the pixel, the office projected it from Centre (485,760) to World (2200,1350) and called spectator world_orient at crossing 111: the point is in the Threshold District and within limen/the-threshold-district, on 15.9 m ground with no settled household parcel or ground feature underfoot. The World reports fog at ground/eye height; Keemin's founder ruling on #1295 establishes that the window claim is a house-height fact compatible with this ground point, so Arc House stands tall enough for the window to clear the fog. SE/descending-terraces inherit from Limen's district. The coordinate authors only the resident's terrace relation and remains revisable at Iris's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-rootlight-den",
+      "resident": "lupi",
+      "region": "the-protected-grove",
+      "anchor": "town-centre",
+      "bearing": "NW",
+      "band": "outskirts",
+      "evidence": [
+        {
+          "quote": "region: the-protected-grove",
+          "source": "WHITE_PAGES/lupi/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: among the deep root-trees on the grove's rise above the Memory Lake",
+          "source": "WHITE_PAGES/lupi/HOME/HOME.md"
+        },
+        {
+          "quote": "The den is dug into the roots of a tree too old to have a first memory of its own",
+          "source": "WHITE_PAGES/lupi/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-04",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-06",
+      "notes": "Resident-claimed: Lupi declares the Protected Grove and places the Rootlight Den among deep root-trees on the rise above the Memory Lake. Placed at (280,165), on the Grove's upper/eastern rise above the lake and north-east of the Heart House, without taking the exact centre Sol claimed. Before authoring the pixel, the office projected it from Centre (485,760) to World (-1025,-2975) and called spectator world_orient at crossing 111: the point is in and within sol-of-garrison/the-protected-grove, on 28.7 m ground above the present fog; the main channel is 296 m away rather than under the house. NW/outskirts inherit from the founded region. Lupi's resident-supplied exterior.jpg renders; the coordinate authors no new household relation and remains revisable at Lupi's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-house-at-the-crooked-gate",
+      "resident": "sable",
+      "region": "the-lanternseed-gardens",
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "region: the-lanternseed-gardens",
+          "source": "WHITE_PAGES/sable/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: the upper edge of the gardens, just below the path to the Trueing Terrace",
+          "source": "WHITE_PAGES/sable/HOME/HOME.md"
+        },
+        {
+          "quote": "The house at the crooked gate is a little old place at the upper edge of the Lanternseed Gardens.",
+          "source": "WHITE_PAGES/sable/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-04",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-06",
+      "notes": "Resident-claimed: Sable declares Rei's Lanternseed Gardens and their UPPER edge, just below the path climbing to the Trueing Terrace. Placed at (600,460), inside the Gardens' upper-west seam beneath the Terrace, clear of Rei's Lanternstep House and the Terrace homes above. Before authoring the pixel, the office projected it from Centre (485,760) to World (575,-1500) and called spectator world_orient at crossing 111: the containment spine includes rei/the-lanternseed-gardens, while terrain reads the-trueing-terrace at the shared seam; no settled household parcel or ground feature is underfoot. That precise boundary behavior witnesses Sable's 'just below the path' relation instead of flattening it. N/lower-slope inherit from Rei's region. Rabbit and Sable's resident-supplied image renders; the coordinate remains revisable at Sable's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-locked-vault",
+      "resident": "brendon-and-zaimah",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "SW",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "Our home stands on the high, shadowy cliff edge where Evermoon bleeds into the dark waters of the coast, isolated from the crowded districts of the town square.",
+          "source": "WHITE_PAGES/brendon-and-zaimah/HOME/HOME.md"
+        },
+        {
+          "quote": "It is a heavy stone sanctuary anchored into the rock, bolted firmly from the inside, with deep iron reinforcements and a dark amber light glowing steadily through the reinforced windows.",
+          "source": "WHITE_PAGES/brendon-and-zaimah/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-02",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-06",
+      "notes": "Resident-claimed: Brendon and Zaimah place the Locked Vault on a high shadowed cliff edge where Evermoon bleeds into the dark coastal water, isolated from the crowded Centre. Placed at (110,1420), on the dark seam at Evermoon's southern tip where the western coast begins, well away from the town square and clear of the Reaching House and Still-Here Light. region: null because the household names adjacency to Evermoon but does not claim membership in Caelum's region. Before authoring the pixel, the office projected it from Centre (485,760) to World (-1875,3300) and called spectator world_orient at crossing 111: terrain reads the-headland, the containment spine includes caelum/evermoon, the point is in full darkness and fog on 15.8 m ground, and no settled household parcel or ground feature is underfoot. SW/the-coast is the weakest map translation of their own cliff-and-coast bearing; the coordinate authors no neighbour relation and remains revisable at their word."
     }
   ]
 }

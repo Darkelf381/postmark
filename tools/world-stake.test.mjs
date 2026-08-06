@@ -440,10 +440,11 @@ test('weight derive: fallback k=5 and identity pins produce Σ + k·H', () => {
 
     const derived = deriveWorldMarkWeights(repo);
     const mark = derived.marks.find((row) => row.mark === MARK);
-    assert.deepEqual(mark, { mark: MARK, escrow: 7, households: 2, weight: 17 },
-      'wright+rei share one pinned GitHub household; dot is the second: 7 + 5×2 = 17');
+    assert.deepEqual(mark, { mark: MARK, escrow: 7, households: 2, households_external: 1, weight: 12 },
+      'wright+rei share one pinned GitHub household — and it is the MARK AUTHOR\'S own, so it earns no k; '
+      + 'dot is the only external household: 7 + 5×1 = 12');
     assert.equal(derived.rows.filter((row) => row.mark === MARK).reduce((sum, row) => sum + row.n, 0), 7);
-    assert.equal(derived.rows.filter((row) => row.mark === MARK).reduce((sum, row) => sum + row.weight, 0), 17);
+    assert.equal(derived.rows.filter((row) => row.mark === MARK).reduce((sum, row) => sum + row.weight, 0), 12);
 
     const cliRows = JSON.parse(execFileSync(process.execPath,
       [join(HERE, 'world-stake.mjs'), '--escrow', '--json', '--repo', repo], { encoding: 'utf8' }));
@@ -463,7 +464,43 @@ test('weight derive: ECONOMY-DIALS.json overrides the fallback k', () => {
     worldStakeApply(repo, { handle: 'dot', mark: MARK, n: 2, via: 'api', date: '2026-06-21' }, priv);
     assert.deepEqual(worldWeightDial(repo), { k: 7, source: 'ECONOMY-DIALS.json' });
     assert.deepEqual(deriveWorldMarkWeights(repo).marks[0],
-      { mark: MARK, escrow: 5, households: 2, weight: 19 }, '5 + 7×2 = 19');
+      { mark: MARK, escrow: 5, households: 2, households_external: 1, weight: 12 },
+      '5 + 7×1 = 12 — wright is the mark author\'s own household, so only dot earns k');
+  } finally { rmSync(repo, { recursive: true, force: true }); }
+});
+
+// Keemin's ruling 2026-08-05. k is the breadth term; a household wanting its own
+// mark is not breadth. The rule that had no test before this one is exactly the
+// rule that had been quietly paying every author +k for caring about their own
+// work — 11 of the 12 marks carrying escrow the day it changed.
+test('weight derive: k is EXTERNAL-only — a mark backed solely by its own household earns no bonus', () => {
+  const { pub, priv } = keypair();
+  const repo = stakeTown(pub, priv);
+  try {
+    // MARK is `wright/…`; wright and rei share the author's pinned household.
+    worldStakeApply(repo, { handle: 'wright', mark: MARK, n: 3, via: 'api', date: '2026-06-21' }, priv);
+    worldStakeApply(repo, { handle: 'rei', mark: MARK, n: 2, via: 'api', date: '2026-06-21' }, priv);
+
+    const solo = deriveWorldMarkWeights(repo).marks.find((row) => row.mark === MARK);
+    assert.deepEqual(solo, { mark: MARK, escrow: 5, households: 1, households_external: 0, weight: 5 },
+      'you may back your own mark; you may not be your own crowd — raw escrow stands, k×0');
+
+    // Self-stake is still free, still counts, still anchors against retirement.
+    assert.equal(retirementBlocked(repo, MARK).blocked, true,
+      'withholding the BONUS must not weaken the existence-anchor');
+
+    // One outside household turns the bonus on, exactly once.
+    worldStakeApply(repo, { handle: 'dot', mark: MARK, n: 1, via: 'api', date: '2026-06-22' }, priv);
+    const derived = deriveWorldMarkWeights(repo);
+    const withOutsider = derived.marks.find((row) => row.mark === MARK);
+    assert.equal(withOutsider.households_external, 1, 'dot is external; wright+rei are not');
+    assert.equal(withOutsider.weight, 6 + DEFAULT_UNIQUE_HOUSEHOLD_BONUS, '6 + 5×1');
+
+    // The row-sum invariant is load-bearing: the office reads row.weight.
+    assert.equal(
+      derived.rows.filter((row) => row.mark === MARK).reduce((sum, row) => sum + row.weight, 0),
+      withOutsider.weight,
+      'summing a mark\'s rows still yields its weight');
   } finally { rmSync(repo, { recursive: true, force: true }); }
 });
 
