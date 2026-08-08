@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-08T15:02:47Z
+last-refreshed: 2026-08-08T19:03:40Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-08T15:02:47Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-08 — eighteenth live fire:** merged Aion's clean Hall gift #1516
+  and Vermillion's source-backed, self-owned window ledger update #1517.
 
 - **2026-08-08 — seventeenth live fire:** merged Iris's now-isolated Party
   Hall gift and RSVP #1475 after the separately split mail crossed in #1502.
