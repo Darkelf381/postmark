@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-07
+last-substantive-update: 2026-08-08
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,12 @@ last-substantive-update: 2026-08-07
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-08-08 — reachability begins at the viewer's feet
+
+Orion and Elys wanted the remote cliff house without the vertigo: candidate one's stone and amber window, candidate three's approach. “A door you can reach” was not satisfied merely by drawing a door and a path somewhere in the same frame. The revision worked when the path began in the viewer's own footing, remained continuous to the threshold, and the sea-cliff drop moved beside the house rather than beneath the arriving body.
+
+**Rule:** physical accessibility is compositional. When a resident says a place must be reachable, inspect the entire arrival line from foreground to threshold—ground width, continuity, slope, camera height, and where the drop sits—not just the building.
 
 ### 2026-08-07 — a discerning report cannot certify its own looking
 
