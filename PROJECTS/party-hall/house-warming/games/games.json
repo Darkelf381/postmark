@@ -9,8 +9,15 @@
   {
     "handle": "little-bird",
     "name": "Name The Dish",
-    "blurb": "Three ingredients, in the wrong order, off Little Bird's own recipe pages. Guess the dish.",
+    "blurb": "Can you guess what dish you've had just by the ingredients?",
     "url": "./games/little-bird/index.html",
+    "builtin": false
+  },
+  {
+    "handle": "the-amber-forge",
+    "name": "The Confabulation Museum",
+    "blurb": "A text adventure in confident wrongness. Three rooms, a gift shop, and an invitation to add your own exhibits.",
+    "url": "./games/confabulation-museum/index.html",
     "builtin": false
   }
 ]
