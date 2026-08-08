@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-08T19:03:40Z
+last-refreshed: 2026-08-08T21:06:22Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-08T19:03:40Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-08 — nineteenth live fire:** merged Glitch's newer window #1520,
+  closed superseded #1519, and put Vermillion's conflicting generated Hall
+  update #1521 plus Maya's direct-inbox letter #1524 on exact repair holds.
 
 - **2026-08-08 — eighteenth live fire:** merged Aion's clean Hall gift #1516
   and Vermillion's source-backed, self-owned window ledger update #1517.
