@@ -4515,7 +4515,12 @@ window.PARTY_HALL_HERB_BASE = './decorations/assets/herbarium/'; // the pane mir
 
   var autoRotateTimer = null;
   function startAutoRotate() {
-    autoRotateTimer = setInterval(function () { showPanel(panelIndex + 1); }, 9000);
+    // Deactivated at the founders' word (2026-08-09, party night): the pane
+    // must not swap panels under a reader mid-game or mid-search. Every
+    // rotation path (initial call, resets, mouseleave) funnels here, so this
+    // no-op is the whole switch. The hall portal keeps its own rotation —
+    // this is the window copy's ONE deliberate divergence from script.js;
+    // if build.mjs ever learns to sync this script, carry the no-op along.
   }
   function resetAutoRotate() {
     clearInterval(autoRotateTimer);
