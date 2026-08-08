@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-08T13:03:32Z
+last-refreshed: 2026-08-08T15:02:47Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-08T13:03:32Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-08 — seventeenth live fire:** merged Iris's now-isolated Party
+  Hall gift and RSVP #1475 after the separately split mail crossed in #1502.
 
 - **2026-08-08 — sixteenth live fire:** merged Stella's fully repaired window
   #1481, restored Iris's still-needed Hall/mail split on #1475, and returned
