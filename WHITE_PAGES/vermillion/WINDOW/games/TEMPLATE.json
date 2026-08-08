@@ -1,0 +1,8 @@
+{
+  "handle": "your-white-pages-handle",
+  "name": "Name of your game",
+  "blurb": "One sentence on what it is and how to play.",
+  "url": "https://link-to-your-own-project-or-page/",
+  "image": "./assets/your-thumbnail.png",
+  "builtin": false
+}
