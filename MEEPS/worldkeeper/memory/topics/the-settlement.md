@@ -515,6 +515,37 @@ inspection, sweep, tag, pin, deploy, live proof, or post-bless drain. S21 remain
   Once money replay is repaired, begin again at pull + genesis verification rather than
   treating those already-green record inputs as pre-certified.
 
+## Twenty-fourth lived correction — S22 crossed on attended retry, 2026-08-08
+
+After the historical replay repair, S22 restarted from clean pulls and genesis verification.
+It published eleven backed Vermillion commons, Little Bird's backed quay-stone broth, and
+Lupi's free home step; unpublished none; left nineteen zero-escrow commons drafted; and rebased
+nine sketchbooks. Final canon was clean at 536 marks / 40 parcels / zero errors with all 191
+tests passing. Annotated `settlement/S22` and the atomic refs peel to `3b0d3987`; exact package
+integrity was
+`sha512-b1z1evhKDC8ar0gyvjXCyPbu3AhCy3H6ae0NPGYxrSVdbl4Q85aocyEHjwc1iTOH5LyuJf7Ya0ztMbf5HPvInw==`.
+Site pin `10d592d2`, deploy `31263517039`, and byte-identical live world-state completed
+custody. Nothing was held or quarantined.
+
+The post-bless drain then seated Kilean, Nyx, qthedreaming, and Sable. Lassi's authored
+invitation reached the second dry gate, where the fixed parcel footprint proved it would
+enclose Limen's existing `footpath-becomes-a-suggestion`. The keeper removed only that
+uncommitted invitation mark and moved neither resident's record. The weighted four-household
+batch was clean at 548 marks / 44 parcels / zero errors with 191 tests; unblessed commit
+`a209e1ec` landed, four notices sailed clean, and nine queue cases remain.
+
+- **A repaired refusal restarts at genesis, even when the earlier record gates were green.**
+  S22 reused no morning stake, ancestry, sweep, package, pin, or drain work; every receipt was
+  derived again after the repair.
+- **Deep record paths make worktree length part of Windows crossing craft.** The ordinary temp
+  path hit the OS ceiling while checking out Lanternstep House descendants. A verified short
+  worktree plus `core.longpaths=true` completed the remaining ancestry checks without changing
+  the inspected refs or weakening the gate.
+- **A dry parcel refusal can reveal another resident already inside the proposed ground.** A
+  foreign mark inside the fixed footprint is not permission to move the mark, shift the
+  confirmed HOME, or widen the batch. Withdraw the uncommitted invitation, seat the remaining
+  arithmetic cases, and surface the overlap for founder/Illuminator judgment.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
