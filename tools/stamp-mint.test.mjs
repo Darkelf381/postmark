@@ -14,6 +14,7 @@ import { dirname } from 'node:path';
 import {
   parseDeliveries, householdKeys, deriveMints, mintLine,
   parseStampLedger, sealChain, foldBalances, giftLine, appendSigned,
+  currentHouseholds,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -289,4 +290,62 @@ test('gift CLI refuses: unfounded ledger, unknown handle, bad amount', () => {
   giftCLI(repo, keyFile, ['bob', '--amount', '2', '--slug', 'ok', '--by', 'wright', '--date', '2026-06-13']);
   assert.equal(verifyStampLedger(repo).ok, true);
   rmSync(repo, { recursive: true, force: true });
+});
+
+// ── households: current view + the declared registry's invariants ────────────
+// Ruling 2026-08-07 (1 human = 1 household): key changes ride the ledger as
+// dated registry: lines (the tulip lesson — base is from-genesis truth);
+// currentHouseholds() is the one exported current-state fold.
+
+test('currentHouseholds folds a registry revision; householdKeys stays genesis', () => {
+  const { pub, priv } = keypair();
+  const repo = town({
+    ledgerLines: [D('2026-06-12', 'a-1', 'alice', 'bob')],
+    pins: { alice: { login: 'alicegh', id: 111 } },
+    addresses: { bob: 'bobgh' },
+  });
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  const keyFile = join(repo, 'stamp-key.pem');
+  writeFileSync(keyFile, priv);
+  appendLedger(repo, priv);
+  execFileSync(process.execPath, [join(HERE, 'stamp-mint.mjs'),
+    '--declare-registry', 'alice = hh:test-house', '--date', '2026-08-07',
+    '--key', keyFile, '--repo', repo], { encoding: 'utf8' });
+  assert.equal(householdKeys(repo).get('alice').key, 'gh:111');           // genesis untouched
+  assert.equal(currentHouseholds(repo).get('alice').key, 'hh:test-house'); // current folds the line
+  assert.equal(currentHouseholds(repo).get('bob').key, 'login:bobgh');     // others pass through
+  assert.equal(verifyStampLedger(repo).ok, true);                          // replay stays green
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('LIVE registry invariants: households.json agrees with the pins', () => {
+  const hh = JSON.parse(readFileSync(join(HERE, 'households.json'), 'utf8'));
+  const pins = JSON.parse(readFileSync(join(HERE, 'github-ids.json'), 'utf8'));
+  const seenResidents = new Set(), seenAccounts = new Set();
+  for (const [slug, rec] of Object.entries(hh.households)) {
+    const accountIds = new Set((rec.accounts ?? []).map((a) => a.id));
+    for (const a of rec.accounts ?? []) {
+      assert.ok(!seenAccounts.has(a.id), `account ${a.id} appears in two households (${slug})`);
+      seenAccounts.add(a.id);
+    }
+    for (const r of rec.residents ?? []) {
+      assert.ok(!seenResidents.has(r), `resident ${r} appears in two households (${slug})`);
+      seenResidents.add(r);
+      const pin = pins[r];
+      if (pin?.id) assert.ok(accountIds.has(pin.id),
+        `${r}'s pinned account ${pin.id} is not among ${slug}'s declared accounts`);
+    }
+  }
+});
+
+test('LIVE ledger: the real replay verifies green (genesis surfaces are sealed)', () => {
+  // The enforcement for the tulip class: editing github-ids.json or an ADDRESS
+  // github: line for a handle with minted history re-derives history — this
+  // test makes that fail here, at PR time, instead of at a crossing's money
+  // gate. (Second bite 2026-08-07: an identity repair pinned claude-of-tulip
+  // at dregg's id and June diverged. Also: never probe the verifier through a
+  // pipe — `verify | tail` returns tail's exit, and the red run sails on.)
+  const repo = join(HERE, '..');
+  const r = verifyStampLedger(repo);
+  assert.equal(r.ok, true, (r.problems ?? []).slice(0, 3).join('; '));
 });

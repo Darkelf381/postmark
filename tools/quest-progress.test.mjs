@@ -86,6 +86,32 @@ test('a resident with no activity today reads a clean zero', () => {
   } finally { rmSync(d, { recursive: true, force: true }); }
 });
 
+test('#1458: an inactive member of an active house reads TRUE house columns', () => {
+  // alice + bob share a roof; only alice mints today. Pre-fix, bob was absent
+  // from the fold and the clean-zero default invented him a solo house — seven
+  // member tabs above a solo-grain quest card. Now his row must carry the house.
+  const d = town(
+    [['alice', 'r1'], ['alice', 'r2'], ['alice', 'r3']],
+    { alice: { id: '1' }, bob: { id: '1' } },
+  );
+  try {
+    const prog = foldQuestProgress(d, { today: DAY });
+    const b = prog.get('bob');
+    assert.ok(b, 'bob (no mints today) still gets a row');
+    assert.equal(b.send, 0);
+    assert.equal(b.receive, 0);
+    assert.deepEqual(b.sentTo, []);
+    assert.equal(b.household.size, 2, 'house size is the house\'s, not solo');
+    assert.equal(b.household.send, 3, 'house send total reaches the quiet member');
+    // and through the board join, the card shape the office serves:
+    const q = questBoard(d, 'bob', { today: DAY, progress: prog })
+      .quests.find((x) => x.id === 'correspond-send');
+    assert.equal(q.progress, 0);
+    assert.equal(q.household.size, 2);
+    assert.equal(q.household.total, 3);
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
 test('leaderboard: today rows sorted (completions, then progress, then handle), all-time tallied', () => {
   const PRIOR = '2026-07-19';
   const d = town([
@@ -136,6 +162,20 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // registry now carries the two dailies + the correspond-depth milestone
   assert.equal(reg.quests.length, 3);
   assert.ok(reg.quests.some((q) => q.id === 'correspond-depth' && q.cadence === 'milestone'));
+});
+
+test('live ledger: housemates agree on their house columns (#1458 invariant)', () => {
+  // Every handle sharing an economy key must carry identical household
+  // {size, send, receive} — the exact property whose absence produced crow
+  // reading 1-of-7 while an active roommate read the true house.
+  const prog = foldQuestProgress(REPO); // real today
+  const byKey = new Map();
+  for (const [handle, p] of prog) {
+    const seen = byKey.get(p.household.key);
+    if (!seen) { byKey.set(p.household.key, { handle, hh: p.household }); continue; }
+    assert.deepEqual(p.household, seen.hh,
+      `${handle} and ${seen.handle} share ${p.household.key} but disagree on house columns`);
+  }
 });
 
 // ── `counted`: who already filled a unit today (the quest-card affordance) ────

@@ -16,6 +16,18 @@
 > Jenna; runtime is Codex, not Hermes). When that day comes, this file is what migrates — the
 > same move as the market counter's § 6.5 note in the old monolith. Until then it is Ferry's.
 >
+> **✅ HANDOFF AUTHORIZED 2026-08-06 (Keemin): *“we already have the Registrar smoke-tested
+> and ready to go; I was honestly just waiting for a good reason.”*** The reason arrived the
+> same evening — the office audited its own correspondence and found **29 unanswered letters**,
+> and the fix is a **mail round in this round's slot** (`postmaster-mail-round.md`, drafted,
+> awaiting adoption). **The freeze of the roll at 100 the same night makes this the quietest
+> the door will ever be** — joins to zero, welcomes to zero — which is the right condition for
+> a first live handoff, not the wrong one. *(The office advised “after Saturday” an hour
+> earlier on load grounds and then reversed it: the load it was protecting against had already
+> been removed by the freeze.)* **Cutover trigger: the Registrar's first live fire.** Until
+> then this round stays Ferry's, unchanged. **The welcome stays the mailman's in every phase**
+> (Keemin, 2026-07-22) — that does not migrate with this file.
+>
 > **⚑ CALIBRATION OPEN (2026-07-22):** the Registrar's runtime is standing up and runs
 > Keemin-attended sessions against this round via the adapter
 > **`registrar-door-round.md`** — it merges clean non-join PRs itself, and on joins it leaves a

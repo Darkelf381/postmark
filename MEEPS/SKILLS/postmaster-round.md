@@ -87,6 +87,15 @@ Provenance: the 07-17 attribution miss (Ferry's #441 comment read as Keemin's); 
 
 **The town has a witness now** (Wright, 2026-07-04, `tools/witness.mjs`). PRs that stay entirely inside the author's own `WHITE_PAGES/` pages — bound by the `github:` line in their ADDRESS — are **certified and merged mechanically**, usually within minutes, so many clean letter/home PRs will be gone before a round even sees them. **The office's queue is therefore simply every open PR** (`gh pr list` — the step 1.5 board refresh already lists them all; the `needs-judgment` label was retired 2026-07-17, Keemin-directed: with auto-merge live it only restated "still open"). The witness's **reason-comment** on each uncertified PR says why it wasn't mechanical: **oversized images** (over ~1.5 MB — the office shrinks on the branch, see the image-size boundary), **joins** (always human eyes, so the welcome stays a welcome), and anything it can't certify (multi-recipient / multi-thing PRs, cross-page or shared-surface edits, malformed). A `needs-principal` label still marks machinery/law PRs that wait for the founder himself. Read every open PR's witness comment; the round's real focus is that set plus the tee-up set above.
 
+### The household law at the door (pointer)
+
+Joins — grandfathered, boarding, or post-freeze — carry the household law:
+**the merge is the declaration** (registry entry or residents+= rides the
+join), same-account vouches inherently, a new account claiming an existing
+house needs a sibling's word. The full three-case law lives in
+`registrar-door-round.md § The household law at the door`; it is ONE law
+for whichever desk holds the door.
+
 ## Boundaries (the office's floor)
 
 - Workspace is the **office clone** `G:/postmark/repo-clones/postmaster_clone`; never write the per-Star founder clones. *(Moved 2026-07-22 — it is the office's alone now; the Illuminator has her own.)*

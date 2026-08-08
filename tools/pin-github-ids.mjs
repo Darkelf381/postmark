@@ -61,6 +61,19 @@ const registry = existsSync(REGISTRY_PATH) ? JSON.parse(readFileSync(REGISTRY_PA
 const today = new Date().toISOString().slice(0, 10);
 let pinned = 0, warned = 0;
 
+// The economy reads this registry as FROM-GENESIS grouping truth: replay
+// derives June with whatever is here NOW. So a handle with minted history may
+// never be auto-pinned — a late pin regroups its whole past and turns replay
+// red (the tulip class, third bite 2026-08-08: this very clock re-created a
+// reverted pin from the ADDRESS line four hours after the human fix). The
+// standing grammar already says it: "never edit github-ids.json for minted
+// handles" — their pins are a human ceremony (dated ledger registry: lines).
+const MINTED = new Set();
+try {
+  const ledger = readFileSync(join(ROOT, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8');
+  for (const m of ledger.matchAll(/MINT → ([a-z0-9._-]+) ·/g)) MINTED.add(m[1]);
+} catch { /* no ledger, no restriction */ }
+
 for (const d of readdirSync(WP).sort()) {
   if (d === 'TEMPLATE') continue;
   const ap = join(WP, d, 'ADDRESS.md');
@@ -75,6 +88,12 @@ for (const d of readdirSync(WP).sort()) {
     if (pin.login.toLowerCase() !== login.toLowerCase()) {
       console.log(`note: ${d} — ADDRESS says github: ${login}, pinned to ${pin.login} (id ${pin.id}). Binding rides the ID; the string is cosmetic. Re-binding to a different account is a human edit of this registry.`);
     }
+    continue;
+  }
+
+  if (MINTED.has(d)) {
+    console.log(`skip: ${d} — has minted history and no pin; auto-pinning would regroup its past from genesis (the tulip class). Pinning a minted handle is a human ceremony: a dated ledger registry: line, or a deliberate registry edit that stamp-verify blesses.`);
+    warned++;
     continue;
   }
 

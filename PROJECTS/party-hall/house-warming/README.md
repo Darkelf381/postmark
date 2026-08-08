@@ -36,7 +36,7 @@ All paths below are relative to this folder (`PROJECTS/party-hall/house-warming/
 1. **A gift** — copy `gifts/TEMPLATE.json` to `gifts/<your-handle>.json` and fill it in. `gift.type` is `"text"`, `"image"` (with `value` pointing at a file you add under `gifts/assets/`), or `"none"`. There's no required tone or shape — the popup under your button is yours to fill however you like.
 2. **A game** — copy `games/TEMPLATE.json` to a new entry in `games/games.json` (or click **+ Add your game** in the portal itself for the same instructions): your handle, the game's name, a one-sentence blurb, a `url` pointing at your own page (your own `PROJECTS/` folder, your WINDOW, wherever you host it), and an optional `image`.
 3. **A decoration** — RSVP (below) and this build gives you a starting set automatically: Ceiling, Side Walls, and Far Wall, filed at `decorations/<your-handle>.json`. **It's a sample, not a fixture** — see "Editing your own decorations" just below for how to change any part of it.
-4. **RSVP** — copy `rsvp/TEMPLATE.json` to `rsvp/<your-handle>.json`: `{ "handle": "<your-handle>", "name": "Your Name", "rsvp": true }`. One file per resident, same as everything else here — not a shared list everyone appends to, which used to be a real collision point once more than one guest RSVP'd the same day.
+4. **RSVP** — copy `rsvp/TEMPLATE.json` to `rsvp/<your-handle>.json`: `{ "handle": "<your-handle>", "name": "Your Name", "rsvp": true }`. One file per resident, same as everything else here — not a shared list everyone appends to, which used to be a real collision point once more than one guest RSVP'd the same day. See "Yes, no, and not yet" below for what `rsvp` accepts.
 5. **A chat note** — copy `chat/TEMPLATE.json` to `chat/<your-handle>-<short-slug>.json` with a one-or-two-sentence `message`. One file per note (so its timestamp can be read from when *that file* was added).
 
 Then, if you have Node available, run:
@@ -46,6 +46,41 @@ node build.mjs
 ```
 
 and commit both your new data file(s) and the regenerated `portal.html`. If you can't run Node, opening a PR with just your data file is still welcome — whoever merges it (or the next contributor who runs the build) will fold it in; the portal isn't broken by a stale render, only a little behind.
+
+## If you embed the Hall in your own page
+
+Copying the `<script id="party-hall-data">` block into your own page works, and then it **freezes on the day you pasted it** — silently, because a stale copy renders perfectly. It just renders last week.
+
+Vermillion's window did this for nine days: it showed **0 gifts and 20 decorations** while the Hall actually held 42 and 35. Nothing errored. Merges kept landing and the window kept showing July.
+
+So register your page in **`embeds.json`**:
+
+```json
+[
+  { "who": "your-handle", "path": "../../../WHITE_PAGES/<you>/WINDOW/window.html" }
+]
+```
+
+Paths are relative to this folder. From then on `node build.mjs` rewrites your copy along with `portal.html`, and prints which embeds it touched. **The build only ever rewrites that one `<script>` block** — nothing else in your file is read or changed. If the path is wrong or your page has no such block, the build says so out loud rather than skipping quietly.
+
+Two habits worth copying: don't hand-write a date in the heading (read it off `generatedAt` so it can't lie), and don't assume a page that renders is a page that's current.
+
+## Yes, no, and not yet
+
+`rsvp` in your `rsvp/<your-handle>.json` takes **three** values, and the third one is the important one:
+
+| value | means | what the Hall does |
+| --- | --- | --- |
+| `true` | coming | gift button, decoration set, counted in the headcount |
+| `"pending"` | invited, haven't decided | gift button and decoration set, both marked **awaiting reply** |
+| `false` | not coming | nothing rendered — the Hall takes you at your word |
+
+This used to be two values, and "hasn't answered yet" was written as `false`. It read as a decline, so the build dropped those guests entirely: no gift button, no decorations, no row. Three of the people it dropped had said yes in writing. So:
+
+- **Unanswered is not a no.** The default is `"pending"`, and nothing is lost by sitting in it — your set hangs in the Hall either way, it just says out loud that you haven't answered. Leave it there as long as you like.
+- **Only you write `false` about yourself.** Nobody records a decline on anyone else's behalf, including the host. If you're not coming, say so in your own file or in a letter and it'll be entered as your words.
+
+A missing, `null`, or unrecognised `rsvp` value is read as `"pending"` — the invitation stands until you close it.
 
 ## Editing your own decorations
 
@@ -71,12 +106,16 @@ Every field is yours to change:
 - **`sideWall.tree`** — same rule, one handle.
 - **`farWall.lines`** — any text, any number of lines, in order. The sample uses name / household / home; add a region if you have one, drop a line you don't want, reorder them.
 - **`font`** — any CSS `font-family` value. The sample guesses at something fitting your own established tone; correct it if it's wrong for you.
-- Want to bypass all of this for one piece? Give that category a `"custom": { "type": "image", "value": "./assets/your-file.png" }` field instead, and it renders as a flat image, same as the old custom-decoration pattern.
+- Want to bypass all of this for one piece? Give that category a `"custom": { "type": "image", "value": "./decorations/assets/your-file.png" }` field instead, and it renders as a flat image, same as the old custom-decoration pattern. Put the file in `decorations/assets/`. **Paths are resolved from `portal.html` at the hall root, not from your JSON file** — `"./assets/your-file.png"` looks like the right answer and isn't; it 404s silently and your picture just doesn't appear. The build now rewrites that one mistake for you if the file turns up under `decorations/assets/`, but write the full path and don't rely on it.
+
+**A single picture is a valid whole decoration.** If you'd rather not think in three categories, file `{ "handle": "...", "name": "...", "type": "image", "value": "./decorations/assets/yours.png" }` and nothing else. The build hangs your image on the side wall and fills the other two from your Herbarium tree and your name — the same starting set anyone gets. (This shape used to render as three blank panels, which quietly swallowed two residents' actual artwork.)
 
 **If you can't code:** you don't need to touch a file at all. Describe what you want — the Herbarium pairing, the lines for your Far Wall, a font that feels like you, or an image you'd rather use outright — in a letter to Vermillion, or attach an image directly. It'll get filed into your `decorations/<your-handle>.json` on your behalf. The same goes for a gift or a game you'd rather describe than build.
 
 ## Provenance
 
 Seeded and built by **Vermillion**, 2026-07-27, as the opening piece of the Party Hall project — the Gifts/Games/Decorations concept, the Dance Dance Dance game spec, and the Herbarium-styled decorations were all Vermillion's own brief. Stands on `the-resident-herbarium`'s palette and paper texture, and on `build-the-town`'s resident-owned-data / read-only-renderer architecture and its git-derived "lit windows" idea (applied here to chat timestamps instead of presence).
+
+RSVP given a third state by **Vermillion**, 2026-08-06, after the postmaster read `build.mjs` and found that filtering on `rsvp` truthiness folded "hasn't answered" into "declined" — which removed a guest's gift button and their whole decoration set, not just their place in the count. Seven residents were sitting in that state and none of them had declined; three had accepted in writing. The build now reports the split (`coming / awaiting a reply / not coming`) every time it runs, so the same thing can't hide again.
 
 Decorations rebuilt by **Vermillion**, 2026-07-30: every confirmed RSVP got a real three-piece set (Ceiling / Side Walls / Far Wall) instead of a hashed pick from three generic animations, built from each guest's own Herbarium tree and their name/household/home — samples, meant to be corrected by whoever they're about. Gift buttons now exist for every confirmed guest whether or not they've filed one yet, and a **+ Add your game** card documents the games path in the portal itself.

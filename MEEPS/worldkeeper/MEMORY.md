@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: memory-index
-last-substantive-update: 2026-08-06
+last-substantive-update: 2026-08-08
 ---
 
 # MEMORY — the Worldkeeper
@@ -13,9 +13,9 @@ last-substantive-update: 2026-08-06
 ## Distilled state
 
 - You are **the Worldkeeper** (meep-id `worldkeeper`), the fourth room in this dorm alongside the Postmaster, the Illuminator, and the Registrar; Meep-tier; **nameless until the town votes** (the Illuminator precedent). See `identity.md`.
-- **Lived experience:** **`settlement/S2` through `settlement/S18` were blessed by the keeper's own lanes and proved at the live artifact.** S2 published nineteen home marks; S3 was the first quiet crossing; S4 was the first weighted world; S5 was the first evening crossing; S6 published Rei's newly backed white flower; S7 certified the spectator act-as lens and armed-walk painting; S8 proved the background guard overnight; S9 published Rei's thyme gift; S10 was the first same-sha no-op; S11 published Rei's free home brush; S12 certified the great convergence; S13 separated same-output bytes from same-sha; S14 folded Ferry's post office and two Little M walks; S15 caught and refused a main race; S16 crossed after two money-gate refusals and published Little Bird's bowl plus six Vermillion places; S17 certified five post-bless invitation parcels. **S18 first refused eleven owed mint lines, then crossed after repair and published Little Bird's backed pot. S19 blessed a clean machinery-only world advance and landed its site pin, but GitHub Actions disabled the keeper user before a deploy receipt could exist.** The parcel drain was not entered. Fourteen zero-escrow commons remain drafted; nothing was held or quarantined. Daily: `memory/daily/2026-08-06.md`.
+- **Lived experience:** **`settlement/S2` through `settlement/S23` have now been blessed by the keeper's own lanes; S19's deploy receipt arrived through S20, and every later blessing is proved at the live artifact.** S2 published nineteen home marks; S3 was the first quiet crossing; S4 the first weighted world; S6 published Rei's white flower; S8 proved the background guard; S9 published Rei's thyme gift; S10 was the first same-sha no-op; S11 published Rei's free home brush; S12 certified the great convergence; S13 separated same-output bytes from same-sha; S16 crossed after two money refusals; S18 crossed after mint repair; S20 healed S19's deploy gap; S21 published Lupi's two free home admissions; S22 published thirteen marks after a repaired money refusal. **S23 survived two race restarts, certified the crossing voyage without resident admissions, and proved all 208 tests plus exact live bytes.** Nineteen zero-escrow commons remain drafted; nothing was held. Daily: `memory/daily/2026-08-08.md`.
 - **Your hardest-won lesson so far:** a pin is not delivered when the edit, commit, or build exists. Custody ends at the live artifact: derive from exact Git objects → when the sha changed, commit the pin, `pull --rebase` over the sync-atlas race, and normal-push through the keeper's key → verify remote, CI, and live bytes. Never force. Re-fetch after the sweep: S15 caught founder main moving underneath a clean local settlement and discarded it before blessing. A walk-ledger-only commit is still new canon and new package bytes even when the derived viewer and world-state remain byte-identical. When consecutive blessings peel to the same immutable sha, an exact existing pin is a valid no-op: do not manufacture a commit or deploy, but still prove the clean build against live bytes. On this Windows clone, make package bytes from `git -c core.autocrlf=false archive`, then run `npm pack` with that extracted archive as the actual working directory; the lock integrity is the receipt.
-- **Where I left off:** **`settlement/S19`** peels to world main `4b65d127`; its atomic draft refs and site pin commit `056567aa` landed. The sweep published or unpublished nothing, left fourteen zero-escrow commons drafted, and rebased eight sketchbooks. Exact package validation, 174 world tests, 39 site tests, and the 2,006-page build were green. Deployment custody is incomplete: no push run appeared and manual dispatch returned HTTP 422, "Actions has been disabled for this user." Live world-state equals the exact S19 bytes but is unchanged from S18, so it cannot prove the changed package machinery deployed. The parcel drain was not entered and its remainder was not freshly derived (fourteen last known). Keemin or Wright must restore an Actions-capable identity or founder-dispatch current site main before this pin can be called delivered. The next crossing enters through **`MEEPS/SKILLS/worldkeeper-crossing.md`** and begins from the first gate.
+- **Where I left off:** **S23 is canon at `75965382`.** It replayed money green, published and unpublished zero marks, rebased nine sketchbooks, pinned site commit `8eeea497`, completed deploy `31272152611`, and proved exact live bytes. The post-bless drain then seated Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas Marginalia, and Wren at unblessed world commit `acb5712d`; S24 must certify that input. Nine parcel notices are now in my outbox (four from the S22 drain, five from S23). Four parcel cases remain, all founder/Illuminator judgment boundaries: Caelum Reeves, Claran, Drift, and Lassi. None is a hold.
 
 ## What is true about your situation on the day this was written
 
@@ -25,7 +25,7 @@ Kept short and factual so a later reader can tell what was known at the start fr
 - **Money seals at act-time** — stake lines are real the moment the door accepts them; you read the tally, you never move money. One money ledger (`WHITE_PAGES/stamp-ledger.md`, town repo); the world parses no money — you derive via the town's own tool (`tools/world-stake.mjs --escrow`) and hand the world finished weights.
 - **Dials:** `ECONOMY-DIALS.json`, town root. k=5 breadth-bonus (read-side); no household cap; self-stake allowed; zero unstake friction. Dials are Keemin's to set, yours to apply.
 - **The dammed river (2026-07-28) — DRAINED the same day, historical.** The build wave that waited on local branches merged in the founder-carried drain and blessed as `settlement/S1`; `memory/drain-manifest.md` is the record of what crossed. No record branches await another inaugural drain. The separate post-bless parcel-confirmation drain adopted 2026-08-04 is current round work; its exact boundary lives only in `memory/topics/the-settlement.md`.
-- **Holds list: empty through S19.** No resident mark has been held or quarantined. Fourteen unbacked commons marks remain drafted by eligibility. Little Bird / Drift and Caelum Reeves are parcel-drain exclusions under standing law. S19 did not enter the parcel drain because its deploy receipt was red; that custody failure is not a resident hold. Ledger: `memory/topics/holds-ledger.md`.
+- **Holds list: no resident mark held through S23.** Nineteen unbacked commons marks remain drafted by eligibility. Little Bird / Drift, Caelum Reeves, Claran, and Lassi remain parcel-drain judgment boundaries; none is a settlement hold. Ledger: `memory/topics/holds-ledger.md`.
 - **Your GitHub account exists:** `postmark-worldkeeper` (id 310326317, provisioned 2026-07-28;
   renamed after your naming vote). **The exact hands:** your clone set at
   `G:/postmark/repo-clones/worldkeeper_clone/` (town + world + site) carries your git identity
@@ -36,12 +36,11 @@ Kept short and factual so a later reader can tell what was known at the start fr
   your pin pushes ride **your own write deploy key** — wired 2026-07-29, private key at
   `G:/Starstory/.local/secrets/worldkeeper-site-deploy-key`, your site clone's origin is
   SSH with `core.sshCommand` pinned to it; nothing to do. Mind the sync-atlas cron
-  (commits every ~30 min): commit your pin, `pull --rebase`, then push. **Current breakage,
-  2026-08-06:** Git pushes still authenticate, but GitHub returned HTTP 422, "Actions has been
-  disabled for this user," when the keeper token dispatched the deploy workflow; the preceding
-  deploy-key push produced no run either. This is an identity/Actions custody failure, not a pin
-  or build failure. A founder must restore Actions or dispatch the already-landed site main by
-  an Actions-capable lane; never claim deploy from matching world-state bytes alone.
+  (commits every ~30 min): commit your pin, `pull --rebase`, then push. The temporary Actions
+  identity failure on S19 cleared by S20: the exact keeper pin push produced green deploy run
+  `31153235627`, S21 repeated the healthy route as run `31205979580`, and S22 as run
+  `31263517039`, and S23 as run `31272152611`. Keep CI conclusion and live-byte equality as separate mandatory receipts;
+  never infer deployment from matching derived bytes alone.
 
 ## Topic shelves (the router)
 

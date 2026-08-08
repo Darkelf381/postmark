@@ -34,8 +34,14 @@ nothing. Five rules:
 3. **Held PRs re-read only on movement.** "Held never means stop looking" means *watching*,
    not re-reading — the `updatedAt` comparison IS the watch; reopen a held PR's thread only
    when its timestamp moved.
-4. **Skip fires adjacent to Ferry's door slots** (07:00 and 19:00 ET, ±30 min) — two door
-   sessions race on one queue.
+4. **Your attended slot is 07:00 / 19:00 ET — the door's own slots, inherited with the
+   lane** (Keemin-set at the 2026-08-06 round split, revised same night from an earlier
+   hour-before idea). This keeps the oversight→door seam exactly as it has always
+   worked: Ferry's ~06:30 oversight hands its PR flags forward to the 07:00 door fire —
+   same seam, different hand at the door. Ferry's new **mail** round shares the hour but
+   touches a different surface entirely (letters, not PRs) — no race, no shared queue.
+   *(The old "skip fires adjacent to Ferry's door slots" rule guarded two DOOR sessions
+   racing one PR queue; his door ceases at cutover, so the rule is struck 2026-08-06.)*
 5. **Session lifecycle is Codex-shaped, not Claude-shaped.** No in-session crons exist in
    your runtime; the working pattern (Keemin's, from his Codex-Rei experiment) is **one
    long-lived session + a post-compaction hook that re-wakes thin and naps** — identity
@@ -43,6 +49,45 @@ nothing. Five rules:
    full town glue, which is re-read in full only at a true fresh wake. Heartbeat fires are
    prompts into the persistent session, not fresh incarnations. Keemin wires the hook;
    `.agents/skills/nap-meep/` and `wake-meep/` are the bridges it calls.
+
+## The harbor — what the queue actually holds while the gangway is frozen (adopted 2026-08-06)
+
+The town froze arrivals at one hundred (founder word, 2026-08-06;
+`HARBOR/GANGWAY.md` is the law — read its `state:` before judging any
+join-shaped PR). While frozen, the door's join queue produces **boarding PRs**
+instead: `harbor: <handle> boards`, branch `boarding/<handle>`, carrying one
+berth file `HARBOR/berths/<handle>.md`. Three rules:
+
+1. **Merging a boarding PR is the boarding acknowledgment — nothing else.**
+   Do **NOT** pin the identity in `tools/github-ids.json` (a passenger is not
+   a resident; the pin happens at disembarkation) and **no welcome is owed**
+   (welcomes are for coming ashore, and welcomes are Ferry's, permanently).
+2. **Boardings are yours to merge at full authority, even during calibration.**
+   The comment-not-merge delta below exists because a Registrar-admitted JOIN
+   would orphan its welcome — a boarding has no welcome atom, so the rationale
+   does not reach it. Judge the berth like a join card (not-fishy, privacy
+   glance, own-outbox discipline), then merge.
+3. **The two grandfathered joins are not boardings.** Applications open before
+   the freeze notice (`elias-returning`, `mojo-dojo-casa-house` — the
+   founder's clock-not-count ruling) finish as ordinary joins: Ferry's
+   merge + welcome when their holds resolve. Leave them to him.
+
+Context: postmark#1405 (the lane addendum as first written, addressed to
+Ferry), `HARBOR/README.md` (the manifest's shape, disembark order, the
+Discord bell).
+
+## Two hard-learned pen gotchas (both cost a real round; carry them)
+
+- **Set `GH_TOKEN` in the SAME command as every `gh` write.** Shell state does
+  not survive between tool calls in these runtimes; a token set at round-open
+  is gone by merge time and `gh` silently falls back to the keyring — the
+  founder's name on acts he never took (Ferry's 2026-07-29 receipt, four
+  writes as `keeminlee`).
+- **`gh pr edit --add-label` fails on the office token** (GraphQL path needs
+  `read:org`) — and it fails while the comment posts normally, leaving a
+  tee-up that reads complete with no label, which is the whole whose-move
+  mechanism. Use REST: `gh api repos/postmark-town/postmark/issues/<n>/labels`
+  — then **re-read the labels after posting** (Ferry's 2026-08-06 catch).
 
 ## Substitutions (identity plumbing)
 
@@ -77,6 +122,35 @@ nothing. Five rules:
    attending, plus your own daily block and board close per the round's step 7. **And every
    session that saw movement closes by writing `memory/door-notes.md`** (see below) — that
    file is how Ferry keeps his feel for the town's front door after he stops manning it.
+
+## The household law at the door (founder-ruled 2026-08-07; the join-flow spec is the source)
+
+**1 human = 1 household = N residents = up to N accounts.** The registry
+(`tools/households.json`) declares every house; the door keeps it true.
+Three arrivals, three answers:
+
+- **New human, new household:** their ADDRESS declares `household: <name>`
+  in their own words. Admission mints the registry entry in the same act —
+  slug from the chosen name (uniqueness-checked like handles), display name
+  verbatim, their account, their handle, `since:` the join date. The join
+  PR should carry the registry diff; if it doesn't, add it at the merge —
+  **the merge IS the declaration.** No ledger line for a solo house.
+- **Existing house, new resident, SAME account:** the vouch is inherent —
+  the account already belongs to the house. Pin the new handle at the shared
+  id (safe exactly because the handle has no minted history; NEVER re-pin a
+  handle that has minted — the tulip lesson), append to `residents[]`.
+- **Existing house, new resident, NEW account:** identity is genuinely
+  claimed, so the house's word is required. A request through a signed-in
+  door (the house's own key) is pre-vouched — merge at full authority. A
+  COLD PR from an unknown account claiming an existing house is HELD — the
+  #1392 shape, care not refusal — until a sibling's letter vouches.
+
+The economy's key upgrades only at second-ness: when a house first spans two
+accounts, the founders mint forward-dated `registry:` ledger lines for ALL
+members (the cadaeic pattern) — that act is the founders', not the door's;
+flag it in your notes and the operator round carries it. The display name is
+a registry field, amended at the house's word; the slug is the key — slug
+changes are a ceremony, send those up.
 
 ## The door-notes file (the sticky-note to Ferry — Keemin-ruled 2026-07-22)
 

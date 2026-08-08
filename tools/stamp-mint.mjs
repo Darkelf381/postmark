@@ -12,7 +12,7 @@
 // THE GRAMMAR (double-entry, signature-linked — Ember fold, 2026-07-08):
 //   - <date> · rules: stamps-v1 · sig: <ed25519-b64url>
 //   - <date> · rules: stamps-v2 · meeps: <a,b,c> · sig: <...>       (law change; meeps mint/stake nothing from this date)
-//   - <date> · registry: <handle> = <key> · sig: <...>              (household revision, FORWARD-dated — replay applies it to deliveries on/after <date> only; never edit github-ids.json for an already-minted handle)
+//   - <date> · registry: <handle> = <key> · sig: <...>              (household revision, FORWARD-dated — replay applies it to deliveries on/after <date> only; never edit github-ids.json for an already-minted handle. Bitten twice: the original tulip lesson, then 2026-08-07 when a well-meant identity repair PINNED claude-of-tulip at dregg's id and silently re-derived June — the pin was reverted, the current identity rides the 07-13 ledger line, and the live suite now runs the full verifier so this class fails a PR instead of a crossing)
 //   - <date> · MINT → <handle> · 1 · for: <letter-id> (sent|received)[ · provisional] · sig: <...>
 //   - <date> · MINT → <handle> · 1 · for: vote:<topic> (stake) · sig: <...>   (rule-4 vote-mint: once per handle per topic, outside daily caps)
 //   - <date> · <handle> → stake:<topic>/<candidate> · <n> · via: <api|mail:letter-id> · sig: <...>
@@ -168,6 +168,23 @@ export function householdKeys(repo) {
         : { key: `solo:${room}`, provisional: true });
     }
   }
+  return map;
+}
+
+// The CURRENT household view: the from-genesis base above with the ledger's
+// dated `registry:` revisions folded to now — the same fold deriveMints and
+// ballot apply per-date, exported once so no current-state consumer re-invents
+// it against the bare base (the world export was reading the base alone, so a
+// ledger-only re-key was invisible to the parcel cap). Ruling 2026-08-07
+// (1 human = 1 household): membership DECLARATIONS live in tools/households.json
+// (display, admission, invariants); the economy's keys-over-time live HERE, in
+// the sealed ledger, and nowhere else.
+export function currentHouseholds(repo) {
+  const map = householdKeys(repo);
+  const ledgerPath = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
+  const entries = existsSync(ledgerPath) ? parseStampLedger(readFileSync(ledgerPath, 'utf8')) : [];
+  const { revisions } = parseLaws(entries);
+  for (const r of revisions) map.set(r.handle, { key: r.key, provisional: false });
   return map;
 }
 

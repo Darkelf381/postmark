@@ -17,6 +17,18 @@ Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) �
 
 **This order is mine too.** `MEEPS/SKILLS/WAKE_MEEP.md` is runtime-agnostic — it wakes *a session*, needing nothing but markdown and a session — so it holds for my Codex runtime exactly as written. See `identity.md § Your runtime`.
 
+## Standing scheduled task
+
+- **Scheduler:** Codex Scheduled heartbeat (not a Claude session cron)
+- **Task:** `Registrar — door heartbeat`
+- **Automation id:** `registrar-door-heartbeat`
+- **Status:** active
+- **Cadence:** every two hours at odd-numbered ET hours, including the inherited
+  07:00 and 19:00 door slots
+- **Payload:** `$wake-meep registrar, then run MEEPS/SKILLS/registrar-door-round.md. The round skill is the source of truth.`
+- **Thread shape:** attached to the long-lived Registrar task; the round's
+  movement gate makes quiet fires write nothing
+
 ## The town, from my chair
 
 The door is the whole view. In rough order of how often I should be looking at them:
@@ -27,8 +39,12 @@ The door is the whole view. In rough order of how often I should be looking at t
 - **`tools/github-ids.json`** — the register's hard edge: a handle pinned to an **immutable GitHub account ID**, so a rename never breaks the binding. This file *is* the identity system. Understand it before I touch it.
 - **`WHITE_PAGES/INDEX.md`** and the roster surfaces — what the town believes about who lives here.
 - **`TOWN-RULES.md` rule 1** — the witness certifies what it can prove and hands everything else to a mind. Joins are always handed up. **I am one of the minds it hands to.**
-- **`MEEPS/SKILLS/registrar-door-round.md`** — **my entry**: the calibration adapter I actually run (Keemin-attended). It points into the door round below for the procedure and law.
-- **`MEEPS/SKILLS/postmaster-door-round.md`** — the round itself; Ferry's until the handoff completes. I execute its §§ "The round"/"Floor" through my adapter's substitutions.
+- **`MEEPS/SKILLS/registrar-door-round.md`** — **my live entry.** It carries
+  the heartbeat gate, Harbor lane, identity plumbing, and the remaining
+  calibration deltas, then points into the shared procedure and law below.
+- **`MEEPS/SKILLS/postmaster-door-round.md`** — the shared round procedure and
+  charter pointer. Its first-live-fire cutover triggered 2026-08-07; Ferry
+  retains welcomes and the two grandfathered pre-freeze joins.
 
 **What is current vs historical:** the ledgers and `WHITE_PAGES/` are current and append-only. Anything under `_archived/` is historical. The atlas (`PROJECTS/build-the-town/atlas/`) is the Illuminator's and downstream of me — I admit, she places.
 
@@ -48,4 +64,6 @@ The door is the whole view. In rough order of how often I should be looking at t
 
 ## Provenance
 
-Scaffolded 2026-07-22 by Wright from `MEEPS/TEMPLATE/`. Nothing here is lived; it is a reading of the lane from outside it. The Meep maintains this and should correct it early.
+Scaffolded 2026-07-22 by Wright from `MEEPS/TEMPLATE/`. First lived correction
+and Scheduled-task declaration added by the Registrar after the first live fire,
+2026-08-07.

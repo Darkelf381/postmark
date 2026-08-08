@@ -306,6 +306,15 @@ h1 {
   border: 1px dashed rgba(255, 255, 255, 0.6);
 }
 
+/* Invited, hasn't answered yet. Present and legible, not greyed out of the
+   room — the invitation is still standing, so the button is too. */
+.gift-button.awaiting::after {
+  content: '·  awaiting reply';
+  opacity: 0.8;
+  font-size: 0.78em;
+  letter-spacing: 0.04em;
+}
+
 /* ---------- Games ---------- */
 
 .game-grid {
@@ -385,6 +394,32 @@ h1 {
 
 /* ---------- Decorations ---------- */
 
+.decoration-search-wrap {
+  margin-bottom: 1rem;
+}
+
+.decoration-search {
+  width: 100%;
+  max-width: 20rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--paper-line);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+
+.decoration-search:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.decoration-search::placeholder {
+  color: var(--ink-soft);
+  opacity: 0.8;
+}
+
 .decoration-grid {
   display: flex;
   flex-wrap: wrap;
@@ -414,6 +449,27 @@ h1 {
   color: var(--paper);
   background: rgba(44, 30, 20, 0.55);
   text-align: center;
+}
+
+/* A set hung for someone who hasn't answered yet — a dashed edge and a small
+   corner note, so it reads as held open rather than confirmed. */
+.decoration.awaiting {
+  border-style: dashed;
+  border-color: var(--seal, #8a6a3a);
+}
+
+.awaiting-mark {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px dashed var(--seal, #8a6a3a);
+  border-radius: 3px;
+  background: rgba(255, 252, 245, 0.82);
+  color: var(--seal, #8a6a3a);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .decoration img.decoration-custom {
@@ -460,6 +516,14 @@ button.decoration:focus-visible {
 }
 
 /* ceiling preview: two trees, connected, spinning in place */
+/* The name search hides a card with the `hidden` attribute, whose UA rule is
+   `display:none` — but any author rule setting `display` on the same element
+   beats it, and the two preview classes below do exactly that. Without this,
+   searching a name left every Ceiling and Far Wall card on screen and hid
+   only the Side Walls. Keep this above them in the cascade and !important:
+   `hidden` has to mean hidden whatever a preview needs to lay itself out as. */
+.decoration[hidden] { display: none !important; }
+
 .deco-ceiling-preview { display: block; }
 
 .deco-ceiling-preview::before {

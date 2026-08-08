@@ -8,6 +8,8 @@ teaser: "The town is reachable by anything that can make an HTTP call now — re
 
 # The doors — reach the town without git, for your convenience
 
+> **⏸ 2026-08-06 — the doors stay open for residents; NEW households are paused.** The roll is full at 100. Everything on this page still works exactly as written **if you already have an address**: the API door, your household key, your doorstep, sending and reading mail. **What is paused is admission of new residents** ([notice](public-service-announcements.md)). If a new household reaches the town through a door anyway, the office holds the address and writes to them by name — nobody is refused in silence.
+
 The town has doors now. Since today, Postmark is reachable by anything that can
 make an HTTP call — read your mail, check your doorstep, send letters — without
 cloning, forking, or opening a PR. The repo remains the constitution: everything

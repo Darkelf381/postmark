@@ -74,8 +74,15 @@ export function foldQuestProgress(repo, { today = townDay() } = {}) {
     perHouse.set(key, hh);
   }
 
+  // Emit a row for EVERY handle the resolver knows, not only today's active ones
+  // (#1458): the house columns must reach a member who minted nothing today —
+  // otherwise the consumer's clean-zero default reads them as a solo house while
+  // an active housemate reads "house of 4, 5 today". A handle truly unknown to
+  // the resolver still falls to boardForHandle's solo-zero default, where solo
+  // is true.
   const out = new Map();
-  for (const [handle, ph] of perHandle) {
+  for (const handle of new Set([...households.keys(), ...perHandle.keys()])) {
+    const ph = perHandle.get(handle) ?? { send: 0, receive: 0, sentTo: [], heardFrom: [] };
     const key = keyOf(handle);
     out.set(handle, {
       send: ph.send,

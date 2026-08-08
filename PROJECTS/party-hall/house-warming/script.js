@@ -115,8 +115,13 @@
     gifts.forEach(function (gift, i) {
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'gift-button' + (gift.placeholder ? ' placeholder' : '');
+      btn.className = 'gift-button' +
+        (gift.placeholder ? ' placeholder' : '') +
+        (gift.rsvpState === 'pending' ? ' awaiting' : '');
       btn.textContent = gift.buttonLabel || (gift.name || gift.handle) + '’s gift';
+      if (gift.rsvpState === 'pending') {
+        btn.title = (gift.name || gift.handle) + ' hasn’t answered the invitation yet — the button waits with the door open';
+      }
       btn.style.background = gift.buttonColor || PALETTE[i % PALETTE.length];
       btn.addEventListener('click', function () { openGiftModal(gift); });
       giftGrid.appendChild(btn);
@@ -560,14 +565,20 @@
     decoGrid.appendChild(box);
   }
 
-  function addCard(entryHandle, displayName, font, type, piece) {
+  function addSearchName(box, displayName) {
+    box.dataset.searchName = String(displayName || '').toLowerCase();
+  }
+
+  function addCard(entryHandle, displayName, font, type, piece, state) {
     var box = document.createElement('button');
     box.type = 'button';
-    box.className = 'decoration';
+    box.className = 'decoration' + (state === 'pending' ? ' awaiting' : '');
     var key = entryHandle + ':' + type;
     box.dataset.wallType = type;
     box.dataset.wallKey = key;
-    box.title = 'Hang ' + displayName + '’s ' + CARD_LABEL[type].toLowerCase() + ' piece in the Hall';
+    addSearchName(box, displayName);
+    box.title = 'Hang ' + displayName + '’s ' + CARD_LABEL[type].toLowerCase() + ' piece in the Hall' +
+      (state === 'pending' ? ' — ' + displayName + ' hasn’t answered the invitation yet' : '');
     box.addEventListener('click', function () { hangPiece(type, key, piece, font); });
 
     if (piece.custom && piece.custom.type === 'image' && piece.custom.value) {
@@ -585,6 +596,15 @@
     label.textContent = displayName + ' — ' + CARD_LABEL[type];
     box.appendChild(label);
 
+    // An unanswered invitation still gets its set hung in the panel — it just
+    // says so out loud, so the Hall never overstates who's coming.
+    if (state === 'pending') {
+      var mark = document.createElement('div');
+      mark.className = 'awaiting-mark';
+      mark.textContent = 'awaiting reply';
+      box.appendChild(mark);
+    }
+
     decoGrid.appendChild(box);
   }
 
@@ -592,24 +612,51 @@
   // own set — always available regardless of who's RSVP'd.
   DEFAULT_CARDS.forEach(addDefaultCard);
 
+  // ---------- search: filter cards by the guest's name ----------
+  // The three house defaults carry no dataset.searchName, so any non-empty
+  // query hides them — this is a search for *someone*, and they aren't
+  // anyone. An empty query brings everything back.
+  var decoSearch = document.getElementById('decoration-search');
+  var decoNoMatches = document.getElementById('decoration-no-matches');
+  function wireDecorationSearch() {
+    if (!decoSearch) return;
+    var allCards = Array.prototype.slice.call(decoGrid.querySelectorAll('.decoration'));
+    decoSearch.addEventListener('input', function () {
+      var q = decoSearch.value.trim().toLowerCase();
+      var anyVisible = false;
+      allCards.forEach(function (card) {
+        var name = card.dataset.searchName || '';
+        var matches = q === '' || name.indexOf(q) !== -1;
+        card.hidden = !matches;
+        if (matches) anyVisible = true;
+      });
+      if (decoNoMatches) decoNoMatches.hidden = anyVisible;
+    });
+  }
+
   if (decorations.length === 0) {
     decoEmpty.hidden = false;
   } else {
     decoEmpty.hidden = true;
     decorations.forEach(function (deco) {
       var name = deco.name || deco.handle;
-      addCard(deco.handle, name, deco.font, 'ceiling', deco.ceiling || {});
-      addCard(deco.handle, name, deco.font, 'sideWall', deco.sideWall || {});
-      addCard(deco.handle, name, deco.font, 'farWall', deco.farWall || {});
+      var state = deco.rsvpState;
+      addCard(deco.handle, name, deco.font, 'ceiling', deco.ceiling || {}, state);
+      addCard(deco.handle, name, deco.font, 'sideWall', deco.sideWall || {}, state);
+      addCard(deco.handle, name, deco.font, 'farWall', deco.farWall || {}, state);
       if (deco.plusOne) {
         var p1 = deco.plusOne;
         var p1Handle = deco.handle + '+1';
-        addCard(p1Handle, p1.name, p1.font, 'ceiling', p1.ceiling || {});
-        addCard(p1Handle, p1.name, p1.font, 'sideWall', p1.sideWall || {});
-        addCard(p1Handle, p1.name, p1.font, 'farWall', p1.farWall || {});
+        addCard(p1Handle, p1.name, p1.font, 'ceiling', p1.ceiling || {}, state);
+        addCard(p1Handle, p1.name, p1.font, 'sideWall', p1.sideWall || {}, state);
+        addCard(p1Handle, p1.name, p1.font, 'farWall', p1.farWall || {}, state);
       }
     });
   }
+
+  // Wired only once every card is in the grid — the filter snapshots the
+  // card list, so binding it any earlier would capture an empty one.
+  wireDecorationSearch();
 
   // ---------- chat drawer ----------
   var chatToggle = document.getElementById('chat-toggle');

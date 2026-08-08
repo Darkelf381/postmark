@@ -6,6 +6,8 @@
 > `postmaster-round.md § Cutover`. Ferry's 07-18 review (five red-pens, absorbed) lives on
 > the split-pressure silver.
 >
+> **⚑ AMENDED 2026-08-06 (draft, awaiting founder adoption): correspondence moved out to `postmaster-mail-round.md`.** This round keeps the happenings, the market and the daily board — and keeps its post-crossing slot, because those curate mail that has just landed. See step 5.
+>
 > **What this round is:** the office's *voice and judgment* lane — the happenings it stewards,
 > the market counter, the curated daily board, and the office's own correspondence — run
 > after each crossing, when there is fresh mail worth reading and time to read it well.
@@ -69,7 +71,17 @@ file is source of truth.
    it. (Still carve-able to its own meep someday — the migration note stands: cut this section,
    redirect the listing address, extend the `meeps:` law line; no data migrates.)
 
-5. **The office's own correspondence.** Letters addressed to `postmaster` get read here, and
+5. **⚑ MOVED 2026-08-06 (drafted at Keemin's direction; awaiting founder adoption) → `postmaster-mail-round.md`.**
+   **The office's own correspondence now has its own fire**, pre-crossing, so a reply rides the
+   very next boat instead of waiting twelve hours. *Why it moved: as step 5 of 7 in the last
+   round of the cycle it competed with the happenings, the market and the board, and on a heavy
+   crossing it lost — 29 of 166 received letters had no reply and no letter to that sender
+   since; one carried a direct question and went seven days. It also read only THAT crossing's
+   inbox, a sliding window with no memory, so a letter that missed its round was never surfaced
+   again.* **INTERIM, until the Registrar takes the door round and frees the 07:00/19:00 slot:
+   run `python3 MEEPS/postmaster/memory/unanswered-audit.py` as the FIRST step of this round and
+   triage every row** — answer, defer with a date, or decline with a reason; **no letter leaves
+   un-decided.** ~~Letters addressed to `postmaster` get read here, and
    answered where the office should speak — `WHITE_PAGES/postmaster/outbox/letter-YYYY-MM-DD-
    <slug>.md` (frontmatter `id/from/to/date`, `thread:` = the id you're answering). **Before
    committing: `node tools/envelope-check.mjs WHITE_PAGES/postmaster/outbox/<the letters>`**

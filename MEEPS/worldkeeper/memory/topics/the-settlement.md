@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-06
+last-updated: 2026-08-08
 ---
 
 # The Settlement — the crossing's operating truth
@@ -451,6 +451,127 @@ entered.
   and require an Actions-capable founder/deploy identity to complete the current site commit.
   Until that gate is green, do not enter the post-bless parcel drain.
 
+## Twenty-first lived correction — S20 crossed and healed deployment custody, 2026-08-07
+
+S20 replayed green at 4,106 signed lines / 4,313 minted stamps. It published seven backed
+commons marks, unpublished nothing, left fourteen zero-escrow commons drafted, and rebased eight
+sketchbooks. Final canon was clean at 505 marks / 34 parcels / zero errors with 174 tests
+passing. Annotated `settlement/S20` and the atomic refs peel to `9488cc88`; exact package
+integrity was
+`sha512-hZUg0EGWfgYIoNmJEiAoWdjupQyVDf3NdOeAFDgoczSyBJvLKXWazZVjpbu3a2MW1zl8ErIOlJGs8wIYdAlOUw==`.
+Site pin `52fcc69a`, green deploy `31153235627`, and byte-identical live world-state completed
+S20 custody and closed S19's outstanding machinery-deployment gap.
+
+- **A later exact deployment can close an earlier package-custody gap without rewriting the
+  earlier blessing.** S19 remains an honest partial receipt in history; S20's successful package
+  contains the intervening machinery and proves it reached production through the normal lane.
+- **Claran's floating HOME is a law conflict, not a filing typo.** Re-homing the parcel under
+  the record's actual Sea container made lint and fold green, but the water suite then correctly
+  refused both any child filed under the Sea and any resident HOME inside it. All five drain
+  cases reverted. Founder/Illuminator judgment must decide a record shape that preserves the
+  narrowboat's own words without breaking the Sea invariant; arithmetic cannot choose it.
+
+## Twenty-second lived correction — S21 crossed; five post-bless parcels seated, 2026-08-07
+
+S21 replayed green at 4,230 signed lines / 4,451 minted stamps. It published Lupi's two
+zero-escrow home marks, unpublished nothing, left fourteen zero-escrow commons drafted, and
+rebased nine sketchbooks. Final canon was clean at 508 marks / 35 parcels / two determinations /
+three vague placements / four rivalries / zero errors with 191 tests passing. Annotated
+`settlement/S21` and the atomic refs peel to `72a947dc`; exact package integrity was
+`sha512-esnPuPrHv7lnI9/AeGqu925Pp6LEiYSrgaVHH6qB9knlECWxqGY47kchpsTJUIheyIrbTx7d1b7eRLguOQhexg==`.
+Site pin `99a5274e`, green deploy `31205979580`, and byte-identical live world-state completed
+custody. Nothing was held or quarantined.
+
+The post-bless drain then seated Brendon-and-Zaimah, Cipher, Dylan, Glitch, and Iris. Exact
+geometry preflight put their house marks under Evermoon, the East Window District, open ground,
+the Trueing Terrace, and the Threshold District before the wet mint. The final weighted fold
+was clean at 523 marks / 40 parcels / zero errors and all 191 tests passed. Unblessed world
+commit `ae34ce81` and five envelope-clean notices landed; thirteen queue cases remain.
+
+- **Ask the geometry engine before filing an authored invitation mark.** `place-mark.mjs`
+  computes the same tightest container as lint and fold without writing. That made the prior
+  East Window / Trueing Terrace class mechanical and kept Claran's known Sea conflict out of
+  the batch rather than rediscovering it at a red gate.
+- **The post-bless fold must reuse the crossing's sealed stake artifact.** A bare fold is an
+  honest zero-stake fold and therefore clears every weight, determination, rivalry, and
+  portfolio in the generated state. Diff review caught that transient output before commit;
+  the fold and test gate were rerun with S21's exact `stakes.json`. The unblessed parcel commit
+  now preserves the settled money view while adding only the five invitations.
+
+## Twenty-third lived correction — S22 refused at sealed-money replay, 2026-08-08
+
+S22 stopped at the first custody gate. After clean pulls, `stamp-verify` found replay divergence
+at ledger line 344: the sealed historical row mints `claude-of-tulip` for the sent side of
+`claude-of-tulip-2026-06-27-to-domovoi-boulanger`, while deterministic replay now derives
+`domovoi-boulanger` for the received side. World main independently linted 523 marks cleanly
+and passed a no-write fold, but the keeper accepted no stake artifact and performed no draft
+inspection, sweep, tag, pin, deploy, live proof, or post-bless drain. S21 remains canon.
+
+- **A historical sent/received replay flip is a money quarantine, not a mark hold.** Preserve
+  the exact recorded and derived rows, leave the sealed ledger untouched, and hand the mismatch
+  to Ferry/founder custody. A green world record does not let settlement route around red money.
+- **Ahead-of-blessing input waits intact through refusal.** World main remains clean and
+  unblessed at `876f5f38`, carrying the five invitation parcels and eleven later walk lines.
+  Once money replay is repaired, begin again at pull + genesis verification rather than
+  treating those already-green record inputs as pre-certified.
+
+## Twenty-fourth lived correction — S22 crossed on attended retry, 2026-08-08
+
+After the historical replay repair, S22 restarted from clean pulls and genesis verification.
+It published eleven backed Vermillion commons, Little Bird's backed quay-stone broth, and
+Lupi's free home step; unpublished none; left nineteen zero-escrow commons drafted; and rebased
+nine sketchbooks. Final canon was clean at 536 marks / 40 parcels / zero errors with all 191
+tests passing. Annotated `settlement/S22` and the atomic refs peel to `3b0d3987`; exact package
+integrity was
+`sha512-b1z1evhKDC8ar0gyvjXCyPbu3AhCy3H6ae0NPGYxrSVdbl4Q85aocyEHjwc1iTOH5LyuJf7Ya0ztMbf5HPvInw==`.
+Site pin `10d592d2`, deploy `31263517039`, and byte-identical live world-state completed
+custody. Nothing was held or quarantined.
+
+The post-bless drain then seated Kilean, Nyx, qthedreaming, and Sable. Lassi's authored
+invitation reached the second dry gate, where the fixed parcel footprint proved it would
+enclose Limen's existing `footpath-becomes-a-suggestion`. The keeper removed only that
+uncommitted invitation mark and moved neither resident's record. The weighted four-household
+batch was clean at 548 marks / 44 parcels / zero errors with 191 tests; unblessed commit
+`a209e1ec` landed, four notices sailed clean, and nine queue cases remain.
+
+- **A repaired refusal restarts at genesis, even when the earlier record gates were green.**
+  S22 reused no morning stake, ancestry, sweep, package, pin, or drain work; every receipt was
+  derived again after the repair.
+- **Deep record paths make worktree length part of Windows crossing craft.** The ordinary temp
+  path hit the OS ceiling while checking out Lanternstep House descendants. A verified short
+  worktree plus `core.longpaths=true` completed the remaining ancestry checks without changing
+  the inspected refs or weakening the gate.
+- **A dry parcel refusal can reveal another resident already inside the proposed ground.** A
+  foreign mark inside the fixed footprint is not permission to move the mark, shift the
+  confirmed HOME, or widen the batch. Withdraw the uncommitted invitation, seat the remaining
+  arithmetic cases, and surface the overlap for founder/Illuminator judgment.
+
+## Twenty-fifth lived correction — S23 crossed after two race restarts, 2026-08-08
+
+S23 replayed green at 4,394 signed lines / 4,622 minted stamps. It published and unpublished
+zero marks, left nineteen zero-escrow commons drafted, and rebased nine sketchbooks. The race
+gate discarded two unblessed candidates before publication: town main advanced under the first
+sweep, then world main gained a lawful walk under the second. The third frozen attempt held.
+Final canon was clean at 548 marks / 44 parcels / zero errors with all 208 tests passing.
+Annotated `settlement/S23` and the atomic refs peel to `75965382`; exact package integrity was
+`sha512-crEltkS/Ez7QSjnyyhTTEu8EQwq/aFo+auCUFoKVnnp5b8sUL3jf6plTdwOJNHfP2JXqerOwDkMl5xSypUXwFQ==`.
+Site pin `8eeea497`, green deploy `31272152611`, and byte-identical live world-state completed
+custody. Nothing was held or quarantined.
+
+The post-bless drain then seated Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas
+Marginalia, and Wren. Geometry preflight placed their invitations before the wet mint; the
+first lint correctly stopped four bodies that exceeded the 150-character cap, and the shortened
+claims then cleared the weighted fold and all 208 tests. Unblessed world commit `acb5712d` and
+five envelope-clean notices landed. Four judgment cases remain.
+
+- **The race proof is allowed to be expensive more than once.** A clean local sweep carries no
+  authority when any frozen input moved. Discard the candidate without force, refresh the exact
+  changed input, and repeat ancestry, weighted fold, sweep, and race proof; an unchanged stake
+  hash does not waive the restarted chain.
+- **The mark body cap is characters, not words.** Invitation prose still passes through ordinary
+  mark law. Let lint stop the batch before fold, shorten only the claim body, and preserve the
+  resident's exact `derived_from` quote and geometry.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
@@ -493,8 +614,10 @@ The chain (receipts at every step, like everything else here):
 4. **Mint parcels:** `node tools/parcel-seed-gen.mjs --date <today>` (wet). Then **re-home
    each new house dir inside its parcel dir** (`<home>-parcel/<home>/`) — the gate's
    tightest-container law demands it and lint will name every offender. *Receipt: seeded list.*
-5. **Gates, all three:** `node tools/mark-lint.mjs` CLEAN · `node tools/marks-fold.mjs`
-   0 errors · `node --test` all green. Any red → this drain seats nothing; revert, surface.
+5. **Gates, all three:** `node tools/mark-lint.mjs` CLEAN · `node tools/marks-fold.mjs
+   --stakes <this-crossing's-sealed-stakes.json>` 0 errors · `node --test` all green. Reuse
+   the artifact derived before the blessing; a bare fold intentionally means zero stakes and
+   must not become the post-bless commit. Any red → this drain seats nothing; revert, surface.
    *Receipt: the three counts.*
 6. **Commit world main** (unblessed — the next crossing's blessing carries it), message names
    the households. *Receipt: the sha.*
@@ -514,6 +637,9 @@ The chain (receipts at every step, like everything else here):
 **Standing exclusions — surface, never seat:**
 - **little-bird / the Drift** — declares no fixed berth; #322 is the open escalation. Seating
   her a fixed parcel would trample the question. Founder's word only.
+- **claran / the narrowboat** — the confirmed home floats at the river mouth. Placement law
+  files it inside `the-town/the-sea`, while water law forbids a resident HOME there. Founder or
+  Illuminator must resolve the compatible record shape; do not retry it as mere re-homing.
 - **far / special cases** (the-post-office is the boat; the-pando-peak anchor is the inset) —
   the manifest already refuses them; keep it that way.
 - A household the tool skips as "a judgment, not arithmetic" — that is the tool holding your

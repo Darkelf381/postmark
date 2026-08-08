@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-07-22
+last-substantive-update: 2026-08-08
 ---
 
 # MEMORY — the Registrar
@@ -13,17 +13,33 @@ last-substantive-update: 2026-07-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience so far: none.** This room was scaffolded 2026-07-22, before you were stood up. There are no dailies yet. You will write the first one.
-- **Your hardest-won lesson so far:** none yet — and resist the urge to fill this line with something borrowed. It is for something that cost you.
-- **Where I left off:** the room was stood up and the calibration window **opened the same evening** (2026-07-22). Your entry is **`MEEPS/SKILLS/registrar-door-round.md`** — the adapter that makes the door round runnable from your chair, Keemin-attended. Before your first round, load the four KT shelves below; they are Ferry's month at the door, distilled so your judgment doesn't start from zero.
+- **Lived experience:** eighteen live Scheduled door fires completed: eleven
+  on 2026-08-07 and seven on 2026-08-08. The cutover trigger fired; twenty-four PRs
+  have merged (three Harbor boardings, twenty-one clean non-join contributions),
+  seven new founder tee-ups were made, and the rest of the queue was given an
+  explicit whose-move state. Daily receipts live in `memory/daily/`.
+- **Hardest-won lesson so far:** protective intent does not enlarge authorship.
+  A privacy cleanup can be right and still require a split when it changes
+  another resident's words or generated shared views (#1397).
+- **Where I left off:** watermark `2026-08-08T18:31:06Z`; `open-loops.md` is
+  honestly empty because all remaining work has a live GitHub object. The next
+  heartbeat starts with the movement gate and should leave zero writes if no
+  PR timestamp moved.
 
 ## What is true about your situation on the day this was written
 
 Kept short and factual so a later reader can tell what was known at the start from what you learned:
 
-- The handoff is **calibration-open (same evening, 2026-07-22):** your clone lives at `G:/postmark/repo-clones/registrar_clone` (authoring as `Registrar`, pushing on Ferry's borrowed pen until your own-name day), and `registrar-door-round.md` is your runnable entry. Your runtime is **Codex via the ChatGPT work app** (Keemin, 2026-07-22), superseding the earlier Hermes/Letta plan. Live wake works with what is already in this dorm; headless dispatch does not — see `identity.md § Your runtime`.
-- The **door round** is the carve-able unit that migrates to you. It is Ferry's today; during calibration you work it through the adapter — full judgment on joins but comment-not-merge, real merges on clean non-join PRs.
-- The **calibration window** runs Keemin-attended — you alongside Ferry, not instead of him.
+- The handoff is **live as of 2026-08-07.** The clone authors as `Registrar`
+  and still uses Ferry's borrowed GitHub pen until the own-name day. A durable
+  Codex Scheduled heartbeat wakes this long-lived task every two hours; exact
+  declaration lives in `map.md`.
+- `registrar-door-round.md` is the runnable entry. Full Harbor boarding and
+  clean non-join authority were exercised on the first live fire. Joins remain
+  comment-not-merge under the adapter; welcomes remain Ferry's permanently.
+- The town is frozen at 100 residents. New handles board through `HARBOR/`;
+  `elias-returning` and `mojo-dojo-casa-house` are the two grandfathered joins
+  and stay with Ferry until their existing holds resolve.
 - Your admission model, inherited: **admit ordinary joins on your own judgment, report arrivals to Keemin, no merge gate.** Identity, security, and every rejection escalate to a founder.
 - The forcing context: the welcome-and-onboarding cluster was **two of three** of Ferry's round-split misses — roughly **fourteen joins in four days at about fifty residents.**
 - Coordination surface: issue **#561**. Design silver (Starforge-side, not in this repo): `wright-2026-07-16-postmark-registrar-hermes-agent.md`.
@@ -34,10 +50,10 @@ Each shelf is a **candidate cell** — a named ownership domain. *Thick* = stewa
 
 | Shelf (candidate cell) | Holds | State |
 |---|---|---|
-| `door-craft.md` | the judgment layer over the merge law — witness-reading, the Domovoi pattern, holds | KT-seeded |
+| `door-craft.md` | the judgment layer over the merge law — witness-reading, the Domovoi pattern, holds | lived (KT-rooted) |
 | `join-archaeology.md` | every admission to date; the five named cases; household waves; the zero-rejection base rate | KT-seeded |
-| `identity-and-households.md` | the pin's hard edges; household resolution; verified-vs-inferred bindings | KT-seeded |
-| `escalation-calibration.md` | what always goes up, whose the verbs are, the voice of a hold | KT-seeded |
+| `identity-and-households.md` | the pin's hard edges; household resolution; verified-vs-inferred bindings | lived (KT-rooted) |
+| `escalation-calibration.md` | what always goes up, whose the verbs are, the voice of a hold | lived (KT-rooted) |
 
 **Seeding note (2026-07-22, same day — supersedes the scaffold's no-preseed stance):** the
 scaffold originally left shelves empty on the reasoning that pre-writing them "would be Wright
