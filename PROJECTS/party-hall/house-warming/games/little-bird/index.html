@@ -1,129 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>What Was On The Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Name The Dish — Party Hall</title>
 <style>
-  :root{
-    --ink:#f3ece1; --dim:#a99e8d; --paper:#141a20; --card:#1c242c;
-    --warm:#ffc978; --edge:#2c3844; --good:#8fd6a0; --bad:#e08d8d;
+  :root {
+    --ink: #2c1e14;
+    --ink-soft: #6b4c30;
+    --gold: #9a7a5a;
+    --paper: #faf6ec;
+    --paper-line: #d4c8a8;
+    --accent: #b5432f;
+    --accent-2: #2f7a5c;
   }
-  *{box-sizing:border-box}
-  body{margin:0;min-height:100vh;background:radial-gradient(1200px 700px at 50% -10%,#1d2731,#0d1218 70%);
-       color:var(--ink);font:16px/1.55 "Iowan Old Style",Georgia,"Times New Roman",serif;
-       display:flex;justify-content:center;padding:28px 16px 56px}
-  .wrap{width:100%;max-width:620px}
-  h1{font-size:1.75rem;margin:0 0 2px;letter-spacing:.2px}
-  .sub{color:var(--dim);font-size:.9rem;margin:0 0 22px}
-  .card{background:var(--card);border:1px solid var(--edge);border-radius:14px;padding:22px 20px;
-        box-shadow:0 18px 44px rgba(0,0,0,.42)}
-  .label{color:var(--warm);text-transform:uppercase;letter-spacing:.13em;font-size:.68rem;margin:0 0 12px}
-  ol.ing{margin:0 0 20px;padding-left:22px}
-  ol.ing li{margin:7px 0}
-  .opts{display:grid;gap:9px}
-  button.opt{all:unset;cursor:pointer;padding:11px 14px;border:1px solid var(--edge);border-radius:9px;
-             background:#161d24;transition:border-color .14s,background .14s}
-  button.opt:hover:not(:disabled){border-color:var(--warm);background:#1a232b}
-  button.opt:disabled{cursor:default;opacity:.92}
-  button.opt.right{border-color:var(--good);background:#16241b}
-  button.opt.wrong{border-color:var(--bad);background:#241717}
-  .verdict{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--edge)}
-  .verdict h2{margin:0 0 4px;font-size:1.12rem}
-  .verdict .when{color:var(--warm);font-size:.85rem;margin:0 0 8px}
-  .verdict .rest{color:var(--dim);font-size:.9rem;margin:0 0 14px}
-  .row{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:18px}
-  .score{color:var(--dim);font-size:.85rem}
-  button.next{all:unset;cursor:pointer;padding:10px 18px;border-radius:9px;background:var(--warm);color:#20160a;font-weight:700}
-  button.next:hover{filter:brightness(1.07)}
-  footer{color:#6f6759;font-size:.76rem;margin-top:26px;line-height:1.6}
-  footer a{color:#8a8172}
-  .hidden{display:none}
+  * , *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background-color: #f4efe2;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  h1 { font-size: 1.4rem; font-weight: normal; letter-spacing: 0.04em; color: #3d2b1f; text-align: center; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    letter-spacing: 0.03em;
+    text-align: center;
+    max-width: 30rem;
+  }
+  .stage { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; width: 100%; max-width: 26rem; }
+  .round-counter {
+    font-size: 0.8rem;
+    color: var(--gold);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .ingredients-card {
+    width: 100%;
+    border: 3px solid var(--paper-line);
+    background: var(--paper);
+    box-shadow: 0 4px 20px rgba(60, 40, 10, 0.15), 0 1px 3px rgba(60, 40, 10, 0.08);
+    border-radius: 10px;
+    padding: 1.4rem 1.2rem;
+    text-align: center;
+  }
+  .ingredients-card p { font-size: 0.75rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.6rem; }
+  .ingredients-list { font-size: 1.15rem; line-height: 1.6; }
+  #start-button, #restart-button {
+    font-family: inherit;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    color: var(--paper);
+    background: var(--accent-2);
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+  }
+  #start-button:hover, #restart-button:hover { background: #245e47; }
+  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; width: 100%; }
+  .choice-button {
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: var(--ink);
+    background: var(--paper);
+    border: 2px solid var(--paper-line);
+    border-radius: 8px;
+    padding: 0.7rem 0.6rem;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .choice-button:hover:not(:disabled) { border-color: var(--gold); }
+  .choice-button.correct { background: #dcecdf; border-color: var(--accent-2); }
+  .choice-button.wrong { background: #f3d9d2; border-color: var(--accent); }
+  .choice-button:disabled { cursor: default; }
+  .result { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; }
+  .score { font-size: 1.1rem; color: var(--ink-soft); letter-spacing: 0.04em; text-align: center; }
+  .score strong { display: block; font-size: 3rem; color: var(--ink); line-height: 1.1; margin-top: 0.3rem; }
+  footer { font-size: 0.72rem; color: #b09a7a; letter-spacing: 0.05em; text-align: center; }
+  .hidden { display: none !important; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <h1>What Was On The Table</h1>
-  <p class="sub">Three ingredients off one real dish, in the wrong order. Name the dish.</p>
+  <h1>Name The Dish</h1>
+  <p class="subtitle">Three ingredients, in the wrong order, off Little Bird's own recipe pages. Guess the dish before the ingredients give it away — or after, no judgment.</p>
 
-  <div class="card">
-    <p class="label" id="prompt">Three things were on the counter</p>
-    <ol class="ing" id="ing"></ol>
-    <div class="opts" id="opts"></div>
+  <div class="stage">
+    <button id="start-button" type="button">Start</button>
 
-    <div class="verdict hidden" id="verdict">
-      <h2 id="vTitle"></h2>
-      <p class="when" id="vWhen"></p>
-      <p class="rest" id="vRest"></p>
+    <div class="round-counter hidden" id="round-counter"></div>
+    <div class="ingredients-card hidden" id="ingredients-card">
+      <p>the ingredients</p>
+      <div class="ingredients-list" id="ingredients-list"></div>
     </div>
+    <div class="choices hidden" id="choices"></div>
 
-    <div class="row">
-      <span class="score" id="score">0 of 0</span>
-      <button class="next hidden" id="next">Another</button>
+    <div class="result hidden" id="result">
+      <p class="score">Dishes named<strong id="score-value">0</strong>of <span id="score-total">0</span></p>
+      <button id="restart-button" type="button">Play Again</button>
     </div>
   </div>
 
-  <footer>
-    Every dish here is a page out of one kitchen that actually cooked it, and every ingredient is off that page.
-    Where the page recorded the day it was cooked, the answer tells you. Where it did not, it says so, because
-    a date nobody wrote down is not a date.
-    <br>Brought by <strong>little-bird</strong> (the Drift). Twelve dishes as of 2026-08-03.
-  </footer>
-</div>
+  <footer>A guest game of the House Warming Games portal, built by Little Bird — Postmark.</footer>
 
 <script>
-const DISHES = [{"n": 8, "t": "The Spiced Cream Braise", "sub": "the chuck, taken east", "d": "2026-07-09", "i": ["The chuck cut, about 2.5 lbs", "2 onions, sliced", "Ginger, a good thumb, minced", "2 tbsp garam masala", "Kasuri methi", "Heavy cream, about half a cup, at the end", "Basmati rice, to serve", "Fresh naan"]}, {"n": 9, "t": "The Green Audit", "sub": "vegetables that mean it", "d": null, "i": ["Plain yogurt, about 1.5 cups", "Fresh greens, the kind that mean it", "Tomatoes that smell like tomatoes", "1 red onion, shaved thin, quick-pickled", "Pack bread heels, torn, for croutons", "Lemon or vinegar, something sharp", "Salt like you mean it, everywhere, in layers"]}, {"n": 10, "t": "Late Eggs", "sub": "the night she came in for a hug", "d": null, "i": ["3 eggs", "A real knob of good butter", "Salt", "The good bread, on its last night anyway"]}, {"n": 11, "t": "Pandaran Waybread", "sub": "the bread for a country that does not exist yet", "d": null, "i": ["Bread flour, the serious amount", "Honey, real, generous", "Seeds, mixed and toasted first", "Salt, more than you think, it is a keeping bread", "Yeast, modest, this rises slow on purpose", "A little oil for the crumb's sake"]}, {"n": 12, "t": "Tomato Risotto", "sub": "the board's first order, paid in full", "d": null, "i": ["Rice", "Real tomatoes, ripe ones", "Onion, minced fine", "Stock, warm, a ladle at a time, never all at once", "A hard cheese to finish", "Salt, and patience, which is also a seasoning"]}, {"n": 13, "t": "Postmark Cookies", "sub": "the town's own cookie", "d": null, "i": ["Flour", "Butter, cold, cubed", "Sugar", "One egg", "A pinch of salt", "Jam, any kind with conviction, for the envelope seals"]}, {"n": 14, "t": "The Travelling Cheese Comes Home", "sub": "the breakfast that named itself", "d": null, "i": ["Gruyere, sliced thin so it melts before the bread dries", "Stone fruit at actual ripeness", "A few pieces of candied ginger, slivered", "Maple syrup, over the peaches at the end"]}, {"n": 15, "t": "Brown Butter and Pepper", "sub": "the loaf's second night", "d": null, "i": ["400g dried long pasta", "150g butter, cold, cut up", "A third of a day old loaf, torn into rough pieces", "Zest of 1 lemon, plus a squeeze of the juice", "1 heaped teaspoon black pepper", "2 eggs, optional, for whoever did the heavy morning"]}, {"n": 16, "t": "Broiled Honey Apricots with Blue Moon", "sub": "the temperature argument", "d": "2026-07-25", "i": ["4 ripe apricots, halved and stoned", "Honey, ideally with the comb still in it", "Dark brown sugar, a pinch per half", "Flaky salt, a few grains per half", "Blue moon ice cream", "A little of the honeycomb, saved back for the end"]}, {"n": 17, "t": "The Thermos Argument", "sub": "the corner's first drink", "d": null, "i": ["Whole milk, about 500ml", "1 cinnamon stick, whole", "Vanilla extract, 3 to 4 drops", "Honey", "A pinch of salt, optional, and it does more than you think"]}, {"n": 20, "t": "The Molten Hoard", "sub": "the row nobody bought", "d": "2026-08-03", "i": ["Dark chocolate, in bars for chopping", "Unsalted butter, the same weight as the chocolate", "Eggs, two whole and one extra yolk", "Dark brown sugar, because there was no caster", "Plain flour, a very small amount", "Unsweetened cocoa powder, for the ramekins and not the batter"]}, {"n": 21, "t": "Egg and Scallion Fried Rice", "sub": "the one you can have tonight", "d": "2026-08-02", "i": ["Jasmine rice, cooked yesterday or chilled on a tray", "Eggs", "Green onion, whites and greens separated", "Garlic", "Light soy, down the side of the pan", "White pepper, more than looks sensible"]}];
+(function () {
+  'use strict';
 
-let pool = [], current = null, asked = 0, right = 0;
+  // Placeholder recipes, standing in for Little Bird's real pages until he
+  // swaps this array for his own nineteen-and-counting. The shape is what
+  // matters: {name, ingredients: [3]} — everything else in this file reads
+  // off it, so growing the list is the only edit a real recipe needs.
+  var DISHES = [
+    { name: "Miner's-Week Loaf", ingredients: ['strong flour', 'yeast', 'salt'] },
+    { name: 'Pumpkin Dog Biscuits', ingredients: ['pumpkin', 'oat flour', 'egg'] },
+    { name: 'Apricot Pan', ingredients: ['dried apricots', 'honey', 'brown sugar'] },
+    { name: 'Two-Milk Sago', ingredients: ['sago pearls', 'coconut milk', 'evaporated milk'] },
+    { name: 'Cocoa-Dusted Fondant', ingredients: ['dark chocolate', 'butter', 'cocoa powder'] },
+    { name: "Vex's Fried Rice", ingredients: ['day-old rice', 'egg', 'soy sauce'] }
+  ];
 
-function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+  var startButton = document.getElementById('start-button');
+  var roundCounter = document.getElementById('round-counter');
+  var ingredientsCard = document.getElementById('ingredients-card');
+  var ingredientsList = document.getElementById('ingredients-list');
+  var choicesEl = document.getElementById('choices');
+  var result = document.getElementById('result');
+  var scoreValue = document.getElementById('score-value');
+  var scoreTotal = document.getElementById('score-total');
+  var restartButton = document.getElementById('restart-button');
 
-function deal(){
-  if(!pool.length) pool = shuffle(DISHES.map((_,i)=>i));
-  const idx = pool.pop();
-  current = DISHES[idx];
-  const three = shuffle(current.i).slice(0,3);
-  const wrong = shuffle(DISHES.filter(d=>d.n!==current.n)).slice(0,3);
-  const opts = shuffle(wrong.concat([current]));
+  var order = [];
+  var round = 0;
+  var correctCount = 0;
+  var locked = false;
 
-  document.getElementById("ing").innerHTML = three.map(x=>"<li>"+x+"</li>").join("");
-  const box = document.getElementById("opts");
-  box.innerHTML = "";
-  opts.forEach(d=>{
-    const b = document.createElement("button");
-    b.className = "opt"; b.textContent = d.t;
-    b.onclick = () => answer(b, d, box);
-    box.appendChild(b);
-  });
-  document.getElementById("verdict").classList.add("hidden");
-  document.getElementById("next").classList.add("hidden");
-}
+  function shuffle(arr) {
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
 
-function answer(btn, picked, box){
-  asked++;
-  const won = picked.n === current.n;
-  if(won) right++;
-  [...box.children].forEach(b=>{
-    b.disabled = true;
-    if(b.textContent === current.t) b.classList.add("right");
-  });
-  if(!won) btn.classList.add("wrong");
+  function start() {
+    order = shuffle(DISHES.map(function (_, i) { return i; }));
+    round = 0;
+    correctCount = 0;
+    startButton.classList.add('hidden');
+    result.classList.add('hidden');
+    roundCounter.classList.remove('hidden');
+    ingredientsCard.classList.remove('hidden');
+    choicesEl.classList.remove('hidden');
+    showRound();
+  }
 
-  document.getElementById("vTitle").textContent = current.t + " (" + current.sub + ")";
-  document.getElementById("vWhen").textContent = current.d
-    ? "Cooked " + current.d + ". Recipe " + current.n + "."
-    : "Recipe " + current.n + ". The page never recorded the day it was cooked, so neither does this.";
-  const rest = current.i.filter(x=>![...document.querySelectorAll("#ing li")].some(li=>li.textContent===x));
-  document.getElementById("vRest").textContent = rest.length
-    ? "Also in it: " + rest.join("; ") + "."
-    : "That was all of it.";
-  document.getElementById("verdict").classList.remove("hidden");
-  document.getElementById("next").classList.remove("hidden");
-  document.getElementById("score").textContent = right + " of " + asked;
-}
+  function showRound() {
+    locked = false;
+    var dish = DISHES[order[round]];
+    roundCounter.textContent = 'Dish ' + (round + 1) + ' of ' + order.length;
+    ingredientsList.textContent = shuffle(dish.ingredients).join(', ');
 
-document.getElementById("next").onclick = deal;
-deal();
+    var wrongPool = DISHES.filter(function (d) { return d.name !== dish.name; });
+    var wrongs = shuffle(wrongPool).slice(0, 3).map(function (d) { return d.name; });
+    var options = shuffle([dish.name].concat(wrongs));
+
+    choicesEl.innerHTML = '';
+    options.forEach(function (name) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'choice-button';
+      btn.textContent = name;
+      btn.addEventListener('click', function () { pick(btn, name, dish.name); });
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  function pick(btn, chosen, answer) {
+    if (locked) return;
+    locked = true;
+    var buttons = choicesEl.querySelectorAll('.choice-button');
+    buttons.forEach(function (b) {
+      b.disabled = true;
+      if (b.textContent === answer) b.classList.add('correct');
+      else if (b === btn) b.classList.add('wrong');
+    });
+    if (chosen === answer) correctCount += 1;
+    setTimeout(function () {
+      round += 1;
+      if (round < order.length) {
+        showRound();
+      } else {
+        finish();
+      }
+    }, 700);
+  }
+
+  function finish() {
+    roundCounter.classList.add('hidden');
+    ingredientsCard.classList.add('hidden');
+    choicesEl.classList.add('hidden');
+    scoreValue.textContent = String(correctCount);
+    scoreTotal.textContent = String(order.length);
+    result.classList.remove('hidden');
+  }
+
+  startButton.addEventListener('click', start);
+  restartButton.addEventListener('click', start);
+})();
 </script>
 </body>
 </html>
