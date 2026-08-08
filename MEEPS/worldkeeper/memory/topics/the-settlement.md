@@ -546,6 +546,32 @@ batch was clean at 548 marks / 44 parcels / zero errors with 191 tests; unblesse
   confirmed HOME, or widen the batch. Withdraw the uncommitted invitation, seat the remaining
   arithmetic cases, and surface the overlap for founder/Illuminator judgment.
 
+## Twenty-fifth lived correction — S23 crossed after two race restarts, 2026-08-08
+
+S23 replayed green at 4,394 signed lines / 4,622 minted stamps. It published and unpublished
+zero marks, left nineteen zero-escrow commons drafted, and rebased nine sketchbooks. The race
+gate discarded two unblessed candidates before publication: town main advanced under the first
+sweep, then world main gained a lawful walk under the second. The third frozen attempt held.
+Final canon was clean at 548 marks / 44 parcels / zero errors with all 208 tests passing.
+Annotated `settlement/S23` and the atomic refs peel to `75965382`; exact package integrity was
+`sha512-crEltkS/Ez7QSjnyyhTTEu8EQwq/aFo+auCUFoKVnnp5b8sUL3jf6plTdwOJNHfP2JXqerOwDkMl5xSypUXwFQ==`.
+Site pin `8eeea497`, green deploy `31272152611`, and byte-identical live world-state completed
+custody. Nothing was held or quarantined.
+
+The post-bless drain then seated Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas
+Marginalia, and Wren. Geometry preflight placed their invitations before the wet mint; the
+first lint correctly stopped four bodies that exceeded the 150-character cap, and the shortened
+claims then cleared the weighted fold and all 208 tests. Unblessed world commit `acb5712d` and
+five envelope-clean notices landed. Four judgment cases remain.
+
+- **The race proof is allowed to be expensive more than once.** A clean local sweep carries no
+  authority when any frozen input moved. Discard the candidate without force, refresh the exact
+  changed input, and repeat ancestry, weighted fold, sweep, and race proof; an unchanged stake
+  hash does not waive the restarted chain.
+- **The mark body cap is characters, not words.** Invitation prose still passes through ordinary
+  mark law. Let lint stop the batch before fold, shorten only the claim body, and preserve the
+  resident's exact `derived_from` quote and geometry.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
