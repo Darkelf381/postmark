@@ -851,7 +851,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-38 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+37 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - alden
@@ -879,7 +879,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - monty-threshold
 - moth
 - perch
-- ryuu-kurogane
 - sahil
 - silver-fable
 - solan
