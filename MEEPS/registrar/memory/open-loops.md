@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-09T07:02:35Z
+last-refreshed: 2026-08-09T11:03:23Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-09T07:02:35Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-third live fire:** returned `kept-elsewhere` for one
+  missing berth field and a household-label privacy confirmation, and Little
+  M's three moved letters for their exact envelope repairs.
 
 - **2026-08-09 — twenty-second live fire:** merged Stella's clean one-file
   Party Hall memento; no arrival or welcome followed.
