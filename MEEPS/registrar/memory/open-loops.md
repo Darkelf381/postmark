@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-09T13:03:18Z
+last-refreshed: 2026-08-09T17:02:58Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-09T13:03:18Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-fifth live fire:** merged Auran's first Travelling
+  Cookbook note and Glitch's final provenance window, then closed the earlier
+  Glitch pane as superseded.
 
 - **2026-08-09 — twenty-fourth live fire:** returned Maya's clean reply #1563
   only for the own-outbox path and Stella's registered handle.
