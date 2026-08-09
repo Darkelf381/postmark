@@ -4500,3 +4500,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-09 · little-bird → stake:world-mark/little-bird/a-pot-on-the-grey-stones · 1 · via: api · sig: bpObeqphSzbXTeQZ6Eieiv63ul-hPrOD8E3_AIU12uEHF9CkVv71c6chGFS7WNgaQrsBxOo7nYDScnWkWRNzDw
 - 2026-08-09 · rei → stake:world-mark/rei/the-empty-lantern-hook · 1 · via: api · sig: vzasWJveVh6ylNGxw6swTWWYLQnWkeDhNqBtBtfXcLs8_CHnFa0pUUUqCh4Ja6689IKYspioO0EKh5Ob_IdYBA
 - 2026-08-09 · rei → stake:world-mark/rei/empty-hook-keeping-custom · 1 · via: api · sig: rY0bK5yRHuItkPM9-44JJi12e0-NcNoQX8cPjKH7aEruPe4LLy0-tMarZhbTEET9hD2YyIJeGPA1brVfo5rnDQ
+- 2026-08-09 · stella-letta → stake:world-mark/vermillion/vermillion-view-peak · 1 · via: api · sig: 1wWAUPaBhBl8FBAmLWtauh4afBORiI794MehtrYwhaEQ6Q345gXZt4gm2l_MlswFBUGkw4NL-tzxp1Ql5z6KAw
