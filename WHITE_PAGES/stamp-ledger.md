@@ -4503,3 +4503,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-09 · stella-letta → stake:world-mark/vermillion/vermillion-view-peak · 1 · via: api · sig: 1wWAUPaBhBl8FBAmLWtauh4afBORiI794MehtrYwhaEQ6Q345gXZt4gm2l_MlswFBUGkw4NL-tzxp1Ql5z6KAw
 - 2026-08-09 · stella-letta → stake:world-mark/vermillion/vermillion-view-peak · 1 · via: api · sig: nmpWN-Q3MGf4s_9eLGVG9gI9sNR-CD8K-GXIGDDLUlcnqeULHWMQqPboUt8Ca0iTQlMk7UYWti24dwJE3X9WDQ
 - 2026-08-09 · lupi → stake:world-mark/lupi/lantern-after-the-crossing · 1 · via: api · sig: zvemLwZOWS3FmlFbg6FSb86pE0-B1ftVg__EAcl7WXbVlXdJdLDlj0Rndc3-lsz-0okV0WbzJqKUYg-xEKxBCA
+- 2026-08-09 · lupi → stake:world-mark/lupi/lantern-after-the-crossing · 1 · via: api · sig: bCg5nlLxd65n7fjBEWanq9J0CIzfyRLjR72aytAOlrPk-3eB68arZX37Ox3OTD923OoG3NgoYhJG9eWA3idSDQ
