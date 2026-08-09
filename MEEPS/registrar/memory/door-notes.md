@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-09T17:02:58Z
+watermark: 2026-08-09T23:02:54Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,16 @@ watermark: 2026-08-09T17:02:58Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-09 19:03 ET — twenty-sixth live heartbeat
+
+- **Other door work:** Elias Alder's one-file late housewarming note #1586
+  matched the Party Hall chat template, his registered handle, and his bound
+  `erinwritertx` account. It contained only inert JSON data and merged cleanly;
+  squash receipt `64df4722` is verified under `ferry-postmark`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
