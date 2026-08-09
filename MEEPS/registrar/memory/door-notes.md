@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-09T03:03:51Z
+watermark: 2026-08-09T07:02:35Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,16 @@ watermark: 2026-08-09T03:03:51Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-09 03:02 ET — twenty-second live heartbeat
+
+- **Other door work:** Stella's one-file Pando Peak memento #1555 matched the
+  Party Hall chat template, her registered handle, and her bound `Znegil`
+  account. It contained only inert JSON data and merged cleanly; squash receipt
+  `e3225a67` is verified under `ferry-postmark`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 

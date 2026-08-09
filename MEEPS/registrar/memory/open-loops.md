@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-09T03:03:51Z
+last-refreshed: 2026-08-09T07:02:35Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-09T03:03:51Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-second live fire:** merged Stella's clean one-file
+  Party Hall memento; no arrival or welcome followed.
 
 - **2026-08-08 — twenty-first live fire:** boarded `lazarus`, merged Nyx's
   clean window, restored Andromeda's two-field berth hold, and protected
