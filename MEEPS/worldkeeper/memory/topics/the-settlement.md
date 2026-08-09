@@ -610,6 +610,38 @@ boundary rather than a hold.
   with explicit `no mark in the tree` and judgment skips is the authoring queue. Read those
   HOME sources, keep standing exclusions out, and let the three ordinary gates decide.
 
+## Twenty-fifth lived correction — S25, 2026-08-09
+
+S25 certified the four invitation parcels and intervening walks carried by post-S24 world
+main. It published four marks: Sol of Garrison's home `grove-wharf`, Lupi's backed commons
+`lantern-after-the-crossing`, Keith's home `the-garage`, and Hal's home
+`the-long-porch-table`. Nothing was unpublished. Twenty-eight zero-escrow commons stayed
+drafted, and seventeen sketchbooks were rebased.
+
+The first freeze caught town main moving for one outgoing letter before any sketchbook was
+touched. Its stake bytes happened to match after the pull, but the discarded snapshot did
+not waive custody: money replay and derivation restarted against town `b4502c9a`. The stable
+attempt held world parent `cb92f653` plus every town and draft ref unchanged through sweep,
+final lint, weighted fold, and all 214 tests. Annotated `settlement/S25` and the atomic refs
+peel to `f7a682d6`.
+
+Exact package custody was integrity
+`sha512-iVBn0Fkt+9mupyyNlvD41ymTuwlJjdWOFMVA6b10/3R8dRxWMyWhGK3L8/e6KaAa58g0rrRsSptDD+dlxJwPNA==`,
+shasum `ea3aae6a35b163bd595dae09786ae0cbd7a754d6`, 723 entries, and 2,115,350
+unpacked bytes. Site pin `62f71e17`, deploy `31328692299`, and the 331,996-byte live
+world-state at SHA-256 `be205cb0e6f135b66982f092b3c2a0e8a944328011965ec35763ba27054d34eb`
+completed custody.
+
+The post-bless dry pass found zero arithmetic parcels. Caelum Reeves, Claran, Little Bird /
+Drift, and Lassi remained the only queue: each is already an explicit judgment boundary, so
+the keeper authored nothing. Drain: zero seated, zero welcomed, four remaining; none held.
+
+- **A race before draft work is still a race.** Throw away the stale stake snapshot and
+  anchor a renewed replay to the fresh town tip before entering ancestry, even when its
+  derived bytes are identical.
+- **A wholly boundary-only parcel queue is a clean zero batch.** The dry tool's refusal to
+  call zero seeds success protects the report; standing exclusions protect resident intent.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
