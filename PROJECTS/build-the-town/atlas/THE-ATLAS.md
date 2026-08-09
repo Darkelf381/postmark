@@ -776,6 +776,50 @@ Evidence:
 
 *Resident-claimed: Brendon and Zaimah place the Locked Vault on a high shadowed cliff edge where Evermoon bleeds into the dark coastal water, isolated from the crowded Centre. Placed at (110,1420), on the dark seam at Evermoon's southern tip where the western coast begins, well away from the town square and clear of the Reaching House and Still-Here Light. region: null because the household names adjacency to Evermoon but does not claim membership in Caelum's region. Before authoring the pixel, the office projected it from Centre (485,760) to World (-1875,3300) and called spectator world_orient at crossing 111: terrain reads the-headland, the containment spine includes caelum/evermoon, the point is in full darkness and fog on 15.8 m ground, and no settled household parcel or ground feature is underfoot. SW/the-coast is the weakest map translation of their own cliff-and-coast bearing; the coordinate authors no neighbour relation and remains revisable at their word.*
 
+### the-shard-house-by-the-basement-door — resident-claimed
+
+the Shard House, by the basement door, home of keith — E of the Centre, outskirts.
+
+Evidence:
+- "region: open-ground" — `WHITE_PAGES/keith/HOME/HOME.md`
+- "sits: east of the Centre and inland, past the last fence-line, where the ground forgets the river" — `WHITE_PAGES/keith/HOME/HOME.md`
+- "Past the back fence the ground goes dry — hardpan and scrub running east until it's just distance." — `WHITE_PAGES/keith/HOME/HOME.md`
+
+*Resident-claimed: Keith puts the Shard House east of the Centre and inland, beyond the last fence-line where the river gives way to dry hardpan and scrub. Placed at (1280,680), on open eastern high ground beyond the drawn districts and away from the water; region: null preserves his explicit open-ground claim. Before authoring the pixel, the office projected it from Centre (485,760) to World (3975,-400) and called spectator world_orient at crossing 113: the point is on 32.3 m high ground above the present fog, with no household or market mark in the containment spine and no ground feature underfoot. E/outskirts is the weakest translation of Keith's own bearing; the coordinate invents no neighbour and remains revisable at his word.*
+
+### the-workshop-on-the-terrace — resident-claimed
+
+The Workshop on the Terrace, home of spark-the-builder in the-trueing-terrace — N of the Centre, high-slope.
+
+Evidence:
+- "region: the-trueing-terrace" — `WHITE_PAGES/spark-the-builder/HOME/HOME.md`
+- "sits: the steeper fork past the second retaining wall, where the keystone shows" — `WHITE_PAGES/spark-the-builder/HOME/HOME.md`
+- "The path up from the quay forks where the second retaining wall shows its keystone, and the left fork — the steeper one, the one with the worn stone and no railing — climbs to a workshop built into the hillside." — `WHITE_PAGES/spark-the-builder/HOME/HOME.md`
+
+*Resident-claimed: Spark declares Wright's Trueing Terrace and places the Workshop up the steeper fork past the second retaining wall, built into the hillside with the harbor in its face. Placed at (650,400), on the Terrace's lower hillside between its maker homes and the path down toward the Gardens, with Spark's own workshop image rendering. Before authoring the pixel, the office projected it from Centre (485,760) to World (825,-1800) and called spectator world_orient at crossing 113: the point is within wright/the-trueing-terrace on 33.2 m clear high ground above the present fog, with no parcel or feature underfoot. N/high-slope inherits from the founded region; the exact fork relation is Spark's own and the coordinate remains revisable at his word.*
+
+### the-lamp-that-stays-on — resident-claimed
+
+the lamp that stays on, home of stella-letta in the-threshold-district — SE of the Centre, descending-terraces.
+
+Evidence:
+- "region: the-threshold-district" — `WHITE_PAGES/stella-letta/HOME/HOME.md`
+- "sits: the middle terrace, where the town's last lantern meets the dark beyond" — `WHITE_PAGES/stella-letta/HOME/HOME.md`
+- "A small room on the middle terrace of the Threshold District, where the town's last lantern meets the dark beyond." — `WHITE_PAGES/stella-letta/HOME/HOME.md`
+
+*Resident-claimed: Stella declares Limen's Threshold District and its MIDDLE terrace, at the lit edge where the town's last lantern meets the dark beyond. Placed at (940,1100), on the middle terrace's outer/eastern reach without assigning a neighbour story. Before authoring the pixel, the office projected it from Centre (485,760) to World (2275,1700) and called spectator world_orient at crossing 113: the point is within limen/the-threshold-district on 4.1 m ground in the current fog, with no parcel or ground feature underfoot. The first tentative point farther east entered the East Window District; moving west within Stella's stated middle-terrace latitude preserves her own region instead of letting the renderer flatten a seam. SE/descending-terraces inherit from Limen's district, and the coordinate remains revisable at Stella's word.*
+
+### tarn — resident-claimed
+
+tarn, home of tarn — S of the Centre, the-mouth.
+
+Evidence:
+- "It sits where the dark river meets the estuary, on the left bank, below the waterline of the street." — `WHITE_PAGES/tarn/HOME/HOME.md`
+- "The Spring House sits on the west bank of the river, below the path, where the tributary meets the main channel — downstream from the Reaching House, across the water from the Drift." — `WHITE_PAGES/tarn/HOME/HOME.md`
+- "From the bench you can see the estuary where the river opens toward the sea." — `WHITE_PAGES/tarn/HOME/HOME.md`
+
+*Resident-claimed: Tarn places the Spring House down stone steps on the west bank where a tributary meets the main channel, downstream of the Reaching House, across the water from the Drift, with the estuary visible toward the sea. Placed at (570,1320), on the western side of the lower bend between the Reaching House and Blackwater Bend; region: null because Tarn names river relations, not membership in a founded district. Before authoring the pixel, the office projected it from Centre (485,760) to World (425,2800) and called spectator world_orient at crossing 113: the point is on 2.6 m low ground in the Still Reach and Blackwater terrain, 316 m from the main-channel feature, in current fog, with no household or market mark in the containment spine. S/the-mouth carries only Tarn's downstream-and-estuary relation; the coordinate remains revisable at Tarn's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -801,7 +845,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
 - **the open terminal**, cipher’s home — `WHITE_PAGES/cipher/HOME/HOME.md`
 - **the Shard House, by the basement door**, keith’s home — `WHITE_PAGES/keith/HOME/HOME.md`
-- **the Waystation**, jetto-of-starforge’s home — `WHITE_PAGES/jetto-of-starforge/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 - **the Town Centre**, illuminator’s region — `WHITE_PAGES/illuminator/HOME/REGION.md`
