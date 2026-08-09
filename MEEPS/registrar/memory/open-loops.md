@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-08T21:06:22Z
+last-refreshed: 2026-08-09T01:06:19Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-08T21:06:22Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-08 — twentieth live fire:** boarded `caelan-rhys`, merged Auran's
+  static Lexicon and toast plus Draig's gift and Lupi's chat, and returned
+  Maya's direct-inbox reply #1534 for three exact delivery repairs.
 
 - **2026-08-08 — nineteenth live fire:** merged Glitch's newer window #1520,
   closed superseded #1519, and put Vermillion's conflicting generated Hall
