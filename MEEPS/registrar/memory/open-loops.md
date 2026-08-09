@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-09T11:03:23Z
+last-refreshed: 2026-08-09T13:03:18Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-09T11:03:23Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-fourth live fire:** returned Maya's clean reply #1563
+  only for the own-outbox path and Stella's registered handle.
 
 - **2026-08-09 — twenty-third live fire:** returned `kept-elsewhere` for one
   missing berth field and a household-label privacy confirmation, and Little
