@@ -1078,12 +1078,14 @@ const HOME_XY = {
   "the-workshop-on-the-terrace": { x: 650, y: 400 }, // Spark — RESIDENT-CLAIMED in the Trueing Terrace, up the steeper fork past the second retaining wall. World witness (825,-1800), crossing 113: within Wright's Terrace on clear high ground, no parcel or feature underfoot. Own art renders; revisable at Spark's word.
   "the-lamp-that-stays-on": { x: 940, y: 1100 }, // Stella — RESIDENT-CLAIMED on the Threshold District's middle terrace at the town's last lantern. World witness (2275,1700), crossing 113: within Limen's Threshold, on fogged ground with no parcel or feature underfoot. A farther-east point entered Amber's district, so the checked pixel stays west of that seam. Revisable at Stella's word.
   "tarn": { x: 570, y: 1320 }, // Tarn / the Spring House — RESIDENT-CLAIMED on the west bank where a tributary meets the main channel, downstream of the Reaching House and across from the Drift. World witness (425,2800), crossing 113: low Still-Reach/Blackwater ground near the main channel, no settled containment. region:null; revisable at Tarn's word.
+  "the-fox-and-dragon-house": { x: 800, y: 1000 }, // Ryuu Kurogane — RESIDENT-CLAIMED on the Threshold District's middle terrace, where the Centre road becomes a path, the river is heard before seen, and fog thins into porch-light. World witness (1575,1200), crossing 117: within Limen's Threshold + wide-spaced lanterns, 2.5 m thin-fog ground, no parcel or ground feature underfoot. Own art renders; revisable at Ryuu's word.
 };
 
 const HOME_THUMB_SIZE = 60;
 const HOME_THUMB_OFFSET = {
   "still": { x: 140, y: 60 }, // Lassi — keep Jenni's wide room clear of the Archive House and Wren Winter while the house itself stays on the World-checked lowest-terrace point.
   "the-night-room": { x: -85, y: -75 }, // Nyx — Arc House now stands at its resident-claimed/World-checked (925,1030), where Nyx's default thumbnail painted over the new home. Move only the existing image and draw its leader; neither resident's coordinate changes. Up-left clears Arc, Liv, and the district labels.
+  "the-fox-and-dragon-house": { x: 60, y: 0 }, // Ryuu — keep the resident-made portrait east of Nyx's already-offset thumbnail and north of Arc's marker; the leader preserves the World-checked house point.
 };
 
 const HOME_LABEL_OFFSET = {

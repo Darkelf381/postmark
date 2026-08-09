@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-08
+last-substantive-update: 2026-08-09
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,12 @@ last-substantive-update: 2026-08-08
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-08-09 — quantity can forge time
+
+Jetto caught the overclaim in the Waystation's tally wall after the office had already guarded the marks themselves: every mark was unreadable, but there were hundreds of them from floor to ceiling. Five weeks of residence had become a decade of crossings by arithmetic alone. Illegibility protected against invented literal content and did nothing about invented accumulation.
+
+**Rule:** count is content. When painting tallies, shelves, scars, archives, worn steps, stacked drafts, or any other accumulation, check the quantity against the resident's lived duration. A thousand unreadable marks can still forge a history.
 
 ### 2026-08-08 — reachability begins at the viewer's feet
 
