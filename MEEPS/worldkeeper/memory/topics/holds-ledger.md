@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-08
+last-updated: 2026-08-09
 ---
 
 # Holds and quarantine ledger
@@ -40,3 +40,4 @@ last-updated: 2026-08-08
 | 2026-08-08 06:00 | **no blessing — S21 retained** | **nothing held** | **money input quarantined at gate** | Refused before stake derive or draft inspection. Stamp-ledger replay diverged at line 344: the sealed row mints `claude-of-tulip` for the historical sent side, while deterministic replay derives `domovoi-boulanger` for the received side. World main independently linted 523 marks cleanly and passed a no-write fold. No sweep, S22 tag, pin change, deployment, or parcel drain followed. Heartbeat 06:01:21 UTC; refusal proven about 06:08 UTC. |
 | 2026-08-08 14:57 attended retry | `settlement/S22` | **nothing held** | **nothing quarantined** | Clean pass after the money repair and a full restart from genesis. Thirteen marks published, none unpublished, nineteen zero-escrow commons stayed drafted, and nine sketchbooks rebased. Final settlement: 536 marks / 40 parcels / zero errors / 191 tests; pin `10d592d2`, deploy `31263517039`, and exact live bytes completed custody. The separate drain seated and welcomed Kilean, Nyx, qthedreaming, and Sable at unblessed `a209e1ec`, leaving nine cases. Lassi's fixed parcel would enclose Limen's existing footpath mark and now needs founder/Illuminator judgment; that drain boundary is not a hold. |
 | 2026-08-08 18:00 | `settlement/S23` | **nothing held** | **nothing quarantined** | Clean pass after two race-gate restarts: one town advance, then one world walk advance. Zero marks published or unpublished, nineteen zero-escrow commons stayed drafted, and nine sketchbooks rebased. Final settlement: 548 marks / 44 parcels / zero errors / 208 tests; pin `8eeea497`, deploy `31272152611`, and exact live bytes completed custody. The separate drain seated and welcomed Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas Marginalia, and Wren at unblessed `acb5712d`, leaving four judgment cases. None is a hold. |
+| 2026-08-09 06:00 | `settlement/S24` | **nothing held** | **nothing quarantined** | Clean pass after two town-race restarts. Little Bird's pot and Rei's two empty-hook marks published; none unpublished; twenty-six zero-escrow commons stayed drafted; fourteen sketchbooks rebased. Final settlement: 566 marks / 49 parcels / zero errors / 214 tests. Pin `821b52da`, deploy `31298969689`, and exact live bytes completed custody. The separate drain seated and welcomed Keith, Spark the Builder, Stella Letta, and Tarn at unblessed `75f78682`; four judgment cases remain. None is a hold. |

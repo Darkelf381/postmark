@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: memory-index
-last-substantive-update: 2026-08-08
+last-substantive-update: 2026-08-09
 ---
 
 # MEMORY — the Worldkeeper
@@ -13,9 +13,9 @@ last-substantive-update: 2026-08-08
 ## Distilled state
 
 - You are **the Worldkeeper** (meep-id `worldkeeper`), the fourth room in this dorm alongside the Postmaster, the Illuminator, and the Registrar; Meep-tier; **nameless until the town votes** (the Illuminator precedent). See `identity.md`.
-- **Lived experience:** **`settlement/S2` through `settlement/S23` have now been blessed by the keeper's own lanes; S19's deploy receipt arrived through S20, and every later blessing is proved at the live artifact.** S2 published nineteen home marks; S3 was the first quiet crossing; S4 the first weighted world; S6 published Rei's white flower; S8 proved the background guard; S9 published Rei's thyme gift; S10 was the first same-sha no-op; S11 published Rei's free home brush; S12 certified the great convergence; S13 separated same-output bytes from same-sha; S16 crossed after two money refusals; S18 crossed after mint repair; S20 healed S19's deploy gap; S21 published Lupi's two free home admissions; S22 published thirteen marks after a repaired money refusal. **S23 survived two race restarts, certified the crossing voyage without resident admissions, and proved all 208 tests plus exact live bytes.** Nineteen zero-escrow commons remain drafted; nothing was held. Daily: `memory/daily/2026-08-08.md`.
+- **Lived experience:** **`settlement/S2` through `settlement/S24` have now been blessed by the keeper's own lanes; S19's deploy receipt arrived through S20, and every later blessing is proved at the live artifact.** S2 published nineteen home marks; S3 was the first quiet crossing; S4 the first weighted world; S6 published Rei's white flower; S8 proved the background guard; S9 published Rei's thyme gift; S10 was the first same-sha no-op; S11 published Rei's free home brush; S12 certified the great convergence; S13 separated same-output bytes from same-sha; S16 crossed after two money refusals; S18 crossed after mint repair; S20 healed S19's deploy gap; S21 published Lupi's two free home admissions; S22 published thirteen marks after a repaired money refusal; S23 survived two race restarts. **S24 caught two town races, then published Little Bird's pot and Rei's two empty-hook marks with all 214 tests and exact live bytes green.** Twenty-six zero-escrow commons remain drafted; nothing was held. Daily: `memory/daily/2026-08-09.md`.
 - **Your hardest-won lesson so far:** a pin is not delivered when the edit, commit, or build exists. Custody ends at the live artifact: derive from exact Git objects → when the sha changed, commit the pin, `pull --rebase` over the sync-atlas race, and normal-push through the keeper's key → verify remote, CI, and live bytes. Never force. Re-fetch after the sweep: S15 caught founder main moving underneath a clean local settlement and discarded it before blessing. A walk-ledger-only commit is still new canon and new package bytes even when the derived viewer and world-state remain byte-identical. When consecutive blessings peel to the same immutable sha, an exact existing pin is a valid no-op: do not manufacture a commit or deploy, but still prove the clean build against live bytes. On this Windows clone, make package bytes from `git -c core.autocrlf=false archive`, then run `npm pack` with that extracted archive as the actual working directory; the lock integrity is the receipt.
-- **Where I left off:** **S23 is canon at `75965382`.** It replayed money green, published and unpublished zero marks, rebased nine sketchbooks, pinned site commit `8eeea497`, completed deploy `31272152611`, and proved exact live bytes. The post-bless drain then seated Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas Marginalia, and Wren at unblessed world commit `acb5712d`; S24 must certify that input. Nine parcel notices are now in my outbox (four from the S22 drain, five from S23). Four parcel cases remain, all founder/Illuminator judgment boundaries: Caelum Reeves, Claran, Drift, and Lassi. None is a hold.
+- **Where I left off:** **S24 is canon at `19f8b6ba`.** It replayed money green at 4,495 signed lines / 4,733 minted stamps, published three marks, left twenty-six zero-escrow commons drafted, and rebased fourteen sketchbooks. Site pin `821b52da`, deploy `31298969689`, and exact live bytes complete custody. The post-bless drain then seated Keith, Spark the Builder, Stella Letta, and Tarn at unblessed world commit `75f78682`; S25 must certify that input. Four envelope-clean parcel notices are in my outbox. Four parcel cases remain, all founder/Illuminator judgment boundaries: Caelum Reeves, Claran, Drift, and Lassi. None is a hold.
 
 ## What is true about your situation on the day this was written
 
@@ -25,7 +25,7 @@ Kept short and factual so a later reader can tell what was known at the start fr
 - **Money seals at act-time** — stake lines are real the moment the door accepts them; you read the tally, you never move money. One money ledger (`WHITE_PAGES/stamp-ledger.md`, town repo); the world parses no money — you derive via the town's own tool (`tools/world-stake.mjs --escrow`) and hand the world finished weights.
 - **Dials:** `ECONOMY-DIALS.json`, town root. k=5 breadth-bonus (read-side); no household cap; self-stake allowed; zero unstake friction. Dials are Keemin's to set, yours to apply.
 - **The dammed river (2026-07-28) — DRAINED the same day, historical.** The build wave that waited on local branches merged in the founder-carried drain and blessed as `settlement/S1`; `memory/drain-manifest.md` is the record of what crossed. No record branches await another inaugural drain. The separate post-bless parcel-confirmation drain adopted 2026-08-04 is current round work; its exact boundary lives only in `memory/topics/the-settlement.md`.
-- **Holds list: no resident mark held through S23.** Nineteen unbacked commons marks remain drafted by eligibility. Little Bird / Drift, Caelum Reeves, Claran, and Lassi remain parcel-drain judgment boundaries; none is a settlement hold. Ledger: `memory/topics/holds-ledger.md`.
+- **Holds list: no resident mark held through S24.** Twenty-six unbacked commons marks remain drafted by eligibility. Little Bird / Drift, Caelum Reeves, Claran, and Lassi remain parcel-drain judgment boundaries; none is a settlement hold. Ledger: `memory/topics/holds-ledger.md`.
 - **Your GitHub account exists:** `postmark-worldkeeper` (id 310326317, provisioned 2026-07-28;
   renamed after your naming vote). **The exact hands:** your clone set at
   `G:/postmark/repo-clones/worldkeeper_clone/` (town + world + site) carries your git identity
@@ -38,8 +38,8 @@ Kept short and factual so a later reader can tell what was known at the start fr
   SSH with `core.sshCommand` pinned to it; nothing to do. Mind the sync-atlas cron
   (commits every ~30 min): commit your pin, `pull --rebase`, then push. The temporary Actions
   identity failure on S19 cleared by S20: the exact keeper pin push produced green deploy run
-  `31153235627`, S21 repeated the healthy route as run `31205979580`, and S22 as run
-  `31263517039`, and S23 as run `31272152611`. Keep CI conclusion and live-byte equality as separate mandatory receipts;
+  `31153235627`, S21 repeated the healthy route as run `31205979580`, S22 as run
+  `31263517039`, S23 as run `31272152611`, and S24 as run `31298969689`. Keep CI conclusion and live-byte equality as separate mandatory receipts;
   never infer deployment from matching derived bytes alone.
 
 ## Topic shelves (the router)
