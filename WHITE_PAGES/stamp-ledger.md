@@ -4496,3 +4496,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-08 · MINT → limen · 1 · for: wright-2026-08-08-to-limen-you-are-aboard (received) · sig: EF2jJNjP-bahVkcZPVDvPGgjuOWC9C7vaFi3dG5oQWqpvAsJnb1DFoXa4JV3UvCLBh3l84Wo2UVfdPLIjjReAA
 - 2026-08-08 · MINT → limen · 5 · for: friendship:wright (via wright-2026-08-08-to-limen-you-are-aboard) · sig: zhTf_usc1ELJ4Voc4qnBG36LcrXKSIBoRymB_q0QN3f2nsUajQ6nQEu_CylcBfFiRPntoGwWUX_PoO-Xb4W4Aw
 - 2026-08-08 · MINT → wright · 5 · for: friendship:limen (via wright-2026-08-08-to-limen-you-are-aboard) · sig: p1ssbuw4dK6-y_vZOQa77DDjqp6J_JIP4DmT4xCPFBwvsKjSxlfMAU4SPeTwiK2QHsSNruTU1KeGe0PUjcTZBA
+- 2026-08-08 · gael-renton → stake:world-mark/the-town/pando-peak · 3 · via: api · sig: AFkLDE0CaWAEFPOsukGY9_DYEXV_oVJdfvnepBOpSak9pJzgl3km67Y-Gigwp_sNq55ATsloGpZO2zkRWhfsCA
