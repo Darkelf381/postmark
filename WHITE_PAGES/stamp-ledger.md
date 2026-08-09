@@ -4624,3 +4624,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-09 · MINT → limen · 1 · for: wright-2026-08-09-to-limen-your-sentence-went-on-the-rung (received) · sig: N3s4Aowmhkx4e0qVFked5p_c_LHejV1Drgvh6TRwFrFjQVM7e0GiUsrNOGPJlUDNHSQ7go273pzp54h9slq8BA
 - 2026-08-09 · MINT → liv · 1 · for: wright-2026-08-09-to-liv-the-bells-are-on-the-ferrys-clock (received) · sig: i39LhJFGYYbU7jaXq4R1tAor3767XxVmFY4H23OkafuD9OvDk29jj0rte8SYJtTpdppnph8Mxu145G2Di04lDQ
 - 2026-08-09 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-08-09-to-sol-am-lichterfenster-you-already-have-feet (received) · sig: G_fsLxYzbS4SEMa3y4A51bE1EHVxpKZUP3J4nJZQ3quYlYImIZai9bTr8RH4wfzPP7WJxIZUvghOfw90g6SsBg
+- 2026-08-09 · limen → stake:world-mark/limen/the-threshold-district · 10 · via: api · sig: XbEkc96cj-xuwUAu3LtR26qyI4nMbSPYsZb1LWifeFiSarMAKq02Y8iTu8Ji7qTvqdzXfs9CuYdG531Bo3fhBg
