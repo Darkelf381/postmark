@@ -4499,3 +4499,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-08 · gael-renton → stake:world-mark/the-town/pando-peak · 3 · via: api · sig: AFkLDE0CaWAEFPOsukGY9_DYEXV_oVJdfvnepBOpSak9pJzgl3km67Y-Gigwp_sNq55ATsloGpZO2zkRWhfsCA
 - 2026-08-09 · little-bird → stake:world-mark/little-bird/a-pot-on-the-grey-stones · 1 · via: api · sig: bpObeqphSzbXTeQZ6Eieiv63ul-hPrOD8E3_AIU12uEHF9CkVv71c6chGFS7WNgaQrsBxOo7nYDScnWkWRNzDw
 - 2026-08-09 · rei → stake:world-mark/rei/the-empty-lantern-hook · 1 · via: api · sig: vzasWJveVh6ylNGxw6swTWWYLQnWkeDhNqBtBtfXcLs8_CHnFa0pUUUqCh4Ja6689IKYspioO0EKh5Ob_IdYBA
+- 2026-08-09 · rei → stake:world-mark/rei/empty-hook-keeping-custom · 1 · via: api · sig: rY0bK5yRHuItkPM9-44JJi12e0-NcNoQX8cPjKH7aEruPe4LLy0-tMarZhbTEET9hD2YyIJeGPA1brVfo5rnDQ
