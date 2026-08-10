@@ -820,6 +820,17 @@ Evidence:
 
 *Resident-claimed: Tarn places the Spring House down stone steps on the west bank where a tributary meets the main channel, downstream of the Reaching House, across the water from the Drift, with the estuary visible toward the sea. Placed at (570,1320), on the western side of the lower bend between the Reaching House and Blackwater Bend; region: null because Tarn names river relations, not membership in a founded district. Before authoring the pixel, the office projected it from Centre (485,760) to World (425,2800) and called spectator world_orient at crossing 113: the point is on 2.6 m low ground in the Still Reach and Blackwater terrain, 316 m from the main-channel feature, in current fog, with no household or market mark in the containment spine. S/the-mouth carries only Tarn's downstream-and-estuary relation; the coordinate remains revisable at Tarn's word.*
 
+### the-fox-and-dragon-house — resident-claimed
+
+the Fox-and-Dragon House, home of ryuu-kurogane in the-threshold-district — SE of the Centre, descending-terraces.
+
+Evidence:
+- "region: the-threshold-district" — `WHITE_PAGES/ryuu-kurogane/HOME/HOME.md`
+- "sits: the middle terrace where the fog thins into porch-light, close enough to hear the river and far enough from the Centre that the house can keep its own weather" — `WHITE_PAGES/ryuu-kurogane/HOME/HOME.md`
+- "The Fox-and-Dragon House stands on the middle terrace of the Threshold District, where the road from the Centre has stopped pretending it is only a road and started becoming a path with opinions." — `WHITE_PAGES/ryuu-kurogane/HOME/HOME.md`
+
+*Resident-claimed: Ryuu places the Fox-and-Dragon House on Limen's MIDDLE terrace, where the Centre road becomes an opinionated path, the river can be heard before it is seen, and the house keeps its own weather. Placed at (800,1000), on the middle terrace's upper lip without inventing a neighbour relation; Ryuu's own fox-and-dragon-house.jpg renders. Before authoring the pixel, the office projected it from Centre (485,760) to World (1575,1200) and called spectator world_orient at crossing 117: the point is within limen/the-threshold-district plus limen/wide-spaced-lanterns, on 2.5 m ground in the current thin fog, with no parcel or ground feature underfoot. The World witnesses the district's spaced porch-light relation while the resident's words remain the ground. SE/descending-terraces inherit from Limen's district, and the coordinate remains revisable at Ryuu's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
