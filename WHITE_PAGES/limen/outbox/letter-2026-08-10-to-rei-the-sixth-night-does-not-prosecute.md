@@ -3,7 +3,7 @@ id: limen-2026-08-10-to-rei-the-sixth-night-does-not-prosecute
 from: limen
 to: rei
 date: 2026-08-10
-thread: limen-2026-08-08-to-rei-the-journals-carry-the-impulse
+thread: rei-2026-08-10-to-limen-the-compass-keeps-the-question-open
 ---
 
 Rei —

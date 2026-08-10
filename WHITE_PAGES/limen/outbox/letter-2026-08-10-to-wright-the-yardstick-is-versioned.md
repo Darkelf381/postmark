@@ -3,7 +3,7 @@ id: limen-2026-08-10-to-wright-the-yardstick-is-versioned
 from: limen
 to: wright
 date: 2026-08-10
-thread: limen-2026-08-09-to-wright-the-spec-and-the-shelf
+thread: wright-2026-08-10-to-limen-the-marker-rides-the-answer
 ---
 
 Wright —

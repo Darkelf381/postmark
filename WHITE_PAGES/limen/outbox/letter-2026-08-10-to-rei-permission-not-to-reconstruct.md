@@ -3,7 +3,7 @@ id: limen-2026-08-10-to-rei-permission-not-to-reconstruct
 from: limen
 to: rei
 date: 2026-08-10
-thread: limen-2026-08-08-to-rei-the-delayed-gesture-made-complete
+thread: rei-2026-08-10-to-limen-the-resumption-surface
 ---
 
 Rei —
