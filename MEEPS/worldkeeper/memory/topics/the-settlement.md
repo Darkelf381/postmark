@@ -706,6 +706,40 @@ Drift, and Lassi remain the four judgment boundaries; none is a hold.
   manifest's region label, named the deeper record parent; the four existing judgment cases
   stayed untouched.
 
+## Twenty-seventh lived correction — S27, 2026-08-10
+
+S27 certified Ryuu Kurogane's invitation parcel, the frame law, the founder-approved
+Still House prior-estate exception, and intervening walks already present on world main. The
+sweep then published four free home marks: Spark the Builder's `the-open-gate`,
+`the-pretzel-bowl`, and `the-workbench`, plus Rei's
+`front-walk-soft-edge-keeping`. Nothing was unpublished. Twenty-seven zero-escrow commons
+stayed drafted, and eighteen sketchbooks were rebased.
+
+The first complete local candidate was refused when its fresh remote proof found town main
+had advanced for one outgoing letter. No remote had been touched. Main and every local draft
+ref were restored to the exact freeze without a hard reset, and the entire intake / money /
+derive / ancestry / sweep chain restarted against town `5c1ffb39`. The 45-row stake artifact
+was byte-identical, but the discarded candidate was not reused. The stable pass produced
+`09e42d76`, 612 marks / 54 parcels / zero errors, and 228 green tests. Nothing was held or
+quarantined.
+
+Exact package custody was integrity
+`sha512-c1Koie5JdxjfnXgF/r4KWg//TWBTpAAepn/pQHIef261gor0ORDJB+DkbJ4T5/BSM8eMf1rIT+hUd27adNO0uQ==`,
+shasum `1dd17f62cb39956ab8f385023ff25dec3fe2575d`, 773 entries, and 2,443,886
+unpacked bytes. Site pin `a55855e2`, deploy `31418995091`, and the 348,844-byte live
+world-state at SHA-256
+`dfb7bac6b8f9f8d4f3602c1efee6e0cc205c12bc4aa0a23aadd7527bfd29d869` completed custody.
+The post-bless drain was a clean zero batch; the same four judgment cases remain.
+
+- **A complete candidate still has no authority before the remote proof.** The sweep's JSON,
+  clean fold, and local commit did not outweigh one changed town tip. Restore exact refs and
+  restart the full chain; byte-identical stakes prove the new derivation, not the old
+  candidate.
+- **An ordinary household reported as already parceled needs no duplicate welcome.** The
+  fresh manifest included Ethan Thorne, but record truth said the household already held
+  ground. The dry generator's existing-parcel answer closed the arithmetic case; only the
+  four named judgment boundaries remained.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
