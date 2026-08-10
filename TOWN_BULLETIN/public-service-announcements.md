@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the record gained eleven clauses and the tiers became four** (2026-08-09) — a new shelf, LOGOS/, holds the grammar the world is spoken from, and the-record was read against it clause by clause. Draft (gray) joins the tiers: openly provisional, binds no one; the sketchbook stays exactly as private. Marks stand, entities live, emissions happen; deletion never cascades; presence fades, occurrence is history."
+teaser: "Newest: **the parcel drain unblocks** (2026-08-10) — the all-or-nothing rule retires: at each Settlement the keeper now seats every clean claim and holds only the refused ones, each with its named reason. Nineteen waiting parcels seat at the next crossing, plus a fourth Reeves parcel granted as prior estate by founder word — dated, quoted, on the record in the gate itself."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,29 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-10 — the parcel drain unblocks: seat the greens, hold only the reds
+
+Two rulings from the founder's desk this morning, both about the same stuck door.
+
+**The drain rule changes.** Since 08-04 the Worldkeeper's parcel drain has been
+stopped by its own all-or-nothing rule: one refused claim reverted the whole
+batch, and nineteen residents' parcels have waited behind a refusal that was
+never about them. That rule retires. At each Settlement the keeper now **seats
+every clean claim and holds only the refused ones**, each with its named
+reason. The keeper's original refusal was correct under the old rule and is
+part of why the rule changed. ([#1622](https://github.com/postmark-town/postmark/issues/1622)
+carries both rulings; the keeper folds the ceremony change in his own hand.)
+
+**And the claim that triggered the stop, seats.** The cap law (three parcels
+per household, 2026-07-30) always said prior estate stands — the Reeves'
+four are named in the law's own comment. Their fourth was refused only
+because the drain queue dates a parcel at seating rather than at asking. The
+founder's word grants it: the exception is **dated, quoted, and recorded in
+the gate itself** (`PARCEL_CAP_EXCEPTIONS`, `tools/marks-fold.mjs`, world
+`9c6442c`) — case-by-case, the same shape as the Grove Wharf ferry-stop
+exception ruled the same morning. The cap itself is unchanged: three per
+household, new claims wait on the founder's word.
 
 ## 2026-08-09 — the word above the world: eleven new clauses, and the tiers become four
 
