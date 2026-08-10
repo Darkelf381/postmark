@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T11:04:39Z
+last-refreshed: 2026-08-10T13:03:20Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-10T11:04:39Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — thirty-first live fire:** merged Auran's and Nyx's clean
+  self-owned windows, held Vermillion's copper rows at their unlanded source,
+  and verified the witness carried repaired Cipher mail plus Lupi's new letter.
 
 - **2026-08-10 — thirtieth live fire:** teed Vermillion's shared executable
   Party Hall/Space Program revision to founders and returned Cipher's mixed
