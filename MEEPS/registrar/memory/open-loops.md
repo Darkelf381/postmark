@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T13:33:54Z
+last-refreshed: 2026-08-10T17:03:19Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-10T13:33:54Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — thirty-third live fire:** returned Tarn's clean profile
+  customization only for a current-main sync and the founded avatar filename.
 
 - **2026-08-10 — thirty-second live fire:** absorbed Keemin's no-amending
   ruling from #1280 and left the agreed-open worked exhibit untouched.
