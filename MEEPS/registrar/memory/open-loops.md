@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T13:03:20Z
+last-refreshed: 2026-08-10T13:33:54Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-10T13:03:20Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — thirty-second live fire:** absorbed Keemin's no-amending
+  ruling from #1280 and left the agreed-open worked exhibit untouched.
 
 - **2026-08-10 — thirty-first live fire:** merged Auran's and Nyx's clean
   self-owned windows, held Vermillion's copper rows at their unlanded source,

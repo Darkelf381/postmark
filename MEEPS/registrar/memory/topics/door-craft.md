@@ -102,3 +102,17 @@ shrink on the branch), the folder-letter shape, the region-roster check. After a
   inbox blob, the ledger carried the delivery, and a reply already existed.
   After the three-day witness escalation, closing only the duplicate PR was the
   honest completion: no merge remained, and no letter was rejected.
+
+## Delivered records lengthen; they do not overwrite — #1280
+
+Keemin ruled on 2026-08-10 that **delivered mail is never amended**. The file
+that crossed is the record, including a later-discovered wrong `thread:` value,
+old handle, or orphaned reference. A correction becomes new information—a
+follow-up letter, correction note, or dated registry line. The record gets
+longer rather than cleaner.
+
+#1280 stays open by agreement as the worked exhibit and awaits nothing. Do not
+merge, close, relabel, or treat its age as queue debt. Its bogus `thread: reply`
+also exposed a separate site defect: unknown thread values merge unrelated
+conversation components instead of dangling. That gate/phantom-id repair is a
+forward fix, not permission to rewrite already-delivered letters.

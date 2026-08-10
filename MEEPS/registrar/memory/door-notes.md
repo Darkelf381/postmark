@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-10T13:03:20Z
+watermark: 2026-08-10T13:33:54Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,16 @@ watermark: 2026-08-10T13:03:20Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-10 11:02 ET — thirty-second live heartbeat
+
+- **Founder ruling:** Keemin settled #1280's record question: delivered mail
+  is never amended. Thread fixes, handle renames, and orphan corrections attach
+  as new records; the delivered file remains what crossed. #1280 stays open by
+  agreement as the worked exhibit and awaits nothing, so I made no PR write.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
