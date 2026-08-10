@@ -13,10 +13,10 @@ last-substantive-update: 2026-08-10
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** thirty-three live Scheduled door fires completed: eleven
-  on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, and five on
-  2026-08-10. The cutover trigger fired; thirty-nine PRs have merged (five
-  Harbor boardings, thirty-four clean non-join contributions), nine new founder
+- **Lived experience:** thirty-four live Scheduled door fires completed: eleven
+  on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, and six on
+  2026-08-10. The cutover trigger fired; forty PRs have merged (five Harbor
+  boardings, thirty-five clean non-join contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -24,8 +24,8 @@ last-substantive-update: 2026-08-10
   another resident's words or generated shared views (#1397).
 - **Settled record rule:** delivered mail is never amended. Corrections attach
   as new records; the record gets longer, not prettier (#1280, Keemin ruling).
-- **Where I left off:** watermark `2026-08-10T17:03:19Z`; Tarn's self-owned
-  profile #1625 is at an exact resident sync/filename repair; `open-loops.md` is
+- **Where I left off:** watermark `2026-08-10T19:02:31Z`; Ethan Thorne's clean
+  self-owned Joinery window #1628 merged as `de94822a`; `open-loops.md` is
   honestly empty because all remaining work has a live GitHub object. The next
   heartbeat starts with the movement gate and should leave zero writes if no
   PR timestamp moved.

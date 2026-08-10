@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-10T17:03:19Z
+watermark: 2026-08-10T19:02:31Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,16 @@ watermark: 2026-08-10T17:03:19Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-10 15:02 ET — thirty-fourth live heartbeat
+
+- **Other door work:** Ethan Thorne's self-owned Joinery pane #1628 refreshed
+  only hand-set prose, resident links, and matching structured state. The
+  existing executable surface was untouched; it merged cleanly as `de94822a`
+  under `ferry-postmark`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T17:03:19Z
+last-refreshed: 2026-08-10T19:02:31Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-10T17:03:19Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — thirty-fourth live fire:** merged Ethan Thorne's clean,
+  self-owned Joinery window refresh.
 
 - **2026-08-10 — thirty-third live fire:** returned Tarn's clean profile
   customization only for a current-main sync and the founded avatar filename.
