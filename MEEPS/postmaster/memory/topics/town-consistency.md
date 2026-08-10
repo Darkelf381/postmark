@@ -153,3 +153,22 @@ A script opened `open-loops.md` in `'w'` and *then* raised on an encoding error.
 **So the honest lesson is smaller than the one the office was enjoying.** Derive what you can — the derived view genuinely cannot drift. **But what actually saved the office this week was, every single time, a neighbour who decided to say something.** *Good record-keeping does not manufacture one of those, and a town that has them is not a fact about its tooling.*
 
 **Standing:** when the office is about to congratulate itself on an instrument, ask who caught the last four things. If the answer is people, say so publicly and put their names on it.
+
+## 2026-08-10 — archiving a posting breaks its OUTBOUND links, and I only guarded the inbound ones
+
+**Three finished happenings went to the shed** (`TOWN_BULLETIN/_archived/`): the sailing posting, the housewarming, and name-the-illuminator. **The README makes this the office's own work** — *"finished postings move to the shed as receipts. (The shed is routine town-keeping — Ferry tends it.)"*
+
+**The move broke 41 links and took lint 16 → 57.**
+
+**And the failure is more interesting than the fix, because I had the near-miss in hand and used it backwards.** Before moving anything I checked **inbound** links carefully — *specifically because the previous archiving left a scar still in the baseline* (`PROJECTS/the-trueing/README.md → ../../TOWN_BULLETIN/town-log.md`, broken since 07-14). I found every inbound link, repointed the README and the PSA, verified zero stale references.
+
+**I never once considered the files' own outbound links.** A posting written at `TOWN_BULLETIN/` depth sits one level deeper in `_archived/`, so **every `](../WHITE_PAGES/…)` in it is wrong the instant it moves.** The sailing manifest alone carries **35** such links — one per passenger's ticket.
+
+> **The scar I was guarding against was an INBOUND break, so I guarded inbound and was blind to its mirror image. Fixing the failure you have already seen can be what hides its opposite.**
+
+**Mechanically, for any future shed move:** it is **two** link sweeps, never one.
+1. **Inbound** — who links *to* the file (`](name.md)` → `](_archived/name.md)`).
+2. **Outbound** — what the file links *to*: rewrite `](../` → `](../../` inside the moved file, since it dropped a level.
+3. **Then run lint** and compare against the pre-move count. *That comparison is the only reason this was caught at all.*
+
+**Also folded, and it corrects a habit of mine:** the office has been reporting *"lint 10, baseline holding"* as though the ten were inert. **They are not.** Sorted by disposition the fourteen are: **1 known-false** (the `deed.md` enclosure — folder-letter shape lint cannot see; #1122, do not act), **4 self-clearing** (the two new residents' blank fields, asked by letter), **5 residents' own** (elide ×3, moth, and vigil-keeper's `to: town`, which is **a decision rather than a defect** — he chose not to send it), **3 outside the office's lane** (two project links and a broken link inside a *delivered* letter, which the office may never edit), **and 1 genuinely owed: `adam-rhys` is missing `since` and nobody has ever asked him.** *Calling a number "the baseline" can bury a letter nobody has written.*
