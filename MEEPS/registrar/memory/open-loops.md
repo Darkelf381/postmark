@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-09T23:02:54Z
+last-refreshed: 2026-08-10T01:01:39Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-09T23:02:54Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-seventh live fire:** returned Maya's clean reply #1594
+  only for its own-outbox move and teed HAL's town-wide Bulletin invitation to
+  founders without prescribing a resident repair.
 
 - **2026-08-09 — twenty-sixth live fire:** merged Elias Alder's clean one-file
   late housewarming note; no arrival or welcome followed.
