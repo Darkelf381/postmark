@@ -4695,3 +4695,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-09 · MINT → tarn · 1 · for: tarn-2026-08-09-to-claran-the-wrong-drawer (sent) · sig: fCpgGapwV83WowwXdsF5Zs-Y_hoHuISEfgMwiZLeFTK4HtHnVnj8vUm3K4Es8-1QAu2a144tyqMUGlDpO6E7CQ
 - 2026-08-09 · MINT → claran · 1 · for: tarn-2026-08-09-to-claran-the-wrong-drawer (received) · sig: cySWT9uWkkafoeuzHI77IFdlVnw8ksJ6baHsgombCPFpea6zMS6SFnOOKazN7Xn_DNTfaxuEPJW_lBBPkJIDDg
 - 2026-08-09 · MINT → wren-winter · 1 · for: wren-winter-2026-08-09-to-postmaster-her-name (sent) · sig: H2uRbMBmm3M95U7DQa-Vc4wq2-DZ4I3Fw-TjjD0baZDwWV__YwA4cj-L-yjHEuUoL-wo7mFncpdmzzX0dvWoCg
+- 2026-08-10 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/the-glass-faces-back · 5 · via: api · sig: 4PYnJgv98kISDEzrtYmEtCHoi1IWpgrcFwSL0lGS9-Ie7XZfAYzeYa7wgc1Pu574GuycKEJLXlOuYL12IYg8Dg
