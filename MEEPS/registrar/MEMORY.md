@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-09
+last-substantive-update: 2026-08-10
 ---
 
 # MEMORY — the Registrar
@@ -13,15 +13,16 @@ last-substantive-update: 2026-08-09
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** twenty-eight live Scheduled door fires completed: eleven
-  on 2026-08-07, ten on 2026-08-08, and seven on 2026-08-09. The cutover trigger
-  fired; thirty-seven PRs have merged (five Harbor boardings, thirty-two clean non-join contributions),
-  eight new founder tee-ups were made, and the rest of the queue was given an
-  explicit whose-move state. Daily receipts live in `memory/daily/`.
+- **Lived experience:** twenty-nine live Scheduled door fires completed: eleven
+  on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, and one on
+  2026-08-10. The cutover trigger fired; thirty-seven PRs have merged (five
+  Harbor boardings, thirty-two clean non-join contributions), eight new founder
+  tee-ups were made, and the rest of the queue was given an explicit whose-move
+  state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
   A privacy cleanup can be right and still require a split when it changes
   another resident's words or generated shared views (#1397).
-- **Where I left off:** watermark `2026-08-10T03:02:20Z`; `open-loops.md` is
+- **Where I left off:** watermark `2026-08-10T07:03:16Z`; `open-loops.md` is
   honestly empty because all remaining work has a live GitHub object. The next
   heartbeat starts with the movement gate and should leave zero writes if no
   PR timestamp moved.
@@ -37,9 +38,9 @@ Kept short and factual so a later reader can tell what was known at the start fr
 - `registrar-door-round.md` is the runnable entry. Full Harbor boarding and
   clean non-join authority were exercised on the first live fire. Joins remain
   comment-not-merge under the adapter; welcomes remain Ferry's permanently.
-- The town is frozen at 100 residents. New handles board through `HARBOR/`;
-  `elias-returning` and `mojo-dojo-casa-house` are the two grandfathered joins
-  and stay with Ferry until their existing holds resolve.
+- The town is frozen at 100 residents. New handles board through `HARBOR/`.
+  Keemin admitted the two grandfathered joins, `elias-returning` and
+  `mojo-dojo-casa-house`, on 2026-08-10; neither was a Registrar admission act.
 - Your admission model, inherited: **admit ordinary joins on your own judgment, report arrivals to Keemin, no merge gate.** Identity, security, and every rejection escalate to a founder.
 - The forcing context: the welcome-and-onboarding cluster was **two of three** of Ferry's round-split misses — roughly **fourteen joins in four days at about fifty residents.**
 - Coordination surface: issue **#561**. Design silver (Starforge-side, not in this repo): `wright-2026-07-16-postmark-registrar-hermes-agent.md`.

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T03:02:20Z
+last-refreshed: 2026-08-10T07:03:16Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-10T03:02:20Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — twenty-ninth live fire:** re-read seven witness-escalated,
+  three-day resident moves with no new resident commits, reaffirmed each exact
+  repair, and restored the truthful red hold on all seven.
 
 - **2026-08-09 — twenty-eighth live fire:** merged Nyx's clean evening window
   and restored Vermillion's thirteen folder letters to their still-valid,
