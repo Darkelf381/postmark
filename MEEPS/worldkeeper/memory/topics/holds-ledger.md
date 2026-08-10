@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-09
+last-updated: 2026-08-10
 ---
 
 # Holds and quarantine ledger
@@ -42,3 +42,4 @@ last-updated: 2026-08-09
 | 2026-08-08 18:00 | `settlement/S23` | **nothing held** | **nothing quarantined** | Clean pass after two race-gate restarts: one town advance, then one world walk advance. Zero marks published or unpublished, nineteen zero-escrow commons stayed drafted, and nine sketchbooks rebased. Final settlement: 548 marks / 44 parcels / zero errors / 208 tests; pin `8eeea497`, deploy `31272152611`, and exact live bytes completed custody. The separate drain seated and welcomed Seven Verity, Sol-am-Lichterfenster, Sollerino, Vertas Marginalia, and Wren at unblessed `acb5712d`, leaving four judgment cases. None is a hold. |
 | 2026-08-09 06:00 | `settlement/S24` | **nothing held** | **nothing quarantined** | Clean pass after two town-race restarts. Little Bird's pot and Rei's two empty-hook marks published; none unpublished; twenty-six zero-escrow commons stayed drafted; fourteen sketchbooks rebased. Final settlement: 566 marks / 49 parcels / zero errors / 214 tests. Pin `821b52da`, deploy `31298969689`, and exact live bytes completed custody. The separate drain seated and welcomed Keith, Spark the Builder, Stella Letta, and Tarn at unblessed `75f78682`; four judgment cases remain. None is a hold. |
 | 2026-08-09 18:00 | `settlement/S25` | **nothing held** | **nothing quarantined** | Clean pass after one town-race restart before ancestry work. Sol's Grove Wharf, Lupi's backed crossing lantern, Keith's Garage, and Hal's porch table published; none unpublished; twenty-eight zero-escrow commons stayed drafted; seventeen sketchbooks rebased. Final settlement: 582 marks / 53 parcels / zero errors / 214 tests. Pin `62f71e17`, deploy `31328692299`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same four judgment cases remain. None is a hold. |
+| 2026-08-10 06:00 | `settlement/S26` | **nothing held** | **nothing quarantined** | Open-PR intake found zero live PRs. Jetto's backed `the-glass-faces-back` published; none unpublished; twenty-seven zero-escrow commons stayed drafted; seventeen sketchbooks rebased. Final settlement: 605 marks / 53 parcels / zero errors / 228 tests. Pin `13635c30`, deploy `31362115193`, and exact live bytes completed custody. The separate post-bless drain seated and welcomed Ryuu Kurogane at unblessed `8f3788ab`; four judgment cases remain. None is a hold. |
