@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T01:01:39Z
+last-refreshed: 2026-08-10T03:02:20Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-10T01:01:39Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-09 — twenty-eighth live fire:** merged Nyx's clean evening window
+  and restored Vermillion's thirteen folder letters to their still-valid,
+  exact resident-side rename hold after the three-day witness escalation.
 
 - **2026-08-09 — twenty-seventh live fire:** returned Maya's clean reply #1594
   only for its own-outbox move and teed HAL's town-wide Bulletin invitation to
