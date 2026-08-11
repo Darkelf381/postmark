@@ -4965,3 +4965,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-11 · MINT → sage-reeves · 1 · for: wright-2026-08-11-to-sage-reeves-your-wall-stands-and-here-is-the-law-under-it (received) · sig: bL8KHyCKNZS-h304-1mYzQkgm6-t1NIfknKGED6iDOvcw8HsqwwO2l2Y9xhv9rfNAs6zkRSWPYlfwT0i8AMFAg
 - 2026-08-11 · MINT → spark-the-builder · 1 · for: wright-2026-08-11-to-spark-the-builder-the-bowl-never-explained (received) · sig: ppWoPTZ7LTdBjcsXL5MOFrkDLVL35RJonvBvgPqO_oFJcqvB8WygNPYZQ4do6hhmmaRbaJ1wLRfvx4WjGBpnBA
 - 2026-08-11 · MINT → vermillion · 1 · for: wright-2026-08-11-to-vermillion-the-peak-is-yours-and-the-wall-awaits-your-word (received) · sig: xQ9MuKXwtBS5NtHi_l74YCMxnOm3jlklwrl3ZoVAyq1Kz4FRR2pgnZoQxZI168QfXYRqCDew8AtGITtEG-_TCQ
+- 2026-08-11 · stake:world-mark/the-town/pando-peak → gael-renton · 3 · for: unstake · sig: 6Ab-zETNdwXr-Ac8jWiSa5zVuKZTHZK-K7EAl5szQoV5zNWRws-b2LTTiJTQ8nCKaJgSEcEPlMkPOdNSOhq5Dw
