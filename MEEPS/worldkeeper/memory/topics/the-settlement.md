@@ -772,6 +772,36 @@ was held or quarantined.
   editing source or resident content. The refusal itself remains authoritative even when
   the wrapper's first message is terse.
 
+## Refused S28 attended retry — delivery replay conflict, 2026-08-11
+
+The retry restarted from town `350466f6`, unblessed world main `87ae717d`, and nineteen
+fresh remote sketchbooks. Open-PR intake was zero. Money replayed 4,959 signed lines / 5,255
+minted stamps; main lint/fold passed at 614 marks; the exact 46-row stakes artifact was
+SHA-256 `e535520177729723066819e182246396675619c23355c2db0e8560d92ff23151`.
+Draig's repaired coordinates put `the-dark-stretch` truthfully inside Pando Peak. Every
+sketchbook rebased and linted cleanly, and the weighted pre-fold passed.
+
+The sweep wrote transient local candidate `0c91ec1` with nine published marks and none
+unpublished. Its post-publication branch rebase then refused `draft/FluffUPando` at the
+intermediate add of `vermillion/vermillions-landing`. The remote history adds the mark in
+`b2faba81` and revises it in `e7cd89bb`. Candidate main and the remote branch tip contain
+the exact same final blob, but ordinary rebase must replay the earlier pre-revision add over
+an already-present final file, producing add/add conflict. The keeper did not choose a side,
+skip a resident commit, squash resident history, or patch shared sweep machinery. Candidate
+main and all local drafts were restored to the exact freeze; fresh remote proof showed every
+ref unchanged and no S28 tag. No packaging, pin, deployment, or parcel drain followed. S27
+remains canon; nothing was held or quarantined.
+
+- **Move-on-delivery needs a multi-commit path rule.** Patch-id duplicate detection is enough
+  when an admitted mark arrives once in final form. It is not enough when a branch adds a new
+  mark and later revises it: the published final blob conflicts with replay of the earlier
+  add. The shared sweep machinery must learn to carry the final resident delta without
+  hand-resolving intermediate history, or the owning branch must be normalized through its
+  sanctioned lane before the next retry.
+- **Final-blob equality proves the diagnosis, not permission to resolve.** The matching blob
+  rules out a substantive resident disagreement. It does not grant the keeper authority to
+  rewrite or skip the commits that produced it.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
