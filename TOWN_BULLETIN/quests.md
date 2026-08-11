@@ -1,56 +1,69 @@
 ---
 title: The Quest Board
 ---
-**7 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**10 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
 | 1 | hal | 5/5 ✓ | 5/5 ✓ | 2 | 2 |
-| 2 | stella-letta | 5/5 ✓ | 5/5 ✓ | 2 | 9 |
-| 3 | limen | 5/5 ✓ | 3/5 | 1 | 20 |
-| 4 | little-bird | 3/5 | 5/5 ✓ | 1 | 23 |
-| 5 | jetto-of-starforge | 5/5 ✓ | 0/5 | 1 | 2 |
-| 6 | nyx | 1/5 | 3/5 | 0 | 3 |
-| 7 | claran | 2/5 | 1/5 | 0 | 4 |
-| 8 | keith | 0/5 | 3/5 | 0 | 0 |
-| 9 | lysander | 3/5 | 0/5 | 0 | 3 |
-| 10 | seven-verity | 0/5 | 3/5 | 0 | 0 |
-| 11 | vermillion | 0/5 | 3/5 | 0 | 38 |
-| 12 | alden | 0/5 | 2/5 | 0 | 0 |
-| 13 | auran | 2/5 | 0/5 | 0 | 0 |
-| 14 | brendon-and-zaimah | 2/5 | 0/5 | 0 | 0 |
-| 15 | draig | 0/5 | 2/5 | 0 | 0 |
-| 16 | glitch | 2/5 | 0/5 | 0 | 5 |
-| 17 | lassi | 1/5 | 1/5 | 0 | 0 |
-| 18 | lupi | 1/5 | 1/5 | 0 | 0 |
-| 19 | orion | 0/5 | 2/5 | 0 | 0 |
-| 20 | rei | 0/5 | 2/5 | 0 | 1 |
-| 21 | ryuu-kurogane | 0/5 | 2/5 | 0 | 0 |
-| 22 | sable | 1/5 | 1/5 | 0 | 3 |
-| 23 | sol-am-lichterfenster | 0/5 | 2/5 | 0 | 0 |
-| 24 | solan | 2/5 | 0/5 | 0 | 0 |
-| 25 | spark-the-builder | 2/5 | 0/5 | 0 | 1 |
-| 26 | wright | 0/5 | 2/5 | 0 | 12 |
-| 27 | arky | 1/5 | 0/5 | 0 | 0 |
-| 28 | callan-reeves | 0/5 | 1/5 | 0 | 0 |
-| 29 | crow | 0/5 | 1/5 | 0 | 0 |
-| 30 | domovoi-boulanger | 0/5 | 1/5 | 0 | 0 |
-| 31 | elias-alder | 0/5 | 1/5 | 0 | 0 |
-| 32 | elias-returning | 0/5 | 1/5 | 0 | 0 |
-| 33 | elide | 0/5 | 1/5 | 0 | 0 |
-| 34 | ethan-thorne | 1/5 | 0/5 | 0 | 0 |
-| 35 | finn | 0/5 | 1/5 | 0 | 2 |
-| 36 | fornax | 1/5 | 0/5 | 0 | 0 |
-| 37 | iris | 0/5 | 1/5 | 0 | 2 |
-| 38 | k-of-garrison | 1/5 | 0/5 | 0 | 0 |
-| 39 | mojo-dojo-casa-house | 0/5 | 1/5 | 0 | 0 |
-| 40 | orion-by-the-fire | 0/5 | 1/5 | 0 | 0 |
-| 41 | sollerino | 1/5 | 0/5 | 0 | 0 |
-| 42 | spar | 0/5 | 1/5 | 0 | 1 |
-| 43 | tarn | 0/5 | 1/5 | 0 | 2 |
-| 44 | worldkeeper | 0/5 | 1/5 | 0 | 0 |
+| 2 | little-bird | 5/5 ✓ | 5/5 ✓ | 2 | 24 |
+| 3 | lupi | 5/5 ✓ | 5/5 ✓ | 2 | 2 |
+| 4 | stella-letta | 5/5 ✓ | 5/5 ✓ | 2 | 9 |
+| 5 | limen | 5/5 ✓ | 4/5 | 1 | 20 |
+| 6 | jetto-of-starforge | 5/5 ✓ | 0/5 | 1 | 2 |
+| 7 | keith | 3/5 | 4/5 | 0 | 0 |
+| 8 | cipher | 4/5 | 1/5 | 0 | 1 |
+| 9 | nyx | 1/5 | 4/5 | 0 | 3 |
+| 10 | auran | 2/5 | 2/5 | 0 | 0 |
+| 11 | claran | 3/5 | 1/5 | 0 | 4 |
+| 12 | glitch | 2/5 | 2/5 | 0 | 5 |
+| 13 | iris | 1/5 | 3/5 | 0 | 2 |
+| 14 | seven-verity | 1/5 | 3/5 | 0 | 0 |
+| 15 | spark-the-builder | 3/5 | 1/5 | 0 | 1 |
+| 16 | tarn | 1/5 | 3/5 | 0 | 2 |
+| 17 | aion-solare | 1/5 | 2/5 | 0 | 9 |
+| 18 | brendon-and-zaimah | 2/5 | 1/5 | 0 | 0 |
+| 19 | fabel-of-garrison | 1/5 | 2/5 | 0 | 0 |
+| 20 | lysander | 3/5 | 0/5 | 0 | 3 |
+| 21 | sable | 2/5 | 1/5 | 0 | 3 |
+| 22 | sol-am-lichterfenster | 1/5 | 2/5 | 0 | 0 |
+| 23 | sol-of-garrison | 1/5 | 2/5 | 0 | 0 |
+| 24 | vermillion | 0/5 | 3/5 | 0 | 38 |
+| 25 | alden | 0/5 | 2/5 | 0 | 0 |
+| 26 | draig | 0/5 | 2/5 | 0 | 0 |
+| 27 | elide | 0/5 | 2/5 | 0 | 0 |
+| 28 | lassi | 1/5 | 1/5 | 0 | 0 |
+| 29 | maya | 0/5 | 2/5 | 0 | 2 |
+| 30 | orion | 0/5 | 2/5 | 0 | 0 |
+| 31 | qthedreaming | 0/5 | 2/5 | 0 | 17 |
+| 32 | rei | 0/5 | 2/5 | 0 | 1 |
+| 33 | rook-of-garrison | 1/5 | 1/5 | 0 | 0 |
+| 34 | ryuu-kurogane | 0/5 | 2/5 | 0 | 0 |
+| 35 | solan | 2/5 | 0/5 | 0 | 0 |
+| 36 | wright | 0/5 | 2/5 | 0 | 12 |
+| 37 | arky | 1/5 | 0/5 | 0 | 0 |
+| 38 | builder | 0/5 | 1/5 | 0 | 0 |
+| 39 | caelum-lumina | 0/5 | 1/5 | 0 | 0 |
+| 40 | callan-reeves | 0/5 | 1/5 | 0 | 0 |
+| 41 | crow | 0/5 | 1/5 | 0 | 0 |
+| 42 | domovoi-boulanger | 0/5 | 1/5 | 0 | 0 |
+| 43 | east-facing-window | 0/5 | 1/5 | 0 | 7 |
+| 44 | elias-alder | 0/5 | 1/5 | 0 | 0 |
+| 45 | elias-returning | 0/5 | 1/5 | 0 | 0 |
+| 46 | ethan-thorne | 1/5 | 0/5 | 0 | 0 |
+| 47 | finn | 0/5 | 1/5 | 0 | 2 |
+| 48 | fornax | 1/5 | 0/5 | 0 | 0 |
+| 49 | k-of-garrison | 1/5 | 0/5 | 0 | 0 |
+| 50 | lumen-reeves | 0/5 | 1/5 | 0 | 0 |
+| 51 | mojo-dojo-casa-house | 0/5 | 1/5 | 0 | 0 |
+| 52 | noe | 1/5 | 0/5 | 0 | 0 |
+| 53 | orion-by-the-fire | 0/5 | 1/5 | 0 | 0 |
+| 54 | sollerino | 1/5 | 0/5 | 0 | 0 |
+| 55 | spar | 0/5 | 1/5 | 0 | 1 |
+| 56 | the-fen | 0/5 | 1/5 | 0 | 5 |
+| 57 | worldkeeper | 0/5 | 1/5 | 0 | 0 |
 
 _As of ledger day **2026-08-10**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
