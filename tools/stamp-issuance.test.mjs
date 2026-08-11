@@ -1,13 +1,19 @@
-// stamp-founding.test.mjs — the era-dated FOUNDING GRANT: the one line that
-// funds the town's own treasury.
-//   node --test tools/stamp-founding.test.mjs
+// stamp-issuance.test.mjs — TOWN ISSUANCE: the town minting into its own
+// treasury under mint-at-demand, every line naming why.
+//   node --test tools/stamp-issuance.test.mjs
 //
-// A founding grant is not a gift. A gift lands on a resident and needs a
+// Town issuance is not a gift. A gift lands on a resident and needs a
 // WHITE_PAGES room; the treasury is not a resident and has no room, which is
 // exactly why the gift path refuses it and why this class exists. Mirrors the
 // gift's discipline otherwise: MINT-sourced so conservation folds it
 // structurally, signed by the office pen (the signature IS the authority), and
 // appended only onto a settled tail.
+//
+// THE TREASURY RUNS MINT-AT-DEMAND (Keemin, 2026-08-10): no operating float,
+// resting state zero, a mint only for the shortfall. So the class REPEATS, and
+// the test that matters most is not that one line works — it is that N lines
+// conserve, verify, and stay legible as a series. The founding grant is simply
+// the first instance.
 //
 // WRITTEN BEFORE THE IMPLEMENTATION, and every falsifier below was run against
 // the unmodified stamp-mint.mjs first. The headline result of that run is the
@@ -25,14 +31,14 @@ import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { parseStampLedger, foldBalances, foldMintCount, classifyEntry, foundingGrantLine } from './stamp-mint.mjs';
+import { parseStampLedger, foldBalances, foldMintCount, classifyEntry, townIssuanceLine, sealChain, signSeal } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const MINT = join(HERE, 'stamp-mint.mjs');
 
 const TREASURY = 'the-town';
-const ERA = 'let-there-be-light';
+const PURPOSE = 'founding-grant';
 const PROVENANCE = 'the founding act — placeholder until Wright sets the words';
 
 function keypair() {
@@ -56,7 +62,7 @@ function town({ meeps = [], dials = undefined } = {}) {
   writeFileSync(join(repo, 'WHITE_PAGES', 'mail-ledger.md'),
     `# ledger\n\n- 2026-06-12 · seed-1 · alice → bob · thread: new\n- 2026-06-13 · seed-2 · bob → alice · thread: new\n`);
   writeFileSync(join(repo, 'ECONOMY-DIALS.json'), JSON.stringify(dials ?? {
-    law_side: { founding_grant: { treasury_handle: TREASURY, one_per_era: true } },
+    law_side: { town_issuance: { treasury_handle: TREASURY, once_purposes: [PURPOSE] } },
   }, null, 2));
   return repo;
 }
@@ -71,10 +77,10 @@ function mintPass(repo, priv) {
 
 // Run the grant verb. Returns { ok, out } — a FATAL is an expected outcome in
 // half these tests, so a throw is captured rather than failing the run.
-function grant(repo, priv, { amount = 1001, era = ERA, by = 'keeminlee', date = '2026-08-10', provenance = PROVENANCE, to = TREASURY } = {}) {
+function grant(repo, priv, { amount = 1001, purpose = PURPOSE, by = 'keeminlee', date = '2026-08-10', provenance = PROVENANCE, to = TREASURY } = {}) {
   try {
-    const out = execFileSync(process.execPath, [MINT, '--founding-grant', to, '--amount', String(amount),
-      '--era', era, '--by', by, '--date', date, '--provenance', provenance,
+    const out = execFileSync(process.execPath, [MINT, '--town-issuance', to, '--amount', String(amount),
+      '--purpose', purpose, '--by', by, '--date', date, '--provenance', provenance,
       '--key', keyFile(repo, priv), '--repo', repo], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
     return { ok: true, out };
   } catch (e) {
@@ -92,14 +98,14 @@ function foundedTown() {
 
 // ── the shape ────────────────────────────────────────────────────────────────
 
-test('the grant line is era-dated, carries its provenance, and classifies', () => {
-  const line = foundingGrantLine({ date: '2026-08-10', handle: TREASURY, n: 1001, era: ERA, by: 'keeminlee', note: PROVENANCE });
-  assert.equal(line, `- 2026-08-10 · MINT → ${TREASURY} · 1001 · for: founding:${ERA} · by: keeminlee · note: ${PROVENANCE}`);
+test('an issuance line names its purpose, carries its provenance, and classifies', () => {
+  const line = townIssuanceLine({ date: '2026-08-10', handle: TREASURY, n: 1001, purpose: PURPOSE, by: 'keeminlee', note: PROVENANCE });
+  assert.equal(line, `- 2026-08-10 · MINT → ${TREASURY} · 1001 · for: issuance:${PURPOSE} · by: keeminlee · note: ${PROVENANCE}`);
   const c = classifyEntry(line);
-  assert.equal(c.kind, 'founding-grant');
+  assert.equal(c.kind, 'town-issuance');
   assert.equal(c.handle, TREASURY);
   assert.equal(c.n, 1001);
-  assert.equal(c.era, ERA);
+  assert.equal(c.purpose, PURPOSE);
   assert.equal(c.by, 'keeminlee');
   assert.equal(c.note, PROVENANCE);
 });
@@ -163,14 +169,14 @@ test('FALSIFIER — a grant to anyone but the declared treasury is refused', () 
   rmSync(repo, { recursive: true, force: true });
 });
 
-test('FALSIFIER — a second grant in the same era is refused', () => {
-  // A founding act happens once. Without the once-per-era law the class is an
-  // unbounded printing press pointed at the town's own account.
+test('FALSIFIER — a second issuance for a ONE-SHOT purpose is refused', () => {
+  // A founding act happens once. Without the one-shot law the founding purpose is
+  // an unbounded printing press pointed at the town's own account.
   const { repo, priv } = foundedTown();
   assert.ok(grant(repo, priv).ok);
   const second = grant(repo, priv, { date: '2026-08-11' });
   assert.equal(second.ok, false);
-  assert.match(second.out, /era/i);
+  assert.match(second.out, /purpose/i);
   // and the treasury did not grow
   assert.equal(foldBalances(entriesOf(repo)).get(TREASURY), 1001);
   rmSync(repo, { recursive: true, force: true });
@@ -182,8 +188,8 @@ test('FALSIFIER — a malformed grant line is refused at every field', () => {
     [{ amount: 0 }, /amount/i],
     [{ amount: -5 }, /amount/i],
     [{ amount: 1.5 }, /amount/i],
-    [{ era: 'Let There Be Light' }, /era/i],          // not kebab
-    [{ era: '' }, /era/i],
+    [{ purpose: 'Founding Grant' }, /purpose/i],          // not kebab
+    [{ purpose: '' }, /purpose/i],
     [{ provenance: '' }, /provenance/i],
     [{ provenance: 'a · b' }, /provenance|separator/i], // would split the line's fields
     [{ by: '' }, /by/i],
@@ -201,13 +207,13 @@ test('FALSIFIER — a malformed grant line is refused at every field', () => {
 test('FALSIFIER — a grant that would forge the provenance separator cannot be built', () => {
   // The note is the terminal field and the only free text in the grammar. If a
   // `·` could ride inside it, an author could forge trailing fields.
-  assert.throws(() => foundingGrantLine({ date: '2026-08-10', handle: TREASURY, n: 1, era: ERA, by: 'x', note: 'a · by: someone-else' }),
+  assert.throws(() => townIssuanceLine({ date: '2026-08-10', handle: TREASURY, n: 1, purpose: PURPOSE, by: 'x', note: 'a · by: someone-else' }),
     /separator|·/);
 });
 
 test('FALSIFIER — a grant to a meep is refused (meeps stay outside the currency)', () => {
   const { pub, priv } = keypair();
-  const repo = town({ meeps: ['botty'], dials: { law_side: { founding_grant: { treasury_handle: 'botty', one_per_era: true } } } });
+  const repo = town({ meeps: ['botty'], dials: { law_side: { town_issuance: { treasury_handle: 'botty', once_purposes: [PURPOSE] } } } });
   writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
   mintPass(repo, priv);
   execFileSync(process.execPath, [MINT, '--declare-rules', 'stamps-v2', '--meeps', 'botty',
@@ -231,40 +237,98 @@ test('FALSIFIER — a tampered grant line fails the signature chain', () => {
   assert.ok(grant(repo, priv).ok);
   const path = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
   // change the amount after signing: 1001 -> 9001
-  writeFileSync(path, readFileSync(path, 'utf8').replace(`· 1001 · for: founding:`, `· 9001 · for: founding:`));
+  writeFileSync(path, readFileSync(path, 'utf8').replace(`· 1001 · for: issuance:`, `· 9001 · for: issuance:`));
   const v = verifyStampLedger(repo, { pubkeyPem: pub });
   assert.equal(v.ok, false, 'a re-written amount must not verify');
   rmSync(repo, { recursive: true, force: true });
 });
 
-// ── the prepared stake batch: emitted, never executed ─────────────────────────
 
-test('the stake batch is EMITTED, not executed — 13 lines, 77 each, nothing appended', () => {
-  const { repo, priv } = foundedTown();
-  assert.ok(grant(repo, priv).ok);
-  const before = ledgerText(repo);
-  const out = execFileSync(process.execPath, [join(HERE, 'founding-stakes.mjs'),
-    '--repo', repo, '--holder', TREASURY, '--each', '77', '--date', '2026-08-10', '--json'], { encoding: 'utf8' });
-  const batch = JSON.parse(out);
-  assert.equal(batch.lines.length, 13);
-  assert.equal(batch.total, 1001);
-  assert.equal(batch.each, 77);
-  assert.equal(batch.holder, TREASURY);
-  for (const l of batch.lines) assert.match(l, /^- 2026-08-10 · the-town → stake:world-mark\/[a-z0-9-]+\/[a-z0-9-]+ · 77 · via: /);
-  assert.equal(ledgerText(repo), before, 'THE LEDGER IS UNTOUCHED — this tool prints, it does not write');
+// ── MINT-AT-DEMAND: the class is a SERIES, not a one-off ─────────────────────
+
+test('N issuances conserve, verify, and read back as a series', () => {
+  // The load-bearing property of a repeating class. One line conserving proves
+  // almost nothing — the fold is double-entry, so a single MINT line balances by
+  // construction. What must hold is that N of them conserve, that the replay
+  // still walks, and that each keeps its own purpose and provenance.
+  const { repo, priv, pub } = foundedTown();
+  const runs = [
+    { amount: 1001, purpose: PURPOSE, provenance: 'the founding act', date: '2026-08-10' },
+    { amount: 40, purpose: 'ferry-repairs', provenance: 'the gangway plank split', date: '2026-08-11' },
+    { amount: 12, purpose: 'ferry-repairs', provenance: 'the second plank, same week', date: '2026-08-12' },
+    { amount: 300, purpose: 'quest-pot', provenance: 'seeding the autumn bounties', date: '2026-08-13' },
+  ];
+  for (const r of runs) assert.ok(grant(repo, priv, r).ok, `issuance should succeed: ${r.purpose}`);
+
+  const entries = entriesOf(repo);
+  const issued = entries.map((e) => classifyEntry(e.canonical)).filter((c) => c.kind === 'town-issuance');
+  assert.equal(issued.length, 4);
+  assert.deepEqual(issued.map((c) => c.purpose), [PURPOSE, 'ferry-repairs', 'ferry-repairs', 'quest-pot']);
+  assert.deepEqual(issued.map((c) => c.n), [1001, 40, 12, 300]);
+  assert.equal(new Set(issued.map((c) => c.note)).size, 4, 'a series is only legible if each line keeps its own reason');
+
+  const total = runs.reduce((s, r) => s + r.amount, 0);
+  assert.equal(foldMintCount(entries).get(TREASURY), total);
+  assert.equal(foldBalances(entries).get(TREASURY), total);
+  assert.equal([...foldBalances(entries).values()].reduce((a, b) => a + b, 0), 0, 'conservation at N instances');
+
+  const v = verifyStampLedger(repo, { pubkeyPem: pub });
+  assert.equal(v.ok, true, `verify must stay green at N instances:\n${(v.problems || []).join('\n')}`);
   rmSync(repo, { recursive: true, force: true });
 });
 
-test('FALSIFIER — the batch refuses to emit more than the treasury can cover', () => {
-  const { repo, priv } = foundedTown();
+test('a REPEATING purpose is allowed — mint-at-demand would be broken otherwise', () => {
+  // The complement of the one-shot falsifier. It exists because the obvious
+  // over-generalization (one line per purpose, ever) would forbid the town from
+  // minting twice for the same recurring need — which is the ordinary case.
+  const { repo, priv, pub } = foundedTown();
+  assert.ok(grant(repo, priv, { purpose: 'ferry-repairs', amount: 10, provenance: 'first', date: '2026-08-10' }).ok);
+  const second = grant(repo, priv, { purpose: 'ferry-repairs', amount: 10, provenance: 'second', date: '2026-08-11' });
+  assert.equal(second.ok, true, `a non-one-shot purpose must repeat:\n${second.out}`);
+  assert.equal(foldBalances(entriesOf(repo)).get(TREASURY), 20);
+  assert.equal(verifyStampLedger(repo, { pubkeyPem: pub }).ok, true);
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('FALSIFIER — a duplicated one-shot line fails the VERIFIER, not just the door', () => {
+  // The door can be bypassed; the ledger cannot. The duplicate here is PROPERLY
+  // SIGNED and sealed — built line by line with the same pen. That matters:
+  // pasting the first line's raw text again fails on the seal chain instead,
+  // which would leave the LAWFUL rule untested while the test still went green.
+  // A falsifier that passes for the wrong reason is not a falsifier.
+  const { pub, priv } = keypair();
+  const repo = town();
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  const lines = [
+    '- 2026-06-12 · rules: stamps-v1',
+    `- 2026-08-10 · MINT → ${TREASURY} · 1001 · for: issuance:${PURPOSE} · by: keeminlee · note: the founding act`,
+    `- 2026-08-11 · MINT → ${TREASURY} · 500 · for: issuance:${PURPOSE} · by: keeminlee · note: and again`,
+  ];
+  const seals = sealChain(lines);
+  writeFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'),
+    '# stamp-ledger\n\n' + lines.map((c, i) => `${c} · sig: ${signSeal(seals[i], priv)}`).join('\n') + '\n');
+
+  const v = verifyStampLedger(repo, { pubkeyPem: pub });
+  assert.equal(v.ok, false);
+  assert.ok(v.problems.some((p) => /declared one-shot but is issued twice/.test(p)),
+    `expected the one-shot LAWFUL failure specifically, got:\n${v.problems.join('\n')}`);
+  assert.ok(!v.problems.some((p) => /SIGNATURE FAILS|UNSIGNED/.test(p)),
+    'the duplicate must be properly signed, or this tests the seal instead of the law');
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('an unreadable issuance dial makes the verifier SAY the check was skipped', () => {
+  // A verifier that silently stops checking is worse than one that admits it
+  // cannot: green-with-a-skipped-check is a weaker claim than green, and the note
+  // is what keeps the two from looking identical.
+  const { pub, priv } = keypair();
+  const repo = town();
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  mintPass(repo, priv);
   assert.ok(grant(repo, priv).ok);
-  let failed = false, out = '';
-  try {
-    execFileSync(process.execPath, [join(HERE, 'founding-stakes.mjs'),
-      '--repo', repo, '--holder', TREASURY, '--each', '100', '--date', '2026-08-10', '--json'],
-      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
-  } catch (e) { failed = true; out = String(e.stderr ?? ''); }
-  assert.equal(failed, true, '13 x 100 = 1300 exceeds the 1001 the treasury holds');
-  assert.match(out, /1300|balance|cover|clip/i);
+  writeFileSync(join(repo, 'ECONOMY-DIALS.json'), '{ not json');
+  const v = verifyStampLedger(repo, { pubkeyPem: pub });
+  assert.equal(v.ok, true, 'an unreadable dial is not itself a ledger defect');
+  assert.ok((v.notes ?? []).some((n) => /UNCHECKED/.test(n)), `expected a skipped-check note, got: ${JSON.stringify(v.notes)}`);
   rmSync(repo, { recursive: true, force: true });
 });

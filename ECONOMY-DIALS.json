@@ -10,12 +10,14 @@
     }
   },
   "law_side": {
-    "founding_grant": {
+    "town_issuance": {
       "treasury_handle": "the-town",
-      "one_per_era": true,
-      "_what": "The one line that funds the town's own treasury: `MINT -> <treasury> · <n> · for: founding:<era> · by: <founder> · note: <provenance>`. A founding grant is NOT a founder gift — a gift lands on a resident and the mint refuses a handle with no WHITE_PAGES room, and the treasury has no room because the town is not a resident. This class keeps the gift strict and pays for its own looseness with two laws a gift does not carry: the recipient must be the handle declared here, and an era gets exactly one grant (enforced at the door AND in the verifier's lawful fold, so a second grant slipped in by any route fails to verify).",
-      "_treasury_is_not_a_resident": "`the-town` holds no stamps and has no WHITE_PAGES room as of 2026-08-10. That is why the grant must precede the founding stakes rather than merely being first in a tidy order: stakes clip to the staker's liquid balance, so without the grant every stake applies 0 with a reason rather than failing loudly.",
-      "_declared_not_exercised": "Written 2026-08-10 as part of the founding-act build. No grant line exists in the ledger. Declaring the dial does not authorize the act; the act is Keemin's word."
+      "once_purposes": ["founding-grant"],
+      "_what": "The town minting into its own treasury: `MINT -> <treasury> · <n> · for: issuance:<purpose> · by: <who> · note: <provenance>`. NOT a founder gift — a gift lands on a resident and the mint refuses a handle with no WHITE_PAGES room, and the treasury has no room because the town is not a resident. This class keeps the gift strict and pays for its own looseness with laws a gift does not carry: the recipient must be the handle declared here, and every line must name a purpose and carry a provenance note.",
+      "_mint_at_demand": "Keemin-ruled 2026-08-10: the treasury has NO operating float. Resting state is zero — it spends income first and mints only the shortfall, and every mint line carries its purpose. So issuance REPEATS by design and the class is a series, not a one-off. That is why uniqueness is narrow: only `once_purposes` are one-shot, since a blanket one-per-purpose rule would forbid minting twice for the same recurring need.",
+      "_once_purposes": "Purposes that may appear at most once, ever. Enforced at the door AND in the verifier's lawful fold, so a second line slipped in by any route fails to verify. `founding-grant` is here because a founding act happens once; a later era declares its own slug rather than needing a code change. If this dial is unreadable the verifier SKIPS the check and says so in its notes rather than passing silently.",
+      "_treasury_is_not_a_resident": "`the-town` holds no stamps and has no WHITE_PAGES room as of 2026-08-10. That is why issuance must precede the founding stakes rather than merely being first in a tidy order: stakes clip to the staker's liquid balance, so without it every stake applies 0 with a reason rather than failing loudly.",
+      "_declared_not_exercised": "Written 2026-08-10 as part of the founding-act build. No issuance line exists in the ledger. Declaring the dial does not authorize the act; the act is Keemin's word."
     },
     "world_stake": {
       "household_cap_per_mark": null,

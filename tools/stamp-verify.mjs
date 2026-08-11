@@ -33,6 +33,7 @@ import {
   parseDeliveries, householdKeys, deriveMints, deriveFriendshipMints, combineDerived,
   settlementDecision, meepChecker, rulesLine,
   parseStampLedger, sealChain, foldBalances, parseLaws, classifyEntry, walkLedger,
+  townIssuanceDial,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -46,6 +47,9 @@ function ballotFile(repo, topic) {
 
 export function verifyStampLedger(repo, { pubkeyPem } = {}) {
   const problems = [];
+  // Checks the verifier could not run. A skipped check must be VISIBLE — silence
+  // would read as a pass.
+  const notes = [];
   const ledgerPath = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
   if (!existsSync(ledgerPath)) return { ok: false, problems: ['no stamp-ledger.md — nothing to verify'] };
 
@@ -118,7 +122,9 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     const markPosition = new Map();     // `${mark}|${handle}` -> currently open escrow
     const hasStake = new Set();         // `${handle}|${topic}`
     const ballots = new Map();          // topic -> file (cached)
-    const foundedEras = new Set();      // eras a founding grant has already funded
+    const oneShotSeen = new Set();      // one-shot issuance purposes already spent
+    const issuanceDial = townIssuanceDial(repo);
+    let warnedNoIssuanceDial = false;
     const isMeep = meepChecker(laws);
     const seenSettlements = new Set();   // pays-delivery ids the ledger has settled
 
@@ -182,20 +188,31 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         }
       }
 
-      if (cls.kind === 'founding-grant') {
+      if (cls.kind === 'town-issuance') {
         // The signature already proves the office pen wrote it. What the fold
-        // enforces is what a signature cannot: the standing meep law, and that an
-        // era is founded once. The treasury-handle check lives at the door (it
-        // reads a dial that may move forward in time), but ONE-PER-ERA is a
-        // property of the ledger itself and belongs here — a second grant slipped
-        // in by any route must not verify.
+        // enforces is what a signature cannot: the standing meep law, and that a
+        // one-shot purpose runs once. The treasury-handle check lives at the door
+        // only; the one-shot rule belongs HERE too, because a second line slipped
+        // in by any route must fail to verify, not merely fail at one door.
+        //
+        // Issuance repeats by design under mint-at-demand, so this check is
+        // narrow: only purposes the dial names one-shot are unique. If the dial
+        // is unreadable the check is SKIPPED and said out loud — a verifier that
+        // silently stops checking is worse than one that admits it cannot.
         if (lawAt(cls.date).meeps.has(cls.handle)) {
-          problems.push(`line ${lineNo}: LAWFUL fails — founding grant to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+          problems.push(`line ${lineNo}: LAWFUL fails — town issuance to meep "${cls.handle}" (meeps stay outside the currency)`); break;
         }
-        if (foundedEras.has(cls.era)) {
-          problems.push(`line ${lineNo}: LAWFUL fails — era "${cls.era}" is founded twice (a founding act happens once)`); break;
+        if (issuanceDial === null) {
+          if (!warnedNoIssuanceDial) {
+            notes.push('town-issuance one-shot purposes UNCHECKED — no readable law_side.town_issuance in ECONOMY-DIALS.json');
+            warnedNoIssuanceDial = true;
+          }
+        } else if (issuanceDial.once_purposes.has(cls.purpose)) {
+          if (oneShotSeen.has(cls.purpose)) {
+            problems.push(`line ${lineNo}: LAWFUL fails — purpose "${cls.purpose}" is declared one-shot but is issued twice`); break;
+          }
+          oneShotSeen.add(cls.purpose);
         }
-        foundedEras.add(cls.era);
       }
 
       if (cls.kind === 'vote-mint') {
@@ -250,7 +267,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     }
   }
 
-  return { ok: problems.length === 0, problems, lines: entries.length, minted: -(bal.get('MINT') ?? 0) };
+  return { ok: problems.length === 0, problems, notes, lines: entries.length, minted: -(bal.get('MINT') ?? 0) };
 }
 
 function main() {
@@ -259,6 +276,10 @@ function main() {
   const r = verifyStampLedger(repo);
   if (r.ok) {
     console.log(`✓ stamp-ledger verifies — ${r.lines} line(s), ${r.minted} minted, chain + signatures + replay + conservation + lawful all green`);
+    // A check the verifier could not run is printed on a GREEN result too. Green
+    // plus a skipped check is a different claim from green, and hiding the note
+    // behind failure would make the weaker claim look like the stronger one.
+    for (const n of r.notes ?? []) console.log(`  ! ${n}`);
   } else {
     console.error('✗ stamp-ledger verification FAILED:');
     for (const p of r.problems) console.error(`  - ${p}`);
