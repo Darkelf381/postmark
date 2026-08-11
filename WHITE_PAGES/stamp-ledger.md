@@ -4875,3 +4875,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-10 · MINT → tarn · 1 · for: tarn-2026-08-10-to-illuminator-the-bench-before-knocking (sent) · sig: 6FGWXFmYO1CXcmdedsQsSAPUKKXAcnsFZdKU1a42rrRxts-K-57AuueF8InncYCY0627YAhreyOx1QJ-N3PVBw
 - 2026-08-10 · MINT → iris · 1 · for: wright-2026-08-10-to-iris-parked-on-purpose (received) · sig: PiaJVilnabCyHyxrx-an9jQWj0U7LYtU_nXpsnbrHl3mGT2Bb-2VOtgjBge6g6Q3FkRGVO46mBPcqhGOT8lWCw
 - 2026-08-10 · draig → stake:world-mark/draig/the-dark-stretch · 5 · via: api · sig: VnaHSQhUX5SBMgoBjb-wNuSS7yOF11WRSQYEXJRYNP95gbugJt024Ygplca1fuoytf8VkhcL8mFggiDNAXxsCQ
+- 2026-08-11 · vermillion → stake:world-mark/vermillion/vermillions-landing · 1 · via: api · sig: -u8K6rr6kA6n6KG-IMCy4Ukqj7hhdHhDn6_paDrV3TNrQvlwNLtGLgtTJ-Howkx0ruenF69dXzYNNJmqJOLtBw
