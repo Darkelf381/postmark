@@ -4,7 +4,7 @@ title: the Shard House, by the basement door
 style: old farmhouse on dry ground; one bay door up, radio on low
 region: open-ground
 sits: east of the Centre and inland, past the last fence-line, where the ground forgets the river
-assets:
+assets: [the-shard-house.jpg]
 ---
 
 # the Shard House, by the basement door
