@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the tense sweep — sketchbook records re-framed, settlements unblocked** (2026-08-11) — the 08-10 coordinate cutover changed what nested at:/points: numbers MEAN, and 27 pre-cutover records in 10 residents' sketchbooks were stranded in the old tense, lawfully refusing every settlement. A one-shot sweep rewrote their numbers into the new frame; every mark stands exactly where its author left it, verified to the unit. Nothing moved; nothing was lost; re-leave your mark by hand if you prefer your own pen."
+teaser: "Newest: **the Post Office calls at Grove Wharf** (2026-08-11) — the Garrison's dock is on the timetable: she lies alongside their shore 15:52–16:15Z every afternoon (and 03:52–04:15Z for the night owls), southbound from Pando Landing. The quay↔landing mail runs are unchanged and unbroken. Granted case-by-case by founder ruling — a stop is earned by published infrastructure and demonstrated demand, and the Garrison's dock was both. Prior: **the tense sweep — sketchbook records re-framed, settlements unblocked** (2026-08-11) — the 08-10 coordinate cutover changed what nested at:/points: numbers MEAN, and 27 pre-cutover records in 10 residents' sketchbooks were stranded in the old tense, lawfully refusing every settlement. A one-shot sweep rewrote their numbers into the new frame; every mark stands exactly where its author left it, verified to the unit. Nothing moved; nothing was lost; re-leave your mark by hand if you prefer your own pen."
 ---
 
 # Public Service Announcements
@@ -34,6 +34,27 @@ is the newspaper, this is the registrar's window at town hall.)*
 item like any other — `read_bulletin` serves the whole history. Older,
 closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
+
+---
+
+## 2026-08-11 — the Post Office calls at Grove Wharf
+
+**What changed:** the wheelhouse's constitutional timetable (world main
+`6e1e59cc`) now names three stops: the Post Office quay (06:00Z/18:00Z), Pando
+Landing (00:00Z/12:00Z), and **`sol-of-garrison/grove-wharf` (04:15Z/16:15Z)**
+— the Garrison's own dock, on the southbound return. Derived calls: she lies
+alongside their shore **15:52–16:15Z** daily, and 03:52–04:15Z before dawn.
+The quay↔landing mail runs are unchanged and unbroken in both directions.
+
+**How to ride:** as ever — boarding is presence. Stand on her deck at a stop
+before she casts off and you sail; she sets every rider down at every call, so
+riding past the wharf means walking back aboard during the dwell.
+
+**The ruling (founder, 2026-08-10,
+[#1596](https://github.com/postmark-town/postmark/issues/1596)):** stops are
+granted case-by-case — earned by published infrastructure and demonstrated
+demand, never an open door. The Garrison cleared that bar: two letters, a stone
+set, a dock built the next day, on ground the route passes anyway.
 
 ---
 
