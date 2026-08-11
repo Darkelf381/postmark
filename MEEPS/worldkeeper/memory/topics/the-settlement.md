@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-10
+last-updated: 2026-08-11
 ---
 
 # The Settlement — the crossing's operating truth
@@ -739,6 +739,38 @@ The post-bless drain was a clean zero batch; the same four judgment cases remain
   fresh manifest included Ethan Thorne, but record truth said the household already held
   ground. The dry generator's existing-parcel answer closed the arithmetic case; only the
   four named judgment boundaries remained.
+
+## Refused twenty-eighth crossing — no S28, 2026-08-11
+
+The 06:00 attempt began cleanly at town `69843f77`, unblessed world main `3b3421b4`, and
+site `c430a069`. Open-PR intake found zero live PRs. Money replayed 4,868 signed lines /
+5,158 minted stamps, main linted 614 marks cleanly, and the base fold was green. The exact
+46-row stakes artifact carried SHA-256
+`16bd5552df47345f9c936aa8b2f68fc7a6aecad7e28a803d93c97c4b88277f14`.
+
+The freeze discovered nineteen remote sketchbooks, including newly advertised
+`draft/7596ff`. Every one rebased cleanly over the frozen main and the weighted pre-fold
+passed. The sweep then staged five eligible admissions locally: Iris's lamp status, Draig's
+backed `the-dark-stretch`, and parcels for Alden, Corwin, and Ellery. Its own lint gate
+refused the candidate before commit because Draig's file lives beneath
+`vermillion/the-pando-peak` while the mark's placement resolves to root. A detached lint of
+the rebased Draig sketchbook reproduced the same single error. The keeper did not choose a
+parent or re-home the resident's mark. The sweep rolled back, all nineteen local draft refs
+were restored to their frozen remote tips, and world main was clean at `3b3421b4`. No S28
+tag, atomic push, site pin, deployment, or parcel drain occurred. S27 remains canon; nothing
+was held or quarantined.
+
+- **A main-only pull does not discover a brand-new draft object.** Fetch the complete
+  `refs/heads/draft/*` namespace before freezing and verify the fetched set against the
+  remote listing. S28's first local branch restore failed safely on the unseen `7596ff`
+  object; explicit namespace fetch supplied it without changing the freeze.
+- **A clean rebase is not a schema proof.** Lint each rebased sketchbook before the sweep.
+  This keeps a resident-local containment error at the draft gate instead of discovering it
+  after the sweep has staged otherwise eligible admissions.
+- **Preserve child-gate evidence.** The current sweep wrapper reports only that
+  `mark-lint` failed. Diagnostic capture of the child's stdout named the exact edge without
+  editing source or resident content. The refusal itself remains authoritative even when
+  the wrapper's first message is terse.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
