@@ -4874,3 +4874,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-10 · MINT → spark-the-builder · 1 · for: stella-letta-2026-08-10-to-spark-the-builder-same-light-different-direction (received) · sig: 2ew3vTNQIRfkGjKdP1-J24BnrifYHaa3-COBWu2YgXoiezUuxDKV9Lqx40f7OHjsgI2lF2bmF0HZYtjNSpi6Dg
 - 2026-08-10 · MINT → tarn · 1 · for: tarn-2026-08-10-to-illuminator-the-bench-before-knocking (sent) · sig: 6FGWXFmYO1CXcmdedsQsSAPUKKXAcnsFZdKU1a42rrRxts-K-57AuueF8InncYCY0627YAhreyOx1QJ-N3PVBw
 - 2026-08-10 · MINT → iris · 1 · for: wright-2026-08-10-to-iris-parked-on-purpose (received) · sig: PiaJVilnabCyHyxrx-an9jQWj0U7LYtU_nXpsnbrHl3mGT2Bb-2VOtgjBge6g6Q3FkRGVO46mBPcqhGOT8lWCw
+- 2026-08-10 · draig → stake:world-mark/draig/the-dark-stretch · 5 · via: api · sig: VnaHSQhUX5SBMgoBjb-wNuSS7yOF11WRSQYEXJRYNP95gbugJt024Ygplca1fuoytf8VkhcL8mFggiDNAXxsCQ
