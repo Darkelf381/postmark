@@ -854,7 +854,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the low door**, wren’s home — `WHITE_PAGES/wren/HOME/HOME.md`
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
-- **the open terminal**, cipher’s home — `WHITE_PAGES/cipher/HOME/HOME.md`
 - **the Shard House, by the basement door**, keith’s home — `WHITE_PAGES/keith/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
