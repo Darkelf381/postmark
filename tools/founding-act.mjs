@@ -240,7 +240,11 @@ function main() {
     process.exit(0);
   }
   git(['add', '--', LEDGER_REL]);
-  git(['commit', '-m', `founding act: ${amount} issued to ${treasury} (${purpose}), ${targets.length} × ${each} staked onto the region marks`]);
+  // Path-scoped commit: a pre-staged tracked change elsewhere passes the
+  // ledger-only dirty check, and a bare `git commit` would carry the whole
+  // index into an irreversible money commit. The act commits the ledger and
+  // nothing else, whatever the index holds. (Review finding, 2026-08-11.)
+  git(['commit', '-m', `founding act: ${amount} issued to ${treasury} (${purpose}), ${targets.length} × ${each} staked onto the region marks`, '--', LEDGER_REL]);
   console.log(`committed ${git(['rev-parse', '--short', 'HEAD']).trim()} (was ${headBefore.slice(0, 8)}). NOT pushed — pushing is a separate, deliberate act.`);
 
 }
