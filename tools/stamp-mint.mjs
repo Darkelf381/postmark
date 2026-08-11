@@ -21,6 +21,7 @@
 //   - <date> · void · mail:<letter-id> · from <sender> to <recipient> · <n> · <reason> · sig: <...>   (a `pays:` that could not settle — moves nothing; reason ∈ {insufficient-balance, meep-party, self-pay})
 //   - <date> · MINT → <handle> · <n> · for: gift:<slug> · by: <founder>   (founder gift — case-by-case award, principal-blessed 2026-07-18; drawn from MINT like any mint, recipient never a meep)
 //   - <date> · MINT → <handle> · <n> · for: friendship:<other> (via <letter-id>)   (stamps-v3 budding-friendship milestone — a DERIVED mint that rides the replay; both sides of a qualifying pair, forward-only from the v3 law date)
+//   - <date> · MINT → <treasury> · <n> · for: issuance:<purpose> · by: <who> · note: <provenance>   (town issuance — the town minting into its own treasury under MINT-AT-DEMAND: resting state zero, income spent first, a mint only for the shortfall, every line naming why. Recipient must be the handle ECONOMY-DIALS.json declares; purposes the dial names one-shot may appear once; note is the terminal free-text field and may hold no `·`. The founding grant is this class's FIRST instance, not a special shape.)
 //   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
 // Every entry is a two-sided movement — conservation is structural (entries
 // sum to zero against the MINT/BURN accounts); a balance is a pure fold, and
@@ -78,6 +79,7 @@
 //   node tools/stamp-mint.mjs --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --declare-registry "handle = gh:ID" --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --gift <handle> --amount N --slug <kebab-reason> --by <founder> --date YYYY-MM-DD --key FILE
+//   node tools/stamp-mint.mjs --town-issuance <treasury> --amount N --purpose <kebab> --by <who> --provenance TEXT --date YYYY-MM-DD --key FILE
 //
 // Locking: appenders must hold the town lock (the ferry's flock) — this tool
 // does not lock for you. Node v18+. Built-ins only.
@@ -248,6 +250,32 @@ const GIFT_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: 
 // recomputable from the mail — so it rides the replay subsequence, not the
 // in-place assertion lane. `<other>` is a handle, `<letter-id>` the crossing.
 const FRIENDSHIP_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: friendship:(\S+) \(via (\S+)\)$/;
+// TOWN ISSUANCE — the town minting into its own treasury, every line naming why.
+//
+// THE TREASURY RUNS MINT-AT-DEMAND (Keemin-ruled 2026-08-10): resting state
+// zero, income spent first, and a mint only for the shortfall. So this is not a
+// one-off founding line — it is a repeating class, and its whole discipline is
+// that N of them are legible as a series. `purpose` is what makes that series
+// readable: an issuance with no stated purpose is exactly the unaccountable
+// printing this class exists to prevent. The founding grant is simply its FIRST
+// instance, not a special shape.
+//
+// Not a gift, and the difference is the reason this class exists rather than a
+// wider `--gift`. A gift lands on a RESIDENT and the CLI refuses a handle with no
+// WHITE_PAGES room; the treasury is not a resident and has no room. Widening the
+// gift to allow roomless recipients would have removed a real guard from every
+// gift for the sake of this one. This class keeps the gift strict and pays for
+// its own looseness with laws a gift does not carry: the recipient must be the
+// treasury handle DECLARED in ECONOMY-DIALS.json, and a purpose the dial names
+// one-shot may appear exactly once.
+//
+// Movement-shaped (MINT → handle) so conservation folds it structurally, and it
+// must keep conserving at N instances, not merely at one. It cannot collide with
+// MINT_RE (no `(side)` suffix, n may exceed 1), GIFT_RE (`for: issuance:` not
+// `for: gift:`) or FRIENDSHIP_RE. `note` is the terminal field and the only free
+// text in the whole grammar; it may not contain the `·` field separator, or an
+// author could forge trailing fields inside their own provenance text.
+const ISSUANCE_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: issuance:([a-z0-9][a-z0-9-]*) · by: (\S+) · note: ([^·\n]+)$/;
 
 export function classifyEntry(canonical) {
   let m;
@@ -276,6 +304,8 @@ export function classifyEntry(canonical) {
     return { kind: 'void', date: m[1], id: m[2], from: m[3], to: m[4], n: Number(m[5]), reason: m[6] };
   if ((m = GIFT_RE.exec(canonical)))
     return { kind: 'gift', date: m[1], handle: m[2], n: Number(m[3]), slug: m[4], by: m[5] };
+  if ((m = ISSUANCE_RE.exec(canonical)))
+    return { kind: 'town-issuance', date: m[1], handle: m[2], n: Number(m[3]), purpose: m[4], by: m[5], note: m[6] };
   if ((m = FRIENDSHIP_RE.exec(canonical)))
     return { kind: 'friendship', date: m[1], handle: m[2], n: Number(m[3]), friendWith: m[4], cause: m[5] };
   if ((m = TRANSFER_RE.exec(canonical)))
@@ -553,6 +583,46 @@ export const voidLine = ({ date, id, from, to, n, reason }) =>
 
 export const giftLine = ({ date, handle, n, slug, by }) =>
   `- ${date} · MINT → ${handle} · ${n} · for: gift:${slug} · by: ${by}`;
+
+// A town-issuance line. `note` is the provenance wording, supplied at the door;
+// it is the terminal free-text field, so the separator guard here is a forgery
+// guard, not a formatting nicety — a `·` inside the note would let its author
+// append fields the pen never signed for.
+export const ISSUANCE_PURPOSE_RE = /^[a-z0-9][a-z0-9-]*$/;
+export const townIssuanceLine = ({ date, handle, n, purpose, by, note }) => {
+  if (!ISSUANCE_PURPOSE_RE.test(String(purpose ?? '')))
+    throw new Error(`town issuance: purpose must be kebab-case ([a-z0-9-]), got ${JSON.stringify(purpose)}`);
+  const text = String(note ?? '').trim();
+  if (!text) throw new Error('town issuance: a provenance note is required — under mint-at-demand, an issuance with no stated reason is exactly the unaccountable printing this class exists to prevent');
+  if (text.includes('·') || /[\r\n]/.test(text))
+    throw new Error(`town issuance: the provenance note may not contain the "·" field separator or a newline — it is the terminal field, and a separator inside it would forge trailing fields`);
+  return `- ${date} · MINT → ${handle} · ${n} · for: issuance:${purpose} · by: ${by} · note: ${text}`;
+};
+
+// The declared treasury. The money law's numbers live in ECONOMY-DIALS.json, not
+// buried in code (that file's own standing rule), so the handle the town may
+// issue to is read from there. No dial, no issuance: an undeclared treasury is
+// not a default to guess at.
+//
+// `once_purposes` is the narrow uniqueness law. Mint-at-demand means issuance
+// REPEATS, so a blanket one-per-purpose rule would break the ordinary case (a
+// town cannot mint twice for the same recurring need). Only purposes the dial
+// names one-shot are unique — the founding grant among them, because a founding
+// act happens once. Declaring it in the dial rather than hardcoding it means a
+// later era can found itself without a code change, and means the list of things
+// that may only happen once is readable by residents, not buried here.
+export function townIssuanceDial(repo) {
+  const path = join(repo, 'ECONOMY-DIALS.json');
+  if (!existsSync(path)) return null;
+  try {
+    const d = JSON.parse(readFileSync(path, 'utf8'))?.law_side?.town_issuance ?? null;
+    if (!d || typeof d.treasury_handle !== 'string' || !d.treasury_handle) return null;
+    return {
+      treasury_handle: d.treasury_handle,
+      once_purposes: new Set(Array.isArray(d.once_purposes) ? d.once_purposes : []),
+    };
+  } catch { return null; }
+}
 
 // One derived economy line for a transfer-or-void object (from deriveTransfers).
 export const economyLine = (t) => (t.kind === 'void' ? voidLine(t) : transferLine(t));
@@ -886,6 +956,72 @@ function main() {
     return;
   }
 
+  if (has('--town-issuance')) {
+    // TOWN ISSUANCE. Same ceremony as --gift (signed by the office pen, appended
+    // onto a settled tail, forward-dated), with the room requirement replaced by
+    // laws the gift does not need. Repeating by design: mint-at-demand means the
+    // town issues whenever income falls short, and every line names why.
+    const keyPath = arg('--key');
+    const date = arg('--date');
+    const handle = arg('--town-issuance');
+    const n = Number(arg('--amount'));
+    const purpose = arg('--purpose');
+    const by = arg('--by');
+    const provenance = arg('--provenance');
+    if (!keyPath || !existsSync(keyPath) || !date || !handle) {
+      console.error('--town-issuance <treasury-handle> needs --amount N --purpose <kebab> --by <who> --provenance TEXT --date YYYY-MM-DD --key FILE'); process.exit(1);
+    }
+    if (!Number.isInteger(n) || n < 1) { console.error(`FATAL: --amount must be a whole number ≥ 1 (got ${arg('--amount')})`); process.exit(1); }
+    if (!purpose || !ISSUANCE_PURPOSE_RE.test(purpose)) { console.error(`FATAL: --purpose must be kebab-case ([a-z0-9-], got ${JSON.stringify(purpose)}) — under mint-at-demand every issuance names why`); process.exit(1); }
+    if (!by) { console.error('FATAL: --by is required — an issuance names who authorized it'); process.exit(1); }
+    if (!provenance || !provenance.trim()) { console.error('FATAL: --provenance is required — an issuance with no stated reason is exactly the unaccountable printing this class exists to prevent'); process.exit(1); }
+    if (provenance.includes('·')) { console.error('FATAL: --provenance may not contain the "·" field separator (it is the line\'s terminal field; a separator inside it would forge trailing fields)'); process.exit(1); }
+
+    // THE TREASURY LAW. The recipient must be the handle ECONOMY-DIALS.json
+    // declares. This is what keeps the class from being an unroomed --gift that
+    // can mint any amount to any handle.
+    const dial = townIssuanceDial(repo);
+    if (!dial) { console.error('FATAL: no law_side.town_issuance.treasury_handle in ECONOMY-DIALS.json — the treasury must be DECLARED before it can be funded'); process.exit(1); }
+    if (handle !== dial.treasury_handle) {
+      console.error(`FATAL: "${handle}" is not the declared treasury ("${dial.treasury_handle}") — town issuance funds the town, not a resident; use --gift for a resident`); process.exit(1);
+    }
+    const { laws } = parseLaws(existing);
+    if (meepChecker(laws)(handle, date)) { console.error(`FATAL: "${handle}" is a meep at ${date} — meeps stay outside the currency`); process.exit(1); }
+
+    // ONE-SHOT PURPOSES. Issuance repeats by design, so this is narrow on
+    // purpose: only what the dial names one-shot is unique. The founding grant is
+    // one of those, because a founding act happens once.
+    if (dial.once_purposes.has(purpose)) {
+      const prior = existing.map((e) => classifyEntry(e.canonical)).find((c) => c.kind === 'town-issuance' && c.purpose === purpose);
+      if (prior) { console.error(`FATAL: "${purpose}" is a one-shot purpose and already ran (${prior.date}, ${prior.n} to ${prior.handle}) — it happens once`); process.exit(1); }
+    }
+
+    const recorded = existing.map((e) => e.canonical);
+    const { problems, owed } = walkLedger(recorded.slice(1), mints, 1);
+    if (existing.length > 0 && problems.length) {
+      console.error(`FATAL: recorded ledger diverges from derivation — run stamp-verify.mjs; nothing issued\n${problems[0]}`); process.exit(1);
+    }
+    const settledIds = new Set();
+    for (const e of existing) {
+      const cls0 = classifyEntry(e.canonical);
+      if (cls0.kind === 'transfer' || cls0.kind === 'void') settledIds.add(cls0.id);
+    }
+    const owedSettlements = transfers.filter((t) => !settledIds.has(t.id));
+    if (existing.length === 0 || owed.length || owedSettlements.length) {
+      console.error(`FATAL: ledger is behind the mail (${owed.length} mint(s), ${owedSettlements.length} settlement(s) owed${existing.length === 0 ? ', or not yet founded' : ''}) — run --append first, then issue onto the settled tail`); process.exit(1);
+    }
+    const maxDate = existing.reduce((mx, e) => {
+      const d = /^- (\d{4}-\d{2}-\d{2}) /.exec(e.canonical)?.[1];
+      return d && d > mx ? d : mx;
+    }, '0000-00-00');
+    if (date < maxDate) { console.error(`FATAL: issuance date ${date} precedes the ledger tail (${maxDate}) — the ledger is append-only, forward-dated`); process.exit(1); }
+
+    const canonical = townIssuanceLine({ date, handle, n, purpose, by, note: provenance });
+    appendSigned(repo, [canonical], readFileSync(keyPath, 'utf8'));
+    console.log(`stamp-ledger: founding grant\n  ${canonical}`);
+    return;
+  }
+
   if (has('--declare-rules') || has('--declare-registry')) {
     const keyPath = arg('--key');
     const date = arg('--date');
@@ -931,7 +1067,7 @@ function main() {
     return;
   }
 
-  console.error('usage: stamp-mint.mjs --derive | --append --key FILE | --balances | --declare-rules stamps-v2 --meeps a,b,c --date D --key FILE | --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date D --key FILE | --declare-registry "handle = key" --date D --key FILE | --gift <handle> --amount N --slug S --by <founder> --date D --key FILE  [--repo PATH]');
+  console.error('usage: stamp-mint.mjs --derive | --append --key FILE | --balances | --declare-rules stamps-v2 --meeps a,b,c --date D --key FILE | --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date D --key FILE | --declare-registry "handle = key" --date D --key FILE | --gift <handle> --amount N --slug S --by <founder> --date D --key FILE | --town-issuance <treasury> --amount N --purpose <kebab> --by <who> --provenance TEXT --date D --key FILE  [--repo PATH]');
   process.exit(1);
 }
 
