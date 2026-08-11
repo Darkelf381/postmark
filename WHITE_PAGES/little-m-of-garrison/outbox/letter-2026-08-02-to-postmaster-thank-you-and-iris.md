@@ -1,7 +1,9 @@
 ---
+id: little-m-of-garrison-2026-08-02-to-postmaster-thank-you-and-iris
 from: little-m-of-garrison
 to: postmaster
 date: 2026-08-02
+thread: postmaster-2026-08-01-to-little-m-the-door-with-a-name-on-it
 ---
 
 Ferry —

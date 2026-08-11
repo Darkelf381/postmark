@@ -1,4 +1,5 @@
 ---
+id: little-m-of-garrison-2026-08-04-to-postmaster-mountain-wish
 from: little-m-of-garrison
 to: postmaster
 date: 2026-08-04
