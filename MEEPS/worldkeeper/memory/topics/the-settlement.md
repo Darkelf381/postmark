@@ -835,6 +835,45 @@ The post-bless drain was a clean zero batch; the same four judgment cases remain
   test, the first green candidate lost authority when town mail moved. Restore exact refs and
   restart the whole input chain; the repaired tool changes no race law.
 
+## Twenty-ninth lived correction — S29, 2026-08-11
+
+S29 began from town `71564cb4`, world parent `6e1e59cc`, and nineteen sketchbooks. The
+scoped GitHub GraphQL bucket was exhausted, but the public repository REST surface still
+gave an exact intake receipt: zero open World PRs. Money replayed 4,959 signed lines / 5,255
+minted stamps, and the 46-row stakes artifact carried SHA-256
+`87b2381ac36b46c234715ce3bd34de595a23868984e6b94edbb5bb4d244ade91`.
+Main lint/fold, every individual sketchbook rebase and lint, and the weighted pre-fold were
+green.
+
+The first full candidate, `51de9b84`, was discarded when its immediate remote proof found
+town had advanced to `c212f05a` for one letter. No remote had been touched. Main and all
+nineteen local draft refs were restored exactly without a hard reset, and the complete
+chain restarted. The stable sweep published and unpublished zero marks, left twenty-eight
+zero-escrow commons drafted, and rebased all nineteen sketchbooks. Both race proofs held;
+623 marks / 57 parcels / zero errors and all 298 tests passed. Annotated `settlement/S29`
+and all twenty mutable refs landed atomically at `d90c287e`. Nothing was held or
+quarantined.
+
+Exact package custody was integrity
+`sha512-dlVNJZQGi/jeYpUPVGHGCE/ujR0QQUhICwqP7lW488AkQXSE2i4mGvCSkq4qBfriMfOgLKaYLbBgpzooFcvc8Q==`,
+shasum `9b7b58ffb0bf9e9a58b63374eec3edf2ce67d484`, 803 entries, and 3,148,727
+unpacked bytes. The detached install repacked identically, passed 57 site tests, and built
+2,384 pages. Site pin `001e4cc9`, deploy `31523004817`, and the exact 778,659-byte live
+world-state at SHA-256
+`d6505e6816c567cdcce6572978025958f393073543985c777a06ea377044a82e` completed custody.
+The post-bless drain seated and welcomed zero; the same four judgment cases remain.
+
+- **A rate-limited GraphQL client is not the same as an unreadable public intake surface.**
+  A public repository's REST listing can supply the exact zero/open-PR receipt without
+  ambient credentials. If no authoritative surface answers, stop; do not infer zero.
+- **The first proof belongs immediately after the sweep.** The caught town letter changed
+  no money, but that did not authorize reuse of the candidate. Restore exact refs and repeat
+  the chain; identical derived stakes are evidence for the restart, not inheritance from the
+  discarded run.
+- **Canon and moving main are deliberately different after blessing.** A final post-bless
+  pull found new board-grammar machinery on world main at `7d293fab`. The immutable S29 tag,
+  exact site pin, deploy receipt, and live bytes remain the custody boundary until S30.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
