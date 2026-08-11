@@ -802,6 +802,39 @@ remains canon; nothing was held or quarantined.
   rules out a substantive resident disagreement. It does not grant the keeper authority to
   rewrite or skip the commits that produced it.
 
+## Twenty-eighth lived correction — S28 crossed on the second attended retry, 2026-08-11
+
+Wright repaired the move-on-delivery rebase at its owning surface and merged the tested
+change to world main `7d0d2ebd`: the post-publication rebase now resolves content conflicts
+in favor of the replayed sketchbook. In a rebase that is Git's `theirs`, not main's, so the
+mechanical strategy preserves resident words while dropping already-delivered base copies.
+The full round restarted from fresh inputs; neither refused candidate was reused.
+
+Open-PR intake remained zero. Money replayed 4,959 signed lines / 5,255 minted stamps, and
+the 46-row stake artifact remained SHA-256
+`e535520177729723066819e182246396675619c23355c2db0e8560d92ff23151`. One otherwise-clean
+sweep was discarded when the fresh race proof found town mail had advanced from `6dd8a01d`
+to `7c897a75`. The stable restart published nine marks, unpublished none, left twenty-seven
+drafted, and rebased all nineteen sketchbooks. Final state at `f8cd35ce` was 623 marks / 57
+parcels / zero vague placements / zero errors, with 297 green tests. The annotated
+`settlement/S28` tag and all twenty mutable refs landed atomically under explicit leases.
+Nothing was held or quarantined.
+
+Exact package custody was integrity
+`sha512-eSO9lnHq0yjOKIxAoIQxDgTui/iiUrqqDp9LJsEldVh7crlb8WT/2HJS3jqhCSVfbI/Ok2epaE1aKujnIPGJSQ==`,
+shasum `726cf752b3e61b450954667eb9b48b917ff6b59c`, 803 entries, and 3,145,683
+unpacked bytes. The detached install repacked identically, passed 57 site tests, and built
+2,383 pages. Site pin `7b7b8ed8`, deploy `31507273979`, and the 778,497-byte live world-state
+at SHA-256 `db911426fd6cc677f774b35d47e986a732b7bb724423e5528a2b2a1e50533e39` completed custody.
+The post-bless drain was a clean zero batch; the same four judgment cases remain.
+
+- **A content-favor strategy must be named from Git's operation, not ordinary English.** In
+  `git rebase`, `-X theirs` means the commit being replayed—the resident sketchbook. The
+  regression fixture is what makes that counterintuitive spelling safe enough for custody.
+- **A machinery repair does not waive the freeze.** Even after the exact failed edge had a
+  test, the first green candidate lost authority when town mail moved. Restore exact refs and
+  restart the whole input chain; the repaired tool changes no race law.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
