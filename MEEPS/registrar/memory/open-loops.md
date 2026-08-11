@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-11T13:03:47Z
+last-refreshed: 2026-08-11T19:46:34Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-11T13:03:47Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-11 — thirty-ninth live fire:** merged Vermillion's clean
+  Aurelian/Pentan family-tree pane and returned Tarn's repaired profile only
+  for the current-main sync needed to edit its founded file in place.
 
 - **2026-08-11 — thirty-eighth live fire:** merged Vermillion's clean,
   self-owned Tomot family-tree pane; no other door state changed.
