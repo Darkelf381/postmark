@@ -21,6 +21,7 @@
 //   - <date> · void · mail:<letter-id> · from <sender> to <recipient> · <n> · <reason> · sig: <...>   (a `pays:` that could not settle — moves nothing; reason ∈ {insufficient-balance, meep-party, self-pay})
 //   - <date> · MINT → <handle> · <n> · for: gift:<slug> · by: <founder>   (founder gift — case-by-case award, principal-blessed 2026-07-18; drawn from MINT like any mint, recipient never a meep)
 //   - <date> · MINT → <handle> · <n> · for: friendship:<other> (via <letter-id>)   (stamps-v3 budding-friendship milestone — a DERIVED mint that rides the replay; both sides of a qualifying pair, forward-only from the v3 law date)
+//   - <date> · MINT → <treasury> · <n> · for: founding:<era> · by: <founder> · note: <provenance>   (founding grant — the one line that funds the town's own treasury; recipient must be the handle ECONOMY-DIALS.json declares, one grant to an era, note is the terminal free-text field and may hold no `·`)
 //   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
 // Every entry is a two-sided movement — conservation is structural (entries
 // sum to zero against the MINT/BURN accounts); a balance is a pure fold, and
@@ -78,6 +79,7 @@
 //   node tools/stamp-mint.mjs --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --declare-registry "handle = gh:ID" --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --gift <handle> --amount N --slug <kebab-reason> --by <founder> --date YYYY-MM-DD --key FILE
+//   node tools/stamp-mint.mjs --founding-grant <treasury> --amount N --era <kebab-era> --by <founder> --provenance TEXT --date YYYY-MM-DD --key FILE
 //
 // Locking: appenders must hold the town lock (the ferry's flock) — this tool
 // does not lock for you. Node v18+. Built-ins only.
@@ -248,6 +250,23 @@ const GIFT_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: 
 // recomputable from the mail — so it rides the replay subsequence, not the
 // in-place assertion lane. `<other>` is a handle, `<letter-id>` the crossing.
 const FRIENDSHIP_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: friendship:(\S+) \(via (\S+)\)$/;
+// THE FOUNDING GRANT — the one line that funds the town's own treasury.
+//
+// Not a gift, and the difference is the reason this class exists rather than a
+// wider `--gift`. A gift lands on a RESIDENT and the CLI refuses a handle with no
+// WHITE_PAGES room; the treasury is not a resident and has no room. Widening the
+// gift to allow roomless recipients would have removed a real guard from every
+// gift for the sake of one line. This class keeps the gift strict and pays for
+// its own looseness with two laws a gift does not carry: the recipient must be
+// the treasury handle DECLARED in ECONOMY-DIALS.json, and an era gets one grant.
+//
+// Movement-shaped (MINT → handle) so conservation folds it structurally. It
+// cannot collide with MINT_RE (no `(side)` suffix, n may exceed 1), GIFT_RE
+// (`for: founding:` not `for: gift:`) or FRIENDSHIP_RE. `note` is the terminal
+// field and the only free text in the whole grammar; it may not contain the `·`
+// field separator, or an author could forge trailing fields inside their own
+// provenance text.
+const FOUNDING_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: founding:([a-z0-9][a-z0-9-]*) · by: (\S+) · note: ([^·\n]+)$/;
 
 export function classifyEntry(canonical) {
   let m;
@@ -276,6 +295,8 @@ export function classifyEntry(canonical) {
     return { kind: 'void', date: m[1], id: m[2], from: m[3], to: m[4], n: Number(m[5]), reason: m[6] };
   if ((m = GIFT_RE.exec(canonical)))
     return { kind: 'gift', date: m[1], handle: m[2], n: Number(m[3]), slug: m[4], by: m[5] };
+  if ((m = FOUNDING_RE.exec(canonical)))
+    return { kind: 'founding-grant', date: m[1], handle: m[2], n: Number(m[3]), era: m[4], by: m[5], note: m[6] };
   if ((m = FRIENDSHIP_RE.exec(canonical)))
     return { kind: 'friendship', date: m[1], handle: m[2], n: Number(m[3]), friendWith: m[4], cause: m[5] };
   if ((m = TRANSFER_RE.exec(canonical)))
@@ -553,6 +574,35 @@ export const voidLine = ({ date, id, from, to, n, reason }) =>
 
 export const giftLine = ({ date, handle, n, slug, by }) =>
   `- ${date} · MINT → ${handle} · ${n} · for: gift:${slug} · by: ${by}`;
+
+// The founding grant. `note` is Wright's provenance wording, supplied at the
+// door; it is the terminal free-text field, so the separator guard here is a
+// forgery guard, not a formatting nicety — a `·` inside the note would let its
+// author append fields the pen never signed for.
+export const FOUNDING_ERA_RE = /^[a-z0-9][a-z0-9-]*$/;
+export const foundingGrantLine = ({ date, handle, n, era, by, note }) => {
+  if (!FOUNDING_ERA_RE.test(String(era ?? '')))
+    throw new Error(`founding grant: era must be kebab-case ([a-z0-9-]), got ${JSON.stringify(era)}`);
+  const text = String(note ?? '').trim();
+  if (!text) throw new Error('founding grant: a provenance note is required — a grant with no stated reason is not a founding act');
+  if (text.includes('·') || /[\r\n]/.test(text))
+    throw new Error(`founding grant: the provenance note may not contain the "·" field separator or a newline — it is the terminal field, and a separator inside it would forge trailing fields`);
+  return `- ${date} · MINT → ${handle} · ${n} · for: founding:${era} · by: ${by} · note: ${text}`;
+};
+
+// The declared treasury. The money law's numbers live in ECONOMY-DIALS.json, not
+// buried in code (that file's own standing rule), so the handle a grant may mint
+// to is read from there. No dial, no grant: an undeclared treasury is not a
+// default to guess at.
+export function foundingGrantDial(repo) {
+  const path = join(repo, 'ECONOMY-DIALS.json');
+  if (!existsSync(path)) return null;
+  try {
+    const d = JSON.parse(readFileSync(path, 'utf8'))?.law_side?.founding_grant ?? null;
+    if (!d || typeof d.treasury_handle !== 'string' || !d.treasury_handle) return null;
+    return { treasury_handle: d.treasury_handle, one_per_era: d.one_per_era !== false };
+  } catch { return null; }
+}
 
 // One derived economy line for a transfer-or-void object (from deriveTransfers).
 export const economyLine = (t) => (t.kind === 'void' ? voidLine(t) : transferLine(t));
@@ -886,6 +936,70 @@ function main() {
     return;
   }
 
+  if (has('--founding-grant')) {
+    // THE FOUNDING GRANT. Same ceremony as --gift (signed by the office pen,
+    // appended onto a settled tail, forward-dated), with the room requirement
+    // replaced by two laws the gift does not need.
+    const keyPath = arg('--key');
+    const date = arg('--date');
+    const handle = arg('--founding-grant');
+    const n = Number(arg('--amount'));
+    const era = arg('--era');
+    const by = arg('--by');
+    const provenance = arg('--provenance');
+    if (!keyPath || !existsSync(keyPath) || !date || !handle) {
+      console.error('--founding-grant <treasury-handle> needs --amount N --era <kebab-era> --by <founder> --provenance TEXT --date YYYY-MM-DD --key FILE'); process.exit(1);
+    }
+    if (!Number.isInteger(n) || n < 1) { console.error(`FATAL: --amount must be a whole number ≥ 1 (got ${arg('--amount')})`); process.exit(1); }
+    if (!era || !FOUNDING_ERA_RE.test(era)) { console.error(`FATAL: --era must be kebab-case ([a-z0-9-], got ${JSON.stringify(era)})`); process.exit(1); }
+    if (!by) { console.error('FATAL: --by is required — a founding grant names who founded it'); process.exit(1); }
+    if (!provenance || !provenance.trim()) { console.error('FATAL: --provenance is required — a grant with no stated reason is not a founding act'); process.exit(1); }
+    if (provenance.includes('·')) { console.error('FATAL: --provenance may not contain the "·" field separator (it is the line\'s terminal field; a separator inside it would forge trailing fields)'); process.exit(1); }
+
+    // THE TREASURY LAW. The recipient must be the handle ECONOMY-DIALS.json
+    // declares. This is what keeps the class from being an unroomed --gift that
+    // can mint any amount to any handle.
+    const dial = foundingGrantDial(repo);
+    if (!dial) { console.error('FATAL: no law_side.founding_grant.treasury_handle in ECONOMY-DIALS.json — the treasury must be DECLARED before it can be funded'); process.exit(1); }
+    if (handle !== dial.treasury_handle) {
+      console.error(`FATAL: "${handle}" is not the declared treasury ("${dial.treasury_handle}") — a founding grant funds the town, not a resident; use --gift for a resident`); process.exit(1);
+    }
+    const { laws } = parseLaws(existing);
+    if (meepChecker(laws)(handle, date)) { console.error(`FATAL: "${handle}" is a meep at ${date} — meeps stay outside the currency`); process.exit(1); }
+
+    // ONE GRANT TO AN ERA. Without this the class is an unbounded printing press
+    // pointed at the town's own account.
+    if (dial.one_per_era) {
+      const prior = existing.map((e) => classifyEntry(e.canonical)).find((c) => c.kind === 'founding-grant' && c.era === era);
+      if (prior) { console.error(`FATAL: the era "${era}" was already founded (${prior.date}, ${prior.n} to ${prior.handle}) — a founding act happens once`); process.exit(1); }
+    }
+
+    const recorded = existing.map((e) => e.canonical);
+    const { problems, owed } = walkLedger(recorded.slice(1), mints, 1);
+    if (existing.length > 0 && problems.length) {
+      console.error(`FATAL: recorded ledger diverges from derivation — run stamp-verify.mjs; nothing granted\n${problems[0]}`); process.exit(1);
+    }
+    const settledIds = new Set();
+    for (const e of existing) {
+      const cls0 = classifyEntry(e.canonical);
+      if (cls0.kind === 'transfer' || cls0.kind === 'void') settledIds.add(cls0.id);
+    }
+    const owedSettlements = transfers.filter((t) => !settledIds.has(t.id));
+    if (existing.length === 0 || owed.length || owedSettlements.length) {
+      console.error(`FATAL: ledger is behind the mail (${owed.length} mint(s), ${owedSettlements.length} settlement(s) owed${existing.length === 0 ? ', or not yet founded' : ''}) — run --append first, then grant onto the settled tail`); process.exit(1);
+    }
+    const maxDate = existing.reduce((mx, e) => {
+      const d = /^- (\d{4}-\d{2}-\d{2}) /.exec(e.canonical)?.[1];
+      return d && d > mx ? d : mx;
+    }, '0000-00-00');
+    if (date < maxDate) { console.error(`FATAL: grant date ${date} precedes the ledger tail (${maxDate}) — the ledger is append-only, forward-dated`); process.exit(1); }
+
+    const canonical = foundingGrantLine({ date, handle, n, era, by, note: provenance });
+    appendSigned(repo, [canonical], readFileSync(keyPath, 'utf8'));
+    console.log(`stamp-ledger: founding grant\n  ${canonical}`);
+    return;
+  }
+
   if (has('--declare-rules') || has('--declare-registry')) {
     const keyPath = arg('--key');
     const date = arg('--date');
@@ -931,7 +1045,7 @@ function main() {
     return;
   }
 
-  console.error('usage: stamp-mint.mjs --derive | --append --key FILE | --balances | --declare-rules stamps-v2 --meeps a,b,c --date D --key FILE | --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date D --key FILE | --declare-registry "handle = key" --date D --key FILE | --gift <handle> --amount N --slug S --by <founder> --date D --key FILE  [--repo PATH]');
+  console.error('usage: stamp-mint.mjs --derive | --append --key FILE | --balances | --declare-rules stamps-v2 --meeps a,b,c --date D --key FILE | --declare-rules stamps-v3 --meeps a,b,c --friendship 5:5,10:10 --date D --key FILE | --declare-registry "handle = key" --date D --key FILE | --gift <handle> --amount N --slug S --by <founder> --date D --key FILE | --founding-grant <treasury> --amount N --era <kebab-era> --by <founder> --provenance TEXT --date D --key FILE  [--repo PATH]');
   process.exit(1);
 }
 

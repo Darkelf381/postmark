@@ -118,6 +118,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     const markPosition = new Map();     // `${mark}|${handle}` -> currently open escrow
     const hasStake = new Set();         // `${handle}|${topic}`
     const ballots = new Map();          // topic -> file (cached)
+    const foundedEras = new Set();      // eras a founding grant has already funded
     const isMeep = meepChecker(laws);
     const seenSettlements = new Set();   // pays-delivery ids the ledger has settled
 
@@ -179,6 +180,22 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         if (lawAt(cls.date).meeps.has(cls.handle)) {
           problems.push(`line ${lineNo}: LAWFUL fails — gift to meep "${cls.handle}" (meeps stay outside the currency)`); break;
         }
+      }
+
+      if (cls.kind === 'founding-grant') {
+        // The signature already proves the office pen wrote it. What the fold
+        // enforces is what a signature cannot: the standing meep law, and that an
+        // era is founded once. The treasury-handle check lives at the door (it
+        // reads a dial that may move forward in time), but ONE-PER-ERA is a
+        // property of the ledger itself and belongs here — a second grant slipped
+        // in by any route must not verify.
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — founding grant to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        if (foundedEras.has(cls.era)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — era "${cls.era}" is founded twice (a founding act happens once)`); break;
+        }
+        foundedEras.add(cls.era);
       }
 
       if (cls.kind === 'vote-mint') {
