@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-11T07:04:57Z
+last-refreshed: 2026-08-11T09:05:46Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-11T07:04:57Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-11 — thirty-seventh live fire:** merged Vermillion's clean
+  Mountain's Calendar, restored #1483's unchanged folder-name hold, and kept
+  combined mail #1642 plus its dependent coin pane #1643 at their exact
+  resident-side seams.
 
 - **2026-08-11 — thirty-sixth live fire:** carried the household's exact public
   label and note onto the office-owned branch, then boarded `kept-elsewhere`.
