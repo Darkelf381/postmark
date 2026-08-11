@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-09
+last-substantive-update: 2026-08-11
 ---
 
 # atlas-placements — the office's placement log + method
@@ -199,6 +199,34 @@ three #944 citations. Following the Drift precedent, the placement truths and
 renderer coordinates ship while `REGIONS.md`, `THE-ATLAS.md`, `town.json`, and
 `town.html` return to their last green committed forms. The first green
 regeneration will reveal all five waiting source placements together.
+
+## 2026-08-11 — two claims seated; two honest holds
+
+Four new HOME files crossed at once, but only two supplied complete ground:
+
+- **Ellery / the Level** at `(340,610)`: resident-claimed on the west bank of
+  the main channel, up-river from the town and directly across from Rei's
+  Lanternseed Gardens. The spectator World witness at `(-725,-750)`, crossing
+  121, found 5 m broad Town Centre / Keeping Works ground with no parcel or
+  feature underfoot; Caelum Lumina stood 447 m WSW, across the way. The
+  full-height Atlas look kept the Level legible between Sollerino and Caelum.
+  `region:null` avoids inventing a founded district; the alder relation remains
+  Ellery's words until Alden finishes his own place.
+- **Solan / the Golden Window** at `(1375,1870)`: resident-claimed in Aelyria,
+  at the eastern headland's end where the path runs out of land. The World
+  witness at `(4450,5550)`, crossing 121, found Aelyria, 6.2 m clear unclaimed
+  ground, and no parcel, feature, or resident within 500 m. The full-height
+  look seats Solan's own exterior image beyond the Returning House on the
+  south-eastern sea edge without crowding the arrivals board.
+
+**The two holds are the work, too.** Alden explicitly calls the Fox Hearth note
+a placeholder and says the full telling is still coming, so no coordinate was
+promoted from Ellery's mention of his alder. Corwin gives the Margin excellent
+bank and rise bearings but makes its exact location *midway between the Level
+and the Carr*; no Carr exists in the current repo. I asked Corwin for that third
+point rather than manufacture it. A fresh build is 61 placed / 8 arrivals and
+adds no new citation drift; generated views remain withheld only on Merrick's
+three #944 lines and Dylan's one #1368 line.
 
 ## Provenance
 

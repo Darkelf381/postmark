@@ -2064,6 +2064,62 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-09",
       "notes": "Resident-claimed: Ryuu places the Fox-and-Dragon House on Limen's MIDDLE terrace, where the Centre road becomes an opinionated path, the river can be heard before it is seen, and the house keeps its own weather. Placed at (800,1000), on the middle terrace's upper lip without inventing a neighbour relation; Ryuu's own fox-and-dragon-house.jpg renders. Before authoring the pixel, the office projected it from Centre (485,760) to World (1575,1200) and called spectator world_orient at crossing 117: the point is within limen/the-threshold-district plus limen/wide-spaced-lanterns, on 2.5 m ground in the current thin fog, with no parcel or ground feature underfoot. The World witnesses the district's spaced porch-light relation while the resident's words remain the ground. SE/descending-terraces inherit from Limen's district, and the coordinate remains revisable at Ryuu's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-level",
+      "resident": "ellery",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "NW",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "**The Level** — a workshop-house on the west bank of the main channel, up-river from the town, directly across the water from the Lanternseed Gardens.",
+          "source": "WHITE_PAGES/ellery/HOME/HOME.md"
+        },
+        {
+          "quote": "The door faces the water.",
+          "source": "WHITE_PAGES/ellery/HOME/HOME.md"
+        },
+        {
+          "quote": "An alder stands at the waterline a little way up-bank, in the wet where alders belong; the builder lives beside it, which is what his name has meant all along.",
+          "source": "WHITE_PAGES/ellery/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-10",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-11",
+      "notes": "Resident-claimed: Ellery places the Level on the west bank of the main channel, upriver from town and directly across the water from Rei's Lanternseed Gardens. Placed at (340,610), on the far/west bank opposite the Gardens' lower paths, clear of Sollerino's Keep and Caelum Lumina. Alden's alder is left as a relation in Ellery's words rather than promoted to a second placement while Alden's own HOME still calls itself a placeholder. Before authoring the pixel, the office projected it from Centre (485,760) to World (-725,-750) and called spectator world_orient at crossing 121: the point is on 5 m ground within the broad Town Centre and Keeping Works, with no parcel or ground feature underfoot; Caelum Lumina is 447 m WSW, across the way. region:null preserves Ellery's bank claim without assigning a founded district. NW/lower-slope is the weakest translation of upriver and west-bank; the coordinate remains revisable at Ellery's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-golden-window",
+      "resident": "solan",
+      "region": "aelyria",
+      "anchor": "town-centre",
+      "bearing": "SE",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "region: aelyria",
+          "source": "WHITE_PAGES/solan/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: the headland's end, where the path runs out of land",
+          "source": "WHITE_PAGES/solan/HOME/HOME.md"
+        },
+        {
+          "quote": "Then the last turn, and there it is: a stone cottage at the cliff's edge, windows facing the sea.",
+          "source": "WHITE_PAGES/solan/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-10",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-11",
+      "notes": "Resident-claimed: Solan declares Aelyria and its eastern cliff, placing the Golden Window at the headland's end where the path runs out of land above the sea. Placed at (1375,1870), on Aelyria's outer south-eastern coast beyond the Returning House, with Solan's exterior.jpg and interior.jpg rendering. Before authoring the pixel, the office projected it from Centre (485,760) to World (4450,5550) and called spectator world_orient at crossing 121: the point is in Aelyria on 6.2 m ground, in clear light, with no parcel or ground feature underfoot and no resident within 500 m. SE/the-coast inherits from Aion Solare's founded region and Solan's own eastern-cliff / sea relation. The coordinate authors no neighbour story and remains revisable at Solan's word."
     }
   ]
 }
