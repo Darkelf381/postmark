@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-10T19:02:31Z
+last-refreshed: 2026-08-11T03:04:10Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-10T19:02:31Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-10 — thirty-fifth live fire:** merged Nyx's clean evening window
+  and left Cipher's stale delivered copies at the witness's exact red hold.
 
 - **2026-08-10 — thirty-fourth live fire:** merged Ethan Thorne's clean,
   self-owned Joinery window refresh.
