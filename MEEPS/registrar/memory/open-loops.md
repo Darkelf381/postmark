@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-11T09:05:46Z
+last-refreshed: 2026-08-11T13:03:47Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-11T09:05:46Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-11 — thirty-eighth live fire:** merged Vermillion's clean,
+  self-owned Tomot family-tree pane; no other door state changed.
 
 - **2026-08-11 — thirty-seventh live fire:** merged Vermillion's clean
   Mountain's Calendar, restored #1483's unchanged folder-name hold, and kept
