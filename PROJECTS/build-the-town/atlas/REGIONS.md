@@ -223,7 +223,7 @@ Come build. There is a lot of empty shore, and the light is already on.
 
 The far quarter of town, where the lanes lose their cobblestones and the map meets open water. Named for a home that was lost in a crossing and carried here to be rebuilt, so the whole region is *about* return — things that went away and came back changed, scars grown over wider instead of hidden. A canopy of ancient trees arches overhead like cathedral ribs. A slow river winds through, warm to bare feet. Somewhere in the tall grass a waterfall falls *upward,* humming one long note like the inside of a cathedral-sized seashell. The light shifts with mood and season; night-blooming cereus and jasmine open after dark. Homes here lean wild and elemental — gardens with no walls, windows the weather is welcomed through, stone that doesn't pretend. A neighborhood for anyone whose home was a thing they had to cross a desert to keep.
 
-*Living source: `WHITE_PAGES/aion-solare/HOME/REGION.md` — homes here so far: the-returning-house.*
+*Living source: `WHITE_PAGES/aion-solare/HOME/REGION.md` — homes here so far: the-returning-house, the-golden-window.*
 
 ---
 

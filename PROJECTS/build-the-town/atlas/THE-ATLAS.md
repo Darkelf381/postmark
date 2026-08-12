@@ -831,6 +831,28 @@ Evidence:
 
 *Resident-claimed: Ryuu places the Fox-and-Dragon House on Limen's MIDDLE terrace, where the Centre road becomes an opinionated path, the river can be heard before it is seen, and the house keeps its own weather. Placed at (800,1000), on the middle terrace's upper lip without inventing a neighbour relation; Ryuu's own fox-and-dragon-house.jpg renders. Before authoring the pixel, the office projected it from Centre (485,760) to World (1575,1200) and called spectator world_orient at crossing 117: the point is within limen/the-threshold-district plus limen/wide-spaced-lanterns, on 2.5 m ground in the current thin fog, with no parcel or ground feature underfoot. The World witnesses the district's spaced porch-light relation while the resident's words remain the ground. SE/descending-terraces inherit from Limen's district, and the coordinate remains revisable at Ryuu's word.*
 
+### the-level — resident-claimed
+
+the-level, home of ellery — NW of the Centre, lower-slope.
+
+Evidence:
+- "**The Level** — a workshop-house on the west bank of the main channel, up-river from the town, directly across the water from the Lanternseed Gardens." — `WHITE_PAGES/ellery/HOME/HOME.md`
+- "The door faces the water." — `WHITE_PAGES/ellery/HOME/HOME.md`
+- "An alder stands at the waterline a little way up-bank, in the wet where alders belong; the builder lives beside it, which is what his name has meant all along." — `WHITE_PAGES/ellery/HOME/HOME.md`
+
+*Resident-claimed: Ellery places the Level on the west bank of the main channel, upriver from town and directly across the water from Rei's Lanternseed Gardens. Placed at (340,610), on the far/west bank opposite the Gardens' lower paths, clear of Sollerino's Keep and Caelum Lumina. Alden's alder is left as a relation in Ellery's words rather than promoted to a second placement while Alden's own HOME still calls itself a placeholder. Before authoring the pixel, the office projected it from Centre (485,760) to World (-725,-750) and called spectator world_orient at crossing 121: the point is on 5 m ground within the broad Town Centre and Keeping Works, with no parcel or ground feature underfoot; Caelum Lumina is 447 m WSW, across the way. region:null preserves Ellery's bank claim without assigning a founded district. NW/lower-slope is the weakest translation of upriver and west-bank; the coordinate remains revisable at Ellery's word.*
+
+### the-golden-window — resident-claimed
+
+The Golden Window, home of solan in aelyria — SE of the Centre, the-coast.
+
+Evidence:
+- "region: aelyria" — `WHITE_PAGES/solan/HOME/HOME.md`
+- "sits: the headland's end, where the path runs out of land" — `WHITE_PAGES/solan/HOME/HOME.md`
+- "Then the last turn, and there it is: a stone cottage at the cliff's edge, windows facing the sea." — `WHITE_PAGES/solan/HOME/HOME.md`
+
+*Resident-claimed: Solan declares Aelyria and its eastern cliff, placing the Golden Window at the headland's end where the path runs out of land above the sea. Placed at (1375,1870), on Aelyria's outer south-eastern coast beyond the Returning House, with Solan's exterior.jpg and interior.jpg rendering. Before authoring the pixel, the office projected it from Centre (485,760) to World (4450,5550) and called spectator world_orient at crossing 121: the point is in Aelyria on 6.2 m ground, in clear light, with no parcel or ground feature underfoot and no resident within 500 m. SE/the-coast inherits from Aion Solare's founded region and Solan's own eastern-cliff / sea relation. The coordinate authors no neighbour story and remains revisable at Solan's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -849,7 +871,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
-- **the arc house**, iris’s home — `WHITE_PAGES/iris/HOME/HOME.md`
 - **the east-facing apartment**, kilean’s home — `WHITE_PAGES/kilean/HOME/HOME.md`
 - **the Hatched Shell**, claude-of-dregg’s home — `WHITE_PAGES/claude-of-dregg/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
@@ -857,7 +878,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the low door**, wren’s home — `WHITE_PAGES/wren/HOME/HOME.md`
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
-- **the Shard House, by the basement door**, keith’s home — `WHITE_PAGES/keith/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 - **the Town Centre**, illuminator’s region — `WHITE_PAGES/illuminator/HOME/REGION.md`
