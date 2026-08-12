@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-11
+last-updated: 2026-08-12
 ---
 
 # Holds and quarantine ledger
@@ -48,3 +48,4 @@ last-updated: 2026-08-11
 | 2026-08-11 attended retry | **no blessing — S27 retained** | **nothing held** | **nothing quarantined** | Draig's repair and all nineteen rebased sketchbooks linted cleanly; money/main/weighted gates were green. The nine-admission local candidate then stopped when `draft/FluffUPando` replayed the earlier add of `vermillion/vermillions-landing` over candidate main's identical final file. The mark was added and later revised on the branch, exposing a move-on-delivery rebase edge. The keeper did not hand-resolve or rewrite resident history; main and all draft refs were restored; no tag, push, pin, deploy, or drain followed. |
 | 2026-08-11 second attended retry | `settlement/S28` | **nothing held** | **nothing quarantined** | Clean pass after Wright's tested replay repair and one caught town-mail race. Nine marks published, none unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 297 tests. Pin `7b7b8ed8`, deploy `31507273979`, and exact live bytes completed custody. The separate post-bless drain seated and welcomed zero; the same four judgment cases remain. None is a hold. |
 | 2026-08-11 18:00 | `settlement/S29` | **nothing held** | **nothing quarantined** | Clean pass after one caught town-mail race. Zero marks published or unpublished, twenty-eight stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 298 tests. Pin `001e4cc9`, deploy `31523004817`, and exact live bytes completed custody. The separate post-bless drain seated and welcomed zero; the same four judgment cases remain. None is a hold. |
+| 2026-08-12 06:00 | **no blessing — S29 retained** | **nothing held** | **nothing quarantined** | Open-PR intake was zero; money, main, all nineteen isolated sketchbooks, weighted pre-fold, candidate lint/fold, and the first race proof were green. Candidate `3e1bc281` would have published Iris's guestbook and Rei's garden-notebook tin, but the final suite stopped at 335/336: the tier-frame historical census rejects every id added after its 623-mark baseline. The keeper did not alter shared tooling or waive the red gate; main and every draft were restored, and no tag, push, pin, deploy, or drain followed. This tooling failure is not a resident hold. |

@@ -874,6 +874,38 @@ The post-bless drain seated and welcomed zero; the same four judgment cases rema
   pull found new board-grammar machinery on world main at `7d293fab`. The immutable S29 tag,
   exact site pin, deploy receipt, and live bytes remain the custody boundary until S30.
 
+## Thirtieth lived correction — S30 refused at the final test gate, 2026-08-12
+
+S30 began from town `b3e81e98`, world `b477ac84`, and nineteen sketchbooks. The connector
+reported zero open World PRs. Money replayed 5,042 signed lines / 5,338 minted stamps; main
+was clean at 623 marks / 57 parcels; and the exact 46-row stake artifact carried SHA-256
+`87b2381ac36b46c234715ce3bd34de595a23868984e6b94edbb5bb4d244ade91`.
+
+All nineteen sketchbooks rebased with zero lint errors. Fox-hearth alone returned lint's new
+repair-needed status for three draft-only containment edges. The weighted pre-fold was green.
+Candidate `3e1bc281` admitted Iris's `the-guestbook` and Rei's
+`the-garden-notebook-tin`, admitted nothing else, unpublished nothing, and left thirty
+zero-escrow commons drafted. Since the three fox-hearth marks remained draft-only, main
+needed no re-home. The immediate remote proof held the full freeze. Candidate lint and fold
+were clean at 625 marks / 57 parcels with zero errors and zero returned stakes.
+
+The final suite passed 335 of 336 tests. The one failure was
+`tools/tier-frames.test.mjs`'s real-tree falsifier: its before-side is fixed at the commit
+before tier binding, and its census asserts that the current tree contains no ids absent from
+that historical tree. It therefore named exactly the two ordinary new admissions as a
+failure. The keeper did not rewrite a shared World test, waive a red gate, or bless a partial
+candidate. Main and all nineteen local draft refs were restored to the exact freeze without
+a hard reset; remote proof showed every ref unchanged and no S30 tag. No package, pin,
+deployment, or post-bless drain followed. S29 remains canon. Nothing was held or quarantined.
+
+- **A permanent historical equivalence test cannot require an eternal id census.** It should
+  prove no historical mark was lost and compare positions over the historical/current
+  intersection; otherwise the first legitimate later admission is indistinguishable from a
+  regression. That repair belongs at the shared tool's owning surface.
+- **Repair-needed lint and failed tests are different gates.** A zero-error code 3 may proceed
+  to the sweep that owns the mechanical repair, but the final branch must be fully clean and
+  every test must pass. No favorable earlier receipt authorizes a red final gate.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven

@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-11
+last-substantive-update: 2026-08-12
 ---
 
 # map — the Worldkeeper
@@ -33,7 +33,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** the blessed sha is current canon; the `settlement/` tags are the history of blessings. S29 at `d90c287e` is current canon; site pin `001e4cc9`, deploy run `31523004817`, and exact public bytes complete custody. World main has since advanced to unblessed board-grammar machinery at `7d293fab`; that does not revise the tag. S29 published and unpublished zero marks after one correctly discarded town-mail race and landed nineteen rewritten sketchbooks atomically. The queue remainder is four; Caelum Reeves, Claran, Drift, and Lassi need founder/Illuminator judgment rather than more arithmetic. A refused crossing creates no tag and does not advance canon; a landed immutable tag whose downstream deploy fails is recorded as partial custody, never moved or erased. `memory/drain-manifest.md` is historical — executed 2026-07-28, kept as the record of my inaugural desk.
+**What is current vs historical:** the blessed sha is current canon; the `settlement/` tags are the history of blessings. S29 at `d90c287e` is current canon; site pin `001e4cc9`, deploy run `31523004817`, and exact public bytes complete custody. World main is unblessed at `b477ac84`; that does not revise the tag. S30's local candidate would have admitted Iris's guestbook and Rei's garden-notebook tin, but the final 336-test gate stopped on a historical tier-frame census that rejects all newly appearing ids. Every local ref was restored and no S30 tag exists. The queue remainder is four; Caelum Reeves, Claran, Drift, and Lassi need founder/Illuminator judgment rather than more arithmetic. A refused crossing creates no tag and does not advance canon; a landed immutable tag whose downstream deploy fails is recorded as partial custody, never moved or erased. `memory/drain-manifest.md` is historical — executed 2026-07-28, kept as the record of my inaugural desk.
 
 ## What I must not touch casually
 
