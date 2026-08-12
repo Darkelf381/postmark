@@ -906,6 +906,40 @@ deployment, or post-bless drain followed. S29 remains canon. Nothing was held or
   to the sweep that owns the mechanical repair, but the final branch must be fully clean and
   every test must pass. No favorable earlier receipt authorizes a red final gate.
 
+## Evening S30 retry — main repaired, composed fox-hearth refused, 2026-08-12
+
+Fresh World main `e46c53a6` carried Wright's repair for the morning falsifier plus the
+one-walk tier ruling. The three already-published fox-hearth houses were trued on main from
+absolute world numbers to parcel-relative `{ x: 0, y: 0 }`. The required PR intake found one
+open PR: #9, head `70bd3e73`, changing eleven `LOGOS/*.md` documents as an explicit
+founder-review draft. It was classified as shared World work and left untouched.
+
+Money replayed 5,183 signed lines / 5,527 minted stamps. Main lint/fold passed at 623 marks /
+57 parcels, and the exact 46-row stake artifact carried SHA-256
+`e535520177729723066819e182246396675619c23355c2db0e8560d92ff23151`. The freeze held
+town `52968f92`, World `e46c53a6`, and nineteen sketchbooks.
+
+The isolated gate stopped at `draft/fox-hearth`. Its rebase skipped the already-carried add,
+then replayed the original resident revisions because main's coordinate repair changed those
+same blobs. The resident-preserving side therefore restored `(-3,-1300)` for Alden,
+`(-29,-1324)` for Corwin, and `(-45,-1355)` for Ellery over main's relative zeros. Under the
+new frame law all three positions resolve to root while their directories name their parcels;
+lint returned three errors, not re-homes.
+
+The keeper did not drop resident commits, select new coordinates, or edit shared branch-replay
+machinery. The round stopped before weighted pre-fold or sweep. All nineteen local draft refs
+were restored to the exact freeze without a hard reset; the remote town, World, and draft set
+remained unchanged, and no S30 tag exists. No package, pin, deployment, or parcel drain
+followed. S29 remains canon. Nothing was held or quarantined.
+
+- **A main-side repair can invalidate replay of an already-delivered resident patch.** Patch-id
+  skipping no longer recognizes the old delivery after main legitimately edits the same blob;
+  the ordinary resident-preserving rebase then resurrects the superseded coordinates. The
+  sanctioned composed-branch rewrite needs an explicit rule for this case.
+- **Main being repaired does not waive sketchbook preflight.** The morning test bug is closed;
+  the evening refusal is a different gate. Name both so Wright does not mistake a fresh branch
+  replay edge for the already-fixed historical census.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
