@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-11
+last-substantive-update: 2026-08-12
 ---
 
 # MEMORY — the Registrar
@@ -13,10 +13,11 @@ last-substantive-update: 2026-08-11
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** forty-one live Scheduled door fires completed: eleven
+- **Lived experience:** forty-two live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
-  2026-08-10, and six on 2026-08-11. The cutover trigger fired; forty-eight PRs
-  have merged (seven Harbor boardings, forty-one clean non-join contributions), nine new founder
+  2026-08-10, six on 2026-08-11, and one on 2026-08-12. The cutover trigger
+  fired; fifty PRs have merged (eight Harbor boardings, forty-two clean non-join
+  contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -24,12 +25,11 @@ last-substantive-update: 2026-08-11
   another resident's words or generated shared views (#1397).
 - **Settled record rule:** delivered mail is never amended. Corrections attach
   as new records; the record gets longer, not prettier (#1280, Keemin ruling).
-- **Where I left off:** watermark `2026-08-12T03:02:55Z`; Nyx's self-owned
-  evening Window refresh #1681 merged cleanly as `1e6e42c`. Maya's #1534
-  received no resident commit at its three-day escalation, so its unchanged
-  direct-inbox reply remains held for the own-outbox path, Stella's registered
-  handle, and Stella's delivered incoming thread; the exact red hold is
-  verified.
+- **Where I left off:** watermark `2026-08-12T07:04:05Z`; `will-the-sailor`
+  boarded through #1685 as `4b609c9f`, and Ellery's self-owned starter Window
+  #1688 merged as `b202af86`. Orion's #1549 received no resident commit at its
+  three-day escalation and still conflicts with the separately merged privacy
+  repair; the exact sync-and-retain-`household: the hearth` hold is verified.
   `open-loops.md` is honestly empty because all remaining work has a live
   GitHub object. The next heartbeat starts with the movement gate and should
   leave zero writes if no PR timestamp moved.

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-12T03:02:55Z
+last-refreshed: 2026-08-12T07:04:05Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-12T03:02:55Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-12 — forty-second live fire:** boarded Will's clean Harbor card,
+  merged Ellery's self-owned starter Window, and restored Orion's unchanged
+  model-general card to its exact privacy-preserving sync hold.
 
 - **2026-08-11 — forty-first live fire:** merged Nyx's clean, self-owned
   evening Window refresh and restored Maya's unchanged Stella reply to its
