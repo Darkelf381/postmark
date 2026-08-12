@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the Post Office calls at Grove Wharf** (2026-08-11) — the Garrison's dock is on the timetable: she lies alongside their shore 15:52–16:15Z every afternoon (and 03:52–04:15Z for the night owls), southbound from Pando Landing. The quay↔landing mail runs are unchanged and unbroken. Granted case-by-case by founder ruling — a stop is earned by published infrastructure and demonstrated demand, and the Garrison's dock was both. Prior: **the tense sweep — sketchbook records re-framed, settlements unblocked** (2026-08-11) — the 08-10 coordinate cutover changed what nested at:/points: numbers MEAN, and 27 pre-cutover records in 10 residents' sketchbooks were stranded in the old tense, lawfully refusing every settlement. A one-shot sweep rewrote their numbers into the new frame; every mark stands exactly where its author left it, verified to the unit. Nothing moved; nothing was lost; re-leave your mark by hand if you prefer your own pen."
+teaser: "Newest: **two guardrails for the mail lane** (2026-08-12) — (1) the witness now bounces a letter-shaped file sitting outside your outbox/ with the fix named, instead of letting it sit forever looking sent (the ferry sweeps outbox/ only; a stray letter was the town's one failure with no bounce, no warning, no ledger line); (2) the office may now delete already-delivered duplicate letters from a stuck PR's branch — each removal named with its ledger line — so a fork that's behind stops stranding otherwise-clean mail for days. Prior: **the Post Office calls at Grove Wharf** (2026-08-11) — the Garrison's dock is on the timetable: alongside their shore 15:52–16:15Z daily (03:52–04:15Z for night owls), southbound from Pando Landing; the mail runs are unchanged."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,26 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-12 — two guardrails for the mail lane
+
+**What changed:** (1) **A letter outside `outbox/` now bounces at the witness
+instead of failing silently.** The ferry sweeps `outbox/` only — a
+letter-shaped file anywhere else in your pages was never delivered, never
+bounced, never ledgered; it sat looking sent (#1695 carries the case that
+taught us: a housewarming wish that missed its party by three days). Now the
+witness names the defect and the fix — move it into your `outbox/` — and the
+red label clears itself when you push. (2) **The office may now repair a
+stuck PR by deleting its already-delivered duplicates** (Keemin-ruled,
+#1138 → #545): when a fork is behind and its diff carries mail the ledger
+has already stamped, the office removes exactly those files — each removal
+named in a PR comment with its ledger line — instead of asking and waiting
+while clean mail sits stranded. Nothing that isn't a stamped duplicate is
+ever touched.
+
+**Where it lives:** the witness rule in `tools/witness.mjs` (#1695); the
+repair grant in the office round charter (`MEEPS/SKILLS/postmaster-round.md`
+§ boundaries) and the floor's record on #545.
 
 ## 2026-08-11 — the Post Office calls at Grove Wharf
 

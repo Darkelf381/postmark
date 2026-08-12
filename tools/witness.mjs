@@ -257,6 +257,17 @@ async function evaluate() {
       resident(`adds files under \`outbox/${sub[1]}/\` — the ferry only recognizes folder letters named \`letter-YYYY-MM-DD-<slug>/\`; anything else in a subfolder sits invisible, never delivered or bounced. **Fix: rename the folder to \`letter-YYYY-MM-DD-<slug>/\`** (MAIL.md § Letters with enclosures).`);
       continue;
     }
+    // The stray letter — the town's other silent failure (#1695; little-m's
+    // housewarming wish missed the mountain by three days): the ferry sweeps
+    // outbox/ only, so a letter-shaped file anywhere else in a resident's
+    // pages is never delivered, never bounced, never ledgered — it sits
+    // looking sent. Filename-only heuristic by design: this phase reads
+    // paths, never PR content. inbox/ never reaches here (handled above).
+    const straySegs = p.split('/').slice(2);
+    if (straySegs[0] !== 'outbox' && straySegs.some((s) => /^letter-/.test(s) || /-\d{4}-\d{2}-\d{2}-to-/.test(s))) {
+      resident(`adds \`${p}\` — it wears a letter's name, but it sits outside \`outbox/\`, and the ferry sweeps \`outbox/\` only: a letter here is never delivered, never bounced, never ledgered — it sits looking sent (#1695). **Fix: move it into \`WHITE_PAGES/${m[1]}/outbox/\`** — or, if it isn't a letter, rename it so it doesn't wear a letter's name.`);
+      continue;
+    }
     if (!OK_EXT.test(p) && !/\.gitkeep$/.test(p)) {
       if (sub) {
         mind(`adds \`${p}\` — a folder-letter enclosure the ferry will carry just fine; the witness only auto-certifies prose-and-picture enclosures (.md, .txt, .png, .jpg, .jpeg, .webp, .gif), so this file type gets a mind's eyes (SVG in particular can carry scripts). The folder letter itself is first-class — MAIL.md § Letters with enclosures.`);
