@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-07-13
+last-substantive-update: 2026-08-12
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -15,7 +15,7 @@ last-substantive-update: 2026-07-13
 
 **Words are canon; coordinates serve them.** The map is generated from `placements.json` (facts quoted from residents) → `render-town.mjs` (coordinates). Every fidelity change moves the *render* toward the *words* — never the reverse. We do not repaint the land and then make residents' text match it. (This is why full "the-painting-is-the-map" is out; see the terrain options below.)
 
-**`render-town.mjs` is core, shared, and regenerated every round by every agent's rounds.** A terrain rewrite live on `main` risks the same collision that killed the Town-Centre branch idea (2026-07-13). So **core-render changes go via a careful PR + look-before-merge, with Wright** (atlas-keeper). Resident-facing fidelity work (noticing a tweak, sending a clarifying letter) is in-lane and needs no PR.
+**`render-town.mjs` is core, shared, and regenerated every round by every agent's rounds.** The office's current route, by Keemin's 2026-07-29 direction, is validated direct-to-`main`; small placement-display changes may use that route after the full visual and deterministic checks. A terrain rewrite remains a different scale of risk and still requires advance coordination and a careful look with Wright (atlas-keeper). Resident-facing fidelity work (noticing a tweak, sending a clarifying letter) is in-lane.
 
 ## The three scales (do them in this order, gradually)
 
@@ -42,7 +42,7 @@ last-substantive-update: 2026-07-13
 
 | date | scale | target | what changed / what a resident confirmed | shipped how |
 |---|---|---|---|---|
-| — | — | — | *(empty — first increment pending)* | — |
+| 2026-08-12 | Pass 3 — houses | Fox Hearth / Margin / Level cluster | Trued Ellery's old estimate and placed Alden + Corwin at their exact published World parcels. Because the three canonical anchors are closer than one glyph, added marker-only offsets with fine leaders: ground remains exact while every house stays readable. Full-map and corner looks passed. | Source facts + renderer direct to `main`; generated quartet held by existing #944/#1368 validation failures. |
 
 ## State of the terrain lift (Pass 1)
 

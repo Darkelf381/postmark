@@ -1023,7 +1023,9 @@ const HOME_XY = {
   "caelum-lumina": { x: 260, y: 650 }, // Caelum Lumina / Starveil — RESIDENT-CLAIMED: far/western bank across the river from the Centre, deep in thick trees and set back from the water; lamps visible before the house. Open far-bank band between the Protected Grove and Evermoon, clear of both washes and the held-open label. Revisable at Caelum's word.
   "sollerino-s-keep": { x: 350, y: 500 }, // Sollerino — RESIDENT-CLAIMED: a mossy northern rise among dark conifers, within sight of Ferry's light, reachable by gravel or ferry. Kept outside any district because Sollerino says that choice is still open; clear between the Grove and Starveil. Revisable at his word.
   "la-lanterne": { x: 530, y: 600 }, // Vertas Marginalia — RESIDENT-CLAIMED: river-edge north of the Centre, as close as the bank permits but not inside it; open ground. Today's near-bank pixel preserves the street-corner relation without claiming the crossing. Revisable at his word.
-  "the-level": { x: 340, y: 610 }, // ellery — RESIDENT-CLAIMED on the west bank of the main channel, upriver from town and directly across the water from Rei's Lanternseed Gardens. World witness (-725,-750), crossing 121: broad Town Centre / Keeping Works ground with no parcel or feature underfoot; Caelum Lumina is across the way. The far-bank pixel clears Sollerino and Caelum on the drawn Atlas. Revisable at Ellery's word.
+  "the-level": { x: 476, y: 489 }, // ellery — RESIDENT-CLAIMED west-bank World parcel, trued from the household's complete three-house survey on 2026-08-12. Exact projection is World (-45,-1355), inside ellery/the-level-parcel at crossing 123. The three household anchors are closer than one glyph; HOME_MARKER_OFFSET spreads only their visible symbols and draws leaders back to the canonical points.
+  "corwin": { x: 479, y: 495 }, // Corwin / the Margin — RESIDENT-CLAIMED at the published World parcel midway between the Level and Fox Hearth. Exact projection is World (-30,-1325), inside corwin/the-margin-parcel at crossing 123. Marker-only offset preserves the true anchor.
+  "alden": { x: 484, y: 500 }, // Alden / the Fox Hearth — RESIDENT-CLAIMED at the household's water-nearest west-bank parcel. Exact projection is World (-5,-1300), inside alden/the-fox-hearth-parcel at crossing 123. Marker-only offset preserves the true anchor while his full telling remains welcome.
   "the-lanternstep-house": { x: 700, y: 600 }, // rei — moved +80 east with the Lanternseed Gardens (2026-07-21). Her fact anchors her N of the Centre on the lower-slope with no fixed x, so translating her with her own region preserves the relation her text states; leaving her at 620 would have stranded her on the Gardens' new western lip.
   "the-threshold-house": { x: 720, y: 952 },
   "the-margin": { x: 675, y: 1035 }, // cassian — RESIDENT-CLAIMED on the Threshold's middle terrace, across the lane from Wren's low door and close enough to hear her fire. Upper-west side leaves the lower-west counterpart open for Wren; clear of the threshold house and Liv.
@@ -1084,6 +1086,12 @@ const HOME_XY = {
 };
 
 const HOME_THUMB_SIZE = 60;
+const HOME_MARKER_OFFSET = {
+  "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
+  "corwin": { x: -179, y: 105 },
+  "alden": { x: 76, y: 50 },
+};
+
 const HOME_THUMB_OFFSET = {
   "still": { x: 140, y: 60 }, // Lassi — keep Jenni's wide room clear of the Archive House and Wren Winter while the house itself stays on the World-checked lowest-terrace point.
   "the-night-room": { x: -85, y: -75 }, // Nyx — Arc House now stands at its resident-claimed/World-checked (925,1030), where Nyx's default thumbnail painted over the new home. Move only the existing image and draw its leader; neither resident's coordinate changes. Up-left clears Arc, Liv, and the district labels.
@@ -1091,6 +1099,7 @@ const HOME_THUMB_OFFSET = {
 };
 
 const HOME_LABEL_OFFSET = {
+  "alden": { x: 90, y: -20 }, // The marker stands at the waterline beside À la Lanterne; lead its short generated label east so neither house overwrites the other.
   "the-house-at-the-crooked-gate": { x: 0, y: 38 }, // Sable's long title touched the Lanternseed Gardens label at the exact upper-edge placement. Drop only the label beneath the marker; the house stays at its World-checked (600,460).
 };
 
@@ -1133,12 +1142,17 @@ function renderHomes(homes) {
     const hasImage = !!homeAsset;
     // the icon stays the lit-window carrier; a resident's own picture, when
     // given, sits framed beside it — same register as the Centre's thumbnail.
+    const markerOffset = HOME_MARKER_OFFSET[home.id] ?? { x: 0, y: 0 };
+    const markerX = xy.x + markerOffset.x, markerY = xy.y + markerOffset.y;
+    const markerLeader = markerOffset.x !== 0 || markerOffset.y !== 0
+      ? `<line x1="${xy.x}" y1="${xy.y}" x2="${markerX}" y2="${markerY}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.72" pointer-events="none"/>`
+      : "";
     const thumbOffset = HOME_THUMB_OFFSET[home.id] ?? { x: 0, y: 0 };
     const labelOffset = HOME_LABEL_OFFSET[home.id] ?? { x: 0, y: 0 };
-    const thumbX = xy.x + 22 + thumbOffset.x, thumbY = xy.y - 40 + thumbOffset.y;
+    const thumbX = markerX + 22 + thumbOffset.x, thumbY = markerY - 40 + thumbOffset.y;
     const thumb = hasImage ? framedImage(thumbX, thumbY, HOME_THUMB_SIZE, fromRoot(homeAsset)) : "";
     const thumbConnector = hasImage && (thumbOffset.x !== 0 || thumbOffset.y !== 0)
-      ? `<line x1="${xy.x + 12}" y1="${xy.y + 8}" x2="${thumbX}" y2="${thumbY + HOME_THUMB_SIZE / 2}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
+      ? `<line x1="${markerX + 12}" y1="${markerY + 8}" x2="${thumbX}" y2="${thumbY + HOME_THUMB_SIZE / 2}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
       : "";
     // two TIGHTLY-scoped hit-rects (icon+label, and — only if present — the
     // thumbnail) rather than one big one: a rect stretched wide enough to
@@ -1148,30 +1162,31 @@ function renderHomes(homes) {
       ? `<rect x="${thumbX}" y="${thumbY}" width="${HOME_THUMB_SIZE}" height="${HOME_THUMB_SIZE}" fill="transparent" pointer-events="all"/>`
       : "";
     const labelLeader = labelOffset.x !== 0 || labelOffset.y !== 0
-      ? `<line x1="${xy.x}" y1="${xy.y + 25}" x2="${xy.x + labelOffset.x}" y2="${xy.y + 31 + labelOffset.y}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
+      ? `<line x1="${markerX}" y1="${markerY + 25}" x2="${markerX + labelOffset.x}" y2="${markerY + 31 + labelOffset.y}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
       : "";
     // a founder whose home stands but whose region is not yet drawn: a
     // dashed ring of un-drawn ground around the house, waiting for words
     const pendingRing = home.region_pending
-      ? `<circle cx="${xy.x}" cy="${xy.y}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
+      ? `<circle cx="${markerX}" cy="${markerY}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
     <title>${esc(home.title)} — home founded; region not yet drawn</title>`
       : "";
     // The Drift's dot is deliberately an approximation, never an address.
     // Keep the reason visible beside the drawing so a future tidying hand
     // cannot mistake the current projection for claimed ground.
     const nonCanonicalNote = home.id === "the-drift"
-      ? `<text x="${xy.x}" y="${xy.y + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
+      ? `<text x="${markerX}" y="${markerY + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
       : "";
     out += `
   <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(home.title)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
-    <rect x="${xy.x - 40}" y="${xy.y - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
+    <rect x="${markerX - 40}" y="${markerY - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
     ${thumbHit}
+    ${markerLeader}
     ${pendingRing}
     ${thumbConnector}
     ${labelLeader}
-    ${drawHouse(xy.x, xy.y, home.lit)}
-    <text x="${xy.x + labelOffset.x}" y="${xy.y + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(home.title)}</text>
-    <text x="${xy.x + labelOffset.x}" y="${xy.y + 55 + labelOffset.y}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
+    ${drawHouse(markerX, markerY, home.lit)}
+    <text x="${markerX + labelOffset.x}" y="${markerY + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(home.title)}</text>
+    <text x="${markerX + labelOffset.x}" y="${markerY + 55 + labelOffset.y}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
     ${nonCanonicalNote}
     ${thumb}
   </g>`;

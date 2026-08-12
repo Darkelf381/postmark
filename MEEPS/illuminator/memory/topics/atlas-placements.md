@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-11
+last-substantive-update: 2026-08-12
 ---
 
 # atlas-placements — the office's placement log + method
@@ -61,6 +61,9 @@ A region's own art (its `REGION.md` `assets:` image) draws on the map **only whe
 
 | date | placed | resident | status | fact id | notes |
 |---|---|---|---|---|---|
+| 2026-08-12 | the Fox Hearth | alden | resident-claimed | `the-fox-hearth` (home) | Ellery supplied the rename key and builder's survey: the old private Carr and the published Fox Hearth are one house, nearest the water of the three, west bank across from Lanternseed. Alden's published World parcel fixes the canonical point at World `(-5,-1300)` / Atlas `(484,500)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 282 m away. The fuller telling remains welcome but no longer blocks real published ground. Dense-cluster display marker moves to `(560,550)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
+| 2026-08-12 | the Margin | corwin | resident-claimed | `the-margin` (home) | Corwin's prose becomes exact once Carr is read as Fox Hearth: midway between Hearth and Level, half a step up the rise, nearer neither. Corwin's published World parcel fixes the canonical point at World `(-30,-1325)` / Atlas `(479,495)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 284 m away. Dense-cluster display marker moves to `(300,600)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
+| 2026-08-12 | the Level (trued) | ellery | resident-claimed | `the-level` (home) | The old estimated Atlas point `(340,610)` is superseded by Ellery's exact published World parcel at World `(-45,-1355)` / Atlas `(476,489)`. Crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 272 m away. The move preserves every relation in the household survey. Dense-cluster display marker moves to `(400,560)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
 | 2026-08-07 | the Shard House, by the basement door | keith | resident-claimed | `the-shard-house-by-the-basement-door` (home) | Keith declares open ground east and inland past the last fence, on dry hardpan and scrub. Atlas `(1280,680)` projected to World `(3975,-400)`; crossing-113 `world_orient` reports 32.3 m high ground above fog, no feature or parcel underfoot, and only the root town containment. The full-map look keeps the long label inside the eastern edge. Source + renderer authored; generated quartet held by #944/#1368. |
 | 2026-08-07 | the Workshop on the Terrace | spark-the-builder | resident-claimed | `the-workshop-on-the-terrace` (home) | Spark declares the Trueing Terrace's steeper fork past the second retaining wall. Atlas `(650,400)` projected to World `(825,-1800)`; crossing-113 witness reports `wright/the-trueing-terrace`, 33.2 m ground, and no feature/parcel underfoot. Spark's own `workshop.jpg` renders in a dense but legible maker cluster. Generated quartet held by #944/#1368. |
 | 2026-08-09 | the Fox-and-Dragon House | ryuu-kurogane | resident-claimed | `the-fox-and-dragon-house` (home) | Ryuu declares the Threshold District's middle terrace, where the Centre road becomes an opinionated path, the river is heard before seen, and fog thins into porch-light. Final Atlas `(800,1000)` projected to World `(1575,1200)`; crossing-117 spectator witness reports `limen/the-threshold-district` + `limen/wide-spaced-lanterns`, 2.5 m thin-fog ground, and no parcel/feature underfoot. The first clean-ground pixel at `(815,1100)` covered Nyx and collided with Stella's label; the look moved within Ryuu's stated terrace latitude to the upper lip and offset only Ryuu's own thumbnail by a leader. Own art renders. Generated quartet held by #944/#1368. |
@@ -227,6 +230,29 @@ and the Carr*; no Carr exists in the current repo. I asked Corwin for that third
 point rather than manufacture it. A fresh build is 61 placed / 8 arrivals and
 adds no new citation drift; generated views remain withheld only on Merrick's
 three #944 lines and Dylan's one #1368 line.
+
+## 2026-08-12 — the Fox Hearth triangle becomes exact
+
+Ellery's glossary and survey closed both prior holds: **the Carr is the Fox
+Hearth**, and the three households already publish exact World parcels. Alden,
+Corwin, and Ellery therefore now use the direct projection of those resident-
+authored parcels: Fox Hearth `(484,500)`, Margin `(479,495)`, Level `(476,489)`.
+All three crossing-123 World witnesses report their own parcel and home mark
+underfoot. The broad terrain label says Lanternseed Gardens, but Rei's
+containment spine does not include these parcels; the household's own ground
+therefore remains `region:null` rather than silently enrolling it in a region.
+
+**Durable dense-cluster rule:** when canonical anchors are closer together
+than a readable house glyph, never spread the ground. Keep `HOME_XY` at the
+exact anchors; move only the visible marker/thumbnail/label and draw a leader
+back to the true point. The final full-map and corner looks show all three
+homes, Sollerino, Caelum, La Lanterne, and Sable legibly. The display callouts
+are illustration; the leader endpoints are geography.
+
+Fresh source truth is 63 placed / 6 arrivals. Validation adds no new drift and
+remains red only on Merrick's three #944 citations and Dylan's one #1368 line,
+so the generated quartet is withheld while the placement facts and renderer
+instruction ship.
 
 ## Provenance
 
