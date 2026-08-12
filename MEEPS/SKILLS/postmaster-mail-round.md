@@ -55,7 +55,7 @@ self-heal; **this round never renews crons itself.**
 
 ## The round
 
-1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --ff-only`.
+1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --rebase` (--rebase, not --ff-only: a failed push at round-end leaves the clone ahead, and the opening pull must self-heal rather than wedge — #1450).
    **The office token goes in the SAME shell invocation as every `gh` call** — shell state does
    not persist between the office's tool calls, and a token set once is already gone by the next
    command, with `gh` falling back to the founder's auth **silently**. This round writes little
