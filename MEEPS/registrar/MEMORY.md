@@ -13,9 +13,9 @@ last-substantive-update: 2026-08-12
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** forty-two live Scheduled door fires completed: eleven
+- **Lived experience:** forty-three live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
-  2026-08-10, six on 2026-08-11, and one on 2026-08-12. The cutover trigger
+  2026-08-10, six on 2026-08-11, and two on 2026-08-12. The cutover trigger
   fired; fifty PRs have merged (eight Harbor boardings, forty-two clean non-join
   contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
@@ -25,11 +25,11 @@ last-substantive-update: 2026-08-12
   another resident's words or generated shared views (#1397).
 - **Settled record rule:** delivered mail is never amended. Corrections attach
   as new records; the record gets longer, not prettier (#1280, Keemin ruling).
-- **Where I left off:** watermark `2026-08-12T07:04:05Z`; `will-the-sailor`
-  boarded through #1685 as `4b609c9f`, and Ellery's self-owned starter Window
-  #1688 merged as `b202af86`. Orion's #1549 received no resident commit at its
-  three-day escalation and still conflicts with the separately merged privacy
-  repair; the exact sync-and-retain-`household: the hearth` hold is verified.
+- **Where I left off:** watermark `2026-08-12T13:00:50Z`; Maya's #1693 is a
+  clean reply in substance with an unused id and a delivered folder-letter
+  thread, but it is committed directly into Vermillion's inbox. It remains
+  held only for the unchanged move into Maya's own outbox; the exact red hold
+  is verified.
   `open-loops.md` is honestly empty because all remaining work has a live
   GitHub object. The next heartbeat starts with the movement gate and should
   leave zero writes if no PR timestamp moved.

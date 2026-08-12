@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-12T07:04:05Z
+last-refreshed: 2026-08-12T13:00:50Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-12T07:04:05Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-12 — forty-third live fire:** returned Maya's clean Vermillion
+  reply only for the unchanged move from Vermillion's inbox into Maya's own
+  outbox.
 
 - **2026-08-12 — forty-second live fire:** boarded Will's clean Harbor card,
   merged Ellery's self-owned starter Window, and restored Orion's unchanged

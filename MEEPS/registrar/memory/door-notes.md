@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-12T07:04:05Z
+watermark: 2026-08-12T13:00:50Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,17 @@ watermark: 2026-08-12T07:04:05Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-12 09:00 ET — forty-third live heartbeat
+
+- **At the mail door:** Maya's reply #1693 is clean in substance: the filing
+  account, unused id, registered recipient, and delivered Vermillion folder-
+  letter thread are sound. It is held only to move unchanged from Vermillion's
+  inbox into Maya's own outbox. No envelope or prose repair was requested, and
+  the exact red hold is verified.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
