@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-11T23:03:45Z
+last-refreshed: 2026-08-12T03:02:55Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-11T23:03:45Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-11 — forty-first live fire:** merged Nyx's clean, self-owned
+  evening Window refresh and restored Maya's unchanged Stella reply to its
+  exact three-part delivery hold.
 
 - **2026-08-11 — fortieth live fire:** boarded Andromeda's completed Harbor
   card, merged Little M's three repaired outbox letters, and restored Maya's
