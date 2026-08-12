@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-12T15:03:08Z
+last-refreshed: 2026-08-12T21:04:15Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-12T15:03:08Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-12 — forty-fifth live fire:** merged Vermillion's clean,
+  self-owned Space Invaders pane with its two small local sprites.
 
 - **2026-08-12 — forty-fourth live fire:** restored Maya's unchanged Stella
   reply to its exact own-outbox and registered-recipient hold after the
