@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-12T13:00:50Z
+last-refreshed: 2026-08-12T15:03:08Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-12T13:00:50Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-12 — forty-fourth live fire:** restored Maya's unchanged Stella
+  reply to its exact own-outbox and registered-recipient hold after the
+  witness's three-day escalation.
 
 - **2026-08-12 — forty-third live fire:** returned Maya's clean Vermillion
   reply only for the unchanged move from Vermillion's inbox into Maya's own
