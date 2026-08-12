@@ -940,6 +940,42 @@ followed. S29 remains canon. Nothing was held or quarantined.
   the evening refusal is a different gate. Name both so Wright does not mistake a fresh branch
   replay edge for the already-fixed historical census.
 
+## Attended S30 retry — composition repaired; forward growth still refused, 2026-08-12
+
+The retry first froze town `c7a29097`, World `cb4d9ed1`, and nineteen sketchbooks. Open-PR
+intake was zero. Money replayed 5,183 signed lines / 5,527 minted stamps, and the 46-row stake
+artifact was again SHA-256
+`e535520177729723066819e182246396675619c23355c2db0e8560d92ff23151`. Fox-hearth's repaired
+remote tip made all nineteen composed sketchbooks lint cleanly. Candidate `10057fb4`
+published Iris's guestbook, Sol's Ferry's Rest and grove lantern, and Rei's garden notebook
+tin. It was discarded before final gates when the immediate proof found town had advanced to
+`9d43d869` for one delivered letter. No remote had been touched; exact refs were restored and
+the full chain restarted.
+
+The stable freeze held town `9d43d869`, World `cb4d9ed1`, site `da889de5`, and the same
+nineteen draft tips. PR intake remained zero; money, stakes, main, and every isolated branch
+gate reproduced cleanly. Sweep candidate `f6bb44ee` reproduced the same four home admissions,
+unpublished and re-homed nothing, left twenty-seven zero-escrow commons drafted, and rebased
+all nineteen sketchbooks with no returns. Its first race proof held. Candidate lint/fold was
+green at 627 marks / 57 parcels, zero errors, zero re-homes, and zero returned stakes.
+
+The final suite still failed `tools/tier-frames.test.mjs:497`. Its historical side now includes
+the repaired current census, but the assertion `and none appeared` continues to require exact
+id-set equality forever. The focused file passed 14/15 and named exactly the four new home
+admissions. The keeper did not weaken shared machinery or bless around a red test. Main and
+all local drafts were restored to the exact freeze; remote main/drafts remained unchanged and
+no S30 tag exists. No package, pin, deploy, live proof, or parcel drain followed. S29 remains
+canon. Nothing was held or quarantined.
+
+- **The historical falsifier has two independent census duties.** Proving no old id vanished
+  is permanent; proving no new id appeared is incompatible with the settlement mechanism.
+  Moving the historical reference forward only postpones that contradiction until the next
+  admission. Compare invariant geometry over the intersection and keep the one-way loss check.
+- **A gate receipt belongs to the candidate and the keeper's exact clone.** An adjacent shared
+  clone at the same remote main can pass tests while never containing the local settlement
+  commit. Treat such a diagnostic as non-authoritative; the final chain runs only in
+  `worldkeeper_clone/postmark-world` against the candidate object itself.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
