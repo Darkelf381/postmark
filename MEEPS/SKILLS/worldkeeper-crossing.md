@@ -76,6 +76,11 @@ impossible and gets MORE impossible as the town thrives).
   and a blessing has always meant *canon as of the freeze instant*. (The proof was
   conflating "my inputs mutated" — impossible for a pinned sha — with "newer inputs
   exist" — always true in a living town, and harmless: the next crossing reads them.)
+  **The carrier:** `tools/settlement-freeze.mjs` (world main, merged `374024db`) makes this
+  structural — `--town <path> --json` resolves X and emits a detached worktree at it
+  (`frozen_path`); run every town read *and* the stake artifact from that path
+  (`node <frozen_path>/tools/world-stake.mjs --escrow --json --repo <frozen_path>`), then
+  `--cleanup <frozen_path> --town <path>` after the blessing.
 - **Site — unchanged.** Write-only from this round; the pin push already carries its
   race-safe pull-rebase lane.
 - **The town closeout push — unchanged** (§ Town closeout lane already rebases over a
