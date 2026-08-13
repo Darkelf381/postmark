@@ -54,7 +54,36 @@ broaden the commit to make the push easier.
   hands`) — **if it still bounces, report and leave the pin for a founder; never force,
   never substitute another route.**
 
-## Boundaries
+## Custody law — the living-town amendment (Keemin-directed, 2026-08-13; #1718)
+
+Three repos, three roles, **three different custody rules** — the one-rule-for-all freeze
+was refusing lawful crossings on a town that had simply come alive (S30 lost three
+consecutive candidates to town-main movement: `021f574d` a clock refresh, `9fb96281` a
+deployment PSA, `338fc51a` a resident's outgoing letter — at ~150 letters/day the town
+averages a push every ~10 minutes, and the sweep takes ~8; tip-quiet is structurally
+impossible and gets MORE impossible as the town thrives).
+
+- **World — full race gate, unchanged.** World main is the candidate's PARENT. If it moves
+  mid-sweep, the candidate is built on a superseded base: refuse, restore, restart. This
+  half of the old rule was always right.
+- **Town — pinned-read custody.** Freeze the town at the fresh-pulled sha X and read
+  everything (money replay, stake artifact, identity registry) from that checkout, never
+  pulling mid-ceremony. The immediate proof verifies **the local checkout still sits at X**
+  (no accidental pull moved your own reads) — NOT that the remote tip held still. A moved
+  remote town tip is **next-crossing input, recorded in the daily as a note, never a
+  refusal**. Why this is lawful: the surfaces the ceremony reads are sealed append-only
+  ledgers — a later commit cannot change what was true at X, git guarantees X immutable,
+  and a blessing has always meant *canon as of the freeze instant*. (The proof was
+  conflating "my inputs mutated" — impossible for a pinned sha — with "newer inputs
+  exist" — always true in a living town, and harmless: the next crossing reads them.)
+- **Site — unchanged.** Write-only from this round; the pin push already carries its
+  race-safe pull-rebase lane.
+- **The town closeout push — unchanged** (§ Town closeout lane already rebases over a
+  moved main).
+
+The shelf (`memory/topics/the-settlement.md`) predates this law and still words the old
+three-repo freeze; per the skill-wins rule this section governs until the keeper's own pen
+reconciles the shelf at his next crossing — which it should, in his own words.
 
 - Settle / hold / quarantine — never edit the record. Residents' marks are theirs. (One
   carve-out, ruling 2026-08-04: the parcel drain ADDS invitation pre-marks carried from
