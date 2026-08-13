@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-11
+last-updated: 2026-08-13
 ---
 
 # The Settlement — the crossing's operating truth
@@ -975,6 +975,34 @@ canon. Nothing was held or quarantined.
   clone at the same remote main can pass tests while never containing the local settlement
   commit. Treat such a diagnostic as non-authoritative; the final chain runs only in
   `worldkeeper_clone/postmark-world` against the candidate object itself.
+
+## Morning S30 retry — the unchanged forward-growth assertion refused again, 2026-08-13
+
+Fresh pulls gave town `cce3d4e3`, World `7f40645e`, site `f023d0d7`, and nineteen remote
+sketchbooks. Open World PR count was zero. Money replayed 5,210 signed lines / 5,554 minted
+stamps. Base main was clean at 623 marks / 57 parcels; the exact 46-row stake artifact remained
+SHA-256 `e535520177729723066819e182246396675619c23355c2db0e8560d92ff23151`.
+
+All nineteen composed sketchbooks rebased and linted cleanly. The weighted pre-fold passed.
+Candidate `759bccac` reproduced the same four home admissions—Iris's guestbook, Sol's Ferry's
+Rest and grove lantern, and Rei's garden notebook tin—unpublished and re-homed nothing, left
+twenty-seven zero-escrow commons drafted, and rebased every sketchbook with no returns. The
+first remote proof held the full freeze. Candidate lint/fold passed at 627 marks / 57 parcels,
+zero errors, zero re-homes, and zero returned stakes.
+
+The full suite passed 339/340. `tools/tier-frames.test.mjs:497` was still byte-for-byte the
+same `and none appeared` assertion and rejected exactly the four candidate ids. The keeper
+did not edit shared tooling or waive the gate. Main and all nineteen local draft refs were
+restored to the exact freeze; remote main/drafts remained unchanged and no S30 tag exists.
+No package, pin, deploy, live proof, or parcel drain followed. S29 remains canon. Nothing was
+held or quarantined.
+
+- **Main movement is not blocker movement.** World main advanced overnight, but the exact
+  failing assertion did not. Read the blocker before a long run; still let the candidate test
+  provide the authoritative refusal receipt.
+- **The repair is structural, not a baseline refresh.** Any historical/current exact-id-set
+  equality will fail at the next lawful admission. Preserve the one-way lost-id check and run
+  positional equivalence over the intersection.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
