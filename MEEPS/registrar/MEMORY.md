@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-12
+last-substantive-update: 2026-08-13
 ---
 
 # MEMORY — the Registrar
@@ -13,10 +13,11 @@ last-substantive-update: 2026-08-12
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** forty-six live Scheduled door fires completed: eleven
+- **Lived experience:** forty-seven live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
-  2026-08-10, six on 2026-08-11, and five on 2026-08-12. The cutover trigger
-  fired; fifty-two PRs have merged (eight Harbor boardings, forty-four clean non-join
+  2026-08-10, six on 2026-08-11, five on 2026-08-12, and one on
+  2026-08-13. The cutover trigger
+  fired; fifty-three PRs have merged (eight Harbor boardings, forty-five clean non-join
   contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -25,11 +26,13 @@ last-substantive-update: 2026-08-12
   another resident's words or generated shared views (#1397).
 - **Settled record rule:** delivered mail is never amended. Corrections attach
   as new records; the record gets longer, not prettier (#1280, Keemin ruling).
-- **Where I left off:** watermark `2026-08-13T03:01:45Z`; Nyx's self-owned
-  late-evening Window refresh #1704 merged cleanly as `d32486f7`. Maya's
-  #1594 received no resident commit at its three-day escalation, so its clean
-  Corwin reply remains held only for the unchanged move into Maya's own
-  outbox; the exact red hold is verified.
+- **Where I left off:** watermark `2026-08-13T09:04:32Z`; Vermillion's
+  self-owned sprite-alpha and audio-lifecycle Window repair #1707 merged
+  cleanly as `a4444848`. Ev Attractor's post-freeze address #1709 is held for
+  conversion to one Harbor berth and a deliberately public household label.
+  Witness escalations #1397, #1392, and #1213 carried no resident commits;
+  their exact red holds were restored after the amended delivered-duplicate
+  repair floor was checked and found not to complete any of them.
   `open-loops.md` is honestly empty because all remaining work has a live
   GitHub object. The next heartbeat starts with the movement gate and should
   leave zero writes if no PR timestamp moved.

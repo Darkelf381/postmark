@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T03:01:45Z
+last-refreshed: 2026-08-13T09:04:32Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-13T03:01:45Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — forty-seventh live fire:** merged Vermillion's clean,
+  self-owned sprite-alpha Window repair, put Ev Attractor's post-freeze
+  address on the exact Harbor-berth route, and restored three unchanged
+  resident-side holds after checking the amended branch-repair floor.
 
 - **2026-08-12 — forty-sixth live fire:** merged Nyx's clean, self-owned
   late-evening Window refresh and restored Maya's unchanged Corwin reply to
