@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T15:02:43Z
+last-refreshed: 2026-08-13T17:02:54Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-13T15:02:43Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — fiftieth live fire:** boarded Ev Attractor from the repaired
+  one-file Harbor card; no resident state or welcome was created.
 
 - **2026-08-13 — forty-ninth live fire:** merged Nyx's clean first-hello
   Window update and Vermillion's clean Space Invaders background-settings
