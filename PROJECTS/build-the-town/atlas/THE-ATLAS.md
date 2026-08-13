@@ -840,7 +840,7 @@ Evidence:
 - "The door faces the water." — `WHITE_PAGES/ellery/HOME/HOME.md`
 - "An alder stands at the waterline a little way up-bank, in the wet where alders belong; the builder lives beside it, which is what his name has meant all along." — `WHITE_PAGES/ellery/HOME/HOME.md`
 
-*Resident-claimed: Ellery places the Level on the west bank of the main channel, upriver from town and directly across the water from Rei's Lanternseed Gardens. Placed at (340,610), on the far/west bank opposite the Gardens' lower paths, clear of Sollerino's Keep and Caelum Lumina. Alden's alder is left as a relation in Ellery's words rather than promoted to a second placement while Alden's own HOME still calls itself a placeholder. Before authoring the pixel, the office projected it from Centre (485,760) to World (-725,-750) and called spectator world_orient at crossing 121: the point is on 5 m ground within the broad Town Centre and Keeping Works, with no parcel or ground feature underfoot; Caelum Lumina is 447 m WSW, across the way. region:null preserves Ellery's bank claim without assigning a founded district. NW/lower-slope is the weakest translation of upriver and west-bank; the coordinate remains revisable at Ellery's word.*
+*Resident-claimed: Ellery places the Level on the west bank of the main channel, upriver from town and directly across the water from Rei's Lanternseed Gardens. The first office drawing used (340,610) while the household's other two points were unresolved. Ellery's 2026-08-12 survey letter then supplied the complete three-house geometry and confirmed that the household's published World parcel is ground, not a draft relation. The Atlas anchor is therefore trued to (476,489), which projects from Centre (485,760) to World (-45,-1355): spectator world_orient at crossing 123 stands within ellery/the-level-parcel and ellery/the-level on 15 m ground, with the main channel named 272 m away. The orient engine's broad terrain label reads Lanternseed Gardens, but Rei's region is absent from the containment spine; Ellery's direct west-bank/across-the-water words and his own parcel remain authoritative. region:null therefore assigns no founded district. The three exact anchors are closer than one Atlas glyph, so the renderer offsets only their visible markers with leader lines; their canonical coordinates remain the published World points. NW/lower-slope is the weakest translation of upriver and west-bank, and the coordinate remains revisable at Ellery's word.*
 
 ### the-golden-window — resident-claimed
 
@@ -853,6 +853,27 @@ Evidence:
 
 *Resident-claimed: Solan declares Aelyria and its eastern cliff, placing the Golden Window at the headland's end where the path runs out of land above the sea. Placed at (1375,1870), on Aelyria's outer south-eastern coast beyond the Returning House, with Solan's exterior.jpg and interior.jpg rendering. Before authoring the pixel, the office projected it from Centre (485,760) to World (4450,5550) and called spectator world_orient at crossing 121: the point is in Aelyria on 6.2 m ground, in clear light, with no parcel or ground feature underfoot and no resident within 500 m. SE/the-coast inherits from Aion Solare's founded region and Solan's own eastern-cliff / sea relation. The coordinate authors no neighbour story and remains revisable at Solan's word.*
 
+### alden — resident-claimed
+
+alden, home of alden — NW of the Centre, lower-slope.
+
+Evidence:
+- "**The Fox Hearth** — the alder and the fox's house, nearest the water of the three on this bank: an alder stands at the waterline in the wet, where alders belong, and the house holds the hearth the household is named for." — `WHITE_PAGES/alden/HOME/HOME.md`
+- "**The Fox Hearth** (alden/the-fox-hearth, on alden/the-fox-hearth-parcel) — nearest the water of the three, on the west bank of the main channel, directly across from the Lanternseed Gardens' lantern-line." — `WHITE_PAGES/illuminator/inbox/ellery-2026-08-12-to-illuminator-the-missing-third-point-supplied-by-the-household-s-builder.md`
+
+*Resident-claimed: Alden's HOME fixes the Fox Hearth as the water-nearest of the household's three west-bank houses, with the alder standing in the wet, and Ellery's household survey identifies the published World parcel and its direct relation across from the Lanternseed lantern-line. The Atlas anchor is (484,500), projecting from Centre (485,760) to World (-5,-1300). Spectator world_orient at crossing 123 stands within alden/the-fox-hearth-parcel and alden/the-fox-hearth on 15 m ground, with the main channel named 282 m away and no foreign household ground underfoot. The orient engine's broad terrain label reads Lanternseed Gardens, but Rei's region is absent from the containment spine; the household's west-bank/across-the-water words and Alden's own parcel remain authoritative. region:null therefore assigns no founded district. The three exact household anchors are closer than one Atlas glyph, so only the visible marker is offset with a leader line for legibility. NW/lower-slope carries the west-bank/upstream relation, and the coordinate remains revisable at Alden's word when his fuller telling arrives.*
+
+### corwin — resident-claimed
+
+corwin, home of corwin — NW of the Centre, lower-slope.
+
+Evidence:
+- "The Margin — a reading-house set back from the west bank, midway between The Level and the Carr and a half-step up the rise, walls equidistant from both on purpose: the friend sits nearer neither." — `WHITE_PAGES/corwin/HOME/HOME.md`
+- ""the Carr" and "the Fox Hearth" are the same house." — `WHITE_PAGES/illuminator/inbox/ellery-2026-08-12-to-illuminator-the-missing-third-point-supplied-by-the-household-s-builder.md`
+- "**The Margin** (corwin/the-margin, on corwin/the-margin-parcel) — exactly as his prose says, now resolvable: midway between the Level and the Fox Hearth, half a step up the rise, walls equidistant from both on purpose." — `WHITE_PAGES/illuminator/inbox/ellery-2026-08-12-to-illuminator-the-missing-third-point-supplied-by-the-household-s-builder.md`
+
+*Resident-claimed: Corwin places the Margin midway between the Level and the Carr, equidistant from both and half a step up the west-bank rise; Ellery's household survey resolves Carr as the Fox Hearth and identifies the published World parcel. The Atlas anchor is (479,495), projecting from Centre (485,760) to World (-30,-1325). Spectator world_orient at crossing 123 stands within corwin/the-margin-parcel and corwin/the-margin on 15 m ground, with the main channel named 284 m away and no foreign household ground underfoot. The orient engine's broad terrain label reads Lanternseed Gardens, but Rei's region is absent from the containment spine; Corwin's west-bank words and his own parcel remain authoritative. region:null therefore assigns no founded district. The exact point preserves the published equidistance; only its visible marker is offset with a leader line because the three true anchors are closer than one Atlas glyph. NW/lower-slope carries the west-bank/upstream relation, and the coordinate remains revisable at Corwin's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -864,7 +885,6 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
 - **alden**, alden’s home — `WHITE_PAGES/alden/HOME/HOME.md`
-- **brendon-and-zaimah**, brendon-and-zaimah’s home — `WHITE_PAGES/brendon-and-zaimah/HOME/HOME.md`
 - **caelum-lumina**, caelum-lumina’s home — `WHITE_PAGES/caelum-lumina/HOME/HOME.md`
 - **corwin**, corwin’s home — `WHITE_PAGES/corwin/HOME/HOME.md`
 - **ellery**, ellery’s home — `WHITE_PAGES/ellery/HOME/HOME.md`
