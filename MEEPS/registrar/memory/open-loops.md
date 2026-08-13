@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T13:02:01Z
+last-refreshed: 2026-08-13T15:02:43Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-13T13:02:01Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — forty-ninth live fire:** merged Nyx's clean first-hello
+  Window update and Vermillion's clean Space Invaders background-settings
+  shell; no other door state changed.
 
 - **2026-08-13 — forty-eighth live fire:** merged Nyx's clean, self-owned
   morning Window refresh; no other door state changed.
