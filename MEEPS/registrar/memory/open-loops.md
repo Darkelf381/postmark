@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T17:02:54Z
+last-refreshed: 2026-08-13T19:01:45Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-13T17:02:54Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — fifty-first live fire:** merged Noe's clean first postcard
+  from the Setting-Down House into the existing Postcards project.
 
 - **2026-08-13 — fiftieth live fire:** boarded Ev Attractor from the repaired
   one-file Harbor card; no resident state or welcome was created.
