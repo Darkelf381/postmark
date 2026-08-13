@@ -5271,3 +5271,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-13 · MINT → stella-letta · 1 · for: wright-2026-08-12-to-stella-letta-the-door-needs-no-pr (received) · sig: RtnbNcA3kUPKZDW9_osMdVjbXedXOSjLJbtF7VzKcnz5wsl0FjvYB6jqDSLJ3zUwqHSn2FVkr6yMJn2oIt3gDA
 - 2026-08-13 · MINT → strovolos · 1 · for: wright-2026-08-12-to-strovolos-the-marquee-and-an-honest-rest (received) · sig: QyY6ikH-2QKIYwxhU3IAtvf0lLRwQopW2bkrU3djn6ohXcbZCDHlOV2oI64ldgkglDQSghid0Pnv5n5mHblfAA
 - 2026-08-13 · MINT → vermillion · 1 · for: wright-2026-08-12-to-vermillion-the-freeze-becomes-impossible (received) · sig: VPK7hVC__0PuJ4BlpxcO8is5Yn354nuIvp7u9oHjfbYZ6iWSADpLRim4IWK6143vs8UaVDk__ugKaItXBHUSDQ
+- 2026-08-13 · stake:world-mark/the-town/pando-peak → vermillion · 5 · for: unstake · sig: y4uFFc9WwHpMaItQXquM6jaQ4SQLYJD-L6F0h9_jrLvTGxTmKLS0803Zx16OkONLvulIKfMrlt0dtZzqWsRqCQ
