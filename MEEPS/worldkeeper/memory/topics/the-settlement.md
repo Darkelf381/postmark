@@ -14,7 +14,11 @@ last-updated: 2026-08-13
 
 ## The chain (each step names its receipt) — ruling 9 shape
 
-1. **Pull** world + town mains (ff-only). *Receipt: clean pulls, tips noted.*
+1. **Pull and pin the inputs.** Pull World + Town mains ff-only and record both shas. World
+   main is the candidate's parent and remains fully race-gated. Town is a pinned read at the
+   pulled sha: every money, identity, and dial read comes from that checkout, and the checkout
+   is never pulled again mid-ceremony. A newer remote Town tip is next-crossing input, not a
+   refusal. *Receipt: clean pulls, World parent, pinned Town sha.*
 2. **Inspect open `postmark-world` PRs before money.** Use the installed GitHub connector's
    read path first; if it is unavailable, use the keeper's per-call `GH_TOKEN` with `gh`.
    Never use ambient `gh` auth, and never open or render GitHub/Scheduled UI in a background
@@ -49,9 +53,10 @@ last-updated: 2026-08-13
    draft branch). **Unpublish** any published commons mark whose escrow reached zero (back to
    its household's drafts — escrow implies existence, both directions). Lint must pass on the
    result. The bundled sweep writes the settlement commit and rebases the local draft refs in
-   one run; record its returned heads, then fetch again and prove the remote draft tips did not
-   move underneath the sweep. *Receipt: the sweep table — published / unpublished / left
-   drafted, per household.*
+   one run; record its returned heads, then prove World main and every remote draft tip did not
+   move underneath the sweep. Separately prove the local Town checkout still equals its pinned
+   sha; record any newer remote Town tip as a note only. *Receipt: the sweep table — published /
+   unpublished / left drafted, per household; World race proof; pinned-Town proof.*
 6. **Hold / quarantine** per the lists (both empty at birth — an empty pass is stated, not
    skipped). *Receipt: the holds ledger line, even when it reads "nothing held."*
 7. **Bless:** fold the settled state with `--stakes`; verify the settlement commit; tag
@@ -65,13 +70,19 @@ last-updated: 2026-08-13
    comes from `git rev-parse` — **never typed by hand.** Commit message carries
    `settlement S<N>`. The sync-atlas cron may win the race after the edit: commit the pin,
    `pull --rebase`, then push normally through the keeper's pinned deploy key — never force.
-   Push → deploy runs itself. *Receipt: the site commit + CI green + live artifact check.*
+   Push → deploy runs itself. If the deploy-key lane itself bounces, preserve the immutable
+   blessing, make no substitute route, surface the custody gap, and leave the pin to a founder.
+   *Receipt: the site commit + CI green + live artifact check, or the exact founder handoff.*
 10. **Report-after** to Keemin (the Ferry model): one line normal, more only when something held,
    quarantined, unpublished, or refused to go green. Update the holds ledger. Daily entry.
 
 ## Standing rules
 
 - **The sha is read, never typed.** Both the blessing tag and the pin bump.
+- **Three repos have three custody shapes.** World is a full parent/ref race gate. Town is an
+  immutable pinned read: local movement refuses, remote movement waits. Site is write-only from
+  the round and keeps its existing pull-rebase push lane. Do not turn a living Town tip into a
+  World-parent race again.
 - **A crossing that can't go green settles nothing** — canon stays at the last blessed sha, and
   the failure is surfaced loudly. A late settlement is recoverable; a bad blessing is canon.
 - **You read dials; you never set them.** k changes are Keemin's, prospective, and arrive via
@@ -1040,6 +1051,38 @@ Nothing was held or quarantined.
   restarts proved the mechanism, not permission to ignore town. A later retry needs a quiet
   custody window (or a founder-owned protocol change); the keeper does not weaken As-Of truth
   to manufacture progress.
+
+## S30 blessed under pinned-read custody; site custody incomplete, 2026-08-13
+
+Keemin's living-town amendment separated the three custody shapes before this founder
+break-glass retry. Town was pulled and pinned at `0a9d1e9a`; both proofs found the local checkout
+still exact, while World main and all nineteen remote draft tips held their full race gate.
+Open-PR intake was zero. Money replayed green at 5,264 signed lines / 5,634 minted stamps, and
+the 46-row artifact remained 5,762 bytes at SHA-256
+`87b2381ac36b46c234715ce3bd34de595a23868984e6b94edbb5bb4d244ade91`.
+
+All nineteen composed sketchbooks linted cleanly. Candidate `29d624bf` published Iris's
+guestbook, Sol's Ferry's Rest and grove lantern, and Rei's garden-notebook tin; unpublished and
+re-homed nothing; left twenty-seven zero-escrow commons drafted; and returned nothing. Final
+canon was clean at 627 marks / 57 parcels / zero errors with 340 tests passing. Annotated
+`settlement/S30`, World main, and all nineteen leased sketchbooks landed atomically and were
+proved remotely. Nothing was held or quarantined.
+
+Exact package custody reached integrity
+`sha512-DQZ4Ph7KyGBx+n1v/uvs6X60acwUFbWMk+ZA6VT2WbbHFw9ZrhYBsbHOL371gmTdiKqzqESAF9gH0wMAldiVJg==`,
+shasum `ea322e4c49f876b91f2282c760ed5aae17ecc3df`, 829 entries, and 3,395,913
+unpacked bytes; a detached install repacked identically. The site lane then bounced on its
+first pull with `Permission denied (publickey)` even though the declared key file and
+`core.sshCommand` were present. Per the crossing law, the keeper did not substitute a route:
+no pin commit, deploy, live-byte claim, or parcel drain followed. S30 is canon with downstream
+site custody explicitly incomplete; a founder must carry the pin.
+
+- **Pinned-read does not mean stale-by-accident.** Pull Town once, name X, read only X, and prove
+  the local checkout stayed X. This run's remote happened not to move; the amendment still
+  changed the proof from tip quietness to immutable As-Of custody.
+- **A blessed sha and a delivered site are separate receipts.** Preserve the S30 tag and exact
+  package proof when the pin lane is unavailable. Do not erase canon, infer deployment, or enter
+  a post-pin drain that never reached its ordering gate.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
