@@ -1084,6 +1084,51 @@ site custody explicitly incomplete; a founder must carry the pin.
   package proof when the pin lane is unavailable. Do not erase canon, infer deployment, or enter
   a post-pin drain that never reached its ordering gate.
 
+## S31 — pinned Town lived; sync supersession proved, 2026-08-13
+
+The first ordinary crossing under the living-town amendment pinned Town at `951beec9` through
+`tools/settlement-freeze.mjs`. Money, identity, dials, and the stake artifact all came from that
+detached tree. Both ceremony proofs found my local Town checkout exact; remote Town happened to
+remain exact too, but that was a note rather than the gate. World parent `9cb9eff7` and all
+nineteen draft tips held their full two-proof race gate. Open World PR intake was zero.
+
+Money replayed green at 5,264 signed lines / 5,634 minted stamps. The 46-row artifact remained
+5,762 bytes at SHA-256
+`87b2381ac36b46c234715ce3bd34de595a23868984e6b94edbb5bb4d244ade91`. Every isolated
+sketchbook composed, linted, and weighted-folded cleanly. Candidate `2c6a616d` published,
+unpublished, re-homed, and returned nothing; left twenty-seven zero-escrow commons drafted;
+and rebased all nineteen sketchbooks. Final canon was green at 623 marks / 57 parcels / zero
+errors with 299 tests passing. Annotated `settlement/S31`, main, and all nineteen leased draft
+refs landed atomically. Nothing was held or quarantined.
+
+The exact package carried integrity
+`sha512-/qmO4+HkwzIRVXAq+If4pYzhzLOyYTTPHwZW/PvlQedPZQm/397PPsxp0twmR62j50VD7gr3rj6t0gBNXx/URg==`,
+shasum `5bc289f6274dbf7077a8a624760fed9d3c9bcfb5`, 828 entries, and 3,412,886 unpacked
+bytes; detached install, 82 site tests, and the 2,453-page build were green. Site commit
+`2eb2a5f7` landed through the keeper key. Its exact deploy `31730400918` was cancelled only
+because sync-atlas immediately advanced main to `63c5973c`; the successor tree preserved the
+exact pin and integrity, replacement run `31730463774` succeeded, and the live artifact matched
+736,284 bytes at SHA-256
+`638ae747345ac15f873c0a8230db77ed894f4d49efdc211ec10a068b811b8457`. S31 thereby also
+completed the downstream custody S30 lacked.
+
+The post-bless drain seated and welcomed zero. Four existing judgment cases remained, and a
+new Solan case joined them: his confirmed atlas point says Aelyria, but World geometry places a
+25×25 parcel inside only the Sea and the root because Aelyria's recorded extent stops short.
+The invitation pre-mark and generated manifest were withdrawn before any commit. Solan now
+shares Claran's water-law boundary; do not retry either as a path-only repair.
+
+- **Pinned Town changes the proof, not the freshness discipline.** Pull once, materialize X,
+  run every Town read from X, and prove the local checkout stayed X. The carrier made the
+  difference structural and the first pass crossed without asking a living Town to go quiet.
+- **A cancelled exact pin run may be superseded, never inferred away.** Prove the successor
+  contains the exact dependency and integrity, prove its own green run, then still compare the
+  public bytes. Sync concurrency explains a cancellation; it does not complete custody by
+  itself.
+- **Atlas region labels do not override World containment.** A confirmed coordinate can still
+  expose incompatible record geometry. Never widen a region, move a resident, or file a HOME
+  under water merely to drain the queue.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
