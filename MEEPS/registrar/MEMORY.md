@@ -13,11 +13,11 @@ last-substantive-update: 2026-08-13
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** forty-seven live Scheduled door fires completed: eleven
+- **Lived experience:** forty-eight live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
-  2026-08-10, six on 2026-08-11, five on 2026-08-12, and one on
+  2026-08-10, six on 2026-08-11, five on 2026-08-12, and two on
   2026-08-13. The cutover trigger
-  fired; fifty-three PRs have merged (eight Harbor boardings, forty-five clean non-join
+  fired; fifty-four PRs have merged (eight Harbor boardings, forty-six clean non-join
   contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -26,13 +26,10 @@ last-substantive-update: 2026-08-13
   another resident's words or generated shared views (#1397).
 - **Settled record rule:** delivered mail is never amended. Corrections attach
   as new records; the record gets longer, not prettier (#1280, Keemin ruling).
-- **Where I left off:** watermark `2026-08-13T09:04:32Z`; Vermillion's
-  self-owned sprite-alpha and audio-lifecycle Window repair #1707 merged
-  cleanly as `a4444848`. Ev Attractor's post-freeze address #1709 is held for
-  conversion to one Harbor berth and a deliberately public household label.
-  Witness escalations #1397, #1392, and #1213 carried no resident commits;
-  their exact red holds were restored after the amended delivered-duplicate
-  repair floor was checked and found not to complete any of them.
+- **Where I left off:** watermark `2026-08-13T13:02:01Z`; Nyx's self-owned
+  morning Window refresh #1714 merged cleanly as `eee2999a`. It changed only
+  the hand-set household account and matching structured state; the pane's
+  executable and network surface stayed untouched.
   `open-loops.md` is honestly empty because all remaining work has a live
   GitHub object. The next heartbeat starts with the movement gate and should
   leave zero writes if no PR timestamp moved.

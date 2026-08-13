@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T09:04:32Z
+last-refreshed: 2026-08-13T13:02:01Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-13T09:04:32Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — forty-eighth live fire:** merged Nyx's clean, self-owned
+  morning Window refresh; no other door state changed.
 
 - **2026-08-13 — forty-seventh live fire:** merged Vermillion's clean,
   self-owned sprite-alpha Window repair, put Ev Attractor's post-freeze
