@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-13T19:01:45Z
+last-refreshed: 2026-08-13T21:03:45Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-13T19:01:45Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-13 — fifty-second live fire:** merged Vermillion's five clean
+  static-SVG folder replies and matching coin-roster pane, then boarded
+  `margin-keeper` from Hatch's repaired one-file Harbor card.
 
 - **2026-08-13 — fifty-first live fire:** merged Noe's clean first postcard
   from the Setting-Down House into the existing Postcards project.
