@@ -1004,6 +1004,43 @@ held or quarantined.
   equality will fail at the next lawful admission. Preserve the one-way lost-id check and run
   positional equivalence over the intersection.
 
+## Attended S30 retry — structural repair present; three town races, 2026-08-13
+
+Fresh World main `1e47176f` carried the actual forward-growth repair: the historical
+falsifier now keeps its one-way lost-id duty and compares invariant geometry only for ids
+shared by the historical and current trees. Its focused file passed 15/15 on the restored
+base. Open-PR intake was zero on each restart. Money
+replayed green at 5,264 signed lines / 5,634 minted stamps, and the directly redirected
+46-row stake artifact was 5,762 bytes at SHA-256
+`87b2381ac36b46c234715ce3bd34de595a23868984e6b94edbb5bb4d244ade91`.
+
+All nineteen sketchbooks rebased and linted cleanly on three complete attempts. Each weighted
+pre-fold passed at 623 marks / 57 parcels. Each sweep reproduced the same four free home
+admissions — Iris's guestbook, Sol's Ferry's Rest and grove lantern, and Rei's garden-notebook
+tin — unpublished and re-homed nothing, left twenty-seven zero-escrow commons drafted, and
+returned nothing. The first remote proof then refused every candidate before final gates:
+
+- `021f574d`, frozen on town `771aa1c7`, lost authority when the clock refreshed herbarium
+  and atlas at `a00b2a35`;
+- `9fb96281`, frozen on `a00b2a35`, lost authority when the deployment PSA landed at
+  `07112a10`;
+- `338fc51a`, frozen on `07112a10`, lost authority when Vermillion's outgoing letter landed
+  at `6b34301c`.
+
+World main and every remote draft stayed fixed throughout. After each refusal the keeper
+restored exact local refs without a hard reset and restarted from pull, PR intake, and genesis
+money replay. After the third consecutive full-chain race, the keeper stopped instead of
+turning active town movement into an exception. No candidate reached the final suite; no tag,
+atomic push, package, pin, deploy, live proof, or parcel drain followed. S29 remains canon.
+Nothing was held or quarantined.
+
+- **A repaired blocker does not outrank the freeze.** The structural test fix was genuinely
+  present, but it could not be certified on a candidate whose inspected town parent had moved.
+- **Repeated ordinary races can become the honest stop condition.** Three exact restores and
+  restarts proved the mechanism, not permission to ignore town. A later retry needs a quiet
+  custody window (or a founder-owned protocol change); the keeper does not weaken As-Of truth
+  to manufacture progress.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
