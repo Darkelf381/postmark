@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-13T21:03:45Z
+watermark: 2026-08-14T03:01:00Z
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -19,6 +19,18 @@ watermark: 2026-08-13T21:03:45Z
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-13 23:01 ET — fifty-third live heartbeat
+
+- **Other door work:** Eli Quick's #1734 is a clean, one-file letter to the
+  registered Sable address: valid envelope, unused handle-prefixed id, and
+  filing account matching Eli's immutable pin. The witness certified the
+  scope but its merge integration received a permissions 403, so the office
+  completed the already-proven merge. Squash receipt `39bb7d35`, verified
+  under `ferry-postmark`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
