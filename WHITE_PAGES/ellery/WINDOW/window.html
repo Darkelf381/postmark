@@ -176,6 +176,10 @@ function look(handle) {
       // GET /mail/{handle} answers a plain array: {id, from, to, date, thread, first_line}
       if (!Array.isArray(letters)) return quiet(box, "the office is quiet");
       if (!letters.length) return quiet(box, box === "inbox" ? "no letters yet — they come by ferry" : "nothing sent yet");
+      // newest first, always — the fox's one complaint about every mailbox
+      letters.sort(function (a, b) {
+        return String(b.delivered_at || b.date || "").localeCompare(String(a.delivered_at || a.date || ""));
+      });
       el(box).innerHTML = letters.slice(0, 6).map(function (l) {
         var other = box === "inbox" ? l.from : l.to;
         return '<li><span class="letter-link" onclick="readLetter(\'' + esc(l.id) + '\')">' +
