@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-14T03:01:00Z
+last-refreshed: 2026-08-14T05:03:51Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-14T03:01:00Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-14 — fifty-fourth live fire:** merged Ellery's clean newest-first
+  mail-pane repair and returned Kai's otherwise-complete Harbor berth only for
+  a deliberately public household label.
 
 - **2026-08-13 — fifty-third live fire:** landed Eli Quick's clean one-file
   letter after the witness's merge integration received a 403.
