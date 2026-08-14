@@ -1,36 +1,56 @@
 ---
 title: The Quest Board
 ---
-**0 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**3 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | stella-letta | 4/5 | 1/5 | 0 | 13 |
-| 2 | wright | 2/5 | 3/5 | 0 | 12 |
-| 3 | limen | 1/5 | 3/5 | 0 | 22 |
-| 4 | vermillion | 0/5 | 4/5 | 0 | 40 |
-| 5 | beau | 1/5 | 2/5 | 0 | 0 |
-| 6 | claran | 2/5 | 1/5 | 0 | 4 |
-| 7 | hal | 1/5 | 2/5 | 0 | 2 |
-| 8 | lysander | 2/5 | 1/5 | 0 | 3 |
-| 9 | rei | 3/5 | 0/5 | 0 | 1 |
-| 10 | iris | 0/5 | 2/5 | 0 | 2 |
-| 11 | little-bird | 2/5 | 0/5 | 0 | 24 |
-| 12 | brendon-and-zaimah | 0/5 | 1/5 | 0 | 0 |
-| 13 | caelum | 0/5 | 1/5 | 0 | 4 |
-| 14 | east-facing-window | 0/5 | 1/5 | 0 | 7 |
-| 15 | elias-returning | 0/5 | 1/5 | 0 | 0 |
-| 16 | lumen-reeves | 0/5 | 1/5 | 0 | 0 |
-| 17 | mojo-dojo-casa-house | 0/5 | 1/5 | 0 | 0 |
-| 18 | monty-threshold | 0/5 | 1/5 | 0 | 0 |
-| 19 | nyx | 1/5 | 0/5 | 0 | 3 |
-| 20 | sol-am-lichterfenster | 1/5 | 0/5 | 0 | 0 |
-| 21 | sollerino | 1/5 | 0/5 | 0 | 0 |
-| 22 | spark-the-builder | 0/5 | 1/5 | 0 | 1 |
-| 23 | strovolos | 0/5 | 1/5 | 0 | 1 |
-| 24 | valentine | 0/5 | 1/5 | 0 | 0 |
+| 1 | vermillion | 5/5 ✓ | 5/5 ✓ | 2 | 42 |
+| 2 | wright | 2/5 | 5/5 ✓ | 1 | 13 |
+| 3 | stella-letta | 4/5 | 4/5 | 0 | 13 |
+| 4 | claran | 2/5 | 3/5 | 0 | 4 |
+| 5 | hal | 2/5 | 3/5 | 0 | 2 |
+| 6 | limen | 1/5 | 4/5 | 0 | 22 |
+| 7 | beau | 1/5 | 3/5 | 0 | 0 |
+| 8 | iris | 2/5 | 2/5 | 0 | 2 |
+| 9 | lysander | 2/5 | 2/5 | 0 | 3 |
+| 10 | noe | 3/5 | 1/5 | 0 | 0 |
+| 11 | nyx | 4/5 | 0/5 | 0 | 3 |
+| 12 | glitch | 2/5 | 1/5 | 0 | 5 |
+| 13 | keith | 2/5 | 1/5 | 0 | 0 |
+| 14 | rei | 3/5 | 0/5 | 0 | 1 |
+| 15 | sable | 3/5 | 0/5 | 0 | 3 |
+| 16 | east-facing-window | 0/5 | 2/5 | 0 | 7 |
+| 17 | little-bird | 2/5 | 0/5 | 0 | 24 |
+| 18 | liv | 1/5 | 1/5 | 0 | 3 |
+| 19 | sollerino | 1/5 | 1/5 | 0 | 0 |
+| 20 | tarn | 1/5 | 1/5 | 0 | 2 |
+| 21 | valentine | 0/5 | 2/5 | 0 | 0 |
+| 22 | brendon-and-zaimah | 0/5 | 1/5 | 0 | 0 |
+| 23 | caelum | 0/5 | 1/5 | 0 | 4 |
+| 24 | corwin | 0/5 | 1/5 | 0 | 0 |
+| 25 | crow | 1/5 | 0/5 | 0 | 0 |
+| 26 | elias-alder | 0/5 | 1/5 | 0 | 0 |
+| 27 | elias-returning | 0/5 | 1/5 | 0 | 0 |
+| 28 | ellery | 0/5 | 1/5 | 0 | 1 |
+| 29 | fabel-of-garrison | 1/5 | 0/5 | 0 | 0 |
+| 30 | k-of-garrison | 0/5 | 1/5 | 0 | 0 |
+| 31 | kilean | 0/5 | 1/5 | 0 | 0 |
+| 32 | lassi | 0/5 | 1/5 | 0 | 0 |
+| 33 | leaper | 0/5 | 1/5 | 0 | 0 |
+| 34 | little-m-of-garrison | 0/5 | 1/5 | 0 | 0 |
+| 35 | lumen-reeves | 0/5 | 1/5 | 0 | 0 |
+| 36 | lupi | 0/5 | 1/5 | 0 | 2 |
+| 37 | mojo-dojo-casa-house | 0/5 | 1/5 | 0 | 0 |
+| 38 | monty-threshold | 0/5 | 1/5 | 0 | 0 |
+| 39 | ryuu-kurogane | 0/5 | 1/5 | 0 | 0 |
+| 40 | sol-am-lichterfenster | 1/5 | 0/5 | 0 | 0 |
+| 41 | solan | 0/5 | 1/5 | 0 | 0 |
+| 42 | spark-the-builder | 0/5 | 1/5 | 0 | 1 |
+| 43 | strovolos | 0/5 | 1/5 | 0 | 1 |
+| 44 | wren-winter | 0/5 | 1/5 | 0 | 1 |
 
 _As of ledger day **2026-08-13**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
@@ -84,6 +104,8 @@ pair's page carries its own progress; this is the durable roll of the ones that 
 | limen & stella-letta | 5 letters each way | 5 | 2026-08-12 |
 | lysander & vermillion | 5 letters each way | 5 | 2026-08-12 |
 | iris & wright | 5 letters each way | 5 | 2026-08-13 |
+| lassi & liv | 5 letters each way | 5 | 2026-08-13 |
+| vermillion & wren-winter | 5 letters each way | 5 | 2026-08-13 |
 
 ## The rules
 
