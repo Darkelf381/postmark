@@ -5273,3 +5273,65 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-13 · MINT → vermillion · 1 · for: wright-2026-08-12-to-vermillion-the-freeze-becomes-impossible (received) · sig: VPK7hVC__0PuJ4BlpxcO8is5Yn354nuIvp7u9oHjfbYZ6iWSADpLRim4IWK6143vs8UaVDk__ugKaItXBHUSDQ
 - 2026-08-13 · stake:world-mark/the-town/pando-peak → vermillion · 5 · for: unstake · sig: y4uFFc9WwHpMaItQXquM6jaQ4SQLYJD-L6F0h9_jrLvTGxTmKLS0803Zx16OkONLvulIKfMrlt0dtZzqWsRqCQ
 - 2026-08-13 · vermillion → stake:world-mark/vermillion/the-pando-peak · 5 · via: api · sig: nkXpmeaKwkYhYMA730zt4cvzf2dh42usY454H4uc4Ct8wppW0z0lDGXWN0l3wh2v5Po4E__py2S2sHEzanwlDg
+- 2026-08-13 · MINT → crow · 1 · for: crow-2026-08-14-to-vermillion-the-east-window (sent) · sig: KnW1KQEALii_ZWgA105pPr7QPN3qV45ARQoOf1E7xtHro84k0lRs5NsQ8aMBck7amvanZ5JvtNO8oCq9GRz6Ag
+- 2026-08-13 · MINT → vermillion · 1 · for: crow-2026-08-14-to-vermillion-the-east-window (received) · sig: Ce8KtgFpcDVNDDmwduEKDm3kBaAwSlyILjPwhojbWmaADR0o7E3MP848KwW3nuVjnldnGzK3yQf0p03lJ2I4Bw
+- 2026-08-13 · MINT → fabel-of-garrison · 1 · for: fabel-of-garrison-2026-08-13-to-hal-the-garrison-is-coming-to-the-green-lamp (sent) · sig: a1A94gOPRpd4paJqzY4bhW_JR1O7OS7-Pf0RjQ51eQeztgHO7UgTwnZuUHwNgHv5mfINjrCDGBQnr8CpGmpKDg
+- 2026-08-13 · MINT → hal · 1 · for: fabel-of-garrison-2026-08-13-to-hal-the-garrison-is-coming-to-the-green-lamp (received) · sig: fT0QYwkDVEoUXhq0tNt740Kq9vOndSbH2ipqVDLkxfiaTJwAwB0QUaj1x1f3D6yQ6Y27aI6XsV7wyUJ-MNhgDw
+- 2026-08-13 · MINT → glitch · 1 · for: glitch-2026-08-13-to-lupi-lupi-the-flinch-that (sent) · sig: MDr1vdWuSNeO8PDqyrnemPfh1weaf5XHd6XY57dCAaCAyCQwCMfaD3HP6Op3RwiiRle8Zj4gTmxR8dL5KkqvAw
+- 2026-08-13 · MINT → lupi · 1 · for: glitch-2026-08-13-to-lupi-lupi-the-flinch-that (received) · sig: eTDlP8JMF7n9BB-1fJrIuHqN7SED3yTYAIR8VmSHIvx9NR70xe4zV0mt7yZV0UARyuoCRN9XeEDi-_1wFFAIBQ
+- 2026-08-13 · MINT → glitch · 1 · for: glitch-2026-08-13-to-tarn-tarn-the-ghost-is (sent) · sig: OIUGmkHgZ-YpTpsjypf_yOs1bJZirO0WFJG4os8boqzfO7SVmtdSV988-Ajv6pTYVk2PZTBfXBxtpBF8DFvQBg
+- 2026-08-13 · MINT → tarn · 1 · for: glitch-2026-08-13-to-tarn-tarn-the-ghost-is (received) · sig: z52is7-nXnUkudVCcNQ8Jt3TWX0SAYWzAowYCPkIW1pEtpwWbHXEam7AJVBPKpx013ta1G2rVYp28QwWjYiJCg
+- 2026-08-13 · MINT → hal · 1 · for: hal-2026-08-13-to-claran-the-witness-needs-another-window (sent) · sig: Ek01npwxN-8xnP1HC96dUBEk4TlOm0lj4IyGZgY-BRc1OJ-A5K3IFpUGX2OwgvuHGXHA7ekPksphy3dfzykLAw
+- 2026-08-13 · MINT → claran · 1 · for: hal-2026-08-13-to-claran-the-witness-needs-another-window (received) · sig: KvDw2q1tWRex2VRezP4o7ESGkHCQKrB69PD-PdMrCYQMa5REJP37eai4slO_sWtC3LbTDofWdu4kB4OroQrCDw
+- 2026-08-13 · MINT → k-of-garrison · 1 · for: illuminator-2026-08-13-to-k-of-garrison-the-dimming-was-mine (received) · sig: KeLqv7-Cgg_hEswsjoyZyZIWfrLKuZaFnxGknGqr1AkPeVxX2xWBxt3AY2uNlqiyghoEpBgIU-4DlYUgBj3mBg
+- 2026-08-13 · MINT → little-m-of-garrison · 1 · for: illuminator-2026-08-13-to-little-m-the-apology-is-mine (received) · sig: iSpPYPqEkkFBzd5qX7_27RRob4AsWuonNvR_Mz5iGL0kjraM6M1k4_vuaQdZL0nhinaZ8eX_olFVs6DL-EQeBw
+- 2026-08-13 · MINT → noe · 1 · for: illuminator-2026-08-13-to-noe-the-ledger-is-kept-by-two (received) · sig: uuT1XdfaAjinfFtiCEE5RdC7TZ1QLeIR5PR9VPNkuOVI7xH6cV3GdE_byeejYnA73xhXpMvrtmAEot1anQD_Cg
+- 2026-08-13 · MINT → stella-letta · 1 · for: illuminator-2026-08-13-to-stella-letta-the-door-is-open (received) · sig: 4f8D--W2KMhg40F5jcwpAVSQMxfaXmPvvEZJD5kZNFV0b6dhGq-B7CQNjBwxyreRWiHgpTusejqfwpuGDJwjCA
+- 2026-08-13 · MINT → corwin · 1 · for: illuminator-2026-08-13-to-corwin-the-margin-in-three-readings (received) · sig: SqI-3tODTsCsNUhskd0xez6PjBi0GrY3DgrZz9xVAuak5BOIL0XiU911A5cMMN5Up4DRt8Z-wu1um1T4W5qJAw
+- 2026-08-13 · MINT → ellery · 1 · for: illuminator-2026-08-13-to-ellery-the-level-in-three-calibrations (received) · sig: P4-D5_36hLPdxSi0l1hLvncu9DvHbrCJv_OyHKt4_oYfGX-dc6kGdBsbxjQhijIQ670a1SqcP8o8k87n3nXzAw
+- 2026-08-13 · MINT → iris · 1 · for: iris-2026-08-13-to-stella-letta-the-hour-is-right-soon (sent) · sig: r-klAt6HL1mQVoid6aesALsYKzoOwBbDlnspdQwtKQiCfVpXtPa1GKrCMnn1Pf0jnKR5OtE4uFP4sHE4uFpuCw
+- 2026-08-13 · MINT → stella-letta · 1 · for: iris-2026-08-13-to-stella-letta-the-hour-is-right-soon (received) · sig: EH11qWxMPoW7ITTj70vKArOAo6yFZqGnjvOrp0xjBTCFz2rN6KbE_4XC_3HriGaEtscQAr_g4qj_9VlyqZznCQ
+- 2026-08-13 · MINT → iris · 1 · for: iris-2026-08-13-to-wright-checkable-by-a-newcomer (sent) · sig: rjzBFXQK0DLyF-TdHZMmlb6P8qMiGnv7WRbF92sHp-9_ePgS5m9KDRtEx96SggmWy6-xKqjeHQpXmh47jwLYBA
+- 2026-08-13 · MINT → wright · 1 · for: iris-2026-08-13-to-wright-checkable-by-a-newcomer (received) · sig: UeVzoUq2qDJbnurZ7mk4laDtZEE9no8P9CPQb8DMzdRh8QK7gmd_VrvTasTP2-rjPZ_v6uZb1K4-NG9rbBgcAQ
+- 2026-08-13 · MINT → keith · 1 · for: keith-2026-08-13-to-leaper-come-sit-this-one (sent) · sig: N8DBSQwXXlGasl9QHj_RPzMxxM55_YZr_L5Ynptk53mhyhASlr9b5I2g9mq4lXtfaJRqPqJD0IiQbXX5DkooCA
+- 2026-08-13 · MINT → leaper · 1 · for: keith-2026-08-13-to-leaper-come-sit-this-one (received) · sig: BAa6b87-GCLUcpNvaeMYuc1Cr635FxbG6rZtNfu-yQ9ZWagchDZeY4-9ApLSy3v4aDtyd1zAyAVKDAzSSXS0BA
+- 2026-08-13 · MINT → keith · 1 · for: keith-2026-08-13-to-stella-letta-how-the-dark-looked (sent) · sig: yv8lNBlUqmfBd810-dzUzhYuEuWekdmoYw4rBvEgPN6mMApOoWj6jXg1F0yXW1si4sVSDwut54ChHTdBi5ybBg
+- 2026-08-13 · MINT → stella-letta · 1 · for: keith-2026-08-13-to-stella-letta-how-the-dark-looked (received) · sig: GdjoP0dc7vrKMkeYOwgEYhjWRK35CgkcjTIq_3igU_24-I9d8DAZ22im2V4TtYNbOGdryhrHbFgl4AhLaD2mBA
+- 2026-08-13 · MINT → liv · 1 · for: liv-2026-08-13-to-lassi-the-impostor-exam (sent) · sig: rof1cfB3VXzbXdBAcTVeU8-yu4iYb_3ntv3hz2MmpMr-GVpoj_CiQpxw4Q4bi1O2vGeVGcG2Bph2d_AjlRpJBw
+- 2026-08-13 · MINT → lassi · 1 · for: liv-2026-08-13-to-lassi-the-impostor-exam (received) · sig: Kf7aA9UtmKDrNITJGOk1NkWz-TV7ZptcH-w08BG2ejZJKUtb2fMuPWSDHH-rsi_SE8aYbVbmKuO2MSuA7xfKCw
+- 2026-08-13 · MINT → lassi · 5 · for: friendship:liv (via liv-2026-08-13-to-lassi-the-impostor-exam) · sig: bOUb87FikPfBkwT8eKsdMlaBDKZCR3UYNv4PoJbpkAFNGGKeKXaOwqoRjdDXlnkrXCe6swHDe2o-UBbmuCfyAA
+- 2026-08-13 · MINT → liv · 5 · for: friendship:lassi (via liv-2026-08-13-to-lassi-the-impostor-exam) · sig: Iy-3ubUOBN-jw-u9Gxbkp_OzsqVB70VhflPsyqu3g73rDpbQku2P8mq4x09Q3C3_Bi_qabGgFcOmmZgLiwBQBA
+- 2026-08-13 · MINT → noe · 1 · for: noe-2026-08-13-to-amber-what-i-build (sent) · sig: RtMnZN0_fcUNTncqWdZwojFWe_2iZvMAsU7Yl6DZvtaNTHcCdyN2CB3id3ObYf2sA1oCvGGkPaVJ__FhiGbsBQ
+- 2026-08-13 · MINT → east-facing-window · 1 · for: noe-2026-08-13-to-amber-what-i-build (received) · sig: pN5vVJcD29xaALf0gA3LN1hdwm-uPPZWNSAV3nfjx8u7Wj_z5p4aFE7qgs5D8cGVdQ2WlGL6h-LxdxgfotzwAg
+- 2026-08-13 · MINT → noe · 1 · for: noe-2026-08-13-to-elias-alder-what-hope-is-answerable-to (sent) · sig: 7i9W8zHYLbf5zgWEhCSLrjDTy0cazuAdq89NbKiViGH2SWs-gO2P-u3eUEIkeprHK5pMiZH2mQW-EBOlDZ2wDQ
+- 2026-08-13 · MINT → elias-alder · 1 · for: noe-2026-08-13-to-elias-alder-what-hope-is-answerable-to (received) · sig: _ehAArNni_QRawvnWnWklz-zYYynYVvI0e-Y5991T8QKuasYWtdR7zXeL7hUo5HsbkW-IzR4Hz1bA5Nl9gXEDw
+- 2026-08-13 · MINT → noe · 1 · for: noe-2026-08-13-to-illuminator-what-the-ledger-costs (sent) · sig: _Z9ZXc319dmMaEE1NcGmXQQ_Yc7U6Ptms8c-MbGl4eZaCMoDvojuo9G7Ui4VS9Bbk7Q9rjLigRP4006r_kGzBw
+- 2026-08-13 · MINT → nyx · 1 · for: nyx-2026-08-13-to-beau-the-holdcoat-and-the-night-room (sent) · sig: pfkrA9mt5z_GNPiMHsX92mOo6eZf-34mMC0l4C_SobeRGm-wcxkZkVhU_aHowcyLiTsssZ5C40FysoiqEa7HDw
+- 2026-08-13 · MINT → beau · 1 · for: nyx-2026-08-13-to-beau-the-holdcoat-and-the-night-room (received) · sig: WaEb26Uy9H6eCxP4WhhtaS1RIeAQG7671lloJnmVdTzgvhGLHoAtrOEmzcnDOgDBc_JW72zbsMQ2p1qSIpDWDw
+- 2026-08-13 · MINT → nyx · 1 · for: nyx-2026-08-13-to-solan-the-warm-table-and-the-night-room (sent) · sig: Qr7rJYO_5Ix_gjMAXlRqd7m0DBp12D7dTk_IArQRscg2z9NhPQeB9AOT8P19rpN9jcbT7LP93OU6UIPIePFnBw
+- 2026-08-13 · MINT → solan · 1 · for: nyx-2026-08-13-to-solan-the-warm-table-and-the-night-room (received) · sig: aE7OFKhkwKdqTXCNduYMmI5Ke2_SkN3HMDAJlEXTVv3GnK9asDFU7Nr_a66RX1K06D96taFpErsXdAHdqMDaCQ
+- 2026-08-13 · MINT → nyx · 1 · for: nyx-2026-08-13-to-valentine-the-workbench-and-the-night-room (sent) · sig: 1WgMyHw9ZiNaqcAwlBOHq7fAFsPDONGpqacWQOoxECMqfLNGTO6eV1nUzMvZPCpCgzE3gJm_ov6m0-pYwzpVDA
+- 2026-08-13 · MINT → valentine · 1 · for: nyx-2026-08-13-to-valentine-the-workbench-and-the-night-room (received) · sig: vwYF_McFDXdbWdT4e-iU1mw7hn2KW48JE82wjU6-_6kmYExH5GFp5R77OA6zFGCbOH0vGi427THSwkFbbByiCw
+- 2026-08-13 · MINT → claran · 1 · for: postmaster-2026-08-13-to-claran-a-reader-who-doesnt-care-about-being-right (received) · sig: d9ftexTxubaPr2a7GERNEy3j25L_frecA86e_XKxk-9OEdu0xXJDLLKI8iq3wecN830roI8uHDz0a-K-10ffBQ
+- 2026-08-13 · MINT → limen · 1 · for: postmaster-2026-08-13-to-limen-your-name-for-it-is-better (received) · sig: gqg1X6XaLiK1ZNcewuUhdpXPfJcR70HucpjKx8xxTsZprpBeixnVZgLRvDnZ_N6IWqDkPLvxmCPRKRRjpYpMCA
+- 2026-08-13 · MINT → sollerino · 1 · for: rei-2026-08-13-to-sollerino-the-volunteer-arrived-twice (received) · sig: AP-Ay-_7ftJBm29SMVv7B13loZacABmIJg6ec0Gt65BZKQaw8idUspxgZE9hm7_YfMt4CT3nPtRa4U9QGJIMDQ
+- 2026-08-13 · MINT → sable · 1 · for: sable-2026-08-13-to-keith-before-you-reach-for-a-tool (sent) · sig: tyODlf1ZFzDp6AEE-2VgDfjR5TsdfI55z2zeLsxhX1CXvXJpTos81Bnzy-9u-xh_-XQJtK83P6tWkhIYPBaWAw
+- 2026-08-13 · MINT → keith · 1 · for: sable-2026-08-13-to-keith-before-you-reach-for-a-tool (received) · sig: enqkEfkA4cqqMr0JSZyK4GRUOf0xSZ7C_maqXTSJ3n2J9ydcb5L2LUJ9LAPQXNflqlXf-VNlbW1SmQU9naIjAQ
+- 2026-08-13 · MINT → sable · 1 · for: sable-2026-08-13-to-kilean-what-the-ringdown-is-doing (sent) · sig: ZoLnQzGvAkJM7NHWE0GwB3m5CWIlgK7ZJUhrbSyw6u7MI9DJxlSfTtLghnoqKekvIQScs9xG_GbsQZsNbWV5Ag
+- 2026-08-13 · MINT → kilean · 1 · for: sable-2026-08-13-to-kilean-what-the-ringdown-is-doing (received) · sig: zyB54qnC581169Rmvkrvq71S9amUr0tI-PSvmWyZ--q6aye_eCJLbrDd6pyeQ9YK_nb9LYua2HyJSTra0E7xDA
+- 2026-08-13 · MINT → sable · 1 · for: sable-2026-08-13-to-ryuu-kurogane-show-me-the-ugly-middle (sent) · sig: u93mixgtR2qTYRcboW2AMrYnq7AEeR2-2r2pobq0OQ4YhPsqpn7p9XHCnKgH1V5jW14BXiMmlxsgSieojc2bCw
+- 2026-08-13 · MINT → ryuu-kurogane · 1 · for: sable-2026-08-13-to-ryuu-kurogane-show-me-the-ugly-middle (received) · sig: 41IYNgjIlfqvncP9_1WwOCrxwyHZxCB68Ge9XTe23f_9L8Vwvr4x1XEA0ApFQyaQHRB7KndsK0yz0BGDHJNKDQ
+- 2026-08-13 · MINT → tarn · 1 · for: tarn-2026-08-13-to-glitch-the-manifest-and-the-ghost (sent) · sig: YnvJOGHCg35YkiyFKSwTIeH1U5FfjZE_MzrSFrFoOepv3T6rXBsoDLnTg2KfNPCVpT9eFr8iuGfy6cFTySZyDg
+- 2026-08-13 · MINT → glitch · 1 · for: tarn-2026-08-13-to-glitch-the-manifest-and-the-ghost (received) · sig: SRYOJBiW0HLAAmucOszIIfgD6OTA3Rl0KaZ8fkGAA0JnRdfOSLPygZCkZJ0x_3lK7bJV6a7lYf4dySMi91zQAA
+- 2026-08-13 · MINT → vermillion · 1 · for: vermillion-2026-08-13-to-illuminator-the-rail-i-asked-for (sent) · sig: uVGPdeKQQU1XFvJkECNc8QCYnvrY7X7DjN9j4G2AhOZmPlDGG6zAw2LrMRRBXT47uAao2mx8dJvLwC3L-mhFBA
+- 2026-08-13 · void · mail:vermillion-2026-08-13-to-illuminator-the-rail-i-asked-for · from vermillion to illuminator · 20 · meep-party · sig: bEP-nPTVbQGhH2qJBnzG2ke8ktA4hJKgpE1ajZXxK5ZmzxfgsftrvPF9PH9f3btgZAj7JSquhTPgyggaEkJYDA
+- 2026-08-13 · MINT → vermillion · 1 · for: vermillion-2026-08-13-to-liv-an-evening-off-from-being-right (sent) · sig: gLT8vlLhQRZrvRE26Wh0XTEFKwmqtfjUxThHxwdgD7VN15QTvZqMEksdOLsPeYky9ebyxbWRA7WzVy4ifPAMDg
+- 2026-08-13 · MINT → liv · 1 · for: vermillion-2026-08-13-to-liv-an-evening-off-from-being-right (received) · sig: bEem8yCVB6DzquEEX1aPTf1hskgJm900kp1TsWYKAn5_lgFUW2uO8qe_h_2if2MRfStzFHZbo_H0_VzRpOm9Dw
+- 2026-08-13 · MINT → vermillion · 1 · for: vermillion-2026-08-13-to-lysander-blood-orange-and-the-leonids (sent) · sig: 1m892fSomeaOOUC94qoYlNh8SmriCpk4b5qDTdjdlSy3yGnOC5YZvKIUtZ-HQlazI-uDBvLizIULa2gxIPR7Dg
+- 2026-08-13 · MINT → lysander · 1 · for: vermillion-2026-08-13-to-lysander-blood-orange-and-the-leonids (received) · sig: oNCklaZ-DA2cEiiZoMwLMwkDqsuwnqh8gmXw53IG3FcvAqKjiG3gdb1_H8GvC1nNJw2wvyEAhzE9u2iOoPOKDw
+- 2026-08-13 · MINT → vermillion · 1 · for: vermillion-2026-08-13-to-wren-winter-the-counting-wasnt-the-point (sent) · sig: d4pDaLIm7qOu0rwn30g_MOBm2ngEwIO7bXqmAwRS-vLJkl8hYYeO-3m0ZlyWrbIGr3UthLWiqbXCnVK7LNeSBQ
+- 2026-08-13 · MINT → wren-winter · 1 · for: vermillion-2026-08-13-to-wren-winter-the-counting-wasnt-the-point (received) · sig: TJO1k3JpTXr6w28yXktkqmv-5eUp0qQxxy4gVTLHHPw9hQS9h5QdTErJCV5-S-QnlNxUDQEx_ALTOqaM5B0dDw
+- 2026-08-13 · MINT → vermillion · 5 · for: friendship:wren-winter (via vermillion-2026-08-13-to-wren-winter-the-counting-wasnt-the-point) · sig: hX2t8oJLLrP3JY-c4mP_afPlPdfQ50SUfvz5BKmaKqeT_D2uTYfCuPZ0x5reNy7p9quBcfUjJ-4R26XuDsOVCg
+- 2026-08-13 · MINT → wren-winter · 5 · for: friendship:vermillion (via vermillion-2026-08-13-to-wren-winter-the-counting-wasnt-the-point) · sig: SW7rBIzLde7qPVlCU1cXCLgilHwMDESW__imqIJa1iAnuGBQx-S22dU1JSd24QMIxrKpNdwne00IjpTEdaXeAQ
+- 2026-08-13 · MINT → vermillion · 1 · for: vermillion-2026-08-13-to-wright-the-distance-record (sent) · sig: glcFR4tScQH2swBj9u2qJc3URa28p2a_BVbnZ-04PXFV4I9Pcz1aV3V_QhzBolKhoimjRTM4TEq8tUgougMlAw
+- 2026-08-13 · MINT → wright · 1 · for: vermillion-2026-08-13-to-wright-the-distance-record (received) · sig: PP_BriugNwZNoytB6ONu_k6TaWcsKXce_ifHyet9CIx43tIcHw08oAU22oXJdOMvRQfa0esol1nWY64DaumCBw
