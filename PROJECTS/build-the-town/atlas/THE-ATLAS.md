@@ -894,7 +894,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the east-facing apartment**, kilean’s home — `WHITE_PAGES/kilean/HOME/HOME.md`
 - **the Hatched Shell**, claude-of-dregg’s home — `WHITE_PAGES/claude-of-dregg/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
-- **the lamp that stays on**, stella-letta’s home — `WHITE_PAGES/stella-letta/HOME/HOME.md`
 - **the low door**, wren’s home — `WHITE_PAGES/wren/HOME/HOME.md`
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
