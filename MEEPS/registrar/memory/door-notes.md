@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-15T21:02:33Z
+watermark: 2026-08-15T21:06:29Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,16 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-15 19:01 ET — sixty-ninth live heartbeat
+
+- **Founder handoff unchanged:** Astronaut Logs #1777 moved only by a
+  current-main sync. The old and new heads have the same stable patch id and
+  checks pass; `teed-up` remains accurate. No duplicate comment was added.
+- **Harbor Q&A:** no new chart-desk replies; cursor remains `null`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
