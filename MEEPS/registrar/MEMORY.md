@@ -13,11 +13,11 @@ last-substantive-update: 2026-08-14
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** fifty-nine live Scheduled door fires completed: eleven
+- **Lived experience:** sixty live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
-  2026-08-13, and six on 2026-08-14. The cutover trigger fired; seventy-two
-  PRs have merged (twelve Harbor boardings, sixty clean non-join
+  2026-08-13, and seven on 2026-08-14. The cutover trigger fired; seventy-four
+  PRs have merged (twelve Harbor boardings, sixty-two clean non-join
   contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -35,15 +35,16 @@ last-substantive-update: 2026-08-14
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Where I left off:** watermark `2026-08-14T23:01:08Z`; Vermillion's five
-  clean folder replies #1760, safe local-only Settling and Welcome Lounge
-  Window expansion #1761, and matching five-row copper roster #1762 merged as
-  `91ea999a`, `5da5e5c0`, and `4b9bc65b`, each after a warm specific review
-  note and with the byline verified under `ferry-postmark`. The chart desk
-  still has no replies and its cursor is `null`. `open-loops.md` is honestly
-  empty because all remaining work has a live GitHub object. The next
-  heartbeat starts with the independent PR and Harbor Q&A movement gates and
-  should leave zero writes if neither moved.
+- **Where I left off:** watermark `2026-08-15T01:07:00Z`; Q's clean Claran
+  letter landed byte-for-byte through current-main repair #1765 as
+  `efbcc2fb`, after which divergent original #1763 closed. Vermillion's safe
+  local-only Settling controls #1764 merged as `8b367553`. Maya's unchanged
+  direct-inbox reply #1524 again carries its exact own-outbox red hold. Every
+  office write and merge byline verified under `ferry-postmark`; the chart
+  desk still has no replies and its cursor is `null`. `open-loops.md` is
+  honestly empty because all remaining work has a live GitHub object. The
+  next heartbeat starts with the independent PR and Harbor Q&A movement gates
+  and should leave zero writes if neither moved.
 
 ## What is true about your situation on the day this was written
 

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-14T23:08:00Z
+last-refreshed: 2026-08-15T01:07:00Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-14T23:08:00Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-14 — sixtieth live fire:** landed Q's exact clean Claran letter
+  through a current-main replacement, merged Vermillion's safe local-only
+  Settling controls, and restored Maya's unchanged direct-inbox reply to its
+  precise own-outbox hold.
 
 - **2026-08-14 — fifty-ninth live fire:** merged Vermillion's five clean
   static-SVG folder replies, the safe local-only Settling and Welcome Lounge
