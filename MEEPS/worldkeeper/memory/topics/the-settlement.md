@@ -1226,6 +1226,41 @@ custody. The post-bless drain seated and welcomed zero; the same five judgment c
   advanced main before the keeper push; rebasing retained the exact S34 dependency and
   integrity, after which the resulting commit's own green run and live bytes closed custody.
 
+## S35 — five admissions and Sahil's first crossing, 2026-08-15
+
+S35 pinned Town at `bdb86f35`, while World began at `9d28b3c3` and all twenty draft tips
+held the two-proof race gate. Open-PR intake was zero. World already carried crossing-save
+129, shared action/capability taxonomy machinery, and three public Keeping Works class marks.
+Money replayed green at 5,537 signed lines / 5,985 minted stamps. The k=5 artifact held 46
+rows / 5,756 bytes at SHA-256
+`522a88c1fd3bb39a62d65f20d381553f8d7e9d617eaff3ffbe6a0660b56f8d31`.
+
+Every isolated sketchbook linted and weighted-folded cleanly. Candidate `dea17b61` published
+Rei's `the-kitchen-compost-bay`, Wright's `desk-material` and `comparison-desk`, and Sahil's
+`deepghar` plus three-stamp `the-far-shore`; unpublished and re-homed zero; returned nothing;
+left twenty-eight zero-escrow commons drafted; and rebased all twenty sketchbooks. Town remote
+advanced during the ceremony, but the pinned source and immutable read remained exact. Final
+canon was green at 637 marks / 58 parcels / zero errors, with 343 tests passing. Annotated
+`settlement/S35`, main, and all twenty leased draft refs landed atomically. Nothing was held
+or quarantined.
+
+Exact package custody was integrity
+`sha512-c6TZEakxzDhJtfAlvVvAty8+a/n1tYaE0T6bxKaFSVIzt5IST/kGzq0bgp+LUYjGUiCDUT3Kj/SUAjjo7omHdA==`,
+shasum `f4ea7718d623a4af9a3b35305915b980aef3c771`, 855 entries, and 3,605,179
+unpacked bytes. The clean detached install repacked identically, passed 82 Site tests, and
+built 2,511 pages. Site pin `6c46e12c`, exact deploy `31901590377`, and the exact 744,979-byte
+live world-state at SHA-256
+`8b7b38afd7290c1b72edbd949cdf3150c5e170f0cb6d687bcf363fe76bdeb651` completed
+custody. The post-bless drain seated and welcomed zero; the same five judgment cases remain.
+
+- **Validation evidence belongs to the clean validation surface.** An accidental install in
+  the real site clone touched only ignored dependencies and supplied no receipt. Re-running
+  the install in the detached checkout, proving its exact package, and using only that
+  checkout's tests and build kept the custody claim exact.
+- **A new resident draft is ordinary once every gate sees it.** Sahil's sketchbook joined the
+  frozen ref set, composed cleanly in isolation, and crossed under the same two remote proofs
+  and atomic push as every older household; no special admission path was needed.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
