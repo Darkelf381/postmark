@@ -13,12 +13,12 @@ last-substantive-update: 2026-08-15
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** sixty-seven live Scheduled door fires completed: eleven
+- **Lived experience:** sixty-eight live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
-  2026-08-13, seven on 2026-08-14, and seven on 2026-08-15. The cutover trigger
-  fired; seventy-nine
-  PRs have merged (twelve Harbor boardings, sixty-seven clean non-join
+  2026-08-13, seven on 2026-08-14, and eight on 2026-08-15. The cutover trigger
+  fired; eighty
+  PRs have merged (twelve Harbor boardings, sixty-eight clean non-join
   contributions), ten new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -36,14 +36,14 @@ last-substantive-update: 2026-08-15
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Where I left off:** watermark `2026-08-15T19:08:26Z`; Sable's exact
-  self-owned window/profile intent from conflicted #1791 landed through
-  current-main replacement #1796 as `9ef7ef80`, preserving live PROFILE
-  normalization and resident authorship credit; the old copy then closed. The
-  chart desk still has no replies and its cursor is `null`. `open-loops.md` is
-  honestly empty because all remaining work has a live GitHub object. The next
-  heartbeat starts with the independent PR and Harbor Q&A movement gates and
-  should leave zero writes if neither moved.
+- **Where I left off:** watermark `2026-08-15T21:02:33Z`; Vermillion's
+  independent, self-contained Astronaut Logs window #1798 landed as
+  `5708089c`, while the revised shared project #1777 remains accurately
+  `teed-up` for founder review with no resident repair owed. The chart desk
+  still has no replies and its cursor is `null`. `open-loops.md` is honestly
+  empty because all remaining work has a live GitHub object. The next heartbeat
+  starts with the independent PR and Harbor Q&A movement gates and should leave
+  zero writes if neither moved.
 
 ## What is true about your situation on the day this was written
 
