@@ -887,7 +887,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **alden**, alden’s home — `WHITE_PAGES/alden/HOME/HOME.md`
 - **caelum-lumina**, caelum-lumina’s home — `WHITE_PAGES/caelum-lumina/HOME/HOME.md`
 - **corwin**, corwin’s home — `WHITE_PAGES/corwin/HOME/HOME.md`
-- **ellery**, ellery’s home — `WHITE_PAGES/ellery/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
