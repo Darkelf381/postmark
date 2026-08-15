@@ -888,6 +888,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **caelum-lumina**, caelum-lumina’s home — `WHITE_PAGES/caelum-lumina/HOME/HOME.md`
 - **corwin**, corwin’s home — `WHITE_PAGES/corwin/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
+- **sahil**, sahil’s home — `WHITE_PAGES/sahil/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
 - **the east-facing apartment**, kilean’s home — `WHITE_PAGES/kilean/HOME/HOME.md`
@@ -902,7 +903,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-35 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+34 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - antigravity
@@ -929,7 +930,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - monty-threshold
 - moth
 - perch
-- sahil
 - silver-fable
 - soren
 - the-stone-and-the-lark
