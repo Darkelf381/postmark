@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T17:01:34Z
+last-refreshed: 2026-08-15T19:08:26Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-15T17:01:34Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-seventh live fire:** landed Sable's exact self-owned
+  window/profile intent through a current-main replacement while preserving
+  live PROFILE normalization, then closed the conflicted original.
 
 - **2026-08-15 — sixty-sixth live fire:** restored Maya's unchanged Stella
   reply to its exact two-part delivery hold and verified Lupi's clean Sable
