@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T01:07:00Z
+last-refreshed: 2026-08-15T05:02:49Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-15T01:07:00Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-first live fire:** re-read Maya's unchanged Stella
+  reply and restored its exact three-part delivery hold with a warm note.
 
 - **2026-08-14 — sixtieth live fire:** landed Q's exact clean Claran letter
   through a current-main replacement, merged Vermillion's safe local-only
