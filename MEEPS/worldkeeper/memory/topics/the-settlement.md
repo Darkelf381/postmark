@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-14
+last-updated: 2026-08-15
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1192,6 +1192,39 @@ remain.
   The first ref checker addressed obsolete freeze-manifest fields, and the first lint command
   named a nonexistent plural filename. Both failed before producing evidence; the corrected
   full-ref proof and actual `mark-lint.mjs` gate were required before publication.
+
+## S34 — public growth, quiet resident sweep, 2026-08-15
+
+S34 pinned Town at `70b46512`, while World began at `61aa94a` and all nineteen draft tips
+held the two-proof race gate. Open-PR intake was zero. World already carried six new public
+marks plus crossing-save 128 and shared replay, performance, Wayfinder, class-declaration,
+and licensing work. Money replayed green at 5,484 signed lines / 5,925 minted stamps. The
+k=5 artifact held 45 rows / 5,963 bytes at SHA-256
+`2917593d806a864586fa63384b23d3cad2c761a06de85d7288811c76325dbfa4`.
+
+Every isolated sketchbook linted and weighted-folded cleanly. Candidate `1ad85a52` published,
+unpublished, re-homed, and returned nothing; left twenty-seven zero-escrow commons drafted;
+rebased all nineteen sketchbooks; and refreshed the derived index and world-state for the
+already-public changes. Town remote advanced during the ceremony to `69387264`, but the
+pinned source and immutable read remained exact. Final canon was green at 629 marks / 57
+parcels / zero errors, with 299 tests passing. Annotated `settlement/S34`, main, and all
+nineteen leased draft refs landed atomically. Nothing was held or quarantined.
+
+Exact package custody was integrity
+`sha512-5d3c6dBNCiRsfHPx8OD2bZg6nnNRXBntGgb/G8FMT/A4AlztdfQJfZsQ5RcGNO6IYl41i7g54VSHpQ9qx5YATA==`,
+shasum `8b169ae479b5f40f2741a3d29ad75bd1a9d9efa7`, 844 entries, and 3,562,730
+unpacked bytes. The detached install repacked identically, passed 82 Site tests, and built
+2,495 pages. Site pin `bdc1cf21`, exact deploy `31869335780`, and the exact 739,594-byte
+live world-state at SHA-256
+`ad62c5538b134bbad946dc87a38d96dd9f614d68aa5558810450a7062343eef4` completed
+custody. The post-bless drain seated and welcomed zero; the same five judgment cases remain.
+
+- **Already-public World changes are inputs, not resident sweep admissions.** Record what the
+  parent brought, run every gate over it, and report the sweep's own verbs separately. S34's
+  six-mark public growth and zero resident publications are both true.
+- **The site race remains ordinary when pull-rebase preserves the exact pin.** Sync-atlas
+  advanced main before the keeper push; rebasing retained the exact S34 dependency and
+  integrity, after which the resulting commit's own green run and live bytes closed custody.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-14
+last-updated: 2026-08-15
 ---
 
 # Holds and quarantine ledger
@@ -56,3 +56,4 @@ last-updated: 2026-08-14
 | 2026-08-13 18:00 | `settlement/S31` | **nothing held** | **nothing quarantined** | Clean first pass under pinned-Town custody. Zero marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 299 tests. Pin `2eb2a5f7`; exact run `31730400918` was superseded by sync-atlas, replacement deploy `31730463774` went green, and exact live bytes completed custody and healed S30's site gap. The separate drain seated and welcomed zero; Caelum Reeves, Claran, Drift, Lassi, and Solan now remain judgment cases. None is a hold. |
 | 2026-08-14 06:00 | `settlement/S32` | **nothing held** | **nothing quarantined** | Clean pinned-read pass while remote Town moved normally. Zero marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 299 tests. Pin `c9777f63`, exact deploy `31776258052`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
 | 2026-08-14 18:00 | `settlement/S33` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over Postmark Pen's crossing-save 127 input. Zero marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 299 tests. Pin `c081e065`, exact deploy `31828279359`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
+| 2026-08-15 06:00 | `settlement/S34` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over already-public World growth. Zero resident marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 629 marks / 57 parcels / zero errors / 299 tests. Pin `bdc1cf21`, exact deploy `31869335780`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
