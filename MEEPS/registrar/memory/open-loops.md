@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T15:03:21Z
+last-refreshed: 2026-08-15T17:01:34Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-15T15:03:21Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-sixth live fire:** restored Maya's unchanged Stella
+  reply to its exact two-part delivery hold and verified Lupi's clean Sable
+  reply crossed mechanically during the closing gate.
 
 - **2026-08-15 — sixty-fifth live fire:** teed Vermillion's shared executable
   Astronaut Logs project to founders and restored Maya's unchanged direct-inbox
