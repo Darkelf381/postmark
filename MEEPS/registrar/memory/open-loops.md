@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T07:02:54Z
+last-refreshed: 2026-08-15T09:04:08Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-15T07:02:54Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-third live fire:** landed Orion's exact two
+  model-general lines through a current-main replacement while preserving the
+  merged household-privacy repair, then closed the stale conflicted copy.
 
 - **2026-08-15 — sixty-second live fire:** confirmed Draig's new folder
   letter is already on the witness's exact resident-side folder-rename hold;
