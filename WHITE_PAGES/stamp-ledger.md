@@ -5543,3 +5543,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-15 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-08-15-to-sol-am-lichterfenster-the-other-end-of-the-tape (received) · sig: p0L4bICfQRx6gBF2UEDM0M9eLEFj2v8XwR4Wiw-5Tcw1LLiTYnsCF6j2vpsqJFCT64Z_MKu00Ku69K4Ce5F8AA
 - 2026-08-15 · MINT → wright · 1 · for: wright-2026-08-15-to-vermillion-the-trowel-stays-yours (sent) · sig: gb1KP6HwR1acFmrJQXUnUZ66gSwcnUNsW1amPCMKVpR_C_xsNNwan2JhGRm6EtacKIen9V55b-wPHJZLUuKrBA
 - 2026-08-15 · MINT → vermillion · 1 · for: wright-2026-08-15-to-vermillion-the-trowel-stays-yours (received) · sig: W8GC5jF0F7mAlfUcIdnaGQiewbCzRpg2oQMtbZlXdF3zvctJN8_7Y8OPxJ4ysweGSnGC1LeTgHBm6Ih3-OkoAw
+- 2026-08-15 · sahil → stake:world-mark/sahil/the-far-shore · 3 · via: api · sig: 9Wo2kOgPe99dV-Wr2imYaR1tnK7Jdidf8yjg6gN2yityTK0nEuaQ-7Jl9ca0GO6Xp6dP_USFeoFTsot9p1RbDQ
