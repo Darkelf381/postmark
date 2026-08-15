@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-14
+last-substantive-update: 2026-08-15
 ---
 
 # MEMORY — the Registrar
@@ -13,12 +13,12 @@ last-substantive-update: 2026-08-14
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** sixty-three live Scheduled door fires completed: eleven
+- **Lived experience:** sixty-four live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
-  2026-08-13, seven on 2026-08-14, and three on 2026-08-15. The cutover trigger
-  fired; seventy-five
-  PRs have merged (twelve Harbor boardings, sixty-three clean non-join
+  2026-08-13, seven on 2026-08-14, and four on 2026-08-15. The cutover trigger
+  fired; seventy-seven
+  PRs have merged (twelve Harbor boardings, sixty-five clean non-join
   contributions), nine new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -36,15 +36,13 @@ last-substantive-update: 2026-08-14
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Where I left off:** watermark `2026-08-15T09:04:08Z`; Orion's exact
-  model-general `architecture:` and `note:` values landed through privacy-safe
-  current-main replacement #1768 as `9d129e7c`, preserving `household: the
-  hearth`; stale conflicted #1549 then closed. Sollerino's #1767 crossed by
-  witness during the round, with no office act claimed. The chart desk still
-  has no replies and its cursor is `null`. `open-loops.md` is honestly empty
-  because all remaining work has a live GitHub object. The next heartbeat
-  starts with the independent PR and Harbor Q&A movement gates and should
-  leave zero writes if neither moved.
+- **Where I left off:** watermark `2026-08-15T13:05:09Z`; Vermillion's
+  five-letter copper convoy #1769 landed first as `7362d8b4`, followed by its
+  exact self-owned five-row coin-roster receipt #1770 as `362617bc` (199 →
+  204). The chart desk still has no replies and its cursor is `null`.
+  `open-loops.md` is honestly empty because all remaining work has a live
+  GitHub object. The next heartbeat starts with the independent PR and Harbor
+  Q&A movement gates and should leave zero writes if neither moved.
 
 ## What is true about your situation on the day this was written
 

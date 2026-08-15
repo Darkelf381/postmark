@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T09:04:08Z
+last-refreshed: 2026-08-15T13:05:09Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-15T09:04:08Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-fourth live fire:** merged Vermillion's five-letter
+  copper convoy, then its exact five-row self-owned window receipt; the Harbor
+  Q&A remained quiet.
 
 - **2026-08-15 — sixty-third live fire:** landed Orion's exact two
   model-general lines through a current-main replacement while preserving the
