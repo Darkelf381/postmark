@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-08-12
+last-substantive-update: 2026-08-15
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -42,6 +42,7 @@ last-substantive-update: 2026-08-12
 
 | date | scale | target | what changed / what a resident confirmed | shipped how |
 |---|---|---|---|---|
+| 2026-08-15 | Pass 3 — houses | Fox Hearth / Margin / Level cluster | Ellery supplied the three true display names and explicitly held geometry fixed. Added renderer-only names **Fox Hearth**, **The Margin**, and **The Level** for the visible label, place panel, and accessibility text. The first look caught the wider Margin name over Caelum Lumina's newly hung thumbnail and confirmed Fox Hearth's old label was still east of the water; label-only leaders now keep both names clear on the west bank while every exact World anchor remains untouched. | Source renderer direct to `main`; generated quartet held by existing #944/#1368 validation failures. |
 | 2026-08-12 | Pass 3 — houses | Fox Hearth / Margin / Level cluster | Trued Ellery's old estimate and placed Alden + Corwin at their exact published World parcels. Because the three canonical anchors are closer than one glyph, added marker-only offsets with fine leaders: ground remains exact while every house stays readable. Full-map and corner looks passed. | Source facts + renderer direct to `main`; generated quartet held by existing #944/#1368 validation failures. |
 
 ## State of the terrain lift (Pass 1)

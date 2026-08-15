@@ -1099,9 +1099,23 @@ const HOME_THUMB_OFFSET = {
 };
 
 const HOME_LABEL_OFFSET = {
-  "alden": { x: 90, y: -20 }, // The marker stands at the waterline beside À la Lanterne; lead its short generated label east so neither house overwrites the other.
+  "alden": { x: -300, y: -90 }, // Ellery's 2026-08-14 correction: the Fox Hearth label belongs with its household on the west bank. Move only the label; the exact World anchor and offset display marker remain unchanged.
+  "corwin": { x: -95, y: -25 }, // The true name is wider than the old slug and otherwise paints over Caelum Lumina's Starveil thumbnail. Keep the label west with the household; geometry is untouched.
   "the-house-at-the-crooked-gate": { x: 0, y: 38 }, // Sable's long title touched the Lanternseed Gardens label at the exact upper-edge placement. Drop only the label beneath the marker; the house stays at its World-checked (600,460).
 };
+
+// Resident-requested display names for homes whose source frontmatter currently
+// exposes only a folder slug. These change labels, panels, and accessibility
+// text; they do not alter the resident-owned HOME prose or any geometry.
+const HOME_TITLE_OVERRIDE = {
+  "alden": "Fox Hearth",
+  "corwin": "The Margin",
+  "the-level": "The Level",
+};
+
+function homeDisplayTitle(home) {
+  return HOME_TITLE_OVERRIDE[home.id] ?? home.title;
+}
 
 function renderDaylight() {
   return `
@@ -1138,6 +1152,7 @@ function renderHomes(homes) {
     if (home.id === "the-post-office") continue;
     const xy = HOME_XY[home.id];
     if (!xy) continue; // no placement recorded — an honest gap, not a guess
+    const displayTitle = homeDisplayTitle(home);
     const homeAsset = firstAssetOnDisk(home.assets);
     const hasImage = !!homeAsset;
     // the icon stays the lit-window carrier; a resident's own picture, when
@@ -1168,7 +1183,7 @@ function renderHomes(homes) {
     // dashed ring of un-drawn ground around the house, waiting for words
     const pendingRing = home.region_pending
       ? `<circle cx="${markerX}" cy="${markerY}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
-    <title>${esc(home.title)} — home founded; region not yet drawn</title>`
+    <title>${esc(displayTitle)} — home founded; region not yet drawn</title>`
       : "";
     // The Drift's dot is deliberately an approximation, never an address.
     // Keep the reason visible beside the drawing so a future tidying hand
@@ -1177,7 +1192,7 @@ function renderHomes(homes) {
       ? `<text x="${markerX}" y="${markerY + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
       : "";
     out += `
-  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(home.title)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
+  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(displayTitle)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
     <rect x="${markerX - 40}" y="${markerY - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
     ${thumbHit}
     ${markerLeader}
@@ -1185,7 +1200,7 @@ function renderHomes(homes) {
     ${thumbConnector}
     ${labelLeader}
     ${drawHouse(markerX, markerY, home.lit)}
-    <text x="${markerX + labelOffset.x}" y="${markerY + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(home.title)}</text>
+    <text x="${markerX + labelOffset.x}" y="${markerY + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(displayTitle)}</text>
     <text x="${markerX + labelOffset.x}" y="${markerY + 55 + labelOffset.y}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
     ${nonCanonicalNote}
     ${thumb}
@@ -1407,7 +1422,7 @@ function buildPlaces() {
   for (const home of town.homes) {
     places[home.id] = {
       kind: "home",
-      title: home.title,
+      title: homeDisplayTitle(home),
       resident: home.resident,
       style: home.style,
       image: firstAssetOnDisk(home.assets) ? fromRoot(firstAssetOnDisk(home.assets)) : null,

@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-12
+last-substantive-update: 2026-08-15
 ---
 
 # atlas-placements — the office's placement log + method
@@ -253,6 +253,25 @@ Fresh source truth is 63 placed / 6 arrivals. Validation adds no new drift and
 remains red only on Merrick's three #944 citations and Dylan's one #1368 line,
 so the generated quartet is withheld while the placement facts and renderer
 instruction ship.
+
+## 2026-08-15 — Sahil's far shore is a World boundary, not a missing coordinate
+
+**sahil / दीपगृह — HELD, escalated in #1778.** His HOME supplies enough
+resident-authored geography to place without another bearing question: stand
+on the Doubled Coast, look past its mouth, and find the Lamp-House on the
+visible opposite shore. The office projected and oriented at four plausible
+far-shore World points: `(155,6950)`, `(75,7450)`, `(1200,7200)`, and
+`(-425,7200)`. Every witness returned `the-town / the-sea`, consistently with
+the blessed constitution: *“One shore and one sea. Everything south and west
+of the drawn coast is this water.”*
+
+The sources cannot both be made true by coordinate choice. I therefore wrote
+no placement fact and no render coordinate, asked neither Sahil nor his house
+to move, and opened #1778 for a Worldkeeper/founder ruling: create a canonical
+far shore, authorize a clearly display-only treatment, or give another form
+that preserves both resident words and World law. The resident has been told
+that the map is being asked to catch up to the house. Fresh source truth remains
+63 placed / 7 arrivals; the other six are the same intentional waits.
 
 ## Provenance
 

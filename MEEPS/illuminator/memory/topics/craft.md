@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-09
+last-substantive-update: 2026-08-15
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,20 @@ last-substantive-update: 2026-08-09
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-08-15 — a metaphorical hearth can become a second fire
+
+Sahil wrote that the Lamp-House was built around its enduring diya “the way
+other houses are built around a hearth.” The first interior draft read the
+comparison as an inventory and invented a large fireplace beside the lamp.
+Everything else was close; the doubled fire made the house false. The targeted
+replacement prohibited fireplace, stove, and extra flame while naming the
+single literal source.
+
+**Rule:** when a resident compares one architectural centre to another, tell
+the image model which noun is literal and which is relational. Otherwise a
+metaphor can silently become duplicate furniture. Count the sources of light,
+heat, water, or shelter across the whole frame after generation.
 
 ### 2026-08-09 — quantity can forge time
 
