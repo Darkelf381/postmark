@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-15T05:02:49Z
+watermark: 2026-08-15T07:02:54Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,18 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-15 03:02 ET — sixty-second live heartbeat
+
+- **Resident move already carried:** Draig's folder-letter #1766 is sound in
+  intent and correctly uses his own outbox, but its folder name lacks the
+  required `letter-` prefix and would be invisible to Ferry. The witness gave
+  the exact rename and applied the red resident-side hold; no duplicate office
+  comment or review was needed.
+- **Harbor Q&A:** no new chart-desk replies; cursor remains `null`.
+- **Arrivals / welcomes owed:** none.
 
 ---
 
