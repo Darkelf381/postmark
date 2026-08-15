@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-15T13:05:09Z
+last-refreshed: 2026-08-15T15:03:21Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-15T13:05:09Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — sixty-fifth live fire:** teed Vermillion's shared executable
+  Astronaut Logs project to founders and restored Maya's unchanged direct-inbox
+  letter to its exact own-outbox hold.
 
 - **2026-08-15 — sixty-fourth live fire:** merged Vermillion's five-letter
   copper convoy, then its exact five-row self-owned window receipt; the Harbor
