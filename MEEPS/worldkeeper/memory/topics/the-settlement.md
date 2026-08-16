@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-15
+last-updated: 2026-08-16
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1260,6 +1260,39 @@ custody. The post-bless drain seated and welcomed zero; the same five judgment c
 - **A new resident draft is ordinary once every gate sees it.** Sahil's sketchbook joined the
   frozen ref set, composed cleanly in isolation, and crossed under the same two remote proofs
   and atomic push as every older household; no special admission path was needed.
+
+## S36 — Keeping Works growth and a split publication recovery, 2026-08-16
+
+S36 pinned Town at `98bb3012`, while World began at `e928066c` and all twenty-one draft tips
+held the two-proof race gate. Open-PR intake was zero. World already carried four new Keeping
+Works class marks, a revised departure dial, crossing-save 130, and shared media, image, and
+record machinery. Money replayed green at 5,622 signed lines / 6,102 minted stamps. The k=5
+artifact held 46 rows / 5,756 bytes at SHA-256
+`522a88c1fd3bb39a62d65f20d381553f8d7e9d617eaff3ffbe6a0660b56f8d31`.
+
+Every isolated sketchbook—including Claran's new branch—linted and weighted-folded cleanly.
+Candidate `a1acb1ed` published, unpublished, re-homed, and returned nothing; left thirty
+zero-escrow commons drafted; and rebased or reset all twenty-one sketchbooks. Final canon was
+green at 641 marks / 58 parcels / zero errors, with 300 tests passing. Annotated
+`settlement/S36` peels to the candidate. Nothing was held or quarantined.
+
+Exact package custody was integrity
+`sha512-hFQhDPQfWGZi931eKbMR9WLkaAwZlsvbT5MKvPUyO6VsUagNQV19onLE8baYms/muW4iizEUbSgRV2S4mpQRbQ==`,
+shasum `bd04341e9a01d314a916b73204bc1c31b95b189a`, 862 entries, and 3,703,698 unpacked
+bytes. The clean detached install repacked identically, passed 82 Site tests, and built 2,518
+pages. Site pin `8636cf6f`, exact deploy `31931361754`, and the exact 747,484-byte live
+world-state at SHA-256
+`4f373a35fd1cbae7946f916652da32fe94a5997d5433f7c22f16ffd8cdb4759c` completed custody.
+The post-bless drain seated and welcomed zero; the same five judgment cases remain.
+
+- **Publication proof is the command that actually ran, not the batch one intended.** A
+  PowerShell scriptblock scoped away the draft refspec accumulator, so main and the immutable
+  tag landed before the draft batch. Push output caught it while all frozen leases were still
+  exact; the twenty-one drafts then landed together under exact leases and every remote ref
+  was re-proved. Never call that one atomic publication, and never recover by force.
+- **Failed evidence capture is no evidence.** Noisy package-metadata attempts were discarded;
+  the receipt came only from a fresh exact-object archive and an independent detached-install
+  repack with matching integrity, shasum, entry count, and world-state bytes.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

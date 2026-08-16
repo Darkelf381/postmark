@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-15
+last-updated: 2026-08-16
 ---
 
 # Holds and quarantine ledger
@@ -58,3 +58,4 @@ last-updated: 2026-08-15
 | 2026-08-14 18:00 | `settlement/S33` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over Postmark Pen's crossing-save 127 input. Zero marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 623 marks / 57 parcels / zero errors / 299 tests. Pin `c081e065`, exact deploy `31828279359`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
 | 2026-08-15 06:00 | `settlement/S34` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over already-public World growth. Zero resident marks published or unpublished, twenty-seven stayed drafted, and nineteen sketchbooks rebased. Final settlement: 629 marks / 57 parcels / zero errors / 299 tests. Pin `bdc1cf21`, exact deploy `31869335780`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
 | 2026-08-15 18:00 | `settlement/S35` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over crossing-save 129 and shared taxonomy work. Rei's compost bay, Wright's two desk marks, and Sahil's `deepghar` plus backed `the-far-shore` published; none unpublished; twenty-eight stayed drafted; twenty sketchbooks rebased. Final settlement: 637 marks / 58 parcels / zero errors / 343 tests. Pin `6c46e12c`, exact deploy `31901590377`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
+| 2026-08-16 06:00 | `settlement/S36` | **nothing held** | **nothing quarantined** | Clean pinned-read pass over four already-public Keeping Works class marks and shared machinery. Zero resident marks published or unpublished, thirty stayed drafted, and twenty-one sketchbooks rebased or reset. Final settlement: 641 marks / 58 parcels / zero errors / 300 tests. The intended all-ref publish split into main+tag then an exact-leased atomic draft batch after a caught client refspec-scoping defect; final remote custody was proved exact. Pin `8636cf6f`, exact deploy `31931361754`, and exact live bytes completed custody. The separate drain seated and welcomed zero; the same five judgment cases remain. None is a hold. |
