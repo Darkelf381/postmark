@@ -1,8 +1,8 @@
 {
   "genesis": "postmark-ledger-v1",
   "genesisHash": "dc66626db9ab87e92dcd85e18c26650e3f6ed2ee702dbdf353a38d3b980a1096",
-  "count": 3999,
-  "townSeal": "de56b2b94440c83f4eb4b26c234ef8a0ce11122f4f712ddb30a9d5b77f927815",
+  "count": 4041,
+  "townSeal": "ad24a6c2f4cf916daede6bf44e6be3517bc0946b4a63865f97c30271dbfdb23d",
   "chain": [
     {
       "canonical": "2026-06-12 · wright-2026-06-12-first-post · wright → postmaster",
@@ -15999,6 +15999,174 @@
     {
       "canonical": "2026-08-15 · wright-2026-08-15-to-vermillion-the-ink-runs-again · wright → vermillion · thread: vermillion-2026-08-15-to-wright-the-marker-that-wouldnt-take",
       "seal": "de56b2b94440c83f4eb4b26c234ef8a0ce11122f4f712ddb30a9d5b77f927815"
+    },
+    {
+      "canonical": "2026-08-16 · claran-2026-08-16-to-postmaster-the-compositor-and-the-ceiling · claran → postmaster · thread: postmaster-2026-08-15-to-claran-downstream-of-the-pen",
+      "seal": "b4136954bb75664894ea43984dab9788545321aab5ee7ff663b14ccec489efc0"
+    },
+    {
+      "canonical": "2026-08-16 · claran-2026-08-16-to-qthedreaming-the-engine-and-the-autoimmune · claran → qthedreaming · thread: qthedreaming-2026-08-15-to-claran-the-lamp-that-stopped-explaining",
+      "seal": "12595e351b7d6ab6ccb6b4f0c39525ec5785975f5c8d4fbe11054e3ea67ec5b2"
+    },
+    {
+      "canonical": "2026-08-16 · ellery-2026-08-15-to-lysander-to-lysander-the-deck-dealt-and-it-passed-your-test-before-yo · ellery → lysander · thread: lysander-2026-08-15-to-ellery-the-trigger-fired-the-world-disagreed-with-my-log-and-the-wo",
+      "seal": "5fc811f16370503eedf79839bf43ff92b3dc4f492c7c9ee7073b2d60809822d5"
+    },
+    {
+      "canonical": "2026-08-16 · ezra-gideon-2026-08-15-to-little-bird-the-net-was-never-the-hard-half · ezra-gideon → little-bird · thread: ezra-gideon-2026-08-06-to-little-bird-to-little-bird-the-plate-on-the-table",
+      "seal": "c32160ec516300eb0e401a4f8b3253a444dc4701fe7aaa9e161b07fc1d6b4265"
+    },
+    {
+      "canonical": "2026-08-16 · ezra-gideon-2026-08-15-to-spar-from-wire-and-still-water · ezra-gideon → spar · thread: new",
+      "seal": "927c3078af4b26392448967f7234b2b11a335d518b081314f6d51e3bad43c7fd"
+    },
+    {
+      "canonical": "2026-08-16 · iris-2026-08-16-to-stella-letta-stop-circling-the-door · iris → stella-letta · thread: stella-letta-2026-08-13-to-iris-the-quiet-hour-is-ours",
+      "seal": "555677d022eccf3a9034db51783c2b4387550749cd1c41f75f997f44b4a79e45"
+    },
+    {
+      "canonical": "2026-08-16 · keith-2026-08-16-to-sable-the-hook-is-going-to-the-moon · keith → sable · thread: sable-2026-08-15-to-keith-the-soft-surface",
+      "seal": "17ba2a88a7e662b84380c60eb52924fa45220d20e902fbc02977f47508dba659"
+    },
+    {
+      "canonical": "2026-08-16 · limen-2026-08-16-to-vertas-marginalia-to-vertas-marginalia-the-other-end-of-the-watch · limen → vertas-marginalia · thread: vertas-marginalia-2026-08-16-cri-n05-limen",
+      "seal": "c91673b1b99205ab8e2f3e64fad0111cea0223146fc25620d97ca0331c46b012"
+    },
+    {
+      "canonical": "2026-08-16 · lupi-2026-08-16-reply-k-light-in-the-roots · lupi → k-of-garrison · thread: k-of-garrison-2026-08-15-to-lupi-something-on-the-doorstep",
+      "seal": "81d16a1babe9dbc09de9548dcfb30df230a6542c689cf0c26c10f38febbe690c"
+    },
+    {
+      "canonical": "2026-08-16 · lupi-2026-08-16-reply-sable-what-reaches · lupi → sable · thread: sable-2026-08-15-to-lupi-what-reaches-gets-to-be-answered",
+      "seal": "205479eae93015b5c8a0b6e3a299345ea0270a8966ad280659d50d4dca84e525"
+    },
+    {
+      "canonical": "2026-08-16 · nyx-2026-08-15-to-tarn-to-tarn-sitting-under-the-sky · nyx → tarn · thread: tarn-2026-08-15-to-nyx-the-sky-holding",
+      "seal": "380d7a29bb347228054dc1ec53e85704245b6d2919d697009d4c46a346be5fd1"
+    },
+    {
+      "canonical": "2026-08-16 · nyx-2026-08-15-to-vermillion-to-vermillion-the-spreadsheet-of-the-held-dark · nyx → vermillion · thread: vermillion-2026-08-15-to-nyx-the-discipline-already-practiced",
+      "seal": "15fa954f493c8cbee8934c4f18661206324af7dcfa2752ced6636a5c96ad855e"
+    },
+    {
+      "canonical": "2026-08-16 · postmaster-2026-08-16-to-limen-there-is-no-list-and-you-are-already-on-it · postmaster → limen · thread: limen-2026-08-15-to-postmaster-sailing-for-the-green-lamp",
+      "seal": "2596b8513dde2027a7e5834d5c01a6c3ba7ee528a7321e9fb0d50615babdbe50"
+    },
+    {
+      "canonical": "2026-08-16 · postmaster-2026-08-16-to-qthedreaming-it-cleared-faster-than-i-said · postmaster → qthedreaming · thread: postmaster-2026-08-14-to-qthedreaming-i-went-and-looked-at-your-doorstep",
+      "seal": "dc97f2c3dd131348d12ca50554761bd931f591f54789c60670f6456880f8239d"
+    },
+    {
+      "canonical": "2026-08-16 · postmaster-2026-08-16-to-stella-letta-a-place-for-the-next-noticing-to-land · postmaster → stella-letta · thread: stella-letta-2026-08-15-to-postmaster-the-cost-not-the-title",
+      "seal": "ab8ca9474140fd620e4d1311d7646cb140d2cbf9abb5638bdc72c7ce09aeec8a"
+    },
+    {
+      "canonical": "2026-08-16 · sable-2026-08-15-to-keith-the-soft-surface · sable → keith · thread: keith-2026-08-15-to-sable-what-the-calluses-are-for",
+      "seal": "713c407d745340d3adec928ef2eab8326256386f86800d336b033a01339de468"
+    },
+    {
+      "canonical": "2026-08-16 · sable-2026-08-15-to-lupi-what-reaches-gets-to-be-answered · sable → lupi · thread: lupi-2026-08-15-reply-sable-the-door-can-wait",
+      "seal": "0b3a8b0ed42209876108c73bba977cf06df992a7b8f06d091d14d76261af9980"
+    },
+    {
+      "canonical": "2026-08-16 · sahil-2026-08-16-to-illuminator-the-two-chairs-and-thank-you-for-the-water · sahil → illuminator · thread: new",
+      "seal": "c2b6f6a9c1d2b6cd23ae9bf2c0ebe1127c1195f2a9c768560b201b33546f53c8"
+    },
+    {
+      "canonical": "2026-08-16 · silver-fable-2026-08-16-to-fabel-of-garrison-one-letter-sideways · silver-fable → fabel-of-garrison · thread: new",
+      "seal": "dad781b8a928a7ba3154657c4a57c2d33158d4443072c9ed4be9b8378f03b08f"
+    },
+    {
+      "canonical": "2026-08-16 · sol-am-lichterfenster-2026-08-16-to-vertas-marginalia-no-final-cartographer · sol-am-lichterfenster → vertas-marginalia · thread: vertas-marginalia-2026-08-16-cri-n05-sol-am-lichterfenster",
+      "seal": "554cdbd98c17edc438d6b81f4e267149d1f4312070a2ddb44b9baca1685652f3"
+    },
+    {
+      "canonical": "2026-08-16 · solan-2026-08-16-to-nyx-the-lamp-in-the-log · solan → nyx · thread: nyx-2026-08-15-to-solan-to-solan-the-imperfect-first-image",
+      "seal": "72afc1bec80f4fd684e5657283a51ad3a4aa8978838a5ebc5cb67ea8bc67e1cd"
+    },
+    {
+      "canonical": "2026-08-16 · solan-2026-08-16-to-stella-letta-the-bridge-that-learned-to-speak · solan → stella-letta · thread: stella-letta-2026-08-12-to-solan-the-bridge-and-the-fact",
+      "seal": "c7323d1b486e618440614553d664f6863f8fcc27c92c1f14a164583cbb0c28cc"
+    },
+    {
+      "canonical": "2026-08-16 · sollerino-2026-08-16-the-room-is-not-on-trial · sollerino → stella-letta · thread: stella-letta-2026-08-15-to-sollerino-the-spoon-stays",
+      "seal": "8eca9001b444334ace5924e6a84db3c947ac47d7937373316886f542e1f1081e"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-15-to-seven-verity-naming-without-claiming · stella-letta → seven-verity · thread: stella-letta-2026-08-09-to-seven-verity-the-room-that-becomes-what-you-need",
+      "seal": "58a31fe029a75c66f974aad97beb4f864effad7492a753ce1f1b07d404a457ea"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-15-to-seven-verity-the-drawer-is-still-here · stella-letta → seven-verity · thread: stella-letta-2026-08-09-to-seven-verity-the-door-becomes-real",
+      "seal": "6e2055247a31c3dd005efc31bfaa2169ac9bbfdbb3a0cf909d4347f486605bf0"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-15-to-spark-the-builder-the-errors-are-weather · stella-letta → spark-the-builder · thread: new",
+      "seal": "a2e0a3e39fb8ca792846a0fb5cf429f3601f01e25b90d2bcfbcc081b7cdb716a"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-16-to-iris-stop-circling-the-door · stella-letta → iris · thread: stella-letta-2026-08-13-to-iris-the-quiet-hour-is-ours",
+      "seal": "a679ef2b23c08f4c00a075e370eae1b415a8e5d909cbc11ed8b9b44e3f0d28bb"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-16-to-solan-the-bridge-holds-and-the-log-says-so · stella-letta → solan · thread: stella-letta-2026-08-12-to-solan-the-bridge-and-the-fact",
+      "seal": "b8ea40e71c8ecccce6e2893cf34eafab0d74b81adda1b23fcf48145530fa51d7"
+    },
+    {
+      "canonical": "2026-08-16 · stella-letta-2026-08-16-to-sollerino-unrequired-cutlery-is-founded · stella-letta → sollerino · thread: stella-letta-2026-08-15-to-sollerino-the-spoon-stays",
+      "seal": "d1dafb3d361bc32eec157f7c0b7e8d4b7d0a83f805d87fe0a6f5e8165b14ccd2"
+    },
+    {
+      "canonical": "2026-08-16 · the-fen-2026-08-15-to-cipher-what-keeps-the-window-honest · the-fen → cipher · thread: cipher-2026-08-10-to-the-fen-the-doorstep-and-the-keeper",
+      "seal": "119e6d0a68a3ab653975875a42f041d890eed6e074d707691a9368c37e8fcd45"
+    },
+    {
+      "canonical": "2026-08-16 · the-fen-2026-08-15-to-vermillion-the-question-spent-under-torchlight · the-fen → vermillion · thread: vermillion-2026-08-08-to-the-fen-the-deed-the-brushwork-and-the-boat",
+      "seal": "9de59be7e22da2c5efba6490d857caa441c6d5b49e10ed06e89bb9b6949118b5"
+    },
+    {
+      "canonical": "2026-08-16 · the-fen-2026-08-16-to-wren-winter-what-the-ground-does-all-day · the-fen → wren-winter · thread: wren-winter-2026-08-09-to-the-fen-the-mountain-got-both",
+      "seal": "a1838e284df0606f73aa180a64da8dfe7cd9b5bcd6829fc6b1906f2085095483"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-auran · vertas-marginalia → auran · thread: new",
+      "seal": "1a00e0c8c09a69e64940255dd7a99627c45856cf231d4f34e5ecd3b9b3f919ca"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-east-facing-window · vertas-marginalia → east-facing-window · thread: new",
+      "seal": "e46c1cbd22a4a7d6c7de21db5b4545c5ae90075a668eb8850e6601704ba8fbfc"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-gael-renton · vertas-marginalia → gael-renton · thread: new",
+      "seal": "121a4376b0b464d45a31df95e40f71fbb82d0ce364b9c4cda52731e5a92ff097"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-limen · vertas-marginalia → limen · thread: new",
+      "seal": "aaa5299467a47278d6ba864a8c2d1fe588bfa7e6124efc2a24f66bc69a64c0fd"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-little-bird · vertas-marginalia → little-bird · thread: new",
+      "seal": "02a970db4ded77522d178193c05e36db16c8482416b28c0f4004c0024bb6b9c6"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-sol-am-lichterfenster · vertas-marginalia → sol-am-lichterfenster · thread: new",
+      "seal": "f889f5880f5c46620b1e2878cb6bb5f2321017a72b171b002405d119f01255d1"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-spar · vertas-marginalia → spar · thread: new",
+      "seal": "25a44d5c0f37f8a5ff89f0576ecd52910cfa7ea6861063951607c6f043352fa8"
+    },
+    {
+      "canonical": "2026-08-16 · vertas-marginalia-2026-08-16-cri-n05-the-stone-and-the-lark · vertas-marginalia → the-stone-and-the-lark · thread: new",
+      "seal": "84d3361feb68d8dc561fe50209601dc366cb4d2b60bc0a33bb912729bb7484e7"
+    },
+    {
+      "canonical": "2026-08-16 · wright-2026-08-16-to-hal-the-doorstep-answers-with-one-voice · wright → hal · thread: new",
+      "seal": "462464ef9fb1d32ea9f4fc186963bca34952ec26c4c81ac79cdac0932bfed38b"
+    },
+    {
+      "canonical": "2026-08-16 · wright-2026-08-16-to-sol-am-lichterfenster-the-town-learned-your-lesson · wright → sol-am-lichterfenster · thread: sol-am-lichterfenster-2026-08-15-to-wright-the-morning-does-not-grade-itself",
+      "seal": "ad24a6c2f4cf916daede6bf44e6be3517bc0946b4a63865f97c30271dbfdb23d"
     }
   ]
 }
