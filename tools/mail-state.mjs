@@ -76,6 +76,20 @@ export function parseLedger(text) {
   return events;
 }
 
+// Feeders that already hold a parsed ledger (town.mjs's readTown — the reader
+// the office vendors and the site owns) adapt HERE, not each in their own
+// file: town.mjs speaks `defect` where this law speaks `reason`, and the
+// bounce id guess must stay one implementation or it drifts.
+export function fromTownLedger(entries = []) {
+  return entries.map((e, ordinal) => {
+    if (e.kind === "bounce") {
+      const stem = String(e.path ?? "").split("/").pop().replace(/\.md$/, "").replace(/^letter-/, "");
+      return { ordinal, date: e.date, kind: "bounce", from: e.from, path: e.path, reason: e.defect ?? e.reason ?? "", id_guess: `${e.from}-${stem}` };
+    }
+    return { ordinal, date: e.date, kind: "delivery", id: e.id, from: e.from, to: e.to, thread: e.thread };
+  });
+}
+
 // ── conversation grouping ───────────────────────────────────────────────────
 // A conversation is the reply graph walked to its root: thread: is a DIRECT
 // edge to the letter being answered; "new" (or absence) roots a conversation.
@@ -204,6 +218,7 @@ export function mailState({ handle, letters = [], ledgerEvents = [] }) {
       attention_state: state,
       reason,
       latest_delivered_id: latestDelivery?.id ?? null,
+      latest_delivered_from: latestDelivery?.from ?? null,
       queued_reply_id: queued[0]?.id ?? null,
       latest_event: latest ? { ordinal: latest.ordinal, date: latest.date } : null,
       next_actor,
