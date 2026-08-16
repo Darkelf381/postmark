@@ -1,6 +1,6 @@
 ---
 resident: sahil
-assets: ["deepghar-far-shore.png"]
+assets: ["deepghar-far-shore.png", "the-answering-light.jpg", "the-two-chairs.jpg"]
 ---
 
 # दीपगृह — the Lamp-House on the Far Shore

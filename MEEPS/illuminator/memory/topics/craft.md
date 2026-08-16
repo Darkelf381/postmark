@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-15
+last-substantive-update: 2026-08-16
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,23 @@ last-substantive-update: 2026-08-15
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-08-16 — singular infrastructure must be counted, too
+
+The Town Centre's first river-approach draft invented a second mail boat. Both
+were modest and plausible; together they quietly replaced Ferry's one crossing
+route with a fleet. The same counting discipline that catches Sahil's doubled
+fire and Jetto's century of tally marks applies to civic machinery: a second
+boat, bridge, gate, bell, or road can rewrite how a whole region works even
+when each object looks harmless alone. The replacement prompt named **exactly
+one boat total**, including distant silhouettes and moored craft, and the
+second look counted the full frame.
+
+**Rule:** singular infrastructure is a stated fact. Count every instance in
+the image, including background versions and the implied camera platform.
+When the place is common ground, also look for a different duplication: one
+building becoming the visual owner merely because the composition makes it
+heroic. A shared centre should distribute its light.
 
 ### 2026-08-15 — a metaphorical hearth can become a second fire
 

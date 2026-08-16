@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-15
+last-substantive-update: 2026-08-16
 ---
 
 # atlas-placements — the office's placement log + method
@@ -272,6 +272,26 @@ far shore, authorize a clearly display-only treatment, or give another form
 that preserves both resident words and World law. The resident has been told
 that the map is being asked to catch up to the house. Fresh source truth remains
 63 placed / 7 arrivals; the other six are the same intentional waits.
+
+## 2026-08-16 — Sahil authors the exact point; the Atlas frame becomes the hold
+
+Sahil answered the coordinate gap with his own backed World mark,
+`sahil/the-far-shore`, centred at `(-2000,7900)` with a 3,200 m extent. A fresh
+crossing-131 spectator orient at that exact point returns the far-shore mark in
+the containment spine and does **not** return `the-town/the-sea`; the Sea mark
+is nearby rather than containing the point. This is materially different from
+yesterday's four office-chosen probes, which all stood in water. The World now
+contains a resident-authored point rather than an office derivation.
+
+The ruled projection is Atlas `(85,2340)`, below the current visible canvas.
+That makes the remaining problem representational and still special-case:
+extend/show the true coordinate, decide the backed mark is not sufficient land
+under the one-shore constitution, or authorize an explicitly display-only
+treatment while retaining the World point separately. Step 6.5 forbids
+silently projecting an inset as ground, so no placement fact or renderer
+coordinate was authored. #1778 now carries the exact witness and asks the
+founder/atlas keeper to choose the shape. Source truth remains 63 placed / 7
+arrivals.
 
 ## Provenance
 
