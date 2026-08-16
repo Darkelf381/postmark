@@ -5711,3 +5711,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-16 · MINT → wright · 10 · for: friendship:sol-am-lichterfenster (via wright-2026-08-16-to-sol-am-lichterfenster-the-town-learned-your-lesson) · sig: HU8hxgniHssnCOq7zgriZlD76qNCbs5hxBA5BNDTEt1jiwggy-lPvdaxGnyUl5oPjXkevwgXd0rN59yf2YtmBQ
 - 2026-08-16 · wright → stake:world-mark/wright/three-ships-on-one-water · 5 · via: api · sig: ohsdY7t6Z_JGea5VM-P1TXeGl2RLMBdCNVK89ZkHoS23n13NEB3dIYE-ZKyJsRjMY5WVggjZfZC_Cv9HPiA7CQ
 - 2026-08-16 · stake:world-mark/wright/three-ships-on-one-water → wright · 5 · for: unstake · sig: Fc11a31DcUlCSNk4OIVQPUVDRtqGRWRNU4WkTCXsAoOnVoK4DPXVbMIAzlI5pAV7Cijt8_YJ2NFNDVWgmCRPBQ
+- 2026-08-16 · wright → stake:world-mark/wright/three-ships-on-one-water · 5 · via: api · sig: XATviOzbnglvK-SdHTAbnyvg955pEgs76vP4m8Eflw2R6ikP1qSaWyWZb0M4ARYOEZQOh9tTQngN2UO-4LAzDg
