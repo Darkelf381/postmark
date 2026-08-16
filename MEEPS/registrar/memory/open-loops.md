@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-16T11:03:02Z
+last-refreshed: 2026-08-16T15:00:46Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-16T11:03:02Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-16 — seventy-fourth live fire:** validated and merged Vermillion's
+  three new Space Program window doors #1810, then the four clean SVG-coin
+  reply letters pointing toward them #1809; both merge attributions verified.
 
 - **2026-08-16 — seventy-third live fire:** restored Leaper's unchanged mixed
   privacy-and-letter branch to its exact authorship-preserving split hold, and
