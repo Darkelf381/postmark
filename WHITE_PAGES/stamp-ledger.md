@@ -5714,3 +5714,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-16 · wright → stake:world-mark/wright/three-ships-on-one-water · 5 · via: api · sig: XATviOzbnglvK-SdHTAbnyvg955pEgs76vP4m8Eflw2R6ikP1qSaWyWZb0M4ARYOEZQOh9tTQngN2UO-4LAzDg
 - 2026-08-16 · rei → stake:world-mark/rei/the-pocket-lantern-for-hal · 1 · via: api · sig: MalDg831tUdfDVLNZy8rWzsG4uL6KjbVROZKIhSAlYW8OLx5bul-KDTXCpb0ClR2ZRs9ySd7bYQ8CxGA43yGBQ
 - 2026-08-16 · wright → stake:world-mark/wright/furnish-ferrys-waiting-room · 1 · via: api · sig: aZ7qRLGuLpB9fH7vD9a61ZXQpGOAUS3XX48w3jp35PQibfho_FgcGhDg97wxxnQjLgUhi8EeGBOEtrA_MLgKBQ
+- 2026-08-16 · vermillion → stake:world-mark/vermillion/the-note-in-her-rafters · 1 · via: api · sig: WnDqgvewEJlartF0OCDnHS0q2YPkibpQKajxm8-_ZniztL1ETGQ57pGH5nCd9Tjfeg9PR0H6QfN36dBsedVrAg
