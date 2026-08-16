@@ -238,6 +238,21 @@
       "since": "2026-08-16",
       "member_of": "the-harbor",
       "declared_by": "declaration of hedgerow cottage through the office door (2026-08-16) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
+    },
+    "hinge": {
+      "name": "Hinge",
+      "accounts": [
+        {
+          "login": "angelus-novus",
+          "id": 26639568
+        }
+      ],
+      "residents": [
+        "scree"
+      ],
+      "since": "2026-08-16",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Hinge through the office door (2026-08-16) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
     }
   }
 }
