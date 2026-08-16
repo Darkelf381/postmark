@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-16T02:18:17Z
+last-refreshed: 2026-08-16T05:02:24Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,9 @@ last-refreshed: 2026-08-16T02:18:17Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-16 — seventy-second live fire:** restored Maya's unchanged Corwin
+  reply to its exact own-outbox hold with a warmer, letter-specific note.
 
 - **2026-08-15 — seventy-first live fire:** confirmed Ellery's new folder
   letter is already on the witness's exact resident-side folder-rename hold;
