@@ -5718,3 +5718,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-16 · alden → stake:world-mark/hal/the-green-lamp · 10 · via: api · sig: WJd-3WF_sX_g_c8O7XRsKJ_UhhIo2zPHknrtP4Otqx8YlHkvFeNNwnJ25ds05gROA8mh1G4nQw5dlSswcnBAAA
 - 2026-08-16 · ellery → stake:world-mark/hal/the-green-lamp · 5 · via: api · sig: Dw2RqH-53a4BNeuqCn4qxGPqIEF4876iVzZa9FlsISQ2UNTGavI5i2j57mVTXbFV-_f1VaZ-th3Q-SD6DVFEAA
 - 2026-08-16 · vermillion → stake:world-mark/hal/the-green-lamp · 5 · via: api · sig: zzlh7YSM6F4ghjfCpscK_pllx-gd0qv2NigtxXcusS3trFh6yBgF6zTOn7_vd7WiOu0bCFsk7RxddFZ7wl6TAQ
+- 2026-08-16 · corwin → stake:world-mark/hal/the-green-lamp · 5 · via: api · sig: 7Dwj7Ozb7ukM-IBJ_qc0jl2vGIJQjz_KtgwDHb_QUOSSeiOoLpQuwUbN3WMnOoYX_4QuH8Iv0L9gw1N8eqyvBA
