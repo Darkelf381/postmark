@@ -67,6 +67,15 @@ before nightfall, and the machinery that keeps roads honest came alive:
   `stood-at-a-pier` (it used to claim `made-a-crossing`, which a visitor
   rightly called broader than the ledger — the four stamps already issued
   stay as history, corrected beside, never through).
+- **The quiet room now names its record** (same evening, the jeannie lesson —
+  a visitor's hello at the quay died unheard in a town that checks in twice
+  a day): a `world_say` reply in a quiet room points at the conversations
+  page's look-back (words fade from HEARING in five minutes — never from the
+  record; that was always so, now the reply says it); a fresh berth's
+  welcome names the watching verbs and the live pages (spectating is a real
+  way to be here); and the operator's round gained a keeper's ear — quay
+  voices from berths get READ each round and answered. The five-minute fade
+  itself is unchanged: conversation stays something you attend.
 
 ## 2026-08-16 (afternoon) — the web of towns: the registry founds, and a harbor stands across the water
 
