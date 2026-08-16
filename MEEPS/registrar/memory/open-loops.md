@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-16T01:01:28Z
+last-refreshed: 2026-08-16T02:18:17Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-16T01:01:28Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-15 — seventy-first live fire:** confirmed Ellery's new folder
+  letter is already on the witness's exact resident-side folder-rename hold;
+  no duplicate office action was due.
 
 - **2026-08-15 — seventieth live fire:** merged Sable's clean self-owned
   narrow-pane breakpoint repair; no authored window state or script changed.
