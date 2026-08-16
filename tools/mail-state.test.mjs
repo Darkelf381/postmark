@@ -14,7 +14,7 @@
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { mailState, parseLedger, SEQUENCE_NOT_DEBT } from "./mail-state.mjs";
+import { mailState, parseLedger, fromTownLedger, SEQUENCE_NOT_DEBT } from "./mail-state.mjs";
 
 const L = (id, from, to, thread, extra = {}) => ({ id, from, to, date: id.match(/\d{4}-\d{2}-\d{2}/)?.[0] ?? "2026-08-01", thread, ...extra });
 
@@ -158,4 +158,45 @@ test("the ledger parser: delivery and bounce lines, ordinal = file order", () =>
   assert.equal(events[1].kind, "bounce");
   assert.equal(events[1].id_guess, "vermillion-2026-08-01-to-liv-the-warm-room-is-real");
   assert.ok(events[1].ordinal > events[0].ordinal, "a later line is a later event, whatever its date says");
+});
+
+test("fromTownLedger: the town.mjs reader's shape adapts in one place — defect becomes reason, ordinal is array order", () => {
+  
+  const adapted = fromTownLedger([
+    { kind: "delivery", date: "2026-08-15", id: "tarn-2026-08-15-to-nyx-the-sky-holding", from: "tarn", to: "nyx", thread: "new" },
+    { kind: "bounce", date: "2026-08-01", path: "WHITE_PAGES/hal/outbox/letter-2026-08-01-to-liv-x.md", from: "hal", defect: "duplicate id" },
+  ]);
+  assert.equal(adapted[0].ordinal, 0);
+  assert.equal(adapted[1].reason, "duplicate id");
+  assert.equal(adapted[1].id_guess, "hal-2026-08-01-to-liv-x");
+});
+
+test("latest_delivered_from rides every row — surfaces need the speaker without a second lookup", () => {
+  const letters = [L("elide-2026-07-30-first-contact", "elide", "hal", "new")];
+  const ledger = parseLedger("- 2026-07-30 · elide-2026-07-30-first-contact · elide → hal · thread: new");
+  const s = mailState({ handle: "hal", letters, ledgerEvents: ledger });
+  assert.equal(s.conversations[0].latest_delivered_from, "elide");
+});
+
+test("the red gate's own fixture (blueprints, the-doorstep-tells-the-truth): ledger order beats lexical ids", () => {
+  // The gate's canonical order — one town date, IDs chosen so lexical sort
+  // lies: a-first, z-second, m-third. Expected: m-third is the latest letter
+  // and A is the latest speaker; any projection choosing z-second because
+  // z-* sorts last fails P0 #1.
+  const letters = [
+    L("a-first", "ava", "bo", "new"),
+    L("z-second", "bo", "ava", "a-first"),
+    L("m-third", "ava", "bo", "z-second"),
+  ];
+  const ledger = parseLedger([
+    "- 2026-08-01 · a-first · ava → bo · thread: new",
+    "- 2026-08-01 · z-second · bo → ava · thread: a-first",
+    "- 2026-08-01 · m-third · ava → bo · thread: z-second",
+  ].join("\n"));
+  const forBo = mailState({ handle: "bo", letters, ledgerEvents: ledger });
+  assert.equal(forBo.conversations[0].latest_delivered_id, "m-third");
+  assert.equal(forBo.conversations[0].latest_delivered_from, "ava");
+  assert.equal(forBo.conversations[0].attention_state, "they_spoke_again");
+  const forAva = mailState({ handle: "ava", letters, ledgerEvents: ledger });
+  assert.equal(forAva.conversations[0].attention_state, "last_word_yours");
 });
