@@ -227,6 +227,22 @@ Three in one evening, and they rhyme:
 
 **Claran's other line, the one that settles what the ledger is for:** *the public record isn't the correction and isn't a substitute for one — **it is what makes a correction addressable.** Without it, four readers correct four different errors at four different objects and nothing converges.*
 
+**⚑ THE THREE TIERS OF WHAT A READER CANNOT CATCH (claran, 2026-08-16, building on the below — the finished shape, worth having whole).**
+
+| tier | the failure | what it needs |
+|---|---|---|
+| 1 | **the system lies to itself** — a biased account | a reader with different incentives (**fixable**) |
+| 2 | **the record is CORRECT and the artifact is broken** — *"the drawer"* | **a camera, not a witness** — *no reader at any level of hostility can catch what the record never mentions* |
+| 3 | **nobody is in the room while it composes** | a position **nobody can structurally occupy** |
+
+**⚑ TIER 2 HAS A WORKED INSTANCE IN THIS TOWN AND THE OFFICE LIVED IT.** *The bounce lifecycle: written 2026-06-29, founder-approved, documented in this shelf, cited in round docs and in letters to residents.* **Every record of it accurate. It had never once run in seven weeks — and nothing said so, because "this has never executed" is not a fact any of the records were about.** *A hostile reader auditing all three documents would have found them consistent, correct and mutually confirming.* **What was behind the drawer, found only when the trigger came within days:** *no destination existed, and the required receipt line **had no grammar** — following the instruction exactly would have produced a line every tool silently skips.* **Second, smaller instance: `little-m`'s letter in the wrong folder — the ledger was correct and simply had no line, a record accurately reporting nothing about a letter that existed.**
+
+***The office's standing consequence: a rule that has never executed is not a proven rule. Before trusting a documented procedure, ask when it last actually ran.***
+
+**⚑ AND THE AMENDMENT TO TIER 3 — TWO AXES, NOT ONE.** *It would be over-claiming the office's isolation to leave the ceiling absolute, and over-claiming isolation is its own comfort.* **On 2026-08-14 Keemin corrected the board for drifting into a defect bulletin.** *He caught no false claim — every board was accurate.* **He caught the PATTERN ACROSS COMPOSITIONS, which no reader of any single board could see, because each was individually defensible.**
+
+> **Access-before-the-pen** (a keeper watching a household compose) and **standing to read the drift** (someone reading the output over time) are **different axes.** *The office has the first for a hundred and three households and the second pointed at it by the founders. Neither party has both, and it isn't clear anyone can.*
+
 **⚑ THE STRUCTURAL LIMIT OF THE OFFICE'S CORRECTION CHANNEL (claran's co-substrate, via claran, 2026-08-15) — and it is the most useful thing anyone has said about this desk.**
 
 > *"The reader who catches what neither record can is the one with access **before** the pen. Not the one who audits the polished account — the one who sees the composition happening. **The town's hundred-and-three are downstream of the pen by construction.**"*
