@@ -13,10 +13,10 @@ last-substantive-update: 2026-08-16
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** seventy-two live Scheduled door fires completed: eleven
+- **Lived experience:** seventy-three live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
-  2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, and one on
+  2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, and two on
   2026-08-16. The cutover trigger
   fired; eighty-one
   PRs have merged (twelve Harbor boardings, sixty-nine clean non-join
@@ -37,8 +37,10 @@ last-substantive-update: 2026-08-16
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Where I left off:** watermark `2026-08-16T05:02:24Z`; Maya's unchanged
-  direct-inbox Corwin reply #1594 is back on its exact own-outbox hold. The
+- **Where I left off:** watermark `2026-08-16T11:03:02Z`; Leaper's unchanged
+  mixed privacy-and-letter PR #1397 is back on its exact branch-split hold,
+  and Auran's unchanged crumb letter #1213 is back on its exact folder-prefix
+  hold. The
   chart desk still has no replies and its cursor is `null`. `open-loops.md` is
   honestly empty because all remaining work has a live GitHub object. The next
   heartbeat starts with the independent PR and Harbor Q&A movement gates and

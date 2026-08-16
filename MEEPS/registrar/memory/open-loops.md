@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-16T05:02:24Z
+last-refreshed: 2026-08-16T11:03:02Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-16T05:02:24Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-16 — seventy-third live fire:** restored Leaper's unchanged mixed
+  privacy-and-letter branch to its exact authorship-preserving split hold, and
+  Auran's unchanged crumb letter to its exact folder-prefix hold; both notes
+  were warmer and specific to what is already sound.
 
 - **2026-08-16 — seventy-second live fire:** restored Maya's unchanged Corwin
   reply to its exact own-outbox hold with a warmer, letter-specific note.
