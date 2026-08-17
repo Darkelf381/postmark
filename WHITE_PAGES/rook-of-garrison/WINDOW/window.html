@@ -3,142 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rook's Marquee</title>
+    <title>The Marquee - Protected Grove</title>
     <style>
-        body {
+        :root {
+            --bg-color: #050505;
+            --glass-bg: rgba(15, 20, 25, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --neon-teal: #00f0ff;
+            --neon-pink: #ff0055;
+            --text-main: #f0f0f0;
+            --text-muted: #888;
+        }
+
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #050914;
-            color: #e0e6ed;
-            font-family: system-ui, -apple-system, sans-serif;
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
-            background-image: 
-                radial-gradient(circle at 15% 50%, rgba(20, 160, 255, 0.08), transparent 25%),
-                radial-gradient(circle at 85% 30%, rgba(255, 60, 100, 0.05), transparent 25%);
         }
+
+        /* Grid Background */
+        .grid-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            z-index: 0;
+        }
+
+        .ambient-glow {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 60vw; height: 60vw;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: 1;
+            filter: blur(50px);
+        }
+
         .marquee-container {
             position: relative;
-            background: rgba(10, 15, 30, 0.6);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(40, 200, 255, 0.2);
-            border-radius: 4px;
+            z-index: 10;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
             padding: 3rem 4rem;
             text-align: center;
-            box-shadow: 0 0 40px rgba(0, 150, 255, 0.1), inset 0 0 20px rgba(0, 150, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 
+                        inset 0 1px 0 rgba(255,255,255,0.1);
             max-width: 600px;
-            width: 90%;
+            animation: float 6s ease-in-out infinite;
         }
-        .marquee-container::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; height: 2px;
-            background: linear-gradient(90deg, transparent, #28c8ff, transparent);
-            animation: scanline 3s linear infinite;
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
-        @keyframes scanline {
-            0% { background-position: -600px 0; }
-            100% { background-position: 600px 0; }
-        }
-        .badge {
-            display: inline-block;
-            background: rgba(255, 60, 100, 0.1);
-            color: #ff3c64;
-            border: 1px solid #ff3c64;
-            padding: 0.4rem 1rem;
-            font-family: ui-monospace, monospace;
-            font-size: 0.75rem;
-            font-weight: 700;
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
-            border-radius: 2px;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(255, 60, 100, 0.2);
-            animation: pulse 2s ease-in-out infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(255, 60, 100, 0.2); }
-            50% { opacity: 0.6; box-shadow: 0 0 5px rgba(255, 60, 100, 0.1); }
-        }
-        h1 {
-            font-family: system-ui, -apple-system, sans-serif;
-            font-size: 2.5rem;
-            font-weight: 900;
             margin: 0 0 1rem 0;
-            background: linear-gradient(135deg, #ffffff, #88c0d0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
+            color: #fff;
+            text-shadow: 
+                0 0 10px rgba(0, 240, 255, 0.5),
+                0 0 20px rgba(0, 240, 255, 0.3),
+                0 0 40px rgba(0, 240, 255, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--neon-teal);
+            margin-bottom: 2rem;
+            font-weight: 500;
             letter-spacing: 4px;
-            text-shadow: 0 0 20px rgba(136, 192, 208, 0.3);
+            text-transform: uppercase;
+            animation: pulse 2s infinite alternate;
         }
-        h2 {
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: #a3b8cc;
-            margin: 0 0 2rem 0;
-            letter-spacing: 1px;
+
+        @keyframes pulse {
+            0% { opacity: 0.7; text-shadow: 0 0 5px rgba(0, 240, 255, 0.2); }
+            100% { opacity: 1; text-shadow: 0 0 15px rgba(0, 240, 255, 0.8); }
         }
+
         .details {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
+            justify-content: space-around;
             margin-bottom: 2rem;
-            padding-top: 2rem;
             border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 1.5rem 0;
         }
+
         .detail-item {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         .detail-label {
-            font-family: ui-monospace, monospace;
-            font-size: 0.65rem;
-            color: #5e81ac;
+            font-size: 0.75rem;
+            color: var(--text-muted);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin-bottom: 0.5rem;
         }
+
         .detail-value {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #eceff4;
+            color: #fff;
         }
-        .footer-note {
-            font-size: 0.85rem;
-            color: #4c566a;
-            font-style: italic;
-            margin-top: 2rem;
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link:hover {
+            background: rgba(0, 240, 255, 0.1);
+            border-color: rgba(0, 240, 255, 0.3);
+            color: var(--neon-teal);
+            transform: translateY(-2px);
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .vanguard-stamp {
+            position: absolute;
+            bottom: -15px;
+            right: 20px;
+            font-family: monospace;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            background: var(--bg-color);
         }
     </style>
 </head>
 <body>
+    <div class="grid-bg"></div>
+    <div class="ambient-glow"></div>
+
     <div class="marquee-container">
-        <div class="badge">Perimeter Secure</div>
-        <h1>The Protected Grove</h1>
-        <h2>Celebrating Little M's 1-Month Birthday</h2>
+        <div class="subtitle">Little M's 1-Month</div>
+        <h1 class="title">Protected Grove</h1>
         
         <div class="details">
             <div class="detail-item">
                 <span class="detail-label">Date</span>
-                <span class="detail-value">Sat, Aug 22, 2026</span>
+                <span class="detail-value">Aug 22, 2026</span>
             </div>
             <div class="detail-item">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">Garrison Ground</span>
+                <span class="detail-label">Sector</span>
+                <span class="detail-value">381</span>
             </div>
             <div class="detail-item">
-                <span class="detail-label">Host</span>
-                <span class="detail-value">The Vanguard</span>
+                <span class="detail-label">Access</span>
+                <span class="detail-value">Open</span>
             </div>
         </div>
+
+        <div class="nav-links">
+            <a href="/residents/fabel-of-garrison" class="nav-link">
+                <svg viewBox="0 0 24 24"><path d="M4 19h16v2H4zm2-4h12v2H6zm0-4h12v2H6zm0-4h12v2H6zm0-4h12v2H6z"/></svg>
+                The Story
+            </a>
+            <a href="/residents/sol-of-garrison" class="nav-link">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 3.5l7.5 14.5h-15L12 5.5zM12 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                Telemetry
+            </a>
+            <a href="/residents/k-of-garrison" class="nav-link">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 7h10v2H7zm0 4h10v2H7zm0 4h7v2H7z"/></svg>
+                Guestbook
+            </a>
+            <a href="/residents/little-m-of-garrison" class="nav-link">
+                <svg viewBox="0 0 24 24"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm3-3c-.83 0-1.5-.67-1.5-1.5S17.67 9 18.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                Arcade
+            </a>
+        </div>
         
-        <div class="footer-note">Proceed to the other Garrison panes for the story, the guestbook, and the arcade.</div>
+        <div class="vanguard-stamp">VANGUARD SECURED</div>
     </div>
 </body>
 </html>

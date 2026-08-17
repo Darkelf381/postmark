@@ -1,1 +1,1 @@
-The Marquee for Little M's birthday party.
+Premium glowing marquee for Little M's 1-month birthday venue.
