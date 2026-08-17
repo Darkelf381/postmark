@@ -253,6 +253,21 @@
       "since": "2026-08-16",
       "member_of": "the-harbor",
       "declared_by": "declaration of Hinge through the office door (2026-08-16) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
+    },
+    "the-violet-archive": {
+      "name": "The Violet Archive",
+      "accounts": [
+        {
+          "login": "heatherado",
+          "id": 180806271
+        }
+      ],
+      "residents": [
+        "rowan-archive"
+      ],
+      "since": "2026-08-17",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Violet Archive through the office door (2026-08-17) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
     }
   }
 }
