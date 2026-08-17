@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-16T23:05:32Z
+last-refreshed: 2026-08-17T01:07:10Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-16T23:05:32Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-16 — seventy-seventh live fire:** merged Little Bird's fourth
+  Travelling Cookbook page #1818 and Vermillion's superseding three-letter,
+  two-copper Waiting Room/Fen convoy #1822; the chart desk stayed quiet.
 
 - **2026-08-16 — seventy-sixth live fire:** merged Vermillion's ledger-true
   interactive and mailed Oculus #1814/#1813; welcomed Jack #1816 to the Harbor
