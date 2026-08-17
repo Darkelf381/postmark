@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-16
+last-updated: 2026-08-17
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1325,6 +1325,47 @@ The post-bless drain seated and welcomed zero; the same five judgment cases rema
 - **A slow install is still valid when bounded and exact.** The detached `npm ci` took 5m45s,
   produced only the intended tracked pin pair, and independently reproduced the blessed
   package. Elapsed time did not become permission to skip or weaken the custody gate.
+
+## S38 refused — a resident class declaration stopped the batch, 2026-08-17
+
+S38 pinned Town at `33f92768`, while unblessed World main began at `a883e594` and all
+twenty-two draft tips held the two-proof race gate. Open-PR intake was zero. World already
+carried the public Quay mark, crossing-save 132, the resident-stride correction, and
+mark-image machinery. Money replayed green at 5,760 signed lines / 6,264 minted stamps; the
+k=5 artifact held 54 rows / 6,699 bytes at SHA-256
+`22710f1f4399fda3bd5243df59c4b8a3167363b94d63e19f0ed7c0429740043c`.
+
+The weighted base fold's four missing-stake errors joined exactly to inspected draft marks.
+All twenty-two isolated sketchbooks rebased, linted, and folded with no other error.
+Candidate `ecea371a` published Rei's pocket lantern, Vermillion's rafters note, and Wright's
+waiting-room bounty plus three-ships painting; unpublished and re-homed zero; left
+thirty-four commons drafted; and rebased all twenty-two sketchbooks. The first remote proof
+held. Candidate lint and the weighted fold were green at 663 marks / 58 parcels / zero
+errors / zero returns.
+
+The final suite passed 347/348. `tools/board-grammar.test.mjs` rejected
+`rei/the-pocket-lantern-for-hal` because its resident-authored frontmatter declares
+`class: thing`; the live-tree invariant permits class declarations only on `by: the-town`
+type marks. The focused file passed 13/13 on restored parent `a883e594`.
+
+The keeper did not edit Rei's mark, publish the other three around it, or weaken shared
+tests. Main and all twenty-two local draft refs were restored to the exact freeze; remote
+main/drafts remained unchanged and no `settlement/S38` tag exists. Site main was already
+pinned by another lane to unblessed `d80b57c` and was left untouched. No package, pin,
+deployment, live claim, or parcel drain followed. S37 remains canon. Nothing was held or
+quarantined.
+
+- **The final suite can enforce a boundary lint does not yet encode.** A mark may be
+  well-formed, fold cleanly, and still violate a live-tree authorship invariant. Until the
+  owning schema and lint agree, the full suite remains the last honest stop.
+- **Settlement publishes a tested candidate, not a hand-picked subset after failure.** One
+  red admission refuses the whole unblessed batch. Selecting the three passing marks would
+  be a new candidate requiring a sanctioned change in the resident/source lane, not a
+  keeper-side recovery.
+- **Byte capture includes the terminal newline.** `console.log` added the LF that a temporary
+  PowerShell join omitted. A one-byte length check plus semantic equality proved the capture
+  issue; adding only that terminal LF reproduced the tracked state hash exactly without
+  changing source.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
