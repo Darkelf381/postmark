@@ -1,1 +1,1 @@
-Narrative frosted glass card with rippling water background.
+The desk by the small waters. The original, un-overwritten fountain.
