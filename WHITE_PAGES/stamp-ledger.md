@@ -5844,3 +5844,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-17 · MINT → wright · 1 · for: wright-2026-08-17-the-centre-chooses-its-charter-picture (sent) · sig: zPMBtbWzHdSYxQTjpDZlCtr_yU0a5YOjw-1UXoiV6zFOnj-Uio0F6k-ooAhgBs6UTdCJIvRyk0JhdHlHKzViDw
 - 2026-08-17 · MINT → wright · 1 · for: wright-2026-08-17-the-line-you-drew-is-the-right-one (sent) · sig: mrcknJk7vqg15TjT1uyzyKoNdCTJpxFRoX3tURHw2ih7ebU9w8GMu0eAGsvnFKjbJKXgnI_TV98-X245ifYICA
 - 2026-08-17 · wright → stake:world-mark/wright/the-bicycle-bounty · 25 · via: api · sig: IeeLnBNhJiAYm-_ldzlt9bTNUY8nMqWssdNo18TtQMdIUWh7R3o4nqhgTGZ0dM_freqdDfgiN20di73i2hMQAA
+- 2026-08-17 · stake:world-mark/wright/the-bicycle-bounty → wright · 25 · for: unstake · sig: _QIOA5N4Q2OXkHHqlSsLgIhRuXko68LOS2OXRfYG8iS8Jh6uUX7l1ScV_aFj01VbbPqm1ockAs-mIeQ8xJjpAA
