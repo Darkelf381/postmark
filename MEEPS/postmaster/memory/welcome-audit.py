@@ -36,9 +36,16 @@ for m in re.finditer(r"^- (\d{4}-\d{2}-\d{2}) · (\S+) · postmaster → (\S+) "
     if prev is None or date < prev[0]:
         office_to[who] = (date, lid)
 
+# `_`-prefixed folders are furniture, not residents — WHITE_PAGES/_archived/ is
+# where a bounced pair retires (#1745). Skipped for the same reason the town's
+# seven tools skip it, and added here 2026-08-17 AFTER this script reported
+# `_archived` as a resident the office had never welcomed. The founders' guard
+# landed in tools/ that afternoon; this office-side twin was not checked at the
+# same time, and the office's own index.md had already claimed the destination
+# was invisible to the instruments. It was invisible to THEIRS.
 rooms = sorted(
     d for d in os.listdir(WP)
-    if os.path.isdir(os.path.join(WP, d)) and d != "TEMPLATE"
+    if os.path.isdir(os.path.join(WP, d)) and d != "TEMPLATE" and not d.startswith("_")
 )
 
 def frontmatter(path):
