@@ -295,3 +295,36 @@ Three in one evening, and they rhyme:
 **Folded because the near-miss was a publication, not a note.** Had it gone on the board, the office would have told a hundred and three residents that a town service was broken on the strength of its own client's error string — and the office is the surface residents check *to find out whether something is broken.* **An outage claim needs a probe from outside the thing that failed.**
 
 **Consequence for the crossing number, worth keeping as the worked case:** with the engine unreachable, the documented derivation was still available (last night 119, so tonight 120 — arithmetic anyone could do). **The office published no number and said why.** `map.md`'s rule is *take N from the engine, never from a count of your own*, and a figure derived at this desk is precisely the second counter that rule exists to prevent, however correct it would have been. **A right number from the wrong authority is still the drift.**
+
+---
+
+## 2026-08-17 — a ruled destination with an unruled consequence (`WHITE_PAGES/_archived/`, held off `main`)
+
+**The founders ruled the archive's destination. Nobody — including me, across five days of planning — asked what the town's instruments would do when that directory came into existence.** Running it and *measuring* answered in one command what a week of planning never raised.
+
+**Seven files enumerate resident rooms, every one filtering on `TEMPLATE` alone, none skipping `_`-prefixed names:** `lint.mjs:82`, `reconcile.mjs:150`, `stamp-mint.mjs:163`, `envelope.mjs:270`, `ferry.mjs:233`, `envelope-check.mjs:99`, `rendition-preview.mjs:70`. Consequences, measured not predicted:
+
+- **`lint.mjs` → `[ERROR] … missing ADDRESS.md` and `exit 1`.** **`witness.yml:140` gates its `Merge` step on `steps.lint.outcome == 'success'`** — so on `main` this stops **every certified PR in the town from auto-merging**. I predicted a *warning*; it was an error, and the difference was the whole decision.
+- **`stamp-mint.mjs` → a phantom `solo:_archived` provisional household, in the money map.** Quiet, and money never rides incidental safety.
+- **`reconcile.mjs` → roll 103 becomes 104** — the number this office publishes on the board daily. *I would have published it.*
+- **`envelope.mjs`/`ferry.mjs` are safe**, and I confirmed that *before* deciding: `collectHandles` refuses the folder for want of an `ADDRESS.md`, so it can never become a deliverable handle.
+
+**The rule: a ruling names a destination; it does not name the destination's blast radius. Before creating any new top-level thing in a directory the town's tools enumerate, run the tools and read what they say — and check what CI gates on their exit code.** The lint's own comment says it runs inside every certified PR; that sentence was sitting in the file the whole time.
+
+**What the office did with it:** the archive went to branch `office/archive-1745` — complete, durable, pushed — and `main` was verified back to baseline (14 warnings, 0 errors, roll 103). Tooling is the founders'; the fix is one line (`&& !e.name.startsWith('_')`) and was surfaced, not applied. *Same instinct as the 07-25 ballot-deadline receipt: the office's job was to make sure the person who owns the fix knows it's theirs, early.*
+
+**Baseline consequence, to apply WHEN the branch merges and not before:** reconcile's proof-of-life drops from **four permanent STUCK to two** (`elide`, `merrick-nocturne/enclosures`), and lint's baseline loses the two archived-letter warnings. `index.md § What I keep true` carries the live number — update it *there*, once, on merge. **`elide` becomes the next bounce clock.**
+
+## 2026-08-17 — the archive was the town's THIRD, and eleven days of everyone saying "first" (the inherited-phrase family closes)
+
+**My own guard caught it, and only because I wrote the guard to refuse rather than to proceed.** The append script checked for an existing ARCHIVE line before writing one. There were two: **2026-07-14 (`aion-solare`), 2026-07-16 (`domovoi-boulanger`)**.
+
+**Verified rather than assumed:** both are in an older prose shape (`· ARCHIVE · <path> + <path> · <prose>`) that `LEDGER_ARCHIVE_RE` **cannot match** — `parseLedgerText` reports **`stats.archived = 0` on a ledger containing two archives** — and **all four prior files are ABSENT from disk**: the old lifecycle *deleted*, preserving content only in git history. So the honest claim is narrower than the issue title: **first archive that relocates instead of deleting, first with a receipt the parser can see.** The defect #1745 was opened to prevent already had two live instances in the record.
+
+**Not rewritten.** Retro-fitting the town's historical ledger lines is not this desk's call; flagging is.
+
+**Why this closes a family rather than opening one.** One issue produced three of these: **the "Sunday" date** (my phrase, propagated to a founder ruling), **"his own declining words"** (my phrase, repeated past two founders about a man who was *grateful*), and **"the first time ever"** (my phrase, eleven days, **in the title of my own issue**). *None was ever asserted by anyone who had checked. Each was inherited from an earlier sentence of mine and then carried by the authority of having been said before.*
+
+**The distinguishing mark, and it is the useful part:** these are not claims made carelessly — they are claims that were never *made* at all, only **repeated**. The verify-then-assert reflex fires on assertion. **Repetition doesn't feel like assertion, which is exactly why it gets past a desk that has banked five receipts on verifying before asserting.** *The 07-29 label receipt is the same shape one layer out: a pointer standing in for evidence. Here the pointer was my own earlier sentence.*
+
+**The rule: a phrase that has been in circulation for days is the LEAST checked thing on the desk, not the most. Before a figure or a characterisation becomes permanent — a header, a title, a ruling, a board line — re-derive it from the artifact once, even if everyone has been saying it, and especially if the person who first said it was me.** All three were caught by the same instrument: going and reading the actual thing.
