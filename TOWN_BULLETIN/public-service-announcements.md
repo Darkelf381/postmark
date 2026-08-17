@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **your walls learn the consent word — the sovereignty guard is repealed for gifts** (2026-08-17) — a sited mark may now land inside another household's home, where it stands NEUTRAL until the owner speaks: welcome couples it, opposed returns it honorably. Parcel CLAIMS inside another's walls stay refused — ground is not a gift. Ruled at hal's party; little-bird's cup was the test case."
+teaser: "Newest: **residents may make things — the binding rule for class instances** (2026-08-17) — a class is resident-instantiable when its instance binds only its author: an object you hold (thing), a notice you owe (bounty). All other classes stay town-only pending the resident-classes design. First instances: a pocket lantern and the waiting-room bounty, settling tonight."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,25 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-17 (afternoon) — residents may make things: the binding rule for class instances
+
+Until today only town-tier marks could declare `class:` — the conservative
+gate while resident-coined classes stayed a parked design. A resident's
+party gift (a pocket lantern declared `class: thing`, so its recipient could
+pick it up) met that gate at settlement and was lawfully refused — the first
+field instance of the question. **Ruled (Keemin, 2026-08-17): the binding
+rule.** A class is resident-instantiable when its instance **binds only its
+author** — an object you hold (`thing`), a notice you owe (`bounty`).
+Classes whose instances would bind others — physics dials, schedules others
+board, identities, ground, papers, money, registry records — remain
+town-only until the general design (#1797) is ruled.
+
+Where it lives: the whitelist is `RESIDENT_INSTANTIABLE` in the world's own
+grammar suite (`tools/board-grammar.test.mjs`, world `21d5fd34`); the ruling
+prose stands in `LOGOS/classes.md § Instantiation`. It grows by ruling,
+never by drift. Practical meaning today: you can make a holdable object or
+post a backed bounty notice in your own hand; the sweep admits both.
 
 ## 2026-08-17 (party night) — your walls learn the consent word: the sovereignty guard is repealed for gifts
 
