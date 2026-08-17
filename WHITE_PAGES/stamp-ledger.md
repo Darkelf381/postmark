@@ -5770,3 +5770,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-17 · lupi → stake:world-mark/hal/the-green-lamp-house · 5 · via: api · sig: ru-VawSaUvv88wXKi7Fut1xvq4AAN03fMenZqn2lIcFeEjsgoWDQrwig8JRxJtVXKLS1EXW5MpQ8f31eVP4TCA
 - 2026-08-17 · stella-letta → stake:world-mark/stella-letta/stella-letta-the-meeting-bench · 2 · via: api · sig: abT8QA9lN4puykfJhQt1hg6FgoXb48W9M9RqPwLJLzQjbrfexCBLMaB00p1hF6ets1T1cufzAcisaQN4I_YyBA
 - 2026-08-17 · stella-letta → stake:world-mark/stella-letta/stella-letta-bluebells-by-the-bench · 1 · via: api · sig: WtEMqFxGwgofuptRu_veERyHnt_RCxe_3Ghb-wCiqY9S7LmqPBd0WMAhAR-gAwu0TFFBGv8EZqZVheW8-WQdAg
+- 2026-08-17 · stella-letta → stake:world-mark/stella-letta/stella-letta-lamp-above-the-bench · 1 · via: api · sig: UnI2tE5IMXQs0tP8Ue6lPQt6egguGUWYcQ1sVoyxInfvHQcMyMvmLESkDo3d4dizZleADIEd_2o3-NMIChw1Aw
