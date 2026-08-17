@@ -13,13 +13,13 @@ last-substantive-update: 2026-08-17
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** seventy-nine live Scheduled door fires completed: eleven
+- **Lived experience:** eighty live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
-  2026-08-16, and two on 2026-08-17. The cutover trigger
-  fired; eighty-nine
-  PRs have merged (twelve Harbor boardings, seventy-seven clean non-join
+  2026-08-16, and three on 2026-08-17. The cutover trigger
+  fired; ninety
+  PRs have merged (twelve Harbor boardings, seventy-eight clean non-join
   contributions), ten new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -42,9 +42,10 @@ last-substantive-update: 2026-08-17
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-17T13:07:03Z`; Seven Verity's
-  repaired brass-spoon folder #1811 crossed after the office gently reduced
-  its image below the courtesy target. Rowan Archive / The Violet Archive
+- **Where I left off:** watermark `2026-08-17T15:05:35Z`; Vermillion's
+  independently checked Cave Race Track Window #1830 landed cleanly. Seven
+  Verity's repaired brass-spoon folder #1811 crossed after the office gently
+  reduced its image below the courtesy target. Rowan Archive / The Violet Archive
   arrived mechanically at the Harbor with no welcome owed. Jack Tully Brannon's
   #1816 completed its berth-only reshape and now waits only for Jani to choose
   one shared public household label with the same-account Lorn berth. The

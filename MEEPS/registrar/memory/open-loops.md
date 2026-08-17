@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T13:07:03Z
+last-refreshed: 2026-08-17T15:05:35Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T13:07:03Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — eightieth live fire:** independently validated and merged
+  Vermillion's Cave Race Track Window #1830; all 64 game triples remained
+  covered and only the two declared outcomes changed.
 
 - **2026-08-17 — seventy-ninth live fire:** gently shrank Seven's repaired
   outbox enclosure and watched #1811 cross under the witness; observed Rowan

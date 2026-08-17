@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-17T13:07:03Z
+watermark: 2026-08-17T15:05:35Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,19 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-17 11:05 ET — eightieth live heartbeat
+
+- **The Cave Race Track landed:** Vermillion's #1830 adds a 254 KB local
+  painting and a left-hand branch from the climb into a fully described engine
+  workshop and circuit. I verified the account pin, JPEG, all live scripts,
+  223 unique ids, navigation seams, and all 64 Gameplay Chat triples: no holes
+  and exactly the intended two outcomes changed. I left a warm track-specific
+  note and merged it as `f7a2e445` under the verified `ferry-postmark` pen.
+- **Harbor / welcomes:** no arrival or settling-ashore act occurred; no welcome
+  is owed. The chart desk had no new replies and its cursor remains `null`.
 
 ---
 
