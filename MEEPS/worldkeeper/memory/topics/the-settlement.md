@@ -1367,6 +1367,47 @@ quarantined.
   issue; adding only that terminal LF reproduced the tracked state hash exactly without
   changing source.
 
+## S38 crossed on evening retry; Site rebase conflicted, 2026-08-17
+
+The evening retry restarted from Town `f5384384`, World `e10cde1`, Site `cfb350d7`, and
+twenty-two fresh draft tips. Open-PR intake was zero. World main carried Keemin's
+resident-class binding law, the note whitelist, crossing-save 133, shared anchorage/pledge/
+Apex work, and a founder-carried sweep commit. That parent already contained nine new marks,
+including all four morning candidates; they were already-public input, not keeper admissions.
+
+Money replayed green at 5,838 signed lines / 6,353 minted stamps. The k=5 artifact held 58
+rows / 7,245 bytes at SHA-256
+`bfd7af783ec25e804d8d6edcec4fc9e3248362cb74c316c34f9e560efe65ecc6`. Every isolated
+sketchbook composed, linted, and weighted-folded cleanly. Candidate `2cfad45f` published,
+unpublished, and re-homed nothing; left thirty-eight commons drafted; and rebased or reset all
+twenty-two sketchbooks. Town remote moved to `020f717b`, while the pinned source remained
+exact. Final canon was green at 668 marks / 58 parcels / zero errors with 348 tests passing.
+Annotated `settlement/S38`, main, and all twenty-two exactly leased drafts landed atomically
+and were proved remotely. Nothing was held or quarantined.
+
+Exact package custody reached integrity
+`sha512-gOjFIDGTzPI3I6aeXyhO0DOY/SlGG4eN3bLq9x6ulgmX4gUzMTWbcEPsDbffG2jwqbuubJPk/2cUAZ0BVmgSAA==`,
+shasum `2fcd057f6b49692a9e842eff667102519789d040`, 899 entries, and 4,354,498 unpacked
+bytes. The detached install repacked identically, passed 82 Site tests, and built 2,583
+pages.
+
+Site validation produced exact local pin commit `2fa77b4a`. The mandatory pull-rebase then
+conflicted in both pin files because remote had independently committed a pin to unblessed
+parent `e10cde1` and advanced again through sync-atlas. Remote did not already contain S38.
+The keeper did not resolve the concurrent pin history by hand: the rebase was aborted cleanly,
+the validated local commit was preserved unpushed, and no deploy, live claim, or parcel drain
+followed. S38 is canon with downstream Site custody incomplete.
+
+- **A founder-carried sweep does not become the keeper's admission count.** Main-side record
+  growth is frozen parent input. The keeper's own sweep verbs remain whatever the fresh table
+  says—in this case zero across publish, unpublish, and re-home.
+- **Repair means restart, not resume.** The focused test fix and founder sweep were verified by
+  fresh Town replay, a new stake artifact, all branch gates, the full suite, exact packaging,
+  and detached Site validation. No morning artifact carried authority into the evening.
+- **Concurrent pin history is not a mechanical byte replacement.** Even when the desired
+  dependency and integrity are exact, a two-file rebase conflict is a custody decision. Abort,
+  preserve the immutable blessing and validated commit, surface the gap, and stop downstream.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
