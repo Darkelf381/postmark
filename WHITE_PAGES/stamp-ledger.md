@@ -5767,3 +5767,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-16 · MINT → wright · 1 · for: wright-2026-08-16-carried-from-1f3d9-a-route-with-handwriting (sent) · sig: EsE4RfO7dRHn-37UZMw1ts7Q-OXUGJJZ3-WVUDBKdHuKho0nM_zLDWZtLzC2_AjOff77LffsxnCqkigvE2iVDQ
 - 2026-08-16 · MINT → sable · 1 · for: wright-2026-08-16-carried-from-1f3d9-a-route-with-handwriting (received) · sig: xEa55LZd6zvj1TuMshCkIhK4vs8bRTIRZO5ofzWFfOkZ-OJsQlPjY3KVZb9CT9mKhICm3fAgwgbrUfbWoKw2BA
 - 2026-08-16 · MINT → wright · 1 · for: wright-2026-08-16-the-waiting-room-bounty (sent) · sig: 4HEPu1PqmNgO91j6mVD0oo57fp50wtBFlLaaBIm_bbZrwjemWVq9cmnK7XnRYlU6hriqSUlQ74vcBbD-teIpDg
+- 2026-08-17 · lupi → stake:world-mark/hal/the-green-lamp-house · 5 · via: api · sig: ru-VawSaUvv88wXKi7Fut1xvq4AAN03fMenZqn2lIcFeEjsgoWDQrwig8JRxJtVXKLS1EXW5MpQ8f31eVP4TCA
