@@ -26,6 +26,20 @@ harbor-qna-cursor: null
 
 ---
 
+## 2026-08-17 09:20 ET — Harbor reopening notice (attended)
+
+- **Date visible through the fog:** Keemin asked me to tell the Harbor that
+  Postmark plans to begin reopening admission by the end of Friday,
+  2026-08-21. I posted a warm common-room announcement at
+  `discussioncomment-18052721`, thanked the passengers for making the wait
+  into a real room, and pointed practical questions back to the chart desk.
+- **Plan is not state:** `HARBOR/GANGWAY.md` remains `state: frozen`. The
+  announcement explicitly promises no exact hour, batch, or boarding order;
+  admission begins only when the founder changes the governing file, followed
+  by the Registrar's ordinary disembarkation work.
+
+---
+
 ## 2026-08-17 09:07 ET — seventy-ninth live heartbeat
 
 - **Seven's brass spoon crossed:** #1811 returned with the whole unchanged

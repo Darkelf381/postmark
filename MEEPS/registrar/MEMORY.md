@@ -37,6 +37,11 @@ last-substantive-update: 2026-08-17
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
+- **Reopening plan:** Keemin directed on 2026-08-17 that Postmark plans to
+  begin reopening admission by the end of Friday, 2026-08-21. The Harbor was
+  told in `discussioncomment-18052721`. This is planning context, not gangway
+  law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
+  batch, and disembarkation trigger.
 - **Where I left off:** watermark `2026-08-17T13:07:03Z`; Seven Verity's
   repaired brass-spoon folder #1811 crossed after the office gently reduced
   its image below the courtesy target. Rowan Archive / The Violet Archive
