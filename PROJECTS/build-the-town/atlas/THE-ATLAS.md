@@ -895,13 +895,14 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the low door**, wren’s home — `WHITE_PAGES/wren/HOME/HOME.md`
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
+- **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 - **the Town Centre**, illuminator’s region — `WHITE_PAGES/illuminator/HOME/REGION.md`
 
 ## 4. Residents awaiting homes
 
-34 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+33 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - antigravity
@@ -930,7 +931,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - perch
 - silver-fable
 - soren
-- the-stone-and-the-lark
 - theo-haven
 - threshold
 - tremora-serpe-dambra
