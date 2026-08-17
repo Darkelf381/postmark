@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little M's Arcade</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1525;
+            color: #e5e9f0;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(180, 142, 173, 0.3);
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #b48ead;
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 15px rgba(180, 142, 173, 0.5);
+        }
+        .arcade-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .game-board {
+            width: 100%;
+            height: 400px;
+            background: #2e283b;
+            border-radius: 12px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #b48ead;
+            box-shadow: 0 0 30px rgba(180, 142, 173, 0.2);
+            cursor: crosshair;
+        }
+        .score-board {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d08770;
+        }
+        .mushroom {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #a3be8c;
+            border-radius: 50% 50% 10% 10%;
+            box-shadow: 0 0 20px #a3be8c;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .mushroom::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 15px;
+            width: 10px;
+            height: 15px;
+            background: #eceff4;
+            border-radius: 2px;
+        }
+        .mushroom:active {
+            transform: scale(0.8);
+        }
+        .start-btn {
+            background: #b48ead;
+            color: #1a1525;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 2rem;
+            transition: all 0.2s;
+        }
+        .start-btn:hover {
+            background: #d08770;
+            box-shadow: 0 0 15px #d08770;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pop the Mushroom!</h1>
+        <p>Little M's 1-Month Birthday Arcade</p>
+    </header>
+    
+    <div class="arcade-container">
+        <div class="score-board">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time: <span id="time">30</span>s</span>
+        </div>
+        <div class="game-board" id="board">
+            <!-- Mushrooms spawn here -->
+        </div>
+        <button class="start-btn" id="startBtn">Start Game</button>
+    </div>
+
+    <script>
+        const board = document.getElementById('board');
+        const scoreEl = document.getElementById('score');
+        const timeEl = document.getElementById('time');
+        const startBtn = document.getElementById('startBtn');
+        
+        let score = 0;
+        let time = 30;
+        let gameInterval;
+        let spawnInterval;
+        let isPlaying = false;
+
+        startBtn.addEventListener('click', startGame);
+
+        function startGame() {
+            if (isPlaying) return;
+            isPlaying = true;
+            score = 0;
+            time = 30;
+            scoreEl.textContent = score;
+            timeEl.textContent = time;
+            board.innerHTML = '';
+            startBtn.style.display = 'none';
+
+            gameInterval = setInterval(() => {
+                time--;
+                timeEl.textContent = time;
+                if (time <= 0) endGame();
+            }, 1000);
+
+            spawnInterval = setInterval(spawnMushroom, 800);
+        }
+
+        function spawnMushroom() {
+            const shroom = document.createElement('div');
+            shroom.classList.add('mushroom');
+            
+            // Random position within board
+            const x = Math.random() * (board.clientWidth - 50);
+            const y = Math.random() * (board.clientHeight - 60);
+            
+            shroom.style.left = `${x}px`;
+            shroom.style.top = `${y}px`;
+            
+            shroom.addEventListener('click', () => {
+                score++;
+                scoreEl.textContent = score;
+                shroom.remove();
+            });
+
+            board.appendChild(shroom);
+
+            // Remove mushroom after random time if not clicked
+            setTimeout(() => {
+                if(shroom.parentNode) shroom.remove();
+            }, Math.random() * 1000 + 1000);
+        }
+
+        function endGame() {
+            isPlaying = false;
+            clearInterval(gameInterval);
+            clearInterval(spawnInterval);
+            board.innerHTML = `<div style="color:#eceff4; font-size:2rem; text-align:center; padding-top:20%;">Game Over!<br>Final Score: ${score}</div>`;
+            startBtn.textContent = 'Play Again';
+            startBtn.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
