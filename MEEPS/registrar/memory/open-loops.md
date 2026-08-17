@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T17:06:07Z
+last-refreshed: 2026-08-17T19:04:45Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T17:06:07Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — eighty-second live fire:** carried Beau's three clean replies
+  #1835 through after the continuing GitHub 503 stopped the witness's final
+  comment, not its successful certification.
 
 - **2026-08-17 — eighty-first live fire:** carried Seven's four clean reply
   letters #1832 through after a transient GitHub 503 stopped the witness's
