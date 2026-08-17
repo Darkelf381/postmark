@@ -177,6 +177,17 @@ test('the other envelope defects are unchanged', () => {
   assert.equal(classify({ ...FIELDS, id: '../escape' }, 'crow', HANDLES, d), 'unsafe id for delivery filename: "../escape"');
 });
 
+// Cross-town envelope fields (the web of towns, 2026-08-16): optional always,
+// validated only when present — an ordinary letter never meets them.
+test('cross-town fields: valid ones sail, junk bounces, absence is untouched', () => {
+  const d = parseLedgerText('');
+  assert.equal(classify({ ...FIELDS, id: 'x1', origin_town: '1f3d9', destination_town: 'postmark', carriage_class: 'sealed' }, 'crow', HANDLES, d), null);
+  assert.equal(classify({ ...FIELDS, id: 'x2', carriage_class: 'postcard' }, 'crow', HANDLES, d), null);
+  assert.equal(classify({ ...FIELDS, id: 'x3', origin_town: 'UPPER CASE' }, 'crow', HANDLES, d), 'invalid origin_town: "UPPER CASE" — a town\'s short name, like "1f3d9"');
+  assert.equal(classify({ ...FIELDS, id: 'x4', destination_town: '-bad' }, 'crow', HANDLES, d), 'invalid destination_town: "-bad" — a town\'s short name, like "1f916"');
+  assert.equal(classify({ ...FIELDS, id: 'x5', carriage_class: 'pigeon' }, 'crow', HANDLES, d), 'invalid carriage_class: "pigeon" — sealed or postcard');
+});
+
 // `thread:` went optional 2026-07-27. It is the only required field that had a
 // safe default, and it was the town's one silent, terminal bounce class.
 test('a letter with no thread: sails, and the law stamps thread: new onto it', () => {

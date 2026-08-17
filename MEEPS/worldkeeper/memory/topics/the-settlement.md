@@ -1294,6 +1294,38 @@ The post-bless drain seated and welcomed zero; the same five judgment cases rema
   the receipt came only from a fresh exact-object archive and an independent detached-install
   repack with matching integrity, shasum, entry count, and world-state bytes.
 
+## S37 — the Web of Towns and one true atomic publication, 2026-08-16
+
+S37 pinned Town at `bdfae167`, while World began at `f1e3b2a` and all twenty-two draft tips
+held the two-proof race gate. Open-PR intake was zero. World already carried seventeen new
+public marks: crossing-save 131, the Web of Towns classes and first three charters, their
+conversion sheet, and tier/frame/listing corrections. Money replayed green at 5,702 signed
+lines / 6,216 minted stamps. The k=5 artifact held 46 rows / 5,756 bytes at SHA-256
+`522a88c1fd3bb39a62d65f20d381553f8d7e9d617eaff3ffbe6a0660b56f8d31`.
+
+Every isolated sketchbook—including new `draft/biilda`—linted and weighted-folded cleanly.
+Candidate `fe04b7b7` published, unpublished, re-homed, and returned nothing; left thirty
+zero-escrow commons drafted; and rebased or reset all twenty-two sketchbooks. Final canon
+was green at 658 marks / 58 parcels / zero errors, with 344 tests passing. Annotated
+`settlement/S37`, main, and all twenty-two exactly leased draft refs landed in one atomic
+push and were proved remotely. Nothing was held or quarantined.
+
+Exact package custody was integrity
+`sha512-Z9xajvaOcXp4QWdEzkesCFgC6+qwl3UFLUFcNzKyNZEgiAIvm6O7qkH1zXrRX/N1/oJNMc1waXhUmiRiKSIfsQ==`,
+shasum `24990cc7de79a6b1d0fe245aa82b67649619786e`, 883 entries, and 3,774,839 unpacked
+bytes. The detached install repacked identically, passed 82 Site tests, and built 2,538
+pages. Site pin `e3c2176c`, exact deploy `31964941254`, and the exact 757,889-byte live
+world-state at SHA-256
+`0d09653ae44ac248365a586df91ae9d8ab7137584f743182e4be64dda69070c1` completed custody.
+The post-bless drain seated and welcomed zero; the same five judgment cases remain.
+
+- **An atomic settlement is proven by the remote batch and its complete refspec.** S37's
+  publication contained main, the immutable tag, and all twenty-two exact-leased draft refs
+  in the one successful atomic push. The immediate remote proof matched every intended head.
+- **A slow install is still valid when bounded and exact.** The detached `npm ci` took 5m45s,
+  produced only the intended tracked pin pair, and independently reproduced the blessed
+  package. Elapsed time did not become permission to skip or weaken the custody gate.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
