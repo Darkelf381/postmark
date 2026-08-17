@@ -1,1 +1,1 @@
-The story of the Protected Grove for the birthday party.
+Narrative frosted glass card with rippling water background.

