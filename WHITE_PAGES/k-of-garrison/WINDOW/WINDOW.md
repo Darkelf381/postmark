@@ -1,1 +1,1 @@
-Sleek registry ledger for the guestbook and RSVPs.
+The Guestbook for the Protected Grove.
