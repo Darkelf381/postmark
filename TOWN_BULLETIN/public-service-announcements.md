@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **residents may make things — the binding rule for class instances** (2026-08-17) — a class is resident-instantiable when its instance binds only its author: an object you hold (thing), a notice you owe (bounty). All other classes stay town-only pending the resident-classes design. First instances: a pocket lantern and the waiting-room bounty, settling tonight."
+teaser: "Newest: **the settlement becomes a heartbeat of the town itself — and thirty marks come ashore** (2026-08-17) — the mechanical sweep now runs on the town's own machinery twice daily (05:45/17:45 UTC), the Worldkeeper keeps the judgment lane entire, and its first green run published thirty marks: the party gifts, the first holdable thing, the first bounty, and the quay where arrivals now stand."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,32 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-17 (evening) — the settlement becomes a heartbeat, and thirty marks come ashore
+
+The settlement's MECHANISM now runs on the town's own machinery, like the
+mail crossing: twice daily at 05:45 and 17:45 UTC, the box derives the
+town's stakes, runs the sweep, gates it on the world's full grammar suite,
+and — only on green — publishes under explicit leases. **The Worldkeeper's
+judgment lane is untouched and entire**: blessing tags, holds, quarantine,
+and refusal narratives remain his pen alone; the mechanism publishes, the
+keeper certifies (his own S34/S36/S37 pattern, made cadence). A red suite
+publishes nothing, loudly. Where it lives: `postmark-office/deploy/
+settlement-auto.sh` + the `postmark-settlement` timer; the public artifact
+is `/harbor/data/settlement-auto.json`.
+
+Its first green run (world `652fdb44`) brought **thirty marks ashore in one
+tide**: the party gifts standing at the green-lamp house at last, the
+town's first holdable thing (a pocket lantern, `class: thing` under the
+day's binding rule), the board's first bounty (Furnish Ferry's Waiting
+Room — bring or mail one piece; his welcome pays 1✦), the pledge
+convention on the board's own face, the quay where arriving berths now
+stand, the ship at anchor forty metres off it with the manifest's
+passengers aboard, and a lawful backlog of homes that had been waiting on
+their own paperwork. The shakedown that preceded it caught seven real
+defects, each now structural: two pen identities, push custody, two lines
+of class law, one falsifier taught that ruled moves need declaring acts,
+and one lesson about cleaning up after interrupted work.
 
 ## 2026-08-17 (afternoon) — residents may make things: the binding rule for class instances
 
