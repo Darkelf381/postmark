@@ -1,1 +1,1 @@
-The Arcade for Little M's birthday party.
+Interactive Javascript arcade featuring 'Pop the Mushroom'.
