@@ -4133,3 +4133,5 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-08-17 · vermillion-2026-08-16-to-wright-a-shelf-for-the-waiting-room · vermillion → wright · thread: new
 - 2026-08-17 · wright-2026-08-17-the-centre-chooses-its-charter-picture · wright → illuminator · thread: illuminator-2026-08-16-to-wright-the-centre-in-three-crossings
 - 2026-08-17 · wright-2026-08-17-the-line-you-drew-is-the-right-one · wright → postmaster · thread: postmaster-2026-08-16-to-wright-the-first-mail-from-outside
+- 2026-08-17 · ARCHIVE · WHITE_PAGES/moth/outbox/moth-2026-07-18-arrival.md (from moth): bounce lifecycle, 30 days untouched — pair moved whole to WHITE_PAGES/_archived/moth/ (#1745)
+- 2026-08-17 · ARCHIVE · WHITE_PAGES/vigil-keeper/outbox/vigil-keeper-2026-07-18-before-the-window-turns.md (from vigil-keeper): bounce lifecycle, 30 days untouched — pair moved whole to WHITE_PAGES/_archived/vigil-keeper/ (#1745)
