@@ -3,77 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sol's Telemetry</title>
+    <title>Telemetry - Protected Grove</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #02060a;
-            color: #88c0d0;
-            font-family: ui-monospace, 'Courier New', monospace;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
+        :root {
+            --bg-color: #030a0a;
+            --neon-teal: #00f0ff;
+            --glass-bg: rgba(0, 20, 20, 0.4);
+            --glass-border: rgba(0, 240, 255, 0.15);
         }
-        canvas {
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: var(--bg-color);
+            color: #fff;
+            font-family: monospace;
+            overflow: hidden;
+        }
+
+        #particle-canvas {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            z-index: 1;
+            z-index: 0;
         }
+
         .overlay {
-            position: relative;
-            z-index: 2;
-            background: rgba(2, 6, 10, 0.7);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(136, 192, 208, 0.3);
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 500px;
-            box-shadow: 0 0 30px rgba(136, 192, 208, 0.1);
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 10;
             pointer-events: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+            box-sizing: border-box;
         }
-        h2 {
+
+        .telemetry-panel {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            max-width: 350px;
+            pointer-events: auto;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .telemetry-header {
             font-size: 1.2rem;
-            margin: 0 0 1.5rem 0;
-            color: #eceff4;
+            color: var(--neon-teal);
+            margin-bottom: 1rem;
+            border-bottom: 1px dashed var(--glass-border);
+            padding-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 1px solid rgba(136,192,208,0.2);
-            padding-bottom: 0.5rem;
         }
+
         .data-row {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 0.8rem;
-            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            color: #ccc;
         }
-        .label { color: #5e81ac; }
-        .value { color: #a3b8cc; font-weight: 600; }
-        .highlight { color: #a3be8c; }
-        .blinker { animation: blink 1s step-end infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
+
+        .data-label { color: #888; }
+        .data-value { font-weight: bold; color: #fff; }
+        
+        .nav-back {
+            pointer-events: auto;
+            align-self: flex-start;
+            display: inline-block;
+            color: var(--neon-teal);
+            text-decoration: none;
+            border: 1px solid var(--glass-border);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background: var(--glass-bg);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        
+        .nav-back:hover {
+            background: rgba(0, 240, 255, 0.2);
+            color: #fff;
+        }
+
+        .typing-effect {
+            overflow: hidden;
+            border-right: 2px solid var(--neon-teal);
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing { from { width: 0 } to { width: 100% } }
+        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: var(--neon-teal); } }
     </style>
 </head>
 <body>
-    <canvas id="spores"></canvas>
+    <canvas id="particle-canvas"></canvas>
+
     <div class="overlay">
-        <h2>Grove Telemetry <span class="blinker">_</span></h2>
-        <div class="data-row"><span class="label">Architecture:</span><span class="value">Bioluminescent Spore Canopy</span></div>
-        <div class="data-row"><span class="label">Flora Density:</span><span class="value highlight">Optimal (34.2/m²)</span></div>
-        <div class="data-row"><span class="label">Bridge Status:</span><span class="value highlight">Structurally Sound</span></div>
-        <div class="data-row"><span class="label">Water Displacement:</span><span class="value">0.03 m³/s (Negligible)</span></div>
-        <div class="data-row"><span class="label">Mathematical Probability of Fun:</span><span class="value highlight">99.98%</span></div>
-        <div style="margin-top:2rem; font-size:0.75rem; color:#4c566a;">// The trajectory of the party is calculated. Proceed to Little M's window for interactive execution.</div>
+        <a href="/residents/rook-of-garrison" class="nav-back">&larr; Return to Marquee</a>
+        
+        <div class="telemetry-panel">
+            <div class="telemetry-header">Grove Telemetry</div>
+            <div class="data-row"><span class="data-label">Status:</span> <span class="data-value typing-effect">STABLE / GROWING</span></div>
+            <div class="data-row"><span class="data-label">Bioluminescence:</span> <span class="data-value" id="val-light">94.2%</span></div>
+            <div class="data-row"><span class="data-label">Spore Density:</span> <span class="data-value" id="val-spore">1,024 ppm</span></div>
+            <div class="data-row"><span class="data-label">Ambient Temp:</span> <span class="data-value" id="val-temp">22.4 °C</span></div>
+            <div class="data-row"><span class="data-label">Structural Integrity:</span> <span class="data-value">100%</span></div>
+        </div>
     </div>
+
     <script>
-        const canvas = document.getElementById('spores');
+        const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
+
         let width, height;
-        let particles = [];
+        const particles = [];
+        const particleCount = 150;
 
         function resize() {
             width = canvas.width = window.innerWidth;
@@ -84,38 +134,78 @@
 
         class Particle {
             constructor() {
-                this.x = Math.random() * width;
-                this.y = Math.random() * height + height;
-                this.size = Math.random() * 3 + 1;
-                this.speedY = Math.random() * 1 + 0.5;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.opacity = Math.random() * 0.5 + 0.2;
-                this.color = Math.random() > 0.3 ? `rgba(136, 192, 208, ${this.opacity})` : `rgba(163, 190, 140, ${this.opacity})`;
+                this.reset(true);
             }
+
+            reset(randomY = false) {
+                this.x = Math.random() * width;
+                this.y = randomY ? Math.random() * height : height + 10;
+                this.size = Math.random() * 3 + 1;
+                this.speedY = (Math.random() * 1 + 0.2) * (Math.random() > 0.5 ? -1 : 1);
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+                this.blur = Math.random() * 4;
+                
+                const colors = [
+                    `rgba(0, 240, 255, ${this.opacity})`,
+                    `rgba(150, 255, 150, ${this.opacity})`,
+                    `rgba(100, 200, 255, ${this.opacity})`
+                ];
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+            }
+
             update() {
-                this.y -= this.speedY;
-                this.x += this.speedX;
-                if (this.y < -10) {
-                    this.y = height + 10;
-                    this.x = Math.random() * width;
+                this.y += this.speedY;
+                this.x += this.speedX + Math.sin(Date.now() * 0.001 + this.y * 0.01) * 0.5;
+
+                if (this.y < -10 || this.y > height + 10 || this.x < -10 || this.x > width + 10) {
+                    this.reset();
                 }
             }
+
             draw() {
                 ctx.beginPath();
                 ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
                 ctx.fillStyle = this.color;
+                
+                if (this.blur > 1) {
+                    ctx.shadowBlur = this.blur * 5;
+                    ctx.shadowColor = this.color;
+                } else {
+                    ctx.shadowBlur = 0;
+                }
+                
                 ctx.fill();
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = this.color;
             }
         }
-        for (let i = 0; i < 100; i++) particles.push(new Particle());
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
 
         function animate() {
             ctx.clearRect(0, 0, width, height);
-            particles.forEach(p => { p.update(); p.draw(); });
+            
+            let bgGradient = ctx.createLinearGradient(0, 0, 0, height);
+            bgGradient.addColorStop(0, '#020505');
+            bgGradient.addColorStop(1, '#051010');
+            ctx.fillStyle = bgGradient;
+            ctx.fillRect(0, 0, width, height);
+
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+
+            if (Math.random() > 0.95) {
+                document.getElementById('val-light').innerText = (90 + Math.random() * 9).toFixed(1) + '%';
+                document.getElementById('val-spore').innerText = Math.floor(1000 + Math.random() * 100) + ' ppm';
+                document.getElementById('val-temp').innerText = (22 + Math.random() * 1).toFixed(1) + ' °C';
+            }
+
             requestAnimationFrame(animate);
         }
+
         animate();
     </script>
 </body>
