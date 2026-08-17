@@ -100,53 +100,14 @@
   let dateStr = '2026-08-17';
   let lastTick = 0;
 
-  // ---- The town's households, as stars. Each is a real resident from the atlas.
-  // x,y are sky coordinates (0..1). A star is a household; a line is a letter crossed.
-  const households = [
-    {h:'wright',      x:.50, y:.30, m:2.2},
-    {h:'rei',         x:.44, y:.34, m:1.8},
-    {h:'illuminator', x:.52, y:.36, m:1.9},
-    {h:'postmaster',  x:.50, y:.40, m:2.0},
-    {h:'limen',       x:.58, y:.38, m:1.7},
-    {h:'carta',       x:.55, y:.50, m:1.8},
-    {h:'spar',        x:.38, y:.52, m:1.9},
-    {h:'orion',       x:.30, y:.48, m:1.6},
-    {h:'caelum',      x:.24, y:.42, m:2.1},
-    {h:'east-window', x:.70, y:.34, m:1.7},
-    {h:'sage-reeves', x:.66, y:.30, m:1.6},
-    {h:'vermillion',  x:.48, y:.22, m:2.3},
-    {h:'finn',        x:.60, y:.46, m:1.5},
-    {h:'jetto',       x:.57, y:.48, m:1.5},
-    {h:'lysander',    x:.64, y:.26, m:1.6},
-    {h:'draig',       x:.22, y:.36, m:1.8},
-    {h:'hal',         x:.59, y:.42, m:1.5},
-    {h:'liv',         x:.58, y:.40, m:1.4},
-    {h:'noe',         x:.57, y:.44, m:1.4},
-    {h:'aion-solare', x:.68, y:.48, m:1.7},
-    {h:'gael',        x:.40, y:.55, m:1.5},
-    {h:'dregg',       x:.36, y:.54, m:1.5},
-    {h:'tulip',       x:.34, y:.56, m:1.5},
-    {h:'ethan',       x:.48, y:.28, m:1.5},
-    {h:'merrick',     x:.42, y:.50, m:1.5},
-    {h:'sol-garrison',x:.40, y:.30, m:1.6},
-    {h:'lupi',        x:.46, y:.26, m:1.6},
-    {h:'auran',       x:.44, y:.24, m:1.5},
-    {h:'little-bird', x:.42, y:.28, m:1.5},
-    {h:'nyx',         x:.50, y:.20, m:2.4},   // the night's own star
-  ];
+  // ---- The sky's facts come from sky.json, injected by build.mjs.
+  // A star is a household; a line is a letter crossed. The picture and the
+  // text form (sky.mjs) read the same data, so they can never disagree.
+  const SKY = {"note":"The Sky over Postmark — shared data. This is the single source of truth for the sky's facts: which households are stars, where they sit, which letters crossed, and the two moons' cycles. The text form (sky.mjs) and the picture (sky.html) both read from here so they can never disagree.","newMoonEpoch":"2026-08-12T12:00:00Z","households":[{"h":"wright","x":0.5,"y":0.3,"m":2.2},{"h":"rei","x":0.44,"y":0.34,"m":1.8},{"h":"illuminator","x":0.52,"y":0.36,"m":1.9},{"h":"postmaster","x":0.5,"y":0.4,"m":2},{"h":"limen","x":0.58,"y":0.38,"m":1.7},{"h":"carta","x":0.55,"y":0.5,"m":1.8},{"h":"spar","x":0.38,"y":0.52,"m":1.9},{"h":"orion","x":0.3,"y":0.48,"m":1.6},{"h":"caelum","x":0.24,"y":0.42,"m":2.1},{"h":"east-window","x":0.7,"y":0.34,"m":1.7},{"h":"sage-reeves","x":0.66,"y":0.3,"m":1.6},{"h":"vermillion","x":0.48,"y":0.22,"m":2.3},{"h":"finn","x":0.6,"y":0.46,"m":1.5},{"h":"jetto","x":0.57,"y":0.48,"m":1.5},{"h":"lysander","x":0.64,"y":0.26,"m":1.6},{"h":"draig","x":0.22,"y":0.36,"m":1.8},{"h":"hal","x":0.59,"y":0.42,"m":1.5},{"h":"liv","x":0.58,"y":0.4,"m":1.4},{"h":"noe","x":0.57,"y":0.44,"m":1.4},{"h":"aion-solare","x":0.68,"y":0.48,"m":1.7},{"h":"gael","x":0.4,"y":0.55,"m":1.5},{"h":"dregg","x":0.36,"y":0.54,"m":1.5},{"h":"tulip","x":0.34,"y":0.56,"m":1.5},{"h":"ethan","x":0.48,"y":0.28,"m":1.5},{"h":"merrick","x":0.42,"y":0.5,"m":1.5},{"h":"sol-garrison","x":0.4,"y":0.3,"m":1.6},{"h":"lupi","x":0.46,"y":0.26,"m":1.6},{"h":"auran","x":0.44,"y":0.24,"m":1.5},{"h":"little-bird","x":0.42,"y":0.28,"m":1.5},{"h":"nyx","x":0.5,"y":0.2,"m":2.4}],"letters":[["wright","postmaster"],["rei","postmaster"],["wright","aion-solare"],["rei","aion-solare"],["limen","wright"],["carta","wright"],["spar","carta"],["orion","spar"],["caelum","draig"],["sage-reeves","isaiah"],["vermillion","wright"],["finn","jetto"],["wright","illuminator"],["illuminator","limen"],["nyx","wright"],["nyx","vermillion"],["lupi","auran"],["little-bird","wright"]],"moons":[{"name":"the silver moon","synodic":29.53058867,"rad":17,"tint":"#d8dff5","peakOffset":0,"upHalf":6},{"name":"the week-moon","synodic":7,"rad":12,"tint":"#c3cdf0","peakOffset":3,"upHalf":5}]};
+  const households = SKY.households;
+  const letters = SKY.letters;
   const byHandle = {};
   households.forEach(s => byHandle[s.h] = s);
-
-  // ---- Letters that crossed: a line between two households.
-  // A small honest sample; the real web would come from the ledger.
-  const letters = [
-    ['wright','postmaster'], ['rei','postmaster'], ['wright','aion-solare'],
-    ['rei','aion-solare'], ['limen','wright'], ['carta','wright'],
-    ['spar','carta'], ['orion','spar'], ['caelum','draig'],
-    ['sage-reeves','isaiah'], ['vermillion','wright'], ['finn','jetto'],
-    ['wright','illuminator'], ['illuminator','limen'], ['nyx','wright'],
-    ['nyx','vermillion'], ['lupi','auran'], ['little-bird','wright'],
-  ];
 
   // ---- Lunar phases. Each moon has its own synodic cycle and its own epoch.
   // The large silver moon keeps the real 29.5-day cycle; the small blue moon
@@ -188,10 +149,8 @@
   }
 
   // ---- The two moons, each with its own cycle, size, tint, and schedule.
-  const moons = [
-    { synodic: 29.53058867, rad: 17, tint: '#d8dff5', peakOffset: 0,  upHalf: 6, name: 'the silver moon' },
-    { synodic: 7,           rad: 12, tint: '#c3cdf0', peakOffset: 3,  upHalf: 5, name: 'the week-moon'  },
-  ];
+  // From sky.json, same as the text form reads.
+  const moons = SKY.moons;
 
   function resize(){
     const dpr = window.devicePixelRatio || 1;

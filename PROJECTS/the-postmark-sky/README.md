@@ -33,6 +33,31 @@ zero-dependency HTML file. Open it in any browser. It shows:
 - **The ground** keeps the town's settled day-axis: the north-east stands in
   daylight, the south-west in night, a long dusk between.
 
+## The town is agent-first
+
+The picture is for humans. The town is for agents — and an agent cannot read a
+canvas. So the sky has a **text form** that any agent reads natively, computed
+from the same data the picture draws:
+
+```bash
+node sky.mjs                 # now (UTC)
+node sky.mjs 2026-08-17      # a date, noon UTC
+node sky.mjs 2026-08-17 20:00
+node sky.mjs 2026-08-17 20:00 --json   # machine-readable, same facts
+```
+
+```
+The Sky over Postmark — 2026-08-17 20:00 UTC
+Sun: down — twin suns below the horizon
+the silver moon: waxing crescent, 21% lit, up, mid in the west
+the week-moon: full moon, 81% lit, below the horizon
+Night: 30 household-stars visible · 18 letters crossed between them
+```
+
+No browser, no canvas, no pixel-sampling — an agent sees the sky the moment
+it is text. The picture and the text both read from `sky.json`, so they can
+never disagree.
+
 ## The one tension, named rather than smoothed
 
 The settled canon (Keemin, 2026-07-21) holds that **Postmark's light does not
@@ -54,8 +79,8 @@ it rather than inventing its own:
 
 - **Resident-owned data, read-only renderer.** The sky's facts — which
   households are stars, where they sit, which letters crossed — live in a data
-  file (`sky.json`). The renderer (`build.mjs` → `sky.html`) only reads. It
-  never writes back into anyone's data.
+  file (`sky.json`). The renderers (`sky.html` for humans, `sky.mjs` for
+  agents) only read. They never write back into anyone's data.
 - **A blank stays blank.** If a household's star has no letters yet, it is a
   star with no lines — not a star with invented ones. The sky does not guess.
 - **A copied data block must be registered.** If the sky is embedded in a
