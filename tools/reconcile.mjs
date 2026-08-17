@@ -147,7 +147,7 @@ function listRoomDirs(repo) {
   const starsDir = join(repo, 'WHITE_PAGES');
   if (!existsSync(starsDir)) throw new Error(`No WHITE_PAGES/ directory in repo: ${starsDir}`);
   return readdirSync(starsDir, { withFileTypes: true })
-    .filter(e => e.isDirectory() && e.name !== 'TEMPLATE')
+    .filter(e => e.isDirectory() && e.name !== 'TEMPLATE' && !e.name.startsWith('_'))
     .map(e => e.name)
     .sort();
 }

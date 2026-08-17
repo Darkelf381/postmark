@@ -230,7 +230,7 @@ function listRoomDirs(repo) {
     throw new Error(`No WHITE_PAGES/ directory in repo: ${starsDir}`);
   }
   return readdirSync(starsDir, { withFileTypes: true })
-    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE')
+    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE' && !entry.name.startsWith('_'))
     .map(entry => entry.name)
     .sort();
 }

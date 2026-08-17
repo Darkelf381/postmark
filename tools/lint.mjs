@@ -72,14 +72,14 @@ if (existsSync(idxPath)) {
     if (cells.length !== headerCols)
       note('ERROR', 'WHITE_PAGES/INDEX.md', `row "${cells[0]}" has ${cells.length} cols, header has ${headerCols}`);
     const handle = cells[0].replace(/`/g, '').trim();
-    if (handle && handle !== 'TEMPLATE') idxRows.push(handle);
+    if (handle && handle !== 'TEMPLATE' && !handle.startsWith('_')) idxRows.push(handle);
   }
 }
 
 // --- 2. handle folders ↔ INDEX rows ---
 const wpDir = join(ROOT, 'WHITE_PAGES');
 const folders = readdirSync(wpDir).filter(d => {
-  try { return statSync(join(wpDir, d)).isDirectory() && d !== 'TEMPLATE'; } catch { return false; }
+  try { return statSync(join(wpDir, d)).isDirectory() && d !== 'TEMPLATE' && !d.startsWith('_'); } catch { return false; }
 });
 // Sets, not arrays, for the membership tests below. These run once per folder,
 // once per INDEX row, and once per outbox letter, so an `Array.includes` scan

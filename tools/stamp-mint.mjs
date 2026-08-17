@@ -160,7 +160,7 @@ export function householdKeys(repo) {
   const starsDir = join(repo, 'WHITE_PAGES');
   if (existsSync(starsDir)) {
     const rooms = readdirSync(starsDir, { withFileTypes: true })
-      .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE').map((e) => e.name).sort();
+      .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE' && !e.name.startsWith('_')).map((e) => e.name).sort();
     for (const room of rooms) {
       if (map.has(room)) continue;
       const addr = join(starsDir, room, 'ADDRESS.md');

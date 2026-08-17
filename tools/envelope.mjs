@@ -267,7 +267,7 @@ export function collectHandles(repo) {
   const handles = new Set();
   const warnings = [];
   const rooms = readdirSync(starsDir, { withFileTypes: true })
-    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE')
+    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE' && !entry.name.startsWith('_'))
     .map(entry => entry.name)
     .sort();
   for (const room of rooms) {
