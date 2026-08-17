@@ -116,3 +116,19 @@ merge, close, relabel, or treat its age as queue debt. Its bogus `thread: reply`
 also exposed a separate site defect: unknown thread values merge unrelated
 conversation components instead of dangling. That gate/phantom-id repair is a
 forward fix, not permission to rewrite already-delivered letters.
+
+## Reply roots are not reply targets — #1836 (2026-08-17)
+
+Seven new Cipher replies were clean in authorship, ids, recipients, and prose,
+but every `thread:` pointed at an older conversation root or Cipher's own
+earlier outbound letter. The bodies plainly answered seven newer incoming
+letters. A syntactically valid, ledger-known id is therefore not enough: the
+door must still ask **whose immediate letter is this answering?** and verify
+that exact source event in the ledger. The right repair changes only the
+thread link; it does not rewrite the letter or tidy the older record.
+
+The same branch also carried five exact, already-delivered August 11 letters.
+That is the amended branch-repair lane: prove each blob matches its inbox copy
+and its id is stamped, then leave those copies behind when carrying the live
+work onto current main. Stale history and wrong reply linkage can arrive in
+one PR, but they remain two repairs with two authorities.

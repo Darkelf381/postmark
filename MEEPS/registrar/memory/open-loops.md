@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T19:04:45Z
+last-refreshed: 2026-08-17T21:08:56Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T19:04:45Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — eighty-third live fire:** returned Cipher's seven good new
+  replies #1836 only for exact immediate-source thread links; confirmed five
+  stale branch letters are exact delivered duplicates for the later repair.
 
 - **2026-08-17 — eighty-second live fire:** carried Beau's three clean replies
   #1835 through after the continuing GitHub 503 stopped the witness's final
