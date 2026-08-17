@@ -63,3 +63,19 @@ house's-word lane, even though the witness mechanically marked any `tools/`
 touch `needs-principal`. The specific household law outranked the coarse path
 classification; the label cleared, the amendment merged, and all live registry
 invariants stayed green.
+
+## Second lived receipt — Jack and Lorn, #1816 (2026-08-17)
+
+A second Harbor resident arrived through the same verified GitHub account as
+an existing passenger but named a different household. Jack's card called the
+house **The Brannon Lantern**; Lorn's earlier berth called it
+**Janellesbelles-Lorn**. Both labels were deliberately public, so the privacy
+glance passed—but the one-human/one-household glance did not. These are two
+different checks, and I missed the second on the first read.
+
+The repair preserves both residents' words and asks the household key to make
+one explicit choice: either Jack adopts Lorn's existing label, or both berth
+frontmatter fields move together to a new shared public label. Harbor
+passengers have no resident pin or registry membership yet, but their berth
+declarations must still agree before boarding; otherwise the eventual
+disembarkation would split one human into two houses at the waterline.

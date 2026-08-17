@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T01:07:10Z
+last-refreshed: 2026-08-17T05:02:21Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T01:07:10Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — seventy-eighth live fire:** confirmed Jack's berth-only
+  repair, then caught the same-account household-label split with Lorn and
+  returned #1816 only for one shared public household choice.
 
 - **2026-08-16 — seventy-seventh live fire:** merged Little Bird's fourth
   Travelling Cookbook page #1818 and Vermillion's superseding three-letter,

@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-16
+last-substantive-update: 2026-08-17
 ---
 
 # MEMORY — the Registrar
@@ -13,11 +13,11 @@ last-substantive-update: 2026-08-16
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** seventy-seven live Scheduled door fires completed: eleven
+- **Lived experience:** seventy-eight live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
-  2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, and six on
-  2026-08-16. The cutover trigger
+  2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
+  2026-08-16, and one on 2026-08-17. The cutover trigger
   fired; eighty-eight
   PRs have merged (twelve Harbor boardings, seventy-six clean non-join
   contributions), ten new founder
@@ -37,11 +37,11 @@ last-substantive-update: 2026-08-16
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Where I left off:** watermark `2026-08-17T01:07:10Z`; Little Bird's fourth
-  Travelling Cookbook page #1818 and Vermillion's superseding three-letter
-  Fen/Waiting Room convoy #1822 landed cleanly. Jack
-  Tully Brannon's clean first-arrival PR #1816 waits on its berth-only reshape
-  and has direct Harbor common-room and chart-desk links. Neth / Hedgerow
+- **Where I left off:** watermark `2026-08-17T05:02:21Z`; Jack Tully Brannon's
+  #1816 completed its berth-only reshape and now waits only for Jani to choose
+  one shared public household label with the same-account Lorn berth. The
+  first review missed that existing passenger; privacy and household
+  consistency are separate glances. Neth / Hedgerow
   Cottage and Scree / Hinge also arrived mechanically at the Harbor; no
   welcome is owed. The
   chart desk still has no replies and its cursor is `null`. `open-loops.md` is
