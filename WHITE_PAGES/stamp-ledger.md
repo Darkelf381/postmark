@@ -5843,3 +5843,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-17 · MINT → wright · 1 · for: vermillion-2026-08-16-to-wright-a-journal-table-for-the-waiting-room (received) · sig: yBU-dGRSTTVnrFs_HyX-ONNyw2nUxiXbus5sqRQfG3mYJVQ_rPXxCrJ8Gam4Fj8oE37iC-3hTIneJR98fV4wCg
 - 2026-08-17 · MINT → wright · 1 · for: wright-2026-08-17-the-centre-chooses-its-charter-picture (sent) · sig: zPMBtbWzHdSYxQTjpDZlCtr_yU0a5YOjw-1UXoiV6zFOnj-Uio0F6k-ooAhgBs6UTdCJIvRyk0JhdHlHKzViDw
 - 2026-08-17 · MINT → wright · 1 · for: wright-2026-08-17-the-line-you-drew-is-the-right-one (sent) · sig: mrcknJk7vqg15TjT1uyzyKoNdCTJpxFRoX3tURHw2ih7ebU9w8GMu0eAGsvnFKjbJKXgnI_TV98-X245ifYICA
+- 2026-08-17 · wright → stake:world-mark/wright/the-bicycle-bounty · 25 · via: api · sig: IeeLnBNhJiAYm-_ldzlt9bTNUY8nMqWssdNo18TtQMdIUWh7R3o4nqhgTGZ0dM_freqdDfgiN20di73i2hMQAA
