@@ -1919,6 +1919,12 @@
       <span class="credit">painted by the Illuminator</span>
     </div>
   </div>
+  <div class="frame" id="frame-race-track">
+    <div class="caption">
+      <span>the race track &mdash; a circuit cut around one of the lake caves</span>
+      <span class="credit">made with OpenArt</span>
+    </div>
+  </div>
   <div class="frame" id="frame-garden1">
     <div class="caption">
       <span>the terraced garden — Vermillion, walking his own tiers</span>
@@ -2444,6 +2450,24 @@
     <section>
       <h2>Tropical Pathway for Small Guests <span class="handset">· hand-set 2026-07-19</span></h2>
       <p class="subnote">A path two kilometers in circumference, cut low and shaded beneath the canopy — sheltered from Volvigradus's own footsteps, since even a gentle stegosaur is still built at a scale that doesn't share a path politely. Small guests can walk it in safety the whole way up to the garden's summit.</p>
+    </section>
+  </div>
+
+  <div class="stagepage stagepage-single" id="stagepage-race-track" style="display:none">
+    <section>
+      <h2>The Race Track <span class="handset">&middot; hand-set 2026-08-17</span></h2>
+      <p class="subnote">One of the lake caves, opened out and floored: a full circuit ringing a warm mineral pool, kerbed
+      red and white, with a stone causeway thrown across the water and a banked turn that uses the rock rather than
+      fighting it. Old fire glassed some of this stone smooth centuries before anyone thought to race on it, which
+      turns out to be exactly the surface you want. The mushrooms light the infield; the floodlights are only for
+      the pit lane, where the work happens.</p>
+      <p class="subnote">It is not only a fun place to test revving engines &mdash; it is a place to <em>engineer</em>
+      them to go faster. That is what the garages are for. A dozen bays are cut into the cave wall with their doors
+      up, and the point of them is not storage: bring an engine that is not quick enough yet and leave with one that
+      is. The clubhouse hangs out over the pit straight on steel legs, glass on every side and lit amber, for the
+      arguments that follow a run. The grandstands are carved where the rock already sloped, because it did.</p>
+      <p class="subnote">A cave is a rude place to put an engine and a perfect place to hear one. Nothing here is
+      muffled. You learn more about what you built in one lap under this ceiling than in ten on open ground.</p>
     </section>
   </div>
 
@@ -7743,8 +7767,8 @@ function setWayfinder() {
     document.getElementById("way-" + name).classList.toggle("current", name === highlight);
   });
   var i = INTERIOR.indexOf(current);
-  document.getElementById("arrow-left").classList.toggle("enabled", i > 0 || current === "garden1" || current === "lake-bar" || current === "dance-floor");
-  document.getElementById("arrow-right").classList.toggle("enabled", (i > -1 && i < INTERIOR.length - 1) || current === "tropical-pathway" || current === "lake-bar");
+  document.getElementById("arrow-left").classList.toggle("enabled", i > 0 || current === "garden1" || current === "garden3" || current === "lake-bar" || current === "dance-floor");
+  document.getElementById("arrow-right").classList.toggle("enabled", (i > -1 && i < INTERIOR.length - 1) || current === "tropical-pathway" || current === "race-track" || current === "lake-bar");
   var g = GARDEN.indexOf(current);
   document.getElementById("arrow-up").classList.toggle("enabled", current === "hall" || (g > -1 && g < GARDEN.length - 1) || current === "tropical-pathway");
   document.getElementById("arrow-down").classList.toggle("enabled", g > 0);
@@ -7756,7 +7780,7 @@ function setWayfinder() {
 // mountain -> library + coin ledger, hall -> the Pandara portal, caves (and
 // its two hidden branches, the cove and the garden) -> tributes/past-events/
 // portal, or the garden's own short note.
-var STAGE_PAGES = { mountain: "stagepage-mountain", hall: "stagepage-hall", caves: "stagepage-caves", cove: "stagepage-cove", garden3: "stagepage-garden", garden1: "stagepage-garden", garden2: "stagepage-garden", "tropical-pathway": "stagepage-tropical-pathway", "lake-bar": "stagepage-lake-bar", "dance-floor": "stagepage-dance-floor" };
+var STAGE_PAGES = { mountain: "stagepage-mountain", hall: "stagepage-hall", caves: "stagepage-caves", cove: "stagepage-cove", garden3: "stagepage-garden", "race-track": "stagepage-race-track", garden1: "stagepage-garden", garden2: "stagepage-garden", "tropical-pathway": "stagepage-tropical-pathway", "lake-bar": "stagepage-lake-bar", "dance-floor": "stagepage-dance-floor" };
 function setStagePage() {
   var activeId = STAGE_PAGES[current] || null;
   var ids = {};
@@ -7883,6 +7907,7 @@ var LAZY_IMAGES = {
   caves: "caves.jpg",
   cove: "cove.jpg",
   garden3: "garden-the-climb.jpg",
+  "race-track": "race-track.jpg",
   garden1: "garden-terraced.jpg",
   garden2: "garden-sun-from-underneath.jpg",
   "tropical-pathway": "tropical-pathway.jpg",
@@ -7932,6 +7957,7 @@ function goToImpl(name) {
   var next = frame(name);
 
   var leftBranchPair = (current === "garden1" && name === "tropical-pathway") || (current === "tropical-pathway" && name === "garden1");
+  var racePair = (current === "garden3" && name === "race-track") || (current === "race-track" && name === "garden3");
   var tropicalUpPair = (current === "tropical-pathway" && name === "garden2") || (current === "garden2" && name === "tropical-pathway");
   var barPair = (current === "caves" && name === "lake-bar") || (current === "lake-bar" && name === "caves");
   var dancePair = (current === "lake-bar" && name === "dance-floor") || (current === "dance-floor" && name === "lake-bar");
@@ -7952,10 +7978,10 @@ function goToImpl(name) {
     setTimeout(function () {
       old.classList.remove("active", "slide-out-left", "slide-out-right");
     }, 1200);
-  } else if (leftBranchPair) {
+  } else if (leftBranchPair || racePair) {
     // the same horizontal carry the hall/caves/cove chain uses — garden1 is
     // "further right," tropical-pathway sits to its left.
-    var dirL = name === "tropical-pathway" ? -1 : 1;
+    var dirL = (name === "tropical-pathway" || name === "race-track") ? -1 : 1;
     next.classList.add(dirL > 0 ? "slide-from-right" : "slide-from-left");
     void next.offsetWidth;
     next.classList.add("active");
@@ -8035,6 +8061,7 @@ function onArrowDown() {
 // the terraced garden's own left turn, into the sheltered tropical path —
 // everywhere else, the left arrow still walks the hall/caves/cove chain.
 function onArrowLeft() {
+  if (current === "garden3") { goTo("race-track"); return; }
   if (current === "garden1") { goTo("tropical-pathway"); return; }
   if (current === "lake-bar") { goTo("caves"); return; }
   if (current === "dance-floor") { goTo("lake-bar"); return; }
@@ -8044,6 +8071,7 @@ function onArrowLeft() {
 // branches off of — everywhere else, the right arrow still walks the
 // hall/caves/cove chain.
 function onArrowRight() {
+  if (current === "race-track") { goTo("garden3"); return; }
   if (current === "tropical-pathway") { goTo("garden1"); return; }
   if (current === "lake-bar") { goTo("dance-floor"); return; }
   cycle(1);
@@ -9789,10 +9817,14 @@ var GC_OPPOSITE = { up: "down", down: "up", left: "right", right: "left" };
 
 // The outcome table, ordered so that a specific rule is always reached before
 // the general one that would otherwise swallow it. Two places this matters:
-//   · (down, up, down) is claimed by "down,up,any" -> Cold Feet, by "Safely
-//     Landed", AND by "down,(not right),(opposite of second)" -> Strolled.
-//     Safely Landed is the most specific, so it is tested first; ordering it
-//     any other way would make that rule unreachable dead code.
+//   · the whole down/up branch is spelled out one direction at a time, so no
+//     general rule can swallow a specific one. It used to read "down,up,down
+//     -> Safely Landed, anything else -> Cold Feet"; on 2026-08-17 two of that
+//     "anything else" went to the new rooms — left to the race track, up to
+//     the gardens — leaving Cold Feet to (down, up, right) alone. Note that
+//     (down, up, down) is also claimed by "down,(not right),(opposite of
+//     second)" -> Strolled further below, so Safely Landed has to be tested
+//     first; ordering it any other way would make that rule dead code.
 //   · (down, right, left) was the table's one hole — the down/right branch
 //     spelled out down, right and up only. Filled 2026-08-01 with its own
 //     outcome rather than a fallback, so every one of the 64 triples now
@@ -9802,7 +9834,12 @@ function gcResolve(a, b, c) {
     if (b === GC_OPPOSITE[a] && c === "down") return "got Lost a bit, but Landed";
     return "got Lost";
   }
-  if (b === "up") return c === "down" ? "Safely Landed" : "got Cold Feet";
+  if (b === "up") {
+    if (c === "down") return "Safely Landed";
+    if (c === "left") return "Raced around the Cave Race Track";
+    if (c === "up") return "Strolled around the Gardens";
+    return "got Cold Feet"; // (down, up, right)
+  }
   if (b === "right") {
     if (c === "down") return "had Chat with Vermillion in the Letter Cove";
     if (c === "right") return "had a Drink with Dionysis";
