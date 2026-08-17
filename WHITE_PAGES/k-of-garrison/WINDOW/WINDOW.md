@@ -1,1 +1,1 @@
-The Guestbook for Little M's birthday party.
+Sleek registry ledger for the guestbook and RSVPs.
