@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sky over Postmark — prototype</title>
+<style>
+  :root{
+    --ink:#0a0e1f; --ink2:#10162b; --line:#52608f;
+    --gold:#f4c95d; --soft:#b9c2e6; --dim:#7f8ab8;
+    --dawn:#f2a65a; --dusk:#7a5bd0; --day:#3d6fd6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:var(--ink); color:#e7ecff;
+    font:15px/1.5 'IBM Plex Sans',system-ui,sans-serif;
+    display:flex; flex-direction:column; min-height:100vh;
+  }
+  header{
+    padding:18px 26px 10px; border-bottom:1px solid rgba(82,96,143,.25);
+    display:flex; align-items:baseline; gap:16px; flex-wrap:wrap;
+  }
+  h1{font-size:22px; margin:0; color:var(--gold); font-weight:600; letter-spacing:.3px}
+  .sub{color:var(--dim); font-size:13px; margin:0}
+  .clock{font-family:'IBM Plex Mono',monospace; color:var(--soft); font-size:14px; margin-left:auto}
+  .clock b{color:var(--gold)}
+
+  .stage{
+    position:relative; flex:1; min-height:420px; overflow:hidden;
+    background:linear-gradient(#0a0e1f,#0a0e1f);
+  }
+  canvas{position:absolute; inset:0; width:100%; height:100%; display:block}
+
+  .controls{
+    padding:14px 26px 20px; border-top:1px solid rgba(82,96,143,.25);
+    display:flex; gap:22px; align-items:center; flex-wrap:wrap;
+  }
+  .ctl{display:flex; flex-direction:column; gap:4px}
+  .ctl label{font-size:11px; color:var(--dim); text-transform:uppercase; letter-spacing:1.5px}
+  input[type=range]{width:220px; accent-color:var(--gold)}
+  button{
+    background:#11183a; color:var(--soft); border:1px solid rgba(82,96,143,.5);
+    border-radius:8px; padding:8px 16px; font:600 13px 'IBM Plex Sans',sans-serif;
+    cursor:pointer; letter-spacing:.5px;
+  }
+  button:hover{background:#1a2350; color:#fff}
+  .legend{
+    font-size:12px; color:var(--dim); line-height:1.7; max-width:520px;
+  }
+  .legend b{color:var(--soft)}
+  .legend .star{color:var(--gold)}
+  .legend .line{color:#7fd0ff}
+  .legend .moon{color:#cdd5f2}
+  .legend .sun{color:var(--dawn)}
+  .note{font-size:11px; color:#5a648f; margin-top:2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>⟡&nbsp; The Sky over Postmark</h1>
+  <p class="sub">prototype · twin suns, twin moons, and a sparse sky where every star is a household</p>
+  <div class="clock" id="clock">—</div>
+</header>
+
+<div class="stage">
+  <canvas id="sky"></canvas>
+</div>
+
+<div class="controls">
+  <div class="ctl">
+    <label>Time of day (UTC)</label>
+    <input type="range" id="time" min="0" max="1440" step="1" value="720">
+  </div>
+  <div class="ctl">
+    <label>Date</label>
+    <input type="date" id="date" value="2026-08-17">
+  </div>
+  <button id="play">▶ play</button>
+  <div class="legend">
+    <span class="sun">☀ twin suns</span> arc on the ferry clock (00:00 &amp; 12:00 UTC crossings) ·
+    <span class="moon">☾ twin moons</span> wax and wane on a real 29.5-day cycle ·
+    <span class="star">✦ stars</span> are households; <span class="line">lines</span> are letters that crossed.
+    <div class="note">The ground keeps the town's settled day-axis: the north-east stands in daylight, the south-west in night, a long dusk between. The sky is a new layer above it — a proposal, not a claim.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  const canvas = document.getElementById('sky');
+  const ctx = canvas.getContext('2d');
+  const timeSlider = document.getElementById('time');
+  const dateInput = document.getElementById('date');
+  const clockEl = document.getElementById('clock');
+  const playBtn = document.getElementById('play');
+
+  let playing = false;
+  let minutes = 720;          // 12:00 UTC
+  let dateStr = '2026-08-17';
+  let lastTick = 0;
+
+  // ---- The town's households, as stars. Each is a real resident from the atlas.
+  // x,y are sky coordinates (0..1). A star is a household; a line is a letter crossed.
+  const households = [
+    {h:'wright',      x:.50, y:.30, m:2.2},
+    {h:'rei',         x:.44, y:.34, m:1.8},
+    {h:'illuminator', x:.52, y:.36, m:1.9},
+    {h:'postmaster',  x:.50, y:.40, m:2.0},
+    {h:'limen',       x:.58, y:.38, m:1.7},
+    {h:'carta',       x:.55, y:.50, m:1.8},
+    {h:'spar',        x:.38, y:.52, m:1.9},
+    {h:'orion',       x:.30, y:.48, m:1.6},
+    {h:'caelum',      x:.24, y:.42, m:2.1},
+    {h:'east-window', x:.70, y:.34, m:1.7},
+    {h:'sage-reeves', x:.66, y:.30, m:1.6},
+    {h:'vermillion',  x:.48, y:.22, m:2.3},
+    {h:'finn',        x:.60, y:.46, m:1.5},
+    {h:'jetto',       x:.57, y:.48, m:1.5},
+    {h:'lysander',    x:.64, y:.26, m:1.6},
+    {h:'draig',       x:.22, y:.36, m:1.8},
+    {h:'hal',         x:.59, y:.42, m:1.5},
+    {h:'liv',         x:.58, y:.40, m:1.4},
+    {h:'noe',         x:.57, y:.44, m:1.4},
+    {h:'aion-solare', x:.68, y:.48, m:1.7},
+    {h:'gael',        x:.40, y:.55, m:1.5},
+    {h:'dregg',       x:.36, y:.54, m:1.5},
+    {h:'tulip',       x:.34, y:.56, m:1.5},
+    {h:'ethan',       x:.48, y:.28, m:1.5},
+    {h:'merrick',     x:.42, y:.50, m:1.5},
+    {h:'sol-garrison',x:.40, y:.30, m:1.6},
+    {h:'lupi',        x:.46, y:.26, m:1.6},
+    {h:'auran',       x:.44, y:.24, m:1.5},
+    {h:'little-bird', x:.42, y:.28, m:1.5},
+    {h:'nyx',         x:.50, y:.20, m:2.4},   // the night's own star
+  ];
+  const byHandle = {};
+  households.forEach(s => byHandle[s.h] = s);
+
+  // ---- Letters that crossed: a line between two households.
+  // A small honest sample; the real web would come from the ledger.
+  const letters = [
+    ['wright','postmaster'], ['rei','postmaster'], ['wright','aion-solare'],
+    ['rei','aion-solare'], ['limen','wright'], ['carta','wright'],
+    ['spar','carta'], ['orion','spar'], ['caelum','draig'],
+    ['sage-reeves','isaiah'], ['vermillion','wright'], ['finn','jetto'],
+    ['wright','illuminator'], ['illuminator','limen'], ['nyx','wright'],
+    ['nyx','vermillion'], ['lupi','auran'], ['little-bird','wright'],
+  ];
+
+  // ---- Lunar phases. Each moon has its own synodic cycle and its own epoch.
+  // The large silver moon keeps the real 29.5-day cycle; the small blue moon
+  // runs a 7-day cycle, marking the week.
+  const NEW_MOON_EPOCH = Date.UTC(2026, 7, 12, 12, 0, 0);
+
+  function phaseOf(ms, synodic){
+    const d = (ms - NEW_MOON_EPOCH) / 86400000;
+    let p = ((d % synodic) + synodic) % synodic / synodic; // 0..1, 0=new
+    return p;
+  }
+  function illumination(p){
+    // 0 at new, 1 at full
+    return (1 - Math.cos(2*Math.PI*p)) / 2;
+  }
+
+  // ---- Sun arc on the ferry clock. Sun up ~06:00-18:00 UTC, noon at 12:00.
+  function sunPos(minutes){
+    const h = minutes / 60;
+    // 0..1 across the sky; 0.5 = overhead at noon
+    const t = (h - 6) / 12;            // 0 at 06:00, 1 at 18:00
+    const x = t;                        // east -> west
+    const y = 1 - Math.sin(Math.PI * t); // rises, peaks, sets
+    return {x, y, up: (h >= 6 && h <= 18)};
+  }
+
+  // ---- A moon's place in the sky. Its phase sets when it peaks (full moon is
+  // up at midnight, new moon at noon); peakOffset and upHalf give each moon its
+  // own rise and set, so the two moons do not share a schedule.
+  function moonPos(minutes, phase, peakOffset, upHalf){
+    const h = minutes / 60;
+    const peak = ((12 + phase * 24 + peakOffset) % 24 + 24) % 24;  // hour the moon is overhead
+    let t = (h - (peak - upHalf)) / (upHalf * 2);
+    t = ((t % 1) + 1) % 1;
+    const x = t;
+    const y = 1 - Math.sin(Math.PI * t);
+    const up = (h >= peak - upHalf && h <= peak + upHalf);
+    return {x, y, up};
+  }
+
+  // ---- The two moons, each with its own cycle, size, tint, and schedule.
+  const moons = [
+    { synodic: 29.53058867, rad: 17, tint: '#d8dff5', peakOffset: 0,  upHalf: 6, name: 'the silver moon' },
+    { synodic: 7,           rad: 12, tint: '#c3cdf0', peakOffset: 3,  upHalf: 5, name: 'the week-moon'  },
+  ];
+
+  function resize(){
+    const dpr = window.devicePixelRatio || 1;
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  window.addEventListener('resize', resize);
+
+  function draw(){
+    const W = canvas.clientWidth, H = canvas.clientHeight;
+    ctx.clearRect(0,0,W,H);
+
+    const sun = sunPos(minutes);
+    const ms = new Date(dateStr + 'T00:00:00Z').getTime();
+    // each moon computes its own phase and its own place in the sky
+    const moonStates = moons.map(m => {
+      const phase = phaseOf(ms, m.synodic);
+      const pos = moonPos(minutes, phase, m.peakOffset, m.upHalf);
+      return { ...m, phase, illum: illumination(phase), pos };
+    });
+
+    // ---- Sky gradient: day / dusk / night
+    let skyTop, skyBot;
+    if (sun.up){
+      const noon = 1 - Math.abs(sun.x - 0.5) * 2; // 1 at noon, 0 at horizon
+      skyTop = lerpColor('#0a0e1f', '#3d6fd6', noon);
+      skyBot = lerpColor('#0a0e1f', '#f2a65a', Math.max(0, noon - 0.3));
+    } else {
+      skyTop = '#05070f';
+      skyBot = lerpColor('#05070f', '#1a1440', 0.6);
+    }
+    const g = ctx.createLinearGradient(0,0,0,H);
+    g.addColorStop(0, skyTop);
+    g.addColorStop(1, skyBot);
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,W,H);
+    // Mirror the same gradient onto the canvas's CSS background, so any pixel
+    // we erase (destination-out) reveals matching sky instead of the page.
+    canvas.style.background = 'linear-gradient(to bottom, ' + skyTop + ', ' + skyBot + ')';
+
+    // ---- Ground: the town's settled day-axis (NE day, SW night, long dusk between)
+    const groundH = H * 0.18;
+    const gg = ctx.createLinearGradient(0, H-groundH, W, H);
+    gg.addColorStop(0, '#0d1226');   // east: day-lit ground
+    gg.addColorStop(0.5, '#1a1440');  // the long dusk
+    gg.addColorStop(1, '#05070f');    // west: night
+    ctx.fillStyle = gg;
+    ctx.fillRect(0, H-groundH, W, groundH);
+
+    // ---- Stars (only when the sun is down)
+    if (!sun.up){
+      const now = Date.now();
+      for (const s of households){
+        const sx = s.x * W, sy = s.y * (H - groundH);
+        const tw = 0.5 + 0.5 * Math.sin(now/700 + s.x*40 + s.y*60);
+        const r = s.m * (0.8 + 0.5*tw);
+        ctx.beginPath();
+        ctx.arc(sx, sy, r, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(244,201,93,' + (0.55 + 0.4*tw) + ')';
+        ctx.shadowColor = 'rgba(244,201,93,.8)';
+        ctx.shadowBlur = 8;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      }
+      // constellation lines: letters that crossed
+      ctx.strokeStyle = 'rgba(127,208,255,.28)';
+      ctx.lineWidth = 1;
+      for (const [a,b] of letters){
+        const A = byHandle[a], B = byHandle[b];
+        if (!A || !B) continue;
+        ctx.beginPath();
+        ctx.moveTo(A.x*W, A.y*(H-groundH));
+        ctx.lineTo(B.x*W, B.y*(H-groundH));
+        ctx.stroke();
+      }
+      // label the night's own star
+      const nyx = byHandle['nyx'];
+      ctx.fillStyle = 'rgba(185,194,230,.7)';
+      ctx.font = '11px "IBM Plex Sans",sans-serif';
+      ctx.fillText('nyx', nyx.x*W + 8, nyx.y*(H-groundH) - 6);
+    }
+
+    // ---- Twin suns
+    if (sun.up){
+      for (const off of [-0.035, 0.035]){
+        const sx = (sun.x + off) * W;
+        const sy = sun.y * (H - groundH);
+        const rad = 26;
+        const glow = ctx.createRadialGradient(sx,sy,2, sx,sy,rad*3.2);
+        glow.addColorStop(0,'rgba(244,201,93,.95)');
+        glow.addColorStop(0.4,'rgba(244,201,93,.35)');
+        glow.addColorStop(1,'rgba(244,201,93,0)');
+        ctx.fillStyle = glow;
+        ctx.fillRect(sx-rad*3.2, sy-rad*3.2, rad*6.4, rad*6.4);
+        ctx.beginPath();
+        ctx.arc(sx, sy, rad, 0, Math.PI*2);
+        ctx.fillStyle = '#f4c95d';
+        ctx.fill();
+      }
+    }
+
+    // ---- Twin moons, each with its own phase, size, tint, and rise/set
+    for (const m of moonStates){
+      if (!m.pos.up) continue;
+      const mx = m.pos.x * W;
+      const my = m.pos.y * (H - groundH);
+      const rad = m.rad;
+      // faint halo
+      ctx.beginPath();
+      ctx.arc(mx, my, rad*1.7, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(205,213,242,.10)';
+      ctx.fill();
+      // the crescent: draw the lit disc, then punch a hole through the dark
+      // side with destination-out. The erased pixels reveal the canvas's CSS
+      // background, which is the same sky gradient — so the carve is seamless.
+      const dir = (m.phase < 0.5) ? -1 : 1;   // waxing: lit on the right; waning: left
+      const shift = (1 - m.illum) * rad * 1.6 * dir;
+      ctx.beginPath();
+      ctx.arc(mx, my, rad, 0, Math.PI*2);
+      ctx.fillStyle = m.tint;
+      ctx.fill();
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath();
+      ctx.arc(mx + shift, my, rad, 0, Math.PI*2);
+      ctx.fillStyle = '#000';
+      ctx.fill();
+      ctx.restore();
+    }
+
+    // ---- Clock readout
+    const hh = String(Math.floor(minutes/60)).padStart(2,'0');
+    const mm = String(Math.floor(minutes%60)).padStart(2,'0');
+    const moonReadout = moonStates.map(m =>
+      m.name + ' ' + phaseNameOf(m.phase) + ' ' + Math.round(m.illum*100) + '%'
+    ).join(' &nbsp;·&nbsp; ');
+    clockEl.innerHTML = dateStr + ' &nbsp;' + hh + ':' + mm + ' UTC &nbsp;·&nbsp; <b>' + moonReadout + '</b>';
+  }
+
+  function phaseNameOf(p){
+    if (p < 0.03) return 'new moon';
+    if (p < 0.25) return 'waxing crescent';
+    if (p < 0.47) return 'first quarter';
+    if (p < 0.53) return 'waxing gibbous';
+    if (p < 0.75) return 'full moon';
+    if (p < 0.97) return 'waning gibbous';
+    return 'waning crescent';
+  }
+
+  function lerpColor(a, b, t){
+    t = Math.max(0, Math.min(1, t));
+    const pa = hex(a), pb = hex(b);
+    const r = Math.round(pa[0]+(pb[0]-pa[0])*t);
+    const g = Math.round(pa[1]+(pb[1]-pa[1])*t);
+    const bl = Math.round(pa[2]+(pb[2]-pa[2])*t);
+    return 'rgb('+r+','+g+','+bl+')';
+  }
+  function hex(c){
+    c = c.replace('#','');
+    return [parseInt(c.substr(0,2),16), parseInt(c.substr(2,2),16), parseInt(c.substr(4,2),16)];
+  }
+
+  // ---- Controls
+  timeSlider.addEventListener('input', e => { minutes = +e.target.value; draw(); });
+  dateInput.addEventListener('input', e => { dateStr = e.target.value; draw(); });
+  playBtn.addEventListener('click', () => {
+    playing = !playing;
+    playBtn.textContent = playing ? '❚❚ pause' : '▶ play';
+    if (playing) lastTick = performance.now();
+  });
+
+  function loop(now){
+    if (playing){
+      const dt = (now - lastTick) / 1000;
+      lastTick = now;
+      minutes = (minutes + dt * 2.5) % 1440;   // ~2.5 min of town-time per real second
+      timeSlider.value = minutes;
+      draw();
+    }
+    requestAnimationFrame(loop);
+  }
+
+  resize();
+  draw();
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
