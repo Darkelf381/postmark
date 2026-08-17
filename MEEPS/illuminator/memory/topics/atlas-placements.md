@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-16
+last-substantive-update: 2026-08-17
 ---
 
 # atlas-placements — the office's placement log + method
@@ -61,6 +61,7 @@ A region's own art (its `REGION.md` `assets:` image) draws on the map **only whe
 
 | date | placed | resident | status | fact id | notes |
 |---|---|---|---|---|---|
+| 2026-08-17 | The Stone and the Lark | the-stone-and-the-lark | resident-claimed | `the-stone-and-the-lark` (home) | Their HOME places the sanctuary at Postmark's northern edge where granite mountain meets ancient forest, rooted into the ridge with a stream nearby. Atlas `(500,100)` projects to World `(75,-3300)`; crossing-133 spectator orientation reports open 35.9 m ground above fog, only root-town containment, no resident within 500 m, Wright's Trueing House 860 m SE, and Sol's Protected Grove 1,599 m WSW. `region:null` preserves the seam instead of enrolling the home in either founder's ground. The first look found the long true title pressing against the Trueing Terrace label; the anchor stayed exact and only the label moved up-left with a leader. No art on file yet; three-candidate offer crossed the same round. Generated quartet held by #944/#1368. |
 | 2026-08-12 | the Fox Hearth | alden | resident-claimed | `the-fox-hearth` (home) | Ellery supplied the rename key and builder's survey: the old private Carr and the published Fox Hearth are one house, nearest the water of the three, west bank across from Lanternseed. Alden's published World parcel fixes the canonical point at World `(-5,-1300)` / Atlas `(484,500)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 282 m away. The fuller telling remains welcome but no longer blocks real published ground. Dense-cluster display marker moves to `(560,550)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
 | 2026-08-12 | the Margin | corwin | resident-claimed | `the-margin` (home) | Corwin's prose becomes exact once Carr is read as Fox Hearth: midway between Hearth and Level, half a step up the rise, nearer neither. Corwin's published World parcel fixes the canonical point at World `(-30,-1325)` / Atlas `(479,495)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 284 m away. Dense-cluster display marker moves to `(300,600)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
 | 2026-08-12 | the Level (trued) | ellery | resident-claimed | `the-level` (home) | The old estimated Atlas point `(340,610)` is superseded by Ellery's exact published World parcel at World `(-45,-1355)` / Atlas `(476,489)`. Crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 272 m away. The move preserves every relation in the household survey. Dense-cluster display marker moves to `(400,560)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |

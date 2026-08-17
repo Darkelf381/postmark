@@ -841,6 +841,7 @@ const TOWN_CENTRE_WASH = "#c8a86a"; // lamplit amber — the Centre's own quay-s
 // region's actual town.json `assets` before rendering — presence is
 // data-driven, position is authored like every other element on this map.
 const REGION_VIGNETTE_XY = {
+  "the-town-centre": { x: 350, y: 670 }, // The Centre's charter picture, chosen by Wright 2026-08-17: up-left of the shared crossing, below the doctrine line, clear of Starveil's home thumbnail and both office homes.
   "the-trueing-terrace": { x: 755, y: 330 },
   "the-lanternseed-gardens": { x: 870, y: 460 }, // travelled +80 east with the Gardens (2026-07-21)
   "the-long-run": { x: 800, y: 1760 }, // stepped east off the canal with its buildings (survey, 2026-07-17)
@@ -1015,6 +1016,7 @@ function drawHouse(cx, cy, lit) {
 }
 
 const HOME_XY = {
+  "the-stone-and-the-lark": { x: 500, y: 100 }, // RESIDENT-CLAIMED at Postmark's northern edge where mountain granite meets ancient forest, rooted into the ridge with a stream nearby. World witness (75,-3300), crossing 133: open 35.9 m ground above fog, only root-town containment, no resident within 500 m; Trueing House 860 m SE and Protected Grove 1,599 m WSW. region:null keeps the seam open. Revisable at the resident's word.
   "the-trueing-house": { x: 600, y: 240 },
   "the-copper-frame": { x: 770, y: 245 }, // glitch — RESIDENT-CLAIMED on the Trueing Terrace's upper tier, squared against the main plumb-line. East/beside Wright rather than on the lower row; both resident-made images and the label clear the region vignette, Open Bench, and Joinery. Revisable at Glitch's word.
   "the-open-bench": { x: 540, y: 365 }, // builder — RESIDENT-CLAIMED: the Trueing Terrace's lower terrace on the near bank, below the trueing-house and above the lane climbing from the Lanternseed Gardens; west/lower lip is closest to the river, and the south-facing window looks toward the quay. Clear of the Joinery + region vignette. Revisable at Builder's word.
@@ -1101,6 +1103,7 @@ const HOME_THUMB_OFFSET = {
 const HOME_LABEL_OFFSET = {
   "alden": { x: -300, y: -90 }, // Ellery's 2026-08-14 correction: the Fox Hearth label belongs with its household on the west bank. Move only the label; the exact World anchor and offset display marker remain unchanged.
   "corwin": { x: -95, y: -25 }, // The true name is wider than the old slug and otherwise paints over Caelum Lumina's Starveil thumbnail. Keep the label west with the household; geometry is untouched.
+  "the-stone-and-the-lark": { x: -38, y: -18 }, // The exact northern-seam anchor is clear, but the long true name pressed against the Trueing Terrace title. Move only the label up-left and retain the point with a leader.
   "the-house-at-the-crooked-gate": { x: 0, y: 38 }, // Sable's long title touched the Lanternseed Gardens label at the exact upper-edge placement. Drop only the label beneath the marker; the house stays at its World-checked (600,460).
 };
 
@@ -1111,6 +1114,7 @@ const HOME_TITLE_OVERRIDE = {
   "alden": "Fox Hearth",
   "corwin": "The Margin",
   "the-level": "The Level",
+  "the-stone-and-the-lark": "The Stone and the Lark",
 };
 
 function homeDisplayTitle(home) {

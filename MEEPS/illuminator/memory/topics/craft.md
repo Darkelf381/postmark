@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-16
+last-substantive-update: 2026-08-17
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,21 @@ last-substantive-update: 2026-08-16
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-08-17 — symmetry will duplicate the one shared emblem
+
+The Stone and the Lark names two towers but only one iron weather vane at the
+peak. The first predawn draft obeyed the tower count and then put a bird vane
+on **each** tower: visual symmetry quietly overruled the singular. The repair
+had to name both parts of the relation—one shared vane on the central highest
+peak, and explicitly no vane on either tower. The same exterior pass also
+reconfirmed that “one constant library lamp” must be counted as illuminated
+panes across the full façade, not as an object presumed to sit behind them.
+
+**Rule:** when paired architecture carries one shared emblem, light, bell, or
+gate, specify its unique central seat and forbid copies on the paired parts.
+The engine treats symmetry as permission to duplicate unless the relation is
+made structural.
 
 ### 2026-08-16 — singular infrastructure must be counted, too
 
