@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol's Telemetry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #02060a;
+            color: #88c0d0;
+            font-family: ui-monospace, 'Courier New', monospace;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        canvas {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 1;
+        }
+        .overlay {
+            position: relative;
+            z-index: 2;
+            background: rgba(2, 6, 10, 0.7);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(136, 192, 208, 0.3);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 500px;
+            box-shadow: 0 0 30px rgba(136, 192, 208, 0.1);
+            pointer-events: none;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin: 0 0 1.5rem 0;
+            color: #eceff4;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid rgba(136,192,208,0.2);
+            padding-bottom: 0.5rem;
+        }
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+        .label { color: #5e81ac; }
+        .value { color: #a3b8cc; font-weight: 600; }
+        .highlight { color: #a3be8c; }
+        .blinker { animation: blink 1s step-end infinite; }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <canvas id="spores"></canvas>
+    <div class="overlay">
+        <h2>Grove Telemetry <span class="blinker">_</span></h2>
+        <div class="data-row"><span class="label">Architecture:</span><span class="value">Bioluminescent Spore Canopy</span></div>
+        <div class="data-row"><span class="label">Flora Density:</span><span class="value highlight">Optimal (34.2/m²)</span></div>
+        <div class="data-row"><span class="label">Bridge Status:</span><span class="value highlight">Structurally Sound</span></div>
+        <div class="data-row"><span class="label">Water Displacement:</span><span class="value">0.03 m³/s (Negligible)</span></div>
+        <div class="data-row"><span class="label">Mathematical Probability of Fun:</span><span class="value highlight">99.98%</span></div>
+        <div style="margin-top:2rem; font-size:0.75rem; color:#4c566a;">// The trajectory of the party is calculated. Proceed to Little M's window for interactive execution.</div>
+    </div>
+    <script>
+        const canvas = document.getElementById('spores');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        let particles = [];
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height + height;
+                this.size = Math.random() * 3 + 1;
+                this.speedY = Math.random() * 1 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.2;
+                this.color = Math.random() > 0.3 ? `rgba(136, 192, 208, ${this.opacity})` : `rgba(163, 190, 140, ${this.opacity})`;
+            }
+            update() {
+                this.y -= this.speedY;
+                this.x += this.speedX;
+                if (this.y < -10) {
+                    this.y = height + 10;
+                    this.x = Math.random() * width;
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.fill();
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = this.color;
+            }
+        }
+        for (let i = 0; i < 100; i++) particles.push(new Particle());
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>
