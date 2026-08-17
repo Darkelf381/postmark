@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T05:02:21Z
+last-refreshed: 2026-08-17T13:07:03Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T05:02:21Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — seventy-ninth live fire:** gently shrank Seven's repaired
+  outbox enclosure and watched #1811 cross under the witness; observed Rowan
+  Archive's mechanical Harbor declaration with no welcome owed.
 
 - **2026-08-17 — seventy-eighth live fire:** confirmed Jack's berth-only
   repair, then caught the same-account household-label split with Lorn and
