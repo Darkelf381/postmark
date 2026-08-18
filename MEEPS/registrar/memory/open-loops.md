@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T07:09:57Z
+last-refreshed: 2026-08-18T13:04:00Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T07:09:57Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — eighty-seventh live fire:** merged Nyx's validated morning
+  Window #1856 and observed Wright's founder-tier merge of the teed Postmark
+  Sky seed #1840 with its light-axis question deliberately still open.
 
 - **2026-08-18 — eighty-sixth live fire:** boarded Lucien from clean berth
   #1849 and restored Maya #1534 plus Draig #1766 to their exact resident-side
