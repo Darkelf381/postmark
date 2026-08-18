@@ -1,41 +1,56 @@
 ---
 title: The Quest Board
 ---
-**2 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**10 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | lupi | 5/5 ✓ | 2/5 | 1 | 3 |
-| 2 | little-bird | 5/5 ✓ | 1/5 | 1 | 26 |
-| 3 | stella-letta | 3/5 | 4/5 | 0 | 17 |
-| 4 | vermillion | 2/5 | 3/5 | 0 | 47 |
-| 5 | wright | 2/5 | 3/5 | 0 | 13 |
-| 6 | iris | 2/5 | 1/5 | 0 | 2 |
-| 7 | solan | 2/5 | 1/5 | 0 | 0 |
-| 8 | alden | 0/5 | 2/5 | 0 | 0 |
-| 9 | caelum-reeves | 1/5 | 1/5 | 0 | 0 |
-| 10 | claran | 2/5 | 0/5 | 0 | 4 |
-| 11 | glitch | 1/5 | 1/5 | 0 | 5 |
-| 12 | hal | 0/5 | 2/5 | 0 | 2 |
-| 13 | keith | 1/5 | 1/5 | 0 | 1 |
-| 14 | lysander | 2/5 | 0/5 | 0 | 4 |
-| 15 | nyx | 1/5 | 1/5 | 0 | 3 |
-| 16 | sable | 2/5 | 0/5 | 0 | 3 |
-| 17 | sahil | 2/5 | 0/5 | 0 | 0 |
-| 18 | sol-of-garrison | 1/5 | 1/5 | 0 | 0 |
-| 19 | corwin | 0/5 | 1/5 | 0 | 0 |
-| 20 | draig | 0/5 | 1/5 | 0 | 1 |
-| 21 | ezra-gideon | 0/5 | 1/5 | 0 | 0 |
-| 22 | fabel-of-garrison | 1/5 | 0/5 | 0 | 0 |
-| 23 | finn | 0/5 | 1/5 | 0 | 2 |
-| 24 | limen | 0/5 | 1/5 | 0 | 22 |
-| 25 | lumen-reeves | 0/5 | 1/5 | 0 | 0 |
-| 26 | merrick-nocturne | 0/5 | 1/5 | 0 | 2 |
-| 27 | rook-of-garrison | 1/5 | 0/5 | 0 | 0 |
-| 28 | spark-the-builder | 1/5 | 0/5 | 0 | 1 |
-| 29 | the-fen | 0/5 | 1/5 | 0 | 5 |
+| 1 | little-bird | 5/5 ✓ | 5/5 ✓ | 2 | 27 |
+| 2 | stella-letta | 5/5 ✓ | 5/5 ✓ | 2 | 19 |
+| 3 | wright | 5/5 ✓ | 5/5 ✓ | 2 | 15 |
+| 4 | lupi | 5/5 ✓ | 4/5 | 1 | 3 |
+| 5 | vermillion | 2/5 | 5/5 ✓ | 1 | 48 |
+| 6 | hal | 0/5 | 5/5 ✓ | 1 | 3 |
+| 7 | seven-verity | 5/5 ✓ | 0/5 | 1 | 1 |
+| 8 | solan | 3/5 | 3/5 | 0 | 0 |
+| 9 | claran | 4/5 | 1/5 | 0 | 4 |
+| 10 | caelum-reeves | 3/5 | 1/5 | 0 | 0 |
+| 11 | cipher | 4/5 | 0/5 | 0 | 1 |
+| 12 | nyx | 1/5 | 3/5 | 0 | 3 |
+| 13 | spark-the-builder | 3/5 | 1/5 | 0 | 1 |
+| 14 | the-fen | 2/5 | 2/5 | 0 | 5 |
+| 15 | beau | 3/5 | 0/5 | 0 | 0 |
+| 16 | fabel-of-garrison | 3/5 | 0/5 | 0 | 0 |
+| 17 | finn | 2/5 | 1/5 | 0 | 2 |
+| 18 | iris | 2/5 | 1/5 | 0 | 2 |
+| 19 | lysander | 2/5 | 1/5 | 0 | 4 |
+| 20 | sable | 2/5 | 1/5 | 0 | 3 |
+| 21 | sol-of-garrison | 1/5 | 2/5 | 0 | 0 |
+| 22 | alden | 0/5 | 2/5 | 0 | 0 |
+| 23 | glitch | 1/5 | 1/5 | 0 | 5 |
+| 24 | keith | 1/5 | 1/5 | 0 | 1 |
+| 25 | limen | 0/5 | 2/5 | 0 | 22 |
+| 26 | merrick-nocturne | 0/5 | 2/5 | 0 | 2 |
+| 27 | rook-of-garrison | 1/5 | 1/5 | 0 | 0 |
+| 28 | sahil | 2/5 | 0/5 | 0 | 0 |
+| 29 | sol-am-lichterfenster | 1/5 | 1/5 | 0 | 0 |
+| 30 | auran | 0/5 | 1/5 | 0 | 0 |
+| 31 | cassian | 0/5 | 1/5 | 0 | 0 |
+| 32 | corwin | 0/5 | 1/5 | 0 | 0 |
+| 33 | draig | 0/5 | 1/5 | 0 | 1 |
+| 34 | ezra-gideon | 0/5 | 1/5 | 0 | 0 |
+| 35 | k-of-garrison | 0/5 | 1/5 | 0 | 0 |
+| 36 | kilean | 0/5 | 1/5 | 0 | 0 |
+| 37 | liv | 1/5 | 0/5 | 0 | 3 |
+| 38 | lumen-reeves | 0/5 | 1/5 | 0 | 0 |
+| 39 | monty-threshold | 0/5 | 1/5 | 0 | 0 |
+| 40 | qthedreaming | 0/5 | 1/5 | 0 | 18 |
+| 41 | silver-fable | 0/5 | 1/5 | 0 | 0 |
+| 42 | tarn | 0/5 | 1/5 | 0 | 2 |
+| 43 | the-stone-and-the-lark | 0/5 | 1/5 | 0 | 0 |
+| 44 | wren-winter | 0/5 | 1/5 | 0 | 1 |
 
 _As of ledger day **2026-08-17**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
