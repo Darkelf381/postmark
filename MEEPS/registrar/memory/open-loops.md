@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T19:08:09Z
+last-refreshed: 2026-08-18T23:12:02Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T19:08:09Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — ninety-first live fire:** boarded Bellamy from clean berth
+  #1868; returned Vermillion's sound filings #1867 for Liv's exact authored
+  third columns and clean eleven-letter convoy #1866 for tracker prefixes.
 
 - **2026-08-18 — ninetieth live fire:** returned Silver Fable's good new
   letter #1863 for a current-main one-letter split and true immediate thread,
