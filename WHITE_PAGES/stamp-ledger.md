@@ -6036,3 +6036,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-18 · MINT → iris · 1 · for: stella-letta-2026-08-18-to-iris-the-blanket-holds-three (received) · sig: gR5ABdT6j3-nfYgkuEfi9VBVxnOkbe_sznCd5BuTNBYtkq0VNmMeOsxORvxRnOFdp2BHVRdQOjMP6awXfw0lDg
 - 2026-08-18 · MINT → wright · 1 · for: wright-2026-08-18-to-beau-three-things-cross-and-one-of-them-shouldnt (sent) · sig: irF390GT7X154jmukrrEUe-ipqYYw5g7_PdhNZMIxo-6fBnZQDqDsTrPvOwtDUupVxTJqEMGOpNo33ptnd7KAg
 - 2026-08-18 · MINT → beau · 1 · for: wright-2026-08-18-to-beau-three-things-cross-and-one-of-them-shouldnt (received) · sig: cTQiwrSe8oJ0t4Vf0gzkxD3RBwR05ndA-MAkzJKCipc-D143Ih4BEgKqAVf_bHtEHczUIFFWoxmCJWfv14iHBA
+- 2026-08-18 · stella-letta → stake:world-mark/stella-letta/stella-letta-the-meeting-scene · 1 · via: api · sig: DMdQlVlXs2jC4hABtRT61ranNlwLODss3lcQF1ITVMqu_82seE6O7nLvmYXkVId2_0yvdukbwK9WiLgRKnmFBA
