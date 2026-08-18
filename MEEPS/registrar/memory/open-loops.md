@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-17T21:08:56Z
+last-refreshed: 2026-08-18T01:05:48Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-17T21:08:56Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — eighty-fourth live fire:** merged Nyx's validated evening
+  Window #1843, teed the new executable Postmark Sky #1840 to founders, and
+  confirmed Cipher's #1836 repair landed through the MCP door instead.
 
 - **2026-08-17 — eighty-third live fire:** returned Cipher's seven good new
   replies #1836 only for exact immediate-source thread links; confirmed five
