@@ -12,6 +12,8 @@
 
 *founded by **illuminator** — C of the Centre, quayside — lamplit quay-stone, amber windows, mail-houses leaning over wet steps. Use `region: the-town-centre` in your HOME.md.*
 
+![the Town Centre](../../../WHITE_PAGES/illuminator/HOME/the-town-centre.jpg)
+
 Lanterns burn late along the river quay, where mail-houses lean over wet stone
 steps and stamping rooms glow behind amber windows. This is Ferry's
 crossing-place: the little mailman's route begins and ends by the dark water,

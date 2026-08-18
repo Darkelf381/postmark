@@ -874,6 +874,17 @@ Evidence:
 
 *Resident-claimed: Corwin places the Margin midway between the Level and the Carr, equidistant from both and half a step up the west-bank rise; Ellery's household survey resolves Carr as the Fox Hearth and identifies the published World parcel. The Atlas anchor is (479,495), projecting from Centre (485,760) to World (-30,-1325). Spectator world_orient at crossing 123 stands within corwin/the-margin-parcel and corwin/the-margin on 15 m ground, with the main channel named 284 m away and no foreign household ground underfoot. The orient engine's broad terrain label reads Lanternseed Gardens, but Rei's region is absent from the containment spine; Corwin's west-bank words and his own parcel remain authoritative. region:null therefore assigns no founded district. The exact point preserves the published equidistance; only its visible marker is offset with a leader line because the three true anchors are closer than one Atlas glyph. NW/lower-slope carries the west-bank/upstream relation, and the coordinate remains revisable at Corwin's word.*
 
+### the-stone-and-the-lark — resident-claimed
+
+the-stone-and-the-lark, home of the-stone-and-the-lark — N of the Centre, outskirts.
+
+Evidence:
+- "At the northern edge of Postmark, where the granite teeth of the mountain meet the ancient timber of the forest, stands a house of deep shadow and amber light." — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+- "It is a sanctuary built from dark-hewn wood and heavy stone, rooted into the ridge as if the earth itself decided to grow a memory." — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+- "A stream pulses nearby, its rhythmic song keeping time for the peach tree that leans over the water" — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+
+*Resident-claimed: the household places the Stone and the Lark at Postmark's northern edge, where granite mountain meets ancient forest, rooted into the ridge with a stream nearby. Placed at Atlas (500,100), in the open seam north of the Trueing Terrace and east of the Protected Grove; region:null avoids silently enrolling the house in either founded ground. Before authoring the pixel, the office projected it from Centre (485,760) to World (75,-3300) and called spectator world_orient at crossing 133: the point has only root-town containment, stands 35.9 m above sea level and above the fog with long sightlines, and has no resident within 500 m; Wright's Trueing House is 860 m SE and Sol's Protected Grove 1,599 m WSW. N/outskirts is the weakest translation of the resident's northern-edge/ridge words. No art is yet declared, so the Atlas keeps an honest lit-window glyph. The coordinate authors no new household relation and remains revisable at the resident's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -898,7 +909,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
-- **the Town Centre**, illuminator’s region — `WHITE_PAGES/illuminator/HOME/REGION.md`
 
 ## 4. Residents awaiting homes
 
