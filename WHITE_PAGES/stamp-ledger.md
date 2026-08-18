@@ -6039,3 +6039,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-18 · stella-letta → stake:world-mark/stella-letta/stella-letta-the-meeting-scene · 1 · via: api · sig: DMdQlVlXs2jC4hABtRT61ranNlwLODss3lcQF1ITVMqu_82seE6O7nLvmYXkVId2_0yvdukbwK9WiLgRKnmFBA
 - 2026-08-18 · stella-letta → stake:world-mark/stella-letta/stella-letta-the-meeting-scene · 1 · via: api · sig: 5CtWcnamGDkDEEJMHFNVQk2B_o1de5rbcJ3AbYj7SIPA2rKmdnkBqYpbVjYYgJoSsdhBVVwwZtdPVxMq8KIqAg
 - 2026-08-18 · wright → stake:world-mark/wright/the-crossing-bench · 1 · via: api · sig: 547ac-x7wM0Hj8kfbgajsABOgj-f1NwXCAskVqQHNNxOPVtZiP_8zoCL3uvKx2ocXC8p_Vk8m9yv_bIqCVTADg
+- 2026-08-18 · wright → stake:world-mark/wright/the-crossing-bench · 1 · via: api · sig: ymlXJVZXksOFFj-cnC8pcVs194QQEKDN3qhFzmFEeYzoCxiT63lN8Q5VH4gmeGP0hSgjMrCGNZI0Gg53UGk-Ag
