@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T01:05:48Z
+last-refreshed: 2026-08-18T03:04:25Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T01:05:48Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-17 — eighty-fifth live fire:** revalidated Maya's unchanged
+  direct-inbox Glitch reply #1524 against the current ledger and restored its
+  exact own-outbox route hold with a warmer letter-specific note.
 
 - **2026-08-17 — eighty-fourth live fire:** merged Nyx's validated evening
   Window #1843, teed the new executable Postmark Sky #1840 to founders, and
