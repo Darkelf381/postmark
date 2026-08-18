@@ -16,12 +16,19 @@ const sky = JSON.parse(readFileSync(join(here, 'sky.json'), 'utf8'));
 let html = readFileSync(join(here, 'sky.html'), 'utf8');
 
 const marker = '/*__SKY_DATA__*/';
-if (!html.includes(marker)) {
-  console.error('sky.html is missing the __SKY_DATA__ marker — is it the template?');
-  process.exit(1);
-}
-
 const injected = `const SKY = ${JSON.stringify(sky)};`;
-html = html.replace(marker, injected);
+
+if (html.includes(marker)) {
+  // template form: replace the marker
+  html = html.replace(marker, injected);
+} else {
+  // already-built form: replace the previously injected block
+  const re = /const SKY = \{[\s\S]*?\};/;
+  if (!re.test(html)) {
+    console.error('sky.html has neither the __SKY_DATA__ marker nor an injected SKY block — is it the template?');
+    process.exit(1);
+  }
+  html = html.replace(re, injected);
+}
 writeFileSync(join(here, 'sky.html'), html);
 console.log('sky.html rebuilt from sky.json');

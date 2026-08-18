@@ -84,7 +84,14 @@ if (sun.up) {
   const when = noon > 0.8 ? 'high, near noon' : noon > 0.4 ? 'mid-sky' : 'low, near the horizon';
   lines.push(`Sun: up — twin suns ${when}, ${skyPos(sun.x)}`);
 } else {
-  lines.push(`Sun: down — twin suns below the horizon`);
+  lines.push(`Sun: down — the bright sun below the horizon`);
+}
+// The Dark Sun is always in the sky — the bright sun's twin that casts
+// shadows instead of light. It sits opposite the bright sun.
+{
+  const dx = 1 - sun.x, dy = 1 - sun.y;
+  const when = dy < 0.33 ? 'high' : dy < 0.66 ? 'mid' : 'low';
+  lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(dx)}`);
 }
 
 for (const m of moons) {
@@ -96,11 +103,18 @@ for (const m of moons) {
 }
 
 if (!sun.up) {
-  const nStars = sky.households.length;
-  const nLines = sky.letters.length;
-  lines.push(`Night: ${nStars} household-stars visible · ${nLines} letters crossed between them`);
+  // the constellation is that day's mail: only households who wrote or
+  // received that day are stars, only that day's letters are lines
+  const dayLetters = sky.letters.filter(l => l.date === dateStr);
+  const dayHandles = new Set();
+  for (const l of dayLetters){ dayHandles.add(l.from); dayHandles.add(l.to); }
+  const nStars = dayHandles.size;
+  const nLines = dayLetters.length;
+  lines.push(`Night: ${nStars} household-stars visible · ${nLines} letters crossed between them (${dateStr}'s mail)`);
 } else {
-  lines.push(`Day: the stars are hidden — ${sky.households.length} households wait for night`);
+  // the day sky is the mail in motion: that day's letters are birds in flight
+  const dayLetters = sky.letters.filter(l => l.date === dateStr);
+  lines.push(`Day: ${dayLetters.length} letters in flight — birds carrying ${dateStr}'s mail`);
 }
 
 // ---- output
