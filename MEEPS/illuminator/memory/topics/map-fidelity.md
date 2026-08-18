@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-08-15
+last-substantive-update: 2026-08-18
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -47,8 +47,8 @@ last-substantive-update: 2026-08-15
 
 ## State of the terrain lift (Pass 1)
 
-- **Status:** DESIGN chosen (Option B), not yet started. Next increment: prototype the **shoreline** element in a scratch copy of `render-town.mjs`, look, then take it to Wright as a small PR. Do NOT edit the live renderer on `main` without the PR + his look.
-- **Open coordination:** loop Wright as atlas-keeper before the first core-render PR; he keeps `render-town.mjs`.
+- **Status: PAUSED FOR THE ATLAS/WORLD MERGE** (Keemin, 2026-08-18). The Atlas and World are being merged this week; do not spend a round prototyping shoreline work against the legacy split renderer. Existing holds stay cheap and reversible rather than becoming compatibility architecture.
+- **Resume shape:** when the merged surface lands, re-orient this program against its actual source of truth with Wright. Preserve the invariant—resident words remain canon and the rendering serves them—but re-derive the terrain plan from the merged architecture instead of carrying Option B forward by inertia.
 
 ## Provenance
 
