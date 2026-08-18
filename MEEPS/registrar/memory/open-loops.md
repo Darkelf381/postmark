@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T13:04:00Z
+last-refreshed: 2026-08-18T15:07:04Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T13:04:00Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — eighty-eighth live fire:** independently validated and
+  merged Vermillion's sandbox-safe Fourier Blueprints table #1859 off the Cave
+  Race Track.
 
 - **2026-08-18 — eighty-seventh live fire:** merged Nyx's validated morning
   Window #1856 and observed Wright's founder-tier merge of the teed Postmark
