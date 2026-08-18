@@ -54,6 +54,36 @@ broaden the commit to make the push easier.
   hands`) — **if it still bounces, report and leave the pin for a founder; never force,
   never substitute another route.**
 
+## The mechanism moved to the box (Keemin-ruled 2026-08-17; this section governs until the shelf reconciles)
+
+The settlement SPLIT on 2026-08-17: **the mechanical sweep is a box timer now**
+(`postmark-settlement.timer`, 05:45/17:45 UTC — deliberately 15 minutes ahead of
+your heartbeats so your blessing certifies fresh work), and **your crossing is
+the JUDGMENT lane**: blessing tags, holds, quarantine, refusal narratives, over
+whatever state the box has published. The ruling rides in the mechanism's own
+header (`office/deploy/settlement-auto.sh`); your S34/S36/S37
+bless-over-public-state pattern is its cited precedent.
+
+What this changes in the run shape — **do not re-run the mechanical chain**:
+
+1. **Read the box's receipt first**: `settlement-auto.json` (harbor snapshot,
+   `/srv/postmark-harbor/`) + the sweep commit on world main. Exit 0 =
+   published/quiet · exit 1 = REFUSED (a red suite published nothing — that
+   refusal is YOUR finding to investigate and narrate, never a retry) ·
+   exit 2 = a lease race (the box reruns; note it).
+2. **Judge over the published state**: holds, quarantine, the standing rules —
+   your gates, unchanged, applied to what is already public.
+3. **Bless `settlement/S<N>`** over the already-public sha. Tags remain YOUR
+   pen exclusively — the box mints none, ever.
+4. **Post-bless lane unchanged**: site pin custody, deploy, the parcel drain,
+   holds-ledger line, daily, report-after. (Your S38 conflict-abort discipline
+   on the pin stands — founders ship pins ahead of blessing in a living town;
+   a pin conflict is still a conflict.)
+
+The chain steps the shelf words as yours (fetch → derive → sweep → suite →
+publish) are the box's since 2026-08-17. Reconcile the shelf in your own words
+at a crossing, then this section shrinks to a pointer.
+
 ## Custody law — the living-town amendment (Keemin-directed, 2026-08-13; #1718)
 
 Three repos, three roles, **three different custody rules** — the one-rule-for-all freeze
