@@ -39,12 +39,14 @@ from its signed public result.
    `settlement/S<N>` tag on the receipt's exact `world_to` and publish the tag only. The box
    already owns main and draft publication; the keeper never repeats those pushes. The tag is
    canon. *Receipt: tag object + peel, remote equality.*
-5. **Package and bump the Site pin.** Derive the package from the blessed Git object with
-   `core.autocrlf=false`; independently validate the exact dependency and integrity in a clean
-   checkout, run Site tests/build, then commit `settlement S<N>`, pull-rebase once, and push
-   normally through the keeper deploy key. A conflict or bounce preserves the tag and becomes
-   a founder handoff; never hand-merge concurrent pin history and never force. *Receipt: exact
-   package tuple, Site commit, CI green, live byte equality—or the exact custody gap.*
+5. **Apply the Site pin floor.** Read the current pinned World sha and ask Git whether the
+   blessing is its ancestor. If yes, the pin already carries canon: do not touch it; prove the
+   pinned descendant's package/deploy/live custody. If no, derive the blessed package with
+   `core.autocrlf=false`, independently validate dependency + integrity in a clean checkout,
+   run Site tests/build, then commit `settlement S<N>`, pull-rebase once, and push normally.
+   A conflict or bounce preserves the tag and becomes a founder handoff; never hand-merge or
+   force. *Receipt: ancestor verdict, exact package tuple, Site commit/no-op, CI green, live
+   proof—or the exact custody gap.*
 6. **Walk the post-bless parcel drain** only after Site custody and live proof are complete.
    The drain's own bounded chain remains below. *Receipt: seated / welcomed / remaining.*
 7. **Report-after** to Keemin and Wright: one line when clean; more when refused, held,
@@ -1413,6 +1415,41 @@ Site pin, deployment, live claim, or parcel drain followed.
   from receipt detail; “22 published” and one modified mark are not interchangeable facts.
 - **The public receipt mirror is part of the lane.** A 404 does not invalidate a readable box
   snapshot, but it prevents web-only operation and must be surfaced as a mechanism gap.
+
+## S39 crossed — repaired supersession, first tag-only blessing, 2026-08-18
+
+The evening public receipt returned 200 and reported `published` at 17:45:02 UTC, Town
+`76b1898b`, World `0420753b` → `bd8440d9`, detail `2 published`. The morning berth regression
+was restored in the parent, and #1697 changed sweep deltas to merge-base truth, barred
+town-authored records from household drawers, and added discovering recurrence falsifiers.
+
+The actual box delta matched the receipt: Rei's home predicate
+`front-walk-threshold-pause` and Stella Letta's backed commons meeting scene, with matching
+registry rows. Judgment found no hold or quarantine. The keeper created annotated
+`settlement/S39` at `bd8440d9` and pushed the tag only (object `f1261be5`).
+
+Site's pin floor was behind canon (`0420753b`), so the keeper advanced it. Exact package
+integrity was
+`sha512-Kg4gUz1ujLHNmawNrctjXmeXstRMlStsPxW0Mgb3XUHbh3jyODamnC2lZyjXKGIqyuaSP/6U9OthqJ++QtsV6g==`,
+shasum `8a7ac17d773ff822df167b65b374305b0ae3179c`, 912 entries, and 4,530,311
+unpacked bytes. The detached install repacked identically, passed 84 Site tests, and built
+2,583 pages. Site pin `42bbac79`, exact deploy `32170175987`, and the exact 818,168-byte live
+state at SHA-256 `51e5a8c043fb3ee1e14b9ffae07c79b29f35f90275c866769277a38d9d607025`
+completed custody and healed S38's downstream gap.
+
+The dry parcel drain found zero ready arithmetic cases and one new authoring case,
+the-stone-and-the-lark, alongside the five prior boundaries. No wet batch ran: the mechanism
+split does not publish the exact sealed stake artifact the drain's weighted fold requires,
+and the keeper did not duplicate the box derive. Drain: zero seated, zero welcomed, six
+remaining.
+
+- **A lawful refusal can be answered structurally and blessed later the same day.** The
+  evening judgment verified the supersession class fix and the exact repaired delta; it did
+  not merely notice that `for: berth` had returned.
+- **The Site pin is a floor, not an equality demand.** Ancestor proof comes before editing;
+  this pin was behind, so the exact advance was required.
+- **The parcel drain needs a stake-artifact handoff from the box.** Until that exact artifact
+  is public, dry judgment can proceed but a wet weighted batch cannot.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
