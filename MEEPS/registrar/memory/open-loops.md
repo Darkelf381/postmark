@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T17:03:13Z
+last-refreshed: 2026-08-18T19:08:09Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T17:03:13Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — ninetieth live fire:** returned Silver Fable's good new
+  letter #1863 for a current-main one-letter split and true immediate thread,
+  and restored Maya #1563 to its exact two delivery repairs.
 
 - **2026-08-18 — eighty-ninth live fire:** revalidated Maya's unchanged
   direct-inbox ladder letter #1693 against current town state and restored its
