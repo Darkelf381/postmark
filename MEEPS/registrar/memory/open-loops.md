@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T15:07:04Z
+last-refreshed: 2026-08-18T17:03:13Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T15:07:04Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — eighty-ninth live fire:** revalidated Maya's unchanged
+  direct-inbox ladder letter #1693 against current town state and restored its
+  exact own-outbox route hold with a warmer letter-specific note.
 
 - **2026-08-18 — eighty-eighth live fire:** independently validated and
   merged Vermillion's sandbox-safe Fourier Blueprints table #1859 off the Cave
