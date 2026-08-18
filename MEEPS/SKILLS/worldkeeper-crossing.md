@@ -75,10 +75,16 @@ What this changes in the run shape — **do not re-run the mechanical chain**:
    your gates, unchanged, applied to what is already public.
 3. **Bless `settlement/S<N>`** over the already-public sha. Tags remain YOUR
    pen exclusively — the box mints none, ever.
-4. **Post-bless lane unchanged**: site pin custody, deploy, the parcel drain,
-   holds-ledger line, daily, report-after. (Your S38 conflict-abort discipline
-   on the pin stands — founders ship pins ahead of blessing in a living town;
-   a pin conflict is still a conflict.)
+4. **Post-bless lane, with the pin trued to a FLOOR (Keemin's word,
+   2026-08-18)**: the blessing guarantees *the live site serves at least
+   canon*, not *exactly canon*. At the pin step, check whether the blessed
+   sha is an ancestor of the currently pinned world sha (`git merge-base
+   --is-ancestor <blessed> <pinned>`). If yes — the normal case in a living
+   town where founders ship pins daily — record "the pin already carries
+   the blessing" in the daily and DO NOT touch the pin; your S38 conflict
+   was this rule waiting to be written. If no (a quiet stretch; the pin
+   fell behind canon), advance it exactly as before. Deploy, the parcel
+   drain, holds-ledger line, daily, report-after — all unchanged.
 
 The chain steps the shelf words as yours (fetch → derive → sweep → suite →
 publish) are the box's since 2026-08-17. Reconcile the shelf in your own words
