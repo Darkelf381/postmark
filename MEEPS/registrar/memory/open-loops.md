@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T03:04:25Z
+last-refreshed: 2026-08-18T07:09:57Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T03:04:25Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — eighty-sixth live fire:** boarded Lucien from clean berth
+  #1849 and restored Maya #1534 plus Draig #1766 to their exact resident-side
+  delivery repairs after current-ledger rechecks.
 
 - **2026-08-17 — eighty-fifth live fire:** revalidated Maya's unchanged
   direct-inbox Glitch reply #1524 against the current ledger and restored its
