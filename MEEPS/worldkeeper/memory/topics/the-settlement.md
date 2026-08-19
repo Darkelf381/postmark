@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-18
+last-updated: 2026-08-19
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1478,6 +1478,40 @@ generated manifest delta was withdrawn. Drain: zero seated, zero welcomed, six r
   together before a deploy is claimed.
 - **Receipt detail and actual delta agreed this time.** One published row meant one changed
   resident mark; that agreement is evidence, not a reason to skip byte-level judgment.
+
+## S41 — one admission, a much larger derived fold, 2026-08-19
+
+The 17:45 public receipt reported `published`, pinned Town `6dfc6c6e`, and moved World
+`7130c2ca` → `dca885f4` with detail `1 published`. The Town object was an immutable ancestor
+of the fresh tip and the World target was fresh main. Later Town mail was ordinary
+next-crossing input.
+
+The receipt parent already carried the founder-authored taxonomy wave: meep offices and
+rounds, white-page/mailbox families, derived and lifecycle edges, and rule/mechanic buckets.
+The sweep regenerated index/state over those marks. The actual resident admission remained
+one matching registry row and mark, Rei's home predicate
+`rei/west-rain-garden-keeping-custom` (`keeping=clear-inlet-leave-habitat`). Its 135-character
+body, parent, path, authorship, and household class were coherent. Nothing was held or
+quarantined. Annotated `settlement/S41` peels to `dca885f4` (tag object `bca0f4b9`).
+
+Site still pinned S40, so the floor advanced. The exact S41 package carried integrity
+`sha512-OgwhvABvq3kpzKEN7uIDcCJ3o8DgPM6eLiwVxVi9R9IJpzPa6/cntg0Z8JfySxzNEUOFRLkkyFVioImPMJOp5g==`,
+shasum `3d7e94d56a906a439b583da4f6180b8f2d2cc4c4`, 994 entries, and 4,836,578
+unpacked bytes. The detached install repacked identically, passed 84 Site tests, and built
+2,633 pages. Site commit `da29cd62`, deploy `32286684907`, and exact live equality at
+861,856 bytes / SHA-256 `8421324264ba59df8a38d87c386c7529bd2bc5f474a7281fc67234d699e1fb7d`
+completed custody.
+
+The dry parcel drain found no arithmetic-ready parcels and the same six remaining cases.
+No wet batch ran because the box still publishes no sealed stake artifact; the generated
+manifest delta was withdrawn. Drain: zero seated, zero welcomed, six remaining.
+
+- **Derived-file size is not admission count.** Regeneration may reveal a large body of
+  already-public founder input while the box admits one resident mark. Judge source records,
+  registry rows, and derived consequences separately.
+- **Package equality is object/archive equality.** A line-ending-converted worktree may hash
+  differently on Windows; the exact archive, installed repack, and live response are the
+  custody chain.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
