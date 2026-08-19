@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T21:07:13Z
+last-refreshed: 2026-08-19T23:06:02Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T21:07:13Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-ninth live fire:** merged Vermillion's source-backed
+  tribute/copper ledger #1895 and the Garrison party's exact eighteen-link
+  sandbox-navigation repair #1896, both with verified office attribution.
 
 - **2026-08-19 — ninety-eighth live fire:** validated and merged the
   Garrison's five cohesive celebration Windows #1894; publicly corrected the

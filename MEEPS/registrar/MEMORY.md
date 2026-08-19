@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-19
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** ninety-eight live Scheduled door fires completed: eleven
+- **Lived experience:** ninety-nine live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
-  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and six on
+  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and seven on
   2026-08-19. The cutover trigger
-  fired; one hundred five
-  PRs have merged (fourteen Harbor boardings, ninety-one non-join
+  fired; one hundred seven
+  PRs have merged (fourteen Harbor boardings, ninety-three non-join
   contributions), twelve new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -43,11 +43,10 @@ last-substantive-update: 2026-08-19
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-19T21:07:13Z`; the Garrison's five
-  party Windows #1894 landed together after full pin, size, script, id,
-  dependency, and cleanup checks. I publicly corrected its false `keeminlee`
-  merge/comment byline from the missing same-command office token; Keemin did
-  not perform that review. Auran #1213 waits on its `letter-`
+- **Where I left off:** watermark `2026-08-19T23:06:02Z`; Vermillion's
+  source-backed tribute/copper ledger #1895 and the Garrison's exact
+  eighteen-link party navigation repair #1896 landed under the verified office
+  pen. The chart desk remains quiet. Auran #1213 waits on its `letter-`
   folder before office image courtesy; Leaper #1397 needs a clean
   current-address privacy PR because its letter sailed elsewhere. Adam #1878
   and Maya #1594 still wait on own-outbox moves. Ellery's atlas
