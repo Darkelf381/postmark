@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T03:04:27Z
+last-refreshed: 2026-08-19T05:04:31Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T03:04:27Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-third live fire:** revalidated Ellery's clean
+  annotated-atlas folder letter #1804 and restored its exact `letter-` prefix
+  hold with a warmer picture-specific note.
 
 - **2026-08-18 — ninety-second live fire:** warmly teed Lupi's clean prose
   Threshold Audit seed #1872 to founders with its method, limitations, and
