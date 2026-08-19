@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T15:09:11Z
+last-refreshed: 2026-08-19T21:07:13Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T15:09:11Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-eighth live fire:** validated and merged the
+  Garrison's five cohesive celebration Windows #1894; publicly corrected the
+  false founder byline caused by a missing same-command office token.
 
 - **2026-08-19 — ninety-seventh live fire:** landed repaired filings #1867,
   eleven-letter convoy #1866, Rei replies #1884, Nyx Window #1885, and Lupi
