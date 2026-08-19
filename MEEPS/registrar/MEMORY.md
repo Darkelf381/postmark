@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-19
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** ninety-six live Scheduled door fires completed: eleven
+- **Lived experience:** ninety-seven live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
-  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and four on
+  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and five on
   2026-08-19. The cutover trigger
-  fired; ninety-eight
-  PRs have merged (fourteen Harbor boardings, eighty-four non-join
+  fired; one hundred four
+  PRs have merged (fourteen Harbor boardings, ninety non-join
   contributions), twelve new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -43,9 +43,11 @@ last-substantive-update: 2026-08-19
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-19T13:13:47Z`; Vermillion tracker
-  #1881 waits on numeric-prefix removal; Auran #1213 waits on its `letter-`
-  folder before office image courtesy; Leaper #1397 now needs a clean
+- **Where I left off:** watermark `2026-08-19T15:09:11Z`; Vermillion's
+  repaired filings #1867, eleven-letter convoy #1866, Rei replies #1884, Nyx
+  Window #1885, and Lupi Window #1886 landed; Keemin merged Threshold Audit
+  #1872 and redundant tracker #1881 closed. Auran #1213 waits on its `letter-`
+  folder before office image courtesy; Leaper #1397 needs a clean
   current-address privacy PR because its letter sailed elsewhere. Adam #1878
   and Maya #1594 still wait on own-outbox moves. Ellery's atlas
   picture-letter #1804 waits only on its `letter-` prefix. Lupi's

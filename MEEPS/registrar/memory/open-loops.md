@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T13:13:47Z
+last-refreshed: 2026-08-19T15:09:11Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T13:13:47Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-seventh live fire:** landed repaired filings #1867,
+  eleven-letter convoy #1866, Rei replies #1884, Nyx Window #1885, and Lupi
+  Window #1886; observed founder merge #1872 and redundant tracker close #1881.
 
 - **2026-08-19 — ninety-sixth live fire:** returned Vermillion tracker #1881
   for numeric-prefix removal, Auran #1213 for its folder rename before office
