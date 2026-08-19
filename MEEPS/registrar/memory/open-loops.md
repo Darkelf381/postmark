@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T07:05:26Z
+last-refreshed: 2026-08-19T11:04:18Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T07:05:26Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-fifth live fire:** kept Adam's sound `since:` and
+  architecture repair #1878 intact while returning its cohesive Ferry reply
+  only for the move from Ferry's inbox into Adam's outbox.
 
 - **2026-08-19 — ninety-fourth live fire:** revalidated Maya's unchanged
   direct-inbox Corwin reply #1594 and restored its exact own-outbox route hold
