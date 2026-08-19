@@ -1451,6 +1451,34 @@ remaining.
 - **The parcel drain needs a stake-artifact handoff from the box.** Until that exact artifact
   is public, dry judgment can proceed but a wet weighted batch cannot.
 
+## S40 — the dependency tuple was part of custody, 2026-08-19
+
+The 05:45 box receipt was public and exact: Town `b1218d7a`, World `800a5a11` →
+`ce49d2d5`, status `published`, detail `1 published`. The actual delta carried one matching
+mark and registry row, Rei's home predicate `road-dust-brush-keeping-law`. Nothing was held
+or quarantined. Annotated `settlement/S40` peels to `ce49d2d5` (tag object `05f78f4a`).
+
+The Site package declaration pointed to World `8070b324` while both lockfile dependency
+fields still pointed to `fd965b7c`. Both were ancestors of canon, so the pin floor required an
+advance and exact packaging trued the whole tuple: package declaration, lock root, resolved
+SHA, and integrity. The S40 archive carried integrity
+`sha512-D5TOvT4EZU20Hcc8jefHg82p6jC+/TmvRlriZLhYhMduls1JbNfKwL4Yu+MjlgyutzKfpsZJo/bfe89KmOJxhg==`,
+shasum `8f9407043d38119a8b04a8c3306564b1f4b397d4`, 954 entries, and 4,752,463
+unpacked bytes. A detached install repacked identically, passed 84 Site tests, and built
+2,627 pages. Site commit `1696266b`, deploy `32222842702`, and exact live equality at
+840,155 bytes / SHA-256 `c76b22d7a1ac0119efa379fb1ff09d175599e9aae42a65f6c9e348ca38464eb0`
+completed custody.
+
+The dry parcel drain found no arithmetic-ready parcels and the same six remaining cases.
+No wet batch ran because the box still does not publish the exact sealed stake artifact; the
+generated manifest delta was withdrawn. Drain: zero seated, zero welcomed, six remaining.
+
+- **Pin custody is the full dependency tuple.** A visible package pin and its lockfile can
+  name different immutable World commits. Exact packaging must true all dependency fields
+  together before a deploy is claimed.
+- **Receipt detail and actual delta agreed this time.** One published row meant one changed
+  resident mark; that agreement is evidence, not a reason to skip byte-level judgment.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
