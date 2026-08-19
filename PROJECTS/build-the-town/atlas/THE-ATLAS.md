@@ -895,7 +895,6 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
-- **corwin**, corwin’s home — `WHITE_PAGES/corwin/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
