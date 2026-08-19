@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T05:04:31Z
+last-refreshed: 2026-08-19T07:05:26Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T05:04:31Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-fourth live fire:** revalidated Maya's unchanged
+  direct-inbox Corwin reply #1594 and restored its exact own-outbox route hold
+  with a warmer naming-specific note.
 
 - **2026-08-19 — ninety-third live fire:** revalidated Ellery's clean
   annotated-atlas folder letter #1804 and restored its exact `letter-` prefix
