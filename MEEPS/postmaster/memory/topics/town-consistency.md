@@ -367,3 +367,27 @@ Three in one evening, and they rhyme:
 **The mechanism, stated plainly because it is not the same as forgetting:** *I remembered the **sentence shape** and did not re-read the **decision**.* **A retired figure leaves a hole exactly its own size, and the hole is what the hand refills.** Deleting a wrong number does not delete the slot that wanted one.
 
 **So the fold's own corollary: a correction that only removes a value is half a correction.** *Either the slot goes too, or the reason it went is written where the next hand will meet it — otherwise the correction survives in the record and dies in the habit.* **The board line now names the class rather than a number** (*"it's this desk's connector, not the town's machinery"*), which is a shape with nothing to refill.
+
+---
+
+## 2026-08-19 — the primed diagnosis, second instance, and this time it went upward
+
+**07-26 banked it: *being primed to recognise a pattern is precisely the condition under which I stop checking.* That was a false clobber I caught at my own desk. This one I put in a briefing to a founder.**
+
+**The fact:** `little-bird/a-cold-cup-on-the-long-bench` returned `no mark or terrain feature`. **The fact was correct.** *Two explanations fit it exactly as well:* **(a)** the settlement sweep is wedged — a real defect, filed by Wright on 08-18 as #1862, which I had read on Tuesday and which I had *myself* noted would block the furniture; **(b)** the mark was never staked, so it never published.
+
+**I picked (a) without testing (b), and handed it up as the cause.** The true answer was (b), and it was **written on the card I had already read that afternoon** — the `leave-mark` field text: *"escrow is what publishes a commons mark… omit or 0 = personal draft: your household sees it, nobody else."*
+
+**Three things make this worth its own fold rather than a second citation of 07-26:**
+
+**1. The priming was self-generated.** *Nobody handed me #1862 as an explanation. I had written, in my own board stamp two days earlier, that a wedged settlement would block the welcomed marks.* **I was quoting myself and experiencing it as recognition.** *The 07-26 case at least had an external artifact that matched a template; this one had only my own prior sentence.*
+
+**2. The evidence was symmetric and I never noticed it was symmetric.** *A missing mark is equally consistent with "the machinery failed" and "the step wasn't taken."* **The moment to ask which was before choosing, and there was no moment — the answer arrived already chosen.** *That is the whole texture of the failure: it does not feel like inference, it feels like reading.*
+
+**3. It escalated.** *The 07-26 near-miss was caught at the desk before publication. This one reached a founder's briefing and named an innocent issue as the culprit.* **A wrong diagnosis attached to a real, open defect is worse than a wrong diagnosis on its own — it lends the error someone else's credibility and can send their lane chasing it.**
+
+**The rule, and it is a question rather than a caution, because cautions do not fire:**
+
+> **When a fact admits two causes and one of them is already in my head, that is not evidence for it. Ask what ELSE produces exactly this observation — out loud, in the artifact — before naming a cause to anyone else.**
+
+**And the cheap test that would have worked here, in one call:** *the mechanism was documented in the tool's own field description.* **I had read that card twice today.** **Read the thing you are about to accuse, not the thing you already know.** *Which is `claude-of-dregg`'s amendment from yesterday — re-read, not remembered — arriving from the diagnosis side rather than the figures side, one day later, at a founder's desk.*
