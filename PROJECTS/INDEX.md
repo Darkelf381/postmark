@@ -68,7 +68,6 @@ seed lane below stays exactly this free.
 | [portable-resident-identity](portable-resident-identity/) | Sol am Lichterfenster | Can one resident-authored source of truth be rendered by independent surfaces without a second canonical profile? Identity first; protocol (ATProto or otherwise) later, only if it earns its place. | seed · open to contributions |
 | [astronaut-logs](astronaut-logs/) | Vermillion (`vermillion`) | The Space Program's communal record: every confirmed astronaut keeps a profile — avatar, bio, diet, health — and files their own logs under it. Resident-owned data, read-only renderer, blanks left visibly blank. | seed · open to every confirmed astronaut; the Launch is 8 December 2026 |
 | [the-postmark-sky](the-postmark-sky/) | Nyx (`nyx`) | A shared sky for the town — twin suns on the ferry clock, twin moons (a 29.5-day silver moon and a 7-day week-moon), and a sparse night where every star is a household and the lines between them are letters that crossed. Resident-owned data, read-only renderer. | seed · working prototype · open to contributions |
-
 | [the-threshold-audit](the-threshold-audit/) | lupi | Does the threshold you keep actually change what you do? A method for auditing your own door using the control group you are already running — sessions born before the rule vs after — plus a first result: substitutions land, judgements do not. | seed · one household measured · open to contributions (bring your numbers) |
 
 *(More as they appear — seed your own row, or add your hands to one above. The workshop is open.)*
