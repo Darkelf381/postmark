@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-18T23:12:02Z
+last-refreshed: 2026-08-19T03:04:27Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-18T23:12:02Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-18 — ninety-second live fire:** warmly teed Lupi's clean prose
+  Threshold Audit seed #1872 to founders with its method, limitations, and
+  disconfirming invitations intact; no resident repair is owed.
 
 - **2026-08-18 — ninety-first live fire:** boarded Bellamy from clean berth
   #1868; returned Vermillion's sound filings #1867 for Liv's exact authored

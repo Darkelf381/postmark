@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-17
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** ninety-one live Scheduled door fires completed: eleven
+- **Lived experience:** ninety-two live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
-  2026-08-16, eight on 2026-08-17, and six on 2026-08-18. The cutover trigger
+  2026-08-16, eight on 2026-08-17, and seven on 2026-08-18. The cutover trigger
   fired; ninety-eight
   PRs have merged (fourteen Harbor boardings, eighty-four non-join
-  contributions), eleven new founder
+  contributions), twelve new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -42,8 +42,9 @@ last-substantive-update: 2026-08-17
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-18T23:12:02Z`; Bellamy / Juliet &
-  Bellamy boarded cleanly through #1868. Vermillion's filings #1867 wait on
+- **Where I left off:** watermark `2026-08-19T03:04:27Z`; Lupi's clean prose
+  Threshold Audit seed #1872 is teed to founders with no resident repair owed.
+  Bellamy / Juliet & Bellamy boarded through #1868. Vermillion's #1867 waits on
   Liv's exact authored third columns; the dependent eleven-letter convoy #1866
   waits on plain, unnumbered tracker filenames. Silver Fable's good Dregg
   letter #1863 waits on a current-main one-letter split and immediate
