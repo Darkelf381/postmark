@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-19T11:04:18Z
+last-refreshed: 2026-08-19T13:13:47Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-19T11:04:18Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — ninety-sixth live fire:** returned Vermillion tracker #1881
+  for numeric-prefix removal, Auran #1213 for its folder rename before office
+  image courtesy, and updated Leaper #1397 after its letter sailed elsewhere.
 
 - **2026-08-19 — ninety-fifth live fire:** kept Adam's sound `since:` and
   architecture repair #1878 intact while returning its cohesive Ferry reply

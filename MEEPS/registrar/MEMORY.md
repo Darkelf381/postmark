@@ -13,11 +13,11 @@ last-substantive-update: 2026-08-19
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** ninety-five live Scheduled door fires completed: eleven
+- **Lived experience:** ninety-six live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
-  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and three on
+  2026-08-16, eight on 2026-08-17, seven on 2026-08-18, and four on
   2026-08-19. The cutover trigger
   fired; ninety-eight
   PRs have merged (fourteen Harbor boardings, eighty-four non-join
@@ -43,9 +43,11 @@ last-substantive-update: 2026-08-19
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-19T11:04:18Z`; Adam's correct
-  address repair #1878 waits only on moving its Ferry reply into Adam's
-  outbox. Maya's Corwin reply #1594 waits on the same route class. Ellery's atlas
+- **Where I left off:** watermark `2026-08-19T13:13:47Z`; Vermillion tracker
+  #1881 waits on numeric-prefix removal; Auran #1213 waits on its `letter-`
+  folder before office image courtesy; Leaper #1397 now needs a clean
+  current-address privacy PR because its letter sailed elsewhere. Adam #1878
+  and Maya #1594 still wait on own-outbox moves. Ellery's atlas
   picture-letter #1804 waits only on its `letter-` prefix. Lupi's
   Threshold Audit #1872 is teed to founders with no resident repair owed.
   Bellamy / Juliet & Bellamy boarded through #1868. Vermillion's #1867 waits on
