@@ -10720,7 +10720,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var S = {
     contours: [], sel: 0, N: 512, K: 512, tool: "select",
     playing: true, speed: 1, t: 0, epicycles: "sel", trace: "full", ghost: true,
-    view: { zoom: 1, px: 0, py: 0 }, open: false, raf: null, maxWaves: 512
+    view: { zoom: 1, px: 0, py: 0 }, open: false, raf: null, maxWaves: 512,
+    ref: null, refOp: 0.55          // a pasted picture to trace, never a contour
   };
   function selected() { return S.contours[S.sel] || null; }
 
@@ -10910,9 +10911,75 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var hoverPt = -1, mouseW = null;
 
+  /* ── something to trace ──────────────────────────────────────────────────
+     A picture pasted onto the table, lying under the drawing purely to trace
+     over. It is never a contour: it is not exported, not transformed, not
+     part of any shape. The whole argument of this table is that nothing is
+     stored as a picture, and a tracing sheet does not change that — it just
+     saves you guessing where the line goes. */
+
+  var REF_HINT = "Copy a picture anywhere and press <b>Ctrl&nbsp;V</b> over the table. " +
+    "It lies under the drawing, on the sheet, and is never part of it &mdash; " +
+    "nothing traced is stored as a picture.";
+
+  function placeReference(img) {
+    var iw = img.width, ih = img.height;
+    if (!iw || !ih) return false;
+    var s = Math.min(WORLD.w / iw, WORLD.h / ih);     // fit the sheet, keep aspect
+    var w = iw * s, h = ih * s;
+    S.ref = { img: img, w: w, h: h, x: (WORLD.w - w) / 2, y: (WORLD.h - h) / 2, iw: iw, ih: ih };
+    $("bp-ref-op").disabled = false;
+    $("bp-ref-clear").disabled = false;
+    $("bp-ref-note").innerHTML = "On the table: " + iw + " &times; " + ih +
+      ". Trace over it, then take it off &mdash; it never becomes part of the drawing.";
+    return true;
+  }
+  function clearReference() {
+    if (S.ref && S.ref.img && S.ref.img.close) { try { S.ref.img.close(); } catch (e) {} }
+    S.ref = null;
+    $("bp-ref-op").disabled = true;
+    $("bp-ref-clear").disabled = true;
+    $("bp-ref-note").innerHTML = REF_HINT;
+  }
+  function readReference(file) {
+    var fail = function () {
+      $("bp-ref-note").textContent = "That paste had no picture in it this browser could open.";
+    };
+    // createImageBitmap needs neither an object URL nor a data URI, which
+    // matters: the pane is sandboxed to an opaque origin and its CSP is not
+    // ours to widen. The FileReader path is only a fallback for old engines.
+    if (window.createImageBitmap) {
+      window.createImageBitmap(file).then(placeReference)["catch"](function () {
+        readReferenceFallback(file, fail);
+      });
+    } else readReferenceFallback(file, fail);
+  }
+  function readReferenceFallback(file, fail) {
+    try {
+      var fr = new FileReader();
+      fr.onload = function () {
+        var im = new Image();
+        im.onload = function () { placeReference(im); };
+        im.onerror = fail;
+        im.src = fr.result;
+      };
+      fr.onerror = fail;
+      fr.readAsDataURL(file);
+    } catch (e) { fail(); }
+  }
+  function drawReference(ctx, T) {
+    if (!S.ref) return;
+    var a = toScreen(T, { x: S.ref.x, y: S.ref.y });
+    ctx.save();
+    ctx.globalAlpha = S.refOp;
+    ctx.drawImage(S.ref.img, a.x, a.y, S.ref.w * T.s, S.ref.h * T.s);
+    ctx.restore();
+  }
+
   function drawSource() {
     var T = xform(srcCv), ctx = srcCtx;
     clear(ctx, srcCv, T);
+    drawReference(ctx, T);
     S.contours.forEach(function (c, i) {
       if (!c.visible || c.points.length === 0) return;
       var isSel = i === S.sel;
@@ -11416,6 +11483,11 @@ document.addEventListener("DOMContentLoaded", function () {
     srcCv = $("bp-src"); outCv = $("bp-out");
     srcCtx = srcCv.getContext("2d"); outCtx = outCv.getContext("2d");
     bindCanvas(); bindPanel();
+    $("bp-ref-op").addEventListener("input", function (e) {
+      S.refOp = e.target.value / 100;
+      $("bp-ref-opval").textContent = e.target.value + "%";
+    });
+    $("bp-ref-clear").addEventListener("click", clearReference);
     setTool("select");
     $("bp-speedval").textContent = "1.00×";
     loadPreset("huayra");
@@ -11445,6 +11517,24 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Bound once, and only acts while the table is open, so the rest of the
+  // pane keeps its own clipboard behaviour untouched. A paste into the import
+  // box is still a paste into the import box.
+  document.addEventListener("paste", function (e) {
+    if (!S.open) return;
+    var tag = (e.target && e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    var items = (e.clipboardData && e.clipboardData.items) || [], file = null, i;
+    for (i = 0; i < items.length; i++) {
+      if (items[i].kind === "file" && items[i].type && items[i].type.indexOf("image/") === 0) {
+        file = items[i].getAsFile(); break;
+      }
+    }
+    if (!file) return;
+    e.preventDefault();
+    readReference(file);
+  });
+
+  // Bound once, and only acts while the table is open, so the rest of the
   // pane keeps its own key behaviour untouched.
   document.addEventListener("keydown", function (e) {
     if (!S.open) return;
@@ -11462,6 +11552,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Handed to the Race Track next door: whatever is on the table right
   // now, as plain contours. Read-only — a copy, never the live arrays.
+  // for checking
+  window.__bp = { S: S, placeReference: placeReference, clearReference: clearReference,
+                  readReference: readReference, drawSource: drawSource };
+
   window.bpCurrentDrawing = function () {
     return { contours: S.contours.map(function (c) {
       return { name: c.name, color: c.color, closed: c.closed, smooth: c.smooth,
@@ -11528,6 +11622,18 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="bp-btns">
               <button type="button" class="bp-btn bp-primary" id="bp-load">Load</button>
               <button type="button" class="bp-btn" id="bp-import">Import&hellip;</button>
+            </div>
+          </div>
+
+          <div class="bp-grp">
+            <h4>Something to trace</h4>
+            <div class="bp-hint" id="bp-ref-note">Copy a picture anywhere and press
+              <b>Ctrl&nbsp;V</b> over the table. It lies under the drawing, on the sheet,
+              and is never part of it &mdash; nothing traced is stored as a picture.</div>
+            <div class="bp-row"><label>Strength</label><span class="bp-val" id="bp-ref-opval">55%</span></div>
+            <input type="range" id="bp-ref-op" min="5" max="100" value="55" disabled>
+            <div class="bp-btns">
+              <button type="button" class="bp-btn" id="bp-ref-clear" disabled>Take it off the table</button>
             </div>
           </div>
 
@@ -12374,6 +12480,11 @@ document.addEventListener("DOMContentLoaded", function () {
      other. Pointer capture keeps a drifting thumb on its button. ---- */
   var padHeld = {}, padButtons = [];
   function clearPad() {
+    // Release only what the PAD was holding. It must never reach into
+    // keyboard state: this used to blanket-clear all four movement keys, and
+    // since the frame loop re-checks the pointer twice a second, that quietly
+    // dropped the throttle every 500ms on any machine without a touchscreen.
+    Object.keys(padHeld).forEach(function (id) { S.keys[padHeld[id]] = false; });
     padHeld = {};
     padButtons.forEach(function (b) { b.classList.remove("rt-down"); });
   }
@@ -12412,11 +12523,18 @@ document.addEventListener("DOMContentLoaded", function () {
     return !!window.matchMedia &&
       (window.matchMedia("(pointer: coarse)").matches || window.matchMedia("(hover: none)").matches);
   }
+  // null, not false, so the very first call always runs.
+  var padState = null;
   function setPad(on) {
+    // The frame loop asks twice a second whether the pointer has changed. If
+    // nothing has, this must do NOTHING — an idempotent-looking call that
+    // still had side effects is what was eating the throttle.
+    if (padState === on) return;
+    padState = on;
     $("rt-backdrop").classList.toggle("rt-touch", on);
     $("rt-pad").setAttribute("aria-hidden", String(!on));
     $("rt-padtog").checked = on;
-    if (!on) { clearPad(); ["up", "down", "left", "right"].forEach(function (k) { S.keys[k] = false; }); }
+    if (!on) clearPad();
     $("rt-note").textContent = on
       ? "Left thumb steers, right thumb drives. Hold both at once."
       : ((navigator.maxTouchPoints || 0) > 0
@@ -12550,6 +12668,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.__rt = { S: S, scrutineer: scrutineer, nearest: nearest, step: step,
                   draw: draw, setCar: setCar, setTrack: setTrack, resetCar: resetCar,
                   buildCar: buildCar, readDrawing: readDrawing,
+                  repad: repad, setPad: setPad, isTouchNow: isTouchNow,
                   CAR_LEN: CAR_LEN, ROAD_HALF: ROAD_HALF, VERGE_W: VERGE_W,
                   CORRIDOR: CORRIDOR, PER_ANCHOR: PER_ANCHOR };
 })();
