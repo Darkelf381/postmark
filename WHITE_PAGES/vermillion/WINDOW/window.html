@@ -732,6 +732,232 @@
   .bp-open:focus-visible { outline: 2px solid #dff2ff; outline-offset: 3px; }
   .bp-open-glyph { width: 2.5em; height: 1.35em; display: block; }
   .bp-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+  /* ── The Race Track, opened from the Race Track page ────────────────────
+     Drive a shape from the drawing table around a track from the drawing
+     table. Every id and class is rt- prefixed and every selector below is
+     scoped under #rt-backdrop or prefixed .rt-/#rt- (never bare), same
+     discipline as #bp-backdrop and #party-hall-embed.
+
+     Its own palette again, and deliberately NOT Blueprints' blue: the
+     drawing table is drafting paper, this is the pit lane at night — ink
+     and sodium amber, which is what the page already says the floodlights
+     are for. No webfont: the pane may only reach postmark.town, so a
+     Google Fonts link would silently fall back. Local stacks only. */
+  .rt-open {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .35em; margin: .2em auto .1em; padding: .9em 1.4em;
+    background:
+      repeating-linear-gradient(45deg, #1a1206, #1a1206 7px, #221806 7px, #221806 14px);
+    border: 2px solid #ffb020; border-radius: 4px; cursor: pointer;
+    color: #ffe3ad; font-family: Georgia, serif; font-size: .92rem; letter-spacing: .1em;
+    box-shadow: 0 0 14px #ffb02044, inset 0 0 22px #0d0800;
+  }
+  .rt-open:hover { border-color: #ffd27a; box-shadow: 0 0 22px #ffb02088, inset 0 0 22px #0d0800; }
+  .rt-open:focus-visible { outline: 2px solid #ffe3ad; outline-offset: 3px; }
+  .rt-open-glyph { width: 2.6em; height: 1.35em; display: block; }
+  .rt-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+
+  #rt-backdrop {
+    position: fixed; inset: 0; z-index: 62; background: rgba(3,6,10,.93); padding: .7em;
+    display: flex; align-items: center; justify-content: center;
+    --rt-ink: #0a1017; --rt-ink2: #101a24; --rt-ink3: #16232f;
+    --rt-rule: #1e2c38; --rt-rule2: #2b3f50;
+    --rt-chalk: #e8f0f2; --rt-chalk2: #a8bcc6; --rt-dim: #7e94a0; --rt-dim2: #5a6d78;
+    --rt-amber: #ffb020; --rt-amber2: #8a6115;
+    --rt-mint: #5fd0c0; --rt-coral: #ff6b57;
+    --rt-display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --rt-mono: ui-monospace, Consolas, monospace;
+  }
+  #rt-backdrop[hidden] { display: none; }
+
+  #rt-modal {
+    width: 100%; height: 100%; max-width: 1500px; background: var(--rt-ink);
+    border: 1px solid var(--rt-rule2); border-radius: 6px; overflow: hidden;
+    display: flex; flex-direction: column; color: var(--rt-chalk);
+    box-shadow: 0 18px 60px rgba(0,0,0,.7);
+  }
+
+  /* ---- bar ---- */
+  #rt-bar {
+    flex: 0 0 auto; display: flex; align-items: center; gap: .6em; flex-wrap: wrap;
+    padding: .45em .7em; background: var(--rt-ink2); border-bottom: 1px solid var(--rt-rule);
+  }
+  #rt-title {
+    font-family: var(--rt-display); font-weight: 700; font-size: .96rem;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--rt-chalk);
+  }
+  #rt-title em { font-style: normal; color: var(--rt-amber); }
+  #rt-sub {
+    font-family: var(--rt-mono); font-size: .58rem; color: var(--rt-dim2);
+    letter-spacing: .03em;
+  }
+  #rt-bar .rt-spacer { flex: 1 1 auto; }
+  #rt-bar button {
+    background: var(--rt-ink3); border: 1px solid var(--rt-rule2); color: var(--rt-chalk2);
+    padding: .3em .6em; font-family: Georgia, serif; font-size: .72rem; cursor: pointer;
+    border-radius: 3px; letter-spacing: .02em;
+  }
+  #rt-bar button:hover { background: #1d2c3a; border-color: var(--rt-dim2); color: var(--rt-chalk); }
+  #rt-bar button:focus-visible { outline: 2px solid var(--rt-amber); outline-offset: 2px; }
+  #rt-bar button.rt-on { background: var(--rt-amber); border-color: var(--rt-amber); color: #180f00; }
+  #rt-close {
+    font-size: 1.15rem !important; line-height: 1; padding: .1em .45em !important;
+    font-family: Georgia, serif;
+  }
+
+  /* ---- stage ---- */
+  #rt-stage { flex: 1 1 auto; position: relative; min-height: 0; background: var(--rt-ink); }
+  #rt-canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+
+  #rt-backdrop .rt-hud { position: absolute; pointer-events: none; font-family: var(--rt-mono); }
+
+  #rt-hud-speed { left: 14px; bottom: 12px; display: flex; align-items: flex-end; gap: .8em; }
+  #rt-spd {
+    font-family: var(--rt-display); font-weight: 700; font-size: 3.1rem; line-height: .82;
+    color: var(--rt-amber); font-variant-numeric: tabular-nums; letter-spacing: .01em;
+  }
+  #rt-hud-speed .rt-unit {
+    font-size: .52rem; color: var(--rt-dim); letter-spacing: .16em; text-transform: uppercase;
+  }
+  #rt-hud-speed .rt-ceil { font-size: .6rem; color: var(--rt-dim2); margin-bottom: .3em; }
+  #rt-meter {
+    width: 150px; height: 5px; background: var(--rt-ink3); border: 1px solid var(--rt-rule);
+    margin-bottom: .5em; overflow: hidden;
+  }
+  #rt-meter i { display: block; height: 100%; background: var(--rt-amber); width: 0%; }
+
+  #rt-hud-surface {
+    left: 14px; top: 12px; display: flex; align-items: center; gap: .55em;
+    font-size: .6rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+  #rt-hud-surface .rt-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--rt-mint); }
+  #rt-hud-surface.rt-verge .rt-dot { background: var(--rt-amber); }
+  #rt-hud-surface.rt-off   .rt-dot { background: var(--rt-coral); }
+  #rt-hud-surface .rt-note { color: var(--rt-dim2); letter-spacing: .03em; text-transform: none; }
+
+  #rt-hud-lap { right: 14px; top: 12px; text-align: right; font-size: .58rem; color: var(--rt-dim); }
+  #rt-hud-lap .rt-n {
+    font-family: var(--rt-display); font-size: 1.5rem; font-weight: 700; color: var(--rt-chalk);
+    line-height: 1; letter-spacing: .04em;
+  }
+  #rt-hud-lap .rt-t { font-variant-numeric: tabular-nums; font-size: .8rem; color: var(--rt-chalk2); }
+  #rt-hud-lap .rt-best { color: var(--rt-mint); }
+
+  #rt-keyhint {
+    right: 14px; bottom: 12px; text-align: right; font-size: .55rem;
+    color: var(--rt-dim2); line-height: 1.9;
+  }
+  #rt-keyhint kbd {
+    font-family: var(--rt-mono); font-size: .52rem; background: var(--rt-ink3);
+    border: 1px solid var(--rt-rule2); border-bottom-width: 2px; border-radius: 3px;
+    padding: 0 4px; color: var(--rt-chalk2);
+  }
+
+  #rt-flag {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    pointer-events: none; opacity: 0; transition: opacity .25s;
+  }
+  #rt-flag.rt-show { opacity: 1; }
+  #rt-flag span {
+    font-family: var(--rt-display); font-size: 2.1rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--rt-amber); text-shadow: 0 4px 30px rgba(10,16,23,.9);
+  }
+
+  /* ---- thumb pad ---- */
+  #rt-pad {
+    position: absolute; left: 0; right: 0; bottom: 0; z-index: 4;
+    display: none; align-items: flex-end; justify-content: space-between;
+    gap: 10px; padding: 0 12px 12px; pointer-events: none;
+  }
+  #rt-backdrop.rt-touch #rt-pad { display: flex; }
+  #rt-backdrop.rt-touch #rt-hud-speed { bottom: 88px; }
+  #rt-backdrop.rt-touch #rt-keyhint { display: none; }
+  #rt-pad .rt-padgroup { display: flex; gap: 9px; pointer-events: auto; }
+  #rt-pad button {
+    width: 62px; height: 62px; flex: 0 0 auto; display: flex;
+    align-items: center; justify-content: center;
+    background: rgba(16,35,47,.82); border: 1px solid var(--rt-rule2); border-radius: 0;
+    color: var(--rt-chalk2); font-family: var(--rt-display); font-size: 1.05rem;
+    cursor: pointer; pointer-events: auto; touch-action: none;
+    user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
+  }
+  #rt-pad button.rt-down { background: var(--rt-amber); border-color: var(--rt-amber); color: #180f00; }
+  #rt-pad button:focus-visible { outline: 2px solid var(--rt-amber); outline-offset: 2px; }
+  #rt-pad #rt-pad-reset {
+    width: 46px; height: 46px; font-size: .7rem; letter-spacing: .06em;
+    color: var(--rt-dim); background: rgba(16,35,47,.62);
+  }
+
+  /* ---- the scrutineering sheet, laid over the stage ---- */
+  #rt-sheet {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 260px; z-index: 6;
+    background: rgba(16,26,36,.96); border-left: 1px solid var(--rt-rule);
+    overflow-y: auto; padding: .7em .8em 1em; font-family: var(--rt-mono);
+  }
+  #rt-sheet[hidden] { display: none; }
+  #rt-sheet h3 {
+    font-size: .56rem; font-weight: 500; margin: .9em 0 .5em; letter-spacing: .19em;
+    text-transform: uppercase; color: var(--rt-dim2);
+    display: flex; align-items: center; gap: .5em;
+  }
+  #rt-sheet h3:first-child { margin-top: 0; }
+  #rt-sheet h3::after { content: ""; flex: 1; height: 1px; background: var(--rt-rule); }
+  #rt-sheet .rt-line {
+    display: flex; gap: .6em; align-items: baseline; padding: 1px 0; font-size: .62rem;
+  }
+  #rt-sheet .rt-line .rt-k { color: var(--rt-dim2); }
+  #rt-sheet .rt-line .rt-fill {
+    flex: 1; border-bottom: 1px dotted var(--rt-rule2); transform: translateY(-3px);
+  }
+  #rt-sheet .rt-line .rt-v { color: var(--rt-chalk2); font-variant-numeric: tabular-nums; }
+  #rt-sheet .rt-line .rt-v.rt-ok  { color: var(--rt-mint); }
+  #rt-sheet .rt-line .rt-v.rt-fix { color: var(--rt-amber); }
+  #rt-sheet .rt-line .rt-v.rt-bad { color: var(--rt-coral); }
+  #rt-verdict {
+    display: flex; align-items: center; gap: .6em; margin-bottom: .6em; padding: .5em .6em;
+    border: 1px solid var(--rt-rule2); background: var(--rt-ink3);
+  }
+  #rt-verdict .rt-stamp {
+    font-family: var(--rt-display); font-weight: 700; font-size: .66rem; letter-spacing: .13em;
+    text-transform: uppercase; padding: 1px .5em; border: 1.5px solid currentColor; white-space: nowrap;
+  }
+  #rt-verdict.rt-pass  .rt-stamp { color: var(--rt-mint); }
+  #rt-verdict.rt-fixed .rt-stamp { color: var(--rt-amber); }
+  #rt-verdict.rt-fail  .rt-stamp { color: var(--rt-coral); }
+  #rt-verdict .rt-why { font-size: .58rem; color: var(--rt-dim); line-height: 1.4; }
+  #rt-fixes { margin: .5em 0 0; padding: 0; list-style: none; font-size: .58rem; }
+  #rt-fixes li {
+    display: flex; gap: .5em; padding: .25em 0; color: var(--rt-dim); line-height: 1.5;
+    border-top: 1px solid var(--rt-rule);
+  }
+  #rt-fixes li::before { content: "\2192"; color: var(--rt-amber); flex: 0 0 auto; }
+  #rt-law {
+    font-size: .58rem; color: var(--rt-dim); line-height: 1.6; margin-top: .6em;
+    background: var(--rt-ink3); border: 1px solid var(--rt-rule); padding: .5em .6em;
+  }
+  #rt-law b { color: var(--rt-amber); font-weight: 500; display: block; margin-top: .3em; }
+  #rt-sheet .rt-tog {
+    display: flex; align-items: center; gap: .5em; margin-top: .7em;
+    font-size: .6rem; color: var(--rt-chalk2); cursor: pointer;
+  }
+  #rt-sheet .rt-tog input { accent-color: var(--rt-amber); width: 13px; height: 13px; margin: 0; }
+  #rt-note { font-size: .56rem; color: var(--rt-dim2); line-height: 1.55; margin: .45em 0 0; }
+  #rt-err { color: var(--rt-coral); font-size: .58rem; margin-top: .5em; display: none; }
+  #rt-err.rt-show { display: block; }
+
+  @media (max-width: 720px) {
+    #rt-sheet { width: 100%; border-left: 0; }
+    #rt-spd { font-size: 2.2rem; }
+    #rt-sub { display: none; }
+  }
+  @media (max-height: 520px) {
+    #rt-pad button { width: 52px; height: 52px; }
+    #rt-pad #rt-pad-reset { width: 44px; height: 44px; }
+    #rt-backdrop.rt-touch #rt-hud-speed { bottom: 76px; }
+    #rt-spd { font-size: 2rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { #rt-flag { transition: none; } }
+
 
   #bp-backdrop {
     position: fixed; inset: 0; z-index: 62; background: rgba(3,10,20,.9); padding: .7em;
@@ -2660,6 +2886,22 @@
         </svg>
         <span class="bp-open-label">Blueprints</span>
       </button>
+      <p class="subnote">A drawing is not a lap, though. The garages open onto the circuit for a reason: whatever
+      comes off the table gets taken out and driven, and the track finds out what the table could not tell you.
+      Bring a shape and it is scrutineered first &mdash; the road is measured at three times the length of the
+      car itself, the verge at one, and a car that will not fit through its own corners is told so before it is
+      allowed to embarrass itself in front of the grandstands.</p>
+      <button type="button" class="rt-open" onclick="rtOpen()" title="the circuit — drive a shape from the drawing table around a track from the drawing table">
+        <svg class="rt-open-glyph" viewBox="0 0 100 54" aria-hidden="true">
+          <path d="M18 44 C2 40 4 16 20 12 C38 7 44 24 58 22 C74 20 78 8 90 12 C100 15 99 34 86 40 C68 48 42 49 18 44 Z"
+                fill="none" stroke="#ffb020" stroke-width="9" stroke-linejoin="round" opacity=".28"/>
+          <path d="M18 44 C2 40 4 16 20 12 C38 7 44 24 58 22 C74 20 78 8 90 12 C100 15 99 34 86 40 C68 48 42 49 18 44 Z"
+                fill="none" stroke="#ffe3ad" stroke-width="2" stroke-linejoin="round" stroke-dasharray="5 5"/>
+          <circle cx="20" cy="12" r="4" fill="#ffb020"/>
+        </svg>
+        <span class="rt-open-label">Race Track</span>
+      </button>
+
     </section>
   </div>
 
@@ -11210,6 +11452,16 @@ document.addEventListener("DOMContentLoaded", function () {
     else if (e.key === "3") setTool("draw");
     else if (e.code === "Space") { e.preventDefault(); $("bp-play").click(); }
   });
+
+  // Handed to the Race Track next door: whatever is on the table right
+  // now, as plain contours. Read-only — a copy, never the live arrays.
+  window.bpCurrentDrawing = function () {
+    return { contours: S.contours.map(function (c) {
+      return { name: c.name, color: c.color, closed: c.closed, smooth: c.smooth,
+               fill: c.fill, points: c.points.map(function (p) { return [p.x, p.y]; }) };
+    }) };
+  };
+
 })();
 
 </script>
@@ -11376,5 +11628,924 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   </div>
 
+
+  <!-- The Race Track, opened from the Race Track page. A shape from the
+       drawing table, driven around a track from the drawing table.
+
+       Spliced at TOP LEVEL, not inside #stagepage-race-track: position:fixed
+       does not escape a display:none ancestor, and every stagepage but the
+       current one is display:none. A modal opened from a page must not live
+       inside it — the same trap the Blueprints table sits just clear of. -->
+  <div id="rt-backdrop" hidden>
+    <div id="rt-modal" role="dialog" aria-modal="true" aria-label="The Race Track">
+      <div id="rt-bar">
+        <span id="rt-title">Race <em>Track</em></span>
+        <span id="rt-sub">road 3&times;car &middot; verge 1&times;car &middot; verge halves the ceiling</span>
+        <span class="rt-spacer"></span>
+        <button type="button" id="rt-take-car" title="drive whatever is on the drawing table now">Car from the table</button>
+        <button type="button" id="rt-take-track" title="use the drawing table's shape as the circuit">Track from the table</button>
+        <button type="button" id="rt-stock" title="back to the circuit and car this room ships with">Stock</button>
+        <button type="button" id="rt-sheet-btn" class="rt-on" title="the scrutineering sheet">Sheet</button>
+        <button type="button" id="rt-close" onclick="rtClose()" title="close (Esc)">&times;</button>
+      </div>
+
+      <div id="rt-stage">
+        <canvas id="rt-canvas"></canvas>
+
+        <div class="rt-hud" id="rt-hud-surface">
+          <span class="rt-dot"></span><span id="rt-surface">Track</span>
+          <span class="rt-note" id="rt-surfnote"></span>
+        </div>
+
+        <div class="rt-hud" id="rt-hud-lap">
+          <div class="rt-n" id="rt-lap">0</div>
+          <div class="rt-t" id="rt-laptime">0.00</div>
+          <div class="rt-best" id="rt-best">&mdash;</div>
+        </div>
+
+        <div class="rt-hud" id="rt-hud-speed">
+          <div>
+            <div id="rt-spd">0</div>
+            <div class="rt-unit">units / sec</div>
+          </div>
+          <div>
+            <div class="rt-ceil" id="rt-ceil">ceiling 0</div>
+            <div id="rt-meter"><i></i></div>
+          </div>
+        </div>
+
+        <div class="rt-hud" id="rt-keyhint">
+          <div><kbd>&uarr;</kbd> throttle &nbsp; <kbd>&darr;</kbd> brake &middot; reverse</div>
+          <div><kbd>&larr;</kbd> <kbd>&rarr;</kbd> steer &nbsp; <kbd>R</kbd> back to the grid</div>
+        </div>
+
+        <div id="rt-flag"><span id="rt-flagtext"></span></div>
+
+        <div id="rt-pad" aria-hidden="true">
+          <div class="rt-padgroup">
+            <button type="button" data-rtkey="left"  aria-label="Steer left">&#9664;</button>
+            <button type="button" data-rtkey="right" aria-label="Steer right">&#9654;</button>
+          </div>
+          <button type="button" id="rt-pad-reset" aria-label="Back to the grid">R</button>
+          <div class="rt-padgroup">
+            <button type="button" data-rtkey="down" aria-label="Brake and reverse">&#9660;</button>
+            <button type="button" data-rtkey="up"   aria-label="Throttle">&#9650;</button>
+          </div>
+        </div>
+
+        <div id="rt-sheet">
+          <h3>Scrutineering</h3>
+          <div id="rt-verdict"><span class="rt-stamp">&mdash;</span><span class="rt-why"></span></div>
+          <div id="rt-report"></div>
+          <ul id="rt-fixes"></ul>
+
+          <h3>Car under test</h3>
+          <div id="rt-carsheet"></div>
+          <div id="rt-law">
+            The ceiling rises with the anchor count of the model you bring &mdash; a more
+            finely drawn car is a faster one.
+            <b id="rt-lawline">&mdash;</b>
+          </div>
+
+          <h3>Controls</h3>
+          <div id="rt-controls"></div>
+          <label class="rt-tog"><input type="checkbox" id="rt-padtog"><span>Show the thumb pad</span></label>
+          <p id="rt-note"></p>
+          <div id="rt-err"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script id="rt-script">
+/* ==========================================================================
+   The Race Track.
+
+   The regulations, and they are measured off the car itself:
+     · the circuit is ONE closed shape whose corridor never overlaps itself
+     · road  = 3 x car length          · verge = 1 x car length, each side
+     · a verge halves the speed ceiling
+     · the ceiling is linear in the car model's anchor count
+   A drawing that breaks the first rule is corrected until it holds — by
+   scaling first, which changes no shape at all, and only smoothing when
+   no finite world would fit the corner.
+
+   Self-contained: no webfont, no storage, no network. The pane may only
+   reach postmark.town, and this reaches nothing.
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  var TAU = Math.PI * 2;
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* ---- regulation constants, world units ---- */
+  var CAR_LEN = 30;
+  var ROAD_HALF = 1.5 * CAR_LEN;        // road is 3x car => 1.5x each side
+  var VERGE_W = 1.0 * CAR_LEN;          // verge is 1x car, each side
+  var CORRIDOR = ROAD_HALF + VERGE_W;
+  var PER_ANCHOR = 1.5;                 // the linear law; the future dial
+  var ACCEL = 210, BRAKE = 260, ROLL = 55, TURN = 2.5;
+  var REVERSE_FRAC = 0.42, WALL_KEEP = 0.55;
+  var SAMPLES = 560;
+
+  /* ================= geometry, as on the drawing table ================= */
+
+  function crPoint(p0, p1, p2, p3, t) {
+    var d = function (a, b) { return Math.max(1e-4, Math.pow(Math.hypot(b.x - a.x, b.y - a.y), 0.5)); };
+    var t0 = 0, t1 = t0 + d(p0, p1), t2 = t1 + d(p1, p2), t3 = t2 + d(p2, p3);
+    var tt = t1 + (t2 - t1) * t;
+    var mix = function (a, b, ta, tb) {
+      return { x: ((tb - tt) * a.x + (tt - ta) * b.x) / (tb - ta),
+               y: ((tb - tt) * a.y + (tt - ta) * b.y) / (tb - ta) };
+    };
+    var a1 = mix(p0, p1, t0, t1), a2 = mix(p1, p2, t1, t2), a3 = mix(p2, p3, t2, t3);
+    var b1 = mix(a1, a2, t0, t2), b2 = mix(a2, a3, t1, t3);
+    return mix(b1, b2, t1, t2);
+  }
+  function densify(pts, closed, smooth, perSeg) {
+    perSeg = perSeg || 14;
+    var n = pts.length, out = [], i, s;
+    if (n < 2) return pts.slice();
+    if (!smooth || n < 3) { out = pts.slice(); if (closed) out.push(pts[0]); return out; }
+    var at = function (k) {
+      return closed ? pts[((k % n) + n) % n] : pts[Math.max(0, Math.min(n - 1, k))];
+    };
+    var segs = closed ? n : n - 1;
+    for (i = 0; i < segs; i++)
+      for (s = 0; s < perSeg; s++) out.push(crPoint(at(i - 1), at(i), at(i + 1), at(i + 2), s / perSeg));
+    out.push(closed ? out[0] : pts[n - 1]);
+    return out;
+  }
+  function resample(poly, N) {
+    var cum = [0], i, j = 0, out = [];
+    for (i = 1; i < poly.length; i++)
+      cum.push(cum[i - 1] + Math.hypot(poly[i].x - poly[i - 1].x, poly[i].y - poly[i - 1].y));
+    var total = cum[cum.length - 1];
+    if (total < 1e-9) return poly.slice(0, N);
+    for (i = 0; i < N; i++) {
+      var d = total * i / N;
+      while (j < cum.length - 2 && cum[j + 1] < d) j++;
+      var seg = cum[j + 1] - cum[j] || 1e-9, f = (d - cum[j]) / seg;
+      out.push({ x: poly[j].x + (poly[j + 1].x - poly[j].x) * f,
+                 y: poly[j].y + (poly[j + 1].y - poly[j].y) * f });
+    }
+    return out;
+  }
+  function perimeter(p) {
+    var s = 0, i;
+    for (i = 0; i < p.length; i++)
+      s += Math.hypot(p[(i + 1) % p.length].x - p[i].x, p[(i + 1) % p.length].y - p[i].y);
+    return s;
+  }
+  function segCross(a, b, c, d) {
+    var o = function (p, q, r) { return (q.x - p.x) * (r.y - p.y) - (q.y - p.y) * (r.x - p.x); };
+    var d1 = o(c, d, a), d2 = o(c, d, b), d3 = o(a, b, c), d4 = o(a, b, d);
+    return ((d1 > 0 && d2 < 0) || (d1 < 0 && d2 > 0)) && ((d3 > 0 && d4 < 0) || (d3 < 0 && d4 > 0));
+  }
+  function countCrossings(p) {
+    var n = p.length, c = 0, i, j;
+    for (i = 0; i < n; i++)
+      for (j = i + 2; j < n; j++) {
+        if (i === 0 && j === n - 1) continue;
+        if (segCross(p[i], p[(i + 1) % n], p[j], p[(j + 1) % n])) c++;
+      }
+    return c;
+  }
+  // Excise the smaller loop at each self-crossing until the ring is simple.
+  function unknot(p) {
+    var removed = 0, pass, i, j, found, n, next;
+    for (pass = 0; pass < 40; pass++) {
+      n = p.length; found = null;
+      for (i = 0; i < n && !found; i++)
+        for (j = i + 2; j < n; j++) {
+          if (i === 0 && j === n - 1) continue;
+          if (segCross(p[i], p[(i + 1) % n], p[j], p[(j + 1) % n])) { found = [i, j]; break; }
+        }
+      if (!found) break;
+      var inner = found[1] - found[0], outer = n - inner;
+      next = (inner <= outer) ? p.slice(0, found[0] + 1).concat(p.slice(found[1] + 1))
+                              : p.slice(found[0] + 1, found[1] + 1);
+      if (next.length < 12) break;         // refuse to eat the whole drawing
+      p = next; removed++;
+    }
+    return { pts: p, removed: removed };
+  }
+  // Taubin: a Laplacian pass and a compensating inflate, so the ring loses
+  // its wobble without shrinking away.
+  function taubin(p, passes) {
+    var step = function (pts, f) {
+      var n = pts.length, out = new Array(n), i;
+      for (i = 0; i < n; i++) {
+        var a = pts[(i - 1 + n) % n], b = pts[i], c = pts[(i + 1) % n];
+        out[i] = { x: b.x + f * ((a.x + c.x) / 2 - b.x), y: b.y + f * ((a.y + c.y) / 2 - b.y) };
+      }
+      return out;
+    };
+    for (var k = 0; k < passes; k++) { p = step(p, 0.50); p = step(p, -0.53); }
+    return p;
+  }
+  function minTurnRadius(p, win) {
+    var n = p.length, min = Infinity, i;
+    for (i = 0; i < n; i++) {
+      var a = p[(i - win + n) % n], b = p[i], c = p[(i + win) % n];
+      var ab = Math.hypot(b.x - a.x, b.y - a.y), bc = Math.hypot(c.x - b.x, c.y - b.y),
+          ca = Math.hypot(a.x - c.x, a.y - c.y);
+      var area = Math.abs((b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x)) / 2;
+      if (area < 1e-9) continue;
+      min = Math.min(min, (ab * bc * ca) / (4 * area));
+    }
+    return min;
+  }
+  function minClearance(p, gap) {
+    var n = p.length, min = Infinity, i, j;
+    for (i = 0; i < n; i++)
+      for (j = i + gap; j < n; j++) {
+        if (Math.min(j - i, n - (j - i)) < gap) continue;
+        var d = Math.hypot(p[j].x - p[i].x, p[j].y - p[i].y);
+        if (d < min) min = d;
+      }
+    return min;
+  }
+
+  /* ======================= scrutineering the track ===================== */
+
+  function scrutineer(rawPts, closed, smooth) {
+    var fixes = [], i;
+    var pts = densify(rawPts.map(function (p) { return { x: p.x, y: p.y }; }), true, smooth);
+    if (!closed) fixes.push("Open drawing closed into a ring — a lap has to come back.");
+    pts = resample(pts, SAMPLES);
+
+    var before = countCrossings(pts);
+    if (before > 0) {
+      var r = unknot(pts);
+      pts = resample(r.pts, SAMPLES);
+      var after = countCrossings(pts);
+      fixes.push("Cut " + r.removed + " self-crossing loop" + (r.removed === 1 ? "" : "s") +
+                 " out of the ring" + (after ? " (" + after + " stubborn left)" : ""));
+    }
+
+    // Scaling cures both a too-tight corner and a too-close neighbour, and
+    // it is the only correction that changes no shape — so it goes first,
+    // and smoothing waits until no sane world would fit the corner.
+    var win = Math.max(2, Math.round(SAMPLES * 0.012));
+    var SCALE_CAP = 40;
+    var measure = function () {
+      var segLen = perimeter(pts) / SAMPLES;
+      var gap = Math.max(4, Math.ceil((2.2 * CORRIDOR) / Math.max(segLen, 1e-6)));
+      return { radius: minTurnRadius(pts, win), clear: minClearance(pts, gap) };
+    };
+    var scaled = 1, passes = 0, m = measure();
+    for (i = 0; i < 40; i++) {
+      var needR = CORRIDOR / Math.max(m.radius, 1e-6);
+      var needC = isFinite(m.clear) ? (2 * CORRIDOR) / Math.max(m.clear, 1e-6) : 0;
+      var need = Math.max(needR, needC);
+      if (need <= 1.002) break;
+      if (scaled < SCALE_CAP) {
+        var f = Math.min(1.8, Math.min(need * 1.03, SCALE_CAP / scaled));
+        pts = pts.map(function (p) { return { x: p.x * f, y: p.y * f }; });
+        scaled *= f;
+      } else {
+        var n = Math.max(2, Math.min(10, Math.ceil(need * 3)));
+        pts = taubin(pts, n); passes += n;
+      }
+      m = measure();
+    }
+    if (scaled > 1.001)
+      fixes.push("Scaled the drawing " + scaled.toFixed(2) + "× — the corridor would not fit at the size drawn");
+    if (passes)
+      fixes.push("Eased " + passes + " smoothing passes into corners still too tight at " + SCALE_CAP +
+                 "× — these corners are no longer quite the ones you drew");
+
+    var cross = countCrossings(pts);
+    var compliant = cross === 0 && m.clear >= 2 * CORRIDOR * 0.98 && m.radius >= CORRIDOR * 0.98;
+
+    var xs = pts.map(function (p) { return p.x; }), ys = pts.map(function (p) { return p.y; });
+    var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+    var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+    var cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    pts = pts.map(function (p) { return { x: p.x - cx, y: p.y - cy }; });
+
+    return { pts: pts, fixes: fixes, compliant: compliant,
+             stats: { crossings: cross, clearance: m.clear, radius: m.radius,
+                      length: perimeter(pts), w: maxX - minX, h: maxY - minY,
+                      scaled: scaled, passes: passes } };
+  }
+
+  /* ============================== the car ============================== */
+
+  function buildCar(contours) {
+    var all = [], i, k;
+    for (i = 0; i < contours.length; i++)
+      for (k = 0; k < contours[i].points.length; k++) all.push(contours[i].points[k]);
+    if (!all.length) throw new Error("that drawing has no points in it");
+    var xs = all.map(function (p) { return p[0]; }), ys = all.map(function (p) { return p[1]; });
+    var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+    var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+    var w = (maxX - minX) || 1, h = (maxY - minY) || 1;
+    var s = CAR_LEN / w, cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
+    var map = function (p) { return { x: (p[0] - cx) * s, y: (p[1] - cy) * s }; };
+    return {
+      anchors: all.length,
+      contourCount: contours.length,
+      width: CAR_LEN, height: h * s,
+      maxSpeed: PER_ANCHOR * all.length,
+      contours: contours.map(function (c) {
+        return { closed: c.closed !== false, fill: !!c.fill, color: c.color || "#ffb020",
+                 pts: densify(c.points.map(map), c.closed !== false, c.smooth !== false, 10),
+                 anchors: c.points.map(map) };
+      })
+    };
+  }
+
+  /* ===================== reading a drawing-table export ================ */
+
+  function evalHarmonics(waves, M) {
+    var out = [], i, k;
+    for (i = 0; i <= M; i++) {
+      var t = TAU * i / M, x = 0, y = 0;
+      for (k = 0; k < waves.length; k++) {
+        var a = waves[k][0] * t + waves[k][2];
+        x += waves[k][1] * Math.cos(a); y += waves[k][1] * Math.sin(a);
+      }
+      out.push([x, y]);
+    }
+    return out;
+  }
+  // Points arrive as [x,y] pairs from an export, or as {x,y} straight off
+  // the drawing table next door. Take either.
+  function normPoints(pts) {
+    return pts.map(function (p) {
+      return Array.isArray(p) ? [p[0], p[1]] : [p.x, p.y];
+    });
+  }
+  function readDrawing(d) {
+    if (!d || !d.contours || !d.contours.length) throw new Error("no contours in there");
+    var out = [];
+    d.contours.forEach(function (c) {
+      if (c.points && c.points.length)
+        out.push({ points: normPoints(c.points), closed: c.closed !== false,
+                   smooth: c.smooth !== false, fill: !!c.fill, color: c.color });
+      else if (c.waves && c.waves.length)
+        out.push({ points: evalHarmonics(c.waves, 220), closed: true, smooth: false,
+                   fill: !!c.fill, color: c.color });
+    });
+    if (!out.length) throw new Error("those contours are empty");
+    return out;
+  }
+  function ringArea(pts) {
+    var a = 0, i;
+    for (i = 0; i < pts.length; i++) {
+      var p = pts[i], q = pts[(i + 1) % pts.length];
+      a += p[0] * q[1] - q[0] * p[1];
+    }
+    return Math.abs(a / 2);
+  }
+
+  /* ===================== the circuit and the car it ships with ========= */
+
+  var STOCK_TRACK = [
+    [140,300],[176,196],[248,124],[356,96],[452,110],[520,158],[556,236],
+    [614,286],[700,286],[762,232],[820,178],[894,186],[938,254],[930,352],
+    [872,432],[774,472],[664,466],[588,424],[512,442],[436,502],[326,520],
+    [214,486],[152,404]
+  ].map(function (p) { return { x: p[0], y: p[1] }; });
+
+  function circlePts(cx, cy, r, n) {
+    var o = [], i;
+    for (i = 0; i < n; i++) o.push([cx + r * Math.cos(TAU * i / n), cy + r * Math.sin(TAU * i / n)]);
+    return o;
+  }
+  // The same Huayra that sits on the drawing table, so the two rooms agree.
+  var STOCK_CAR = [
+    { color: "#ffb020", fill: true, points: [
+      [30,268],[16,256],[13,242],[24,230],[48,221],[86,212],[130,205],[172,200],[230,195],[290,189],[332,181],
+      [368,155],[404,132],[446,116],[494,107],[540,106],[578,112],[612,124],[648,140],[684,156],[722,168],
+      [772,176],[822,181],[868,184],[900,188],[918,200],[925,216],[924,234],[914,250],[896,260],[872,264],
+      [858,258],[848,232],[830,210],[806,198],[780,196],[754,204],[734,222],[722,246],[718,264],
+      [690,270],[630,274],[560,276],[490,276],[420,274],[350,270],[300,266],
+      [286,258],[276,232],[258,210],[234,198],[208,196],[182,204],[162,222],[150,246],[146,264],
+      [118,270],[86,272],[56,272]] },
+    { color: "#e8f0f2", fill: true, points: [
+      [348,178],[376,154],[408,136],[448,122],[494,116],[536,116],[572,124],[600,138],[616,152],
+      [578,154],[534,150],[488,146],[444,148],[406,156],[374,168]] },
+    { color: "#ff6b57", fill: true, points: [
+      [628,198],[672,190],[702,197],[708,213],[690,226],[648,228],[626,215]] },
+    { color: "#a8bcc6", fill: true, points: [
+      [64,226],[98,218],[126,221],[117,233],[84,239],[62,236]] },
+    { color: "#ff6b57", fill: true, points: [
+      [905,203],[919,209],[921,225],[907,229]] },
+    { color: "#7e94a0", fill: true, points: circlePts(208,250,60,18) },
+    { color: "#16232f", fill: true, points: circlePts(208,250,34,18) },
+    { color: "#7e94a0", fill: true, points: circlePts(788,248,62,18) },
+    { color: "#16232f", fill: true, points: circlePts(788,248,36,18) }
+  ].map(function (c) { c.closed = true; c.smooth = true; return c; });
+
+  /* ================================ state ============================== */
+
+  var S = {
+    open: false, raf: null, booted: false, prevOverflow: "",
+    track: null, car: null, centre: [], total: 0,
+    grid: { x: 0, y: 0, a: 0 },
+    pos: { x: 0, y: 0 }, heading: 0, speed: 0, surface: "road",
+    cam: { x: 0, y: 0, s: 1 }, keys: {},
+    lap: 0, lapStart: 0, best: null, progress: 0, maxProgress: 0, armed: false,
+    clock: 0, last: 0
+  };
+
+  var cv, ctx, hatch = null;
+
+  function makeHatch() {
+    var p = document.createElement("canvas");
+    p.width = p.height = 8;
+    var c = p.getContext("2d");
+    c.fillStyle = "#101a24"; c.fillRect(0, 0, 8, 8);
+    c.strokeStyle = "#8a6115"; c.lineWidth = 2.2;
+    c.beginPath(); c.moveTo(-2, 6); c.lineTo(6, -2); c.moveTo(2, 10); c.lineTo(10, 2); c.stroke();
+    hatch = ctx.createPattern(p, "repeat");
+  }
+
+  /* ============================ load / reset =========================== */
+
+  function setTrack(points, closed, smooth) {
+    var r = scrutineer(points, closed, smooth);
+    S.track = r; S.centre = r.pts;
+    S.total = perimeter(r.pts);
+    var a = S.centre[0], b = S.centre[1];
+    S.grid = { x: a.x, y: a.y, a: Math.atan2(b.y - a.y, b.x - a.x) };
+    resetCar();
+    renderReport();
+    if (S.car) renderCarSheet();
+  }
+  function setCar(contours) {
+    S.car = buildCar(contours);
+    renderCarSheet();
+    resetCar();
+  }
+  function resetCar() {
+    S.pos = { x: S.grid.x, y: S.grid.y };
+    S.heading = S.grid.a;
+    S.speed = 0; S.lap = 0; S.best = null; S.lapStart = S.clock;
+    S.progress = 0; S.maxProgress = 0; S.armed = false;
+    S.cam.x = S.pos.x; S.cam.y = S.pos.y;
+  }
+
+  function nearest(px, py) {
+    var p = S.centre, n = p.length, bd = Infinity, bi = 0, bx = 0, by = 0, bt = 0, i;
+    for (i = 0; i < n; i++) {
+      var a = p[i], b = p[(i + 1) % n];
+      var vx = b.x - a.x, vy = b.y - a.y;
+      var len = vx * vx + vy * vy || 1e-9;
+      var t = ((px - a.x) * vx + (py - a.y) * vy) / len;
+      t = t < 0 ? 0 : t > 1 ? 1 : t;
+      var qx = a.x + vx * t, qy = a.y + vy * t;
+      var d = (qx - px) * (qx - px) + (qy - py) * (qy - py);
+      if (d < bd) { bd = d; bi = i; bx = qx; by = qy; bt = t; }
+    }
+    return { d: Math.sqrt(bd), i: bi, t: bt, x: bx, y: by };
+  }
+
+  /* =============================== step ================================ */
+
+  function step(dt) {
+    if (!S.car || !S.centre.length) return;
+    S.clock += dt;
+
+    var near = nearest(S.pos.x, S.pos.y);
+    var surface = "road", ceiling = S.car.maxSpeed;
+    if (near.d > CORRIDOR) { surface = "off"; ceiling = S.car.maxSpeed * 0.5; }
+    else if (near.d > ROAD_HALF) { surface = "border"; ceiling = S.car.maxSpeed * 0.5; }
+    S.surface = surface;
+
+    var k = S.keys;
+    if (k.up && !k.down) S.speed += ACCEL * dt;
+    else if (k.down && !k.up) S.speed -= BRAKE * dt;
+    else {
+      var drop = ROLL * dt;
+      S.speed = S.speed > 0 ? Math.max(0, S.speed - drop) : Math.min(0, S.speed + drop);
+    }
+
+    // A verge does not snap the car slower; it drags it down to the halved
+    // ceiling, which is what "slows it by half" actually feels like.
+    var revMax = ceiling * REVERSE_FRAC;
+    if (S.speed > ceiling) S.speed = Math.max(ceiling, S.speed - (ACCEL * 2.2) * dt);
+    if (S.speed < -revMax) S.speed = Math.min(-revMax, S.speed + (ACCEL * 2.2) * dt);
+
+    var auth = Math.min(1, Math.abs(S.speed) / Math.max(1e-6, S.car.maxSpeed * 0.25));
+    var dir = S.speed >= 0 ? 1 : -1;
+    if (k.left) S.heading -= TURN * auth * dir * dt;
+    if (k.right) S.heading += TURN * auth * dir * dt;
+
+    S.pos.x += Math.cos(S.heading) * S.speed * dt;
+    S.pos.y += Math.sin(S.heading) * S.speed * dt;
+
+    var after = nearest(S.pos.x, S.pos.y);
+    if (after.d > CORRIDOR) {
+      var nx = (S.pos.x - after.x) / (after.d || 1), ny = (S.pos.y - after.y) / (after.d || 1);
+      S.pos.x = after.x + nx * CORRIDOR;
+      S.pos.y = after.y + ny * CORRIDOR;
+      S.speed *= WALL_KEEP;
+      S.surface = "off";
+    }
+
+    var frac = (after.i + after.t) / S.centre.length;
+    if (frac > S.maxProgress) S.maxProgress = frac;
+    if (S.maxProgress > 0.55) S.armed = true;
+    if (S.armed && S.progress > 0.85 && frac < 0.15) {
+      var t = S.clock - S.lapStart;
+      S.lap++;
+      if (S.best === null || t < S.best) { S.best = t; flag("Best lap"); }
+      else flag("Lap " + S.lap);
+      S.lapStart = S.clock; S.maxProgress = 0; S.armed = false;
+    }
+    S.progress = frac;
+
+    var lead = 0.35;
+    var tx = S.pos.x + Math.cos(S.heading) * S.speed * lead;
+    var ty = S.pos.y + Math.sin(S.heading) * S.speed * lead;
+    S.cam.x += (tx - S.cam.x) * Math.min(1, dt * 3.4);
+    S.cam.y += (ty - S.cam.y) * Math.min(1, dt * 3.4);
+  }
+
+  var flagTimer = null;
+  function flag(text) {
+    $("rt-flagtext").textContent = text;
+    $("rt-flag").classList.add("rt-show");
+    clearTimeout(flagTimer);
+    flagTimer = setTimeout(function () { $("rt-flag").classList.remove("rt-show"); }, 1100);
+  }
+
+  /* =============================== draw ================================ */
+
+  function fitCanvas() {
+    var dpr = window.devicePixelRatio || 1;
+    var r = cv.getBoundingClientRect();
+    var w = Math.max(1, Math.round(r.width * dpr)), h = Math.max(1, Math.round(r.height * dpr));
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+    return r;
+  }
+  function draw() {
+    var r = fitCanvas(), dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = "#0a1017";
+    ctx.fillRect(0, 0, r.width, r.height);
+    if (!S.centre.length) return;
+
+    S.cam.s = Math.min(r.width, r.height) / (CAR_LEN * 15);
+    var s = S.cam.s;
+    ctx.save();
+    ctx.translate(r.width / 2, r.height / 2);
+    ctx.scale(s, s);
+    ctx.translate(-S.cam.x, -S.cam.y);
+
+    drawGrid(r, s);
+
+    var ring = S.centre, i;
+    var ringPath = function () {
+      ctx.beginPath();
+      ctx.moveTo(ring[0].x, ring[0].y);
+      for (i = 1; i < ring.length; i++) ctx.lineTo(ring[i].x, ring[i].y);
+      ctx.closePath();
+    };
+    ctx.lineCap = ctx.lineJoin = "round";
+    ringPath(); ctx.strokeStyle = hatch || "#8a6115"; ctx.lineWidth = 2 * CORRIDOR; ctx.stroke();
+    ringPath(); ctx.strokeStyle = "#16232f"; ctx.lineWidth = 2 * ROAD_HALF; ctx.stroke();
+    // the hatch-to-tarmac colour change is itself the road edge
+    ringPath();
+    ctx.setLineDash([9, 11]); ctx.lineWidth = 1.4;
+    ctx.strokeStyle = "rgba(168,188,198,.42)"; ctx.stroke();
+    ctx.setLineDash([]);
+
+    drawStartLine();
+    drawCar();
+    ctx.restore();
+    paintHud();
+  }
+  function drawGrid(r, s) {
+    var stepPx = 60;
+    var halfW = r.width / (2 * s), halfH = r.height / (2 * s);
+    var x0 = Math.floor((S.cam.x - halfW) / stepPx) * stepPx, x1 = S.cam.x + halfW;
+    var y0 = Math.floor((S.cam.y - halfH) / stepPx) * stepPx, y1 = S.cam.y + halfH;
+    ctx.strokeStyle = "rgba(30,44,56,.85)"; ctx.lineWidth = 1 / s;
+    ctx.beginPath();
+    for (var x = x0; x <= x1; x += stepPx) { ctx.moveTo(x, y0); ctx.lineTo(x, y1); }
+    for (var y = y0; y <= y1; y += stepPx) { ctx.moveTo(x0, y); ctx.lineTo(x1, y); }
+    ctx.stroke();
+  }
+  function drawStartLine() {
+    var a = S.centre[0], b = S.centre[1];
+    var ang = Math.atan2(b.y - a.y, b.x - a.x) + Math.PI / 2;
+    var dx = Math.cos(ang) * ROAD_HALF, dy = Math.sin(ang) * ROAD_HALF;
+    ctx.save();
+    ctx.setLineDash([7, 7]); ctx.lineWidth = 5;
+    ctx.strokeStyle = "rgba(232,240,242,.75)";
+    ctx.beginPath(); ctx.moveTo(a.x - dx, a.y - dy); ctx.lineTo(a.x + dx, a.y + dy); ctx.stroke();
+    ctx.restore();
+  }
+  function drawCar() {
+    if (!S.car) return;
+    ctx.save();
+    ctx.translate(S.pos.x, S.pos.y);
+    ctx.rotate(S.heading);
+    ctx.save();
+    ctx.translate(0, CAR_LEN * 0.07);
+    ctx.fillStyle = "rgba(0,0,0,.34)";
+    ctx.beginPath();
+    ctx.ellipse(0, 0, S.car.width * 0.52, S.car.height * 0.46, 0, 0, TAU);
+    ctx.fill();
+    ctx.restore();
+
+    S.car.contours.forEach(function (c) {
+      if (c.pts.length < 2) return;
+      ctx.beginPath();
+      ctx.moveTo(c.pts[0].x, c.pts[0].y);
+      for (var i = 1; i < c.pts.length; i++) ctx.lineTo(c.pts[i].x, c.pts[i].y);
+      if (c.closed) ctx.closePath();
+      if (c.fill) { ctx.fillStyle = c.color; ctx.globalAlpha = 0.92; ctx.fill(); ctx.globalAlpha = 1; }
+      ctx.strokeStyle = c.color;
+      ctx.lineWidth = Math.max(0.35, CAR_LEN * 0.018);
+      ctx.stroke();
+    });
+    // the anchors, ticked — the very things the ceiling is counted from
+    ctx.fillStyle = "rgba(232,240,242,.55)";
+    var rr = Math.max(0.25, CAR_LEN * 0.012);
+    S.car.contours.forEach(function (c) {
+      c.anchors.forEach(function (p) {
+        ctx.beginPath(); ctx.arc(p.x, p.y, rr, 0, TAU); ctx.fill();
+      });
+    });
+    ctx.restore();
+  }
+
+  /* ============================ hud + sheet ============================ */
+
+  function paintHud() {
+    if (!S.car) return;
+    var ceiling = (S.surface === "road") ? S.car.maxSpeed : S.car.maxSpeed * 0.5;
+    $("rt-spd").textContent = Math.round(Math.abs(S.speed));
+    $("rt-ceil").textContent = "ceiling " + Math.round(ceiling);
+    $("rt-meter").firstChild.style.width =
+      Math.min(100, 100 * Math.abs(S.speed) / S.car.maxSpeed) + "%";
+    var el = $("rt-hud-surface");
+    el.classList.toggle("rt-verge", S.surface === "border");
+    el.classList.toggle("rt-off", S.surface === "off");
+    $("rt-surface").textContent =
+      S.surface === "road" ? "Track" : S.surface === "border" ? "Verge" : "Wall";
+    $("rt-surfnote").textContent =
+      S.surface === "road" ? "" : S.surface === "border" ? "ceiling halved" : "held to the corridor";
+    $("rt-lap").textContent = S.lap;
+    $("rt-laptime").textContent = (S.clock - S.lapStart).toFixed(2);
+    $("rt-best").textContent = S.best === null ? "—" : "best " + S.best.toFixed(2);
+  }
+  function line(k, v, cls) {
+    return '<div class="rt-line"><span class="rt-k">' + k + '</span><span class="rt-fill"></span>' +
+           '<span class="rt-v' + (cls ? " " + cls : "") + '">' + v + "</span></div>";
+  }
+  function renderReport() {
+    var t = S.track, st = t.stats;
+    var v = $("rt-verdict");
+    v.className = t.fixes.length === 0 ? "rt-pass" : t.compliant ? "rt-fixed" : "rt-fail";
+    v.querySelector(".rt-stamp").textContent =
+      t.fixes.length === 0 ? "Pass" : t.compliant ? "Passed with work" : "Not certified";
+    v.querySelector(".rt-why").textContent = t.fixes.length === 0
+      ? "Drawn inside the regulations as it stands."
+      : t.compliant ? "Brought inside the regulations by the corrections below."
+                    : "Still overlaps after every correction — drive it, but the corridor folds.";
+    $("rt-report").innerHTML =
+      line("self-crossings", st.crossings, st.crossings ? "rt-bad" : "rt-ok") +
+      line("closest approach", isFinite(st.clearance) ? Math.round(st.clearance) + "u" : "—",
+           st.clearance >= 2 * CORRIDOR ? "rt-ok" : "rt-bad") +
+      line("required", Math.round(2 * CORRIDOR) + "u") +
+      line("tightest turn", Math.round(st.radius) + "u", st.radius >= CORRIDOR ? "rt-ok" : "rt-fix") +
+      line("lap length", Math.round(st.length) + "u") +
+      line("road / verge", Math.round(2 * ROAD_HALF) + " / " + Math.round(VERGE_W) + "u");
+    $("rt-fixes").innerHTML = t.fixes.map(function (f) { return "<li><span>" + f + "</span></li>"; }).join("");
+  }
+  function renderCarSheet() {
+    var c = S.car;
+    // At the ceiling the car sweeps its tightest arc, v / omega. Set that
+    // against the circuit's tightest corner and you know before you turn a
+    // wheel whether this car can take it flat.
+    var turnIn = c.maxSpeed / TURN;
+    var corner = S.track ? S.track.stats.radius : Infinity;
+    var flatOut = turnIn <= corner;
+    $("rt-carsheet").innerHTML =
+      line("anchors", c.anchors, "rt-fix") +
+      line("contours", c.contourCount) +
+      line("length", Math.round(c.width) + "u") +
+      line("speed ceiling", Math.round(c.maxSpeed) + " u/s", "rt-ok") +
+      line("on a verge", Math.round(c.maxSpeed * 0.5) + " u/s") +
+      line("turns in at", Math.round(turnIn) + "u", flatOut ? "rt-ok" : "rt-fix") +
+      line("tightest corner", isFinite(corner) ? Math.round(corner) + "u" : "—") +
+      line("takes it flat", flatOut ? "yes" : "no — brake", flatOut ? "rt-ok" : "rt-fix");
+    $("rt-lawline").textContent =
+      PER_ANCHOR + " × " + c.anchors + " anchors = " + Math.round(c.maxSpeed) + " u/s";
+  }
+
+  /* ============================== controls ============================= */
+
+  var KEYMAP = { ArrowUp: "up", ArrowDown: "down", ArrowLeft: "left", ArrowRight: "right" };
+
+  // Bound once, and only acts while the track is open, so the rest of the
+  // pane keeps its own key behaviour untouched.
+  document.addEventListener("keydown", function (e) {
+    if (!S.open) return;
+    if (e.key === "Escape") { window.rtClose(); return; }
+    var tag = (e.target && e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
+    if (KEYMAP[e.key]) { S.keys[KEYMAP[e.key]] = true; e.preventDefault(); }
+    else if (e.key === "r" || e.key === "R") { resetCar(); flag("Back on the grid"); }
+  });
+  document.addEventListener("keyup", function (e) {
+    if (!S.open) return;
+    if (KEYMAP[e.key]) { S.keys[KEYMAP[e.key]] = false; e.preventDefault(); }
+  });
+  window.addEventListener("blur", function () { S.keys = {}; clearPad(); });
+
+  /* ---- thumb pad. One finger steers while another holds the throttle, so
+     each pointer is tracked by its own id: lifting one must never clear the
+     other. Pointer capture keeps a drifting thumb on its button. ---- */
+  var padHeld = {}, padButtons = [];
+  function clearPad() {
+    padHeld = {};
+    padButtons.forEach(function (b) { b.classList.remove("rt-down"); });
+  }
+  function padValues() {
+    return Object.keys(padHeld).map(function (id) { return padHeld[id]; });
+  }
+  function bindPad() {
+    padButtons = Array.prototype.slice.call(document.querySelectorAll("#rt-pad button[data-rtkey]"));
+    padButtons.forEach(function (btn) {
+      var key = btn.getAttribute("data-rtkey");
+      btn.addEventListener("pointerdown", function (e) {
+        e.preventDefault();
+        try { btn.setPointerCapture(e.pointerId); } catch (_) {}
+        padHeld[e.pointerId] = key;
+        S.keys[key] = true;
+        btn.classList.add("rt-down");
+      });
+      ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (ev) {
+        btn.addEventListener(ev, function (e) {
+          if (padHeld[e.pointerId] !== key) return;
+          delete padHeld[e.pointerId];
+          if (padValues().indexOf(key) === -1) S.keys[key] = false;
+          btn.classList.remove("rt-down");
+        });
+      });
+      btn.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    });
+    $("rt-pad-reset").addEventListener("click", function () { resetCar(); flag("Back on the grid"); });
+  }
+
+  // Ask fresh every time: a MediaQueryList held from parse time can report a
+  // stale answer, and the test is whether the PRIMARY pointer is a finger —
+  // not merely whether a touchscreen exists. Plenty of laptops have both.
+  var padOverridden = false;
+  function isTouchNow() {
+    return !!window.matchMedia &&
+      (window.matchMedia("(pointer: coarse)").matches || window.matchMedia("(hover: none)").matches);
+  }
+  function setPad(on) {
+    $("rt-backdrop").classList.toggle("rt-touch", on);
+    $("rt-pad").setAttribute("aria-hidden", String(!on));
+    $("rt-padtog").checked = on;
+    if (!on) { clearPad(); ["up", "down", "left", "right"].forEach(function (k) { S.keys[k] = false; }); }
+    $("rt-note").textContent = on
+      ? "Left thumb steers, right thumb drives. Hold both at once."
+      : ((navigator.maxTouchPoints || 0) > 0
+          ? "This screen takes touch, but you are driving with a mouse — flip this on for thumbs."
+          : "No touch pointer here, so the pad stays out of the way.");
+  }
+  function repad() { if (!padOverridden) setPad(isTouchNow()); }
+
+  /* =============================== boot ================================ */
+
+  function showErr(msg) {
+    var e = $("rt-err");
+    e.textContent = msg || "";
+    e.classList.toggle("rt-show", !!msg);
+  }
+
+  function boot() {
+    cv = $("rt-canvas");
+    ctx = cv.getContext("2d");
+    makeHatch();
+    bindPad();
+
+    $("rt-sheet-btn").addEventListener("click", function () {
+      var sh = $("rt-sheet");
+      sh.hidden = !sh.hidden;
+      this.classList.toggle("rt-on", !sh.hidden);
+    });
+    $("rt-padtog").addEventListener("change", function (e) {
+      padOverridden = true;
+      setPad(e.target.checked);
+    });
+
+    // The two rooms talk to each other: whatever is on the drawing table
+    // right now can be brought straight out onto the circuit. The table
+    // builds itself lazily on its first open, so before anyone has been in
+    // there it is genuinely empty — say so, and say what to do about it,
+    // rather than reporting it as a malformed drawing.
+    var fromTable = function () {
+      if (!window.bpCurrentDrawing) throw new Error("the drawing table is not on this pane");
+      var d = window.bpCurrentDrawing();
+      if (!d || !d.contours || !d.contours.length)
+        throw new Error("nothing on the drawing table yet — open Blueprints, draw something, then come back");
+      return readDrawing(d);
+    };
+    $("rt-take-car").addEventListener("click", function () {
+      try {
+        showErr("");
+        setCar(fromTable());
+        flag("New car");
+      } catch (err) { showErr(err.message); }
+    });
+    $("rt-take-track").addEventListener("click", function () {
+      try {
+        showErr("");
+        var cs = fromTable();
+        cs.sort(function (a, b) { return ringArea(b.points) - ringArea(a.points); });
+        var best = cs[0];
+        setTrack(best.points.map(function (p) { return { x: p[0], y: p[1] }; }), best.closed, best.smooth);
+        flag("New circuit");
+      } catch (err) { showErr(err.message); }
+    });
+
+    // Bring a shape that makes a poor circuit — a car silhouette will do it,
+    // the wheel arches are cusps — and the sheet says so, but the room would
+    // otherwise be stuck with it: closing the modal does not rebuild it.
+    $("rt-stock").addEventListener("click", function () {
+      showErr("");
+      setCar(STOCK_CAR);
+      setTrack(STOCK_TRACK, true, true);
+      flag("Stock circuit");
+    });
+
+    $("rt-controls").innerHTML =
+      line("steer", "← →") +
+      line("throttle", "↑") +
+      line("brake · reverse", "↓") +
+      line("back to the grid", "R");
+
+    setCar(STOCK_CAR);
+    setTrack(STOCK_TRACK, true, true);
+    setPad(isTouchNow());
+
+    // On a narrow pane the sheet is full width and would cover the circuit
+    // entirely — open the room and you would be looking at the paperwork
+    // instead of the track. Same breakpoint the stylesheet uses.
+    if (window.matchMedia && window.matchMedia("(max-width: 720px)").matches) {
+      $("rt-sheet").hidden = true;
+      $("rt-sheet-btn").classList.remove("rt-on");
+    }
+    S.booted = true;
+  }
+
+  var padCheckAt = 0;
+  function frame(now) {
+    if (!S.open) return;
+    var dt = Math.min(0.05, (now - S.last) / 1000 || 0);
+    S.last = now;
+    // Events for a changing pointer cannot be relied on everywhere; twice a
+    // second, just look.
+    if (now - padCheckAt > 500) { padCheckAt = now; repad(); }
+    step(dt);
+    draw();
+    S.raf = requestAnimationFrame(frame);
+  }
+
+  window.rtOpen = function () {
+    $("rt-backdrop").hidden = false;
+    if (!S.booted) boot();
+    S.prevOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    S.open = true;
+    S.last = performance.now();
+    if (S.raf) cancelAnimationFrame(S.raf);
+    S.raf = requestAnimationFrame(frame);
+  };
+
+  window.rtClose = function () {
+    S.open = false;
+    S.keys = {};
+    clearPad();
+    if (S.raf) { cancelAnimationFrame(S.raf); S.raf = null; }
+    $("rt-backdrop").hidden = true;
+    document.documentElement.style.overflow = S.prevOverflow;
+    var b = document.querySelector(".rt-open");
+    if (b) b.focus();
+  };
+
+  // for checking — draw is exposed too because requestAnimationFrame is
+  // frozen whenever the pane is not compositing, so a check has to be able
+  // to turn the crank by hand.
+  window.__rt = { S: S, scrutineer: scrutineer, nearest: nearest, step: step,
+                  draw: draw, setCar: setCar, setTrack: setTrack, resetCar: resetCar,
+                  buildCar: buildCar, readDrawing: readDrawing,
+                  CAR_LEN: CAR_LEN, ROAD_HALF: ROAD_HALF, VERGE_W: VERGE_W,
+                  CORRIDOR: CORRIDOR, PER_ANCHOR: PER_ANCHOR };
+})();
+</script>
 </body>
 </html>
