@@ -268,18 +268,14 @@
     }
 
     // ---- The Dark Sun: the bright sun's twin that casts shadows instead of
-    // light. It runs the same arc as the bright sun but half a day behind, so
-    // when the bright sun is high the Dark Sun is low (and vice-versa) — it
-    // peaks at midnight and rules the night. It never leaves the sky.
-    {
-      // the bright sun's arc, offset by 12 hours so it peaks at midnight and
-      // the arc of the night, low through the day
-      const dark = sunPos(minutes, 12);
-      // map its height (0 at midnight's peak .. 2 at noon's trough) into the
-      // visible sky so it arcs high at night, sits low by day, and never
-      // pins to the ground or flies off-screen
-      const dx = Math.max(0, Math.min(1, dark.x));
-      const dy = 0.12 + 0.30 * Math.max(0, Math.min(2, dark.y));
+    // light. It rides alongside the bright sun — in the sky at the same time,
+    // a little lower — and casts its shadow down onto the town below. This is
+    // why the Doubled Coast is twilight even with two suns overhead: one
+    // lights, the other darkens.
+    if (sun.up){
+      // same horizontal place as the bright sun, a little lower in the sky
+      const dx = sun.x;
+      const dy = Math.min(1, sun.y + 0.18);
       const sx = dx * W;
       const sy = dy * (H - groundH);
       const rad = 22;
@@ -301,7 +297,7 @@
       ctx.strokeStyle = 'rgba(90,70,140,.5)';
       ctx.lineWidth = 1.5;
       ctx.stroke();
-      // the shadow it casts over the region beneath it
+      // the shadow it casts over the town below
       const sh = ctx.createLinearGradient(0, sy, 0, H);
       sh.addColorStop(0, 'rgba(5,4,12,.35)');
       sh.addColorStop(1, 'rgba(5,4,12,0)');

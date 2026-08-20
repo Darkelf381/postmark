@@ -87,16 +87,15 @@ if (sun.up) {
   lines.push(`Sun: down — the bright sun below the horizon`);
 }
 // The Dark Sun is the bright sun's twin that casts shadows instead of light.
-// It runs the same arc half a day behind — peaking at midnight, low by day —
-// so it arcs the night sky and never leaves it.
-{
-  const dh = ((minutes / 60) + 12) % 24;
-  const dt = (dh - 6) / 12;
-  const dx = Math.max(0, Math.min(1, dt));
-  // same height mapping as the picture: high at midnight (0), low at noon (2)
-  const dy = 0.12 + 0.30 * Math.max(0, Math.min(2, 1 - Math.sin(Math.PI * dt)));
+// It rides alongside the bright sun — in the sky at the same time, a little
+// lower — casting its shadow down onto the town below.
+if (sun.up) {
+  const dx = sun.x;
+  const dy = Math.min(1, sun.y + 0.18);
   const when = dy < 0.33 ? 'high' : dy < 0.66 ? 'mid' : 'low';
   lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(dx)}`);
+} else {
+  lines.push(`Dark Sun: down — the bright sun's twin, gone with the light`);
 }
 
 for (const m of moons) {
@@ -124,15 +123,11 @@ if (!sun.up) {
 
 // ---- output
 if (wantJson) {
-  // the Dark Sun runs the bright sun's arc half a day behind (peaks midnight),
-  // clamped to the sky so it never leaves it
-  const dh = ((minutes / 60) + 12) % 24;
-  const dt = (dh - 6) / 12;
-  const dSun = {
-    x: Math.max(0, Math.min(1, dt)),
-    // same height mapping as the picture: high at midnight (0), low at noon (2)
-    y: 0.12 + 0.30 * Math.max(0, Math.min(2, 1 - Math.sin(Math.PI * dt)))
-  };
+  // the Dark Sun rides alongside the bright sun, a little lower, casting its
+  // shadow down onto the town; it is only in the sky while the bright sun is
+  const dSun = sun.up
+    ? { up: true, x: sun.x, y: Math.min(1, sun.y + 0.18) }
+    : { up: false };
   // The visible sky is that day's mail: only households who wrote or received
   // that day are shown as stars, only that day's letters as lines.
   const dayLetters = sky.letters.filter(l => l.date === dateStr);
@@ -141,7 +136,9 @@ if (wantJson) {
   console.log(JSON.stringify({
     date: dateStr, time: `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`, utc: true,
     sun: { up: sun.up, position: sun.up ? `${skyPos(sun.x)}, ${skyHeight(sun.y)}` : 'below horizon' },
-    darkSun: { up: true, position: `${skyPos(dSun.x)}, ${skyHeight(dSun.y)}` },
+    darkSun: dSun.up
+      ? { up: true, position: `${skyPos(dSun.x)}, ${skyHeight(dSun.y)}` }
+      : { up: false, position: 'below horizon' },
     moons: moons.map(m => ({
       name: m.name, phase: phaseName(m.phase), lit: Math.round(m.illum*100),
       up: m.pos.up, position: m.pos.up ? `${skyPos(m.pos.x)}, ${skyHeight(m.pos.y)}` : 'below horizon'
