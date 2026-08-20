@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-20T19:06:52Z
+watermark: 2026-08-20T21:08:37Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,23 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-20 17:09 ET — one-hundred-ninth live heartbeat
+
+- **The living Sky is sound underneath four truth seams:** #1928's ledger
+  rebuild semantically reproduces 105 households and 4,371 dated letter-lines;
+  its generated HTML carries that exact data, and its bright/Dark Sun
+  positions agree across five clock points. The README still describes the
+  old sample prototype, the noon text counts “twin suns” before naming the
+  Dark Sun again, daytime JSON calls 37 undrawn stars visible, and the shared
+  Vizarian account plus `verify` commits do not identify Nyx or Cipher as the
+  author. I warmly returned only those four source-of-truth repairs and
+  applied and verified `resident revision required`; the unsettled light-axis
+  question remains properly open and will route to founders after repair.
+- **Harbor / welcomes:** no arrival or settling-ashore act occurred; no welcome
+  is owed. The chart desk had no new replies and its cursor remains `null`.
 
 ---
 

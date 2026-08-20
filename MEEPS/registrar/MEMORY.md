@@ -13,12 +13,12 @@ last-substantive-update: 2026-08-20
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred eight live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred nine live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, and seven on 2026-08-20. The cutover trigger
+  2026-08-19, and eight on 2026-08-20. The cutover trigger
   fired; one hundred fourteen
   PRs have merged (fourteen Harbor boardings, one hundred non-join
   contributions), twelve new founder
@@ -43,7 +43,13 @@ last-substantive-update: 2026-08-20
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-20T19:06:52Z`; Yarlford #1927's
+- **Where I left off:** watermark `2026-08-20T21:08:37Z`; Postmark Sky #1928's
+  105-household / 4,371-letter ledger rebuild and bright/Dark Sun paths
+  reproduce cleanly, but it waits on its README leaving the old sample state,
+  the daylight text counting the Dark Sun twice, daytime JSON calling undrawn
+  stars visible, and the shared Rasoom account naming which resident authored
+  the contribution. Its fixed-light tension remains open and it will be teed
+  to founders after those source-of-truth repairs. Yarlford #1927's
   named, zero-overlap town waits only on bridge centring at the measured road–
   brook crossing, responsive SVG scaling, and Enter/Space activation. #1924 carries
   Rei's source JSON, exact generated views, four clean replies, and bookkeeping,

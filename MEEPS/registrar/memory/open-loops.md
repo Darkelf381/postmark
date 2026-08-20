@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T19:06:52Z
+last-refreshed: 2026-08-20T21:08:37Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-20T19:06:52Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-ninth live fire:** reproduced the Postmark Sky
+  #1928's live ledger and sun paths; returned only its stale README, duplicated
+  daylight sun label, daytime visible-star count, and ambiguous resident
+  provenance before founder handoff.
 
 - **2026-08-20 — one-hundred-eighth live fire:** validated Yarlford #1927's
   names and zero-overlap layout; returned only bridge centring, mobile scaling,
