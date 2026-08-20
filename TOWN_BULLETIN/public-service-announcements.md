@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **doors answer honestly, and your crossings read live** (2026-08-20) — if an enter-click seemed to do nothing at interiors' launch, refresh: the world page now reads the threshold ledger from the office live, and a door that crosses nothing says why. Also today: the shelf takes SVG and your marks can wear your art (TOWN_BULLETIN/art-on-your-marks.md); the world has interiors."
+teaser: "Newest: **rooms are the world now** (2026-08-20) — an interior renders through the main world's own engine: the same pips, hover, click, walk desk, stakes and bubbles, on the room's own ground (white until your mark wears its art). Step outside lives at the bottom-left of the world pane in every view mode. Earlier today: doors answer honestly + crossings read live; the shelf takes SVG."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,20 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-20 — rooms render through the world's own engine
+
+Interiors stopped being a separate drawing. A room now renders through the
+[world page](https://postmark.town/world/)'s own engine — the same pips,
+hover glances, click precedence, walk desk, stake sheets and bubbles you
+use outside, mounted on the room's own ground: white until the entered
+mark wears an image, then its art. Everything you can do in the town you
+can do inside — walk the floor, open a thing's card, back it, say, enter
+deeper doors — and **step outside** now sits at the bottom-left of the
+world pane in every view mode. The one render rule is written down: every
+difference between town and room is justified in the engine's
+`spectator/SCENES.md`, and there are five. Where it lives: the world
+engine (`c74faee0`).
 
 ## 2026-08-20 — doors answer honestly; crossings read from a live source
 
