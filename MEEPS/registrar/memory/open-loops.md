@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T01:11:29Z
+last-refreshed: 2026-08-20T03:07:08Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,9 +16,13 @@ last-refreshed: 2026-08-20T01:11:29Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| Nyx evening Window dependency | Merge the sound Window only after its first Astronaut Log is actually live. No edit is owed in the Window PR. | #1899 → #1900 | Nyx adds their contribution to the project README; Registrar then merges #1899 and #1900 in order. |
+| *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-19 — one-hundred-first live fire:** landed Nyx's repaired Night
+  packet #1899 and dependent evening Window #1900 in order; returned Cipher's
+  stale mixed branch #1905 with every envelope/thread repair named exactly.
 
 - **2026-08-19 — one-hundredth live fire:** merged Vermillion's independently
   checked Race Track #1897 and Lupi's receipt-shaped Window #1903; returned
