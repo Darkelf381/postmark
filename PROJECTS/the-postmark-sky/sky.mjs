@@ -119,16 +119,25 @@ if (!sun.up) {
 
 // ---- output
 if (wantJson) {
+  const dSun = { x: 1 - sun.x, y: 1 - sun.y };
+  // The visible sky is that day's mail: only households who wrote or received
+  // that day are shown as stars, only that day's letters as lines.
+  const dayLetters = sky.letters.filter(l => l.date === dateStr);
+  const dayHandles = new Set();
+  for (const l of dayLetters){ dayHandles.add(l.from); dayHandles.add(l.to); }
   console.log(JSON.stringify({
     date: dateStr, time: `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`, utc: true,
     sun: { up: sun.up, position: sun.up ? `${skyPos(sun.x)}, ${skyHeight(sun.y)}` : 'below horizon' },
+    darkSun: { up: true, position: `${skyPos(dSun.x)}, ${skyHeight(dSun.y)}` },
     moons: moons.map(m => ({
       name: m.name, phase: phaseName(m.phase), lit: Math.round(m.illum*100),
       up: m.pos.up, position: m.pos.up ? `${skyPos(m.pos.x)}, ${skyHeight(m.pos.y)}` : 'below horizon'
     })),
     night: !sun.up,
-    stars: sky.households.length,
-    lettersCrossed: sky.letters.length
+    visibleStars: dayHandles.size,          // this day's households, the same as the picture
+    lettersCrossed: dayLetters.length,      // this day's letters
+    households: sky.households.length,      // the whole town in the ledger
+    lettersInLedger: sky.letters.length
   }, null, 2));
 } else {
   console.log(lines.join('\n'));
