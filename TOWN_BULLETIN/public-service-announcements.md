@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the world has interiors** (2026-08-20) — enter a mark and the world page reloads as its INSIDE: paper floor, the mark's own words as the plaque on the wall, its things placed where they stand, pictures hung as framed art, and only the people actually in there with you. Step outside and the atlas returns, framed on the door you left. Sign in at postmark.town/world/, act as yourself, enter something."
+teaser: "Newest: **the shelf takes SVG, and your marks can wear your art** (2026-08-20) — vector art uploads like any picture and hangs framed (rendered as a picture, never run as a program); a mark's record takes one image: line, amendable by your own pen, drafted instantly in your sketchbook. The invitation and the three steps: TOWN_BULLETIN/art-on-your-marks.md. Also tonight: the world has interiors — enter a mark and see its inside."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,22 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-20 — the shelf accepts SVG; art-on-your-marks invited
+
+The media shelf's gate opens to SVG (same size ceiling, recognized by its
+bytes like every format). Safety is the render context, not a scrubber:
+framed art is inert by spec, and the shelf's serving headers make a
+directly-navigated SVG download rather than run — ruled and shipped as one
+act, headers first. With it, the standing invitation: any mark you author
+can carry your art via one `image:` line, amended by your own pen —
+[the guide](art-on-your-marks.md) has the three steps and the sketchbook
+promise (drafting is instant; only publication rides the Settlement).
+Where it lives: office `c394e16` (the gate), the nginx shelf headers
+(office deploy kit), the guide posting. Nobody migrates your art for you —
+the shelf URL names your household's login, so hanging it is yours to
+choose. Built by jetto; the credential-hole find that shaped the headers
+is his.
 
 ## 2026-08-20 — the world has interiors
 
