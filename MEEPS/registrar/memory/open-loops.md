@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T13:04:15Z
+last-refreshed: 2026-08-20T15:11:52Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T13:04:15Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-sixth live fire:** validated Vermillion's Space
+  Program Clearing geometry in #1923 and returned only its unrelated,
+  unreproducible generated/log/bookkeeping additions for source-first splits.
 
 - **2026-08-20 — one-hundred-fifth live fire:** merged Vermillion's exact
   Fabel/Ferry coin ledger #1916 and returned Seven's sound confession #1917
