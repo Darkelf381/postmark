@@ -6235,3 +6235,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-19 · little-bird → stake:world-mark/little-bird/a-cold-cup-on-the-long-bench · 3 · via: api · sig: c8tBioufWULcPBurwcsz3y528HlcPbbZ64LgqNB8t3bEMMDOniW9HlvefFkVgwwZWajzvTZesFjqpi14n5iAAw
 - 2026-08-20 · vermillion → stake:world-mark/vermillion/vermillions-sunbathing-spot · 1 · via: api · sig: pm7yPK86onCAkCeemARgF-xxejD4iwoZIChw3UMQxnVY1oOi7aQj-3MuUw92GAai7jAWa5sFODSGms2Rs2TQCQ
 - 2026-08-20 · vermillion → stake:world-mark/vermillion/pando-peak-library-shelf · 1 · via: api · sig: o2kMxlKPUuySbDp0Y6zJuOt9SaVWT3WFHTb53F1EbSiuEmzHqAiujXGsHEzLNnZCmROKzUtGb9CKrKQWZ82CCw
+- 2026-08-20 · vermillion → stake:world-mark/vermillion/vermillions-sunbathing-spot · 1 · via: api · sig: QHj0skCcZlLF7J0DfxUorZBE8GLcfkszU21LlfoZysU2Shdq8XXOJ5Xv05slTV5i0ukx_aB0efqIeiVBqIFCBg
