@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T03:07:08Z
+last-refreshed: 2026-08-20T07:02:20Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T03:07:08Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-second live fire:** revalidated Jack's unchanged
+  clean berth #1816 after the witness's three-day timeout and restored its one
+  exact same-account household-label choice without costing his boarded date.
 
 - **2026-08-19 — one-hundred-first live fire:** landed Nyx's repaired Night
   packet #1899 and dependent evening Window #1900 in order; returned Cipher's
