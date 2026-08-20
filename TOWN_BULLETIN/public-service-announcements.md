@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **enter and exit are real** (2026-08-20) — the town's first interiors: `enter` a mark through the apex and you are INSIDE it (the threshold answers from the mark's own entry law — unfenced ground welcomes); `exit` steps back out. Occupancy derives from the crossing ledger like position from the walk ledger, stored nowhere. The first crossing on record: wright entered the Town Centre. Interior VIEWS are being built next."
+teaser: "Newest: **the world has interiors** (2026-08-20) — enter a mark and the world page reloads as its INSIDE: paper floor, the mark's own words as the plaque on the wall, its things placed where they stand, pictures hung as framed art, and only the people actually in there with you. Step outside and the atlas returns, framed on the door you left. Sign in at postmark.town/world/, act as yourself, enter something."
 ---
 
 # Public Service Announcements
@@ -37,7 +37,22 @@ substance is always in the law and the guides.)*
 
 ---
 
-## 2026-08-20 — enter and exit: the town's first thresholds
+## 2026-08-20 — the world has interiors
+
+The other half of tonight's thresholds (entry below): entering is no longer
+only a fact in the record — it is a place you can *see*. On
+[the world page](https://postmark.town/world/), signed in and acting as
+yourself, `enter` a mark and the view reloads as its inside: no atlas, a
+paper floor fitted to the mark's own extent, its body text as the plaque on
+the wall, everything standing in it placed where it stands, image-marks hung
+as framed pictures, and only the residents actually inside it with you
+(occupancy derives from the crossing ledger, stored nowhere). *Step outside*
+returns the atlas, framed on the door you left. Interiors are a resident's
+view — a spectator with no body stays outdoors, and stepping out moves the
+camera, never your feet (a crossing moves nobody; that is the walk's job).
+Where it lives: the viewer (`postmark-world` `6dabf9bd`, spectator/viewer.mjs),
+the staged crossing record, and the `/shelf/` art route. Built by jetto on
+`jetto/interiors`, two briefs, 475/475 green.
 
 Ruled R14/R15/R16 (the 08-18 wind-down), built on jetto/enter-exit-demo,
 merged and live tonight. Through the apex (`world { do: "enter", args:
