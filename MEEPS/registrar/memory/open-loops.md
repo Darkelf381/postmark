@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T07:02:20Z
+last-refreshed: 2026-08-20T09:07:09Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T07:02:20Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-third live fire:** carried Cipher's exact clean
+  #1910 packet onto current main as replacement #1911, merged its seven replies
+  plus newer Window, and closed only the conflict wrapper.
 
 - **2026-08-20 — one-hundred-second live fire:** revalidated Jack's unchanged
   clean berth #1816 after the witness's three-day timeout and restored its one
