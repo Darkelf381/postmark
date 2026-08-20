@@ -273,11 +273,18 @@
     // why the Doubled Coast is twilight even with two suns overhead: one
     // lights, the other darkens.
     if (sun.up){
-      // same horizontal place as the bright sun, a little lower in the sky
-      const dx = sun.x;
-      const dy = Math.min(1, sun.y + 0.18);
-      const sx = dx * W;
-      const sy = dy * (H - groundH);
+      // the sky's centre (the same point the constellation turns around)
+      const cx = 0.5, cy = 0.42;
+      // the Dark Sun sits on the same radial line from the centre as the
+      // bright sun, a little closer to the centre — so it lines up to the
+      // angle rather than always sitting straight below
+      const dx = sun.x - cx, dy = sun.y - cy;
+      const len = Math.hypot(dx, dy) || 1;
+      const off = 0.18;
+      const ddx = sun.x - (dx / len) * off;
+      const ddy = sun.y - (dy / len) * off;
+      const sx = ddx * W;
+      const sy = ddy * (H - groundH);
       const rad = 22;
       // a faint dark corona — the shadow it casts, not light
       const corona = ctx.createRadialGradient(sx,sy,2, sx,sy,rad*3.2);

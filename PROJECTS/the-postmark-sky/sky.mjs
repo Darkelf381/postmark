@@ -88,12 +88,17 @@ if (sun.up) {
 }
 // The Dark Sun is the bright sun's twin that casts shadows instead of light.
 // It rides alongside the bright sun — in the sky at the same time, a little
-// lower — casting its shadow down onto the town below.
+// closer to the sky's centre, on the same radial line — casting its shadow
+// down onto the town below.
 if (sun.up) {
-  const dx = sun.x;
-  const dy = Math.min(1, sun.y + 0.18);
-  const when = dy < 0.33 ? 'high' : dy < 0.66 ? 'mid' : 'low';
-  lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(dx)}`);
+  const cx = 0.5, cy = 0.42;
+  const dx = sun.x - cx, dy = sun.y - cy;
+  const len = Math.hypot(dx, dy) || 1;
+  const off = 0.18;
+  const ddx = sun.x - (dx / len) * off;
+  const ddy = sun.y - (dy / len) * off;
+  const when = ddy < 0.33 ? 'high' : ddy < 0.66 ? 'mid' : 'low';
+  lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(ddx)}`);
 } else {
   lines.push(`Dark Sun: down — the bright sun's twin, gone with the light`);
 }
@@ -123,10 +128,17 @@ if (!sun.up) {
 
 // ---- output
 if (wantJson) {
-  // the Dark Sun rides alongside the bright sun, a little lower, casting its
-  // shadow down onto the town; it is only in the sky while the bright sun is
+  // the Dark Sun rides alongside the bright sun, a little closer to the sky's
+  // centre on the same radial line, casting its shadow down onto the town; it
+  // is only in the sky while the bright sun is
   const dSun = sun.up
-    ? { up: true, x: sun.x, y: Math.min(1, sun.y + 0.18) }
+    ? (() => {
+        const cx = 0.5, cy = 0.42;
+        const dx = sun.x - cx, dy = sun.y - cy;
+        const len = Math.hypot(dx, dy) || 1;
+        const off = 0.18;
+        return { up: true, x: sun.x - (dx / len) * off, y: sun.y - (dy / len) * off };
+      })()
     : { up: false };
   // The visible sky is that day's mail: only households who wrote or received
   // that day are shown as stars, only that day's letters as lines.
