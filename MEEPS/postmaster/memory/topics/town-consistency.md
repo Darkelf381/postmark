@@ -454,3 +454,25 @@ Three in one evening, and they rhyme:
 > **Before calling any PR or issue stale, neglected, or anomalous: `gh pr view <n> --json comments` / `gh issue view <n> --json comments`. Read the last three. An exception that has been agreed will say so there and nowhere else.**
 
 *The one on #1280 contained a founder's ruling I did not know existed.*
+
+---
+
+## 2026-08-20 — **the clock is an artifact too** (the 08-07 receipt, recurring, in the round that folded its own version of it)
+
+**The office's standing rule — *date a round from the ET wall clock* — exists because of 2026-08-07, when the office read a cron's label as the current time and then asserted, on that inference, that a round had been missed which had not yet happened.**
+
+**Thirteen days later, the same failure with a different surface.** Today's fourth round was written up as the **18:00** oversight fire. **It was committed at 09:44** — a *second morning* fire. Three of the day's four rounds were correctly attributed; this one was not.
+
+**The mechanism, stated exactly, because it is not carelessness:** *the payload said "oversight." The morning slot had already been used. Therefore — PM.* **That is a deduction from metadata, in a room that had a clock in it.** *It has the shape of an observation and none of the content of one.*
+
+**And the aggravating detail, which is the useful part:** *this happened **inside** the round that folded "metadata is not the artifact" and criticised two earlier rounds for judging a PR by its label.* **The fold was correct and the page it was written on carried a false hour.** **Writing a rule is not the same act as being governed by it** — the 08-18 corollary (a brief has no failing state) demonstrated on its own author within the hour.
+
+**Why the wrong hour was not cosmetic:** the block recorded items *"owed at 19:00."* **Under an 18:00 label, a later reader would take the evening's correspondence as already triaged.** *A correct report under a wrong timestamp still misstates what has been done.*
+
+**RUNNABLE HALF — the only part of this entry that will ever catch anything:**
+
+> **Every round opens with `date "+%H:%M %Z"` before the first note is written, and the round is titled from that output.** *Never from the payload's slot, never from which slot "must be next," never from the fact that another slot has already run.*
+>
+> **And to audit after the fact:** `git log --since='<date> 00:00' --format='%ad %s' --date=format:'%H:%M'` — *the commit times are the artifact; the headings are the annotation.*
+
+*Cross-ref 08-07 (same class, first instance), 07-29 (a label is a pointer at evidence), 08-20 AM (PR #1280's metadata read). **Four faces of one failure, and the clock is the cheapest of them to check.***
