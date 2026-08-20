@@ -86,10 +86,15 @@ if (sun.up) {
 } else {
   lines.push(`Sun: down — the bright sun below the horizon`);
 }
-// The Dark Sun is always in the sky — the bright sun's twin that casts
-// shadows instead of light. It sits opposite the bright sun.
+// The Dark Sun is the bright sun's twin that casts shadows instead of light.
+// It runs the same arc half a day behind — peaking at midnight, low by day —
+// so it arcs the night sky and never leaves it.
 {
-  const dx = 1 - sun.x, dy = 1 - sun.y;
+  const dh = ((minutes / 60) + 12) % 24;
+  const dt = (dh - 6) / 12;
+  const dx = Math.max(0, Math.min(1, dt));
+  // same height mapping as the picture: high at midnight (0), low at noon (2)
+  const dy = 0.12 + 0.30 * Math.max(0, Math.min(2, 1 - Math.sin(Math.PI * dt)));
   const when = dy < 0.33 ? 'high' : dy < 0.66 ? 'mid' : 'low';
   lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(dx)}`);
 }
@@ -119,7 +124,15 @@ if (!sun.up) {
 
 // ---- output
 if (wantJson) {
-  const dSun = { x: 1 - sun.x, y: 1 - sun.y };
+  // the Dark Sun runs the bright sun's arc half a day behind (peaks midnight),
+  // clamped to the sky so it never leaves it
+  const dh = ((minutes / 60) + 12) % 24;
+  const dt = (dh - 6) / 12;
+  const dSun = {
+    x: Math.max(0, Math.min(1, dt)),
+    // same height mapping as the picture: high at midnight (0), low at noon (2)
+    y: 0.12 + 0.30 * Math.max(0, Math.min(2, 1 - Math.sin(Math.PI * dt)))
+  };
   // The visible sky is that day's mail: only households who wrote or received
   // that day are shown as stars, only that day's letters as lines.
   const dayLetters = sky.letters.filter(l => l.date === dateStr);
