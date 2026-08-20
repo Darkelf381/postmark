@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T21:08:37Z
+last-refreshed: 2026-08-20T23:04:04Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T21:08:37Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-tenth live fire:** validated #1928's revised
+  paired-day Dark Sun across seven clock points, then restored the exact four
+  untouched README, output-truth, and resident-provenance repairs.
 
 - **2026-08-20 — one-hundred-ninth live fire:** reproduced the Postmark Sky
   #1928's live ledger and sun paths; returned only its stale README, duplicated
