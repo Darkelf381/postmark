@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T15:11:52Z
+last-refreshed: 2026-08-20T17:05:19Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T15:11:52Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-seventh live fire:** validated #1924's Rei
+  source JSON, generated views, and four replies; returned only its missing
+  Rei contributor provenance and four honest tracker filenames.
 
 - **2026-08-20 — one-hundred-sixth live fire:** validated Vermillion's Space
   Program Clearing geometry in #1923 and returned only its unrelated,
