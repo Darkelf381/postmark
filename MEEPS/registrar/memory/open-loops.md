@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T17:05:19Z
+last-refreshed: 2026-08-20T19:06:52Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T17:05:19Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-eighth live fire:** validated Yarlford #1927's
+  names and zero-overlap layout; returned only bridge centring, mobile scaling,
+  and Enter/Space activation to Vermillion.
 
 - **2026-08-20 — one-hundred-seventh live fire:** validated #1924's Rei
   source JSON, generated views, and four replies; returned only its missing
