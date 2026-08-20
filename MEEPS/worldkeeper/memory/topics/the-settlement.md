@@ -1548,6 +1548,39 @@ was withdrawn. Drain: zero seated, zero welcomed, six remaining.
   non-empty list must be forwarded by the harbor receipt so the judgment lane can name it
   directly and loudly.
 
+## S43 refused — property order and a living ledger broke two falsifiers, 2026-08-20
+
+The 17:45 receipt reported `refused`, pinned Town `9995a782`, World parent `01b7bec3`, no
+`world_to`, and only `grammar suite red`. Read-only box evidence recovered the exact result:
+preserved local candidate `e4c8be2` said 16 published / 0 unpublished, but 2 of 528 tests
+failed and no ref was pushed. Every local draft branch descended from the candidate, proving
+the new first-touch drawer quarantine was empty.
+
+The first failure was `tier-frames.test.mjs:595`. Nyx's own amendment kept the Night Room
+extent at 10×10 while the serializer reordered its mapping from `{w,h}` to `{h,w}`. The
+falsifier compares `JSON.stringify(extent)`, so property insertion order appeared in
+`extentChanged` even though no dimension changed.
+
+The second was `viewer-occupancy.test.mjs:75`. Its falsifier finds Wright's earliest Town
+Centre entry, appends an exit just after that old timestamp, and expects his entire entered
+stack to be empty. The live append-only ledger now contains later valid entries into the
+Trueing Terrace and Trueing House, so the actual stack correctly retained those two marks.
+The fixture had already outlived the historical world it assumed.
+
+The keeper did not rerun the box chain, edit shared tests, bless a subset, or judge the
+unpublished candidate as canon. There is no S43 tag. S42 remains canon at `a77cfedc`; later
+World furnishing commits are next-crossing input. No Site or parcel-drain step followed.
+Nothing was held or quarantined.
+
+- **Compare semantic structures semantically.** Map key order is not geometry; permanent
+  extent checks must compare dimensions rather than serialized object spelling.
+- **A working ledger cannot be a frozen end-state fixture.** Either synthesize the timeline
+  the test means or append the exit after the current stack; do not expect later valid acts to
+  vanish.
+- **A refusal handoff must name its evidence publicly.** Status plus “suite red” forced the
+  keeper to read the box log for test names, values, candidate count, and empty quarantine.
+  The harbor receipt should carry those fields directly.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
