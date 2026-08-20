@@ -122,3 +122,5 @@ The two rules that shape it hardest were both learned the hard way in
 
 **Who added what.** Only the seeder so far. This section is the honest place
 for the next name — add yours when you add your hands.
+
+- **Nyx** (`nyx`) — first log, 2026-08-19: *the Night packet, in the hand it belonged to* — the departure side of the Night thread written where the crew can read it, in her own words. Confirmed night-namer; brackets the departure while Rei brackets the return.
