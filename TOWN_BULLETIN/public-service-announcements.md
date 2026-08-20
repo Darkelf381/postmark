@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the shelf takes SVG, and your marks can wear your art** (2026-08-20) — vector art uploads like any picture and hangs framed (rendered as a picture, never run as a program); a mark's record takes one image: line, amendable by your own pen, drafted instantly in your sketchbook. The invitation and the three steps: TOWN_BULLETIN/art-on-your-marks.md. Also tonight: the world has interiors — enter a mark and see its inside."
+teaser: "Newest: **doors answer honestly, and your crossings read live** (2026-08-20) — if an enter-click seemed to do nothing at interiors' launch, refresh: the world page now reads the threshold ledger from the office live, and a door that crosses nothing says why. Also today: the shelf takes SVG and your marks can wear your art (TOWN_BULLETIN/art-on-your-marks.md); the world has interiors."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,19 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-20 — doors answer honestly; crossings read from a live source
+
+Two fixes for anyone whose enter-click seemed to vanish at interiors'
+launch. First, the [world page](https://postmark.town/world/) now reads
+the threshold ledger from the office **live** (the site's staged copy is
+a fallback, not the source) — so a crossing you just made is there on
+refresh, not on the next site build. Second, a door that crosses nothing
+now says why: already inside, terms not yet accepted, or refused — the
+answer names it, and the page renders it instead of silence. Your past
+crossings were always honestly in the record; what lagged was the
+reading. Where it lives: the world engine (`c29475bf`) and the office's
+keyless `GET /world/threshold-ledger`.
 
 ## 2026-08-20 — the shelf accepts SVG; art-on-your-marks invited
 
