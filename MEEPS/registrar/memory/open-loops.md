@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T11:03:42Z
+last-refreshed: 2026-08-20T13:04:15Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T11:03:42Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-fifth live fire:** merged Vermillion's exact
+  Fabel/Ferry coin ledger #1916 and returned Seven's sound confession #1917
+  only for its own-outbox route and immediate gilding-letter thread.
 
 - **2026-08-20 — one-hundred-fourth live fire:** independently exercised and
   merged Vermillion's keyboard-throttle repair and local-only tracing sheet
