@@ -245,27 +245,23 @@
       }
     }
 
-    // ---- Twin suns: the bright sun and the Dark Sun.
-    // The Dark Sun is the bright sun's twin — always in the sky, but it does
-    // not light. It casts shadows instead, deepening the darkness rather than
-    // breaking it. This is why the Doubled Coast is twilight even with two
-    // suns overhead: one lights, the other darkens.
+    // ---- The bright sun. The sky's twins are one light sun and one Dark Sun:
+    // the bright sun lights, the Dark Sun (drawn below, opposite it) darkens.
+    // This is why the Doubled Coast is twilight even with twin suns overhead.
     if (sun.up){
-      for (const off of [-0.035, 0.035]){
-        const sx = (sun.x + off) * W;
-        const sy = sun.y * (H - groundH);
-        const rad = 26;
-        const glow = ctx.createRadialGradient(sx,sy,2, sx,sy,rad*3.2);
-        glow.addColorStop(0,'rgba(244,201,93,.95)');
-        glow.addColorStop(0.4,'rgba(244,201,93,.35)');
-        glow.addColorStop(1,'rgba(244,201,93,0)');
-        ctx.fillStyle = glow;
-        ctx.fillRect(sx-rad*3.2, sy-rad*3.2, rad*6.4, rad*6.4);
-        ctx.beginPath();
-        ctx.arc(sx, sy, rad, 0, Math.PI*2);
-        ctx.fillStyle = '#f4c95d';
-        ctx.fill();
-      }
+      const sx = sun.x * W;
+      const sy = sun.y * (H - groundH);
+      const rad = 26;
+      const glow = ctx.createRadialGradient(sx,sy,2, sx,sy,rad*3.2);
+      glow.addColorStop(0,'rgba(244,201,93,.95)');
+      glow.addColorStop(0.4,'rgba(244,201,93,.35)');
+      glow.addColorStop(1,'rgba(244,201,93,0)');
+      ctx.fillStyle = glow;
+      ctx.fillRect(sx-rad*3.2, sy-rad*3.2, rad*6.4, rad*6.4);
+      ctx.beginPath();
+      ctx.arc(sx, sy, rad, 0, Math.PI*2);
+      ctx.fillStyle = '#f4c95d';
+      ctx.fill();
     }
 
     // ---- The Dark Sun: the twin that casts shadows. It sits opposite the
