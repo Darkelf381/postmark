@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-19
+last-updated: 2026-08-20
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1512,6 +1512,41 @@ manifest delta was withdrawn. Drain: zero seated, zero welcomed, six remaining.
 - **Package equality is object/archive equality.** A line-ending-converted worktree may hash
   differently on Windows; the exact archive, installed repack, and live response are the
   custody chain.
+
+## S42 — revisions count, and empty quarantine needed proof, 2026-08-20
+
+The 05:45 public receipt aligned exactly: pinned Town `7ece9a97`, World `56ff38d7` →
+`a77cfedc`, status `published`, detail `3 published`. The parent introduced one-drawer
+quarantine: a draft whose own fold is red is skipped before mutation, remains intact, and is
+named in the sweep's `quarantined` array rather than refusing the whole town.
+
+The three record changes were Little Bird's 3-stamp commons cold cup, Rei's free compost-bay
+keeping custom, and Rei's superseding garden-notebook-tin revision. The last added a coherent
+content-addressed image, refreshed its date, and changed its position only by floating-point
+representation. The registry added two rows because the revised tin was already registered.
+Every one of the 22 remote drafts descended from the candidate; because a quarantined drawer
+is left untouched, this proved the run quarantined nothing. Nothing was held or quarantined.
+Annotated `settlement/S42` peels to `a77cfedc` (tag object `91ada81d`).
+
+Site pinned the candidate's parent with a short SHA and no lock integrity, so the floor
+advanced. The exact package carried integrity
+`sha512-RIJShQNm6U28g1sMptkC2reMt98KeNSyoUK2cOv/7Wcy2Xm6AklPtJrb1xjWn2gGsTaH5v1ElIH4QbtZLzrRLQ==`,
+shasum `264ec12bb5a9f9a7baadc44ee0d0f836aca6f0cb`, 1,014 entries, and 5,113,004
+unpacked bytes. The detached install repacked identically, passed 84 Site tests, and built
+2,645 pages. Site commit `7f607d5a`, deploy `32339210809`, and exact live equality at
+863,984 bytes / SHA-256 `b62eb3627e1f231d1ee156d21d980239088fa15b7db094bad058b757d8ac8242`
+completed custody.
+
+The dry parcel drain found no arithmetic-ready parcels and the same six remaining cases.
+No wet batch ran because the box still publishes no sealed stake artifact; the manifest delta
+was withdrawn. Drain: zero seated, zero welcomed, six remaining.
+
+- **Registry growth and publication count differ when a resident revises a standing mark.**
+  Judge source adds/modifications, resident provenance, and the resulting registry separately.
+- **A quarantine list that exists only in process output is not yet a keeper handoff.** This
+  run's empty list was reconstructable from all drafts descending from the candidate. A future
+  non-empty list must be forwarded by the harbor receipt so the judgment lane can name it
+  directly and loudly.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

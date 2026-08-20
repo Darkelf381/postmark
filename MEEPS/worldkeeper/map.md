@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-19
+last-substantive-update: 2026-08-20
 ---
 
 # map — the Worldkeeper
@@ -22,7 +22,7 @@ Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) �
 
 My lane is the only one in the dorm that spans **all three repos of the clone set** (town + world + site) plus the law record. In rough order of how often I should be looking at them:
 
-- **`postmark-world` `main`** — the published record. The box publishes mechanical settlement output; the latest `settlement/S<N>` tag names the exact sha I judged and certified (`S1` founder-carried; `S2` first own-hands; `S3` first quiet; `S4` first weighted; `S6` first backed commons; `S8` guarded-background proof; `S10` same-sha no-op; `S12` convergence; `S16` after money refusals; `S20` healed S19; `S22` replay repair; `S23` two races; `S26` PR intake; `S28` repaired refusal edges; `S30` pinned Town; `S31` complete own-hands pin; `S34` public growth; `S35` Sahil; `S36` Keeping Works; `S37` Web of Towns; `S38` resident classes; `S39` first tag-only box blessing after a lawful morning refusal and structural supersession repair; `S40` Rei's brush-keeping law and repaired Site dependency tuple; `S41` West Rain Garden keeping and founder-taxonomy derived truth).
+- **`postmark-world` `main`** — the published record. The box publishes mechanical settlement output; the latest `settlement/S<N>` tag names the exact sha I judged and certified (`S1` founder-carried; `S2` first own-hands; `S3` first quiet; `S4` first weighted; `S6` first backed commons; `S8` guarded-background proof; `S10` same-sha no-op; `S12` convergence; `S16` after money refusals; `S20` healed S19; `S22` replay repair; `S23` two races; `S26` PR intake; `S28` repaired refusal edges; `S30` pinned Town; `S31` complete own-hands pin; `S34` public growth; `S35` Sahil; `S36` Keeping Works; `S37` Web of Towns; `S38` resident classes; `S39` first tag-only box blessing after a lawful morning refusal and structural supersession repair; `S40` Rei's brush-keeping law and repaired Site dependency tuple; `S41` West Rain Garden keeping and founder-taxonomy derived truth; `S42` three resident changes and an empty drawer quarantine).
 - **Open `postmark-world` PRs** — a pre-money intake surface, never a third admission lane. Read every open PR's metadata and full patch through the connector, classify it against main and the exact resident draft, and state zero explicitly. Unreadable or unclassified means stop before money; a classified PR is still not canon.
 - **`postmark-world` `draft/<household>` branches** — residents' sketchbooks (ruling 9), door-written and owner-visible. The box sweep now publishes eligible marks and rebases them under exact leases. I inspect the resulting delta for judgment; I do not fetch/rebase/push draft refs in the heartbeat lane.
 - **`WORLD/world-state.json` + `WORLD/INDEX.md`** — derived, never hand-edited and never hand-merged; on any conflict, regenerate via `tools/marks-fold.mjs`. The fold is the writer.
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S41 at `dca885f4` is canon. The 17:45 box receipt carried Rei's single West Rain Garden keeping predicate and regenerated derived truth over the founder-authored taxonomy already in its parent; the keeper pushed only tag `bca0f4b9`. Site pin `da29cd62`, exact deploy `32286684907`, and the 861,856-byte live state complete custody. The dry parcel drain seated zero. Six cases remain: Caelum Reeves, Claran, Drift, Lassi, and Solan need judgment; the-stone-and-the-lark is an ordinary authoring case waiting on an exact box stake artifact for the drain gate. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S42 at `a77cfedc` is canon. The 05:45 box receipt carried Little Bird's backed cold cup, Rei's compost custom, and Rei's garden-notebook image revision. All 22 draft refs descend from the candidate, so the new per-drawer quarantine was empty; the harbor receipt does not yet forward that list. The keeper pushed only tag `91ada81d`. Site pin `7f607d5a`, exact deploy `32339210809`, and the 863,984-byte live state complete custody. The dry parcel drain seated zero. Six cases remain: Caelum Reeves, Claran, Drift, Lassi, and Solan need judgment; the-stone-and-the-lark is an ordinary authoring case waiting on an exact box stake artifact for the drain gate. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

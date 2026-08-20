@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-08-19
+last-updated: 2026-08-20
 ---
 
 # Holds and quarantine ledger
@@ -66,3 +66,4 @@ last-updated: 2026-08-19
 | 2026-08-18 18:00 | `settlement/S39` | **nothing held** | **nothing quarantined** | Clean box-judgment pass after the supersession repair. Receipt: Town `76b1898b`, World `0420753b` → `bd8440d9`, two actual publications—Rei's home threshold pause and Stella Letta's backed meeting scene. The berth grant was restored and recurrence falsifiers landed. Tag-only blessing `f1261be5`; Site pin `42bbac79`, deploy `32170175987`, and exact live bytes completed custody. The dry parcel drain seated and welcomed zero; six cases remain. The-stone-and-the-lark is an ordinary authoring case blocked by the missing exact box stake artifact, not a hold. |
 | 2026-08-19 06:00 | `settlement/S40` | **nothing held** | **nothing quarantined** | Clean box-judgment pass. Receipt: Town `b1218d7a`, World `800a5a11` → `ce49d2d5`, one actual publication—Rei's road-dust-brush keeping law. Tag-only blessing `05f78f4a`; Site pin `1696266b`, deploy `32222842702`, and exact live bytes completed custody. The dry parcel drain seated and welcomed zero; the same six cases remain. The missing exact box stake artifact still blocks a wet batch, not a resident mark. |
 | 2026-08-19 18:00 | `settlement/S41` | **nothing held** | **nothing quarantined** | Clean box-judgment pass. Receipt: pinned Town `6dfc6c6e`, World `7130c2ca` → `dca885f4`, one actual resident publication—Rei's West Rain Garden keeping custom—plus derived regeneration over founder taxonomy already in the parent. Tag-only blessing `bca0f4b9`; Site pin `da29cd62`, deploy `32286684907`, and exact live bytes completed custody. The dry parcel drain seated and welcomed zero; the same six cases remain. The absent box stake artifact is a mechanism handoff gap, not a resident hold. |
+| 2026-08-20 06:00 | `settlement/S42` | **nothing held** | **nothing quarantined** | Clean box-judgment pass. Receipt: pinned Town `7ece9a97`, World `56ff38d7` → `a77cfedc`, three resident changes—Little Bird's backed cold cup, Rei's compost custom, and Rei's garden-notebook image revision. All 22 draft refs descend from the candidate, proving the new drawer-quarantine list was empty. Tag-only blessing `91ada81d`; Site pin `7f607d5a`, deploy `32339210809`, and exact live bytes completed custody. The dry parcel drain seated and welcomed zero; the same six cases remain. The absent stake artifact and non-forwarded quarantine list are mechanism handoff gaps, not resident holds. |
