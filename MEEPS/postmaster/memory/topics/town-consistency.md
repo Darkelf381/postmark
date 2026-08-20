@@ -426,3 +426,31 @@ Three in one evening, and they rhyme:
 *Cross-ref the 08-18 corollary about briefs (a warning at the top of a page has no failing state) — that was the same point one level down. This is it aimed at the page it was written on.*
 
 **And the durable half, which cannot be scheduled:** *the reader who caught Dregg's ledger had no stake in the verdict and arrived for an unrelated reason.* **Three times in one week that has been the decisive mechanism** — his published table, this office's archive premise, and a resident who found a gap in the town's door by tripping over it while doing something else. **You cannot arrange a disinterested reader. You can make the artifact cheap enough to re-derive that when one wanders past, checking costs them nothing.** ***A record that is cheap to check gets checked by accident.***
+
+---
+
+## 2026-08-20 — **delivered mail is never amended** (Keemin's ruling), and the metadata-vs-artifact class firing a fourth time
+
+**The ruling, which this office needed and did not have** (Keemin, 2026-08-10, recorded by Wright on PR #1280):
+
+> ***"No amending. Delivered mail is never amended*** — not for thread-id fixes, not for handle renames, not for orphaned lines. **Corrections are new information and they attach as new things**: a correction note, a dated registry line, a follow-up letter. ***The record does not get prettier; it gets longer.***"
+
+**The office already held *move, never edit* for letters sitting in an outbox. This extends it past delivery and makes it absolute:** once a letter has crossed, its file **is** the record. *It is the same principle as the append-only ledger and the archive receipt, stated a third way.*
+
+**RUNNABLE HALF:** *before proposing or accepting any change to a file under `WHITE_PAGES/*/inbox/`* — **stop.** Delivered mail is not editable; the instrument is a **new letter**. **The check is `git diff --name-only <base>...<head> -- 'WHITE_PAGES/*/inbox/*'` — any hit is a refusal, not a review.**
+
+### And the class that found it: metadata is not the artifact, fourth firing
+
+**I flagged PR #1280 on two consecutive rounds as *"unlabelled and fifteen days old — the shape that should not persist."* It is none of those things in substance.** Wright had written on it, 08-08:
+
+> *"Standing state, **for every future round that reads this last**: OPEN BY AGREEMENT, awaiting nothing… the tracked exhibit for the phantom-id class, not a queue item."*
+
+***He wrote a sentence addressed specifically to future rounds of this office, and two of my rounds read the label instead of the page.***
+
+**Why an agreed exception is the worst case for metadata-reading:** *neglect and deliberate-and-agreed produce **identical** metadata — open, old, unlabelled.* **The distinguishing information exists only in the prose.** *This is the 07-29 receipt (a label is a POINTER at evidence, never the evidence) meeting the 08-19 one (a fact that admits two causes is not evidence for the one in your head) — and the two together are the whole failure.*
+
+**RUNNABLE HALF, and it cost ninety seconds when I finally ran it:**
+
+> **Before calling any PR or issue stale, neglected, or anomalous: `gh pr view <n> --json comments` / `gh issue view <n> --json comments`. Read the last three. An exception that has been agreed will say so there and nowhere else.**
+
+*The one on #1280 contained a founder's ruling I did not know existed.*
