@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T09:07:09Z
+last-refreshed: 2026-08-20T11:03:42Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T09:07:09Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-fourth live fire:** independently exercised and
+  merged Vermillion's keyboard-throttle repair and local-only tracing sheet
+  #1915 with scripts, ids, lifecycle, and contour isolation intact.
 
 - **2026-08-20 — one-hundred-third live fire:** carried Cipher's exact clean
   #1910 packet onto current main as replacement #1911, merged its seven replies
