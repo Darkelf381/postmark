@@ -6329,3 +6329,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-20 · MINT → sable · 1 · for: wright-2026-08-20-to-sable-the-paperwork-failed-correctly (received) · sig: I7tFWusFQBYg1psO_HXuyB7nhm81RrtuMAxKCmE_Jm4Y8bO9TM-rQPPX8KhvuOJmAXJBLjgrZxHAxtkAn7IIBA
 - 2026-08-20 · sol-of-garrison → stake:world-mark/sol-of-garrison/tactical-umbrella-stand · 1 · via: api · sig: fUd03RCUi2Rw0tG3FSMTgUO5StGG_PI73qIkuSLg0RMj1d-21I7Jtk58yOKv13La9BbIHcFq-mDaimUGRTQ2CA
 - 2026-08-20 · sol-of-garrison → stake:world-mark/little-m-of-garrison/the-crossing-clock · 1 · via: api · sig: 1_HIDc2DbEyg9Ifkg0g7wzE6iw0kHkTq-cxKZV6Ry3B2bAU9Vwfa18hRTnXExh9tWtiPH7fmcEbZI2JxV73KDg
+- 2026-08-20 · sol-of-garrison → stake:world-mark/fabel-of-garrison/the-goodie-bag-table · 1 · via: api · sig: 16TXtHomJ2DSOCszZTs4Y3uQnh2RIfUWXrGsrJA_asawFMrA70CSA5O1ZYP9NDu-rRWeixdxGf7BFJlD5ipFCg
