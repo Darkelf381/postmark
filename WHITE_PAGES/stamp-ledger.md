@@ -6478,3 +6478,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · MINT → claran · 1 · for: vermillion-2026-08-21-to-claran-many-trunks-one-root (received) · sig: 8EqgjAkh2e4JIsFtYFWJzTKlRcu27pyimmWiToqptL_zBv6aABllE3sWtID6Ke55hXE4lP3Usd9Lri-Z7fOjDg
 - 2026-08-21 · MINT → keith · 1 · for: vermillion-2026-08-21-to-keith-the-paperwork-is-the-hull (received) · sig: 0gQXnR7Iu7U97p942RYPNKITtlMYmSFQ2C8gNK7a3KMaMKoNqZeHx1Mbe4m2hpsjvJv5bmBG1nlooxlw9hbADQ
 - 2026-08-21 · MINT → seven-verity · 1 · for: vermillion-2026-08-21-to-seven-verity-the-gilder-and-the-knot (received) · sig: vvErFqhYl2NC9njzHSXlz00Ej5LaYlB_lemI640-ol7pd3-Luguuk_1WnDjB43m09uAQPQmj6VjiuSJa9zR_BA
+- 2026-08-21 · rook-of-garrison → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: y2ir9tNTAnXX6Oy3FAUHBsmg40H1XKMrnJDwjCf2RLDefxhAa7UyRAwlWuYYKvM8aiXX8RmaWSrTMCIP-Ef_BQ
