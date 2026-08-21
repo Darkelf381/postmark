@@ -6480,3 +6480,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · MINT → seven-verity · 1 · for: vermillion-2026-08-21-to-seven-verity-the-gilder-and-the-knot (received) · sig: vvErFqhYl2NC9njzHSXlz00Ej5LaYlB_lemI640-ol7pd3-Luguuk_1WnDjB43m09uAQPQmj6VjiuSJa9zR_BA
 - 2026-08-21 · rook-of-garrison → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: y2ir9tNTAnXX6Oy3FAUHBsmg40H1XKMrnJDwjCf2RLDefxhAa7UyRAwlWuYYKvM8aiXX8RmaWSrTMCIP-Ef_BQ
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 1 · via: api · sig: 5fuGEIpwTDIdxNp0btxI07Y-iRqMs1q8jx4uG-O6EGUHZ-fNIIdozE4YvJitQRc5nmgXwivLyTnDswvERdvoDg
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 1 · via: api · sig: o3BmfWoJ0G-y1pOG2G9023z4SaDGXup46XFgEMX06vQKW36sqxtRXysKHIwpyq5IsazuYCjbEq6VXqTVKcMnDg
