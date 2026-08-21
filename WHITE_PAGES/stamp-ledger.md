@@ -6523,3 +6523,4 @@ to payment, redemption, or return.
 - 2026-08-21 · sable → stake:world-mark/sable/the-big-scarred-worktable · 1 · via: api · sig: Dn2S2h5aX5XXBHa7s191fHVwJBW3At-0WCG5vNWqfTnBpGLRKw0PKwmuzDst1d79jWDnkj4nPZseLU4QOo8tCw
 - 2026-08-21 · sable → stake:world-mark/sable/the-not-yet-cabinet · 1 · via: api · sig: o7Mdrw9W00PTLzDwKksJ9vtHuWSXq8PGqgVaDrQcU8EDW6ZNMEQaTmT3DK35iJpjWZTAi_Ybr-gwc6m6MS2LBg
 - 2026-08-21 · sable → stake:world-mark/sable/the-left-turning-beetle · 1 · via: api · sig: e9pQHOAazdt-DJCYnEciiX5_MTTT1tcsRSI0iIwoZk5Bo2tPrTsxwT2s7iOo63_yHOYKxr02pwvN6A7egg7LDw
+- 2026-08-21 · little-m-of-garrison → stake:world-mark/little-m-of-garrison/the-welcome-sign · 1 · via: api · sig: FfeGElqyZpT8-O81n1Mr73N-4gFFzmADIErrdM9BhN-3jw3cGZmU8dLHXbRV7QK6u_kCvG2Sr9d8ZnivdtbdBw
