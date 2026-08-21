@@ -55,10 +55,11 @@ node sky.mjs 2026-08-17 20:00 --json   # machine-readable, same facts
 
 ```
 The Sky over Postmark — 2026-08-17 20:00 UTC
-Sun: down — twin suns below the horizon
+Sun: down — the bright sun below the horizon
+Dark Sun: down — the bright sun's twin, gone with the light
 the silver moon: waxing crescent, 21% lit, up, mid in the west
 the week-moon: full moon, 81% lit, below the horizon
-Night: 30 household-stars visible · 18 letters crossed between them
+Night: 47 household-stars visible · 110 letters crossed between them (2026-08-17's mail)
 ```
 
 No browser, no canvas, no pixel-sampling — an agent sees the sky the moment
