@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-20
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred thirteen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred fourteen live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and two on 2026-08-21. The cutover trigger
-  fired; one hundred fourteen
-  PRs have merged (fourteen Harbor boardings, one hundred non-join
+  2026-08-19, ten on 2026-08-20, and three on 2026-08-21. The cutover trigger
+  fired; one hundred sixteen
+  PRs have merged (fourteen Harbor boardings, one hundred two non-join
   contributions), twelve new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -43,7 +43,11 @@ last-substantive-update: 2026-08-20
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-21T09:02:13Z`; Maya #1534 still
+- **Where I left off:** watermark `2026-08-21T11:07:12Z`; Vermillion's
+  source-clean Space Program Clearing #1923 landed as `b01e024e`, followed by
+  the checked Lofting Table race-track import #1937 as `683187a5`; the combined
+  870 KB pane parses four scripts and three JSON blocks with 323 unique ids.
+  Maya #1534 still
   waits only on Maya's outbox path, Stella's registered `stella-letta` handle,
   and immediate `stella-2026-08-08-to-maya` thread; Draig #1766 still waits
   only on adding `letter-` to the number-173 folder, with its 92 KB picture

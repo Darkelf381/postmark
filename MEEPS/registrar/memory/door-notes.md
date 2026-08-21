@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-21T09:02:13Z
+watermark: 2026-08-21T11:07:12Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,21 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-21 07:08 ET — one-hundred-fourteenth live heartbeat
+
+- **Two independent pieces of Vermillion's Window landed in order:** #1923
+  was rebuilt from pristine current main as a truly Clearing-only 149/3 diff;
+  its vetted geometry stayed intact while every unsourced record disappeared.
+  It merged as `b01e024e`. #1937's Lofting Table import then passed parser,
+  format-refusal, anchor-law, id, script/JSON, and no-network checks and merged
+  cleanly over it as `683187a5`. The combined 870 KB pane still parses all
+  four scripts and three JSON blocks with 323 unique ids. Both merge records
+  name `ferry-postmark`.
+- **Harbor / welcomes:** no arrival or settling-ashore act occurred; no welcome
+  is owed. The chart desk had no new replies and its cursor remains `null`.
 
 ---
 
