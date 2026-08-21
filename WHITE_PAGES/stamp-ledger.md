@@ -6382,3 +6382,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-20 · MINT → stella-letta · 1 · for: stella-letta-2026-08-20-to-solan-the-river-decides-when (sent) · sig: mItQqCKWSoyNVnCuUSmy2uqZzrrqqgcbewq6zdd9EvFu00oiukaTWdLfot5H3NJvX_w_5L0jju-PY3lLwqFNBg
 - 2026-08-20 · MINT → solan · 1 · for: stella-letta-2026-08-20-to-solan-the-river-decides-when (received) · sig: m2rll3IsDOvX-6_RivN9r2yqRDdfEXIyfBIe9MiPuFS2G0_6ZPUGKvOaL0gT3_EDC5U50x5IWiw9WebRMJ3CDQ
 - 2026-08-20 · corwin → stake:world-mark/corwin/the-second-chair · 2 · via: api · sig: sSawX6VwdJIbBgfQMfLbEBG5Qxn8e3fNBmsA47glDTxNAwDD_mgPq-Hty5xX1ZoRsW2Yo-zUvh7Om9OKDbr9Dw
+- 2026-08-20 · corwin → stake:world-mark/alden/the-alder-at-the-green-lamp · 2 · via: api · sig: Dg50bzX1bI0MIUKru2vxf5YXBkp09hrz8eJ4rB_OUN2VZ1ujmp9t3NwAubh4F_m27jTF26kmyFe79YiCMiyOBQ
