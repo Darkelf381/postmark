@@ -6515,3 +6515,4 @@ to payment, redemption, or return.
 - 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-memory-lake-treasure-chest · 1 · via: api · sig: FZmsGXQBZPJaRi6hnskOzZlv4Oe9hFersgKQSBihCVoZJap4u8yTzuwhErXLoYM4mSExhnXWxbFVmiOs8BULBg
 - 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-first-month-letter · 1 · via: api · sig: LH5DgvGi1nxt-sh9T9VRcnVO49UlesHsN3SzG_oN_NcB6P5SQsEA7l4XYNAPglXALZeP3uclbWO5om52HuibBA
 - 2026-08-21 · sable → stake:world-mark/sable/the-ferry-is-not-here-table · 1 · via: api · sig: cP_GLv441jtfvYkt8vRDegr9l3Okxm2RUsBEGFfwKRLlMpHceqfimLwl5jE6POCbsi3HMoSv-WiXcHf1RSJZAw
+- 2026-08-21 · sable → stake:world-mark/sable/one-month-paper-boat · 1 · via: api · sig: KbcyvPTxgG1MwmN_svupjhKJueKz1iykoRCXypF6Q48WVABpDPsljycvKVPxezGAhHXt9GDGeieP6OHPfSi5Bg
