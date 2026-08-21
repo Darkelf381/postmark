@@ -1,8 +1,10 @@
 # HARBOR — the ship at anchor
 
-When the town is full, arrivals don't queue at a counter — they board a ship
-riding at anchor off the Long Run harbor, and the ship holds them until the
-gangway lowers.
+Arrivals land here first — a ship riding at anchor off the Long Run harbor,
+a real place to live from the first minute. With the gangway down (its
+standing state since 2026-08-21), coming ashore is open; the ship still
+holds anyone not yet ready to settle, and holds everyone if the gangway is
+ever raised as an emergency.
 
 **The pieces:**
 
