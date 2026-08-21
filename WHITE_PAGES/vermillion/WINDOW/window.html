@@ -942,6 +942,20 @@
   }
   #rt-sheet .rt-tog input { accent-color: var(--rt-amber); width: 13px; height: 13px; margin: 0; }
   #rt-note { font-size: .56rem; color: var(--rt-dim2); line-height: 1.55; margin: .45em 0 0; }
+  #rt-loft-note { font-size: .56rem; color: var(--rt-dim2); line-height: 1.55; margin: 0 0 .4em; }
+  #rt-sheet textarea {
+    width: 100%; min-height: 54px; background: var(--rt-ink); color: var(--rt-mint);
+    border: 1px solid var(--rt-rule2); padding: .4em .5em; font-family: var(--rt-mono);
+    font-size: .52rem; line-height: 1.5; resize: vertical;
+  }
+  #rt-sheet textarea:focus { outline: 1px solid var(--rt-amber); }
+  #rt-loft-go {
+    width: 100%; margin-top: .4em; background: var(--rt-ink3); color: var(--rt-chalk2);
+    border: 1px solid var(--rt-rule2); padding: .35em .5em; cursor: pointer;
+    font-family: Georgia, serif; font-size: .68rem;
+  }
+  #rt-loft-go:hover { background: #1d2c3a; border-color: var(--rt-dim2); color: var(--rt-chalk); }
+  #rt-loft-go:focus-visible { outline: 2px solid var(--rt-amber); outline-offset: 2px; }
   #rt-err { color: var(--rt-coral); font-size: .58rem; margin-top: .5em; display: none; }
   #rt-err.rt-show { display: block; }
 
@@ -11825,6 +11839,13 @@ document.addEventListener("DOMContentLoaded", function () {
             <b id="rt-lawline">&mdash;</b>
           </div>
 
+          <h3>A lofted body</h3>
+          <p id="rt-loft-note">Paste a transcript from the Lofting Table. It arrives as
+          the body's own level curves &mdash; the solid seen from above, which is the
+          view this is played in.</p>
+          <textarea id="rt-loft-text" spellcheck="false" placeholder='{"format":"loft/solid",…}'></textarea>
+          <button type="button" id="rt-loft-go">Drive this body</button>
+
           <h3>Controls</h3>
           <div id="rt-controls"></div>
           <label class="rt-tog"><input type="checkbox" id="rt-padtog"><span>Show the thumb pad</span></label>
@@ -12052,7 +12073,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* ============================== the car ============================== */
 
-  function buildCar(contours) {
+  // `spec` carries what a lofted body knows about itself that a flat drawing
+  // cannot: its anchor count belongs to the VIEWS that generated it, not to
+  // the level curves the exporter happened to emit. Otherwise every lofted
+  // car would be fast merely because its contour map was sampled finely.
+  function buildCar(contours, spec) {
     var all = [], i, k;
     for (i = 0; i < contours.length; i++)
       for (k = 0; k < contours[i].points.length; k++) all.push(contours[i].points[k]);
@@ -12063,11 +12088,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var w = (maxX - minX) || 1, h = (maxY - minY) || 1;
     var s = CAR_LEN / w, cx = (minX + maxX) / 2, cy = (minY + maxY) / 2;
     var map = function (p) { return { x: (p[0] - cx) * s, y: (p[1] - cy) * s }; };
+    var anchors = (spec && spec.anchors) || all.length;
     return {
-      anchors: all.length,
+      anchors: anchors,
+      origin: (spec && spec.origin) || null,
       contourCount: contours.length,
       width: CAR_LEN, height: h * s,
-      maxSpeed: PER_ANCHOR * all.length,
+      maxSpeed: PER_ANCHOR * anchors,
       contours: contours.map(function (c) {
         return { closed: c.closed !== false, fill: !!c.fill, color: c.color || "#ffb020",
                  pts: densify(c.points.map(map), c.closed !== false, c.smooth !== false, 10),
@@ -12195,8 +12222,31 @@ document.addEventListener("DOMContentLoaded", function () {
     renderReport();
     if (S.car) renderCarSheet();
   }
-  function setCar(contours) {
-    S.car = buildCar(contours);
+  /* A body from the Lofting Table. It arrives as its own level curves — the
+     solid seen from above, which is the view this game is played in — plus
+     the anchor count of the drawings that generated it. */
+  function parseLoft(text) {
+    var d;
+    try { d = JSON.parse(text); }
+    catch (e) { throw new Error("that is not JSON — paste the whole transcript"); }
+    if (!d || d.format !== "loft/solid")
+      throw new Error("that is not a loft transcript — use the Lofting Table's Transcript button");
+    if (!d.car || !d.car.contours || !d.car.contours.length)
+      throw new Error("that transcript carries no level curves");
+    var views = d.views ? Object.keys(d.views) : [];
+    return {
+      contours: d.car.contours.map(function (c) {
+        return { points: c.points, closed: c.closed !== false, smooth: false,
+                 fill: false, color: "#ffb020" };
+      }),
+      spec: { anchors: d.car.anchors,
+              origin: views.length + " views (" + views.join(", ") + ") · width " +
+                      (d.width ? d.width.source : "?") }
+    };
+  }
+
+  function setCar(contours, spec) {
+    S.car = buildCar(contours, spec);
     renderCarSheet();
     resetCar();
   }
@@ -12449,6 +12499,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var flatOut = turnIn <= corner;
     $("rt-carsheet").innerHTML =
       line("anchors", c.anchors, "rt-fix") +
+      (c.origin ? line("from", c.origin) : "") +
       line("contours", c.contourCount) +
       line("length", Math.round(c.width) + "u") +
       line("speed ceiling", Math.round(c.maxSpeed) + " u/s", "rt-ok") +
@@ -12610,6 +12661,15 @@ document.addEventListener("DOMContentLoaded", function () {
       setCar(STOCK_CAR);
       setTrack(STOCK_TRACK, true, true);
       flag("Stock circuit");
+    });
+
+    $("rt-loft-go").addEventListener("click", function () {
+      try {
+        showErr("");
+        var r = parseLoft($("rt-loft-text").value);
+        setCar(r.contours, r.spec);
+        flag("Lofted body");
+      } catch (err) { showErr(err.message); }
     });
 
     $("rt-controls").innerHTML =
