@@ -82,7 +82,7 @@ lines.push(`The Sky over Postmark — ${dateStr} ${String(hh).padStart(2,'0')}:$
 if (sun.up) {
   const noon = 1 - Math.abs(sun.x - 0.5) * 2;
   const when = noon > 0.8 ? 'high, near noon' : noon > 0.4 ? 'mid-sky' : 'low, near the horizon';
-  lines.push(`Sun: up — twin suns ${when}, ${skyPos(sun.x)}`);
+  lines.push(`Sun: up — Bright Sun ${when}, ${skyPos(sun.x)}`);
 } else {
   lines.push(`Sun: down — the bright sun below the horizon`);
 }
@@ -141,7 +141,9 @@ if (wantJson) {
       })()
     : { up: false };
   // The visible sky is that day's mail: only households who wrote or received
-  // that day are shown as stars, only that day's letters as lines.
+  // that day are shown as stars, only that day's letters as lines. The picture
+  // draws stars only at night; during the day the same letters are birds in
+  // flight. The machine fields must match what the picture draws.
   const dayLetters = sky.letters.filter(l => l.date === dateStr);
   const dayHandles = new Set();
   for (const l of dayLetters){ dayHandles.add(l.from); dayHandles.add(l.to); }
@@ -156,8 +158,10 @@ if (wantJson) {
       up: m.pos.up, position: m.pos.up ? `${skyPos(m.pos.x)}, ${skyHeight(m.pos.y)}` : 'below horizon'
     })),
     night: !sun.up,
-    visibleStars: dayHandles.size,          // this day's households, the same as the picture
-    lettersCrossed: dayLetters.length,      // this day's letters
+    // what the picture actually draws: stars only at night, birds by day
+    visibleStars: sun.up ? 0 : dayHandles.size,   // the picture draws no stars while the sun is up
+    birdsInFlight: sun.up ? dayLetters.length : 0, // the day sky is the mail in motion
+    lettersCrossed: dayLetters.length,      // this day's letters (constellation lines at night, birds by day)
     households: sky.households.length,      // the whole town in the ledger
     lettersInLedger: sky.letters.length
   }, null, 2));
