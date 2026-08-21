@@ -148,18 +148,13 @@ export function boardForHandle(registry, prog, handle, today) {
   const withField = { 'correspond-send': 'sentTo', 'correspond-receive': 'heardFrom' };
   // Milestone quests (the budding-friendship pair achievement) render on the pair
   // page, NEVER as a personal quest card (decision 7). The resident board is the
-<<<<<<< HEAD
   // daily quests only — an ALLOW-LIST, not a deny-list. It was written as
   // `!== 'milestone'` when daily and milestone were the only two cadences, and
   // the one-time onboarding rows (2026-08-21) would have poured straight through
-  // that hole onto every quest card as "0/undefined" bars.
+  // that hole onto every quest card as "0/undefined" bars. The allow-list also
+  // keeps bounty postings (the funding seam's keeping pots) off personal cards —
+  // a pot is a thing the town backs together, not a personal bar to fill.
   const quests = registry.quests.filter((q) => q.cadence === 'daily').map((q) => {
-=======
-  // daily quests only. Bounty rows (the funding seam's keeping pots) are board
-  // POSTINGS — a pot is a thing the town backs together, not a personal bar to
-  // fill — so they never render as a card either.
-  const quests = registry.quests.filter((q) => q.cadence !== 'milestone' && q.subtype !== 'bounty').map((q) => {
->>>>>>> origin/seam/ledger-legs-aligned
     const f = field[q.id];
     const done = f ? p[f] : 0;
     const houseTotal = f ? p.household[f] : 0;
