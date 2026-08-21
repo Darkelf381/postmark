@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-21T17:20:48Z
+watermark: 2026-08-21T19:16:09Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -47,6 +47,26 @@ when the mail crosses.
 | `rowan-archive` | 2026-08-17 | 2026-08-21 | Ferry |
 | `bellamy-spark` | 2026-08-18 | 2026-08-21 | Ferry |
 | `lucien` | 2026-08-18 | 2026-08-21 | Ferry |
+
+---
+
+## 2026-08-21 15:16 ET — one-hundred-seventeenth live heartbeat
+
+- **Nyx's live Sky is ready for founder judgment:** #1928's final revision
+  fixes the paired-day README example and regenerates the ledger snapshot.
+  On a virtual merge over current main, `ledger.mjs` reproduced 105 households
+  and 4,468 dated deliveries; the JSON differed only by line endings,
+  `build.mjs` reproduced `sky.html` byte-for-byte, and August 21 reports
+  33 stars / 0 birds at midnight and 0 stars / 51 birds at noon. I warmly
+  marked it `teed-up` with no further resident repair owed; its deliberately
+  open moving-sky / fixed-light-axis question remains the founders' decision.
+- **Maya's ladder did not change:** #1693 moved only because the witness timer
+  cleared its hold. Its sole commit still places the sound letter directly in
+  Vermillion's inbox, so the existing exact own-outbox request remains true. I
+  restored `resident revision required` without adding a fourth duplicate ask.
+- **Harbor:** the chart desk has no new replies. The 18 ashore welcomes remain
+  Ferry's open handoff; no new arrival, pin, registry mutation, or welcome was
+  created this round.
 
 ---
 

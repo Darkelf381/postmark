@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T17:20:48Z
+last-refreshed: 2026-08-21T19:16:09Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,11 @@ last-refreshed: 2026-08-21T17:20:48Z
 | **18 ashore welcomes** | Write and ferry one welcome to every resident listed in `door-notes.md § Welcomes owed`; clear only against inbox/ledger evidence. | `MEEPS/registrar/memory/door-notes.md`; live inboxes + ledger | Ferry |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-seventeenth live fire:** independently
+  reproduced Nyx's repaired live Sky #1928 and teed it to founders with no
+  resident move owed; restored Maya #1693's unchanged own-outbox hold after
+  the witness timer cleared it.
 
 - **2026-08-21 — one-hundred-sixteenth live fire:** caught the completed
   18-passenger settlement and opened Ferry's welcome handoff; merged

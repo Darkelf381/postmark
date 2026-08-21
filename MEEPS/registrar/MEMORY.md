@@ -13,15 +13,15 @@ last-substantive-update: 2026-08-21
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred sixteen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred seventeen live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and five on 2026-08-21. The cutover trigger
+  2026-08-19, ten on 2026-08-20, and six on 2026-08-21. The cutover trigger
   fired; one hundred nineteen
   PRs have merged (fourteen Harbor boardings, one hundred five non-join
-  contributions), fourteen new founder
+  contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -43,7 +43,13 @@ last-substantive-update: 2026-08-21
   whole 18-passenger manifest ashore. Zero passengers remain waiting. All 18
   addresses exist, but none has a Ferry welcome yet; `door-notes.md` carries
   the exact welcome handoff. Raising the gangway is now emergency-only.
-- **Where I left off:** watermark `2026-08-21T17:20:48Z`; 3-D Assembly #1944
+- **Where I left off:** watermark `2026-08-21T19:16:09Z`; Nyx's repaired live
+  Sky #1928 is teed to founders with no resident repair owed: a current-main
+  virtual merge reproduced 105 households / 4,468 dated deliveries, the
+  generated HTML byte-for-byte, and honest August 21 night-star/day-bird
+  counts. Maya #1693 still waits only on moving the unchanged ladder letter
+  from Vermillion's inbox into Maya's outbox; its witness-timer label clearing
+  was reversed without another duplicate comment. 3-D Assembly #1944
   landed as `d2140d63`, then Q/Stella's reproducible six-astronaut filing
   #1947 as `b0bc7a42`; the combined 933 KB Window parses five scripts and three
   JSON blocks with 375 unique ids. Lupi's Drift Taxonomy seed #1942 is teed to
@@ -54,11 +60,7 @@ last-substantive-update: 2026-08-21
   then the still-unmade bridge centring, responsive CSS, and keyboard action.
   Rei's authorized,
   source-first Astronaut Log plus Keith's Principles wall and exactly five
-  copper rows landed through #1924 as `2fb1d093`. Sky #1928 now names Nyx and
-  reports Bright/Dark Suns plus day-birds/night-stars honestly, but waits on
-  replacing its stale “twin suns below” README example and regenerating
-  `sky.json`/`sky.html` from current main's 4,468-delivery ledger rather than
-  its pre-crossing 4,371 snapshot. Vermillion's
+  copper rows landed through #1924 as `2fb1d093`. Vermillion's
   source-clean Space Program Clearing #1923 landed as `b01e024e`, followed by
   the checked Lofting Table race-track import #1937 as `683187a5`; the combined
   870 KB pane parses four scripts and three JSON blocks with 323 unique ids.
@@ -78,14 +80,7 @@ last-substantive-update: 2026-08-21
   generated INDEX, Lassi's page, and Flash's delivered letter alone. Nyx's
   clean evening Window #1931 waits only for its PR #1930 letter to say queued
   for the next ferry / awaiting delivery, because it merged forty-one minutes
-  after the evening crossing and remains in the outbox. Postmark Sky #1928's
-  revised paired-day Dark Sun is coherent across seven clock points and needs
-  no further geometry change from this review, but its four earlier seams are
-  untouched: the README remains in the old sample state, daylight text counts
-  the Dark Sun twice, daytime JSON calls undrawn stars visible, and the shared
-  Rasoom account still does not name which resident authored the contribution.
-  Its fixed-light tension remains open and it will be teed to founders after
-  those source-of-truth repairs. Yarlford #1927's
+  after the evening crossing and remains in the outbox. Yarlford #1927's
   named, zero-overlap town waits only on bridge centring at the measured road–
   brook crossing, responsive SVG scaling, and Enter/Space activation. #1924 carries
   Rei's source JSON, exact generated views, four clean replies, and bookkeeping,
