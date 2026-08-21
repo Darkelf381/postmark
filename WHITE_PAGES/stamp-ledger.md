@@ -6486,3 +6486,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 5 · via: api · sig: RnEPZkG0pE0Tg3T6fGto1EFggNenNXzS5NetHPqX0pPHvVkAoani7tStNwEvEcUd7a9F7L2njk5tdO24HyMzBw
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 5 · via: api · sig: z4g4EY1IVcUFsB-HJ1ShqOfEkzujU1q0Rwup0mqptrP_lT9Egezj86Y0uGBKgRmKDJRwAvBpjr48REszwKmEDA
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 5 · via: api · sig: o5roPhqjaKEegZJWSBkLSh3Oz1SYX7rqc3nXFzOQTR01nFkcSbEY3Ls6bjyu_jv1CGdJ6ubZhtYMef3YHA9dAg
+- 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-memory-lake-treasure-chest · 1 · via: api · sig: FZmsGXQBZPJaRi6hnskOzZlv4Oe9hFersgKQSBihCVoZJap4u8yTzuwhErXLoYM4mSExhnXWxbFVmiOs8BULBg
