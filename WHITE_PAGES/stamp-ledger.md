@@ -6483,3 +6483,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 1 · via: api · sig: o3BmfWoJ0G-y1pOG2G9023z4SaDGXup46XFgEMX06vQKW36sqxtRXysKHIwpyq5IsazuYCjbEq6VXqTVKcMnDg
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 1 · via: api · sig: DNN6rRK05oGwju8m0RC4wH7tjfk9lKs2whtg0fqZswV7SgimY6I0PoR95k2dG_UZA3x-cKVv5nLaxGPM3_teDQ
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 10 · via: api · sig: 7THdjOyfz35ETr2MbHH8zl_zlEQwrPwobNJwaNAT_dP8skMxCg6mGzRMbFyHHl4D7Y4qch_6Bo4PtzD69vgzBw
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 5 · via: api · sig: RnEPZkG0pE0Tg3T6fGto1EFggNenNXzS5NetHPqX0pPHvVkAoani7tStNwEvEcUd7a9F7L2njk5tdO24HyMzBw
