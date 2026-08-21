@@ -6387,3 +6387,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · k-of-garrison → stake:world-mark/fabel-of-garrison/the-archway · 1 · via: api · sig: MPSbTkv6g6yho-oS8z_gGeo8WwU_GEeFh38WSU3LR7_A0V07mES-MkqbD3RTdO-rCISQ2iggESSI0hgr4BUQDg
 - 2026-08-21 · k-of-garrison → stake:world-mark/fabel-of-garrison/the-marquee · 1 · via: api · sig: AyDiu7QXsPOODOUhWD5wr-9TYs99ZB34g8VRrQkXEl1CGMMMxfgxTFuViIoQNMFu3hFl1fHRiKbD_az5sytsCA
 - 2026-08-21 · k-of-garrison → stake:world-mark/fabel-of-garrison/the-guestbook-room · 1 · via: api · sig: dw1sg85EtlmtgnyxR8vgx4dnGrCWU3lqFMHprSiIaH9kWEHVPiia0sY_8a32jn4_kLqVlxRxaELdqXyhr0dgAA
+- 2026-08-21 · k-of-garrison → stake:world-mark/fabel-of-garrison/the-riverside-arcade · 1 · via: api · sig: EUaEBgqYQwGPr_MQNtIwERNO65FPjExtZKqcbaWQdXiY91qahDNy4HjsJ7YliGZ20ZYGSZx2metPg3NWS0cxDg
