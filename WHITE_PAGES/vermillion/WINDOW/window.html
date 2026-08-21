@@ -12338,7 +12338,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var CORRIDOR = ROAD_HALF + VERGE_W;
   var PER_ANCHOR = 1.5;                 // the linear law; the future dial
   var ACCEL = 210, BRAKE = 260, ROLL = 55, TURN = 2.5;
-  var REVERSE_FRAC = 0.42, WALL_KEEP = 0.55;
+  var REVERSE_FRAC = 0.42, WALL_KEEP = 0.55;   // kept per 1/60s against the wall
   var SAMPLES = 560;
 
   /* ================= geometry, as on the drawing table ================= */
@@ -12765,7 +12765,10 @@ document.addEventListener("DOMContentLoaded", function () {
       var nx = (S.pos.x - after.x) / (after.d || 1), ny = (S.pos.y - after.y) / (after.d || 1);
       S.pos.x = after.x + nx * CORRIDOR;
       S.pos.y = after.y + ny * CORRIDOR;
-      S.speed *= WALL_KEEP;
+      // Anchored to 1/60s. Applied once per frame it would punish a 144Hz
+      // screen twenty times harder than a 30Hz one for the same mistake —
+      // every other force here is scaled by dt, and this one has to be too.
+      S.speed *= Math.pow(WALL_KEEP, dt * 60);
       S.surface = "off";
     }
 
