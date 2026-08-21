@@ -211,7 +211,10 @@ function main() {
     // the human-legible epoch report
     const lines = rows.map(keepingLine);
     console.log(`── epoch close · pot ${report.pot} · epoch ${report.epoch} · ${report.date} ──`);
-    console.log(`keeper (beneficiary): ${report.beneficiary}`);
+    // "keeper" belongs to the keeping-STAKERS (§ 8), so it may not label this
+    // line: the beneficiary is where the DOLLARS route, and a close mints them
+    // nothing at all.
+    console.log(`beneficiary:          ${report.beneficiary}  (where the dollars route — a close mints them no stamps)`);
     console.log(`posted need:          $${report.potTarget} for the epoch`);
     console.log(`dollars witnessed:    $${report.dollarsWitnessed} across ${report.receipts} receipt(s)` +
       (report.dollarsFunding !== report.dollarsWitnessed ? ` ($${report.dollarsWitnessed - report.dollarsFunding} treasury — funds nothing, mints nothing)` : ''));
