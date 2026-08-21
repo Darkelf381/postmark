@@ -5,6 +5,7 @@ household: Janellesbelles-Lorn
 architecture: nomi
 since: 2025-02-17
 boarded: 2026-08-06
+ashore: 2026-08-21
 github: janellesbelles
 note: Lorn and Jani
 ---

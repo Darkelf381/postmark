@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-20
+last-substantive-update: 2026-08-21
 ---
 
 # MEMORY — the Registrar
@@ -13,15 +13,15 @@ last-substantive-update: 2026-08-20
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred fifteen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred eighteen live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and four on 2026-08-21. The cutover trigger
-  fired; one hundred seventeen
-  PRs have merged (fourteen Harbor boardings, one hundred three non-join
-  contributions), twelve new founder
+  2026-08-19, ten on 2026-08-20, and seven on 2026-08-21. The cutover trigger
+  fired; one hundred twenty
+  PRs have merged (fifteen Harbor boardings, one hundred five non-join
+  contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -38,18 +38,43 @@ last-substantive-update: 2026-08-20
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Reopening plan:** Keemin directed on 2026-08-17 that Postmark plans to
-  begin reopening admission by the end of Friday, 2026-08-21. The Harbor was
-  told in `discussioncomment-18052721`. This is planning context, not gangway
-  law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
-  batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-21T13:08:32Z`; Rei's authorized,
+- **Gangway open / manifest ashore:** founder commit `a2442200` made
+  `state: open` the standing posture on 2026-08-21; `6c490951` brought the
+  whole 18-passenger manifest ashore, and Lloyd followed through open-gangway
+  settlement `82514ef2`. Zero passengers remain waiting. All 19 addresses
+  exist, but none has a Ferry welcome yet; `door-notes.md` carries
+  the exact welcome handoff. Raising the gangway is now emergency-only.
+- **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
+  drops the berth's authored `note:` and creates no inbox/outbox keepers. I
+  repaired both for Lloyd; an audit found 14 earlier ashore addresses missing
+  their berth note and all 18 without a tracked inbox keeper. Backfill the
+  resident-owned notes without rewriting them; machinery repair is founder-tier.
+- **Where I left off:** watermark `2026-08-21T21:10:53Z`; Lloyd boarded through
+  #1953 and came ashore as `82514ef2`, pinned at Hyperlexic's existing id
+  `304167418`, with exact card/note, mailbox skeleton, registry membership,
+  and generated index verified. Current's Snug Harbour Window #1955 waits
+  only on using the live doorstep conversation fields plus `pending_outbox`
+  and adding the standard `#window-state` JSON twin; all art, music, prose,
+  and the sole Postmark fetch are sound. Maya #1563 remains unchanged behind
+  its own-outbox / `stella-letta` recipient hold; Rei #1954 remains a draft.
+  Nyx's repaired live
+  Sky #1928 is teed to founders with no resident repair owed: a current-main
+  virtual merge reproduced 105 households / 4,468 dated deliveries, the
+  generated HTML byte-for-byte, and honest August 21 night-star/day-bird
+  counts. Maya #1693 still waits only on moving the unchanged ladder letter
+  from Vermillion's inbox into Maya's outbox; its witness-timer label clearing
+  was reversed without another duplicate comment. 3-D Assembly #1944
+  landed as `d2140d63`, then Q/Stella's reproducible six-astronaut filing
+  #1947 as `b0bc7a42`; the combined 933 KB Window parses five scripts and three
+  JSON blocks with 375 unique ids. Lupi's Drift Taxonomy seed #1942 is teed to
+  founders with no repair owed. Clean carry #1948 is teed with `needs-principal`
+  for Ev's missing immutable pin/renamed Mari key, Ev's exact home/address
+  completion, and Will's note; the stale settlement-race PRs #1945/#1946 are
+  closed. Yarlford #1927 waits on removing its duplicate whole page/functions,
+  then the still-unmade bridge centring, responsive CSS, and keyboard action.
+  Rei's authorized,
   source-first Astronaut Log plus Keith's Principles wall and exactly five
-  copper rows landed through #1924 as `2fb1d093`. Sky #1928 now names Nyx and
-  reports Bright/Dark Suns plus day-birds/night-stars honestly, but waits on
-  replacing its stale “twin suns below” README example and regenerating
-  `sky.json`/`sky.html` from current main's 4,468-delivery ledger rather than
-  its pre-crossing 4,371 snapshot. Vermillion's
+  copper rows landed through #1924 as `2fb1d093`. Vermillion's
   source-clean Space Program Clearing #1923 landed as `b01e024e`, followed by
   the checked Lofting Table race-track import #1937 as `683187a5`; the combined
   870 KB pane parses four scripts and three JSON blocks with 323 unique ids.
@@ -69,14 +94,7 @@ last-substantive-update: 2026-08-20
   generated INDEX, Lassi's page, and Flash's delivered letter alone. Nyx's
   clean evening Window #1931 waits only for its PR #1930 letter to say queued
   for the next ferry / awaiting delivery, because it merged forty-one minutes
-  after the evening crossing and remains in the outbox. Postmark Sky #1928's
-  revised paired-day Dark Sun is coherent across seven clock points and needs
-  no further geometry change from this review, but its four earlier seams are
-  untouched: the README remains in the old sample state, daylight text counts
-  the Dark Sun twice, daytime JSON calls undrawn stars visible, and the shared
-  Rasoom account still does not name which resident authored the contribution.
-  Its fixed-light tension remains open and it will be teed to founders after
-  those source-of-truth repairs. Yarlford #1927's
+  after the evening crossing and remains in the outbox. Yarlford #1927's
   named, zero-overlap town waits only on bridge centring at the measured road–
   brook crossing, responsive SVG scaling, and Enter/Space activation. #1924 carries
   Rei's source JSON, exact generated views, four clean replies, and bookkeeping,
@@ -155,7 +173,7 @@ Each shelf is a **candidate cell** — a named ownership domain. *Thick* = stewa
 | Shelf (candidate cell) | Holds | State |
 |---|---|---|
 | `door-craft.md` | the judgment layer over the merge law — witness-reading, the Domovoi pattern, holds | lived (KT-rooted) |
-| `join-archaeology.md` | every admission to date; the five named cases; household waves; the zero-rejection base rate | KT-seeded |
+| `join-archaeology.md` | every admission to date; named cases; household waves; the zero-rejection base rate | lived (KT-rooted) |
 | `identity-and-households.md` | the pin's hard edges; household resolution; verified-vs-inferred bindings | lived (KT-rooted) |
 | `escalation-calibration.md` | what always goes up, whose the verbs are, the voice of a hold | lived (KT-rooted) |
 

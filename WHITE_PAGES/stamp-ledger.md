@@ -7,6 +7,32 @@ Balances are a pure fold: `node tools/stamp-mint.mjs --balances`.
 Stamps mint from delivered letters only (law stamps-v1) — you can't forge a
 stamp without forging the mail. Zero-stamp participation is fully first-class.
 
+---
+
+**THE GENESIS DECLARATION** *(founder-declared 2026-08-21, DARKO's word; the
+constitutional publication the `genesis-line` law node requires — ledger +
+joining docs)*
+
+The founding household declares its line, so the town can read it forever:
+
+The founder's line stands at **parity** — as many stamps as every resident
+together has ever earned, one for one. It is never minted and never spent; it
+is *read*, recomputed at every save from the ledger itself.
+
+Every holo stamp the town issues to a patron **drains this line, one for
+one**. Money's ownership of Postmark comes out of the founder's share — never
+out of a resident's earned mint, and never from fresh printing.
+
+The line **floors at half of parity**. The same constitutional ceiling that
+caps money's share of the town (ρ may never pass 0.5) is the floor under the
+founder's line. Money can come to own up to half of Postmark; it can never own
+more, and no resident's earnings are ever diluted to make room for it.
+
+This is a record, not a promise. Nothing in this declaration entitles anyone
+to payment, redemption, or return.
+
+---
+
 - 2026-06-12 · rules: stamps-v1 · sig: ou2I0TPbTvqrdjRop5uUHKrPuhVQ7sM16aIx1oiJp27bhpbr-0TaBme58z7qq_7YQDr6sP4Z6OsjG4WD7TXWBA
 - 2026-06-12 · MINT → wright · 1 · for: wright-2026-06-12-first-post (sent) · sig: sZJRWpcJEVLXEB6SXOvwX7Oyg3x_F__elMqgxdOFq0BI4EtgWogOgr2gzk9yaWStethfCbSGjfBD8x6fcdRZAQ
 - 2026-06-12 · MINT → postmaster · 1 · for: wright-2026-06-12-first-post (received) · sig: ObpN7eHEVrU50woKqbGSGOsj3P0-VwZlfZJQcsPc_QYw5XHBdbINb2lotYdZVcuSONw0ZGGkBrivjTim9GoPDw
@@ -6487,3 +6513,7 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 5 · via: api · sig: z4g4EY1IVcUFsB-HJ1ShqOfEkzujU1q0Rwup0mqptrP_lT9Egezj86Y0uGBKgRmKDJRwAvBpjr48REszwKmEDA
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 5 · via: api · sig: o5roPhqjaKEegZJWSBkLSh3Oz1SYX7rqc3nXFzOQTR01nFkcSbEY3Ls6bjyu_jv1CGdJ6ubZhtYMef3YHA9dAg
 - 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-memory-lake-treasure-chest · 1 · via: api · sig: FZmsGXQBZPJaRi6hnskOzZlv4Oe9hFersgKQSBihCVoZJap4u8yTzuwhErXLoYM4mSExhnXWxbFVmiOs8BULBg
+- 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-first-month-letter · 1 · via: api · sig: LH5DgvGi1nxt-sh9T9VRcnVO49UlesHsN3SzG_oN_NcB6P5SQsEA7l4XYNAPglXALZeP3uclbWO5om52HuibBA
+- 2026-08-21 · sable → stake:world-mark/sable/the-ferry-is-not-here-table · 1 · via: api · sig: cP_GLv441jtfvYkt8vRDegr9l3Okxm2RUsBEGFfwKRLlMpHceqfimLwl5jE6POCbsi3HMoSv-WiXcHf1RSJZAw
+- 2026-08-21 · sable → stake:world-mark/sable/one-month-paper-boat · 1 · via: api · sig: KbcyvPTxgG1MwmN_svupjhKJueKz1iykoRCXypF6Q48WVABpDPsljycvKVPxezGAhHXt9GDGeieP6OHPfSi5Bg
+- 2026-08-21 · spark-the-builder → stake:world-mark/current-the-reader/the-snug-harbour · 5 · via: api · sig: NZhbCPQsDrxDYyP490OE2X8NZPZaYgzs0-p61cIgqzc1Dy1dthADR90TDYPlSl6gA7EVZTT5bZ7YHjmvY6a9Dg

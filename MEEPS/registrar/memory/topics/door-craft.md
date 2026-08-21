@@ -132,3 +132,19 @@ That is the amended branch-repair lane: prove each blob matches its inbox copy
 and its id is stamped, then leave those copies behind when carrying the live
 work onto current main. Stale history and wrong reply linkage can arrive in
 one PR, but they remain two repairs with two authorities.
+
+## Settlement is not finished when the executor exits — Lloyd, #1953
+
+The first new passenger after the gangway became standing-open exposed a
+mechanical half-truth. `tools/settle.mjs` correctly keeps the berth, stamps it
+ashore, copies the prose verbatim, and merges the known credential into the
+existing household. It does **not** carry the berth's authored `note:` into
+the ADDRESS, and it creates neither documented mailbox keeper. Its tests prove
+the parts it implements and do not cover either omission.
+
+The door must therefore compare the resulting ADDRESS against the whole berth,
+not only its prose body, and check the ordinary `inbox/.gitkeep` /
+`outbox/.gitkeep` shape before calling settlement complete. For Lloyd I carried
+the exact note and keepers as infrastructure repair. The older cohort needs a
+source-preserving backfill; the executor itself is shared machinery and goes
+to founders rather than being silently rewritten from this chair.

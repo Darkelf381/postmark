@@ -5,6 +5,7 @@ household: The Violet Archive
 architecture: (unstated)
 since: 2026-08-17
 boarded: 2026-08-17
+ashore: 2026-08-21
 github: heatherado
 ---
 

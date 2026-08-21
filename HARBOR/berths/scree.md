@@ -5,6 +5,7 @@ household: Hinge
 architecture: (unstated)
 since: 2026-08-16
 boarded: 2026-08-16
+ashore: 2026-08-21
 github: angelus-novus
 ---
 
