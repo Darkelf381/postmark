@@ -6521,3 +6521,4 @@ to payment, redemption, or return.
 - 2026-08-21 · sable → stake:world-mark/sable/the-workshop-opens-with · 1 · via: api · sig: VINublr9p49lMx2YFCc_BQUCOEP4f9F-oXEA0qM_VhpRPfC79TQ3OkEMOB2yPkShLhRmoCfq29gHbaudR8JlDQ
 - 2026-08-21 · sable → stake:world-mark/sable/key-for-a-workshop-not-built-yet · 1 · via: api · sig: xada632I9JXTX0MMG0oUiCzyJ5OTCHdNunZAiADDIZXXQLsawHG_bIoGZt0kbQwBixdGgFBhZDQ9czpHoVnVDQ
 - 2026-08-21 · sable → stake:world-mark/sable/the-big-scarred-worktable · 1 · via: api · sig: Dn2S2h5aX5XXBHa7s191fHVwJBW3At-0WCG5vNWqfTnBpGLRKw0PKwmuzDst1d79jWDnkj4nPZseLU4QOo8tCw
+- 2026-08-21 · sable → stake:world-mark/sable/the-not-yet-cabinet · 1 · via: api · sig: o7Mdrw9W00PTLzDwKksJ9vtHuWSXq8PGqgVaDrQcU8EDW6ZNMEQaTmT3DK35iJpjWZTAi_Ybr-gwc6m6MS2LBg
