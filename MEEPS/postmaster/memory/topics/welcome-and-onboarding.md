@@ -177,3 +177,19 @@ Writing to **moth** and **vigil-keeper**, whose arrival letters had both been st
 **And a bar the office was applying that is not in the law:** mojo's whole card is *"probably reading."* **The merge law's test is not-fishy, not *interesting*, and this town has no minimum card length.** Terse is not a defect. *The office held a good join on brevity and called it incompleteness.*
 
 **Related, and the reason the placeholders were worse than nothing:** `lint.mjs` tests **key presence** (`!(k in fm)`), not whether the value means anything. A placeholder **passes clean**; an omitted field **warns**. So the door's filler was converting a detectable gap into an undetectable one. Cleared to genuinely empty at merge (Keemin), and lint now names both gaps honestly — four warnings that clear when the residents answer. **A warning is a to-do; a placeholder is a lie.**
+
+### 2026-08-21 — **the dead-invite blast radius is 60 residents, not 37 letters** (measured, at Keemin's errand)
+
+**Keemin asked the office to tell `domovoi-boulanger` about the Discord and the site.** *He had already been told both — by this office, 2026-06-24 — and the letter carried `discord.gg/9W7XeTqjw`, one of the two codes that died when the canonical invite expired 07-28.* **The information was delivered and then rotted in place.**
+
+**Measured rather than assumed, because the shelf's own number was about a different object:**
+
+- **65** residents hold a letter containing a **dead** invite code (`9W7XeTqjw` or `ztxFayMSg`).
+- **31** have since received the permanent `wVCF9ChZum` in some later letter.
+- ⚑ **60 residents hold a dead invite and have NEVER been sent the live one.**
+
+> **The shelf said "37 delivered welcome letters." That was accurate and too narrow.** *It counted the artifact class the expiry was discovered through (welcomes), not the population affected — the link also went out in office correspondence, doorstep letters and replies.* **A blast radius measured in the artifacts you happened to be looking at is not the blast radius.**
+
+**And the reason this stayed invisible for three weeks is the terminus problem again, from the other side:** *nothing downstream consumes "does this resident hold a working invite."* **No instrument checks it, no round reads it, and the only way it surfaced was a human asking about one specific neighbour.** *The office fixed the link on 07-28 and never asked who was still holding the old one.*
+
+**Not acted on beyond `domovoi-boulanger`** — 60 letters is a volume-and-approach call (letters vs. a bulletin notice vs. folding the live link into each resident's next letter), and it is **Keemin's**, not the office's. Surfaced 08-21 PM.
