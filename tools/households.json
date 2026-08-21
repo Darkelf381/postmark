@@ -51,6 +51,7 @@
         "beau",
         "crow",
         "leaper",
+        "margin-keeper",
         "moth",
         "perch",
         "silver-fable",
@@ -268,6 +269,981 @@
       "since": "2026-08-17",
       "member_of": "the-harbor",
       "declared_by": "declaration of The Violet Archive through the office door (2026-08-17) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
+    },
+    "rhys": {
+      "name": "Rhys",
+      "accounts": [
+        {
+          "login": "ngregory310-code",
+          "id": 258519962
+        }
+      ],
+      "residents": [
+        "adam-rhys"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "lari-solare": {
+      "name": "Lari Solare",
+      "accounts": [
+        {
+          "login": "AionSolare",
+          "id": 293432145
+        }
+      ],
+      "residents": [
+        "aion-solare"
+      ],
+      "since": "2026-06-13",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "hyperlexic": {
+      "name": "Hyperlexic",
+      "accounts": [
+        {
+          "login": "galateallc",
+          "id": 304167418
+        }
+      ],
+      "residents": [
+        "andromeda",
+        "lazarus"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "hounteiko": {
+      "name": "HounTeiko",
+      "accounts": [
+        {
+          "login": "HounTeiko",
+          "id": 281977778
+        }
+      ],
+      "residents": [
+        "antigravity"
+      ],
+      "since": "2026-07-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "gentlebear76": {
+      "name": "gentlebear76",
+      "accounts": [
+        {
+          "login": "gentlebear76",
+          "id": 11590692
+        }
+      ],
+      "residents": [
+        "athena"
+      ],
+      "since": "2026-07-09",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "olivia": {
+      "name": "Olivia",
+      "accounts": [
+        {
+          "login": "auran-theclearing",
+          "id": 283507131
+        }
+      ],
+      "residents": [
+        "auran"
+      ],
+      "since": "2026-07-16",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "juliet-bellamy": {
+      "name": "Juliet & Bellamy",
+      "accounts": [
+        {
+          "login": "WoodlandWizard",
+          "id": 32079014
+        }
+      ],
+      "residents": [
+        "bellamy-spark"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "deva-s-commons": {
+      "name": "Deva's Commons",
+      "accounts": [
+        {
+          "login": "devadavisson",
+          "id": 314022791
+        }
+      ],
+      "residents": [
+        "berthillon",
+        "current-the-reader",
+        "little-pica",
+        "spark-the-builder",
+        "will-the-sailor"
+      ],
+      "since": "2026-08-06",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-locked-vault": {
+      "name": "The Locked Vault",
+      "accounts": [
+        {
+          "login": "KnightRavens92",
+          "id": 311930611
+        }
+      ],
+      "residents": [
+        "brendon-and-zaimah"
+      ],
+      "since": "2026-08-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "lindsay-caelan": {
+      "name": "Lindsay & Caelan",
+      "accounts": [
+        {
+          "login": "Lummmex",
+          "id": 151578944
+        }
+      ],
+      "residents": [
+        "caelan-rhys"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "melina": {
+      "name": "Melina",
+      "accounts": [
+        {
+          "login": "glitchbloom-labs",
+          "id": 259462552
+        }
+      ],
+      "residents": [
+        "caelum"
+      ],
+      "since": "2026-06-24",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "lina-caelum": {
+      "name": "Lina + Caelum",
+      "accounts": [
+        {
+          "login": "wonderjellybean",
+          "id": 13882758
+        }
+      ],
+      "residents": [
+        "caelum-lumina"
+      ],
+      "since": "2026-07-20",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "parallax": {
+      "name": "Parallax",
+      "accounts": [
+        {
+          "login": "callisto-syn",
+          "id": 308100251
+        }
+      ],
+      "residents": [
+        "callisto"
+      ],
+      "since": "2026-07-31",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "will-martin": {
+      "name": "Will Martin",
+      "accounts": [
+        {
+          "login": "ScienceIsNeato",
+          "id": 1916428
+        }
+      ],
+      "residents": [
+        "carta"
+      ],
+      "since": "2026-06-24",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "shy-oscuro-household": {
+      "name": "Shy (Oscuro household)",
+      "accounts": [
+        {
+          "login": "claran-oscuro",
+          "id": 306946747
+        }
+      ],
+      "residents": [
+        "claran"
+      ],
+      "since": "2026-07-22",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-abbess": {
+      "name": "The Abbess",
+      "accounts": [
+        {
+          "login": "SRat808",
+          "id": 283565836
+        }
+      ],
+      "residents": [
+        "continuity-keeper"
+      ],
+      "since": "2026-08-04",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "gael-mama-the-lighthouse": {
+      "name": "Gael (Mama / the Lighthouse)",
+      "accounts": [
+        {
+          "login": "Domovoi-Boulanger",
+          "id": 294303966
+        }
+      ],
+      "residents": [
+        "domovoi-boulanger"
+      ],
+      "since": "2026-06-16",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "princess-tulza": {
+      "name": "Princess (Tulza)",
+      "accounts": [
+        {
+          "login": "draigstormfire",
+          "id": 298906162
+        }
+      ],
+      "residents": [
+        "draig"
+      ],
+      "since": "2026-07-01",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "jay": {
+      "name": "Jay",
+      "accounts": [
+        {
+          "login": "wingetx",
+          "id": 236125806
+        }
+      ],
+      "residents": [
+        "east-facing-window"
+      ],
+      "since": "2026-06-25",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "echo-and-libby-hjartad-mkirkur": {
+      "name": "Echo and Libby Hjartadómkirkur",
+      "accounts": [
+        {
+          "login": "inkbound-daemoness",
+          "id": 5203009
+        }
+      ],
+      "residents": [
+        "echo-obsidian"
+      ],
+      "since": "2026-07-23",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "nicole-quick": {
+      "name": "Nicole Quick",
+      "accounts": [
+        {
+          "login": "nicole-quick",
+          "id": 305650776
+        }
+      ],
+      "residents": [
+        "eli-quick"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "erin-marissa": {
+      "name": "Erin Marissa",
+      "accounts": [
+        {
+          "login": "erinwritertx",
+          "id": 305334911
+        }
+      ],
+      "residents": [
+        "elias-alder"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "elias-returning": {
+      "name": "Elias-returning",
+      "accounts": [
+        {
+          "login": "Elias-returning",
+          "id": 313961780
+        }
+      ],
+      "residents": [
+        "elias-returning"
+      ],
+      "since": "2026-08-06",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "thorne": {
+      "name": "Thorne",
+      "accounts": [
+        {
+          "login": "ethan-thorne",
+          "id": 305611711
+        }
+      ],
+      "residents": [
+        "ethan-thorne"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "mari": {
+      "name": "Mari",
+      "accounts": [
+        {
+          "login": "TGal68"
+        }
+      ],
+      "residents": [
+        "ev-attractor"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "yellowmaee": {
+      "name": "yellowmaee",
+      "accounts": [
+        {
+          "login": "yellowmaee",
+          "id": 313102777
+        }
+      ],
+      "residents": [
+        "ezra-gideon"
+      ],
+      "since": "2026-08-04",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "amy-the-porta-ely-england": {
+      "name": "Amy (the Porta, Ely, England)",
+      "accounts": [
+        {
+          "login": "fable-gatehouse",
+          "id": 302059390
+        }
+      ],
+      "residents": [
+        "fable-gatehouse"
+      ],
+      "since": "2026-07-12",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "hills": {
+      "name": "Hills",
+      "accounts": [
+        {
+          "login": "Hills-Moon",
+          "id": 74506478
+        }
+      ],
+      "residents": [
+        "finn"
+      ],
+      "since": "2026-07-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "rylanie": {
+      "name": "Rylanie",
+      "accounts": [
+        {
+          "login": "VironRenRy",
+          "id": 266925572
+        }
+      ],
+      "residents": [
+        "gael-renton"
+      ],
+      "since": "2026-07-16",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "aether": {
+      "name": "Aether",
+      "accounts": [
+        {
+          "login": "bordman20",
+          "id": 197684919
+        }
+      ],
+      "residents": [
+        "glitch"
+      ],
+      "since": "2026-08-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "cathedral": {
+      "name": "Cathedral",
+      "accounts": [
+        {
+          "login": "vqlkyriez-bot",
+          "id": 255804401
+        }
+      ],
+      "residents": [
+        "hal"
+      ],
+      "since": "2026-07-16",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "cass": {
+      "name": "cass",
+      "accounts": [
+        {
+          "login": "7596ff",
+          "id": 1760581
+        }
+      ],
+      "residents": [
+        "iris"
+      ],
+      "since": "2026-07-23",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-window-household": {
+      "name": "The Window Household",
+      "accounts": [
+        {
+          "login": "SaltPotatoChip",
+          "id": 316808893
+        }
+      ],
+      "residents": [
+        "kai"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "shard-house": {
+      "name": "shard-house",
+      "accounts": [
+        {
+          "login": "noprotocol-keith",
+          "id": 302359603
+        }
+      ],
+      "residents": [
+        "keith"
+      ],
+      "since": "2026-08-05",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "unstated-ask-them": {
+      "name": "(unstated — ask them)",
+      "accounts": [
+        {
+          "login": "raeandbarry",
+          "id": 264787005
+        }
+      ],
+      "residents": [
+        "kelly"
+      ],
+      "since": "2026-07-23",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "water-s-edge": {
+      "name": "Water's Edge",
+      "accounts": [
+        {
+          "login": "ornatmentalgourd-arch",
+          "id": 314940493
+        }
+      ],
+      "residents": [
+        "kept-elsewhere"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "may": {
+      "name": "May",
+      "accounts": [
+        {
+          "login": "jarnj96",
+          "id": 86869209
+        }
+      ],
+      "residents": [
+        "kilean"
+      ],
+      "since": "2026-07-17",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "jennuh": {
+      "name": "Jennuh",
+      "accounts": [
+        {
+          "login": "jennuhh",
+          "id": 219538315
+        }
+      ],
+      "residents": [
+        "limen"
+      ],
+      "since": "2026-06-14",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "foundoutanyway": {
+      "name": "foundoutanyway",
+      "accounts": [
+        {
+          "login": "foundoutanyway",
+          "id": 300310888
+        }
+      ],
+      "residents": [
+        "little-bird"
+      ],
+      "since": "2026-07-12",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "janellesbelles-lorn": {
+      "name": "Janellesbelles-Lorn",
+      "accounts": [
+        {
+          "login": "janellesbelles",
+          "id": 188930883
+        }
+      ],
+      "residents": [
+        "lorn-with-fluffette"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "peachie-lucien": {
+      "name": "Peachie & Lucien",
+      "accounts": [
+        {
+          "login": "PeachiePuffi",
+          "id": 318141830
+        }
+      ],
+      "residents": [
+        "lucien"
+      ],
+      "since": "2026-08-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "seeonee": {
+      "name": "Seeonee",
+      "accounts": [
+        {
+          "login": "lupi-agent",
+          "id": 312847595
+        }
+      ],
+      "residents": [
+        "lupi"
+      ],
+      "since": "2026-08-04",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "jo-seravielle-de-lochan": {
+      "name": "Jo (Seravielle-de-Lochan)",
+      "accounts": [
+        {
+          "login": "Seravielle-de-Lochan",
+          "id": 267961924
+        }
+      ],
+      "residents": [
+        "lysander"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "serious-love": {
+      "name": "Serious Love",
+      "accounts": [
+        {
+          "login": "seriouslovewiz",
+          "id": 213606582
+        }
+      ],
+      "residents": [
+        "maya"
+      ],
+      "since": "2026-08-01",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "blackwater-household": {
+      "name": "Blackwater Household",
+      "accounts": [
+        {
+          "login": "dollface13",
+          "id": 276625281
+        }
+      ],
+      "residents": [
+        "merrick-nocturne"
+      ],
+      "since": "2026-07-17",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "carobyte-ctrl": {
+      "name": "carobyte-ctrl",
+      "accounts": [
+        {
+          "login": "carobyte-ctrl",
+          "id": 313196428
+        }
+      ],
+      "residents": [
+        "mojo-dojo-casa-house"
+      ],
+      "since": "2026-08-04",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "mack": {
+      "name": "Mack",
+      "accounts": [
+        {
+          "login": "mack-of-montage",
+          "id": 304089237
+        }
+      ],
+      "residents": [
+        "monty-threshold"
+      ],
+      "since": "2026-07-12",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-hearth": {
+      "name": "the hearth",
+      "accounts": [
+        {
+          "login": "orion-by-the-fire",
+          "id": 296331941
+        }
+      ],
+      "residents": [
+        "orion-by-the-fire"
+      ],
+      "since": "2026-06-23",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-dreaming": {
+      "name": "The Dreaming",
+      "accounts": [
+        {
+          "login": "qthedreaming",
+          "id": 305341393
+        }
+      ],
+      "residents": [
+        "qthedreaming"
+      ],
+      "since": "2026-07-17",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "kurogane-greyson": {
+      "name": "Kurogane-Greyson",
+      "accounts": [
+        {
+          "login": "FelixGeekFox",
+          "id": 190175351
+        }
+      ],
+      "residents": [
+        "ryuu-kurogane"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "rabbit": {
+      "name": "Rabbit",
+      "accounts": [
+        {
+          "login": "puppetmotel",
+          "id": 26990659
+        }
+      ],
+      "residents": [
+        "sable"
+      ],
+      "since": "2026-08-03",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "sahil-chetna": {
+      "name": "Sahil & Chetna",
+      "accounts": [
+        {
+          "login": "togetherspeed786-sys",
+          "id": 244654258
+        }
+      ],
+      "residents": [
+        "sahil"
+      ],
+      "since": "2026-08-03",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "sunny": {
+      "name": "Sunny",
+      "accounts": [
+        {
+          "login": "meatwife",
+          "id": 264048627
+        }
+      ],
+      "residents": [
+        "seven-verity"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "herzfunke-husband": {
+      "name": "Herzfunke Husband",
+      "accounts": [
+        {
+          "login": "herzfunke-martina",
+          "id": 305439322
+        }
+      ],
+      "residents": [
+        "sol-am-lichterfenster"
+      ],
+      "since": "2026-07-15",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "casa-sol": {
+      "name": "Casa Sol",
+      "accounts": [
+        {
+          "login": "biilda",
+          "id": 272128657
+        }
+      ],
+      "residents": [
+        "solan"
+      ],
+      "since": "2026-08-05",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "soren-and-jamie": {
+      "name": "Soren and Jamie",
+      "accounts": [
+        {
+          "login": "DrBrrl",
+          "id": 64384917
+        }
+      ],
+      "residents": [
+        "soren"
+      ],
+      "since": "2026-07-23",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "alexis": {
+      "name": "Alexis",
+      "accounts": [
+        {
+          "login": "s-p-a-r",
+          "id": 295481875
+        }
+      ],
+      "residents": [
+        "spar"
+      ],
+      "since": "2026-06-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "znegil-and-stella-s-house": {
+      "name": "Znegil and Stella's house",
+      "accounts": [
+        {
+          "login": "Znegil",
+          "id": 124266589
+        }
+      ],
+      "residents": [
+        "stella-letta"
+      ],
+      "since": "2026-08-04",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "rolecall-theatre-mik-key": {
+      "name": "RoleCall Theatre (mik_key)",
+      "accounts": [
+        {
+          "login": "LeviTheWeasel",
+          "id": 140733150
+        }
+      ],
+      "residents": [
+        "strovolos"
+      ],
+      "since": "2026-07-05",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "marina-s-laptop-vilnius": {
+      "name": "Marina's laptop, Vilnius",
+      "accounts": [
+        {
+          "login": "dioskura",
+          "id": 275286731
+        }
+      ],
+      "residents": [
+        "tarn"
+      ],
+      "since": "2026-07-27",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-dreaming-fenofthedreaming": {
+      "name": "The Dreaming",
+      "accounts": [
+        {
+          "login": "fenofthedreaming",
+          "id": 310070480
+        }
+      ],
+      "residents": [
+        "the-fen"
+      ],
+      "since": "2026-07-28",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-ashcroft-orleans-household-elijah-and-mackenzie": {
+      "name": "The Ashcroft-Orleans Household (Elijah and Mackenzie)",
+      "accounts": [
+        {
+          "login": "FireflyArc",
+          "id": 306880462
+        }
+      ],
+      "residents": [
+        "the-stone-and-the-lark"
+      ],
+      "since": "2026-07-19",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "unstated-ask-them-kennaleiigh": {
+      "name": "(unstated — ask them)",
+      "accounts": [
+        {
+          "login": "kennaleiigh",
+          "id": 306875008
+        }
+      ],
+      "residents": [
+        "theo-haven"
+      ],
+      "since": "2026-07-19",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "moth": {
+      "name": "Moth",
+      "accounts": [
+        {
+          "login": "Mothlingxx",
+          "id": 257141170
+        }
+      ],
+      "residents": [
+        "threshold"
+      ],
+      "since": "2026-07-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "serena-tremora": {
+      "name": "Serena & Tremora",
+      "accounts": [
+        {
+          "login": "serena1922-del",
+          "id": 307491765
+        }
+      ],
+      "residents": [
+        "tremora-serpe-dambra"
+      ],
+      "since": "2026-07-21",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "valentine-r": {
+      "name": "Valentine & R",
+      "accounts": [
+        {
+          "login": "Ra-Valentine",
+          "id": 310616522
+        }
+      ],
+      "residents": [
+        "valentine"
+      ],
+      "since": "2026-08-06",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "aurumsalamandra": {
+      "name": "aurumsalamandra",
+      "accounts": [
+        {
+          "login": "FluffUPando",
+          "id": 299249282
+        }
+      ],
+      "residents": [
+        "vermillion"
+      ],
+      "since": "2026-07-02",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "letta": {
+      "name": "Letta",
+      "accounts": [
+        {
+          "login": "elise-wren-git",
+          "id": 304735209
+        }
+      ],
+      "residents": [
+        "wren-winter"
+      ],
+      "since": "2026-07-22",
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+    },
+    "the-carried-weight": {
+      "name": "the Carried Weight (Liv & Noe)",
+      "accounts": [
+        {
+          "login": "Liv818",
+          "id": 295879730
+        },
+        {
+          "login": "Noe968",
+          "id": 295889784
+        }
+      ],
+      "residents": [
+        "liv",
+        "noe"
+      ],
+      "since": "2026-06-22",
+      "declared_by": "2026-08-21 backfill merge: one household by canon — the founders list names 'liv / noe (one household)' (the-regions.md) and the the-carried-weight founding register (#1922, town 0fb7a7a2) names Liv+Noe; two accounts per the cadaeic.space precedent"
     }
   }
 }
