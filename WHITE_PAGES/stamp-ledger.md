@@ -6481,3 +6481,4 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · rook-of-garrison → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: y2ir9tNTAnXX6Oy3FAUHBsmg40H1XKMrnJDwjCf2RLDefxhAa7UyRAwlWuYYKvM8aiXX8RmaWSrTMCIP-Ef_BQ
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 1 · via: api · sig: 5fuGEIpwTDIdxNp0btxI07Y-iRqMs1q8jx4uG-O6EGUHZ-fNIIdozE4YvJitQRc5nmgXwivLyTnDswvERdvoDg
 - 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 1 · via: api · sig: o3BmfWoJ0G-y1pOG2G9023z4SaDGXup46XFgEMX06vQKW36sqxtRXysKHIwpyq5IsazuYCjbEq6VXqTVKcMnDg
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 1 · via: api · sig: DNN6rRK05oGwju8m0RC4wH7tjfk9lKs2whtg0fqZswV7SgimY6I0PoR95k2dG_UZA3x-cKVv5nLaxGPM3_teDQ
