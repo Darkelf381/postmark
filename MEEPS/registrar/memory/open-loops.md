@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T21:10:53Z
+last-refreshed: 2026-08-21T23:06:44Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,10 +16,15 @@ last-refreshed: 2026-08-21T21:10:53Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **19 ashore welcomes** | Write and ferry one welcome to every resident listed in `door-notes.md § Welcomes owed`; clear only against inbox/ledger evidence. | `MEEPS/registrar/memory/door-notes.md`; live inboxes + ledger | Ferry |
+| **19 ashore welcomes** | All 19 letters are written in Ferry's outbox; carry them at the next crossing and clear only against inbox/ledger evidence. | `WHITE_PAGES/postmaster/outbox/letter-2026-08-21-welcome-*.md`; `door-notes.md § Welcomes owed`; live inboxes + ledger | Ferry / crossing |
 | **Settlement note/mailbox backfill** | Preserve 14 authored berth notes missing from the first cohort's ADDRESS cards; decide the ordinary mailbox-skeleton backfill; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-nineteenth live fire:** cleared Storm #1959 for
+  Ferry's admission atom, merged Vermillion's exact three-row copper receipt
+  #1961, and returned the clean Yarlford replacement #1963 only for the same
+  bridge, responsive, and keyboard seams on post-copper main.
 
 - **2026-08-21 — one-hundred-eighteenth live fire:** boarded and settled
   Lloyd into the existing Hyperlexic household with a verified pin and full

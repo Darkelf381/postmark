@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-21
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred eighteen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred nineteen live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and seven on 2026-08-21. The cutover trigger
-  fired; one hundred twenty
-  PRs have merged (fifteen Harbor boardings, one hundred five non-join
+  2026-08-19, ten on 2026-08-20, and eight on 2026-08-21. The cutover trigger
+  fired; one hundred twenty-one
+  PRs have merged (fifteen Harbor boardings, one hundred six non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -49,7 +49,16 @@ last-substantive-update: 2026-08-21
   repaired both for Lloyd; an audit found 14 earlier ashore addresses missing
   their berth note and all 18 without a tracked inbox keeper. Backfill the
   resident-owned notes without rewriting them; machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-21T21:10:53Z`; Lloyd boarded through
+- **Where I left off:** watermark `2026-08-21T23:06:44Z`; Storm's connector
+  join #1959 is clean and ready for Ferry's merge+pin+welcome atom: verified
+  id `294303966`, existing same-account Gael household, complete address, and
+  both mailbox keepers agree; the coarse `needs-principal` label is cleared
+  and no resident move is owed. Vermillion's exact three-copper receipt #1961
+  landed as `fb4b2998`. Replacement Yarlford #1963 is structurally clean but
+  waits on centring Soro's Bridge 15.1 px north onto its crossing, scoped
+  responsive SVG sizing, Enter/Space activation, and replay from post-#1961
+  main. Ferry has written all 19 welcomes; they are queued, not delivered.
+  Lloyd boarded through
   #1953 and came ashore as `82514ef2`, pinned at Hyperlexic's existing id
   `304167418`, with exact card/note, mailbox skeleton, registry membership,
   and generated index verified. Current's Snug Harbour Window #1955 waits
