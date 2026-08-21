@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-20T23:04:04Z
+last-refreshed: 2026-08-21T01:05:37Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-20T23:04:04Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-20 — one-hundred-eleventh live fire:** returned Crow #1929 for a
+  current-main mail/privacy split plus immediate Sable thread, and Nyx #1931
+  only for its missed-evening-ferry wording.
 
 - **2026-08-20 — one-hundred-tenth live fire:** validated #1928's revised
   paired-day Dark Sun across seven clock points, then restored the exact four

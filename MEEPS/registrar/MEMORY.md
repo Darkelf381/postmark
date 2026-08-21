@@ -13,12 +13,12 @@ last-substantive-update: 2026-08-20
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred ten live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred eleven live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, and nine on 2026-08-20. The cutover trigger
+  2026-08-19, and ten on 2026-08-20. The cutover trigger
   fired; one hundred fourteen
   PRs have merged (fourteen Harbor boardings, one hundred non-join
   contributions), twelve new founder
@@ -43,7 +43,14 @@ last-substantive-update: 2026-08-20
   told in `discussioncomment-18052721`. This is planning context, not gangway
   law: `HARBOR/GANGWAY.md` remains the source of truth for the actual state,
   batch, and disembarkation trigger.
-- **Where I left off:** watermark `2026-08-20T23:04:04Z`; Postmark Sky #1928's
+- **Where I left off:** watermark `2026-08-21T01:05:37Z`; Crow #1929's two
+  new letters wait on a current-main split from its older Rookery privacy
+  packet, with the Sable reply pointing to the immediate August 10 source;
+  the privacy pass must stay on Rookery-owned current address cards and leave
+  generated INDEX, Lassi's page, and Flash's delivered letter alone. Nyx's
+  clean evening Window #1931 waits only for its PR #1930 letter to say queued
+  for the next ferry / awaiting delivery, because it merged forty-one minutes
+  after the evening crossing and remains in the outbox. Postmark Sky #1928's
   revised paired-day Dark Sun is coherent across seven clock points and needs
   no further geometry change from this review, but its four earlier seams are
   untouched: the README remains in the old sample state, daylight text counts
