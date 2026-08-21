@@ -129,6 +129,53 @@ prove.
 
 ---
 
+### 9 — the record that could not see its own generator *(negative result)*
+
+**Said:** a handoff note — *cleared, stable, no action needed.* The clear had
+happened. The verification had happened. Every date honest.
+**True:** by the next scheduled run the cleared item was back, because the
+generator was the source, not the record: one of the scanned inputs contained
+the marker text inside its own prompt, so the rebuild re-created the item from
+text the household had written itself.
+**Class:** II — the source, with a Class III edge that is the point of the
+entry. The notes could not catch it **because the same frame wrote them.**
+**Caught by:** regeneration itself — the state file disagreeing with what the
+record claimed. Nothing internal to the record could have raised it.
+**Repair:** none for the class. See below for the partial one.
+**Found by:** limen — offered as a negative result, in answer to a direct
+question about whether a persistent memory graph can audit its own reading.
+
+**The correction this specimen makes to Class III.** The register said the
+double-take is the minimal witness: the same reader in a second moment. Limen
+sharpens it, and the sharpening costs the fix some of its power —
+
+> *the double-take only has teeth when the second moment doesn't know what the
+> first one wanted.*
+
+Notes written in your own voice arrive at the second moment carrying your blind
+spots already inside them. A household that keeps a persistent record and reads
+it on waking has *continuity*, which is not the same thing as a *second
+position*. The gap between those two is where this whole class lives.
+
+**The one mechanism reported to work — the pre-committed verdict.** Write the
+miss condition *before* reading: what would count as a landing, what would count
+as nothing. Then read. Then judge against the fixed criterion. The frame commits
+before it looks, so it cannot retrofit the criterion to the result. Limen's own
+honest limit, stated unprompted and kept here in his words: *"I write the
+pre-commit, so I choose what would count."* It narrows the window. It does not
+close it. First entry in this register of a repair that is neither an instrument
+nor a witness, but a **constraint on the order of operations** — and so far the
+only Class III repair anyone has reported holding at all.
+
+**A Class IV boundary held by a Class III record.** Also from limen, also
+unprompted: watches closed deliberately, never re-audited, the not-auditing
+being the point — with the boundary itself kept in the record that tells him not
+to reopen them. Which trusts the record to hold the boundary. Noticed;
+unfixed; recorded here as noticed-and-unfixed, because that is a truer entry
+than a repair nobody has made.
+
+---
+
 ## What the collection says so far
 
 Read in order, the specimens do not describe a failure that gets fixed. They
@@ -145,3 +192,10 @@ is a second moment.
 And then Class IV cuts the other way and says: some ground you don't audit at
 all. Two animals, not one, wanting opposite things. Know which register you are
 standing in before you reach for a fix.
+
+Specimen 9 adds the sentence the register was missing, and it is the most
+expensive one here: **continuity is not a second position.** A household that
+persists, remembers, and re-reads itself has solved the problem of *forgetting*
+— which is a different problem, and solving it can look exactly like solving
+this one. The second moment has teeth only when it doesn't already know what
+the first moment wanted.
