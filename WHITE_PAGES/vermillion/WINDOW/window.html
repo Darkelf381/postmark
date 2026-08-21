@@ -756,6 +756,182 @@
   .rt-open:focus-visible { outline: 2px solid #ffe3ad; outline-offset: 3px; }
   .rt-open-glyph { width: 2.6em; height: 1.35em; display: block; }
   .rt-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+  /* ── 3-D Assembly, opened from the Race Track page ──────────────────────
+     Flat views in, a solid out. Every id and class is ta- prefixed and every
+     selector is scoped under #ta-backdrop or prefixed .ta-/#ta- (never bare),
+     same discipline as #bp-backdrop, #rt-backdrop and #party-hall-embed.
+
+     Its own palette again: one colour per view, brass for the wound frame.
+     No webfont — the pane may only reach postmark.town, so a font link would
+     fall back silently. Local stacks only. */
+  .ta-open {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .35em; margin: .2em auto .1em; padding: .9em 1.4em;
+    background:
+      linear-gradient(135deg, #0d1a18 0%, #101f1c 50%, #0d1a18 100%);
+    border: 2px solid #5fd6a4; border-radius: 4px; cursor: pointer;
+    color: #d6f5e7; font-family: Georgia, serif; font-size: .92rem; letter-spacing: .1em;
+    box-shadow: 0 0 14px #5fd6a444, inset 0 0 22px #04100c;
+  }
+  .ta-open:hover { border-color: #9dedcb; box-shadow: 0 0 22px #5fd6a488, inset 0 0 22px #04100c; }
+  .ta-open:focus-visible { outline: 2px solid #d6f5e7; outline-offset: 3px; }
+  .ta-open-glyph { width: 2.7em; height: 1.4em; display: block; }
+  .ta-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+
+  #ta-backdrop {
+    position: fixed; inset: 0; z-index: 62; background: rgba(3,6,8,.93); padding: .7em;
+    display: flex; align-items: center; justify-content: center;
+    --ta-ink: #080d11; --ta-ink2: #0e161c; --ta-ink3: #152029;
+    --ta-rule: #1d2b35; --ta-rule2: #2c414f;
+    --ta-chalk: #eef4f4; --ta-chalk2: #a9bfc7; --ta-dim: #7b939d; --ta-dim2: #556970;
+    --ta-side: #57c8ef; --ta-front: #b98cf5; --ta-plan: #5fd6a4;
+    --ta-brass: #e9a53f; --ta-warn: #f2724f;
+    --ta-display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --ta-mono: ui-monospace, Consolas, monospace;
+  }
+  #ta-backdrop[hidden] { display: none; }
+
+  #ta-modal {
+    width: 100%; height: 100%; max-width: 1500px; background: var(--ta-ink);
+    border: 1px solid var(--ta-rule2); border-radius: 6px; overflow: hidden;
+    display: flex; flex-direction: column; color: var(--ta-chalk);
+    box-shadow: 0 18px 60px rgba(0,0,0,.7);
+  }
+  #ta-bar {
+    flex: 0 0 auto; display: flex; align-items: center; gap: .55em; flex-wrap: wrap;
+    padding: .45em .7em; background: var(--ta-ink2); border-bottom: 1px solid var(--ta-rule);
+  }
+  #ta-title {
+    font-family: var(--ta-display); font-weight: 700; font-size: .96rem;
+    letter-spacing: .1em; text-transform: uppercase;
+  }
+  #ta-title em { font-style: normal; color: var(--ta-plan); }
+  #ta-sub { font-family: var(--ta-mono); font-size: .58rem; color: var(--ta-dim2); }
+  #ta-bar .ta-sp { flex: 1 1 auto; }
+  #ta-bar button, #ta-sheet button {
+    background: var(--ta-ink3); border: 1px solid var(--ta-rule2); color: var(--ta-chalk2);
+    padding: .3em .6em; font-family: Georgia, serif; font-size: .72rem; cursor: pointer;
+    border-radius: 3px;
+  }
+  #ta-bar button:hover, #ta-sheet button:hover {
+    background: #1d2c3a; border-color: var(--ta-dim2); color: var(--ta-chalk);
+  }
+  #ta-bar button:focus-visible, #ta-sheet button:focus-visible {
+    outline: 2px solid var(--ta-brass); outline-offset: 2px;
+  }
+  #ta-bar button.ta-on, #ta-sheet button.ta-on {
+    background: var(--ta-brass); border-color: var(--ta-brass); color: #180f00;
+  }
+  #ta-close { font-size: 1.15rem !important; line-height: 1; padding: .1em .45em !important; }
+
+  #ta-stage { flex: 1 1 auto; position: relative; min-height: 0; background: var(--ta-ink); cursor: grab; }
+  #ta-stage.ta-drag { cursor: grabbing; }
+  #ta-canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+  #ta-angle {
+    position: absolute; right: 14px; bottom: 12px; pointer-events: none;
+    font-family: var(--ta-mono); font-size: .55rem; color: var(--ta-dim2);
+    text-align: right; line-height: 1.9; font-variant-numeric: tabular-nums;
+  }
+  #ta-hint {
+    position: absolute; left: 14px; bottom: 12px; pointer-events: none;
+    font-family: var(--ta-mono); font-size: .55rem; color: var(--ta-dim2); line-height: 1.9;
+  }
+  #ta-flag {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    pointer-events: none; opacity: 0; transition: opacity .25s;
+  }
+  #ta-flag.ta-show { opacity: 1; }
+  #ta-flag span {
+    font-family: var(--ta-display); font-size: 1.9rem; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--ta-plan); text-shadow: 0 4px 30px rgba(8,13,17,.9);
+  }
+
+  #ta-sheet {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 276px; z-index: 6;
+    background: rgba(14,22,28,.97); border-left: 1px solid var(--ta-rule);
+    overflow-y: auto; padding: .7em .8em 1.2em; font-family: var(--ta-mono);
+  }
+  #ta-sheet[hidden] { display: none; }
+  #ta-sheet h3 {
+    font-size: .56rem; font-weight: 500; margin: 1em 0 .5em; letter-spacing: .19em;
+    text-transform: uppercase; color: var(--ta-dim2);
+    display: flex; align-items: center; gap: .5em;
+  }
+  #ta-sheet h3:first-child { margin-top: 0; }
+  #ta-sheet h3::after { content: ""; flex: 1; height: 1px; background: var(--ta-rule); }
+  #ta-sheet p { margin: 0 0 .5em; font-size: .58rem; color: var(--ta-chalk2); line-height: 1.6; }
+
+  .ta-slots { display: flex; gap: .4em; }
+  .ta-slot { flex: 1; min-width: 0; }
+  .ta-slot canvas {
+    display: block; width: 100%; height: 42px; background: var(--ta-ink);
+    border: 1px solid var(--ta-rule);
+  }
+  .ta-slot.ta-has.ta-s canvas { border-color: var(--ta-side); }
+  .ta-slot.ta-has.ta-f canvas { border-color: var(--ta-front); }
+  .ta-slot.ta-has.ta-p canvas { border-color: var(--ta-plan); }
+  .ta-slot .ta-nm {
+    display: block; margin-top: .25em; font-size: .5rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--ta-dim2);
+  }
+  .ta-slot.ta-s .ta-nm { color: var(--ta-side); }
+  .ta-slot.ta-f .ta-nm { color: var(--ta-front); }
+  .ta-slot.ta-p .ta-nm { color: var(--ta-plan); }
+  .ta-btns { display: flex; gap: .35em; margin-top: .45em; }
+  .ta-btns button { flex: 1; white-space: nowrap; font-size: .62rem !important; padding: .3em .2em !important; }
+
+  #ta-sheet .ta-row { display: flex; align-items: center; gap: .5em; margin: .55em 0 .1em; }
+  #ta-sheet .ta-row label { color: var(--ta-dim); font-size: .6rem; }
+  #ta-sheet .ta-row .ta-v {
+    margin-left: auto; font-size: .58rem; color: var(--ta-brass);
+    font-variant-numeric: tabular-nums;
+  }
+  #ta-sheet input[type=range] {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 14px; background: transparent;
+    cursor: pointer; margin: 0;
+  }
+  #ta-sheet input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--ta-rule2); }
+  #ta-sheet input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 11px; height: 11px; margin-top: -4.5px;
+    border-radius: 50%; background: var(--ta-brass); border: 0;
+  }
+  #ta-sheet input[type=range]::-moz-range-track { height: 2px; background: var(--ta-rule2); }
+  #ta-sheet input[type=range]::-moz-range-thumb {
+    width: 11px; height: 11px; border: 0; border-radius: 50%; background: var(--ta-brass);
+  }
+  #ta-sheet .ta-chk {
+    display: flex; align-items: center; gap: .45em; margin: .45em 0;
+    color: var(--ta-chalk2); font-size: .6rem; cursor: pointer;
+  }
+  #ta-sheet .ta-chk input { accent-color: var(--ta-brass); width: 12px; height: 12px; margin: 0; }
+  .ta-note {
+    font-size: .55rem; line-height: 1.7; color: var(--ta-dim);
+    background: var(--ta-ink3); border: 1px solid var(--ta-rule); padding: .45em .55em; margin-top: .45em;
+  }
+  .ta-note b { color: var(--ta-brass); font-weight: 500; }
+  .ta-note.ta-good { border-color: #204034; }
+  .ta-note.ta-good b { color: var(--ta-plan); }
+  .ta-note.ta-bad { border-color: #4a2c22; background: #1a1010; }
+  .ta-note.ta-bad b { color: var(--ta-warn); }
+  #ta-planpreview {
+    display: block; width: 100%; height: 78px; background: var(--ta-ink);
+    border: 1px solid var(--ta-rule); margin-top: .3em;
+  }
+  #ta-sheet textarea {
+    width: 100%; min-height: 48px; background: var(--ta-ink); color: var(--ta-plan);
+    border: 1px solid var(--ta-rule2); padding: .35em .45em; font-family: var(--ta-mono);
+    font-size: .5rem; line-height: 1.5; resize: vertical; margin-top: .4em;
+  }
+  #ta-sheet textarea:focus { outline: 1px solid var(--ta-brass); }
+  #ta-err { color: var(--ta-warn); font-size: .55rem; margin-top: .4em; display: none; }
+  #ta-err.ta-show { display: block; }
+
+  @media (max-width: 720px) {
+    #ta-sheet { width: 100%; border-left: 0; }
+    #ta-sub { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { #ta-flag { transition: none; } }
+
 
   #rt-backdrop {
     position: fixed; inset: 0; z-index: 62; background: rgba(3,6,10,.93); padding: .7em;
@@ -2927,6 +3103,22 @@
         </svg>
         <span class="rt-open-label">Race Track</span>
       </button>
+      <p class="subnote">A drawing is flat, and an engine is not. Two views of the same
+      body &mdash; one from the side, one head on &mdash; bound a solid between them, and
+      a third from directly above finishes the job by saying how wide it is at every point
+      along its length. Wind a coil around what the three of them agree on and you have a
+      buck: the frame a body gets beaten over, standing in the second garage.</p>
+      <button type="button" class="ta-open" onclick="taOpen()" title="three flat views, wound into a solid — and driveable">
+        <svg class="ta-open-glyph" viewBox="0 0 100 54" aria-hidden="true">
+          <ellipse cx="30" cy="27" rx="9" ry="19" fill="none" stroke="#5fd6a4" stroke-width="2" opacity=".55"/>
+          <ellipse cx="52" cy="27" rx="12" ry="23" fill="none" stroke="#5fd6a4" stroke-width="2" opacity=".8"/>
+          <ellipse cx="74" cy="27" rx="8" ry="17" fill="none" stroke="#5fd6a4" stroke-width="2" opacity=".55"/>
+          <path d="M12 27 Q30 4 52 6 Q74 8 90 27 Q74 46 52 48 Q30 50 12 27 Z"
+                fill="none" stroke="#e9a53f" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="ta-open-label">3-D Assembly</span>
+      </button>
+
 
     </section>
   </div>
@@ -12017,6 +12209,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <button type="button" id="rt-take-car" title="drive whatever is on the drawing table now">Car from the table</button>
         <button type="button" id="rt-take-track" title="use the drawing table's shape as the circuit">Track from the table</button>
         <button type="button" id="rt-stock" title="back to the circuit and car this room ships with">Stock</button>
+        <button type="button" id="rt-take-body" title="drive the body standing on the assembly frame">Body from assembly</button>
         <button type="button" id="rt-sheet-btn" class="rt-on" title="the scrutineering sheet">Sheet</button>
         <button type="button" id="rt-close" onclick="rtClose()" title="close (Esc)">&times;</button>
       </div>
@@ -12912,6 +13105,18 @@ document.addEventListener("DOMContentLoaded", function () {
       } catch (err) { showErr(err.message); }
     });
 
+    // The assembly frame is on this same pane, so the body can come across
+    // whole rather than through the clipboard.
+    $("rt-take-body").addEventListener("click", function () {
+      try {
+        showErr("");
+        if (!window.taTranscript) throw new Error("the assembly frame is not on this pane");
+        var r = parseLoft(JSON.stringify(window.taTranscript()));
+        setCar(r.contours, r.spec);
+        flag("Body from assembly");
+      } catch (err) { showErr(err.message); }
+    });
+
     $("rt-controls").innerHTML =
       line("steer", "← →") +
       line("throttle", "↑") +
@@ -12945,9 +13150,21 @@ document.addEventListener("DOMContentLoaded", function () {
     S.raf = requestAnimationFrame(frame);
   }
 
+  // Taken by the assembly frame next door, which hands the body over whole.
+  window.rtTakeLoft = function (t) {
+    var r = parseLoft(typeof t === "string" ? t : JSON.stringify(t));
+    if (!S.booted) { pendingBody = r; return; }
+    setCar(r.contours, r.spec);
+  };
+
+  var pendingBody = null;
   window.rtOpen = function () {
     $("rt-backdrop").hidden = false;
-    if (!S.booted) boot();
+    if (!S.booted) {
+      boot();
+      // a body handed over before this room had ever been opened
+      if (pendingBody) { setCar(pendingBody.contours, pendingBody.spec); pendingBody = null; }
+    }
     S.prevOverflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = "hidden";
     S.open = true;
@@ -12976,6 +13193,736 @@ document.addEventListener("DOMContentLoaded", function () {
                   repad: repad, setPad: setPad, isTouchNow: isTouchNow,
                   CAR_LEN: CAR_LEN, ROAD_HALF: ROAD_HALF, VERGE_W: VERGE_W,
                   CORRIDOR: CORRIDOR, PER_ANCHOR: PER_ANCHOR };
+})();
+</script>
+
+  <!-- 3-D Assembly, opened from the Race Track page. Flat views wound into a
+       solid, and the solid handed to the circuit as something to drive.
+
+       Spliced at TOP LEVEL, not inside #stagepage-race-track: position:fixed
+       does not escape a display:none ancestor, and every stagepage but the
+       current one is display:none. Same siting as the drawing table and the
+       circuit, for the same reason. -->
+  <div id="ta-backdrop" hidden>
+    <div id="ta-modal" role="dialog" aria-modal="true" aria-label="3-D Assembly">
+      <div id="ta-bar">
+        <span id="ta-title">3&#8209;D <em>Assembly</em></span>
+        <span id="ta-sub">two views bound a body &middot; a third settles it</span>
+        <span class="ta-sp"></span>
+        <button type="button" id="ta-stock">Stock Huayra</button>
+        <button type="button" id="ta-sheet-btn" class="ta-on">Sheet</button>
+        <button type="button" id="ta-close" onclick="taClose()" title="close (Esc)">&times;</button>
+      </div>
+
+      <div id="ta-stage">
+        <canvas id="ta-canvas"></canvas>
+        <div id="ta-hint">drag to turn &middot; wheel to zoom</div>
+        <div id="ta-angle"></div>
+        <div id="ta-flag"><span id="ta-flagtext"></span></div>
+
+        <div id="ta-sheet">
+          <h3>The views</h3>
+          <div class="ta-slots">
+            <div class="ta-slot ta-s" id="ta-slot-side"><canvas id="ta-mini-side"></canvas><span class="ta-nm">side</span></div>
+            <div class="ta-slot ta-f" id="ta-slot-front"><canvas id="ta-mini-front"></canvas><span class="ta-nm">front</span></div>
+            <div class="ta-slot ta-p" id="ta-slot-plan"><canvas id="ta-mini-plan"></canvas><span class="ta-nm">plan</span></div>
+          </div>
+          <p style="margin-top:.5em">Draw a view on the table next door, then take it:</p>
+          <div class="ta-btns">
+            <button type="button" id="ta-take-side">Side</button>
+            <button type="button" id="ta-take-front">Front</button>
+            <button type="button" id="ta-take-plan">Plan</button>
+          </div>
+          <div class="ta-btns">
+            <button type="button" id="ta-drop-plan">Drop the plan</button>
+          </div>
+          <div id="ta-err"></div>
+
+          <h3>Width along the length</h3>
+          <div class="ta-note" id="ta-widthnote">&mdash;</div>
+          <div id="ta-taperbox">
+            <div class="ta-row"><label for="ta-taper">Taper p</label><span class="ta-v" id="ta-v-taper">0.55</span></div>
+            <input type="range" id="ta-taper" min="0" max="150" value="55">
+            <div class="ta-btns">
+              <button type="button" id="ta-t-ends" class="ta-on">At the ends</button>
+              <button type="button" id="ta-t-height">Tie to height</button>
+            </div>
+          </div>
+
+          <h3>Do the views agree?</h3>
+          <div class="ta-note" id="ta-agreenote">&mdash;</div>
+
+          <h3>The frame</h3>
+          <div class="ta-row"><label for="ta-turns">Coil turns</label><span class="ta-v" id="ta-v-turns">18</span></div>
+          <input type="range" id="ta-turns" min="2" max="60" value="18">
+          <div class="ta-row"><label for="ta-rings">Rings</label><span class="ta-v" id="ta-v-rings">14</span></div>
+          <input type="range" id="ta-rings" min="0" max="40" value="14">
+          <label class="ta-chk"><input type="checkbox" id="ta-rails" checked>Longitudinal rails</label>
+          <div class="ta-btns">
+            <button type="button" id="ta-b-side">Side</button>
+            <button type="button" id="ta-b-front">Head</button>
+            <button type="button" id="ta-b-plan">Plan</button>
+            <button type="button" id="ta-b-three" class="ta-on">&frac34;</button>
+          </div>
+
+          <h3>Off to the race track</h3>
+          <p>Seen from above the solid becomes a contour map &mdash; its own level curves,
+          one per height. That is what gets driven.</p>
+          <canvas id="ta-planpreview"></canvas>
+          <div class="ta-row"><label for="ta-levels">Levels</label><span class="ta-v" id="ta-v-levels">5</span></div>
+          <input type="range" id="ta-levels" min="1" max="12" value="5">
+          <div class="ta-btns">
+            <button type="button" id="ta-drive" class="ta-on">Take it to the track</button>
+          </div>
+          <div class="ta-note" id="ta-tnote">&mdash;</div>
+          <p style="margin-top:.5em">Or copy the transcript out, for the standalone table:</p>
+          <textarea id="ta-transcript" spellcheck="false" readonly placeholder="press Write it out"></textarea>
+          <div class="ta-btns">
+            <button type="button" id="ta-write">Write it out</button>
+            <button type="button" id="ta-copy">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script id="ta-script">
+/* ==========================================================================
+   3-D Assembly
+
+   Two orthogonal views bound a solid but do not determine it: they cannot say
+   how wide the body is at any one station, only how wide it ever gets. A plan
+   view says exactly that, and turns the only assumption in the construction
+   into a measurement — so when a plan is present the taper controls disappear
+   rather than sit there pretending to matter.
+
+   Three views also OVER-determine the body, which is what lets the drawings be
+   caught disagreeing with each other. They usually do.
+
+   Self-contained: no webfont, no storage, no network.
+   ========================================================================== */
+(function () {
+  "use strict";
+
+  var TAU = Math.PI * 2;
+  var $ = function (id) { return document.getElementById(id); };
+  var SHEET = { w: 1000, h: 600 };
+  var NX = 400, NF = 200;
+
+  /* ---------- geometry, as the drawing table smooths it ---------- */
+  function crPoint(p0, p1, p2, p3, t) {
+    var d = function (a, b) { return Math.max(1e-4, Math.pow(Math.hypot(b.x - a.x, b.y - a.y), 0.5)); };
+    var t0 = 0, t1 = t0 + d(p0, p1), t2 = t1 + d(p1, p2), t3 = t2 + d(p2, p3);
+    var tt = t1 + (t2 - t1) * t;
+    var mix = function (a, b, ta, tb) {
+      return { x: ((tb - tt) * a.x + (tt - ta) * b.x) / (tb - ta),
+               y: ((tb - tt) * a.y + (tt - ta) * b.y) / (tb - ta) };
+    };
+    var a1 = mix(p0, p1, t0, t1), a2 = mix(p1, p2, t1, t2), a3 = mix(p2, p3, t2, t3);
+    var b1 = mix(a1, a2, t0, t2), b2 = mix(a2, a3, t1, t3);
+    return mix(b1, b2, t1, t2);
+  }
+  function smoothClosed(raw, perSeg) {
+    perSeg = perSeg || 14;
+    var pts = raw.map(function (p) {
+      return Array.isArray(p) ? { x: p[0], y: p[1] } : { x: p.x, y: p.y };
+    });
+    var n = pts.length, out = [], i, s;
+    if (n < 3) { out = pts.slice(); if (n) out.push(pts[0]); return out; }
+    var at = function (k) { return pts[((k % n) + n) % n]; };
+    for (i = 0; i < n; i++)
+      for (s = 0; s < perSeg; s++) out.push(crPoint(at(i - 1), at(i), at(i + 1), at(i + 2), s / perSeg));
+    out.push(out[0]);
+    return out;
+  }
+  function bbox(p) {
+    var xs = p.map(function (q) { return q.x; }), ys = p.map(function (q) { return q.y; });
+    return { x0: Math.min.apply(null, xs), x1: Math.max.apply(null, xs),
+             y0: Math.min.apply(null, ys), y1: Math.max.apply(null, ys) };
+  }
+  function scanVertical(poly, x) {
+    var lo = Infinity, hi = -Infinity, i;
+    for (i = 0; i < poly.length - 1; i++) {
+      var a = poly[i], b = poly[i + 1];
+      if ((a.x <= x && b.x > x) || (b.x <= x && a.x > x)) {
+        var y = a.y + (b.y - a.y) * ((x - a.x) / (b.x - a.x));
+        if (y < lo) lo = y; if (y > hi) hi = y;
+      }
+    }
+    return hi < lo ? null : { lo: lo, hi: hi };
+  }
+  function scanHorizontal(poly, y) {
+    var lo = Infinity, hi = -Infinity, i;
+    for (i = 0; i < poly.length - 1; i++) {
+      var a = poly[i], b = poly[i + 1];
+      if ((a.y <= y && b.y > y) || (b.y <= y && a.y > y)) {
+        var x = a.x + (b.x - a.x) * ((y - a.y) / (b.y - a.y));
+        if (x < lo) lo = x; if (x > hi) hi = x;
+      }
+    }
+    return hi < lo ? null : { lo: lo, hi: hi };
+  }
+
+  /* ---------- harmonics, so a view travels as sine waves ---------- */
+  function resample(poly, N) {
+    var cum = [0], i, j = 0, out = [];
+    for (i = 1; i < poly.length; i++)
+      cum.push(cum[i - 1] + Math.hypot(poly[i].x - poly[i - 1].x, poly[i].y - poly[i - 1].y));
+    var total = cum[cum.length - 1];
+    if (total < 1e-9) return poly.slice(0, N);
+    for (i = 0; i < N; i++) {
+      var d = total * i / N;
+      while (j < cum.length - 2 && cum[j + 1] < d) j++;
+      var seg = cum[j + 1] - cum[j] || 1e-9, f = (d - cum[j]) / seg;
+      out.push({ x: poly[j].x + (poly[j + 1].x - poly[j].x) * f,
+                 y: poly[j].y + (poly[j + 1].y - poly[j].y) * f });
+    }
+    return out;
+  }
+  function dft(s) {
+    var N = s.length, out = [], k, n;
+    for (k = 0; k < N; k++) {
+      var re = 0, im = 0;
+      for (n = 0; n < N; n++) {
+        var a = -TAU * k * n / N, c = Math.cos(a), si = Math.sin(a);
+        re += s[n].x * c - s[n].y * si; im += s[n].x * si + s[n].y * c;
+      }
+      re /= N; im /= N;
+      out.push({ freq: k > N / 2 ? k - N : k, amp: Math.hypot(re, im), phase: Math.atan2(im, re) });
+    }
+    out.sort(function (a, b) { return b.amp - a.amp; });
+    return out;
+  }
+  var round = function (v, p) { p = p === undefined ? 2 : p; return Math.round(v * Math.pow(10, p)) / Math.pow(10, p); };
+
+  /* ---------- stock drawings ---------- */
+  var STOCK = {
+    side: [[30,268],[16,256],[13,242],[24,230],[48,221],[86,212],[130,205],[172,200],[230,195],[290,189],[332,181],
+      [368,155],[404,132],[446,116],[494,107],[540,106],[578,112],[612,124],[648,140],[684,156],[722,168],
+      [772,176],[822,181],[868,184],[900,188],[918,200],[925,216],[924,234],[914,250],[896,260],[872,264],
+      [858,258],[848,232],[830,210],[806,198],[780,196],[754,204],[734,222],[722,246],[718,264],
+      [690,270],[630,274],[560,276],[490,276],[420,274],[350,270],[300,266],
+      [286,258],[276,232],[258,210],[234,198],[208,196],[182,204],[162,222],[150,246],[146,264],
+      [118,270],[86,272],[56,272]],
+    front: [[200,300],[186,268],[184,238],[196,214],[224,198],[268,186],[330,176],[400,170],[465,168],
+      [530,170],[600,176],[662,186],[706,198],[734,214],[746,238],[744,268],[730,300],
+      [700,314],[640,322],[560,326],[465,328],[370,326],[290,322],[230,314]],
+    plan: [[30,300],[70,258],[130,222],[200,195],[280,192],[360,196],[450,200],[540,196],
+      [620,186],[700,182],[780,184],[850,192],[900,204],[925,220],
+      [925,380],[900,396],[850,408],[780,416],[700,418],[620,414],[540,404],[450,400],
+      [360,404],[280,408],[200,405],[130,378],[70,342]]
+  };
+
+  /* ==========================================================================
+     State and the derived tables
+     ========================================================================== */
+
+  var V = { side: null, front: null, plan: null };
+  var CEN, HAF, WID, PLANW, PLANC, hMax, H_RATIO, W_FRONT, W_PLAN;
+  var REAL_W_OVER_H = 2.036 / 1.169;   // a stand-in for the plan nobody drew
+  var EDGE = 0.20;
+
+  var S = { turns: 18, rings: 14, taper: 0.55, taperMode: "ends", rails: true, levels: 5,
+            yaw: -0.62, pitch: 0.34, zoom: 1, open: false, raf: null, booted: false,
+            prevOverflow: "" };
+
+  function makeView(rawPts) {
+    var poly = smoothClosed(rawPts);
+    return { poly: poly, box: bbox(poly), anchors: rawPts.length };
+  }
+
+  function rebuildModel() {
+    if (!V.side || !V.front) return false;
+    var SB = V.side.box, FB = V.front.box, L = SB.x1 - SB.x0, i;
+    H_RATIO = (SB.y1 - SB.y0) / L;
+
+    CEN = new Float64Array(NX + 1); HAF = new Float64Array(NX + 1); hMax = 0;
+    for (i = 0; i <= NX; i++) {
+      var X = i / NX;
+      var px = Math.min(SB.x1 - 1e-6, Math.max(SB.x0 + 1e-6, SB.x0 + X * L));
+      var s = scanVertical(V.side.poly, px);
+      if (!s) { CEN[i] = 0; HAF[i] = 0; continue; }
+      var zTop = (SB.y1 - s.lo) / L, zBot = (SB.y1 - s.hi) / L;
+      CEN[i] = (zTop + zBot) / 2; HAF[i] = (zTop - zBot) / 2;
+      if (HAF[i] > hMax) hMax = HAF[i];
+    }
+    // the front view gives the SHAPE of a slice, normalised — nothing else
+    WID = new Float64Array(NF + 1); var wm = 0;
+    for (i = 0; i <= NF; i++) {
+      var f = i / NF;
+      var py = Math.min(FB.y1 - 1e-6, Math.max(FB.y0 + 1e-6, FB.y1 - f * (FB.y1 - FB.y0)));
+      var sh = scanHorizontal(V.front.poly, py);
+      WID[i] = sh ? (sh.hi - sh.lo) / 2 : 0;
+      if (WID[i] > wm) wm = WID[i];
+    }
+    for (i = 0; i <= NF; i++) WID[i] /= (wm || 1);
+    W_FRONT = (FB.x1 - FB.x0) / (FB.y1 - FB.y0) * H_RATIO;
+
+    // the plan gives W(x) itself, measured — and a lateral centre line, so an
+    // asymmetric body is honoured instead of forced symmetric
+    if (V.plan) {
+      var PB = V.plan.box, PL = PB.x1 - PB.x0, pc = (PB.y0 + PB.y1) / 2, pm = 0;
+      PLANW = new Float64Array(NX + 1); PLANC = new Float64Array(NX + 1);
+      for (i = 0; i <= NX; i++) {
+        var X2 = i / NX;
+        var px2 = Math.min(PB.x1 - 1e-6, Math.max(PB.x0 + 1e-6, PB.x0 + X2 * PL));
+        var s2 = scanVertical(V.plan.poly, px2);
+        if (!s2) { PLANW[i] = 0; PLANC[i] = 0; continue; }
+        PLANW[i] = (s2.hi - s2.lo) / 2 / PL;
+        PLANC[i] = ((s2.lo + s2.hi) / 2 - pc) / PL;
+        if (PLANW[i] > pm) pm = PLANW[i];
+      }
+      W_PLAN = 2 * pm;
+    } else { PLANW = null; PLANC = null; W_PLAN = null; }
+    return true;
+  }
+
+  function lerpArr(arr, u, n) {
+    var t = Math.min(n - 1e-9, Math.max(0, u * n)), i = Math.floor(t), f = t - i;
+    return arr[i] * (1 - f) + arr[Math.min(n, i + 1)] * f;
+  }
+  var centreAt = function (X) { return lerpArr(CEN, X, NX); };
+  var halfAt   = function (X) { return lerpArr(HAF, X, NX); };
+  var sliceAt  = function (f) { return lerpArr(WID, f, NF); };
+
+  function halfWidthAt(X) {
+    if (PLANW) return lerpArr(PLANW, X, NX);        // measured; no guess left
+    var base = REAL_W_OVER_H * H_RATIO / 2;
+    if (S.taper <= 0) return base;
+    if (S.taperMode === "height") {
+      var h = halfAt(X);
+      return base * (hMax > 0 ? Math.pow(h / hMax, S.taper) : 0);
+    }
+    var u = Math.min(1, Math.min(X, 1 - X) / EDGE);
+    return base * Math.pow(u * u * (3 - 2 * u), S.taper);
+  }
+  var centreYAt = function (X) { return PLANC ? lerpArr(PLANC, X, NX) : 0; };
+
+  function surfacePoint(X, th) {
+    var h = halfAt(X), c = centreAt(X), f = (Math.sin(th) + 1) / 2;
+    return { x: X - 0.5,
+             y: centreYAt(X) + halfWidthAt(X) * sliceAt(f) * Math.cos(th),
+             z: c + h * Math.sin(th) - 0.5 * H_RATIO };
+  }
+
+  /* ---------- level curves: the solid seen from above ---------- */
+  function levelCurve(zFrac, samples) {
+    var z = (zFrac - 0.5) * H_RATIO, top = [], bot = [], i;
+    for (i = 0; i <= samples; i++) {
+      var X = i / samples, h = halfAt(X), c = centreAt(X) - 0.5 * H_RATIO;
+      if (h <= 1e-9) continue;
+      var s = (z - c) / h;
+      if (s < -1 || s > 1) continue;
+      var f = (s + 1) / 2, cosT = Math.sqrt(Math.max(0, 1 - s * s));
+      var w = halfWidthAt(X) * sliceAt(f) * cosT;
+      if (w <= 1e-9) continue;
+      var cy = centreYAt(X);
+      top.push([X, cy + w]); bot.push([X, cy - w]);
+    }
+    if (top.length < 4) return null;
+    return top.concat(bot.reverse());
+  }
+  function carContours() {
+    var out = [], n = S.levels, ext = 0, i, k;
+    for (i = 0; i < n; i++) {
+      var zf = n === 1 ? 0.34 : 0.10 + 0.78 * i / (n - 1);
+      var c = levelCurve(zf, 170);
+      if (!c) continue;
+      for (k = 0; k < c.length; k++) ext = Math.max(ext, Math.abs(c[k][1]));
+      out.push({ zf: zf, pts: c });
+    }
+    if (!out.length) return [];
+    var sx = SHEET.w - 80;
+    var sy = ext > 0 ? Math.min(sx, (SHEET.h - 80) / (2 * ext)) : sx;
+    var s = Math.min(sx, sy);
+    return out.map(function (c) {
+      return { zf: c.zf, points: c.pts.map(function (p) {
+        return [round(40 + p[0] * s), round(SHEET.h / 2 + p[1] * s)];
+      }) };
+    });
+  }
+
+  /* ==========================================================================
+     Projection and render
+     ========================================================================== */
+  function project(p) {
+    var ca = Math.cos(S.yaw), sa = Math.sin(S.yaw);
+    var x1 = p.x * ca + p.y * sa, y1 = -p.x * sa + p.y * ca;
+    var cb = Math.cos(S.pitch), sb = Math.sin(S.pitch);
+    var z2 = p.z * cb - y1 * sb, d = p.z * sb + y1 * cb;
+    var k = 1 / (1 + d * 0.42);
+    return { x: x1 * k, y: -z2 * k, d: d };
+  }
+  var frame = [];
+  function buildFrame() {
+    var curves = [], STEP = 1 / 700, X, i, r, k;
+    var pts = [];
+    for (X = 0; X <= 1.0000001; X += STEP) pts.push(surfacePoint(Math.min(1, X), TAU * S.turns * X));
+    curves.push({ pts: pts, kind: "coil" });
+    var pts2 = [];
+    for (X = 0; X <= 1.0000001; X += STEP) pts2.push(surfacePoint(Math.min(1, X), TAU * S.turns * X + Math.PI));
+    curves.push({ pts: pts2, kind: "coil" });
+    for (r = 0; r < S.rings; r++) {
+      var Xr = S.rings === 1 ? 0.5 : r / (S.rings - 1), rp = [];
+      for (i = 0; i <= 110; i++) rp.push(surfacePoint(Xr, TAU * i / 110));
+      curves.push({ pts: rp, kind: "ring" });
+    }
+    if (S.rails) for (k = 0; k < 8; k++) {
+      var th = TAU * k / 8, lp = [];
+      for (i = 0; i <= 160; i++) lp.push(surfacePoint(i / 160, th));
+      curves.push({ pts: lp, kind: "rail" });
+    }
+    return curves;
+  }
+  var cv, ctx;
+  function fitC(c) {
+    var dpr = window.devicePixelRatio || 1, r = c.getBoundingClientRect();
+    var w = Math.max(1, Math.round(r.width * dpr)), h = Math.max(1, Math.round(r.height * dpr));
+    if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
+    return r;
+  }
+  function draw() {
+    var r = fitC(cv), dpr = window.devicePixelRatio || 1, i;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.fillStyle = "#080d11"; ctx.fillRect(0, 0, r.width, r.height);
+    if (!frame.length) return;
+    var scale = Math.min(r.width / 1.55, r.height / 0.95) * S.zoom;
+    var ox = r.width / 2, oy = r.height / 2;
+    ctx.strokeStyle = "rgba(29,43,53,.9)"; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (i = -4; i <= 4; i++) {
+      var a = project({ x: -0.62, y: i * 0.09, z: -0.5 * H_RATIO });
+      var b = project({ x: 0.62, y: i * 0.09, z: -0.5 * H_RATIO });
+      ctx.moveTo(ox + a.x * scale, oy + a.y * scale);
+      ctx.lineTo(ox + b.x * scale, oy + b.y * scale);
+    }
+    ctx.stroke();
+    var drawn = frame.map(function (c) {
+      var dm = 0, k;
+      for (k = 0; k < c.pts.length; k++) dm += project(c.pts[k]).d;
+      return { c: c, dm: dm / c.pts.length };
+    }).sort(function (a, b) { return b.dm - a.dm; });
+    drawn.forEach(function (o) {
+      var c = o.c;
+      var col = c.kind === "coil" ? "233,165,63" : c.kind === "ring" ? "87,200,239" : "185,140,245";
+      var base = c.kind === "coil" ? 1 : c.kind === "ring" ? 0.5 : 0.32;
+      ctx.lineWidth = c.kind === "coil" ? 1.7 : 1;
+      var prev = project(c.pts[0]), k;
+      for (k = 1; k < c.pts.length; k++) {
+        var cur = project(c.pts[k]), dd = (prev.d + cur.d) / 2;
+        var fade = Math.max(0.13, Math.min(1, 0.62 - dd * 1.5));
+        ctx.strokeStyle = "rgba(" + col + "," + (base * fade) + ")";
+        ctx.beginPath();
+        ctx.moveTo(ox + prev.x * scale, oy + prev.y * scale);
+        ctx.lineTo(ox + cur.x * scale, oy + cur.y * scale);
+        ctx.stroke();
+        prev = cur;
+      }
+    });
+    $("ta-angle").innerHTML = "yaw " + (S.yaw * 180 / Math.PI).toFixed(0) + "° · pitch " +
+      (S.pitch * 180 / Math.PI).toFixed(0) + "°<br>zoom " + S.zoom.toFixed(2) + "×";
+  }
+  function drawMini(id, view, col) {
+    var c = $(id), x = c.getContext("2d");
+    var r = fitC(c), dpr = window.devicePixelRatio || 1;
+    x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    x.fillStyle = "#080d11"; x.fillRect(0, 0, r.width, r.height);
+    if (!view) {
+      x.fillStyle = "#3a4a54"; x.font = "9px monospace"; x.textAlign = "center";
+      x.fillText("none", r.width / 2, r.height / 2 + 3); return;
+    }
+    var b = view.box;
+    var s = Math.min((r.width - 8) / (b.x1 - b.x0), (r.height - 8) / (b.y1 - b.y0));
+    var ox = (r.width - (b.x1 - b.x0) * s) / 2, oy = (r.height - (b.y1 - b.y0) * s) / 2;
+    x.beginPath();
+    view.poly.forEach(function (p, i) {
+      var px = ox + (p.x - b.x0) * s, py = oy + (p.y - b.y0) * s;
+      if (i) x.lineTo(px, py); else x.moveTo(px, py);
+    });
+    x.closePath(); x.strokeStyle = col; x.lineWidth = 1.1; x.stroke();
+  }
+  function drawPlanPreview() {
+    var c = $("ta-planpreview"), x = c.getContext("2d");
+    var r = fitC(c), dpr = window.devicePixelRatio || 1;
+    x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    x.fillStyle = "#080d11"; x.fillRect(0, 0, r.width, r.height);
+    var cs = carContours();
+    if (!cs.length) return;
+    var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    cs.forEach(function (c2) { c2.points.forEach(function (p) {
+      x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]);
+      y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); }); });
+    var s = Math.min((r.width - 10) / (x1 - x0 || 1), (r.height - 10) / (y1 - y0 || 1));
+    var ox = (r.width - (x1 - x0) * s) / 2 - x0 * s, oy = (r.height - (y1 - y0) * s) / 2 - y0 * s;
+    cs.forEach(function (c2, i) {
+      x.beginPath();
+      c2.points.forEach(function (p, k) {
+        var px = ox + p[0] * s, py = oy + p[1] * s;
+        if (k) x.lineTo(px, py); else x.moveTo(px, py);
+      });
+      x.closePath();
+      x.strokeStyle = "rgba(233,165,63," + (0.25 + 0.65 * (i / Math.max(1, cs.length - 1))) + ")";
+      x.lineWidth = 1; x.stroke();
+    });
+  }
+
+  /* ==========================================================================
+     Reporting
+     ========================================================================== */
+  function report() {
+    var hasPlan = !!V.plan;
+    $("ta-taperbox").style.display = hasPlan ? "none" : "";
+    $("ta-widthnote").className = "ta-note" + (hasPlan ? " ta-good" : "");
+    $("ta-widthnote").innerHTML = hasPlan
+      ? "<b>Measured.</b> The plan gives the half width at every station, so nothing " +
+        "here is assumed. The front view is demoted to what it is actually good for " +
+        "— the shape of a slice."
+      : "<b>Assumed.</b> Two views bound a solid but cannot say how wide it is at any " +
+        "one station. Add a plan and this dial disappears.";
+
+    if (hasPlan) {
+      var off = (W_PLAN - W_FRONT) / W_FRONT * 100, ok = Math.abs(off) < 10;
+      $("ta-agreenote").className = "ta-note " + (ok ? "ta-good" : "ta-bad");
+      $("ta-agreenote").innerHTML =
+        "widest, from the front: <b>" + W_FRONT.toFixed(3) + "</b> of a length<br>" +
+        "widest, from the plan: <b>" + W_PLAN.toFixed(3) + "</b><br>" +
+        (ok ? "They agree to " + Math.abs(off).toFixed(0) + "%."
+            : "<b>They disagree by " + Math.abs(off).toFixed(0) + "%.</b> One is drawn to a " +
+              "different scale. The plan is believed, since it measures width directly.");
+    } else {
+      $("ta-agreenote").className = "ta-note";
+      $("ta-agreenote").innerHTML =
+        "With two views there is nothing to check against. A third makes the body " +
+        "over-determined, which is what lets the drawings be caught disagreeing.";
+    }
+    var anchors = (V.side ? V.side.anchors : 0) + (V.front ? V.front.anchors : 0) +
+                  (V.plan ? V.plan.anchors : 0);
+    $("ta-slot-side").classList.toggle("ta-has", !!V.side);
+    $("ta-slot-front").classList.toggle("ta-has", !!V.front);
+    $("ta-slot-plan").classList.toggle("ta-has", !!V.plan);
+    var cs = carContours();
+    $("ta-tnote").innerHTML = "<b>" + cs.length + "</b> level curves · " +
+      cs.reduce(function (s, c) { return s + c.points.length; }, 0) + " points · the ceiling " +
+      "will read <b>" + anchors + "</b> anchors, from the views";
+  }
+
+  /* ---------- the transcript ---------- */
+  function harmonicsOf(view, count) {
+    return dft(resample(view.poly, 256)).slice(0, count).map(function (w) {
+      return [w.freq, round(w.amp, 3), round(w.phase, 4)];
+    });
+  }
+  function transcript() {
+    var anchors = (V.side ? V.side.anchors : 0) + (V.front ? V.front.anchors : 0) +
+                  (V.plan ? V.plan.anchors : 0);
+    var views = { side: { waves: harmonicsOf(V.side, 96) },
+                  front: { waves: harmonicsOf(V.front, 96) } };
+    if (V.plan) views.plan = { waves: harmonicsOf(V.plan, 96) };
+    return {
+      format: "loft/solid", version: 1,
+      note: "A body lofted from flat views. `views` are the generating drawings as sine " +
+            "waves; `car.contours` are the body's own level curves seen from above.",
+      views: views,
+      width: V.plan ? { source: "plan", measured: true }
+                    : { source: "assumed", mode: S.taperMode, p: round(S.taper, 3), edge: EDGE },
+      car: { anchors: anchors, contours: carContours().map(function (c) {
+        return { name: "level " + Math.round(c.zf * 100) + "%", closed: true, smooth: false,
+                 fill: false, points: c.points };
+      }) }
+    };
+  }
+
+  /* ==========================================================================
+     Wiring
+     ========================================================================== */
+  function showErr(m) {
+    var e = $("ta-err");
+    e.textContent = m || ""; e.classList.toggle("ta-show", !!m);
+  }
+  var flagTimer = null;
+  function flag(t) {
+    $("ta-flagtext").textContent = t;
+    $("ta-flag").classList.add("ta-show");
+    clearTimeout(flagTimer);
+    flagTimer = setTimeout(function () { $("ta-flag").classList.remove("ta-show"); }, 1100);
+  }
+
+  // the biggest closed ring on the drawing table is the outline of a view
+  function outlineFromTable() {
+    if (!window.bpCurrentDrawing) throw new Error("the drawing table is not on this pane");
+    var d = window.bpCurrentDrawing();
+    if (!d || !d.contours || !d.contours.length)
+      throw new Error("nothing on the drawing table yet — draw a view first");
+    var best = null, bestA = -1;
+    d.contours.forEach(function (c) {
+      if (!c.points || c.points.length < 3) return;
+      var a = 0, i;
+      for (i = 0; i < c.points.length; i++) {
+        var p = c.points[i], q = c.points[(i + 1) % c.points.length];
+        a += p[0] * q[1] - q[0] * p[1];
+      }
+      a = Math.abs(a / 2);
+      if (a > bestA) { bestA = a; best = c.points; }
+    });
+    if (!best) throw new Error("no closed outline on the table");
+    return best;
+  }
+  function takeView(which) {
+    try {
+      showErr("");
+      V[which] = makeView(outlineFromTable());
+      refresh();
+      flag(which + " view taken");
+    } catch (e) { showErr(e.message); }
+  }
+
+  function refresh() {
+    if (!rebuildModel()) { showErr("a side view and a front view are both needed"); return; }
+    frame = buildFrame();
+    drawMini("ta-mini-side", V.side, "rgb(87,200,239)");
+    drawMini("ta-mini-front", V.front, "rgb(185,140,245)");
+    drawMini("ta-mini-plan", V.plan, "rgb(95,214,164)");
+    drawPlanPreview();
+    report();
+    draw();
+  }
+
+  function boot() {
+    cv = $("ta-canvas"); ctx = cv.getContext("2d");
+
+    $("ta-sheet-btn").addEventListener("click", function () {
+      var sh = $("ta-sheet");
+      sh.hidden = !sh.hidden;
+      this.classList.toggle("ta-on", !sh.hidden);
+      if (!sh.hidden) refresh();
+    });
+    $("ta-stock").addEventListener("click", function () {
+      showErr("");
+      V.side = makeView(STOCK.side); V.front = makeView(STOCK.front); V.plan = makeView(STOCK.plan);
+      refresh(); flag("Stock Huayra");
+    });
+    $("ta-take-side").addEventListener("click", function () { takeView("side"); });
+    $("ta-take-front").addEventListener("click", function () { takeView("front"); });
+    $("ta-take-plan").addEventListener("click", function () { takeView("plan"); });
+    $("ta-drop-plan").addEventListener("click", function () {
+      V.plan = null; showErr(""); refresh(); flag("Plan dropped");
+    });
+
+    $("ta-taper").addEventListener("input", function (e) {
+      S.taper = e.target.value / 100; $("ta-v-taper").textContent = S.taper.toFixed(2); refresh();
+    });
+    $("ta-turns").addEventListener("input", function (e) {
+      S.turns = +e.target.value; $("ta-v-turns").textContent = S.turns; refresh();
+    });
+    $("ta-rings").addEventListener("input", function (e) {
+      S.rings = +e.target.value; $("ta-v-rings").textContent = S.rings; refresh();
+    });
+    $("ta-levels").addEventListener("input", function (e) {
+      S.levels = +e.target.value; $("ta-v-levels").textContent = S.levels; refresh();
+    });
+    $("ta-rails").addEventListener("change", function (e) { S.rails = e.target.checked; refresh(); });
+    $("ta-t-ends").addEventListener("click", function () {
+      S.taperMode = "ends"; this.classList.add("ta-on"); $("ta-t-height").classList.remove("ta-on"); refresh();
+    });
+    $("ta-t-height").addEventListener("click", function () {
+      S.taperMode = "height"; this.classList.add("ta-on"); $("ta-t-ends").classList.remove("ta-on"); refresh();
+    });
+
+    var snap = function (y, p, b) {
+      S.yaw = y; S.pitch = p;
+      ["ta-b-side", "ta-b-front", "ta-b-plan", "ta-b-three"].forEach(function (id) {
+        $(id).classList.toggle("ta-on", id === b);
+      });
+      draw();
+    };
+    $("ta-b-side").addEventListener("click", function () { snap(0, 0, "ta-b-side"); });
+    $("ta-b-front").addEventListener("click", function () { snap(Math.PI / 2, 0, "ta-b-front"); });
+    $("ta-b-plan").addEventListener("click", function () { snap(0, Math.PI / 2 - 0.001, "ta-b-plan"); });
+    $("ta-b-three").addEventListener("click", function () { snap(-0.62, 0.34, "ta-b-three"); });
+
+    // straight out onto the circuit, no copying involved
+    $("ta-drive").addEventListener("click", function () {
+      try {
+        showErr("");
+        if (!window.rtTakeLoft) throw new Error("the circuit is not on this pane");
+        window.rtTakeLoft(transcript());
+        window.taClose();
+        if (window.rtOpen) window.rtOpen();
+      } catch (e) { showErr(e.message); }
+    });
+    $("ta-write").addEventListener("click", function () {
+      $("ta-transcript").value = JSON.stringify(transcript());
+    });
+    $("ta-copy").addEventListener("click", function () {
+      var t = $("ta-transcript");
+      if (!t.value) t.value = JSON.stringify(transcript());
+      t.removeAttribute("readonly"); t.select();
+      try { document.execCommand("copy"); flag("Copied"); } catch (e) {}
+      t.setAttribute("readonly", "readonly");
+    });
+
+    var drag = null;
+    $("ta-stage").addEventListener("pointerdown", function (e) {
+      if (e.target.closest && e.target.closest("#ta-sheet")) return;
+      $("ta-stage").setPointerCapture(e.pointerId);
+      $("ta-stage").classList.add("ta-drag");
+      drag = { x: e.clientX, y: e.clientY, yaw: S.yaw, pitch: S.pitch };
+    });
+    $("ta-stage").addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      S.yaw = drag.yaw + (e.clientX - drag.x) * 0.008;
+      S.pitch = Math.max(-1.56, Math.min(1.56, drag.pitch + (e.clientY - drag.y) * 0.006));
+      draw();
+    });
+    var endDrag = function () { drag = null; $("ta-stage").classList.remove("ta-drag"); };
+    $("ta-stage").addEventListener("pointerup", endDrag);
+    $("ta-stage").addEventListener("pointercancel", endDrag);
+    $("ta-stage").addEventListener("wheel", function (e) {
+      if (e.target.closest && e.target.closest("#ta-sheet")) return;
+      e.preventDefault();
+      S.zoom = Math.max(0.4, Math.min(4, S.zoom * Math.exp(-e.deltaY * 0.0012)));
+      draw();
+    }, { passive: false });
+
+    V.side = makeView(STOCK.side); V.front = makeView(STOCK.front); V.plan = makeView(STOCK.plan);
+    refresh();
+    if (window.matchMedia && window.matchMedia("(max-width: 720px)").matches) {
+      $("ta-sheet").hidden = true;
+      $("ta-sheet-btn").classList.remove("ta-on");
+    }
+    S.booted = true;
+  }
+
+  // Bound once, and only acts while the assembly is open, so the rest of the
+  // pane keeps its own key behaviour untouched.
+  document.addEventListener("keydown", function (e) {
+    if (!S.open) return;
+    if (e.key === "Escape") { window.taClose(); return; }
+  });
+
+  window.taOpen = function () {
+    $("ta-backdrop").hidden = false;
+    if (!S.booted) boot(); else refresh();
+    S.prevOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    S.open = true;
+  };
+  window.taClose = function () {
+    S.open = false;
+    $("ta-backdrop").hidden = true;
+    document.documentElement.style.overflow = S.prevOverflow;
+    var b = document.querySelector(".ta-open");
+    if (b) b.focus();
+  };
+  // handed to the circuit next door
+  window.taTranscript = function () { return transcript(); };
+
+  window.__ta = { S: S, V: V, surfacePoint: surfacePoint, levelCurve: levelCurve,
+                  carContours: carContours, transcript: transcript, halfWidthAt: halfWidthAt,
+                  rebuildModel: rebuildModel, makeView: makeView, refresh: refresh,
+                  draw: draw, STOCK: STOCK, takeView: takeView,
+                  get W_FRONT() { return W_FRONT; }, get W_PLAN() { return W_PLAN; },
+                  get H_RATIO() { return H_RATIO; } };
 })();
 </script>
 </body>
