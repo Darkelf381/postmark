@@ -170,7 +170,10 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   assert.equal(reg.quests.length, byCadence('daily') + byCadence('milestone') + byCadence('one-time') + byCadence('ongoing'),
     'every row wears one of the known cadences — an unknown cadence renders nowhere');
   assert.ok(reg.quests.some((q) => q.id === 'correspond-depth' && q.cadence === 'milestone'));
-  assert.ok(reg.quests.some((q) => q.id === 'keeping-ec2' && q.subtype === 'bounty' && q.status === 'draft'));
+  // "good to post the ec2 quest too" — the founder's word, 2026-08-21: the pot
+  // posted open. A regression back to draft (or a silent second bounty row)
+  // fails here.
+  assert.ok(reg.quests.some((q) => q.id === 'keeping-ec2' && q.subtype === 'bounty' && q.status === 'open'));
 });
 
 test('live ledger: housemates agree on their house columns (#1458 invariant)', () => {

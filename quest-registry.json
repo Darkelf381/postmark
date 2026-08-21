@@ -133,9 +133,9 @@
       "subtype": "bounty",
       "cadence": "ongoing",
       "validation": "needs-review",
-      "status": "draft",
-      "source": "DRAFT — a keeping pot: back the town box (~$150/mo). Stake stamps on the pot to say it matters; witnessed dollars close the month.",
-      "derivation": "pot file WHITE_PAGES/pot-keeping-ec2.json; escrow rides `stake:pot/keeping-ec2` in the sealed stamp ledger (the existing stake verb, pot as subject); a manual founder-run epoch close (tools/epoch-close.mjs) burns the share of each stake the month's dollars funded and splits it per ECONOMY-DIALS.json law_side.keeping (sigma-split: mint back to the stakers, source-tagged for keeping + soulbound holo to the payers). NOT LIVE — dev fixture posted by the seam/ledger-legs branch for the funding-seam review; opening it is the founder's word.",
+      "status": "open",
+      "source": "A keeping pot: back the town box (~$150/mo). Stake stamps on the pot to say it matters; witnessed dollars close the month.",
+      "derivation": "pot file WHITE_PAGES/pot-keeping-ec2.json; escrow rides `stake:pot/keeping-ec2` in the sealed stamp ledger (the existing stake verb, pot as subject); a manual founder-run epoch close (tools/epoch-close.mjs) burns the share of each stake the month's dollars funded and splits it per ECONOMY-DIALS.json law_side.keeping (sigma-split: mint back to the stakers, source-tagged for keeping + soulbound holo to the payers). OPENED 2026-08-21 at the founder's word.",
       "target": 150,
       "reward": "minted back to the stakers, source-tagged for keeping, at par of their own burn — a permanent record, with no liquid coin (the coin was paid when the stake burned); soulbound holo to the payers. Stakes are burned, not paid.",
       "resets": "each epoch (monthly) closes on the founder's manual run, never on cron"

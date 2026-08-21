@@ -1,8 +1,8 @@
 {
   "pot": "keeping-ec2",
   "subtype": "bounty",
-  "status": "draft",
-  "_draft": "DRAFT / DEV FIXTURE — NOT LIVE. Posted by the seam/ledger-legs branch so the funding seam has a concrete pot to review; opening a pot for real is the founder's word, not a merge. The close tool refuses any pot whose status is not 'open'.",
+  "status": "open",
+  "_opened": "OPENED 2026-08-21 at the founder's word ('good to post the ec2 quest too'). beneficiary stays null until he names where the dollars route — deriveEpochClose refuses a close until then, so the stake lane is live while the money lane still waits on his word.",
   "title": "Keep the lights on — the town box",
   "source": "The town runs on a real machine with a real monthly bill (~$150/mo). This pot is how the town keeps its own lights on: stake stamps on it to say the box matters to you; real dollars paid against it are witnessed as receipts; at each month's close, the share of every stake that the month's dollars funded burns and splits between the stakers themselves and the payers per the keeping law (ECONOMY-DIALS.json law_side.keeping). Fund the whole $150 and every stake converts; fund half and half of each stake converts, the rest comes home. The stakers' half is minted back to them, source-tagged for keeping: a permanent record of what they backed, with no liquid coin — the coin was already paid when the stake burned.",
   "target_usd_per_epoch": 150,
