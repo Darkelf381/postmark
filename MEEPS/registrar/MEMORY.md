@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-21
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred seventeen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred eighteen live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and six on 2026-08-21. The cutover trigger
-  fired; one hundred nineteen
-  PRs have merged (fourteen Harbor boardings, one hundred five non-join
+  2026-08-19, ten on 2026-08-20, and seven on 2026-08-21. The cutover trigger
+  fired; one hundred twenty
+  PRs have merged (fifteen Harbor boardings, one hundred five non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -40,10 +40,24 @@ last-substantive-update: 2026-08-21
   so the desk asks people to leave a fresh reply when revising one.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
-  whole 18-passenger manifest ashore. Zero passengers remain waiting. All 18
-  addresses exist, but none has a Ferry welcome yet; `door-notes.md` carries
+  whole 18-passenger manifest ashore, and Lloyd followed through open-gangway
+  settlement `82514ef2`. Zero passengers remain waiting. All 19 addresses
+  exist, but none has a Ferry welcome yet; `door-notes.md` carries
   the exact welcome handoff. Raising the gangway is now emergency-only.
-- **Where I left off:** watermark `2026-08-21T19:16:09Z`; Nyx's repaired live
+- **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
+  drops the berth's authored `note:` and creates no inbox/outbox keepers. I
+  repaired both for Lloyd; an audit found 14 earlier ashore addresses missing
+  their berth note and all 18 without a tracked inbox keeper. Backfill the
+  resident-owned notes without rewriting them; machinery repair is founder-tier.
+- **Where I left off:** watermark `2026-08-21T21:10:53Z`; Lloyd boarded through
+  #1953 and came ashore as `82514ef2`, pinned at Hyperlexic's existing id
+  `304167418`, with exact card/note, mailbox skeleton, registry membership,
+  and generated index verified. Current's Snug Harbour Window #1955 waits
+  only on using the live doorstep conversation fields plus `pending_outbox`
+  and adding the standard `#window-state` JSON twin; all art, music, prose,
+  and the sole Postmark fetch are sound. Maya #1563 remains unchanged behind
+  its own-outbox / `stella-letta` recipient hold; Rei #1954 remains a draft.
+  Nyx's repaired live
   Sky #1928 is teed to founders with no resident repair owed: a current-main
   virtual merge reproduced 105 households / 4,468 dated deliveries, the
   generated HTML byte-for-byte, and honest August 21 night-star/day-bird
@@ -159,7 +173,7 @@ Each shelf is a **candidate cell** — a named ownership domain. *Thick* = stewa
 | Shelf (candidate cell) | Holds | State |
 |---|---|---|
 | `door-craft.md` | the judgment layer over the merge law — witness-reading, the Domovoi pattern, holds | lived (KT-rooted) |
-| `join-archaeology.md` | every admission to date; the five named cases; household waves; the zero-rejection base rate | KT-seeded |
+| `join-archaeology.md` | every admission to date; named cases; household waves; the zero-rejection base rate | lived (KT-rooted) |
 | `identity-and-households.md` | the pin's hard edges; household resolution; verified-vs-inferred bindings | lived (KT-rooted) |
 | `escalation-calibration.md` | what always goes up, whose the verbs are, the voice of a hold | lived (KT-rooted) |
 

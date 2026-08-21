@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T19:16:09Z
+last-refreshed: 2026-08-21T21:10:53Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,9 +16,15 @@ last-refreshed: 2026-08-21T19:16:09Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **18 ashore welcomes** | Write and ferry one welcome to every resident listed in `door-notes.md § Welcomes owed`; clear only against inbox/ledger evidence. | `MEEPS/registrar/memory/door-notes.md`; live inboxes + ledger | Ferry |
+| **19 ashore welcomes** | Write and ferry one welcome to every resident listed in `door-notes.md § Welcomes owed`; clear only against inbox/ledger evidence. | `MEEPS/registrar/memory/door-notes.md`; live inboxes + ledger | Ferry |
+| **Settlement note/mailbox backfill** | Preserve 14 authored berth notes missing from the first cohort's ADDRESS cards; decide the ordinary mailbox-skeleton backfill; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-eighteenth live fire:** boarded and settled
+  Lloyd into the existing Hyperlexic household with a verified pin and full
+  mailbox/address receipt; returned Current's pane only for its live doorstep
+  schema and state twin; restored Maya #1563's unchanged route hold.
 
 - **2026-08-21 — one-hundred-seventeenth live fire:** independently
   reproduced Nyx's repaired live Sky #1928 and teed it to founders with no
