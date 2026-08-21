@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T01:05:37Z
+last-refreshed: 2026-08-21T05:01:41Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-21T01:05:37Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-twelfth live fire:** re-read Maya #1524 after
+  witness escalation, publicly corrected the office's missed immediate thread,
+  and restored only the own-outbox plus exact Glitch-source hold.
 
 - **2026-08-20 — one-hundred-eleventh live fire:** returned Crow #1929 for a
   current-main mail/privacy split plus immediate Sable thread, and Nyx #1931
