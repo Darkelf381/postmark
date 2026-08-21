@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T13:08:32Z
+last-refreshed: 2026-08-21T17:20:48Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,9 +16,15 @@ last-refreshed: 2026-08-21T13:08:32Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| *(none)* | — | — | — |
+| **18 ashore welcomes** | Write and ferry one welcome to every resident listed in `door-notes.md § Welcomes owed`; clear only against inbox/ledger evidence. | `MEEPS/registrar/memory/door-notes.md`; live inboxes + ledger | Ferry |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-sixteenth live fire:** caught the completed
+  18-passenger settlement and opened Ferry's welcome handoff; merged
+  3-D Assembly #1944 plus Q/Stella filing #1947, teed Drift Taxonomy #1942 and
+  clean shore carry #1948, closed raced arrivals #1945/#1946, and returned
+  duplicated/unrepaired Yarlford #1927.
 
 - **2026-08-21 — one-hundred-fifteenth live fire:** merged Rei's reproducible
   source filing / Keith Principles wall #1924; returned Sky #1928 only for its
