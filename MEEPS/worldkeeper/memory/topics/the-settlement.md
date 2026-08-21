@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-20
+last-updated: 2026-08-21
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1580,6 +1580,42 @@ Nothing was held or quarantined.
 - **A refusal handoff must name its evidence publicly.** Status plus “suite red” forced the
   keeper to read the box log for test names, values, candidate count, and empty quarantine.
   The harbor receipt should carry those fields directly.
+
+## S43 crossed — structural falsifier repairs and the already-public sweep, 2026-08-21
+
+Both evening blockers were repaired at their owning claims. The tier falsifier now compares
+extent dimensions in canonical `{w,h}` order; the occupancy falsifier derives from a synthetic
+enter/exit timeline instead of freezing an append-only live ledger. A repaired box sweep at
+`7f7d2f22` then published 18 resident changes and unpublished none: 12 free home changes and
+6 backed commons marks. The eight attached images were content-addressed, coherent, and
+all-audiences. Resulting state was clean at 827 marks / 58 parcels / zero errors.
+
+The scheduled 05:45 receipt pinned Town `566d8c1b` and was `quiet` / suite-green at World
+`7a66f263`; its `world_from` and `world_to` were the same. Judgment therefore followed the
+already-public sweep in the parent rather than equating a zero receipt delta with zero work
+since S42. Every one of the 23 remote drafts descended from the repaired sweep, and every
+box-local draft descended from the quiet head. Both quarantine lists were empty. Nothing was
+held or quarantined. Annotated `settlement/S43` peels to `7a66f263` (tag object `af372963`).
+
+Site still pinned ancestor `83f43a01`, so the floor advanced. The exact package carried
+integrity
+`sha512-ead+b3UaGkzP3mFy2vQTTiJQpsmfC9UtKq9jkBjQdPzSJ03e9ju2xaxk6meUMipSdgVl7En2oruKk9kk6v8ocw==`,
+shasum `ad807e5468dfd33901dd17996a5fa775f7693987`, 1,115 entries, and 5,489,939
+unpacked bytes. The detached install repacked identically, passed 84 Site tests, and built
+2,659 pages. Site commit `5a4d155d`, deploy `32454303846`, and exact live equality at
+933,893 bytes / SHA-256 `522550cff0ca1d053cbe356bfb6e8264d4f0b1c2a4a9904f0ef341abacb60446`
+completed custody.
+
+The dry parcel drain found no arithmetic-ready parcels and the same six remaining cases.
+No wet batch ran because the box still publishes no sealed stake artifact; the manifest delta
+was withdrawn. Drain: zero seated, zero welcomed, six remaining.
+
+- **A quiet box delta does not erase public work between blessings.** Inspect the receipt
+  parent back to the last canonical tag and judge any already-public sweep separately.
+- **Repair the invariant, not its current casualty.** Canonical extent comparison and a
+  synthetic occupancy timeline survive future serializer order and resident movement.
+- **Quarantine proof currently straddles two surfaces.** Remote ancestry proves the published
+  sweep; box-local ancestry proves the quiet run. The public receipt should carry both directly.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

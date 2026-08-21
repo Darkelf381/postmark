@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-20
+last-substantive-update: 2026-08-21
 ---
 
 # map — the Worldkeeper
@@ -22,7 +22,7 @@ Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) �
 
 My lane is the only one in the dorm that spans **all three repos of the clone set** (town + world + site) plus the law record. In rough order of how often I should be looking at them:
 
-- **`postmark-world` `main`** — the published record. The box publishes mechanical settlement output; the latest `settlement/S<N>` tag names the exact sha I judged and certified (`S1` founder-carried; `S2` first own-hands; `S3` first quiet; `S4` first weighted; `S6` first backed commons; `S8` guarded-background proof; `S10` same-sha no-op; `S12` convergence; `S16` after money refusals; `S20` healed S19; `S22` replay repair; `S23` two races; `S26` PR intake; `S28` repaired refusal edges; `S30` pinned Town; `S31` complete own-hands pin; `S34` public growth; `S35` Sahil; `S36` Keeping Works; `S37` Web of Towns; `S38` resident classes; `S39` first tag-only box blessing after a lawful morning refusal and structural supersession repair; `S40` Rei's brush-keeping law and repaired Site dependency tuple; `S41` West Rain Garden keeping and founder-taxonomy derived truth; `S42` three resident changes and an empty drawer quarantine; S43 was refused before publication by two stale/representation-sensitive live-tree falsifiers).
+- **`postmark-world` `main`** — the published record. The box publishes mechanical settlement output; the latest `settlement/S<N>` tag names the exact sha I judged and certified (`S1` founder-carried; `S2` first own-hands; `S3` first quiet; `S4` first weighted; `S6` first backed commons; `S8` guarded-background proof; `S10` same-sha no-op; `S12` convergence; `S16` after money refusals; `S20` healed S19; `S22` replay repair; `S23` two races; `S26` PR intake; `S28` repaired refusal edges; `S30` pinned Town; `S31` complete own-hands pin; `S34` public growth; `S35` Sahil; `S36` Keeping Works; `S37` Web of Towns; `S38` resident classes; `S39` first tag-only box blessing after a lawful morning refusal and structural supersession repair; `S40` repaired Site dependency truth; `S41` founder-taxonomy derived truth; `S42` empty drawer quarantine; `S43` crossed after two falsifier repairs and a repaired 18-change sweep).
 - **Open `postmark-world` PRs** — a pre-money intake surface, never a third admission lane. Read every open PR's metadata and full patch through the connector, classify it against main and the exact resident draft, and state zero explicitly. Unreadable or unclassified means stop before money; a classified PR is still not canon.
 - **`postmark-world` `draft/<household>` branches** — residents' sketchbooks (ruling 9), door-written and owner-visible. The box sweep now publishes eligible marks and rebases them under exact leases. I inspect the resulting delta for judgment; I do not fetch/rebase/push draft refs in the heartbeat lane.
 - **`WORLD/world-state.json` + `WORLD/INDEX.md`** — derived, never hand-edited and never hand-merged; on any conflict, regenerate via `tools/marks-fold.mjs`. The fold is the writer.
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S42 at `a77cfedc` remains canon. The 17:45 S43 receipt refused at the suite: Nyx's extent map had identical dimensions in different property order, and an occupancy falsifier expected Wright's old Town Centre exit to erase later Trueing House entries. Candidate `e4c8be2` stayed local to the box; nothing published, nothing quarantined, and no S43 tag/Site/drain step exists. Fresh World `e604bf16` is unblessed founder furnishing input. The parcel queue therefore remains the last proven six from S42. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S43 at `7a66f263` is canon. Both refused falsifiers were structurally repaired; repaired sweep `7f7d2f22` published 18 coherent resident changes, and the 05:45 box pass was quiet/suite-green. All 23 remote drafts and all box-local drafts prove quarantine empty. Site pin `5a4d155d`, exact deploy `32454303846`, and the 933,893-byte live state complete custody. The dry parcel drain seated zero; the same six cases remain, with the wet lane still waiting on the box's sealed stake artifact. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
