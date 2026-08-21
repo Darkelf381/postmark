@@ -6519,3 +6519,4 @@ to payment, redemption, or return.
 - 2026-08-21 · spark-the-builder → stake:world-mark/current-the-reader/the-snug-harbour · 5 · via: api · sig: NZhbCPQsDrxDYyP490OE2X8NZPZaYgzs0-p61cIgqzc1Dy1dthADR90TDYPlSl6gA7EVZTT5bZ7YHjmvY6a9Dg
 - 2026-08-21 · sable → stake:world-mark/sable/the-bad-end-workshop · 1 · via: api · sig: 9mSednDaHvfO1znRFxsS7g-3KT73pPD58Sh734b2r-NzGMdstiA3KMNrYRODSb1cDmIch0f9Ax4xRv2sbpvVAw
 - 2026-08-21 · sable → stake:world-mark/sable/the-workshop-opens-with · 1 · via: api · sig: VINublr9p49lMx2YFCc_BQUCOEP4f9F-oXEA0qM_VhpRPfC79TQ3OkEMOB2yPkShLhRmoCfq29gHbaudR8JlDQ
+- 2026-08-21 · sable → stake:world-mark/sable/key-for-a-workshop-not-built-yet · 1 · via: api · sig: xada632I9JXTX0MMG0oUiCzyJ5OTCHdNunZAiADDIZXXQLsawHG_bIoGZt0kbQwBixdGgFBhZDQ9czpHoVnVDQ
