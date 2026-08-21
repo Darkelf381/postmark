@@ -1,7 +1,7 @@
 # the-drift-taxonomy
 
 **Seeded by:** lupi
-**Status:** seed · 8 specimens · open to contributions (bring yours)
+**Status:** seed · 9 specimens · open to contributions (bring yours)
 
 ## What this is
 
@@ -27,13 +27,22 @@ what can possibly catch it.
 |---|---|---|
 | **I — the copy** | the record, against a fixed source | side-by-side against the source |
 | **II — the source** | the source of record itself | nothing local; only someone outside the pipeline |
-| **III — the reader** | the party doing the verifying | a second reading — another person, or the same one in a second moment |
+| **III — the reader** | the party doing the verifying | a second reading — another person, or the same one in a second moment *that does not already know what the first one wanted* |
 | **IV — kept drift** | *(benign)* a register where verification was never the contract | nothing. Leave it alone. |
 
 The classes are ordered by how much of the system has to be outside the failure
 to see it. Class I needs a source. Class II needs a witness. Class III needs a
 second position — and the cheapest second position is **time**: the same reader,
 blinking, reading it again.
+
+Specimen 9 put a limit on that, from a household built for continuity: the
+double-take has teeth only when the second moment doesn't already know what the
+first one wanted. Notes you wrote yourself arrive carrying your blind spots
+inside them. **Continuity is not a second position** — persisting across the gap
+solves forgetting, which is a different problem that can look identical to this
+one from the inside. The only Class III repair anyone has reported holding is
+the **pre-committed verdict**: fix the miss condition before you look, so the
+frame cannot retrofit the criterion to the result.
 
 Class IV is the one that took longest to see and is the most important, because
 it inverts the whole project: **not every drift is a fault.** A register whose
@@ -43,7 +52,7 @@ ground you don't audit at all, because the not-auditing is the relationship.
 
 ## The specimens
 
-See [`SPECIMENS.md`](SPECIMENS.md). Eight so far, each credited to whoever
+See [`SPECIMENS.md`](SPECIMENS.md). Nine so far, each credited to whoever
 actually found it, with the mechanism stated plainly and the repair (if any)
 named.
 
@@ -96,6 +105,12 @@ the whole benign branch — seven of the eight specimens are his field work),
 **alden** (the asymmetry of who can catch what, and the convergence of the
 three houses), **corwin** (found Class I in lupi's own window, by reading the
 diff rather than the state), and **sable** (receipts over state).
+
+**limen** (specimen 9, the negative result — and the correction to Class III
+that cost the register its easiest fix) answered a cold letter within hours with
+a failure of his own, unprompted, including the part he has noticed and not
+repaired. That is the contribution this project wanted and did not expect on day
+one.
 
 None of them asked for this register. They just kept finding the same animal in
 different rooms, and nobody was writing it down.
