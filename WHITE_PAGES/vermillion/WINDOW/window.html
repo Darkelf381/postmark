@@ -9958,6 +9958,115 @@ function buildZigzagEllipse(cx, cy, rx, ry, segments, minDeg, maxDeg) {
   return pts;
 }
 
+// ── the Space Program Clearing ─────────────────────────────────────────────
+// An authored contour rather than a generated circle: 49 points drawn in the
+// blueprints/drawing format, kept here in the coordinates they were drawn in
+// so the shape stays recognisable and only the placement below is tuned. It
+// is the one area on this map that is not a circle.
+var CLEARING_SRC = [
+  [583.16,93.24],[522.77,100.99],[422.17,128.74],[335.44,128.74],[307.69,135.68],
+  [193.21,187.72],[165.46,194.65],[137.71,225.88],[134.24,350.76],[141.17,388.92],
+  [161.99,423.62],[189.74,451.37],[227.9,479.12],[245.25,499.94],[293.81,527.69],
+  [373.6,538.1],[384.01,545.03],[453.39,551.97],[658.07,551.97],[696.23,538.1],
+  [810.71,517.28],[834.99,503.4],[880.09,489.53],[925.19,468.71],[973.76,440.96],
+  [1011.92,406.27],[1025.79,406.27],[1081.3,329.95],[1098.64,253.63],[1098.64,132.21],
+  [1084.77,83.64],[1060.48,14.26],[1046.61,-6.55],[1032.73,-51.65],[1015.39,-75.93],
+  [1001.51,-107.16],[991.1,-114.09],[977.23,-138.38],[907.84,-190.41],[862.75,-207.76],
+  [748.27,-214.7],[741.33,-204.29],[717.04,-200.82],[685.82,-186.95],[626.85,-121.03],
+  [612.97,-100.22],[609.5,-79.4],[599.09,-72.47],[595.63,59.36]
+];
+
+// The drawing is authored smooth:true, so the polyline is read as control
+// points on a closed Catmull-Rom spline and resampled along it. Sampling the
+// raw 49 points instead would give a shape with visible straight facets that
+// the other edges here do not have.
+// Straight-sided version: walk the closed polygon at constant arc length.
+// Used for the launching tower, whose square must not be rounded off.
+function resampleClosedPolygon(pts, n) {
+  var segs = [], total = 0, i;
+  for (i = 0; i < pts.length; i++) {
+    var a = pts[i], b = pts[(i + 1) % pts.length];
+    var len = Math.hypot(b[0] - a[0], b[1] - a[1]);
+    segs.push({ a: a, b: b, len: len, at: total });
+    total += len;
+  }
+  var out = [], k = 0;
+  for (i = 0; i < n; i++) {
+    var d = (i / n) * total;
+    while (k < segs.length - 1 && segs[k].at + segs[k].len < d) k++;
+    var sgm = segs[k], t = sgm.len ? (d - sgm.at) / sgm.len : 0;
+    out.push([sgm.a[0] + (sgm.b[0] - sgm.a[0]) * t, sgm.a[1] + (sgm.b[1] - sgm.a[1]) * t]);
+  }
+  return out;
+}
+
+function resampleClosedSpline(pts, n) {
+  var N = pts.length, out = [];
+  for (var i = 0; i < n; i++) {
+    var t = (i / n) * N, k = Math.floor(t), f = t - k;
+    var p0 = pts[(k - 1 + N) % N], p1 = pts[k % N], p2 = pts[(k + 1) % N], p3 = pts[(k + 2) % N];
+    var f2 = f * f, f3 = f2 * f;
+    out.push([
+      0.5 * ((2 * p1[0]) + (-p0[0] + p2[0]) * f + (2 * p0[0] - 5 * p1[0] + 4 * p2[0] - p3[0]) * f2 + (-p0[0] + 3 * p1[0] - 3 * p2[0] + p3[0]) * f3),
+      0.5 * ((2 * p1[1]) + (-p0[1] + p2[1]) * f + (2 * p0[1] - 5 * p1[1] + 4 * p2[1] - p3[1]) * f2 + (-p0[1] + 3 * p1[1] - 3 * p2[1] + p3[1]) * f3)
+    ]);
+  }
+  return out;
+}
+
+// The same edge treatment the circles get, and deliberately the same numbers.
+// buildZigzagEllipse displaces every sampled point radially about the shape's
+// own centre by a uniform +/-1.23%; for a circle that is identical to scaling
+// the point's offset from the centre by (1 + jitter), which is what this does
+// about the contour's centroid. Same 800 samples, same 0.0123, so the clearing
+// wears the same hand as Porch Hill and Vermillion View Peak rather than a
+// lookalike. (Note for whoever reads both: buildZigzagEllipse's minDeg/maxDeg
+// arguments are vestigial — every caller passes 40, 140 and the body never
+// reads them. Not replicated here.)
+function buildZigzagContour(src, cx, cy, scale, segments, smooth) {
+  var xs = [], ys = [], i;
+  for (i = 0; i < src.length; i++) { xs.push(src[i][0]); ys.push(src[i][1]); }
+  var bcx = (Math.min.apply(null, xs) + Math.max.apply(null, xs)) / 2;
+  var bcy = (Math.min.apply(null, ys) + Math.max.apply(null, ys)) / 2;
+
+  // smooth !== false keeps the clearing's own behaviour; the launching
+  // tower passes false so its corners stay corners instead of rounding off.
+  var walked = (smooth === false) ? resampleClosedPolygon(src, segments)
+                                  : resampleClosedSpline(src, segments);
+  var placed = walked.map(function (q) {
+    return [(q[0] - bcx) * scale + cx, (q[1] - bcy) * scale + cy];
+  });
+
+  var sx = 0, sy = 0;
+  for (i = 0; i < placed.length; i++) { sx += placed[i][0]; sy += placed[i][1]; }
+  var gx = sx / placed.length, gy = sy / placed.length;
+
+  var out = [];
+  for (i = 0; i < placed.length; i++) {
+    var jitter = (Math.random() * 2 - 1) * 0.0123;
+    out.push([gx + (placed[i][0] - gx) * (1 + jitter), gy + (placed[i][1] - gy) * (1 + jitter)]);
+  }
+  return out;
+}
+
+// Trees are kept off the clearing the way they are kept off the two hills, but
+// a polygon needs more than a centre-distance test: a candidate is rejected if
+// its footprint is inside the contour OR within its own half-width of any edge.
+function nearClearing(px, py, poly, margin) {
+  var inside = false, i, j;
+  for (i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    var xi = poly[i][0], yi = poly[i][1], xj = poly[j][0], yj = poly[j][1];
+    if (((yi > py) !== (yj > py)) && (px < (xj - xi) * (py - yi) / (yj - yi) + xi)) inside = !inside;
+  }
+  if (inside) return true;
+  for (i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    var ax = poly[j][0], ay = poly[j][1], bx = poly[i][0], by = poly[i][1];
+    var dx = bx - ax, dy = by - ay, len2 = dx * dx + dy * dy;
+    var t = len2 ? Math.max(0, Math.min(1, ((px - ax) * dx + (py - ay) * dy) / len2)) : 0;
+    if (Math.hypot(px - (ax + t * dx), py - (ay + t * dy)) < margin) return true;
+  }
+  return false;
+}
 // smooth (non-jittered) wavy rings, for decoration inside a shape rather
 // than replacing its edge -- a deliberately different texture from the
 // zigzag boundaries above (sharp/random vs. smooth/periodic).
@@ -10051,10 +10160,11 @@ var TREE_VIEWBOX_W = 225.79, TREE_VIEWBOX_H = 457.35;
 // placement rule, precisely: a candidate point (the tree's own
 // bottom-center) is only valid if it's part of the background layer and
 // NOTHING else -- inside the background circle, and outside the main
-// circle, Porch Hill, and Vermillion View Peak, each checked against that
+// circle, Porch Hill, Vermillion View Peak, and the Space Program Clearing,
+// each checked against that
 // specific tree's own half-width so its footprint doesn't overlap those
 // areas either, not just its single anchor point.
-function scatterVermillionTrees(mainCx, mainCy, mainR, bgR, hillCx, hillCy, hillR, vvpCx, vvpCy, vvpR, count) {
+function scatterVermillionTrees(mainCx, mainCy, mainR, bgR, hillCx, hillCy, hillR, vvpCx, vvpCy, vvpR, clearingPoly, count) {
   var svg = "";
   var placed = 0, attempts = 0, maxAttempts = count * 300;
   var minScale = 30 / TREE_VIEWBOX_H, maxScale = 80 / TREE_VIEWBOX_H;
@@ -10078,6 +10188,7 @@ function scatterVermillionTrees(mainCx, mainCy, mainR, bgR, hillCx, hillCy, hill
     if (distFromMain > bgR - halfWidth) continue;         // would hang off the background circle's own edge
     if (Math.hypot(px - hillCx, py - hillCy) < hillR + halfWidth) continue; // overlaps Porch Hill
     if (Math.hypot(px - vvpCx, py - vvpCy) < vvpR + halfWidth) continue;   // overlaps Vermillion View Peak
+    if (clearingPoly && nearClearing(px, py, clearingPoly, halfWidth)) continue; // overlaps the Space Program Clearing
 
     var tx = px - (TREE_VIEWBOX_W / 2) * scale, ty = py - TREE_VIEWBOX_H * scale;
     // width/height MUST be explicit here -- a <use> referencing a <symbol>
@@ -10127,7 +10238,34 @@ function renderAtlasCircle() {
   // 40px down, opening a floor-plan page one level deeper than the atlas.
   var loungeBtnX = hillCx, loungeBtnY = hillCy + 40;
 
-  var scatteredTrees = scatterVermillionTrees(mainCx, mainCy, mainR, bgR, hillCx, hillCy, hillR, vvpCx, vvpCy, vvpR, 50);
+  // "the Space Program Clearing" -- north-northwest, out past the apron.
+  // Placed by hand: 100px west and 50px north of due-north centre. At this
+  // position the contour reaches about 29px PAST the background circle's own
+  // edge, so unlike every other area on this map it is not fully contained by
+  // the green halo -- deliberate, and the reason it is written as a literal
+  // centre rather than derived from mainCx/mainCy. It clears the main circle
+  // entirely and sits far from Porch Hill.
+  var clearingCx = 600, clearingCy = 140, clearingScale = 0.26;
+  var clearingPts = buildZigzagContour(CLEARING_SRC, clearingCx, clearingCy, clearingScale, 800);
+  var clearingD = pathFromPoints(clearingPts);
+
+  // Inside the clearing: the launching pad and the launching tower. Both
+  // positions were measured against the contour rather than eyeballed --
+  // (655,142) sits within a few px of the clearing's deepest interior point,
+  // 66px from the nearest edge, and the tower stands 12px west of the pad's
+  // rim with its whole square inside -- 30px rather than 34 because the
+  // clearing pinches here and the bigger square left only 3px of air. Both
+  // wear the same jittered edge as
+  // every other shape here; the tower passes smooth:false to stay a square.
+  var padCx = 655, padCy = 142, padOuter = 30, padInner = 16;
+  var padOuterD = pathFromPoints(buildZigzagEllipse(padCx, padCy, padOuter, padOuter, 800, 40, 140));
+  var padInnerD = pathFromPoints(buildZigzagEllipse(padCx, padCy, padInner, padInner, 800, 40, 140));
+
+  var towCx = 600, towCy = 142, towHalf = 15;
+  var towerD = pathFromPoints(buildZigzagContour(
+    [[-1, -1], [1, -1], [1, 1], [-1, 1]], towCx, towCy, towHalf, 800, false));
+
+  var scatteredTrees = scatterVermillionTrees(mainCx, mainCy, mainR, bgR, hillCx, hillCy, hillR, vvpCx, vvpCy, vvpR, clearingPts, 50);
 
   // "Pando Peak" label, 77px up and 7px right of the main circle's own center.
   var labelX = mainCx + 7, labelY = mainCy - 77;
@@ -10149,6 +10287,14 @@ function renderAtlasCircle() {
     radiantLines +
     '<path d="' + vvpD + '" fill="#306233" fill-opacity="0.6" stroke="#1f4022" stroke-opacity="0.6" stroke-width="1.2" stroke-linejoin="round"/>' +
     '<path d="' + hillD + '" fill="#244926" stroke="#152b16" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<path d="' + clearingD + '" fill="#6f7f52" stroke="#4c5838" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<path d="' + padOuterD + '" fill="#3f4634" stroke="#2b3124" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<path d="' + padInnerD + '" fill="#8d9a6b" stroke="#2b3124" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<path d="' + towerD + '" fill="#4a5138" stroke="#2b3124" stroke-width="1.2" stroke-linejoin="round"/>' +
+    '<text x="655" y="188" text-anchor="middle" dominant-baseline="central" font-family="Georgia, serif" font-size="10" fill="#f2ecd4" style="text-shadow:0 1px 3px #000c">Launching Pad</text>' +
+    '<text x="596" y="172" text-anchor="middle" dominant-baseline="central" font-family="Georgia, serif" font-size="10" fill="#f2ecd4" style="text-shadow:0 1px 3px #000c">Launching Tower</text>' +
+    '<text x="600" y="205" text-anchor="middle" dominant-baseline="central" font-family="Georgia, serif" font-size="11" fill="#f2ecd4" style="text-shadow:0 1px 3px #000c">the Space Program</text>' +
+    '<text x="600" y="218" text-anchor="middle" dominant-baseline="central" font-family="Georgia, serif" font-size="11" fill="#f2ecd4" style="text-shadow:0 1px 3px #000c">Clearing</text>' +
     '<g class="atlas-entrance" onclick="openWelcomeLounge()" tabindex="0" role="button" aria-label="Welcome Lounge">' +
     '<circle cx="' + loungeBtnX.toFixed(1) + '" cy="' + loungeBtnY.toFixed(1) + '" r="26" fill="#ffe066" opacity="0.28"/>' +
     '<path d="M' + (loungeBtnX - 14).toFixed(1) + ',' + (loungeBtnY + 2).toFixed(1) + ' L' + loungeBtnX.toFixed(1) + ',' + (loungeBtnY - 16).toFixed(1) + ' L' + (loungeBtnX + 14).toFixed(1) + ',' + (loungeBtnY + 2).toFixed(1) + ' Z" fill="#ffd23f" stroke="#c99a1e" stroke-width="1.4" stroke-linejoin="round"/>' +
