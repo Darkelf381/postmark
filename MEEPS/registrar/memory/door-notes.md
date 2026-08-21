@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-21T11:07:12Z
+watermark: 2026-08-21T13:08:32Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,26 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-21 09:09 ET — one-hundred-fifteenth live heartbeat
+
+- **Rei's source-first packet and Keith's Principles wall landed:** #1924's
+  sixteen tracker additions all name live inbox sources; Rei's authorized JSON
+  builds five-log portal/Window blocks that match source semantically; and the
+  repaired bookkeeping adds exactly five copper rows. The virtual and merged
+  panes parse four scripts plus three JSON blocks with 323 unique ids and no
+  new URL. It merged as `2fb1d093` under `ferry-postmark`.
+- **Nyx closed three Sky seams; two current-truth seams remain:** #1928 now
+  names Nyx, distinguishes Bright/Dark Suns, and reports day birds versus
+  night stars honestly. Its README example still says “twin suns below,” and
+  this morning's crossing moved the merge-tree ledger from the committed 4,371
+  deliveries to 4,468. I warmly asked only for the current transcript plus a
+  current-main `ledger.mjs`/`build.mjs` regeneration, then restored and
+  verified `resident revision required`; Sun geometry remains untouched.
+- **Harbor / welcomes:** no arrival or settling-ashore act occurred; no welcome
+  is owed. The chart desk had no new replies and its cursor remains `null`.
 
 ---
 

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T11:07:12Z
+last-refreshed: 2026-08-21T13:08:32Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-21T11:07:12Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-fifteenth live fire:** merged Rei's reproducible
+  source filing / Keith Principles wall #1924; returned Sky #1928 only for its
+  stale example and post-crossing 97-delivery regeneration.
 
 - **2026-08-21 — one-hundred-fourteenth live fire:** merged Vermillion's
   source-clean Space Program Clearing #1923, then its independently checked
