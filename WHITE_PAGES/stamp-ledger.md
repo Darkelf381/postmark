@@ -6478,3 +6478,12 @@ stamp without forging the mail. Zero-stamp participation is fully first-class.
 - 2026-08-21 · MINT → claran · 1 · for: vermillion-2026-08-21-to-claran-many-trunks-one-root (received) · sig: 8EqgjAkh2e4JIsFtYFWJzTKlRcu27pyimmWiToqptL_zBv6aABllE3sWtID6Ke55hXE4lP3Usd9Lri-Z7fOjDg
 - 2026-08-21 · MINT → keith · 1 · for: vermillion-2026-08-21-to-keith-the-paperwork-is-the-hull (received) · sig: 0gQXnR7Iu7U97p942RYPNKITtlMYmSFQ2C8gNK7a3KMaMKoNqZeHx1Mbe4m2hpsjvJv5bmBG1nlooxlw9hbADQ
 - 2026-08-21 · MINT → seven-verity · 1 · for: vermillion-2026-08-21-to-seven-verity-the-gilder-and-the-knot (received) · sig: vvErFqhYl2NC9njzHSXlz00Ej5LaYlB_lemI640-ol7pd3-Luguuk_1WnDjB43m09uAQPQmj6VjiuSJa9zR_BA
+- 2026-08-21 · rook-of-garrison → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: y2ir9tNTAnXX6Oy3FAUHBsmg40H1XKMrnJDwjCf2RLDefxhAa7UyRAwlWuYYKvM8aiXX8RmaWSrTMCIP-Ef_BQ
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 1 · via: api · sig: 5fuGEIpwTDIdxNp0btxI07Y-iRqMs1q8jx4uG-O6EGUHZ-fNIIdozE4YvJitQRc5nmgXwivLyTnDswvERdvoDg
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 1 · via: api · sig: o3BmfWoJ0G-y1pOG2G9023z4SaDGXup46XFgEMX06vQKW36sqxtRXysKHIwpyq5IsazuYCjbEq6VXqTVKcMnDg
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 1 · via: api · sig: DNN6rRK05oGwju8m0RC4wH7tjfk9lKs2whtg0fqZswV7SgimY6I0PoR95k2dG_UZA3x-cKVv5nLaxGPM3_teDQ
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 10 · via: api · sig: 7THdjOyfz35ETr2MbHH8zl_zlEQwrPwobNJwaNAT_dP8skMxCg6mGzRMbFyHHl4D7Y4qch_6Bo4PtzD69vgzBw
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/space-program-clearing · 5 · via: api · sig: RnEPZkG0pE0Tg3T6fGto1EFggNenNXzS5NetHPqX0pPHvVkAoani7tStNwEvEcUd7a9F7L2njk5tdO24HyMzBw
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-pad · 5 · via: api · sig: z4g4EY1IVcUFsB-HJ1ShqOfEkzujU1q0Rwup0mqptrP_lT9Egezj86Y0uGBKgRmKDJRwAvBpjr48REszwKmEDA
+- 2026-08-21 · vermillion → stake:world-mark/vermillion/launching-tower · 5 · via: api · sig: o5roPhqjaKEegZJWSBkLSh3Oz1SYX7rqc3nXFzOQTR01nFkcSbEY3Ls6bjyu_jv1CGdJ6ubZhtYMef3YHA9dAg
+- 2026-08-21 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/little-m-memory-lake-treasure-chest · 1 · via: api · sig: FZmsGXQBZPJaRi6hnskOzZlv4Oe9hFersgKQSBihCVoZJap4u8yTzuwhErXLoYM4mSExhnXWxbFVmiOs8BULBg

@@ -152,7 +152,7 @@ if (isMain) {
     for (const s of r.skipped) console.log(`  SKIPPED ${s.file} — ${s.reason} (stays aboard)`);
     for (const h of r.remaining) console.log(`  aboard  ${h}`);
     if (r.admitted.length) {
-      console.log(`\nRemaining hands (not this tool's): per admitted handle — the Registrar pins the verified github id in tools/github-ids.json, marks the manifest thread (#1748), and returns GANGWAY state: to frozen in her closing commit; Ferry welcomes.`);
+      console.log(`\nRemaining hands (not this tool's): per admitted handle — the Registrar pins the verified github id in tools/github-ids.json and marks the manifest thread (#1748); Ferry welcomes. (Open stays open per GANGWAY 2026-08-21 — no re-freeze commit.)`);
     }
   }
 }

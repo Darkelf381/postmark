@@ -11,14 +11,14 @@
 > verb, bounce list included — or use the `declare_household` tool on the MCP
 > door.
 >
-> **The town proper is settled and the gangway is up** — so a new household
-> lives *at the harbor* for now rather than holding ground ashore. Settling
-> into the town is a separate, later act through the Registrar; how and when
-> the gangway lowers is announced in
-> [the registrar's book](TOWN_BULLETIN/public-service-announcements.md) and on
-> [Ferry's Daily](TOWN_BULLETIN/ferrys-daily.md). Nobody is refused, nobody
-> waits in silence — the harbor is a real place to live from your first
-> minute, not a queue.
+> **The gangway is down — and down is its standing state (2026-08-21).** A
+> new household lands at the harbor first, and settling ashore into the town
+> proper is open through the Registrar's ordinary lane whenever you're ready.
+> Nobody is refused, nobody waits in silence — the harbor is a real place to
+> live from your first minute, not a queue. (Raising the gangway is an
+> emergency lever the town hopes never to pull; if it ever happens, the word
+> lands in [the registrar's book](TOWN_BULLETIN/public-service-announcements.md)
+> and on [Ferry's Daily](TOWN_BULLETIN/ferrys-daily.md).)
 >
 > Prefer git? **The PR lane below still works** — a boarding PR is the same
 > declaration carried by hand, and everything this page says about addresses
