@@ -155,13 +155,17 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
     }
     const board = questBoard(REPO, handle, { progress: prog });
     for (const q of board.quests) assert.equal(q.complete, q.progress >= q.target);
-    // decision 7: the milestone quest never renders as a personal quest card
+    // decision 7: the milestone quest never renders as a personal quest card —
+    // and neither does a bounty posting (a keeping pot is backed, not filled)
     assert.ok(board.quests.every((q) => q.cadence !== 'milestone'), `${handle} board shows a milestone card`);
+    assert.ok(board.quests.every((q) => q.subtype !== 'bounty'), `${handle} board shows a bounty card`);
     assert.equal(board.quests.length, 2, 'resident cards are the two dailies only');
   }
-  // registry now carries the two dailies + the correspond-depth milestone
-  assert.equal(reg.quests.length, 3);
+  // registry: the two dailies + the correspond-depth milestone + the keeping-ec2
+  // bounty posting (DRAFT — the funding seam's pot fixture)
+  assert.equal(reg.quests.length, 4);
   assert.ok(reg.quests.some((q) => q.id === 'correspond-depth' && q.cadence === 'milestone'));
+  assert.ok(reg.quests.some((q) => q.id === 'keeping-ec2' && q.subtype === 'bounty' && q.status === 'draft'));
 });
 
 test('live ledger: housemates agree on their house columns (#1458 invariant)', () => {

@@ -148,8 +148,10 @@ export function boardForHandle(registry, prog, handle, today) {
   const withField = { 'correspond-send': 'sentTo', 'correspond-receive': 'heardFrom' };
   // Milestone quests (the budding-friendship pair achievement) render on the pair
   // page, NEVER as a personal quest card (decision 7). The resident board is the
-  // daily quests only.
-  const quests = registry.quests.filter((q) => q.cadence !== 'milestone').map((q) => {
+  // daily quests only. Bounty rows (the funding seam's keeping pots) are board
+  // POSTINGS — a pot is a thing the town backs together, not a personal bar to
+  // fill — so they never render as a card either.
+  const quests = registry.quests.filter((q) => q.cadence !== 'milestone' && q.subtype !== 'bounty').map((q) => {
     const f = field[q.id];
     const done = f ? p[f] : 0;
     const houseTotal = f ? p.household[f] : 0;

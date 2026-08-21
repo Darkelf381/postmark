@@ -34,6 +34,7 @@ import {
   settlementDecision, meepChecker, rulesLine,
   parseStampLedger, sealChain, foldBalances, parseLaws, classifyEntry, walkLedger,
   townIssuanceDial,
+  keepingDial, potFile, deriveEpochClose, keepingLine, TREASURY_POT,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -128,6 +129,56 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     const isMeep = meepChecker(laws);
     const seenSettlements = new Set();   // pays-delivery ids the ledger has settled
 
+    // ── the funding seam's state (keeping pots) ──────────────────────────────
+    const potPosition = new Map();       // `${pot}|${handle}` -> open keeping escrow
+    const potReceipts = new Map();       // ref -> the receipt row (mint-at-entry: one ref, ever)
+    const deededRefs = new Set();        // refs a patron-deed has consumed
+    const potFiles = new Map();          // pot -> file (cached)
+    const closeSpans = new Map();        // `${pot}|${epoch}` -> { start, end } of the verified close block
+    const kDial = keepingDial(repo);
+    let warnedNoKeepingDial = false;
+    const householdsBase = householdKeys(repo);
+    const potOf = (pot) => {
+      if (!potFiles.has(pot)) potFiles.set(pot, potFile(repo, pot));
+      return potFiles.get(pot);
+    };
+    // The close block is replayed EXACTLY: at the first row of a close for
+    // (pot, epoch), re-derive the whole block from the ledger prefix + the pot
+    // file + the keeping dial, and demand the recorded rows match byte-for-byte
+    // in canonical order. A wrong holo (or burn, or keeper) row fails here the
+    // way a forged mint fails REPLAY. Returns the problem string, or null.
+    const CLOSE_KINDS = new Set(['pot-return', 'keeping-burn', 'keeper-equity', 'holo', 'patron-deed']);
+    const checkCloseBlock = (i, cls) => {
+      const key = `${cls.pot}|${cls.epoch}`;
+      const span = closeSpans.get(key);
+      if (span) {
+        if (i >= span.start && i <= span.end) return null; // inside its verified block
+        return `line ${i + 1}: LAWFUL fails — ${cls.kind} row for ${cls.pot}/${cls.epoch} outside its close block (a close is one contiguous derivation, appended once)`;
+      }
+      if (kDial === null) {
+        if (!warnedNoKeepingDial) {
+          notes.push('keeping closes UNCHECKED — no readable law_side.keeping in ECONOMY-DIALS.json');
+          warnedNoKeepingDial = true;
+        }
+        closeSpans.set(key, { start: 0, end: Infinity }); // structural checks still run
+        return null;
+      }
+      const expected = deriveEpochClose({
+        entries: entries.slice(0, i), households: householdsBase,
+        pot: cls.pot, potMeta: potOf(cls.pot), epoch: cls.epoch, date: cls.date, dial: kDial,
+      });
+      if (!expected.ok) return `line ${i + 1}: LAWFUL fails — epoch close ${cls.pot}/${cls.epoch} derives no lawful block: ${expected.error}`;
+      const want = expected.rows.map(keepingLine);
+      for (let j = 0; j < want.length; j++) {
+        const got = entries[i + j]?.canonical;
+        if (got !== want[j]) {
+          return `line ${i + j + 1}: KEEPING REPLAY DIVERGES — epoch close ${cls.pot}/${cls.epoch}\n  recorded: ${got ?? '(ledger ends)'}\n  derived : ${want[j]}`;
+        }
+      }
+      closeSpans.set(key, { start: i, end: i + want.length - 1 });
+      return null;
+    };
+
     for (let i = 0; i < entries.length; i++) {
       const c = entries[i].canonical;
       const cls = classifyEntry(c);
@@ -177,6 +228,93 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
           problems.push(`line ${lineNo}: LAWFUL fails — ${cls.handle} unstakes ${cls.n} from world-mark ${cls.mark} but holds only ${open} there`); break;
         }
         markPosition.set(pk, open - cls.n);
+      }
+
+      // ── the funding seam (keeping pots) ──────────────────────────────────
+      // Overdraw is structural (the generic movement fold below); what these
+      // branches police is what the fold cannot see: ownership (whose escrow a
+      // return or burn drains), mint-at-entry (one receipt ref, ever), the meep
+      // law, and — via checkCloseBlock — that every close row belongs to a
+      // contiguous block matching the epoch-close derivation exactly.
+      if (cls.kind === 'pot-stake') {
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — meep "${cls.handle}" cannot stake`); break;
+        }
+        if (cls.pot === TREASURY_POT) {
+          problems.push(`line ${lineNo}: LAWFUL fails — "${TREASURY_POT}" is the reserved direct-to-town pot; it takes deeds, never stakes`); break;
+        }
+        if (!potOf(cls.pot)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — stake names unknown pot "${cls.pot}" (no WHITE_PAGES/pot-${cls.pot}.json)`); break;
+        }
+        const pk = `${cls.pot}|${cls.handle}`;
+        potPosition.set(pk, (potPosition.get(pk) ?? 0) + cls.n);
+      }
+
+      if (cls.kind === 'pot-receipt') {
+        if (cls.pot !== TREASURY_POT && !potOf(cls.pot)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — receipt names unknown pot "${cls.pot}" (no WHITE_PAGES/pot-${cls.pot}.json)`); break;
+        }
+        if (potReceipts.has(cls.ref)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already recorded (one dollar, one mint chance — a re-recorded receipt bounces)`); break;
+        }
+        potReceipts.set(cls.ref, cls);
+      }
+
+      if (cls.kind === 'pot-return' || cls.kind === 'keeping-burn') {
+        const blockProblem = checkCloseBlock(i, cls);
+        if (blockProblem) { problems.push(blockProblem); break; }
+        const pk = `${cls.pot}|${cls.handle}`;
+        const open = potPosition.get(pk) ?? 0;
+        if (cls.n > open) {
+          problems.push(`line ${lineNo}: LAWFUL fails — ${cls.kind} of ${cls.n} for ${cls.handle} on pot ${cls.pot}, but only ${open} is escrowed there`); break;
+        }
+        potPosition.set(pk, open - cls.n);
+      }
+
+      if (cls.kind === 'keeper-equity') {
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — keeper-equity to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        const blockProblem = checkCloseBlock(i, cls);
+        if (blockProblem) { problems.push(blockProblem); break; }
+      }
+
+      if (cls.kind === 'holo') {
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — holo to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        const blockProblem = checkCloseBlock(i, cls);
+        if (blockProblem) { problems.push(blockProblem); break; }
+      }
+
+      if (cls.kind === 'patron-deed') {
+        if (cls.pot === TREASURY_POT) {
+          // Direct-to-town dollars: the deed stands alone (no stakes, no close)
+          // and must restate its own receipt exactly. It can never carry holo —
+          // nothing burned, so nothing minted; the town never receives from its
+          // own seam either way.
+          const r = potReceipts.get(cls.ref);
+          if (!r || r.pot !== TREASURY_POT) {
+            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed ref "${cls.ref}" has no recorded treasury pot-receipt behind it`); break;
+          }
+          if (deededRefs.has(cls.ref)) {
+            problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already deeded (one dollar, one mint chance)`); break;
+          }
+          if (r.from !== cls.patron || r.usd !== cls.usd) {
+            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed disagrees with its receipt (receipt: ${r.from}, usd ${r.usd})`); break;
+          }
+          if (cls.holo !== 0) {
+            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed carries holo ${cls.holo}; direct-to-town dollars mint nothing`); break;
+          }
+          deededRefs.add(cls.ref);
+        } else {
+          const blockProblem = checkCloseBlock(i, cls);
+          if (blockProblem) { problems.push(blockProblem); break; }
+          if (deededRefs.has(cls.ref)) {
+            problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already deeded (one dollar, one mint chance)`); break;
+          }
+          deededRefs.add(cls.ref);
+        }
       }
 
       if (cls.kind === 'gift') {

@@ -24,6 +24,15 @@
       "unstake_friction": "none",
       "self_stake": "allowed",
       "_ruled": "2026-07-28 P3 build-gate; ECONOMY.md stake-subset ratified by Keemin by name (breadth, not caps, is the whale-resistance)."
+    },
+    "keeping": {
+      "sigma": 0.5,
+      "rho": 0.25,
+      "rho_constitutional_ceiling": 0.5,
+      "_what": "The funding seam's epoch-close split (keeping pots — grammar: stamp-mint.mjs § THE FUNDING SEAM; tool: tools/epoch-close.mjs, manual founder-run). Staked stamps matched by witnessed dollars BURN; the burned amount B splits floor(sigma*B) fresh keeper-equity to the pot's keeper + floor((1-sigma)*B) soulbound holo to the payers by dollar share. Both legs floor; every remainder burns un-minted — the seam keeps the change. 300 burned = 150 + 150, never 600.",
+      "_holo": "holo is a soulbound contribution-equity record with NO verbs — it cannot stake, vote, pay, or transfer, and is excluded from every tally (enforced by row shape: the holo line is arrow-free, so no balance/mint/stake fold ever sees one). rho caps it: a household's holo <= rho x its earned primary mint, clipped at conversion, excess recorded as deed only. rho may never exceed the constitutional ceiling of 0.5 — keepingDial refuses a dial that tries.",
+      "_exclusions": "Stakes controlled by the pot's beneficiary household RETURN, never convert; a payer mints holo only from the burn of OTHER households' stakes (nothing you fully control mints for you); unmatched stakes return whole; treasury dollars covering a shortfall match nothing and mint nothing — the town never receives from its own seam; dollars with no household (the founding family grant) land as deed, zero holo; a receipt ref is unique forever (one dollar, one mint chance).",
+      "_declared_not_exercised": "Written 2026-08-20 on the seam/ledger-legs branch, encoding Keemin's rulings of that night. No keeping row exists in the ledger; declaring the dial does not open a pot — opening one is the founder's word."
     }
   },
   "settlement": {

@@ -22,6 +22,14 @@
 //   - <date> · MINT → <handle> · <n> · for: gift:<slug> · by: <founder>   (founder gift — case-by-case award, principal-blessed 2026-07-18; drawn from MINT like any mint, recipient never a meep)
 //   - <date> · MINT → <handle> · <n> · for: friendship:<other> (via <letter-id>)   (stamps-v3 budding-friendship milestone — a DERIVED mint that rides the replay; both sides of a qualifying pair, forward-only from the v3 law date)
 //   - <date> · MINT → <treasury> · <n> · for: issuance:<purpose> · by: <who> · note: <provenance>   (town issuance — the town minting into its own treasury under MINT-AT-DEMAND: resting state zero, income spent first, a mint only for the shortfall, every line naming why. Recipient must be the handle ECONOMY-DIALS.json declares; purposes the dial names one-shot may appear once; note is the terminal free-text field and may hold no `·`. The founding grant is this class's FIRST instance, not a special shape.)
+//   THE FUNDING SEAM (keeping pots — S1, DRAFT branch seam/ledger-legs; dials: ECONOMY-DIALS.json law_side.keeping):
+//   - <date> · <handle> → stake:pot/<pot> · <n> · via: <api|mail:letter-id>   (keeping stake — the stake verb pointed at a funding pot; escrow rides the same movement mechanics; `pot/` is reserved out of the ballot topic space like `world-mark/`)
+//   - <date> · stake:pot/<pot> → <handle> · <n> · for: pot-return:<epoch>     (epoch close: unmatched or beneficiary-controlled stakes return whole)
+//   - <date> · stake:pot/<pot> → BURN · <n> · for: keeping:<epoch> · staker: <handle>   (epoch close: stakes matched by witnessed dollars burn — the first live use of the reserved BURN account)
+//   - <date> · MINT → <handle> · <n> · for: keeper-equity:<pot>/<epoch>       (epoch close: the keeper's σ share of the burn — a fresh primary mint, so it rides foldMintCount and liquid like any mint)
+//   - <date> · pot-receipt · pot:<pot> · rail: <stripe|usdc|grant> · usd: <n> · from: <payer> · ref: <ref>   (a witnessed real-dollar payment against a pot; ARROW-FREE — mints and moves nothing by itself; ref is unique forever: one dollar, one mint chance, a re-recorded receipt bounces)
+//   - <date> · holo · <payer-handle> · <n> · pot:<pot> · epoch:<epoch> · ref: <ref>   (the payer's soulbound holo from the (1−σ) share — ARROW-FREE BY DESIGN: holo has no verbs, cannot stake/vote/pay/transfer, so it must never match the movement shape the tallies fold; only foldHolo reads it)
+//   - <date> · patron-deed · pot:<pot> · patron: <payer> · usd: <n> · epoch:<epoch> · ref: <ref> · holo: <h>   (the durable patron record; h may be 0 — grant/treasury/outside dollars land as deed alone; pot `treasury` is the reserved direct-to-town pot: deeds only, never stakes or closes)
 //   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
 // Every entry is a two-sided movement — conservation is structural (entries
 // sum to zero against the MINT/BURN accounts); a balance is a pure fold, and
@@ -213,8 +221,13 @@ const MINT_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · 1 · for: (\S+) \((
 // It would fail later (no such ballot file), but it would fail as the wrong KIND,
 // and a silent misclassification is how stamps move somewhere nobody asked for.
 // Found by the conformance corpus, which is the whole reason dregg asked for one.
-const STAKE_RE = /^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:(?!world-mark\/)([a-z0-9-]+)\/([A-Za-z0-9-]+) · (\d+) · via: (\S+)$/;
-const RETURN_RE = /^- (\d{4}-\d{2}-\d{2}) · stake:(?!world-mark\/)([a-z0-9-]+)\/([A-Za-z0-9-]+) → (\S+) · (\d+) · for: close$/;
+// `pot/` joined `world-mark/` in the lookahead when the funding seam landed: a
+// keeping stake (`stake:pot/<id>`) must never parse as a VOTE stake on a topic
+// called "pot" — the same silent-misclassification class the world-mark
+// lookahead exists for. No live ballot topic is named "pot"; the live replay
+// stays byte-identical (checked: verify green over the unchanged ledger).
+const STAKE_RE = /^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:(?!world-mark\/|pot\/)([a-z0-9-]+)\/([A-Za-z0-9-]+) · (\d+) · via: (\S+)$/;
+const RETURN_RE = /^- (\d{4}-\d{2}-\d{2}) · stake:(?!world-mark\/|pot\/)([a-z0-9-]+)\/([A-Za-z0-9-]+) → (\S+) · (\d+) · for: close$/;
 // ── world-mark stakes (write-release P3; ruled 2026-07-27: extend the sealed mint)
 // A world-mark stake targets a mark in the told world, and a mark id is
 // `<by>/<slug>` — it CARRIES A SLASH, which STAKE_RE's candidate class cannot
@@ -280,6 +293,49 @@ const FRIENDSHIP_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) ·
 // text in the whole grammar; it may not contain the `·` field separator, or an
 // author could forge trailing fields inside their own provenance text.
 const ISSUANCE_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: issuance:([a-z0-9][a-z0-9-]*) · by: (\S+) · note: ([^·\n]+)$/;
+// ── THE FUNDING SEAM (keeping pots — S1) ─────────────────────────────────────
+// Real dollars keep the town's lights on without ever buying judgment. A pot is
+// a bounty file on the quest board (WHITE_PAGES/pot-<id>.json); residents stake
+// stamps on it with the EXISTING stake verb (the pot as subject — the world-mark
+// precedent: its own regex pair, the same movement vocabulary, so conservation
+// folds it structurally); real payments land as witnessed pot-receipt rows; and
+// a MANUAL founder-run epoch close (tools/epoch-close.mjs) burns the stakes that
+// matched witnessed dollars and splits the burn σ / (1−σ) into keeper-equity
+// (fresh primary mint to the pot's keeper) and holo (soulbound
+// contribution-equity to the payers, by dollar share). The whole close is a pure
+// function (deriveEpochClose below) that the verifier replays exactly — a wrong
+// holo row fails LAWFUL the way a forged mint fails REPLAY.
+//
+// Ruled laws this grammar encodes (Keemin, 2026-08-20):
+//   - holo is SOULBOUND and verbless: it cannot stake, vote, pay, or transfer,
+//     and is excluded from every tally. Enforced by SHAPE — the holo row is
+//     arrow-free, so no balance/mint/stake fold can ever see one.
+//   - holo cap: a household's holo ≤ ρ × its earned primary mint (ρ from the
+//     keeping dial; constitutional ceiling 0.5). Excess records as deed only.
+//   - σ-split with floors (R1): keeper gets floor(σ·B), payers split
+//     floor((1−σ)·B) by dollar share, floored per receipt; every remainder
+//     burns un-minted — the seam keeps the change. 300 burned = 150 + 150.
+//   - self-stake exclusion: stakes controlled by the beneficiary's household
+//     RETURN, never convert; and a payer mints holo only from the burn of
+//     OTHER households' stakes — nothing you fully control mints for you.
+//   - unmatched stakes return whole; treasury dollars (`the-town` paying its
+//     own shortfall) match nothing and mint nothing — the town never receives
+//     from its own seam; dollars with no household land as deed, zero holo.
+//   - mint-at-entry: a receipt ref is unique forever; one dollar, one mint
+//     chance — a re-recorded receipt bounces at the door AND fails verify.
+const POT_ID_CLASS = String.raw`[a-z0-9][a-z0-9-]*`;
+const EPOCH_CLASS = String.raw`\d{4}-\d{2}`;
+export const KEEPING_RAILS = ['stripe', 'usdc', 'grant'];
+// The reserved direct-to-town pot: deeds (and their receipts) only — no file,
+// no stakes, no close. The founding family grant is its first deed.
+export const TREASURY_POT = 'treasury';
+const POT_RECEIPT_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · pot-receipt · pot:(${POT_ID_CLASS}) · rail: (stripe|usdc|grant) · usd: ([1-9]\d*) · from: (\S+) · ref: (\S+)$`);
+const POT_STAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:pot\/(${POT_ID_CLASS}) · ([1-9]\d*) · via: (\S+)$`);
+const POT_RETURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → (\S+) · ([1-9]\d*) · for: pot-return:(${EPOCH_CLASS})$`);
+const KEEPING_BURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → BURN · ([1-9]\d*) · for: keeping:(${EPOCH_CLASS}) · staker: (\S+)$`);
+const KEEPER_EQUITY_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: keeper-equity:(${POT_ID_CLASS})\/(${EPOCH_CLASS})$`);
+const HOLO_MINT_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · holo · (\S+) · ([1-9]\d*) · pot:(${POT_ID_CLASS}) · epoch:(${EPOCH_CLASS}) · ref: (\S+)$`);
+const PATRON_DEED_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · patron-deed · pot:(${POT_ID_CLASS}) · patron: (\S+) · usd: ([1-9]\d*) · epoch:(${EPOCH_CLASS}) · ref: (\S+) · holo: (\d+)$`);
 
 export function classifyEntry(canonical) {
   let m;
@@ -304,6 +360,25 @@ export function classifyEntry(canonical) {
     return { kind: 'world-stake', date: m[1], handle: m[2], mark: m[3], n: Number(m[4]), via: m[5] };
   if ((m = WORLD_UNSTAKE_RE.exec(canonical)))
     return { kind: 'world-unstake', date: m[1], mark: m[2], handle: m[3], n: Number(m[4]) };
+  // Keeping-pot movements sit above TRANSFER for the same reason the world pair
+  // does: a pot stake carried by a letter reads `via: mail:<id>`, which
+  // TRANSFER_RE would otherwise claim as a payment to an account named
+  // `stake:pot/...`. The arrow-free trio (receipt/holo/deed) can collide with
+  // nothing that moves, so their order only needs to precede `unknown`.
+  if ((m = POT_STAKE_RE.exec(canonical)))
+    return { kind: 'pot-stake', date: m[1], handle: m[2], pot: m[3], n: Number(m[4]), via: m[5] };
+  if ((m = POT_RETURN_RE.exec(canonical)))
+    return { kind: 'pot-return', date: m[1], pot: m[2], handle: m[3], n: Number(m[4]), epoch: m[5] };
+  if ((m = KEEPING_BURN_RE.exec(canonical)))
+    return { kind: 'keeping-burn', date: m[1], pot: m[2], n: Number(m[3]), epoch: m[4], handle: m[5] };
+  if ((m = KEEPER_EQUITY_RE.exec(canonical)))
+    return { kind: 'keeper-equity', date: m[1], handle: m[2], n: Number(m[3]), pot: m[4], epoch: m[5] };
+  if ((m = POT_RECEIPT_RE.exec(canonical)))
+    return { kind: 'pot-receipt', date: m[1], pot: m[2], rail: m[3], usd: Number(m[4]), from: m[5], ref: m[6] };
+  if ((m = HOLO_MINT_RE.exec(canonical)))
+    return { kind: 'holo', date: m[1], handle: m[2], n: Number(m[3]), pot: m[4], epoch: m[5], ref: m[6] };
+  if ((m = PATRON_DEED_RE.exec(canonical)))
+    return { kind: 'patron-deed', date: m[1], pot: m[2], patron: m[3], usd: Number(m[4]), epoch: m[5], ref: m[6], holo: Number(m[7]) };
   if ((m = VOID_RE.exec(canonical)))
     return { kind: 'void', date: m[1], id: m[2], from: m[3], to: m[4], n: Number(m[5]), reason: m[6] };
   if ((m = GIFT_RE.exec(canonical)))
@@ -523,6 +598,10 @@ export function deriveTransfers(deliveries, households, { laws = [], revisions =
     else if (c.kind === 'return') add(c.handle, c.n);   // escrow returned on close
     else if (c.kind === 'vote-mint') add(c.handle, 1);  // +1 for casting
     else if (c.kind === 'gift') add(c.handle, c.n);     // founder gift — recorded before any settlement we'd append, so it funds later pays
+    else if (c.kind === 'pot-stake') add(c.handle, -c.n);      // keeping escrow out
+    else if (c.kind === 'pot-return') add(c.handle, c.n);      // unmatched/beneficiary stakes back at close
+    else if (c.kind === 'keeper-equity') add(c.handle, c.n);   // the keeper's σ share — fresh, spendable, funds later pays
+    // keeping-burn drains the escrow account, never a handle; holo/receipt/deed rows are arrow-free and move nothing
     // recorded mints/transfers are re-derived here — never folded from the record
   }
   const isMeep = meepChecker(laws);
@@ -631,6 +710,41 @@ export function townIssuanceDial(repo) {
 // One derived economy line for a transfer-or-void object (from deriveTransfers).
 export const economyLine = (t) => (t.kind === 'void' ? voidLine(t) : transferLine(t));
 
+// ── the funding seam's line builders ─────────────────────────────────────────
+
+export const potReceiptLine = ({ date, pot, rail, usd, from, ref }) =>
+  `- ${date} · pot-receipt · pot:${pot} · rail: ${rail} · usd: ${usd} · from: ${from} · ref: ${ref}`;
+
+export const potStakeLine = ({ date, handle, pot, n, via }) =>
+  `- ${date} · ${handle} → stake:pot/${pot} · ${n} · via: ${via}`;
+
+export const potReturnLine = ({ date, pot, handle, n, epoch }) =>
+  `- ${date} · stake:pot/${pot} → ${handle} · ${n} · for: pot-return:${epoch}`;
+
+export const keepingBurnLine = ({ date, pot, n, epoch, handle }) =>
+  `- ${date} · stake:pot/${pot} → BURN · ${n} · for: keeping:${epoch} · staker: ${handle}`;
+
+export const keeperEquityLine = ({ date, handle, n, pot, epoch }) =>
+  `- ${date} · MINT → ${handle} · ${n} · for: keeper-equity:${pot}/${epoch}`;
+
+export const holoMintLine = ({ date, handle, n, pot, epoch, ref }) =>
+  `- ${date} · holo · ${handle} · ${n} · pot:${pot} · epoch:${epoch} · ref: ${ref}`;
+
+export const patronDeedLine = ({ date, pot, patron, usd, epoch, ref, holo }) =>
+  `- ${date} · patron-deed · pot:${pot} · patron: ${patron} · usd: ${usd} · epoch:${epoch} · ref: ${ref} · holo: ${holo}`;
+
+// One canonical line for any close-row object (from deriveEpochClose.rows).
+export const keepingLine = (r) => {
+  switch (r.kind) {
+    case 'pot-return': return potReturnLine(r);
+    case 'keeping-burn': return keepingBurnLine(r);
+    case 'keeper-equity': return keeperEquityLine(r);
+    case 'holo': return holoMintLine(r);
+    case 'patron-deed': return patronDeedLine(r);
+    default: throw new Error(`not a keeping row kind: ${r.kind}`);
+  }
+};
+
 // ── stamp-ledger parsing + seal chain ────────────────────────────────────────
 
 export function parseStampLedger(text) {
@@ -716,8 +830,14 @@ export function foldStaked(entries) {
     // count them, `assets = liquid + staked` would quietly under-report by exactly
     // the amount escrowed on marks — the three-tenses invariant broken with every
     // number still looking plausible. Tested directly.
-    if (c.kind === 'stake' || c.kind === 'world-stake') st.set(c.handle, (st.get(c.handle) ?? 0) + c.n);
-    else if (c.kind === 'return' || c.kind === 'world-unstake') st.set(c.handle, (st.get(c.handle) ?? 0) - c.n);
+    // Keeping stakes are the third member of the staked tense, for the same
+    // reason world-mark stakes are: foldBalances already moved their stamps to
+    // escrow, so leaving them out would break assets = liquid + staked. A
+    // keeping-burn LEAVES the staked tense without returning to liquid — the
+    // stamps are gone (that is the seam's whole trade) — so it decrements here
+    // and nowhere else; the staker's mint_count never moves.
+    if (c.kind === 'stake' || c.kind === 'world-stake' || c.kind === 'pot-stake') st.set(c.handle, (st.get(c.handle) ?? 0) + c.n);
+    else if (c.kind === 'return' || c.kind === 'world-unstake' || c.kind === 'pot-return' || c.kind === 'keeping-burn') st.set(c.handle, (st.get(c.handle) ?? 0) - c.n);
   }
   return st;
 }
@@ -751,6 +871,235 @@ export function foldWorldMarkPositions(entries) {
   }
   for (const [k, v] of pos) if (v === 0) pos.delete(k);
   return pos;
+}
+
+// ── the funding seam's folds (all pure, all recomputable) ────────────────────
+
+// Per (pot, handle) open keeping escrow: stakes minus returns minus burns.
+export function foldPotPositions(entries) {
+  const pos = new Map(); // `${pot}|${handle}` -> open escrow
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'pot-stake' || c.kind === 'pot-return' || c.kind === 'keeping-burn') {
+      const k = `${c.pot}|${c.handle}`;
+      pos.set(k, (pos.get(k) ?? 0) + (c.kind === 'pot-stake' ? c.n : -c.n));
+    }
+  }
+  for (const [k, v] of pos) if (v === 0) pos.delete(k);
+  return pos;
+}
+
+// Every pot-receipt in ledger order, and the refs already consumed by a deed.
+// A receipt whose ref is deeded has had its one mint chance — mint-at-entry.
+export function foldPotReceipts(entries) {
+  const receipts = []; // [{ date, pot, rail, usd, from, ref }]
+  const deeded = new Set(); // refs a patron-deed has consumed
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'pot-receipt') receipts.push(c);
+    else if (c.kind === 'patron-deed') deeded.add(c.ref);
+  }
+  return { receipts, deeded };
+}
+
+// Soulbound holo per handle — the ONE reader of holo rows. Deliberately not a
+// balance: nothing spends it, nothing stakes it, nothing folds it in anywhere
+// else. holoHeldByHousehold aggregates it the way the ρ-cap counts it.
+export function foldHolo(entries) {
+  const h = new Map(); // handle -> holo
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'holo') h.set(c.handle, (h.get(c.handle) ?? 0) + c.n);
+  }
+  return h;
+}
+
+// The epochs a pot has already closed (any close row names its epoch).
+export function foldClosedEpochs(entries) {
+  const closed = new Set(); // `${pot}|${epoch}`
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'pot-return' || c.kind === 'keeping-burn' || c.kind === 'keeper-equity') closed.add(`${c.pot}|${c.epoch}`);
+    else if ((c.kind === 'holo' || c.kind === 'patron-deed') && c.pot !== TREASURY_POT) closed.add(`${c.pot}|${c.epoch}`);
+  }
+  return closed;
+}
+
+// The keeping dial (σ, ρ). Same posture as townIssuanceDial: no dial, no close —
+// an undeclared split is not a default to guess at.
+export function keepingDial(repo) {
+  const path = join(repo, 'ECONOMY-DIALS.json');
+  if (!existsSync(path)) return null;
+  try {
+    const j = JSON.parse(readFileSync(path, 'utf8'));
+    const d = j?.law_side?.keeping ?? null;
+    if (!d || typeof d.sigma !== 'number' || typeof d.rho !== 'number') return null;
+    const ceiling = typeof d.rho_constitutional_ceiling === 'number' ? d.rho_constitutional_ceiling : 0.5;
+    if (!(d.sigma > 0 && d.sigma < 1) || !(d.rho >= 0) || d.rho > ceiling) return null;
+    const treasury = j?.law_side?.town_issuance?.treasury_handle ?? null;
+    return { sigma: d.sigma, rho: d.rho, rhoCeiling: ceiling, treasury };
+  } catch { return null; }
+}
+
+// The pot file — a bounty file on the quest board, ballot-file style:
+// WHITE_PAGES/pot-<id>.json. The verifier reads it the way it reads a ballot
+// file (checkout state; the committed file is the record).
+export function potFile(repo, pot) {
+  const p = join(repo, 'WHITE_PAGES', `pot-${pot}.json`);
+  if (!existsSync(p)) return null;
+  try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; }
+}
+
+// ── the epoch close (the ONE decision, shared by the tool and the verifier) ──
+// A pure function of the ledger prefix the close lands on, the pot file, and
+// the keeping dial. tools/epoch-close.mjs derives-and-appends; stamp-verify
+// re-derives from the same prefix and demands the recorded block match exactly
+// — there is no second copy of the law (the settlementDecision precedent).
+//
+// Given pot P at epoch E on close date D:
+//   dollars   = P's pot-receipts not yet deeded; matching excludes the
+//               treasury's own dollars (the town never receives from its own seam)
+//   stakes    = open `stake:pot/P` positions; the beneficiary household's
+//               positions RETURN whole (self-stake exclusion), the rest are
+//               eligible
+//   burn      = eligible stakes matched against matching dollars: everything if
+//               stakes ≤ dollars, else floor(stake_i · D/S) pro-rata — the
+//               unmatched remainder of every stake returns whole
+//   split     = keeper floor(σ·B); payers floor((1−σ)·B_other · usd/D) per
+//               receipt, where B_other excludes the payer household's own
+//               burned stakes (sole-staker-sole-payer mints zero); each holo
+//               then clips to the ρ-cap (household holo ≤ floor(ρ · earned
+//               primary mint)); every floored/clipped/excluded remainder burns
+//               un-minted — the seam keeps the change
+//   deeds     = one patron-deed per receipt, always — dollars are remembered
+//               even when they mint nothing
+// Row order is canonical (returns, burns, keeper, holos, deeds — names sorted,
+// receipts in ledger order), which is what lets the verifier match the block
+// byte-for-byte.
+export function deriveEpochClose({ entries, households, pot, potMeta, epoch, date, dial }) {
+  const err = (error) => ({ ok: false, error });
+  if (!dial) return err('no keeping dial (ECONOMY-DIALS.json law_side.keeping) — an undeclared split is not a default to guess at');
+  if (pot === TREASURY_POT) return err(`"${TREASURY_POT}" is the reserved direct-to-town pot — deeds only, never stakes or closes`);
+  if (!potMeta) return err(`no pot file WHITE_PAGES/pot-${pot}.json — a close needs the pot it closes`);
+  const beneficiary = potMeta.beneficiary;
+  if (!beneficiary || typeof beneficiary !== 'string') return err(`pot "${pot}" names no beneficiary — the keeper must be named before a close`);
+  if (dial.treasury && beneficiary === dial.treasury) return err('the treasury cannot keep a pot — the town never receives from its own seam');
+  if (!/^\d{4}-\d{2}$/.test(epoch)) return err(`epoch must be YYYY-MM, got "${epoch}"`);
+
+  const { laws, revisions } = parseLaws(entries);
+  if (meepChecker(laws)(beneficiary, date)) return err(`beneficiary "${beneficiary}" is a meep at ${date} — meeps stay outside the currency`);
+  if (foldClosedEpochs(entries).has(`${pot}|${epoch}`)) return err(`pot "${pot}" already closed epoch ${epoch} — one epoch, one close`);
+
+  const hhKey = (handle) => {
+    let key = households.get(handle)?.key ?? null;
+    for (const r of revisions) if (r.handle === handle && r.date <= date) key = r.key;
+    return key ?? `solo:${handle}`;
+  };
+  // A payer earns holo only as a town household: in the base registry or
+  // re-keyed by a sealed registry line. An outside patron (the founding family
+  // grant) resolves to neither and lands as deed alone.
+  const isResident = (handle) => households.has(handle) || revisions.some((r) => r.handle === handle);
+
+  // open stakes on this pot, split by the self-stake exclusion
+  const positions = []; // [{ handle, n }]
+  for (const [k, n] of foldPotPositions(entries)) {
+    const [p, handle] = k.split('|');
+    if (p === pot && n > 0) positions.push({ handle, n });
+  }
+  positions.sort((a, b) => a.handle.localeCompare(b.handle));
+  const benHH = hhKey(beneficiary);
+  const benStakes = positions.filter((s) => hhKey(s.handle) === benHH);
+  const eligible = positions.filter((s) => hhKey(s.handle) !== benHH);
+
+  // this epoch's dollars: receipts for this pot not yet deeded, in ledger order
+  const { receipts: allReceipts, deeded } = foldPotReceipts(entries);
+  const receipts = allReceipts.filter((r) => r.pot === pot && !deeded.has(r.ref));
+  const matchable = (r) => !(dial.treasury && r.from === dial.treasury);
+  const D = receipts.filter(matchable).reduce((a, r) => a + r.usd, 0);
+  const S = eligible.reduce((a, s) => a + s.n, 0);
+
+  if (positions.length === 0 && receipts.length === 0) return err(`pot "${pot}" has nothing to close — no open stakes, no undeeded receipts`);
+
+  // matching: burn what witnessed dollars cover, pro-rata by stake, floored;
+  // the unmatched remainder of every stake returns whole
+  const burns = [];   // [{ handle, n }]
+  const returns = new Map(); // handle -> n
+  for (const s of benStakes) returns.set(s.handle, (returns.get(s.handle) ?? 0) + s.n);
+  for (const s of eligible) {
+    const b = S <= D ? s.n : Math.floor((s.n * D) / S);
+    if (b > 0) burns.push({ handle: s.handle, n: b });
+    if (s.n - b > 0) returns.set(s.handle, (returns.get(s.handle) ?? 0) + (s.n - b));
+  }
+  const B = burns.reduce((a, b) => a + b.n, 0);
+
+  // σ-split, floors on both legs (R1)
+  const keeperN = Math.floor(B * dial.sigma);
+  const burnedByHH = new Map();
+  for (const b of burns) {
+    const k = hhKey(b.handle);
+    burnedByHH.set(k, (burnedByHH.get(k) ?? 0) + b.n);
+  }
+
+  // ρ-cap basis: the household's earned primary mint (every MINT → its handles)
+  // and holo already held, both from the prefix this close lands on
+  const mintByHH = new Map();
+  for (const [handle, n] of foldMintCount(entries)) {
+    const k = hhKey(handle);
+    mintByHH.set(k, (mintByHH.get(k) ?? 0) + n);
+  }
+  const holoByHH = new Map();
+  for (const [handle, n] of foldHolo(entries)) {
+    const k = hhKey(handle);
+    holoByHH.set(k, (holoByHH.get(k) ?? 0) + n);
+  }
+
+  const holos = []; // [{ handle, n, ref }]
+  const deeds = []; // [{ patron, usd, ref, holo }]
+  const grantedThisClose = new Map(); // household -> holo assigned in this close
+  for (const r of receipts) {
+    let h = 0;
+    if (matchable(r) && isResident(r.from) && D > 0 && B > 0) {
+      const pHH = hhKey(r.from);
+      const bOther = B - (burnedByHH.get(pHH) ?? 0); // nothing you fully control mints for you
+      const raw = Math.floor(((1 - dial.sigma) * bOther * r.usd) / D);
+      const capTotal = Math.floor(dial.rho * (mintByHH.get(pHH) ?? 0));
+      const held = (holoByHH.get(pHH) ?? 0) + (grantedThisClose.get(pHH) ?? 0);
+      h = Math.max(0, Math.min(raw, capTotal - held));
+      if (h > 0) {
+        holos.push({ handle: r.from, n: h, ref: r.ref });
+        grantedThisClose.set(pHH, (grantedThisClose.get(pHH) ?? 0) + h);
+      }
+    }
+    deeds.push({ patron: r.from, usd: r.usd, ref: r.ref, holo: h });
+  }
+  const holoTotal = holos.reduce((a, x) => a + x.n, 0);
+
+  // the canonical row set, in the one order the verifier matches
+  const rows = [];
+  for (const [handle, n] of [...returns.entries()].sort((a, b) => a[0].localeCompare(b[0])))
+    rows.push({ kind: 'pot-return', date, pot, handle, n, epoch });
+  for (const b of burns) rows.push({ kind: 'keeping-burn', date, pot, n: b.n, epoch, handle: b.handle });
+  if (keeperN > 0) rows.push({ kind: 'keeper-equity', date, handle: beneficiary, n: keeperN, pot, epoch });
+  for (const x of holos) rows.push({ kind: 'holo', date, handle: x.handle, n: x.n, pot, epoch, ref: x.ref });
+  for (const d of deeds) rows.push({ kind: 'patron-deed', date, pot, patron: d.patron, usd: d.usd, epoch, ref: d.ref, holo: d.holo });
+  if (rows.length === 0) return err(`pot "${pot}" derives an empty close — nothing to record`);
+
+  return {
+    ok: true,
+    rows,
+    report: {
+      pot, epoch, date, beneficiary,
+      dollarsWitnessed: receipts.reduce((a, r) => a + r.usd, 0),
+      dollarsMatching: D,
+      stakesEligible: S,
+      stakesReturnedToBeneficiaryHousehold: benStakes.reduce((a, s) => a + s.n, 0),
+      burned: B,
+      keeperEquity: keeperN,
+      holoMinted: holoTotal,
+      unmintedRemainder: B - keeperN - holoTotal,
+      receipts: receipts.length,
+    },
+  };
 }
 
 // ── expected-sequence walk (mints derived; everything else in place) ─────────

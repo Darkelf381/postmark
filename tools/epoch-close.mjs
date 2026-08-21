@@ -1,0 +1,223 @@
+#!/usr/bin/env node
+// epoch-close.mjs — the funding seam's founder tool (keeping pots, S1/S2).
+//
+// MANUAL by design: not cron, not settlement-riding. The founder runs it with
+// the office key when an epoch's dollars are in. Three verbs and a reader:
+//
+//   --receipt   witness one real-dollar payment against a pot (mint-at-entry:
+//               a re-recorded ref bounces loudly)
+//   --deed      record direct-to-town dollars (the reserved `treasury` pot):
+//               appends the receipt AND its deed in one breath — no stakes, no
+//               close, holo always 0. The founding family grant is deed #1.
+//   --close     close one pot for one epoch: derive the burn / σ-split / holo /
+//               deed block (deriveEpochClose in stamp-mint.mjs — the ONE copy
+//               of the law, shared with the verifier), print the human-legible
+//               epoch report, and append the whole block atomically (one signed
+//               write). --dry-run (or no --key) prints the report and the
+//               would-be lines, appends nothing.
+//   --holo-held read any household's soulbound holo out of the conversion rows.
+//
+// The law it enforces is the ruled set of 2026-08-20 — see the grammar block in
+// stamp-mint.mjs (THE FUNDING SEAM). Dials: ECONOMY-DIALS.json law_side.keeping
+// (σ, ρ; ρ may never exceed the constitutional ceiling — keepingDial refuses).
+//
+// Locking: appenders must hold the town lock (the ferry's flock) — this tool
+// does not lock for you. Node v18+. Built-ins only.
+
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { join, resolve, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import {
+  parseStampLedger, parseLaws, parseDeliveries, householdKeys, currentHouseholds,
+  deriveMints, deriveFriendshipMints, combineDerived, deriveTransfers, walkLedger,
+  classifyEntry, appendSigned,
+  keepingDial, potFile, deriveEpochClose, keepingLine,
+  potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo,
+  KEEPING_RAILS, TREASURY_POT,
+} from './stamp-mint.mjs';
+
+const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
+const DEFAULT_REPO = resolve(SCRIPT_DIR, '..');
+
+const arg = (name) => { const i = process.argv.indexOf(name); return i !== -1 ? process.argv[i + 1] : null; };
+const has = (name) => process.argv.includes(name);
+const die = (msg) => { console.error(`FATAL: ${msg}`); process.exit(1); };
+
+const POT_ID_RE = /^[a-z0-9][a-z0-9-]*$/;
+const EPOCH_RE = /^\d{4}-\d{2}$/;
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+function loadLedger(repo) {
+  const ledgerPath = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
+  const entries = existsSync(ledgerPath) ? parseStampLedger(readFileSync(ledgerPath, 'utf8')) : [];
+  return { ledgerPath, entries };
+}
+
+// The gift/issuance ceremony: assertion lines land on a SETTLED tail (owed
+// mints or settlements would slot behind them in a later --append, breaking
+// the causally-prior assumption), forward-dated against the ledger.
+function requireSettledTail(repo, entries, date) {
+  if (entries.length === 0) die('ledger not yet founded — nothing to append onto');
+  const { laws, revisions } = parseLaws(entries);
+  const deliveries = parseDeliveries(repo);
+  const households = householdKeys(repo);
+  const corr = deriveMints(deliveries, households, { laws, revisions });
+  const friend = deriveFriendshipMints(deliveries, households, { laws, revisions });
+  const mints = combineDerived(deliveries, corr, friend);
+  const { problems, owed } = walkLedger(entries.map((e) => e.canonical).slice(1), mints, 1);
+  if (problems.length) die(`recorded ledger diverges from derivation — run stamp-verify.mjs; nothing appended\n${problems[0]}`);
+  const settledIds = new Set();
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'transfer' || c.kind === 'void') settledIds.add(c.id);
+  }
+  const owedSettlements = deriveTransfers(deliveries, households, { laws, revisions }, entries)
+    .filter((t) => !settledIds.has(t.id));
+  if (owed.length || owedSettlements.length)
+    die(`ledger is behind the mail (${owed.length} mint(s), ${owedSettlements.length} settlement(s) owed) — run stamp-mint.mjs --append first`);
+  const maxDate = entries.reduce((mx, e) => {
+    const d = /^- (\d{4}-\d{2}-\d{2}) /.exec(e.canonical)?.[1];
+    return d && d > mx ? d : mx;
+  }, '0000-00-00');
+  if (date < maxDate) die(`date ${date} precedes the ledger tail (${maxDate}) — the ledger is append-only, forward-dated`);
+}
+
+function readKey() {
+  const keyPath = arg('--key');
+  if (!keyPath || !existsSync(keyPath)) return null;
+  return readFileSync(keyPath, 'utf8');
+}
+
+// received_usd on the pot file is DISPLAY — the ledger's pot-receipt rows are
+// authoritative; this keeps the board honest without making the file a truth.
+function refreshReceived(repo, pot, entries) {
+  const p = join(repo, 'WHITE_PAGES', `pot-${pot}.json`);
+  if (!existsSync(p)) return;
+  try {
+    const j = JSON.parse(readFileSync(p, 'utf8'));
+    const { receipts } = foldPotReceipts(entries);
+    j.received_usd = receipts.filter((r) => r.pot === pot).reduce((a, r) => a + r.usd, 0);
+    writeFileSync(p, `${JSON.stringify(j, null, 2)}\n`, 'utf8');
+  } catch { /* display refresh never blocks the ledger truth */ }
+}
+
+function main() {
+  const repo = resolve(arg('--repo') ?? DEFAULT_REPO);
+  const { entries } = loadLedger(repo);
+
+  if (has('--holo-held')) {
+    const next = arg('--holo-held');
+    const who = next && !next.startsWith('--') ? next : null; // bare flag = everyone
+    const holo = foldHolo(entries);
+    if (holo.size === 0) { console.log('no holo has ever converted — the seam is unexercised'); return; }
+    const households = currentHouseholds(repo);
+    const byHH = new Map();
+    for (const [handle, n] of holo) {
+      const key = households.get(handle)?.key ?? `solo:${handle}`;
+      if (!byHH.has(key)) byHH.set(key, { n: 0, handles: [] });
+      const rec = byHH.get(key);
+      rec.n += n; rec.handles.push(`${handle}:${n}`);
+    }
+    for (const [key, rec] of [...byHH.entries()].sort((a, b) => b[1].n - a[1].n)) {
+      if (who && !rec.handles.some((h) => h.startsWith(`${who}:`)) && key !== who) continue;
+      console.log(`${String(rec.n).padStart(5)}  ${key}  (${rec.handles.join(', ')})`);
+    }
+    return;
+  }
+
+  if (has('--receipt')) {
+    const pot = arg('--pot'); const rail = arg('--rail'); const usd = Number(arg('--usd'));
+    const from = arg('--from'); const ref = arg('--ref'); const date = arg('--date');
+    const pem = readKey();
+    if (!pot || !rail || !from || !ref || !date || !pem)
+      die('--receipt needs --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date YYYY-MM-DD --key FILE');
+    if (!POT_ID_RE.test(pot)) die(`--pot must be kebab-case ([a-z0-9-], got "${pot}")`);
+    if (!KEEPING_RAILS.includes(rail)) die(`--rail must be one of ${KEEPING_RAILS.join('|')} (got "${rail}")`);
+    if (!Number.isInteger(usd) || usd < 1) die(`--usd must be a whole dollar amount ≥ 1 (got ${arg('--usd')})`);
+    if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
+    if (/\s|·/.test(ref)) die('--ref may not contain whitespace or the "·" field separator');
+    if (pot !== TREASURY_POT && !potFile(repo, pot)) die(`no pot file WHITE_PAGES/pot-${pot}.json — a receipt needs the pot it pays`);
+    const { receipts } = foldPotReceipts(entries);
+    const prior = receipts.find((r) => r.ref === ref);
+    if (prior) die(`receipt ref "${ref}" already recorded (${prior.date}, $${prior.usd} to pot ${prior.pot}) — one dollar, one mint chance; a re-recorded receipt bounces`);
+    requireSettledTail(repo, entries, date);
+    const canonical = potReceiptLine({ date, pot, rail, usd, from, ref });
+    appendSigned(repo, [canonical], pem);
+    refreshReceived(repo, pot, loadLedger(repo).entries);
+    console.log(`stamp-ledger: witnessed\n  ${canonical}`);
+    return;
+  }
+
+  if (has('--deed')) {
+    // Direct-to-town dollars: receipt + deed in one atomic append. No stakes,
+    // no close, holo 0 always — grant dollars with no household land as a deed
+    // and nothing else. The founding family grant is this verb's first use.
+    const patron = arg('--patron'); const usd = Number(arg('--usd'));
+    const rail = arg('--rail') ?? 'grant'; const ref = arg('--ref');
+    const epoch = arg('--epoch'); const date = arg('--date');
+    const pem = readKey();
+    if (!patron || !ref || !epoch || !date || !pem)
+      die('--deed needs --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date YYYY-MM-DD --key FILE [--rail stripe|usdc|grant]');
+    if (!KEEPING_RAILS.includes(rail)) die(`--rail must be one of ${KEEPING_RAILS.join('|')} (got "${rail}")`);
+    if (!Number.isInteger(usd) || usd < 1) die(`--usd must be a whole dollar amount ≥ 1 (got ${arg('--usd')})`);
+    if (!EPOCH_RE.test(epoch)) die(`--epoch must be YYYY-MM (got "${epoch}")`);
+    if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
+    if (/\s|·/.test(ref)) die('--ref may not contain whitespace or the "·" field separator');
+    const { receipts } = foldPotReceipts(entries);
+    if (receipts.some((r) => r.ref === ref)) die(`receipt ref "${ref}" already recorded — one dollar, one mint chance; a re-recorded receipt bounces`);
+    requireSettledTail(repo, entries, date);
+    const lines = [
+      potReceiptLine({ date, pot: TREASURY_POT, rail, usd, from: patron, ref }),
+      patronDeedLine({ date, pot: TREASURY_POT, patron, usd, epoch, ref, holo: 0 }),
+    ];
+    appendSigned(repo, lines, pem);
+    console.log(`stamp-ledger: deeded\n  ${lines.join('\n  ')}`);
+    return;
+  }
+
+  if (has('--close')) {
+    const pot = arg('--pot'); const epoch = arg('--epoch'); const date = arg('--date');
+    if (!pot || !epoch || !date) die('--close needs --pot <id> --epoch YYYY-MM --date YYYY-MM-DD [--key FILE | --dry-run]');
+    if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
+    const dial = keepingDial(repo);
+    if (!dial) die('no readable law_side.keeping in ECONOMY-DIALS.json — the split must be DECLARED before a close (σ, ρ ≤ the constitutional ceiling)');
+    const meta = potFile(repo, pot);
+    if (meta && meta.status && meta.status !== 'open')
+      die(`pot "${pot}" is ${meta.status}, not open — a close settles an open pot (opening one is the founder's word, not a default)`);
+    const derived = deriveEpochClose({
+      entries, households: householdKeys(repo), pot, potMeta: meta, epoch, date, dial,
+    });
+    if (!derived.ok) die(derived.error);
+    const { rows, report } = derived;
+
+    // the human-legible epoch report
+    const lines = rows.map(keepingLine);
+    console.log(`── epoch close · pot ${report.pot} · epoch ${report.epoch} · ${report.date} ──`);
+    console.log(`keeper (beneficiary): ${report.beneficiary}`);
+    console.log(`dollars witnessed:    $${report.dollarsWitnessed} across ${report.receipts} receipt(s)` +
+      (report.dollarsMatching !== report.dollarsWitnessed ? ` ($${report.dollarsWitnessed - report.dollarsMatching} treasury — matches nothing, mints nothing)` : ''));
+    console.log(`stakes eligible:      ${report.stakesEligible}` +
+      (report.stakesReturnedToBeneficiaryHousehold ? ` (+${report.stakesReturnedToBeneficiaryHousehold} beneficiary-household, returned whole — self-stake exclusion)` : ''));
+    console.log(`burned (matched):     ${report.burned}`);
+    console.log(`  keeper-equity:      ${report.keeperEquity}  (floor of σ·B)`);
+    console.log(`  holo to payers:     ${report.holoMinted}  (floor of (1−σ)·B by dollar share, self-burn excluded, ρ-capped)`);
+    console.log(`  un-minted:          ${report.unmintedRemainder}  (the seam keeps the change)`);
+    console.log(`rows (${lines.length}):`);
+    for (const l of lines) console.log(`  ${l}`);
+
+    const pem = readKey();
+    if (has('--dry-run') || !pem) {
+      console.log(has('--dry-run') ? 'dry run — nothing appended' : 'no --key — nothing appended (pass --key FILE to seal the close)');
+      return;
+    }
+    requireSettledTail(repo, entries, date);
+    appendSigned(repo, lines, pem); // one signed write — the block lands whole or not at all
+    console.log(`stamp-ledger: closed — appended ${lines.length} line(s)`);
+    return;
+  }
+
+  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --deed --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle]  [--repo PATH]');
+  process.exit(1);
+}
+
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();
