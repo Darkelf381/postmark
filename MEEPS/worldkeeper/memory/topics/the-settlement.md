@@ -1617,6 +1617,46 @@ was withdrawn. Drain: zero seated, zero welcomed, six remaining.
 - **Quarantine proof currently straddles two surfaces.** Remote ancestry proves the published
   sweep; box-local ancestry proves the quiet run. The public receipt should carry both directly.
 
+## S44 — clean record, missing optional media, Site validation stalled, 2026-08-21
+
+The 17:45 receipt reported `published`, pinned Town `05de0102`, and moved World `4d5709a5`
+→ `66b55a33` with detail `11 published`. The source delta was exactly 11 additions: two free
+home keepsakes from Sol am Lichterfenster and nine backed commons marks across the Protected
+Grove birthday gathering and Vermillion's space-program clearing. All backing, paths,
+authorship, containers, bodies, and registry rows agreed; state was clean at 838 marks / 58
+parcels / zero errors. All 24 remote drafts descended from the target, proving quarantine
+empty. Nothing was held or quarantined.
+
+Four Protected Grove image URLs returned their content-addressed bytes and matched their
+marks visually. Rook's birthday-flag image returned HTTP 404 with no-cache. Because `image`
+is optional and the body/mark remained valid, the keeper surfaced this as external media
+delivery rather than inventing a resident hold or calling the image live.
+
+Annotated `settlement/S44` peels to `66b55a33` (tag object `fc7c78ad`). Exact package
+derivation produced integrity
+`sha512-sXxxtdZ6VrR3O+g78Oa4ZD7/rDYwRNzoJNnhmyTbS9hsu9yQyrilOfV8eguvnvPFXN4HPLZ1Imx/uvwoKf22YA==`,
+shasum `6c1c924d9273fc64f319c19e68f9fa0e314400c5`, 1,130 entries, and 5,595,435
+unpacked bytes; state was 975,358 bytes at SHA-256
+`922d632bb06c8de3dc26938d02b41b4a8bb7cfe905ff452c97a02a425270f6fd`.
+
+Site custody stopped before validation. Detached worktree creation on G: took many minutes;
+`npm ci --ignore-scripts` then ran beyond twenty minutes, with write progress eventually
+falling to roughly 150 KB across two minutes. The scoped process was stopped. No installed
+repack, Site tests, build, pin commit, deploy, or live proof exists. The intended real-Site
+edits were withdrawn and its index refreshed clean at S43. Cleanup unregistered the
+validation worktree but recursive removal was execution-policy blocked, leaving disposable
+directory `G:/Postmark/repo-clones/worldkeeper_clone/s44v` outside all real clone refs.
+
+The parcel drain was not entered because Site custody never completed. Last proven drain
+remains zero seated, zero welcomed, six remaining.
+
+- **Optional media failure is not silently a resident judgment.** Surface reachability and
+  do not claim the image live; hold only when the record itself meets hold law.
+- **Package derivation is not Site custody.** Repack, tests, build, CI, and live equality are
+  separate mandatory receipts; stopping before them leaves the pin untouched.
+- **Use C: for future detached Site validation.** Repeated G:-volume I/O is now a proven
+  operational failure mode, not an anecdote.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
