@@ -5,7 +5,8 @@
 // the office key when an epoch's dollars are in. Three verbs and a reader:
 //
 //   --receipt   witness one real-dollar payment against a pot (mint-at-entry:
-//               a re-recorded ref bounces loudly)
+//               a re-recorded ref bounces loudly; D5: so does a payment past
+//               the pot's posted target, unless the pot is marked uncapped)
 //   --deed      record direct-to-town dollars (the reserved `treasury` pot):
 //               appends the receipt AND its deed in one breath — no stakes, no
 //               close, holo always 0. The founding family grant is deed #1.
@@ -16,17 +17,24 @@
 //               write). --dry-run (or no --key) prints the report and the
 //               would-be lines, appends nothing.
 //   --holo-held read any household's soulbound holo out of the conversion rows.
-//   --keeping-held  the same for keeping-equity — the stakers' own σ share. Both
-//               legs of a conversion are arrow-free ("permanent, verb-less,
-//               remembered"), so a reader is the ONLY way either is visible: no
-//               balance, no mint count, no tally shows them.
+//   --keeping-held  the same for the keeping mint — the stakers' own σ share.
+//               Both legs of a conversion are arrow-free (R12: "NO liquid coin";
+//               holo: "permanent, verb-less, remembered"), so a reader is the
+//               ONLY way either is visible — no balance, no mint count, no tally
+//               shows them.
+//   --ownership D1: "ownership is a derived READ = minted (all sources) + holo".
+//               Nothing is stored for it; this prints the fold.
 //
 // The law it enforces is § 8 of the 2026-08-20 capture doc, as corrected
 // 2026-08-21 (matching prices against the pot's POSTED NEED, and the σ leg
-// returns to the stakers themselves) — see the grammar block in stamp-mint.mjs
-// (THE FUNDING SEAM), which quotes the ruling sentences. Dials:
-// ECONOMY-DIALS.json law_side.keeping (σ, ρ; ρ may never exceed the
-// constitutional ceiling — keepingDial refuses).
+// returns to the stakers themselves) and then ALIGNED to that day's later
+// rulings — R10 (ρ), R12 (the σ leg IS mint, and counts in the ρ base), D1
+// (ownership is a read), D5 (intake refuses past target). See the grammar block
+// in stamp-mint.mjs (THE FUNDING SEAM), which quotes the ruling sentences.
+//
+// σ and ρ are READ from ECONOMY-DIALS.json law_side.keeping, never restated
+// here: R10 names that field the owner of ρ, and "every other surface reads it
+// rather than restating it" — a number copied into a comment is a second dial.
 //
 // Locking: appenders must hold the town lock (the ferry's flock) — this tool
 // does not lock for you. Node v18+. Built-ins only.
@@ -38,8 +46,9 @@ import {
   parseStampLedger, parseLaws, parseDeliveries, householdKeys, currentHouseholds,
   deriveMints, deriveFriendshipMints, combineDerived, deriveTransfers, walkLedger,
   classifyEntry, appendSigned,
-  keepingDial, potFile, deriveEpochClose, keepingLine,
-  potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo, foldKeepingEquity,
+  keepingDial, potFile, deriveEpochClose, keepingLine, intakeCheck,
+  potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo, foldKeepingMint,
+  foldOwnership,
   KEEPING_RAILS, TREASURY_POT,
 } from './stamp-mint.mjs';
 
@@ -139,7 +148,25 @@ function main() {
   }
 
   if (has('--keeping-held')) {
-    showEquity('--keeping-held', foldKeepingEquity, 'no keeping-equity has ever converted — the seam is unexercised');
+    showEquity('--keeping-held', foldKeepingMint, 'no keeping mint has ever converted — the seam is unexercised');
+    return;
+  }
+
+  // D1: "ownership is a derived READ = minted (all sources) + holo — NOT a
+  // tense; no fifth tense node." So this verb stores nothing and derives
+  // everything, per handle, biggest ownership first.
+  if (has('--ownership')) {
+    const next = arg('--ownership');
+    const who = next && !next.startsWith('--') ? next : null;
+    const own = foldOwnership(entries);
+    if (own.size === 0) { console.log('nothing minted and nothing held — the ledger is empty'); return; }
+    const rows = [...own.entries()].filter(([h]) => !who || h === who).sort((a, b) => b[1].ownership - a[1].ownership);
+    if (rows.length === 0) { console.log(`no ownership recorded for "${who}"`); return; }
+    console.log('ownership = minted (all sources) + holo — a read, not a tense (D1)');
+    console.log(`${'handle'.padEnd(24)}${'earned'.padStart(8)}${'keeping'.padStart(9)}${'minted'.padStart(8)}${'holo'.padStart(7)}${'ownership'.padStart(11)}`);
+    for (const [h, r] of rows) {
+      console.log(`${h.padEnd(24)}${String(r.minted_primary).padStart(8)}${String(r.minted_keeping).padStart(9)}${String(r.minted).padStart(8)}${String(r.holo).padStart(7)}${String(r.ownership).padStart(11)}`);
+    }
     return;
   }
 
@@ -158,11 +185,22 @@ function main() {
     const { receipts } = foldPotReceipts(entries);
     const prior = receipts.find((r) => r.ref === ref);
     if (prior) die(`receipt ref "${ref}" already recorded (${prior.date}, $${prior.usd} to pot ${prior.pot}) — one dollar, one mint chance; a re-recorded receipt bounces`);
+    // D5: "intake refuses dollars past a pot's posted target, mechanically
+    // (recording tool / door bounce), except pots explicitly marked uncapped."
+    // The bounce names the remaining headroom, so the payer can pay what the
+    // town still needs instead of guessing.
+    const dialForIntake = keepingDial(repo);
+    const intake = intakeCheck({
+      entries, pot, potMeta: potFile(repo, pot), usd, from,
+      treasury: dialForIntake?.treasury ?? null,
+    });
+    if (!intake.ok) die(intake.error);
     requireSettledTail(repo, entries, date);
     const canonical = potReceiptLine({ date, pot, rail, usd, from, ref });
     appendSigned(repo, [canonical], pem);
     refreshReceived(repo, pot, loadLedger(repo).entries);
     console.log(`stamp-ledger: witnessed\n  ${canonical}`);
+    if (intake.capped) console.log(`  pot ${pot}: $${intake.received + usd} of $${intake.target} posted — $${intake.headroom - usd} of headroom left this epoch`);
     return;
   }
 
@@ -221,7 +259,7 @@ function main() {
     console.log(`funded fraction:      ${(report.fundedFraction * 100).toFixed(1)}%  ($${report.dollarsFunding} ÷ $${report.potTarget}, capped at 100%)`);
     console.log(`stakes open:          ${report.stakesOpen}`);
     console.log(`burned (funded):      ${report.burned}  (floor of the funded fraction × each stake; the rest returns)`);
-    console.log(`  keeping-equity:     ${report.keepingEquity}  (floor of σ · each staker's OWN burn, back to that staker)`);
+    console.log(`  minted · keeping:   ${report.keepingMint}  (floor of σ · each staker's OWN burn, back to that staker — mint, source-tagged, no liquid coin)`);
     console.log(`  holo to payers:     ${report.holoMinted}  (floor of (1−σ)·B by dollar share, own burn excluded, ρ-capped)`);
     console.log(`  un-minted:          ${report.unmintedRemainder}  (the seam keeps the change)`);
     console.log(`rows (${lines.length}):`);
@@ -238,7 +276,7 @@ function main() {
     return;
   }
 
-  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --deed --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle]  [--repo PATH]');
+  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --deed --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
   process.exit(1);
 }
 

@@ -28,9 +28,10 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import {
   parseStampLedger, classifyEntry, appendSigned, foldBalances, foldStaked,
-  foldMintCount, foldHolo, foldKeepingEquity, foldPotPositions, deriveEpochClose,
+  foldMintCount, foldHolo, foldKeepingMint, foldOwnership, foldPotPositions,
+  deriveEpochClose, intakeCheck,
   keepingDial, potFile, householdKeys, keepingLine, giftLine,
-  potStakeLine, potReceiptLine, holoMintLine, patronDeedLine, keepingEquityLine,
+  potStakeLine, potReceiptLine, holoMintLine, patronDeedLine, keepingMintLine,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -65,7 +66,11 @@ function seamTown({ pub, priv, pins, pots = {}, gifts = [], dial } = {}) {
   writeFileSync(join(repo, 'ECONOMY-DIALS.json'), JSON.stringify({
     law_side: {
       town_issuance: { treasury_handle: 'the-town', once_purposes: [] },
-      keeping: { sigma: 0.5, rho: 0.25, rho_constitutional_ceiling: 0.5, ...(dial ?? {}) },
+      // R10 (Keemin, 2026-08-21 mid-morning): "rho = 0.5 at launch — at the
+      // constitutional ceiling". The fixture runs at the launch dial so the
+      // suite's arithmetic is the arithmetic the town will actually meet; a
+      // test wanting a different rho passes one and says why.
+      keeping: { sigma: 0.5, rho: 0.5, rho_constitutional_ceiling: 0.5, ...(dial ?? {}) },
     },
   }));
   for (const [id, meta] of Object.entries(pots)) {
@@ -157,7 +162,7 @@ test('the canonical close: 300 staked on a fully funded $150 pot → 300 burn �
   const out = execFileSync(process.execPath, closeArgs({ repo, pot: 'ec2', epoch: '2026-07', date: '2026-08-01' }), { encoding: 'utf8' });
   assert.match(out, /funded fraction:\s+100\.0%/, '$150 against a $150 posted need funds the pot whole');
   assert.match(out, /burned \(funded\):\s+300/);
-  assert.match(out, /keeping-equity:\s+150/);
+  assert.match(out, /minted · keeping:\s+150/);
   assert.match(out, /holo to payers:\s+150/);
 
   const v = verifyStampLedger(repo);
@@ -165,19 +170,24 @@ test('the canonical close: 300 staked on a fully funded $150 pot → 300 burn �
 
   entries = entriesOf(repo);
   const kinds = entries.map((e) => classifyEntry(e.canonical).kind);
-  for (const k of ['pot-stake', 'pot-receipt', 'keeping-burn', 'keeping-equity', 'holo', 'patron-deed'])
+  for (const k of ['pot-stake', 'pot-receipt', 'keeping-burn', 'keeping-mint', 'holo', 'patron-deed'])
     assert.ok(kinds.includes(k), `ledger carries a ${k} row`);
 
   // the burn is a real spend: stan's stamps are gone from every tense but his mint_count
   assert.equal(foldStaked(entries).get('stan') ?? 0, 0);
   assert.equal(foldBalances(entries).get('stan') ?? 0, 1);
   assert.equal(foldMintCount(entries).get('stan'), 301);
-  // the σ leg came back to STAN — the staker — not to the pot's beneficiary,
-  // and it is "permanent, verb-less, remembered": arrow-free, so it adds nothing
-  // to liquid (still 1, asserted above) and nothing to mint_count (still 301)
-  assert.equal(foldKeepingEquity(entries).get('stan'), 150);
-  assert.equal(foldKeepingEquity(entries).get('keeper'), undefined,
-    'the beneficiary keeps the DOLLARS; the σ leg is the stakers\' own equity');
+  // the σ leg came back to STAN — the staker — not to the pot's beneficiary.
+  // LAW R12: "the σ leg IS ORDINARY MINT, source-tagged (`minted · for:
+  //           keeping:<pot>`), with NO liquid coin (the coin was paid when the
+  //           stake burned; the row stays purpose-tagged so balance folds never
+  //           hand liquid back)."
+  // So it is mint — and the "no liquid coin" half is what the two asserts above
+  // already proved: liquid is still 1 and mint_count is still 301. Neither fold
+  // can see the row, because it is arrow-free.
+  assert.equal(foldKeepingMint(entries).get('stan'), 150);
+  assert.equal(foldKeepingMint(entries).get('keeper'), undefined,
+    'the beneficiary keeps the DOLLARS; the σ leg is the stakers\' own');
   assert.equal(foldBalances(entries).get('keeper') ?? 0, 1, 'a close mints the keeper no stamps at all');
   assert.equal(foldMintCount(entries).get('keeper'), 1);
   // holo is soulbound: visible ONLY to its own reader, absent from every tally
@@ -195,6 +205,26 @@ test('the canonical close: 300 staked on a fully funded $150 pot → 300 burn �
   assert.match(held, /150\s+gh:2\s+\(paz:150\)/);
   const kept = execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--keeping-held', '--repo', repo], { encoding: 'utf8' });
   assert.match(kept, /150\s+gh:1\s+\(stan:150\)/);
+
+  // D1 (Keemin, 2026-08-21): "ownership is a derived READ = minted (all sources)
+  //     + holo — NOT a tense; no fifth tense node."
+  // Nothing is stored for it — it is a fold, and it is the ONLY place the two
+  // arrow-free legs join the earned mint into one number.
+  const own = foldOwnership(entries);
+  assert.equal(own.get('stan').minted_primary, 301);
+  assert.equal(own.get('stan').minted_keeping, 150, 'R12: the σ leg IS mint, so it is inside "minted"');
+  assert.equal(own.get('stan').minted, 451, 'minted = all sources');
+  assert.equal(own.get('stan').holo, 0);
+  assert.equal(own.get('stan').ownership, 451, 'ownership = minted + holo');
+  assert.equal(own.get('paz').minted, 1201, 'paz minted nothing from keeping — she paid, she did not stake');
+  assert.equal(own.get('paz').holo, 150);
+  assert.equal(own.get('paz').ownership, 1351);
+  // and the read is a READ: no tense moved to make it true
+  assert.equal(foldBalances(entries).get('stan') ?? 0, 1);
+  assert.equal(foldStaked(entries).get('stan') ?? 0, 0);
+  const ownOut = execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--ownership', '--repo', repo], { encoding: 'utf8' });
+  assert.match(ownOut, /ownership = minted \(all sources\) \+ holo/);
+  assert.match(ownOut, /stan\s+301\s+150\s+451\s+0\s+451/);
 });
 
 // ── matching: priced against the posted need, never against the staked mass ──
@@ -229,7 +259,7 @@ test('no dollar↔stamp rate: a fully funded pot burns EVERY stake, however larg
   assert.equal(big.report.burned, 1000, '$150 met the $150 need, so every staked stamp converts');
   assert.notEqual(big.report.burned, 150,
     'the killed reading (burn = min(stakes, dollars)) invents a 1:1 dollar↔stamp rate the law never grants');
-  assert.equal(big.report.keepingEquity, 500);
+  assert.equal(big.report.keepingMint, 500);
   assert.equal(big.report.holoMinted, 500);
   assert.deepEqual(big.rows.filter((r) => r.kind === 'pot-return'), [], 'nothing is left over to return');
 
@@ -263,7 +293,7 @@ test('half-funded: each stake burns floor(fraction × stake), the rest returns w
   assert.deepEqual(d.rows.filter((r) => r.kind === 'pot-return').map((r) => `${r.handle}:${r.n}`),
     ['dot:51', 'stan:150'], 'the unfunded remainder of every stake goes home whole');
   assert.equal(d.report.burned, 200);
-  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-equity').map((r) => `${r.handle}:${r.n}`),
+  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-mint').map((r) => `${r.handle}:${r.n}`),
     ['dot:25', 'stan:75']);
   assert.equal(d.report.holoMinted, 100);
   assert.equal(verifyStampLedger(repo).ok, true);
@@ -283,7 +313,7 @@ test('a zero-dollar close is pure return — no counterparty, no burn', () => {
   const d = closeDirect(repo, priv, { pot: 'lamp', epoch: '2026-07', date: '2026-08-01' });
   assert.equal(d.report.fundedFraction, 0);
   assert.equal(d.report.burned, 0);
-  assert.equal(d.report.keepingEquity, 0);
+  assert.equal(d.report.keepingMint, 0);
   assert.equal(d.report.holoMinted, 0);
   assert.deepEqual(d.rows.map((r) => r.kind), ['pot-return'], 'the whole close is one stake coming home');
   assert.equal(foldBalances(entriesOf(repo)).get('stan') ?? 0, 21, 'gift + mint, all of it back');
@@ -343,20 +373,20 @@ test('R1 floors EVERY leg, per staker and not on the total — the remainder bur
 
   const f = closeDirect(repo, priv, { pot: 'floors', epoch: '2026-07', date: '2026-08-01' });
   assert.equal(f.report.burned, 9, 'three stakes of 3, all funded');
-  assert.deepEqual(f.rows.filter((r) => r.kind === 'keeping-equity').map((r) => `${r.handle}:${r.n}`),
+  assert.deepEqual(f.rows.filter((r) => r.kind === 'keeping-mint').map((r) => `${r.handle}:${r.n}`),
     ['ann:1', 'bo:1', 'cy:1'], 'floor(3 × ½) = 1 each');
-  assert.equal(f.report.keepingEquity, 3);
-  assert.notEqual(f.report.keepingEquity, 4,
+  assert.equal(f.report.keepingMint, 3);
+  assert.notEqual(f.report.keepingMint, 4,
     'floor(σ · B) on the TOTAL would be 4 — a stamp nobody\'s own burn paid for');
   assert.equal(f.report.holoMinted, 4, 'floor((1−σ) · 9 · 10/10) = 4');
   assert.equal(f.report.unmintedRemainder, 2, 'every remainder burns un-minted — the seam keeps the change');
-  assert.ok(f.report.keepingEquity + f.report.holoMinted <= f.report.burned,
+  assert.ok(f.report.keepingMint + f.report.holoMinted <= f.report.burned,
     'total new equity never exceeds the matched burn');
 
   // and the odd stamp: 301 burned at σ=½ is 150 + 150, with 1 left un-minted
   const o = closeDirect(repo, priv, { pot: 'odd', epoch: '2026-07', date: '2026-08-02' });
   assert.equal(o.report.burned, 301);
-  assert.equal(o.report.keepingEquity, 150);
+  assert.equal(o.report.keepingMint, 150);
   assert.equal(o.report.holoMinted, 150);
   assert.equal(o.report.unmintedRemainder, 1);
   assert.equal(verifyStampLedger(repo).ok, true);
@@ -386,10 +416,10 @@ test('the σ leg is the STAKERS\' own — a beneficiary\'s stakes convert like a
     'a funded pot returns nothing — the beneficiary household gets no carve-out');
   assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-burn').map((r) => `${r.handle}:${r.n}`),
     ['dot:20', 'kbro:50', 'keeper:30']);
-  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-equity').map((r) => `${r.handle}:${r.n}`),
+  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-mint').map((r) => `${r.handle}:${r.n}`),
     ['dot:10', 'kbro:25', 'keeper:15'], 'each staker\'s own σ share, at par of their own burn');
   assert.equal(d.report.burned, 100);
-  assert.equal(d.report.keepingEquity, 50);
+  assert.equal(d.report.keepingMint, 50);
   assert.equal(d.report.holoMinted, 50);
   // the pot's beneficiary receives DOLLARS, never stamps, from a close
   assert.equal(foldMintCount(entriesOf(repo)).get('keeper'), 30 + 1, 'gift + correspondence mint, nothing from the close');
@@ -417,7 +447,7 @@ test('sole staker who is sole payer mints zero holo — deed only', () => {
   assert.ok(!d.rows.some((r) => r.kind === 'holo'));
   assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 0, 'the deed remembers the dollars anyway');
   // the σ leg is NOT the excluded one: her own stake still converts at par
-  assert.equal(d.report.keepingEquity, 50, 'her keeping-equity is hers, bought with her own burn');
+  assert.equal(d.report.keepingMint, 50, 'her keeping mint is hers, bought with her own burn');
   assert.equal(d.report.unmintedRemainder, 50, 'the holo she could not mint burns un-minted');
   assert.equal(verifyStampLedger(repo).ok, true);
 });
@@ -440,7 +470,7 @@ test('a payer who also staked: holo basis excludes their own burn, nothing else'
   assert.equal(d.report.holoMinted, 20,
     'basis is B minus vic\'s own 60 burned: floor((1−σ) · 40 · 100/100) = 20');
   assert.notEqual(d.report.holoMinted, 50, 'an unexcluded basis would have paid her 50 for her own stake');
-  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-equity').map((r) => `${r.handle}:${r.n}`),
+  assert.deepEqual(d.rows.filter((r) => r.kind === 'keeping-mint').map((r) => `${r.handle}:${r.n}`),
     ['dot:20', 'vic:30'], 'the exclusion is payer-side only — her σ leg is untouched');
   assert.equal(verifyStampLedger(repo).ok, true);
 });
@@ -448,6 +478,11 @@ test('a payer who also staked: holo basis excludes their own burn, nothing else'
 test('the ρ-cap clips holo at conversion — and never touches the stakers\' σ leg', () => {
   // LAW § 9:  "Cap: cumulative holo ≤ ρ × cumulative earned primary mint, per
   //            household."
+  // LAW R10 (Keemin, 2026-08-21): "ρ = 0.5 at launch ... Owner of the number:
+  //           `ECONOMY-DIALS.json § law_side.keeping.rho`; every other surface
+  //           reads it rather than restating it."
+  // So the number below is not written here either — it is read from the dial
+  // the fixture declares, and the arithmetic is spelled out against it.
   // ρ is the filter on what MONEY may ever own (§ 7's second filter,
   // "Unboundedness"). The σ leg is bought with staked attention, not dollars, so
   // no ρ appears on it anywhere in § 8 or § 9.
@@ -457,17 +492,156 @@ test('the ρ-cap clips holo at conversion — and never touches the stakers\' σ
     pots: { ec2: { beneficiary: 'keeper', target_usd_per_epoch: 150 } },
     gifts: [{ handle: 'stan', n: 300 }, { handle: 'paz', n: 100 }],
   });
-  // paz's earned primary mint is 101 (gift + 1 correspondence mint): cap = floor(0.25 · 101) = 25
+  // paz has staked nothing, so her ρ base is her earned primary mint alone:
+  // 101 (gift + 1 correspondence mint). At the launch ρ, cap = floor(0.5 · 101) = 50.
+  const rho = keepingDial(repo).rho;
+  assert.equal(rho, 0.5, 'the fixture runs at R10\'s launch dial');
   appendSigned(repo, [
     potStakeLine({ date: '2026-07-02', handle: 'stan', pot: 'ec2', n: 300, via: 'api' }),
     potReceiptLine({ date: '2026-07-03', pot: 'ec2', rail: 'stripe', usd: 150, from: 'paz', ref: 'stripe:pi_4' }),
   ], priv);
   const d = closeDirect(repo, priv, { pot: 'ec2', epoch: '2026-07', date: '2026-08-01' });
-  assert.equal(d.report.keepingEquity, 150, 'the stakers\' leg is untouched by the payer\'s cap');
-  assert.equal(d.report.holoMinted, 25, 'raw 150 clips to floor(ρ · earned mint) = 25');
+  assert.equal(d.report.keepingMint, 150, 'the stakers\' leg is untouched by the payer\'s cap');
+  assert.equal(d.report.holoMinted, Math.floor(rho * 101), 'raw 150 clips to floor(ρ · base) = 50');
+  assert.equal(d.report.holoMinted, 50);
   assert.equal(d.rows.find((r) => r.kind === 'patron-deed').usd, 150, 'the deed remembers every dollar');
-  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 25, 'and exactly what converted');
-  assert.equal(d.report.unmintedRemainder, 125, 'the clipped excess burns un-minted');
+  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 50, 'and exactly what converted');
+  assert.equal(d.report.unmintedRemainder, 100, 'the clipped excess burns un-minted');
+  assert.equal(verifyStampLedger(repo).ok, true);
+});
+
+test('R12: keeping mint COUNTS toward the ρ base — a staker\'s own conversions raise their ceiling', () => {
+  // LAW R12 (Keemin, 2026-08-21 afternoon): "It COUNTS toward the ρ base (holo
+  //          cap base = earned primary mint + keeping mint)."
+  //          Keemin overturned the recommendation to exclude it: "the loop cannot
+  //          compound — verb-less → never re-stakable; ceiling inflation bounded
+  //          at (1+σ)× earned."
+  // This is the one place the ruling changes a NUMBER rather than a noun, so it
+  // gets its own falsifier: the same close derives 50 under the old base and 75
+  // under the ruled one, and only the ruled one may pass.
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: {
+      one: { beneficiary: 'keeper', target_usd_per_epoch: 100 },
+      two: { beneficiary: 'keeper', target_usd_per_epoch: 100 },
+    },
+    gifts: [{ handle: 'paz', n: 100 }, { handle: 'vic', n: 400 }, { handle: 'stan', n: 400 }],
+  });
+
+  // ROUND 1 — paz stakes, and her stake converts: she earns keeping mint of 50.
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-07-02', handle: 'paz', pot: 'one', n: 100, via: 'api' }),
+    potReceiptLine({ date: '2026-07-03', pot: 'one', rail: 'usdc', usd: 100, from: 'vic', ref: 'usdc:r1' }),
+  ], priv);
+  const r1 = closeDirect(repo, priv, { pot: 'one', epoch: '2026-07', date: '2026-08-01' });
+  assert.equal(r1.report.burned, 100);
+  assert.equal(r1.report.keepingMint, 50, 'floor(σ · 100) back to paz, the staker');
+  assert.equal(foldKeepingMint(entriesOf(repo)).get('paz'), 50);
+  assert.equal(foldMintCount(entriesOf(repo)).get('paz'), 101,
+    'and her earned primary mint did NOT move — the row is arrow-free (R12: no liquid coin)');
+
+  // ROUND 2 — now paz PAYS a different pot, and the ρ-cap decides her holo.
+  //   earned primary mint          = 101
+  //   keeping mint (R12, counts)   =  50
+  //   ρ base                       = 151  → cap = floor(0.5 · 151) = 75
+  //   the old base (earned alone)  = 101  → cap = floor(0.5 · 101) = 50
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-08-02', handle: 'stan', pot: 'two', n: 400, via: 'api' }),
+    potReceiptLine({ date: '2026-08-03', pot: 'two', rail: 'usdc', usd: 100, from: 'paz', ref: 'usdc:r2' }),
+  ], priv);
+  const r2 = closeDirect(repo, priv, { pot: 'two', epoch: '2026-08', date: '2026-09-01' });
+  assert.equal(r2.report.burned, 400);
+  assert.equal(r2.report.holoMinted, 75,
+    'ρ base = earned primary mint + keeping mint = 101 + 50 = 151; floor(0.5 · 151) = 75');
+  assert.notEqual(r2.report.holoMinted, 50,
+    'excluding the keeping leg from the ρ base — the reading Keemin OVERTURNED — would clip her at 50');
+  assert.equal(r2.rows.find((r) => r.kind === 'patron-deed').holo, 75);
+  assert.equal(verifyStampLedger(repo).ok, true, 'and the verifier re-derives the same base from the same prefix');
+
+  // the bound R12 names: ceiling inflation stops at (1+σ)× earned, because the
+  // keeping leg is verb-less and can never be re-staked to earn more of itself
+  const own = foldOwnership(entriesOf(repo)).get('paz');
+  assert.ok(own.minted_keeping <= own.minted_primary * (1 + keepingDial(repo).sigma),
+    'bounded at (1+σ)× earned — the loop cannot compound');
+});
+
+test('D5: intake refuses dollars past the posted target, and names the headroom', () => {
+  // LAW D5 (Keemin, 2026-08-21): "intake refuses dollars past a pot's posted
+  //         target, mechanically (recording tool / door bounce), except pots
+  //         explicitly marked uncapped. Conversion's cap-at-1 stays as backstop."
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: {
+      lamp: { beneficiary: 'keeper', target_usd_per_epoch: 100 },
+      box: { beneficiary: 'keeper', target_usd_per_epoch: null, uncapped: true },
+    },
+    gifts: [{ handle: 'paz', n: 100 }],
+  });
+  const keyFile = join(repo, 'stamp-key.pem');
+  const receipt = (pot, usd, ref, from = 'paz', date = '2026-07-03') => execFileSync(
+    process.execPath,
+    [join(HERE, 'epoch-close.mjs'), '--receipt', '--pot', pot, '--rail', 'usdc', '--usd', String(usd),
+      '--from', from, '--ref', ref, '--date', date, '--key', keyFile, '--repo', repo],
+    { encoding: 'utf8', stdio: 'pipe' });
+
+  // a first payment inside the posted need lands, and says what is left
+  const first = receipt('lamp', 60, 'usdc:d5a');
+  assert.match(first, /\$60 of \$100 posted/);
+  assert.match(first, /\$40 of headroom left/);
+
+  // the second would take the pot past $100 — refused, with the headroom named
+  assert.throws(
+    () => receipt('lamp', 60, 'usdc:d5b'),
+    (e) => /past pot "lamp"'s posted target/.test(String(e.stderr)) && /only \$40 more/.test(String(e.stderr)),
+    'D5: intake refuses dollars past the posted target');
+
+  // exactly the headroom is welcome, and then the pot is closed to more dollars
+  receipt('lamp', 40, 'usdc:d5c');
+  assert.throws(
+    () => receipt('lamp', 1, 'usdc:d5d'),
+    (e) => /fully funded for this epoch/.test(String(e.stderr)),
+    'a fully funded pot takes no more');
+
+  // D5's own exception: a pot marked uncapped is a standing box
+  const box = receipt('box', 5000, 'usdc:d5e');
+  assert.match(box, /witnessed/);
+  assert.ok(!/headroom/.test(box), 'an uncapped pot posts no headroom because it posts no need');
+  const check = intakeCheck({ entries: entriesOf(repo), pot: 'box', potMeta: potFile(repo, 'box'), usd: 999999 });
+  assert.equal(check.ok, true);
+  assert.match(check.reason, /uncapped/);
+
+  // treasury dollars are exempt both ways — they fund nothing and mint nothing
+  const town = intakeCheck({
+    entries: entriesOf(repo), pot: 'lamp', potMeta: potFile(repo, 'lamp'),
+    usd: 5000, from: 'the-town', treasury: 'the-town',
+  });
+  assert.equal(town.ok, true, '"Treasury may cover any shortfall — minting nothing"');
+
+  assert.equal(verifyStampLedger(repo).ok, true);
+});
+
+test('D5\'s backstop still stands: conversion caps the funded fraction at 1', () => {
+  // LAW D5: "Conversion's cap-at-1 stays as backstop."
+  // Two gates for one law. If a dollar ever gets past the front gate — a hand-
+  // edited ledger, a pot whose target was lowered after the fact — the close
+  // still refuses to convert more than the posted need bought.
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: { lamp: { beneficiary: 'keeper', target_usd_per_epoch: 100 } },
+    gifts: [{ handle: 'stan', n: 100 }, { handle: 'paz', n: 400 }],
+  });
+  // appended raw, behind the intake gate, exactly as a hand-edit would be
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-07-02', handle: 'stan', pot: 'lamp', n: 100, via: 'api' }),
+    potReceiptLine({ date: '2026-07-03', pot: 'lamp', rail: 'usdc', usd: 900, from: 'paz', ref: 'usdc:flood' }),
+  ], priv);
+  const d = closeDirect(repo, priv, { pot: 'lamp', epoch: '2026-07', date: '2026-08-01' });
+  assert.equal(d.report.dollarsFunding, 900);
+  assert.equal(d.report.fundedFraction, 1, '$900 against a $100 need is still 100%, never 900%');
+  assert.equal(d.report.burned, 100, 'and it can never burn more than was staked');
   assert.equal(verifyStampLedger(repo).ok, true);
 });
 
@@ -492,7 +666,7 @@ test('treasury dollars fund nothing and mint nothing — the stakes come home wh
   assert.equal(d.report.dollarsFunding, 0, 'but not by the town\'s payers');
   assert.equal(d.report.fundedFraction, 0, 'so the pot funded 0% of its posted need');
   assert.equal(d.report.burned, 0);
-  assert.equal(d.report.keepingEquity, 0);
+  assert.equal(d.report.keepingMint, 0);
   assert.equal(d.report.holoMinted, 0);
   assert.deepEqual(d.rows.filter((r) => r.kind === 'pot-return').map((r) => `${r.handle}:${r.n}`), ['stan:100']);
   assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 0);
@@ -576,7 +750,7 @@ test('a forged holo row fails the chain; an office-signed wrong one fails the ke
   assert.match(v.problems.join('\n'), /KEEPING REPLAY DIVERGES/);
 });
 
-test('a forged keeping-equity row fails — even the σ leg is replayed, not trusted', () => {
+test('a forged keeping-mint row fails — even the σ leg is replayed, not trusted', () => {
   // LAW § 8.5: "The matched pot converts to equity exactly once, split by σ."
   // Exactly once, and only as the derivation computes it.
   const { pub, priv } = keypair();
@@ -590,30 +764,56 @@ test('a forged keeping-equity row fails — even the σ leg is replayed, not tru
     potReceiptLine({ date: '2026-07-03', pot: 'ec2', rail: 'stripe', usd: 50, from: 'paz', ref: 'stripe:pi_7' }),
   ], priv);
   const solo = mkForkAppend(repo, priv,
-    keepingEquityLine({ date: '2026-08-01', handle: 'stan', n: 9999, pot: 'ec2', epoch: '2026-07' }));
+    keepingMintLine({ date: '2026-08-01', handle: 'stan', n: 9999, pot: 'ec2', epoch: '2026-07' }));
   const v = verifyStampLedger(solo);
-  assert.equal(v.ok, false, 'a keeping-equity row outside its derived block must fail');
+  assert.equal(v.ok, false, 'a keeping mint row outside its derived block must fail');
   assert.match(v.problems.join('\n'), /KEEPING REPLAY DIVERGES|derives no lawful block/);
 });
 
-test('the retired MINT-shaped σ row is gone from the grammar — and cannot be smuggled back in', () => {
-  // LAW § 8.5: the σ leg is "permanent, verb-less, remembered". A `MINT → keeper`
-  // row is a verb: liquid, spendable, counted. The first pass wrote one; the
-  // correction retires the shape, and a ledger carrying it must not verify — the
-  // walk has no grammar for it and the movement fold would otherwise credit real,
-  // spendable stamps to a handle no derivation ever chose.
+test('every retired σ-row shape is unknown grammar — and none can be smuggled back in', () => {
+  // LAW R12 (Keemin, 2026-08-21 afternoon): "the σ leg IS ORDINARY MINT,
+  //          source-tagged (`minted · for: keeping:<pot>`), with NO liquid coin
+  //          (the coin was paid when the stake burned; the row stays
+  //          purpose-tagged so balance folds never hand liquid back)."
+  // Three shapes are retired, and each was wrong in its own way:
+  //   (a) `MINT → keeper · n · for: keeper-equity:…` — the first pass's row, paid
+  //       to the BENEFICIARY, and liquid.
+  //   (b) `keeping-equity · …` — the second pass's row: right recipient, right
+  //       non-liquidity, but the noun R12 retires ("keeping-equity" is gone from
+  //       every surface).
+  //   (c) `MINT → staker · n · for: keeping:<pot>` — the tempting smuggle, and
+  //       the DANGEROUS one: it wears R12's own source tag, so it reads lawful,
+  //       but its arrow puts it inside foldBalances AND foldMintCount — liquid
+  //       coin handed back for a coin already paid when the stake burned. Only
+  //       the arrow-free shape can carry this leg.
   const { pub, priv } = keypair();
   const repo = seamTown({
     pub, priv, pins: PINS,
     pots: { ec2: { beneficiary: 'keeper', target_usd_per_epoch: 100 } },
     gifts: [{ handle: 'stan', n: 50 }],
   });
-  const stale = `- 2026-08-01 · MINT → keeper · 25 · for: keeper-equity:ec2/2026-07`;
-  assert.equal(classifyEntry(stale).kind, 'unknown', 'the old shape parses as nothing at all');
-  const smuggled = mkForkAppend(repo, priv, stale);
-  const v = verifyStampLedger(smuggled);
-  assert.equal(v.ok, false);
-  assert.match(v.problems.join('\n'), /unrecognized grammar/);
+  const retired = {
+    'the first pass\'s MINT-to-beneficiary row': '- 2026-08-01 · MINT → keeper · 25 · for: keeper-equity:ec2/2026-07',
+    'the retired keeping-equity noun': '- 2026-08-01 · keeping-equity · stan · 25 · pot:ec2 · epoch:2026-07',
+    'the arrow-bearing keeping smuggle': '- 2026-08-01 · MINT → stan · 25 · for: keeping:ec2 · epoch:2026-07',
+  };
+  for (const [what, line] of Object.entries(retired)) {
+    assert.equal(classifyEntry(line).kind, 'unknown', `${what} parses as nothing at all`);
+    const smuggled = mkForkAppend(repo, priv, line);
+    const v = verifyStampLedger(smuggled);
+    assert.equal(v.ok, false, `${what} must not verify`);
+    assert.match(v.problems.join('\n'), /unrecognized grammar/);
+  }
+
+  // and the shape that IS lawful is arrow-free, which is what keeps the two raw
+  // movement folds structurally blind to it — the mechanism behind "no liquid coin"
+  const lawful = keepingMintLine({ date: '2026-08-01', handle: 'stan', n: 25, pot: 'ec2', epoch: '2026-07' });
+  assert.equal(classifyEntry(lawful).kind, 'keeping-mint');
+  assert.ok(!lawful.includes('→'), 'R12\'s row carries no arrow, so no movement fold can see it');
+  const asEntries = [{ canonical: lawful }];
+  assert.equal(foldBalances(asEntries).size, 0, 'foldBalances sees nothing');
+  assert.equal(foldMintCount(asEntries).size, 0, 'foldMintCount sees nothing');
+  assert.equal(foldKeepingMint(asEntries).get('stan'), 25, 'only the reader that opts in sees it');
 });
 
 test('a re-recorded receipt bounces — at the door and in the replay (one dollar, one mint chance)', () => {
