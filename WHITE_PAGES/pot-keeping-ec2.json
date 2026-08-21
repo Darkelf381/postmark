@@ -4,13 +4,14 @@
   "status": "draft",
   "_draft": "DRAFT / DEV FIXTURE — NOT LIVE. Posted by the seam/ledger-legs branch so the funding seam has a concrete pot to review; opening a pot for real is the founder's word, not a merge. The close tool refuses any pot whose status is not 'open'.",
   "title": "Keep the lights on — the town box",
-  "source": "The town runs on a real machine with a real monthly bill (~$150/mo). This pot is how the town keeps its own lights on: stake stamps on it to say the box matters to you; real dollars paid against it are witnessed as receipts; at each month's close, stakes matched by dollars burn and split between the keeper and the payers per the keeping law (ECONOMY-DIALS.json law_side.keeping).",
+  "source": "The town runs on a real machine with a real monthly bill (~$150/mo). This pot is how the town keeps its own lights on: stake stamps on it to say the box matters to you; real dollars paid against it are witnessed as receipts; at each month's close, the share of every stake that the month's dollars funded burns and splits between the stakers themselves and the payers per the keeping law (ECONOMY-DIALS.json law_side.keeping). Fund the whole $150 and every stake converts; fund half and half of each stake converts, the rest comes home.",
   "target_usd_per_epoch": 150,
   "epoch_cadence": "monthly",
   "beneficiary": null,
-  "_beneficiary": "the keeper — named by Keemin at opening; deriveEpochClose refuses a close on a pot with no beneficiary, and the treasury can never be one (the town never receives from its own seam)",
+  "_beneficiary": "where the DOLLARS route — named by Keemin at opening; deriveEpochClose refuses a close on a pot with no beneficiary, and the treasury can never be one (the town never receives from its own seam). The beneficiary receives no stamps from the close: the sigma leg goes back to the stakers.",
+  "_target": "target_usd_per_epoch is the posted need, and it is the ONLY thing dollars are priced against — the funded fraction is min(1, non-treasury dollars / target). A pot with no target cannot close.",
   "received_usd": 0,
   "_received": "display only, refreshed by tools/epoch-close.mjs --receipt — the ledger's pot-receipt rows are authoritative",
   "board": "quest-registry.json § keeping-ec2",
-  "_grammar": "stakes ride the sealed ledger as `<handle> → stake:pot/keeping-ec2 · n · via: ...` (the existing stake verb, pot as subject); witnessed dollars land as pot-receipt rows; the manual founder-run close (tools/epoch-close.mjs --close) appends the keeping-burn / keeper-equity / holo / patron-deed block, which stamp-verify replays exactly"
+  "_grammar": "stakes ride the sealed ledger as `<handle> → stake:pot/keeping-ec2 · n · via: ...` (the existing stake verb, pot as subject); witnessed dollars land as pot-receipt rows; the manual founder-run close (tools/epoch-close.mjs --close) appends the pot-return / keeping-burn / keeping-equity / holo / patron-deed block, which stamp-verify replays exactly"
 }

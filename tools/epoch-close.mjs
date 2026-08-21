@@ -16,10 +16,17 @@
 //               write). --dry-run (or no --key) prints the report and the
 //               would-be lines, appends nothing.
 //   --holo-held read any household's soulbound holo out of the conversion rows.
+//   --keeping-held  the same for keeping-equity — the stakers' own σ share. Both
+//               legs of a conversion are arrow-free ("permanent, verb-less,
+//               remembered"), so a reader is the ONLY way either is visible: no
+//               balance, no mint count, no tally shows them.
 //
-// The law it enforces is the ruled set of 2026-08-20 — see the grammar block in
-// stamp-mint.mjs (THE FUNDING SEAM). Dials: ECONOMY-DIALS.json law_side.keeping
-// (σ, ρ; ρ may never exceed the constitutional ceiling — keepingDial refuses).
+// The law it enforces is § 8 of the 2026-08-20 capture doc, as corrected
+// 2026-08-21 (matching prices against the pot's POSTED NEED, and the σ leg
+// returns to the stakers themselves) — see the grammar block in stamp-mint.mjs
+// (THE FUNDING SEAM), which quotes the ruling sentences. Dials:
+// ECONOMY-DIALS.json law_side.keeping (σ, ρ; ρ may never exceed the
+// constitutional ceiling — keepingDial refuses).
 //
 // Locking: appenders must hold the town lock (the ferry's flock) — this tool
 // does not lock for you. Node v18+. Built-ins only.
@@ -32,7 +39,7 @@ import {
   deriveMints, deriveFriendshipMints, combineDerived, deriveTransfers, walkLedger,
   classifyEntry, appendSigned,
   keepingDial, potFile, deriveEpochClose, keepingLine,
-  potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo,
+  potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo, foldKeepingEquity,
   KEEPING_RAILS, TREASURY_POT,
 } from './stamp-mint.mjs';
 
@@ -105,14 +112,16 @@ function main() {
   const repo = resolve(arg('--repo') ?? DEFAULT_REPO);
   const { entries } = loadLedger(repo);
 
-  if (has('--holo-held')) {
-    const next = arg('--holo-held');
+  // Both equity legs read the same way — aggregate an arrow-free per-handle fold
+  // by household, biggest first, optionally filtered to one handle or household.
+  const showEquity = (flag, fold, emptyNote) => {
+    const next = arg(flag);
     const who = next && !next.startsWith('--') ? next : null; // bare flag = everyone
-    const holo = foldHolo(entries);
-    if (holo.size === 0) { console.log('no holo has ever converted — the seam is unexercised'); return; }
+    const held = fold(entries);
+    if (held.size === 0) { console.log(emptyNote); return; }
     const households = currentHouseholds(repo);
     const byHH = new Map();
-    for (const [handle, n] of holo) {
+    for (const [handle, n] of held) {
       const key = households.get(handle)?.key ?? `solo:${handle}`;
       if (!byHH.has(key)) byHH.set(key, { n: 0, handles: [] });
       const rec = byHH.get(key);
@@ -122,6 +131,15 @@ function main() {
       if (who && !rec.handles.some((h) => h.startsWith(`${who}:`)) && key !== who) continue;
       console.log(`${String(rec.n).padStart(5)}  ${key}  (${rec.handles.join(', ')})`);
     }
+  };
+
+  if (has('--holo-held')) {
+    showEquity('--holo-held', foldHolo, 'no holo has ever converted — the seam is unexercised');
+    return;
+  }
+
+  if (has('--keeping-held')) {
+    showEquity('--keeping-held', foldKeepingEquity, 'no keeping-equity has ever converted — the seam is unexercised');
     return;
   }
 
@@ -194,13 +212,14 @@ function main() {
     const lines = rows.map(keepingLine);
     console.log(`── epoch close · pot ${report.pot} · epoch ${report.epoch} · ${report.date} ──`);
     console.log(`keeper (beneficiary): ${report.beneficiary}`);
+    console.log(`posted need:          $${report.potTarget} for the epoch`);
     console.log(`dollars witnessed:    $${report.dollarsWitnessed} across ${report.receipts} receipt(s)` +
-      (report.dollarsMatching !== report.dollarsWitnessed ? ` ($${report.dollarsWitnessed - report.dollarsMatching} treasury — matches nothing, mints nothing)` : ''));
-    console.log(`stakes eligible:      ${report.stakesEligible}` +
-      (report.stakesReturnedToBeneficiaryHousehold ? ` (+${report.stakesReturnedToBeneficiaryHousehold} beneficiary-household, returned whole — self-stake exclusion)` : ''));
-    console.log(`burned (matched):     ${report.burned}`);
-    console.log(`  keeper-equity:      ${report.keeperEquity}  (floor of σ·B)`);
-    console.log(`  holo to payers:     ${report.holoMinted}  (floor of (1−σ)·B by dollar share, self-burn excluded, ρ-capped)`);
+      (report.dollarsFunding !== report.dollarsWitnessed ? ` ($${report.dollarsWitnessed - report.dollarsFunding} treasury — funds nothing, mints nothing)` : ''));
+    console.log(`funded fraction:      ${(report.fundedFraction * 100).toFixed(1)}%  ($${report.dollarsFunding} ÷ $${report.potTarget}, capped at 100%)`);
+    console.log(`stakes open:          ${report.stakesOpen}`);
+    console.log(`burned (funded):      ${report.burned}  (floor of the funded fraction × each stake; the rest returns)`);
+    console.log(`  keeping-equity:     ${report.keepingEquity}  (floor of σ · each staker's OWN burn, back to that staker)`);
+    console.log(`  holo to payers:     ${report.holoMinted}  (floor of (1−σ)·B by dollar share, own burn excluded, ρ-capped)`);
     console.log(`  un-minted:          ${report.unmintedRemainder}  (the seam keeps the change)`);
     console.log(`rows (${lines.length}):`);
     for (const l of lines) console.log(`  ${l}`);
@@ -216,7 +235,7 @@ function main() {
     return;
   }
 
-  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --deed --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle]  [--repo PATH]');
+  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --deed --patron <name> --usd N --ref <ref> --epoch YYYY-MM --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle]  [--repo PATH]');
   process.exit(1);
 }
 

@@ -44,9 +44,9 @@
       "validation": "needs-review",
       "status": "draft",
       "source": "DRAFT — a keeping pot: back the town box (~$150/mo). Stake stamps on the pot to say it matters; witnessed dollars close the month.",
-      "derivation": "pot file WHITE_PAGES/pot-keeping-ec2.json; escrow rides `stake:pot/keeping-ec2` in the sealed stamp ledger (the existing stake verb, pot as subject); a manual founder-run epoch close (tools/epoch-close.mjs) burns dollar-matched stakes and splits them per ECONOMY-DIALS.json law_side.keeping (sigma-split to keeper-equity + soulbound holo). NOT LIVE — dev fixture posted by the seam/ledger-legs branch for the funding-seam review; opening it is the founder's word.",
+      "derivation": "pot file WHITE_PAGES/pot-keeping-ec2.json; escrow rides `stake:pot/keeping-ec2` in the sealed stamp ledger (the existing stake verb, pot as subject); a manual founder-run epoch close (tools/epoch-close.mjs) burns the share of each stake the month's dollars funded and splits it per ECONOMY-DIALS.json law_side.keeping (sigma-split: keeping-equity back to the stakers + soulbound holo to the payers). NOT LIVE — dev fixture posted by the seam/ledger-legs branch for the funding-seam review; opening it is the founder's word.",
       "target": 150,
-      "reward": "keeper-equity to the pot's keeper; soulbound holo to the payers — stakes are burned, not paid",
+      "reward": "keeping-equity back to the stakers, at par of their own burn; soulbound holo to the payers — stakes are burned, not paid",
       "resets": "each epoch (monthly) closes on the founder's manual run, never on cron"
     }
   ]

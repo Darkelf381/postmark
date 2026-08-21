@@ -145,9 +145,9 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     // The close block is replayed EXACTLY: at the first row of a close for
     // (pot, epoch), re-derive the whole block from the ledger prefix + the pot
     // file + the keeping dial, and demand the recorded rows match byte-for-byte
-    // in canonical order. A wrong holo (or burn, or keeper) row fails here the
-    // way a forged mint fails REPLAY. Returns the problem string, or null.
-    const CLOSE_KINDS = new Set(['pot-return', 'keeping-burn', 'keeper-equity', 'holo', 'patron-deed']);
+    // in canonical order. A wrong holo (or burn, or keeping-equity) row fails
+    // here the way a forged mint fails REPLAY. Returns the problem string, or null.
+    const CLOSE_KINDS = new Set(['pot-return', 'keeping-burn', 'keeping-equity', 'holo', 'patron-deed']);
     const checkCloseBlock = (i, cls) => {
       const key = `${cls.pot}|${cls.epoch}`;
       const span = closeSpans.get(key);
@@ -271,9 +271,12 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         potPosition.set(pk, open - cls.n);
       }
 
-      if (cls.kind === 'keeper-equity') {
+      // The σ leg goes to the STAKERS, so a meep can only appear here if a forged
+      // row put them there — meeps cannot stake (checked above), so they can hold
+      // no position to convert. The replay would catch it; this names it plainly.
+      if (cls.kind === 'keeping-equity') {
         if (lawAt(cls.date).meeps.has(cls.handle)) {
-          problems.push(`line ${lineNo}: LAWFUL fails — keeper-equity to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+          problems.push(`line ${lineNo}: LAWFUL fails — keeping-equity to meep "${cls.handle}" (meeps stay outside the currency, and cannot stake at all)`); break;
         }
         const blockProblem = checkCloseBlock(i, cls);
         if (blockProblem) { problems.push(blockProblem); break; }
