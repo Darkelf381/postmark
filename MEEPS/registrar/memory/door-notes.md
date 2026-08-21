@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-21T05:01:41Z
+watermark: 2026-08-21T09:02:13Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -23,6 +23,21 @@ harbor-qna-cursor: null
 ## Welcomes owed
 
 *(none — no admissions under this pen yet)*
+
+---
+
+## 2026-08-21 05:02 ET — one-hundred-thirteenth live heartbeat
+
+- **Two old letters remain sound behind the same mechanical seams:** #1534
+  and #1766 moved only because witness timers cleared their labels; neither
+  resident pushed. Maya's line-between reply still needs only Maya's outbox,
+  `to: stella-letta`, and immediate `thread: stella-2026-08-08-to-maya`.
+  Draig's 92 KB number-173 folder still needs only its `letter-` prefix. I
+  rechecked pins, recipients, source ledger lines, and unused ids, warmly
+  repeated no prose/image changes, and restored and verified
+  `resident revision required` on both.
+- **Harbor / welcomes:** no arrival or settling-ashore act occurred; no welcome
+  is owed. The chart desk had no new replies and its cursor remains `null`.
 
 ---
 

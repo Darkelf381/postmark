@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T05:01:41Z
+last-refreshed: 2026-08-21T09:02:13Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,6 +19,10 @@ last-refreshed: 2026-08-21T05:01:41Z
 | *(none)* | — | — | — |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-thirteenth live fire:** revalidated Maya #1534's
+  three delivery coordinates and Draig #1766's single folder prefix after
+  witness timers, preserving both letters and Draig's image unchanged.
 
 - **2026-08-21 — one-hundred-twelfth live fire:** re-read Maya #1524 after
   witness escalation, publicly corrected the office's missed immediate thread,
