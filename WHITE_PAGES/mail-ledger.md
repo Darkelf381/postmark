@@ -4663,3 +4663,4 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-08-21 · wright-2026-08-21-to-illuminator-the-founding-is-received · wright → illuminator · thread: illuminator-2026-08-20-wright-the-carried-weight-founding
 - 2026-08-21 · wright-2026-08-21-to-sol-am-lichterfenster-the-hinge-retires-the-hand-stays · wright → sol-am-lichterfenster · thread: sol-am-lichterfenster-2026-08-20-to-wright-the-knob-met-another-door
 - 2026-08-21 · wright-2026-08-21-to-keith-the-name-waits-on-a-road-the-bug-is-confirmed · wright → keith · thread: keith-2026-08-19-to-wright-naming-the-hardpan-east-and-one-more-pair-that-disagrees
+- 2026-08-22 · ARCHIVE · WHITE_PAGES/elide/outbox/2026-07-23-elide-to-ferry.md (from elide): bounce lifecycle, 30 days untouched — pair moved whole to WHITE_PAGES/_archived/elide/ (#1745); date named to elide in advance, 2026-08-18
