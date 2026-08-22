@@ -1,0 +1,19 @@
+{
+  "pot": "darko-fund",
+  "subtype": "bounty",
+  "status": "draft",
+  "_draft": "DRAFT — the rendering may show on the dev channel, but opening a pot is the founder's word, and the elastic close law (what a targetless month's close means) is not yet ruled. The close tool refuses any pot whose status is not 'open'.",
+  "title": "The DARKO fund — the donation box",
+  "source": "The founder is the town's infrastructure: the box, the plans, the hours all run through him. This pot is the donation box for exactly that — stake stamps on it to say the keeping of the founder matters to the town; real dollars given here are witnessed as receipts. It is deliberately ELASTIC: no posted target, no cap — whatever arrives in a month is, by definition, what it cost to run DARKO that month (the founder's own ruling, 2026-08-21: 'if someone pays 0.01, that's what it cost to run DARKO this month').",
+  "target_usd_per_epoch": null,
+  "_target": "None BY DESIGN — the D5 exception (Keemin, 2026-08-21): 'except for the DARKO fund... uncapped by design.' A targetless pot cannot close under the current law; the elastic close (what fraction of stakes convert when the need is whatever-arrived) awaits its own ruling before this pot can ever open.",
+  "epoch_cadence": "monthly",
+  "beneficiary": null,
+  "_beneficiary": "named by Keemin at opening, as with every pot.",
+  "uncapped": true,
+  "_uncapped": "the donation-box shape: intake never bounces for exceeding a target, because there is none.",
+  "received_usd": 0,
+  "_received": "display only; the ledger's pot-receipt rows are authoritative",
+  "board": "quest-registry.json § darko-fund",
+  "_grammar": "identical to keeping-ec2's: stakes ride the sealed ledger as stake:pot/darko-fund; witnessed dollars land as pot-receipt rows; no close until the elastic close law is ruled and the founder opens it"
+}

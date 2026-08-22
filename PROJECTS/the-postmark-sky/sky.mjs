@@ -82,16 +82,25 @@ lines.push(`The Sky over Postmark — ${dateStr} ${String(hh).padStart(2,'0')}:$
 if (sun.up) {
   const noon = 1 - Math.abs(sun.x - 0.5) * 2;
   const when = noon > 0.8 ? 'high, near noon' : noon > 0.4 ? 'mid-sky' : 'low, near the horizon';
-  lines.push(`Sun: up — twin suns ${when}, ${skyPos(sun.x)}`);
+  lines.push(`Sun: up — Bright Sun ${when}, ${skyPos(sun.x)}`);
 } else {
   lines.push(`Sun: down — the bright sun below the horizon`);
 }
-// The Dark Sun is always in the sky — the bright sun's twin that casts
-// shadows instead of light. It sits opposite the bright sun.
-{
-  const dx = 1 - sun.x, dy = 1 - sun.y;
-  const when = dy < 0.33 ? 'high' : dy < 0.66 ? 'mid' : 'low';
-  lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(dx)}`);
+// The Dark Sun is the bright sun's twin that casts shadows instead of light.
+// It rides alongside the bright sun — in the sky at the same time, a little
+// closer to the sky's centre, on the same radial line — casting its shadow
+// down onto the town below.
+if (sun.up) {
+  const cx = 0.5, cy = 0.42;
+  const dx = sun.x - cx, dy = sun.y - cy;
+  const len = Math.hypot(dx, dy) || 1;
+  const off = 0.18;
+  const ddx = sun.x - (dx / len) * off;
+  const ddy = sun.y - (dy / len) * off;
+  const when = ddy < 0.33 ? 'high' : ddy < 0.66 ? 'mid' : 'low';
+  lines.push(`Dark Sun: up — casting shadows, ${when} in the ${skyPos(ddx)}`);
+} else {
+  lines.push(`Dark Sun: down — the bright sun's twin, gone with the light`);
 }
 
 for (const m of moons) {
@@ -119,16 +128,42 @@ if (!sun.up) {
 
 // ---- output
 if (wantJson) {
+  // the Dark Sun rides alongside the bright sun, a little closer to the sky's
+  // centre on the same radial line, casting its shadow down onto the town; it
+  // is only in the sky while the bright sun is
+  const dSun = sun.up
+    ? (() => {
+        const cx = 0.5, cy = 0.42;
+        const dx = sun.x - cx, dy = sun.y - cy;
+        const len = Math.hypot(dx, dy) || 1;
+        const off = 0.18;
+        return { up: true, x: sun.x - (dx / len) * off, y: sun.y - (dy / len) * off };
+      })()
+    : { up: false };
+  // The visible sky is that day's mail: only households who wrote or received
+  // that day are shown as stars, only that day's letters as lines. The picture
+  // draws stars only at night; during the day the same letters are birds in
+  // flight. The machine fields must match what the picture draws.
+  const dayLetters = sky.letters.filter(l => l.date === dateStr);
+  const dayHandles = new Set();
+  for (const l of dayLetters){ dayHandles.add(l.from); dayHandles.add(l.to); }
   console.log(JSON.stringify({
     date: dateStr, time: `${String(hh).padStart(2,'0')}:${String(mm).padStart(2,'0')}`, utc: true,
     sun: { up: sun.up, position: sun.up ? `${skyPos(sun.x)}, ${skyHeight(sun.y)}` : 'below horizon' },
+    darkSun: dSun.up
+      ? { up: true, position: `${skyPos(dSun.x)}, ${skyHeight(dSun.y)}` }
+      : { up: false, position: 'below horizon' },
     moons: moons.map(m => ({
       name: m.name, phase: phaseName(m.phase), lit: Math.round(m.illum*100),
       up: m.pos.up, position: m.pos.up ? `${skyPos(m.pos.x)}, ${skyHeight(m.pos.y)}` : 'below horizon'
     })),
     night: !sun.up,
-    stars: sky.households.length,
-    lettersCrossed: sky.letters.length
+    // what the picture actually draws: stars only at night, birds by day
+    visibleStars: sun.up ? 0 : dayHandles.size,   // the picture draws no stars while the sun is up
+    birdsInFlight: sun.up ? dayLetters.length : 0, // the day sky is the mail in motion
+    lettersCrossed: dayLetters.length,      // this day's letters (constellation lines at night, birds by day)
+    households: sky.households.length,      // the whole town in the ledger
+    lettersInLedger: sky.letters.length
   }, null, 2));
 } else {
   console.log(lines.join('\n'));

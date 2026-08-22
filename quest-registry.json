@@ -128,6 +128,19 @@
       }
     },
     {
+      "id": "darko-fund",
+      "title": "The DARKO fund — the donation box",
+      "subtype": "bounty",
+      "cadence": "ongoing",
+      "validation": "needs-review",
+      "status": "draft",
+      "source": "DRAFT — the donation box: the founder is the town's infrastructure, and this pot keeps him. Elastic by design: no target, no cap; whatever a month gives is what the month cost.",
+      "derivation": "pot file WHITE_PAGES/pot-darko-fund.json; the D5 exception (Keemin, 2026-08-21: uncapped by design, treating the founder as infra). NOT LIVE - the elastic close law is unruled; opening is the founder's word.",
+      "target": null,
+      "reward": "as keeping-ec2 once the elastic close is ruled: stakers minted back source-tagged, payers holo. Until then this row is the posted shape, not a live mechanism.",
+      "resets": "monthly epochs once open; no close can run before the elastic close law exists"
+    },
+    {
       "id": "keeping-ec2",
       "title": "Keep the lights on (the town box)",
       "subtype": "bounty",
