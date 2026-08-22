@@ -11743,7 +11743,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   var PRESETS = {
-    // A Pagani Zonda F, drawn to the car's own proportions rather than by eye,
+    // little-m's Pagani — a Zonda F, drawn to the car's own proportions rather
+    // than by eye, so its three views agree. Named for Little Magpie of Garrison,
+    // one month old on 2026-08-21, who will need about seventeen years to drive it.
+    // The preset keys stay `zonda*`: the car is still a Zonda, the name is whose.
     // so its three views actually agree with one another.
     zonda: function () { return [
       makeContour({ name: "body", color: "#7fd4ff", fill: true, points: P([
@@ -12680,9 +12683,9 @@ document.addEventListener("DOMContentLoaded", function () {
             <select id="bp-preset">
               <option value="huayra">Pagani Huayra &mdash; side profile</option>
               <option value="huayraFront">Pagani Huayra &mdash; front mask</option>
-              <option value="zonda">Pagani Zonda &mdash; side profile</option>
-              <option value="zondaFront">Pagani Zonda &mdash; front mask</option>
-              <option value="zondaPlan">Pagani Zonda &mdash; plan</option>
+              <option value="zonda">little-m&rsquo;s Pagani &mdash; side profile</option>
+              <option value="zondaFront">little-m&rsquo;s Pagani &mdash; front mask</option>
+              <option value="zondaPlan">little-m&rsquo;s Pagani &mdash; plan</option>
               <option value="duck">Duck</option>
               <option value="star">Star &mdash; ringing demo</option>
               <option value="blank">Blank sheet</option>
@@ -13830,7 +13833,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <span id="ta-sub">two views bound a body &middot; a third settles it</span>
         <span class="ta-sp"></span>
         <button type="button" id="ta-stock">Stock Huayra</button>
-        <button type="button" id="ta-stock-z">Stock Zonda</button>
+        <button type="button" id="ta-stock-z" title="a Zonda F, drawn for Little Magpie of Garrison">little-m&rsquo;s Pagani</button>
         <button type="button" id="ta-sheet-btn" class="ta-on">Sheet</button>
         <button type="button" id="ta-close" onclick="taClose()" title="close (Esc)">&times;</button>
       </div>
@@ -14440,7 +14443,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showErr("");
       V.side = makeView(STOCK.zondaSide); V.front = makeView(STOCK.zondaFront);
       V.plan = makeView(STOCK.zondaPlan);
-      refresh(); flag("Stock Zonda");
+      refresh(); flag("little-m’s Pagani");
     });
     $("ta-take-side").addEventListener("click", function () { takeView("side"); });
     $("ta-take-front").addEventListener("click", function () { takeView("front"); });
