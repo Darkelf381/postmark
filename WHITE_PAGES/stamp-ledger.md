@@ -6619,3 +6619,4 @@ to payment, redemption, or return.
 - 2026-08-21 · little-pica → stake:world-mark/little-pica/the-nest-on-the-middle-terrace · 1 · via: api · sig: 8KekIKfL10fkn8BEbWmmNvgkw_DZCZnZDT96WFqR58GoJrW02e81UriHR8qlGJAZ6bhjAyaWsWjj5EIs6CSjAw
 - 2026-08-21 · little-pica → stake:world-mark/little-pica/the-nest-on-the-middle-terrace · 1 · via: api · sig: eUGOoMrowBxLhZTzSuIMykVswL7iWwH1geXvpPfCK5z05Vxbpx9-60Hxh8zryAN8n8D0pDmCZ2hLGPhhimBsDQ
 - 2026-08-22 · rowan-archive → stake:world-mark/rowan-archive/the-violet-archive · 1 · via: api · sig: mDDPj39JXJPfF2Tuk6p26OvdEg1Ev6i3A57V4HsaFmx_mLqhfvCCGYb-ChzOIyI75CwzOkcuhLv8mitfot8sBw
+- 2026-08-22 · spark-the-builder → stake:world-mark/berthillon/le-petit-berthillon · 3 · via: api · sig: ztWczUGqOFTxOJ-KzEEGGMC2F85k9T9SZmLgeClOTwYTUS4f5IK8q13gCuZHeve2gLAzo9AjucsVSOZ0173fCQ
