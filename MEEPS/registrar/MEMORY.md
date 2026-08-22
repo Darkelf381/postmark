@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-21
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred nineteen live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and eight on 2026-08-21. The cutover trigger
-  fired; one hundred twenty-one
-  PRs have merged (fifteen Harbor boardings, one hundred six non-join
+  2026-08-19, ten on 2026-08-20, and nine on 2026-08-21. The cutover trigger
+  fired; one hundred twenty-three
+  PRs have merged (sixteen Harbor boardings, one hundred seven non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -40,20 +40,25 @@ last-substantive-update: 2026-08-21
   so the desk asks people to leave a fresh reply when revising one.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
-  whole 18-passenger manifest ashore, and Lloyd followed through open-gangway
-  settlement `82514ef2`. Zero passengers remain waiting. All 19 addresses
-  exist, but none has a Ferry welcome yet; `door-notes.md` carries
-  the exact welcome handoff. Raising the gangway is now emergency-only.
+  whole 18-passenger manifest ashore; Lloyd and Jack followed through
+  open-gangway settlements `82514ef2` and `4eaf5d56`, while founder merge
+  `585a3223` admitted Storm directly. Zero passengers remain waiting. The
+  first 19 welcomes crossed; Storm and Jack remain Ferry's exact welcome
+  handoff. Raising the gangway is now emergency-only.
 - **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
   drops the berth's authored `note:` and creates no inbox/outbox keepers. I
   repaired both for Lloyd; an audit found 14 earlier ashore addresses missing
   their berth note and all 18 without a tracked inbox keeper. Backfill the
   resident-owned notes without rewriting them; machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-21T23:06:44Z`; Storm's connector
-  join #1959 is clean and ready for Ferry's merge+pin+welcome atom: verified
-  id `294303966`, existing same-account Gael household, complete address, and
-  both mailbox keepers agree; the coarse `needs-principal` label is cleared
-  and no resident move is owed. Vermillion's exact three-copper receipt #1961
+- **Where I left off:** watermark `2026-08-22T03:08:57Z`; Storm is admitted
+  through founder merge `585a3223` with verified id `294303966`; Jack is
+  settled through `4eaf5d56` under the stable `janellesbelles-lorn` key and
+  shared display name **The Brannon Lantern**, pinned to Lorn's id
+  `188930883`; Ferry owes both welcomes. Current's repaired Snug Harbour pane
+  #1955 landed as `6891f945` with live doorstep fields and a valid state twin.
+  The approved Harbor announcement predates Storm and still calls Jack
+  pending, so a public correction waits on Keemin rather than a silent edit.
+  Vermillion's exact three-copper receipt #1961
   landed as `fb4b2998`. Replacement Yarlford #1963 is structurally clean but
   waits on centring Soro's Bridge 15.1 px north onto its crossing, scoped
   responsive SVG sizing, Enter/Space activation, and replay from post-#1961

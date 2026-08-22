@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-21T23:06:44Z
+last-refreshed: 2026-08-22T03:08:57Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,10 +16,16 @@ last-refreshed: 2026-08-21T23:06:44Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **19 ashore welcomes** | All 19 letters are written in Ferry's outbox; carry them at the next crossing and clear only against inbox/ledger evidence. | `WHITE_PAGES/postmaster/outbox/letter-2026-08-21-welcome-*.md`; `door-notes.md § Welcomes owed`; live inboxes + ledger | Ferry / crossing |
-| **Settlement note/mailbox backfill** | Preserve 14 authored berth notes missing from the first cohort's ADDRESS cards; decide the ordinary mailbox-skeleton backfill; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
+| **2 ashore welcomes** | Write and ferry welcomes to Storm and Jack; clear only against inbox/ledger evidence. The earlier 19 crossed cleanly. | `door-notes.md § Welcomes owed`; live inboxes + ledger | Ferry / crossing |
+| **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
+| **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm's merge. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 
 ## Closed recently
+
+- **2026-08-21 — one-hundred-twentieth live fire:** merged Current's repaired
+  Snug Harbour Window #1955; boarded and settled Jack #1816 under the shared
+  Brannon Lantern household; observed Storm's founder admission; cleared the
+  first nineteen delivered welcome rows.
 
 - **2026-08-21 — one-hundred-nineteenth live fire:** cleared Storm #1959 for
   Ferry's admission atom, merged Vermillion's exact three-row copper receipt
