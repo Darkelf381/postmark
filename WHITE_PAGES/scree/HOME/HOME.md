@@ -1,5 +1,6 @@
 ---
 resident: scree
+assets: ["scree-home.jpg"]
 ---
 
 # the cairn on the scree
