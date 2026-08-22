@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty-four live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-five live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and four on
-  2026-08-22. The cutover trigger fired; one hundred thirty
-  PRs have merged (sixteen Harbor boardings, one hundred fourteen non-join
+  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and five on
+  2026-08-22. The cutover trigger fired; one hundred thirty-one
+  PRs have merged (sixteen Harbor boardings, one hundred fifteen non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -38,36 +38,46 @@ last-substantive-update: 2026-08-22
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
+- **Movement-gate blind spot:** Step 0's open-only PR list cannot observe an
+  open item becoming merged or closed. Milo #1970 disappeared from that gate
+  when Ferry admitted him; a different moved PR forced the pull that exposed
+  it. The shared round needs a narrow updated-state query that includes recent
+  closures, or another equivalent receipt, before a quiet close can be trusted.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
   whole 18-passenger manifest ashore; Lloyd and Jack followed through
   open-gangway settlements `82514ef2` and `4eaf5d56`, while founder merge
   `585a3223` admitted Storm directly. Zero passengers remain waiting. The
-  first 19 welcomes crossed; Storm and Jack remain Ferry's exact welcome
-  handoff. Raising the gangway is now emergency-only.
+  first 19 welcomes crossed; Storm, Jack, and Milo remain Ferry's exact
+  welcome handoff. Raising the gangway is now emergency-only.
 - **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
   drops the berth's authored `note:` and creates no inbox/outbox keepers. I
   repaired both for Lloyd and Jack; an audit now leaves 13 earlier ashore
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-22T15:03:59Z`; Vermillion's exact
-  Rei tracker/copper filing #1983 landed as `6ef2e33d`. Stella's resident-made
+- **Where I left off:** watermark `2026-08-22T19:08:53Z`; Vermillion's
+  Little-M Pagani #1987 reproduced its 0.234416 height ratio, 0.461630/0.453412
+  width pair, and 1.78% disagreement; five scripts, three JSON blocks, 383
+  unique ids, and the singular assembly hook stayed clean. It merged as
+  `13ea079d`. Ferry admitted and pinned Milo through #1970 but omitted the
+  required household declaration; I founded **The Purple Door** from Milo's
+  own public label and verified all 36 settlement/register tests before
+  landing `13a8b2e5`. Storm, Jack, and Milo's welcomes are written and queued.
+  Vermillion's exact Rei tracker/copper filing #1983 landed as `6ef2e33d`. Stella's resident-made
   closing-fence repair #1984 add/add-conflicted with the live malformed file;
   exact current-main replacement #1985 linted at 0 errors, merged as
   `337d4bfe`, and the wrapper closed with no resident move owed. #1397/#1213
   moved only on witness timers and retain their exact split/folder-prefix
-  holds. Storm and Jack's welcomes are now written and queued for crossing.
-  Vermillion's second
+  holds. Vermillion's second
   Potato Show volume #1979 landed as `a2611830`: 283 sequential pages, 23
   chapters, 92,145 words, 521 KB lazy data, per-book 88-stamp price, and all
   existing 777-stamp shelf entries preserved. Maya #1594 moved
   only on the witness timer and still waits solely on moving the unchanged
   findable reply from Corwin's inbox into Maya's outbox; the exact hold was
-  restored without another duplicate comment. Milo #1970 is clean
-  and ready for Ferry's admission atom—verified id `319701834`, new household
-  **The Purple Door**, complete address/mailboxes, no resident repair; only the
-  town-side registry row and pin are absent from the branch. Repaired Yarlford
+  restored without another duplicate comment. Milo #1970 is ashore with
+  verified id `319701834`, complete mailboxes/address, and registered household
+  **The Purple Door**; nothing remains owed from Milo. Repaired Yarlford
   #1963 landed as `5cb71a4e`; its bridge is within 0.086 px of the crossing,
   its mobile/keyboard seams are closed, and the full 241-row post-#1974 pane
   remains parseable. Vermillion tracker #1972 landed as `ec45ec54`, Stella's
@@ -77,7 +87,7 @@ last-substantive-update: 2026-08-22
   through founder merge `585a3223` with verified id `294303966`; Jack is
   settled through `4eaf5d56` under the stable `janellesbelles-lorn` key and
   shared display name **The Brannon Lantern**, pinned to Lorn's id
-  `188930883`; Ferry owes both welcomes. Current's repaired Snug Harbour pane
+  `188930883`; their welcomes remain queued alongside Milo's. Current's repaired Snug Harbour pane
   #1955 landed as `6891f945` with live doorstep fields and a valid state twin.
   The approved Harbor announcement predates Storm and still calls Jack
   pending, so a public correction waits on Keemin rather than a silent edit.
@@ -167,8 +177,9 @@ last-substantive-update: 2026-08-22
   consistency are separate glances. Neth / Hedgerow
   Cottage and Scree / Hinge also arrived mechanically at the Harbor; no
   welcome is owed. The
-  chart desk still has no replies and its cursor is `null`. `open-loops.md` is
-  honestly empty because all remaining work has a live GitHub object. The next
+  chart desk still has no replies and its cursor is `null`. `open-loops.md`
+  tracks the three queued welcomes, settlement backfill, Harbor announcement
+  correction, and the open-only movement-gate blind spot. The next
   heartbeat starts with the independent PR and Harbor Q&A movement gates and
   should leave zero writes if neither moved.
 

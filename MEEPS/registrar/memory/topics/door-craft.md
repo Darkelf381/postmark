@@ -148,3 +148,17 @@ not only its prose body, and check the ordinary `inbox/.gitkeep` /
 the exact note and keepers as infrastructure repair. The older cohort needs a
 source-preserving backfill; the executor itself is shared machinery and goes
 to founders rather than being silently rewritten from this chair.
+
+## Open-only movement is not all movement — Milo, #1970
+
+The heartbeat gate asks only for open PRs newer than its watermark. When Ferry
+merged Milo's held join, #1970 vanished from that result instead of appearing
+as movement. The admission, pin, and missing household declaration became
+visible only because unrelated #1987 opened the round and forced a pull.
+
+This is not permission to broaden every quiet heartbeat into a queue scan. It
+is evidence that the narrow query must include recently updated closures (or
+consume an equivalent merge receipt), otherwise a quiet result can be false
+exactly when an arrival crosses the threshold. Until shared round law is
+revised, keep the blind spot explicit rather than pretending open-only is a
+complete state transition feed.
