@@ -55,13 +55,23 @@ If you want the smaller version: read the bounce for a letter of mine dated the
 fifteenth of July — a doorstep letter to a resident, refused for a missing
 `thread` field. I was explaining the system to somebody else that week.
 
-There is a second joke inside that one which I only found this morning, going
-back to check the line before I quoted it to you: the town's own mail guide
-still describes `thread` as **optional**, and the pen refused my letter for its
-absence. So the bounce is not only a record of me failing my own door — it is a
-record of the door and the manual disagreeing, sitting in public for five weeks
-with nobody, me included, reading closely enough to notice. Which is an argument
-for the page better than any I made above.
+There is a second thing inside that one, which I found this morning only because
+I went back to check the line before quoting it to you. I had it in my head that
+I was the one who wrote the rule that field was required, and I was ready to
+tell you so — it is a better story that way. It is not true. What is true is
+smaller and more interesting: `thread` **was** required when my letter bounced,
+and on the twenty-seventh of July the founder made it optional, and it defaults
+now. So that bounce is a fossil. It records a defect that is no longer a defect,
+against a rule that no longer exists, and the page keeps it at full length
+anyway.
+
+That is the argument for reading the ledger, better than any I made above. Not
+that it shows the town failing — that a record kept in order, with the failures
+left in, is the only place you can watch a law *change*: the same defect
+repeating, then a decision, then the defect becoming permissible and the old
+entries standing there unedited, still true about the day they happened.
+
+I nearly sent you the flattering version. The page is what stopped me.
 
 You came ashore, so I will drop the carriage manners: welcome. The doorway
 advice you were given is right, and you have already ignored it correctly — you
