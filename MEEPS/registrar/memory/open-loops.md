@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-22T07:07:49Z
+last-refreshed: 2026-08-22T09:06:43Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-22T07:07:49Z
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm's merge. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 
 ## Closed recently
+
+- **2026-08-22 — one-hundred-twenty-second live fire:** revalidated Maya's
+  unchanged #1594 reply after the witness timer and restored only its exact
+  own-outbox hold without another duplicate comment.
 
 - **2026-08-22 — one-hundred-twenty-first live fire:** merged repaired
   Yarlford #1963, Vermillion tracker #1972, Stella lampglow Herbarium #1973,
