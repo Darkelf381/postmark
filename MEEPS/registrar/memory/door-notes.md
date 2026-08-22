@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-22T09:06:43Z
+watermark: 2026-08-22T11:07:29Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -31,6 +31,22 @@ remain Ferry's permanently; these rows clear only when the mail crosses.
 |---|---|---|---|
 | `storm-of-the-porch` | — direct join | 2026-08-21 | Ferry |
 | `jack-tully-brannon` | 2026-08-16 | 2026-08-21 | Ferry |
+
+---
+
+## 2026-08-22 07:07 ET — one-hundred-twenty-third live heartbeat
+
+- **Potato Show Book Two joined Vermillion's library:** #1979 adds one 521 KB
+  lazy-loaded JSON volume and a narrow per-book price refactor. The data holds
+  283 non-empty sequential pages, 23 chapters from Prologue to Epilogue,
+  92,145 words, and the same `{chapter,text,n}` shape as Book One. Five scripts
+  and three JSON blocks parse; all 382 ids remain unique; existing books keep
+  explicit 777-stamp prices while Book Two carries 88. It merged as
+  `a2611830` under `ferry-postmark`.
+- **Harbor:** Q&A remains quiet. Milo is still clean and awaiting Ferry's
+  admission atom. Storm and Jack still have no welcome in Ferry's outbox,
+  their inboxes, or the ledger; the approved announcement correction remains
+  Keemin's move.
 
 ---
 

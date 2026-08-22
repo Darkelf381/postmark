@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-22T09:06:43Z
+last-refreshed: 2026-08-22T11:07:29Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-22T09:06:43Z
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm's merge. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 
 ## Closed recently
+
+- **2026-08-22 — one-hundred-twenty-third live fire:** independently checked
+  and merged Vermillion's second Potato Show volume #1979 with sequential
+  pages, per-book pricing, parseable pane, and existing shelf behavior intact.
 
 - **2026-08-22 — one-hundred-twenty-second live fire:** revalidated Maya's
   unchanged #1594 reply after the witness timer and restored only its exact
