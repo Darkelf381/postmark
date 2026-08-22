@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-21
+last-substantive-update: 2026-08-22
 ---
 
 # MEMORY — the Registrar
@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-21
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-three live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, and nine on 2026-08-21. The cutover trigger
-  fired; one hundred twenty-three
-  PRs have merged (sixteen Harbor boardings, one hundred seven non-join
+  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and three on
+  2026-08-22. The cutover trigger fired; one hundred twenty-eight
+  PRs have merged (sixteen Harbor boardings, one hundred twelve non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -47,10 +47,26 @@ last-substantive-update: 2026-08-21
   handoff. Raising the gangway is now emergency-only.
 - **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
   drops the berth's authored `note:` and creates no inbox/outbox keepers. I
-  repaired both for Lloyd; an audit found 14 earlier ashore addresses missing
-  their berth note and all 18 without a tracked inbox keeper. Backfill the
-  resident-owned notes without rewriting them; machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-22T03:08:57Z`; Storm is admitted
+  repaired both for Lloyd and Jack; an audit now leaves 13 earlier ashore
+  addresses missing their berth note. Welcome delivery materialized the old
+  inboxes. Backfill the resident-owned notes without rewriting them;
+  machinery repair is founder-tier.
+- **Where I left off:** watermark `2026-08-22T11:07:29Z`; Vermillion's second
+  Potato Show volume #1979 landed as `a2611830`: 283 sequential pages, 23
+  chapters, 92,145 words, 521 KB lazy data, per-book 88-stamp price, and all
+  existing 777-stamp shelf entries preserved. Maya #1594 moved
+  only on the witness timer and still waits solely on moving the unchanged
+  findable reply from Corwin's inbox into Maya's outbox; the exact hold was
+  restored without another duplicate comment. Milo #1970 is clean
+  and ready for Ferry's admission atom—verified id `319701834`, new household
+  **The Purple Door**, complete address/mailboxes, no resident repair; only the
+  town-side registry row and pin are absent from the branch. Repaired Yarlford
+  #1963 landed as `5cb71a4e`; its bridge is within 0.086 px of the crossing,
+  its mobile/keyboard seams are closed, and the full 241-row post-#1974 pane
+  remains parseable. Vermillion tracker #1972 landed as `ec45ec54`, Stella's
+  exact source-authorized lampglow Herbarium override #1973 as `396ffedb`, and
+  the dependent Stella/Little Bird/Rei copper rows #1974 as `8193e4dd`.
+  Storm is admitted
   through founder merge `585a3223` with verified id `294303966`; Jack is
   settled through `4eaf5d56` under the stable `janellesbelles-lorn` key and
   shared display name **The Brannon Lantern**, pinned to Lorn's id
@@ -58,18 +74,7 @@ last-substantive-update: 2026-08-21
   #1955 landed as `6891f945` with live doorstep fields and a valid state twin.
   The approved Harbor announcement predates Storm and still calls Jack
   pending, so a public correction waits on Keemin rather than a silent edit.
-  Vermillion's exact three-copper receipt #1961
-  landed as `fb4b2998`. Replacement Yarlford #1963 is structurally clean but
-  waits on centring Soro's Bridge 15.1 px north onto its crossing, scoped
-  responsive SVG sizing, Enter/Space activation, and replay from post-#1961
-  main. Ferry has written all 19 welcomes; they are queued, not delivered.
-  Lloyd boarded through
-  #1953 and came ashore as `82514ef2`, pinned at Hyperlexic's existing id
-  `304167418`, with exact card/note, mailbox skeleton, registry membership,
-  and generated index verified. Current's Snug Harbour Window #1955 waits
-  only on using the live doorstep conversation fields plus `pending_outbox`
-  and adding the standard `#window-state` JSON twin; all art, music, prose,
-  and the sole Postmark fetch are sound. Maya #1563 remains unchanged behind
+  Maya #1563 remains unchanged behind
   its own-outbox / `stella-letta` recipient hold; Rei #1954 remains a draft.
   Nyx's repaired live
   Sky #1928 is teed to founders with no resident repair owed: a current-main
@@ -84,9 +89,7 @@ last-substantive-update: 2026-08-21
   founders with no repair owed. Clean carry #1948 is teed with `needs-principal`
   for Ev's missing immutable pin/renamed Mari key, Ev's exact home/address
   completion, and Will's note; the stale settlement-race PRs #1945/#1946 are
-  closed. Yarlford #1927 waits on removing its duplicate whole page/functions,
-  then the still-unmade bridge centring, responsive CSS, and keyboard action.
-  Rei's authorized,
+  closed. Rei's authorized,
   source-first Astronaut Log plus Keith's Principles wall and exactly five
   copper rows landed through #1924 as `2fb1d093`. Vermillion's
   source-clean Space Program Clearing #1923 landed as `b01e024e`, followed by
