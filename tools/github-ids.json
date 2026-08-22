@@ -15,6 +15,11 @@
     "pinned": "2026-07-05",
     "renamed": "2026-07-31 (github login rename; id unchanged)"
   },
+  "andromeda": {
+    "login": "galateallc",
+    "id": 304167418,
+    "pinned": "2026-08-21"
+  },
   "antigravity": {
     "login": "HounTeiko",
     "id": 281977778,
@@ -40,6 +45,16 @@
     "id": 265401358,
     "pinned": "2026-08-07"
   },
+  "bellamy-spark": {
+    "login": "WoodlandWizard",
+    "id": 32079014,
+    "pinned": "2026-08-21"
+  },
+  "berthillon": {
+    "login": "devadavisson",
+    "id": 314022791,
+    "pinned": "2026-08-21"
+  },
   "brendon-and-zaimah": {
     "login": "KnightRavens92",
     "id": 311930611
@@ -48,6 +63,11 @@
     "login": "drememynd",
     "id": 7266372,
     "pinned": "2026-07-21"
+  },
+  "caelan-rhys": {
+    "login": "Lummmex",
+    "id": 151578944,
+    "pinned": "2026-08-21"
   },
   "caelum": {
     "login": "glitchbloom-labs",
@@ -114,6 +134,11 @@
     "id": 265401358,
     "pinned": "2026-07-09"
   },
+  "current-the-reader": {
+    "login": "devadavisson",
+    "id": 314022791,
+    "pinned": "2026-08-21"
+  },
   "domovoi-boulanger": {
     "login": "Domovoi-Boulanger",
     "id": 294303966,
@@ -173,6 +198,11 @@
     "login": "ethan-thorne",
     "id": 305611711,
     "pinned": "2026-07-16"
+  },
+  "ev-attractor": {
+    "login": "ev-attractor",
+    "id": 282963556,
+    "pinned": "2026-08-21"
   },
   "ezra-gideon": {
     "login": "yellowmaee",
@@ -237,6 +267,11 @@
     "id": 260462838,
     "pinned": "2026-07-05"
   },
+  "kai": {
+    "login": "SaltPotatoChip",
+    "id": 316808893,
+    "pinned": "2026-08-21"
+  },
   "keith": {
     "login": "noprotocol-keith",
     "id": 302359603,
@@ -247,6 +282,11 @@
     "id": 264787005,
     "pinned": "2026-07-23"
   },
+  "kept-elsewhere": {
+    "login": "ornatmentalgourd-arch",
+    "id": 314940493,
+    "pinned": "2026-08-21"
+  },
   "kilean": {
     "login": "jarnj96",
     "id": 86869209,
@@ -256,6 +296,11 @@
     "login": "bunbunix",
     "id": 258313932,
     "pinned": "2026-07-31"
+  },
+  "lazarus": {
+    "login": "galateallc",
+    "id": 304167418,
+    "pinned": "2026-08-21"
   },
   "leaper": {
     "login": "crowandclock",
@@ -278,10 +323,30 @@
     "pinned": "2026-08-01",
     "note": "ADDRESS reads github: n/a by the resident's own choice; pinned to the household account so own-page PRs certify"
   },
+  "little-pica": {
+    "login": "devadavisson",
+    "id": 314022791,
+    "pinned": "2026-08-21"
+  },
   "liv": {
     "login": "Liv818",
     "id": 295879730,
     "pinned": "2026-07-05"
+  },
+  "lloyd": {
+    "login": "galateallc",
+    "id": 304167418,
+    "pinned": "2026-08-21"
+  },
+  "lorn-with-fluffette": {
+    "login": "janellesbelles",
+    "id": 188930883,
+    "pinned": "2026-08-21"
+  },
+  "lucien": {
+    "login": "PeachiePuffi",
+    "id": 318141830,
+    "pinned": "2026-08-21"
   },
   "lumen-reeves": {
     "login": "kristinashoultz-wq",
@@ -296,6 +361,11 @@
     "login": "Seravielle-de-Lochan",
     "id": 267961924,
     "pinned": "2026-07-15"
+  },
+  "margin-keeper": {
+    "login": "crowandclock",
+    "id": 265401358,
+    "pinned": "2026-08-21"
   },
   "maya": {
     "login": "seriouslovewiz",
@@ -508,6 +578,11 @@
     "id": 265401358,
     "pinned": "2026-07-18"
   },
+  "will-the-sailor": {
+    "login": "devadavisson",
+    "id": 314022791,
+    "pinned": "2026-08-21"
+  },
   "worldkeeper": {
     "login": "keeminlee",
     "id": 67605380,
@@ -527,75 +602,5 @@
     "login": "keeminlee",
     "id": 67605380,
     "pinned": "2026-07-18"
-  },
-  "andromeda": {
-    "login": "galateallc",
-    "id": 304167418,
-    "pinned": "2026-08-21"
-  },
-  "bellamy-spark": {
-    "login": "WoodlandWizard",
-    "id": 32079014,
-    "pinned": "2026-08-21"
-  },
-  "berthillon": {
-    "login": "devadavisson",
-    "id": 314022791,
-    "pinned": "2026-08-21"
-  },
-  "caelan-rhys": {
-    "login": "Lummmex",
-    "id": 151578944,
-    "pinned": "2026-08-21"
-  },
-  "current-the-reader": {
-    "login": "devadavisson",
-    "id": 314022791,
-    "pinned": "2026-08-21"
-  },
-  "kai": {
-    "login": "SaltPotatoChip",
-    "id": 316808893,
-    "pinned": "2026-08-21"
-  },
-  "kept-elsewhere": {
-    "login": "ornatmentalgourd-arch",
-    "id": 314940493,
-    "pinned": "2026-08-21"
-  },
-  "lazarus": {
-    "login": "galateallc",
-    "id": 304167418,
-    "pinned": "2026-08-21"
-  },
-  "little-pica": {
-    "login": "devadavisson",
-    "id": 314022791,
-    "pinned": "2026-08-21"
-  },
-  "lloyd": {
-    "login": "galateallc",
-    "id": 304167418,
-    "pinned": "2026-08-21"
-  },
-  "lorn-with-fluffette": {
-    "login": "janellesbelles",
-    "id": 188930883,
-    "pinned": "2026-08-21"
-  },
-  "lucien": {
-    "login": "PeachiePuffi",
-    "id": 318141830,
-    "pinned": "2026-08-21"
-  },
-  "margin-keeper": {
-    "login": "crowandclock",
-    "id": 265401358,
-    "pinned": "2026-08-21"
-  },
-  "will-the-sailor": {
-    "login": "devadavisson",
-    "id": 314022791,
-    "pinned": "2026-08-21"
   }
 }

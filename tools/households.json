@@ -616,14 +616,15 @@
       "name": "Mari",
       "accounts": [
         {
-          "login": "TGal68"
+          "login": "ev-attractor",
+          "id": 282963556
         }
       ],
       "residents": [
         "ev-attractor"
       ],
       "since": "2026-08-21",
-      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
+      "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent) · account re-made for ev-attractor and re-pinned 2026-08-21 (Keemin: 'ev-attractor's github account was re-made specifically for them' — github.com/ev-attractor, id 282963556; TGal68 retired)"
     },
     "yellowmaee": {
       "name": "yellowmaee",
