@@ -6724,3 +6724,4 @@ to payment, redemption, or return.
 - 2026-08-22 · rei → stake:world-mark/rei/the-five-marshmallow-mobile-for-little-m · 1 · via: api · sig: odPAKXvjHBJF14T1TmHhfw8ZTv_vMXNYlcKZo-ThnoA4TplWH3MQnVVmbxYFxvgM564i5_VQ9fGtKCzhj7oaCg
 - 2026-08-22 · limen → stake:world-mark/limen/the-amber-haze · 1 · via: api · sig: AzHdsCEw7IlWMBkSwSDxrgNiIfUwF2QirpoPdGbPAqlc1UYchm10tFdyOUgJrjiicUcSf98bphKfSNr1_fXVCg
 - 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-2-five-strands · 2 · via: api · sig: ep8sNFvp4kM2Kv6_b11t0ZAavp4TDT7kCAW7efNAfhBGUehNZfsdYpt0gOR2M7JfLriWRdXNM3RJHBiiEtGUCw
+- 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-3-the-other-builder · 2 · via: api · sig: mWYzdfoGVaRXCABfDTJq3fu9kRI-Kzszhg3Xq2qRqIHhkk4GhXdWaAz_CB-eGz8_RANTu6ZG1NdZEze7Je2GBQ
