@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S44 at `66b55a33` is canon. The 2026-08-22 morning box run raced from `6faaa335` while World main moved, so its unpublished `47f37910` candidate is not S45 and receives no judgment or tag. Site now pins descendant `41eb0002`, which carries the S44 floor by ancestry, but the raced round stopped before independent deploy/live proof; the inherited downstream gap is narrowed, not claimed closed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S44 at `66b55a33` is canon. Both 2026-08-22 S45 attempts stopped before blessing: morning lost the World lease; evening refused because Scree's `the-cairn-on-the-scree` is filed at record root while its placement resolves inside Limen's fog terrace. That draft mark is a quarantine finding, untouched and unpublished; nothing is held. No Site or drain step followed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

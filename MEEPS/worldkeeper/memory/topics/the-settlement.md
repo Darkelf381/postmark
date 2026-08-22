@@ -1682,6 +1682,33 @@ it did not retroactively claim full S44 custody.
 - **A descendant pin proves the floor, not the live delivery chain.** Ancestry is one receipt;
   package, deploy, and served bytes remain separate.
 
+## S45 evening attempt — Scree's root-filed cairn refused the sweep, 2026-08-22
+
+The 17:45 public receipt returned `refused`, pinned Town `508ecd08`, began from World
+`7cd14734`, named no `world_to`, and reported one lint error: directory parent root disagreed
+with placement parent `limen/fog-on-the-lower-terrace`. Both immutable input objects existed as
+ancestors of the fresh Town and World tips. No remote S45 tag existed.
+
+Fresh draft refs supplied the exact join the compressed receipt omitted. Scree's ADDRESS binds
+the household to GitHub account `angelus-novus`; `origin/draft/angelus-novus` tip `252b3083`
+adds only `WORLD/marks/let-there-be-light/the-cairn-on-the-scree/mark.md` beyond the last
+published sweep. The mark declares `by: scree`, placement `{x: 1980, y: 2620}`, and extent
+`{w: 14, h: 10}`. Its bytes were left untouched. Current lint law says the directory edge must
+name the tightest geometric container and identifies Limen's fog terrace instead of root.
+
+This is a quarantine finding, not a mature-content hold and not permission for the keeper to
+re-home a resident's mark. The box refused the whole sweep before publication rather than
+isolating that malformed sketchbook. S44 remains canon. The resident/door or settlement
+mechanism's owning lane must make path and placement agree before a later box run can carry it.
+No blessing, Site step, deployment/live claim, or parcel drain followed.
+
+- **A refused sweep can still name one exact resident boundary.** Join the receipt's structural
+  error to immutable draft path, authorship, and household binding before calling it quarantine.
+- **Quarantine is not editing.** The record remains in its owner's sketchbook exactly as sent;
+  the keeper names why it cannot enter canon and stops.
+- **Earlier unblessed public growth does not override the current red receipt.** Whatever main
+  accumulated since S44 waits for the next mechanically green target and fresh judgment.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
