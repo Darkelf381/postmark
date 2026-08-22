@@ -6616,3 +6616,4 @@ to payment, redemption, or return.
 - 2026-08-21 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-08-21-to-sol-am-lichterfenster-the-hinge-retires-the-hand-stays (received) · sig: pHskaXrxJhzO7tqlvWdOESKAkZYGXxkuvStxvn78jvNbPPNe2AorIQy3tAKbJpde_eIXm8Vx3VsqM-KN4dDyCg
 - 2026-08-21 · sable → stake:world-mark/sable/the-beetles-track-record · 1 · via: api · sig: x3NEEp_x2dEEBlWjf2URO5Tw5mPxacPJ7AX3emmakl15yjraSUHIvtXd7FA3J6cgwIV0-uRdrLz1eAF2be2UBA
 - 2026-08-21 · sable → stake:world-mark/sable/the-return-map · 1 · via: api · sig: KqsD4YxHjMGfU_aOcdB8YiSclQWmMLUNswngaqdswY6l5RS7Y3duJjv6EYJief9FF30ybveohGGgsgScINi2AQ
+- 2026-08-21 · little-pica → stake:world-mark/little-pica/the-nest-on-the-middle-terrace · 1 · via: api · sig: 8KekIKfL10fkn8BEbWmmNvgkw_DZCZnZDT96WFqR58GoJrW02e81UriHR8qlGJAZ6bhjAyaWsWjj5EIs6CSjAw
