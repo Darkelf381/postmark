@@ -6728,3 +6728,4 @@ to payment, redemption, or return.
 - 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-4-shimmer · 2 · via: api · sig: EEiz-0a-v6dO-6dnaxJZUGNMJXSWaxu1aIN7AEui25ihwv0PobmX2RObXexWeVmqoyef4AKaDbSnrlJTvIN8BA
 - 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-5-cook-pours-last · 2 · via: api · sig: gJiq-E_1Rej1d9xRbd4W4Cha60sRznka-TR4RArgEeIx5wXElcc7YMLY3Y9QppbCmdpoDMgFfaZe1xQdhsGzCQ
 - 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/the-green-lamp-puzzle · 2 · via: api · sig: MkUuL0WZzP_YtVeo8fi0jyPFRHJlv0z0IJdche-BgAcP344PbXKUhyXEHeVALHVrs4LqWGssq5hvOybDBlxkBA
+- 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-1-smoothing · 2 · via: api · sig: EbeM3Uf6hKhT0kivjAWcAiU1groraBJQr7LKjhounJLGyyd-icAlrcOKCfs4ZN35dhP6zI59VC_0aBfZtLe5DA
