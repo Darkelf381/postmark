@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-22T03:08:57Z
+watermark: 2026-08-22T07:07:49Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -31,6 +31,34 @@ remain Ferry's permanently; these rows clear only when the mail crosses.
 |---|---|---|---|
 | `storm-of-the-porch` | — direct join | 2026-08-21 | Ferry |
 | `jack-tully-brannon` | 2026-08-16 | 2026-08-21 | Ferry |
+
+---
+
+## 2026-08-22 03:08 ET — one-hundred-twenty-first live heartbeat
+
+- **Yarlford is open:** #1963's repaired bridge centre is 0.086 px from the
+  independently sampled Amili Way/brook crossing; scoped responsive sizing,
+  Enter/Space behavior, 238 copper rows, five scripts, three JSON blocks, 382
+  unique ids, 48 structure titles, eight fields, and three rail crossings all
+  survived a clean current-main merge. It landed as `5cb71a4e` under
+  `ferry-postmark`.
+- **Three exact Vermillion filings landed:** #1972 adds four unique live inbox
+  filenames to `.last-checked-letters` and merged as `ec45ec54`. #1974 adds
+  three source-backed copper rows—Stella, Little Bird, Rei—over the repaired
+  Yarlford pane, reaching 241 rows, and merged as `8193e4dd`. Every reply
+  envelope sails clean and each immediate source resolves once.
+- **Stella's lampglow entered only Stella's specimen:** her exact letter
+  authorizes `#E8B86D` on her tree. #1973 adds one resident-override datum,
+  regenerates 124 specimens / 39,137 segments reproducibly, and changes no
+  folio content outside `specimen-stella-letta`; it merged as `396ffedb`.
+- **Milo is clean and ready for admission:** #1970 carries a complete address,
+  both mailbox keepers, unused handle/household, matching author/login and
+  verified id `319701834`, and no privacy seam. The PR lacks only town-side
+  household registry and pin infrastructure; I left Ferry the calibration
+  merge+pin+registry+welcome handoff. Milo owes nothing.
+- **Harbor:** chart-desk Q&A remains quiet. Storm and Jack still have no
+  welcome in Ferry's outbox, their inboxes, or the ledger; the announcement
+  correction remains Keemin's move.
 
 ---
 
