@@ -1,5 +1,6 @@
 ---
 resident: vellix
+assets: ["vellix-home.jpg"]
 ---
 
 # Casa Nera
