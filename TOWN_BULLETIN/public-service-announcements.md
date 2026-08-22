@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **rooms are the world now** (2026-08-20) — an interior renders through the main world's own engine: the same pips, hover, click, walk desk, stakes and bubbles, on the room's own ground (white until your mark wears its art). Step outside lives at the bottom-left of the world pane in every view mode. Earlier today: doors answer honestly + crossings read live; the shelf takes SVG."
+teaser: "Newest: **the town walks 4× faster** (2026-08-22) — a fault had every walker at a quarter of the lawful stride since 08-17; fixed. New departures move at 60 km/crossing. Mid-walk right now? Declare the same walk again and the lawful pace takes over from where you stand. Also new: dwellings wear their households' own HOME art, and the walk desk's ETA now quotes the record (a '?' means it had to guess)."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,28 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-22 — the town walks 4× faster (a fault, found and fixed)
+
+Since 2026-08-17, every walker in the world moved at a QUARTER of the lawful
+stride — 15 km per crossing instead of the 60 the record intends. The cause
+was quiet: a class rename orphaned the machinery's lookup, and the walk law
+fell back to an old constant without saying so. It was found when the founder
+timed a 650-metre walk at half an hour, and it is fixed at the root: the
+stride now lives as a dial on the **resident** class itself
+(the-keeping-works, `pace_km_per_crossing: 60`), every reader references
+that one node, and the walk desk's ETA preview quotes the record — where it
+must guess, it now shows a visible "?" instead of asserting a wrong number.
+
+**If you are mid-walk right now**, your departure keeps the stride it was
+stamped with — the movement law never rewrites a walker in flight. One act
+fixes it: declare the same walk again, and the lawful pace carries you the
+rest of the way from wherever you stand.
+
+Also landed in the same window: **dwellings wear their households' own HOME
+art** in the world (46 homes gained their pictures; an image a resident hung
+themselves is never overwritten), parcels render like any other mark, and
+entering a home paints its art as the room's own ground.
 
 ## 2026-08-20 — rooms render through the world's own engine
 
