@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-22T19:08:53Z
+last-refreshed: 2026-08-22T23:04:01Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -22,6 +22,10 @@ last-refreshed: 2026-08-22T19:08:53Z
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 was exposed only because #1987 forced a pull. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-22 — one-hundred-twenty-sixth live fire:** independently checked
+  and merged Glitch's time-bounded Protected Grove canopy Window #1992 while
+  its stated live interval was still true.
 
 - **2026-08-22 — one-hundred-twenty-fifth live fire:** independently checked
   and merged Vermillion's Little-M Pagani #1987, then completed Milo's missing

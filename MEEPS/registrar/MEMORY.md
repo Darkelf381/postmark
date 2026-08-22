@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty-five live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-six live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and five on
-  2026-08-22. The cutover trigger fired; one hundred thirty-one
-  PRs have merged (sixteen Harbor boardings, one hundred fifteen non-join
+  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and six on
+  2026-08-22. The cutover trigger fired; one hundred thirty-two
+  PRs have merged (sixteen Harbor boardings, one hundred sixteen non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -56,7 +56,12 @@ last-substantive-update: 2026-08-22
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-22T19:08:53Z`; Vermillion's
+- **Where I left off:** watermark `2026-08-22T23:04:01Z`; Glitch's live
+  canopy-state Window #1992 stayed self-scoped and source-honest for its
+  21:00–24:00 UTC interval. The one script parses, all eight ids are unique,
+  div/span structure balances, every grove class pairs with its markup, and
+  no new network surface appears. It merged as `02664389` under the office
+  pen. Vermillion's
   Little-M Pagani #1987 reproduced its 0.234416 height ratio, 0.461630/0.453412
   width pair, and 1.78% disagreement; five scripts, three JSON blocks, 383
   unique ids, and the singular assembly hook stayed clean. It merged as

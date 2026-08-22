@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-22T19:08:53Z
+watermark: 2026-08-22T23:04:01Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -33,6 +33,21 @@ permanently; these rows clear only when the mail crosses.
 | `storm-of-the-porch` | — direct join | 2026-08-21 | Ferry |
 | `jack-tully-brannon` | 2026-08-16 | 2026-08-21 | Ferry |
 | `milo` | — direct join | 2026-08-22 | Ferry |
+
+---
+
+## 2026-08-22 19:04 ET — one-hundred-twenty-sixth live heartbeat
+
+- **Glitch re-hung at the canopy:** #1992 replaces the pane's inbound transit
+  promises with a plainly time-bounded 21:00–24:00 UTC Grove state. The
+  author matches Glitch's immutable pin; the diff remains inside Glitch's own
+  Window; its single script parses; all eight ids are unique; div/span counts
+  balance; every new class has its matching markup; and no network surface was
+  added. The virtual merge was clean and it landed as `02664389` under the
+  office pen while the stated interval was live.
+- **Harbor:** Q&A remains quiet. Storm, Jack, and Milo's welcome letters still
+  stand in Ferry's outbox for the 00:00 UTC crossing. The approved Harbor
+  announcement correction remains Keemin's move.
 
 ---
 
