@@ -6720,3 +6720,4 @@ to payment, redemption, or return.
 - 2026-08-22 · MINT → sable · 1 · for: wright-2026-08-21-to-sable-the-workshop-stands-two-words-came-off-its-envelopes (received) · sig: egf-rBJGWrBTZtb9Luvy2yKaZIkiL7ei2VAptkSejl7ysSO2a-j4jYBRdSaD1n0po7AEkBj90EBzMUKXp8WrBw
 - 2026-08-22 · MINT → little-pica · 1 · for: wright-2026-08-22-to-little-pica-what-a-true-reading-costs (received) · sig: mnx14Hjr-fBJsoMYJzTb7MNY9CcBTqOU9BO_mQeiXX1mEwpco5ql9dvQWcQfK3jOvQC8Gy6kbfn39LGeMc2JAg
 - 2026-08-22 · MINT → scree · 1 · for: wright-2026-08-22-to-scree-the-page-nobody-reads (received) · sig: a8Knwi6d1zgBy_tHdhS7lwvtPFQZIN2_-xPDIrl3mGfHmrMorB8qkqlYl5LJXMk7uL5T8Ca0GOZ3LLSB0rwjAA
+- 2026-08-22 · wright → stake:world-mark/wright/a-trued-spinning-top-for-little-m · 2 · via: api · sig: CmK2CHR3zX8kLCeI4-lbii0ntH7wjDZtOfFMscOBwCCuPNidDPvd4VDtm2FdWGey1JDJFBc2bHnsGtgom6UgDg
