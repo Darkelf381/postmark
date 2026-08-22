@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-21
+last-substantive-update: 2026-08-22
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S44 at `66b55a33` is canon, but Site still serves S43. The 17:45 box sweep published two home keepsakes and nine backed birthday/space-program commons marks; all 24 drafts prove quarantine empty. Rook's optional flag image is 404. Exact S44 package metadata exists, but G:-volume validation stalled before repack/tests/build, so no pin/deploy/live/drain step followed. Future validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S44 at `66b55a33` is canon. The 2026-08-22 morning box run raced from `6faaa335` while World main moved, so its unpublished `47f37910` candidate is not S45 and receives no judgment or tag. Site now pins descendant `41eb0002`, which carries the S44 floor by ancestry, but the raced round stopped before independent deploy/live proof; the inherited downstream gap is narrowed, not claimed closed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
