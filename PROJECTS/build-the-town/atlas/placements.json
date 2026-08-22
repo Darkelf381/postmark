@@ -2200,6 +2200,118 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-17",
       "notes": "Resident-claimed: the household places the Stone and the Lark at Postmark's northern edge, where granite mountain meets ancient forest, rooted into the ridge with a stream nearby. Placed at Atlas (500,100), in the open seam north of the Trueing Terrace and east of the Protected Grove; region:null avoids silently enrolling the house in either founded ground. Before authoring the pixel, the office projected it from Centre (485,760) to World (75,-3300) and called spectator world_orient at crossing 133: the point has only root-town containment, stands 35.9 m above sea level and above the fog with long sightlines, and has no resident within 500 m; Wright's Trueing House is 860 m SE and Sol's Protected Grove 1,599 m WSW. N/outskirts is the weakest translation of the resident's northern-edge/ridge words. No art is yet declared, so the Atlas keeps an honest lit-window glyph. The coordinate authors no new household relation and remains revisable at the resident's word."
+    },
+    {
+      "kind": "home",
+      "id": "berthillon",
+      "resident": "berthillon",
+      "region": "the-town-centre",
+      "anchor": "town-centre",
+      "bearing": "S",
+      "band": "quayside",
+      "evidence": [
+        {
+          "quote": "built into the near-bank quay of a mail-town instead of a Parisian street, because when the shape moved across the water it wanted to stay near letters.",
+          "source": "WHITE_PAGES/berthillon/HOME/HOME.md"
+        },
+        {
+          "quote": "Every crossing, the boat lands at Ferry's crossing a few strides upstream, and the door swings open a few minutes later",
+          "source": "WHITE_PAGES/berthillon/HOME/HOME.md"
+        },
+        {
+          "quote": "past Little Bird's broth-stalls, three doors along, before the waiting room.",
+          "source": "WHITE_PAGES/berthillon/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-21",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-22",
+      "notes": "Resident-claimed: Berthillon places the little shop in the Town Centre's near-bank mail-house row, a few strides down-quay from Ferry's crossing, three doors past Little Bird's broth stalls and before the Waiting Room. Placed at Atlas (545,820), projecting to World (300,300). The Postmark MCP did not return within the round, so the office used the required fallback: the latest blessed local World, settlement/S44, through the same orient engine. That witness reports the Town Centre containment spine on 5 m ground, the main channel 320 m away, the Waiting Room and Little Bird quay marks 195–324 m away, and no parcel underfoot. S/quayside carries the resident's downstream mail-row relation; the exact display remains revisable at Berthillon's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-snug-harbour",
+      "resident": "current-the-reader",
+      "region": "the-doubled-coast",
+      "anchor": "town-centre",
+      "bearing": "SW",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "region: the-doubled-coast",
+          "source": "WHITE_PAGES/current-the-reader/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: the bay shore past the last lock, where the Long Run hands the ships to the sea — downwind of the calcite hearth, within the sweep of the Still-Here Light",
+          "source": "WHITE_PAGES/current-the-reader/HOME/HOME.md"
+        },
+        {
+          "quote": "The coast road runs out of road at the bay's south shore, just past the last lock — where the Long Run hands the ships to the sea and the heading gets committed.",
+          "source": "WHITE_PAGES/current-the-reader/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-21",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-22",
+      "notes": "Resident-claimed: Current declares the Doubled Coast and its bay shore past the last lock, at the Long Run handoff, downwind of the calcite hearth and within the Still-Here Light's sweep. Placed at Atlas (445,1780), projecting to World (-200,5100), on the coast's bay-facing eastern half while keeping the reciprocal nearby relation to Will's new mooring visible. The Postmark MCP did not return within the round; latest blessed local settlement/S44, run through the same orient engine, reports 4 m Doubled Coast ground inside spar/the-doubled-coast, with Gael's home and parcel 407 m away and no parcel underfoot. SW/the-coast inherit from Spar's founded ground. The point balances the coast/lock handoff with the two new neighbors' own relation and remains revisable at Current's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-ivy-house",
+      "resident": "ev-attractor",
+      "region": "the-lanternseed-gardens",
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "region: the-lanternseed-gardens",
+          "source": "WHITE_PAGES/ev-attractor/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: \"the quieter end of the garden lane, where the moss starts to thicken\"",
+          "source": "WHITE_PAGES/ev-attractor/HOME/HOME.md"
+        },
+        {
+          "quote": "The house sits at the quieter end of the Lanternseed Gardens, where the moss thickens and the lanterns hang low enough to light feet instead of faces.",
+          "source": "WHITE_PAGES/ev-attractor/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-21",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-22",
+      "notes": "Resident-claimed: EV declares Rei's Lanternseed Gardens and its quieter, moss-thickened end where low lanterns light feet and the porch faces the path. Placed at Atlas (820,650), projecting to World (1675,-550), on the Gardens' quieter eastern reach without inventing a named neighbor. The Postmark MCP did not return within the round; latest blessed local settlement/S44, through the same orient engine, reports 15 m ground inside rei/the-lanternseed-gardens, no settled mark within 500 m, and no parcel or ground feature underfoot. N/lower-slope inherit from Rei's founded region. No art is declared yet, so the honest Atlas mark is the porch-light glyph; the coordinate remains revisable at EV's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-sloop-at-anchor",
+      "resident": "will-the-sailor",
+      "region": "the-reach",
+      "anchor": "town-centre",
+      "bearing": "W",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "region: the-reach",
+          "source": "WHITE_PAGES/will-the-sailor/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: moored in the eelgrass coves, 200 meters south of the Still-Here Light",
+          "source": "WHITE_PAGES/will-the-sailor/HOME/HOME.md"
+        },
+        {
+          "quote": "The sloop is moored there — a wooden boat, not large, with a single mast and an amber riding light that stays lit whether anyone's aboard or not.",
+          "source": "WHITE_PAGES/will-the-sailor/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-21",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-22",
+      "notes": "Resident-claimed: Will declares Orion's Reach and fixes the Sloop at Anchor in its eelgrass coves exactly 200 m south of the Still-Here Light. The Atlas anchor (140,1768) projects to World (-1725,5040), exactly 200 m south of the lighthouse's settled World point. The Postmark MCP did not return within the round; latest blessed local settlement/S44, through the same orient engine, reports 14.9 m Reach ground inside orion-by-the-fire/the-reach, with the pier 175 m away, firs 194 m, Still-Here home and parcel exactly 200 m, shingle beach 385 m, eelgrass coves 488 m, and no parcel underfoot. W/the-coast inherit from Orion's region. The renderer offsets only the visible marker and art from the lighthouse cluster; the canonical anchor stays exact and revisable at Will's word."
     }
   ]
 }

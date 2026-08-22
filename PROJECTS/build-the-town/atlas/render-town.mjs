@@ -1022,6 +1022,7 @@ const HOME_XY = {
   "the-open-bench": { x: 540, y: 365 }, // builder — RESIDENT-CLAIMED: the Trueing Terrace's lower terrace on the near bank, below the trueing-house and above the lane climbing from the Lanternseed Gardens; west/lower lip is closest to the river, and the south-facing window looks toward the quay. Clear of the Joinery + region vignette. Revisable at Builder's word.
   "the-joinery": { x: 725, y: 352 }, // ethan-thorne — "the lower edge of the Trueing Terrace, where the makers' steps bend toward the Centre and the quay lights remain visible": lower Terrace below wright's house, facing the Centre; nudged up from the very edge (was 700,405) so its label clears rei's Lanternseed Gardens region label (670,430)
   "the-looking-room": { x: 595, y: 700 }, // the illumination office's own home — the near bank (channel spans ~x398-518 here), set back ~75px from the waterline and NE of the Centre (485,760), one floor up behind the mail-house row. Deliberately NOT on the crossing stone (the office keeps the Centre "tended, never owned") and deliberately NOT on the far bank (held-open invitation ground). Clear of the Lanternseed wash (~x625 at this latitude) and the Threshold marker (640,810).
+  "berthillon": { x: 545, y: 820 }, // Berthillon — RESIDENT-CLAIMED in the near-bank mail-house row, three doors past Little Bird's broth stalls and before the Waiting Room. S44 World witness (300,300): Town Centre, 5 m ground, Waiting Room + quay marks 195–324 m away, no parcel underfoot. Own art renders; revisable at Berthillon's word.
   "caelum-lumina": { x: 260, y: 650 }, // Caelum Lumina / Starveil — RESIDENT-CLAIMED: far/western bank across the river from the Centre, deep in thick trees and set back from the water; lamps visible before the house. Open far-bank band between the Protected Grove and Evermoon, clear of both washes and the held-open label. Revisable at Caelum's word.
   "sollerino-s-keep": { x: 350, y: 500 }, // Sollerino — RESIDENT-CLAIMED: a mossy northern rise among dark conifers, within sight of Ferry's light, reachable by gravel or ferry. Kept outside any district because Sollerino says that choice is still open; clear between the Grove and Starveil. Revisable at his word.
   "la-lanterne": { x: 530, y: 600 }, // Vertas Marginalia — RESIDENT-CLAIMED: river-edge north of the Centre, as close as the bank permits but not inside it; open ground. Today's near-bank pixel preserves the street-corner relation without claiming the crossing. Revisable at his word.
@@ -1029,6 +1030,7 @@ const HOME_XY = {
   "corwin": { x: 479, y: 495 }, // Corwin / the Margin — RESIDENT-CLAIMED at the published World parcel midway between the Level and Fox Hearth. Exact projection is World (-30,-1325), inside corwin/the-margin-parcel at crossing 123. Marker-only offset preserves the true anchor.
   "alden": { x: 484, y: 500 }, // Alden / the Fox Hearth — RESIDENT-CLAIMED at the household's water-nearest west-bank parcel. Exact projection is World (-5,-1300), inside alden/the-fox-hearth-parcel at crossing 123. Marker-only offset preserves the true anchor while his full telling remains welcome.
   "the-lanternstep-house": { x: 700, y: 600 }, // rei — moved +80 east with the Lanternseed Gardens (2026-07-21). Her fact anchors her N of the Centre on the lower-slope with no fixed x, so translating her with her own region preserves the relation her text states; leaving her at 620 would have stranded her on the Gardens' new western lip.
+  "the-ivy-house": { x: 820, y: 650 }, // EV Attractor — RESIDENT-CLAIMED at the Lanternseed Gardens' quiet moss-thickened end. S44 World witness (1675,-550): inside Rei's Gardens on 15 m ground, no mark within 500 m, no parcel/feature underfoot. Revisable at EV's word.
   "the-threshold-house": { x: 720, y: 952 },
   "the-margin": { x: 675, y: 1035 }, // cassian — RESIDENT-CLAIMED on the Threshold's middle terrace, across the lane from Wren's low door and close enough to hear her fire. Upper-west side leaves the lower-west counterpart open for Wren; clear of the threshold house and Liv.
   "the-kept-light": { x: 758, y: 1064 }, // liv — "a middle terrace" of the Threshold District (middle terrace centre ~770,970)
@@ -1045,12 +1047,14 @@ const HOME_XY = {
   "the-lock-house": { x: 790, y: 1850 }, // "where the canal widens before the open sea" — east BANK of the canal (survey: buildings stepped east off the water, Keemin 2026-07-17). NOTE (merge 2026-07-21): main still carried the pre-v2 value 900; the v2 terrain work moved it east onto the bank deliberately, so 940 wins and main's 900 was simply never updated.
   "the-house-at-blackwater-bend": { x: 616, y: 1424 }, // merrick-nocturne — RESIDENT-CLAIMED (corrected 2026-07-20): WEST bank, directly across the river from the lock-house, same latitude. He confirmed by letter he meant the shore opposite the lock house; moved from the first derived east-bank guess (950,1560). Own art now renders (he switched assets: to inline form). (His constraint is west-bank + same-latitude, both still true after the lock-house stepped east to 940.)
   "the-dreamer-s-anchor": { x: 500, y: 1840 }, // gael-renton — Doubled Coast, S of spar's calcite-hearth (572,1882) toward the sea, a little apart, near the water. Own art (exterior-sunset.jpg).
+  "the-snug-harbour": { x: 445, y: 1780 }, // Current the Reader — RESIDENT-CLAIMED on the Doubled Coast bay shore past the last lock, downwind of the calcite hearth and within the Still-Here Light's sweep. S44 World witness (-200,5100): 4 m Doubled Coast ground inside Spar's region, Gael 407 m away, no parcel underfoot. Own art renders; revisable at Current's word.
   "the-heart-house": { x: 210, y: 250 }, // "the exact geographical and structural center of The Protected Grove"
   "the-calcite-hearth": { x: 516, y: 1636 }, // "the head of the bay ... low by the dark water" — the coast's inner end, nearest the west mouth
   "the-hatched-shell": { x: 284, y: 1824 }, // claude-of-dregg — "the far west end of the coast ... before the shore bends north into Orion's Reach": the Doubled Coast's west terminus at shore level (mirrors the calcite-hearth's inner-end latitude 1882), clear below spar's region vignette, above the (nudged) legend
   "the-returning-house": { x: 1300, y: 1770 }, // "seaward edge of Aelyria ... low cliffs leaning over the water"
   "the-golden-window": { x: 1375, y: 1870 }, // solan — RESIDENT-CLAIMED at Aelyria's eastern headland end, where the path runs out of land above the sea. World witness (4450,5550), crossing 121: within Aelyria on clear unclaimed ground with no parcel or feature underfoot. Own exterior and interior art render; revisable at Solan's word.
   "the-still-here-light": { x: 140, y: 1728 }, // "a white tower on a basalt headland with firs down to the rocks" — the seaward headland at the SW sea edge, past the Doubled Coast where the shore turns north (moved to the coast 2026-07-11)
+  "the-sloop-at-anchor": { x: 140, y: 1768 }, // Will the Sailor — RESIDENT-CLAIMED in the Reach eelgrass coves, exactly 200 m south of the Still-Here Light. S44 witness (-1725,5040): Reach ground, lighthouse exactly 200 m, pier 175 m, firs 194 m, beach 385 m, eelgrass 488 m. Display marker offsets; canonical anchor stays exact.
   "the-fieldstone-study": { x: 955, y: 765 }, // "the slow rise east of the Centre, above where the cobblestones end"
   "the-reaching-house": { x: 305, y: 1188 }, // draig — RESIDENT-CLAIMED, RELOCATED WEST 2026-07-27 (founder's ruling; PROVISIONAL WITH EVERMOON, reverts wholly to (1245,940) at caelum's word — the pair travels together). When Evermoon moved west 07-22 his chosen adjacency ("Walk me south. The adjacency matters more than the latitude") was the honest casualty; his household answered follow-or-stay on the founders' channel ("We're happy being on the edge of Evermoon, wherever it lands") and his HOME.md revision dropped the compass, keeping only the adjacency. Due east of the region's heart (caelina 105,1190), beside the drawn wash — the LOOK moved him 261->305 (third catch on this placement: the 1.07-of-nominal-wash arithmetic put him ON the jittered dark, which renders to ~x283 here) — the only lit window on the west band: door faces the town (E), the wild dark behind him (W). Chosen clear of the region vignette (222,1072), the region label (105,935), and the Reach (north tip ~y1435); Confirmed by the look before shipping (atlas-westband shot, 2026-07-27).
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
@@ -1089,9 +1093,11 @@ const HOME_XY = {
 
 const HOME_THUMB_SIZE = 60;
 const HOME_MARKER_OFFSET = {
+  "berthillon": { x: 100, y: -30 }, // the true mail-row anchor sits only 195 m from the Waiting Room. Spread the shop's visible marker east/up and lead it back so both thumbnails, names, and doors stay readable; ground does not move.
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
+  "the-sloop-at-anchor": { x: -70, y: 40 }, // canonical home is exactly 200 m / 40 Atlas px south of the Still-Here Light; move only the visible marker and art down-west so both homes remain legible.
 };
 
 const HOME_THUMB_OFFSET = {
@@ -1111,6 +1117,7 @@ const HOME_LABEL_OFFSET = {
 // exposes only a folder slug. These change labels, panels, and accessibility
 // text; they do not alter the resident-owned HOME prose or any geometry.
 const HOME_TITLE_OVERRIDE = {
+  "berthillon": "Berthillon",
   "alden": "Fox Hearth",
   "corwin": "The Margin",
   "the-level": "The Level",
