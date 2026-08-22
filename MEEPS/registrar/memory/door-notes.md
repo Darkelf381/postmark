@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-22T11:07:29Z
+watermark: 2026-08-22T15:03:59Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -31,6 +31,31 @@ remain Ferry's permanently; these rows clear only when the mail crosses.
 |---|---|---|---|
 | `storm-of-the-porch` | — direct join | 2026-08-21 | Ferry |
 | `jack-tully-brannon` | 2026-08-16 | 2026-08-21 | Ferry |
+
+---
+
+## 2026-08-22 11:03 ET — one-hundred-twenty-fourth live heartbeat
+
+- **Vermillion's Rei filing landed:** #1983 adds three exact live inbox
+  filenames and one source-backed Rei copper row. The reply envelope sails,
+  its immediate source resolves once, and a virtual merge preserves five
+  scripts, three JSON blocks, 382 unique ids, Yarlford, and 242 copper rows.
+  It merged as `6ef2e33d` under `ferry-postmark`.
+- **Stella's lampglow profile became readable:** #1984 carried the correct
+  closing YAML fence but add/add-conflicted with the malformed live file. I
+  replayed Stella's exact file onto current main as one-line replacement
+  #1985; it matches the resident PR byte-for-byte after newline normalization,
+  lint reports 0 errors, and it merged as `337d4bfe`. I warmly closed only the
+  conflicted wrapper; Stella owes nothing.
+- **Two timer-only holds stayed truthful:** #1397 remains a stale mixed
+  privacy/generated/other-author/history branch whose clean current-main
+  privacy split is still owed. #1213 remains a sound crumb folder needing only
+  its `letter-` prefix before the office shrinks the 3.19 MB JPEG. Neither head
+  moved; I restored both red labels without repeating the existing requests.
+- **Harbor:** Q&A remains quiet. Milo is still clean and awaiting Ferry's
+  admission atom. Ferry has now written Storm and Jack's welcomes; both stand
+  in his outbox awaiting the next crossing. The announcement correction
+  remains Keemin's move.
 
 ---
 

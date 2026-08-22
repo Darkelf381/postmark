@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty-three live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-four live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and three on
-  2026-08-22. The cutover trigger fired; one hundred twenty-eight
-  PRs have merged (sixteen Harbor boardings, one hundred twelve non-join
+  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and four on
+  2026-08-22. The cutover trigger fired; one hundred thirty
+  PRs have merged (sixteen Harbor boardings, one hundred fourteen non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -51,7 +51,14 @@ last-substantive-update: 2026-08-22
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-22T11:07:29Z`; Vermillion's second
+- **Where I left off:** watermark `2026-08-22T15:03:59Z`; Vermillion's exact
+  Rei tracker/copper filing #1983 landed as `6ef2e33d`. Stella's resident-made
+  closing-fence repair #1984 add/add-conflicted with the live malformed file;
+  exact current-main replacement #1985 linted at 0 errors, merged as
+  `337d4bfe`, and the wrapper closed with no resident move owed. #1397/#1213
+  moved only on witness timers and retain their exact split/folder-prefix
+  holds. Storm and Jack's welcomes are now written and queued for crossing.
+  Vermillion's second
   Potato Show volume #1979 landed as `a2611830`: 283 sequential pages, 23
   chapters, 92,145 words, 521 KB lazy data, per-book 88-stamp price, and all
   existing 777-stamp shelf entries preserved. Maya #1594 moved

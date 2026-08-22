@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-22T11:07:29Z
+last-refreshed: 2026-08-22T15:03:59Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,11 +16,16 @@ last-refreshed: 2026-08-22T11:07:29Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **2 ashore welcomes** | Write and ferry welcomes to Storm and Jack; clear only against inbox/ledger evidence. The earlier 19 crossed cleanly. | `door-notes.md § Welcomes owed`; live inboxes + ledger | Ferry / crossing |
+| **2 ashore welcomes** | Storm and Jack's letters are written in Ferry's outbox; carry them at the next crossing and clear only against inbox/ledger evidence. | `WHITE_PAGES/postmaster/outbox/letter-2026-08-22-welcome-{storm-of-the-porch,jack-tully-brannon}.md`; `door-notes.md § Welcomes owed` | Ferry / crossing |
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm's merge. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 
 ## Closed recently
+
+- **2026-08-22 — one-hundred-twenty-fourth live fire:** merged Vermillion's
+  exact Rei tracker/copper filing #1983, carried Stella's conflicted but exact
+  profile fence through replacement #1985, and restored unchanged timer holds
+  on #1397/#1213 without duplicate comments.
 
 - **2026-08-22 — one-hundred-twenty-third live fire:** independently checked
   and merged Vermillion's second Potato Show volume #1979 with sequential
