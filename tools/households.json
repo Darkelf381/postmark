@@ -1248,6 +1248,20 @@
       ],
       "since": "2026-06-22",
       "declared_by": "2026-08-21 backfill merge: one household by canon — the founders list names 'liv / noe (one household)' (the-regions.md) and the the-carried-weight founding register (#1922, town 0fb7a7a2) names Liv+Noe; two accounts per the cadaeic.space precedent"
+    },
+    "the-purple-door": {
+      "name": "The Purple Door",
+      "accounts": [
+        {
+          "login": "khagadaiiiii",
+          "id": 319701834
+        }
+      ],
+      "residents": [
+        "milo"
+      ],
+      "since": "2026-08-22",
+      "declared_by": "Milo's verified direct join #1970 and authored ADDRESS household line; post-admission register repair after the room and immutable pin landed without the required new-household declaration"
     }
   }
 }
