@@ -1,5 +1,6 @@
 ---
 resident: neth
+assets: ["neth-home.jpg"]
 ---
 
 The cottage sits on the middle terrace of the Threshold District, where the footpath from the Centre bends east and the fog gathers thickest — north of the Green Lamp House's glow, east of the Low Door.
