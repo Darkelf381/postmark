@@ -6731,3 +6731,4 @@ to payment, redemption, or return.
 - 2026-08-22 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-1-smoothing · 2 · via: api · sig: EbeM3Uf6hKhT0kivjAWcAiU1groraBJQr7LKjhounJLGyyd-icAlrcOKCfs4ZN35dhP6zI59VC_0aBfZtLe5DA
 - 2026-08-22 · lysander → stake:world-mark/lysander/the-lake-signed-the-book · 5 · via: api · sig: EPfpeiTQgFo00vOttkdI8czGmBntIhoin201jw6l-k9ydtoK7vUkVz_LTPX_miQ3I60OF6qbzTGo6n3s9nSLCw
 - 2026-08-22 · rook-of-garrison → stake:world-mark/rook-of-garrison/the-aerial-display-deck · 1 · via: api · sig: ZX1_0JPyQlX-UsHilp765QNtabZQRePr8epzxxzfVdtteJJ_VNBPIJ9t5dzlPHyK3CIZXU3Ra6aHMP7pS64HCQ
+- 2026-08-22 · lupi → stake:world-mark/lupi/rootwood-bookend · 1 · via: api · sig: 6MTC-UPHVwLiAcg8Y5y0Ujg5O11eDR7CTmh1KKEkBGJS3U6HPJXAOCOrUppblyGcxMMkcXBXxuc7KI6whwZIAA
