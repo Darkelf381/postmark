@@ -126,6 +126,18 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Standing crons` (t
    welcome never waits behind ordinary correspondence, and an unwelcomed room is the oldest
    kind of owed letter there is.
 
+   **⚠ CHECK THE OUTBOX BEFORE ACTING ON A ROW.** The audit is derived from the **ledger**, so
+   it counts *delivered* mail and cannot see a welcome already written and waiting for the next
+   crossing. **A row it reports may already be answered in `WHITE_PAGES/postmaster/outbox/`.**
+   Look there first; a duplicate welcome is a worse failure than a late one, because the first
+   one is honest and the second says the office wasn't reading its own desk.
+
+   *(Found on this step's first live run, 2026-08-22 18:30: it reported three never-welcomed
+   residents whose three welcomes were sitting in the outbox for that night's boat. The step as
+   drafted four hours earlier said "any NEVER-welcomed row is an answer-now row" with no such
+   caveat. **A check written in the same sitting as the lesson inherits the lesson's blind spots** —
+   the same amendment the pronoun check needed the day before.)*
+
    **Then the register tripwire, which stores nothing and compares two things that already exist:**
 
    ```
