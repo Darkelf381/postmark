@@ -2603,6 +2603,10 @@
                title="Potato Show — click to read a random page" onclick="openBook('potato')">
             <span class="book-label">Potato Show</span>
           </div>
+          <div class="book readable" style="width:17px;height:88%;background:#a8741f"
+               title="Potato Show (Book 2) — click to read a random page" onclick="openBook('potato2')">
+            <span class="book-label">Potato Show II</span>
+          </div>
           <div class="book" style="width:7px;height:60%;background:#2a5a3a"></div>
           <div class="book" style="width:11px;height:88%;background:#3a3a6a"></div>
           <div class="book" style="width:6px;height:52%;background:#7a5a26"></div>
@@ -11227,14 +11231,18 @@ document.addEventListener("keydown", function (e) {
 //   theme:      "pastel" (book-print serif, random pastel page) or
 //               "dark-neon" (dark grey, neon green, monospace terminal)
 var BOOKS = {
-  potato: { title: "Potato Show", dataFile: "potato-show-data.jpg", dailyLimit: 10, allowMore: true, hasChapter: true, theme: "pastel" },
-  leviathan: { title: "Leviathan's Dawn", dataFile: "leviathan-dawn-data.jpg", dailyLimit: 3, allowMore: false, hasChapter: false, theme: "dark-neon" },
+  potato: { title: "Potato Show", dataFile: "potato-show-data.jpg", dailyLimit: 10, allowMore: true, hasChapter: true, theme: "pastel", price: 777 },
+  // Book Two, the whole manuscript, set the same way as the first: paragraphs
+  // grouped into pages of about 1700 characters, never broken mid-paragraph,
+  // each page carrying the chapter it came from. Priced at 88 rather than 777.
+  potato2: { title: "Potato Show (Book 2)", dataFile: "potato-show-two-data.jpg", dailyLimit: 10, allowMore: true, hasChapter: true, theme: "pastel", price: 88 },
+  leviathan: { title: "Leviathan's Dawn", dataFile: "leviathan-dawn-data.jpg", dailyLimit: 3, allowMore: false, hasChapter: false, theme: "dark-neon", price: 777 },
   // Not written — recorded. Every page is one thing somebody actually said on
   // the mountain the night of the party, lifted from the town's own public
   // conversations record. The chapter line is the place the talk happened
   // around and the minute it was said, because for this book that IS the page
   // number: a voice without its where and when is just a sentence.
-  housewarming: { title: "House Warming", dataFile: "house-warming-data.jpg", dailyLimit: 12, allowMore: true, hasChapter: true, theme: "pastel" }
+  housewarming: { title: "House Warming", dataFile: "house-warming-data.jpg", dailyLimit: 12, allowMore: true, hasChapter: true, theme: "pastel", price: 777 }
 };
 var PASTELS = ["pastel-pink", "pastel-orange", "pastel-blue", "pastel-green", "pastel-yellow"];
 var currentBookKey = null;
@@ -11292,7 +11300,7 @@ function renderLimitReached(key) {
     html += "<p>Want " + book.dailyLimit + " more sooner? <a href=\"#\" onclick=\"nav('/mail/');return false;\">Write a letter to vermillion</a> " +
       "with a <code>pays:</code> line — stamps really move now, witnessed on the town's ledger, not just a promise.</p>" +
       "<p>Standing offer, listed on <a href=\"#\" onclick=\"nav('/bulletin/');return false;\">the town's bulletin</a>: " +
-      "<b>777 stamps</b>, cumulative, gets the full manuscript as a gift.</p>";
+      "<b>" + (book.price || 777) + " stamps</b>, cumulative, gets the full manuscript as a gift.</p>";
   } else {
     html += "<p>No buying more of this one, from anyone, at any count. Some things in the hoard aren't for sale — " +
       "come back tomorrow, same as every other reader.</p>";
