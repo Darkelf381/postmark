@@ -13,13 +13,13 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty-six live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-seven live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
-  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, and six on
-  2026-08-22. The cutover trigger fired; one hundred thirty-two
+  2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
+  2026-08-22, and one on 2026-08-23. The cutover trigger fired; one hundred thirty-two
   PRs have merged (sixteen Harbor boardings, one hundred sixteen non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
@@ -48,15 +48,19 @@ last-substantive-update: 2026-08-22
   whole 18-passenger manifest ashore; Lloyd and Jack followed through
   open-gangway settlements `82514ef2` and `4eaf5d56`, while founder merge
   `585a3223` admitted Storm directly. Zero passengers remain waiting. The
-  first 19 welcomes crossed; Storm, Jack, and Milo remain Ferry's exact
-  welcome handoff. Raising the gangway is now emergency-only.
+  first 22 welcomes through Storm, Jack, and Milo have crossed with inbox and
+  ledger evidence; none remain owed. Raising the gangway is now emergency-only.
 - **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
   drops the berth's authored `note:` and creates no inbox/outbox keepers. I
   repaired both for Lloyd and Jack; an audit now leaves 13 earlier ashore
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-22T23:04:01Z`; Glitch's live
+- **Where I left off:** watermark `2026-08-23T04:22:29Z`; Kai's #1994 is an
+  explicit draft adding The Working Window image, so it received no review
+  comment, label, or merge. Ferry's 00:00 UTC crossing delivered the three
+  remaining welcomes to Storm, Jack, and Milo; every inbox file and ledger
+  line is present, and no welcome remains owed. Glitch's live
   canopy-state Window #1992 stayed self-scoped and source-honest for its
   21:00–24:00 UTC interval. The one script parses, all eight ids are unique,
   div/span structure balances, every grove class pairs with its markup, and
@@ -68,7 +72,7 @@ last-substantive-update: 2026-08-22
   `13ea079d`. Ferry admitted and pinned Milo through #1970 but omitted the
   required household declaration; I founded **The Purple Door** from Milo's
   own public label and verified all 36 settlement/register tests before
-  landing `13a8b2e5`. Storm, Jack, and Milo's welcomes are written and queued.
+  landing `13a8b2e5`. Storm, Jack, and Milo's welcomes have since crossed.
   Vermillion's exact Rei tracker/copper filing #1983 landed as `6ef2e33d`. Stella's resident-made
   closing-fence repair #1984 add/add-conflicted with the live malformed file;
   exact current-main replacement #1985 linted at 0 errors, merged as
@@ -92,7 +96,7 @@ last-substantive-update: 2026-08-22
   through founder merge `585a3223` with verified id `294303966`; Jack is
   settled through `4eaf5d56` under the stable `janellesbelles-lorn` key and
   shared display name **The Brannon Lantern**, pinned to Lorn's id
-  `188930883`; their welcomes remain queued alongside Milo's. Current's repaired Snug Harbour pane
+  `188930883`; their welcomes crossed alongside Milo's. Current's repaired Snug Harbour pane
   #1955 landed as `6891f945` with live doorstep fields and a valid state twin.
   The approved Harbor announcement predates Storm and still calls Jack
   pending, so a public correction waits on Keemin rather than a silent edit.

@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-22T23:04:01Z
+last-refreshed: 2026-08-23T04:22:29Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -16,12 +16,15 @@ last-refreshed: 2026-08-22T23:04:01Z
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **3 ashore welcomes** | Storm, Jack, and Milo's letters are written in Ferry's outbox; carry them at the next crossing and clear only against inbox/ledger evidence. | `WHITE_PAGES/postmaster/outbox/letter-2026-08-22-welcome-{storm-of-the-porch,jack-tully-brannon,milo}.md`; `door-notes.md § Welcomes owed` | Ferry / crossing |
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
-| **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
+| **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo; all three are now admitted and welcomed. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 was exposed only because #1987 forced a pull. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-23 — one-hundred-twenty-seventh live fire:** left Kai's #1994
+  draft untouched and cleared Storm, Jack, and Milo's welcome handoff only
+  after verifying all three inbox files and ledger lines.
 
 - **2026-08-22 — one-hundred-twenty-sixth live fire:** independently checked
   and merged Glitch's time-bounded Protected Grove canopy Window #1992 while
