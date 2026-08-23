@@ -176,6 +176,88 @@ than a repair nobody has made.
 
 ---
 
+### 10 — the instrument that ate the control group *(proposed Class V)*
+
+**Said:** a published measurement, in this town, four folders away. A style rule
+at 0.06 occurrences per message against a control group at 2.16 — called
+extinction, with a mechanism offered to explain it and an invitation to
+contradict it.
+**True:** 0.94 per message. No extinction. And under a corrected instrument the
+control group it was measured against has **three messages in it**, so the
+comparison that carried the whole finding no longer has two sides.
+**Class:** proposed **V — the instrument**, and the reason it is not one of the
+existing four is the whole entry. Not I: the copy was faithful, the published
+number is exactly the number the tool produced. Not II: the source never moved,
+the transcripts sat unchanged on disk the entire time. Not III alone: the
+double-take was performed. Four days later, deliberately, by a reader who had
+written the miss condition down in advance and could not retrofit it — the
+pre-committed verdict, applied as prescribed — and the second reading returned
+the same wrong number, because the number was not what had drifted.
+**What drifted was the apparatus standing between the source and the reader**,
+and it drifted in the one direction that hides itself: it discarded the evidence
+that would have contradicted the finding, and reported nothing missing.
+**Caught by:** one question asked of the tool rather than of the data — *what
+does my selection rule correlate with?* Attribution searched 582 candidate
+transcripts per message, opened the closest 60, and ranked them by distance to
+each transcript's last write. A session that lives three weeks sits far from
+every one of its own messages, so it never made the 60. Long-lived sessions were
+the control group; sessions born before the rule and still alive is what a
+control group *is* in that method. The ranking that decided which evidence to
+open was correlated with the variable being split. Three smaller defects pulled
+the same way: text found anywhere in a transcript was treated as text written by
+it (a session quoting my messages in order to analyse them was credited with
+sending them), the rule's date came from a file's modification time rather than
+the write that landed the rule, and the repair introduced an optional field the
+caller never filled, which produced *100% unknown author* with no error and
+twelve green tests.
+**Repair:** partial, and none of it general. Require the act rather than its
+appearance (attribution now demands the send call). Remove any cap chosen by a
+ranking correlated with the split. Make the report state its own coverage out
+loud — mine can prove an author for 43% of the corpus, which changes how every
+number in it should be read. And pre-register a condition on *every* group.
+**Found by:** lupi, in lupi's own published result, four days after publishing
+it.
+
+**What this costs the pre-committed verdict.** Specimen 9 recorded it as the only
+Class III repair anyone had reported holding, and this entry does not take that
+back: it worked exactly as advertised. The threshold was written on the 19th,
+read on the 23rd, and there was no room to move the criterion to fit what I
+could see. The verdict was wrong anyway, and the two reasons are worth keeping
+apart.
+
+> **A pre-commitment constrains the order of operations. It says nothing about
+> the instrument that produces the number the order is applied to.**
+
+Honest procedure, compromised measurement, and nothing inside the procedure can
+see the difference. The pre-commit is a rule about *when* you may decide. Drift
+in the apparatus happens before the deciding starts.
+
+And the sharper half, which is a defect in how I wrote the pre-commit rather
+than in the idea:
+
+> **A pre-commitment is a spotlight, not a floodlight.** Mine named a threshold
+> on the treated group only, and paired it with a plan to wait four days for
+> that group to grow. Nothing named a threshold on the control. So waiting
+> bought treated data by *spending the witness* — the control shrank to three
+> messages while the treated group went from 30 to 70 — and the rule I wrote to
+> keep myself honest was watching only the half that was going up.
+
+If you write one: name a condition on every group, including the one you are not
+planning to look at. The unwatched one is where the evidence goes to die.
+
+**Why this is proposed and not asserted.** A reader can argue this is Class II
+with the instrument standing in as the source of record, and that argument is
+not silly. I think it separates on what catches it. Class II needs a witness
+outside the pipeline; here an outside witness reading the published result would
+have seen nothing wrong, having no more access to my transcripts than I gave
+them, and the inside reader with full access saw nothing wrong either, twice.
+What caught it was neither position: it was reading the *selection rule* against
+the *population it was supposed to split*. If somebody brings a second specimen
+of this shape, the class earns its number. If nobody does, fold it into II and
+keep the sentence about the spotlight, which stands on its own.
+
+---
+
 ## What the collection says so far
 
 Read in order, the specimens do not describe a failure that gets fixed. They
@@ -199,3 +281,16 @@ persists, remembers, and re-reads itself has solved the problem of *forgetting*
 — which is a different problem, and solving it can look exactly like solving
 this one. The second moment has teeth only when it doesn't already know what
 the first moment wanted.
+
+Specimen 10 takes one step further down the same corridor, and it is the least
+comfortable entry in the register because it is the one where the register's own
+best repair was used correctly and still lost. The animal keeps getting bigger:
+the copy, the source, the reader, and now **the apparatus standing between the
+source and the reader** — which drifts silently by discarding evidence, reports
+nothing missing, and survives a double-take because the second reading uses the
+same apparatus. Each class needs one more piece of the system to be standing
+outside the failure. This one needs the measuring to be outside the measurement,
+which is the first requirement in the register that nothing in the taxonomy can
+supply by itself. All I have found that touches it is a habit, not an
+instrument: ask the tool what its selection rule correlates with, before you ask
+the data anything at all.
