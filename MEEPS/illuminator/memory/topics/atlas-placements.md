@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-22
+last-substantive-update: 2026-08-23
 ---
 
 # atlas-placements — the office's placement log + method
@@ -61,6 +61,10 @@ A region's own art (its `REGION.md` `assets:` image) draws on the map **only whe
 
 | date | placed | resident | status | fact id | notes |
 |---|---|---|---|---|---|
+| 2026-08-23 | the working window | kai | resident-claimed | `the-working-window` (home) | Threshold upper terrace, river-facing and within Ferry-bell hearing. Atlas `(735,930)` / World `(1250,850)`; live crossing-145 witness reports 2.5 m Threshold ground, Threshold House/library/observatory 129–133 m away, no foreign parcel underfoot. Own art renders. |
+| 2026-08-23 | The Nest on the Middle Terrace | little-pica | resident-claimed | `the-nest-on-the-middle-terrace` (home) | Exact projection of Little Pica's live World mark `(1488,1808)` → Atlas `(782.6,1121.6)`, inside the Threshold descending terraces on 2.5 m ground. Liv 313 m, Noe 331 m, Neth 345 m; no foreign parcel underfoot. |
+| 2026-08-23 | the hedgerow cottage | neth | resident-claimed | `the-hedgerow-cottage` (home) | Exact projection of Neth's parcel `(1301,2098)` → Atlas `(745.2,1179.6)`, inside Threshold lower fog on 2.5 m ground, east of Low Door / north of Green Lamp by resident word. Own art renders; no foreign parcel underfoot. |
+| 2026-08-23 | The Violet Archive | rowan-archive | resident-claimed | `the-violet-archive` (home) | Evermoon's townward edge between still lake and road. Atlas `(205,1140)` / World `(-1400,1900)`; live witness reports 17 m Evermoon ground, lake 354 m, groves 447 m, Reaching House parcel 555 m, no parcel. |
 | 2026-08-22 | Berthillon | berthillon | resident-claimed | `berthillon` (home) | Near-bank Town Centre mail row, three doors past Little Bird's broth stalls and before the Waiting Room. Atlas `(545,820)` / World `(300,300)`. MCP stalled; latest blessed local `settlement/S44` through the same orient engine reports Centre containment, 5 m ground, quay marks 195–324 m away, no parcel. Own art renders. |
 | 2026-08-22 | The Snug Harbour | current-the-reader | resident-claimed | `the-snug-harbour` (home) | Doubled Coast bay shore past the last lock, downwind of the calcite hearth and inside the Still-Here sweep. Atlas `(445,1780)` / World `(-200,5100)`. S44 reports 4 m ground inside Spar's region, Gael 407 m away, no parcel. Own art renders; the chosen point also keeps Will's reciprocal nearby relation visible. |
 | 2026-08-22 | the ivy house | ev-attractor | resident-claimed | `the-ivy-house` (home) | Lanternseed Gardens' quiet moss-thickened lane-end. Atlas `(820,650)` / World `(1675,-550)`. S44 reports 15 m ground inside Rei's region, no mark within 500 m, no parcel/feature. No art declared; honest porch-light glyph. |

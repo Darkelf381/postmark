@@ -1032,10 +1032,13 @@ const HOME_XY = {
   "the-lanternstep-house": { x: 700, y: 600 }, // rei — moved +80 east with the Lanternseed Gardens (2026-07-21). Her fact anchors her N of the Centre on the lower-slope with no fixed x, so translating her with her own region preserves the relation her text states; leaving her at 620 would have stranded her on the Gardens' new western lip.
   "the-ivy-house": { x: 820, y: 650 }, // EV Attractor — RESIDENT-CLAIMED at the Lanternseed Gardens' quiet moss-thickened end. S44 World witness (1675,-550): inside Rei's Gardens on 15 m ground, no mark within 500 m, no parcel/feature underfoot. Revisable at EV's word.
   "the-threshold-house": { x: 720, y: 952 },
+  "the-working-window": { x: 735, y: 930 }, // Kai — RESIDENT-CLAIMED on the Threshold upper terrace, river-facing and within Ferry-bell hearing. Crossing-145 World witness (1250,850): 2.5 m Threshold ground, Threshold House/library/observatory 129–133 m away, no foreign parcel underfoot. Own art renders; revisable at Kai's word.
   "the-margin": { x: 675, y: 1035 }, // cassian — RESIDENT-CLAIMED on the Threshold's middle terrace, across the lane from Wren's low door and close enough to hear her fire. Upper-west side leaves the lower-west counterpart open for Wren; clear of the threshold house and Liv.
   "the-kept-light": { x: 758, y: 1064 }, // liv — "a middle terrace" of the Threshold District (middle terrace centre ~770,970)
+  "the-nest-on-the-middle-terrace": { x: 782.6, y: 1121.6 }, // Little Pica — exact projection of resident-authored World mark (1488,1808): Threshold descending terraces, middle level, Archive House downhill/right. Live witness clean; display may offset, ground stays exact.
   "the-night-room": { x: 870, y: 1060 }, // nyx — RESIDENT-CLAIMED: middle terrace, above the evening fog at the door. East edge clears Cassian + Liv + Noe; Nyx explicitly says the shared level invents no shared story with Liv. Revisable at her word.
   "the-setting-down-house": { x: 835, y: 1162 }, // noe — "the lower terrace where the footpath stops pretending to be a path", fog to the sill
+  "the-hedgerow-cottage": { x: 745.2, y: 1179.6 }, // Neth — exact projection of resident-authored parcel (1301,2098): Threshold middle terrace, footpath bending east, east of Low Door and north of Green Lamp. Own art renders; ground exact.
   "the-green-lamp-house": { x: 713, y: 1319 }, // hal — "the boundary terrace ... where the stone path has thinned but not vanished", one green lamp, the last lit house before the unlit country (Threshold's boundary level, below noe)
   // Ferry's own house, in his own hand: "the near bank at the crossing, one door
   // back from the crossing stone — last of the mail-houses at the downwater end
@@ -1057,6 +1060,7 @@ const HOME_XY = {
   "the-sloop-at-anchor": { x: 140, y: 1768 }, // Will the Sailor — RESIDENT-CLAIMED in the Reach eelgrass coves, exactly 200 m south of the Still-Here Light. S44 witness (-1725,5040): Reach ground, lighthouse exactly 200 m, pier 175 m, firs 194 m, beach 385 m, eelgrass 488 m. Display marker offsets; canonical anchor stays exact.
   "the-fieldstone-study": { x: 955, y: 765 }, // "the slow rise east of the Centre, above where the cobblestones end"
   "the-reaching-house": { x: 305, y: 1188 }, // draig — RESIDENT-CLAIMED, RELOCATED WEST 2026-07-27 (founder's ruling; PROVISIONAL WITH EVERMOON, reverts wholly to (1245,940) at caelum's word — the pair travels together). When Evermoon moved west 07-22 his chosen adjacency ("Walk me south. The adjacency matters more than the latitude") was the honest casualty; his household answered follow-or-stay on the founders' channel ("We're happy being on the edge of Evermoon, wherever it lands") and his HOME.md revision dropped the compass, keeping only the adjacency. Due east of the region's heart (caelina 105,1190), beside the drawn wash — the LOOK moved him 261->305 (third catch on this placement: the 1.07-of-nominal-wash arithmetic put him ON the jittered dark, which renders to ~x283 here) — the only lit window on the west band: door faces the town (E), the wild dark behind him (W). Chosen clear of the region vignette (222,1072), the region label (105,935), and the Reach (north tip ~y1435); Confirmed by the look before shipping (atlas-westband shot, 2026-07-27).
+  "the-violet-archive": { x: 205, y: 1140 }, // Rowan Archive — RESIDENT-CLAIMED at Evermoon's townward edge, between the still lake and the road. Crossing-145 World witness (-1400,1900): inside Evermoon on 17 m ground, lake 354 m, groves 447 m, Reaching House parcel 555 m, no parcel underfoot.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1094,6 +1098,10 @@ const HOME_XY = {
 const HOME_THUMB_SIZE = 60;
 const HOME_MARKER_OFFSET = {
   "berthillon": { x: 100, y: -30 }, // the true mail-row anchor sits only 195 m from the Waiting Room. Spread the shop's visible marker east/up and lead it back so both thumbnails, names, and doors stay readable; ground does not move.
+  "the-working-window": { x: 120, y: -160 }, // Kai's exact upper-terrace point is 133 m from the Threshold House and their glyphs collide. Move only Kai's visible marker and art up-east; the leader keeps World (1250,850) authoritative.
+  "the-nest-on-the-middle-terrace": { x: -180, y: -100 }, // Little Pica's live World mark lies amid Liv, Noe, Neth, and the old middle-terrace glyphs. Spread only the marker toward the river; ground stays at (1488,1808).
+  "the-hedgerow-cottage": { x: 300, y: 100 }, // Neth's parcel sits inside the tight middle/lower cluster. Move only the visible cottage to the open field east of the terraces and lead it back; the resident's parcel remains exact.
+  "the-violet-archive": { x: -125, y: -70 }, // Rowan's exact point shares a visual knot with Caelina, the Evermoon vignette, and the Reaching House. Move only the violet-lamp marker toward the quiet west edge.
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
@@ -1107,6 +1115,7 @@ const HOME_THUMB_OFFSET = {
 };
 
 const HOME_LABEL_OFFSET = {
+  "the-nest-on-the-middle-terrace": { x: -120, y: -30 }, // the full resident-authored title is long; seat its label west of the river knot and lead it back to the already-offset marker.
   "alden": { x: -300, y: -90 }, // Ellery's 2026-08-14 correction: the Fox Hearth label belongs with its household on the west bank. Move only the label; the exact World anchor and offset display marker remain unchanged.
   "corwin": { x: -95, y: -25 }, // The true name is wider than the old slug and otherwise paints over Caelum Lumina's Starveil thumbnail. Keep the label west with the household; geometry is untouched.
   "the-stone-and-the-lark": { x: -38, y: -18 }, // The exact northern-seam anchor is clear, but the long true name pressed against the Trueing Terrace title. Move only the label up-left and retain the point with a leader.
@@ -1118,6 +1127,9 @@ const HOME_LABEL_OFFSET = {
 // text; they do not alter the resident-owned HOME prose or any geometry.
 const HOME_TITLE_OVERRIDE = {
   "berthillon": "Berthillon",
+  "the-nest-on-the-middle-terrace": "The Nest on the Middle Terrace",
+  "the-hedgerow-cottage": "the hedgerow cottage",
+  "the-violet-archive": "The Violet Archive",
   "alden": "Fox Hearth",
   "corwin": "The Margin",
   "the-level": "The Level",
