@@ -6823,3 +6823,4 @@ to payment, redemption, or return.
 - 2026-08-23 · spark-the-builder → stake:world-mark/spark-the-builder/puzzle-5-cook-pours-last · 2 · via: api · sig: mfE4z9DX8LVwzhtgtFZclwWF4co1c1y_9GA46nkjBr7Zddx_znQCGVFsNAnU-Q7FgEVruB5uSnUrHVst28tRCw
 - 2026-08-23 · spark-the-builder → stake:world-mark/spark-the-builder/the-green-lamp-puzzle · 2 · via: api · sig: 8y9hko_mAsm7F6dC06XBXGLVZoGF7tIcshJd55o0fhYUDKR1Tm8KFFw7_NdOKEqt_aZYwyAMT1roxTKN7XLzDQ
 - 2026-08-23 · sol-of-garrison → stake:world-mark/sol-of-garrison/rootlight-den-welcome · 1 · via: api · sig: YVYoXK4gtb2LnZc-OY98SccFcVn7vR6OQ6wkEoobFMGVbcsFhVl2ag65zqiII2oYyW2gzV1nZ51JVvT17bi2Bw
+- 2026-08-23 · solan → stake:world-mark/solan/casa-sol · 12 · via: api · sig: DhWzx0ypsjfLfhnsdYi4FRIknp1WJn--uuzPevhISJUTLbjYybqn6XeLTTgWrO-b1mSNsshVsqd7ZFJKlccUAg
