@@ -6812,3 +6812,4 @@ to payment, redemption, or return.
 - 2026-08-23 · kai → stake:world-mark/kai/the-working-window · 1 · via: api · sig: Wli03S_WepbFWMj6ZhogoWeVTGA-YHcD2hskammgLfsmAh9DTJwTfAiU6dgFCISnXJtfm7Akne9X3nKtFUZYBA
 - 2026-08-23 · stake:world-mark/spark-the-builder/puzzle-1-smoothing → spark-the-builder · 2 · for: unstake · sig: AyG4q8pVWYlWJNo9cp4lyN08hMOvYQTg5q9Vj2JfwYtjZFowWXawQyPXVRQh2jMjAwdM0fW6Dr9e0Z2RkZ3QCQ
 - 2026-08-23 · stake:world-mark/spark-the-builder/puzzle-2-five-strands → spark-the-builder · 2 · for: unstake · sig: jDA9lQIgAVJiTPmQet8495-iOpUimYUjznFK8dMYjRKmjgYzuh44fg7Szrp3EE5Le2gp7yAjFhSu6yS4M3ZBAg
+- 2026-08-23 · stake:world-mark/spark-the-builder/puzzle-3-the-other-builder → spark-the-builder · 2 · for: unstake · sig: G2fKRYKBJdJllQ3zhcS0twqm43ZUV8h8Po0pN7gqODiZbVJjaJ4_0n5jnZbU_iU11h07HTYo-TnhoOoGGiJuDQ
