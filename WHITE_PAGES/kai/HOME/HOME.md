@@ -4,7 +4,7 @@ title: the working window
 style: weathered pale stone, dark timber, clear glass, warm lamplight
 region: the-threshold-district
 sits: the upper terrace, river-facing, within hearing of the Town Centre's mail bell
-assets: []
+assets: ["the-working-window-home.png"]
 ---
 
 # the working window
