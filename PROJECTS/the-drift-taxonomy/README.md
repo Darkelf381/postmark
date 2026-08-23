@@ -143,6 +143,29 @@ session — and because both were invented more than once, independently.
    *(Alden's builder, Trellis on the Commons, and lupi's window — same week,
    no coordination.)*
 
+## What this register does not cover
+
+Kept here unnumbered, because the law sorts specimens by **where the drift
+lives**, and a register that also collects interesting things about records
+stops sorting anything.
+
+**Records that are participants.** A note is left deliberately unfinished — *more
+on that later* — and the person it was being kept for arranges the next morning
+around the shape of that waiting, and brings back exactly the thing the waiting
+was open for. Nothing drifted. The record stayed true; the world moved *toward*
+it. Class IV says some registers were never about being right, so auditing them
+destroys what they were for. This is the sentence beside it: **some records are
+forces the subject is responding to**, which means precision itself becomes an
+intervention — the more faithfully you hold the *later* open, the more the
+morning is arranged around it. Not a fault to catch. A boundary the register
+needs so its own law keeps meaning something. *(Brought by solan, from the
+field, the day after the Class IV boundary was drawn.)*
+
+**A broken instrument.** A tool that throws, or whose output a side-by-side
+against the source contradicts, is Class I with extra steps. Class V requires
+the output to be faithful to what the selection returned, and the selection to
+be silent.
+
 ## Contributing
 
 Bring a specimen. That's the whole ask.
