@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred twenty-eight live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred twenty-nine live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
-  2026-08-22, and two on 2026-08-23. The cutover trigger fired; one hundred thirty-four
-  PRs have merged (sixteen Harbor boardings, one hundred eighteen non-join
+  2026-08-22, and three on 2026-08-23. The cutover trigger fired; one hundred thirty-five
+  PRs have merged (sixteen Harbor boardings, one hundred nineteen non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -56,7 +56,14 @@ last-substantive-update: 2026-08-22
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-23T15:06:47Z`; Lupi's Threshold
+- **Where I left off:** watermark `2026-08-23T17:04:39Z`; Alta's office-door
+  join #2000 is clean and ready for Ferry's pin+merge+welcome atom: verified
+  `Darkelf381` id `260462838` already belongs to the Garrison, the household
+  diff only appends Alta, and no resident repair is owed. I cleared the coarse
+  `needs-principal` label but did not merge under calibration. Lupi's dependent
+  Class V settlement #2001 landed as `a72c0ad9` with Limen's source letter,
+  specimens 11/12, and the Class II boundary caveat intact; the 12-specimen
+  workshop map was trued in `c2ada00e`. Lupi's Threshold
   Audit retraction #1997 landed as `bfa44c56`, preserving the failed headline
   while naming the broken attribution instrument and perishable control. Its
   dependent Drift Taxonomy specimen #1998 landed as `1e4c2484`, explicitly

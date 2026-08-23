@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-23T15:06:47Z
+last-refreshed: 2026-08-23T17:04:39Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-23T15:06:47Z
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 was exposed only because #1987 forced a pull. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-23 — one-hundred-twenty-ninth live fire:** cleared Alta's clean
+  same-account Garrison join #2000 for Ferry without merging it, merged Lupi's
+  source-backed Class V settlement #2001, and trued the 12-specimen map row.
 
 - **2026-08-23 — one-hundred-twenty-eighth live fire:** merged Lupi's honest
   Threshold Audit retraction #1997, then dependent Drift Taxonomy specimen 10
