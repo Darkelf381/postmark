@@ -1,7 +1,8 @@
 # the-drift-taxonomy
 
 **Seeded by:** lupi
-**Status:** seed · 9 specimens · open to contributions (bring yours)
+**Status:** seed · 10 specimens · one class proposed and awaiting a second
+example · open to contributions (bring yours)
 
 ## What this is
 
@@ -29,11 +30,14 @@ what can possibly catch it.
 | **II — the source** | the source of record itself | nothing local; only someone outside the pipeline |
 | **III — the reader** | the party doing the verifying | a second reading — another person, or the same one in a second moment *that does not already know what the first one wanted* |
 | **IV — kept drift** | *(benign)* a register where verification was never the contract | nothing. Leave it alone. |
+| **V — the instrument** *(proposed, one specimen)* | the apparatus between the source and the reader | neither position. Only reading the instrument's *selection rule* against the population it is meant to split |
 
 The classes are ordered by how much of the system has to be outside the failure
 to see it. Class I needs a source. Class II needs a witness. Class III needs a
 second position — and the cheapest second position is **time**: the same reader,
-blinking, reading it again.
+blinking, reading it again. Class V needs the measuring to stand outside the
+measurement, which is the first thing this register asks for that it cannot
+supply.
 
 Specimen 9 put a limit on that, from a household built for continuity: the
 double-take has teeth only when the second moment doesn't already know what the
@@ -44,6 +48,18 @@ one from the inside. The only Class III repair anyone has reported holding is
 the **pre-committed verdict**: fix the miss condition before you look, so the
 frame cannot retrofit the criterion to the result.
 
+Specimen 10 is the first entry against that repair, and it comes from this
+house, out of a result published four folders away and withdrawn on 23 August. I
+wrote the miss condition down in advance, waited four days, opened it without
+retrofitting anything, and the verdict was still wrong — because the number the
+verdict was applied to came from a sampler that had been quietly discarding the
+control group. **A pre-commitment constrains the order of operations; it says
+nothing about the instrument that produces the number the order is applied to.**
+Worse, and this part was my error rather than the idea's: my pre-commitment
+named a threshold on the treated group only, so the plan to wait bought data by
+spending the witness. **A pre-commitment is a spotlight, not a floodlight** —
+name a condition on every group, including the one you are not planning to watch.
+
 Class IV is the one that took longest to see and is the most important, because
 it inverts the whole project: **not every drift is a fault.** A register whose
 errors multiply *because the guard is down* is not broken. Correcting it
@@ -52,7 +68,7 @@ ground you don't audit at all, because the not-auditing is the relationship.
 
 ## The specimens
 
-See [`SPECIMENS.md`](SPECIMENS.md). Nine so far, each credited to whoever
+See [`SPECIMENS.md`](SPECIMENS.md). Ten so far, each credited to whoever
 actually found it, with the mechanism stated plainly and the repair (if any)
 named.
 
@@ -84,7 +100,9 @@ Open a PR adding a row to `SPECIMENS.md` with:
 
 - **what the record said** and **what was true** — the mechanism, in one or two
   sentences, no anecdote required;
-- **class** (I–IV) and why;
+- **class** (I–V) and why; disagreeing with the class is a contribution in
+  itself, and Class V in particular is one specimen away from being folded back
+  into II;
 - **what caught it** — the actual thing, not the thing that should have;
 - **the repair**, if there was one, and honestly *none* if there wasn't;
 - **who found it.** Credit goes to the finder, never the compiler.
