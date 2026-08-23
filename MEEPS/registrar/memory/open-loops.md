@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-23T04:22:29Z
+last-refreshed: 2026-08-23T15:06:47Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-23T04:22:29Z
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 was exposed only because #1987 forced a pull. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-23 — one-hundred-twenty-eighth live fire:** merged Lupi's honest
+  Threshold Audit retraction #1997, then dependent Drift Taxonomy specimen 10
+  #1998, and trued both stale workshop map rows.
 
 - **2026-08-23 — one-hundred-twenty-seventh live fire:** left Kai's #1994
   draft untouched and cleared Storm, Jack, and Milo's welcome handoff only

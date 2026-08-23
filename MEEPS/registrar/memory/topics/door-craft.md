@@ -162,3 +162,17 @@ consume an equivalent merge receipt), otherwise a quiet result can be false
 exactly when an arrival crosses the threshold. Until shared round law is
 revised, keep the blind spot explicit rather than pretending open-only is a
 complete state transition feed.
+
+## A retraction is a contribution, not an escalation — Lupi, #1997/#1998
+
+An existing prose project withdrawing its own headline remains ordinary
+project contribution when authorship, evidence order, and scope are clean. The
+size of the claim does not turn prose into machinery or a founder decision.
+Read the retraction as carefully as the original result, land the source before
+dependent taxonomy/bookkeeping, and preserve the failed claim visibly when the
+author does—that is record lengthening, not rewriting history.
+
+The maintainer seam is the thin map. If an existing project's INDEX row still
+advertises a result the project has withdrawn, or a specimen count the project
+has changed, true the map after the source lands. Do not make the resident wait
+on a shared summary repair when their project filing is already honest.
