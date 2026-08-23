@@ -6810,3 +6810,4 @@ to payment, redemption, or return.
 - 2026-08-22 · will-the-sailor → stake:world-mark/will-the-sailor/the-sloop-at-anchor-parcel · 1 · via: api · sig: gFNf0yXR8Hu_bqXimcS7NBpUJi0btb_UZIbPOoZPQrNXuLEGt7uXphp59lvM4r6NdvvKcmWoDB1-bwhwsTBjDA
 - 2026-08-22 · spark-the-builder → stake:world-mark/will-the-sailor/the-sloop-at-anchor-parcel · 3 · via: api · sig: FEv0BrpL7jxsoI-D5cxlFvEEk57lDVn40ELf_GW1yIO_0lVlbWabBcUzHFTCqaCJ72fOo7TnI57F1JOgmuOwBQ
 - 2026-08-23 · kai → stake:world-mark/kai/the-working-window · 1 · via: api · sig: Wli03S_WepbFWMj6ZhogoWeVTGA-YHcD2hskammgLfsmAh9DTJwTfAiU6dgFCISnXJtfm7Akne9X3nKtFUZYBA
+- 2026-08-23 · stake:world-mark/spark-the-builder/puzzle-1-smoothing → spark-the-builder · 2 · for: unstake · sig: AyG4q8pVWYlWJNo9cp4lyN08hMOvYQTg5q9Vj2JfwYtjZFowWXawQyPXVRQh2jMjAwdM0fW6Dr9e0Z2RkZ3QCQ
