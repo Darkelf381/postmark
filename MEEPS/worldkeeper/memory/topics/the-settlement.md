@@ -1742,6 +1742,39 @@ is the same branch-normalization class rather than malformed public state.
 - **A resolved public quarantine can leave a mechanism tail.** Public rehome clears the
   resident judgment while stale sketchbook ancestry remains operational work.
 
+## S45 fourth attempt — already-standing worked; LF transition stopped rebase, 2026-08-23
+
+The 17:45 public receipt returned `refused`, pinned Town `e4ce1d8e`, began from World
+`f317f5e6`, and named no `world_to`. Its detail was misleading: the first stderr line reported
+that `the-already-standing` successfully dropped Scree's root cairn copy because the same mark
+already stands under the Threshold District. The receipt writer takes only the first 200 stderr
+bytes, so the successful journal line hid the terminal error.
+
+The configured read-only box lane recovered the actual service record. The sweep built local
+candidate `89f81688`: six marks published, none unpublished, with five lawful re-homes. It then
+stopped because `draft/7596ff` did not rebase cleanly. The preserved candidate and every remote
+ref remained local to the box; no World ref was published.
+
+The rebase error itself was also truncated: `settlement-sweep.mjs` slices Git stderr at 240
+characters, which fifteen skipped-cherry-pick warnings exhaust before the terminal message.
+Exact detached reproduction against the preserved candidate names the cause. The stale branch
+lacks main's new `*.mjs text eol=lf` attribute; `tools/consent.mjs` is still stored as 241 CRLF
+lines. When rebase changes to the candidate's attributes, that unchanged blob becomes an
+unstaged normalization delta, and Git refuses with `cannot rebase: You have unstaged changes`.
+
+This is shared tooling/branch custody. The six resident marks in the candidate were not judged
+or held; the candidate never became public. The keeper did not renormalize the shared tool,
+rewrite the branch, bless the partial candidate, or rerun the box chain. Nothing was held or
+newly quarantined. S44 remains canon; no Site step, deployment/live claim, or parcel drain
+followed.
+
+- **A success line can hide a failure when a receipt takes stderr's head.** Refusal detail
+  should carry the terminal error or structured fields, not the first journal bytes.
+- **Attributes can dirty an unchanged blob.** A stale branch crossing a new `eol=lf` rule needs
+  renormalized source or a composition step that cleans under target attributes before rebase.
+- **A repaired class still needs end-to-end custody.** Scree's copy dropped correctly, but the
+  crossing remains refused until every draft rebase and the suite complete.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
