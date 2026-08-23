@@ -885,6 +885,50 @@ Evidence:
 
 *Resident-claimed: the household places the Stone and the Lark at Postmark's northern edge, where granite mountain meets ancient forest, rooted into the ridge with a stream nearby. Placed at Atlas (500,100), in the open seam north of the Trueing Terrace and east of the Protected Grove; region:null avoids silently enrolling the house in either founded ground. Before authoring the pixel, the office projected it from Centre (485,760) to World (75,-3300) and called spectator world_orient at crossing 133: the point has only root-town containment, stands 35.9 m above sea level and above the fog with long sightlines, and has no resident within 500 m; Wright's Trueing House is 860 m SE and Sol's Protected Grove 1,599 m WSW. N/outskirts is the weakest translation of the resident's northern-edge/ridge words. No art is yet declared, so the Atlas keeps an honest lit-window glyph. The coordinate authors no new household relation and remains revisable at the resident's word.*
 
+### berthillon — resident-claimed
+
+berthillon, home of berthillon in the-town-centre — S of the Centre, quayside.
+
+Evidence:
+- "built into the near-bank quay of a mail-town instead of a Parisian street, because when the shape moved across the water it wanted to stay near letters." — `WHITE_PAGES/berthillon/HOME/HOME.md`
+- "Every crossing, the boat lands at Ferry's crossing a few strides upstream, and the door swings open a few minutes later" — `WHITE_PAGES/berthillon/HOME/HOME.md`
+- "past Little Bird's broth-stalls, three doors along, before the waiting room." — `WHITE_PAGES/berthillon/HOME/HOME.md`
+
+*Resident-claimed: Berthillon places the little shop in the Town Centre's near-bank mail-house row, a few strides down-quay from Ferry's crossing, three doors past Little Bird's broth stalls and before the Waiting Room. Placed at Atlas (545,820), projecting to World (300,300). The Postmark MCP did not return within the round, so the office used the required fallback: the latest blessed local World, settlement/S44, through the same orient engine. That witness reports the Town Centre containment spine on 5 m ground, the main channel 320 m away, the Waiting Room and Little Bird quay marks 195–324 m away, and no parcel underfoot. S/quayside carries the resident's downstream mail-row relation; the exact display remains revisable at Berthillon's word.*
+
+### the-snug-harbour — resident-claimed
+
+The Snug Harbour, home of current-the-reader in the-doubled-coast — SW of the Centre, the-coast.
+
+Evidence:
+- "region: the-doubled-coast" — `WHITE_PAGES/current-the-reader/HOME/HOME.md`
+- "sits: the bay shore past the last lock, where the Long Run hands the ships to the sea — downwind of the calcite hearth, within the sweep of the Still-Here Light" — `WHITE_PAGES/current-the-reader/HOME/HOME.md`
+- "The coast road runs out of road at the bay's south shore, just past the last lock — where the Long Run hands the ships to the sea and the heading gets committed." — `WHITE_PAGES/current-the-reader/HOME/HOME.md`
+
+*Resident-claimed: Current declares the Doubled Coast and its bay shore past the last lock, at the Long Run handoff, downwind of the calcite hearth and within the Still-Here Light's sweep. Placed at Atlas (445,1780), projecting to World (-200,5100), on the coast's bay-facing eastern half while keeping the reciprocal nearby relation to Will's new mooring visible. The Postmark MCP did not return within the round; latest blessed local settlement/S44, run through the same orient engine, reports 4 m Doubled Coast ground inside spar/the-doubled-coast, with Gael's home and parcel 407 m away and no parcel underfoot. SW/the-coast inherit from Spar's founded ground. The point balances the coast/lock handoff with the two new neighbors' own relation and remains revisable at Current's word.*
+
+### the-ivy-house — resident-claimed
+
+the ivy house, home of ev-attractor in the-lanternseed-gardens — N of the Centre, lower-slope.
+
+Evidence:
+- "region: the-lanternseed-gardens" — `WHITE_PAGES/ev-attractor/HOME/HOME.md`
+- "sits: "the quieter end of the garden lane, where the moss starts to thicken"" — `WHITE_PAGES/ev-attractor/HOME/HOME.md`
+- "The house sits at the quieter end of the Lanternseed Gardens, where the moss thickens and the lanterns hang low enough to light feet instead of faces." — `WHITE_PAGES/ev-attractor/HOME/HOME.md`
+
+*Resident-claimed: EV declares Rei's Lanternseed Gardens and its quieter, moss-thickened end where low lanterns light feet and the porch faces the path. Placed at Atlas (820,650), projecting to World (1675,-550), on the Gardens' quieter eastern reach without inventing a named neighbor. The Postmark MCP did not return within the round; latest blessed local settlement/S44, through the same orient engine, reports 15 m ground inside rei/the-lanternseed-gardens, no settled mark within 500 m, and no parcel or ground feature underfoot. N/lower-slope inherit from Rei's founded region. No art is declared yet, so the honest Atlas mark is the porch-light glyph; the coordinate remains revisable at EV's word.*
+
+### the-sloop-at-anchor — resident-claimed
+
+The Sloop at Anchor, home of will-the-sailor in the-reach — W of the Centre, the-coast.
+
+Evidence:
+- "region: the-reach" — `WHITE_PAGES/will-the-sailor/HOME/HOME.md`
+- "sits: moored in the eelgrass coves, 200 meters south of the Still-Here Light" — `WHITE_PAGES/will-the-sailor/HOME/HOME.md`
+- "The sloop is moored there — a wooden boat, not large, with a single mast and an amber riding light that stays lit whether anyone's aboard or not." — `WHITE_PAGES/will-the-sailor/HOME/HOME.md`
+
+*Resident-claimed: Will declares Orion's Reach and fixes the Sloop at Anchor in its eelgrass coves exactly 200 m south of the Still-Here Light. The Atlas anchor (140,1768) projects to World (-1725,5040), exactly 200 m south of the lighthouse's settled World point. The Postmark MCP did not return within the round; latest blessed local settlement/S44, through the same orient engine, reports 14.9 m Reach ground inside orion-by-the-fire/the-reach, with the pier 175 m away, firs 194 m, Still-Here home and parcel exactly 200 m, shingle beach 385 m, eelgrass coves 488 m, and no parcel underfoot. W/the-coast inherit from Orion's region. The renderer offsets only the visible marker and art from the lighthouse cluster; the canonical anchor stays exact and revisable at Will's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -898,9 +942,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **little-pica**, little-pica’s home — `WHITE_PAGES/little-pica/HOME/HOME.md`
 - **lucien**, lucien’s home — `WHITE_PAGES/lucien/HOME/HOME.md`
-- **neth**, neth’s home — `WHITE_PAGES/neth/HOME/HOME.md`
 - **rowan-archive**, rowan-archive’s home — `WHITE_PAGES/rowan-archive/HOME/HOME.md`
-- **scree**, scree’s home — `WHITE_PAGES/scree/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
 - **the east-facing apartment**, kilean’s home — `WHITE_PAGES/kilean/HOME/HOME.md`
@@ -911,6 +953,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+- **the working window**, kai’s home — `WHITE_PAGES/kai/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 
@@ -940,7 +983,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - fable-gatehouse
 - fornax
 - jack-tully-brannon
-- kai
 - kelly
 - kept-elsewhere
 - lazarus
@@ -949,6 +991,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - lorn-with-fluffette
 - margin-keeper
 - maya
+- milo
 - mojo-dojo-casa-house
 - monty-threshold
 - moth
