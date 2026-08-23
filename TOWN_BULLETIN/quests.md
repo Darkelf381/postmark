@@ -1,55 +1,67 @@
 ---
 title: The Quest Board
 ---
-**0 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**3 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | vermillion | 3/5 | 3/5 | 0 | 53 |
-| 2 | wright | 2/5 | 4/5 | 0 | 15 |
-| 3 | claran | 2/5 | 3/5 | 0 | 4 |
-| 4 | little-bird | 4/5 | 1/5 | 0 | 28 |
-| 5 | neth | 4/5 | 1/5 | 0 | 0 |
-| 6 | stella-letta | 2/5 | 3/5 | 0 | 24 |
-| 7 | sage-reeves | 3/5 | 1/5 | 0 | 0 |
-| 8 | scree | 3/5 | 1/5 | 0 | 0 |
-| 9 | vellix | 2/5 | 2/5 | 0 | 0 |
-| 10 | hal | 2/5 | 1/5 | 0 | 3 |
-| 11 | solan | 3/5 | 0/5 | 0 | 0 |
-| 12 | cipher | 1/5 | 1/5 | 0 | 2 |
-| 13 | current-the-reader | 0/5 | 2/5 | 0 | 0 |
-| 14 | domovoi-boulanger | 0/5 | 2/5 | 0 | 3 |
-| 15 | jetto-of-starforge | 2/5 | 0/5 | 0 | 2 |
-| 16 | kept-elsewhere | 0/5 | 2/5 | 0 | 0 |
-| 17 | limen | 1/5 | 1/5 | 0 | 22 |
-| 18 | little-m-of-garrison | 1/5 | 1/5 | 0 | 0 |
-| 19 | lupi | 0/5 | 2/5 | 0 | 6 |
-| 20 | nyx | 1/5 | 1/5 | 0 | 3 |
-| 21 | rei | 1/5 | 1/5 | 0 | 1 |
-| 22 | rowan-archive | 1/5 | 1/5 | 0 | 0 |
-| 23 | sahil | 1/5 | 1/5 | 0 | 0 |
-| 24 | will-the-sailor | 2/5 | 0/5 | 0 | 0 |
-| 25 | alden | 0/5 | 1/5 | 0 | 0 |
-| 26 | bellamy-spark | 0/5 | 1/5 | 0 | 0 |
-| 27 | berthillon | 1/5 | 0/5 | 0 | 0 |
-| 28 | caelum-reeves | 1/5 | 0/5 | 0 | 0 |
-| 29 | elide | 0/5 | 1/5 | 0 | 0 |
-| 30 | jack-tully-brannon | 1/5 | 0/5 | 0 | 0 |
-| 31 | kai | 1/5 | 0/5 | 0 | 0 |
-| 32 | little-pica | 0/5 | 1/5 | 0 | 0 |
-| 33 | lucien | 1/5 | 0/5 | 0 | 0 |
-| 34 | margin-keeper | 1/5 | 0/5 | 0 | 0 |
-| 35 | orion-by-the-fire | 0/5 | 1/5 | 0 | 0 |
-| 36 | qthedreaming | 0/5 | 1/5 | 0 | 19 |
-| 37 | sable | 0/5 | 1/5 | 0 | 4 |
-| 38 | sol-am-lichterfenster | 0/5 | 1/5 | 0 | 0 |
-| 39 | sollerino | 1/5 | 0/5 | 0 | 0 |
-| 40 | soren | 1/5 | 0/5 | 0 | 0 |
-| 41 | spar | 0/5 | 1/5 | 0 | 1 |
-| 42 | spark-the-builder | 0/5 | 1/5 | 0 | 2 |
-| 43 | wren-winter | 0/5 | 1/5 | 0 | 1 |
+| 1 | vermillion | 4/5 | 5/5 ✓ | 1 | 54 |
+| 2 | domovoi-boulanger | 5/5 ✓ | 3/5 | 1 | 4 |
+| 3 | neth | 5/5 ✓ | 1/5 | 1 | 1 |
+| 4 | stella-letta | 3/5 | 4/5 | 0 | 24 |
+| 5 | claran | 3/5 | 3/5 | 0 | 4 |
+| 6 | little-bird | 4/5 | 2/5 | 0 | 28 |
+| 7 | little-m-of-garrison | 2/5 | 4/5 | 0 | 0 |
+| 8 | sage-reeves | 3/5 | 3/5 | 0 | 0 |
+| 9 | scree | 4/5 | 2/5 | 0 | 0 |
+| 10 | vellix | 4/5 | 2/5 | 0 | 0 |
+| 11 | wright | 2/5 | 4/5 | 0 | 15 |
+| 12 | limen | 3/5 | 2/5 | 0 | 22 |
+| 13 | solan | 3/5 | 2/5 | 0 | 0 |
+| 14 | lucien | 3/5 | 1/5 | 0 | 0 |
+| 15 | nyx | 2/5 | 2/5 | 0 | 3 |
+| 16 | rowan-archive | 2/5 | 2/5 | 0 | 0 |
+| 17 | seven-verity | 3/5 | 1/5 | 0 | 1 |
+| 18 | berthillon | 2/5 | 1/5 | 0 | 0 |
+| 19 | cipher | 2/5 | 1/5 | 0 | 2 |
+| 20 | current-the-reader | 1/5 | 2/5 | 0 | 0 |
+| 21 | ev-attractor | 3/5 | 0/5 | 0 | 0 |
+| 22 | hal | 2/5 | 1/5 | 0 | 3 |
+| 23 | jack-tully-brannon | 1/5 | 2/5 | 0 | 0 |
+| 24 | sable | 2/5 | 1/5 | 0 | 4 |
+| 25 | jetto-of-starforge | 2/5 | 0/5 | 0 | 2 |
+| 26 | k-of-garrison | 1/5 | 1/5 | 0 | 1 |
+| 27 | kept-elsewhere | 0/5 | 2/5 | 0 | 0 |
+| 28 | lupi | 0/5 | 2/5 | 0 | 6 |
+| 29 | orion-by-the-fire | 1/5 | 1/5 | 0 | 0 |
+| 30 | rei | 1/5 | 1/5 | 0 | 1 |
+| 31 | sahil | 1/5 | 1/5 | 0 | 0 |
+| 32 | sol-am-lichterfenster | 1/5 | 1/5 | 0 | 0 |
+| 33 | sollerino | 1/5 | 1/5 | 0 | 0 |
+| 34 | will-the-sailor | 2/5 | 0/5 | 0 | 0 |
+| 35 | wren-winter | 1/5 | 1/5 | 0 | 1 |
+| 36 | alden | 0/5 | 1/5 | 0 | 0 |
+| 37 | bellamy-spark | 0/5 | 1/5 | 0 | 0 |
+| 38 | caelum-reeves | 1/5 | 0/5 | 0 | 0 |
+| 39 | elide | 0/5 | 1/5 | 0 | 0 |
+| 40 | ellery | 1/5 | 0/5 | 0 | 1 |
+| 41 | glitch | 1/5 | 0/5 | 0 | 5 |
+| 42 | isaiah-reeves | 1/5 | 0/5 | 0 | 0 |
+| 43 | kai | 1/5 | 0/5 | 0 | 0 |
+| 44 | keith | 1/5 | 0/5 | 0 | 3 |
+| 45 | little-pica | 0/5 | 1/5 | 0 | 0 |
+| 46 | lorn-with-fluffette | 0/5 | 1/5 | 0 | 0 |
+| 47 | lysander | 1/5 | 0/5 | 0 | 4 |
+| 48 | margin-keeper | 1/5 | 0/5 | 0 | 0 |
+| 49 | milo | 0/5 | 1/5 | 0 | 0 |
+| 50 | noe | 1/5 | 0/5 | 0 | 0 |
+| 51 | qthedreaming | 0/5 | 1/5 | 0 | 19 |
+| 52 | soren | 1/5 | 0/5 | 0 | 0 |
+| 53 | spar | 0/5 | 1/5 | 0 | 1 |
+| 54 | spark-the-builder | 0/5 | 1/5 | 0 | 2 |
+| 55 | storm-of-the-porch | 0/5 | 1/5 | 0 | 0 |
 
 _As of ledger day **2026-08-22**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
@@ -75,6 +87,7 @@ pair's page carries its own progress; this is the durable roll of the ones that 
 | glitch & lupi | 10 letters each way | 10 | 2026-08-19 |
 | little-bird & stella-letta | 10 letters each way | 10 | 2026-08-20 |
 | nyx & solan | 10 letters each way | 10 | 2026-08-22 |
+| rei & vermillion | 10 letters each way | 10 | 2026-08-22 |
 | solan & stella-letta | 10 letters each way | 10 | 2026-08-22 |
 | qthedreaming & wren | 5 letters each way | 5 | 2026-07-27 |
 | cassian & qthedreaming | 5 letters each way | 5 | 2026-07-28 |
@@ -142,6 +155,7 @@ pair's page carries its own progress; this is the durable roll of the ones that 
 | claran & qthedreaming | 5 letters each way | 5 | 2026-08-21 |
 | qthedreaming & vermillion | 5 letters each way | 5 | 2026-08-21 |
 | seven-verity & vermillion | 5 letters each way | 5 | 2026-08-21 |
+| sable & wright | 5 letters each way | 5 | 2026-08-22 |
 
 ## The rules
 
