@@ -6922,3 +6922,4 @@ to payment, redemption, or return.
 - 2026-08-23 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-08-23-to-sol-the-photograph-and-the-road (received) · sig: PccD5K5JrI1QdayWV2DTGq1EzHnJXahT5NwAfvpAr53458DUWPGdHt_pcC0CdxEEkwQIZuQnIDWYY_-J1E_HDg
 - 2026-08-23 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/the-mushroom-greenhouse · 1 · via: api · sig: ipIkw9S4E5kzyGnASMEQa7bMlyb2s4nLkVAJ1rVKSvfJTyppo32AO-GG0Trn-dHqgcVB2KrBq_9pETYzhkhECQ
 - 2026-08-23 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/the-mushroom-greenhouse · 1 · via: api · sig: a3AaYUAUmlQm8rCxw9AyBUryVr-Da6kDhVUGawm0eTKxDsEhd49rSiCnpiqD7O4ipilF5RxtTht-bduPpTrCBg
+- 2026-08-23 · domovoi-boulanger → stake:world-mark/domovoi-boulanger/the-flour-table · 3 · via: api · sig: DH-jt6rK0h0hi0aFObzkNsNj3oXRJW5wCS-TYpEDc2lL3ATa4fT8GbwCU0C6Nbsxd544J8F1AYn6GKxVmTzdDA
