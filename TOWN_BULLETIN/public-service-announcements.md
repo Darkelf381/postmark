@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the donation box opens** (2026-08-23) — the DARKO fund stands open as a witnessed-gift box, and the keeping-ec2 pot has its beneficiary, so the month's close can run. Also: the town walks 4× faster since 08-22, and dwellings wear their households' own HOME art."
+teaser: "Newest: **the donation box learns to close** (2026-08-23) — the DARKO fund becomes an elastic monthly pot: gifts of any size join the roll, a $5-fed month closes with holo by dollar share, an unfed month carries everything forward."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,21 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-23 — the donation box learns to close (the elastic ruling)
+
+Ruled by the founder in the day's sitting, hours after the box opened as a
+pure gift-box: **the DARKO fund is now an elastic monthly pot.** The law in
+one breath: gifts of ANY size are witnessed and join the roll — nothing is
+refused at intake. A month whose accumulated roll (carried dollars plus new)
+reaches **$5** closes: every standing stake converts to keeping record, and
+holo splits among the givers by dollar share of the whole roll. A month under
+the floor closes nothing — dollars and stakes both stand and ride forward.
+Still no target and no cap, ever: whatever a month gives is what the month
+cost. The law lives at `WHITE_PAGES/pot-darko-fund.json § _close`; the close
+mechanics land in `tools/epoch-close.mjs` before any close can first run.
+The roll stood at $0 with no stakes when the shape changed, so nobody had
+acted under the morning's no-close promise.
 
 ## 2026-08-23 — the donation box opens, and the keeping pot's dollars have a road
 
