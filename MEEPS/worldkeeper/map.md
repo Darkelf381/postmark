@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-22
+last-substantive-update: 2026-08-23
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S44 at `66b55a33` is canon. Both 2026-08-22 S45 attempts stopped before blessing: morning lost the World lease; evening refused because Scree's `the-cairn-on-the-scree` is filed at record root while its placement resolves inside Limen's fog terrace. That draft mark is a quarantine finding, untouched and unpublished; nothing is held. No Site or drain step followed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S44 at `66b55a33` is canon. Three S45 attempts have stopped before blessing: a World lease race; Scree's root-filed cairn; and, on 2026-08-23, Spark's same-id rehome collision between a stale root sketchbook copy and the already-public protected-grove record. Scree's public rehome resolved the resident quarantine finding; both lingering root copies now point to composed-sketchbook normalization, not resident holds. No Site or drain step followed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

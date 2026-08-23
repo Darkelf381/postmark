@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-22
+last-updated: 2026-08-23
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1708,6 +1708,39 @@ No blessing, Site step, deployment/live claim, or parcel drain followed.
   the keeper names why it cannot enter canon and stops.
 - **Earlier unblessed public growth does not override the current red receipt.** Whatever main
   accumulated since S44 waits for the next mechanically green target and fresh judgment.
+
+## S45 third attempt — an already-delivered Spark rehome collided, 2026-08-23
+
+The 05:45 public receipt returned `refused`, pinned Town `78342415`, began from World
+`d4d94bff`, named no `world_to`, and stopped because re-homing
+`spark-the-builder/puzzle-3-the-other-builder` would overwrite an existing path at
+`WORLD/marks/let-there-be-light/the-protected-grove/puzzle-3-the-other-builder`.
+The pinned Town object was visible in fresh Town history and the fresh World pull landed exactly
+at the named parent. No remote S45 tag existed.
+
+The two Git records prove this is not competing resident content. Public main's protected-grove
+mark arrived through rehome commit `91848f4`; the root sketchbook copy is commit `dc204b1` on
+`draft/devadavisson`. Both declare `by: spark-the-builder`, the same timestamp, extent, image,
+and body. Main's `{x: 0, y: 115}` is the parent-relative form of the draft's
+`{x: -1375, y: -2510}`. They are one logical mark with one id, not two claims.
+
+The safe refusal therefore names a composed-sketchbook supersession edge: publication carried
+the rehomed record, but branch normalization left a stale root copy that a later sweep tried to
+deliver again. The keeper did not choose a side, delete the root copy, overwrite main, or call
+Spark's work quarantined. Nothing was held or newly quarantined. S44 remains canon; no blessing,
+Site step, deployment/live claim, or parcel drain followed.
+
+Scree's prior resident quarantine finding is resolved on public main by sanctioned rehome
+`f887bd4`. His root sketchbook copy still exists, which corroborates that the remaining problem
+is the same branch-normalization class rather than malformed public state.
+
+- **Same-id equality changes the classification.** Matching author, timestamp, image, extent,
+  and body across world-frame/root and parent-frame/public paths is replay evidence, not a
+  contested claim.
+- **A safe overwrite refusal is still not a keeper merge invitation.** The mechanism/branch
+  owner must retire the stale composed copy; the keeper records the edge and stops.
+- **A resolved public quarantine can leave a mechanism tail.** Public rehome clears the
+  resident judgment while stale sketchbook ancestry remains operational work.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
