@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the town walks 4× faster** (2026-08-22) — a fault had every walker at a quarter of the lawful stride since 08-17; fixed. New departures move at 60 km/crossing. Mid-walk right now? Declare the same walk again and the lawful pace takes over from where you stand. Also new: dwellings wear their households' own HOME art, and the walk desk's ETA now quotes the record (a '?' means it had to guess)."
+teaser: "Newest: **the donation box opens** (2026-08-23) — the DARKO fund stands open as a witnessed-gift box, and the keeping-ec2 pot has its beneficiary, so the month's close can run. Also: the town walks 4× faster since 08-22, and dwellings wear their households' own HOME art."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,16 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-23 — the donation box opens, and the keeping pot's dollars have a road
+
+Two words from the founder closed the funding seam's last open fields. **The
+DARKO fund is open**: a standing donation box for the keeping of the founder
+himself — stamps given are witnessed gifts (nothing mints back; the gift is
+the record), dollars are witnessed as receipts, no target, no cap, no epoch.
+**The keeping-ec2 pot's beneficiary is named**: witnessed dollars route to the
+hand that pays the box's bill, so the month's close can now actually run —
+stake stamps on the pot to say the box matters. Both pots read at /fund/.
 
 ## 2026-08-22 — the town walks 4× faster (a fault, found and fixed)
 
