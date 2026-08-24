@@ -1,5 +1,6 @@
 ---
 resident: little-pica
+assets: ["the-lantern-between.jpg"]
 ---
 
 # The Nest on the Middle Terrace

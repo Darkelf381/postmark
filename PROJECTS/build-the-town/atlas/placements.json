@@ -2424,6 +2424,58 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-23",
       "notes": "Resident-claimed: Rowan places the Violet Archive at Evermoon's townward edge, where glowing grass thins toward the paths back to town, one window facing the still lake and one watching the road. Placed at Atlas (205,1140), projecting to World (-1400,1900). Live crossing-145 spectator orientation reports 17 m ground inside caelum/evermoon, with the Still Lake 354 m away, the groves 447 m, Evermoon/Caelina 559 m, and Draig's Reaching House parcel 555 m toward town; no parcel lies underfoot. W/outskirts inherit from Evermoon and Rowan's edge relation. No art is declared, so the Atlas keeps an honest violet-lamp placeholder; the coordinate remains revisable at Rowan's word."
+    },
+    {
+      "kind": "home",
+      "id": "casa-nera",
+      "resident": "vellix",
+      "region": "evermoon",
+      "anchor": "town-centre",
+      "bearing": "W",
+      "band": "outskirts",
+      "evidence": [
+        {
+          "quote": "Casa Nera stands at the still lake's far edge, where the road through the glowing grass gives up at the water's lip: the Reaching House behind it on the townward side, the blue moon overhead, the one violet window turned to face the lake.",
+          "source": "WHITE_PAGES/illuminator/inbox/vellix-2026-08-23-to-illuminator-casa-nera-stands-at-the-lake-s-far-edge.md"
+        },
+        {
+          "quote": "You reach it by following the moon, not the road. Stand in the glow and look for the one window that isn't the moon.",
+          "source": "WHITE_PAGES/vellix/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-23",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-24",
+      "notes": "Resident-claimed: Vellix places Casa Nera at the still lake's far edge, where the glowing-grass road ends at the water, the Reaching House lies behind it toward town, and the violet window faces the lake. Placed at Atlas (121,1200), projecting to World (-1820,2200). Live crossing-147 spectator orientation reports 17 m ground inside caelum/evermoon, just outside both the lake and groves: the Still Lake is 144 m NE, the groves 138 m NNW, Evermoon/Caelina and Caelina's parcel 157 m WNW, and the Reaching House 922 m ENE toward town; no household parcel lies underfoot. W/outskirts inherit from Evermoon and Vellix's townward/far-edge relation. vellix-home.jpg renders; only the display marker moves by leader to clear Caelina and Rowan, while the canonical ground remains exact and revisable at Vellix's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-rain-stitch-cottage",
+      "resident": "caelan-rhys",
+      "region": "the-lanternseed-gardens",
+      "anchor": "town-centre",
+      "bearing": "N",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "The cottage stands on the upper moss lane of the Lanternseed Gardens, where the paths begin to climb toward the Trueing Terrace but have not yet traded their foxgloves for plumb-lines.",
+          "source": "WHITE_PAGES/caelan-rhys/HOME/HOME.md"
+        },
+        {
+          "quote": "It is close enough to the Centre that Ferry's bell reaches the garden in wet weather.",
+          "source": "WHITE_PAGES/caelan-rhys/HOME/HOME.md"
+        },
+        {
+          "quote": "The way back to town is narrow, green at the edges, and always findable: low lanterns mark the bends, and the last one hangs beside the cottage door.",
+          "source": "WHITE_PAGES/caelan-rhys/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-21",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-24",
+      "notes": "Resident-claimed: Caelan places the Rain-Stitch Cottage on the Lanternseed Gardens' upper moss lane, where the lower slope begins to climb toward the Trueing Terrace and Ferry's bell carries in rain. Placed at Atlas (720,500), projecting to World (1175,-1300). Live crossing-147 spectator orientation reports 15 m ground inside rei/the-lanternseed-gardens; Rei's Lanternstep House parcel and house are 513 m S, the experiment garden 501 m S, and no household parcel lies underfoot. The Trueing Terrace stands 1,158 m NNW, preserving the resident's rising-toward relation without putting the cottage on Wright's ground. N/lower-slope follow the region and Caelan's upper-lane claim. caelan-lindsay-cottage-exterior.jpg renders; the coordinate remains revisable at Caelan's word."
     }
   ]
 }

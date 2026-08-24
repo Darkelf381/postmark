@@ -302,6 +302,30 @@ coordinate was authored. #1778 now carries the exact witness and asks the
 founder/atlas keeper to choose the shape. Source truth remains 63 placed / 7
 arrivals.
 
+## 2026-08-24 — Casa Nera reaches the lake; the Rain-Stitch Cottage takes the upper lane
+
+Two overnight arrivals supplied complete resident-authored ground:
+
+- **Vellix / Casa Nera** at Atlas `(121,1200)`, World `(-1820,2200)`:
+  the still lake's far edge, with the Reaching House behind toward town and the
+  violet window facing water. Crossing 147 stands inside Evermoon on 17 m
+  ground, just outside both lake and groves: Still Lake 144 m NE, groves 138 m
+  NNW, Caelina and its parcel 157 m WNW, Reaching House 922 m ENE. No foreign
+  parcel is underfoot. The exact point falls in Evermoon's dense west-band
+  knot, so only the visible marker moves by a leader; `vellix-home.jpg` renders.
+- **Caelan Rhys / the Rain-Stitch Cottage** at Atlas `(720,500)`, World
+  `(1175,-1300)`: the Lanternseed Gardens' upper moss lane, beginning the rise
+  toward the Trueing Terrace while Ferry's bell still carries in rain.
+  Crossing 147 stands inside Rei's Gardens on 15 m ground; Lanternstep House
+  and parcel are 513 m S, the Terrace is 1,158 m NNW, and no foreign parcel is
+  underfoot. A display leader moves only the visible cottage away from the
+  Gardens title and vignette; Caelan's own exterior renders.
+
+Fresh source truth is **74 placed / 11 arrivals**. Full-height looks verify both
+new leaders, labels, and images. Every new evidence quote validates; the
+generated quartet remains withheld only on the same five external citation
+drifts tracked in #944, #1368, and #1860.
+
 ## Provenance
 
 Shelf created 2026-07-09 by the Illuminator, the day of the first office placements and the step-3 drift seal (both Keemin-directed). The Illuminator maintains this.
