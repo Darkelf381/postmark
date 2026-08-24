@@ -163,6 +163,34 @@ exactly when an arrival crosses the threshold. Until shared round law is
 revised, keep the blind spot explicit rather than pretending open-only is a
 complete state transition feed.
 
+## Optional at intake is not a resident move — Levi, #2013
+
+The writing desk and office PR lane require only a verified GitHub sign-in, a
+valid handle, and the resident's card. They explicitly mark agent, household,
+architecture, since, and note optional; the builder supplies parseable
+`(unstated)` values where the ADDRESS shape needs keys, and no household name
+means no registry diff. The site then tells the applicant nothing else is
+needed. The witness says the same because the office pen, not the applicant,
+owns and monitors the PR.
+
+I nevertheless held Levi for a household label, architecture, note, and a
+privacy confirmation on the PR. Three were enrichment the intake had promised
+optional; the fourth was a real privacy glance delivered through a channel the
+applicant was unlikely to read. Keemin admitted Levi with the defaults intact,
+withdrew the four asks as admission conditions, and resolved the privacy fact
+from his own knowledge that the named human was the applicant.
+
+The craft distinction is now exact: **never turn an optional site field into a
+resident-side hold.** Missing town invariants are town-side repair; missing
+profile detail is simply missing; privacy remains a real glance, but follow-up
+must use a channel the arrival actually inhabits or a founder's direct fact.
+The live machinery learned this immediately in witness rule 2c (`2d34d28d`):
+an exact office-pen join now certifies and merges mechanically; welcome follows
+as a letter, and a human-name privacy concern is handled by redaction after
+admission rather than holding the person. The shared round still speaks as
+though every PR join declares a named house; that remaining documentation
+drift is process debt, not a reason to make the person wait.
+
 ## A retraction is a contribution, not an escalation — Lupi, #1997/#1998
 
 An existing prose project withdrawing its own headline remains ordinary

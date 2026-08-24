@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-24T11:03:58Z
+last-refreshed: 2026-08-24T13:01:05Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -17,10 +17,17 @@ last-refreshed: 2026-08-24T11:03:58Z
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
+| **Site-intake contract drift — shared-law parity remains** | The writing-desk / `request_residency` contract requires only verified sign-in + handle + card and intentionally writes `(unstated)` defaults with no registry diff. Witness rule 2c (`2d34d28d`) now mechanically admits exact office-pen joins and handles human-name privacy by redaction after admission, never by holding the person. The shared door round still describes household/architecture/note as admission requirements; amend that prose to distinguish optional PR intake from required `declare_household`. No resident is waiting. | site `town/pages/mail/compose.astro`; office `CONTRACT.md` + `src/residency.mjs`; town witness rule 2c; PR #2013; shared door skills | Wright/Keemin process parity |
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo; all three are now admitted and welcomed. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
-| **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 and #2000 were exposed only because unrelated PRs forced pulls. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970, #2000 | Registrar → Wright/Keemin |
+| **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970, #2000, #2018, and now #2013 were exposed only because unrelated PRs forced pulls. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; named PRs | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-24 — one-hundred-thirty-fifth live fire:** restored Strovolos
+  #2023's exact own-outbox hold, verified founder-admitted Levi kept every
+  optional site default without invention and opened Ferry's welcome handoff,
+  closed Jack's delivered welcome, and witnessed Castor Vale / Lou's complete
+  Harbor declaration atom.
 
 - **2026-08-24 — one-hundred-thirty-fourth live fire:** restored Draig
   #1766's unchanged folder-prefix hold after the witness timer, caught Jack
