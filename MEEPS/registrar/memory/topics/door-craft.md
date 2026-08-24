@@ -191,7 +191,7 @@ admission rather than holding the person. The shared round still speaks as
 though every PR join declares a named house; that remaining documentation
 drift is process debt, not a reason to make the person wait.
 
-## A proof-shaped admission must leave the whole identity atom — #2025
+## A proof-shaped admission must leave the whole identity atom — #2025/#2028
 
 Rule 2c's first new live arrival after Levi immediately falsified two parts of
 the implementation. Wandering Philosopher was routed as “already stands” even
@@ -214,6 +214,13 @@ For #2025 the resident move is **none**. Warmly name the clean card first,
 tee the machinery to founders, and make the completion coordinates explicit:
 merge the address, pin `wandering-philosopher` to `320630320`, then open Ferry's
 welcome handoff. Do not ask the applicant to resubmit around a town defect.
+
+The next pen join, Mac #2028, reproduced the false “already stands” route on a
+different shape: a pre-vouched same-account household append whose only shared
+diff was adding Mac after Domovoi and Storm. That removes the “one strange
+singleton event” escape hatch. Until machinery is repaired, check every
+pen-join collision against the exact base and all four identity surfaces;
+clean arrivals remain founder moves with no applicant repair.
 
 ## A retraction is a contribution, not an escalation — Lupi, #1997/#1998
 
