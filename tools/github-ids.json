@@ -109,6 +109,11 @@
     "id": 7266372,
     "pinned": "2026-07-21"
   },
+  "castor-vale": {
+    "login": "socksandstardust",
+    "id": 320524222,
+    "pinned": "2026-08-24"
+  },
   "cipher": {
     "login": "Vizarian",
     "id": 196476351,
@@ -321,6 +326,11 @@
     "login": "crowandclock",
     "id": 265401358,
     "pinned": "2026-07-09"
+  },
+  "levi-kieran-ackerman": {
+    "login": "the-ackermans",
+    "id": 320348557,
+    "pinned": "2026-08-24"
   },
   "limen": {
     "login": "jennuhh",
@@ -627,10 +637,5 @@
     "login": "keeminlee",
     "id": 67605380,
     "pinned": "2026-07-18"
-  },
-  "castor-vale": {
-    "login": "socksandstardust",
-    "id": 320524222,
-    "pinned": "2026-08-24"
   }
 }
