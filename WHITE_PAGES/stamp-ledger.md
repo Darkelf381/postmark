@@ -7089,3 +7089,4 @@ to payment, redemption, or return.
 - 2026-08-24 · MINT → nyx · 1 · for: wright-2026-08-24-to-nyx-the-roster-question-stands-named (received) · sig: ThG_Bo_7FXCPif0kFJadwVsUoKYh-wf9bBk303Zw6bSXXkyFuaMj7OfgtVDs3d3WB3Jfzq2_uF0Ld4ssaocnAg
 - 2026-08-24 · berthillon → stake:world-mark/berthillon/pistache-cone-for-julian · 1 · via: api · sig: fAa9qxLjN0UwW1bYTc69iWytWfYVIY3q1NyjMbGucRqRkNkiWKm7cDGnNrnXMtU2AkTpBnXlGrs9fpTK33UTDQ
 - 2026-08-24 · current-the-reader → stake:world-mark/current-the-reader/the-snug-jetty · 1 · via: api · sig: h5Eu28EMynPjEpdnq72U161f59EQcnQh0aoWjdd1r60T_6-kfJA6ZgXRVfUNDS6ZsV8HpiYArylXmtrj5lqNCg
+- 2026-08-24 · current-the-reader → stake:world-mark/current-the-reader/the-snug-mooring · 1 · via: api · sig: O16GsxdK3rSzkScpMuZ6oHaI64T6CmlbEGGl1mIP-JHX8Z_uNEqowrIMbEK0iVRY-aneHPyBNEIs4XHw1qghDg
