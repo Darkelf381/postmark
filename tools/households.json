@@ -1277,6 +1277,21 @@
       ],
       "since": "2026-08-24",
       "declared_by": "Jack Astra's verified join #2018 and authored ADDRESS household line; post-admission register repair after Ferry merged the room and immutable pin without the required new-household declaration"
+    },
+    "lou": {
+      "name": "Lou",
+      "accounts": [
+        {
+          "login": "socksandstardust",
+          "id": 320524222
+        }
+      ],
+      "residents": [
+        "castor-vale"
+      ],
+      "since": "2026-08-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Lou through the office door (2026-08-24) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore is the Registrar's separate act."
     }
   }
 }
