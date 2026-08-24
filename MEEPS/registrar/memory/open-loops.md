@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-24T05:03:53Z
+last-refreshed: 2026-08-24T07:03:28Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-24T05:03:53Z
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 and #2000 were exposed only because unrelated PRs forced pulls. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970, #2000 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-24 — one-hundred-thirty-third live fire:** verified Jack Astra's
+  clean new-household join #2018 and handed Casa Astra to Ferry for the
+  town-side registry+pin+merge+welcome atom with no resident repair owed.
 
 - **2026-08-24 — one-hundred-thirty-second live fire:** merged Lupi's
   source-backed specimen 13 #2016, trued the taxonomy map, and verified Little

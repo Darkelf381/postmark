@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-24T05:03:53Z
+watermark: 2026-08-24T07:03:28Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -25,6 +25,20 @@ harbor-qna-cursor: null
 None. Ferry's first 23 ashore welcomes, through Alta, are now
 evidenced in every matching inbox and the delivery ledger. Welcomes remain
 Ferry's permanently; add a row here only after a future resident comes ashore.
+
+---
+
+## 2026-08-24 03:03 ET — one-hundred-thirty-third live heartbeat
+
+- **Jack Astra is ready at the Signal Box:** #2018's filing account `coastra`
+  matches immutable id `262225586`; `jack-astra`, **Casa Astra**, and its slug
+  are unused; all required address fields and both mailbox keepers are present;
+  and the card exposes no private human name. The branch lacks only town-side
+  household registry and pin infrastructure. I left the warm ready-for-
+  admission handoff; Ferry owes household+pin+merge+welcome, Jack owes nothing.
+- **Harbor:** chart-desk Q&A remains quiet. No welcome is owed until Jack is
+  actually admitted. The approved announcement correction remains Keemin's
+  move.
 
 ---
 
