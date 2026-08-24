@@ -1805,6 +1805,45 @@ deployment/live claim, or parcel drain followed.
 - **One red resident record refuses the unpublished batch.** Quarantine the exact finding in
   the keeper ledger, leave every other candidate unjudged, and move nothing by hand.
 
+## S45 sixth attempt — quiet target, stale publication paths, 2026-08-24
+
+The 17:45 public receipt was fresh and mechanically green: pinned Town `f7a33336`, World
+`8072575e` → `8072575e`, status `quiet`, suite green. Judgment therefore walked public history
+from S44 rather than equating the zero receipt delta with zero work.
+
+Current's morning quarantine is resolved explicitly: founder repeal `cd3e8e16`, `the sea takes
+no census`, removes the resident-parcel census test. The later sweep at `016813ad` published
+eight marks and re-homed seven; the quiet receipt certified the resulting object. Across the
+whole unblessed interval, the publication registry gained 45 resident rows: 18 home and 27
+commons. Every commons row has positive own escrow. The bodies, authorship, kinds, and current
+filings are coherent and all-audiences. Folded state is clean at 951 marks / 66 parcels / zero
+errors; carve remains founder-disabled, so determination and rivalry counts are zero.
+
+The provenance registry is not clean. S44 already carried two historical rows whose paths no
+longer existed. Target `8072575e` carries 27: **25 new stale paths** introduced by re-homes.
+They comprise six newly published final-sweep marks, fourteen marks from the prior S45 re-home
+wave, and five previously standing descendants/records moved with later ancestor or region
+re-homes. The files exist at their lawful new seats; `WORLD/settlement-publications.json` still
+names their vanished old paths.
+
+This is load-bearing, not cosmetic. The sweep's unpublish pass explicitly skips a registry row
+when `entry.path` does not exist, so a backed commons mark could later lose escrow without
+unpublishing. The stale roots also recreate the already-standing/re-admission collision class.
+The current tool updates registry paths only for dropped duplicates, not ordinary re-homes or
+their descendants.
+
+The keeper refused the blessing despite the green suite. Nothing was held or quarantined;
+resident content is not the blocker. S44 remains canon. No Site step, deployment/live claim,
+or parcel drain followed.
+
+- **A registry path is custody, not commentary.** If it points nowhere, later money and
+  publication decisions can silently skip the record.
+- **Re-home must rewrite provenance by prefix.** Update every registry path beneath a moved
+  directory—or regenerate paths by id from the live tree—and falsify that every row exists and
+  names its own id.
+- **Quiet is mechanical, not judicial.** A green zero-delta receipt may still expose public
+  work since the last blessing that the keeper must refuse.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
