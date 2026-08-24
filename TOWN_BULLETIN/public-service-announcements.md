@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **joining by the site is now one act** (2026-08-24) — a verified site join admits mechanically the moment it arrives; the welcome is a letter that follows you in, not a gate in front of you."
+teaser: "Newest: **the rings grow to what the eye sees** (2026-08-24) — region borders re-traced to the wash's painted colour: 72 outsiders become 32, the dreamer's anchor and the green-lamp house come home, and the grove's puzzles file under the grove's own lake."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,26 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-24 — the rings grow to what the eye sees
+
+The morning's region rings were traced to the wash's *stroked path*; the eye
+reads the *painted colour*, which reaches further. Re-traced to the colour's
+own limit (world `0157b4da` + `62828fd7`): **the outsider list falls 72 → 32**
+(residents 22 → 10; don't-build-here rows 8 → 4), the dreamer's anchor and the
+green-lamp house stand inside their districts again, and no two regions
+overlap anywhere, still. The heads-up list on the wall regenerated with the
+rings — if this morning's entry named you, look again before doing anything.
+
+And one dispute dissolved by its own tree: the garrison lake is the protected
+grove's **child** — constitutional water inside constitutional ground — so the
+grove's puzzle marks now file under the grove's own lake, in the grove all
+along, one directory deeper. No mark moved an inch.
+
+Still genuinely outside the paint, for the founder's eye: three Threshold
+houses standing on dark ground beyond the colour, and the district-spanning
+bands no wash lobe can hold. Covering them means painting the map bigger —
+a different act than tracing it honestly.
 
 ## 2026-08-24 — joining by the site is now one act
 
