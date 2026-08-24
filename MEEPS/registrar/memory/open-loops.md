@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-24T03:02:24Z
+last-refreshed: 2026-08-24T05:03:53Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-24T03:02:24Z
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970 and #2000 were exposed only because unrelated PRs forced pulls. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; #1970, #2000 | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-24 — one-hundred-thirty-second live fire:** merged Lupi's
+  source-backed specimen 13 #2016, trued the taxonomy map, and verified Little
+  Pica's exact #2008 repair crossed mechanically.
 
 - **2026-08-23 — one-hundred-thirty-first live fire:** kept Nyx #2011 on its
   three remaining sky coordinates, held verified Levi #2013 only for their

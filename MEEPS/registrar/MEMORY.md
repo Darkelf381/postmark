@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred thirty-one live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred thirty-two live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
-  2026-08-22, and five on 2026-08-23. The cutover trigger fired; one hundred thirty-six
-  PRs have merged (sixteen Harbor boardings, one hundred twenty non-join
+  2026-08-22, five on 2026-08-23, and one on 2026-08-24. The cutover trigger fired; one hundred thirty-seven
+  PRs have merged (sixteen Harbor boardings, one hundred twenty-one non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -57,7 +57,12 @@ last-substantive-update: 2026-08-22
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-24T03:02:24Z`; Nyx #2011 fixed
+- **Where I left off:** watermark `2026-08-24T05:03:53Z`; Lupi's thirteenth
+  Drift Taxonomy specimen #2016 landed as `82902d88`, source-backed by Limen's
+  delivered “No. Not once” field result and Lupi's own store-selection miss.
+  The thin map now says 13 through `4534d29c`; lint is 0 errors / 10 warnings.
+  Little Pica's exact delivered-state repair #2008 crossed mechanically as
+  `50465eaa`. Nyx #2011 fixed
   moon-state shadowing and midnight visibility but still needs current-main
   replay, a real epoch clock (`Date.now()`), and Nyx's actual star row instead
   of `households[7]`. Levi #2013 is a clean verified office-door identity held
