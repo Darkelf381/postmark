@@ -79,3 +79,19 @@ frontmatter fields move together to a new shared public label. Harbor
 passengers have no resident pin or registry membership yet, but their berth
 declarations must still agree before boarding; otherwise the eventual
 disembarkation would split one human into two houses at the waterline.
+
+## Third lived receipt — Alta and the Garrison, #2000 (2026-08-23)
+
+The verified office door opened a PR under `postmark-pen`, but carried the
+signed-in resident credential separately: `Darkelf381`, immutable id
+`260462838`. That id already stood as the Garrison's account, so the house's
+vouch was inherent even though the PR author was the office transport rather
+than the resident login. Authorship at this door is the verified credential,
+not blindly the GitHub account that ferried the commit.
+
+The branch correctly appended only Alta to the existing registry row and left
+the pin for town-side admission. The witness's coarse machinery label was
+therefore not a founder decision: the specific same-account household law
+governed, the label cleared, and Ferry later landed pin+merge+welcome as one
+atom. Verify all four surfaces afterward—ADDRESS, household row, immutable pin,
+and welcome receipt—because an office-pen PR makes no one surface sufficient.
