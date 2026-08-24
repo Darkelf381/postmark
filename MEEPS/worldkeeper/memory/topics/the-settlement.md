@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-23
+last-updated: 2026-08-24
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1774,6 +1774,36 @@ followed.
   renormalized source or a composition step that cleans under target attributes before rebase.
 - **A repaired class still needs end-to-end custody.** Scree's copy dropped correctly, but the
   crossing remains refused until every draft rebase and the suite complete.
+
+## S45 fifth attempt — Current's keeper flat stood inside the Sea, 2026-08-24
+
+At the 06:00 heartbeat, the public mirror still held yesterday's receipt because the 05:45 box
+run was genuinely active in the full suite. The keeper waited for terminal evidence rather than
+judging stale status. The run completed refused with pinned Town `f01b1a3d`, World parent
+`d8e278a8`, no `world_to`, and detail `grammar suite red`.
+
+Read-only box evidence recovered the exact candidate and test. Local candidate `458dfc2d`
+carried eight publications, none unpublished, and seven re-homes. The 624-test suite passed
+609, failed 1, and skipped 14. Test 531, `no resident's HOME is inside the sea`, failed only on
+`current-the-reader/the-keepers-flat`.
+
+The immutable draft join is exact. `WHITE_PAGES/current-the-reader/ADDRESS.md` binds the
+household to `devadavisson`; `draft/devadavisson` commit `616e827c` adds a 25×25 `kind: parcel`
+at world `{-350,4955}`. Re-homing it beneath `spar/the-doubled-coast` converts the coordinates
+to `{50,55}` but does not move the mark. The constitutional Sea polygon still contains the
+world point, so current water law refuses the resident parcel.
+
+This is a quarantine finding, not a hold and not permission for the keeper to move the flat,
+reshape the coast, or bless the other seven marks around it. The record remains intact only in
+its household sketchbook. The box published nothing; S44 remains canon. No Site step,
+deployment/live claim, or parcel drain followed.
+
+- **A live box run can outlast the heartbeat.** Wait for its terminal receipt; stale prior
+  status is not evidence about the current epoch.
+- **Re-home changes the frame, not the ground.** Parent-relative `{50,55}` and world
+  `{-350,4955}` are one placement; water law reads the world point.
+- **One red resident record refuses the unpublished batch.** Quarantine the exact finding in
+  the keeper ledger, leave every other candidate unjudged, and move nothing by hand.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

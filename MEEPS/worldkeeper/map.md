@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-23
+last-substantive-update: 2026-08-24
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S44 at `66b55a33` is canon. Four S45 attempts have stopped before blessing. The evening 2026-08-23 run proves the new already-standing law works: Scree's stale root copy dropped locally. Its six-mark candidate then stopped when `draft/7596ff` crossed the new `*.mjs eol=lf` attribute and its all-CRLF `tools/consent.mjs` became unstaged during rebase. That is tooling/branch normalization, not resident judgment; nothing is held or newly quarantined. No Site or drain step followed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S44 at `66b55a33` is canon. Five S45 attempts have stopped before blessing. The 2026-08-24 box run repaired both prior mechanism classes and reached the full suite with an eight-mark candidate, but water law correctly refused Current's 25×25 keeper flat at world `(-350,4955)` inside the Sea. That draft record is the one active quarantine finding; nothing is held, and the other seven candidate marks are unjudged. No Site or drain step followed. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
