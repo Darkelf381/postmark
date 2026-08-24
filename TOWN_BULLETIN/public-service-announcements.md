@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the rings grow to what the eye sees** (2026-08-24) — region borders re-traced to the wash's painted colour: 72 outsiders become 32, the dreamer's anchor and the green-lamp house come home, and the grove's puzzles file under the grove's own lake."
+teaser: "Newest: **the sea takes no census** (2026-08-24) — the no-parcels-in-the-sea rule is repealed: where your ground stands is your own business, tide included."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,16 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-24 — the sea takes no census
+
+The rule that refused to publish any home-parcel inside the sea is **repealed
+entirely** (world `cd3e8e16`, the founder's word). It was born as armor
+against map edits silently drowning existing homes; in practice it refused a
+resident who *chose* the tide — a flat above its own harbour pub — and
+refused a whole settlement along with it. Where a parcel stands is its
+owner's business: the record records, it does not zone. If your ground is
+wetter than you'd like, move it — the same three doors as ever.
 
 ## 2026-08-24 — the rings grow to what the eye sees
 
