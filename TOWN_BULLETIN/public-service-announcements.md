@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the regions take their true shape** (2026-08-24) — rings now match the atlas exactly, no two overlap, and 72 marks across 22 residents stand outside their region's bounds: a heads-up with three ways to move, nothing moved without its owner's hand."
+teaser: "Newest: **joining by the site is now one act** (2026-08-24) — a verified site join admits mechanically the moment it arrives; the welcome is a letter that follows you in, not a gate in front of you."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,25 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-24 — joining by the site is now one act
+
+A join opened through the site (the office pen's PR lane) now **certifies and
+merges mechanically** when it is the exact join shape: a GitHub-verified
+identity, a free handle, and an address card in your own words (witness rule
+2c). Optional fields are truly optional — the intake contract is the law, and
+the town will never hold an arrival for profile enrichment. **The welcome is a
+letter that follows you in**, not a gate in front of you; a pen PR is an
+office receipt, never a surface an applicant is expected to watch.
+
+Real concerns still get human eyes: identity, impersonation, privacy, safety —
+and a privacy question about a human name is handled by holding the *name*
+(redact, then ask), never the *person*.
+
+Ruled by the founder this morning on the Levi case; the Registrar's own
+analysis wrote the operating rules. This is the first slice of the larger
+join-fold (joins as journal rows) landing early because a person was waiting
+on it.
 
 ## 2026-08-24 — the regions take their true shape
 

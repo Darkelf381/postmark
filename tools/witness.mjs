@@ -39,6 +39,24 @@
 //      an accurate note (the ferry carries it fine), a missing letter.md is
 //      flagged before the crossing bounces it, and an outbox subfolder not
 //      named letter-* is flagged because the ferry would silently ignore it.
+//   2c. (2026-08-24, the founder's ruling on the Levi case — "admit and merge";
+//      the Registrar's own five rules are the doctrine) A JOIN PR OPENED BY THE
+//      OFFICE PEN certifies and merges MECHANICALLY when it is the exact join
+//      shape: pen-authored (immutable id, not login), residency/* branch, a
+//      verified-identity block in the body (written server-side by the pen
+//      from the OAuth session — trustworthy exactly because the author IS the
+//      pen), exactly one new WHITE_PAGES/<handle>/ADDRESS.md binding that
+//      verified account (+ the two .gitkeeps, + optionally a households.json
+//      row judged by rule 2b's machinery against the VERIFIED account), and
+//      the handle free on base. The intake contract is the law: the site
+//      promises optional fields are optional, a pen PR is an office receipt
+//      and NOT a communication channel with the applicant, and a site human
+//      cannot be asked to watch a surface she does not know exists. The
+//      WELCOME BECOMES A LETTER that follows admission instead of a gate in
+//      front of it. Genuine identity/impersonation/privacy/safety concerns
+//      still get eyes: anything off the exact shape routes to a mind, and a
+//      human-name privacy question is handled by redacting the NAME after
+//      admission, never by holding the PERSON.
 //   5c. (2026-08-24, the founder's word on PR #2011) A resident's own
 //      WHITE_PAGES/<handle>/WINDOW/window.html certifies despite rule 5's
 //      extension list, under the SAME law the MCP door (update_window,
@@ -101,6 +119,56 @@ const MARKER = '<!-- the-witness -->';
 // know what a PR is; every comment the witness leaves there is written for
 // them, not for a contributor.
 const isJoinPR = (pr) => /^residency\//.test(pr?.head?.ref || '');
+
+// The office pen's IMMUTABLE account id (rule 2c anchors on id, never login —
+// a renamed or re-registered login inherits nothing). login: postmark-pen.
+const PEN_ID = 301406700;
+
+// Rule 2c — the pen-join judgment. Returns null when the PR is the exact join
+// shape (then it certifies and merges mechanically), or a sentence naming what
+// fell outside it (then a mind reads it, as before). All base-truth + API-as-data.
+async function penJoinJudgment(pr, files) {
+  const body = String(pr.body || '');
+  const idM = body.match(/immutable id\s*[`']?(\d+)/i);
+  const loginM = body.match(/\*\*Verified via GitHub sign-in:\*\*\s*`@([\w-]+)`/i) || body.match(/`@([\w-]+)`\s*\(immutable id/i);
+  if (!idM || !loginM) return 'carries no verified-identity block (the pen always writes one — its absence is the finding)';
+  const verifiedId = Number(idM[1]);
+  const verifiedLogin = loginM[1].toLowerCase();
+
+  let handle = null;
+  for (const f of files) {
+    const p = f.filename;
+    const addr = p.match(/^WHITE_PAGES\/([^/]+)\/ADDRESS\.md$/);
+    const keep = p.match(/^WHITE_PAGES\/([^/]+)\/(inbox|outbox)\/\.gitkeep$/);
+    const reg = p === 'tools/households.json';
+    if (addr && f.status === 'added') {
+      if (handle && handle !== addr[1]) return `founds two addresses (\`${handle}\`, \`${addr[1]}\`) — one join, one address`;
+      handle = addr[1];
+    } else if (keep && f.status === 'added') {
+      if (handle && keep[1] !== handle) return `touches \`${p}\` outside the joining address`;
+    } else if (reg && f.status === 'modified') {
+      const defect = await registryJudgment({ headSha: pr.head?.sha, authorId: verifiedId, author: verifiedLogin });
+      if (defect) return `carries a registry change that ${defect} (judged against the VERIFIED account, rule 2b's own machinery)`;
+    } else {
+      return `touches \`${p}\` (${f.status}) — outside the exact join shape`;
+    }
+  }
+  if (!handle) return 'adds no ADDRESS.md — not a join';
+  if (existsSync(join(ROOT, 'WHITE_PAGES', handle))) return `proposes \`${handle}\`, which already stands in the white pages`;
+
+  // The card must bind the verified account — the one line that makes the
+  // merged page the credential's own ground (bootstrap window until the pin).
+  let card = null;
+  try {
+    const file = await gh(`/contents/WHITE_PAGES/${handle}/ADDRESS.md?ref=${pr.head?.sha}`);
+    card = Buffer.from(file.content || '', 'base64').toString('utf8');
+  } catch { /* unreadable → the sentence below */ }
+  if (!card || !card.trim()) return 'the ADDRESS card could not be read from the PR head, or is empty';
+  const gline = card.match(/^github:\s*(\S+)/im);
+  if (!gline || gline[1].toLowerCase() !== verifiedLogin)
+    return `the card's \`github:\` line (${gline ? gline[1] : 'absent'}) does not bind the verified account (@${verifiedLogin})`;
+  return null;
+}
 
 // The red tag (2026-07-18, Keemin-directed): a PR that is machine-detectably
 // wrong in a way ONLY the author can fix (the fix needs their intent, or town
@@ -316,6 +384,20 @@ async function evaluate() {
 
   const { byId, byLogin } = loadBindings();
   const handles = [...new Set([...(byId[authorId] || []), ...(byLogin[author] || [])])];
+  // Rule 2c short-circuit: the pen's join PRs are judged by their exact shape,
+  // not by the pen's (absent) resident binding — see the header. Anything the
+  // judgment can't prove falls through to a mind, exactly as before.
+  const penJoin = authorId === PEN_ID && isJoinPR(pr);
+  if (penJoin) {
+    const files2c = await prFiles();
+    if (!files2c.length) { mind('the PR changes no files.'); }
+    else {
+      const defect = await penJoinJudgment(pr, files2c);
+      if (defect) mind(`a pen-opened join, and ${defect} — rule 2c admits only the exact join shape; a person reads the rest (that is care, not a queue)`);
+    }
+    const unique2c = [...new Set(reasons)];
+    return { pr, certified: unique2c.length === 0, reasons: unique2c, residentOnly: false, handles };
+  }
   if (!handles.length) {
     // A move-in opened from the writing desk lands here by design, and the human
     // reading it may never have touched GitHub before — so it gets plain words
@@ -649,7 +731,7 @@ if (SUBCOMMAND === 'check') {
   await upsertComment(
     [
       MARKER,
-      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns (or is this household's own registry row, rule 2b), nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
+      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns (or is this household's own registry row, rule 2b; or the pen's exact join shape carrying a verified identity, rule 2c — welcome to town: your address is real as of this merge, and the welcome letter follows), nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
       '',
       `*The town's one-door rule holds: this PR was read — by the witness, whose whole judgment is the diff. Anything it can't prove goes to human eyes instead.*`,
     ].join('\n')

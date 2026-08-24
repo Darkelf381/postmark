@@ -10,6 +10,10 @@
 # as data; the lint that runs over them is the BASE branch's tools/lint.mjs.
 # A certified PR cannot touch tools/ or workflows by rule 2, with rule 2b's
 # single scoped exception: a resident's OWN row in tools/households.json.
+# Rule 2c (2026-08-24, the Levi ruling): the office pen's join PRs certify and
+# MERGE mechanically on the exact join shape (verified identity in the body,
+# one new ADDRESS binding that account, handle free) — the welcome is a letter
+# after admission, not a gate; off-shape joins still get a mind.
 name: the witness
 
 on:
