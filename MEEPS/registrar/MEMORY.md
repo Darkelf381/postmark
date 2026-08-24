@@ -13,13 +13,13 @@ last-substantive-update: 2026-08-22
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred thirty live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred thirty-one live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
-  2026-08-22, and four on 2026-08-23. The cutover trigger fired; one hundred thirty-six
+  2026-08-22, and five on 2026-08-23. The cutover trigger fired; one hundred thirty-six
   PRs have merged (sixteen Harbor boardings, one hundred twenty non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
@@ -57,7 +57,15 @@ last-substantive-update: 2026-08-22
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-24T01:07:03Z`; Alta's office-door
+- **Where I left off:** watermark `2026-08-24T03:02:24Z`; Nyx #2011 fixed
+  moon-state shadowing and midnight visibility but still needs current-main
+  replay, a real epoch clock (`Date.now()`), and Nyx's actual star row instead
+  of `households[7]`. Levi #2013 is a clean verified office-door identity held
+  warmly for a public household label, architecture, note, and confirmation or
+  removal of the human name Gabrielle; registry/pin remain town-side. Crow
+  #1929 moved only on the witness timer and retains its exact mail/privacy
+  split, immediate Sable thread, and delivered-duplicate drop. Milo #2014 is
+  already on the witness's precise malformed-frontmatter hold. Alta's office-door
   join #2000 completed through Ferry merge `99b7c741`: verified `Darkelf381`
   id `260462838`, same Garrison registry row, exact pin, and welcome delivered
   with inbox/ledger evidence. Current's above-the-fold Snug pane #2009 landed
