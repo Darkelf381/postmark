@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-24T01:07:03Z
+watermark: 2026-08-24T01:09:54Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -47,7 +47,9 @@ Ferry's permanently; add a row here only after a future resident comes ashore.
 - **Nyx's sky needs four coordinates:** #2011 conflicts with the already-live
   evening pane; rAF supplies page-uptime rather than epoch milliseconds;
   moon visibility fails across midnight; and `households[7]` labels `i`, not
-  Nyx at index 8. I returned those exact repairs and verified the red label.
+  Nyx at index 8. A closing-gate push fixed a separate shadowed `moons` array
+  that blanked the canvas, but left all four named seams unchanged; I thanked
+  Nyx briefly and restored the cleared red label.
 - **Harbor:** chart-desk Q&A remains quiet. No welcome is owed. The approved
   announcement correction remains Keemin's move.
 

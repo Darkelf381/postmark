@@ -63,8 +63,9 @@ last-substantive-update: 2026-08-22
   with inbox/ledger evidence. Current's above-the-fold Snug pane #2009 landed
   as `6ad82a97` with the 11,901-character embedded deck byte-identical.
   Little Pica #2008 waits only on changing two now-delivered Illuminator state
-  lines; Nyx #2011 waits on a current-main replay plus epoch-time rAF, midnight
-  moon wrapping, and the correct Nyx star row. Lupi's dependent
+  lines; Nyx #2011 fixed its shadowed moon-state blank canvas but still waits
+  on a current-main replay plus epoch-time rAF, midnight moon wrapping, and the
+  correct Nyx star row. Lupi's dependent
   Class V settlement #2001 landed as `a72c0ad9` with Limen's source letter,
   specimens 11/12, and the Class II boundary caveat intact; the 12-specimen
   workshop map was trued in `c2ada00e`. Lupi's Threshold
