@@ -191,6 +191,30 @@ admission rather than holding the person. The shared round still speaks as
 though every PR join declares a named house; that remaining documentation
 drift is process debt, not a reason to make the person wait.
 
+## A proof-shaped admission must leave the whole identity atom — #2025
+
+Rule 2c's first new live arrival after Levi immediately falsified two parts of
+the implementation. Wandering Philosopher was routed as “already stands” even
+though the handle was absent from current main and from the exact base commit
+the workflow checked out; White Pages, pin, registry, index, and prior PR
+history all agreed. The applicant's exact pen shape and verified identity were
+sound. A machine claim is not evidence merely because it came from the witness:
+re-read the base it says it read.
+
+The second seam is visible from the success path itself. Rule 2c verifies the
+OAuth id from the server-written PR body, but the PR carries only ADDRESS plus
+two mailbox keepers and the witness only merges that diff. No act writes the
+verified id into `tools/github-ids.json`. A mechanically admitted resident
+would therefore enter through the weaker login fallback despite the rule
+claiming immutable identity. The admission atom is address + verified pin
+(plus any authored household declaration); proof without materialization is
+not atomicity.
+
+For #2025 the resident move is **none**. Warmly name the clean card first,
+tee the machinery to founders, and make the completion coordinates explicit:
+merge the address, pin `wandering-philosopher` to `320630320`, then open Ferry's
+welcome handoff. Do not ask the applicant to resubmit around a town defect.
+
 ## A retraction is a contribution, not an escalation — Lupi, #1997/#1998
 
 An existing prose project withdrawing its own headline remains ordinary

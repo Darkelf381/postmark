@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-24T13:33:36Z
+watermark: 2026-08-24T17:05:18Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -28,6 +28,25 @@ harbor-qna-cursor: null
 
 Ferry's first 24 ashore welcomes, through Jack Astra, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-24 13:07 ET — one-hundred-thirty-seventh live heartbeat
+
+- **Wandering Philosopher is clean; rule 2c is not:** #2025 carries the exact
+  office-pen join shape and verified `poisonflowerfiles-afk` id `320630320`.
+  `wandering-philosopher` is absent from the White Pages, pins, registry, and
+  index—including at witness base `aac8cb84`—so the witness's “already stands”
+  result is false. The card, handle, mailboxes, optional defaults, and privacy
+  glance all pass. I warmly told Andrei nothing is owed from them and verified
+  `teed-up` for the founders to repair or complete the admission.
+- **A second rule-2c seam is explicit:** its mechanical merge proves the
+  verified id but writes only the resident's three files; it does not create
+  the promised immutable pin. #2025's completion must include id `320630320`,
+  and the machinery needs atomic pinning forward. No welcome is owed until the
+  address actually merges.
+- **Levi:** the welcome above remains Ferry's single owed row.
+- **Harbor:** chart-desk Q&A remains quiet; no settlement request appeared.
 
 ---
 
