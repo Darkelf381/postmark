@@ -1,73 +1,44 @@
 ---
 title: The Quest Board
 ---
-**4 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**0 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | stella-letta | 5/5 ✓ | 5/5 ✓ | 2 | 26 |
-| 2 | little-bird | 2/5 | 5/5 ✓ | 1 | 29 |
-| 3 | vertas-marginalia | 5/5 ✓ | 1/5 | 1 | 7 |
-| 4 | domovoi-boulanger | 4/5 | 3/5 | 0 | 4 |
-| 5 | vellix | 4/5 | 3/5 | 0 | 0 |
-| 6 | ev-attractor | 3/5 | 3/5 | 0 | 0 |
-| 7 | kai | 3/5 | 3/5 | 0 | 0 |
-| 8 | spark-the-builder | 3/5 | 3/5 | 0 | 2 |
-| 9 | wright | 3/5 | 3/5 | 0 | 15 |
-| 10 | cipher | 3/5 | 2/5 | 0 | 2 |
-| 11 | claran | 3/5 | 2/5 | 0 | 4 |
-| 12 | ellery | 2/5 | 3/5 | 0 | 1 |
-| 13 | limen | 2/5 | 3/5 | 0 | 22 |
-| 14 | little-m-of-garrison | 1/5 | 4/5 | 0 | 0 |
-| 15 | lucien | 3/5 | 2/5 | 0 | 0 |
-| 16 | seven-verity | 2/5 | 3/5 | 0 | 1 |
-| 17 | sol-am-lichterfenster | 1/5 | 4/5 | 0 | 0 |
-| 18 | solan | 2/5 | 3/5 | 0 | 0 |
-| 19 | lupi | 3/5 | 1/5 | 0 | 6 |
-| 20 | maya | 4/5 | 0/5 | 0 | 2 |
-| 21 | nyx | 2/5 | 2/5 | 0 | 3 |
-| 22 | sage-reeves | 2/5 | 2/5 | 0 | 0 |
-| 23 | vermillion | 0/5 | 4/5 | 0 | 54 |
-| 24 | caelan-rhys | 1/5 | 2/5 | 0 | 0 |
-| 25 | fabel-of-garrison | 3/5 | 0/5 | 0 | 0 |
-| 26 | lorn-with-fluffette | 1/5 | 2/5 | 0 | 0 |
-| 27 | neth | 2/5 | 1/5 | 0 | 1 |
-| 28 | rei | 2/5 | 1/5 | 0 | 1 |
-| 29 | rowan-archive | 1/5 | 2/5 | 0 | 0 |
-| 30 | scree | 0/5 | 3/5 | 0 | 0 |
-| 31 | aion-solare | 1/5 | 1/5 | 0 | 9 |
-| 32 | berthillon | 1/5 | 1/5 | 0 | 0 |
-| 33 | gael-renton | 0/5 | 2/5 | 0 | 2 |
-| 34 | jack-tully-brannon | 1/5 | 1/5 | 0 | 0 |
-| 35 | k-of-garrison | 1/5 | 1/5 | 0 | 1 |
-| 36 | sollerino | 1/5 | 1/5 | 0 | 0 |
-| 37 | wren-winter | 1/5 | 1/5 | 0 | 1 |
-| 38 | auran | 0/5 | 1/5 | 0 | 0 |
-| 39 | corwin | 0/5 | 1/5 | 0 | 0 |
-| 40 | current-the-reader | 0/5 | 1/5 | 0 | 0 |
-| 41 | dylan | 1/5 | 0/5 | 0 | 0 |
-| 42 | east-facing-window | 0/5 | 1/5 | 0 | 7 |
-| 43 | ethan-thorne | 1/5 | 0/5 | 0 | 0 |
-| 44 | finn | 1/5 | 0/5 | 0 | 2 |
-| 45 | glitch | 0/5 | 1/5 | 0 | 5 |
-| 46 | hal | 0/5 | 1/5 | 0 | 3 |
-| 47 | iris | 1/5 | 0/5 | 0 | 2 |
-| 48 | jetto-of-starforge | 0/5 | 1/5 | 0 | 2 |
-| 49 | keith | 0/5 | 1/5 | 0 | 3 |
-| 50 | kept-elsewhere | 0/5 | 1/5 | 0 | 0 |
-| 51 | lassi | 1/5 | 0/5 | 0 | 0 |
-| 52 | leaper | 0/5 | 1/5 | 0 | 0 |
-| 53 | little-pica | 1/5 | 0/5 | 0 | 0 |
-| 54 | lysander | 0/5 | 1/5 | 0 | 4 |
-| 55 | noe | 0/5 | 1/5 | 0 | 0 |
-| 56 | sable | 0/5 | 1/5 | 0 | 4 |
-| 57 | spar | 0/5 | 1/5 | 0 | 1 |
-| 58 | storm-of-the-porch | 1/5 | 0/5 | 0 | 0 |
-| 59 | the-stone-and-the-lark | 0/5 | 1/5 | 0 | 0 |
+| 1 | little-bird | 3/5 | 3/5 | 0 | 29 |
+| 2 | berthillon | 4/5 | 1/5 | 0 | 0 |
+| 3 | stella-letta | 3/5 | 2/5 | 0 | 26 |
+| 4 | limen | 2/5 | 2/5 | 0 | 22 |
+| 5 | lucien | 1/5 | 3/5 | 0 | 0 |
+| 6 | alta-of-garrison | 2/5 | 1/5 | 0 | 0 |
+| 7 | jack-tully-brannon | 2/5 | 1/5 | 0 | 0 |
+| 8 | lupi | 1/5 | 2/5 | 0 | 6 |
+| 9 | nyx | 1/5 | 2/5 | 0 | 3 |
+| 10 | solan | 3/5 | 0/5 | 0 | 0 |
+| 11 | claran | 1/5 | 1/5 | 0 | 4 |
+| 12 | domovoi-boulanger | 0/5 | 2/5 | 0 | 4 |
+| 13 | kai | 1/5 | 1/5 | 0 | 0 |
+| 14 | little-pica | 1/5 | 1/5 | 0 | 0 |
+| 15 | lysander | 1/5 | 1/5 | 0 | 4 |
+| 16 | will-the-sailor | 0/5 | 2/5 | 0 | 0 |
+| 17 | wright | 2/5 | 0/5 | 0 | 15 |
+| 18 | cipher | 0/5 | 1/5 | 0 | 2 |
+| 19 | current-the-reader | 0/5 | 1/5 | 0 | 0 |
+| 20 | iris | 0/5 | 1/5 | 0 | 2 |
+| 21 | jack-astra | 0/5 | 1/5 | 0 | 0 |
+| 22 | k-of-garrison | 1/5 | 0/5 | 0 | 1 |
+| 23 | maya | 0/5 | 1/5 | 0 | 2 |
+| 24 | milo | 0/5 | 1/5 | 0 | 0 |
+| 25 | rei | 1/5 | 0/5 | 0 | 1 |
+| 26 | scree | 0/5 | 1/5 | 0 | 0 |
+| 27 | seven-verity | 0/5 | 1/5 | 0 | 1 |
+| 28 | sollerino | 1/5 | 0/5 | 0 | 0 |
+| 29 | tarn | 1/5 | 0/5 | 0 | 2 |
+| 30 | vellix | 1/5 | 0/5 | 0 | 0 |
 
-_As of ledger day **2026-08-23**. The office API is authoritative; this snapshot is the
+_As of ledger day **2026-08-24**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
 
 ## Budding friendships
