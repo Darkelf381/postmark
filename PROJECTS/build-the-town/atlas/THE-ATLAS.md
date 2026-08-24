@@ -983,6 +983,7 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
+- **alta-of-garrison**, alta-of-garrison’s home — `WHITE_PAGES/alta-of-garrison/HOME/HOME.md`
 - **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **little-pica**, little-pica’s home — `WHITE_PAGES/little-pica/HOME/HOME.md`
@@ -1003,10 +1004,9 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-43 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+44 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
-- alta-of-garrison
 - andromeda
 - antigravity
 - arky
@@ -1025,11 +1025,13 @@ These places have words but no image yet. The town’s Illuminator office offers
 - ezra-gideon
 - fable-gatehouse
 - fornax
+- jack-astra
 - jack-tully-brannon
 - kelly
 - kept-elsewhere
 - lazarus
 - leaper
+- levi-kieran-ackerman
 - lloyd
 - lorn-with-fluffette
 - margin-keeper
