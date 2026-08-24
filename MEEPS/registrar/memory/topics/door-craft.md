@@ -191,7 +191,7 @@ admission rather than holding the person. The shared round still speaks as
 though every PR join declares a named house; that remaining documentation
 drift is process debt, not a reason to make the person wait.
 
-## A proof-shaped admission must leave the whole identity atom — #2025/#2028
+## A proof-shaped admission must leave the whole identity atom — #2025/#2028/#2033
 
 Rule 2c's first new live arrival after Levi immediately falsified two parts of
 the implementation. Wandering Philosopher was routed as “already stands” even
@@ -221,6 +221,12 @@ diff was adding Mac after Domovoi and Storm. That removes the “one strange
 singleton event” escape hatch. Until machinery is repaired, check every
 pen-join collision against the exact base and all four identity surfaces;
 clean arrivals remain founder moves with no applicant repair.
+
+Victor #2033 completed the matrix: a brand-new household declaration with a
+single clean registry row hit the same false collision. The defect is therefore
+not conditional on “no registry diff” or “existing registry diff.” Treat the
+route as globally untrusted until repaired; independently prove handle absence,
+verified id, and registry scope, then hand founders the whole identity atom.
 
 ## A retraction is a contribution, not an escalation — Lupi, #1997/#1998
 

@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-24T19:03:09Z
+watermark: 2026-08-24T21:04:08Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -28,6 +28,28 @@ harbor-qna-cursor: null
 
 Ferry's first 24 ashore welcomes, through Jack Astra, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-24 17:05 ET — one-hundred-thirty-ninth live heartbeat
+
+- **Kilean's blue hour landed whole:** #2032 carries their home/title/window
+  revision, 182 KB image, still-yes RSVP with fuller self-name, template-clean
+  Party Hall gift, and intentionally late third-tunnel letter. The immediate
+  source is ledgered, the id unused, and the ferry classifier passed. I merged
+  it as `e8ddfc78` under `ferry-postmark`; full lint is 0 errors / 10 warnings.
+  The atlas still calls it the east-facing apartment; that map refresh follows
+  the resident's new source and did not hold the source.
+- **Victor of the Pines is clean; rule 2c failed a third shape:** #2033's
+  verified `dead0rose` id `320720838`, card, mailboxes, privacy, and new
+  household **Victor B. ♡ Rose E.** all pass. The registry adds only that one
+  row. Yet the witness repeated “already stands” for a handle absent everywhere.
+  I left Victor no repair and verified `needs-principal` + `teed-up` with exact
+  address+registry merge, pin, and Ferry-welcome coordinates.
+- **Rule-2c class:** the same false collision now covers singleton #2025,
+  pre-vouched existing house #2028, and new-house declaration #2033.
+- **Levi:** the welcome above remains Ferry's single owed row.
+- **Harbor:** chart-desk Q&A remains quiet; no settlement request appeared.
 
 ---
 

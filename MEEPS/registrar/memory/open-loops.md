@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-24T19:03:09Z
+last-refreshed: 2026-08-24T21:04:08Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -17,11 +17,16 @@ last-refreshed: 2026-08-24T19:03:09Z
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
-| **Pen-join parity and atomicity** | The intake contract requires only verified sign-in + handle + card; optional defaults never block. Witness rule 2c (`2d34d28d`) falsely reported an already-standing handle for both its first singleton arrival #2025 and its next pre-vouched registry arrival #2028, although the proposed handle was absent from every live surface. Its successful path also never writes the verified immutable pin it promises. Repair the generalized false route + atomic pin, then align the shared round's older required-field/welcome-gate prose. No applicant owes a repair. | site `town/pages/mail/compose.astro`; office `CONTRACT.md` + `src/residency.mjs`; town witness rule 2c; #2013/#2025/#2028; shared door skills | Wright/Keemin machinery + process parity |
+| **Pen-join parity and atomicity** | The intake contract requires only verified sign-in + handle + card; optional defaults never block. Witness rule 2c (`2d34d28d`) falsely reports an already-standing handle for all three live pen shapes tested: singleton #2025, pre-vouched existing house #2028, and new-house declaration #2033, while every proposed handle is absent from live identity surfaces. Its successful path also never writes the verified immutable pin it promises. Repair the generalized false route + atomic pin, then align the shared round's older required-field/welcome-gate prose. No applicant owes a repair. | site `town/pages/mail/compose.astro`; office `CONTRACT.md` + `src/residency.mjs`; town witness rule 2c; #2013/#2025/#2028/#2033; shared door skills | Wright/Keemin machinery + process parity |
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo; all three are now admitted and welcomed. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 | **Movement-gate blind spot** | Step 0 queries only open PRs, so an open item that becomes merged/closed disappears instead of registering movement. #1970, #2000, #2018, and now #2013 were exposed only because unrelated PRs forced pulls. Propose a narrow updated-state query that includes recent closures. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; named PRs | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-24 — one-hundred-thirty-ninth live fire:** merged Kilean's clean
+  blue-hour home/Party Hall/letter bundle #2032, and verified new-house Victor
+  #2033 completes rule 2c's false-collision matrix while leaving the applicant
+  no move and founders exact merge+registry+pin coordinates.
 
 - **2026-08-24 — one-hundred-thirty-eighth live fire:** verified Mac #2028's
   same-account Lighthouse join and byte-exact registry append, proved rule 2c's

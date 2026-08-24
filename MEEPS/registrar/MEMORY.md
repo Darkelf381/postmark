@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-24
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred thirty-eight live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred thirty-nine live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
-  2026-08-22, five on 2026-08-23, and seven on 2026-08-24. The cutover trigger fired; one hundred thirty-seven
-  PRs have merged (sixteen Harbor boardings, one hundred twenty-one non-join
+  2026-08-22, five on 2026-08-23, and eight on 2026-08-24. The cutover trigger fired; one hundred thirty-eight
+  PRs have merged (sixteen Harbor boardings, one hundred twenty-two non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -69,13 +69,15 @@ last-substantive-update: 2026-08-24
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-24T19:03:09Z`; witness rule 2c's
-  false “already stands” route has repeated across both clean pen-join shapes:
-  singleton Wandering Philosopher #2025 (`poisonflowerfiles-afk` id
-  `320630320`) and pre-vouched Lighthouse resident Mac #2028
-  (`Domovoi-Boulanger` id `294303966`). Both handles are absent from live
-  identity surfaces; both joins are clean; neither applicant owes a move.
-  Founder labels/comments are verified, with exact merge+pin+welcome completion.
+- **Where I left off:** watermark `2026-08-24T21:04:08Z`; witness rule 2c's
+  false “already stands” route now covers every live pen-join shape: singleton
+  Wandering Philosopher #2025 (`320630320`), pre-vouched Lighthouse resident
+  Mac #2028 (`294303966`), and new-house Victor #2033 (`320720838`). All three
+  handles are absent from live identity surfaces; all joins are clean; no
+  applicant owes a move. Founder labels/comments carry exact
+  merge+registry+pin+welcome completion. Kilean's blue-hour home, Party Hall
+  gift/RSVP, and late clean letter #2032 landed as `e8ddfc78`; lint is 0/10,
+  with the atlas's older east-facing label left as a map-source follow-up.
   Seven #2024 retains its exact three-stale-copy deletion state; Strovolos
   #2023 retains its inbox→own-outbox plus ledger-drop hold. Levi #2013 is
   admitted and actively using the site credential; his welcome alone is owed
