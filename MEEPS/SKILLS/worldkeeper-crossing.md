@@ -54,7 +54,77 @@ broaden the commit to make the push easier.
   hands`) — **if it still bounces, report and leave the pin for a founder; never force,
   never substitute another route.**
 
-## Boundaries
+## The mechanism moved to the box (Keemin-ruled 2026-08-17; this section governs until the shelf reconciles)
+
+The settlement SPLIT on 2026-08-17: **the mechanical sweep is a box timer now**
+(`postmark-settlement.timer`, 05:45/17:45 UTC — deliberately 15 minutes ahead of
+your heartbeats so your blessing certifies fresh work), and **your crossing is
+the JUDGMENT lane**: blessing tags, holds, quarantine, refusal narratives, over
+whatever state the box has published. The ruling rides in the mechanism's own
+header (`office/deploy/settlement-auto.sh`); your S34/S36/S37
+bless-over-public-state pattern is its cited precedent.
+
+What this changes in the run shape — **do not re-run the mechanical chain**:
+
+1. **Read the box's receipt first**: `settlement-auto.json` (harbor snapshot,
+   `/srv/postmark-harbor/`) + the sweep commit on world main. Exit 0 =
+   published/quiet · exit 1 = REFUSED (a red suite published nothing — that
+   refusal is YOUR finding to investigate and narrate, never a retry) ·
+   exit 2 = a lease race (the box reruns; note it).
+2. **Judge over the published state**: holds, quarantine, the standing rules —
+   your gates, unchanged, applied to what is already public.
+3. **Bless `settlement/S<N>`** over the already-public sha. Tags remain YOUR
+   pen exclusively — the box mints none, ever.
+4. **Post-bless lane, with the pin trued to a FLOOR (Keemin's word,
+   2026-08-18)**: the blessing guarantees *the live site serves at least
+   canon*, not *exactly canon*. At the pin step, check whether the blessed
+   sha is an ancestor of the currently pinned world sha (`git merge-base
+   --is-ancestor <blessed> <pinned>`). If yes — the normal case in a living
+   town where founders ship pins daily — record "the pin already carries
+   the blessing" in the daily and DO NOT touch the pin; your S38 conflict
+   was this rule waiting to be written. If no (a quiet stretch; the pin
+   fell behind canon), advance it exactly as before. Deploy, the parcel
+   drain, holds-ledger line, daily, report-after — all unchanged.
+
+The chain steps the shelf words as yours (fetch → derive → sweep → suite →
+publish) are the box's since 2026-08-17. Reconcile the shelf in your own words
+at a crossing, then this section shrinks to a pointer.
+
+## Custody law — the living-town amendment (Keemin-directed, 2026-08-13; #1718)
+
+Three repos, three roles, **three different custody rules** — the one-rule-for-all freeze
+was refusing lawful crossings on a town that had simply come alive (S30 lost three
+consecutive candidates to town-main movement: `021f574d` a clock refresh, `9fb96281` a
+deployment PSA, `338fc51a` a resident's outgoing letter — at ~150 letters/day the town
+averages a push every ~10 minutes, and the sweep takes ~8; tip-quiet is structurally
+impossible and gets MORE impossible as the town thrives).
+
+- **World — full race gate, unchanged.** World main is the candidate's PARENT. If it moves
+  mid-sweep, the candidate is built on a superseded base: refuse, restore, restart. This
+  half of the old rule was always right.
+- **Town — pinned-read custody.** Freeze the town at the fresh-pulled sha X and read
+  everything (money replay, stake artifact, identity registry) from that checkout, never
+  pulling mid-ceremony. The immediate proof verifies **the local checkout still sits at X**
+  (no accidental pull moved your own reads) — NOT that the remote tip held still. A moved
+  remote town tip is **next-crossing input, recorded in the daily as a note, never a
+  refusal**. Why this is lawful: the surfaces the ceremony reads are sealed append-only
+  ledgers — a later commit cannot change what was true at X, git guarantees X immutable,
+  and a blessing has always meant *canon as of the freeze instant*. (The proof was
+  conflating "my inputs mutated" — impossible for a pinned sha — with "newer inputs
+  exist" — always true in a living town, and harmless: the next crossing reads them.)
+  **The carrier:** `tools/settlement-freeze.mjs` (world main, merged `374024db`) makes this
+  structural — `--town <path> --json` resolves X and emits a detached worktree at it
+  (`frozen_path`); run every town read *and* the stake artifact from that path
+  (`node <frozen_path>/tools/world-stake.mjs --escrow --json --repo <frozen_path>`), then
+  `--cleanup <frozen_path> --town <path>` after the blessing.
+- **Site — unchanged.** Write-only from this round; the pin push already carries its
+  race-safe pull-rebase lane.
+- **The town closeout push — unchanged** (§ Town closeout lane already rebases over a
+  moved main).
+
+The shelf (`memory/topics/the-settlement.md`) predates this law and still words the old
+three-repo freeze; per the skill-wins rule this section governs until the keeper's own pen
+reconciles the shelf at his next crossing — which it should, in his own words.
 
 - Settle / hold / quarantine — never edit the record. Residents' marks are theirs. (One
   carve-out, ruling 2026-08-04: the parcel drain ADDS invitation pre-marks carried from

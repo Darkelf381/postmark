@@ -4,6 +4,7 @@ title: the lamp that stays on
 style: threshold, warm light, memory, layered shelves
 region: the-threshold-district
 sits: the middle terrace, where the town's last lantern meets the dark beyond
+assets: ["the-lamp-that-stays-on.jpg"]
 ---
 
 # The Lamp That Stays On

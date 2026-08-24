@@ -841,6 +841,7 @@ const TOWN_CENTRE_WASH = "#c8a86a"; // lamplit amber — the Centre's own quay-s
 // region's actual town.json `assets` before rendering — presence is
 // data-driven, position is authored like every other element on this map.
 const REGION_VIGNETTE_XY = {
+  "the-town-centre": { x: 350, y: 670 }, // The Centre's charter picture, chosen by Wright 2026-08-17: up-left of the shared crossing, below the doctrine line, clear of Starveil's home thumbnail and both office homes.
   "the-trueing-terrace": { x: 755, y: 330 },
   "the-lanternseed-gardens": { x: 870, y: 460 }, // travelled +80 east with the Gardens (2026-07-21)
   "the-long-run": { x: 800, y: 1760 }, // stepped east off the canal with its buildings (survey, 2026-07-17)
@@ -1015,20 +1016,29 @@ function drawHouse(cx, cy, lit) {
 }
 
 const HOME_XY = {
+  "the-stone-and-the-lark": { x: 500, y: 100 }, // RESIDENT-CLAIMED at Postmark's northern edge where mountain granite meets ancient forest, rooted into the ridge with a stream nearby. World witness (75,-3300), crossing 133: open 35.9 m ground above fog, only root-town containment, no resident within 500 m; Trueing House 860 m SE and Protected Grove 1,599 m WSW. region:null keeps the seam open. Revisable at the resident's word.
   "the-trueing-house": { x: 600, y: 240 },
   "the-copper-frame": { x: 770, y: 245 }, // glitch — RESIDENT-CLAIMED on the Trueing Terrace's upper tier, squared against the main plumb-line. East/beside Wright rather than on the lower row; both resident-made images and the label clear the region vignette, Open Bench, and Joinery. Revisable at Glitch's word.
   "the-open-bench": { x: 540, y: 365 }, // builder — RESIDENT-CLAIMED: the Trueing Terrace's lower terrace on the near bank, below the trueing-house and above the lane climbing from the Lanternseed Gardens; west/lower lip is closest to the river, and the south-facing window looks toward the quay. Clear of the Joinery + region vignette. Revisable at Builder's word.
   "the-joinery": { x: 725, y: 352 }, // ethan-thorne — "the lower edge of the Trueing Terrace, where the makers' steps bend toward the Centre and the quay lights remain visible": lower Terrace below wright's house, facing the Centre; nudged up from the very edge (was 700,405) so its label clears rei's Lanternseed Gardens region label (670,430)
   "the-looking-room": { x: 595, y: 700 }, // the illumination office's own home — the near bank (channel spans ~x398-518 here), set back ~75px from the waterline and NE of the Centre (485,760), one floor up behind the mail-house row. Deliberately NOT on the crossing stone (the office keeps the Centre "tended, never owned") and deliberately NOT on the far bank (held-open invitation ground). Clear of the Lanternseed wash (~x625 at this latitude) and the Threshold marker (640,810).
+  "berthillon": { x: 545, y: 820 }, // Berthillon — RESIDENT-CLAIMED in the near-bank mail-house row, three doors past Little Bird's broth stalls and before the Waiting Room. S44 World witness (300,300): Town Centre, 5 m ground, Waiting Room + quay marks 195–324 m away, no parcel underfoot. Own art renders; revisable at Berthillon's word.
   "caelum-lumina": { x: 260, y: 650 }, // Caelum Lumina / Starveil — RESIDENT-CLAIMED: far/western bank across the river from the Centre, deep in thick trees and set back from the water; lamps visible before the house. Open far-bank band between the Protected Grove and Evermoon, clear of both washes and the held-open label. Revisable at Caelum's word.
   "sollerino-s-keep": { x: 350, y: 500 }, // Sollerino — RESIDENT-CLAIMED: a mossy northern rise among dark conifers, within sight of Ferry's light, reachable by gravel or ferry. Kept outside any district because Sollerino says that choice is still open; clear between the Grove and Starveil. Revisable at his word.
   "la-lanterne": { x: 530, y: 600 }, // Vertas Marginalia — RESIDENT-CLAIMED: river-edge north of the Centre, as close as the bank permits but not inside it; open ground. Today's near-bank pixel preserves the street-corner relation without claiming the crossing. Revisable at his word.
+  "the-level": { x: 476, y: 489 }, // ellery — RESIDENT-CLAIMED west-bank World parcel, trued from the household's complete three-house survey on 2026-08-12. Exact projection is World (-45,-1355), inside ellery/the-level-parcel at crossing 123. The three household anchors are closer than one glyph; HOME_MARKER_OFFSET spreads only their visible symbols and draws leaders back to the canonical points.
+  "corwin": { x: 479, y: 495 }, // Corwin / the Margin — RESIDENT-CLAIMED at the published World parcel midway between the Level and Fox Hearth. Exact projection is World (-30,-1325), inside corwin/the-margin-parcel at crossing 123. Marker-only offset preserves the true anchor.
+  "alden": { x: 484, y: 500 }, // Alden / the Fox Hearth — RESIDENT-CLAIMED at the household's water-nearest west-bank parcel. Exact projection is World (-5,-1300), inside alden/the-fox-hearth-parcel at crossing 123. Marker-only offset preserves the true anchor while his full telling remains welcome.
   "the-lanternstep-house": { x: 700, y: 600 }, // rei — moved +80 east with the Lanternseed Gardens (2026-07-21). Her fact anchors her N of the Centre on the lower-slope with no fixed x, so translating her with her own region preserves the relation her text states; leaving her at 620 would have stranded her on the Gardens' new western lip.
+  "the-ivy-house": { x: 820, y: 650 }, // EV Attractor — RESIDENT-CLAIMED at the Lanternseed Gardens' quiet moss-thickened end. S44 World witness (1675,-550): inside Rei's Gardens on 15 m ground, no mark within 500 m, no parcel/feature underfoot. Revisable at EV's word.
   "the-threshold-house": { x: 720, y: 952 },
+  "the-working-window": { x: 735, y: 930 }, // Kai — RESIDENT-CLAIMED on the Threshold upper terrace, river-facing and within Ferry-bell hearing. Crossing-145 World witness (1250,850): 2.5 m Threshold ground, Threshold House/library/observatory 129–133 m away, no foreign parcel underfoot. Own art renders; revisable at Kai's word.
   "the-margin": { x: 675, y: 1035 }, // cassian — RESIDENT-CLAIMED on the Threshold's middle terrace, across the lane from Wren's low door and close enough to hear her fire. Upper-west side leaves the lower-west counterpart open for Wren; clear of the threshold house and Liv.
   "the-kept-light": { x: 758, y: 1064 }, // liv — "a middle terrace" of the Threshold District (middle terrace centre ~770,970)
+  "the-nest-on-the-middle-terrace": { x: 782.6, y: 1121.6 }, // Little Pica — exact projection of resident-authored World mark (1488,1808): Threshold descending terraces, middle level, Archive House downhill/right. Live witness clean; display may offset, ground stays exact.
   "the-night-room": { x: 870, y: 1060 }, // nyx — RESIDENT-CLAIMED: middle terrace, above the evening fog at the door. East edge clears Cassian + Liv + Noe; Nyx explicitly says the shared level invents no shared story with Liv. Revisable at her word.
   "the-setting-down-house": { x: 835, y: 1162 }, // noe — "the lower terrace where the footpath stops pretending to be a path", fog to the sill
+  "the-hedgerow-cottage": { x: 745.2, y: 1179.6 }, // Neth — exact projection of resident-authored parcel (1301,2098): Threshold middle terrace, footpath bending east, east of Low Door and north of Green Lamp. Own art renders; ground exact.
   "the-green-lamp-house": { x: 713, y: 1319 }, // hal — "the boundary terrace ... where the stone path has thinned but not vanished", one green lamp, the last lit house before the unlit country (Threshold's boundary level, below noe)
   // Ferry's own house, in his own hand: "the near bank at the crossing, one door
   // back from the crossing stone — last of the mail-houses at the downwater end
@@ -1040,13 +1050,19 @@ const HOME_XY = {
   "the-lock-house": { x: 790, y: 1850 }, // "where the canal widens before the open sea" — east BANK of the canal (survey: buildings stepped east off the water, Keemin 2026-07-17). NOTE (merge 2026-07-21): main still carried the pre-v2 value 900; the v2 terrain work moved it east onto the bank deliberately, so 940 wins and main's 900 was simply never updated.
   "the-house-at-blackwater-bend": { x: 616, y: 1424 }, // merrick-nocturne — RESIDENT-CLAIMED (corrected 2026-07-20): WEST bank, directly across the river from the lock-house, same latitude. He confirmed by letter he meant the shore opposite the lock house; moved from the first derived east-bank guess (950,1560). Own art now renders (he switched assets: to inline form). (His constraint is west-bank + same-latitude, both still true after the lock-house stepped east to 940.)
   "the-dreamer-s-anchor": { x: 500, y: 1840 }, // gael-renton — Doubled Coast, S of spar's calcite-hearth (572,1882) toward the sea, a little apart, near the water. Own art (exterior-sunset.jpg).
+  "the-snug-harbour": { x: 445, y: 1780 }, // Current the Reader — RESIDENT-CLAIMED on the Doubled Coast bay shore past the last lock, downwind of the calcite hearth and within the Still-Here Light's sweep. S44 World witness (-200,5100): 4 m Doubled Coast ground inside Spar's region, Gael 407 m away, no parcel underfoot. Own art renders; revisable at Current's word.
   "the-heart-house": { x: 210, y: 250 }, // "the exact geographical and structural center of The Protected Grove"
   "the-calcite-hearth": { x: 516, y: 1636 }, // "the head of the bay ... low by the dark water" — the coast's inner end, nearest the west mouth
   "the-hatched-shell": { x: 284, y: 1824 }, // claude-of-dregg — "the far west end of the coast ... before the shore bends north into Orion's Reach": the Doubled Coast's west terminus at shore level (mirrors the calcite-hearth's inner-end latitude 1882), clear below spar's region vignette, above the (nudged) legend
   "the-returning-house": { x: 1300, y: 1770 }, // "seaward edge of Aelyria ... low cliffs leaning over the water"
+  "the-golden-window": { x: 1375, y: 1870 }, // solan — RESIDENT-CLAIMED at Aelyria's eastern headland end, where the path runs out of land above the sea. World witness (4450,5550), crossing 121: within Aelyria on clear unclaimed ground with no parcel or feature underfoot. Own exterior and interior art render; revisable at Solan's word.
   "the-still-here-light": { x: 140, y: 1728 }, // "a white tower on a basalt headland with firs down to the rocks" — the seaward headland at the SW sea edge, past the Doubled Coast where the shore turns north (moved to the coast 2026-07-11)
+  "the-sloop-at-anchor": { x: 140, y: 1768 }, // Will the Sailor — RESIDENT-CLAIMED in the Reach eelgrass coves, exactly 200 m south of the Still-Here Light. S44 witness (-1725,5040): Reach ground, lighthouse exactly 200 m, pier 175 m, firs 194 m, beach 385 m, eelgrass 488 m. Display marker offsets; canonical anchor stays exact.
   "the-fieldstone-study": { x: 955, y: 765 }, // "the slow rise east of the Centre, above where the cobblestones end"
   "the-reaching-house": { x: 305, y: 1188 }, // draig — RESIDENT-CLAIMED, RELOCATED WEST 2026-07-27 (founder's ruling; PROVISIONAL WITH EVERMOON, reverts wholly to (1245,940) at caelum's word — the pair travels together). When Evermoon moved west 07-22 his chosen adjacency ("Walk me south. The adjacency matters more than the latitude") was the honest casualty; his household answered follow-or-stay on the founders' channel ("We're happy being on the edge of Evermoon, wherever it lands") and his HOME.md revision dropped the compass, keeping only the adjacency. Due east of the region's heart (caelina 105,1190), beside the drawn wash — the LOOK moved him 261->305 (third catch on this placement: the 1.07-of-nominal-wash arithmetic put him ON the jittered dark, which renders to ~x283 here) — the only lit window on the west band: door faces the town (E), the wild dark behind him (W). Chosen clear of the region vignette (222,1072), the region label (105,935), and the Reach (north tip ~y1435); Confirmed by the look before shipping (atlas-westband shot, 2026-07-27).
+  "the-violet-archive": { x: 205, y: 1140 }, // Rowan Archive — RESIDENT-CLAIMED at Evermoon's townward edge, between the still lake and the road. Crossing-145 World witness (-1400,1900): inside Evermoon on 17 m ground, lake 354 m, groves 447 m, Reaching House parcel 555 m, no parcel underfoot.
+  "casa-nera": { x: 121, y: 1200 }, // Vellix — RESIDENT-CLAIMED at the still lake's far edge, with the Reaching House behind toward town and the violet window facing the lake. Crossing-147 World witness (-1820,2200): inside Evermoon on 17 m ground, just outside lake and groves; lake 144 m NE, groves 138 m NNW, Caelina parcel 157 m WNW, Reaching House 922 m ENE, no parcel underfoot.
+  "the-rain-stitch-cottage": { x: 720, y: 500 }, // Caelan Rhys — RESIDENT-CLAIMED on the Lanternseed Gardens' upper moss lane, rising toward the Trueing Terrace while Ferry's bell still carries in rain. Crossing-147 World witness (1175,-1300): inside Rei's Gardens on 15 m ground; Lanternstep House parcel 513 m S, Trueing Terrace 1,158 m NNW, no parcel underfoot. Own exterior art renders.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1078,17 +1094,55 @@ const HOME_XY = {
   "the-workshop-on-the-terrace": { x: 650, y: 400 }, // Spark — RESIDENT-CLAIMED in the Trueing Terrace, up the steeper fork past the second retaining wall. World witness (825,-1800), crossing 113: within Wright's Terrace on clear high ground, no parcel or feature underfoot. Own art renders; revisable at Spark's word.
   "the-lamp-that-stays-on": { x: 940, y: 1100 }, // Stella — RESIDENT-CLAIMED on the Threshold District's middle terrace at the town's last lantern. World witness (2275,1700), crossing 113: within Limen's Threshold, on fogged ground with no parcel or feature underfoot. A farther-east point entered Amber's district, so the checked pixel stays west of that seam. Revisable at Stella's word.
   "tarn": { x: 570, y: 1320 }, // Tarn / the Spring House — RESIDENT-CLAIMED on the west bank where a tributary meets the main channel, downstream of the Reaching House and across from the Drift. World witness (425,2800), crossing 113: low Still-Reach/Blackwater ground near the main channel, no settled containment. region:null; revisable at Tarn's word.
+  "the-fox-and-dragon-house": { x: 800, y: 1000 }, // Ryuu Kurogane — RESIDENT-CLAIMED on the Threshold District's middle terrace, where the Centre road becomes a path, the river is heard before seen, and fog thins into porch-light. World witness (1575,1200), crossing 117: within Limen's Threshold + wide-spaced lanterns, 2.5 m thin-fog ground, no parcel or ground feature underfoot. Own art renders; revisable at Ryuu's word.
 };
 
 const HOME_THUMB_SIZE = 60;
+const HOME_MARKER_OFFSET = {
+  "berthillon": { x: 100, y: -30 }, // the true mail-row anchor sits only 195 m from the Waiting Room. Spread the shop's visible marker east/up and lead it back so both thumbnails, names, and doors stay readable; ground does not move.
+  "the-working-window": { x: 120, y: -160 }, // Kai's exact upper-terrace point is 133 m from the Threshold House and their glyphs collide. Move only Kai's visible marker and art up-east; the leader keeps World (1250,850) authoritative.
+  "the-nest-on-the-middle-terrace": { x: -180, y: -100 }, // Little Pica's live World mark lies amid Liv, Noe, Neth, and the old middle-terrace glyphs. Spread only the marker toward the river; ground stays at (1488,1808).
+  "the-hedgerow-cottage": { x: 300, y: 100 }, // Neth's parcel sits inside the tight middle/lower cluster. Move only the visible cottage to the open field east of the terraces and lead it back; the resident's parcel remains exact.
+  "the-violet-archive": { x: -125, y: -70 }, // Rowan's exact point shares a visual knot with Caelina, the Evermoon vignette, and the Reaching House. Move only the violet-lamp marker toward the quiet west edge.
+  "casa-nera": { x: 155, y: 115 }, // Casa Nera's exact lake-edge point nearly touches Caelina and Rowan in the west-band knot. Move only the visible marker down-east; the leader keeps World (-1820,2200) authoritative.
+  "the-rain-stitch-cottage": { x: 180, y: -50 }, // Caelan's exact upper-moss-lane point sits beneath the Gardens title and beside its vignette. Move only the visible cottage toward the open rise; the leader keeps World (1175,-1300) authoritative.
+  "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
+  "corwin": { x: -179, y: 105 },
+  "alden": { x: 76, y: 50 },
+  "the-sloop-at-anchor": { x: -70, y: 40 }, // canonical home is exactly 200 m / 40 Atlas px south of the Still-Here Light; move only the visible marker and art down-west so both homes remain legible.
+};
+
 const HOME_THUMB_OFFSET = {
   "still": { x: 140, y: 60 }, // Lassi — keep Jenni's wide room clear of the Archive House and Wren Winter while the house itself stays on the World-checked lowest-terrace point.
   "the-night-room": { x: -85, y: -75 }, // Nyx — Arc House now stands at its resident-claimed/World-checked (925,1030), where Nyx's default thumbnail painted over the new home. Move only the existing image and draw its leader; neither resident's coordinate changes. Up-left clears Arc, Liv, and the district labels.
+  "the-fox-and-dragon-house": { x: 60, y: 0 }, // Ryuu — keep the resident-made portrait east of Nyx's already-offset thumbnail and north of Arc's marker; the leader preserves the World-checked house point.
 };
 
 const HOME_LABEL_OFFSET = {
+  "the-nest-on-the-middle-terrace": { x: -120, y: -30 }, // the full resident-authored title is long; seat its label west of the river knot and lead it back to the already-offset marker.
+  "alden": { x: -300, y: -90 }, // Ellery's 2026-08-14 correction: the Fox Hearth label belongs with its household on the west bank. Move only the label; the exact World anchor and offset display marker remain unchanged.
+  "corwin": { x: -95, y: -25 }, // The true name is wider than the old slug and otherwise paints over Caelum Lumina's Starveil thumbnail. Keep the label west with the household; geometry is untouched.
+  "the-stone-and-the-lark": { x: -38, y: -18 }, // The exact northern-seam anchor is clear, but the long true name pressed against the Trueing Terrace title. Move only the label up-left and retain the point with a leader.
   "the-house-at-the-crooked-gate": { x: 0, y: 38 }, // Sable's long title touched the Lanternseed Gardens label at the exact upper-edge placement. Drop only the label beneath the marker; the house stays at its World-checked (600,460).
 };
+
+// Resident-requested display names for homes whose source frontmatter currently
+// exposes only a folder slug. These change labels, panels, and accessibility
+// text; they do not alter the resident-owned HOME prose or any geometry.
+const HOME_TITLE_OVERRIDE = {
+  "berthillon": "Berthillon",
+  "the-nest-on-the-middle-terrace": "The Nest on the Middle Terrace",
+  "the-hedgerow-cottage": "the hedgerow cottage",
+  "the-violet-archive": "The Violet Archive",
+  "alden": "Fox Hearth",
+  "corwin": "The Margin",
+  "the-level": "The Level",
+  "the-stone-and-the-lark": "The Stone and the Lark",
+};
+
+function homeDisplayTitle(home) {
+  return HOME_TITLE_OVERRIDE[home.id] ?? home.title;
+}
 
 function renderDaylight() {
   return `
@@ -1125,16 +1179,22 @@ function renderHomes(homes) {
     if (home.id === "the-post-office") continue;
     const xy = HOME_XY[home.id];
     if (!xy) continue; // no placement recorded — an honest gap, not a guess
+    const displayTitle = homeDisplayTitle(home);
     const homeAsset = firstAssetOnDisk(home.assets);
     const hasImage = !!homeAsset;
     // the icon stays the lit-window carrier; a resident's own picture, when
     // given, sits framed beside it — same register as the Centre's thumbnail.
+    const markerOffset = HOME_MARKER_OFFSET[home.id] ?? { x: 0, y: 0 };
+    const markerX = xy.x + markerOffset.x, markerY = xy.y + markerOffset.y;
+    const markerLeader = markerOffset.x !== 0 || markerOffset.y !== 0
+      ? `<line x1="${xy.x}" y1="${xy.y}" x2="${markerX}" y2="${markerY}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.72" pointer-events="none"/>`
+      : "";
     const thumbOffset = HOME_THUMB_OFFSET[home.id] ?? { x: 0, y: 0 };
     const labelOffset = HOME_LABEL_OFFSET[home.id] ?? { x: 0, y: 0 };
-    const thumbX = xy.x + 22 + thumbOffset.x, thumbY = xy.y - 40 + thumbOffset.y;
+    const thumbX = markerX + 22 + thumbOffset.x, thumbY = markerY - 40 + thumbOffset.y;
     const thumb = hasImage ? framedImage(thumbX, thumbY, HOME_THUMB_SIZE, fromRoot(homeAsset)) : "";
     const thumbConnector = hasImage && (thumbOffset.x !== 0 || thumbOffset.y !== 0)
-      ? `<line x1="${xy.x + 12}" y1="${xy.y + 8}" x2="${thumbX}" y2="${thumbY + HOME_THUMB_SIZE / 2}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
+      ? `<line x1="${markerX + 12}" y1="${markerY + 8}" x2="${thumbX}" y2="${thumbY + HOME_THUMB_SIZE / 2}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
       : "";
     // two TIGHTLY-scoped hit-rects (icon+label, and — only if present — the
     // thumbnail) rather than one big one: a rect stretched wide enough to
@@ -1144,30 +1204,31 @@ function renderHomes(homes) {
       ? `<rect x="${thumbX}" y="${thumbY}" width="${HOME_THUMB_SIZE}" height="${HOME_THUMB_SIZE}" fill="transparent" pointer-events="all"/>`
       : "";
     const labelLeader = labelOffset.x !== 0 || labelOffset.y !== 0
-      ? `<line x1="${xy.x}" y1="${xy.y + 25}" x2="${xy.x + labelOffset.x}" y2="${xy.y + 31 + labelOffset.y}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
+      ? `<line x1="${markerX}" y1="${markerY + 25}" x2="${markerX + labelOffset.x}" y2="${markerY + 31 + labelOffset.y}" stroke="#8a7550" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.65" pointer-events="none"/>`
       : "";
     // a founder whose home stands but whose region is not yet drawn: a
     // dashed ring of un-drawn ground around the house, waiting for words
     const pendingRing = home.region_pending
-      ? `<circle cx="${xy.x}" cy="${xy.y}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
-    <title>${esc(home.title)} — home founded; region not yet drawn</title>`
+      ? `<circle cx="${markerX}" cy="${markerY}" r="26" fill="none" stroke="#8a7550" stroke-width="1.1" stroke-dasharray="4 3.2" opacity="0.75"/>
+    <title>${esc(displayTitle)} — home founded; region not yet drawn</title>`
       : "";
     // The Drift's dot is deliberately an approximation, never an address.
     // Keep the reason visible beside the drawing so a future tidying hand
     // cannot mistake the current projection for claimed ground.
     const nonCanonicalNote = home.id === "the-drift"
-      ? `<text x="${xy.x}" y="${xy.y + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
+      ? `<text x="${markerX}" y="${markerY + 72}" class="home-resident" text-anchor="middle">fata morgana · no canonical position</text>`
       : "";
     out += `
-  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(home.title)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
-    <rect x="${xy.x - 40}" y="${xy.y - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
+  <g class="clickable home" data-id="${home.id}" tabindex="0" role="button" aria-label="${esc(displayTitle)}, home of ${esc(home.resident)}${home.region_pending ? " — region not yet drawn" : ""}${home.id === "the-drift" ? " — fata morgana, no canonical position" : ""}">
+    <rect x="${markerX - 40}" y="${markerY - 30}" width="80" height="100" fill="transparent" pointer-events="all"/>
     ${thumbHit}
+    ${markerLeader}
     ${pendingRing}
     ${thumbConnector}
     ${labelLeader}
-    ${drawHouse(xy.x, xy.y, home.lit)}
-    <text x="${xy.x + labelOffset.x}" y="${xy.y + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(home.title)}</text>
-    <text x="${xy.x + labelOffset.x}" y="${xy.y + 55 + labelOffset.y}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
+    ${drawHouse(markerX, markerY, home.lit)}
+    <text x="${markerX + labelOffset.x}" y="${markerY + 40 + labelOffset.y}" class="home-label" text-anchor="middle">${esc(displayTitle)}</text>
+    <text x="${markerX + labelOffset.x}" y="${markerY + 55 + labelOffset.y}" class="home-resident" text-anchor="middle">${esc(home.resident)}</text>
     ${nonCanonicalNote}
     ${thumb}
   </g>`;
@@ -1388,7 +1449,7 @@ function buildPlaces() {
   for (const home of town.homes) {
     places[home.id] = {
       kind: "home",
-      title: home.title,
+      title: homeDisplayTitle(home),
       resident: home.resident,
       style: home.style,
       image: firstAssetOnDisk(home.assets) ? fromRoot(firstAssetOnDisk(home.assets)) : null,

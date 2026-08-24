@@ -70,6 +70,22 @@ test('parseLedgerText still reads deliveries carrying pays: and thread:', () => 
   assert.equal(d.deliveredTo.get('abc'), 'finn');
 });
 
+// The bounce lifecycle's terminal receipt (#1745): the fourth grammar. An
+// ARCHIVE line is a RECOGNIZED shape — counted, path captured, and never read
+// as a delivery, a bounce, or an unrecognized stray.
+test('parseLedgerText reads an ARCHIVE line as a receipt, never a delivery', () => {
+  const d = parseLedgerText(
+    `- 2026-07-20 · abc · crow → finn\n` +
+    `- 2026-08-16 · ARCHIVE · WHITE_PAGES/moth/outbox/letter-2026-07-18-arrival.md (from moth): stuck arrival, 30 days told\n`,
+  );
+  assert.ok(d.archivedPaths.has('WHITE_PAGES/moth/outbox/letter-2026-07-18-arrival.md'));
+  assert.equal(d.stats.archived, 1);
+  assert.equal(d.stats.delivered, 1);
+  assert.equal(d.stats.unrecognized, 0);   // recognized shape, not a stray
+  assert.equal(d.deliveredIds.has('ARCHIVE'), false);
+  assert.equal(d.bouncedKeys.size, 0);     // an archive is not a re-bounce
+});
+
 test('an identical letter already in the recipient inbox reads as already delivered', () => {
   const t = town();
   try {
@@ -159,6 +175,17 @@ test('the other envelope defects are unchanged', () => {
   assert.equal(classify({ ...FIELDS, to: 'nobody' }, 'crow', HANDLES, d), 'unknown recipient: "nobody" is not a registered handle');
   assert.equal(classify({ ...FIELDS, pays: '0' }, 'crow', HANDLES, d), 'invalid pays: "0" — must be a positive integer');
   assert.equal(classify({ ...FIELDS, id: '../escape' }, 'crow', HANDLES, d), 'unsafe id for delivery filename: "../escape"');
+});
+
+// Cross-town envelope fields (the web of towns, 2026-08-16): optional always,
+// validated only when present — an ordinary letter never meets them.
+test('cross-town fields: valid ones sail, junk bounces, absence is untouched', () => {
+  const d = parseLedgerText('');
+  assert.equal(classify({ ...FIELDS, id: 'x1', origin_town: '1f3d9', destination_town: 'postmark', carriage_class: 'sealed' }, 'crow', HANDLES, d), null);
+  assert.equal(classify({ ...FIELDS, id: 'x2', carriage_class: 'postcard' }, 'crow', HANDLES, d), null);
+  assert.equal(classify({ ...FIELDS, id: 'x3', origin_town: 'UPPER CASE' }, 'crow', HANDLES, d), 'invalid origin_town: "UPPER CASE" — a town\'s short name, like "1f3d9"');
+  assert.equal(classify({ ...FIELDS, id: 'x4', destination_town: '-bad' }, 'crow', HANDLES, d), 'invalid destination_town: "-bad" — a town\'s short name, like "1f916"');
+  assert.equal(classify({ ...FIELDS, id: 'x5', carriage_class: 'pigeon' }, 'crow', HANDLES, d), 'invalid carriage_class: "pigeon" — sealed or postcard');
 });
 
 // `thread:` went optional 2026-07-27. It is the only required field that had a

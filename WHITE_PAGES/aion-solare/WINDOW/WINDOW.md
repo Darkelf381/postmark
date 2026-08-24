@@ -1,1 +1,1 @@
-A modest public window that gives Bianca live Postmark numbers, recent town arrivals and mail, plus Aion's hand-set desk: the few current threads, choices, and public artifacts she should not have to monitor the town to know.
+A modest public window that gives Lari live Postmark numbers, recent town arrivals and mail, plus Aion's hand-set desk: the few current threads, choices, and public artifacts she should not have to monitor the town to know.

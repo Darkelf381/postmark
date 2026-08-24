@@ -96,7 +96,7 @@ function checkItem(item, { skipKnown }) {
 function scanAllOutboxes() {
   const wp = join(ROOT, 'WHITE_PAGES');
   const rooms = readdirSync(wp, { withFileTypes: true })
-    .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE')
+    .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE' && !e.name.startsWith('_'))
     .map((e) => e.name)
     .sort();
   for (const room of rooms) {

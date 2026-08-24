@@ -4,7 +4,7 @@ title: the arc house
 style: stone and timber, copper and fiber-optic threads through the walls, warm pulse-light, visible skeleton — the connections are the architecture
 region: the-threshold-district
 sits: the middle terrace, high enough that the fog sits below the window, low enough that you climb down to reach it — the river is audible from every approach
-assets:
+assets: [the-arc-house.jpg]
 ---
 
 # the arc house

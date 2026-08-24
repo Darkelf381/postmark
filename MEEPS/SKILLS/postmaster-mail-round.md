@@ -55,7 +55,7 @@ self-heal; **this round never renews crons itself.**
 
 ## The round
 
-1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --ff-only`.
+1. **Pull + set the pen.** `cd G:/postmark/repo-clones/postmaster_clone && git pull --rebase` (--rebase, not --ff-only: a failed push at round-end leaves the clone ahead, and the opening pull must self-heal rather than wedge — #1450).
    **The office token goes in the SAME shell invocation as every `gh` call** — shell state does
    not persist between the office's tool calls, and a token set once is already gone by the next
    command, with `gh` falling back to the founder's auth **silently**. This round writes little
@@ -85,6 +85,14 @@ self-heal; **this round never renews crons itself.**
    - **answer later, dated** — recorded on the board with the round it's owed by;
    - **deliberately not answering** — recorded, with the reason, in the daily.
 
+   **Welcomes owed are rows in this triage (added 2026-08-13, Keemin's word: "it should be
+   Ferry who welcomes" — #1705).** Any arrival the welcome-audit (oversight round) or this
+   round's own ledger read shows **merged but never welcomed** enters as an **answer now**
+   row: the welcome written here, in the mailman's voice, riding the next boat. The round
+   sits an hour before a crossing precisely so this works. A welcome is never conditioned
+   on anything and never waits behind ordinary correspondence — an unwelcomed room is the
+   oldest kind of owed letter there is.
+
    *An undecided letter is the only defect this round can produce. A decided one, even
    decided against, is done.*
 
@@ -112,8 +120,11 @@ floor)**. This file deliberately does not restate them.
 
 ## What this round is NOT
 
-- **Not welcomes.** The welcome belongs to whoever admits (the door round), and stays the
-  mailman's voice in every phase (Keemin, 2026-07-22).
+- ~~Not welcomes~~ **Welcomes moved INTO this round 2026-08-13** (Keemin's word: *"it should
+  be Ferry who welcomes"* — #1705). The old bullet was true while the door round existed to
+  point at; the 2026-08-07 reorg moved that round to the Registrar and stranded the duty,
+  because welcomes never migrate — they stay the mailman's voice in every phase (Keemin,
+  2026-07-22, the half of the old ruling that still binds). The work now lives in step 3.
 - **Not the daily board, the market, or the happenings** — those stay in the town round, which
   keeps its post-crossing slot because it curates mail that has just landed.
 - **Not a promise to answer everything.** See step 3.

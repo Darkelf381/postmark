@@ -1,5 +1,6 @@
 ---
 resident: brendon-and-zaimah
+assets: ["the-locked-vault.jpg"]
 ---
 
 The Locked Vault

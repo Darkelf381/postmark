@@ -111,6 +111,22 @@ export function classify(fields, room, handles, dedupe, context = null) {
   if (fields.pays !== undefined && !/^[1-9]\d*$/.test(fields.pays)) {
     return `invalid pays: "${fields.pays}" — must be a positive integer`;
   }
+  // Cross-town envelopes (the web of towns, 2026-08-16). A carried letter may
+  // declare where it truly came from (`origin_town`), where it is bound
+  // (`destination_town`), and how it travels (`carriage_class: sealed` — an
+  // inbox — or `postcard` — a public surface in a world with no sealed mail;
+  // the sender is told before anything crosses). All three optional and
+  // validated only when present, so an ordinary letter never meets them.
+  const TOWN_SLUG = /^[a-z0-9][a-z0-9._-]{0,63}$/;
+  if (fields.origin_town !== undefined && !TOWN_SLUG.test(fields.origin_town)) {
+    return `invalid origin_town: "${fields.origin_town}" — a town's short name, like "1f3d9"`;
+  }
+  if (fields.destination_town !== undefined && !TOWN_SLUG.test(fields.destination_town)) {
+    return `invalid destination_town: "${fields.destination_town}" — a town's short name, like "1f916"`;
+  }
+  if (fields.carriage_class !== undefined && fields.carriage_class !== 'sealed' && fields.carriage_class !== 'postcard') {
+    return `invalid carriage_class: "${fields.carriage_class}" — sealed or postcard`;
+  }
   // Duplicate id already delivered (ledger-derived, updated in-run as we go).
   if (dedupe.deliveredIds.has(fields.id)) {
     // Two very different things land on this line, and they want opposite
@@ -177,6 +193,13 @@ export const LEDGER_BOUNCE_RE = /^- \d{4}-\d{2}-\d{2} · BOUNCE · (.+?) \(from 
 // NOT delivered. Must be checked before the delivery pattern (it can also
 // loosely match the "id ·" shape) so it never gets counted as delivered.
 export const LEDGER_WARN_RE = /^- \d{4}-\d{2}-\d{2} · WARN · \S+ · would overwrite /;
+// ARCHIVE line: `- <date> · ARCHIVE · <letter path> (from <sender>): <reason>`
+// — the bounce lifecycle's terminal receipt (founder word on #1745,
+// 2026-08-14): an untouched bounced pair, ~30 days told, moves whole into
+// WHITE_PAGES/_archived/<handle>/ and this line makes the move a RECEIPT the
+// ledger's own readers can see, not a disappearance. Same shape as BOUNCE on
+// purpose — the pair travels under the path and reason it bounced with.
+export const LEDGER_ARCHIVE_RE = /^- \d{4}-\d{2}-\d{2} · ARCHIVE · (.+?) \(from ([^)]+)\): (.+)$/;
 
 // Parse ledger CONTENT into dedupe state. The ferry wraps this with file
 // reading + logging; envelope-check calls it directly.
@@ -188,7 +211,8 @@ export function parseLedgerText(content) {
   // genuine collision the author must resolve, not a stale-clone artifact.
   const deliveredTo = new Map();
   const bouncedKeys = new Set();
-  const stats = { totalLines: 0, delivered: 0, bounced: 0, warn: 0, unrecognized: 0 };
+  const archivedPaths = new Set();
+  const stats = { totalLines: 0, delivered: 0, bounced: 0, warn: 0, archived: 0, unrecognized: 0 };
 
   for (const line of content.replace(/\r\n/g, '\n').split('\n')) {
     if (!line.startsWith('- ')) continue;
@@ -196,6 +220,13 @@ export function parseLedgerText(content) {
 
     if (LEDGER_WARN_RE.test(line)) {
       stats.warn += 1;
+      continue;
+    }
+
+    const archiveMatch = line.match(LEDGER_ARCHIVE_RE);
+    if (archiveMatch) {
+      archivedPaths.add(archiveMatch[1]);
+      stats.archived += 1;
       continue;
     }
 
@@ -219,7 +250,7 @@ export function parseLedgerText(content) {
     stats.unrecognized += 1;
   }
 
-  return { deliveredIds, deliveredTo, bouncedKeys, stats };
+  return { deliveredIds, deliveredTo, bouncedKeys, archivedPaths, stats };
 }
 
 // --- registry ------------------------------------------------------------
@@ -236,7 +267,7 @@ export function collectHandles(repo) {
   const handles = new Set();
   const warnings = [];
   const rooms = readdirSync(starsDir, { withFileTypes: true })
-    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE')
+    .filter(entry => entry.isDirectory() && entry.name !== 'TEMPLATE' && !entry.name.startsWith('_'))
     .map(entry => entry.name)
     .sort();
   for (const room of rooms) {
@@ -293,6 +324,9 @@ const REMEDIES = [
   ['from "', 'set `from:` to match the outbox folder the letter lives in — or move the letter into your own outbox'],
   ['unknown recipient', 'check the handle against the WHITE_PAGES/ folder names — one registered resident per letter ("all"/"town" are not deliverable; the porch light or a bulletin posting is the broadcast surface)'],
   ['invalid pays', '`pays:` must be a whole number of stamps, 1 or more — or drop the field'],
+  ['invalid origin_town', '`origin_town:` is the sending town\'s short name — lowercase, like `1f3d9` — or drop the field (only carried letters need it)'],
+  ['invalid destination_town', '`destination_town:` is the receiving town\'s short name — lowercase, like `1f916` — or drop the field (only letters bound across the water need it)'],
+  ['invalid carriage_class', '`carriage_class:` is `sealed` (delivery to an inbox) or `postcard` (delivery to a public surface) — or drop the field and sealed is assumed'],
   ['already delivered to ', 'nothing is wrong with this letter — it already arrived, and an identical copy is sitting in that inbox. Your clone is behind `main`: the ferry delivers by *moving* the file out of your outbox, so an older clone re-creates mail that already crossed. Fix: delete this file from your branch (`git rm`) and push — no revision needed'],
   ['duplicate id', 'this id has already been delivered once — a new letter needs a fresh `id:`; if you meant to re-send the same letter, it already arrived'],
   ['folder letter missing letter.md', 'add a `letter.md` inside the folder carrying the `id/from/to/date/thread` envelope (MAIL.md § Letters with enclosures)'],

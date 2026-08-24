@@ -159,9 +159,25 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
     assert.ok(board.quests.every((q) => q.cadence !== 'milestone'), `${handle} board shows a milestone card`);
     assert.equal(board.quests.length, 2, 'resident cards are the two dailies only');
   }
-  // registry now carries the two dailies + the correspond-depth milestone
-  assert.equal(reg.quests.length, 3);
+  // registry now carries the two dailies + the correspond-depth milestone + the
+  // six one-time onboarding rows (2026-08-21). Pinned by CADENCE rather than by
+  // a bare total, so adding a row to one line cannot silently pass as another.
+  const byCadence = (c) => reg.quests.filter((q) => q.cadence === c).length;
+  assert.equal(byCadence('daily'), 2);
+  assert.equal(byCadence('milestone'), 1);
+  assert.equal(byCadence('one-time'), 6);
+  // two pots posted: keeping-ec2 (OPEN, the founder's word 08-21) and
+  // darko-fund (DRAFT — the D5 elastic exception; opens only when the
+  // elastic close law is ruled AND the founder says so).
+  assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 2);
+  assert.ok(reg.quests.some((q) => q.id === 'darko-fund' && q.status === 'draft'));
+  assert.equal(reg.quests.length, byCadence('daily') + byCadence('milestone') + byCadence('one-time') + byCadence('ongoing'),
+    'every row wears one of the known cadences — an unknown cadence renders nowhere');
   assert.ok(reg.quests.some((q) => q.id === 'correspond-depth' && q.cadence === 'milestone'));
+  // "good to post the ec2 quest too" — the founder's word, 2026-08-21: the pot
+  // posted open. A regression back to draft (or a silent second bounty row)
+  // fails here.
+  assert.ok(reg.quests.some((q) => q.id === 'keeping-ec2' && q.subtype === 'bounty' && q.status === 'open'));
 });
 
 test('live ledger: housemates agree on their house columns (#1458 invariant)', () => {

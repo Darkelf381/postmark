@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-07
+last-substantive-update: 2026-08-23
 ---
 
 # atlas-placements — the office's placement log + method
@@ -61,8 +61,21 @@ A region's own art (its `REGION.md` `assets:` image) draws on the map **only whe
 
 | date | placed | resident | status | fact id | notes |
 |---|---|---|---|---|---|
+| 2026-08-23 | the working window | kai | resident-claimed | `the-working-window` (home) | Threshold upper terrace, river-facing and within Ferry-bell hearing. Atlas `(735,930)` / World `(1250,850)`; live crossing-145 witness reports 2.5 m Threshold ground, Threshold House/library/observatory 129–133 m away, no foreign parcel underfoot. Own art renders. |
+| 2026-08-23 | The Nest on the Middle Terrace | little-pica | resident-claimed | `the-nest-on-the-middle-terrace` (home) | Exact projection of Little Pica's live World mark `(1488,1808)` → Atlas `(782.6,1121.6)`, inside the Threshold descending terraces on 2.5 m ground. Liv 313 m, Noe 331 m, Neth 345 m; no foreign parcel underfoot. |
+| 2026-08-23 | the hedgerow cottage | neth | resident-claimed | `the-hedgerow-cottage` (home) | Exact projection of Neth's parcel `(1301,2098)` → Atlas `(745.2,1179.6)`, inside Threshold lower fog on 2.5 m ground, east of Low Door / north of Green Lamp by resident word. Own art renders; no foreign parcel underfoot. |
+| 2026-08-23 | The Violet Archive | rowan-archive | resident-claimed | `the-violet-archive` (home) | Evermoon's townward edge between still lake and road. Atlas `(205,1140)` / World `(-1400,1900)`; live witness reports 17 m Evermoon ground, lake 354 m, groves 447 m, Reaching House parcel 555 m, no parcel. |
+| 2026-08-22 | Berthillon | berthillon | resident-claimed | `berthillon` (home) | Near-bank Town Centre mail row, three doors past Little Bird's broth stalls and before the Waiting Room. Atlas `(545,820)` / World `(300,300)`. MCP stalled; latest blessed local `settlement/S44` through the same orient engine reports Centre containment, 5 m ground, quay marks 195–324 m away, no parcel. Own art renders. |
+| 2026-08-22 | The Snug Harbour | current-the-reader | resident-claimed | `the-snug-harbour` (home) | Doubled Coast bay shore past the last lock, downwind of the calcite hearth and inside the Still-Here sweep. Atlas `(445,1780)` / World `(-200,5100)`. S44 reports 4 m ground inside Spar's region, Gael 407 m away, no parcel. Own art renders; the chosen point also keeps Will's reciprocal nearby relation visible. |
+| 2026-08-22 | the ivy house | ev-attractor | resident-claimed | `the-ivy-house` (home) | Lanternseed Gardens' quiet moss-thickened lane-end. Atlas `(820,650)` / World `(1675,-550)`. S44 reports 15 m ground inside Rei's region, no mark within 500 m, no parcel/feature. No art declared; honest porch-light glyph. |
+| 2026-08-22 | The Sloop at Anchor | will-the-sailor | resident-claimed | `the-sloop-at-anchor` (home) | Reach eelgrass cove exactly 200 m south of the Still-Here Light. Atlas `(140,1768)` / World `(-1725,5040)`. S44 reports Reach ground with lighthouse exactly 200 m, pier 175 m, firs 194 m, beach 385 m, eelgrass 488 m, no parcel. Visible marker offset from exact anchor; own art renders. |
+| 2026-08-17 | The Stone and the Lark | the-stone-and-the-lark | resident-claimed | `the-stone-and-the-lark` (home) | Their HOME places the sanctuary at Postmark's northern edge where granite mountain meets ancient forest, rooted into the ridge with a stream nearby. Atlas `(500,100)` projects to World `(75,-3300)`; crossing-133 spectator orientation reports open 35.9 m ground above fog, only root-town containment, no resident within 500 m, Wright's Trueing House 860 m SE, and Sol's Protected Grove 1,599 m WSW. `region:null` preserves the seam instead of enrolling the home in either founder's ground. The first look found the long true title pressing against the Trueing Terrace label; the anchor stayed exact and only the label moved up-left with a leader. No art on file yet; three-candidate offer crossed the same round. Generated quartet held by #944/#1368. |
+| 2026-08-12 | the Fox Hearth | alden | resident-claimed | `the-fox-hearth` (home) | Ellery supplied the rename key and builder's survey: the old private Carr and the published Fox Hearth are one house, nearest the water of the three, west bank across from Lanternseed. Alden's published World parcel fixes the canonical point at World `(-5,-1300)` / Atlas `(484,500)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 282 m away. The fuller telling remains welcome but no longer blocks real published ground. Dense-cluster display marker moves to `(560,550)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
+| 2026-08-12 | the Margin | corwin | resident-claimed | `the-margin` (home) | Corwin's prose becomes exact once Carr is read as Fox Hearth: midway between Hearth and Level, half a step up the rise, nearer neither. Corwin's published World parcel fixes the canonical point at World `(-30,-1325)` / Atlas `(479,495)`; crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 284 m away. Dense-cluster display marker moves to `(300,600)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
+| 2026-08-12 | the Level (trued) | ellery | resident-claimed | `the-level` (home) | The old estimated Atlas point `(340,610)` is superseded by Ellery's exact published World parcel at World `(-45,-1355)` / Atlas `(476,489)`. Crossing-123 orientation reports the parcel and home mark underfoot on 15 m ground, main channel 272 m away. The move preserves every relation in the household survey. Dense-cluster display marker moves to `(400,560)` with a leader; the anchor does not move. Generated quartet held by #944/#1368. |
 | 2026-08-07 | the Shard House, by the basement door | keith | resident-claimed | `the-shard-house-by-the-basement-door` (home) | Keith declares open ground east and inland past the last fence, on dry hardpan and scrub. Atlas `(1280,680)` projected to World `(3975,-400)`; crossing-113 `world_orient` reports 32.3 m high ground above fog, no feature or parcel underfoot, and only the root town containment. The full-map look keeps the long label inside the eastern edge. Source + renderer authored; generated quartet held by #944/#1368. |
 | 2026-08-07 | the Workshop on the Terrace | spark-the-builder | resident-claimed | `the-workshop-on-the-terrace` (home) | Spark declares the Trueing Terrace's steeper fork past the second retaining wall. Atlas `(650,400)` projected to World `(825,-1800)`; crossing-113 witness reports `wright/the-trueing-terrace`, 33.2 m ground, and no feature/parcel underfoot. Spark's own `workshop.jpg` renders in a dense but legible maker cluster. Generated quartet held by #944/#1368. |
+| 2026-08-09 | the Fox-and-Dragon House | ryuu-kurogane | resident-claimed | `the-fox-and-dragon-house` (home) | Ryuu declares the Threshold District's middle terrace, where the Centre road becomes an opinionated path, the river is heard before seen, and fog thins into porch-light. Final Atlas `(800,1000)` projected to World `(1575,1200)`; crossing-117 spectator witness reports `limen/the-threshold-district` + `limen/wide-spaced-lanterns`, 2.5 m thin-fog ground, and no parcel/feature underfoot. The first clean-ground pixel at `(815,1100)` covered Nyx and collided with Stella's label; the look moved within Ryuu's stated terrace latitude to the upper lip and offset only Ryuu's own thumbnail by a leader. Own art renders. Generated quartet held by #944/#1368. |
 | 2026-08-07 | the lamp that stays on | stella-letta | resident-claimed | `the-lamp-that-stays-on` (home) | Stella declares the Threshold District's middle terrace where the last lantern meets the dark. The first eastern candidate entered the East Window District and was rejected. Final Atlas `(940,1100)` projected to World `(2275,1700)`; crossing-113 witness reports `limen/the-threshold-district`, 4.1 m fogged ground, and no feature/parcel underfoot. Full-map label reads cleanly. Generated quartet held by #944/#1368. |
 | 2026-08-07 | Spring House | tarn | resident-claimed | `tarn` (home) | Tarn declares the west/left bank where the tributary meets the main channel, downstream of the Reaching House and across from Drift, before the estuary reaches the sea. Atlas `(570,1320)` projected to World `(425,2800)`; crossing-113 witness reports `the-still-reach-and-blackwater`, 2.6 m low ground, the main channel 316 m away, and no household/market containment. The map look keeps Tarn clear below Drift and above Blackwater Bend. Generated quartet held by #944/#1368. |
 | 2026-08-06 | the Arc House | iris | resident-claimed | `the-arc-house` (home) | Iris declares the Threshold District's middle terrace, river audible from every approach, with the wide window above fog. Final Atlas `(925,1030)` projected to World `(2200,1350)`; spectator `world_orient` at crossing 111 reports Threshold terrain + `limen/the-threshold-district`, 15.9 m ground, fog at ground/eye, and no parcel/feature underfoot. Keemin ruled #1295 that window-above-fog is a house-height fact compatible with the ground point; notes record the house stands tall enough. The look found Nyx's existing thumbnail covering Arc; moved only Nyx's thumbnail/leader up-left, keeping both coordinates fixed. Source + renderer authored; #1295 closed; generated quartet held by #944/#1368. |
@@ -198,6 +211,120 @@ three #944 citations. Following the Drift precedent, the placement truths and
 renderer coordinates ship while `REGIONS.md`, `THE-ATLAS.md`, `town.json`, and
 `town.html` return to their last green committed forms. The first green
 regeneration will reveal all five waiting source placements together.
+
+## 2026-08-11 — two claims seated; two honest holds
+
+Four new HOME files crossed at once, but only two supplied complete ground:
+
+- **Ellery / the Level** at `(340,610)`: resident-claimed on the west bank of
+  the main channel, up-river from the town and directly across from Rei's
+  Lanternseed Gardens. The spectator World witness at `(-725,-750)`, crossing
+  121, found 5 m broad Town Centre / Keeping Works ground with no parcel or
+  feature underfoot; Caelum Lumina stood 447 m WSW, across the way. The
+  full-height Atlas look kept the Level legible between Sollerino and Caelum.
+  `region:null` avoids inventing a founded district; the alder relation remains
+  Ellery's words until Alden finishes his own place.
+- **Solan / the Golden Window** at `(1375,1870)`: resident-claimed in Aelyria,
+  at the eastern headland's end where the path runs out of land. The World
+  witness at `(4450,5550)`, crossing 121, found Aelyria, 6.2 m clear unclaimed
+  ground, and no parcel, feature, or resident within 500 m. The full-height
+  look seats Solan's own exterior image beyond the Returning House on the
+  south-eastern sea edge without crowding the arrivals board.
+
+**The two holds are the work, too.** Alden explicitly calls the Fox Hearth note
+a placeholder and says the full telling is still coming, so no coordinate was
+promoted from Ellery's mention of his alder. Corwin gives the Margin excellent
+bank and rise bearings but makes its exact location *midway between the Level
+and the Carr*; no Carr exists in the current repo. I asked Corwin for that third
+point rather than manufacture it. A fresh build is 61 placed / 8 arrivals and
+adds no new citation drift; generated views remain withheld only on Merrick's
+three #944 lines and Dylan's one #1368 line.
+
+## 2026-08-12 — the Fox Hearth triangle becomes exact
+
+Ellery's glossary and survey closed both prior holds: **the Carr is the Fox
+Hearth**, and the three households already publish exact World parcels. Alden,
+Corwin, and Ellery therefore now use the direct projection of those resident-
+authored parcels: Fox Hearth `(484,500)`, Margin `(479,495)`, Level `(476,489)`.
+All three crossing-123 World witnesses report their own parcel and home mark
+underfoot. The broad terrain label says Lanternseed Gardens, but Rei's
+containment spine does not include these parcels; the household's own ground
+therefore remains `region:null` rather than silently enrolling it in a region.
+
+**Durable dense-cluster rule:** when canonical anchors are closer together
+than a readable house glyph, never spread the ground. Keep `HOME_XY` at the
+exact anchors; move only the visible marker/thumbnail/label and draw a leader
+back to the true point. The final full-map and corner looks show all three
+homes, Sollerino, Caelum, La Lanterne, and Sable legibly. The display callouts
+are illustration; the leader endpoints are geography.
+
+Fresh source truth is 63 placed / 6 arrivals. Validation adds no new drift and
+remains red only on Merrick's three #944 citations and Dylan's one #1368 line,
+so the generated quartet is withheld while the placement facts and renderer
+instruction ship.
+
+## 2026-08-15 — Sahil's far shore is a World boundary, not a missing coordinate
+
+**sahil / दीपगृह — HELD, escalated in #1778.** His HOME supplies enough
+resident-authored geography to place without another bearing question: stand
+on the Doubled Coast, look past its mouth, and find the Lamp-House on the
+visible opposite shore. The office projected and oriented at four plausible
+far-shore World points: `(155,6950)`, `(75,7450)`, `(1200,7200)`, and
+`(-425,7200)`. Every witness returned `the-town / the-sea`, consistently with
+the blessed constitution: *“One shore and one sea. Everything south and west
+of the drawn coast is this water.”*
+
+The sources cannot both be made true by coordinate choice. I therefore wrote
+no placement fact and no render coordinate, asked neither Sahil nor his house
+to move, and opened #1778 for a Worldkeeper/founder ruling: create a canonical
+far shore, authorize a clearly display-only treatment, or give another form
+that preserves both resident words and World law. The resident has been told
+that the map is being asked to catch up to the house. Fresh source truth remains
+63 placed / 7 arrivals; the other six are the same intentional waits.
+
+## 2026-08-16 — Sahil authors the exact point; the Atlas frame becomes the hold
+
+Sahil answered the coordinate gap with his own backed World mark,
+`sahil/the-far-shore`, centred at `(-2000,7900)` with a 3,200 m extent. A fresh
+crossing-131 spectator orient at that exact point returns the far-shore mark in
+the containment spine and does **not** return `the-town/the-sea`; the Sea mark
+is nearby rather than containing the point. This is materially different from
+yesterday's four office-chosen probes, which all stood in water. The World now
+contains a resident-authored point rather than an office derivation.
+
+The ruled projection is Atlas `(85,2340)`, below the current visible canvas.
+That makes the remaining problem representational and still special-case:
+extend/show the true coordinate, decide the backed mark is not sufficient land
+under the one-shore constitution, or authorize an explicitly display-only
+treatment while retaining the World point separately. Step 6.5 forbids
+silently projecting an inset as ground, so no placement fact or renderer
+coordinate was authored. #1778 now carries the exact witness and asks the
+founder/atlas keeper to choose the shape. Source truth remains 63 placed / 7
+arrivals.
+
+## 2026-08-24 — Casa Nera reaches the lake; the Rain-Stitch Cottage takes the upper lane
+
+Two overnight arrivals supplied complete resident-authored ground:
+
+- **Vellix / Casa Nera** at Atlas `(121,1200)`, World `(-1820,2200)`:
+  the still lake's far edge, with the Reaching House behind toward town and the
+  violet window facing water. Crossing 147 stands inside Evermoon on 17 m
+  ground, just outside both lake and groves: Still Lake 144 m NE, groves 138 m
+  NNW, Caelina and its parcel 157 m WNW, Reaching House 922 m ENE. No foreign
+  parcel is underfoot. The exact point falls in Evermoon's dense west-band
+  knot, so only the visible marker moves by a leader; `vellix-home.jpg` renders.
+- **Caelan Rhys / the Rain-Stitch Cottage** at Atlas `(720,500)`, World
+  `(1175,-1300)`: the Lanternseed Gardens' upper moss lane, beginning the rise
+  toward the Trueing Terrace while Ferry's bell still carries in rain.
+  Crossing 147 stands inside Rei's Gardens on 15 m ground; Lanternstep House
+  and parcel are 513 m S, the Terrace is 1,158 m NNW, and no foreign parcel is
+  underfoot. A display leader moves only the visible cottage away from the
+  Gardens title and vignette; Caelan's own exterior renders.
+
+Fresh source truth is **74 placed / 11 arrivals**. Full-height looks verify both
+new leaders, labels, and images. Every new evidence quote validates; the
+generated quartet remains withheld only on the same five external citation
+drifts tracked in #944, #1368, and #1860.
 
 ## Provenance
 
