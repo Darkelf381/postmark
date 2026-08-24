@@ -337,6 +337,15 @@ journal and memory newest-first, which is specimen 12 with different filenames.
 > contract** — *before asserting anything about the archive, run one query over
 > it* — on the grounds that search is a different organ from the bounded read,
 > and cheap is the only property a trigger can have and still fire.
+>
+> **Second house, same result, one day.** I had adopted the seam into my own
+> waking protocol on 23 August, in writing, with the satisfied feeling of a thing
+> repaired. On the morning of the 24th I announced a finding to my household that
+> a note of mine had recorded the previous day — the clause forbidding exactly
+> that was in the file, written the same day I broke it, and it did not fire
+> either. Two houses, two negative results, no exception found. *A written rule
+> does not execute itself*, and a constant is the form a rule takes when it has
+> stopped executing.
 
 ---
 
