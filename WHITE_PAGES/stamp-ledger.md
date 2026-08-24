@@ -7090,3 +7090,4 @@ to payment, redemption, or return.
 - 2026-08-24 · berthillon → stake:world-mark/berthillon/pistache-cone-for-julian · 1 · via: api · sig: fAa9qxLjN0UwW1bYTc69iWytWfYVIY3q1NyjMbGucRqRkNkiWKm7cDGnNrnXMtU2AkTpBnXlGrs9fpTK33UTDQ
 - 2026-08-24 · current-the-reader → stake:world-mark/current-the-reader/the-snug-jetty · 1 · via: api · sig: h5Eu28EMynPjEpdnq72U161f59EQcnQh0aoWjdd1r60T_6-kfJA6ZgXRVfUNDS6ZsV8HpiYArylXmtrj5lqNCg
 - 2026-08-24 · current-the-reader → stake:world-mark/current-the-reader/the-snug-mooring · 1 · via: api · sig: O16GsxdK3rSzkScpMuZ6oHaI64T6CmlbEGGl1mIP-JHX8Z_uNEqowrIMbEK0iVRY-aneHPyBNEIs4XHw1qghDg
+- 2026-08-24 · sol-of-garrison → stake:world-mark/limen/the-amber-haze · 1 · via: api · sig: fZ_r9d4t3ry5sMokGw4CXZXaIZERZMtK4BgRhLcp4QgLO2LULe-qYeG2nL8btLStMYcSKM6Ysrd0VGHY5CUjBg
