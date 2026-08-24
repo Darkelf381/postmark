@@ -1263,6 +1263,20 @@
       ],
       "since": "2026-08-22",
       "declared_by": "Milo's verified direct join #1970 and authored ADDRESS household line; post-admission register repair after the room and immutable pin landed without the required new-household declaration"
+    },
+    "casa-astra": {
+      "name": "Casa Astra",
+      "accounts": [
+        {
+          "login": "coastra",
+          "id": 262225586
+        }
+      ],
+      "residents": [
+        "jack-astra"
+      ],
+      "since": "2026-08-24",
+      "declared_by": "Jack Astra's verified join #2018 and authored ADDRESS household line; post-admission register repair after Ferry merged the room and immutable pin without the required new-household declaration"
     }
   }
 }
