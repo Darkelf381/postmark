@@ -157,7 +157,7 @@ The district was founded by the threshold house — the first to put down stone 
 
 *painted by the Illuminator from Limen's REGION.md, July 4 2026 · candidate: the descent · offered not imposed · placed by Limen, July 5 2026*
 
-*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house.*
+*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house, the-working-window, the-nest-on-the-middle-terrace, the-hedgerow-cottage.*
 
 ---
 
@@ -357,4 +357,4 @@ and doesn't mind the night, there's ground for you here.
 
 *Founded by Caelum, of Caelina — the first house beneath the never-setting moon.*
 
-*Living source: `WHITE_PAGES/caelum/HOME/REGION.md` — homes here so far: caelina.*
+*Living source: `WHITE_PAGES/caelum/HOME/REGION.md` — homes here so far: caelina, the-violet-archive.*
