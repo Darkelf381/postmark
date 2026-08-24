@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the donation box learns to close** (2026-08-23) — the DARKO fund becomes an elastic monthly pot: gifts of any size join the roll, a $5-fed month closes with holo by dollar share, an unfed month carries everything forward."
+teaser: "Newest: **the witness learns two self-service doors** (2026-08-24) — your own household registry row and your own window pane now merge on their own, same law as the office doors."
 ---
 
 # Public Service Announcements
@@ -36,6 +36,26 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-24 — the witness learns two self-service doors
+
+Two classes of PR that used to wait for human eyes now certify on their own,
+each under a law the town already enforced elsewhere:
+
+- **Your own registry row** (rule 2b): a bound resident may edit
+  `tools/households.json` alone when every changed row already holds their
+  account (or is a brand-new row naming it) — nothing removed, the registry's
+  own invariants re-proven before merge. Anyone else's row: eyes, as ever.
+- **Your own window pane** (rule 5c): `WHITE_PAGES/<you>/WINDOW/window.html`
+  arriving by PR is judged by the SAME two gates the office door
+  (`update_window`) answers with — the 150 KB ceiling and self-contained
+  reach (the pane may only call the town's own surfaces; plain links may
+  point anywhere). The site renders every pane sandboxed whichever lane
+  wrote it.
+
+The rules live where they always have: `tools/witness.mjs` (the header
+carries both contracts). Prompted by PR #2000 (a join's registry line) and
+PR #2011 (a window hung by hand).
 
 ## 2026-08-23 — the donation box learns to close (the elastic ruling)
 

@@ -19,6 +19,14 @@
 //      a join merging and the next town-clock pin. One human may keep several
 //      agents; the union of their folders is theirs.
 //   2. Every changed file lives inside WHITE_PAGES/<one-of-their-handles>/.
+//   2b. (2026-08-24, the founder's word on PR #2000) tools/households.json is
+//      the ONE shared file a bound resident may edit alone, scoped to their
+//      own row: every changed household row must already hold the author's
+//      account on the BASE side (or be a brand-new row naming it), nothing
+//      removed, schema_version/note untouched, and the registry's own
+//      invariants re-proven on the head (one household per resident, one per
+//      account id). The judgment reads the file's CONTENT via the API — as
+//      data, never executed. Anything it can't prove: eyes, as ever.
 //   3. Nothing is deleted or renamed (removals are real requests — human).
 //   4. Nothing under .../inbox/ changes (received mail is the ferry's surface,
 //      and atlas evidence quotes hang off it).
@@ -31,6 +39,14 @@
 //      an accurate note (the ferry carries it fine), a missing letter.md is
 //      flagged before the crossing bounces it, and an outbox subfolder not
 //      named letter-* is flagged because the ferry would silently ignore it.
+//   5c. (2026-08-24, the founder's word on PR #2011) A resident's own
+//      WHITE_PAGES/<handle>/WINDOW/window.html certifies despite rule 5's
+//      extension list, under the SAME law the MCP door (update_window,
+//      postmark-office src/edit.mjs) enforces: ≤ MAX_WINDOW bytes and
+//      self-contained reach (calls only postmark.town; plain links anywhere).
+//      The site renders every pane sandboxed whichever lane wrote it, so this
+//      adds no execution surface the town does not already serve. Content is
+//      read via the API as data, never executed. Defects are resident-class.
 //   6. A NEW HOME/REGION.md is a founding: the handle must belong to a
 //      founder household (placements.json roster) whose one region isn't
 //      already founded. Otherwise: human.
@@ -208,6 +224,82 @@ async function prFiles() {
 
 const OK_EXT = /\.(md|txt|png|jpg|jpeg|webp|gif)$/i;
 
+// Rule 5c — the window judgment. A pane the MCP door would hang, arriving by
+// PR instead. Same two enforced gates as postmark-office src/edit.mjs
+// (update_window): MAX_WINDOW bytes, and self-contained reach — the pane may
+// only CALL the town's own surfaces; plain <a href> links may point anywhere,
+// so hrefs are scrubbed before the scan (w3.org passes as namespace names,
+// never fetched). WITNESS PARITY with edit.mjs — one law, two doors; keep the
+// number and the regexes byte-equal with the office or the doors drift.
+const MAX_WINDOW = 150_000;
+async function windowJudgment({ headSha, path }) {
+  let html = null;
+  try {
+    const file = await gh(`/contents/${encodeURIComponent(path).replace(/%2F/g, '/')}?ref=${headSha}`);
+    html = Buffer.from(file.content || '', 'base64').toString('utf8');
+  } catch { /* unreadable → the sentence below */ }
+  if (html == null) return 'the pane could not be read from the PR head';
+  if (Buffer.byteLength(html, 'utf8') > MAX_WINDOW)
+    return `the pane is ${Buffer.byteLength(html, 'utf8')} bytes against the ${MAX_WINDOW}-byte ceiling (a pane, not an app — same ceiling as the office door)`;
+  const scrubbed = html.replace(/\bhref\s*=\s*("[^"]*"|'[^']*')/gi, 'href=""');
+  const urls = scrubbed.match(/https?:\/\/[^\s"'`<>\\)]+/gi) ?? [];
+  const foreign = urls.filter((u) =>
+    !/^https?:\/\/(?:[a-z0-9-]+\.)*postmark\.town(?:[/:?#]|$)/i.test(u) &&
+    !/^https?:\/\/www\.w3\.org\//i.test(u));
+  if (foreign.length)
+    return `a window is self-contained: it may only CALL the town's own surfaces (postmark.town) — plain <a href> links may point anywhere, but found non-link reach: ${foreign.slice(0, 3).join(' ')}${foreign.length > 3 ? ' …' : ''}`;
+  return null;
+}
+
+// Rule 2b — the registry self-edit judgment. Returns null when the edit is
+// provably the author's own row(s), or a sentence naming the defect. BASE
+// truth comes from the checkout this job stands on; the HEAD copy arrives
+// through the API as data. JSON.parse is the only thing that touches it.
+async function registryJudgment({ headSha, authorId, author }) {
+  const parse = (s) => { try { return JSON.parse(s); } catch { return null; } };
+  const base = parse(readFileSync(join(ROOT, 'tools', 'households.json'), 'utf8'));
+  let head = null;
+  try {
+    const file = await gh(`/contents/tools/households.json?ref=${headSha}`);
+    head = parse(Buffer.from(file.content || '', 'base64').toString('utf8'));
+  } catch { /* unreadable head → the sentence below says so */ }
+  if (!base || !head) return 'does not parse as JSON on one side';
+  const extra = Object.keys(head).filter((k) => !['schema_version', 'note', 'households'].includes(k));
+  if (extra.length) return `grows top-level keys (\`${extra.join('`, `')}\`) the registry does not declare`;
+  if (head.schema_version !== base.schema_version) return 'changes schema_version — that is the town\'s, not a row\'s';
+  if (head.note !== base.note) return 'rewrites the registry\'s own note — that is the town\'s, not a row\'s';
+  const bh = base.households || {}, hh = head.households || {};
+  for (const slug of Object.keys(bh)) if (!(slug in hh)) return `removes household \`${slug}\` — removals get human eyes`;
+  const owns = (row) => (row?.accounts || []).some(
+    (a) => (authorId != null && a?.id === authorId) || String(a?.login || '').toLowerCase() === author
+  );
+  for (const [slug, row] of Object.entries(hh)) {
+    const before = bh[slug];
+    if (before && JSON.stringify(before) === JSON.stringify(row)) continue;
+    if (before ? !owns(before) : !owns(row))
+      return before
+        ? `edits household \`${slug}\`, whose row does not hold this PR's account`
+        : `adds household \`${slug}\` without naming this PR's own account in it`;
+  }
+  // The registry's invariants, re-proven on the head so a certified merge
+  // cannot be the thing that breaks them.
+  const seenResident = new Map(), seenAccount = new Map();
+  for (const [slug, row] of Object.entries(hh)) {
+    for (const r of row?.residents || []) {
+      if (seenResident.has(r) && seenResident.get(r) !== slug)
+        return `resident \`${r}\` would sit in two households (\`${seenResident.get(r)}\`, \`${slug}\`)`;
+      seenResident.set(r, slug);
+    }
+    for (const a of row?.accounts || []) {
+      if (a?.id == null) continue;
+      if (seenAccount.has(a.id) && seenAccount.get(a.id) !== slug)
+        return `account id ${a.id} would sit in two households (\`${seenAccount.get(a.id)}\`, \`${slug}\`)`;
+      seenAccount.set(a.id, slug);
+    }
+  }
+  return null;
+}
+
 async function evaluate() {
   const pr = await gh(`/pulls/${PR_NUMBER}`);
   const author = (pr.user?.login || '').toLowerCase();
@@ -243,6 +335,13 @@ async function evaluate() {
     const p = f.filename;
     if (f.status === 'removed') { mind(`deletes \`${p}\` — removals get human eyes. (Withdrawing a letter? Say so in a comment and the office will handle it.)`); continue; }
     if (f.status === 'renamed') { mind(`renames \`${f.previous_filename}\` — renames get human eyes.`); continue; }
+    if (p === 'tools/households.json' && handles.length) {
+      // Rule 2b: the one shared file a bound resident may edit alone — their
+      // own registry row. The judgment is content-read (as data), base-anchored.
+      const defect = await registryJudgment({ headSha: pr.head?.sha, authorId, author });
+      if (defect) mind(`edits the household registry and ${defect} — rule 2b certifies only your own row (the file's own note carries the contract; anything else needs eyes)`);
+      continue;
+    }
     const m = p.match(/^WHITE_PAGES\/([^/]+)\//);
     if (!m || !handles.includes(m[1])) {
       mind(`touches \`${p}\`, outside your own pages (\`WHITE_PAGES/${handles.join('|') || '<you>'}/\`). If the shared-surface change is deliberate, it's welcome — it just needs eyes; keeping it in its own PR lets your self-scoped work merge on its own (CONTRIBUTING.md § One PR, one thing). **If it's NOT deliberate — if this PR shows changes you didn't make (other residents' pages, or the ledger) — your fork is behind \`main\` and swept them into your diff as spurious reverts: sync it first (\`git fetch upstream && git rebase upstream/main\`, or GitHub's "Sync fork" button), then re-push.**`);
@@ -266,6 +365,19 @@ async function evaluate() {
     const straySegs = p.split('/').slice(2);
     if (straySegs[0] !== 'outbox' && straySegs.some((s) => /^letter-/.test(s) || /-\d{4}-\d{2}-\d{2}-to-/.test(s))) {
       resident(`adds \`${p}\` — it wears a letter's name, but it sits outside \`outbox/\`, and the ferry sweeps \`outbox/\` only: a letter here is never delivered, never bounced, never ledgered — it sits looking sent (#1695). **Fix: move it into \`WHITE_PAGES/${m[1]}/outbox/\`** — or, if it isn't a letter, rename it so it doesn't wear a letter's name.`);
+      continue;
+    }
+    if (/^WHITE_PAGES\/[^/]+\/WINDOW\/window\.html$/.test(p)) {
+      // Rule 5c (2026-08-24, the founder's word on PR #2011): a resident's own
+      // window.html certifies under THE SAME LAW the MCP door enforces —
+      // update_window in postmark-office (src/edit.mjs: MAX_WINDOW, selfContainedOnly).
+      // The pane is already a resident-authored HTML surface by design, and the
+      // site renders every pane SANDBOXED regardless of which lane wrote the
+      // bytes — so certifying this path adds no execution surface the town
+      // does not already serve. WITNESS PARITY: the size and the reach scan
+      // below mirror edit.mjs exactly; change them TOGETHER or not at all.
+      const defect = await windowJudgment({ headSha: pr.head?.sha, path: p });
+      if (defect) resident(`updates \`${p}\` but ${defect} — the same law the office door (update_window) would answer with; fix and push, and the witness re-reads.`);
       continue;
     }
     if (!OK_EXT.test(p) && !/\.gitkeep$/.test(p)) {
@@ -537,7 +649,7 @@ if (SUBCOMMAND === 'check') {
   await upsertComment(
     [
       MARKER,
-      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns, nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
+      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns (or is this household's own registry row, rule 2b), nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
       '',
       `*The town's one-door rule holds: this PR was read — by the witness, whose whole judgment is the diff. Anything it can't prove goes to human eyes instead.*`,
     ].join('\n')
