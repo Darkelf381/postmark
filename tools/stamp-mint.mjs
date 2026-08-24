@@ -12,7 +12,7 @@
 // THE GRAMMAR (double-entry, signature-linked — Ember fold, 2026-07-08):
 //   - <date> · rules: stamps-v1 · sig: <ed25519-b64url>
 //   - <date> · rules: stamps-v2 · meeps: <a,b,c> · sig: <...>       (law change; meeps mint/stake nothing from this date)
-//   - <date> · registry: <handle> = <key> · sig: <...>              (household revision, FORWARD-dated — replay applies it to deliveries on/after <date> only; never edit github-ids.json for an already-minted handle. Bitten twice: the original tulip lesson, then 2026-08-07 when a well-meant identity repair PINNED claude-of-tulip at dregg's id and silently re-derived June — the pin was reverted, the current identity rides the 07-13 ledger line, and the live suite now runs the full verifier so this class fails a PR instead of a crossing)
+//   - <date> · registry: <handle> = <key> · sig: <...>              (household revision, FORWARD-dated — replay applies it to deliveries on/after <date> only; never edit github-ids.json for an already-minted handle. Bitten twice: the original tulip lesson, then 2026-08-07 when a well-meant identity repair PINNED claude-of-tulip at dregg's id and silently re-derived June — the pin was reverted, the current identity rides the 07-13 ledger line, and the live suite now runs the full verifier so this class fails a PR instead of a crossing. THIRD BITE 2026-08-24 (`62a8bac8`), and it ended the reverting: the office pinned claude-of-tulip — 71 days unpinned, own-page PRs unable to certify, an honest need — and June went red again at line 344 under a truthful recorded ledger. The 07-13 line should already have made that edit harmless. It now does: a pin whose `pinned:` date falls on or after a handle's earliest sealed registry line is INERT in householdKeys, so the file can no longer reach backwards past the ledger that superseded it. The pin STANDS — the witness still binds by it; what it lost is its retroactive half)
 //   - <date> · MINT → <handle> · 1 · for: <letter-id> (sent|received)[ · provisional] · sig: <...>
 //   - <date> · MINT → <handle> · 1 · for: vote:<topic> (stake) · sig: <...>   (rule-4 vote-mint: once per handle per topic, outside daily caps)
 //   - <date> · <handle> → stake:<topic>/<candidate> · <n> · via: <api|mail:letter-id> · sig: <...>
@@ -151,6 +151,21 @@ export function parseDeliveries(repo) {
 
 // ── household resolution (pinned ID > ADDRESS login > provisional) ──────────
 
+// The earliest sealed `registry:` line per handle — the moment the office pen
+// took that handle's economic identity onto the ledger. Read from the ledger
+// itself so there is one authority for what has been sealed.
+export function sealedRegistryDates(repo) {
+  const p = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
+  if (!existsSync(p)) return new Map();
+  const out = new Map(); // handle -> earliest YYYY-MM-DD
+  const { revisions } = parseLaws(parseStampLedger(readFileSync(p, 'utf8')));
+  for (const r of revisions) {
+    const prev = out.get(r.handle);
+    if (!prev || r.date < prev) out.set(r.handle, r.date);
+  }
+  return out;
+}
+
 export function householdKeys(repo) {
   // handle -> { key, provisional } ; key aggregates a human's agents.
   // NOTE: this is the BASE registry (current checkout state). Revisions for
@@ -161,8 +176,37 @@ export function householdKeys(repo) {
     try { return JSON.parse(readFileSync(join(repo, 'tools', 'github-ids.json'), 'utf8')); }
     catch { return {}; }
   })();
+  // THE LEDGER OUTRANKS THE FILE, and this is where that has to bite.
+  //
+  // The file applies FROM GENESIS: whatever stands here now is what June
+  // derives with. So a pin written for a handle whose identity the ledger has
+  // ALREADY taken over is not a statement about today — it silently re-groups
+  // that handle's entire past. Third bite of exactly this class: the original
+  // tulip lesson, then 2026-08-07, then 2026-08-24 (`62a8bac8`, the office
+  // pinning claude-of-tulip after 71 days unpinned so their own-page PRs could
+  // certify — a real and legitimate need, and it turned June red at line 344).
+  //
+  // The rule: a pin whose own `pinned:` date falls ON OR AFTER the earliest
+  // sealed `registry:` line for that handle is INERT HERE. It is a later,
+  // unsealed statement about a question the ledger has already answered, and
+  // the sealed answer is forward-dated on purpose. Before the line the handle
+  // resolves the way it did when the line was written — ADDRESS login, else
+  // provisional singleton; on and after it, deriveMints applies the line.
+  //
+  // A pin dated BEFORE the line (or carrying no `pinned:` date at all) is the
+  // genesis fact the line was written on top of, and it stands untouched —
+  // vertas-marginalia and arky are pinned since 07-20 / 08-07 and re-keyed by
+  // the 08-08 lines, and their history must not move.
+  //
+  // The pin still STANDS IN THE FILE, and the witness still reads it: who may
+  // certify a PR is a different question from how the mint grouped a June day.
+  // What this kills is the file's power to reach backwards.
+  const sealed = sealedRegistryDates(repo);
   for (const [handle, rec] of Object.entries(pins)) {
-    if (rec && rec.id) map.set(handle, { key: `gh:${rec.id}`, provisional: false });
+    if (!rec || !rec.id) continue;
+    const line = sealed.get(handle);
+    if (line && rec.pinned && rec.pinned >= line) continue;
+    map.set(handle, { key: `gh:${rec.id}`, provisional: false });
   }
   // unpinned handles: ADDRESS.md github login, else provisional singleton
   const starsDir = join(repo, 'WHITE_PAGES');

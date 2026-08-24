@@ -318,6 +318,64 @@ test('currentHouseholds folds a registry revision; householdKeys stays genesis',
   rmSync(repo, { recursive: true, force: true });
 });
 
+// The tulip class, third bite (2026-08-24, `62a8bac8`): the office pinned a
+// founding-cohort handle in tools/github-ids.json so their own-page PRs could
+// certify — a real need — and because the file applies FROM GENESIS the pin
+// re-grouped their June into a household that had already spent its daily send
+// cap, silently deleting a mint the ledger had truthfully recorded. The handle
+// had done the lawful ceremony seven weeks earlier: a sealed, forward-dated
+// `registry:` line. That line SHOULD have made the file edit harmless, and did
+// not, because nothing gave it precedence over the file it supersedes.
+test('a pin written after a sealed registry line cannot reach backwards (the tulip class)', () => {
+  const { pub, priv } = keypair();
+  // One human, two agents. `dregg` is pinned from genesis and spends the whole
+  // 5-send cap on 06-29; `tulip` is unpinned and sends once more the same day.
+  const repo = town({
+    ledgerLines: [
+      D('2026-06-29', 'd-1', 'dregg', 'r1'), D('2026-06-29', 'd-2', 'dregg', 'r2'),
+      D('2026-06-29', 'd-3', 'dregg', 'r3'), D('2026-06-29', 'd-4', 'dregg', 'r4'),
+      D('2026-06-29', 'd-5', 'dregg', 'r5'), D('2026-06-29', 't-1', 'tulip', 'r6'),
+    ],
+    pins: { dregg: { login: 'ember', id: 704250, pinned: '2026-06-01' } },
+    addresses: { tulip: 'ember-arlynx' },
+  });
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  const keyFile = join(repo, 'stamp-key.pem');
+  writeFileSync(keyFile, priv);
+  appendLedger(repo, priv);
+  // tulip's own household, so tulip's send earned its stamp and the ledger says so.
+  const recorded = readFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8');
+  assert.ok(recorded.includes('MINT → tulip · 1 · for: t-1 (sent)'));
+
+  // The ceremony: the office pen seals tulip's identity onto the ledger, forward-dated.
+  execFileSync(process.execPath, [join(HERE, 'stamp-mint.mjs'),
+    '--declare-registry', 'tulip = gh:704250', '--date', '2026-07-13',
+    '--key', keyFile, '--repo', repo], { encoding: 'utf8' });
+  assert.equal(verifyStampLedger(repo).ok, true);
+
+  // Now the well-meant late pin, at the same account the sealed line already names.
+  writeFileSync(join(repo, 'tools', 'github-ids.json'), JSON.stringify({
+    dregg: { login: 'ember', id: 704250, pinned: '2026-06-01' },
+    tulip: { login: 'ember', id: 704250, pinned: '2026-08-24' },
+  }));
+  // Inert in the base: before the line, tulip resolves the way it did when the
+  // line was written. This is the assertion that fails without the precedence.
+  assert.equal(householdKeys(repo).get('tulip').key, 'login:ember-arlynx');
+  // The sealed line still governs today — the office's need is met, not denied.
+  assert.equal(currentHouseholds(repo).get('tulip').key, 'gh:704250');
+  // And June did not move.
+  assert.equal(verifyStampLedger(repo).ok, true);
+
+  // The other direction: a pin dated BEFORE the line is the genesis fact the
+  // line was written on top of, and it stands untouched.
+  writeFileSync(join(repo, 'tools', 'github-ids.json'), JSON.stringify({
+    dregg: { login: 'ember', id: 704250, pinned: '2026-06-01' },
+    tulip: { login: 'ember', id: 704250, pinned: '2026-06-14' },
+  }));
+  assert.equal(householdKeys(repo).get('tulip').key, 'gh:704250');
+  rmSync(repo, { recursive: true, force: true });
+});
+
 test('LIVE registry invariants: households.json agrees with the pins', () => {
   const hh = JSON.parse(readFileSync(join(HERE, 'households.json'), 'utf8'));
   const pins = JSON.parse(readFileSync(join(HERE, 'github-ids.json'), 'utf8'));

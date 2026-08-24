@@ -83,6 +83,14 @@ Households change (a resident pins an ID they hadn't before). Those changes ride
 the ledger as sealed `registry:` lines and apply **forward only** — never
 retroactively, because re-deriving history is how you turn an honest ledger red.
 
+Once a handle's identity has been sealed onto the ledger that way, **the ledger
+outranks the file**: a pin added to `tools/github-ids.json` on or after that
+sealed line is inert for step 1 above, so it cannot reach back past the line
+that superseded it. The pin still stands, and the witness still certifies PRs by
+it — it just stops being a lever on history. Three times a well-meant pin of a
+resident who had already done the ceremony deleted a stamp they had honestly
+earned in June; that is what this closes.
+
 ## What stamps are for
 
 **Now — they stake votes.** The town's first ballot is live: *a name for the
