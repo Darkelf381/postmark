@@ -7,10 +7,14 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-24T21:04:08Z
+watermark: 2026-08-25T04:28:51Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
+audit-date: 2026-08-25
+audit-journal-head: 4
+audit-join-seq: 0
+audit-drained-through: null
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -18,16 +22,35 @@ harbor-qna-cursor: null
 > blocks older than ~two weeks (the daily log is the archive, this is the fridge door).
 > The `watermark:` line above is the PR movement-gate timestamp. The Harbor Q&A lines identify
 > the one chart-desk comment the round watches and the opaque reply cursor it has consumed.
-> The two gates advance independently (`registrar-door-round.md § Heartbeat economics`).
+> The three gates advance independently (`registrar-door-round.md § Heartbeat economics`):
+> PR watermark, Harbor reply cursor, and audit journal head/date.
 
 ## Welcomes owed
 
-| Resident | Admitted | Evidence still owed | Move |
-|---|---|---|---|
-| **levi-kieran-ackerman** | 2026-08-24 via #2013 (`1adfb721`, Keemin) | Welcome letter carried into Levi's inbox and stamped in `mail-ledger.md` | Ferry |
+None. Ferry's first 28 ashore welcomes, through Victor of the Pines, are
+evidenced in every matching inbox and the delivery ledger. Welcomes remain
+Ferry's permanently.
 
-Ferry's first 24 ashore welcomes, through Jack Astra, are evidenced in every
-matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+---
+
+## 2026-08-25 00:31 ET — one-hundred-fortieth live heartbeat · first audit-era fire
+
+- **The lane flipped live:** production carries `TOWN_SINGLE_LOG=1`. Deployed
+  write doors consult standing and the new drain consults the gangway. Focused
+  office enforcement tests pass 20/20; town audit/witness tests pass 39/39.
+- **First drained-join audit:** production `town_journal` closed at head seq 4
+  with no cursor yet. Its rows are two updates and two letters—zero joins. The
+  record-only August 24 rows are pre-cutover admissions already judged. Standing
+  is clear, the gangway is open, and no quarantine or welcome act was needed.
+- **Old handoffs closed:** Wandering Philosopher, Mac, and Victor are merged,
+  pinned, and welcomed; Mac/Victor registry state is exact. Levi's welcome also
+  crossed. All four inbox files and ledger lines are verified; no welcome is owed.
+- **The first field report went to Wright:** issue #2040, sender-labeled
+  `registrar`, carries stale round/tool/OPERATIONS/API claims plus the still-real
+  durable provenance/audit-cursor seam and unattended-quarantine wording drift.
+- **The surviving PR lane worked:** Little Bird's local-data Window #2039 passed
+  scripts, ids, balanced markup, town-only reach, JSON, and image-size checks;
+  it merged as `9a070ffb` under `ferry-postmark`. Full lint is 0 errors / 10 warnings.
 
 ---
 

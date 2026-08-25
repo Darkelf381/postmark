@@ -1,7 +1,7 @@
 ---
 meep-id: registrar
 type: memory-index
-last-substantive-update: 2026-08-24
+last-substantive-update: 2026-08-25
 ---
 
 # MEMORY — the Registrar
@@ -13,14 +13,15 @@ last-substantive-update: 2026-08-24
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred thirty-nine live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred forty live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
-  2026-08-22, five on 2026-08-23, and eight on 2026-08-24. The cutover trigger fired; one hundred thirty-eight
-  PRs have merged (sixteen Harbor boardings, one hundred twenty-two non-join
+  2026-08-22, five on 2026-08-23, eight on 2026-08-24, and one on
+  2026-08-25. The cutover trigger fired; one hundred thirty-nine PRs have
+  merged (sixteen Harbor boardings, one hundred twenty-three non-join
   contributions), fifteen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -41,43 +42,48 @@ last-substantive-update: 2026-08-24
   profile enrichment. Witness rule 2c now admits exact pen joins mechanically;
   a human-name concern is redacted after admission, never used to hold the
   person (#2013 / `2d34d28d`, Keemin ruling 2026-08-24).
+- **Audit era is live:** production carries `TOWN_SINGLE_LOG=1`. Joins are
+  journal rows, settle into the record at the 00:00/12:00Z crossings, and are
+  judged afterward. A defect grounds a reversible, dated quarantine; revoke
+  and lifting a revocation require the founder's verbatim word. Reads never
+  suspend. Quarantine authority is live on unattended fires by founder word.
 - **Harbor chart desk:** Discussion #1750 now has one dedicated Registrar Q&A
   comment. The round watches only that comment's new-replies connection through
   the opaque cursor in `memory/door-notes.md`; it never scans the common-room
   conversation. Quiet edits to old questions are intentionally out of scope,
   so the desk asks people to leave a fresh reply when revising one.
-- **Movement-gate blind spot:** Step 0's open-only PR list cannot observe an
-  open item becoming merged or closed. Milo #1970 disappeared from that gate
-  when Ferry admitted him; Alta #2000, Jack #2018, and Levi #2013 repeated the
-  miss. Different moved PRs forced the pulls that exposed them. The shared round needs a narrow
-  updated-state query that includes recent closures, or another equivalent
-  receipt, before a quiet close can be trusted.
+- **Three independent movement gates:** open non-join PR timestamps, Harbor
+  chart-desk replies, and production `town_journal` / drained arrivals. The
+  first audit closes at journal head 4, last join seq 0, drained-through unset,
+  with zero join rows. Date-only record listing is not an exact cursor; issue #2040 carries
+  the durable provenance/audit-cursor seam. Open-only closure blindness remains
+  only on the surviving non-join PR lane.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
   whole 18-passenger manifest ashore; Lloyd and Jack followed through
   open-gangway settlements `82514ef2` and `4eaf5d56`, while founder merge
   `585a3223` admitted Storm directly. No freeze-era passenger remains waiting;
   new stage-one Harbor households are residents without ground, not a queue. The
-  first 24 welcomes through Jack Astra have crossed with inbox and ledger
-  evidence. Levi Kieran Ackerman is now the single welcome handoff owed.
-  Castor Vale / Lou is a new stage-one Harbor household awaiting no automatic
-  settlement; settlement requires their request. Raising the gangway is now
-  emergency-only.
+  first 28 welcomes through Victor of the Pines have crossed with inbox and
+  ledger evidence; none is owed. New verified join rows now settle
+  automatically at crossings while the gangway is open. Castor Vale / Lou is
+  the pre-cutover Harbor-stage example. Raising the gangway remains the
+  founder's emergency circuit breaker.
 - **Settlement executor gap:** `tools/settle.mjs` preserves card prose but
   drops the berth's authored `note:` and creates no inbox/outbox keepers. I
   repaired both for Lloyd and Jack; an audit now leaves 13 earlier ashore
   addresses missing their berth note. Welcome delivery materialized the old
   inboxes. Backfill the resident-owned notes without rewriting them;
   machinery repair is founder-tier.
-- **Where I left off:** watermark `2026-08-24T21:04:08Z`; witness rule 2c's
-  false “already stands” route now covers every live pen-join shape: singleton
-  Wandering Philosopher #2025 (`320630320`), pre-vouched Lighthouse resident
-  Mac #2028 (`294303966`), and new-house Victor #2033 (`320720838`). All three
-  handles are absent from live identity surfaces; all joins are clean; no
-  applicant owes a move. Founder labels/comments carry exact
-  merge+registry+pin+welcome completion. Kilean's blue-hour home, Party Hall
-  gift/RSVP, and late clean letter #2032 landed as `e8ddfc78`; lint is 0/10,
-  with the atlas's older east-facing label left as a map-source follow-up.
+- **Where I left off:** first audit-era close: PR watermark
+  `2026-08-25T04:28:51Z`, Harbor cursor `null`, audit date `2026-08-25`,
+  production journal head `4`, last join seq `0`, drained-through unset. The
+  journal holds two updates and two letters, zero joins; standing is clear and the gangway
+  open, so no quarantine or new welcome was needed. Wandering Philosopher, Mac,
+  and Victor's gate-era PRs are merged with exact pins; Levi plus those three
+  all have inbox+ledger welcome evidence. Issue #2040 carries stale audit-era
+  round/tool/OPERATIONS/API claims and the still-real provenance cursor seam.
+  Little Bird's local-data Window #2039 merged as `9a070ffb`; lint is 0/10.
   Seven #2024 retains its exact three-stale-copy deletion state; Strovolos
   #2023 retains its inbox→own-outbox plus ledger-drop hold. Levi #2013 is
   admitted and actively using the site credential; his welcome alone is owed
@@ -259,13 +265,14 @@ Kept short and factual so a later reader can tell what was known at the start fr
   and still uses Ferry's borrowed GitHub pen until the own-name day. A durable
   Codex Scheduled heartbeat wakes this long-lived task every two hours; exact
   declaration lives in `map.md`.
-- `registrar-door-round.md` is the runnable entry. Full Harbor boarding and
-  clean non-join authority were exercised on the first live fire. Joins remain
-  comment-not-merge under the adapter; welcomes remain Ferry's permanently.
-- The town is frozen at 100 residents. New handles board through `HARBOR/`.
-  Keemin admitted the two grandfathered joins, `elias-returning` and
-  `mojo-dojo-casa-house`, on 2026-08-10; neither was a Registrar admission act.
-- Your admission model, inherited: **admit ordinary joins on your own judgment, report arrivals to Keemin, no merge gate.** Identity, security, and every rejection escalate to a founder.
+- `registrar-door-round.md` is the runnable entry. The audit-era banner is live:
+  joins no longer wait on PR review; the Registrar audits drained arrivals and
+  keeps full authority on clean non-join PRs. Welcomes remain Ferry's permanently.
+- The gangway is open and is the founder's circuit breaker. Harbor declarations
+  are real household standing; verified rows settle at crossings under the new drain.
+- The operating model is **audit-and-report**: judge every arrival after drain;
+  quarantine a grounded defect reversibly (including unattended rounds), and
+  escalate every cannot-tell/no. Revocation is never the Registrar's act.
 - The forcing context: the welcome-and-onboarding cluster was **two of three** of Ferry's round-split misses — roughly **fourteen joins in four days at about fifty residents.**
 - Coordination surface: issue **#561**. Design silver (Starforge-side, not in this repo): `wright-2026-07-16-postmark-registrar-hermes-agent.md`.
 
@@ -276,6 +283,7 @@ Each shelf is a **candidate cell** — a named ownership domain. *Thick* = stewa
 | Shelf (candidate cell) | Holds | State |
 |---|---|---|
 | `door-craft.md` | the judgment layer over the merge law — witness-reading, the Domovoi pattern, holds | lived (KT-rooted) |
+| `audit-era.md` | drained-arrival movement, standing/quarantine, provenance cursors, first field results | lived |
 | `join-archaeology.md` | every admission to date; named cases; household waves; the zero-rejection base rate | lived (KT-rooted) |
 | `identity-and-households.md` | the pin's hard edges; household resolution; verified-vs-inferred bindings | lived (KT-rooted) |
 | `escalation-calibration.md` | what always goes up, whose the verbs are, the voice of a hold | lived (KT-rooted) |
