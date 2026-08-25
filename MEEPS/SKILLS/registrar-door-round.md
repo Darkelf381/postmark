@@ -189,9 +189,19 @@ node tools/registrar-audit.mjs revoke     <handle> --reason "..." --founder-word
 node tools/registrar-audit.mjs seams                     # the office-side gaps, printed
 ```
 
-Every act appends one dated line to `WHITE_PAGES/standing-ledger.md`. **Nothing
+Every act appends one dated line to `tools/standing-ledger.md`. **Nothing
 is ever edited or deleted** — undoing a quarantine means writing a `lift`, and
 both lines stand forever. Standing is a fold over that ledger, in order.
+
+**The ledger lives in `tools/`, not `WHITE_PAGES/`, and it may not be moved.**
+The witness certifies against base truth and then re-checks at merge time *after*
+the workflow overlays the PR's own `WHITE_PAGES/` — so a certification input kept
+there is PR-controlled at merge time. In `tools/` every read is base truth, and
+the file is principal-class, so a PR touching it gets human eyes by a written
+rule. Filed under a handle (`WHITE_PAGES/registrar/…`) it would be worse than
+untidy: whoever held that handle could self-certify edits to the file that
+decides who is quarantined. The tool's falsifiers assert all of this against the
+real workflow, so a future tidy fails a test rather than a town.
 
 ### The round, four steps
 
@@ -392,7 +402,7 @@ When the Registrar gets its own name: a GitHub account of its own (token replace
 pen), a public shingle (`WHITE_PAGES/registrar/` — a roster act, founder-executed), and the
 **admit half of the join atom** *(⚑ gate-era wording: at the cutover flag there is no admit
 half to migrate — nobody admits, the drain settles. What becomes yours on the own-name day
-instead is the audit's own pen: your acts on `WHITE_PAGES/standing-ledger.md` signed under
+instead is the audit's own pen: your acts on `tools/standing-ledger.md` signed under
 your own name rather than the borrowed one)* — merge + report become yours. **The welcome does not migrate**
 (Keemin, 2026-07-22, amending the earlier all-at-once design): welcomes stay Ferry's in every
 phase — the mailman's voice is the town's welcome — fed by your door-notes file's

@@ -86,7 +86,46 @@ import { fileURLToPath } from "node:url";
 const HERE = dirname(fileURLToPath(import.meta.url));
 export const ROOT_DEFAULT = process.env.REGISTRAR_AUDIT_ROOT ?? resolve(HERE, "..");
 
-export const LEDGER_PATH = "WHITE_PAGES/standing-ledger.md";
+// ── WHERE THE LEDGER LIVES, AND WHY IT MAY NOT MOVE ────────────────────────
+//
+// `tools/`, NOT `WHITE_PAGES/`, and this is a correctness constraint rather
+// than a filing preference. Do not "tidy" it into the white pages, and above
+// all do not tidy it into a handle's folder.
+//
+// THE WITNESS RUNS TWICE, AGAINST TWO DIFFERENT TREES. `.github/workflows/
+// witness.yml` certifies against base truth, then does
+//
+//     git checkout FETCH_HEAD -- WHITE_PAGES/     # the PR's pages, data only
+//
+// before linting, and the `merge` subcommand calls `evaluate()` a SECOND time
+// after that overlay ("re-check at merge time — the PR may have grown"). So
+// anything read out of `WHITE_PAGES/` is base truth at check time and
+// PR-CONTROLLED CONTENT at merge time. The workflow's own comment states the
+// invariant this file relies on: *"Only the resident-pages paths come in;
+// tools/ and workflows stay base."*
+//
+// Under `WHITE_PAGES/` that cost two things, one of them live:
+//
+//   · A PR branched before a LIFT still carries the stale quarantine line in
+//     its copy of the tree — even without touching the ledger, because the
+//     overlay replaces the whole directory. Check would certify against base
+//     (clear) and the merge-time re-check would refuse against the PR's stale
+//     copy: a resident who has been cleared, stranded by their own branch age.
+//   · And the only thing stopping a PR from editing the ledger outright was
+//     the SHAPE OF ITS PATH — rule 2 matches `^WHITE_PAGES/([^/]+)/` and needs
+//     a second slash, which a top-level file has not got. True, but incidental.
+//     Move this file to `WHITE_PAGES/registrar/standing-ledger.md` and whoever
+//     holds that handle self-certifies edits to the file that decides who is
+//     quarantined.
+//
+// In `tools/` both vanish by construction: the overlay cannot reach it, so
+// every read is base truth in both passes, and it sits in PRINCIPAL_CLASS
+// (`^tools/`) where a PR touching it gets human eyes by a written rule instead
+// of an accident of punctuation. The precedent is exact — `tools/households.json`
+// and `tools/github-ids.json` are public registry data kept here for the same
+// reason: they are CERTIFICATION INPUTS, and a certification input may not live
+// where the thing being certified can rewrite it.
+export const LEDGER_PATH = "tools/standing-ledger.md";
 
 const IS_MAIN = Boolean(process.argv[1]) && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 
@@ -328,6 +367,25 @@ Born of the founder's ruling of 2026-08-24 — the Registrar's lane flips from a
 pre-merge gate to a post-drain audit (POS-44). The gate could refuse an arrival
 before it landed; the audit cannot, so it can suspend one after.
 
+**WHAT THIS LEDGER'S AUTHORITY RESTS ON, stated plainly because it is the first
+thing a reviewer should ask.** Its lines are NOT SIGNED. The stamp ledger beside
+it is sealed and signed and its consumers honour only signed \`registry:\` lines,
+precisely because those are certification inputs — and so are these. This one
+takes the other road: **its authority is write-path control, not cryptography.**
+Two facts carry it, and both are asserted by falsifiers rather than assumed:
+
+1. **It lives in \`tools/\`, outside the witness workflow's \`WHITE_PAGES/\`
+   overlay** — so every read, at check time and again at merge time, is base
+   truth. A pull request cannot supply the copy that judges its own author.
+2. **\`tools/\` is principal-class**, so a PR touching this file gets human eyes
+   by a written rule, not by an accident of path shape.
+
+That is a deliberate choice and a weaker one than a signature: anyone who can
+commit to \`main\` can write a line here. It is sized to what the acts are —
+reversible, published, and dated, in a town where the alternative to writing one
+down is a suspension nobody can audit. **If these acts ever stop being
+reversible, sign them.**
+
 ---
 
 `;
@@ -477,7 +535,7 @@ export const OFFICE_SEAM = Object.freeze({
     what: "The MCP write doors do not consult standing. A quarantined resident can still send_letter, update_home, update_window, stake_vote, world_note — every door the town has.",
     where: "postmark-office: src/mcp.mjs (the door table) or the shared preamble each write door already runs.",
     how:
-      "Vendor the fold — foldStanding/isSuspended/bounceSentence from this file are pure, dependency-free, and about sixty lines. Read `${TOWN_CLONE}/WHITE_PAGES/standing-ledger.md`, fold it, and if the caller's handle is suspended, bounce with bounceSentence(). Reads stay open: standing suspends WRITING, never READING — a quarantined resident must be able to read the reason, their own pages, and their mail.",
+      "Vendor the fold — foldStanding/isSuspended/bounceSentence from this file are pure, dependency-free, and about sixty lines. Read `${TOWN_CLONE}/tools/standing-ledger.md` (tools/, NOT WHITE_PAGES/ — see this file's § where the ledger lives), fold it, and if the caller's handle is suspended, bounce with bounceSentence(). Reads stay open: standing suspends WRITING, never READING — a quarantined resident must be able to read the reason, their own pages, and their mail.",
     shape: "Exactly the WORLD_FREEZE precedent (the ten write doors bounce with one spoken 503; reads, mail and the PR lane untouched) — same seam, different predicate, and per-caller instead of global.",
   }),
 

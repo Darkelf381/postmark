@@ -446,7 +446,64 @@ test("the witness asks the standing question, and asks it before it judges the d
   assert.ok(iSuspended < iPenJoin, "the standing question must come before every short-circuit that can return early");
 });
 
-// ── 7. the shape of the thing ──────────────────────────────────────────────
+// ── 7. WHERE THE LEDGER LIVES — the invariant, pinned to the real files ───
+//
+// The witness evaluates TWICE: once against base truth, and once more inside
+// `merge` AFTER the workflow overlays `git checkout FETCH_HEAD -- WHITE_PAGES/`.
+// So a certification input under WHITE_PAGES/ is PR-controlled at merge time.
+// These tests read the actual workflow and the actual witness rather than
+// restating the claim, so the day someone changes the overlay's scope or files
+// this ledger into a handle folder, a test says so instead of a comment.
+
+test("the standing ledger lives outside the WHITE_PAGES overlay's reach", () => {
+  assert.ok(!LEDGER_PATH.startsWith("WHITE_PAGES/"),
+    "a certification input may not live where the overlay can replace it with PR content");
+  assert.match(LEDGER_PATH, /^tools\//);
+
+  // ...and specifically not inside a handle folder, which is the sharp version:
+  // whoever holds that handle would self-certify edits to the file that decides
+  // who is quarantined.
+  assert.doesNotMatch(LEDGER_PATH, /^WHITE_PAGES\/[^/]+\//);
+});
+
+test("the workflow's overlay is still WHITE_PAGES-scoped — the premise this rests on", () => {
+  const wf = readFileSync(new URL("../.github/workflows/witness.yml", import.meta.url), "utf8");
+  const overlays = [...wf.matchAll(/git checkout FETCH_HEAD -- (\S+)/g)].map((m) => m[1]);
+  assert.ok(overlays.length > 0, "the overlay step vanished — re-derive where the ledger may live");
+  for (const path of overlays)
+    assert.equal(path, "WHITE_PAGES/",
+      `the workflow now overlays "${path}" — if that ever covers ${LEDGER_PATH}, the standing check reads PR-controlled state at merge time`);
+
+  // The merge subcommand really does re-evaluate after that overlay; if it ever
+  // stops, this whole section is moot and should be re-reasoned, not deleted.
+  const witness = readFileSync(new URL("./witness.mjs", import.meta.url), "utf8");
+  assert.match(witness, /SUBCOMMAND === 'merge'[\s\S]{0,200}await evaluate\(\)/,
+    "merge no longer re-evaluates — re-derive the base-truth argument before trusting it");
+});
+
+test("the ledger's path is principal-class, so a PR touching it gets human eyes by rule", () => {
+  const witness = readFileSync(new URL("./witness.mjs", import.meta.url), "utf8");
+  const m = /const PRINCIPAL_CLASS = (\/\^\(.*?\)\/);/.exec(witness);
+  assert.ok(m, "PRINCIPAL_CLASS not found in witness.mjs");
+  // eslint-disable-next-line no-eval
+  const re = eval(m[1]);
+  assert.ok(re.test(LEDGER_PATH), `${LEDGER_PATH} is not principal-class under ${m[1]}`);
+  // The control: a resident's own page is NOT principal-class, or the assertion
+  // above would pass for everything and prove nothing.
+  assert.equal(re.test("WHITE_PAGES/levi/ADDRESS.md"), false);
+});
+
+test("the header states the trust basis instead of leaving it to be inferred", () => {
+  const root = town({ residents: [ONE] });
+  act(root, { act: "quarantine", handle: "levi", reason: "held", date: "2026-08-24" });
+  const text = readFileSync(join(root, LEDGER_PATH), "utf8");
+  assert.match(text, /NOT SIGNED/, "an unsigned certification input must say so in its own header");
+  assert.match(text, /write-path control/);
+  assert.match(text, /If these acts ever stop being\s+reversible, sign them/,
+    "the header must name the condition under which this choice expires");
+});
+
+// ── 8. the shape of the thing ──────────────────────────────────────────────
 
 test("the ledger holds exactly three acts", () => {
   assert.deepEqual(ACTS, ["quarantine", "lift", "revoke"]);
