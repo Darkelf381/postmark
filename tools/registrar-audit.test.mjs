@@ -472,7 +472,13 @@ test("the workflow's overlay is still WHITE_PAGES-scoped — the premise this re
   assert.ok(overlays.length > 0, "the overlay step vanished — re-derive where the ledger may live");
   for (const path of overlays)
     assert.equal(path, "WHITE_PAGES/",
-      `the workflow now overlays "${path}" — if that ever covers ${LEDGER_PATH}, the standing check reads PR-controlled state at merge time`);
+      `the workflow now overlays "${path}" instead of "WHITE_PAGES/".\n`
+      + `  This test is doing its job — read it, do not loosen it.\n`
+      + `  If the overlay WIDENED to cover ${LEDGER_PATH}: that is the bug this whole section exists to prevent,\n`
+      + `  because the standing check would then read PR-controlled state at merge time. Revert it.\n`
+      + `  If the overlay NARROWED (e.g. to handle folders only — the proposed source fix, since the step's own\n`
+      + `  comment already claims "Only the resident-pages paths come in" while the code takes the whole tree):\n`
+      + `  that is GOOD and fixes every reader at once. Update this literal deliberately, in the same commit.`);
 
   // The merge subcommand really does re-evaluate after that overlay; if it ever
   // stops, this whole section is moot and should be re-reasoned, not deleted.

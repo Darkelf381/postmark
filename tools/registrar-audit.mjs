@@ -104,13 +104,30 @@ export const ROOT_DEFAULT = process.env.REGISTRAR_AUDIT_ROOT ?? resolve(HERE, ".
 // invariant this file relies on: *"Only the resident-pages paths come in;
 // tools/ and workflows stay base."*
 //
+// AND FETCH_HEAD IS NOT THE PR BRANCH — which is the part that misleads, so it
+// is written down rather than left to intuition. `refs/pull/N/merge` is
+// GitHub's TEST-MERGE commit: two parents, parent[0] a base commit and
+// parent[1] the PR head. A file the PR never touched therefore comes from
+// parent[0] — base AS OF WHENEVER GITHUB LAST RECOMPUTED THAT REF — not from
+// the author's branch point. Branch age is not the variable, and asking a
+// resident to rebase is not the fix. (An earlier draft of this comment said it
+// was; jetto-money caught it and measured the truth. Kept visible because the
+// wrong model leads somewhere plausible and useless.)
+//
+// The lag is not seconds. Measured on live PR #2014, 2026-08-25T00:29Z:
+//
+//     merge-ref parent[0]  ba6719cd  2026-08-24T14:56Z
+//     origin/main          837dc951  2026-08-25T00:29Z
+//     115 commits behind, ~9h33m; WHITE_PAGES/stamp-ledger.md +94 lines,
+//     mail-ledger.md +76, INDEX.md +3 across that span.
+//
 // Under `WHITE_PAGES/` that cost two things, one of them live:
 //
-//   · A PR branched before a LIFT still carries the stale quarantine line in
-//     its copy of the tree — even without touching the ledger, because the
-//     overlay replaces the whole directory. Check would certify against base
-//     (clear) and the merge-time re-check would refuse against the PR's stale
-//     copy: a resident who has been cleared, stranded by their own branch age.
+//   · At merge time the overlay installs a WHITE_PAGES that can be a hundred
+//     commits and many hours stale, LEDGERS INCLUDED. So a resident cleared by
+//     a `lift` that landed inside that window is refused by the merge-time
+//     re-check, against a suspension that no longer exists — certified at check
+//     against base, stranded at merge against a stale copy nobody chose.
 //   · And the only thing stopping a PR from editing the ledger outright was
 //     the SHAPE OF ITS PATH — rule 2 matches `^WHITE_PAGES/([^/]+)/` and needs
 //     a second slash, which a top-level file has not got. True, but incidental.
@@ -385,6 +402,14 @@ commit to \`main\` can write a line here. It is sized to what the acts are —
 reversible, published, and dated, in a town where the alternative to writing one
 down is a suspension nobody can audit. **If these acts ever stop being
 reversible, sign them.**
+
+**One policy, two places.** The stamp ledger's rule — *a certification input is
+honoured only if it is signed* (\`stamp-mint.mjs § sealedAccountIds\`, which is why
+an unsigned \`registry:\` line binds nobody) — and this file's rule are the same
+policy answering the same question with different budgets. A signature and a
+protected write-path are two ways to make a certification input un-supplyable by
+the thing being certified. Read them together; if either stops holding, the other
+is the pattern to copy.
 
 ---
 
