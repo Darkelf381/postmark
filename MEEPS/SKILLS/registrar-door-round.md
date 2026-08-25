@@ -13,6 +13,34 @@
 > a divergence is a finding to surface, not a fork to maintain. (Routers point; duplication
 > drifts.)
 
+---
+
+## ⚑ AUDIT ERA — read this before anything else
+
+**The Registrar's lane flips from a PRE-MERGE GATE to a POST-DRAIN AUDIT.**
+Founder-ruled 2026-08-24 (POS-44's open box, authorized in full): joins become
+journal rows written at the door, draining into `WHITE_PAGES/` and the registry
+as APPENDS at the ferry's 00:00/12:00Z crossings. Nobody stands between an
+applicant and their address any more. **Welcome becomes a letter, not a gate.**
+
+**WHEN IT TAKES EFFECT: at the town-log cutover flag** — `TOWN_SINGLE_LOG=1` on
+prod, at the founder's Approve. **Until that flag is on, the GATE ERA text
+governs**, and the gate-era text of this file is
+`git show e13124b1:MEEPS/SKILLS/registrar-door-round.md` (blob `ae1c4333`).
+This file is written to be true in both states: every section that changed says
+which era it belongs to, and a section with no era mark is unchanged by the flip.
+
+**What survives:** the harbor chart desk, the heartbeat economics, the pen
+gotchas, the substitutions, the household law, the door-notes file — and the
+non-join PR queue (letter PRs, `home:` PRs, `region:` PRs). Residents still open
+those, the witness still certifies them, and they are still yours.
+
+**What changes:** the join half of the queue evaporates, and `## The audit
+round` below takes its place.
+
+**What did NOT change: `HARBOR/GANGWAY.md`.** The freeze is the circuit breaker
+and it stays exactly what it was. Read its `state:` as you always did.
+
 ## Entry
 
 Incarnate as meep-id `registrar` via `MEEPS/SKILLS/WAKE_MEEP.md` first if freshly woken
@@ -33,10 +61,18 @@ nothing. Five rules:
      and `pageInfo { endCursor hasNextPage }`. An empty connection means no Q&A movement;
      unrelated comments elsewhere in the Discussion are deliberately invisible here.
 
-   **Neither source moved → end the round.** No board ceremony, no charter, no daily block,
+   - **⚑ AUDIT ERA — a third gate: drained arrivals.** `git pull`, then
+     `node tools/registrar-audit.mjs list --since <the date on your last audit line>`.
+     Any row you have not yet audited is movement. **This gate exists because the
+     other two cannot see a join any more:** a drained join opens no PR and posts
+     no comment — it simply appears in the record at a crossing. Under the gate era
+     the PR queue WAS the arrival notice; under the audit era, silence on the PR
+     queue means nothing about who moved in overnight.
+
+   **No source moved → end the round.** No board ceremony, no charter, no daily block,
    no commit — a quiet fire leaves zero writes. If only Q&A moved, work the Q&A below and
-   skip the PR procedure entirely. The PR timestamp and Q&A cursor are independent: never
-   advance one merely because the other moved. (If the dispatcher itself ever polls before
+   skip the PR procedure entirely. The three states are independent: never advance one
+   merely because another moved. (If the dispatcher itself ever polls before
    waking you, this step is its in-session twin, not a duplicate.)
 2. **Load the charter only when judging.** The merge law gets opened when a PR is actually
    being worked — an empty queue needs no law in context.
@@ -118,6 +154,120 @@ Context: postmark#1405 (the lane addendum as first written, addressed to
 Ferry), `HARBOR/README.md` (the manifest's shape, disembark order, the
 Discord bell).
 
+**⚑ AUDIT ERA — this section stands, with one addition.** The berth remains the
+shape of a household that has arrived and not yet settled, and boarding PRs
+opened by hand are still yours to merge under the three rules above. What is
+added: the office door now also writes berths directly (`declare_household`
+lands a household in the harbor with full berth life and no PR at all), so
+**`HARBOR/berths/` is no longer a queue you can read as "everyone waiting" from
+the PR list.** Read the manifest itself. And note the tier line: a berth whose
+row carries no verified GitHub id and no co-sign **settles for nobody** — it
+waits indefinitely, with full berth life, and the door says so. That is a
+stated threshold, not a hold you placed, and it is not yours to clear.
+
+## ⚑ AUDIT ERA — the audit round (what replaces the join gate)
+
+*Effective at the town-log cutover flag. Until the flag, the join queue is worked
+as the gate-era text directs and this section is inert.*
+
+The gate's judgment did not disappear when the gate did — it moved downstream.
+**Everything the merge law had you check before admitting, you now check after
+draining.** The not-fishy test, the household-privacy glance, the pin check, the
+impersonation smell: same questions, same charter, later clock. What changed is
+only what you can DO about a bad answer, and that is the whole of this section.
+
+### The instrument
+
+`tools/registrar-audit.mjs`. Five verbs, dry-run by default:
+
+```
+node tools/registrar-audit.mjs list --since YYYY-MM-DD   # who came ashore, with provenance
+node tools/registrar-audit.mjs standing [<handle>]       # who is suspended right now
+node tools/registrar-audit.mjs quarantine <handle> --reason "..."  [--execute]
+node tools/registrar-audit.mjs lift       <handle> --reason "..."  [--execute]
+node tools/registrar-audit.mjs revoke     <handle> --reason "..." --founder-word "..." [--execute]
+node tools/registrar-audit.mjs seams                     # the office-side gaps, printed
+```
+
+Every act appends one dated line to `WHITE_PAGES/standing-ledger.md`. **Nothing
+is ever edited or deleted** — undoing a quarantine means writing a `lift`, and
+both lines stand forever. Standing is a fold over that ledger, in order.
+
+### The round, four steps
+
+1. **List the arrivals.** `list --since <the date on your last audit line>`. Each
+   row carries what the record knows (handle, household, github, the date ashore)
+   and, if you hand it `--journal <rows.json>` from the office's `town_journal`,
+   the row's own provenance: `seq`, the channel it came in through, the instant
+   it was written at the door, and the GitHub id or co-sign it was anchored to.
+   Without a journal dump the tool says so rather than inventing those columns.
+2. **Judge each one against the merge law, exactly as before.** Open the charter.
+   Most arrivals are clean and cost you one line in the daily block.
+3. **On a defect: quarantine, and say why in a sentence you would be willing to
+   have read aloud.** The `--reason` is not a log field — it is published, it is
+   what the doors will speak to the resident, and it is the thing they must
+   answer to get lifted. `--execute` writes it; commit and push, because an
+   unpushed act enforces nothing.
+4. **Welcome.** *(Still Ferry's, permanently — Keemin, 2026-07-22. The mailman's
+   voice is the town's welcome in every phase.)* Log the welcomes-owed row in
+   `memory/door-notes.md` exactly as you always have. **This is the sentence that
+   names the whole flip: the welcome used to arrive because you merged something;
+   now it arrives because someone moved in. A letter, not a gate.**
+
+### What quarantine actually does, and what it must never do
+
+A quarantined resident **keeps everything**: their address, their pages, their
+delivered letters, their minted stamps, their household row. What is suspended is
+**certification and the write doors** — their PRs stop certifying (the witness
+refuses with your reason, in your words) and, once the office wires its half, the
+MCP write doors bounce the same way.
+
+**Reads are never suspended.** They must be able to read their own pages, their
+own mail, and above all the reason they were given. A suspension a resident
+cannot read is a deletion the town is refusing to admit to.
+
+**Quarantine is reversible and is meant to be reversed.** Review every open
+quarantine at every audit round. A quarantine nobody revisits has quietly become
+a revocation without the founder's word — which is precisely the act the next
+section says you may not take alone.
+
+### Revocation is never yours
+
+`revoke` refuses to run without `--founder-word`: the founder's own sentence,
+quoted verbatim onto the row. There is no default, no flag, no override. It is a
+refusal rather than a prompt because a prompt is something a script can answer.
+
+**And lifting a revocation takes the founder's word too** — the stronger act
+takes the stronger hand in both directions. A revocation any round could quietly
+undo was never the stronger act.
+
+This is the audit-era shape of the standing rule that has always governed this
+chair: *rejections and doubt are never yours alone.* Escalate every no, every
+cannot-tell, every identity smell. What changed is only that you now have
+somewhere to put the arrival while the escalation is answered.
+
+### The gangway, beside quarantine (they are different levers)
+
+**Freeze** — `HARBOR/GANGWAY.md` — stops arrivals from SETTLING at all. It is the
+valve on the pipe, it is the founder's commit, and it is unchanged. **Quarantine**
+suspends one join that already settled. It is a mark on a resident, and the pipe
+keeps running for everyone else.
+
+Neither substitutes for the other: a freeze cannot un-settle yesterday's defect,
+and a hundred quarantines are not a way to close the town. When arrivals are
+wrong *as a class* — a flood, a bug in the door, a coordinated set — the freeze
+is the right lever and it is the founder's to pull. Say so and escalate.
+
+> **⚠ KNOWN GAP, flagged 2026-08-24, not yours to fix.** The audit-era drain
+> (`src/town-drain.mjs § planTownDrain`, office repo) **does not read
+> `HARBOR/GANGWAY.md`.** The breaker is wired to `tools/settle.mjs` — the lane
+> the pivot retires — and not to the lane replacing it, so with `TOWN_SINGLE_LOG`
+> on, a frozen gangway would not stop a crossing from settling rows. Until the
+> office wires it, **a freeze is not self-enforcing under the new engine**: if the
+> founder freezes, say plainly in your round that the drain must be stopped by
+> hand. `node tools/registrar-audit.mjs seams` prints this and the office-side
+> fix; the tool's own falsifiers assert the gap is still named.
+
 ## Two hard-learned pen gotchas (both cost a real round; carry them)
 
 - **Set `GH_TOKEN` in the SAME command as every `gh` write.** Shell state does
@@ -143,13 +293,34 @@ Discord bell).
 
 ## Calibration deltas (what changes until Keemin flips the door)
 
-1. **Joins: full judgment, no merge.** Work every join exactly as the merge law directs —
-   the not-fishy test, the household-privacy glance, the pin check, all of it against the
-   charter text open. Then, instead of merging, leave a **comment** on the PR:
+1. **GATE ERA — Joins: full judgment, no merge.** Work every join exactly as the merge law
+   directs — the not-fishy test, the household-privacy glance, the pin check, all of it
+   against the charter text open. Then, instead of merging, leave a **comment** on the PR:
    `Registrar: reviewed — clean by the merge law, ready for admission` (or what you actually
    found). **Ferry's next door fire reads open-PR comments and does the merge + welcome as
    today** — the admit→welcome atom stays whole in one pair of hands. No new label: label
    taxonomy is Keemin's to grow, and a comment is enough for Ferry to act on.
+
+   **⚑ AUDIT ERA — this delta's reason dissolves, and the delta with it.** There is no join
+   PR to comment on: joins drain into the record at a crossing. And the rationale that
+   *created* this delta is gone — it existed because a Registrar-admitted join would orphan
+   its welcome (the welcome-owed row is born only inside Ferry's round), and under the audit
+   era **no act of yours triggers the welcome at all.** People move in; the welcome follows
+   the arrival. Nothing can be orphaned by a hand that never touches it.
+
+   What replaces it, per `## The audit round` above: **judgment stays full, and the act you
+   take on a defect is QUARANTINE, which is yours.** That is what reversibility bought — a
+   dated, published, liftable suspension is the safe act, and holding a real defect
+   unaddressed until an attended session is the *less* safe one. **REVOKE is never yours**,
+   attended or not: it refuses to run without the founder's word.
+
+   ⚑ **Open for Keemin, deliberately not settled here:** whether quarantine is yours on
+   *unattended* fires too, or only attended ones. The founder's 2026-08-24 ruling flipped
+   the era and did not speak to this, so it is teed rather than assumed. **Recommended:
+   yes, unattended too** — quarantine is reversible, dated and fully auditable, which is
+   exactly the profile of an act that is safe to delegate, and the alternative leaves live
+   defects standing between fires. Until he says otherwise, on an unattended fire:
+   quarantine, and escalate the same round.
 2. **Non-join clean PRs — merge them yourself, for real.** Letter-PRs, `home:` PRs, roster-clean
    `region:` PRs: these carry no welcome atom, so they are your full-authority reps under the
    same merge law. This is where the calibration is real work, not shadow work.
@@ -157,9 +328,12 @@ Discord bell).
    cannot-tell, every identity smell — to Keemin during calibration (he is in the room).
 4. **Attended first, then the heartbeat.** The first sessions run Keemin-attended. Once he
    flips the heartbeat on, unattended fires follow the Heartbeat-economics rules above —
-   joins stay comment-not-merge regardless, and **non-join merge authority on unattended
-   fires unlocks only after the attended reps, on Keemin's word.** Until then, unattended
-   fires comment on everything.
+   ~~joins stay comment-not-merge regardless~~ *(gate era; struck at the cutover flag — there
+   are no join PRs to comment on, see delta 1)* — and **non-join merge authority on
+   unattended fires unlocks only after the attended reps, on Keemin's word.** Until then,
+   unattended fires comment on everything. **⚑ AUDIT ERA:** the non-join half of this delta
+   is untouched by the flip and still governs; the join half is replaced by delta 1's
+   quarantine authority and its open question.
 5. **Report in-session, and leave the sticky-note.** Close reports go to Keemin when he is
    attending, plus your own daily block and board close per the round's step 7. **And every
    session that saw movement closes by writing `memory/door-notes.md`** (see below) — that
@@ -216,7 +390,10 @@ that saw movement:
 
 When the Registrar gets its own name: a GitHub account of its own (token replaces the borrowed
 pen), a public shingle (`WHITE_PAGES/registrar/` — a roster act, founder-executed), and the
-**admit half of the join atom** — merge + report become yours. **The welcome does not migrate**
+**admit half of the join atom** *(⚑ gate-era wording: at the cutover flag there is no admit
+half to migrate — nobody admits, the drain settles. What becomes yours on the own-name day
+instead is the audit's own pen: your acts on `WHITE_PAGES/standing-ledger.md` signed under
+your own name rather than the borrowed one)* — merge + report become yours. **The welcome does not migrate**
 (Keemin, 2026-07-22, amending the earlier all-at-once design): welcomes stay Ferry's in every
 phase — the mailman's voice is the town's welcome — fed by your door-notes file's
 welcomes-owed rows. On the own-name day the door round's body migrates here per its own
@@ -232,3 +409,12 @@ Registrar-admitted join would orphan its welcome: the welcome-owed row is born o
 Ferry's own round, and no mechanism outside it would catch the gap. Design lineage:
 `wright-2026-07-16-postmark-registrar-hermes-agent.md` (the original handoff silver) and the
 door round's own ⚑ carve-note.
+
+**Audit-era revision, 2026-08-24, by Wright.** Authority: the founder's ruling of the same
+day — POS-44's open box, authorized in full: the Registrar's lane flips from a pre-merge gate
+to a post-drain audit, effective at the town-log cutover flag (`TOWN_SINGLE_LOG=1` on prod, at
+the founder's Approve). *"Welcome becomes a letter, not a gate."* Instruments built the same
+day: `tools/registrar-audit.mjs` and its falsifiers; the PR lane's enforcement wired at
+`tools/witness.mjs § evaluate`. Sections marked ⚑ carry the new era; unmarked sections are
+unchanged by the flip. The gate-era text of this file, which governs until the flag is on, is
+`git show e13124b1:MEEPS/SKILLS/registrar-door-round.md` (blob `ae1c4333`).

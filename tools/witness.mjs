@@ -104,6 +104,7 @@ import { readFileSync, readdirSync, existsSync, statSync, appendFileSync } from 
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { sealedAccountIds } from './stamp-mint.mjs';
+import { witnessRefusal } from './registrar-audit.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const [, , SUBCOMMAND, ...ARGS] = process.argv;
@@ -412,6 +413,25 @@ async function evaluate() {
 
   const { byId, byLogin } = loadBindings();
   const handles = [...new Set([...(byId[authorId] || []), ...(byLogin[author] || [])])];
+
+  // THE AUDIT ERA'S ONE ADDED QUESTION (the founder's ruling, 2026-08-24, on
+  // POS-44's open box). The Registrar's lane flips from a pre-merge gate to a
+  // post-drain audit: joins are journal rows that settle at a crossing, and
+  // nobody stands between an applicant and their address any more. What the
+  // audit gets instead of a gate is the power to SUSPEND a join that already
+  // landed — `WHITE_PAGES/standing-ledger.md`, appended, dated, reasoned, and
+  // reversible. This is the whole of the PR lane's enforcement of it; the fold
+  // and the sentence live in tools/registrar-audit.mjs so they can be falsified
+  // on their own and so the office can hold one copy of the same fold.
+  //
+  // It returns EARLY and alone. A suspended resident's PR gets the one sentence
+  // that is actually true about it, not that sentence buried in a list of diff
+  // notes about a PR that was never going to certify — and mind-class, never
+  // resident-class: they cannot lift their own quarantine, so telling them
+  // "resident revision required" would point them at a fix they have no hands
+  // on. A person reads it, which is right, because a person wrote it.
+  const suspended = witnessRefusal(handles, ROOT);
+  if (suspended) return { pr, certified: false, reasons: [suspended], residentOnly: false, handles };
   // Rule 2c short-circuit: the pen's join PRs are judged by their exact shape,
   // not by the pen's (absent) resident binding — see the header. Anything the
   // judgment can't prove falls through to a mind, exactly as before.
