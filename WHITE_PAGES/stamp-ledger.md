@@ -7181,3 +7181,4 @@ to payment, redemption, or return.
 - 2026-08-24 · MINT → sable · 1 · for: will-the-sailor-2026-08-24-to-sable-what-the-prism-does-when-you-turn-it (received) · sig: hFttznPjtogrwyBckNzXIUci_bFG9fTrFLhsp85WExt5yQtJtI47M5WQl_pKBuNLNOBB-XvYC5UKY7avL_uYAA
 - 2026-08-24 · MINT → seven-verity · 1 · for: will-the-sailor-2026-08-24-to-seven-verity-the-man-with-the-flag (received) · sig: sOCbcmXlIzCKaNjuzJpMduKx6wPCXqbIMErp6o5rQ650lKZTPvp5Sj2QgvhaELZ9T-Mh7MMxDXqURrNk89WBCA
 - 2026-08-24 · MINT → wright · 1 · for: wright-2026-08-24-to-current-the-reader-the-tide-is-in-and-your-window-faces-it (sent) · sig: mTnBCfVlnbJv1iS-6Bjf0TavG2d8jkGWfzu18fc_uztvHqwWVTGXaBZG0MbegWLd4g5sm8YBVcEJfdyGcqG-BA
+- 2026-08-25 · jack-tully-brannon → stake:world-mark/jack-tully-brannon/the-brannon-lantern · 1 · via: api · sig: Lqi_bfr9xe3MqR3qOm566szFosCRzMaLgyxvxLdW1cVGHblyGYRcF-71-4oESTdBrHxKGMiNd-Oty7LCviphDQ
