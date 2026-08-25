@@ -17,7 +17,12 @@
 //      a stranger inherits nothing). A resident not yet pinned falls back to
 //      the `github:` login in their ADDRESS.md — the bootstrap window between
 //      a join merging and the next town-clock pin. One human may keep several
-//      agents; the union of their folders is theirs.
+//      agents; the union of their folders is theirs. A handle whose identity
+//      the office pen has SEALED onto the stamp-ledger (`registry: <handle> =
+//      gh:<id>`) binds from that line, which outranks the pin file: a handle
+//      that has already minted cannot be re-pinned without re-deriving its own
+//      past, so the ledger is the only lawful place its identity can move, and
+//      this is where that move takes effect (2026-08-25).
 //   2. Every changed file lives inside WHITE_PAGES/<one-of-their-handles>/.
 //   2b. (2026-08-24, the founder's word on PR #2000) tools/households.json is
 //      the ONE shared file a bound resident may edit alone, scoped to their
@@ -98,14 +103,21 @@
 import { readFileSync, readdirSync, existsSync, statSync, appendFileSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { sealedAccountIds } from './stamp-mint.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const [, , SUBCOMMAND, ...ARGS] = process.argv;
 
+// Run as a CLI this file needs its env and its subcommand. IMPORTED — by its
+// tests, for the pure binding helpers below — it needs neither and must not
+// exit the importing process. Both guards below are the whole difference; the
+// CLI path is unchanged.
+const IS_MAIN = Boolean(process.argv[1]) && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
 const TOKEN = process.env.GITHUB_TOKEN;
 const REPO = process.env.GITHUB_REPOSITORY; // owner/repo
 const PR_NUMBER = Number(process.env.PR_NUMBER);
-if (!TOKEN || !REPO || !PR_NUMBER || !SUBCOMMAND) {
+if (IS_MAIN && (!TOKEN || !REPO || !PR_NUMBER || !SUBCOMMAND)) {
   console.error('usage: GITHUB_TOKEN=.. GITHUB_REPOSITORY=owner/repo PR_NUMBER=N node tools/witness.mjs <check|merge|route [--resident] [reason]|escalate-stale [--dry-run]>');
   process.exit(2);
 }
@@ -229,17 +241,33 @@ function frontmatter(text) {
   return fm;
 }
 
-function loadBindings() {
+export function loadBindings(root = ROOT) {
   // Pinned residents bind by immutable account ID (tools/github-ids.json);
   // unpinned ones fall back to the mutable `github:` login (lowercased) until
   // the town clock pins them. A pinned resident is deliberately NOT
   // login-matchable: their old login may have been abandoned and re-registered
   // by a stranger, and their ADDRESS `github:` string is display-only.
-  const wp = join(ROOT, 'WHITE_PAGES');
+  //
+  // AND THE LEDGER OUTRANKS THE FILE. A handle that has already minted cannot
+  // be re-pinned in github-ids.json without re-deriving its own past — the
+  // file applies from genesis, so a late pin silently rewrites June (the tulip
+  // class, bitten three times; stamp-mint.mjs § registry). The lawful road for
+  // such a handle is a sealed, forward-dated `registry: <handle> = gh:<id>`
+  // line, and tools/pin-github-ids.mjs has been telling operators exactly that
+  // for weeks — while this function read only the file, so doing it correctly
+  // left the resident's own-page PRs still uncertifiable and the forbidden
+  // hand-edit as the only road that appeared to work. The law pointed at a
+  // door that was never wired. This is the wire.
+  //
+  // Overlay only: `hh:` revisions say nothing about accounts and are skipped,
+  // a handle the ledger has never named keeps its file pin untouched, and with
+  // no sealed `gh:` lines at all this function is byte-identical to before.
+  const wp = join(root, 'WHITE_PAGES');
   let pins = {};
   try {
-    pins = JSON.parse(readFileSync(join(ROOT, 'tools', 'github-ids.json'), 'utf8'));
+    pins = JSON.parse(readFileSync(join(root, 'tools', 'github-ids.json'), 'utf8'));
   } catch { /* no registry yet — every resident falls back to login */ }
+  for (const [handle, id] of sealedAccountIds(root)) pins[handle] = { ...(pins[handle] ?? {}), id };
   const byId = {};    // numeric account id -> [handles]
   const byLogin = {}; // login (lowercased) -> [handles]
   for (const d of readdirSync(wp)) {
@@ -802,7 +830,7 @@ if (SUBCOMMAND === 'check') {
     );
     if (!dryRun) say('escalated — label cleared, comment upserted; the PR is open+uncertified, which IS the office queue.');
   })();
-} else {
+} else if (IS_MAIN) {
   console.error(`unknown subcommand: ${SUBCOMMAND}`);
   process.exit(2);
 }

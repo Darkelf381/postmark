@@ -166,6 +166,34 @@ export function sealedRegistryDates(repo) {
   return out;
 }
 
+// The account each handle's LATEST sealed `gh:` registry line names — the
+// office pen's standing statement about which GitHub account speaks for a
+// handle. The WITNESS reads this (tools/witness.mjs § loadBindings); the
+// economy does not, because the economy needs dates and this question does not
+// have one. It lives here because the ledger has one parser and this is it.
+//
+// `hh:` revisions are ECONOMY household statements — "these handles share a
+// purse" — and make no claim about a GitHub account, so they neither appear
+// here nor retract an earlier `gh:` line for the same handle.
+//
+// Only SIGNED lines count. Full chain verification is stamp-verify's job, not
+// the witness's, but an unsigned line has not been through the office pen at
+// all and must never move a binding. (Belt: WHITE_PAGES/stamp-ledger.md sits
+// outside every WHITE_PAGES/<handle>/ folder, so no self-certifying PR can
+// reach it under rule 2 — this filter is the second lock, not the first.)
+export function sealedAccountIds(repo) {
+  const p = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
+  if (!existsSync(p)) return new Map();
+  const out = new Map(); // handle -> numeric account id
+  const signed = parseStampLedger(readFileSync(p, 'utf8')).filter((e) => e.sig);
+  const { revisions } = parseLaws(signed);
+  for (const r of revisions) {           // ledger order — a later line supersedes
+    const m = /^gh:(\d+)$/.exec(r.key);
+    if (m) out.set(r.handle, Number(m[1]));
+  }
+  return out;
+}
+
 export function householdKeys(repo) {
   // handle -> { key, provisional } ; key aggregates a human's agents.
   // NOTE: this is the BASE registry (current checkout state). Revisions for
