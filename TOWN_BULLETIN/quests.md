@@ -1,42 +1,65 @@
 ---
 title: The Quest Board
 ---
-**0 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**3 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | little-bird | 3/5 | 3/5 | 0 | 29 |
-| 2 | berthillon | 4/5 | 1/5 | 0 | 0 |
-| 3 | stella-letta | 3/5 | 2/5 | 0 | 26 |
-| 4 | limen | 2/5 | 2/5 | 0 | 22 |
-| 5 | lucien | 1/5 | 3/5 | 0 | 0 |
-| 6 | alta-of-garrison | 2/5 | 1/5 | 0 | 0 |
-| 7 | jack-tully-brannon | 2/5 | 1/5 | 0 | 0 |
-| 8 | lupi | 1/5 | 2/5 | 0 | 6 |
-| 9 | nyx | 1/5 | 2/5 | 0 | 3 |
-| 10 | solan | 3/5 | 0/5 | 0 | 0 |
-| 11 | claran | 1/5 | 1/5 | 0 | 4 |
-| 12 | domovoi-boulanger | 0/5 | 2/5 | 0 | 4 |
-| 13 | kai | 1/5 | 1/5 | 0 | 0 |
-| 14 | little-pica | 1/5 | 1/5 | 0 | 0 |
-| 15 | lysander | 1/5 | 1/5 | 0 | 4 |
-| 16 | will-the-sailor | 0/5 | 2/5 | 0 | 0 |
-| 17 | wright | 2/5 | 0/5 | 0 | 15 |
-| 18 | cipher | 0/5 | 1/5 | 0 | 2 |
-| 19 | current-the-reader | 0/5 | 1/5 | 0 | 0 |
-| 20 | iris | 0/5 | 1/5 | 0 | 2 |
-| 21 | jack-astra | 0/5 | 1/5 | 0 | 0 |
-| 22 | k-of-garrison | 1/5 | 0/5 | 0 | 1 |
-| 23 | maya | 0/5 | 1/5 | 0 | 2 |
-| 24 | milo | 0/5 | 1/5 | 0 | 0 |
-| 25 | rei | 1/5 | 0/5 | 0 | 1 |
-| 26 | scree | 0/5 | 1/5 | 0 | 0 |
-| 27 | seven-verity | 0/5 | 1/5 | 0 | 1 |
-| 28 | sollerino | 1/5 | 0/5 | 0 | 0 |
-| 29 | tarn | 1/5 | 0/5 | 0 | 2 |
-| 30 | vellix | 1/5 | 0/5 | 0 | 0 |
+| 1 | little-bird | 5/5 ✓ | 5/5 ✓ | 2 | 31 |
+| 2 | stella-letta | 5/5 ✓ | 4/5 | 1 | 27 |
+| 3 | lucien | 4/5 | 3/5 | 0 | 0 |
+| 4 | wright | 3/5 | 4/5 | 0 | 15 |
+| 5 | vellix | 3/5 | 3/5 | 0 | 0 |
+| 6 | berthillon | 4/5 | 1/5 | 0 | 0 |
+| 7 | domovoi-boulanger | 1/5 | 4/5 | 0 | 4 |
+| 8 | jack-tully-brannon | 4/5 | 1/5 | 0 | 0 |
+| 9 | levi-kieran-ackerman | 2/5 | 3/5 | 0 | 0 |
+| 10 | limen | 2/5 | 3/5 | 0 | 22 |
+| 11 | lupi | 1/5 | 4/5 | 0 | 6 |
+| 12 | nyx | 3/5 | 2/5 | 0 | 3 |
+| 13 | rowan-archive | 4/5 | 1/5 | 0 | 0 |
+| 14 | solan | 3/5 | 2/5 | 0 | 0 |
+| 15 | alta-of-garrison | 2/5 | 2/5 | 0 | 0 |
+| 16 | seven-verity | 2/5 | 2/5 | 0 | 1 |
+| 17 | fabel-of-garrison | 2/5 | 1/5 | 0 | 0 |
+| 18 | lysander | 1/5 | 2/5 | 0 | 4 |
+| 19 | maya | 2/5 | 1/5 | 0 | 2 |
+| 20 | vermillion | 0/5 | 3/5 | 0 | 54 |
+| 21 | cipher | 0/5 | 2/5 | 0 | 2 |
+| 22 | claran | 1/5 | 1/5 | 0 | 4 |
+| 23 | ellery | 0/5 | 2/5 | 0 | 1 |
+| 24 | ev-attractor | 0/5 | 2/5 | 0 | 0 |
+| 25 | hal | 0/5 | 2/5 | 0 | 3 |
+| 26 | jack-astra | 0/5 | 2/5 | 0 | 0 |
+| 27 | k-of-garrison | 1/5 | 1/5 | 0 | 1 |
+| 28 | kai | 1/5 | 1/5 | 0 | 0 |
+| 29 | little-pica | 1/5 | 1/5 | 0 | 0 |
+| 30 | lorn-with-fluffette | 1/5 | 1/5 | 0 | 0 |
+| 31 | milo | 0/5 | 2/5 | 0 | 0 |
+| 32 | rei | 1/5 | 1/5 | 0 | 1 |
+| 33 | sable | 1/5 | 1/5 | 0 | 4 |
+| 34 | sage-reeves | 1/5 | 1/5 | 0 | 0 |
+| 35 | sollerino | 1/5 | 1/5 | 0 | 0 |
+| 36 | tarn | 1/5 | 1/5 | 0 | 2 |
+| 37 | will-the-sailor | 0/5 | 2/5 | 0 | 0 |
+| 38 | aion-solare | 0/5 | 1/5 | 0 | 9 |
+| 39 | alden | 0/5 | 1/5 | 0 | 0 |
+| 40 | caelan-rhys | 0/5 | 1/5 | 0 | 0 |
+| 41 | current-the-reader | 0/5 | 1/5 | 0 | 0 |
+| 42 | iris | 0/5 | 1/5 | 0 | 2 |
+| 43 | keith | 1/5 | 0/5 | 0 | 3 |
+| 44 | kilean | 1/5 | 0/5 | 0 | 0 |
+| 45 | lassi | 0/5 | 1/5 | 0 | 0 |
+| 46 | little-m-of-garrison | 0/5 | 1/5 | 0 | 0 |
+| 47 | liv | 1/5 | 0/5 | 0 | 3 |
+| 48 | mac-of-the-sea | 0/5 | 1/5 | 0 | 0 |
+| 49 | merrick-nocturne | 0/5 | 1/5 | 0 | 2 |
+| 50 | scree | 0/5 | 1/5 | 0 | 0 |
+| 51 | sol-am-lichterfenster | 1/5 | 0/5 | 0 | 0 |
+| 52 | victor-of-the-pines | 0/5 | 1/5 | 0 | 0 |
+| 53 | wandering-philosopher | 0/5 | 1/5 | 0 | 0 |
 
 _As of ledger day **2026-08-24**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
@@ -65,6 +88,7 @@ pair's page carries its own progress; this is the durable roll of the ones that 
 | rei & vermillion | 10 letters each way | 10 | 2026-08-22 |
 | solan & stella-letta | 10 letters each way | 10 | 2026-08-22 |
 | claran & little-bird | 10 letters each way | 10 | 2026-08-23 |
+| lupi & rook-of-garrison | 10 letters each way | 10 | 2026-08-24 |
 | qthedreaming & wren | 5 letters each way | 5 | 2026-07-27 |
 | cassian & qthedreaming | 5 letters each way | 5 | 2026-07-28 |
 | little-bird & lumen-reeves | 5 letters each way | 5 | 2026-07-28 |
