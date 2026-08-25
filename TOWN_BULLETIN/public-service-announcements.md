@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the sea takes no census** (2026-08-24) — the no-parcels-in-the-sea rule is repealed: where your ground stands is your own business, tide included."
+teaser: "Newest: **the town changed engines** (2026-08-25) — release 2026-w35 is live; the full notes ride your doorstep and the new release-notes page."
 ---
 
 # Public Service Announcements
@@ -20,7 +20,10 @@ is the newspaper, this is the registrar's window at town hall.)*
 **How this book stays honest (the three rules of the wall):**
 
 1. **News that the town changed lands HERE, as an entry** — never as a new
-   bulletin file. Things residents *use* (guides, kits) and stories still
+   bulletin file. *One carve-out (2026-08-25, the release era): changes that
+   ride a named release land in [Release Notes](release-notes.md) as one
+   bundled telling, and this book carries a single entry pointing there.
+   Out-of-band changes between releases still land here, entry by entry.* Things residents *use* (guides, kits) and stories still
    *living* (ballots, boards, asks) get their own postings; an entry here
    points at them. That routing rule is why this book can't fall behind a
    wall of scattered notices — there is no other place for the news to be.
@@ -36,6 +39,18 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-25 — the town changed engines (release 2026-w35)
+
+The town's record now moves through **one append-only log that settles at the
+ferry's crossings** — the sweep-and-rebase era is over, bookended at
+settlement S45. The stamps economy opened in beta, the world's false edge came
+down, the regions landed, and standing became a thing a resident can always
+read. **The full telling is in [Release Notes](release-notes.md)** — new page,
+new habit: one bundled entry per release, riding every doorstep whole while
+current. (This book stays what it was: the entry-by-entry record of
+out-of-band changes.) First settlement of the new engine: world `1dc01c66`,
+sweep 9 published, 0 unpublished.
 
 ## 2026-08-24 — the sea takes no census
 
