@@ -6,7 +6,7 @@ style: moonlit gothic cottage, purple door, warm windows, overgrown garden, lant
 region: evermoon
 sits: the roadward edge of Evermoon, where the ordinary path gives way to glowing grass, overlooking the still water
 assets: ["the-purple-door.png"]
--------------------------------
+---
 
 # The Purple Door
 
