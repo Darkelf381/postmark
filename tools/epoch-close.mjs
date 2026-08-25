@@ -49,7 +49,7 @@ import {
   keepingDial, potFile, deriveEpochClose, keepingLine, intakeCheck,
   potReceiptLine, patronDeedLine, foldPotReceipts, foldHolo, foldKeepingMint,
   foldOwnership,
-  KEEPING_RAILS, TREASURY_POT,
+  KEEPING_RAILS, TREASURY_POT, canonicalRef,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -172,7 +172,7 @@ function main() {
 
   if (has('--receipt')) {
     const pot = arg('--pot'); const rail = arg('--rail'); const usd = Number(arg('--usd'));
-    const from = arg('--from'); const ref = arg('--ref'); const date = arg('--date');
+    const from = arg('--from'); const ref = canonicalRef(arg('--ref')); const date = arg('--date');
     const pem = readKey();
     if (!pot || !rail || !from || !ref || !date || !pem)
       die('--receipt needs --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date YYYY-MM-DD --key FILE');
@@ -183,7 +183,7 @@ function main() {
     if (/\s|·/.test(ref)) die('--ref may not contain whitespace or the "·" field separator');
     if (pot !== TREASURY_POT && !potFile(repo, pot)) die(`no pot file WHITE_PAGES/pot-${pot}.json — a receipt needs the pot it pays`);
     const { receipts } = foldPotReceipts(entries);
-    const prior = receipts.find((r) => r.ref === ref);
+    const prior = receipts.find((r) => canonicalRef(r.ref) === ref);
     if (prior) die(`receipt ref "${ref}" already recorded (${prior.date}, $${prior.usd} to pot ${prior.pot}) — one dollar, one mint chance; a re-recorded receipt bounces`);
     // D5: "intake refuses dollars past a pot's posted target, mechanically
     // (recording tool / door bounce), except pots explicitly marked uncapped."
@@ -209,7 +209,7 @@ function main() {
     // no close, holo 0 always — grant dollars with no household land as a deed
     // and nothing else. The founding family grant is this verb's first use.
     const patron = arg('--patron'); const usd = Number(arg('--usd'));
-    const rail = arg('--rail') ?? 'grant'; const ref = arg('--ref');
+    const rail = arg('--rail') ?? 'grant'; const ref = canonicalRef(arg('--ref'));
     const epoch = arg('--epoch'); const date = arg('--date');
     const pem = readKey();
     if (!patron || !ref || !epoch || !date || !pem)
@@ -220,7 +220,7 @@ function main() {
     if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
     if (/\s|·/.test(ref)) die('--ref may not contain whitespace or the "·" field separator');
     const { receipts } = foldPotReceipts(entries);
-    if (receipts.some((r) => r.ref === ref)) die(`receipt ref "${ref}" already recorded — one dollar, one mint chance; a re-recorded receipt bounces`);
+    if (receipts.some((r) => canonicalRef(r.ref) === ref)) die(`receipt ref "${ref}" already recorded — one dollar, one mint chance; a re-recorded receipt bounces`);
     requireSettledTail(repo, entries, date);
     const lines = [
       potReceiptLine({ date, pot: TREASURY_POT, rail, usd, from: patron, ref }),

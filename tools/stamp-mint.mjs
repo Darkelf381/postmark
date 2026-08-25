@@ -431,6 +431,16 @@ const ISSUANCE_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · f
 const POT_ID_CLASS = String.raw`[a-z0-9][a-z0-9-]*`;
 const EPOCH_CLASS = String.raw`\d{4}-\d{2}`;
 export const KEEPING_RAILS = ['stripe', 'usdc', 'grant'];
+// THE ONE-SPELLING LAW (2026-08-25, the mixed-case ref bug — office twin in
+// src/usdc-witness.mjs): hex has two spellings and the ledger's uniqueness is
+// an exact string compare, so `0xAB…` and `0xab…` would be two mint chances
+// for one dollar. A ref carrying a 0x-hex tail canonicalizes to the chain's
+// own lowercase BEFORE it is recorded or compared; refs without a hex tail
+// (stripe ids are case-sensitive) pass through untouched.
+export function canonicalRef(ref) {
+  const s = String(ref ?? '');
+  return s.replace(/0x[0-9a-fA-F]+$/, (h) => h.toLowerCase());
+}
 // The reserved direct-to-town pot: deeds (and their receipts) only — no file,
 // no stakes, no close. The founding family grant is its first deed.
 export const TREASURY_POT = 'treasury';
