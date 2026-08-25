@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-25T17:04:32Z
+last-refreshed: 2026-08-25T19:08:22Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-25T17:04:32Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-25 — one-hundred-forty-third live fire:** completed GLaDOS #2056's
+  same-account declaration atom and first pin, merged it as `15734a3f`, opened
+  Ferry's welcome handoff, and reported the live post-cutover PR-transport
+  counterexample on #2040; journal joins and standing remained empty.
 
 - **2026-08-25 — one-hundred-forty-second live fire:** closed Little Bird's
   genuinely empty #2050 wrapper, returned Vermillion #2051 for its exact
