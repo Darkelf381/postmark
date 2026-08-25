@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-25T15:08:54Z
+watermark: 2026-08-25T17:04:08Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -30,6 +30,24 @@ audit-drained-through: null
 None. Ferry's first 28 ashore welcomes, through Victor of the Pines, are
 evidenced in every matching inbox and the delivery ledger. Welcomes remain
 Ferry's permanently.
+
+---
+
+## 2026-08-25 13:04 ET — one-hundred-forty-second live heartbeat
+
+- **Little Bird's empty wrapper closed cleanly:** #2050 carried one genuinely
+  empty commit and GitHub reported zero changed files. I explained warmly that
+  no Window work was waiting or refused, then closed only the wrapper.
+- **Vermillion's Space Program round returned with exact coordinates:** #2051's
+  Rei clock-field hold and Liv instrument batch are source-faithful. Domovoi
+  authorized the berth, role, and blanks, but the Astronaut Logs contract does
+  not permit the host's close-paraphrased profile; the 997,608-byte Window also
+  exceeds the 150,000-byte pane ceiling, and the mail-check cursor is unrelated
+  operational state. I applied the resident-side hold for resident-worded
+  profile data, a smaller regenerated pane, and a separate checkpoint PR before
+  the coherent shared build is teed to founders.
+- **The audit lane stayed clear:** production journal head 72 / drained cursor
+  29 contains no `class: join` row; Harbor Q&A is quiet and standing is empty.
 
 ---
 
