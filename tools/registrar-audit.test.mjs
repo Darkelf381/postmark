@@ -471,8 +471,8 @@ test("the workflow's overlay is still WHITE_PAGES-scoped — the premise this re
   const overlays = [...wf.matchAll(/git checkout FETCH_HEAD -- (\S+)/g)].map((m) => m[1]);
   assert.ok(overlays.length > 0, "the overlay step vanished — re-derive where the ledger may live");
   for (const path of overlays)
-    assert.equal(path, "WHITE_PAGES/",
-      `the workflow now overlays "${path}" instead of "WHITE_PAGES/".\n`
+    assert.equal(path, "':(glob)WHITE_PAGES/*/**'",
+      `the workflow now overlays "${path}" instead of "':(glob)WHITE_PAGES/*/**'".\n`
       + `  This test is doing its job — read it, do not loosen it.\n`
       + `  If the overlay WIDENED to cover ${LEDGER_PATH}: that is the bug this whole section exists to prevent,\n`
       + `  because the standing check would then read PR-controlled state at merge time. Revert it.\n`

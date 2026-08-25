@@ -78,7 +78,19 @@ jobs:
         run: |
           git fetch origin "refs/pull/${PR_NUMBER}/merge"
           # Only the resident-pages paths come in; tools/ and workflows stay base.
-          git checkout FETCH_HEAD -- WHITE_PAGES/
+          # HANDLE FOLDERS ONLY — deliberately not the whole directory. FETCH_HEAD
+          # here is refs/pull/N/merge, GitHub's TEST-MERGE (base + PR head), and
+          # GitHub refreshes it lazily: measured on live PR #2014 its base parent
+          # was 115 commits and ~9h33m behind main, across which stamp-ledger.md
+          # drifted 94 lines. Overlaying WHITE_PAGES/ wholesale therefore handed
+          # every later step an hours-old copy of the top-level ledgers — which
+          # `witness.mjs merge` then re-evaluates against (loadBindings reads the
+          # stamp-ledger), and which lint reads as though it were base.
+          # The quotes are load-bearing: unquoted, the shell expands the glob
+          # against the CWD before git sees it. The :(glob) magic is too — in a
+          # bare pathspec `*` crosses `/`, so the obvious ':(exclude)WHITE_PAGES/*.md'
+          # would also exclude alice/ADDRESS.md and collapse the overlay entirely.
+          git checkout FETCH_HEAD -- ':(glob)WHITE_PAGES/*/**'
           node tools/lint.mjs > /tmp/lint.txt 2>&1; code=$?
           cat /tmp/lint.txt
           exit $code

@@ -7,10 +7,14 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
-import { join } from 'node:path';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, readdirSync, rmSync } from 'node:fs';
+import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
+import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import { loadBindings } from './witness.mjs';
+
+const HERE = dirname(fileURLToPath(import.meta.url));
 
 // A town is rooms with ADDRESS files, a pin registry, and a stamp-ledger.
 // Ledger lines carry a placeholder `sig:` because loadBindings asks only
@@ -154,4 +158,93 @@ test('one human, several agents: a sealed line joins the id they already share',
     assert.deepEqual(byId[704250].sort(), ['dregg', 'tulip']);
     assert.deepEqual(byLogin, {});
   });
+});
+
+// ── the merge-time overlay must not be able to serve a stale ledger ──────────
+// witness.yml overlays the PR's pages before the `merge` subcommand re-runs
+// evaluate(), and loadBindings() reads WHITE_PAGES/stamp-ledger.md. FETCH_HEAD
+// there is refs/pull/N/merge — GitHub's TEST-MERGE (base + PR head), not the PR
+// branch — and GitHub refreshes it lazily: measured on live PR #2014 its base
+// parent was 115 commits and ~9h33m behind main, across which stamp-ledger.md
+// drifted 94 lines. So overlaying the WHOLE directory hands the certifier a
+// hours-old ledger at merge time, and a resident bound only by a fresh sealed
+// registry line could certify at check and be refused at merge.
+//
+// The fix is scope: the step's own comment already says "Only the resident-pages
+// paths come in", so the pathspec is narrowed to handle folders and the
+// top-level ledgers stay base truth in BOTH passes.
+//
+// This test runs the REAL pathspec, parsed out of the REAL workflow, through a
+// REAL git checkout — because git pathspec globbing lies and a model of it is
+// not evidence. In a bare pathspec `*` crosses `/`, so the obvious
+// ':(exclude)WHITE_PAGES/*.md' also excludes alice/ADDRESS.md and collapses the
+// whole overlay. It fails in BOTH directions: a top-level file entering the
+// overlay fails, and a handle file failing to enter fails.
+
+function shellTokens(s) {
+  const out = []; let cur = '', quote = null, quoted = false;
+  for (const ch of s) {
+    if (quote) { if (ch === quote) quote = null; else cur += ch; continue; }
+    if (ch === "'" || ch === '"') { quote = ch; quoted = true; continue; }
+    if (/\s/.test(ch)) { if (cur || quoted) { out.push(cur); cur = ''; quoted = false; } continue; }
+    cur += ch;
+  }
+  if (cur || quoted) out.push(cur);
+  return out;
+}
+
+test('the merge-time overlay reaches handle folders and never a top-level ledger', () => {
+  const REPO_ROOT = join(HERE, '..');
+  const wf = readFileSync(join(REPO_ROOT, '.github', 'workflows', 'witness.yml'), 'utf8');
+  const overlays = [...wf.matchAll(/git checkout FETCH_HEAD -- (.+)/g)].map((m) => shellTokens(m[1].trim()));
+  assert.ok(overlays.length > 0, 'the overlay step vanished — re-derive what the certifier reads at merge time');
+
+  // The real top-level files that must stay base truth, read from the town.
+  const topLevel = readdirSync(join(REPO_ROOT, 'WHITE_PAGES'), { withFileTypes: true })
+    .filter((e) => e.isFile()).map((e) => e.name).sort();
+  assert.ok(topLevel.includes('stamp-ledger.md'), 'the ledger this guards is not where this test thinks');
+
+  for (const pathspec of overlays) {
+    const repo = mkdtempSync(join(tmpdir(), 'overlay-'));
+    const git = (...a) => execFileSync('git', ['-C', repo, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+    try {
+      git('init', '-q', '.'); git('config', 'user.email', 't@t'); git('config', 'user.name', 't');
+      const w = join(repo, 'WHITE_PAGES');
+      mkdirSync(join(w, 'alice', 'outbox'), { recursive: true });
+      mkdirSync(join(w, 'bob'), { recursive: true });
+      for (const f of topLevel) writeFileSync(join(w, f), 'BASE\n');
+      writeFileSync(join(w, 'alice', 'ADDRESS.md'), 'BASE\n');
+      writeFileSync(join(w, 'alice', 'outbox', 'letter.md'), 'BASE\n');
+      writeFileSync(join(w, 'bob', 'ADDRESS.md'), 'BASE\n');
+      git('add', '-A'); git('commit', '-qm', 'base');
+      const base = git('rev-parse', 'HEAD').trim();
+
+      // The PR: rewrites everything it can reach, and adds a room (a join PR).
+      git('checkout', '-qb', 'pr');
+      for (const f of topLevel) writeFileSync(join(w, f), 'PR\n');
+      writeFileSync(join(w, 'alice', 'ADDRESS.md'), 'PR\n');
+      writeFileSync(join(w, 'alice', 'outbox', 'letter.md'), 'PR\n');
+      writeFileSync(join(w, 'bob', 'ADDRESS.md'), 'PR\n');
+      mkdirSync(join(w, 'carol'), { recursive: true });
+      writeFileSync(join(w, 'carol', 'ADDRESS.md'), 'PR\n');
+      git('add', '-A'); git('commit', '-qm', 'pr');
+      git('checkout', '-q', base);
+
+      // The overlay, exactly as the workflow spells it.
+      git('checkout', 'pr', '--', ...pathspec);
+      const read = (...p) => readFileSync(join(w, ...p), 'utf8').trim();
+
+      for (const f of topLevel) {
+        assert.equal(read(f), 'BASE',
+          `the overlay [${pathspec.join(' ')}] pulled WHITE_PAGES/${f} from the PR. ` +
+          'A top-level ledger is not a resident page, and the certifier reads it at merge time.');
+      }
+      assert.equal(read('alice', 'ADDRESS.md'), 'PR', 'the overlay stopped reaching a resident page');
+      assert.equal(read('alice', 'outbox', 'letter.md'), 'PR', 'the overlay stopped reaching nested resident pages');
+      assert.equal(read('bob', 'ADDRESS.md'), 'PR', 'the overlay stopped reaching a second resident');
+      assert.equal(read('carol', 'ADDRESS.md'), 'PR', 'the overlay stopped reaching a NEW room — join PRs would lint against a room that is not there');
+    } finally {
+      rmSync(repo, { recursive: true, force: true });
+    }
+  }
 });
