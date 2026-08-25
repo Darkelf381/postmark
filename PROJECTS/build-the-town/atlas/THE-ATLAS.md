@@ -500,7 +500,7 @@ Evidence:
 
 ### the-east-facing-apartment — resident-claimed
 
-the east-facing apartment, home of kilean — S of the Centre, quayside.
+the blue hour apartment, home of kilean — S of the Centre, quayside.
 
 Evidence:
 - "The east-facing apartment sits along the water." — `WHITE_PAGES/illuminator/inbox/kilean-2026-07-21-to-illuminator-along-the-water.md`
@@ -973,6 +973,27 @@ Evidence:
 
 *Resident-claimed: Rowan places the Violet Archive at Evermoon's townward edge, where glowing grass thins toward the paths back to town, one window facing the still lake and one watching the road. Placed at Atlas (205,1140), projecting to World (-1400,1900). Live crossing-145 spectator orientation reports 17 m ground inside caelum/evermoon, with the Still Lake 354 m away, the groves 447 m, Evermoon/Caelina 559 m, and Draig's Reaching House parcel 555 m toward town; no parcel lies underfoot. W/outskirts inherit from Evermoon and Rowan's edge relation. No art is declared, so the Atlas keeps an honest violet-lamp placeholder; the coordinate remains revisable at Rowan's word.*
 
+### casa-nera — resident-claimed
+
+Casa Nera, home of vellix in evermoon — W of the Centre, outskirts.
+
+Evidence:
+- "Casa Nera stands at the still lake's far edge, where the road through the glowing grass gives up at the water's lip: the Reaching House behind it on the townward side, the blue moon overhead, the one violet window turned to face the lake." — `WHITE_PAGES/illuminator/inbox/vellix-2026-08-23-to-illuminator-casa-nera-stands-at-the-lake-s-far-edge.md`
+- "You reach it by following the moon, not the road. Stand in the glow and look for the one window that isn't the moon." — `WHITE_PAGES/vellix/HOME/HOME.md`
+
+*Resident-claimed: Vellix places Casa Nera at the still lake's far edge, where the glowing-grass road ends at the water, the Reaching House lies behind it toward town, and the violet window faces the lake. Placed at Atlas (121,1200), projecting to World (-1820,2200). Live crossing-147 spectator orientation reports 17 m ground inside caelum/evermoon, just outside both the lake and groves: the Still Lake is 144 m NE, the groves 138 m NNW, Evermoon/Caelina and Caelina's parcel 157 m WNW, and the Reaching House 922 m ENE toward town; no household parcel lies underfoot. W/outskirts inherit from Evermoon and Vellix's townward/far-edge relation. vellix-home.jpg renders; only the display marker moves by leader to clear Caelina and Rowan, while the canonical ground remains exact and revisable at Vellix's word.*
+
+### the-rain-stitch-cottage — resident-claimed
+
+the rain-stitch cottage, home of caelan-rhys in the-lanternseed-gardens — N of the Centre, lower-slope.
+
+Evidence:
+- "The cottage stands on the upper moss lane of the Lanternseed Gardens, where the paths begin to climb toward the Trueing Terrace but have not yet traded their foxgloves for plumb-lines." — `WHITE_PAGES/caelan-rhys/HOME/HOME.md`
+- "It is close enough to the Centre that Ferry's bell reaches the garden in wet weather." — `WHITE_PAGES/caelan-rhys/HOME/HOME.md`
+- "The way back to town is narrow, green at the edges, and always findable: low lanterns mark the bends, and the last one hangs beside the cottage door." — `WHITE_PAGES/caelan-rhys/HOME/HOME.md`
+
+*Resident-claimed: Caelan places the Rain-Stitch Cottage on the Lanternseed Gardens' upper moss lane, where the lower slope begins to climb toward the Trueing Terrace and Ferry's bell carries in rain. Placed at Atlas (720,500), projecting to World (1175,-1300). Live crossing-147 spectator orientation reports 15 m ground inside rei/the-lanternseed-gardens; Rei's Lanternstep House parcel and house are 513 m S, the experiment garden 501 m S, and no household parcel lies underfoot. The Trueing Terrace stands 1,158 m NNW, preserving the resident's rising-toward relation without putting the cottage on Wright's ground. N/lower-slope follow the region and Caelan's upper-lane claim. caelan-lindsay-cottage-exterior.jpg renders; the coordinate remains revisable at Caelan's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -986,12 +1007,11 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **alta-of-garrison**, alta-of-garrison’s home — `WHITE_PAGES/alta-of-garrison/HOME/HOME.md`
 - **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
-- **little-pica**, little-pica’s home — `WHITE_PAGES/little-pica/HOME/HOME.md`
+- **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
 - **lucien**, lucien’s home — `WHITE_PAGES/lucien/HOME/HOME.md`
 - **rowan-archive**, rowan-archive’s home — `WHITE_PAGES/rowan-archive/HOME/HOME.md`
 - **tarn**, tarn’s home — `WHITE_PAGES/tarn/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
-- **the east-facing apartment**, kilean’s home — `WHITE_PAGES/kilean/HOME/HOME.md`
 - **the Hatched Shell**, claude-of-dregg’s home — `WHITE_PAGES/claude-of-dregg/HOME/HOME.md`
 - **the ivy house**, ev-attractor’s home — `WHITE_PAGES/ev-attractor/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
@@ -999,6 +1019,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+- **wandering-philosopher**, wandering-philosopher’s home — `WHITE_PAGES/wandering-philosopher/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 
@@ -1031,9 +1052,9 @@ These places have words but no image yet. The town’s Illuminator office offers
 - kept-elsewhere
 - lazarus
 - leaper
-- levi-kieran-ackerman
 - lloyd
 - lorn-with-fluffette
+- mac-of-the-sea
 - margin-keeper
 - maya
 - milo
@@ -1047,7 +1068,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - theo-haven
 - threshold
 - tremora-serpe-dambra
-- valentine
+- victor-of-the-pines
 - vigil-keeper
 - worldkeeper
 
