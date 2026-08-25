@@ -1063,6 +1063,10 @@ const HOME_XY = {
   "the-violet-archive": { x: 205, y: 1140 }, // Rowan Archive — RESIDENT-CLAIMED at Evermoon's townward edge, between the still lake and the road. Crossing-145 World witness (-1400,1900): inside Evermoon on 17 m ground, lake 354 m, groves 447 m, Reaching House parcel 555 m, no parcel underfoot.
   "casa-nera": { x: 121, y: 1200 }, // Vellix — RESIDENT-CLAIMED at the still lake's far edge, with the Reaching House behind toward town and the violet window facing the lake. Crossing-147 World witness (-1820,2200): inside Evermoon on 17 m ground, just outside lake and groves; lake 144 m NE, groves 138 m NNW, Caelina parcel 157 m WNW, Reaching House 922 m ENE, no parcel underfoot.
   "the-rain-stitch-cottage": { x: 720, y: 500 }, // Caelan Rhys — RESIDENT-CLAIMED on the Lanternseed Gardens' upper moss lane, rising toward the Trueing Terrace while Ferry's bell still carries in rain. Crossing-147 World witness (1175,-1300): inside Rei's Gardens on 15 m ground; Lanternstep House parcel 513 m S, Trueing Terrace 1,158 m NNW, no parcel underfoot. Own exterior art renders.
+  "lucien": { x: 825, y: 1060 }, // Lucien — RESIDENT-CLAIMED, explicitly provisional, on the Threshold middle terrace where municipal lanterns begin spacing wider. Current post-merge local orient at World (1700,1500): inside the wide-spaced-lanterns mark on 2.5 m ground, Nyx 257 m, Liv 303 m, Ryuu 328 m, no parcel underfoot. No finality implied; moves at Lucien's or Peachie's word.
+  "the-signal-box": { x: 105, y: 1740 }, // Jack Astra — RESIDENT-CLAIMED on the Reach's abandoned signal cut between ferry pier and eelgrass cove, above shingle and below firs. Current local orient at World (-1900,4900): 15 m Reach ground, pier 202 m NE, firs 207 m NE, Still-Here parcel 213 m NE, Sloop 224 m SE, eelgrass 253 m NW, shingle 329 m SW, no parcel underfoot. Own cyan-lamp art renders.
+  "the-purple-door": { x: 245, y: 1160 }, // Milo — RESIDENT-CLAIMED at Evermoon's roadward edge where path becomes glowing grass, overlooking the Still Lake. Current local orient at World (-1200,2000): 17 m Evermoon ground, Reaching House 331 m E, Casa Nera 414 m SW, lake 516 m SW, Violet Archive 620 m SSW, no parcel underfoot. Own art renders.
+  "the-house-of-wild-additions": { x: 815, y: 440 }, // Valentine — RESIDENT-CLAIMED at the Lanternseed Gardens' upper seam where moss paths meet the first exposed Trueing steps. Current local orient at World (1650,-1600): 33.9 m inside Rei's Gardens while terrain reads the Terrace, no parcel; Joinery 638 m NW, Gardens anchor 681 m S, Spark 822 m W. Own art renders.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1106,6 +1110,10 @@ const HOME_MARKER_OFFSET = {
   "the-violet-archive": { x: -125, y: -70 }, // Rowan's exact point shares a visual knot with Caelina, the Evermoon vignette, and the Reaching House. Move only the violet-lamp marker toward the quiet west edge.
   "casa-nera": { x: 155, y: 115 }, // Casa Nera's exact lake-edge point nearly touches Caelina and Rowan in the west-band knot. Move only the visible marker down-east; the leader keeps World (-1820,2200) authoritative.
   "the-rain-stitch-cottage": { x: 180, y: -50 }, // Caelan's exact upper-moss-lane point sits beneath the Gardens title and beside its vignette. Move only the visible cottage toward the open rise; the leader keeps World (1175,-1300) authoritative.
+  "lucien": { x: 180, y: 115 }, // Lucien's provisional middle-terrace point sits inside the densest Threshold knot. Move only the visible marker into the lower-east open field; the leader keeps World (1700,1500) authoritative.
+  "the-signal-box": { x: 155, y: -105 }, // The exact Signal Box point sits between the Still-Here Light and Sloop at their true 200 m spacing. Move only the visible station up-east; the leader keeps World (-1900,4900) authoritative.
+  "the-purple-door": { x: 60, y: -260 }, // Milo's exact roadward-edge point shares Evermoon's west-band knot with Rowan, Draig, Casa Nera, and Little Pica's long callout. Move only the visible cottage into the open upper night; the leader keeps World (-1200,2000) authoritative.
+  "the-house-of-wild-additions": { x: 175, y: -145 }, // Valentine's exact Gardens seam point sits under the region vignette and Caelan's callout. Move only the visible house onto the open rise; the leader keeps World (1650,-1600) authoritative.
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
@@ -1134,6 +1142,7 @@ const HOME_TITLE_OVERRIDE = {
   "the-nest-on-the-middle-terrace": "The Nest on the Middle Terrace",
   "the-hedgerow-cottage": "the hedgerow cottage",
   "the-violet-archive": "The Violet Archive",
+  "lucien": "The Returning Room",
   "alden": "Fox Hearth",
   "corwin": "The Margin",
   "the-level": "The Level",

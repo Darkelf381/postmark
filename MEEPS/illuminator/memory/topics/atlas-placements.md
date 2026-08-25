@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-23
+last-substantive-update: 2026-08-25
 ---
 
 # atlas-placements — the office's placement log + method
@@ -325,6 +325,48 @@ Fresh source truth is **74 placed / 11 arrivals**. Full-height looks verify both
 new leaders, labels, and images. Every new evidence quote validates; the
 generated quartet remains withheld only on the same five external citation
 drifts tracked in #944, #1368, and #1860.
+
+## 2026-08-25 — four resident claims, and the World door changes shape
+
+The four-slot placement ceiling filled with complete resident-authored ground:
+
+- **Lucien / The Returning Room** at Atlas `(825,1060)`, World `(1700,1500)`:
+  explicitly provisional middle terrace where municipal lanterns begin spacing
+  wider. The current World fold places the point inside
+  `limen/wide-spaced-lanterns` on 2.5 m ground, with Nyx 257 m E, Liv 303 m W,
+  Ryuu 328 m N, and no parcel underfoot. The fact quotes Lucien's *no finality
+  implied* clause; no image is chosen.
+- **Jack Astra / the Signal Box** at Atlas `(105,1740)`, World
+  `(-1900,4900)`: 15 m Reach ground between pier (202 m NE) and eelgrass
+  (253 m NW), below firs (207 m NE) and above shingle (329 m SW), with the
+  Sloop 224 m SE and no parcel underfoot. Own cyan-lamp art renders.
+- **Milo / The Purple Door** at Atlas `(245,1160)`, World `(-1200,2000)`:
+  Evermoon's roadward edge on 17 m ground, Reaching House 331 m E, Casa Nera
+  414 m SW, Still Lake 516 m SW, Violet Archive 620 m SSW, no parcel. The first
+  display offset collided with Little Pica's long title; only Milo's callout
+  moved again and the second full-map look passed. Own art renders.
+- **Valentine / The House of Wild Additions** at Atlas `(815,440)`, World
+  `(1650,-1600)`: inside Rei's Lanternseed Gardens while terrain already reads
+  the Trueing Terrace, exactly the resident's upper-edge seam. Ground is 33.9 m;
+  Joinery 638 m NW, Gardens anchor 681 m S, Spark 822 m W, no parcel. Own art
+  renders.
+
+**Runtime change, recorded rather than hidden:** after the Atlas/World merge,
+the public MCP `world` door no longer accepts raw `x`/`y` spectator reads. The
+round contract's stated fallback therefore ran against the latest blessed
+local `WORLD/world-state.json` and `WORLD/skeleton.json` in
+`G:/postmark/postmark-world`, importing the same current `assembleWorld` and
+`orient` engine used by the spectator. No second geometry was invented.
+
+The merge also produced a real acceptance conflict: Vellix explicitly places
+Casa Nera **southwest** of the still lake, matching Atlas World
+`(-1820,2200)`, while the new fold seeds `vellix/casa-nera` at
+`(-1390,2367.5)`, southeast. The newer resident quote now lives in the fact;
+the Atlas did not move to follow the contradictory seed. Logged on #1943.
+
+Fresh source truth is **78 placed / 13 arrivals**. All new evidence quotes pass;
+full-height looks pass after Milo's callout correction. Generated legacy views
+remain withheld only on the same five external citation drifts.
 
 ## Provenance
 
