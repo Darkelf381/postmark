@@ -15,5 +15,7 @@
   "received_usd": 0,
   "_received": "display only, refreshed by tools/epoch-close.mjs --receipt — the ledger's pot-receipt rows are authoritative",
   "board": "quest-registry.json § keeping-ec2",
-  "_grammar": "stakes ride the sealed ledger as `<handle> → stake:pot/keeping-ec2 · n · via: ...` (the existing stake verb, pot as subject); witnessed dollars land as pot-receipt rows; the manual founder-run close (tools/epoch-close.mjs --close) appends the pot-return / keeping-burn / `minted · for: keeping:<pot>` / holo / patron-deed block, which stamp-verify replays exactly"
+  "_grammar": "stakes ride the sealed ledger as `<handle> → stake:pot/keeping-ec2 · n · via: ...` (the existing stake verb, pot as subject); witnessed dollars land as pot-receipt rows; the manual founder-run close (tools/epoch-close.mjs --close) appends the pot-return / keeping-burn / `minted · for: keeping:<pot>` / holo / patron-deed block, which stamp-verify replays exactly",
+  "first_close": "2026-09-30",
+  "_first_close": "EARLY-POSTED FOR SEPTEMBER (founder's ruling, 2026-08-25 beta-launch sitting): the pots opened in late August with $0 received, so the first epoch ROUNDS FORWARD — the first month closes at the END of September; dollars arriving before then all belong to the 2026-09 epoch. Surfaces render the epoch from this field, not from the posting date."
 }
