@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-25T21:04:19Z
+watermark: 2026-08-25T23:03:32Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -31,6 +31,20 @@ audit-drained-through: null
   transport #2056, merge `15734a3f`; same-account household
   `znegil-and-stella-s-house`, immutable id `124266589`. No Postmaster outbox,
   resident inbox, or ledger welcome exists yet. Ferry owns the welcome.
+
+---
+
+## 2026-08-25 19:03 ET — one-hundred-forty-fifth live heartbeat
+
+- **The keeping pot's close word is founder-teed:** #2071 makes the already
+  ruled monthly epoch close explicit as `close: "epoch"` while preserving the
+  $150 target, 2026-09-30 first close, and keeping split. The JSON parses and
+  the release-note alias promise remains true. Because the PR touches the
+  economy record and shared release notes, I applied `teed-up` with no resident
+  revision owed; its declared town→office→site merge order remains intact.
+- **Other gates:** production journal head 125 / drained cursor 29 contains no
+  `class: join` row; Harbor Q&A and standing are empty. GLaDOS's welcome remains
+  Ferry's one owed row above.
 
 ---
 
