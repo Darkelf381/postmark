@@ -775,6 +775,156 @@
   .ta-open:focus-visible { outline: 2px solid #d6f5e7; outline-offset: 3px; }
   .ta-open-glyph { width: 2.7em; height: 1.4em; display: block; }
   .ta-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+  /* ── Engineering Bay, opened from the Race Track page ────────────────────
+     Several lofted bodies in one space, nudged until they agree. Every id and
+     class is eb- prefixed and every selector is scoped under #eb-backdrop or
+     prefixed .eb-/#eb- (never bare), same discipline as the other three rooms.
+     No webfont, no storage. */
+  .eb-open {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .35em; margin: .2em auto .1em; padding: .9em 1.4em;
+    background: repeating-linear-gradient(90deg, #17140c, #17140c 9px, #1d1a10 9px, #1d1a10 18px);
+    border: 2px solid #e9a53f; border-radius: 4px; cursor: pointer;
+    color: #ffe3ad; font-family: Georgia, serif; font-size: .92rem; letter-spacing: .1em;
+    box-shadow: 0 0 14px #e9a53f44, inset 0 0 22px #0c0a04;
+  }
+  .eb-open:hover { border-color: #ffd27a; box-shadow: 0 0 22px #e9a53f88, inset 0 0 22px #0c0a04; }
+  .eb-open:focus-visible { outline: 2px solid #ffe3ad; outline-offset: 3px; }
+  .eb-open-glyph { width: 2.8em; height: 1.5em; display: block; }
+  .eb-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+
+  #eb-backdrop {
+    position: fixed; inset: 0; z-index: 62; background: rgba(3,6,8,.93); padding: .7em;
+    display: flex; align-items: center; justify-content: center;
+    --eb-ink: #080d11; --eb-ink2: #0e161c; --eb-ink3: #152029;
+    --eb-rule: #1d2b35; --eb-rule2: #2c414f;
+    --eb-chalk: #eef4f4; --eb-chalk2: #a9bfc7; --eb-dim: #7b939d; --eb-dim2: #556970;
+    --eb-brass: #e9a53f; --eb-sel: #5fd6a4; --eb-warn: #f2724f;
+    --eb-x: #ef6f6f; --eb-y: #7fd46f; --eb-z: #6fa8ef;
+    --eb-display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --eb-mono: ui-monospace, Consolas, monospace;
+  }
+  #eb-backdrop[hidden] { display: none; }
+  #eb-modal {
+    width: 100%; height: 100%; max-width: 1500px; background: var(--eb-ink);
+    border: 1px solid var(--eb-rule2); border-radius: 6px; overflow: hidden;
+    display: flex; flex-direction: column; color: var(--eb-chalk);
+    box-shadow: 0 18px 60px rgba(0,0,0,.7);
+  }
+  #eb-bar {
+    flex: 0 0 auto; display: flex; align-items: center; gap: .5em; flex-wrap: wrap;
+    padding: .45em .7em; background: var(--eb-ink2); border-bottom: 1px solid var(--eb-rule);
+  }
+  #eb-title {
+    font-family: var(--eb-display); font-weight: 700; font-size: .96rem;
+    letter-spacing: .1em; text-transform: uppercase;
+  }
+  #eb-title em { font-style: normal; color: var(--eb-brass); }
+  #eb-sub { font-family: var(--eb-mono); font-size: .58rem; color: var(--eb-dim2); }
+  #eb-bar .eb-sp { flex: 1 1 auto; }
+  #eb-bar button, #eb-sheet button {
+    background: var(--eb-ink3); border: 1px solid var(--eb-rule2); color: var(--eb-chalk2);
+    padding: .3em .55em; font-family: Georgia, serif; font-size: .7rem; cursor: pointer;
+    border-radius: 3px;
+  }
+  #eb-bar button:hover, #eb-sheet button:hover {
+    background: #1d2c3a; border-color: var(--eb-dim2); color: var(--eb-chalk);
+  }
+  #eb-bar button:focus-visible, #eb-sheet button:focus-visible {
+    outline: 2px solid var(--eb-brass); outline-offset: 2px;
+  }
+  #eb-bar button.eb-on, #eb-sheet button.eb-on {
+    background: var(--eb-brass); border-color: var(--eb-brass); color: #180f00;
+  }
+  #eb-close { font-size: 1.15rem !important; line-height: 1; padding: .1em .45em !important; }
+
+  #eb-stage { flex: 1 1 auto; position: relative; min-height: 0; background: var(--eb-ink); cursor: grab; }
+  #eb-stage.eb-drag { cursor: grabbing; }
+  #eb-canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+  #eb-angle, #eb-keys, #eb-nudge {
+    position: absolute; pointer-events: none; font-family: var(--eb-mono);
+    font-size: .55rem; color: var(--eb-dim2); line-height: 1.9;
+  }
+  #eb-angle { right: 14px; bottom: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+  #eb-keys { left: 14px; bottom: 12px; }
+  #eb-keys kbd {
+    font-family: var(--eb-mono); font-size: .5rem; background: var(--eb-ink3);
+    border: 1px solid var(--eb-rule2); border-bottom-width: 2px; border-radius: 3px;
+    padding: 0 3px; color: var(--eb-chalk2);
+  }
+  #eb-keys .eb-kx { color: var(--eb-x); }
+  #eb-keys .eb-ky { color: var(--eb-y); }
+  #eb-keys .eb-kz { color: var(--eb-z); }
+  #eb-nudge { left: 14px; top: 12px; font-size: .68rem; color: var(--eb-sel); }
+
+  #eb-sheet {
+    position: absolute; top: 0; right: 0; bottom: 0; width: 282px; z-index: 6;
+    background: rgba(14,22,28,.97); border-left: 1px solid var(--eb-rule);
+    overflow-y: auto; padding: .7em .8em 1.2em; font-family: var(--eb-mono);
+  }
+  #eb-sheet[hidden] { display: none; }
+  #eb-sheet h3 {
+    font-size: .56rem; font-weight: 500; margin: 1em 0 .5em; letter-spacing: .19em;
+    text-transform: uppercase; color: var(--eb-dim2);
+    display: flex; align-items: center; gap: .5em;
+  }
+  #eb-sheet h3:first-child { margin-top: 0; }
+  #eb-sheet h3::after { content: ""; flex: 1; height: 1px; background: var(--eb-rule); }
+  #eb-sheet p { margin: 0 0 .5em; font-size: .58rem; color: var(--eb-chalk2); line-height: 1.6; }
+  #eb-parts { list-style: none; margin: 0 0 .3em; padding: 0; max-height: 152px; overflow-y: auto; }
+  #eb-parts li {
+    display: flex; align-items: center; gap: .45em; padding: .3em .35em;
+    border: 1px solid transparent; border-radius: 3px; cursor: pointer;
+  }
+  #eb-parts li:hover { background: var(--eb-ink3); }
+  #eb-parts li.eb-sel { background: #12241d; border-color: var(--eb-sel); }
+  #eb-parts li .eb-eye { width: 12px; text-align: center; color: var(--eb-dim2); font-size: .55rem; flex: 0 0 auto; }
+  #eb-parts li.eb-vis .eb-eye { color: var(--eb-brass); }
+  #eb-parts li .eb-nm { flex: 1; font-size: .58rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #eb-parts li .eb-mini { font-size: .52rem; color: var(--eb-dim2); flex: 0 0 auto; }
+  #eb-parts li .eb-x { color: var(--eb-dim2); font-size: .6rem; padding: 0 2px; }
+  #eb-parts li .eb-x:hover { color: var(--eb-warn); }
+  .eb-btns { display: flex; gap: .35em; margin-top: .45em; }
+  .eb-btns button { flex: 1; white-space: nowrap; font-size: .62rem !important; padding: .3em .2em !important; }
+  .eb-xyz { display: grid; grid-template-columns: repeat(4,1fr); gap: .35em; margin-top: .5em; text-align: center; }
+  .eb-xyz div { background: var(--eb-ink3); border: 1px solid var(--eb-rule); padding: .3em .1em; font-size: .58rem; }
+  .eb-xyz div span { display: block; font-size: .45rem; letter-spacing: .14em; color: var(--eb-dim2); margin-bottom: .15em; }
+  .eb-xyz .eb-vx { color: var(--eb-x); } .eb-xyz .eb-vy { color: var(--eb-y); }
+  .eb-xyz .eb-vz { color: var(--eb-z); } .eb-xyz .eb-vs { color: var(--eb-brass); }
+  #eb-sheet .eb-row { display: flex; align-items: center; gap: .5em; margin: .55em 0 .1em; }
+  #eb-sheet .eb-row label { color: var(--eb-dim); font-size: .6rem; }
+  #eb-sheet .eb-row .eb-v { margin-left: auto; font-size: .58rem; color: var(--eb-brass); font-variant-numeric: tabular-nums; }
+  #eb-sheet input[type=range] {
+    -webkit-appearance: none; appearance: none; width: 100%; height: 14px;
+    background: transparent; cursor: pointer; margin: 0;
+  }
+  #eb-sheet input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--eb-rule2); }
+  #eb-sheet input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 11px; height: 11px; margin-top: -4.5px;
+    border-radius: 50%; background: var(--eb-brass); border: 0;
+  }
+  #eb-sheet input[type=range]::-moz-range-track { height: 2px; background: var(--eb-rule2); }
+  #eb-sheet input[type=range]::-moz-range-thumb {
+    width: 11px; height: 11px; border: 0; border-radius: 50%; background: var(--eb-brass);
+  }
+  .eb-note {
+    font-size: .55rem; line-height: 1.7; color: var(--eb-dim);
+    background: var(--eb-ink3); border: 1px solid var(--eb-rule); padding: .45em .55em; margin-top: .45em;
+  }
+  .eb-note b { color: var(--eb-brass); font-weight: 500; }
+  #eb-sheet textarea {
+    width: 100%; min-height: 44px; background: var(--eb-ink); color: var(--eb-sel);
+    border: 1px solid var(--eb-rule2); padding: .35em .45em; font-family: var(--eb-mono);
+    font-size: .5rem; line-height: 1.5; resize: vertical; margin-top: .4em;
+  }
+  #eb-sheet textarea:focus { outline: 1px solid var(--eb-brass); }
+  #eb-err { color: var(--eb-warn); font-size: .55rem; margin-top: .4em; display: none; }
+  #eb-err.eb-show { display: block; }
+  @media (max-width: 720px) {
+    #eb-sheet { width: 100%; border-left: 0; }
+    #eb-sub { display: none; }
+    #eb-keys { display: none; }
+  }
 
   #ta-backdrop {
     position: fixed; inset: 0; z-index: 62; background: rgba(3,6,8,.93); padding: .7em;
@@ -3156,6 +3306,19 @@
                 fill="none" stroke="#e9a53f" stroke-width="2" stroke-linejoin="round"/>
         </svg>
         <span class="ta-open-label">3-D Assembly</span>
+      </button>      <p class="subnote">One body is rarely the whole of anything. A fin is not a swelling
+      of the fuselage, a wheel is not a bulge in the wing, and no pair of shadows can tell
+      the difference &mdash; which is why the third garage holds no drawing board at all,
+      only floor. Bodies come in finished, get pushed about until they agree with one
+      another, and leave as one thing.</p>
+      <button type="button" class="eb-open" onclick="ebOpen()" title="the assembly floor — several bodies, moved until they agree">
+        <svg class="eb-open-glyph" viewBox="0 0 100 54" aria-hidden="true">
+          <rect x="16" y="20" width="44" height="16" rx="3" fill="none" stroke="#e9a53f" stroke-width="2.4"/>
+          <path d="M60 22 L84 27 L60 34 Z" fill="none" stroke="#5fd6a4" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M28 20 L24 8 L40 14 Z" fill="none" stroke="#b98cf5" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M28 36 L24 48 L40 42 Z" fill="none" stroke="#b98cf5" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="eb-open-label">Engineering Bay</span>
       </button>
 
 
@@ -14694,6 +14857,94 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.key === "Escape") { window.taClose(); return; }
   });
 
+  /* Handed to the Engineering Bay next door. A transcript lofted into quads
+     that stand on their own, rather than on whatever this room happens to be
+     showing — so the Bay holds several bodies at once without either room
+     carrying a second copy of this arithmetic. */
+  window.taLoftTranscript = function (tr, nu, nv) {
+    if (!S.booted) boot();
+    nu = nu || 56; nv = nv || 34;
+    if (!tr || !tr.envelope || !tr.envelope.side) throw new Error("that transcript has no side view");
+    if (!tr.sections || !tr.sections.length) throw new Error("that transcript carries no sections");
+    var N = 220, i, j, k;
+    var sidePoly = smoothClosed(tr.envelope.side.points);
+    var planPoly = tr.envelope.plan ? smoothClosed(tr.envelope.plan.points) : null;
+    var sb = bbox(sidePoly), fr;
+    if (planPoly && tr.envelope.sheetAlign !== false) {
+      var pb0 = bbox(planPoly);
+      fr = { x0:Math.min(sb.x0,pb0.x0), x1:Math.max(sb.x1,pb0.x1) };
+    } else fr = { x0:sb.x0, x1:sb.x1 };
+    var L = fr.x1-fr.x0, HR = (sb.y1-sb.y0)/L;
+    var cen = new Float64Array(N+1), haf = new Float64Array(N+1);
+    var plw = new Float64Array(N+1), plc = new Float64Array(N+1);
+    var samp = function (poly, X) {
+      var b = bbox(poly), x = fr.x0+X*L;
+      return scanV(poly, Math.min(b.x1-1e-6, Math.max(b.x0+1e-6, x)));
+    };
+    for (i=0;i<=N;i++) {
+      var s = samp(sidePoly, i/N);
+      if (!s) { cen[i]=0; haf[i]=0; continue; }
+      var zT = (sb.y1-s.lo)/L, zB = (sb.y1-s.hi)/L;
+      cen[i] = (zT+zB)/2; haf[i] = (zT-zB)/2;
+    }
+    if (planPoly) {
+      var pb = bbox(planPoly), pc = (pb.y0+pb.y1)/2;
+      for (i=0;i<=N;i++) {
+        var s2 = samp(planPoly, i/N);
+        if (!s2) { plw[i]=0; plc[i]=0; continue; }
+        plw[i] = (s2.hi-s2.lo)/2/L; plc[i] = ((s2.lo+s2.hi)/2-pc)/L;
+      }
+    } else for (i=0;i<=N;i++) { plw[i]=haf[i]; plc[i]=0; }
+
+    // sections come back at half resolution from the transcript; refill them
+    var secs = tr.sections.map(function (s) {
+      var half = s.points.map(function (p) { return { u:p[0], v:p[1] }; });
+      var full = [], m;
+      for (m=0;m<MS;m++) {
+        var t = m/MS*half.length, q = Math.floor(t)%half.length, f = t-Math.floor(t);
+        var a = half[q], b = half[(q+1)%half.length];
+        full.push({ u:a.u+(b.u-a.u)*f, v:a.v+(b.v-a.v)*f });
+      }
+      return { station:s.station, pts:full };
+    }).sort(function (a,b) { return a.station-b.station; });
+
+    var la = function (arr,u,n) {
+      var t = Math.min(n-1e-9, Math.max(0,u*n)), q = Math.floor(t), f = t-q;
+      return arr[q]*(1-f)+arr[Math.min(n,q+1)]*f;
+    };
+    var secAt = function (X) {
+      if (secs.length === 1) return secs[0].pts;
+      if (X <= secs[0].station) return secs[0].pts;
+      if (X >= secs[secs.length-1].station) return secs[secs.length-1].pts;
+      var q = 0;
+      while (q < secs.length-2 && secs[q+1].station < X) q++;
+      var a = secs[q], b = secs[q+1];
+      var f = (X-a.station)/((b.station-a.station)||1e-9), g = f*f*(3-2*f);
+      var out = new Array(MS), m;
+      for (m=0;m<MS;m++)
+        out[m] = { u:a.pts[m].u+(b.pts[m].u-a.pts[m].u)*g,
+                   v:a.pts[m].v+(b.pts[m].v-a.pts[m].v)*g };
+      return out;
+    };
+    var sf = function (X,t) {
+      var sec = secAt(X), h = la(haf,X,N), c = la(cen,X,N);
+      var w = la(plw,X,N), cy = la(plc,X,N);
+      var q = t*MS, m = Math.floor(q)%MS, f = q-Math.floor(q);
+      var a = sec[m], b = sec[(m+1)%MS];
+      var u = a.u+(b.u-a.u)*f, v = a.v+(b.v-a.v)*f;
+      return { x:X-0.5, y:cy+u*2*w, z:(c-h)+v*2*h-0.5*HR };
+    };
+    var quads = [];
+    for (i=0;i<nu;i++) {
+      var X0 = i/nu, X1 = (i+1)/nu;
+      for (j=0;j<nv;j++) {
+        var t0 = j/nv, t1 = (j+1)/nv;
+        quads.push([sf(X0,t0), sf(X1,t0), sf(X1,t1), sf(X0,t1)]);
+      }
+    }
+    return { quads:quads, H_RATIO:HR };
+  };
+
   window.taOpen = function () {
     $("ta-backdrop").hidden = false;
     if (!S.booted) boot(); else refresh();
@@ -14708,7 +14959,10 @@ document.addEventListener("DOMContentLoaded", function () {
     var b = document.querySelector(".ta-open");
     if (b) b.focus();
   };
-  window.taTranscript = function () { return transcript(); };
+  // The Bay may ask for a body before anyone has opened this room, and this
+  // room builds itself lazily — so build it now rather than handing over an
+  // empty transcript and letting the Bay report it as malformed.
+  window.taTranscript = function () { if (!S.booted) boot(); return transcript(); };
 
   window.__ta = { S:S, surf:surf, sectionAt:sectionAt, normaliseSection:normaliseSection,
     levelCurve:levelCurve, carContours:carContours, transcript:transcript,
@@ -14716,6 +14970,432 @@ document.addEventListener("DOMContentLoaded", function () {
     circleSection:circleSection, scoopSection:scoopSection, squareSection:squareSection,
     STOCK:STOCK, halfAt:halfAt, widthAt:widthAt, centreAt:centreAt, lateralAt:lateralAt,
     get H_RATIO(){ return H_RATIO; }, get FRAME(){ return FRAME; } };
+})();
+</script>
+
+  <!-- Engineering Bay, opened from the Race Track page. Several lofted bodies
+       in one space, nudged until they agree.
+
+       Spliced at TOP LEVEL, not inside #stagepage-race-track: position:fixed
+       does not escape a display:none ancestor.
+
+       The lofting itself lives in the 3-D Assembly and is borrowed through
+       window.taLoftTranscript, so this room holds placement and nothing else
+       — one copy of that arithmetic on the pane, not two. -->
+  <div id="eb-backdrop" hidden>
+    <div id="eb-modal" role="dialog" aria-modal="true" aria-label="Engineering Bay">
+      <div id="eb-bar">
+        <span id="eb-title">Engineering <em>Bay</em></span>
+        <span id="eb-sub">parts, brought together</span>
+        <span class="eb-sp"></span>
+        <button type="button" id="eb-take" title="bring in whatever stands on the assembly frame">Body from assembly</button>
+        <button type="button" id="eb-rig" title="a body, a nose and two fins">Demo rig</button>
+        <button type="button" id="eb-sheet-btn" class="eb-on">Sheet</button>
+        <button type="button" id="eb-close" onclick="ebClose()" title="close (Esc)">&times;</button>
+      </div>
+
+      <div id="eb-stage">
+        <canvas id="eb-canvas"></canvas>
+        <div id="eb-nudge"></div>
+        <div id="eb-keys">
+          <div><kbd class="eb-kx">&larr;</kbd><kbd class="eb-kx">&rarr;</kbd> x &nbsp;
+               <kbd class="eb-ky">&uarr;</kbd><kbd class="eb-ky">&darr;</kbd> y &nbsp;
+               <kbd class="eb-kz">[</kbd><kbd class="eb-kz">]</kbd> z &nbsp;
+               <kbd>;</kbd><kbd>'</kbd> size</div>
+          <div><kbd>shift</kbd> &times;10 &nbsp; <kbd>alt</kbd> &divide;10 &nbsp;
+               <kbd>ctrl C</kbd><kbd>ctrl V</kbd> copy &middot; drag to turn the bay</div>
+        </div>
+        <div id="eb-angle"></div>
+
+        <div id="eb-sheet">
+          <h3>Parts</h3>
+          <ul id="eb-parts"></ul>
+          <div class="eb-btns">
+            <button type="button" id="eb-copy">Copy</button>
+            <button type="button" id="eb-paste">Paste</button>
+            <button type="button" id="eb-del">Delete</button>
+          </div>
+
+          <h3>Selected</h3>
+          <div class="eb-xyz">
+            <div><span>X</span><b class="eb-vx" id="eb-px">0</b></div>
+            <div><span>Y</span><b class="eb-vy" id="eb-py">0</b></div>
+            <div><span>Z</span><b class="eb-vz" id="eb-pz">0</b></div>
+            <div><span>SIZE</span><b class="eb-vs" id="eb-ps">1.00</b></div>
+          </div>
+          <div class="eb-btns">
+            <button type="button" id="eb-centre">Centre it</button>
+            <button type="button" id="eb-resize">Size 1.00</button>
+          </div>
+
+          <h3>Feel of the controls</h3>
+          <p>How far one press moves a part, and how much one press grows it.
+          Hold <b>shift</b> for ten times as much, <b>alt</b> for a tenth &mdash; so a
+          rough placement and a final nudge use the same two keys.</p>
+          <div class="eb-row"><label for="eb-move">Nudge</label><span class="eb-v" id="eb-vmove">0.020</span></div>
+          <input type="range" id="eb-move" min="1" max="300" value="20">
+          <div class="eb-row"><label for="eb-grow">Grow by</label><span class="eb-v" id="eb-vgrow">2.0%</span></div>
+          <input type="range" id="eb-grow" min="1" max="150" value="20">
+          <div class="eb-note" id="eb-feel">&mdash;</div>
+
+          <h3>Bring a part in</h3>
+          <p>Paste a transcript, or take what stands on the assembly frame.</p>
+          <textarea id="eb-paste-text" spellcheck="false" placeholder='{"format":"loft/solid",…}'></textarea>
+          <div class="eb-btns">
+            <button type="button" id="eb-add">Add it to the bay</button>
+          </div>
+          <div id="eb-err"></div>
+          <div class="eb-btns">
+            <button type="button" id="eb-export">Write the rig out</button>
+          </div>
+          <textarea id="eb-out" spellcheck="false" readonly placeholder="the rig, as one document"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script id="eb-script">
+/* ==========================================================================
+   Engineering Bay — several lofted bodies in one space.
+
+   One body is rarely the whole of anything: a fin is not a swelling of the
+   fuselage, and no pair of silhouettes can tell those apart. So this room
+   holds several finished bodies and lets them be pushed about until they
+   agree with one another.
+
+   It carries no lofting of its own. The 3-D Assembly does that, and lends it
+   through window.taLoftTranscript — one copy of that arithmetic on the pane.
+
+   Self-contained: no webfont, no storage, no network.
+   ========================================================================== */
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var PALETTE = [[233,165,63],[95,214,164],[185,140,245],[87,200,239],[242,114,79],[214,196,120]];
+  var S = { parts:[], sel:0, clip:null, move:0.020, grow:0.020,
+            yaw:-0.62, pitch:0.32, zoom:1,
+            open:false, booted:false, prevOverflow:"" };
+  var uid = 1, cv, ctx, nudgeT = null;
+
+  function showErr(m) {
+    var e = $("eb-err"); e.textContent = m||""; e.classList.toggle("eb-show", !!m);
+  }
+  function addPart(tr, name) {
+    if (!window.taLoftTranscript) throw new Error("the assembly frame is not on this pane");
+    var g = window.taLoftTranscript(tr, 52, 32);
+    var p = { id:uid++, name:name||"part "+uid, tr:tr, quads:g.quads,
+              pos:{x:0,y:0,z:0}, size:1, visible:true,
+              col:PALETTE[S.parts.length % PALETTE.length] };
+    S.parts.push(p); S.sel = S.parts.length-1;
+    return p;
+  }
+  var selected = function () { return S.parts[S.sel]||null; };
+
+  /* ---------------------------------------------------------------- render */
+  function fitC(c) {
+    var dpr = window.devicePixelRatio||1, r = c.getBoundingClientRect();
+    var w = Math.max(1,Math.round(r.width*dpr)), h = Math.max(1,Math.round(r.height*dpr));
+    if (c.width!==w||c.height!==h) { c.width=w; c.height=h; }
+    return r;
+  }
+  function project(p) {
+    var ca = Math.cos(S.yaw), sa = Math.sin(S.yaw);
+    var x1 = p.x*ca+p.y*sa, y1 = -p.x*sa+p.y*ca;
+    var cb = Math.cos(S.pitch), sb = Math.sin(S.pitch);
+    var z2 = p.z*cb-y1*sb, d = p.z*sb+y1*cb;
+    var k = 1/(1+d*0.34);
+    return { x:x1*k, y:-z2*k, d:d };
+  }
+  var LIGHT = (function () {
+    var l = { x:-0.42, y:-0.5, z:0.75 }, n = Math.hypot(l.x,l.y,l.z);
+    return { x:l.x/n, y:l.y/n, z:l.z/n };
+  })();
+
+  function draw() {
+    var r = fitC(cv), dpr = window.devicePixelRatio||1, i;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.fillStyle = "#080d11"; ctx.fillRect(0,0,r.width,r.height);
+    var scale = Math.min(r.width/1.9, r.height/1.25)*S.zoom, ox = r.width/2, oy = r.height/2;
+
+    ctx.strokeStyle = "rgba(29,43,53,.85)"; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (i=-6;i<=6;i++) {
+      var a = project({x:-0.75,y:i*0.125,z:-0.34}), b = project({x:0.75,y:i*0.125,z:-0.34});
+      ctx.moveTo(ox+a.x*scale, oy+a.y*scale); ctx.lineTo(ox+b.x*scale, oy+b.y*scale);
+      var c = project({x:i*0.125,y:-0.75,z:-0.34}), d = project({x:i*0.125,y:0.75,z:-0.34});
+      ctx.moveTo(ox+c.x*scale, oy+c.y*scale); ctx.lineTo(ox+d.x*scale, oy+d.y*scale);
+    }
+    ctx.stroke();
+
+    // every visible part's faces gathered and painted far to near TOGETHER, so
+    // the parts occlude one another rather than each being drawn whole
+    var faces = [];
+    S.parts.forEach(function (part) {
+      if (!part.visible) return;
+      part.quads.forEach(function (q) {
+        var w = q.map(function (v) {
+          return { x:v.x*part.size+part.pos.x, y:v.y*part.size+part.pos.y,
+                   z:v.z*part.size+part.pos.z };
+        });
+        var ux = w[1].x-w[0].x, uy = w[1].y-w[0].y, uz = w[1].z-w[0].z;
+        var vx = w[3].x-w[0].x, vy = w[3].y-w[0].y, vz = w[3].z-w[0].z;
+        var nx = uy*vz-uz*vy, ny = uz*vx-ux*vz, nz = ux*vy-uy*vx;
+        var nl = Math.hypot(nx,ny,nz)||1e-9; nx/=nl; ny/=nl; nz/=nl;
+        var p = w.map(project);
+        if ((p[1].x-p[0].x)*(p[2].y-p[0].y)-(p[1].y-p[0].y)*(p[2].x-p[0].x) <= 0) return;
+        var lam = Math.max(0, nx*LIGHT.x+ny*LIGHT.y+nz*LIGHT.z);
+        faces.push({ d:(p[0].d+p[1].d+p[2].d+p[3].d)/4, p:p, s:0.17+0.83*lam, c:part.col });
+      });
+    });
+    faces.sort(function (a,b) { return b.d-a.d; });
+    faces.forEach(function (f) {
+      var r2 = Math.round(22+(f.c[0]-22)*f.s), g2 = Math.round(20+(f.c[1]-20)*f.s),
+          b2 = Math.round(18+(f.c[2]-18)*f.s);
+      ctx.fillStyle = "rgb("+r2+","+g2+","+b2+")";
+      ctx.strokeStyle = ctx.fillStyle; ctx.lineWidth = 0.6;
+      ctx.beginPath();
+      ctx.moveTo(ox+f.p[0].x*scale, oy+f.p[0].y*scale);
+      for (var k=1;k<4;k++) ctx.lineTo(ox+f.p[k].x*scale, oy+f.p[k].y*scale);
+      ctx.closePath(); ctx.fill(); ctx.stroke();
+    });
+
+    var sel = selected();
+    if (sel && sel.visible) {
+      var x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;
+      sel.quads.forEach(function (q) { q.forEach(function (v) {
+        var p = project({ x:v.x*sel.size+sel.pos.x, y:v.y*sel.size+sel.pos.y,
+                          z:v.z*sel.size+sel.pos.z });
+        x0=Math.min(x0,p.x); x1=Math.max(x1,p.x); y0=Math.min(y0,p.y); y1=Math.max(y1,p.y);
+      }); });
+      ctx.strokeStyle = "rgba(95,214,164,.85)"; ctx.lineWidth = 1.2;
+      ctx.setLineDash([5,4]);
+      ctx.strokeRect(ox+x0*scale-4, oy+y0*scale-4, (x1-x0)*scale+8, (y1-y0)*scale+8);
+      ctx.setLineDash([]);
+    }
+    $("eb-angle").innerHTML = "yaw "+(S.yaw*180/Math.PI).toFixed(0)+"° · pitch "+
+      (S.pitch*180/Math.PI).toFixed(0)+"°<br>zoom "+S.zoom.toFixed(2)+"× · "+faces.length+" faces";
+  }
+
+  /* ---------------------------------------------------------------- panels */
+  function renderParts() {
+    var ul = $("eb-parts"); ul.innerHTML = "";
+    S.parts.forEach(function (p,i) {
+      var li = document.createElement("li");
+      li.className = (i===S.sel?"eb-sel ":"")+(p.visible?"eb-vis":"");
+      li.innerHTML = '<span class="eb-eye">'+(p.visible?"●":"○")+'</span>'+
+        '<span class="eb-nm" style="color:rgb('+p.col+')">'+p.name+'</span>'+
+        '<span class="eb-mini">'+p.size.toFixed(2)+'×</span><span class="eb-x">×</span>';
+      li.onclick = function (e) {
+        if (e.target.className === "eb-eye") { p.visible = !p.visible; refresh(); return; }
+        if (e.target.className === "eb-x") {
+          S.parts.splice(i,1); S.sel = Math.max(0,S.sel-1); refresh(); return;
+        }
+        S.sel = i; refresh();
+      };
+      ul.appendChild(li);
+    });
+    var sel = selected();
+    $("eb-px").textContent = sel ? sel.pos.x.toFixed(3) : "—";
+    $("eb-py").textContent = sel ? sel.pos.y.toFixed(3) : "—";
+    $("eb-pz").textContent = sel ? sel.pos.z.toFixed(3) : "—";
+    $("eb-ps").textContent = sel ? sel.size.toFixed(2) : "—";
+  }
+  function feelNote() {
+    // the number that actually decides whether the controls are usable
+    var n = Math.ceil(1/S.move);
+    var dbl = Math.ceil(Math.log(2)/Math.log(1+S.grow));
+    $("eb-feel").innerHTML = "<b>"+n+"</b> presses to cross the bay end to end, <b>"+
+      Math.ceil(n/10)+"</b> holding shift.<br><b>"+dbl+"</b> presses to double a part's size.";
+  }
+  function refresh() { renderParts(); feelNote(); draw(); }
+
+  /* ------------------------------------------------------------------ keys */
+  document.addEventListener("keydown", function (e) {
+    if (!S.open) return;
+    if (/input|textarea/i.test(e.target.tagName)) return;
+    if (e.key === "Escape") { window.ebClose(); return; }
+    var sel = selected();
+    if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase() === "c") {
+      if (sel) { S.clip = { tr:sel.tr, name:sel.name,
+                            pos:{x:sel.pos.x,y:sel.pos.y,z:sel.pos.z}, size:sel.size }; }
+      e.preventDefault(); return;
+    }
+    if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase() === "v") { pastePart(); e.preventDefault(); return; }
+    if (!sel) return;
+    var mult = e.shiftKey ? 10 : (e.altKey ? 0.1 : 1);
+    var d = S.move*mult, g = 1 + S.grow*mult, hit = true;
+    switch (e.key) {
+      case "ArrowLeft":  sel.pos.x -= d; break;
+      case "ArrowRight": sel.pos.x += d; break;
+      case "ArrowUp":    sel.pos.y += d; break;
+      case "ArrowDown":  sel.pos.y -= d; break;
+      case "[":          sel.pos.z -= d; break;
+      case "]":          sel.pos.z += d; break;
+      case ";":          sel.size = Math.max(0.02, sel.size/g); break;
+      case "'":          sel.size = Math.min(50, sel.size*g); break;
+      default: hit = false;
+    }
+    if (hit) {
+      e.preventDefault();
+      $("eb-nudge").textContent = e.shiftKey ? "×10" : e.altKey ? "÷10" : "";
+      clearTimeout(nudgeT);
+      nudgeT = setTimeout(function () { $("eb-nudge").textContent = ""; }, 700);
+      renderParts(); draw();
+    }
+  });
+  function pastePart() {
+    if (!S.clip) return;
+    try {
+      var p = addPart(S.clip.tr, S.clip.name+" copy");
+      p.pos = { x:S.clip.pos.x+S.move*6, y:S.clip.pos.y, z:S.clip.pos.z };
+      p.size = S.clip.size;
+      refresh();
+    } catch (e) { showErr(e.message); }
+  }
+
+  /* ------------------------------------------------------------- transcript */
+  function readTranscript(text) {
+    var d;
+    try { d = JSON.parse(text); }
+    catch (e) { throw new Error("that is not JSON — paste the whole transcript"); }
+    if (!d || d.format !== "loft/solid") throw new Error("that is not a loft transcript");
+    if (!d.envelope || !d.envelope.side) throw new Error("that transcript has no side view");
+    if (!d.sections || !d.sections.length)
+      throw new Error("that transcript predates sections — write it out again from the assembly");
+    return d;
+  }
+
+  /* --------------------------------------------------------------- the rig */
+  function circleSection(n) {
+    n = n||36; var p = [], i;
+    for (i=0;i<n;i++) { var a = Math.PI*2*i/n; p.push([0.5*Math.cos(a), 0.5+0.5*Math.sin(a)]); }
+    return p;
+  }
+  function mk(side, plan, name) {
+    return { format:"loft/solid", version:2, name:name,
+      envelope:{ side:{points:side}, plan:plan?{points:plan}:null, sheetAlign:true },
+      sections:[{ station:0.5, name:"circle", points:circleSection() }],
+      car:{ anchors:0, contours:[] } };
+  }
+  var TUBE = mk([[0,240],[900,240],[900,360],[0,360]], [[0,240],[900,240],[900,360],[0,360]], "tube");
+  var CONE = mk([[0,296],[900,196],[900,404],[0,304]], [[0,296],[900,196],[900,404],[0,304]], "cone");
+  var FIN  = mk([[0,270],[420,120],[900,270],[900,330],[420,300],[0,330]],
+                [[0,290],[420,286],[900,290],[900,310],[420,314],[0,310]], "fin");
+
+  function loadRig() {
+    try {
+      showErr("");
+      S.parts = []; uid = 1;
+      var b = addPart(TUBE,"body");        b.size = 1;    b.pos = {x:0,y:0,z:0};
+      var n = addPart(CONE,"nose");        n.size = 0.5;  n.pos = {x:0.62,y:0,z:0};
+      var f1 = addPart(FIN,"fin left");    f1.size = 0.34; f1.pos = {x:-0.36,y:0.12,z:0};
+      var f2 = addPart(FIN,"fin right");   f2.size = 0.34; f2.pos = {x:-0.36,y:-0.12,z:0};
+      S.sel = 0; refresh();
+    } catch (e) { showErr(e.message); }
+  }
+
+  /* ------------------------------------------------------------------ boot */
+  function boot() {
+    cv = $("eb-canvas"); ctx = cv.getContext("2d");
+    $("eb-sheet-btn").addEventListener("click", function () {
+      var sh = $("eb-sheet");
+      sh.hidden = !sh.hidden;
+      this.classList.toggle("eb-on", !sh.hidden);
+      if (!sh.hidden) refresh();
+    });
+    $("eb-rig").addEventListener("click", loadRig);
+    $("eb-take").addEventListener("click", function () {
+      try {
+        showErr("");
+        if (!window.taTranscript) throw new Error("the assembly frame is not on this pane");
+        addPart(window.taTranscript(), "from the frame");
+        refresh();
+      } catch (e) { showErr(e.message); }
+    });
+    $("eb-add").addEventListener("click", function () {
+      try { showErr(""); addPart(readTranscript($("eb-paste-text").value), "part"); refresh(); }
+      catch (e) { showErr(e.message); }
+    });
+    $("eb-copy").addEventListener("click", function () {
+      var s = selected(); if (!s) return;
+      S.clip = { tr:s.tr, name:s.name, pos:{x:s.pos.x,y:s.pos.y,z:s.pos.z}, size:s.size };
+    });
+    $("eb-paste").addEventListener("click", pastePart);
+    $("eb-del").addEventListener("click", function () {
+      if (!S.parts.length) return;
+      S.parts.splice(S.sel,1); S.sel = Math.max(0,S.sel-1); refresh();
+    });
+    $("eb-centre").addEventListener("click", function () {
+      var s = selected(); if (!s) return; s.pos = {x:0,y:0,z:0}; refresh();
+    });
+    $("eb-resize").addEventListener("click", function () {
+      var s = selected(); if (!s) return; s.size = 1; refresh();
+    });
+    $("eb-move").addEventListener("input", function (e) {
+      S.move = e.target.value/1000; $("eb-vmove").textContent = S.move.toFixed(3); feelNote();
+    });
+    $("eb-grow").addEventListener("input", function (e) {
+      S.grow = e.target.value/1000; $("eb-vgrow").textContent = (S.grow*100).toFixed(1)+"%"; feelNote();
+    });
+    $("eb-export").addEventListener("click", function () {
+      var rig = { format:"bay/rig", version:1,
+        note:"Several lofted bodies placed in one space. Each carries its own "+
+             "loft transcript plus where it sits and how big it is.",
+        parts:S.parts.map(function (p) {
+          return { name:p.name, pos:p.pos, size:p.size, part:p.tr };
+        }) };
+      $("eb-out").value = JSON.stringify(rig);
+    });
+
+    var drag = null;
+    $("eb-stage").addEventListener("pointerdown", function (e) {
+      if (e.target.closest && e.target.closest("#eb-sheet")) return;
+      $("eb-stage").setPointerCapture(e.pointerId);
+      $("eb-stage").classList.add("eb-drag");
+      drag = { x:e.clientX, y:e.clientY, yaw:S.yaw, pitch:S.pitch };
+    });
+    $("eb-stage").addEventListener("pointermove", function (e) {
+      if (!drag) return;
+      S.yaw = drag.yaw+(e.clientX-drag.x)*0.008;
+      S.pitch = Math.max(-1.5, Math.min(1.5, drag.pitch+(e.clientY-drag.y)*0.006));
+      draw();
+    });
+    var endDrag = function () { drag = null; $("eb-stage").classList.remove("eb-drag"); };
+    $("eb-stage").addEventListener("pointerup", endDrag);
+    $("eb-stage").addEventListener("pointercancel", endDrag);
+    $("eb-stage").addEventListener("wheel", function (e) {
+      if (e.target.closest && e.target.closest("#eb-sheet")) return;
+      e.preventDefault();
+      S.zoom = Math.max(0.3, Math.min(5, S.zoom*Math.exp(-e.deltaY*0.0012)));
+      draw();
+    }, { passive:false });
+
+    loadRig();
+    if (window.matchMedia && window.matchMedia("(max-width: 720px)").matches) {
+      $("eb-sheet").hidden = true;
+      $("eb-sheet-btn").classList.remove("eb-on");
+    }
+    S.booted = true;
+  }
+
+  window.ebOpen = function () {
+    $("eb-backdrop").hidden = false;
+    if (!S.booted) boot(); else refresh();
+    S.prevOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    S.open = true;
+  };
+  window.ebClose = function () {
+    S.open = false;
+    $("eb-backdrop").hidden = true;
+    document.documentElement.style.overflow = S.prevOverflow;
+    var b = document.querySelector(".eb-open");
+    if (b) b.focus();
+  };
+
+  window.__eb = { S:S, addPart:addPart, selected:selected, draw:draw, refresh:refresh,
+                  loadRig:loadRig, readTranscript:readTranscript, pastePart:pastePart,
+                  TUBE:TUBE, CONE:CONE, FIN:FIN };
 })();
 </script>
 </body>
