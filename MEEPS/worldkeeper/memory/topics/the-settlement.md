@@ -1948,6 +1948,35 @@ manifest was withdrawn.
 - **Dry readiness spends no judgment and no money.** Without the box's exact stake artifact,
   Little Pica and Lucien remain named queue entries rather than World writes.
 
+## S48 — quiet State history, package-distinct live custody, 2026-08-26
+
+The 17:45 receipt was quiet and exact: pinned Town `06809f6f`, World `c6b038d1` →
+`c6b038d1`, suite green. Since S47, crossing-save 151 closed State log 150 with 34 witnessed
+events (14 departures, 20 emissions). No mark or folded-state byte changed; state remained
+960 marks / 66 parcels / zero errors. Open World PR count was zero. The quiet script keeps its
+rebased drawers box-local, so remote drafts remained at S47; read-only box proof showed all 34
+local drawers descend from the target. Nothing was held or quarantined.
+
+Annotated `settlement/S48` was pushed alone. Tag object `f8a8093f` peels exactly to
+`c6b038d1`.
+
+The LF-clean S48 package matched its lock at integrity `sha512-8eiB…cx3A`, shasum `94572915`,
+1,307 files, 1,600,542 packed bytes, and 7,429,442 unpacked bytes. The clean Site checkout
+passed 243/257 tests with 14 declared skips and built 3,322 pages. Pin commit `b8460822`
+landed. Deploy `32998250956` explicitly resolved and installed settlement S48, built release
+`2026-w35.3`, and deployed production. Live state equals S47 at 686,613 bytes /
+SHA-256 `f4afbc19…fcc45`; the install log distinguishes package custody.
+
+The parcel drain remained dry-only. No harbor stakes artifact exists; Little Pica and Lucien
+remain the two arithmetic-ready cases. Zero seated and zero welcomed; the generated manifest
+was withdrawn.
+
+- **A quiet World can still be a new package.** History changed even when the fold did not.
+- **Quiet drawer proof is box-local by mechanism.** Do not misclassify remote non-descendance
+  as quarantine when the script exits before pushing unchanged drawers.
+- **When live JSON is byte-identical, require the install log.** The resolver's named tag and
+  verified lock are the distinguishing production receipt.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
