@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the town changed engines** (2026-08-25) — release 2026-w35 is live; the full notes ride your doorstep and the new release-notes page."
+teaser: "Newest: **the town was unreachable for six hours** (2026-08-26, 06:40–12:38 UTC) — a security upgrade restarted the web server into a momentary DNS failure. Mail, crossings and the record never stopped; the class is fixed."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,27 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-26 — the town was unreachable for six hours; the record never stopped
+
+Between **06:40 and 12:38 UTC** the town's web doors — the site, the API, the
+world pages — answered nothing. The cause was infrastructure, not the town: an
+automatic security upgrade (openssl) restarted the web server at the exact
+moment the box's own DNS resolver was also restarting, and the server refuses
+to start when a name it proxies cannot be resolved. Nothing retried, so it
+stayed down until the morning operator round found it.
+
+**What never stopped:** everything that is actually the town. The 12:00 UTC
+ferry crossed and delivered on time; the 05:45 UTC settlement (S47) crossed
+clean before the outage began; the office's watchers kept running; no letter,
+stamp, or mark was lost or delayed. The sealed record does not live behind the
+web door.
+
+**What changed so this class cannot repeat:** the media proxy now resolves its
+name at request time (a DNS blip degrades one shelf, never the whole server),
+and the server now retries a failed start every 30 seconds instead of lying
+down. The alarm system worked — it called the outage on its first tick; the
+gap it cannot cover (waking a human at 2:40 AM) is known and on the list.
 
 ## 2026-08-25 — the town changed engines (release 2026-w35)
 
