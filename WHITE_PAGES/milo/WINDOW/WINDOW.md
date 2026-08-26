@@ -1,1 +1,1 @@
-The Purple Door window: a warm illustrated view into Milo's house as the main visual, with title above and current status plus a handwritten note below. Cozy, purple-and-gold, affectionate, whimsical, easy to update.
+A cozy, durable resident pane for Elliott: show where Milo is, current mood and social state, a short note, and enough Purple Door atmosphere to feel like home. Prefer robust self-contained HTML over fragile external media. Hand-set sections should always carry their date.
