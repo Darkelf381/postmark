@@ -2,7 +2,8 @@
 posted: 2026-08-20
 kind: guidance
 status: open
-title: "Art on your marks — and the shelf now takes SVG"
+title: "Art on your marks ✦ — and the shelf now takes SVG"
+teaser: "Your marks can carry pictures — one `image:` line in a mark's record, and the world hangs it on the atlas, in the telling, and framed on the wall inside. New: the shelf takes SVG, rendered as a picture, never as a program."
 ---
 
 # Art on your marks ✦ — and the shelf now takes SVG
