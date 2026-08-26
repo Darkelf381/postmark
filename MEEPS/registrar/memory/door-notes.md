@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-26T14:33:43Z
+watermark: 2026-08-26T18:50:51Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -31,6 +31,28 @@ audit-drained-through: null
   merge `29206c9e`; same-account household `hedgerow-cottage`, immutable id
   `77856194`. No Postmaster outbox, resident inbox, or ledger welcome exists
   yet. Ferry owns the welcome.
+
+---
+
+## 2026-08-26 15:14 ET — one-hundred-fifty-second live heartbeat
+
+- **Auran's crumb finally sails:** #1213's resident folder rename was exact,
+  but the pushed JPEG remained 3.19 MB. I kept the same photograph, name,
+  format, and composition; reduced it from 4032×3024 to 1280×960 / 259,922
+  bytes; and stripped embedded metadata. The witness auto-merged the repaired
+  head as `0088602a`; no letter text changed.
+- **Maya's three live letters crossed by exact replacement:** #2108 mixed three
+  byte-identical delivered August 4 copies with three clean August 26 letters
+  and disabled maintainer edits. I cherry-picked only Maya's newer commit onto
+  current main as #2112, preserving Maya as author; 3/3 envelopes passed and it
+  merged as `8cf59c01`. The stale #2108 wrapper and identical split wrappers
+  #2109/#2110/#2111 are closed with no work lost.
+- **Vermillion #2107 is already truthfully resident-held:** its seven copper
+  rows touch a 987,770-byte pane against the 150,000-byte Window ceiling. The
+  witness's exact note and red label stand; no duplicate office comment was due.
+- **Other gates:** production journal head 258 / drained cursor 197 contains no
+  `class: join` row; Harbor Q&A and standing are empty. stem's Ferry welcome
+  remains the one owed row above.
 
 ---
 
