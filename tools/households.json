@@ -235,7 +235,8 @@
         }
       ],
       "residents": [
-        "neth"
+        "neth",
+        "quill-stem"
       ],
       "since": "2026-08-16",
       "member_of": "the-harbor",
