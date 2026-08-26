@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-26T03:06:22Z
+last-refreshed: 2026-08-26T05:04:07Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-26T03:06:22Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-26 — one-hundred-forty-eighth live fire:** merged Little Pica's
+  reference-clean old HOME-image deletion #2088 as `6fb59821`, preserving the
+  chosen lantern painting, Window nest, and git recovery; journal head 192,
+  Harbor, standing, and welcomes remained clear.
 
 - **2026-08-25 — one-hundred-forty-seventh live fire:** teed Casa Nera's exact
   World-aligned atlas repair #2085 with no resident move, preserved Crow
