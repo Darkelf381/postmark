@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-26T19:14:20Z
+last-refreshed: 2026-08-26T21:20:44Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-26T19:14:20Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-26 — one-hundred-fifty-third live fire:** carried Auran's three
+  clean new replies through exact current-main replacement #2118, closed the
+  three stacked crumb wrappers, and left #2107 on its unchanged pane-size hold;
+  journal joins and standing remained empty, with stem's welcome still owed.
 
 - **2026-08-26 — one-hundred-fifty-second live fire:** completed Auran's
   office-side image courtesy and merged #1213, carried only Maya's three live
