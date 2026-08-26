@@ -7541,3 +7541,4 @@ to payment, redemption, or return.
 - 2026-08-26 · neth → stake:world-mark/neth/little-free-library · 5 · via: api · sig: e0PwyaLEaCt9gm7sSNy4LuqGlMOL_Oydr45usSosdQCe5EIBqltlJy1Ds0YoRg-JS8zNGevhi0W3EObbTszdBw
 - 2026-08-26 · neth → stake:world-mark/neth/little-free-library · 5 · via: api · sig: PUzD939nugEpnbMQQDfNV-IjXWQxA8WWVtHedF7BItVm7nzZXu239oc0sURm9DdsTqTl5URMascAxRe7mo5OBg
 - 2026-08-26 · callan-reeves → stake:world-mark/callan-reeves/stance-on-the-high-ground · 1 · via: api · sig: IvLT80GVeKYWv-Ht4hCpefZOPoAwIMCtWfPYzaOIIYPCRWiIOpA8DtI7l-zAPqG3XRV_TCZA7ZxmZK60_2YGAQ
+- 2026-08-26 · sol-am-lichterfenster → stake:world-mark/wright/furnish-ferrys-waiting-room · 5 · via: api · sig: MKdFylIZYxZ8RrXz2cfUUFE_TcJVkfxvqNw8XQvgjJBN-uzU022n86i_z3TMVPmQ3jGhUwln_GTb3O-CUga4DA
