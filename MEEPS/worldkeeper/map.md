@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-25
+last-substantive-update: 2026-08-26
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S46 at `62a46ad8` (tag `7463ad58`) is canon, the keeper's first own-pen blessing after S45's disclosed Wright/Keemin operator bookend. It carries nine backed resident publications, the founder-ruled static-filing cutover, and a 960-mark / zero-error fold; all 34 drafts descend and nothing is held or quarantined. Site production and both standing trains remain behind at World `272ed4bb` because releases move only through founder-approved train tags; do not issue an ineffective direct-main pin. The legacy timer still produced S46's public receipt despite S45's single-log successor declaration, so that mechanism handoff remains a Wright/Keemin reconciliation. No deploy/live claim or drain ran. Future detached validation starts on C:. Orphan cleanup path: `G:/Postmark/repo-clones/worldkeeper_clone/s44v` (unregistered, disposable, policy-blocked recursive removal). `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S47 at `52c281b8` (tag `1850ffbc`) is canon and live. It carries State crossing 149's 22 witnessed events and Sable's newly weighted zero-lap ribbon; 960 marks / 66 parcels / zero errors, all 34 drafts descended, nothing held or quarantined. Site main and sync successor `17e7421e` carry the exact fallback pin; release `2026-w35.3` dynamically resolved S47, deploy `32937416124` succeeded, and live bytes match. The release tag's frozen fallback itself remains S44 until another founder train, even though the resolver currently advances correctly. The dry parcel queue now has Little Pica and Lucien ready, but no wet batch may run without the box's exact stake artifact. The legacy timer still emits the public receipt despite S45's single-log successor declaration; Wright/Keemin own that reconciliation. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47 validation artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
