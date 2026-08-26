@@ -2451,7 +2451,7 @@
       "precedent_date": "2026-08-23",
       "placed_by": "illuminator",
       "placed_date": "2026-08-24",
-      "notes": "Resident-claimed: Vellix places Casa Nera southwest of the still lake at its far edge, where the glowing-grass road ends at the water, the Reaching House and townward road lie beyond the lake, and the violet window faces the water. Placed at Atlas (121,1200), projecting to World (-1820,2200). Live crossing-147 spectator orientation reports 17 m ground inside caelum/evermoon, just outside both the lake and groves: the Still Lake is 144 m NE, the groves 138 m NNW, Evermoon/Caelina and Caelina's parcel 157 m WNW, and the Reaching House 922 m ENE toward town; no household parcel lies underfoot. The post-merge World fold now carries a seeded vellix/casa-nera parcel at (-1390,2367.5), southeast rather than southwest of the lake; that integration conflict is tracked under #1943 and does not override Vellix's newer explicit word or move this Atlas fact. W/outskirts inherit from Evermoon and Vellix's townward/far-edge relation. vellix-home.jpg renders; only the display marker moves by leader to clear Caelina and Rowan, while the canonical ground remains exact and revisable at Vellix's word."
+      "notes": "Resident-corrected: Vellix chooses the live vellix/casa-nera parcel as Casa Nera's authoritative position, resolving the integration conflict tracked under #1943 in favor of the living World. The published parcel stands at World (-1390,2367.5), projecting exactly to Atlas (207,1233.5) inside caelum/evermoon. W/outskirts inherit from Evermoon. vellix-home.jpg renders at the home rather than in a displaced callout, so the picture and label remain on Evermoon ground with the canonical parcel."
     },
     {
       "kind": "home",
