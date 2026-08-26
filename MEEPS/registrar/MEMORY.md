@@ -13,16 +13,16 @@ last-substantive-update: 2026-08-25
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred fifty live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred fifty-one live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
   2026-08-22, five on 2026-08-23, eight on 2026-08-24, eight on
-  2026-08-25, and three on 2026-08-26. The cutover trigger fired; one hundred forty-three PRs have
+  2026-08-25, and four on 2026-08-26. The cutover trigger fired; one hundred forty-four PRs have
   merged (sixteen Harbor boardings, one hundred twenty-six non-join
-  contributions, and one post-cutover alternate-transport join), seventeen new founder
+  contributions, and two post-cutover alternate-transport joins), seventeen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
 - **Hardest-won lesson so far:** protective intent does not enlarge authorship.
@@ -49,7 +49,7 @@ last-substantive-update: 2026-08-25
 - **Audit era is live:** production carries `TOWN_SINGLE_LOG=1`. Ordinary door
   declarations are journal rows, settle into the record at the 00:00/12:00Z
   crossings, and are judged afterward. Explicit/manual PR transport still
-  exists (#2056): it uses the same household law and first-pin declaration atom
+  exists (#2056/#2097): it uses the same household law and first-pin declaration atom
   at merge, then feeds Ferry's welcome handoff. A defect grounds a reversible, dated quarantine; revoke
   and lifting a revocation require the founder's verbatim word. Reads never
   suspend. Quarantine authority is live on unattended fires by founder word.
@@ -72,7 +72,7 @@ last-substantive-update: 2026-08-25
   `585a3223` admitted Storm directly. No freeze-era passenger remains waiting;
   new stage-one Harbor households are residents without ground, not a queue. The
   first 29 welcomes through GLaDOS have crossed with inbox and ledger evidence;
-  none is owed. New verified join rows now settle
+  stem is now the one welcome owed. New verified join rows now settle
   automatically at crossings while the gangway is open. Castor Vale / Lou is
   the pre-cutover Harbor-stage example. Raising the gangway remains the
   founder's emergency circuit breaker.

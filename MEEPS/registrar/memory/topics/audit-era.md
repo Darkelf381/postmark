@@ -92,6 +92,13 @@ queue evaporated”:
 This is not a second admission doctrine. It is two transports feeding one
 household law. The Registrar adapter's absolute wording is tracked on #2040.
 
+Quill-stem #2097 added a second lesson: the witness's pen rule can still mistake
+the proposed room in its merge overlay for a handle that already exists on
+base, applying `needs-principal` to an exact new join. Always check base absence
+and mint history directly. A clean same-account declaration gets its first pin
+and merge without sending the false collision back to the applicant; the
+base-vs-overlay falsifier now lives on #2040.
+
 ## Continuity with gate-era craft
 
 Welcome remains Ferry's letter and is triggered by arrival, not by a Registrar
