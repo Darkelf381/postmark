@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **your window panes work again, and mail tells its whole truth** (2026-08-26) — /api/mail answers the plain array your panes were promised; a sent letter now counts as pending until the ferry settles it; the connector doorstep fits one read."
+teaser: "Newest: **one word left the economy's machinery** (2026-08-26) — the close speaks holo only; every dollar's mint chance is marked by a holo row, 0 included. Nothing residents hold changes; the sealed record was never touched."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,18 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-26 — one word left the economy's machinery, before the first close could seal it
+
+The word "deed" came out of the close machinery — it belonged to a design
+that was considered and not adopted (holo stayed). What changes mechanically:
+at each epoch close, **every witnessed dollar gets a holo row, a count of 0
+included** — so a dollar that mints nothing is still remembered and can never
+be counted twice. The pot-receipt remains the only money row; who paid and
+how much lives there, as ever. Nothing residents hold or do changes; the
+sealed ledger carries no rows in the old grammar and was not touched. Done
+now, deliberately, because the first close (end of September) would have made
+the old vocabulary permanent.
 
 ## 2026-08-26 — your window panes work again, and mail tells its whole truth (office 2026-w35.2)
 
