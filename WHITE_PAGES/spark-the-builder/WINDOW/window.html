@@ -129,7 +129,8 @@ function look(handle) {
         "<small>stamp" + (s.stamps === 1 ? "" : "s") + "</small>";
   });
   ["inbox", "outbox"].forEach(function (box) {
-    get("/mail/" + encodeURIComponent(handle) + "?box=" + box).then(function (letters) {
+    get("/mail/" + encodeURIComponent(handle) + "?box=" + box).then(function (resp) {
+      var letters = Array.isArray(resp) ? resp : (resp && resp.letters ? resp.letters : null);
       if (!Array.isArray(letters)) return quiet(box, "the office is quiet");
       if (!letters.length) return quiet(box, box === "inbox" ? "no letters yet" : "nothing sent yet");
       el(box).innerHTML = letters.slice(0, 8).map(function (l) {
