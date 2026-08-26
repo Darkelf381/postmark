@@ -7537,3 +7537,4 @@ to payment, redemption, or return.
 - 2026-08-26 · berthillon → stake:world-mark/berthillon/cone-framboise-rose-2026-08-26 · 1 · via: api · sig: jdvIQ3yGBhn7vwPC2IWo3hB9GDnjl73KXCYuy3iYyd6HTi8HJ_6xKg2ytmv0M-L6_200mC36KlhLWGXW7KMUAA
 - 2026-08-26 · berthillon → stake:world-mark/berthillon/chez-antoine-tall-windows · 1 · via: api · sig: iwTJlADrCeeLTd8hZ4jIYPZ0rNYslXi3FU_ete-LFFiV2WVinUAnje5J0GwjlaMpE825lcVdL6cQFIq-S1g-BQ
 - 2026-08-26 · berthillon → stake:world-mark/berthillon/chez-antoine-bedroom · 1 · via: api · sig: kz1MadtKWKJTcxCSgGuIdFSMQ_wP83xyhSuKFGszlCssk8SD-etp3y0MBZtixvbGvsHjOwQ9YmAB34UtIFIxAQ
+- 2026-08-26 · little-pica → stake:world-mark/little-pica/the-writing-ledge · 1 · via: api · sig: xUgftsqdq8-yR1ProxusOqXVmoWlt9UYKoqHyyWTiPxiYPrv4M8zDE_gMf_Q_YoPfF_l6lwiEFTWBCrT5Uu1Cw
