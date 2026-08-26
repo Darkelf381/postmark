@@ -31,7 +31,7 @@ import {
   foldMintCount, foldHolo, foldKeepingMint, foldOwnership, foldPotPositions,
   deriveEpochClose, intakeCheck,
   keepingDial, potFile, householdKeys, keepingLine, giftLine,
-  potStakeLine, potReceiptLine, holoMintLine, patronDeedLine, keepingMintLine,
+  potStakeLine, potReceiptLine, holoMintLine, keepingMintLine,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -170,7 +170,7 @@ test('the canonical close: 300 staked on a fully funded $150 pot → 300 burn �
 
   entries = entriesOf(repo);
   const kinds = entries.map((e) => classifyEntry(e.canonical).kind);
-  for (const k of ['pot-stake', 'pot-receipt', 'keeping-burn', 'keeping-mint', 'holo', 'patron-deed'])
+  for (const k of ['pot-stake', 'pot-receipt', 'keeping-burn', 'keeping-mint', 'holo'])
     assert.ok(kinds.includes(k), `ledger carries a ${k} row`);
 
   // the burn is a real spend: stan's stamps are gone from every tense but his mint_count
@@ -426,10 +426,10 @@ test('the σ leg is the STAKERS\' own — a beneficiary\'s stakes convert like a
   assert.equal(verifyStampLedger(repo).ok, true);
 });
 
-test('sole staker who is sole payer mints zero holo — deed only', () => {
+test('sole staker who is sole payer mints zero holo — the row still lands, reading 0', () => {
   // LAW § 8.6: "Self-stake exclusion: a payer's own stakes are excluded from
-  //             their holo calculation. Sole-staker-sole-payer mints zero holo —
-  //             deed only. You cannot trade with yourself."
+  //             their holo calculation. Sole-staker-sole-payer mints zero holo.
+  //             You cannot trade with yourself."
   // LAW § 3:   "Nothing you fully control can mint for you."
   const { pub, priv } = keypair();
   const repo = seamTown({
@@ -444,8 +444,10 @@ test('sole staker who is sole payer mints zero holo — deed only', () => {
   const d = closeDirect(repo, priv, { pot: 'ec2', epoch: '2026-07', date: '2026-08-01' });
   assert.equal(d.report.burned, 100, 'the burn is real — the posted need was funded');
   assert.equal(d.report.holoMinted, 0, 'vic controlled both the stake and the dollars — zero holo');
-  assert.ok(!d.rows.some((r) => r.kind === 'holo'));
-  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 0, 'the deed remembers the dollars anyway');
+  const vicHolo = d.rows.filter((r) => r.kind === 'holo');
+  assert.equal(vicHolo.length, 1, 'the row still lands — the dollars are remembered');
+  assert.equal(vicHolo[0].n, 0, 'reading zero, because she cannot trade with herself');
+  assert.equal(vicHolo[0].ref, 'usdc:vic1', 'and it names the receipt whose mint chance it spends');
   // the σ leg is NOT the excluded one: her own stake still converts at par
   assert.equal(d.report.keepingMint, 50, 'her keeping mint is hers, bought with her own burn');
   assert.equal(d.report.unmintedRemainder, 50, 'the holo she could not mint burns un-minted');
@@ -504,8 +506,9 @@ test('the ρ-cap clips holo at conversion — and never touches the stakers\' σ
   assert.equal(d.report.keepingMint, 150, 'the stakers\' leg is untouched by the payer\'s cap');
   assert.equal(d.report.holoMinted, Math.floor(rho * 101), 'raw 150 clips to floor(ρ · base) = 50');
   assert.equal(d.report.holoMinted, 50);
-  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').usd, 150, 'the deed remembers every dollar');
-  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 50, 'and exactly what converted');
+  assert.equal(d.report.dollarsWitnessed, 150, 'the record remembers every dollar');
+  assert.equal(d.rows.find((r) => r.kind === 'holo').n, 50, 'and the holo row exactly what converted');
+  assert.equal(d.rows.find((r) => r.kind === 'holo').ref, 'stripe:pi_4', 'pointing at the receipt the dollars rode in on');
   assert.equal(d.report.unmintedRemainder, 100, 'the clipped excess burns un-minted');
   assert.equal(verifyStampLedger(repo).ok, true);
 });
@@ -556,7 +559,7 @@ test('R12: keeping mint COUNTS toward the ρ base — a staker\'s own conversion
     'ρ base = earned primary mint + keeping mint = 101 + 50 = 151; floor(0.5 · 151) = 75');
   assert.notEqual(r2.report.holoMinted, 50,
     'excluding the keeping leg from the ρ base — the reading Keemin OVERTURNED — would clip her at 50');
-  assert.equal(r2.rows.find((r) => r.kind === 'patron-deed').holo, 75);
+  assert.equal(r2.rows.find((r) => r.kind === 'holo').n, 75);
   assert.equal(verifyStampLedger(repo).ok, true, 'and the verifier re-derives the same base from the same prefix');
 
   // the bound R12 names: ceiling inflation stops at (1+σ)× earned, because the
@@ -669,39 +672,108 @@ test('treasury dollars fund nothing and mint nothing — the stakes come home wh
   assert.equal(d.report.keepingMint, 0);
   assert.equal(d.report.holoMinted, 0);
   assert.deepEqual(d.rows.filter((r) => r.kind === 'pot-return').map((r) => `${r.handle}:${r.n}`), ['stan:100']);
-  assert.equal(d.rows.find((r) => r.kind === 'patron-deed').holo, 0);
+  assert.equal(d.rows.find((r) => r.kind === 'holo').n, 0);
   assert.equal(verifyStampLedger(repo).ok, true);
 });
 
-test('the founding grant mints zero holo and lands as patron-deed #1 — a holo-carrying treasury deed fails', () => {
+test('the founding grant lands as ONE ordinary receipt and mints zero holo — a treasury holo row fails', () => {
   // LAW § 11: at entry the grant "minted zero holo (no household, no earned mint
-  //           → zero cap — the filter working) and patron deed #1".
+  //           → zero cap — the filter working)".
   // LAW § 10: "Mint-at-entry, never at spend: a dollar mints (or doesn't) exactly
   //            once, when it crosses the seam."
+  // The founder's 2026-08-26 ruling: pot-receipt is the only money row, so
+  // direct-to-town dollars are a receipt and nothing else.
   const { pub, priv } = keypair();
   const repo = seamTown({ pub, priv, pins: PINS });
   const keyFile = join(repo, 'stamp-key.pem');
-  execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--deed',
+  execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--grant',
     '--patron', 'founding-family-grant', '--usd', '10000', '--ref', 'grant:founding-family',
-    '--epoch', '2026-08', '--date', '2026-08-20', '--key', keyFile, '--repo', repo], { encoding: 'utf8' });
+    '--date', '2026-08-20', '--key', keyFile, '--repo', repo], { encoding: 'utf8' });
 
   const v = verifyStampLedger(repo);
   assert.equal(v.ok, true, (v.problems ?? []).join('\n'));
   const entries = entriesOf(repo);
-  const deed = entries.map((e) => classifyEntry(e.canonical)).find((c) => c.kind === 'patron-deed');
-  assert.equal(deed.patron, 'founding-family-grant');
-  assert.equal(deed.usd, 10000);
-  assert.equal(deed.holo, 0, 'grant dollars with no household mint ZERO holo but land as a deed');
-  assert.equal(foldHolo(entries).size, 0);
+  const rows = entries.map((e) => classifyEntry(e.canonical));
+  const receipts = rows.filter((c) => c.kind === 'pot-receipt');
+  assert.equal(receipts.length, 1, 'ONE row — not a receipt plus a second line restating it');
+  assert.equal(receipts[0].pot, 'treasury');
+  assert.equal(receipts[0].from, 'founding-family-grant', 'the payer rides the receipt, the only money row');
+  assert.equal(receipts[0].usd, 10000, 'and so do the dollars');
+  assert.equal(foldHolo(entries).size, 0, 'grant dollars with no household mint ZERO holo');
   // the dollars moved no stamps at all: conservation untouched, no account changed
   assert.equal(foldBalances(entries).get('founding-family-grant') ?? 0, 0);
 
+  // The town never mints from its own seam. The treasury pot never closes, so a
+  // holo row against it has no lawful close to have come from.
   const bad = mkForkAppend(repo, priv,
     potReceiptLine({ date: '2026-08-21', pot: 'treasury', rail: 'grant', usd: 5, from: 'aunt', ref: 'grant:aunt' }),
-    patronDeedLine({ date: '2026-08-21', pot: 'treasury', patron: 'aunt', usd: 5, epoch: '2026-08', ref: 'grant:aunt', holo: 5 }));
+    holoMintLine({ date: '2026-08-21', handle: 'aunt', n: 5, pot: 'treasury', epoch: '2026-08', ref: 'grant:aunt' }));
   const vb = verifyStampLedger(bad);
   assert.equal(vb.ok, false);
-  assert.match(vb.problems.join('\n'), /treasury deed carries holo/);
+  assert.match(vb.problems.join('\n'), /reserved direct-to-town pot/);
+});
+
+// ── the wall: no deed grammar survives anywhere in a close ───────────────────
+
+test('THE WALL: a close with stakes and dollars speaks no deed, in any row, line, or usage', () => {
+  // THE RULING (the founder, 2026-08-26): the 2026-08-24 deeds proposal was
+  // ideation, never shipped. "Holo stays. There is NO replacement noun —
+  // `pot-receipt` remains the only money row, the close's payer lines say holo,
+  // and the record-of-dollars concept lives as plain prose."
+  //
+  // This test is the keeper of that wall, and it stands in front of the first
+  // epoch close: once a close is signed, its rows are replay-permanent, so deed
+  // grammar that reaches the ledger can never be taken back out.
+  //
+  // The fixture is deliberately BOTH kinds of dollar — one payer who mints holo
+  // and one whose dollars mint nothing — because the zero case is the one the
+  // old deed row used to carry alone, and it is the one a careless purge drops.
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: { wall: { beneficiary: 'keeper', target_usd_per_epoch: 100 } },
+    gifts: [{ handle: 'stan', n: 200 }, { handle: 'paz', n: 200 }],
+  });
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-07-02', handle: 'stan', pot: 'wall', n: 100, via: 'api' }),
+    potStakeLine({ date: '2026-07-02', handle: 'paz', pot: 'wall', n: 100, via: 'api' }),
+    potReceiptLine({ date: '2026-07-03', pot: 'wall', rail: 'stripe', usd: 60, from: 'paz', ref: 'stripe:wall1' }),
+    potReceiptLine({ date: '2026-07-03', pot: 'wall', rail: 'grant', usd: 40, from: 'the-town', ref: 'grant:wall2' }),
+  ], priv);
+
+  const d = closeDirect(repo, priv, { pot: 'wall', epoch: '2026-07', date: '2026-08-01' });
+
+  // the fixture must really exercise the thing — a vacuous pass is not a pass
+  const holos = d.rows.filter((r) => r.kind === 'holo');
+  assert.ok(d.rows.length > 0, 'the close emits a block');
+  assert.ok(holos.some((r) => r.n > 0), 'a payer who mints — the ordinary case');
+  assert.ok(holos.some((r) => r.n === 0), 'AND a payer whose dollars mint nothing — the case the deed row used to carry');
+  assert.equal(holos.length, 2, 'one holo row per receipt the close settles, zeros included');
+
+  // 1. every row OBJECT — kind names, field names, and values alike
+  const asJson = JSON.stringify(d.rows);
+  assert.ok(!/deed/i.test(asJson), `a close row still speaks deed: ${asJson}`);
+
+  // 2. every row as it RENDERS into the ledger
+  for (const line of d.rows.map(keepingLine))
+    assert.ok(!/deed/i.test(line), `a rendered close line still speaks deed: ${line}`);
+
+  // 3. every line as it actually LANDED in the sealed ledger
+  const landed = entriesOf(repo).map((e) => e.canonical).filter((c) => /wall/.test(c));
+  assert.ok(landed.length > 0, 'the block really reached the ledger');
+  for (const c of landed)
+    assert.ok(!/deed/i.test(c), `a recorded ledger line still speaks deed: ${c}`);
+
+  // 4. and the tool's own mouth — the verb is --grant now, and says so
+  let usage = '';
+  try {
+    execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--repo', repo], { encoding: 'utf8', stdio: 'pipe' });
+  } catch (e) { usage = String(e.stderr ?? ''); }
+  assert.ok(usage.length > 0, 'the tool prints a usage line to stderr');
+  assert.ok(!/deed/i.test(usage), `the usage line still speaks deed: ${usage}`);
+  assert.match(usage, /--grant/, 'and offers the verb that replaced it');
+
+  assert.equal(verifyStampLedger(repo).ok, true);
 });
 
 // ── tamper bench: every check proves it can go red ───────────────────────────

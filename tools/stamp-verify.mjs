@@ -132,7 +132,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     // ── the funding seam's state (keeping pots) ──────────────────────────────
     const potPosition = new Map();       // `${pot}|${handle}` -> open keeping escrow
     const potReceipts = new Map();       // ref -> the receipt row (mint-at-entry: one ref, ever)
-    const deededRefs = new Set();        // refs a patron-deed has consumed
+    const settledRefs = new Set();       // refs a close's holo row has already answered for
     const potFiles = new Map();          // pot -> file (cached)
     const closeSpans = new Map();        // `${pot}|${epoch}` -> { start, end } of the verified close block
     const kDial = keepingDial(repo);
@@ -147,7 +147,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     // file + the keeping dial, and demand the recorded rows match byte-for-byte
     // in canonical order. A wrong holo (or burn, or keeping mint) row fails
     // here the way a forged mint fails REPLAY. Returns the problem string, or null.
-    const CLOSE_KINDS = new Set(['pot-return', 'keeping-burn', 'keeping-mint', 'holo', 'patron-deed']);
+    const CLOSE_KINDS = new Set(['pot-return', 'keeping-burn', 'keeping-mint', 'holo']);
     const checkCloseBlock = (i, cls) => {
       const key = `${cls.pot}|${cls.epoch}`;
       const span = closeSpans.get(key);
@@ -241,7 +241,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
           problems.push(`line ${lineNo}: LAWFUL fails — meep "${cls.handle}" cannot stake`); break;
         }
         if (cls.pot === TREASURY_POT) {
-          problems.push(`line ${lineNo}: LAWFUL fails — "${TREASURY_POT}" is the reserved direct-to-town pot; it takes deeds, never stakes`); break;
+          problems.push(`line ${lineNo}: LAWFUL fails — "${TREASURY_POT}" is the reserved direct-to-town pot; it takes receipts and nothing else, never stakes`); break;
         }
         if (!potOf(cls.pot)) {
           problems.push(`line ${lineNo}: LAWFUL fails — stake names unknown pot "${cls.pot}" (no WHITE_PAGES/pot-${cls.pot}.json)`); break;
@@ -288,36 +288,21 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         }
         const blockProblem = checkCloseBlock(i, cls);
         if (blockProblem) { problems.push(blockProblem); break; }
-      }
-
-      if (cls.kind === 'patron-deed') {
-        if (cls.pot === TREASURY_POT) {
-          // Direct-to-town dollars: the deed stands alone (no stakes, no close)
-          // and must restate its own receipt exactly. It can never carry holo —
-          // nothing burned, so nothing minted; the town never receives from its
-          // own seam either way.
-          const r = potReceipts.get(cls.ref);
-          if (!r || r.pot !== TREASURY_POT) {
-            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed ref "${cls.ref}" has no recorded treasury pot-receipt behind it`); break;
-          }
-          if (deededRefs.has(cls.ref)) {
-            problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already deeded (one dollar, one mint chance)`); break;
-          }
-          if (r.from !== cls.patron || r.usd !== cls.usd) {
-            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed disagrees with its receipt (receipt: ${r.from}, usd ${r.usd})`); break;
-          }
-          if (cls.holo !== 0) {
-            problems.push(`line ${lineNo}: LAWFUL fails — treasury deed carries holo ${cls.holo}; direct-to-town dollars mint nothing`); break;
-          }
-          deededRefs.add(cls.ref);
-        } else {
-          const blockProblem = checkCloseBlock(i, cls);
-          if (blockProblem) { problems.push(blockProblem); break; }
-          if (deededRefs.has(cls.ref)) {
-            problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already deeded (one dollar, one mint chance)`); break;
-          }
-          deededRefs.add(cls.ref);
+        // MINT-AT-ENTRY lives here now. A close writes one holo row per receipt
+        // it settles — count included when it is 0 — so the holo row is what
+        // spends a ref's one mint chance, and a second one naming the same ref
+        // is a dollar being counted twice.
+        const r = potReceipts.get(cls.ref);
+        if (!r) {
+          problems.push(`line ${lineNo}: LAWFUL fails — holo ref "${cls.ref}" has no recorded pot-receipt behind it`); break;
         }
+        if (r.pot !== cls.pot) {
+          problems.push(`line ${lineNo}: LAWFUL fails — holo names pot ${cls.pot} but its receipt "${cls.ref}" paid pot ${r.pot}`); break;
+        }
+        if (settledRefs.has(cls.ref)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — receipt ref "${cls.ref}" already settled (one dollar, one mint chance)`); break;
+        }
+        settledRefs.add(cls.ref);
       }
 
       if (cls.kind === 'gift') {
