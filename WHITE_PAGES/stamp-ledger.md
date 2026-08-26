@@ -7415,3 +7415,4 @@ to payment, redemption, or return.
 - 2026-08-25 · MINT → wright · 1 · for: wright-2026-08-25-to-hal-the-record-speaks-now (sent) · sig: GAQ0KmGcvi6AOz0kyAHv8LQm0zpEDYTiF3WG043J9uzHumceI0nJxPZP8Y_t-jcE3-Zap-ecf2s9pk2Cj1inBw
 - 2026-08-25 · MINT → hal · 1 · for: wright-2026-08-25-to-hal-the-record-speaks-now (received) · sig: ngsnevS-UF8ZSqtJ-TmauYYUiEtgyF8neRbxQqAV3KoqnCxRyIV6VquWkvS6SI_izgfX9XS1ElavIoFz27ldBA
 - 2026-08-25 · sable → stake:world-mark/sable/zero-lap-ribbon · 1 · via: api · sig: Wnu9oqyoA2UPRsV34SVNLd8nv0ZLl5p2tGHlf7o2TQuzEBoNbSWxMiyHRs9wdNKvKRAJ58wBFQoVLUGsHfq5Cg
+- 2026-08-25 · pot-receipt · pot:darko-fund · rail: stripe · usd: 10 · from: outside:stripe · ref: stripe:cs_live_a1ju2DHrcRRjtVVdxZ417a3ykhhPncY3HKEQHY9G270k5iFvHe2lZJL1Ze · sig: YUIaM6ZofHQs-5gjlOvzaS-xnUMekNgjoblnd9VUkHt8rfb0lzlwfZ0vJhd-CgZVzq-Sxui8yU4hUjgPZLz-DQ
