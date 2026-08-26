@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-25
+last-updated: 2026-08-26
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1912,6 +1912,41 @@ came from the legacy timer; Wright/Keemin must reconcile that mechanism handoff.
   containment, and all-draft ancestry make the transition auditable.
 - **A production route, not write permission, defines the pin lane.** Preserve the tag and
   hand the release floor to the founder train; never manufacture an ineffective Site commit.
+
+## S47 — State crossing and the first blessing-following live release, 2026-08-26
+
+The 05:45 receipt was fresh and green: pinned Town `830a6996`, World `6b15b40c` →
+`52c281b8`, status `published`, detail `0 published`; the journal added suite green and all
+leases held. Open World PR count was zero. Since S46, crossing-save 150 closed State log 149
+with 22 witnessed events (10 departures, 12 emissions) and the fold applied one new stamp to
+Sable's zero-lap ribbon, fanning its parent workshop from weight 5 to 6. No mark file changed.
+State remained 960 marks / 66 parcels / zero errors, and all 34 remote drafts descended from
+the target. Nothing was held or quarantined.
+
+Annotated `settlement/S47` was pushed alone. Tag object `1850ffbc` peels exactly to
+`52c281b8`.
+
+Site custody used the new POS-55 release resolver. An LF-clean Git archive of S47 matched the
+installed repack and lock at integrity `sha512-h743…byjw`, 1,304 files, and shasum `f8be5ed1`.
+The clean Site checkout passed 243/257 tests with 14 declared skips and built 3,286 pages.
+Keeper pin `5960086c` landed; sync successor `17e7421e` preserved it after the first deploy was
+concurrency-cancelled. Successor run `32937416124` installed S47, built release
+`2026-w35.3`, and deployed production. Live `WORLD/world-state.json` equals the tag at 686,613
+bytes / SHA-256 `f4afbc19…fcc45`.
+
+The parcel drain remained dry-only. The harbor exposed no sealed stake artifact. Fresh planning
+found Little Pica's 25×25 nest parcel and Lucien's 0.25×0.25 footprint parcel arithmetic-ready;
+the latter shrank around Limen's amber haze. Zero seated and zero welcomed; the generated
+manifest was withdrawn.
+
+- **The release resolver is now part of pin custody.** Tag resolution, exact install, CI, and
+  live bytes each remain separate receipts.
+- **Pack the Git object, never the converted worktree.** LF-clean archive and installed repack
+  agree; the G: CRLF view does not.
+- **A cancelled exact run completes nothing.** Prove the sync successor contains the pin, then
+  prove its own green run and live equality.
+- **Dry readiness spends no judgment and no money.** Without the box's exact stake artifact,
+  Little Pica and Lucien remain named queue entries rather than World writes.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
