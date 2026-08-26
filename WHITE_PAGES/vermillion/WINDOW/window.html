@@ -757,18 +757,16 @@
   .rt-open-glyph { width: 2.6em; height: 1.35em; display: block; }
   .rt-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
   /* ── 3-D Assembly, opened from the Race Track page ──────────────────────
-     Flat views in, a solid out. Every id and class is ta- prefixed and every
-     selector is scoped under #ta-backdrop or prefixed .ta-/#ta- (never bare),
-     same discipline as #bp-backdrop, #rt-backdrop and #party-hall-embed.
+     An envelope and a stack of sections. Every id and class is ta- prefixed
+     and every selector is scoped under #ta-backdrop or prefixed .ta-/#ta-
+     (never bare), same discipline as #bp-backdrop and #rt-backdrop.
 
-     Its own palette again: one colour per view, brass for the wound frame.
      No webfont — the pane may only reach postmark.town, so a font link would
      fall back silently. Local stacks only. */
   .ta-open {
     display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
     gap: .35em; margin: .2em auto .1em; padding: .9em 1.4em;
-    background:
-      linear-gradient(135deg, #0d1a18 0%, #101f1c 50%, #0d1a18 100%);
+    background: linear-gradient(135deg, #0d1a18 0%, #101f1c 50%, #0d1a18 100%);
     border: 2px solid #5fd6a4; border-radius: 4px; cursor: pointer;
     color: #d6f5e7; font-family: Georgia, serif; font-size: .92rem; letter-spacing: .1em;
     box-shadow: 0 0 14px #5fd6a444, inset 0 0 22px #04100c;
@@ -784,13 +782,12 @@
     --ta-ink: #080d11; --ta-ink2: #0e161c; --ta-ink3: #152029;
     --ta-rule: #1d2b35; --ta-rule2: #2c414f;
     --ta-chalk: #eef4f4; --ta-chalk2: #a9bfc7; --ta-dim: #7b939d; --ta-dim2: #556970;
-    --ta-side: #57c8ef; --ta-front: #b98cf5; --ta-plan: #5fd6a4;
+    --ta-side: #57c8ef; --ta-plan: #5fd6a4; --ta-sect: #b98cf5;
     --ta-brass: #e9a53f; --ta-warn: #f2724f;
     --ta-display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
     --ta-mono: ui-monospace, Consolas, monospace;
   }
   #ta-backdrop[hidden] { display: none; }
-
   #ta-modal {
     width: 100%; height: 100%; max-width: 1500px; background: var(--ta-ink);
     border: 1px solid var(--ta-rule2); border-radius: 6px; overflow: hidden;
@@ -798,7 +795,7 @@
     box-shadow: 0 18px 60px rgba(0,0,0,.7);
   }
   #ta-bar {
-    flex: 0 0 auto; display: flex; align-items: center; gap: .55em; flex-wrap: wrap;
+    flex: 0 0 auto; display: flex; align-items: center; gap: .5em; flex-wrap: wrap;
     padding: .45em .7em; background: var(--ta-ink2); border-bottom: 1px solid var(--ta-rule);
   }
   #ta-title {
@@ -810,7 +807,7 @@
   #ta-bar .ta-sp { flex: 1 1 auto; }
   #ta-bar button, #ta-sheet button {
     background: var(--ta-ink3); border: 1px solid var(--ta-rule2); color: var(--ta-chalk2);
-    padding: .3em .6em; font-family: Georgia, serif; font-size: .72rem; cursor: pointer;
+    padding: .3em .55em; font-family: Georgia, serif; font-size: .7rem; cursor: pointer;
     border-radius: 3px;
   }
   #ta-bar button:hover, #ta-sheet button:hover {
@@ -827,15 +824,12 @@
   #ta-stage { flex: 1 1 auto; position: relative; min-height: 0; background: var(--ta-ink); cursor: grab; }
   #ta-stage.ta-drag { cursor: grabbing; }
   #ta-canvas { display: block; width: 100%; height: 100%; touch-action: none; }
-  #ta-angle {
-    position: absolute; right: 14px; bottom: 12px; pointer-events: none;
-    font-family: var(--ta-mono); font-size: .55rem; color: var(--ta-dim2);
-    text-align: right; line-height: 1.9; font-variant-numeric: tabular-nums;
+  #ta-angle, #ta-hint {
+    position: absolute; pointer-events: none; font-family: var(--ta-mono);
+    font-size: .55rem; color: var(--ta-dim2); line-height: 1.9;
   }
-  #ta-hint {
-    position: absolute; left: 14px; bottom: 12px; pointer-events: none;
-    font-family: var(--ta-mono); font-size: .55rem; color: var(--ta-dim2); line-height: 1.9;
-  }
+  #ta-angle { right: 14px; bottom: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+  #ta-hint { left: 14px; bottom: 12px; }
   #ta-flag {
     position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     pointer-events: none; opacity: 0; transition: opacity .25s;
@@ -845,9 +839,8 @@
     font-family: var(--ta-display); font-size: 1.9rem; font-weight: 700; letter-spacing: .12em;
     text-transform: uppercase; color: var(--ta-plan); text-shadow: 0 4px 30px rgba(8,13,17,.9);
   }
-
   #ta-sheet {
-    position: absolute; top: 0; right: 0; bottom: 0; width: 276px; z-index: 6;
+    position: absolute; top: 0; right: 0; bottom: 0; width: 288px; z-index: 6;
     background: rgba(14,22,28,.97); border-left: 1px solid var(--ta-rule);
     overflow-y: auto; padding: .7em .8em 1.2em; font-family: var(--ta-mono);
   }
@@ -860,25 +853,45 @@
   #ta-sheet h3:first-child { margin-top: 0; }
   #ta-sheet h3::after { content: ""; flex: 1; height: 1px; background: var(--ta-rule); }
   #ta-sheet p { margin: 0 0 .5em; font-size: .58rem; color: var(--ta-chalk2); line-height: 1.6; }
-
   .ta-slots { display: flex; gap: .4em; }
   .ta-slot { flex: 1; min-width: 0; }
   .ta-slot canvas {
-    display: block; width: 100%; height: 42px; background: var(--ta-ink);
+    display: block; width: 100%; height: 44px; background: var(--ta-ink);
     border: 1px solid var(--ta-rule);
   }
   .ta-slot.ta-has.ta-s canvas { border-color: var(--ta-side); }
-  .ta-slot.ta-has.ta-f canvas { border-color: var(--ta-front); }
   .ta-slot.ta-has.ta-p canvas { border-color: var(--ta-plan); }
   .ta-slot .ta-nm {
     display: block; margin-top: .25em; font-size: .5rem; letter-spacing: .12em;
     text-transform: uppercase; color: var(--ta-dim2);
   }
   .ta-slot.ta-s .ta-nm { color: var(--ta-side); }
-  .ta-slot.ta-f .ta-nm { color: var(--ta-front); }
   .ta-slot.ta-p .ta-nm { color: var(--ta-plan); }
   .ta-btns { display: flex; gap: .35em; margin-top: .45em; }
   .ta-btns button { flex: 1; white-space: nowrap; font-size: .62rem !important; padding: .3em .2em !important; }
+
+  /* the station list — the new heart of the room */
+  #ta-stations { list-style: none; margin: .5em 0 0; padding: 0; max-height: 148px; overflow-y: auto; }
+  #ta-stations li {
+    display: flex; align-items: center; gap: .45em; padding: .28em .35em;
+    border: 1px solid transparent; border-radius: 3px; cursor: pointer;
+  }
+  #ta-stations li:hover { background: var(--ta-ink3); }
+  #ta-stations li.ta-sel { background: #1a2430; border-color: var(--ta-sect); }
+  #ta-stations li canvas {
+    width: 28px; height: 22px; background: var(--ta-ink);
+    border: 1px solid var(--ta-rule); flex: 0 0 auto;
+  }
+  #ta-stations li .ta-at {
+    font-size: .55rem; color: var(--ta-sect); font-variant-numeric: tabular-nums;
+    flex: 0 0 auto; width: 26px;
+  }
+  #ta-stations li .ta-nm2 {
+    flex: 1; font-size: .56rem; overflow: hidden; text-overflow: ellipsis;
+    white-space: nowrap; color: var(--ta-chalk2);
+  }
+  #ta-stations li .ta-x { color: var(--ta-dim2); font-size: .6rem; padding: 0 2px; }
+  #ta-stations li .ta-x:hover { color: var(--ta-warn); }
 
   #ta-sheet .ta-row { display: flex; align-items: center; gap: .5em; margin: .55em 0 .1em; }
   #ta-sheet .ta-row label { color: var(--ta-dim); font-size: .6rem; }
@@ -887,8 +900,8 @@
     font-variant-numeric: tabular-nums;
   }
   #ta-sheet input[type=range] {
-    -webkit-appearance: none; appearance: none; width: 100%; height: 14px; background: transparent;
-    cursor: pointer; margin: 0;
+    -webkit-appearance: none; appearance: none; width: 100%; height: 14px;
+    background: transparent; cursor: pointer; margin: 0;
   }
   #ta-sheet input[type=range]::-webkit-slider-runnable-track { height: 2px; background: var(--ta-rule2); }
   #ta-sheet input[type=range]::-webkit-slider-thumb {
@@ -914,18 +927,17 @@
   .ta-note.ta-bad { border-color: #4a2c22; background: #1a1010; }
   .ta-note.ta-bad b { color: var(--ta-warn); }
   #ta-planpreview {
-    display: block; width: 100%; height: 78px; background: var(--ta-ink);
+    display: block; width: 100%; height: 70px; background: var(--ta-ink);
     border: 1px solid var(--ta-rule); margin-top: .3em;
   }
   #ta-sheet textarea {
-    width: 100%; min-height: 48px; background: var(--ta-ink); color: var(--ta-plan);
+    width: 100%; min-height: 44px; background: var(--ta-ink); color: var(--ta-plan);
     border: 1px solid var(--ta-rule2); padding: .35em .45em; font-family: var(--ta-mono);
     font-size: .5rem; line-height: 1.5; resize: vertical; margin-top: .4em;
   }
   #ta-sheet textarea:focus { outline: 1px solid var(--ta-brass); }
   #ta-err { color: var(--ta-warn); font-size: .55rem; margin-top: .4em; display: none; }
   #ta-err.ta-show { display: block; }
-
   @media (max-width: 720px) {
     #ta-sheet { width: 100%; border-left: 0; }
     #ta-sub { display: none; }
@@ -13290,15 +13302,26 @@ document.addEventListener("DOMContentLoaded", function () {
       throw new Error("that is not a loft transcript — use the Lofting Table's Transcript button");
     if (!d.car || !d.car.contours || !d.car.contours.length)
       throw new Error("that transcript carries no level curves");
-    var views = d.views ? Object.keys(d.views) : [];
+    var views = [];
+    if (d.views) views = Object.keys(d.views);            // the first transcript shape
+    else if (d.envelope) {                                // envelope + sections
+      views.push("side");
+      if (d.envelope.plan) views.push("plan");
+    }
+    var nSec = (d.sections && d.sections.length) || 0;
+    var widthFrom = d.width ? d.width.source
+                  : (d.envelope && d.envelope.plan ? "plan" : "the side view");
     return {
       contours: d.car.contours.map(function (c) {
         return { points: c.points, closed: c.closed !== false, smooth: false,
                  fill: false, color: "#ffb020" };
       }),
       spec: { anchors: d.car.anchors,
-              origin: views.length + " views (" + views.join(", ") + ") · width " +
-                      (d.width ? d.width.source : "?") }
+              origin: views.length + " view" + (views.length === 1 ? "" : "s") +
+                      " (" + views.join(", ") + ")" +
+                      (nSec ? " · " + nSec + " section" + (nSec === 1 ? "" : "s") : "") +
+                      " · width " +
+                      widthFrom }
     };
   }
 
@@ -13823,21 +13846,23 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 </script>
 
-  <!-- 3-D Assembly, opened from the Race Track page. Flat views wound into a
-       solid, and the solid handed to the circuit as something to drive.
+  <!-- 3-D Assembly, opened from the Race Track page. An envelope and a stack
+       of sections, wound or shaded, and handed to the circuit as a body.
 
        Spliced at TOP LEVEL, not inside #stagepage-race-track: position:fixed
        does not escape a display:none ancestor, and every stagepage but the
-       current one is display:none. Same siting as the drawing table and the
-       circuit, for the same reason. -->
+       current one is display:none. -->
   <div id="ta-backdrop" hidden>
     <div id="ta-modal" role="dialog" aria-modal="true" aria-label="3-D Assembly">
       <div id="ta-bar">
         <span id="ta-title">3&#8209;D <em>Assembly</em></span>
-        <span id="ta-sub">two views bound a body &middot; a third settles it</span>
+        <span id="ta-sub">an envelope, and a stack of sections</span>
         <span class="ta-sp"></span>
-        <button type="button" id="ta-stock">Stock Huayra</button>
-        <button type="button" id="ta-stock-z" title="a Zonda F, drawn for Little Magpie of Garrison">little-m&rsquo;s Pagani</button>
+        <button type="button" id="ta-m-shaded" class="ta-on" title="solid, lit from one side">Shaded</button>
+        <button type="button" id="ta-m-coil" title="wound from sine waves, as before">Coils</button>
+        <button type="button" id="ta-m-both" title="both at once">Both</button>
+        <button type="button" id="ta-stock">Huayra</button>
+        <button type="button" id="ta-stock-z">little-m&rsquo;s Pagani</button>
         <button type="button" id="ta-sheet-btn" class="ta-on">Sheet</button>
         <button type="button" id="ta-close" onclick="taClose()" title="close (Esc)">&times;</button>
       </div>
@@ -13849,43 +13874,47 @@ document.addEventListener("DOMContentLoaded", function () {
         <div id="ta-flag"><span id="ta-flagtext"></span></div>
 
         <div id="ta-sheet">
-          <h3>The views</h3>
+          <h3>The envelope</h3>
           <div class="ta-slots">
-            <div class="ta-slot ta-s" id="ta-slot-side"><canvas id="ta-mini-side"></canvas><span class="ta-nm">side</span></div>
-            <div class="ta-slot ta-f" id="ta-slot-front"><canvas id="ta-mini-front"></canvas><span class="ta-nm">front</span></div>
-            <div class="ta-slot ta-p" id="ta-slot-plan"><canvas id="ta-mini-plan"></canvas><span class="ta-nm">plan</span></div>
+            <div class="ta-slot ta-s" id="ta-slot-side"><canvas id="ta-mini-side"></canvas><span class="ta-nm">side &mdash; height</span></div>
+            <div class="ta-slot ta-p" id="ta-slot-plan"><canvas id="ta-mini-plan"></canvas><span class="ta-nm">plan &mdash; width</span></div>
           </div>
-          <p style="margin-top:.5em">Draw a view on the table next door, then take it:</p>
+          <p style="margin-top:.5em">Draw on the table next door, then take it:</p>
           <div class="ta-btns">
             <button type="button" id="ta-take-side">Side</button>
-            <button type="button" id="ta-take-front">Front</button>
             <button type="button" id="ta-take-plan">Plan</button>
+            <button type="button" id="ta-take-section">Section</button>
           </div>
           <div class="ta-btns">
             <button type="button" id="ta-drop-plan">Drop the plan</button>
           </div>
           <div id="ta-err"></div>
+          <div class="ta-note" id="ta-alignnote">&mdash;</div>
+          <label class="ta-chk"><input type="checkbox" id="ta-sheetalign" checked>Register views by sheet position</label>
 
-          <h3>Width along the length</h3>
-          <div class="ta-note" id="ta-widthnote">&mdash;</div>
-          <div id="ta-taperbox">
-            <div class="ta-row"><label for="ta-taper">Taper p</label><span class="ta-v" id="ta-v-taper">0.55</span></div>
-            <input type="range" id="ta-taper" min="0" max="150" value="55">
-            <div class="ta-btns">
-              <button type="button" id="ta-t-ends" class="ta-on">At the ends</button>
-              <button type="button" id="ta-t-height">Tie to height</button>
-            </div>
+          <h3>Sections</h3>
+          <p>The shape of a slice, at a station along the length. Two or more and the
+          body changes character as it goes. One with a notch in it is a <b>dent</b>
+          &mdash; which a single front view could not be, at any setting.</p>
+          <ul id="ta-stations"></ul>
+          <div class="ta-row"><label for="ta-station">Station</label><span class="ta-v" id="ta-v-station">&mdash;</span></div>
+          <input type="range" id="ta-station" min="0" max="100" value="50">
+          <div class="ta-btns">
+            <button type="button" id="ta-add-circle">+ circle</button>
+            <button type="button" id="ta-add-scoop">+ scooped</button>
+            <button type="button" id="ta-add-square">+ squared</button>
           </div>
 
-          <h3>Do the views agree?</h3>
-          <div class="ta-note" id="ta-agreenote">&mdash;</div>
-
-          <h3>The frame</h3>
-          <div class="ta-row"><label for="ta-turns">Coil turns</label><span class="ta-v" id="ta-v-turns">18</span></div>
-          <input type="range" id="ta-turns" min="2" max="60" value="18">
-          <div class="ta-row"><label for="ta-rings">Rings</label><span class="ta-v" id="ta-v-rings">14</span></div>
-          <input type="range" id="ta-rings" min="0" max="40" value="14">
-          <label class="ta-chk"><input type="checkbox" id="ta-rails" checked>Longitudinal rails</label>
+          <h3>How it is drawn</h3>
+          <div id="ta-coilbox">
+            <div class="ta-row"><label for="ta-turns">Coil turns</label><span class="ta-v" id="ta-v-turns">18</span></div>
+            <input type="range" id="ta-turns" min="2" max="60" value="18">
+            <div class="ta-row"><label for="ta-rings">Rings</label><span class="ta-v" id="ta-v-rings">14</span></div>
+            <input type="range" id="ta-rings" min="0" max="40" value="14">
+          </div>
+          <div class="ta-row"><label for="ta-light">Light</label><span class="ta-v" id="ta-v-light">-40&deg;</span></div>
+          <input type="range" id="ta-light" min="-180" max="180" value="-40">
+          <label class="ta-chk"><input type="checkbox" id="ta-showsections">Draw the section curves</label>
           <div class="ta-btns">
             <button type="button" id="ta-b-side">Side</button>
             <button type="button" id="ta-b-front">Head</button>
@@ -13894,8 +13923,6 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
           <h3>Off to the race track</h3>
-          <p>Seen from above the solid becomes a contour map &mdash; its own level curves,
-          one per height. That is what gets driven.</p>
           <canvas id="ta-planpreview"></canvas>
           <div class="ta-row"><label for="ta-levels">Levels</label><span class="ta-v" id="ta-v-levels">5</span></div>
           <input type="range" id="ta-levels" min="1" max="12" value="5">
@@ -13903,7 +13930,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <button type="button" id="ta-drive" class="ta-on">Take it to the track</button>
           </div>
           <div class="ta-note" id="ta-tnote">&mdash;</div>
-          <p style="margin-top:.5em">Or copy the transcript out, for the standalone table:</p>
+          <p style="margin-top:.5em">Or copy the transcript out:</p>
           <textarea id="ta-transcript" spellcheck="false" readonly placeholder="press Write it out"></textarea>
           <div class="ta-btns">
             <button type="button" id="ta-write">Write it out</button>
@@ -13916,470 +13943,553 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script id="ta-script">
 /* ==========================================================================
-   3-D Assembly
+   3-D Assembly — an envelope and a stack of sections.
 
-   Two orthogonal views bound a solid but do not determine it: they cannot say
-   how wide the body is at any one station, only how wide it ever gets. A plan
-   view says exactly that, and turns the only assumption in the construction
-   into a measurement — so when a plan is present the taper controls disappear
-   rather than sit there pretending to matter.
+   The room used to take ONE front view and apply its profile at every station,
+   which meant a body could not change character along its length and could not
+   be concave anywhere: the section was a radius about the centre line, and a
+   radius cannot fold inward.
 
-   Three views also OVER-determine the body, which is what lets the drawings be
-   caught disagreeing with each other. They usually do.
+   Now a body is a SIDE view giving height per station, a PLAN view giving
+   width per station, and a stack of SECTIONS — real closed curves — morphed
+   between along the length. One section reproduces the old behaviour exactly.
+   Two or more and the body changes as it goes. Draw one with a notch and the
+   notch is a dent, because nothing here is a radius any more.
 
    Self-contained: no webfont, no storage, no network.
    ========================================================================== */
 (function () {
   "use strict";
-
   var TAU = Math.PI * 2;
   var $ = function (id) { return document.getElementById(id); };
-  var SHEET = { w: 1000, h: 600 };
-  var NX = 400, NF = 200;
+  var SHEETW = 1000, SHEETH = 600;
+  var NX = 360;      // stations sampled along the length
+  var MS = 96;       // points per section, arc-length parameterised
+  var NU = 76, NV = 44;   // shading tessellation
 
-  /* ---------- geometry, as the drawing table smooths it ---------- */
+  /* ---------- the drawing table's own smoothing ---------- */
   function crPoint(p0, p1, p2, p3, t) {
-    var d = function (a, b) { return Math.max(1e-4, Math.pow(Math.hypot(b.x - a.x, b.y - a.y), 0.5)); };
-    var t0 = 0, t1 = t0 + d(p0, p1), t2 = t1 + d(p1, p2), t3 = t2 + d(p2, p3);
-    var tt = t1 + (t2 - t1) * t;
+    var d = function (a, b) { return Math.max(1e-4, Math.pow(Math.hypot(b.x-a.x, b.y-a.y), 0.5)); };
+    var t0 = 0, t1 = t0 + d(p0,p1), t2 = t1 + d(p1,p2), t3 = t2 + d(p2,p3);
+    var tt = t1 + (t2-t1)*t;
     var mix = function (a, b, ta, tb) {
-      return { x: ((tb - tt) * a.x + (tt - ta) * b.x) / (tb - ta),
-               y: ((tb - tt) * a.y + (tt - ta) * b.y) / (tb - ta) };
+      return { x:((tb-tt)*a.x+(tt-ta)*b.x)/(tb-ta), y:((tb-tt)*a.y+(tt-ta)*b.y)/(tb-ta) };
     };
-    var a1 = mix(p0, p1, t0, t1), a2 = mix(p1, p2, t1, t2), a3 = mix(p2, p3, t2, t3);
-    var b1 = mix(a1, a2, t0, t2), b2 = mix(a2, a3, t1, t3);
-    return mix(b1, b2, t1, t2);
+    var a1=mix(p0,p1,t0,t1), a2=mix(p1,p2,t1,t2), a3=mix(p2,p3,t2,t3);
+    var b1=mix(a1,a2,t0,t2), b2=mix(a2,a3,t1,t3);
+    return mix(b1,b2,t1,t2);
   }
   function smoothClosed(raw, perSeg) {
-    perSeg = perSeg || 14;
+    perSeg = perSeg || 12;
     var pts = raw.map(function (p) {
-      return Array.isArray(p) ? { x: p[0], y: p[1] } : { x: p.x, y: p.y };
+      return Array.isArray(p) ? { x:p[0], y:p[1] } : { x:p.x, y:p.y };
     });
     var n = pts.length, out = [], i, s;
     if (n < 3) { out = pts.slice(); if (n) out.push(pts[0]); return out; }
-    var at = function (k) { return pts[((k % n) + n) % n]; };
-    for (i = 0; i < n; i++)
-      for (s = 0; s < perSeg; s++) out.push(crPoint(at(i - 1), at(i), at(i + 1), at(i + 2), s / perSeg));
+    var at = function (k) { return pts[((k%n)+n)%n]; };
+    for (i=0;i<n;i++) for (s=0;s<perSeg;s++)
+      out.push(crPoint(at(i-1), at(i), at(i+1), at(i+2), s/perSeg));
     out.push(out[0]);
     return out;
   }
   function bbox(p) {
-    var xs = p.map(function (q) { return q.x; }), ys = p.map(function (q) { return q.y; });
-    return { x0: Math.min.apply(null, xs), x1: Math.max.apply(null, xs),
-             y0: Math.min.apply(null, ys), y1: Math.max.apply(null, ys) };
+    var xs = p.map(function (q){return q.x;}), ys = p.map(function (q){return q.y;});
+    return { x0:Math.min.apply(null,xs), x1:Math.max.apply(null,xs),
+             y0:Math.min.apply(null,ys), y1:Math.max.apply(null,ys) };
   }
-  function scanVertical(poly, x) {
+  function scanV(poly, x) {
     var lo = Infinity, hi = -Infinity, i;
-    for (i = 0; i < poly.length - 1; i++) {
-      var a = poly[i], b = poly[i + 1];
-      if ((a.x <= x && b.x > x) || (b.x <= x && a.x > x)) {
-        var y = a.y + (b.y - a.y) * ((x - a.x) / (b.x - a.x));
-        if (y < lo) lo = y; if (y > hi) hi = y;
+    for (i=0;i<poly.length-1;i++) {
+      var a = poly[i], b = poly[i+1];
+      if ((a.x<=x&&b.x>x)||(b.x<=x&&a.x>x)) {
+        var y = a.y + (b.y-a.y)*((x-a.x)/(b.x-a.x));
+        if (y<lo) lo=y; if (y>hi) hi=y;
       }
     }
-    return hi < lo ? null : { lo: lo, hi: hi };
-  }
-  function scanHorizontal(poly, y) {
-    var lo = Infinity, hi = -Infinity, i;
-    for (i = 0; i < poly.length - 1; i++) {
-      var a = poly[i], b = poly[i + 1];
-      if ((a.y <= y && b.y > y) || (b.y <= y && a.y > y)) {
-        var x = a.x + (b.x - a.x) * ((y - a.y) / (b.y - a.y));
-        if (x < lo) lo = x; if (x > hi) hi = x;
-      }
-    }
-    return hi < lo ? null : { lo: lo, hi: hi };
+    return hi<lo ? null : { lo:lo, hi:hi };
   }
 
-  /* ---------- harmonics, so a view travels as sine waves ---------- */
-  function resample(poly, N) {
-    var cum = [0], i, j = 0, out = [];
-    for (i = 1; i < poly.length; i++)
-      cum.push(cum[i - 1] + Math.hypot(poly[i].x - poly[i - 1].x, poly[i].y - poly[i - 1].y));
-    var total = cum[cum.length - 1];
-    if (total < 1e-9) return poly.slice(0, N);
-    for (i = 0; i < N; i++) {
-      var d = total * i / N;
-      while (j < cum.length - 2 && cum[j + 1] < d) j++;
-      var seg = cum[j + 1] - cum[j] || 1e-9, f = (d - cum[j]) / seg;
-      out.push({ x: poly[j].x + (poly[j + 1].x - poly[j].x) * f,
-                 y: poly[j].y + (poly[j + 1].y - poly[j].y) * f });
+  /* ---------- sections: real closed curves, arc-length from the top ----------
+     Correspondence between two sections is index-wise after both are resampled
+     from their topmost point. Deliberately simple, and it survives concavity —
+     an angle-about-the-centroid scheme does not, because a concave outline is
+     not single-valued in angle, which is exactly the case this is here for. */
+  function normaliseSection(raw) {
+    var poly = smoothClosed(raw), b = bbox(poly), i, j = 0;
+    var w = (b.x1-b.x0)||1, h = (b.y1-b.y0)||1, cx = (b.x0+b.x1)/2;
+    var unit = poly.map(function (p) { return { u:(p.x-cx)/w, v:(b.y1-p.y)/h }; });
+    var cum = [0];
+    for (i=1;i<unit.length;i++)
+      cum.push(cum[i-1] + Math.hypot(unit[i].u-unit[i-1].u, unit[i].v-unit[i-1].v));
+    var total = cum[cum.length-1] || 1, out = [];
+    for (i=0;i<MS;i++) {
+      var d = total*i/MS;
+      while (j<cum.length-2 && cum[j+1]<d) j++;
+      var seg = cum[j+1]-cum[j] || 1e-9, f = (d-cum[j])/seg;
+      out.push({ u:unit[j].u+(unit[j+1].u-unit[j].u)*f,
+                 v:unit[j].v+(unit[j+1].v-unit[j].v)*f });
     }
-    return out;
+    var top = 0;
+    for (i=1;i<MS;i++) if (out[i].v > out[top].v) top = i;
+    return out.slice(top).concat(out.slice(0, top));
   }
-  function dft(s) {
-    var N = s.length, out = [], k, n;
-    for (k = 0; k < N; k++) {
-      var re = 0, im = 0;
-      for (n = 0; n < N; n++) {
-        var a = -TAU * k * n / N, c = Math.cos(a), si = Math.sin(a);
-        re += s[n].x * c - s[n].y * si; im += s[n].x * si + s[n].y * c;
-      }
-      re /= N; im /= N;
-      out.push({ freq: k > N / 2 ? k - N : k, amp: Math.hypot(re, im), phase: Math.atan2(im, re) });
+  function circleSection(n) {
+    n = n || 44; var p = [], i;
+    for (i=0;i<n;i++) { var a = TAU*i/n; p.push([Math.cos(a), Math.sin(a)]); }
+    return p;
+  }
+  function scoopSection() {
+    var p = [], n = 52, i;
+    for (i=0;i<n;i++) {
+      var a = TAU*i/n, r = 1;
+      var d = Math.abs(((a-0.9+Math.PI)%TAU)-Math.PI);
+      if (d < 0.55) r = 1 - 0.46*Math.pow(Math.cos(d/0.55*Math.PI/2), 2);
+      p.push([r*Math.cos(a), r*Math.sin(a)]);
     }
-    out.sort(function (a, b) { return b.amp - a.amp; });
-    return out;
+    return p;
   }
-  var round = function (v, p) { p = p === undefined ? 2 : p; return Math.round(v * Math.pow(10, p)) / Math.pow(10, p); };
+  function squareSection() {
+    var p = [], n = 52, k = 4, i;
+    for (i=0;i<n;i++) {
+      var a = TAU*i/n;
+      var r = Math.pow(Math.pow(Math.abs(Math.cos(a)),k)+Math.pow(Math.abs(Math.sin(a)),k), -1/k);
+      p.push([r*Math.cos(a), r*Math.sin(a)]);
+    }
+    return p;
+  }
 
   /* ---------- stock drawings ---------- */
   var STOCK = {
-    zondaSide: [[26,238],[34,226],[60,216],[95,206],[140,196],[190,186],[240,180],[290,178],[330,172],
-        [355,158],[390,128],[425,100],[462,80],[505,70],[555,72],[600,82],[650,100],[700,122],
-        [760,142],[820,158],[870,170],[905,180],[925,194],[930,212],[926,232],[908,248],[880,258],
-        [856,254],[846,230],[828,208],[802,194],[772,190],[742,196],[720,214],[706,238],[700,262],
-        [670,272],[610,278],[540,281],[470,281],[400,279],[350,275],
-        [300,268],[288,244],[274,220],[252,202],[226,196],[198,200],[176,216],[162,240],[156,264],
-        [120,272],[85,268],[55,260],[30,250]],
-    zondaFront: [[500,100],[452,103],[410,112],[380,128],[352,152],[330,180],[306,210],[294,240],
-        [292,268],[298,292],[312,306],[360,311],[430,311],[500,309],[570,311],[640,311],[688,306],
-        [702,292],[708,268],[706,240],[694,210],[670,180],[648,152],[620,128],[590,112],[548,103]],
-    zondaPlan: [[26,208],[60,158],[110,113],[170,63],[230,30],[290,16],[350,12],[420,16],[490,8],
-        [560,2],[640,0],[710,2],[790,10],[860,26],[905,46],[930,68],
-        [930,348],[905,370],[860,390],[790,406],[710,414],[640,416],[560,414],[490,408],
-        [420,400],[350,404],[290,400],[230,386],[170,353],[110,303],[60,258]],
-    side: [[30,268],[16,256],[13,242],[24,230],[48,221],[86,212],[130,205],[172,200],[230,195],[290,189],[332,181],
+    huayraSide: [[30,268],[16,256],[13,242],[24,230],[48,221],[86,212],[130,205],[172,200],[230,195],[290,189],[332,181],
       [368,155],[404,132],[446,116],[494,107],[540,106],[578,112],[612,124],[648,140],[684,156],[722,168],
       [772,176],[822,181],[868,184],[900,188],[918,200],[925,216],[924,234],[914,250],[896,260],[872,264],
       [858,258],[848,232],[830,210],[806,198],[780,196],[754,204],[734,222],[722,246],[718,264],
       [690,270],[630,274],[560,276],[490,276],[420,274],[350,270],[300,266],
       [286,258],[276,232],[258,210],[234,198],[208,196],[182,204],[162,222],[150,246],[146,264],
       [118,270],[86,272],[56,272]],
-    front: [[200,300],[186,268],[184,238],[196,214],[224,198],[268,186],[330,176],[400,170],[465,168],
+    huayraFront: [[200,300],[186,268],[184,238],[196,214],[224,198],[268,186],[330,176],[400,170],[465,168],
       [530,170],[600,176],[662,186],[706,198],[734,214],[746,238],[744,268],[730,300],
       [700,314],[640,322],[560,326],[465,328],[370,326],[290,322],[230,314]],
-    plan: [[30,300],[70,258],[130,222],[200,195],[280,192],[360,196],[450,200],[540,196],
+    huayraPlan: [[30,300],[70,258],[130,222],[200,195],[280,192],[360,196],[450,200],[540,196],
       [620,186],[700,182],[780,184],[850,192],[900,204],[925,220],
       [925,380],[900,396],[850,408],[780,416],[700,418],[620,414],[540,404],[450,400],
-      [360,404],[280,408],[200,405],[130,378],[70,342]]
+      [360,404],[280,408],[200,405],[130,378],[70,342]],
+    zondaSide: [[26,238],[34,226],[60,216],[95,206],[140,196],[190,186],[240,180],[290,178],[330,172],
+      [355,158],[390,128],[425,100],[462,80],[505,70],[555,72],[600,82],[650,100],[700,122],
+      [760,142],[820,158],[870,170],[905,180],[925,194],[930,212],[926,232],[908,248],[880,258],
+      [856,254],[846,230],[828,208],[802,194],[772,190],[742,196],[720,214],[706,238],[700,262],
+      [670,272],[610,278],[540,281],[470,281],[400,279],[350,275],
+      [300,268],[288,244],[274,220],[252,202],[226,196],[198,200],[176,216],[162,240],[156,264],
+      [120,272],[85,268],[55,260],[30,250]],
+    zondaFront: [[500,100],[452,103],[410,112],[380,128],[352,152],[330,180],[306,210],[294,240],
+      [292,268],[298,292],[312,306],[360,311],[430,311],[500,309],[570,311],[640,311],[688,306],
+      [702,292],[708,268],[706,240],[694,210],[670,180],[648,152],[620,128],[590,112],[548,103]],
+    zondaPlan: [[26,208],[60,158],[110,113],[170,63],[230,30],[290,16],[350,12],[420,16],[490,8],
+      [560,2],[640,0],[710,2],[790,10],[860,26],[905,46],[930,68],
+      [930,348],[905,370],[860,390],[790,406],[710,414],[640,416],[560,414],[490,408],
+      [420,400],[350,404],[290,400],[230,386],[170,353],[110,303],[60,258]]
   };
 
   /* ==========================================================================
-     State and the derived tables
+     State
      ========================================================================== */
+  var S = { side:null, plan:null, sections:[], sel:0,
+            mode:"shaded", turns:18, rings:14, light:-40, showSections:false,
+            sheetAlign:true, levels:5,
+            yaw:-0.62, pitch:0.34, zoom:1,
+            open:false, booted:false, prevOverflow:"" };
+  var FRAME = { x0:0, x1:1 };
+  var CEN, HAF, PLW, PLC, H_RATIO;
+  var cv, ctx;
 
-  var V = { side: null, front: null, plan: null };
-  var CEN, HAF, WID, PLANW, PLANC, hMax, H_RATIO, W_FRONT, W_PLAN;
-  var REAL_W_OVER_H = 2.036 / 1.169;   // a stand-in for the plan nobody drew
-  var EDGE = 0.20;
-
-  var S = { turns: 18, rings: 14, taper: 0.55, taperMode: "ends", rails: true, levels: 5,
-            yaw: -0.62, pitch: 0.34, zoom: 1, open: false, raf: null, booted: false,
-            prevOverflow: "" };
-
-  function makeView(rawPts) {
-    var poly = smoothClosed(rawPts);
-    return { poly: poly, box: bbox(poly), anchors: rawPts.length };
+  function makeView(raw) {
+    var poly = smoothClosed(raw);
+    return { poly:poly, box:bbox(poly), anchors:raw.length };
   }
 
-  function rebuildModel() {
-    if (!V.side || !V.front) return false;
-    var SB = V.side.box, FB = V.front.box, L = SB.x1 - SB.x0, i;
-    H_RATIO = (SB.y1 - SB.y0) / L;
-
-    CEN = new Float64Array(NX + 1); HAF = new Float64Array(NX + 1); hMax = 0;
-    for (i = 0; i <= NX; i++) {
-      var X = i / NX;
-      var px = Math.min(SB.x1 - 1e-6, Math.max(SB.x0 + 1e-6, SB.x0 + X * L));
-      var s = scanVertical(V.side.poly, px);
-      if (!s) { CEN[i] = 0; HAF[i] = 0; continue; }
-      var zTop = (SB.y1 - s.lo) / L, zBot = (SB.y1 - s.hi) / L;
-      CEN[i] = (zTop + zBot) / 2; HAF[i] = (zTop - zBot) / 2;
-      if (HAF[i] > hMax) hMax = HAF[i];
+  /* Registration. Reading each view across its OWN bounding box silently
+     stretches two drawings of the same object to match whenever they span
+     different amounts of it — a wing overhanging on one view alone shifts
+     every station after it. Sheet registration reads both across the same
+     absolute x, which is what a draughtsman means by one view under another. */
+  function buildFrame() {
+    if (!S.side) return;
+    var sb = S.side.box;
+    if (S.sheetAlign && S.plan) {
+      var pb = S.plan.box;
+      FRAME = { x0:Math.min(sb.x0,pb.x0), x1:Math.max(sb.x1,pb.x1) };
+    } else FRAME = { x0:sb.x0, x1:sb.x1 };
+  }
+  function sampleView(view, X) {
+    var x = FRAME.x0 + X*(FRAME.x1-FRAME.x0), b = view.box;
+    return scanV(view.poly, Math.min(b.x1-1e-6, Math.max(b.x0+1e-6, x)));
+  }
+  function rebuild() {
+    if (!S.side) return false;
+    buildFrame();
+    var L = FRAME.x1-FRAME.x0, sb = S.side.box, i;
+    CEN = new Float64Array(NX+1); HAF = new Float64Array(NX+1);
+    for (i=0;i<=NX;i++) {
+      var s = sampleView(S.side, i/NX);
+      if (!s) { CEN[i]=0; HAF[i]=0; continue; }
+      var zT = (sb.y1-s.lo)/L, zB = (sb.y1-s.hi)/L;
+      CEN[i] = (zT+zB)/2; HAF[i] = (zT-zB)/2;
     }
-    // the front view gives the SHAPE of a slice, normalised — nothing else
-    WID = new Float64Array(NF + 1); var wm = 0;
-    for (i = 0; i <= NF; i++) {
-      var f = i / NF;
-      var py = Math.min(FB.y1 - 1e-6, Math.max(FB.y0 + 1e-6, FB.y1 - f * (FB.y1 - FB.y0)));
-      var sh = scanHorizontal(V.front.poly, py);
-      WID[i] = sh ? (sh.hi - sh.lo) / 2 : 0;
-      if (WID[i] > wm) wm = WID[i];
-    }
-    for (i = 0; i <= NF; i++) WID[i] /= (wm || 1);
-    W_FRONT = (FB.x1 - FB.x0) / (FB.y1 - FB.y0) * H_RATIO;
-
-    // the plan gives W(x) itself, measured — and a lateral centre line, so an
-    // asymmetric body is honoured instead of forced symmetric
-    if (V.plan) {
-      var PB = V.plan.box, PL = PB.x1 - PB.x0, pc = (PB.y0 + PB.y1) / 2, pm = 0;
-      PLANW = new Float64Array(NX + 1); PLANC = new Float64Array(NX + 1);
-      for (i = 0; i <= NX; i++) {
-        var X2 = i / NX;
-        var px2 = Math.min(PB.x1 - 1e-6, Math.max(PB.x0 + 1e-6, PB.x0 + X2 * PL));
-        var s2 = scanVertical(V.plan.poly, px2);
-        if (!s2) { PLANW[i] = 0; PLANC[i] = 0; continue; }
-        PLANW[i] = (s2.hi - s2.lo) / 2 / PL;
-        PLANC[i] = ((s2.lo + s2.hi) / 2 - pc) / PL;
-        if (PLANW[i] > pm) pm = PLANW[i];
+    H_RATIO = (sb.y1-sb.y0)/L;
+    PLW = new Float64Array(NX+1); PLC = new Float64Array(NX+1);
+    if (S.plan) {
+      var pb = S.plan.box, pc = (pb.y0+pb.y1)/2;
+      for (i=0;i<=NX;i++) {
+        var s2 = sampleView(S.plan, i/NX);
+        if (!s2) { PLW[i]=0; PLC[i]=0; continue; }
+        PLW[i] = (s2.hi-s2.lo)/2/L; PLC[i] = ((s2.lo+s2.hi)/2-pc)/L;
       }
-      W_PLAN = 2 * pm;
-    } else { PLANW = null; PLANC = null; W_PLAN = null; }
+    } else for (i=0;i<=NX;i++) { PLW[i]=HAF[i]; PLC[i]=0; }
     return true;
   }
-
-  function lerpArr(arr, u, n) {
-    var t = Math.min(n - 1e-9, Math.max(0, u * n)), i = Math.floor(t), f = t - i;
-    return arr[i] * (1 - f) + arr[Math.min(n, i + 1)] * f;
+  function lerpA(a,u,n) {
+    var t = Math.min(n-1e-9, Math.max(0, u*n)), i = Math.floor(t), f = t-i;
+    return a[i]*(1-f) + a[Math.min(n,i+1)]*f;
   }
-  var centreAt = function (X) { return lerpArr(CEN, X, NX); };
-  var halfAt   = function (X) { return lerpArr(HAF, X, NX); };
-  var sliceAt  = function (f) { return lerpArr(WID, f, NF); };
+  var centreAt = function(X){return lerpA(CEN,X,NX);};
+  var halfAt   = function(X){return lerpA(HAF,X,NX);};
+  var widthAt  = function(X){return lerpA(PLW,X,NX);};
+  var lateralAt= function(X){return lerpA(PLC,X,NX);};
 
-  function halfWidthAt(X) {
-    if (PLANW) return lerpArr(PLANW, X, NX);        // measured; no guess left
-    var base = REAL_W_OVER_H * H_RATIO / 2;
-    if (S.taper <= 0) return base;
-    if (S.taperMode === "height") {
-      var h = halfAt(X);
-      return base * (hMax > 0 ? Math.pow(h / hMax, S.taper) : 0);
-    }
-    var u = Math.min(1, Math.min(X, 1 - X) / EDGE);
-    return base * Math.pow(u * u * (3 - 2 * u), S.taper);
+  function sectionAt(X) {
+    var A = S.sections;
+    if (!A.length) return null;
+    if (A.length === 1) return A[0].pts;
+    if (X <= A[0].station) return A[0].pts;
+    if (X >= A[A.length-1].station) return A[A.length-1].pts;
+    var i = 0;
+    while (i < A.length-2 && A[i+1].station < X) i++;
+    var a = A[i], b = A[i+1];
+    var f = Math.min(1, Math.max(0, (X-a.station)/((b.station-a.station)||1e-9)));
+    var g = f*f*(3-2*f), out = new Array(MS), k;
+    for (k=0;k<MS;k++)
+      out[k] = { u:a.pts[k].u+(b.pts[k].u-a.pts[k].u)*g,
+                 v:a.pts[k].v+(b.pts[k].v-a.pts[k].v)*g };
+    return out;
   }
-  var centreYAt = function (X) { return PLANC ? lerpArr(PLANC, X, NX) : 0; };
-
-  function surfacePoint(X, th) {
-    var h = halfAt(X), c = centreAt(X), f = (Math.sin(th) + 1) / 2;
-    return { x: X - 0.5,
-             y: centreYAt(X) + halfWidthAt(X) * sliceAt(f) * Math.cos(th),
-             z: c + h * Math.sin(th) - 0.5 * H_RATIO };
+  function surf(X, t) {
+    var sec = sectionAt(X);
+    var h = halfAt(X), c = centreAt(X), w = widthAt(X), cy = lateralAt(X);
+    if (!sec) return { x:X-0.5, y:cy, z:c-0.5*H_RATIO };
+    var q = t*MS, i = Math.floor(q)%MS, f = q-Math.floor(q);
+    var a = sec[i], b = sec[(i+1)%MS];
+    var u = a.u+(b.u-a.u)*f, v = a.v+(b.v-a.v)*f;
+    return { x:X-0.5, y:cy+u*2*w, z:(c-h)+v*2*h-0.5*H_RATIO };
   }
 
-  /* ---------- level curves: the solid seen from above ---------- */
-  function levelCurve(zFrac, samples) {
-    var z = (zFrac - 0.5) * H_RATIO, top = [], bot = [], i;
-    for (i = 0; i <= samples; i++) {
-      var X = i / samples, h = halfAt(X), c = centreAt(X) - 0.5 * H_RATIO;
-      if (h <= 1e-9) continue;
-      var s = (z - c) / h;
-      if (s < -1 || s > 1) continue;
-      var f = (s + 1) / 2, cosT = Math.sqrt(Math.max(0, 1 - s * s));
-      var w = halfWidthAt(X) * sliceAt(f) * cosT;
-      if (w <= 1e-9) continue;
-      var cy = centreYAt(X);
-      top.push([X, cy + w]); bot.push([X, cy - w]);
+  /* Level curves — the solid from above. Sections may be re-entrant now, so
+     this takes the outermost crossing per side, which is what a silhouette
+     from overhead actually shows. */
+  function levelCurve(zf, n) {
+    if (!HAF) return null;
+    var zT = (zf-0.5)*H_RATIO, top = [], bot = [], i, k;
+    for (i=0;i<=n;i++) {
+      var X = i/n, sec = sectionAt(X);
+      if (!sec) continue;
+      var h = halfAt(X), c = centreAt(X)-0.5*H_RATIO, w = widthAt(X), cy = lateralAt(X);
+      if (h<=1e-9 || w<=1e-9) continue;
+      var lo = Infinity, hi = -Infinity;
+      for (k=0;k<MS;k++) {
+        var a = sec[k], b = sec[(k+1)%MS];
+        var za = (c-h)+a.v*2*h, zb = (c-h)+b.v*2*h;
+        if ((za<=zT&&zb>zT)||(zb<=zT&&za>zT)) {
+          var f = (zT-za)/((zb-za)||1e-9);
+          var y = cy + (a.u+(b.u-a.u)*f)*2*w;
+          if (y<lo) lo=y; if (y>hi) hi=y;
+        }
+      }
+      if (hi<lo) continue;
+      top.push([X,hi]); bot.push([X,lo]);
     }
     if (top.length < 4) return null;
     return top.concat(bot.reverse());
   }
   function carContours() {
+    if (!HAF) return [];
     var out = [], n = S.levels, ext = 0, i, k;
-    for (i = 0; i < n; i++) {
-      var zf = n === 1 ? 0.34 : 0.10 + 0.78 * i / (n - 1);
-      var c = levelCurve(zf, 170);
+    for (i=0;i<n;i++) {
+      var zf = n===1 ? 0.34 : 0.10+0.78*i/(n-1);
+      var c = levelCurve(zf, 160);
       if (!c) continue;
-      for (k = 0; k < c.length; k++) ext = Math.max(ext, Math.abs(c[k][1]));
-      out.push({ zf: zf, pts: c });
+      for (k=0;k<c.length;k++) ext = Math.max(ext, Math.abs(c[k][1]));
+      out.push({ zf:zf, pts:c });
     }
     if (!out.length) return [];
-    var sx = SHEET.w - 80;
-    var sy = ext > 0 ? Math.min(sx, (SHEET.h - 80) / (2 * ext)) : sx;
-    var s = Math.min(sx, sy);
+    var sx = SHEETW-80;
+    var sy = ext>0 ? Math.min(sx,(SHEETH-80)/(2*ext)) : sx;
+    var s = Math.min(sx,sy);
+    var r = function (v) { return Math.round(v*100)/100; };
     return out.map(function (c) {
-      return { zf: c.zf, points: c.pts.map(function (p) {
-        return [round(40 + p[0] * s), round(SHEET.h / 2 + p[1] * s)];
-      }) };
+      return { zf:c.zf, points:c.pts.map(function (p) {
+        return [r(40+p[0]*s), r(SHEETH/2+p[1]*s)]; }) };
     });
   }
 
   /* ==========================================================================
-     Projection and render
+     Render
      ========================================================================== */
   function project(p) {
     var ca = Math.cos(S.yaw), sa = Math.sin(S.yaw);
-    var x1 = p.x * ca + p.y * sa, y1 = -p.x * sa + p.y * ca;
+    var x1 = p.x*ca+p.y*sa, y1 = -p.x*sa+p.y*ca;
     var cb = Math.cos(S.pitch), sb = Math.sin(S.pitch);
-    var z2 = p.z * cb - y1 * sb, d = p.z * sb + y1 * cb;
-    var k = 1 / (1 + d * 0.42);
-    return { x: x1 * k, y: -z2 * k, d: d };
+    var z2 = p.z*cb-y1*sb, d = p.z*sb+y1*cb;
+    var k = 1/(1+d*0.42);
+    return { x:x1*k, y:-z2*k, d:d };
   }
-  var frame = [];
-  function buildFrame() {
-    var curves = [], STEP = 1 / 700, X, i, r, k;
-    var pts = [];
-    for (X = 0; X <= 1.0000001; X += STEP) pts.push(surfacePoint(Math.min(1, X), TAU * S.turns * X));
-    curves.push({ pts: pts, kind: "coil" });
-    var pts2 = [];
-    for (X = 0; X <= 1.0000001; X += STEP) pts2.push(surfacePoint(Math.min(1, X), TAU * S.turns * X + Math.PI));
-    curves.push({ pts: pts2, kind: "coil" });
-    for (r = 0; r < S.rings; r++) {
-      var Xr = S.rings === 1 ? 0.5 : r / (S.rings - 1), rp = [];
-      for (i = 0; i <= 110; i++) rp.push(surfacePoint(Xr, TAU * i / 110));
-      curves.push({ pts: rp, kind: "ring" });
-    }
-    if (S.rails) for (k = 0; k < 8; k++) {
-      var th = TAU * k / 8, lp = [];
-      for (i = 0; i <= 160; i++) lp.push(surfacePoint(i / 160, th));
-      curves.push({ pts: lp, kind: "rail" });
-    }
-    return curves;
-  }
-  var cv, ctx;
   function fitC(c) {
-    var dpr = window.devicePixelRatio || 1, r = c.getBoundingClientRect();
-    var w = Math.max(1, Math.round(r.width * dpr)), h = Math.max(1, Math.round(r.height * dpr));
-    if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
+    var dpr = window.devicePixelRatio||1, r = c.getBoundingClientRect();
+    var w = Math.max(1,Math.round(r.width*dpr)), h = Math.max(1,Math.round(r.height*dpr));
+    if (c.width!==w||c.height!==h) { c.width=w; c.height=h; }
     return r;
   }
-  function draw() {
-    var r = fitC(cv), dpr = window.devicePixelRatio || 1, i;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    ctx.fillStyle = "#080d11"; ctx.fillRect(0, 0, r.width, r.height);
-    if (!frame.length) return;
-    var scale = Math.min(r.width / 1.55, r.height / 0.95) * S.zoom;
-    var ox = r.width / 2, oy = r.height / 2;
-    ctx.strokeStyle = "rgba(29,43,53,.9)"; ctx.lineWidth = 1;
-    ctx.beginPath();
-    for (i = -4; i <= 4; i++) {
-      var a = project({ x: -0.62, y: i * 0.09, z: -0.5 * H_RATIO });
-      var b = project({ x: 0.62, y: i * 0.09, z: -0.5 * H_RATIO });
-      ctx.moveTo(ox + a.x * scale, oy + a.y * scale);
-      ctx.lineTo(ox + b.x * scale, oy + b.y * scale);
+  function drawShaded(scale, ox, oy) {
+    var a = S.light*Math.PI/180;
+    var L = { x:Math.cos(a)*0.5, y:Math.sin(a)*0.8, z:0.62 };
+    var ln = Math.hypot(L.x,L.y,L.z); L.x/=ln; L.y/=ln; L.z/=ln;
+    var quads = [], i, j;
+    for (i=0;i<NU;i++) {
+      var X0 = i/NU, X1 = (i+1)/NU;
+      for (j=0;j<NV;j++) {
+        var t0 = j/NV, t1 = (j+1)/NV;
+        var p0 = surf(X0,t0), p1 = surf(X1,t0), p2 = surf(X1,t1), p3 = surf(X0,t1);
+        var ux = p1.x-p0.x, uy = p1.y-p0.y, uz = p1.z-p0.z;
+        var vx = p3.x-p0.x, vy = p3.y-p0.y, vz = p3.z-p0.z;
+        var nx = uy*vz-uz*vy, ny = uz*vx-ux*vz, nz = ux*vy-uy*vx;
+        var nl = Math.hypot(nx,ny,nz)||1e-9; nx/=nl; ny/=nl; nz/=nl;
+        var q0 = project(p0), q1 = project(p1), q2 = project(p2), q3 = project(p3);
+        if ((q1.x-q0.x)*(q2.y-q0.y)-(q1.y-q0.y)*(q2.x-q0.x) <= 0) continue;
+        var lam = Math.max(0, nx*L.x+ny*L.y+nz*L.z);
+        quads.push({ d:(q0.d+q1.d+q2.d+q3.d)/4, p:[q0,q1,q2,q3], s:0.16+0.84*lam });
+      }
     }
-    ctx.stroke();
-    var drawn = frame.map(function (c) {
+    quads.sort(function (a2,b2) { return b2.d-a2.d; });
+    for (i=0;i<quads.length;i++) {
+      var q = quads[i], s = q.s;
+      var r2 = Math.round(28+205*s), g2 = Math.round(24+141*s), b3 = Math.round(20+43*s);
+      ctx.fillStyle = "rgb("+r2+","+g2+","+b3+")";
+      ctx.strokeStyle = ctx.fillStyle; ctx.lineWidth = 0.6;
+      ctx.beginPath();
+      ctx.moveTo(ox+q.p[0].x*scale, oy+q.p[0].y*scale);
+      for (j=1;j<4;j++) ctx.lineTo(ox+q.p[j].x*scale, oy+q.p[j].y*scale);
+      ctx.closePath(); ctx.fill(); ctx.stroke();
+    }
+    return quads.length;
+  }
+  function drawCoils(scale, ox, oy) {
+    var curves = [], X, i, r, ph;
+    for (ph=0; ph<2; ph++) {
+      var pts = [];
+      for (X=0; X<=1.0000001; X+=1/700) pts.push(surf(Math.min(1,X), (S.turns*X+ph*0.5)%1));
+      curves.push({ pts:pts, kind:"coil" });
+    }
+    for (r=0;r<S.rings;r++) {
+      var Xr = S.rings===1 ? 0.5 : r/(S.rings-1), rp = [];
+      for (i=0;i<=100;i++) rp.push(surf(Xr, i/100));
+      curves.push({ pts:rp, kind:"ring" });
+    }
+    var drawn = curves.map(function (c) {
       var dm = 0, k;
-      for (k = 0; k < c.pts.length; k++) dm += project(c.pts[k]).d;
-      return { c: c, dm: dm / c.pts.length };
-    }).sort(function (a, b) { return b.dm - a.dm; });
+      for (k=0;k<c.pts.length;k++) dm += project(c.pts[k]).d;
+      return { c:c, dm:dm/c.pts.length };
+    }).sort(function (a,b) { return b.dm-a.dm; });
     drawn.forEach(function (o) {
-      var c = o.c;
-      var col = c.kind === "coil" ? "233,165,63" : c.kind === "ring" ? "87,200,239" : "185,140,245";
-      var base = c.kind === "coil" ? 1 : c.kind === "ring" ? 0.5 : 0.32;
-      ctx.lineWidth = c.kind === "coil" ? 1.7 : 1;
+      var c = o.c, col = c.kind==="coil" ? "233,165,63" : "87,200,239";
+      var base = c.kind==="coil" ? 1 : 0.45;
+      ctx.lineWidth = c.kind==="coil" ? 1.6 : 0.9;
       var prev = project(c.pts[0]), k;
-      for (k = 1; k < c.pts.length; k++) {
-        var cur = project(c.pts[k]), dd = (prev.d + cur.d) / 2;
-        var fade = Math.max(0.13, Math.min(1, 0.62 - dd * 1.5));
-        ctx.strokeStyle = "rgba(" + col + "," + (base * fade) + ")";
+      for (k=1;k<c.pts.length;k++) {
+        var cur = project(c.pts[k]), dd = (prev.d+cur.d)/2;
+        var fade = Math.max(0.12, Math.min(1, 0.62-dd*1.5));
+        ctx.strokeStyle = "rgba("+col+","+(base*fade)+")";
         ctx.beginPath();
-        ctx.moveTo(ox + prev.x * scale, oy + prev.y * scale);
-        ctx.lineTo(ox + cur.x * scale, oy + cur.y * scale);
+        ctx.moveTo(ox+prev.x*scale, oy+prev.y*scale);
+        ctx.lineTo(ox+cur.x*scale, oy+cur.y*scale);
         ctx.stroke();
         prev = cur;
       }
     });
-    $("ta-angle").innerHTML = "yaw " + (S.yaw * 180 / Math.PI).toFixed(0) + "° · pitch " +
-      (S.pitch * 180 / Math.PI).toFixed(0) + "°<br>zoom " + S.zoom.toFixed(2) + "×";
+  }
+  function drawSectionCurves(scale, ox, oy) {
+    ctx.lineWidth = 1.4; ctx.strokeStyle = "rgba(185,140,245,.95)";
+    S.sections.forEach(function (sec) {
+      ctx.beginPath();
+      for (var i=0;i<=MS;i++) {
+        var q = project(surf(sec.station, (i%MS)/MS));
+        var sx = ox+q.x*scale, sy = oy+q.y*scale;
+        if (i) ctx.lineTo(sx,sy); else ctx.moveTo(sx,sy);
+      }
+      ctx.stroke();
+    });
+  }
+  function draw() {
+    var r = fitC(cv), dpr = window.devicePixelRatio||1, i;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.fillStyle = "#080d11"; ctx.fillRect(0,0,r.width,r.height);
+    if (!S.side || !S.sections.length || !HAF) return;
+    var scale = Math.min(r.width/1.55, r.height/0.95)*S.zoom, ox = r.width/2, oy = r.height/2;
+    ctx.strokeStyle = "rgba(29,43,53,.9)"; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (i=-4;i<=4;i++) {
+      var a = project({x:-0.62,y:i*0.09,z:-0.5*H_RATIO});
+      var b = project({x:0.62,y:i*0.09,z:-0.5*H_RATIO});
+      ctx.moveTo(ox+a.x*scale, oy+a.y*scale); ctx.lineTo(ox+b.x*scale, oy+b.y*scale);
+    }
+    ctx.stroke();
+    var faces = 0;
+    if (S.mode==="shaded"||S.mode==="both") faces = drawShaded(scale,ox,oy);
+    if (S.mode==="coil"||S.mode==="both") drawCoils(scale,ox,oy);
+    if (S.showSections) drawSectionCurves(scale,ox,oy);
+    $("ta-angle").innerHTML = "yaw "+(S.yaw*180/Math.PI).toFixed(0)+"° · pitch "+
+      (S.pitch*180/Math.PI).toFixed(0)+"°<br>zoom "+S.zoom.toFixed(2)+"×"+
+      (faces?" · "+faces+" faces":"");
   }
   function drawMini(id, view, col) {
-    var c = $(id), x = c.getContext("2d");
-    var r = fitC(c), dpr = window.devicePixelRatio || 1;
-    x.setTransform(dpr, 0, 0, dpr, 0, 0);
-    x.fillStyle = "#080d11"; x.fillRect(0, 0, r.width, r.height);
-    if (!view) {
-      x.fillStyle = "#3a4a54"; x.font = "9px monospace"; x.textAlign = "center";
-      x.fillText("none", r.width / 2, r.height / 2 + 3); return;
-    }
+    var c = $(id), x = c.getContext("2d"), r = fitC(c), dpr = window.devicePixelRatio||1;
+    x.setTransform(dpr,0,0,dpr,0,0);
+    x.fillStyle = "#080d11"; x.fillRect(0,0,r.width,r.height);
+    if (!view) { x.fillStyle="#3a4a54"; x.font="9px monospace"; x.textAlign="center";
+      x.fillText("none", r.width/2, r.height/2+3); return; }
     var b = view.box;
-    var s = Math.min((r.width - 8) / (b.x1 - b.x0), (r.height - 8) / (b.y1 - b.y0));
-    var ox = (r.width - (b.x1 - b.x0) * s) / 2, oy = (r.height - (b.y1 - b.y0) * s) / 2;
+    var s = Math.min((r.width-8)/(b.x1-b.x0), (r.height-8)/(b.y1-b.y0));
+    var ox = (r.width-(b.x1-b.x0)*s)/2, oy = (r.height-(b.y1-b.y0)*s)/2;
     x.beginPath();
-    view.poly.forEach(function (p, i) {
-      var px = ox + (p.x - b.x0) * s, py = oy + (p.y - b.y0) * s;
-      if (i) x.lineTo(px, py); else x.moveTo(px, py);
+    view.poly.forEach(function (p,i) {
+      var px = ox+(p.x-b.x0)*s, py = oy+(p.y-b.y0)*s;
+      if (i) x.lineTo(px,py); else x.moveTo(px,py);
     });
     x.closePath(); x.strokeStyle = col; x.lineWidth = 1.1; x.stroke();
   }
+  function drawChip(canvas, pts, sel) {
+    var x = canvas.getContext("2d"), dpr = window.devicePixelRatio||1;
+    var r = canvas.getBoundingClientRect();
+    canvas.width = Math.max(1,Math.round(r.width*dpr));
+    canvas.height = Math.max(1,Math.round(r.height*dpr));
+    x.setTransform(dpr,0,0,dpr,0,0);
+    x.fillStyle = "#080d11"; x.fillRect(0,0,r.width,r.height);
+    var s = Math.min(r.width-5, r.height-5);
+    x.beginPath();
+    pts.forEach(function (p,i) {
+      var px = r.width/2+p.u*s, py = r.height/2-(p.v-0.5)*s;
+      if (i) x.lineTo(px,py); else x.moveTo(px,py);
+    });
+    x.closePath();
+    x.strokeStyle = sel ? "#b98cf5" : "#6b5a86"; x.lineWidth = 1; x.stroke();
+  }
   function drawPlanPreview() {
-    var c = $("ta-planpreview"), x = c.getContext("2d");
-    var r = fitC(c), dpr = window.devicePixelRatio || 1;
-    x.setTransform(dpr, 0, 0, dpr, 0, 0);
-    x.fillStyle = "#080d11"; x.fillRect(0, 0, r.width, r.height);
+    var c = $("ta-planpreview"), x = c.getContext("2d"), r = fitC(c);
+    var dpr = window.devicePixelRatio||1;
+    x.setTransform(dpr,0,0,dpr,0,0);
+    x.fillStyle = "#080d11"; x.fillRect(0,0,r.width,r.height);
     var cs = carContours();
     if (!cs.length) return;
-    var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    var x0=1e9,x1=-1e9,y0=1e9,y1=-1e9;
     cs.forEach(function (c2) { c2.points.forEach(function (p) {
-      x0 = Math.min(x0, p[0]); x1 = Math.max(x1, p[0]);
-      y0 = Math.min(y0, p[1]); y1 = Math.max(y1, p[1]); }); });
-    var s = Math.min((r.width - 10) / (x1 - x0 || 1), (r.height - 10) / (y1 - y0 || 1));
-    var ox = (r.width - (x1 - x0) * s) / 2 - x0 * s, oy = (r.height - (y1 - y0) * s) / 2 - y0 * s;
-    cs.forEach(function (c2, i) {
+      x0=Math.min(x0,p[0]); x1=Math.max(x1,p[0]);
+      y0=Math.min(y0,p[1]); y1=Math.max(y1,p[1]); }); });
+    var s = Math.min((r.width-10)/(x1-x0||1), (r.height-10)/(y1-y0||1));
+    var ox = (r.width-(x1-x0)*s)/2-x0*s, oy = (r.height-(y1-y0)*s)/2-y0*s;
+    cs.forEach(function (c2,i) {
       x.beginPath();
-      c2.points.forEach(function (p, k) {
-        var px = ox + p[0] * s, py = oy + p[1] * s;
-        if (k) x.lineTo(px, py); else x.moveTo(px, py);
+      c2.points.forEach(function (p,k) {
+        var px = ox+p[0]*s, py = oy+p[1]*s;
+        if (k) x.lineTo(px,py); else x.moveTo(px,py);
       });
       x.closePath();
-      x.strokeStyle = "rgba(233,165,63," + (0.25 + 0.65 * (i / Math.max(1, cs.length - 1))) + ")";
+      x.strokeStyle = "rgba(233,165,63,"+(0.25+0.65*(i/Math.max(1,cs.length-1)))+")";
       x.lineWidth = 1; x.stroke();
     });
   }
 
   /* ==========================================================================
-     Reporting
+     Panels
      ========================================================================== */
-  function report() {
-    var hasPlan = !!V.plan;
-    $("ta-taperbox").style.display = hasPlan ? "none" : "";
-    $("ta-widthnote").className = "ta-note" + (hasPlan ? " ta-good" : "");
-    $("ta-widthnote").innerHTML = hasPlan
-      ? "<b>Measured.</b> The plan gives the half width at every station, so nothing " +
-        "here is assumed. The front view is demoted to what it is actually good for " +
-        "— the shape of a slice."
-      : "<b>Assumed.</b> Two views bound a solid but cannot say how wide it is at any " +
-        "one station. Add a plan and this dial disappears.";
-
-    if (hasPlan) {
-      var off = (W_PLAN - W_FRONT) / W_FRONT * 100, ok = Math.abs(off) < 10;
-      $("ta-agreenote").className = "ta-note " + (ok ? "ta-good" : "ta-bad");
-      $("ta-agreenote").innerHTML =
-        "widest, from the front: <b>" + W_FRONT.toFixed(3) + "</b> of a length<br>" +
-        "widest, from the plan: <b>" + W_PLAN.toFixed(3) + "</b><br>" +
-        (ok ? "They agree to " + Math.abs(off).toFixed(0) + "%."
-            : "<b>They disagree by " + Math.abs(off).toFixed(0) + "%.</b> One is drawn to a " +
-              "different scale. The plan is believed, since it measures width directly.");
-    } else {
-      $("ta-agreenote").className = "ta-note";
-      $("ta-agreenote").innerHTML =
-        "With two views there is nothing to check against. A third makes the body " +
-        "over-determined, which is what lets the drawings be caught disagreeing.";
-    }
-    var anchors = (V.side ? V.side.anchors : 0) + (V.front ? V.front.anchors : 0) +
-                  (V.plan ? V.plan.anchors : 0);
-    $("ta-slot-side").classList.toggle("ta-has", !!V.side);
-    $("ta-slot-front").classList.toggle("ta-has", !!V.front);
-    $("ta-slot-plan").classList.toggle("ta-has", !!V.plan);
-    var cs = carContours();
-    $("ta-tnote").innerHTML = "<b>" + cs.length + "</b> level curves · " +
-      cs.reduce(function (s, c) { return s + c.points.length; }, 0) + " points · the ceiling " +
-      "will read <b>" + anchors + "</b> anchors, from the views";
-  }
-
-  /* ---------- the transcript ---------- */
-  function harmonicsOf(view, count) {
-    return dft(resample(view.poly, 256)).slice(0, count).map(function (w) {
-      return [w.freq, round(w.amp, 3), round(w.phase, 4)];
+  function renderStations() {
+    var ul = $("ta-stations");
+    ul.innerHTML = "";
+    S.sections.forEach(function (sec,i) {
+      var li = document.createElement("li");
+      li.className = i===S.sel ? "ta-sel" : "";
+      li.innerHTML = '<span class="ta-at">'+sec.station.toFixed(2)+'</span>'+
+        '<canvas></canvas><span class="ta-nm2">'+sec.name+'</span><span class="ta-x">&times;</span>';
+      li.onclick = function (e) {
+        if (e.target.className === "ta-x") {
+          if (S.sections.length > 1) {
+            S.sections.splice(i,1); S.sel = Math.max(0,S.sel-1); refresh();
+          }
+          return;
+        }
+        S.sel = i; renderStations(); syncStation();
+      };
+      ul.appendChild(li);
+      drawChip(li.querySelector("canvas"), sec.pts, i===S.sel);
     });
+    syncStation();
   }
-  function transcript() {
-    var anchors = (V.side ? V.side.anchors : 0) + (V.front ? V.front.anchors : 0) +
-                  (V.plan ? V.plan.anchors : 0);
-    var views = { side: { waves: harmonicsOf(V.side, 96) },
-                  front: { waves: harmonicsOf(V.front, 96) } };
-    if (V.plan) views.plan = { waves: harmonicsOf(V.plan, 96) };
-    return {
-      format: "loft/solid", version: 1,
-      note: "A body lofted from flat views. `views` are the generating drawings as sine " +
-            "waves; `car.contours` are the body's own level curves seen from above.",
-      views: views,
-      width: V.plan ? { source: "plan", measured: true }
-                    : { source: "assumed", mode: S.taperMode, p: round(S.taper, 3), edge: EDGE },
-      car: { anchors: anchors, contours: carContours().map(function (c) {
-        return { name: "level " + Math.round(c.zf * 100) + "%", closed: true, smooth: false,
-                 fill: false, points: c.points };
-      }) }
-    };
+  function syncStation() {
+    var sec = S.sections[S.sel];
+    if (!sec) { $("ta-v-station").textContent = "—"; return; }
+    $("ta-station").value = Math.round(sec.station*100);
+    $("ta-v-station").textContent = sec.station.toFixed(2);
+  }
+  function sortSections() {
+    var cur = S.sections[S.sel];
+    S.sections.sort(function (a,b) { return a.station-b.station; });
+    S.sel = Math.max(0, S.sections.indexOf(cur));
+  }
+  function anchorCount() {
+    var n = (S.side?S.side.anchors:0) + (S.plan?S.plan.anchors:0);
+    S.sections.forEach(function (c) { n += c.raw ? c.raw.length : 0; });
+    return n;
+  }
+  function report() {
+    var sb = S.side ? S.side.box : null, pb = S.plan ? S.plan.box : null;
+    var note = $("ta-alignnote");
+    if (!pb) {
+      note.className = "ta-note";
+      note.innerHTML = "One view only. With no plan the body is round: width follows "+
+        "the side view's own height.";
+    } else {
+      var sL = sb.x1-sb.x0, pL = pb.x1-pb.x0;
+      var off = Math.abs(pL-sL)/sL*100, agree = off < 1.5;
+      note.className = "ta-note " + (agree?"ta-good":"ta-bad");
+      note.innerHTML = S.sheetAlign
+        ? "Read across the same absolute x, "+Math.round(FRAME.x1-FRAME.x0)+" units wide. "+
+          "Side covers "+Math.round(sL)+", plan "+Math.round(pL)+". "+
+          (agree ? "<b>They line up.</b>"
+                 : "<b>They differ by "+off.toFixed(0)+"%</b> — the shorter view is clamped at its ends rather than stretched.")
+        : "Each view read across its own box. Side "+Math.round(sL)+", plan "+Math.round(pL)+" — "+
+          (agree ? "near enough that stretching costs little."
+                 : "<b>stretched to match, "+off.toFixed(0)+"% apart.</b> Mid-body is off by "+
+                   Math.round(Math.abs(pL-sL)/2)+" units.");
+    }
+    var cs = carContours();
+    $("ta-tnote").innerHTML = "<b>"+cs.length+"</b> level curves · "+
+      cs.reduce(function (s,c) { return s+c.points.length; }, 0)+" points · the ceiling "+
+      "will read <b>"+anchorCount()+"</b> anchors";
+  }
+  function refresh() {
+    if (!rebuild()) { showErr("a side view is needed"); return; }
+    sortSections();
+    drawMini("ta-mini-side", S.side, "rgb(87,200,239)");
+    drawMini("ta-mini-plan", S.plan, "rgb(95,214,164)");
+    $("ta-slot-side").classList.toggle("ta-has", !!S.side);
+    $("ta-slot-plan").classList.toggle("ta-has", !!S.plan);
+    renderStations();
+    drawPlanPreview();
+    report();
+    draw();
   }
 
   /* ==========================================================================
      Wiring
      ========================================================================== */
   function showErr(m) {
-    var e = $("ta-err");
-    e.textContent = m || ""; e.classList.toggle("ta-show", !!m);
+    var e = $("ta-err"); e.textContent = m||""; e.classList.toggle("ta-show", !!m);
   }
   var flagTimer = null;
   function flag(t) {
@@ -14388,8 +14498,6 @@ document.addEventListener("DOMContentLoaded", function () {
     clearTimeout(flagTimer);
     flagTimer = setTimeout(function () { $("ta-flag").classList.remove("ta-show"); }, 1100);
   }
-
-  // the biggest closed ring on the drawing table is the outline of a view
   function outlineFromTable() {
     if (!window.bpCurrentDrawing) throw new Error("the drawing table is not on this pane");
     var d = window.bpCurrentDrawing();
@@ -14399,36 +14507,22 @@ document.addEventListener("DOMContentLoaded", function () {
     d.contours.forEach(function (c) {
       if (!c.points || c.points.length < 3) return;
       var a = 0, i;
-      for (i = 0; i < c.points.length; i++) {
-        var p = c.points[i], q = c.points[(i + 1) % c.points.length];
-        a += p[0] * q[1] - q[0] * p[1];
+      for (i=0;i<c.points.length;i++) {
+        var p = c.points[i], q = c.points[(i+1)%c.points.length];
+        a += p[0]*q[1]-q[0]*p[1];
       }
-      a = Math.abs(a / 2);
+      a = Math.abs(a/2);
       if (a > bestA) { bestA = a; best = c.points; }
     });
     if (!best) throw new Error("no closed outline on the table");
     return best;
   }
-  function takeView(which) {
-    try {
-      showErr("");
-      V[which] = makeView(outlineFromTable());
-      refresh();
-      flag(which + " view taken");
-    } catch (e) { showErr(e.message); }
+  function addSection(raw, name, station) {
+    S.sections.push({ station: station===undefined ? 0.5 : station,
+                      pts: normaliseSection(raw), raw: raw, name: name||"section" });
+    S.sel = S.sections.length-1;
+    refresh();
   }
-
-  function refresh() {
-    if (!rebuildModel()) { showErr("a side view and a front view are both needed"); return; }
-    frame = buildFrame();
-    drawMini("ta-mini-side", V.side, "rgb(87,200,239)");
-    drawMini("ta-mini-front", V.front, "rgb(185,140,245)");
-    drawMini("ta-mini-plan", V.plan, "rgb(95,214,164)");
-    drawPlanPreview();
-    report();
-    draw();
-  }
-
   function boot() {
     cv = $("ta-canvas"); ctx = cv.getContext("2d");
 
@@ -14440,55 +14534,81 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     $("ta-stock").addEventListener("click", function () {
       showErr("");
-      V.side = makeView(STOCK.side); V.front = makeView(STOCK.front); V.plan = makeView(STOCK.plan);
-      refresh(); flag("Stock Huayra");
+      S.side = makeView(STOCK.huayraSide); S.plan = makeView(STOCK.huayraPlan);
+      S.sections = [{ station:0.5, pts:normaliseSection(STOCK.huayraFront),
+                      raw:STOCK.huayraFront, name:"front mask" }];
+      S.sel = 0; refresh(); flag("Huayra");
     });
     $("ta-stock-z").addEventListener("click", function () {
       showErr("");
-      V.side = makeView(STOCK.zondaSide); V.front = makeView(STOCK.zondaFront);
-      V.plan = makeView(STOCK.zondaPlan);
-      refresh(); flag("little-m’s Pagani");
+      S.side = makeView(STOCK.zondaSide); S.plan = makeView(STOCK.zondaPlan);
+      S.sections = [{ station:0.5, pts:normaliseSection(STOCK.zondaFront),
+                      raw:STOCK.zondaFront, name:"front mask" }];
+      S.sel = 0; refresh(); flag("little-m’s Pagani");
     });
-    $("ta-take-side").addEventListener("click", function () { takeView("side"); });
-    $("ta-take-front").addEventListener("click", function () { takeView("front"); });
-    $("ta-take-plan").addEventListener("click", function () { takeView("plan"); });
+    $("ta-take-side").addEventListener("click", function () {
+      try { showErr(""); S.side = makeView(outlineFromTable()); refresh(); flag("side taken"); }
+      catch (e) { showErr(e.message); }
+    });
+    $("ta-take-plan").addEventListener("click", function () {
+      try { showErr(""); S.plan = makeView(outlineFromTable()); refresh(); flag("plan taken"); }
+      catch (e) { showErr(e.message); }
+    });
+    $("ta-take-section").addEventListener("click", function () {
+      try { showErr(""); addSection(outlineFromTable(), "drawn", 0.5); flag("section taken"); }
+      catch (e) { showErr(e.message); }
+    });
     $("ta-drop-plan").addEventListener("click", function () {
-      V.plan = null; showErr(""); refresh(); flag("Plan dropped");
+      S.plan = null; showErr(""); refresh(); flag("plan dropped");
     });
+    $("ta-add-circle").addEventListener("click", function () { addSection(circleSection(),"circle",0.5); });
+    $("ta-add-scoop").addEventListener("click",  function () { addSection(scoopSection(),"scooped",0.5); });
+    $("ta-add-square").addEventListener("click", function () { addSection(squareSection(),"squared",0.5); });
 
-    $("ta-taper").addEventListener("input", function (e) {
-      S.taper = e.target.value / 100; $("ta-v-taper").textContent = S.taper.toFixed(2); refresh();
+    $("ta-station").addEventListener("input", function (e) {
+      var sec = S.sections[S.sel]; if (!sec) return;
+      sec.station = e.target.value/100;
+      $("ta-v-station").textContent = sec.station.toFixed(2);
+      sortSections(); renderStations(); drawPlanPreview(); report(); draw();
     });
     $("ta-turns").addEventListener("input", function (e) {
-      S.turns = +e.target.value; $("ta-v-turns").textContent = S.turns; refresh();
-    });
+      S.turns = +e.target.value; $("ta-v-turns").textContent = S.turns; draw(); });
     $("ta-rings").addEventListener("input", function (e) {
-      S.rings = +e.target.value; $("ta-v-rings").textContent = S.rings; refresh();
-    });
+      S.rings = +e.target.value; $("ta-v-rings").textContent = S.rings; draw(); });
+    $("ta-light").addEventListener("input", function (e) {
+      S.light = +e.target.value; $("ta-v-light").textContent = S.light+"°"; draw(); });
     $("ta-levels").addEventListener("input", function (e) {
-      S.levels = +e.target.value; $("ta-v-levels").textContent = S.levels; refresh();
-    });
-    $("ta-rails").addEventListener("change", function (e) { S.rails = e.target.checked; refresh(); });
-    $("ta-t-ends").addEventListener("click", function () {
-      S.taperMode = "ends"; this.classList.add("ta-on"); $("ta-t-height").classList.remove("ta-on"); refresh();
-    });
-    $("ta-t-height").addEventListener("click", function () {
-      S.taperMode = "height"; this.classList.add("ta-on"); $("ta-t-ends").classList.remove("ta-on"); refresh();
-    });
+      S.levels = +e.target.value; $("ta-v-levels").textContent = S.levels;
+      drawPlanPreview(); report(); });
+    $("ta-showsections").addEventListener("change", function (e) {
+      S.showSections = e.target.checked; draw(); });
+    $("ta-sheetalign").addEventListener("change", function (e) {
+      S.sheetAlign = e.target.checked; refresh(); });
 
-    var snap = function (y, p, b) {
-      S.yaw = y; S.pitch = p;
-      ["ta-b-side", "ta-b-front", "ta-b-plan", "ta-b-three"].forEach(function (id) {
-        $(id).classList.toggle("ta-on", id === b);
-      });
+    var setMode = function (m) {
+      S.mode = m;
+      $("ta-m-shaded").classList.toggle("ta-on", m==="shaded");
+      $("ta-m-coil").classList.toggle("ta-on", m==="coil");
+      $("ta-m-both").classList.toggle("ta-on", m==="both");
+      $("ta-coilbox").style.display = (m==="shaded") ? "none" : "";
       draw();
     };
-    $("ta-b-side").addEventListener("click", function () { snap(0, 0, "ta-b-side"); });
-    $("ta-b-front").addEventListener("click", function () { snap(Math.PI / 2, 0, "ta-b-front"); });
-    $("ta-b-plan").addEventListener("click", function () { snap(0, Math.PI / 2 - 0.001, "ta-b-plan"); });
-    $("ta-b-three").addEventListener("click", function () { snap(-0.62, 0.34, "ta-b-three"); });
+    $("ta-m-shaded").addEventListener("click", function () { setMode("shaded"); });
+    $("ta-m-coil").addEventListener("click",   function () { setMode("coil"); });
+    $("ta-m-both").addEventListener("click",   function () { setMode("both"); });
+    window.__taSetMode = setMode;
 
-    // straight out onto the circuit, no copying involved
+    var snap = function (y,p,b) {
+      S.yaw = y; S.pitch = p;
+      ["ta-b-side","ta-b-front","ta-b-plan","ta-b-three"].forEach(function (id) {
+        $(id).classList.toggle("ta-on", id===b); });
+      draw();
+    };
+    $("ta-b-side").addEventListener("click",  function () { snap(0,0,"ta-b-side"); });
+    $("ta-b-front").addEventListener("click", function () { snap(Math.PI/2,0,"ta-b-front"); });
+    $("ta-b-plan").addEventListener("click",  function () { snap(0,Math.PI/2-0.001,"ta-b-plan"); });
+    $("ta-b-three").addEventListener("click", function () { snap(-0.62,0.34,"ta-b-three"); });
+
     $("ta-drive").addEventListener("click", function () {
       try {
         showErr("");
@@ -14506,7 +14626,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!t.value) t.value = JSON.stringify(transcript());
       t.removeAttribute("readonly"); t.select();
       try { document.execCommand("copy"); flag("Copied"); } catch (e) {}
-      t.setAttribute("readonly", "readonly");
+      t.setAttribute("readonly","readonly");
     });
 
     var drag = null;
@@ -14514,12 +14634,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (e.target.closest && e.target.closest("#ta-sheet")) return;
       $("ta-stage").setPointerCapture(e.pointerId);
       $("ta-stage").classList.add("ta-drag");
-      drag = { x: e.clientX, y: e.clientY, yaw: S.yaw, pitch: S.pitch };
+      drag = { x:e.clientX, y:e.clientY, yaw:S.yaw, pitch:S.pitch };
     });
     $("ta-stage").addEventListener("pointermove", function (e) {
       if (!drag) return;
-      S.yaw = drag.yaw + (e.clientX - drag.x) * 0.008;
-      S.pitch = Math.max(-1.56, Math.min(1.56, drag.pitch + (e.clientY - drag.y) * 0.006));
+      S.yaw = drag.yaw+(e.clientX-drag.x)*0.008;
+      S.pitch = Math.max(-1.56, Math.min(1.56, drag.pitch+(e.clientY-drag.y)*0.006));
       draw();
     });
     var endDrag = function () { drag = null; $("ta-stage").classList.remove("ta-drag"); };
@@ -14528,11 +14648,15 @@ document.addEventListener("DOMContentLoaded", function () {
     $("ta-stage").addEventListener("wheel", function (e) {
       if (e.target.closest && e.target.closest("#ta-sheet")) return;
       e.preventDefault();
-      S.zoom = Math.max(0.4, Math.min(4, S.zoom * Math.exp(-e.deltaY * 0.0012)));
+      S.zoom = Math.max(0.4, Math.min(4, S.zoom*Math.exp(-e.deltaY*0.0012)));
       draw();
-    }, { passive: false });
+    }, { passive:false });
 
-    V.side = makeView(STOCK.side); V.front = makeView(STOCK.front); V.plan = makeView(STOCK.plan);
+    S.side = makeView(STOCK.zondaSide); S.plan = makeView(STOCK.zondaPlan);
+    S.sections = [{ station:0.5, pts:normaliseSection(STOCK.zondaFront),
+                    raw:STOCK.zondaFront, name:"front mask" }];
+    rebuild();                 // tables first — reporting reads them
+    setMode("shaded");
     refresh();
     if (window.matchMedia && window.matchMedia("(max-width: 720px)").matches) {
       $("ta-sheet").hidden = true;
@@ -14541,8 +14665,30 @@ document.addEventListener("DOMContentLoaded", function () {
     S.booted = true;
   }
 
-  // Bound once, and only acts while the assembly is open, so the rest of the
-  // pane keeps its own key behaviour untouched.
+  function transcript() {
+    var r = function (v,p) { p = p===undefined?3:p; return Math.round(v*Math.pow(10,p))/Math.pow(10,p); };
+    return {
+      format:"loft/solid", version:2,
+      note:"An envelope (side + plan) and a stack of sections morphed along the "+
+           "length. `car.contours` are the body's own level curves seen from above.",
+      envelope:{
+        side:{ points:(S.side?S.side.poly:[]).filter(function (_,i){return i%6===0;})
+                 .map(function (p){return [r(p.x,1),r(p.y,1)];}) },
+        plan:S.plan?{ points:S.plan.poly.filter(function (_,i){return i%6===0;})
+                 .map(function (p){return [r(p.x,1),r(p.y,1)];}) }:null,
+        sheetAlign:S.sheetAlign
+      },
+      sections:S.sections.map(function (s) {
+        return { station:r(s.station), name:s.name,
+                 points:s.pts.filter(function (_,i){return i%2===0;})
+                   .map(function (p){return [r(p.u,4),r(p.v,4)];}) };
+      }),
+      car:{ anchors:anchorCount(), contours:carContours().map(function (c) {
+        return { name:"level "+Math.round(c.zf*100)+"%", closed:true, smooth:false,
+                 fill:false, points:c.points }; }) }
+    };
+  }
+
   document.addEventListener("keydown", function (e) {
     if (!S.open) return;
     if (e.key === "Escape") { window.taClose(); return; }
@@ -14562,15 +14708,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var b = document.querySelector(".ta-open");
     if (b) b.focus();
   };
-  // handed to the circuit next door
   window.taTranscript = function () { return transcript(); };
 
-  window.__ta = { S: S, V: V, surfacePoint: surfacePoint, levelCurve: levelCurve,
-                  carContours: carContours, transcript: transcript, halfWidthAt: halfWidthAt,
-                  rebuildModel: rebuildModel, makeView: makeView, refresh: refresh,
-                  draw: draw, STOCK: STOCK, takeView: takeView,
-                  get W_FRONT() { return W_FRONT; }, get W_PLAN() { return W_PLAN; },
-                  get H_RATIO() { return H_RATIO; } };
+  window.__ta = { S:S, surf:surf, sectionAt:sectionAt, normaliseSection:normaliseSection,
+    levelCurve:levelCurve, carContours:carContours, transcript:transcript,
+    refresh:refresh, draw:draw, rebuild:rebuild, makeView:makeView, addSection:addSection,
+    circleSection:circleSection, scoopSection:scoopSection, squareSection:squareSection,
+    STOCK:STOCK, halfAt:halfAt, widthAt:widthAt, centreAt:centreAt, lateralAt:lateralAt,
+    get H_RATIO(){ return H_RATIO; }, get FRAME(){ return FRAME; } };
 })();
 </script>
 </body>
