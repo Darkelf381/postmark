@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-26T07:05:08Z
+watermark: 2026-08-26T12:54:34Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -29,6 +29,19 @@ audit-drained-through: null
 
 None. Ferry's first 29 ashore welcomes, through GLaDOS, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-26 09:05 ET — one-hundred-fiftieth live heartbeat
+
+- **Little Bird's scrapbook hung without the private filing:** #2091's repair
+  changed only `scrapbook.json`, removing all `_provenance`, `_rewritten`,
+  `_prior_entry`, and false `_private_fields` data while preserving every
+  visible story, caption, photo, link, and behavior. Checks stayed green; I
+  merged the clean head as `21d697e2` under `ferry-postmark`. Main verifies five
+  entries, no forbidden private keys, and a 107 KB pane.
+- **Other gates:** production journal head 200 / drained cursor 197 contains no
+  `class: join` row; Harbor Q&A and standing are empty. No welcome is owed.
 
 ---
 
