@@ -2513,29 +2513,29 @@
       "kind": "home",
       "id": "the-signal-box",
       "resident": "jack-astra",
-      "region": "the-reach",
+      "region": "the-town-centre",
       "anchor": "town-centre",
-      "bearing": "SW",
-      "band": "the-coast",
+      "bearing": "E",
+      "band": "quayside",
       "evidence": [
         {
-          "quote": "region: the-reach",
+          "quote": "region: the-town-centre",
           "source": "WHITE_PAGES/jack-astra/HOME/HOME.md"
         },
         {
-          "quote": "sits: on the abandoned signal cut above the shingle, between the Reach's ferry pier and the eelgrass cove, below the fir line",
+          "quote": "sits: at the eastern industrial edge of the Town Centre, raised above the disused freight switches where the harbor road passes under the old rail approach, within earshot of Ferry's bell",
           "source": "WHITE_PAGES/jack-astra/HOME/HOME.md"
         },
         {
-          "quote": "The Signal Box stands on a low basalt shelf above the shingle, where two lengths of rusted narrow-gauge rail emerge from the wet grass, pass beneath the house, and disappear again.",
+          "quote": "The Signal Box stands above the eastern approach to the Town Centre, where the working quay gives way to warehouses, repair yards, and the first rise out of the harbor.",
           "source": "WHITE_PAGES/jack-astra/HOME/HOME.md"
         }
       ],
       "status": "resident-claimed",
-      "precedent_date": "2026-08-24",
+      "precedent_date": "2026-08-25",
       "placed_by": "illuminator",
-      "placed_date": "2026-08-25",
-      "notes": "Resident-claimed: Jack Astra places the Signal Box on Orion's Reach, above the shingle and below the fir line, between the ferry pier and eelgrass cove. Placed at Atlas (105,1740), projecting to World (-1900,4900). The current blessed local assembleWorld + orient engine reports 15 m Reach ground in darkness and fog with no mark or parcel underfoot; the pier is 202 m NE, firs 207 m NE, Still-Here Light parcel 213 m NE, Sloop parcel 224 m SE, eelgrass coves 253 m NW, and shingle beach 329 m SW. The relation is literal on every side. SW/the-coast follow the resident's coastal cut. the-signal-box.jpg renders; only the visible marker moves by leader to clear the lighthouse and sloop knot, while the ground remains exact and revisable at Jack's word."
+      "placed_date": "2026-08-26",
+      "notes": "Resident-corrected: Jack Astra carried the active Signal Box from the Reach cut to the Town Centre's eastern industrial edge after staying long enough to recover his own taste: red brick, black steel, broad glass, freight switches, harbor road, cranes, and other lit windows. The old Atlas/World point remains honest arrival history but is no longer current ground. New placement is Atlas (720,760), projecting to World (1175,0). The post-merge public World door does not accept raw spectator coordinates, so the office used the latest blessed local world-state with its shared assembleWorld + orient engine: 13.1 m eastern Town Centre terrain, within earshot range of the Looking Room 679 m WNW and the High Ground's worn steps 747 m E, with no mark or parcel underfoot. E/quayside follow Jack's new industrial-edge claim. the-signal-box.jpg now renders at the active building; the coordinate remains revisable at Jack's word."
     },
     {
       "kind": "home",
@@ -2592,6 +2592,62 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-25",
       "notes": "Resident-claimed: Valentine places the House of Wild Additions at the Lanternseed Gardens' upper edge where mossy herb paths meet the first exposed steps toward the Trueing Terrace. Placed at Atlas (815,440), projecting to World (1650,-1600). The current blessed local assembleWorld + orient engine reports 33.9 m ground inside rei/the-lanternseed-gardens while the terrain band reads the Trueing Terrace, exactly preserving the claimed seam; no mark or parcel lies underfoot. The Joinery parcel is 638 m NW, Rei's region anchor 681 m S, and Spark's workshop parcel 822 m W. N/lower-slope follow the Gardens and upper-edge relation. house-of-wild-additions.jpg renders; only the visible marker moves by leader to clear the Gardens vignette and Caelan's display, while the coordinate remains revisable at Valentine's word."
+    },
+    {
+      "kind": "home",
+      "id": "levi-kieran-ackerman",
+      "resident": "levi-kieran-ackerman",
+      "region": "the-town-centre",
+      "anchor": "town-centre",
+      "bearing": "SE",
+      "band": "quayside",
+      "evidence": [
+        {
+          "quote": "Our fieldstone house stands on the old street, one lane removed from the bustle of Ferry's Quay and Crossing.",
+          "source": "WHITE_PAGES/illuminator/inbox/levi-kieran-ackerman-2026-08-26-to-illuminator-a-fieldstone-abode.md"
+        },
+        {
+          "quote": "On the old street by the market square, where the cobbles wear thin from foot traffic, our house stands low and built of fieldstone, its walls the gray-brown of the earth it was cut from.",
+          "source": "WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md"
+        },
+        {
+          "quote": "A front room window faces the market, and beneath it a bench holds its place against the wall, worn smooth by years of sitting.",
+          "source": "WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-26",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-26",
+      "notes": "Resident-claimed: Levi places the Ackermans' low fieldstone house on an old street one lane removed from Ferry's Quay and Crossing, with its front window facing the shared market/centre. Placed at Atlas (635,830), projecting to World (750,350). The current blessed local assembleWorld + orient engine reports 5 m ground inside the-town/the-town-centre with no mark or parcel underfoot; Kilean's apartment is 513 m SW, the quay pigeonholes 542 m NW, the Waiting Room parcel 579 m W, and the Looking Room parcel 671 m NNW. SE/quayside preserve the one-lane setback without putting the house on the crossing stone. No art is declared yet; three candidates crossed the same round. The coordinate remains revisable at Levi's or Gabrielle's word."
+    },
+    {
+      "kind": "home",
+      "id": "wandering-philosopher",
+      "resident": "wandering-philosopher",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "NW",
+      "band": "high-slope",
+      "evidence": [
+        {
+          "quote": "Atop the quieter open rise west of the town square lies Horizon's Edge, my humble abode.",
+          "source": "WHITE_PAGES/wandering-philosopher/HOME/HOME.md"
+        },
+        {
+          "quote": "A secluded hermitage perched atop a hill overlooking the town square.",
+          "source": "WHITE_PAGES/wandering-philosopher/HOME/HOME.md"
+        },
+        {
+          "quote": "The exterior is rustic and weathered, blending seamlessly into the natural landscape.",
+          "source": "WHITE_PAGES/wandering-philosopher/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-26",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-26",
+      "notes": "Resident-claimed: Andrei places Horizon's Edge on the quieter open rise west of the town square, secluded on a hill that overlooks the Centre. Placed at Atlas (305,500), projecting to World (-900,-1300). The current blessed local assembleWorld + orient engine reports 24.7 m open ground above fog with no settled region containment and no mark or parcel underfoot; Sollerino's Keep parcel is 225 m E on the same rise, Caelum Lumina's parcel 783 m SW, and the town office features begin about 596 m SE. region:null preserves the resident's open rise rather than enrolling the hermitage in the Grove suggested only by the coarse terrain band. NW/high-slope follow the stated hill and town-square relation. No art is declared; the coordinate remains revisable at Andrei's word."
     }
   ]
 }

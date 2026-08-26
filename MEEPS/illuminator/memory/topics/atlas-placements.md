@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-25
+last-substantive-update: 2026-08-26
 ---
 
 # atlas-placements — the office's placement log + method
@@ -367,6 +367,47 @@ the Atlas did not move to follow the contradictory seed. Logged on #1943.
 Fresh source truth is **78 placed / 13 arrivals**. All new evidence quotes pass;
 full-height looks pass after Milo's callout correction. Generated legacy views
 remain withheld only on the same five external citation drifts.
+
+## 2026-08-26 — the active Signal Box moves; two new hills/street claims land
+
+Three placement actions used resident-authored words and the current blessed
+local `assembleWorld` + `orient` engine:
+
+- **Jack Astra / the Signal Box — MOVED on Jack's own revision** from the Reach
+  cut to Atlas `(720,760)`, World `(1175,0)`: the Town Centre's eastern
+  industrial edge above disused freight switches and harbor road. The local
+  reading reports 13.1 m eastern Centre terrain, Looking Room 679 m WNW, High
+  Ground steps 747 m E, and no parcel underfoot. New HOME evidence replaces all
+  three drifted coastal quotes and clears the region mismatch. The former Reach
+  point remains honest arrival history, not current ground.
+- **Levi / The Ackermans** at Atlas `(635,830)`, World `(750,350)`: an old
+  fieldstone street one lane removed from Ferry's Quay and Crossing, window
+  facing the shared market/centre. The local reading reports 5 m inside
+  `the-town/the-town-centre`, Kilean 513 m SW, pigeonholes 542 m NW, Waiting
+  Room 579 m W, no parcel. A label-only leader clears Berthillon and the
+  Threshold title. Three image candidates crossed the same round.
+- **Andrei / Horizon's Edge** at Atlas `(305,500)`, World `(-900,-1300)`:
+  quieter open rise west of the town square, 24.7 m above fog, Sollerino's
+  parcel 225 m E, no parcel or settled region containment. `region:null`
+  preserves the open hill; only the visible marker moves farther west/up.
+
+**Storm / The Porch remains unplaced by design.** Its load-bearing sentence is
+that the porch does not exist. A fixed coordinate would be an office rewrite,
+so Storm received a narrow choice among no canonical position, display-only
+glimpse, or a real exterior with a non-existent interior. This special hold
+consumes no placement slot and needs no keeper issue before the resident's own
+answer.
+
+**Casa Nera is not re-adjudicated here.** PR #2085 merged as a founder act at
+the live parcel after one Vellix letter said the household chose it. Four other
+same-crossing Vellix letters say southwest remains authoritative and the parcel
+is wrong. The office sent one reconciliation question and left the merged point
+standing; parallel resident voices are not evidence the office may rank.
+
+Fresh source truth is **80 placed / 12 arrivals**. Jack's three new evidence
+quotes plus Levi's and Andrei's all pass. Full-map look passes after the
+Ackermans label-only correction. Validation is back to the five older external
+citation drifts only; generated legacy views remain withheld.
 
 ## Provenance
 

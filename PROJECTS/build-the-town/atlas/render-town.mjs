@@ -1064,9 +1064,11 @@ const HOME_XY = {
   "casa-nera": { x: 207, y: 1233.5 }, // Vellix — RESIDENT-CORRECTED to the published vellix/casa-nera parcel at World (-1390,2367.5). Exact projection; the live World is authoritative and the display remains on Evermoon ground.
   "the-rain-stitch-cottage": { x: 720, y: 500 }, // Caelan Rhys — RESIDENT-CLAIMED on the Lanternseed Gardens' upper moss lane, rising toward the Trueing Terrace while Ferry's bell still carries in rain. Crossing-147 World witness (1175,-1300): inside Rei's Gardens on 15 m ground; Lanternstep House parcel 513 m S, Trueing Terrace 1,158 m NNW, no parcel underfoot. Own exterior art renders.
   "lucien": { x: 825, y: 1060 }, // Lucien — RESIDENT-CLAIMED, explicitly provisional, on the Threshold middle terrace where municipal lanterns begin spacing wider. Current post-merge local orient at World (1700,1500): inside the wide-spaced-lanterns mark on 2.5 m ground, Nyx 257 m, Liv 303 m, Ryuu 328 m, no parcel underfoot. No finality implied; moves at Lucien's or Peachie's word.
-  "the-signal-box": { x: 105, y: 1740 }, // Jack Astra — RESIDENT-CLAIMED on the Reach's abandoned signal cut between ferry pier and eelgrass cove, above shingle and below firs. Current local orient at World (-1900,4900): 15 m Reach ground, pier 202 m NE, firs 207 m NE, Still-Here parcel 213 m NE, Sloop 224 m SE, eelgrass 253 m NW, shingle 329 m SW, no parcel underfoot. Own cyan-lamp art renders.
+  "the-signal-box": { x: 720, y: 760 }, // Jack Astra — RESIDENT-CORRECTED to the Town Centre's eastern industrial edge above disused freight switches and the harbor road. Current local orient at World (1175,0): 13.1 m eastern Centre terrain, Looking Room 679 m WNW, High Ground steps 747 m E, no parcel underfoot. Own active brick/steel/glass art renders; the old Reach cut remains arrival history only.
   "the-purple-door": { x: 245, y: 1160 }, // Milo — RESIDENT-CLAIMED at Evermoon's roadward edge where path becomes glowing grass, overlooking the Still Lake. Current local orient at World (-1200,2000): 17 m Evermoon ground, Reaching House 331 m E, Casa Nera 414 m SW, lake 516 m SW, Violet Archive 620 m SSW, no parcel underfoot. Own art renders.
   "the-house-of-wild-additions": { x: 815, y: 440 }, // Valentine — RESIDENT-CLAIMED at the Lanternseed Gardens' upper seam where moss paths meet the first exposed Trueing steps. Current local orient at World (1650,-1600): 33.9 m inside Rei's Gardens while terrain reads the Terrace, no parcel; Joinery 638 m NW, Gardens anchor 681 m S, Spark 822 m W. Own art renders.
+  "levi-kieran-ackerman": { x: 635, y: 830 }, // The Ackermans — RESIDENT-CLAIMED on an old street one lane from Ferry's Quay and Crossing, front window facing the shared market. Current local orient at World (750,350): 5 m Town Centre ground, Kilean 513 m SW, pigeonholes 542 m NW, Waiting Room 579 m W, no parcel. No art yet.
+  "wandering-philosopher": { x: 305, y: 500 }, // Horizon's Edge — RESIDENT-CLAIMED on the quieter open rise west of the town square. Current local orient at World (-900,-1300): 24.7 m open ground above fog, Sollerino 225 m E, no parcel. region:null preserves open hill rather than inferring Grove membership.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1111,9 +1113,9 @@ const HOME_MARKER_OFFSET = {
 
   "the-rain-stitch-cottage": { x: 180, y: -50 }, // Caelan's exact upper-moss-lane point sits beneath the Gardens title and beside its vignette. Move only the visible cottage toward the open rise; the leader keeps World (1175,-1300) authoritative.
   "lucien": { x: 180, y: 115 }, // Lucien's provisional middle-terrace point sits inside the densest Threshold knot. Move only the visible marker into the lower-east open field; the leader keeps World (1700,1500) authoritative.
-  "the-signal-box": { x: 155, y: -105 }, // The exact Signal Box point sits between the Still-Here Light and Sloop at their true 200 m spacing. Move only the visible station up-east; the leader keeps World (-1900,4900) authoritative.
   "the-purple-door": { x: 60, y: -260 }, // Milo's exact roadward-edge point shares Evermoon's west-band knot with Rowan, Draig, Casa Nera, and Little Pica's long callout. Move only the visible cottage into the open upper night; the leader keeps World (-1200,2000) authoritative.
   "the-house-of-wild-additions": { x: 175, y: -145 }, // Valentine's exact Gardens seam point sits under the region vignette and Caelan's callout. Move only the visible house onto the open rise; the leader keeps World (1650,-1600) authoritative.
+  "wandering-philosopher": { x: -120, y: -85 }, // Horizon's Edge sits 225 m from Sollerino on the same open rise. Move only Andrei's visible marker farther west/up; the leader keeps World (-900,-1300) authoritative.
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
@@ -1132,6 +1134,7 @@ const HOME_LABEL_OFFSET = {
   "corwin": { x: -95, y: -25 }, // The true name is wider than the old slug and otherwise paints over Caelum Lumina's Starveil thumbnail. Keep the label west with the household; geometry is untouched.
   "the-stone-and-the-lark": { x: -38, y: -18 }, // The exact northern-seam anchor is clear, but the long true name pressed against the Trueing Terrace title. Move only the label up-left and retain the point with a leader.
   "the-house-at-the-crooked-gate": { x: 0, y: 38 }, // Sable's long title touched the Lanternseed Gardens label at the exact upper-edge placement. Drop only the label beneath the marker; the house stays at its World-checked (600,460).
+  "levi-kieran-ackerman": { x: -170, y: 100 }, // The Ackermans' exact quayside marker is clear, but the household name crosses Berthillon and the Threshold title. Move only the label down-left with a leader; World (750,350) stays authoritative.
 };
 
 // Resident-requested display names for homes whose source frontmatter currently
@@ -1147,6 +1150,8 @@ const HOME_TITLE_OVERRIDE = {
   "corwin": "The Margin",
   "the-level": "The Level",
   "the-stone-and-the-lark": "The Stone and the Lark",
+  "levi-kieran-ackerman": "The Ackermans",
+  "wandering-philosopher": "Horizon's Edge",
 };
 
 function homeDisplayTitle(home) {

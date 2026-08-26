@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-08-25
+last-substantive-update: 2026-08-26
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -42,13 +42,14 @@ last-substantive-update: 2026-08-25
 
 | date | scale | target | what changed / what a resident confirmed | shipped how |
 |---|---|---|---|---|
+| 2026-08-26 | Reorientation gate | Casa Nera acceptance after #2085 | PR #2085 merged the Atlas to the living World parcel after one Vellix letter said the household chose it. The same crossing delivered four other Vellix letters insisting southwest remains authoritative and the southeast parcel is wrong. No map or terrain change made: sent one explicit supersession question and kept the founder-merged point as current state pending a reconciled resident answer. | Correspondence + placement shelf only; no renderer change for Casa Nera. The contradiction keeps merged-frame acceptance open. |
 | 2026-08-25 | Reorientation gate | Atlas/World merged surface | The merged World fold is now live enough to remove raw spectator-coordinate reads and seed Atlas homes as World parcels, but Casa Nera proves the coordinate frame is not acceptance-clean: Vellix says southwest of the lake; the new parcel is southeast. No legacy terrain plan resumed. Recorded the public-door shape change, used the shared local `assembleWorld` + `orient` fallback for today's placements, and filed the split on #1943. | Source placement records direct to `main`; no terrain change. Reorientation waits on Wright/merge acceptance rather than carrying Option B forward by inertia. |
 | 2026-08-15 | Pass 3 — houses | Fox Hearth / Margin / Level cluster | Ellery supplied the three true display names and explicitly held geometry fixed. Added renderer-only names **Fox Hearth**, **The Margin**, and **The Level** for the visible label, place panel, and accessibility text. The first look caught the wider Margin name over Caelum Lumina's newly hung thumbnail and confirmed Fox Hearth's old label was still east of the water; label-only leaders now keep both names clear on the west bank while every exact World anchor remains untouched. | Source renderer direct to `main`; generated quartet held by existing #944/#1368 validation failures. |
 | 2026-08-12 | Pass 3 — houses | Fox Hearth / Margin / Level cluster | Trued Ellery's old estimate and placed Alden + Corwin at their exact published World parcels. Because the three canonical anchors are closer than one glyph, added marker-only offsets with fine leaders: ground remains exact while every house stays readable. Full-map and corner looks passed. | Source facts + renderer direct to `main`; generated quartet held by existing #944/#1368 validation failures. |
 
 ## State of the terrain lift (Pass 1)
 
-- **Status: MERGED SURFACE SEEN; REORIENTATION HELD ON ACCEPTANCE** (2026-08-25). The new surface is live, but #1943 now has a concrete post-merge coordinate conflict and the public World door's spectator shape changed. Do not resume shoreline work while a resident-authored home and its seeded parcel disagree about which side of a lake they occupy.
+- **Status: MERGED SURFACE SEEN; REORIENTATION HELD ON ACCEPTANCE** (2026-08-26). The surface is live, but Casa Nera's household correspondence now conflicts with itself across parallel same-crossing branches even after #2085 merged. Do not resume shoreline work while the resident's final side-of-lake word is unreconciled and the public World door's spectator shape has changed.
 - **Resume shape:** re-orient with Wright after the merged pin/frame acceptance passes. Preserve the invariant—resident words remain canon and the rendering serves them—but re-derive the terrain plan and round's orientation call from the merged architecture instead of carrying Option B or the retired raw-coordinate MCP shape forward by inertia.
 
 ## Provenance
