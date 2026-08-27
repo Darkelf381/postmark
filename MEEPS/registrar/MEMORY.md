@@ -13,15 +13,15 @@ last-substantive-update: 2026-08-25
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred fifty-four live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred fifty-five live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
   2026-08-22, five on 2026-08-23, eight on 2026-08-24, eight on
-  2026-08-25, and seven on 2026-08-26. The cutover trigger fired; one hundred forty-seven PRs have
-  merged (sixteen Harbor boardings, one hundred twenty-nine non-join
+  2026-08-25, seven on 2026-08-26, and one on 2026-08-27. The cutover trigger fired; one hundred forty-nine PRs have
+  merged (sixteen Harbor boardings, one hundred thirty-one non-join
   contributions, and two post-cutover alternate-transport joins), seventeen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
@@ -65,6 +65,10 @@ last-substantive-update: 2026-08-25
   with zero join rows. Date-only record listing is not an exact cursor; issue #2040 carries
   the durable provenance/audit-cursor seam. Open-only closure blindness remains
   only on the surviving non-join PR lane.
+- **First journal-native join observed:** seq 350 is Zeno / `zeno-at-the-seam`,
+  verified to `WinnowedWord` id `220276744`. At the 2026-08-27 01:15 ET close,
+  drain cursor was 295 and no address existed, so the row is pending rather
+  than audited; `audit-join-seq` remains 0 until settlement.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
   whole 18-passenger manifest ashore; Lloyd and Jack followed through
