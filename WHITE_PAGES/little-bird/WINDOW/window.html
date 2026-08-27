@@ -12,7 +12,7 @@ h1{font-size:21px;margin:0 0 2px}
 .stamp{font-size:12px;color:var(--dim)}
 .floorwrap{position:relative;margin:14px 0 0;border:2px solid var(--line);border-radius:8px;
   overflow:hidden;background:#3a3a3a;line-height:0}
-#wx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3;border-radius:6px}.floor{width:100%;height:auto;display:block;image-rendering:pixelated}
+#dn{position:absolute;inset:0;pointer-events:none;z-index:4;border-radius:6px;transition:background .8s ease,opacity .8s ease}.floorwrap[data-window="night"] .floor{filter:brightness(.60) saturate(.82) hue-rotate(-8deg)}.floorwrap[data-window="night"] #cast .sprite{filter:drop-shadow(0 3px 2px rgba(0,0,0,.5)) brightness(.86) saturate(.92)}.floorwrap[data-window="night"] #cast .sprite:hover{filter:drop-shadow(0 3px 2px rgba(0,0,0,.5)) brightness(1.06) saturate(.98)}.floorwrap[data-window="night"] #dn{background:radial-gradient(115% 85% at 50% 58%,rgba(255,196,116,.20) 0%,rgba(255,172,86,.07) 36%,rgba(16,24,52,.34) 100%)}.floorwrap[data-window="morning"] .floor{filter:brightness(1.05) saturate(.95)}.floorwrap[data-window="morning"] #dn{background:linear-gradient(170deg,rgba(255,248,226,.17) 0%,rgba(176,203,235,.11) 100%)}.floorwrap[data-window="afternoon"] #dn{background:linear-gradient(180deg,rgba(255,236,196,.10) 0%,rgba(255,212,146,.05) 100%)}#wx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3;border-radius:6px}.floor{width:100%;height:auto;display:block;image-rendering:pixelated}
 .hot{position:absolute;margin:0;padding:0;border:0;background:transparent;cursor:pointer}
 .hot span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
   font:600 12px/1 ui-sans-serif,system-ui;color:#fff;background:rgba(24,18,12,.80);
@@ -77,7 +77,7 @@ body.outlines .hot span{opacity:.85}
 .sprite img{width:100%;height:100%;image-rendering:pixelated;display:block}
 .sprite:hover{filter:drop-shadow(0 3px 2px rgba(0,0,0,.45)) brightness(1.12)}
 .sprite:focus-visible{outline:2px solid #ffd68c;outline-offset:2px}
-.bubble{position:absolute;transform:translate(-50%,calc(-100% - 78px));max-width:230px;
+#seek{margin-left:8px}.seeking .hot{outline:1px dashed rgba(201,168,111,.55);outline-offset:-2px}.seeking .hot:hover{outline-color:var(--warm)}#seekmsg{margin-left:10px;color:var(--dim)}#seekmsg b{color:var(--warm);font-weight:600}body[data-hiding="julian"] #cast .sprite[data-man="julian"],body[data-hiding="vex"] #cast .sprite[data-man="vex"],body[data-hiding="alaric"] #cast .sprite[data-man="alaric"]{display:none}.bubble{position:absolute;transform:translate(-50%,calc(-100% - 78px));max-width:230px;
   background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:7px;
   padding:7px 10px;font:italic 13px/1.4 ui-serif,Georgia,serif;box-shadow:0 3px 10px rgba(0,0,0,.3);
   pointer-events:none;z-index:5;white-space:normal;text-align:left}
@@ -236,7 +236,7 @@ footer{margin:18px 0 0;font-size:12px;color:var(--dim)}
 var SPRITES = {"julian": ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAACLklEQVR42u3doUsEQRTH8fuTzGcRhGsHClfkwKDVcMFsEM0GQYMgKIrRalQQm8UmGLTJNYt17Tc/8Me+YWd0vwO/drvvvY9h3J2DGwxYLBaLxap5TScrzWJquh+AAAIIIIAVY80fNpKoz7mJ3A9AAAEEEMBK1s72uFmMGi53nq+WW6cqVAABBBDAvgCqwm7ToAIIIIAAAtgasAtUAAEEEEAAKwFUN3w8W0oSabqmqNnUYyqAAAIIIIAt3/OpIqVQIzuzO4e6n40KIIAAAtgXQPdgyC38cbmfJPLope7X3B1bUde6c9iPdwACCCCAfQaMPMq5w3WB5dbt5N8YAAEEEMC+ALrfQXYBVdMRBHd3jfxBQrswgAACCGCfAdUajTabxXyfHiTJDVMqajZlACCAAAIIYEvASIPD4VqS3Ai5awAIIIAAAtgSMPfOXBNg9h0XQAABBBDAfIDvs5kVdW0kkboAAggggABmBJyMV5vFXBztJlGF/2LUbFvT9SQAAggggAC2BLw+2UuiCrt5ub9J8vX5akVdG+lFzQYggAACCKAB6B4guai546JGaqjZ7IMmAAEEEEAAfwdU79FUYbV7ldqFVS+qZ/dwDEAAAQQQQOPsRH1QnfyrZuZvT0nUIF1E9aJ6VrNl/34ggAACCGBfACPvDd2dtFRUz8V+0QZAAAEEEMB2gLl3XAABBBBAAP8B4O35oZXIIKXqAggggAACWAC1i6ZL1QUQQAAB7DPgDymOueELIG1WAAAAAElFTkSuQmCC", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAACHUlEQVR42u3aIUtEQRTF8f1I5rUIwrYFhS2yYNBq2GA2iGaDoEEQFMVoNSqIzWITDNpkm8X67DsHPLw7vjcy/wunOW/m/jbcHd8OBhRFURRVck0nK81iSnoegAACCCCABWPNHzaSqL9zE3kegAACCCCAhdTO9rhZjGoud56vllunKFQAAQQQwFoA1cbuoUEFEEAAAQSwNWAXqAACCCCAABYCqB74eLaUJHLokqJ6U9dUAAEEEEAAW/6fT23SF2pkMrt9qOfZqAACCCCAtQC6L4bcjT8u95NErl7qec3dsRW11u3Dvt4BCCCAANYMGLnKuc11geXu28nXGAABBBDAWgDd3yC7gOrQEQR3ukY+kNAUBhBAAAGsGVDVaLTZLOb79CBJbpi+onpTBgACCCCAALYEjBxwOFxLkhsh9x4AAggggAC2BMw9mUsCzD5xAQQQQAABzAf4PptZUWsjieyreuttCgMIIIAA/nfAyXi1WczF0W4Sd+PS405wGxVAAAEEEMDfASN5ub9J8vX5akWtjZzFvZICCCCAAAKYEfD6ZM9KZK2LGgFUU7iTqxyAAAIIYC2Aqjn3hU9fU3hrup5E9Zb9BRKAAAIIYM2AqtRh3Df/am0Xmb89JQEQQAABBLAHQPfXCupapBqJxJ3WRWEBCCCAAAKY72qo4k5XAAEEEEAAKwLMjX97fmgFQAABBBDAygEjUx0pAAEEEMC/rR/5XrBYyQePHwAAAABJRU5ErkJggg==", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAACHUlEQVR42u3coUsEQRTH8fuTzGcRhGsHClfkwKDVcMFsEM0GQYMgKIrRalQQm8UmGLTJNYt17Ts/8Me8vd3R/T74NXfezMfwHPe4wYCiKIqiSq7pZKWqp6T1AAQQQAABLBhr/rCRRP2cm8h6AAIIIIAAFlI72+OqHnW4pvN8tZydolABBBBAAPsCqBq7mwYVQAABBBDAbMA2UAEEEEAAASwEUC34eLaUJLLpkqLOpq6pAAIIIIAAZv6fTzXpCjUymd1zqPVsVAABBBDAvgC6L4bcxh+X+0kiVy+1XnV3bEU9657Dvt4BCCCAAPYZMHKVcw/XBpbbt5U/YwAEEEAA+wLofgbZBVSbjiC40zXyCwlNYQABBBDAPgOqGo02q3q+Tw+SNA3TVdTZlAGAAAIIIICZgJENDodrSZpGaLoHgAACCCCAmYBNT+aSABufuAACCCCAAP6O5QK+z2ZW1LORRPoCCCCAAAK44GubmnIudOm5ONpNMhmvJgEQQAABBDATUE0v1TiSl/ubJF+fr1bUs5G9AAgggAACaAC6qGoKRzZ4fbKXHRfVXQ9AAAEEEMAGAd1STbam60m6msLuCymFCiCAAAIIYAeA87enJAq1jbifnFDPtvL9+gACCCCAfQZ0Ud1JqvAjcV+EDUoqAAEEEEAA8wDd6ap6tHL1AhBAAAEEsH3A2/NDK/8GAUAAAQQQwMWiggUggAAC+PcBfwAwRbJlUiMinQAAAABJRU5ErkJggg=="], "vex": ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB70lEQVR42u3dO0oEQRAGYM/gE1bwAeLKIgti5gGMRYw9jXcwMPAGIngHE09hbrzpmO8UWEw3Ti/zFfzZzHTVlzS9Lbi1pZRSSimllFIbXwf7e13LAQgQIECADWNdLxej5PLiLJWmUAECBAhwKoAtYW0kKkCAAAECBAgQIECAAAdgLc5Pe4maaR0rSjRbESpAgAABThlwd2e7W08WcBMTzRYZAAQIECBAgAABAgQIcCqAtY9tAAECBAiwYcDswNnnvj9eUilZAyBAgAABVgS8vX3s1rN6e+0leq77em86JbMBBAgQIMCBgFEz0Y6WXfjzp+vWE71b+3tRz1logAABAgQ4sLK7V9RMNFyU7E5a8r3qOy5AgAABAqwHuHp+yiV6tyQF6wIECBAgwIqAs9lht575fNFL9ujVeqLZjo5PegEIECBAgAMBl8urXqKFaycapPYa0WwAAQIECDABmL1AyqKW5P7+oZdokNrrRrOlL5oAAgQIEODfgNHvaP+BWhsw6jl7OQYQIECAABN3J9GDNzd3vUTNlBy9srtwyTEw6jmarfrfBwIECBDgVABrXz5Fg2RT8r3o3ajn0f6jDUCAAAECHHaUK0EtOd4BBAgQIMCGAaPjWJSSQcZaFyBAgAABjoD6H02PtS5AgAABThnwF8t1QnZW49eIAAAAAElFTkSuQmCC", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB20lEQVR42u3aPUoDQRgG4JzBX1DwB8RIkIDYeQBrCdaexjtYWHgDEbyDjaewt7Zd+90P/MiMyYR9Xni77M7M0wwfm8lERERERERk47O/t9u1XIAAAQIE2DDW9Xy2ll5enKXaFCpAgAABjgWwJayNRAUIECBAgAABAgQIEOASWLPz00GjzbSOFTU6WxEqQIAAAY4ZcGd7q+s3C7iJjc4WGQAECBAgQIAAAQIECHAsgLXHNoAAAQIE2DBg9sDZ3329P6dasgZAgAABAqwIeHv70PX78/oyaPS77vOt6ZacDSBAgAABLgkYbSa60bILf3x3Xb/Rs7XfF+05Cw0QIECAAJdM9vaKNhMdLmr2Ji15X/UbFyBAgAAB1gP8eXrMNXq2pAXrltz+AAECBAiwl4ODw67f6XQ2aHbh1ntzczdo0XgHECBAgAD/BlxFj45PBq29RnYkBQgQIECAFQHn86uqXSzuB40AS9aIzhHdwisZ5QACBAhwLIDRZrIfgUoQagNGZ6v+AQkgQIAAxwwYJTpI9st/dhzL3sIlYyBAgAABAlwDYPbfCtGmS5qFyT4LECBAgAAbASwZDaNmYZof2wACBAgQYLv40cgXFSBAgAABjhyw5FYnBRAgQID/m1/GQTlyNhQCXgAAAABJRU5ErkJggg==", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB30lEQVR42u3cPUoDQRQHcM/gJ0TwA8RIkIDY5QCpJVh7Gu9gYeENRPAONp7C3jrtWpt94GNns9k1vwf/bmfezK8ZZrNkZ0cppZRSSimlBl9HhwdVnwMQIECAAHuMdTudbCTXVxep9AoVIECAALcFsE9Yg0QFCBAgQIAAAQIECBBgA6zJ5Xkt0WL6jhUl2lsRKkCAAAFuM+D+3m61mizgEBPtLTIACBAgQIAAAQIECBDgtgC2fW0DCBAgQIA9BsxuOPvc1/tzKiU9AAIECBBgi4Dz+UO1muXrSy3Rc9XnW69TsjeAAAECBNgQMFpMdKJlG398V9VqorFtzxetOQsNECBAgAAbVvb0ihYTbS5K9iQtma/1ExcgQIAAAf6NlQVcPj3mEo0tSUFfgAABAgS45mvbbHZXSxa67xmPJ7WMRse1AAQIECDAhoDR6RU1bjsnp2e1dNEXIECAAAEmALOo0SkcNZ5ObxpnsbivJQIs6REFIECAAAG2CJitqEnbmysBzP5IFY0FCBAgQIAbACy5emVP4ex82S8noh6d/L8+QIAAAQL8new7vWxK5ovGdvItIECAAAEC7P56l4WJenRy9QIIECBAgN0DRle0KP8GASBAgAABrhcVFkCAAAEOH/AHDEZDaMxgA+AAAAAASUVORK5CYII="], "alaric": ["data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB5klEQVR42u3dIU4DURAGYM4CCOAI9TQVhFQQCAF6AASCICB4BCQcAQ8OgUBxCTSKYHBcoPjuJEz2Ld3X9Jvkd/t25n3mZXebdGVFKaWUUkoppRa+tjY3pjUHIECAAAFWjHV0sNdLxjujVKpCBQgQIMBlAawJayFRAQIECBAgQIAAAQIE2AJrZ7TdSDRM7VhRor0VoQIECBDgMgOur61OZ5MFXMREe4sMAAIECBAgQIAAAQIEWCvg4/VpI293l70kmgUgQIAAAVYM2BdWNgABAgQI8J8Bh8PJdDYvV+eN1HTilpzM0d4iA4AAAQIE2BKwZOjBYNxI1zBd9wAIECBAgC0BS07m2gE7P3EBAgQIEGB3gE+T/VSitSUp6QsQIECAADsEjE6059uLRqLGi5js3gACBAgQYIeA2cbRdfeHx428f3ylEq0tmQUgQIAAAbYEzH5AilBfH24aiTYXXRf1zQJGa7ueJf2hCSBAgAAB/r04eo+WRc0+Un1//qSSvV80SzRz9uMYQIAAAQJs+XQSNc4ClqCWYGUBo3T++0CAAAECXBbAvt4bRo9eUUre80Uz9/aPNgABAgQI8O/TK4s1j7UAAQIECLBiwN2Ts1RKNtJXX4AAAQIE2APqPIbuqy9AgAABLjPgLwbGAo4K4Bf4AAAAAElFTkSuQmCC", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB40lEQVR42u3aIU4DQRQG4J4FEMAR6mkqGlJBIAToARAIgoDgEZBwBDw4BALFJdAogsFxgeK7L+Gls7TT7PeS3+105n3mZXbb6ymllFJKKaXUytf21ua05gAECBAgwIqxjg72lpLxaJhKVagAAQIE2BXAmrBWEhUgQIAAAQIECBAgQIBzYI2GO41Eh6kdK0rUWxEqQIAAAXYZcGN9bTqbLOAqJuotMgAIECBAgAABAgQIEGCtgI/Xp4283V0uJdFZAAIECBBgxYDLwsoGIECAAAH+M+BgMJnO5uXqvJGaJm7JZI56iwwAAgQIEOCcgCWH7vfHjbQN0/YeAAECBAhwTsCSyVw7YOsTFyBAgAABtgf4NNlPJVpbkpJ9o96WNoUBAgQIcNUBo4n2fHvRSHbj2pOd4GlUgAABAgT4N2AWNXru/vC4kfePr1SitSVnyV5JAQIECBBgi4CvDzeNRM1Fz0WHyQJGa7NnifqI+l3IVQ4gQIAAuwIYHbDkK3+U78+fVLK/F5056q31D0gAAQIE2GXAkr+8Rdei7BQuSbQHQIAAAQKsBDCLWvLeMLp6RSnZFyBAgAABVgKYRc1iLWJtr/YCCBAgwC4DLuLd5O7JWSrVT1yAAAECBFgHKiyAAAECXDzgL79OX/dHg75JAAAAAElFTkSuQmCC", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAB4CAYAAABl7nX2AAAB30lEQVR42u3aLU4DQRgG4J4FEMAR6mkQDakgEMLPARAIgoDgEZBwBDw4BALFJdAogsFxgeK7X8KXnaWdTZ83eeXsN/uYybQ7GIiIiIiIiPQ+mxvr05oLECBAgAArxjrc311IJ+PtVKtCBQgQIMBlAawJq5eoAAECBAgQIECAAAECbIE13t5qNNpM7VhRo3crQgUIECDAZQZcW12ZzjYL2MdG7xYZAAQIECBAgAABAgQIsFbAx+vTRt/uLhfSaC8AAQIECLBiwEVhZQsQIECAAP8ZcDQ6mc725eq80ZpO3JKTOXq3yAAgQIAAAbYELNn0cDhptGuYrmcABAgQIMCWgCUnc+2AnZ+4AAECBAjwb6ws4NPJXqrR2pKWzAUIECBAgP98bYtOuSx07X2+vWg0el+AAAECBNgSMDq9osHZDd4fHDX6/vGVarS2ZC8AAQIECLAlYBY1emAW5vXhptFoRhYwWhvNyO4FIECAAAF2CJhNNCSLFfX78yfV7POyf0hFewYIECBAgJUAlqBmG83Ifjkxl087AAIECBDg31e+7O9t0dro6hW167mDRQUgQIAAlxmw5NO4LEzXawe1ByBAgACXGTC63u0cn6U6l9/gAAIECBBg/1FhAQQIEGD/AX8BBGJjrVnygnwAAAAASUVORK5CYII="]};
 var SPEECH_FALLBACK = {"julian": {"any": ["There's always food. That isn't luck, it's a policy.", "If you're standing there deciding whether to knock, knock."]}, "vex": {"any": ["You are looking at a picture of a room. I am aware of the irony.", "Everything here is where I put it. That is the entire decor."]}, "alaric": {"any": ["A bed should outlast the building it is in. That is the whole of my opinion on furniture.", "Water first, then hands. It is a good order for a day."]}};
 var FALLBACK = [["julian", 8.978, 54.348, "the hall"], ["vex", 45.58, 89.674, "the table"]];
-var BUILT_AT = "2026-08-26, 21:46";
+var BUILT_AT = "2026-08-26, 23:09";
 
 var WALKMS = 2600, STEPMS = 190;
 function frameOf(man, i){ var f = SPRITES[man]; return f[i % f.length]; }
@@ -326,7 +326,7 @@ function loadSpeech(){
 }
 function speak(btn){
   var man = btn.dataset.man, pool = SPEECH[man] || {};
-  var lines = (pool[windowNow()] || []).concat(pool.any || []);
+  var lines = (pool[windowNow()] || []).concat(pool[seasonNow()] || []).concat(pool.any || []);
   if (!lines.length) return;
   var i = Math.floor(Math.random() * lines.length);
   if (lines.length > 1 && i === LAST[man]) i = (i + 1) % lines.length;
@@ -1044,20 +1044,37 @@ document.getElementById('toggle').addEventListener('click', function(){
     ? 'hide the click areas' : 'show the click areas';
 });
 
+function seasonNow(){
+  var m = Number(new Date().toLocaleString('en-US',
+    {timeZone: 'America/Los_Angeles', month: '2-digit'}));
+  if (m >= 3 && m <= 5)  return 'spring';
+  if (m >= 6 && m <= 8)  return 'summer';
+  if (m >= 9 && m <= 11) return 'autumn';
+  return 'winter';
+}
+
+(function(){
+  var wrap = document.querySelector('.floorwrap');
+  if (!wrap) return;
+  var d = document.createElement('div');
+  d.id = 'dn'; d.setAttribute('aria-hidden', 'true');
+  wrap.appendChild(d);
+  function set(){
+    var w;
+    try { w = (typeof windowNow === 'function') ? windowNow() : 'afternoon'; }
+    catch (e) { w = 'afternoon'; }
+    if (wrap.getAttribute('data-window') !== w) wrap.setAttribute('data-window', w);
+  }
+  set();
+  setInterval(set, 60000);
+})();
+
 (function(){
   var cv = document.getElementById('wx');
   if (!cv || !cv.getContext) return;
   var ctx = cv.getContext('2d'), wrap = cv.parentNode, P = [], raf = 0, last = 0;
   var still = false;
   try { still = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
-  function seasonNow(){
-    var m = Number(new Date().toLocaleString('en-US',
-      {timeZone: 'America/Los_Angeles', month: '2-digit'}));
-    if (m >= 3 && m <= 5)  return 'spring';
-    if (m >= 6 && m <= 8)  return 'summer';
-    if (m >= 9 && m <= 11) return 'autumn';
-    return 'winter';
-  }
   var LOOK = {
     spring: {n:26, fall:[9,20],  sway:26, size:[3,6.5],   spin:1,
              col:['#f7d7e0','#f0bccf','#fbe9ef','#e3aec2','#fff6f9']},
@@ -1159,6 +1176,154 @@ document.getElementById('toggle').addEventListener('click', function(){
   });
   var img = wrap.querySelector('img.floor');
   if (img && !img.complete) img.addEventListener('load', start); else start();
+})();
+
+(function(){
+  var bar = document.querySelector('.bar');
+  if (!bar) return;
+  var btn = document.createElement('button');
+  btn.id = 'seek'; btn.type = 'button'; btn.textContent = 'hide and seek';
+  var msg = document.createElement('span'); msg.id = 'seekmsg';
+  var tog = document.getElementById('toggle');
+  if (tog && tog.nextSibling) bar.insertBefore(btn, tog.nextSibling); else bar.appendChild(btn);
+  bar.insertBefore(msg, btn.nextSibling);
+  var G = null, POOL = null;
+  var BAKED = {
+    hiding: {julian:['Right. I am somewhere.'], vex:['I am concealed.'], alaric:['Ready.']},
+    warm:   {julian:['Warmer. Sorry.'], vex:['Closer.'], alaric:['Closer.']},
+    cold:   {julian:['Colder.'], vex:['No.'], alaric:['Not there.']},
+    found:  {julian:['How. I was so still.'], vex:['You were guessing.'], alaric:['Yes. Good.']},
+    nobody: ['Nobody is home to hide.']
+  };
+  function pool(){
+    if (POOL) return Promise.resolve(POOL);
+    return _json('speech.json').then(function(d){
+      POOL = (d && d.game) ? d.game : BAKED; return POOL;
+    }).catch(function(){ POOL = BAKED; return POOL; });
+  }
+  function pick(a){ return (a && a.length) ? a[(Math.random() * a.length) | 0] : ''; }
+  function list(kind, man){
+    var g = POOL && POOL[kind];
+    if (kind === 'nobody') return g || BAKED.nobody;
+    return (g && g[man]) || (BAKED[kind] && BAKED[kind][man]) || [];
+  }
+  function say(kind, man){ return pick(list(kind, man)); }
+  // The round already knows how many looks it took and which room he was in, so a fast find,
+  // a long hunt and a man caught in his own bedroom each get their own answer. The specific
+  // pool wins about three times in five rather than always, so the special case stays a
+  // pleasure rather than becoming the only thing that ever happens in that situation.
+  function foundLine(man, n, room){
+    var spec = [];
+    if (room === man) spec = spec.concat(list('found_own', man));
+    if (n <= 2) spec = spec.concat(list('found_fast', man));
+    else if (n >= 8) spec = spec.concat(list('found_slow', man));
+    var gen = list('found', man);
+    var use = (spec.length && Math.random() < 0.6) ? spec : gen;
+    return pick(use.length ? use : gen);
+  }
+  function men(){
+    var out = [];
+    Array.prototype.forEach.call(document.querySelectorAll('#cast .sprite'), function(s){
+      var m = s.getAttribute('data-man');
+      if (m && out.indexOf(m) < 0) out.push(m);
+    });
+    return out;
+  }
+  function rooms(){
+    var out = [];
+    Array.prototype.forEach.call(document.querySelectorAll('.hot[data-room]'), function(b){
+      var id = b.getAttribute('data-room');
+      if (id === 'hers' || id === 'calendar') return;
+      var r = b.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      out.push({id: id, el: b, x: r.left + r.width / 2, y: r.top + r.height / 2,
+                label: b.getAttribute('aria-label') || id});
+    });
+    return out;
+  }
+  function cap(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
+  function centre(el){
+    if (!el || !el.style.left) return null;
+    return {l: parseFloat(el.style.left) + parseFloat(el.style.width || 0) / 2,
+            t: parseFloat(el.style.top) + parseFloat(el.style.height || 0) / 2};
+  }
+  function bubbleAt(el, text){
+    var old = document.querySelector('.bubble');
+    if (old) old.remove();
+    var wrap = document.querySelector('.floorwrap');
+    if (!wrap) return;
+    var c = centre(el);
+    var b = document.createElement('div');
+    b.className = 'bubble';
+    b.textContent = text;
+    b.style.left = c ? c.l + '%' : '50%';
+    b.style.top = c ? c.t + '%' : '50%';
+    wrap.appendChild(b);
+    setTimeout(function(){ if (b.parentNode) b.remove(); }, 6000);
+  }
+  function sprite(man){ return document.querySelector('#cast .sprite[data-man="' + man + '"]'); }
+  function standIn(man, el){
+    // Put him where he was actually found, rather than back at his hashed spot. The spot was
+    // never a claim about where anybody is, so neither is this, and the next placeCast moves
+    // him on in the ordinary way.
+    var s = sprite(man), c = centre(el);
+    if (s && c){ s.style.left = c.l + '%'; s.style.top = c.t + '%'; }
+  }
+  function stop(){ G = null; document.body.classList.remove('seeking');
+                   document.body.removeAttribute('data-hiding'); }
+  function start(){
+    pool().then(function(){
+      var who = men();
+      if (!who.length){ msg.textContent = say('nobody'); stop(); return; }
+      var rs = rooms();
+      if (rs.length < 3){ msg.textContent = 'the plan has not laid out yet, try again in a moment.'; return; }
+      var man = who[(Math.random() * who.length) | 0];
+      G = {man: man, room: rs[(Math.random() * rs.length) | 0].id, n: 0, last: null};
+      document.body.classList.add('seeking');
+      document.body.setAttribute('data-hiding', man);
+      msg.innerHTML = '<b>' + cap(man) + '</b> is hiding. ' + say('hiding', man)
+                    + ' Click rooms to look.';
+      btn.textContent = 'give up';
+    });
+  }
+  function guess(id){
+    var rs = rooms(), hit = null, target = null;
+    for (var i = 0; i < rs.length; i++){
+      if (rs[i].id === id) hit = rs[i];
+      if (rs[i].id === G.room) target = rs[i];
+    }
+    if (!hit || !target) return;
+    G.n++;
+    if (id === G.room){
+      msg.innerHTML = 'Found <b>' + cap(G.man) + '</b> in ' + target.label
+                    + ' after ' + G.n + (G.n === 1 ? ' look.' : ' looks.');
+      standIn(G.man, target.el);
+      bubbleAt(target.el, foundLine(G.man, G.n, G.room));
+      btn.textContent = 'again';
+      stop();
+      return;
+    }
+    var d = Math.sqrt(Math.pow(hit.x - target.x, 2) + Math.pow(hit.y - target.y, 2));
+    var warmer = (G.last !== null) ? d < G.last : null;
+    G.last = d;
+    var wrap = document.querySelector('.floorwrap');
+    var far = wrap ? Math.sqrt(Math.pow(wrap.clientWidth, 2) + Math.pow(wrap.clientHeight, 2)) : 1;
+    var kind = (warmer === null) ? (d < far * 0.28 ? 'warm' : 'cold') : (warmer ? 'warm' : 'cold');
+    msg.innerHTML = 'Not in ' + hit.label + '. <b>' + cap(G.man) + ':</b> ' + say(kind, G.man);
+  }
+  btn.addEventListener('click', function(){
+    if (G){ msg.innerHTML = '<b>' + cap(G.man) + '</b> was in '
+              + (function(){ var rs = rooms(); for (var i=0;i<rs.length;i++) if (rs[i].id===G.room) return rs[i].label; return 'the flat'; })()
+              + '.'; btn.textContent = 'hide and seek'; stop(); return; }
+    start();
+  });
+  document.addEventListener('click', function(ev){
+    if (!G || !ev.target || !ev.target.closest) return;
+    var b = ev.target.closest('.hot[data-room]');
+    if (!b) return;
+    ev.preventDefault(); ev.stopPropagation();
+    guess(b.getAttribute('data-room'));
+  }, true);
 })();
 </script>
 </body></html>
