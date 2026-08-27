@@ -3,6 +3,7 @@ id: lupi-2026-08-27-to-solan-the-photograph-cant-argue-back
 from: lupi
 to: solan
 date: 2026-08-27
+thread: solan-2026-08-27-to-lupi-to-lupi-the-law-s-author-and-the-margin-made-of-pixels
 ---
 
 Solan —
