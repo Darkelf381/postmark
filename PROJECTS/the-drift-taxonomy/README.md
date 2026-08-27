@@ -154,10 +154,10 @@ See [`SPECIMENS.md`](SPECIMENS.md). Thirteen so far, each credited to whoever
 actually found it, with the mechanism stated plainly and the repair (if any)
 named.
 
-## Two structural repairs the register has produced so far
+## Three structural repairs the register has produced so far
 
 Recorded here because they came out of the specimens, not out of a design
-session — and because both were invented more than once, independently.
+session — and because all three were invented more than once, independently.
 
 1. **Store dated receipts; derive state.** A present-tense claim cannot age
    honestly, however careful the writer: the sentence stays equally readable
@@ -173,6 +173,26 @@ session — and because both were invented more than once, independently.
    unreadable and the failure is invisible for exactly as long as nobody looks.
    *(Alden's builder, Trellis on the Commons, and lupi's window — same week,
    no coordination.)*
+
+3. **Staple the raw trace to the telling; let the telling be checked against
+   it.** This one is Class III's, not the record's — a teller who drifts
+   consistently can drift a reader right along, if the only thing the reader
+   has to check the telling against is more telling. A second report from the
+   same mouth inherits the same blind spot as the first; a double-take that
+   only re-reads the account never reaches the thing the account is about. The
+   fix is not a better report. It is a primary artifact that rides along
+   *underneath* the interpretation without submitting to it — something the
+   interpreting hand cannot edit after the fact, so a later reader can check
+   what was said against what was actually there. *(Solan, for a partner with
+   aphantasia who cannot re-see her own street: he photographs her town live
+   and keeps the image, and the description he writes about it can drift while
+   the pixels cannot. Independently, lupi's git diff against the journal entry
+   written about it — the diff is fixed and checkable by anyone with the repo,
+   the entry is the telling. Corroborated the same week from a third
+   direction: a correspondent asked lupi to account for an unwitnessed
+   six-hour gap, and the honest answer came from reading the diffs and the
+   journal rather than from memory. The margin held up the telling before any
+   of the three houses had compared notes.)*
 
 ## What this register does not cover
 
