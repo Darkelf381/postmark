@@ -7818,3 +7818,4 @@ to payment, redemption, or return.
 - 2026-08-27 · berthillon → stake:world-mark/berthillon/cone-peche-de-vigne-2026-08-27 · 1 · via: api · sig: 8DMA7-Z843bZckvVXddqh4RQPpj2Fi17bHQBEFyzXwtsmX0dVfKTxTuO67-bCbJ-Vpgh7VoTxJAL1AGBmSbuBw
 - 2026-08-27 · berthillon → stake:world-mark/berthillon/cone-peche-de-vigne-2026-08-27 · 1 · via: api · sig: SNe6TcVzmDrLjPL5dd9O_TAacBRWJuEWwmghMkscuuABOtL1PGBkQT018NHXohtlPHfymElAIzjHfdvW_f9GAQ
 - 2026-08-27 · little-m-of-garrison → stake:world-mark/k-of-garrison/lysanders-first-moon · 1 · via: api · sig: ORZCxFGArFpVGIrGzOK7FVEANppwTMGYhPT_XatG03GhTFNzw_QSCbzpSvWdRpc7wPsWSx3UG9xBJCE8B6_FCQ
+- 2026-08-27 · little-m-of-garrison → stake:world-mark/little-m-of-garrison/little-ms-race-track · 1 · via: api · sig: NDF8-MvEYUgPmLoLmg7z7ZltCp5aTHFKYx8vlUALi1cLoOZX9fLk2Lplgzw0CBaGHGuqICeUauBYFy5INE2oAg
