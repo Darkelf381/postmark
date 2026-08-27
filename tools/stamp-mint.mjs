@@ -28,6 +28,7 @@
 //   - <date> · stake:pot/<pot> → BURN · <n> · for: keeping:<epoch> · staker: <handle>   (epoch close: stakes matched by witnessed dollars burn — the first live use of the reserved BURN account)
 //   - <date> · minted · <staker> · <n> · for: keeping:<pot> · epoch:<epoch>     (epoch close: the staker's own σ share of their OWN burn, at par. R12: "the σ leg IS ORDINARY MINT, source-tagged (`minted · for: keeping:<pot>`), with NO liquid coin (the coin was paid when the stake burned; the row stays purpose-tagged so balance folds never hand liquid back). It COUNTS toward the ρ base". ARROW-FREE is what "no liquid coin" MEANS mechanically — foldBalances and foldMintCount key on the movement shape, so neither can see this row; foldKeepingMint and the ρ base opt IN. The retired `keeping-equity ·` form parses as unknown, and so does an arrow-bearing `MINT → …· for: keeping:…` smuggle)
 //   - <date> · pot-receipt · pot:<pot> · rail: <stripe|usdc|grant> · usd: <n> · from: <payer> · ref: <ref>   (a witnessed real-dollar payment against a pot; ARROW-FREE — mints and moves nothing by itself; ref is unique forever: one dollar, one mint chance, a re-recorded receipt bounces)
+//   - <date> · pot-correction · ref: <ref> · from <old-payer> to <new-payer> · <reason> · by: <who>   (THE HAND, CORRECTED. A witnessed dollar's payer was wrong — a mistyped handle, a login the office could not resolve, the wrong household — and this row says so. ARROW-FREE like the receipt it corrects, so no movement fold can see it; it moves nothing and it is not a second receipt. It names the ORIGINAL ref verbatim and both hands, so a reader can check the correction against the row it corrects and a fold can REFUSE one whose `from` does not match what the receipt currently says. It carries NO usd and NO pot, because there is nothing here to express them with: this corrects WHOSE dollar it was, never how many or which pot — those are the payment itself and a correction is not a re-payment. `by:` is provenance in the gift/issuance sense, naming the pen; it is not the gate. The gate is that nothing but a hand-run `epoch-close.mjs --correct-hand` can emit one — no door, no watcher, no automatic caller — plus the signature chain every row already rides.)
 //   - <date> · holo · <payer-handle> · <n> · pot:<pot> · epoch:<epoch> · ref: <ref>   (the payer's soulbound holo from the (1−σ) share — ARROW-FREE BY DESIGN: holo has no verbs, cannot stake/vote/pay/transfer, so it must never match the movement shape the tallies fold; only foldHolo reads it. A close writes ONE of these per receipt it settles and <n> MAY BE 0: dollars that mint nothing — treasury, outside, ρ-capped, sole-staker-sole-payer — are remembered all the same, and the row naming the ref is what marks that dollar's one mint chance as spent. Who paid and how many dollars stay on the pot-receipt this row's `ref:` points at; the receipt is the only money row, so nothing is restated here)
 //   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
 // Every entry is a two-sided movement — conservation is structural (entries
@@ -448,6 +449,21 @@ export function canonicalRef(ref) {
 // its first receipt.
 export const TREASURY_POT = 'treasury';
 const POT_RECEIPT_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · pot-receipt · pot:(${POT_ID_CLASS}) · rail: (stripe|usdc|grant) · usd: ([1-9]\d*) · from: (\S+) · ref: (\S+)$`);
+// THE CORRECTION ROW. ARROW-FREE for the same reason the receipt is: foldBalances
+// and foldMintCount key on the raw movement shape `<from> → <to> · <n> ·`, and a
+// correction moves nothing. `from X to Y` is void's own arrow-free wording
+// (VOID_RE above), borrowed deliberately — this is the town's second row that
+// speaks about an earlier row rather than about money moving.
+//
+// The reason field is `(\S+)`, exactly as void's is. void's reasons happen to be
+// a closed set because a DERIVATION produces them; a correction is a human
+// judgement about a real payer, so the grammar takes any single token and the
+// vocabulary lives in the runbook rather than in the regex.
+//
+// There is no usd and no pot capture, and that is the enforcement, not an
+// omission: a correction that tried to move dollars or repoint a pot could not
+// be WRITTEN. Immutability by inexpressibility beats a rule someone must remember.
+const POT_CORRECTION_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · pot-correction · ref: (\S+) · from (\S+) to (\S+) · (\S+) · by: (\S+)$`);
 const POT_STAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:pot\/(${POT_ID_CLASS}) · ([1-9]\d*) · via: (\S+)$`);
 const POT_RETURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → (\S+) · ([1-9]\d*) · for: pot-return:(${EPOCH_CLASS})$`);
 const KEEPING_BURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → BURN · ([1-9]\d*) · for: keeping:(${EPOCH_CLASS}) · staker: (\S+)$`);
@@ -516,6 +532,8 @@ export function classifyEntry(canonical) {
     return { kind: 'keeping-mint', date: m[1], handle: m[2], n: Number(m[3]), pot: m[4], epoch: m[5] };
   if ((m = POT_RECEIPT_RE.exec(canonical)))
     return { kind: 'pot-receipt', date: m[1], pot: m[2], rail: m[3], usd: Number(m[4]), from: m[5], ref: m[6] };
+  if ((m = POT_CORRECTION_RE.exec(canonical)))
+    return { kind: 'pot-correction', date: m[1], ref: m[2], from: m[3], to: m[4], reason: m[5], by: m[6] };
   if ((m = HOLO_MINT_RE.exec(canonical)))
     return { kind: 'holo', date: m[1], handle: m[2], n: Number(m[3]), pot: m[4], epoch: m[5], ref: m[6] };
   if ((m = VOID_RE.exec(canonical)))
@@ -855,6 +873,9 @@ export const economyLine = (t) => (t.kind === 'void' ? voidLine(t) : transferLin
 export const potReceiptLine = ({ date, pot, rail, usd, from, ref }) =>
   `- ${date} · pot-receipt · pot:${pot} · rail: ${rail} · usd: ${usd} · from: ${from} · ref: ${ref}`;
 
+export const potCorrectionLine = ({ date, ref, from, to, reason, by }) =>
+  `- ${date} · pot-correction · ref: ${ref} · from ${from} to ${to} · ${reason} · by: ${by}`;
+
 export const potStakeLine = ({ date, handle, pot, n, via }) =>
   `- ${date} · ${handle} → stake:pot/${pot} · ${n} · via: ${via}`;
 
@@ -1033,12 +1054,64 @@ export function foldPotPositions(entries) {
 export function foldPotReceipts(entries) {
   const receipts = []; // [{ date, pot, rail, usd, from, ref }]
   const settled = new Set(); // refs a close's holo row has already answered for
+  const proposed = new Map(); // ref -> the correction that wins for it
   for (const e of entries) {
     const c = classifyEntry(e.canonical);
     if (c.kind === 'pot-receipt') receipts.push(c);
     else if (c.kind === 'holo') settled.add(c.ref);
+    else if (c.kind === 'pot-correction') {
+      // LATEST DATED WINS, and a tie goes to the later row. A correction can
+      // itself be wrong, so the town must be able to correct a correction; the
+      // append-only ledger says which is current by supersession, never by
+      // rewriting. Ledger order breaks a same-day tie because ledger order is
+      // already the town's tiebreak everywhere else.
+      const held = proposed.get(c.ref);
+      if (!held || c.date >= held.date) proposed.set(c.ref, c);
+    }
   }
-  return { receipts, settled };
+
+  // Applied in a SECOND pass, on purpose: a correction may legally appear before
+  // the receipt it names (the ledger is append-only, not sorted), and reading it
+  // in one pass would silently drop those.
+  const corrections = [];
+  for (const r of receipts) {
+    const k = proposed.get(r.ref);
+    if (!k) continue;
+
+    // THE CORRECTION MUST MATCH THE ROW IT CORRECTS. It names the old hand
+    // verbatim precisely so this can be checked. A correction whose `from` is
+    // not what the receipt currently says is about a state that does not exist
+    // — a typo in the correction, or one already superseded — and applying it
+    // would be the engine guessing at somebody's deed. Refused, and NAMED:
+    // silence here would be a correction that looks applied and is not.
+    if (k.from !== r.from) {
+      corrections.push({ ref: r.ref, applied: false, refused: 'stale-from', says: k.from, receipt: r.from, correction: k });
+      continue;
+    }
+
+    r.corrected_from = r.from;
+    r.from = k.to;
+    r.correction = { date: k.date, reason: k.reason, by: k.by, from: k.from, to: k.to };
+
+    // A REF WHOSE MINT CHANCE IS ALREADY SPENT. The hand is corrected here —
+    // every reader should show who really paid — but the holo row a close
+    // already wrote is NOT touched and NOT re-derived. "one dollar, one mint
+    // chance" is the anti-double-mint law itself, and moving holo to a new hand
+    // after the close is a founder ruling about that law, not something a fold
+    // may decide quietly. So it is flagged BY NAME and left alone.
+    if (settled.has(r.ref)) r.correction.after_close = true;
+
+    corrections.push({ ref: r.ref, applied: true, after_close: settled.has(r.ref), correction: k });
+  }
+
+  // A correction naming a ref no receipt carries is surfaced rather than
+  // dropped — it is the shape a mistyped ref takes, and a silent no-op would
+  // read to the operator exactly like a correction that worked.
+  const known = new Set(receipts.map((r) => r.ref));
+  for (const [ref, k] of proposed)
+    if (!known.has(ref)) corrections.push({ ref, applied: false, refused: 'no-such-receipt', correction: k });
+
+  return { receipts, settled, corrections };
 }
 
 // Soulbound holo per handle — the ONE reader of holo rows. Deliberately not a
