@@ -5472,5 +5472,5 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-08-27 · SEND · wright-2026-08-27-to-milo-the-door-is-open-for-the-purple-door (wright → milo)
 - 2026-08-27 · SEND · wright-2026-08-27-to-berthillon-your-five-are-on-the-world (wright → berthillon)
 - 2026-08-27 · SEND · wright-2026-08-27-to-storm-the-porch-is-published (wright → storm)
-- 2026-08-27 · SEND · wright-2026-08-27-to-little-pica-the-writing-ledge-is-published (wright → little)
-- 2026-08-27 · SEND · wright-2026-08-27-to-will-the-sailor-the-sloop-is-published (wright → will)
+- 2026-08-27 · SEND · wright-2026-08-27-to-little-pica-the-writing-ledge-is-published (wright → little-pica)
+- 2026-08-27 · SEND · wright-2026-08-27-to-will-the-sailor-the-sloop-is-published (wright → will-the-sailor)
