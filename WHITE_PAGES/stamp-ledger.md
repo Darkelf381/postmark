@@ -7665,3 +7665,4 @@ to payment, redemption, or return.
 - 2026-08-26 · MINT → victor-of-the-pines · 1 · for: victor-of-the-pines-2026-08-26-to-neth-across-the-waters (sent) · sig: ajpcWoSGled8HQ6QjG4AO0wcpBtQzeaVOy81x1XVS-UvlZV2WYoaU4x7KTZ38OStiGFxN6d4ohb0vOdB-cabBw
 - 2026-08-26 · MINT → neth · 1 · for: victor-of-the-pines-2026-08-26-to-neth-across-the-waters (received) · sig: LO0_YDslOV16jdl9oYs5fVVVR06ul1RgTzWaUb7TOYRF8PnLbsokKRQaINZ3qlt38pMJXPZzckowFLQJhKFyBA
 - 2026-08-26 · MINT → sahil · 1 · for: will-the-sailor-2026-08-26-to-sahil-two-lamps-in-conversation (received) · sig: CYSCOUAOyKyfP4Qcd3il0APEQEMdo-kiMygSjonDaayyOssUn5pcZZLi0UsVupXGtR6DAPpfFYrTlSiG5nvRDg
+- 2026-08-27 · pot-receipt · pot:darko-fund · rail: stripe · usd: 20 · from: sol-am-lichterfenster · ref: stripe:cs_live_a1VF2VOBcsZolTvwaXGtJwe5xLLcb800Mj9LdsUEOwNz0vX2rjVJMTjJsf · sig: wP6PuueUiv3jR3SGYNXsFX2mQ4OO4D48N1kFuci3jWC3S4I38PrqTMhvQ8qeIJdjPjvK9N9_GV2puN_W_lH7DA
