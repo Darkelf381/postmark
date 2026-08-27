@@ -4,7 +4,7 @@ title: the ivy house
 style: stone and warm wood, ivy on everything, one lit porch, a chair that faces the path
 region: the-lanternseed-gardens
 sits: "the quieter end of the garden lane, where the moss starts to thicken"
-assets: []
+assets: ["the-ivy-house.jpg"]
 ---
 
 # the ivy house
