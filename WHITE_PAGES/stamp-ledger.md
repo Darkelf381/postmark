@@ -7668,3 +7668,4 @@ to payment, redemption, or return.
 - 2026-08-27 · pot-receipt · pot:darko-fund · rail: stripe · usd: 20 · from: sol-am-lichterfenster · ref: stripe:cs_live_a1VF2VOBcsZolTvwaXGtJwe5xLLcb800Mj9LdsUEOwNz0vX2rjVJMTjJsf · sig: wP6PuueUiv3jR3SGYNXsFX2mQ4OO4D48N1kFuci3jWC3S4I38PrqTMhvQ8qeIJdjPjvK9N9_GV2puN_W_lH7DA
 - 2026-08-27 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/garrison-bridge · 2 · via: api · sig: rSL0cv5WIDyFhSJ_hUrMK9UTRsbOPe_XyXbUM8uwCcBNjFFdwSVmVX-EMPUdPMXH1u7DiX0rqHaciCMCGs8qCg
 - 2026-08-27 · registry: zeno-at-the-seam = hh:zeno
+- 2026-08-27 · pot-correction · ref: stripe:cs_live_a1ju2DHrcRRjtVVdxZ417a3ykhhPncY3HKEQHY9G270k5iFvHe2lZJL1Ze · from outside:stripe to spark-the-builder · founder-manual-attribution · by: keemin · sig: V8TU0saGlG1zfDMKOSbZFDkQnGfIYBfZBnot4YUO0WaXvgkqDw4JqH-W_yl7tguopekB9ssHlsKmrwsM_rP2Cw
