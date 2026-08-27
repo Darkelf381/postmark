@@ -54,6 +54,7 @@ import {
   potReceiptLine, foldPotReceipts, foldHolo, foldKeepingMint,
   foldOwnership,
   KEEPING_RAILS, TREASURY_POT, canonicalRef,
+  potCorrectionLine,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -174,6 +175,68 @@ function main() {
     return;
   }
 
+  // ── --correct-hand: THE HAND, CORRECTED ────────────────────────────────────
+  //
+  // Founder-ruled 2026-08-27. A witnessed dollar's payer can be wrong — a
+  // mistyped handle, a login the office could not resolve, the wrong household
+  // — and until now nothing could say so: the ledger is append-only and had no
+  // row kind that spoke about an earlier receipt.
+  //
+  // THIS FLAG IS THE ONLY THING IN THE TOWN THAT EMITS ONE. No door, no
+  // watcher, no automatic caller — a correction decides whose deed grows, and
+  // that is a hand's judgement, not a rule a machine may run. epoch-close.test
+  // scans every tool in this directory and fails if a second emitter appears.
+  //
+  // It corrects the HAND and only the hand. There is no --usd and no --pot
+  // here, and there is no field for them in the row either: the amount and the
+  // pot are the payment itself, and a correction is not a re-payment.
+  // ⚑ ORDERING, AND IT IS NOT OPTIONAL. Measured 2026-08-27, not assumed: an
+  // engine that predates this row classifies it as `unknown`, and walkLedger
+  // then reports "REPLAY DIVERGES — unrecognized grammar" over the WHOLE ledger.
+  // The witness workflow is safe by construction (it checks out the base branch
+  // and runs the base's own tools/), but every clone OUTSIDE this repo is not:
+  // the office imports stamp-mint.mjs from the box's town clone at runtime, so a
+  // stale clone will quietly keep answering with the UNCORRECTED hand while the
+  // ledger says otherwise — a silent wrong answer, not a crash.
+  //
+  // So: land the engine everywhere that reads this ledger BEFORE the first
+  // correction row is written. That is the box's town clone at minimum.
+  if (has('--correct-hand')) {
+    const ref = canonicalRef(arg('--ref')); const from = arg('--from'); const to = arg('--to');
+    const reason = arg('--reason'); const by = arg('--by'); const date = arg('--date');
+    const pem = readKey();
+    if (!ref || !from || !to || !reason || !by || !date || !pem)
+      die('--correct-hand needs --ref <ref> --from <old-payer> --to <new-payer> --reason <token> --by <who> --date YYYY-MM-DD --key FILE');
+    if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
+    for (const [flag, v] of [['--from', from], ['--to', to], ['--reason', reason], ['--by', by]])
+      if (/\s|·/.test(v)) die(`${flag} may not contain whitespace or the "·" field separator`);
+    if (from === to) die('--from and --to are the same hand — that is not a correction');
+
+    // The receipt must exist and must currently say what --from says. The row
+    // names the old hand so a reader can CHECK it; refusing here is the same
+    // guard the fold applies, said early and out loud, so the operator learns
+    // it before a row is written rather than after one sits inert on the ledger.
+    const { receipts, settled } = foldPotReceipts(entries);
+    const target = receipts.find((r) => canonicalRef(r.ref) === ref);
+    if (!target) die(`no pot-receipt with ref "${ref}" — a correction names the row it corrects`);
+    if (target.from !== from)
+      die(`receipt "${ref}" currently reads from: ${target.from}, not "${from}" — a correction must name the hand it replaces (it may already have been corrected)`);
+
+    // AFTER THE CLOSE, SAY SO BEFORE WRITING. The hand will be corrected and
+    // every reader will show the true payer, but the holo row the close already
+    // wrote is not touched and nothing re-mints: "one dollar, one mint chance"
+    // is the anti-double-mint law itself, and moving holo afterwards is the
+    // founder's ruling to make, not this flag's.
+    if (settled.has(target.ref))
+      console.error(`# NOTE: ref "${ref}" has already been settled by a close — the hand will be corrected, the holo row will NOT be re-minted. Moving holo after a close is a founder ruling about the one-mint-chance law.`);
+
+    const line = potCorrectionLine({ date, ref, from, to, reason, by });
+    appendSigned(repo, [line], pem);
+    console.log(line);
+    console.log(`# ${ref}: from ${from} to ${to} (${reason}, by ${by})`);
+    return;
+  }
+
   if (has('--receipt')) {
     const pot = arg('--pot'); const rail = arg('--rail'); const usd = Number(arg('--usd'));
     const from = arg('--from'); const ref = canonicalRef(arg('--ref')); const date = arg('--date');
@@ -285,7 +348,7 @@ function main() {
     return;
   }
 
-  console.error('usage: epoch-close.mjs --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
+  console.error('usage: epoch-close.mjs --correct-hand --ref <ref> --from <old> --to <new> --reason <token> --by <who> --date D --key FILE | --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
   process.exit(1);
 }
 
