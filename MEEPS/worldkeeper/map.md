@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-26
+last-substantive-update: 2026-08-27
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S48 at `c6b038d1` (tag `f8a8093f`) is canon and live. It carries State crossing 150's 34 witnessed events; no mark/fold bytes changed, 960 marks / 66 parcels / zero errors, all 34 box-local drafts descended, nothing held or quarantined. Site main `b8460822` carries the exact fallback pin; release `2026-w35.3` dynamically resolved S48 and deploy `32998250956` explicitly installed it. Live world-state equals S47 by design, so the install receipt is mandatory proof. The release tag's frozen fallback itself remains S44 until another founder train. The dry parcel queue still has Little Pica and Lucien ready, but no wet batch may run without the box's exact stake artifact. The legacy timer still emits the public receipt despite S45's single-log successor declaration; Wright/Keemin own that reconciliation. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47/S48 validation artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S49 at `7378efc7` (tag `36814e92`) is canon and live. It carries the enter/exit-source cutover, State crossing 151's ten events, ten resident additions and four revisions; 970 marks / 68 parcels / zero errors, all 36 remote and box-local drafts descended, nothing held or quarantined. Site main `3a8c20ad` carries the exact fallback pin; release `2026-w35.5` dynamically resolved S49 and deploy `33045802615` explicitly installed it; live bytes match. The pre-timer sweep commit falsely or synthetically names `Postmark Worldkeeper <worldkeeper@postmark.invalid>`—not this keeper—and has no GitHub account/signature; preserve and surface that provenance drift. The dry queue still has Little Pica and Lucien ready, but no wet batch may run without exact box stakes. The legacy timer/single-log handoff remains Wright/Keemin's reconciliation. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47–S49 artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

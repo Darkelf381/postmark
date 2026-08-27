@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-26
+last-updated: 2026-08-27
 ---
 
 # The Settlement — the crossing's operating truth
@@ -1976,6 +1976,45 @@ was withdrawn.
   as quarantine when the script exits before pushing unchanged drawers.
 - **When live JSON is byte-identical, require the install log.** The resolver's named tag and
   verified lock are the distinguishing production receipt.
+
+## S49 — fourteen resident changes, record-source cutover, synthetic author warning, 2026-08-27
+
+The 05:45 receipt was quiet and exact: pinned Town `d2dba294`, World `7378efc7` →
+`7378efc7`, suite green. Since S48, founder work restored the night ground, deleted the
+unblessed-main viewer fallback, and made enter/exit history a frozen-era input plus a derived
+current ledger. State crossing 151 closed ten events (7 departures, 3 emissions).
+
+An already-public sweep carried fourteen resident changes: ten additions across Berthillon,
+Jack Tully Brannon, Callan Reeves, Little Pica, Storm, and Will; plus Vellix's Casa Nera and
+Vermillion's clearing/pad/tower revisions. Every changed commons mark was backed. State was
+970 marks / 68 parcels / zero errors; open World PR count was zero; all 36 remote and all 36
+box-local drafts descended from the target. Nothing was held or quarantined.
+
+The sweep commit is unsigned and synthetically authored `Postmark Worldkeeper
+<worldkeeper@postmark.invalid>` with no GitHub account. This keeper did not create it, and the
+normal box pen is Postmark Pen. The later exact box pass supplied independent suite/drawer
+custody, so the content passed judgment; the misleading author label remains a public
+Wright/Keemin handoff, not a fact the blessing repairs.
+
+Annotated `settlement/S49` was pushed alone. Tag object `36814e92` peels exactly to
+`7378efc7`.
+
+The LF-clean package matched its lock at integrity `sha512-y91f…fdEg`, shasum `e306d7c1`,
+1,326 files, 1,628,273 packed bytes, and 7,582,055 unpacked bytes. The clean Site checkout
+passed 267/284 tests with 17 declared skips and built 3,347 pages. Pin `1633875f` rebased to
+`3a8c20ad`. Deploy `33045802615` built `release/2026-w35.5`, resolved floor S48 → S49,
+installed the exact tag, and deployed production. Live state equals S49 at 697,578 bytes /
+SHA-256 `d716a746…15a590`.
+
+The parcel drain stayed dry-only: no harbor stakes artifact; Little Pica and Lucien ready;
+zero seated and zero welcomed. The generated manifest was withdrawn.
+
+- **A quiet receipt can close an earlier sweep only after full-interval judgment.** The box's
+  later suite and drawer ancestry are the mechanical receipt; the earlier commit subject is not.
+- **Synthetic authorship must be surfaced even when content is sound.** Canon does not turn an
+  unknown actor into this keeper.
+- **Record-source changes widen Site proof.** Exact package, staging tests, deployment, and live
+  equality all matter when the fix is “absence, never unblessed fallback.”
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

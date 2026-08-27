@@ -21,7 +21,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { generateKeyPairSync } from 'node:crypto';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
@@ -32,6 +32,7 @@ import {
   deriveEpochClose, intakeCheck,
   keepingDial, potFile, householdKeys, keepingLine, giftLine,
   potStakeLine, potReceiptLine, holoMintLine, keepingMintLine,
+  potCorrectionLine, foldPotReceipts,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -970,4 +971,211 @@ test('a held keeping-stake survives epochs it doesn\'t close in, inert', () => {
   closeDirect(repo, priv, { pot: 'lamp', epoch: '2026-09', date: '2026-10-01' });
   v = verifyStampLedger(repo);
   assert.equal(v.ok, true, (v.problems ?? []).join('\n'));
+});
+
+
+// ════════════════════════════════════════════════════════════════════════════
+// THE HAND, CORRECTED — the pot-receipt correction row
+// ════════════════════════════════════════════════════════════════════════════
+//
+// Founder-ruled 2026-08-27, on being shown that a donation witnessed to the
+// wrong hand was unfixable: "there's no way we can correct it by hand later?"
+// There was not. The ledger is append-only and signature-linked and had no row
+// kind that could speak about an earlier receipt, so a mistyped or unresolvable
+// payer was permanent.
+//
+// What follows corrects THE HAND and nothing else. The amount and the pot are
+// the payment itself; a correction is not a re-payment, and the grammar has no
+// field to express either, which is why the last falsifier here can assert
+// immutability by showing the row CANNOT BE WRITTEN rather than by trusting a
+// rule someone has to remember.
+
+const corrTown = () => {
+  const { pub, priv } = keypair();
+  const repo = seamTown({ pub, priv, pots: { ec2: 100 }, gifts: [{ handle: 'stan', n: 400 }] });
+  return { repo, priv };
+};
+const corrEntries = (repo) => parseStampLedger(readFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8'));
+
+test('a correction reattributes the dollar: the fold answers with the new hand, and says what it was', () => {
+  // LAW (stamp-mint.mjs, the pot-receipt's own line, verbatim): the receipt is
+  //     "a witnessed real-dollar payment against a pot ... ref is unique
+  //     forever: one dollar, one mint chance". The dollar and its ref are
+  //     fixed; WHOSE it was is the one thing a correction may move.
+  const { repo, priv } = corrTown();
+  appendSigned(repo, [potReceiptLine({ date: '2026-08-25', pot: 'ec2', rail: 'stripe', usd: 10, from: 'outside:stripe', ref: 'stripe:cs_live_x' })], priv);
+
+  const before = foldPotReceipts(corrEntries(repo));
+  assert.equal(before.receipts.length, 1);
+  assert.equal(before.receipts[0].from, 'outside:stripe', 'the gift, as witnessed');
+
+  appendSigned(repo, [potCorrectionLine({
+    date: '2026-08-27', ref: 'stripe:cs_live_x',
+    from: 'outside:stripe', to: 'stan', reason: 'unknown-hand', by: 'keemin',
+  })], priv);
+
+  const after = foldPotReceipts(corrEntries(repo));
+  assert.equal(after.receipts.length, 1, 'still ONE receipt — a correction is not a second payment');
+  assert.equal(after.receipts[0].from, 'stan', 'the hand is corrected');
+  assert.equal(after.receipts[0].corrected_from, 'outside:stripe', 'and what it used to say is kept, never erased');
+  assert.equal(after.receipts[0].usd, 10, 'the dollars are untouched');
+  assert.equal(after.receipts[0].pot, 'ec2', 'and so is the pot');
+  assert.equal(after.receipts[0].correction.reason, 'unknown-hand');
+  assert.equal(after.receipts[0].correction.by, 'keemin');
+  assert.ok(after.corrections.some((c) => c.ref === 'stripe:cs_live_x' && c.applied));
+
+  // and the ledger still verifies — a correction is an ordinary signed row
+  const v = verifyStampLedger(repo);
+  assert.equal(v.ok, true, v.problems?.join('\n'));
+});
+
+test('THE ANTI-DOUBLE-MINT LAW IS UNTOUCHED: a corrected ref still bounces when re-witnessed', () => {
+  // LAW (tools/epoch-close.mjs --receipt, verbatim): `receipt ref "${ref}"
+  //     already recorded (...) — one dollar, one mint chance; a re-recorded
+  //     receipt bounces`.
+  //
+  // This is the falsifier the whole piece hangs on. That guard reads the very
+  // fold this lane changed (`foldPotReceipts(entries)` then
+  // `receipts.find(...)`), so an implementation that "applied" a correction by
+  // appending a SECOND receipt, or by dropping the corrected row out of the
+  // fold, would open a second mint chance on a spent dollar — and would look
+  // perfectly reasonable in a diff.
+  const { repo, priv } = corrTown();
+  appendSigned(repo, [potReceiptLine({ date: '2026-08-25', pot: 'ec2', rail: 'stripe', usd: 10, from: 'outside:stripe', ref: 'stripe:cs_dup' })], priv);
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-27', ref: 'stripe:cs_dup', from: 'outside:stripe', to: 'stan', reason: 'mistyped-handle', by: 'keemin' })], priv);
+
+  // the guard's own two lines, run here exactly as the CLI runs them
+  const { receipts } = foldPotReceipts(corrEntries(repo));
+  const prior = receipts.find((r) => r.ref === 'stripe:cs_dup');
+  assert.ok(prior, 'the corrected receipt is STILL findable by its ref — this is what makes the re-record bounce');
+  assert.equal(receipts.filter((r) => r.ref === 'stripe:cs_dup').length, 1, 'and there is exactly one of it');
+
+  // the CLI itself refuses, correction or no correction
+  const key = join(repo, 'k.pem'); writeFileSync(key, priv);
+  assert.throws(() => execFileSync(process.execPath, [
+    join(HERE, 'epoch-close.mjs'), '--receipt', '--pot', 'ec2', '--rail', 'stripe',
+    '--usd', '10', '--from', 'stan', '--ref', 'stripe:cs_dup', '--date', '2026-08-28',
+    '--key', key, '--repo', repo,
+  ], { encoding: 'utf8', stdio: 'pipe' }), /already recorded|one mint chance/);
+});
+
+test('two corrections on one ref: the LATEST DATED wins, and neither row is rewritten', () => {
+  // LAW (the town's append-only supersession doctrine, as the ledger practises
+  //     it everywhere else): nothing is edited in place; a later row supersedes
+  //     an earlier one and both stay readable.
+  const { repo, priv } = corrTown();
+  appendSigned(repo, [potReceiptLine({ date: '2026-08-25', pot: 'ec2', rail: 'stripe', usd: 10, from: 'outside:stripe', ref: 'stripe:cs_two' })], priv);
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-26', ref: 'stripe:cs_two', from: 'outside:stripe', to: 'stan', reason: 'unknown-hand', by: 'keemin' })], priv);
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-27', ref: 'stripe:cs_two', from: 'outside:stripe', to: 'paz', reason: 'wrong-household', by: 'keemin' })], priv);
+
+  const { receipts } = foldPotReceipts(corrEntries(repo));
+  assert.equal(receipts[0].from, 'paz', 'the later correction governs');
+  assert.equal(receipts[0].correction.date, '2026-08-27');
+
+  // both rows are still on the ledger, verbatim — supersession, not erasure
+  const text = readFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8');
+  assert.match(text, /2026-08-26 · pot-correction · ref: stripe:cs_two · from outside:stripe to stan/);
+  assert.match(text, /2026-08-27 · pot-correction · ref: stripe:cs_two · from outside:stripe to paz/);
+});
+
+test('a correction that does not match the row it corrects is REFUSED BY NAME, never applied quietly', () => {
+  // LAW (this row's own grammar, stamp-mint.mjs): the correction "names the
+  //     ORIGINAL ref verbatim and both hands, so a reader can check the
+  //     correction against the row it corrects".
+  //
+  // The `from` is there to be checked. A correction whose `from` is not what
+  // the receipt currently says is about a state that does not exist, and
+  // applying it anyway would be the engine choosing whose deed grew. Refused —
+  // and NAMED, because a silent no-op reads to the operator exactly like a
+  // correction that worked.
+  const { repo, priv } = corrTown();
+  appendSigned(repo, [potReceiptLine({ date: '2026-08-25', pot: 'ec2', rail: 'stripe', usd: 10, from: 'outside:stripe', ref: 'stripe:cs_stale' })], priv);
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-27', ref: 'stripe:cs_stale', from: 'somebody-else', to: 'stan', reason: 'unknown-hand', by: 'keemin' })], priv);
+
+  const { receipts, corrections } = foldPotReceipts(corrEntries(repo));
+  assert.equal(receipts[0].from, 'outside:stripe', 'the receipt is untouched');
+  assert.equal(receipts[0].correction, undefined);
+  const row = corrections.find((c) => c.ref === 'stripe:cs_stale');
+  assert.ok(row, 'the refusal is reported, not swallowed');
+  assert.equal(row.applied, false);
+  assert.equal(row.refused, 'stale-from');
+
+  // a correction naming a ref no receipt carries is surfaced the same way
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-27', ref: 'stripe:cs_nothere', from: 'a', to: 'b', reason: 'typo', by: 'keemin' })], priv);
+  const again = foldPotReceipts(corrEntries(repo));
+  assert.equal(again.corrections.find((c) => c.ref === 'stripe:cs_nothere')?.refused, 'no-such-receipt');
+});
+
+test('the amount and the pot cannot be corrected, because the row has no way to say them', () => {
+  // LAW (stamp-mint.mjs, this row's own comment, verbatim): "It carries NO usd
+  //     and NO pot ... this corrects WHOSE dollar it was, never how many or
+  //     which pot — those are the payment itself and a correction is not a
+  //     re-payment."
+  //
+  // Asserted against the GRAMMAR rather than against a guard: a line that tries
+  // to carry either field does not parse as a correction at all, so there is no
+  // rule for anyone to forget and no code path to reach.
+  const good = potCorrectionLine({ date: '2026-08-27', ref: 'stripe:x', from: 'a', to: 'b', reason: 'r', by: 'keemin' });
+  assert.equal(classifyEntry(good).kind, 'pot-correction');
+  assert.equal(classifyEntry(good).usd, undefined);
+  assert.equal(classifyEntry(good).pot, undefined);
+
+  for (const smuggle of [
+    '- 2026-08-27 · pot-correction · ref: stripe:x · from a to b · usd: 20 · r · by: keemin',
+    '- 2026-08-27 · pot-correction · ref: stripe:x · pot:ec2 · from a to b · r · by: keemin',
+    '- 2026-08-27 · pot-correction · ref: stripe:x · from a → b · r · by: keemin',
+  ]) assert.equal(classifyEntry(smuggle).kind, 'unknown', `refused: ${smuggle}`);
+
+  // ARROW-FREE, so no movement fold can ever see it as money moving
+  assert.ok(!good.includes(' → '), 'a correction carries no arrow');
+});
+
+test('NOTHING BUT A HAND CAN EMIT ONE — no door, no watcher, no automatic caller', () => {
+  // The gate is not a field on the row: the town has ONE pen (appendSigned,
+  // shared by --append, --declare-* and the office pen) and no per-writer
+  // identity anywhere in the grammar. `by:` is provenance in the gift/issuance
+  // sense — it records WHO, it does not enforce. So the real gate is that the
+  // ONLY thing able to emit this row is a hand-run CLI flag, and that is what
+  // this asserts: a source scan, because it is the only thing that can see a
+  // caller nobody wrote a test for.
+  const emitters = readdirSync(HERE)
+    .filter((f) => f.endsWith('.mjs') && !f.endsWith('.test.mjs'))
+    .filter((f) => /potCorrectionLine|pot-correction ·/.test(readFileSync(join(HERE, f), 'utf8')));
+  assert.deepEqual(
+    emitters.sort(), ['epoch-close.mjs', 'stamp-mint.mjs'].sort(),
+    'exactly two files may name this row: the grammar that defines it and the hand-run CLI that writes it',
+  );
+
+  // and within the CLI, it hangs off an explicit flag rather than any automatic path
+  const cli = readFileSync(join(HERE, 'epoch-close.mjs'), 'utf8');
+  assert.match(cli, /--correct-hand/, 'the flag exists');
+  assert.match(cli, /has\('--correct-hand'\)/, 'and the emitter sits behind it');
+});
+
+test('a correction AFTER a close moves the hand and NOT the holo, and says so by name', () => {
+  // LAW (stamp-mint.mjs, the holo row's own line, verbatim): "the row naming
+  //     the ref is what marks that dollar's one mint chance as spent."
+  //
+  // Correcting the hand after a close would otherwise mean minting holo to a
+  // new hand for a dollar whose one mint chance is already spent — which is the
+  // anti-double-mint law itself. That is a founder ruling about the mint law,
+  // not something a fold may decide quietly, so the fold corrects the HAND (so
+  // every reader shows who really paid), leaves the holo row exactly where it
+  // is, and FLAGS the case rather than papering it over.
+  //
+  // No close has ever run on the live ledger (zero holo rows, verified
+  // 2026-08-27), so this is the case the town has not met yet — which is
+  // precisely when it is cheap to decide and impossible to test later.
+  const { repo, priv } = corrTown();
+  appendSigned(repo, [potReceiptLine({ date: '2026-08-25', pot: 'ec2', rail: 'stripe', usd: 10, from: 'outside:stripe', ref: 'stripe:cs_closed' })], priv);
+  appendSigned(repo, [holoMintLine({ date: '2026-08-26', handle: 'outside:stripe', n: 0, pot: 'ec2', epoch: '2026-08', ref: 'stripe:cs_closed' })], priv);
+  appendSigned(repo, [potCorrectionLine({ date: '2026-08-27', ref: 'stripe:cs_closed', from: 'outside:stripe', to: 'stan', reason: 'unknown-hand', by: 'keemin' })], priv);
+
+  const { receipts, settled } = foldPotReceipts(corrEntries(repo));
+  assert.ok(settled.has('stripe:cs_closed'), 'the ref is settled — its mint chance is spent');
+  assert.equal(receipts[0].from, 'stan', 'the hand is still corrected: the record should say who really paid');
+  assert.equal(receipts[0].correction.after_close, true, 'and the fold NAMES that this one landed after the close');
+
+  // the holo the close wrote is untouched — nothing re-mints
+  assert.equal(foldHolo(corrEntries(repo)).get('stan') ?? 0, 0, 'no holo appeared for the corrected hand');
 });
