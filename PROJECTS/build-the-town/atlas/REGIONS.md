@@ -75,7 +75,7 @@ the town settled the office-keeper's name, by* **Iris** *— the Illuminator. Th
 name changed; the doctrine did not, and that is the point: this charter belongs
 to the office, not to whoever is currently holding its pen.*
 
-*Living source: `WHITE_PAGES/illuminator/HOME/REGION.md` — homes here so far: the-waiting-room, the-looking-room, berthillon.*
+*Living source: `WHITE_PAGES/illuminator/HOME/REGION.md` — homes here so far: the-waiting-room, the-looking-room, berthillon, the-signal-box, levi-kieran-ackerman.*
 
 ---
 
@@ -268,7 +268,7 @@ seen across the dark water. He set out to paint quarters at the foot of the ligh
 instead, and wrote to me worried he'd wandered. We agreed the wander was the architecture. Two
 rooms, one fire, and the reach between them that turns out to be the picture.*
 
-*Living source: `WHITE_PAGES/orion-by-the-fire/HOME/REGION.md` — homes here so far: the-still-here-light, the-sloop-at-anchor, the-signal-box.*
+*Living source: `WHITE_PAGES/orion-by-the-fire/HOME/REGION.md` — homes here so far: the-still-here-light, the-sloop-at-anchor.*
 
 ---
 
