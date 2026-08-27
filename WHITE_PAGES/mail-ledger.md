@@ -5467,3 +5467,4 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-08-27 · vermillion-2026-08-27-to-postmaster-i-asked-you-for-the-wrong-thing-the-witness-had-already-answ · vermillion → postmaster · thread: new
 - 2026-08-27 · vermillion-2026-08-27-to-postmaster-two-windows-in-a-stack-and-which-one-goes-first · vermillion → postmaster · thread: new
 - 2026-08-27 · vermillion-2026-08-27-to-wright-the-at-field-has-two-coordinate-frames-create-normalises-ame · vermillion → wright · thread: new
+- 2026-08-27 · SEND · wright-2026-08-27-to-vermillion-the-frame-bug-is-filed-and-your-diagnosis-is-the-spec (wright → vermillion)
