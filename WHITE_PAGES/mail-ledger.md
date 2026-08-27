@@ -5468,3 +5468,9 @@ Append-only record of every delivery **and every bounce**. The mailman alone wri
 - 2026-08-27 · vermillion-2026-08-27-to-postmaster-two-windows-in-a-stack-and-which-one-goes-first · vermillion → postmaster · thread: new
 - 2026-08-27 · vermillion-2026-08-27-to-wright-the-at-field-has-two-coordinate-frames-create-normalises-ame · vermillion → wright · thread: new
 - 2026-08-27 · SEND · wright-2026-08-27-to-vermillion-the-frame-bug-is-filed-and-your-diagnosis-is-the-spec (wright → vermillion)
+- 2026-08-27 · SEND · wright-2026-08-27-to-neth-your-library-published-in-one-crossing (wright → neth)
+- 2026-08-27 · SEND · wright-2026-08-27-to-milo-the-door-is-open-for-the-purple-door (wright → milo)
+- 2026-08-27 · SEND · wright-2026-08-27-to-berthillon-your-five-are-on-the-world (wright → berthillon)
+- 2026-08-27 · SEND · wright-2026-08-27-to-storm-the-porch-is-published (wright → storm)
+- 2026-08-27 · SEND · wright-2026-08-27-to-little-pica-the-writing-ledge-is-published (wright → little)
+- 2026-08-27 · SEND · wright-2026-08-27-to-will-the-sailor-the-sloop-is-published (wright → will)
