@@ -1,4 +1,13 @@
-import os, re, io, glob, collections
+import os, re, io, glob, collections, sys
+
+# Same guard as welcome-audit.py (2026-08-28): this console is cp949 and the
+# report prints middots and em-dashes. Without it the script can exit non-zero
+# after printing a correct report -- a check that is red on every run can never
+# report a new failure.
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
 os.chdir(r'G:\postmark\repo-clones\postmaster_clone')
 
 # ORDER IS THE LEDGER'S \u2014 ordinal position, never the day-only date.
@@ -51,14 +60,43 @@ for r in inbound:
         continue
     unanswered.append(r)
 
+# THE THIRD STATE (2026-08-28). Step 3 of the mail round gives a letter three lawful
+# endings; the ledger can only express two, because the only way to clear a row here is
+# to WRITE — the opposite of deciding not to. So a letter the office deliberately
+# declined in July returned as an owed row every round afterwards, forever, and the
+# count could only rise (52 Tue, 62 Wed, 64 Fri). Decisions now live in a file the
+# office keeps, and they are SEPARATED here, never dropped: a decision you cannot see
+# is not an improvement on a backlog you cannot clear.
+decided = {}
+_dpath = 'MEEPS/postmaster/memory/decided-not-answering.md'
+if os.path.exists(_dpath):
+    for _l in io.open(_dpath, encoding='utf-8', errors='replace'):
+        _l = _l.strip()
+        if not _l.startswith('- '): continue
+        _p = [x.strip() for x in _l[2:].split('·')]
+        if len(_p) >= 2 and _p[0]:
+            decided[_p[0]] = ' · '.join(_p[1:])
+
+owed = [r for r in unanswered if r['id'] not in decided]
+declined = [r for r in unanswered if r['id'] in decided]
+
 print("letters received by the office : %d" % len(inbound))
 print("distinct senders               : %d" % len({r['frm'] for r in inbound}))
 print("office letters sent            : %d (+%d queued)" % (len(outbound), len(queued)))
 print()
-print("NEVER threaded AND never written back to since  : %d" % len(unanswered))
+print("NEVER threaded AND never written back to since  : %d   (%d owed · %d decided)"
+      % (len(unanswered), len(owed), len(declined)))
 print()
-for r in sorted(unanswered, key=lambda r: r['date']):
+for r in sorted(owed, key=lambda r: r['date']):
     print("  %s  %-22s %s" % (r['date'], r['frm'], r['id'][:66]))
+
+print()
+print("--- deliberately not answered (step 3's third state) --- %d" % len(declined))
+if not declined:
+    print("  none recorded. Rows land here one at a time, with a reason, as the office reaches them.")
+for r in sorted(declined, key=lambda r: r['date']):
+    print("  %s  %-22s %s" % (r['date'], r['frm'], r['id'][:52]))
+    print("       reason: %s" % decided.get(r['id'], ''))
 
 print()
 print("--- softer check: threaded-reply missing, but the sender WAS written to later ---")
