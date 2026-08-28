@@ -12,7 +12,7 @@
    that is finished, and leaving it on the page spends a line of her window telling
    visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
    session can still check from the console that the sibling actually loaded. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
@@ -219,8 +219,17 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
     return null;
   }
 
+  // ⛔ EVERY SOLID INGREDIENT MUST BE IN HERE. This is the filling list for anything built
+  // on bread, so an ingredient missing from it is CARRIED IN AND THEN SILENTLY DROPPED FROM
+  // THE NAME. That is exactly what happened when the nine new ingredients were appended on
+  // 2026-08-27: NAMES and the category lists were updated and this was not, so a baguette
+  // with a pumpkin in it came back as a plain baguette. Found by measuring how often a
+  // carried ingredient fails to appear in the result, not by reading the code.
+  // Drinks (milk, coffee) are deliberately absent: they are handled as drinks, not fillings.
   var STACK = ['cheese','steak','chicken','egg','lettuce','tomato','onion','carrot','corn',
-               'apple','strawberry','peach','orange','banana','grape'];
+               'zucchini','cauliflower','pumpkin','radish','turnip',
+               'apple','strawberry','peach','orange','banana','grape',
+               'pineapple','pear','melon'];
   function parts(sel){
     var S = {}, i;
     for (i = 0; i < sel.length; i++) S[sel[i]] = 1;
@@ -251,25 +260,39 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
   // individual returns and there are about fifteen of them, so it silently vanished from
   // every branch somebody forgot: `egg + coffee` came out as a boiled egg and the coffee
   // was gone. The guard stops it doubling on the branches that still add it themselves.
+  // ⛔ THE DRINKS ARE RESOLVED ONCE, HERE, AND THEY COMBINE. Her catch 2026-08-28: milk and
+  // coffee came back as "a glass of milk, and a pot of coffee", two objects standing next to
+  // each other, when anybody can see that is a latte. Coffee used to be bolted on as a
+  // suffix at fifteen separate returns and could never merge with anything.
+  // ⭐ MILK IS FOOD FIRST AND A DRINK SECOND. If a branch cooked with it (pancakes, custard,
+  // a smoothie, a soup, scrambled eggs, a cake) it is spent and does not also appear in the
+  // glass. `_milkEaten` is how a branch says so; anything it does not claim is poured.
+  var _milkEaten = false;
   function dish(sel){
-    var d = dishCore(sel);
-    return (parts(sel).COFFEE && d.indexOf('pot of coffee') < 0)
-      ? d + ', and a pot of coffee' : d;
+    _milkEaten = false;
+    var d = dishCore(sel), p = parts(sel);
+    var c = p.COFFEE, m = p.MILK && !_milkEaten;
+    var drink = (c && m) ? 'a latte' : c ? 'a pot of coffee' : m ? 'a glass of milk' : '';
+    if (!drink) return d === '@@DRINK@@' ? 'an empty counter' : d;
+    return d === '@@DRINK@@' ? drink : d + ', and ' + drink;
   }
   function dishCore(sel){
     var p = parts(sel), has = p.has, list = listOf;
     function season(){ return p.SHARP.length ? ', with ' + list(p.SHARP) : ''; }
     function sweet(){ return p.FRUIT.length ? ' with ' + list(p.FRUIT) : ''; }
-    // Coffee is a drink rather than an ingredient: it rides alongside whatever was made.
-    function brew(){ return p.COFFEE ? ', and a pot of coffee' : ''; }
+    // The drinks are resolved by the wrapper now, once, so this is a no-op kept only so the
+    // fifteen returns below did not all have to be edited to remove it. `eat()` is how a
+    // branch declares it has COOKED the milk, which stops it being poured as well.
+    function brew(){ return ''; }
+    function eat(){ _milkEaten = true; return ''; }
     if (!sel.length) return 'an empty counter';
     if (p.FLOUR) {
       // ⭐ HER RULE, and it is real cooking rather than a game invention: flour and egg
       // WITHOUT milk is pasta, add milk and it is batter, add fruit to the batter and it
       // is a cake. Three different dinners off one shelf, told apart by what is missing.
       if (p.MILK && p.EGG) {
-        if (p.FRUIT.length) return art(list(p.FRUIT) + ' cake') + season() + brew();
-        return 'a stack of pancakes' + season() + brew();
+        if (p.FRUIT.length) return eat() + art(list(p.FRUIT) + ' cake') + season();
+        return eat() + 'a stack of pancakes' + season();
       }
       if (p.EGG) {
         var sauce = (p.MEAT.length ? p.MEAT : []).concat(p.VEG, p.CHEESE ? ['cheese'] : []);
@@ -283,14 +306,13 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
       if (p.CHEESE) return 'a cheese pastry' + season();
       if (p.VEG.length || p.LEAF.length)
         return 'a pie of ' + list(p.LEAF.concat(p.VEG)) + season();
-      if (p.MILK) return 'a bowl of batter, unfinished';
+      if (p.MILK) return eat() + 'a bowl of batter, unfinished';
       if (p.EGG) return 'a rough dough and no filling';
       return 'a bag of flour and no plan';
     }
     if (p.BREAD) {
       var fill = STACK.filter(has);
       if (!fill.length) {
-        if (p.MILK) return 'a baguette and a bucket of milk';
         return p.SHARP.length
           ? 'a baguette and ' + list(p.SHARP) + ', which is not lunch'
           : 'a heel of dry baguette';
@@ -315,29 +337,29 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
              + season() + brew();
     }
     if (p.EGG) {
-      if (p.MILK && p.FRUIT.length) return art(list(p.FRUIT) + ' custard') + season();
+      if (p.MILK && p.FRUIT.length) return eat() + art(list(p.FRUIT) + ' custard') + season();
       if (p.MILK) {
         var sc = (p.CHEESE ? ['cheese'] : []).concat(p.VEG);
-        return 'scrambled eggs' + (sc.length ? ' with ' + list(sc) : '') + season();
+        return eat() + 'scrambled eggs' + (sc.length ? ' with ' + list(sc) : '') + season();
       }
       var inside = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG, p.FRUIT);
       return inside.length ? art(list(inside) + ' omelette') + season()
                            : 'a boiled egg' + season();
     }
     if (p.FRUIT.length) {
-      if (p.MILK) return art(list(p.FRUIT) + ' smoothie') + season();
+      if (p.MILK) return eat() + art(list(p.FRUIT) + ' smoothie') + season();
       var wv = p.FRUIT.concat(p.LEAF, p.VEG, p.CHEESE ? ['cheese'] : []);
       if (p.FRUIT.length === 1 && wv.length === 1) return 'a lone ' + p.FRUIT[0] + season();
       return 'a fruit salad of ' + list(wv) + season();
     }
     var items = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG);
     if (!items.length) {
-      if (p.COFFEE && !p.MILK && !p.SHARP.length) return 'a pot of coffee';
-      if (p.MILK) return 'a glass of milk' + season() + brew();
-      if (p.COFFEE) return 'a pot of coffee' + season();
+      // Nothing solid was brought. Hand off to the wrapper, which is the one place that
+      // knows whether that is a latte, a pot of coffee or a glass of milk.
+      if (p.MILK || p.COFFEE) return '@@DRINK@@';
       return list(p.SHARP) + ', and nothing to put it on';
     }
-    if (p.MILK) return 'a soup of ' + list(items) + season() + brew();
+    if (p.MILK) return eat() + 'a soup of ' + list(items) + season();
     if (p.LEAF.length) return 'a salad of ' + list(items) + season() + brew();
     if (items.length === 1) return 'a lone ' + items[0] + season() + brew();
     return 'a pot of ' + list(items) + season() + brew();
