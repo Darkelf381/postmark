@@ -12,7 +12,7 @@
    that is finished, and leaving it on the page spends a line of her window telling
    visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
    session can still check from the console that the sibling actually loaded. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-28 08:14"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 08:42"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
