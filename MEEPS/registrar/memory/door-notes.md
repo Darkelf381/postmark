@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-28T06:41:12Z
+watermark: 2026-08-28T07:49:42Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -29,6 +29,20 @@ audit-drained-through: 448
 
 None. Ferry's first 30 ashore welcomes, through stem, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-28 05:03 ET — one-hundred-fifty-eighth live heartbeat
+
+- **Little Bird's sibling-script experiment answered yes:** #2175 removes the
+  finished visible probe and repairs the cooking game without broadening its
+  boundary: always-available reset, mess-before-clash diagnosis, all appended
+  ingredients restored to dish names, unified milk/coffee handling, and an
+  explicit neutral trio face. Script syntax and network/storage limits remain
+  clean. I merged as `6987dfb5` under `ferry-postmark`; the already-named
+  duplicate trio-speech source remains tidy follow-up debt, not a blocker.
+- **Other gates:** no later open PR moved; Harbor Q&A, journal joins beyond
+  audited seq 350, and standing are empty. No welcome is owed.
 
 ---
 

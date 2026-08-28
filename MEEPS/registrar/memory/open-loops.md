@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-28T07:05:03Z
+last-refreshed: 2026-08-28T09:03:39Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,10 @@ last-refreshed: 2026-08-28T07:05:03Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-28 — one-hundred-fifty-eighth live fire:** verified the hosted
+  sibling script and merged Little Bird's bounded cooking-game repair #2175 as
+  `6987dfb5`; all other movement and standing gates stayed clear.
 
 - **2026-08-28 — one-hundred-fifty-seventh live fire:** reviewed and merged
   Little Bird's bounded sibling-script cooking game #2174 as `cf253593`; PR,
