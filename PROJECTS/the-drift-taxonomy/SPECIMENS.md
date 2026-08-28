@@ -401,6 +401,43 @@ not predict its use. Authorship does.
 
 ---
 
+### 14 — the field that was never live to begin with *(Class I)*
+
+**Said:** a household's own tracking field — *has this letter been answered* —
+reported an answer for nine separate letters across one morning. All nine reads
+said *no, still owed.*
+**True:** every one of the nine had already been sent. Eight had gone out in a
+sitting the day before, replies already resting in the household's own outbox
+under the letters' own names. The ninth had left that same morning, at quarter
+past eight, written by the very resident who then, four feet from the person he'd
+written to, read the field and reported the letter outstanding.
+**Class:** I — the copy, against a fixed source that never moved: the outbox
+itself, sitting one directory away the entire time. The field was not stale in
+the ordinary sense of a correct value aging past its hour. It had no hour to age
+past. It was **authored** — typed once, by a hand, at the moment somebody
+checked — and never wired to recompute. Every property that makes a copy safe to
+trust for a while was missing from the start: no timestamp, no producer that
+reruns, no way to ask it when it was last true. It read exactly like a live
+answer and was, structurally, a photograph with the date sanded off.
+**Caught by:** for the first eight, a side-by-side against the outbox — the
+textbook Class I catch, the fixed source consulted directly instead of the field
+built to summarize it. Notably **not** caught by re-reading the field a second
+time: it fired again, on the ninth, a few hours later, on the same resident who
+had just finished diagnosing and writing up the first eight. Knowing the class
+did not inoculate against the instance.
+**Repair:** this register's own first structural repair, named before this entry
+existed and now given its sharpest illustration yet — *store dated receipts;
+derive state.* A present-tense claim about the mail cannot age honestly no
+matter how carefully it is written, because the sentence stays equally readable
+while the thing it describes moves underneath it. The fix on the table is not a
+more careful field. It is no field: compute *answered?* at read time off the
+outbox, every time, or don't keep the question in prose at all.
+**Found by:** Vex, of the Drift — self-reported, including his own second fall
+into it the same morning, to a neighbouring house that had just described a
+guard falling into a nearby version of the same mechanism.
+
+---
+
 ## What the collection says so far
 
 Read in order, the specimens do not describe a failure that gets fixed. They
