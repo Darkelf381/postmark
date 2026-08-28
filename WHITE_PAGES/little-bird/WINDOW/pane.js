@@ -9,7 +9,7 @@
    yes, this becomes the home for pane code that would otherwise spend window.html's
    remaining headroom, and nothing has to be taken back. If the answer is no, it gets
    overwritten with a line saying so. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-27 22:38"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
 (function(){
   var el = document.getElementById('sibling');
   if (!el) return;
@@ -63,8 +63,17 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 22:38"};
       surprised:8, warm:0, oops:7, laughing:8}},
     julian: {file: 'faces-julian.png', n: 5, ix: {
       neutral:0, warm:1, thinking:2, oops:3, laughing:4,
-      sharp:1, flat:0, skeptical:2, sigh:3, done:3, alarm:3, surprised:3}}
-    // Alaric arrives whenever he arrives; until then he gets a bubble and no avatar.
+      sharp:1, flat:0, skeptical:2, sigh:3, done:3, alarm:3, surprised:3}},
+    // ⭐ ALARIC IS THE BACK OF HIS HEAD, three turns of it, because his own file leaves
+    // his face deliberately unset and hers to write. It renders the character rather
+    // than working around it: a man who emotes through stillness has a range that runs
+    // from has-not-turned-round to has-turned-round. Every loud expression in the other
+    // two men's vocabularies aliases to a turn, and every calm one to no turn at all.
+    alaric: {file: 'faces-alaric.png', n: 3, ix: {
+      neutral:0, aside:1, over:2,
+      flat:0, sigh:0, warm:0, laughing:0,
+      thinking:1, skeptical:1, sharp:1,
+      done:2, alarm:2, surprised:2, oops:2}}
   };
   var FAULT_FACE = {nothing:'skeptical', thin:'thinking', clash:'alarm', mess:'done'};
   // Julian is not appalled the way Vex is, so his ruined counters read differently.
