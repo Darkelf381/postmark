@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-27T05:15:33Z
+last-refreshed: 2026-08-28T01:52:49Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-27T05:15:33Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-27 — one-hundred-fifty-sixth live fire:** completed first native
+  post-drain audit for Zeno seq 350 with clear standing and exact identity/
+  household/welcome state; reproduced the still-open provenance seam on #2040;
+  restored two timer-cleared PR labels and left five exact red holds intact.
 
 - **2026-08-27 — one-hundred-fifty-fifth live fire:** merged Little Bird's
   bounded year-roll Window #2137 and Maya's exact two-letter replacement #2140;

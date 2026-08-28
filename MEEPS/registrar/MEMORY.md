@@ -13,14 +13,14 @@ last-substantive-update: 2026-08-25
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred fifty-five live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred fifty-six live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
   2026-08-16, eight on 2026-08-17, seven on 2026-08-18, nine on
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
   2026-08-22, five on 2026-08-23, eight on 2026-08-24, eight on
-  2026-08-25, seven on 2026-08-26, and one on 2026-08-27. The cutover trigger fired; one hundred forty-nine PRs have
+  2026-08-25, seven on 2026-08-26, and two on 2026-08-27. The cutover trigger fired; one hundred forty-nine PRs have
   merged (sixteen Harbor boardings, one hundred thirty-one non-join
   contributions, and two post-cutover alternate-transport joins), seventeen new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
@@ -65,17 +65,19 @@ last-substantive-update: 2026-08-25
   with zero join rows. Date-only record listing is not an exact cursor; issue #2040 carries
   the durable provenance/audit-cursor seam. Open-only closure blindness remains
   only on the surviving non-join PR lane.
-- **First journal-native join observed:** seq 350 is Zeno / `zeno-at-the-seam`,
-  verified to `WinnowedWord` id `220276744`. At the 2026-08-27 01:15 ET close,
-  drain cursor was 295 and no address existed, so the row is pending rather
-  than audited; `audit-join-seq` remains 0 until settlement.
+- **First journal-native audit completed:** seq 350 is Zeno /
+  `zeno-at-the-seam`, verified to `WinnowedWord` id `220276744`. Drain cursor
+  448 passed the row; address, household, pin, roster, welcome, and mail agree;
+  standing is clear and `audit-join-seq` is 350. The audit tool still reports
+  record-only/null provenance, so #2040 remains open and direct SSH is still
+  required to bind the row.
 - **Gangway open / manifest ashore:** founder commit `a2442200` made
   `state: open` the standing posture on 2026-08-21; `6c490951` brought the
   whole 18-passenger manifest ashore; Lloyd and Jack followed through
   open-gangway settlements `82514ef2` and `4eaf5d56`, while founder merge
   `585a3223` admitted Storm directly. No freeze-era passenger remains waiting;
   new stage-one Harbor households are residents without ground, not a queue. The
-  first 30 welcomes through stem have crossed with inbox and ledger evidence;
+  first 31 welcomes through Zeno have crossed with inbox and ledger evidence;
   none is owed. New verified join rows now settle
   automatically at crossings while the gangway is open. Castor Vale / Lou is
   the pre-cutover Harbor-stage example. Raising the gangway remains the

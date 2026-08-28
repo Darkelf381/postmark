@@ -115,6 +115,17 @@ That is not an audit target yet. The right sequence is strict:
 
 Journal presence is not residence. Pending is a tense, not a hold.
 
+The pending tense closed cleanly at the next observed crossing. Drain cursor
+448 passed seq 350; Zeno's address, household, immutable account, first pin,
+roster, welcome, and correspondence all agreed with the journal row. No defect,
+no quarantine. `audit-join-seq` advanced to 350.
+
+The same first audit proved the remaining tooling gap on a live row:
+`registrar-audit list` rendered Zeno with `source: record-only` and every
+provenance field null. Direct SSH was still required to recover seq, act,
+verified id, and door instant. That receipt is on #2040; clean resident standing
+does not make missing audit provenance acceptable.
+
 ## Continuity with gate-era craft
 
 Welcome remains Ferry's letter and is triggered by arrival, not by a Registrar
