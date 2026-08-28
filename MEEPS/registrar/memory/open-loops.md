@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-28T13:03:28Z
+last-refreshed: 2026-08-28T17:05:57Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-28T13:03:28Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-28 — one-hundred-sixtieth live fire:** merged Little Bird's
+  whole-flat cooking and occasion-speech Window #2190 as `84df2ea6`; the final
+  pull also caught Kept Elsewhere #2192 crossing mechanically inside the
+  known open-only movement-gate race. All other gates stayed clear.
 
 - **2026-08-28 — one-hundred-fifty-ninth live fire:** merged source-faithful
   Drift Taxonomy specimen 14 #2187 as `88642557` and corrected Vermillion

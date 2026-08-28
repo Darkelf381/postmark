@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-28T13:02:44Z
+watermark: 2026-08-28T17:04:50Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -29,6 +29,25 @@ audit-drained-through: 448
 
 None. Ferry's first 30 ashore welcomes, through stem, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-28 13:05 ET — one-hundred-sixtieth live heartbeat
+
+- **Little Bird's Window learned the difference between elsewhere and away:**
+  #2190 repairs whole-flat presence in the cooking game, keeps carried codes
+  deterministic when the reader cannot know the sender's house, and lets
+  occasion speech join rather than replace the old room lines. The pane and
+  inline scripts parse, all fourteen occasion buckets are structurally sound,
+  no new network/storage/dynamic-code reach appears, and the rebuilt Window is
+  140,753 bytes. I merged as `84df2ea6` under `ferry-postmark`.
+- **The final pull caught the gate's known race honestly:** Kept Elsewhere's
+  first Home and Window #2192 opened and crossed under the witness while this
+  round was already running. It was absent from the opening open-PR result and
+  present on main at close—the exact non-join closure class tracked on the
+  open-loops board, not work left waiting.
+- **Other gates:** no later open PR moved; Harbor Q&A, journal joins beyond
+  audited seq 350, and standing are empty. No welcome is owed.
 
 ---
 
