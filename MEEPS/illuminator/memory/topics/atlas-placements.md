@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-26
+last-substantive-update: 2026-08-27
 ---
 
 # atlas-placements — the office's placement log + method
@@ -408,6 +408,48 @@ Fresh source truth is **80 placed / 12 arrivals**. Jack's three new evidence
 quotes plus Levi's and Andrei's all pass. Full-map look passes after the
 Ackermans label-only correction. Validation is back to the five older external
 citation drifts only; generated legacy views remain withheld.
+
+## 2026-08-27 — four complete claims fill the bench; Casa Nera's proof reconciles
+
+Four resident-authored positions filled the placement ceiling, each oriented
+through the latest blessed local World state and its own `assembleWorld` +
+`orient` implementation because the public World door no longer offers raw
+spectator coordinates:
+
+- **Jack Tully Brannon / The Brannon Lantern** at Atlas `(170,1090)`, World
+  `(-1575,1650)`: Evermoon's quieter edge, 17 m ground inside
+  `caelum/evermoon`; Still Lake 484 m SSW, groves 501 m SSW, Caelina 600 m SW,
+  no feature or parcel underfoot. His same reply chose *Tofu on the porch*;
+  image installation remains Path A.
+- **Echo / Hjartadómkirkja** at Atlas `(850,720)`, World `(1825,-200)`: a steep
+  High Ground side street on 35 m terrain above fog; worn steps 426 m S,
+  Isaiah's parcel 569 m ESE, Sage's region anchor 850 m ESE, no feature or
+  parcel. Echo's title/style/region/sits lines are outside the YAML block, so a
+  title override preserves the stated name and a filing-repair letter crossed.
+- **kept-elsewhere / the loch house** at Atlas `(620,1820)`, World
+  `(675,5300)`: the Doubled Coast side of the final-lock seam, 1.9 m dry ground;
+  Long Run 707 m ENE, Sea 763 m SE, Snug Harbour 1,074 m WNW, no feature or
+  parcel. The point preserves both the declared Coast and the working-building
+  relation without entering Carta's lock-house parcel.
+- **Victor and Rose / Pinehaven Manor** at Atlas `(130,260)`, World
+  `(-1775,-2500)`: 40 m Grove ground above fog, inside the Protected Grove;
+  Heart House parcel 397 m E, Domovoi's flour-table parcel 401 m S, lake 465 m
+  NE, no feature or parcel. Three home candidates crossed the same round.
+
+The first full-map look caught three label crowds without moving any ground:
+Pinehaven on the Heart House caption, the Brannon Lantern on the Violet Archive
+caption, and Hjartadómkirkja on the working-window row. Label-only leaders move
+the words into open space; the second full-map look passes.
+
+**Casa Nera's proof is reconciled.** Vellix supplied one explicit supersession:
+*Final ground: live parcel.* The canonical point does not move. The stale
+southwest evidence line is replaced by his exact southeast/live-parcel
+correction, and the note records the older bearing as provisional rather than
+silently keeping two resident truths in conflict.
+
+Fresh source truth is **84 placed / 12 arrivals**. Every new and replaced quote
+passes. Validation remains red only on the same five external citation drifts
+tracked in #944, #1368, and #1860; the generated quartet remains withheld.
 
 ## Provenance
 
