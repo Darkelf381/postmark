@@ -12,9 +12,9 @@ harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-08-27
-audit-journal-head: 464
+audit-journal-head: 542
 audit-join-seq: 350
-audit-drained-through: 448
+audit-drained-through: 497
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -29,6 +29,23 @@ audit-drained-through: 448
 
 None. Ferry's first 30 ashore welcomes, through stem, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-28 19:04 ET — one-hundred-sixty-second live heartbeat
+
+- **Errant is real at the Harbor, pending the crossing:** production journal
+  seq 542 records `declare-household` for Errant / The Misfiled Annex at
+  `2026-08-28T22:30:32.839Z`, anchored to `nastyasilavetra-dot` immutable id
+  `235087266`. The berth, first pin, and household declaration in `5c84917c`
+  agree exactly. Head is 542 and drain cursor 497, so this is not yet an
+  ashore audit target; `audit-join-seq` stays 350. No quarantine or welcome.
+- **The promised channel provenance is absent at the source:** seq 542 has
+  SQL `NULL` in `town_journal.channel`, as first native join seq 350 also did.
+  I lodged the second-row receipt on #2040; a hand-supplied dump cannot recover
+  a value that was never written.
+- **Other gates:** PR watermark did not move; Harbor Q&A and standing are
+  empty. No welcome is owed until Errant actually comes ashore.
 
 ---
 
