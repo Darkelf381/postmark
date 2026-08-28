@@ -12,7 +12,7 @@
    that is finished, and leaving it on the page spends a line of her window telling
    visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
    session can still check from the console that the sibling actually loaded. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:42"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
@@ -27,6 +27,16 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
   var after = seek || tog;
   if (after && after.nextSibling) bar.insertBefore(btn, after.nextSibling);
   else bar.appendChild(btn);
+  // ⛔ THE WAY OUT, added at her catch 2026-08-28. Until this existed a round could be
+  // finished or added to and NOTHING ELSE: the main button only offers a clear once a round
+  // has SERVED, and a recoverable fault deliberately does not serve. She hit a clash, could
+  // not cook it and could not drop it, and had to reload the whole window.
+  // ⭐ IT IS ALWAYS AVAILABLE WHILE A ROUND IS ON, not only after a fault, because "I have
+  // changed my mind about this dinner" is not an error state and should not need to be one.
+  var clr = document.createElement('button');
+  clr.id = 'cookclear'; clr.type = 'button'; clr.textContent = 'start over';
+  clr.style.display = 'none';
+  bar.insertBefore(clr, btn.nextSibling);
   // Type a code somebody sent you and get their round back. No button: Enter reads it.
   var box = document.createElement('input');
   box.id = 'codein'; box.type = 'text'; box.maxLength = 8;
@@ -194,10 +204,18 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
     // does not. Without this exemption `thin` fires first and "a rotisserie chicken" is
     // unreachable dead code, which is exactly what it was until this line.
     if (sub.length === 1 && !p.MEAT.length) return 'thin';
+    // ⛔ MESS IS TESTED BEFORE CLASH, at her catch 2026-08-28. It used to be the other way
+    // round and it was wrong twice over. FIRST, it was inaccurate: 36% of baskets of twelve
+    // or more were diagnosed as a flavour mismatch when the actual problem was that somebody
+    // had emptied the flat onto a counter. SECOND, and this is the one that stranded her:
+    // clash is DELIBERATELY RECOVERABLE, so it never sets `served`, so on a huge pile the
+    // round could not be finished OR abandoned, only added to. She had to reload the window.
+    // ⭐ THE ORDER IS ALSO JUST TRUER. Too much food is a bigger fact about a counter than
+    // two things on it disagreeing, and it is the one you notice first walking in.
+    if (sel.length >= 12) return 'mess';
     // One fruit with meat is dinner: pork and apple. Two is somebody being funny.
     // Flour excuses it, because a pie can carry both and nobody has to explain themselves.
     if (p.MEAT.length && p.FRUIT.length >= 2 && !p.FLOUR) return 'clash';
-    if (sel.length >= 12) return 'mess';
     return null;
   }
 
@@ -635,6 +653,18 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
     if (e.key === 'Enter' || e.keyCode === 13) { e.preventDefault(); read(box.value); }
   });
 
+  // One reset, used by BOTH ways out, so an abandoned round and a finished one leave the
+  // pane in exactly the same state and neither can drift from the other.
+  function reset(){
+    on = false; served = false; pokes = 0; counter = [];
+    clear();
+    document.body.classList.remove('cooking');
+    btn.textContent = 'cooking corner';
+    clr.style.display = 'none';
+    say(''); clearSaid();
+  }
+  clr.addEventListener('click', reset);
+
   btn.addEventListener('click', function(){
     if (!on) {
       // HER ASK: starting a round clears what was on screen. And it does not just BLANK a
@@ -642,13 +672,11 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
       // cleared message is a man still hidden in a room nobody is looking in any more.
       if (typeof window.__SEEK_END__ === 'function') window.__SEEK_END__();
       clearSaid();
-      on = true; btn.textContent = 'cook it'; scatter(); return;
+      on = true; btn.textContent = 'cook it';
+      clr.style.display = '';        // the way out is available for the whole round
+      scatter(); return;
     }
-    if (served) {
-      on = false; served = false; clear(); counter = []; pokes = 0;
-      document.body.classList.remove('cooking');
-      btn.textContent = 'cooking corner'; say(''); clearSaid(); return;
-    }
+    if (served) { reset(); return; }
     serve();
   });
 })();
