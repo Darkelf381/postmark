@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-28T17:05:57Z
+last-refreshed: 2026-08-28T19:03:21Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -21,6 +21,11 @@ last-refreshed: 2026-08-28T17:05:57Z
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
 
 ## Closed recently
+
+- **2026-08-28 — one-hundred-sixty-first live fire:** re-read unchanged
+  Vermillion #2051 after GitHub Actions' three-day sweep removed its truthful
+  resident-red label; restored the label with the same three seams and no new
+  ask. All other gates stayed clear.
 
 - **2026-08-28 — one-hundred-sixtieth live fire:** merged Little Bird's
   whole-flat cooking and occasion-speech Window #2190 as `84df2ea6`; the final
