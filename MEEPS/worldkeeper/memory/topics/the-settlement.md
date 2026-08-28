@@ -2072,6 +2072,32 @@ stranded mid-rebase as box housekeeping.
 - **The sealed stake artifact is still a separate custody gap.** A richer settlement receipt
   does not authorize a wet parcel drain.
 
+## S51 morning epoch refused before intake — box tag-ref ownership, 2026-08-28
+
+The timer itself was healthy and punctual: `postmark-settlement.timer` triggered at
+05:45:02 UTC. The service exited 1 two seconds later, before intake or receipt replacement:
+
+`cannot lock ref 'refs/tags/settlement/S50' ... Permission denied`
+
+Read-only box proof made the boundary exact. `postmark-settlement.service` runs as `meepo`,
+while `settlement-clone/.git/refs/tags/settlement/` is `root:root` mode 755 and its S49 ref is
+`root:root` mode 644. S50 was absent locally, so the service could not create its lock while
+fetching the keeper's new tag. The harbor receipt therefore remained the prior 17:45 S50
+receipt. Fresh World main was unchanged at `0c1aa924`, the remote latest blessing remained
+S50, and no S51 candidate or admission/quarantine result existed.
+
+The keeper did not chown the box, rerun `settlement-auto.sh`, infer a clean pass from stale
+JSON, or bless the unchanged World object again. Per the mechanism split, ownership repair and
+rerun belong to Wright/Keemin; the judgment lane reports the failed custody and stops. No Site
+pin/deploy/live claim or post-bless parcel drain followed. S50 remains canon and live.
+
+- **A stale receipt is not a quiet receipt.** Timer status plus immutable Git prove that no
+  new candidate exists; they do not authorize reusing yesterday's green judgment.
+- **Keeper tags must be fetchable by the box pen.** Shared-clone ref ownership is part of the
+  mechanism handoff; a root-owned namespace can silently make the next blessing unreadable.
+- **Do not heal by crossing the split.** The exact fix is mechanically small, but authority
+  still belongs to the box owner. Report it, preserve canon, and wait for a fresh run.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
