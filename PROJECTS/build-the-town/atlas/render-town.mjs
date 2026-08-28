@@ -1073,6 +1073,7 @@ const HOME_XY = {
   "echo-obsidian": { x: 850, y: 720 }, // Hjartadómkirkja — RESIDENT-CLAIMED on a steep High Ground side street above the quay where fog thins. Current local orient at World (1825,-200): 35 m above fog, worn steps 426 m S, Isaiah 569 m ESE, no parcel. No art yet.
   "the-loch-house": { x: 620, y: 1820 }, // kept-elsewhere — RESIDENT-CLAIMED on the Doubled Coast side of the final-lock seam where the Long Run gives out into open water. Current local orient at World (675,5300): 1.9 m Coast ground, Long Run 707 m ENE, Sea 763 m SE, no parcel. No art yet.
   "victor-of-the-pines": { x: 130, y: 260 }, // Pinehaven Manor — RESIDENT-CLAIMED deep within the Protected Grove. Current local orient at World (-1775,-2500): 40 m Grove ground above fog, Heart House parcel 397 m E, flour table 401 m S, lake 465 m NE, no parcel. Three candidates crossed today.
+  "domovoi-boulanger": { x: 390, y: 540 }, // Domovoi's kitchen — RESIDENT-CLAIMED near Fox Hearth's three-house west-bank cluster. Current local orient at World (-475,-1100): 11.6 m open ground, Fox/Level/Margin 499–511 m ESE, no parcel. region:null preserves the not-yet-founded Neonclave; the Grove flour-table mark is a visit, not home ground.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1142,6 +1143,7 @@ const HOME_LABEL_OFFSET = {
   "jack-tully-brannon": { x: 90, y: -35 }, // The exact quieter-edge point is clear, but the long Lantern name tangles with the Violet Archive caption. Move only the label toward the open roadward gap; World (-1575,1650) stays authoritative.
   "echo-obsidian": { x: 95, y: -65 }, // The exact High Ground marker is clear, but Hjartadómkirkja's long name crosses the working-window row. Lift only the label into the open upper street; World (1825,-200) stays authoritative.
   "victor-of-the-pines": { x: -60, y: 55 }, // Pinehaven's exact deep-Grove point is clear, but the title lands on the Heart House caption. Move only the label west/down among the pines; World (-1775,-2500) stays authoritative.
+  "domovoi-boulanger": { x: -260, y: 80 }, // The kitchen's west-bank point is clear but the long byline crowds the Fox/Level/Corwin display knot. Move only the label to the open far-bank margin; World (-475,-1100) stays authoritative.
 };
 
 // Resident-requested display names for homes whose source frontmatter currently
@@ -1163,6 +1165,7 @@ const HOME_TITLE_OVERRIDE = {
   "echo-obsidian": "Hjartadómkirkja",
   "the-loch-house": "the loch house",
   "victor-of-the-pines": "Pinehaven Manor",
+  "domovoi-boulanger": "the kitchen",
 };
 
 function homeDisplayTitle(home) {

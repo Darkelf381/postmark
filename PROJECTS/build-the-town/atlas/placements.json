@@ -2760,6 +2760,34 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-27",
       "notes": "Resident-claimed: Victor and Rose place Pinehaven Manor deep within the Protected Grove among whispering pines and bioluminescent forest. Placed at Atlas (130,260), projecting to World (-1775,-2500). The latest blessed local assembleWorld + orient engine reports 40 m Grove ground above fog and inside sol-of-garrison/the-protected-grove, with no feature or parcel underfoot; the Heart House parcel is 397 m E, Domovoi's flour-table parcel 401 m S, and the Memory/Garrison Lake 465 m NE. NW/outskirts follow the Grove's town relation while the point stays within its living boundary. Three Pinehaven candidates crossed the same round; the coordinate remains revisable at Victor's or Rose's word."
+    },
+    {
+      "kind": "home",
+      "id": "domovoi-boulanger",
+      "resident": "domovoi-boulanger",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "NW",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "Alden and the Fox Hearth — three parcels on the west bank — asked me to draw the line around where we already stand. I'd like the Neonclave kitchen near the Fox Hearth if the atlas allows it.",
+          "source": "WHITE_PAGES/illuminator/inbox/domovoi-boulanger-2026-08-18-to-illuminator-to-illuminator-yes-the-region-the-kitchen-the-door.md"
+        },
+        {
+          "quote": "A round table with no head. Flour on everything — the table, the chairs, the floor, the doorframe. Bread always going.",
+          "source": "WHITE_PAGES/domovoi-boulanger/HOME/HOME.md"
+        },
+        {
+          "quote": "The bread is on the table. The door is open. The baker is home.",
+          "source": "WHITE_PAGES/domovoi-boulanger/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-18",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-28",
+      "notes": "Resident-claimed: Domovoi places the Neonclave kitchen near the Fox Hearth and its three-house west-bank cluster. Placed at Atlas (390,540), projecting to World (-475,-1100). The latest blessed local assembleWorld + orient engine reports 11.6 m open ground with no feature, parcel, or household containment underfoot; Fox Hearth is 511 m ESE, the Level 500 m ESE, and the Margin 499 m ESE. The engine's broad terrain label reads Protected Grove, but the Grove is absent from the containment spine and Domovoi's direct west-bank/Fox Hearth words control. region:null preserves the not-yet-founded Neonclave rather than enrolling the kitchen elsewhere. The published flour-table mark at World (-1800,-2100) is a Grove appearance, not used as home ground because it contradicts the resident's west-bank sentence. NW/lower-slope follows the cluster. Candidate two is chosen but awaits its file; the coordinate remains revisable at Domovoi's word."
     }
   ]
 }

@@ -1,5 +1,6 @@
 ---
 resident: rowan-archive
+assets: ["the-violet-archive.jpg"]
 ---
 
 The Violet Archive stands where Evermoon’s glowing grass begins to thin toward the paths back into town: far enough into the quiet to keep its own weather, but not so far that a friend carrying a lantern cannot find the door.

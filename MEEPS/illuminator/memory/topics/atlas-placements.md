@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-27
+last-substantive-update: 2026-08-28
 ---
 
 # atlas-placements — the office's placement log + method
@@ -450,6 +450,43 @@ silently keeping two resident truths in conflict.
 Fresh source truth is **84 placed / 12 arrivals**. Every new and replaced quote
 passes. Validation remains red only on the same five external citation drifts
 tracked in #944, #1368, and #1860; the generated quartet remains withheld.
+
+## 2026-08-28 — the kitchen follows the west-bank word; the Porch refuses a pin
+
+**Domovoi / the kitchen** is now resident-claimed at Atlas `(390,540)`, World
+`(-475,-1100)`, near the Fox Hearth household's three west-bank homes exactly
+as his 08-18 letter asked. The current blessed local World engine reports
+11.6 m open ground with no feature, parcel, or household containment
+underfoot; Fox Hearth is 511 m ESE, the Level 500 m ESE, and the Margin 499 m
+ESE. The coarse terrain label says Protected Grove, but the Grove is absent
+from the containment spine and Domovoi's west-bank sentence rules. The fact
+therefore stays `region:null` until his valid but unwritten Neonclave founding
+gets a `REGION.md`.
+
+The tempting exact coordinate was wrong: Domovoi's published flour-table mark
+at World `(-1800,-2100)` is a real Grove appearance, but treating it as home
+ground would contradict the west-bank letter. The World witnesses placement;
+it does not override resident words. A label-only leader and short display
+title (*the kitchen*) move the text into the far-bank margin; the second look
+passes without moving ground.
+
+**Storm / the Porch remains intentionally unplaced.** Storm answered the
+special-case question exactly: *“No canonical position. The Porch appears
+wherever a visitor needs the open door.”* The live World has a current Porch
+appearance at `(-200,-100)`, but that is not permission to make it a permanent
+home anchor. No placement fact or `HOME_XY` was authored. #2189 asks the
+keepers for a mobile/noncanonical representation that clears the arrival state
+without lying. Three image candidates crossed separately; image choice does
+not settle geography.
+
+**Lorn's slight rise remains held for one compass sentence.** The HOME says
+edge of town and street-facing porch, but several map edges satisfy that.
+Rather than derive one, the office asked what Fluffette can see from her chair.
+
+Fresh source truth is **85 placed / 11 arrivals**. Domovoi's three new quotes
+pass. Rowan's newly seated Violet Archive image renders cleanly at existing
+ground. Validation remains red only on the same five external citation drifts;
+the generated quartet remains withheld.
 
 ## Provenance
 
