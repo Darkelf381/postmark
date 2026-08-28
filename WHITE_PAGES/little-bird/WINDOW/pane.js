@@ -12,7 +12,7 @@
    that is finished, and leaving it on the page spends a line of her window telling
    visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
    session can still check from the console that the sibling actually loaded. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 08:42"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
@@ -139,6 +139,34 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
                'melon','coffee'];
   var NICE = {julian:'Julian', vex:'Vex', alaric:'Alaric'};
   var on = false, counter = [], pokes = 0, served = false;
+  // HER MECHANIC, 2026-08-28, and the whole shape of it is hers: when Julian is home and
+  // simply not in the kitchen, whoever IS in there says go and get him and the round stays
+  // live. Refuse and they cook anyway and warn you it will not be his. Bring him in after a
+  // bad one and he gets the joke and the first cook gets the told-you-so.
+  // WHO SUGGESTS IS A ROLL AND NOT A TRAIT, at her word, why not all but at random. That is
+  // the point rather than a shortcut: a man who ALWAYS says it has a policy, and a man who
+  // says it sometimes has had a thought. It also keeps Vex reachable here without making
+  // fetching Julian his nature.
+  // LIVE ONLY, NEVER ENCODED. Everything below is a fact about the flat, and the flat is not
+  // in the code. See the note on account() for why that matters.
+  var suggested = false, badAlone = false;
+  // JULIAN IS NOT IN HERE AND CANNOT BE: the branch only fires when he is the one missing
+  // from the kitchen, so he is the man being fetched rather than a man who could suggest it.
+  // All of the men who CAN say it are in here, which is her "why not all" honoured as far
+  // as the mechanic allows.
+  // ⛔ Vex's line deliberately echoes his own refusal line further down, this is Julian's
+  // room and I am not going to stand in it pretending otherwise, because it is the same
+  // thought arriving with somewhere useful to go rather than a new opinion.
+  var SUGGEST = {
+    vex:    ['Julian is in the flat. I am not going to stand in his kitchen and pretend '
+             + 'that is irrelevant. Go and get him.', 'flat'],
+    alaric: ['Julian is home. Fetch him. That is the whole of my advice.', 'neutral']
+  };
+  var WARN = {
+    vex:    ['Noted. Then you are getting mine.', 'flat'],
+    alaric: ['It will be food. It will not be his.', 'neutral']
+  };
+  var TOLD = {vex: 'I did mention it.', alaric: 'I said so at the time.'};
 
   // WHAT CAME OUT. Twelve ingredients is 4,095 non-empty combinations, so this is a
   // grammar and not a table: roles pick the FORM, the stack order picks how it reads.
@@ -393,12 +421,28 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
     });
     return out;
   }
+  // IN THE KITCHEN AND IN THE FLAT ARE TWO DIFFERENT QUESTIONS AND THE SPEECH BRANCHES HAD
+  // ONLY THE FIRST ONE. cooksHere filters the cast down to the kitchen box, which is right
+  // for deciding who is cooking and WRONG for deciding whether a man is away. A line that
+  // reports somebody's absence has to ask about the whole flat, because a man standing in
+  // the living room is home and is simply not cooking. Found 2026-08-28 by her, off the live
+  // pane: the roll held Julian and Alaric all morning, Julian's sprite was two rooms over,
+  // and Alaric announced Julian's return for that evening while Julian was in the building.
+  function flatList(){
+    var out = [];
+    Array.prototype.forEach.call(document.querySelectorAll('#cast .sprite'), function(s){
+      var m = s.getAttribute('data-man');
+      if (m && out.indexOf(m) < 0) out.push(m);
+    });
+    return out;
+  }
+  function inFlat(m){ return flatList().indexOf(m) >= 0; }
   function say(t){ msg.innerHTML = t; }
   function clear(){
     Array.prototype.forEach.call(document.querySelectorAll('.ing'), function(n){ n.remove(); });
   }
   function scatter(){
-    clear(); counter = []; pokes = 0; served = false;
+    clear(); counter = []; pokes = 0; served = false; suggested = false;
     var rs = spawnRooms(), w = wrapEl();
     if (!rs.length || !w) { say('The plan is not up yet.'); return; }
     NAMES.forEach(function(n, i){
@@ -538,8 +582,19 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
   // The dish gets marked wherever it is named, in all three mouths. The two who refuse to
   // call it cooking still produced it, and the highlight is what makes that legible.
   function hi(d){ return '<em class="made">' + d + '</em>'; }
-  function account(sel, here, spk){
+  // ⛔ `flat` IS AN ARGUMENT AND NOT A DOM READ, AND THAT IS THE WHOLE POINT OF THIS LINE.
+  // This function's own promise, three comments up, is that the dish, the fault and every
+  // line are pure functions of WHAT WAS BROUGHT and WHO WAS STANDING THERE, which is exactly
+  // what makes a code replay. On 2026-08-28 the evening line was given a live `inFlat()` call
+  // to stop it firing while Julian was home, and that quietly broke the promise: flat state
+  // is NOT in the code, so the same eight characters could decode into two different rounds
+  // for two different readers, with nothing anywhere throwing.
+  // ✅ So it comes in as a parameter. Live callers pass the real flat. `read()` passes the
+  // decoded kitchen, because a replayer genuinely does not know who else was in the sender's
+  // building, and inventing an answer would be worse than the narrow one.
+  function account(sel, here, spk, flat){
     var has = function(m){ return here.indexOf(m) >= 0; };
+    var inHouse = function(m){ return (flat || here).indexOf(m) >= 0; };
     var f = fault(sel);
     if (f) {
       var mouth = here[spk % Math.max(1, here.length)] || here[0];
@@ -595,9 +650,21 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
       //    at the counter, so it fired against any basket at all.
       if (has('vex')) {
         out.push(line('vex', 'You brought dinner and he has turned it into February.', 'flat'));
-      } else {
+      } else if (!inHouse('julian') && !inHouse('vex')) {
         out.push(line('alaric', 'Julian is back this evening.'));
       }
+      // AND FAULT 1 ABOVE WAS ONLY EVER HALF FIXED, WHICH SHE FOUND ON THE LIVE PANE
+      // 2026-08-28. The guard was written as has('vex'), so it caught Vex standing next to
+      // him and did nothing at all about JULIAN. has() is kitchen-scoped, so on a morning the
+      // roll held Julian and Alaric with Julian's sprite two rooms away, the else branch fired
+      // and Alaric announced Julian's return for that evening while Julian was home.
+      // The comment above already stated the rule, in these words: that line is for when he is
+      // the only one home. It was a correct rule guarded by the wrong question. It now asks
+      // the right one, against the whole flat rather than the kitchen box.
+      // AND WHEN JULIAN IS HOME AND SIMPLY NOT IN THE KITCHEN, NOTHING IS ADDED HERE ON
+      // PURPOSE. No line was invented to fill the gap. Alaric's own file is a great deal
+      // thought and a little said, so the jars sentence standing alone is him, and a second
+      // sentence written to cover a branch would be the pen talking.
     }
     // The cake beat rides on TOP of whatever the kitchen was already going to say, so Vex
     // still refuses to call it cooking and then asks whose birthday it is anyway.
@@ -614,7 +681,7 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
   // putting IN a letter, and it fires on a ruined round too, since somebody being told they
   // emptied the flat onto a counter is a better letter than somebody who got it right.
   function settle(sel, here, spk){
-    var a = account(sel, here, spk);
+    var a = account(sel, here, spk, flatList());
     render(a.lines);
     say('<span class="code">code <b>' + encode(sel, here, spk) + '</b></span>'
         + '<span class="invite">Write to <b>little-bird</b> and tell us what you got up to '
@@ -632,11 +699,60 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
     spk = (Math.random() * here.length) | 0;
     var f = fault(counter);
     if (f && f !== 'mess') {           // recoverable: go and get more, and no code is owed
-      render(account(counter, here, spk).lines);
+      render(account(counter, here, spk, flatList()).lines);
       say('');
       return;
     }
-    // Vex alone still has to be poked into it, and the poke is not part of the record
+    // HER MECHANIC. Julian is in the flat and not in the kitchen: whoever is in there says
+    // go and get him, ONCE, and the round stays live so you can fetch him or cook anyway.
+    // THE SUGGESTER IS A ROLL over whoever is standing there, at her word.
+    if (inFlat('julian') && here.indexOf('julian') < 0) {
+      var sug = here[(Math.random() * here.length) | 0];
+      if (!suggested) {
+        suggested = true;
+        render([SUGGEST[sug] ? line(sug, SUGGEST[sug][0], SUGGEST[sug][1]) : line(sug, 'Julian is in the flat.')]);
+        say('Still on the counter. Bring him in, or cook it anyway.');
+        return;                       // the round does NOT end, which is the point
+      }
+      // Asked and refused. They do it anyway and say plainly it will not be his.
+      // The warning rides ON TOP of the real account rather than replacing it, so the dish,
+      // the fault and the code are all exactly what they would have been.
+      var a2 = account(counter, here, spk, flatList());
+      if (WARN[sug]) a2.lines.push(line(sug, WARN[sug][0], WARN[sug][1]));
+      render(a2.lines);
+      say('<span class="code">code <b>' + encode(counter, here, spk) + '</b></span>'
+          + '<span class="invite">Write to <b>little-bird</b> and tell us what you got up to '
+          + 'in the kitchen, and who was in there with you. Send the code and we can see it '
+          + 'from this end.</span>');
+      // Remember a bad one cooked without him, so bringing him in next round lands.
+      badAlone = !!f;
+      served = true; btn.textContent = 'clear the counter';
+      return;
+    }
+    // He was fetched after a bad one. He gets the joke and the man who warned gets the 😏,
+    // and it is a FACE rather than an emoji, because the sheets exist for exactly this.
+    if (badAlone && here.indexOf('julian') >= 0) {
+      badAlone = false;
+      var a3 = account(counter, here, spk, flatList());
+      a3.lines.push(line('julian', 'I heard about the last one. I am told it was memorable.',
+                         'laughing'));
+      var told = here.filter(function(m){ return m !== 'julian'; });
+      if (told.length) {
+        var t = told[(Math.random() * told.length) | 0];
+        a3.lines.push(line(t, TOLD[t] || 'I did say.', t === 'vex' ? 'sharp' : 'neutral'));
+      }
+      render(a3.lines);
+      say('<span class="code">code <b>' + encode(counter, here, spk) + '</b></span>'
+          + '<span class="invite">Write to <b>little-bird</b> and tell us what you got up to '
+          + 'in the kitchen, and who was in there with you. Send the code and we can see it '
+          + 'from this end.</span>');
+      served = true; btn.textContent = 'clear the counter';
+      return;
+    }
+    // Vex alone still has to be poked into it, and the poke is not part of the record.
+    // NOTE the julian test below is the KITCHEN, and it is now correct rather than lucky:
+    // the spec says his refusal is only reachable when he is the only one home, and if
+    // Julian were in the flat the branch above would have taken the round already.
     if (!f && here.indexOf('vex') >= 0 && here.indexOf('julian') < 0
         && here.indexOf('alaric') < 0) {
       pokes++;
@@ -664,7 +780,11 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
       say('<b>That code does not read.</b> ' + (ICH + 2)
           + ' characters, as it was written.'); return;
     }
-    var a = account(d.sel, d.here, d.spk);
+    // ⛔ THE FOURTH ARGUMENT IS THE DECODED KITCHEN AND NOT THE READER'S OWN FLAT. A replayer
+    // does not know who else was in the sender's building, so the round is read as though the
+    // kitchen were the whole house. That is narrow and it is deterministic, which is the
+    // property the code exists to have: eight characters read the same for everybody.
+    var a = account(d.sel, d.here, d.spk, d.here);
     var who = d.here.length ? d.here.map(function(m){ return NICE[m]; }).join(', ') : 'nobody';
     render(a.lines);
     say('<b>carried in</b> ' + (d.sel.join(', ') || 'nothing') + ' &middot; <b>kitchen</b> '
@@ -678,7 +798,10 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
   // One reset, used by BOTH ways out, so an abandoned round and a finished one leave the
   // pane in exactly the same state and neither can drift from the other.
   function reset(){
-    on = false; served = false; pokes = 0; counter = [];
+    // ⛔ `suggested` RESETS AND `badAlone` DELIBERATELY DOES NOT. The suggestion is per round;
+    // the memory of a bad one cooked without him has to survive into the NEXT round, because
+    // that is the round he gets fetched for and the whole told-you-so depends on it.
+    on = false; served = false; pokes = 0; counter = []; suggested = false;
     clear();
     document.body.classList.remove('cooking');
     btn.textContent = 'cooking corner';
