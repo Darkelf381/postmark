@@ -22,6 +22,16 @@ USAGE: python MEEPS/postmaster/memory/welcome-audit.py
 """
 import io, os, re, sys
 
+# The office's console is not always UTF-8 (Windows cp949 here), and this file's own
+# report uses em-dashes. Without this, the script raised UnicodeEncodeError on its
+# closing lines and exited NON-ZERO on every single run — after printing the report,
+# so the check still *looked* fine to a human reading the terminal. Found 2026-08-28.
+# A check that exits red every time is a check that can never report a new failure.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = os.path.join(os.path.dirname(__file__), "..", "..", "..")
 WP = os.path.join(ROOT, "WHITE_PAGES")
 LEDGER = os.path.join(WP, "mail-ledger.md")

