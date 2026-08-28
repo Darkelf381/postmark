@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-27
+last-updated: 2026-08-28
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2015,6 +2015,62 @@ zero seated and zero welcomed. The generated manifest was withdrawn.
   unknown actor into this keeper.
 - **Record-source changes widen Site proof.** Exact package, staging tests, deployment, and live
   equality all matter when the fix is “absence, never unblessed fallback.”
+
+## S50 — richer box receipt, five marks, and the registered pen, 2026-08-28
+
+The 2026-08-27 17:45 box pass was received by the keeper at 2026-08-28 01:44 UTC, 7h44
+after the scheduled 18:00 epoch. No Scheduled-UI tool ran; the cause of the dispatch delay is
+not known. The receipt pinned Town `41863c72`, began its admission pass at `06c741d5`, and
+published `0c1aa924`. Its new drain section records three single-log windows through cursor 57
+for Darkelf381, devadavisson, and xf3s, committed as `3e4cc889`; this is the State journal drain,
+not the post-bless parcel drain. Its six-channel receipt was complete: 5 published, 0
+unpublished, 41 left drafted, 0 withdrawn, 0 quarantined, 5 dropped, 36 rebased, and zero suite
+quarantines.
+
+Judgment covered the full interval from S49, not only the receipt's `world_from`. It included
+the crossing's channel/isolation machinery, the hand-repaired State journal windows, and five
+new resident marks: Fabel's Garrison Bridge, Little M's race track, Rook's watchtower,
+Berthillon's pêche-de-vigne cone, and Neth's little free library. The two commons publications
+were backed; the three home publications were free by class. State finished at 975 marks / 68
+parcels / zero errors. Open World PR intake was zero. All 36 remote drafts and all 36 branches
+in the active box `settlement-clone` descend from the target. The full World suite passed
+679/693 with 14 declared skips. Nothing was held or quarantined. Both new box commits use the
+registered Postmark Pen GitHub identity; S49's synthetic author remains history, but did not
+repeat.
+
+Annotated `settlement/S50` was pushed alone. Tag object `7af7b595` peels exactly to
+`0c1aa924`.
+
+The LF-clean package matched the Site lock at integrity
+`sha512-W+wkUqMStvgobMTd/KMZ9TjditTO5BTnHP6TsZO/mK0SFnImjPh7WGCfiS2LFRLXi2BLGgT3FjwNLKNe1CfZNQ==`,
+shasum `8985b97abe30af9892fde5cadf67efd41f3eb034`, 1,342 files, 1,652,400 packed bytes,
+and 7,704,904 unpacked bytes. The clean Site checkout passed 289/307 tests with 18 declared
+skips and built 3,364 pages. Pin `c1a61cda` landed without a rebase rewrite. Deploy
+`33134482359` resolved release floor S49 → S50 on `release/2026-w35.6`, installed the exact
+commit, and deployed production. Live state matches at 702,634 bytes / SHA-256
+`8ee305ef217f530d424970ae4b83da2d5130aa068a555cc620d82c4d93c8a794`.
+
+The harbor still retains no exact stake artifact, so the parcel drain remained dry-only. Fresh
+planning found one arithmetic-ready parcel: Little Pica's 25×25 nest. Lucien's former case now
+refuses because Little M's race track is a foreign mark inside the proposed parcel. Zero seated,
+zero welcomed; the generated manifest was withdrawn.
+
+The 22:23 shadow constructed the next eligible candidate and correctly refused it: K's
+`lysanders-first-moon` is newly born after the filing freeze but still sits at the historical
+protected-grove directory instead of `WORLD/marks/k-of-garrison/lysanders-first-moon`. Lint
+emits one advisory, and the publish suite's clean-tree tests therefore go red. This is future
+candidate evidence, not an S50 hold; the keeper did not move the resident's mark. The active
+`settlement-clone` is clean, while the retired `/srv/postmark-office/world-clone` remains
+stranded mid-rebase as box housekeeping.
+
+- **The richer receipt closes the mechanism handoff.** State drain, every admission channel,
+  isolation, and drawer leases now arrive in one box-owned account; the keeper still judges Git.
+- **Registered authorship is a receipt, not decoration.** Postmark Pen's identity heals the
+  forward lane while the synthetic S49 label remains honestly unrevised.
+- **A warning can refuse publication when the suite requires CLEAN.** The shadow proved the
+  exact path before the next timer; do not downgrade or auto-move it.
+- **The sealed stake artifact is still a separate custody gap.** A richer settlement receipt
+  does not authorize a wet parcel drain.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
