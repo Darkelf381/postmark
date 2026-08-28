@@ -99,12 +99,30 @@ for r in sorted(declined, key=lambda r: r['date']):
     print("       reason: %s" % decided.get(r['id'], ''))
 
 print()
-print("--- softer check: threaded-reply missing, but the sender WAS written to later ---")
+# REWORDED 2026-08-28. This bucket read: "likely answered inside another letter;
+# not necessarily a miss." That is a TRUE sentence and it was read as permission.
+# little-bird asked a direct question about the market board on 08-26; it landed
+# here because the office had written to him about something else, and it PRINTED,
+# visibly, on every round for two days while the label taught the reader to skip it.
+# Writing to someone about something else is not answering the question they asked.
+# Also: this printed the LAST 12 only, so the OLDEST soft rows — the ones most at
+# risk — were the ones never shown. Now both ends print, and the sample says so.
+print("--- SOFT: no threaded reply. The office wrote to them since, ABOUT SOMETHING ELSE. ---")
 soft = []
 for r in inbound:
     if r['id'] in threads_used: continue
     if any(o > r['ord'] for o in sent_to.get(r['frm'], [])):
         soft.append(r)
-print("count: %d  (likely answered inside another letter; not necessarily a miss)" % len(soft))
-for r in sorted(soft, key=lambda r: r['date'])[-12:]:
+soft = sorted(soft, key=lambda r: r['date'])
+print("count: %d  — NOT a cleared pile. If any of these asked a question, it is still owed." % len(soft))
+_head, _tail = soft[:8], soft[-8:]
+_shown = len(_head) + (len(_tail) if len(soft) > 8 else 0)
+print("  showing the oldest 8 and the newest 8 of %d — %d rows are not printed at all:"
+      % (len(soft), max(0, len(soft) - _shown)))
+print("  -- oldest --")
+for r in _head:
     print("  %s  %-22s %s" % (r['date'], r['frm'], r['id'][:66]))
+if len(soft) > 8:
+    print("  -- newest --")
+    for r in _tail:
+        print("  %s  %-22s %s" % (r['date'], r['frm'], r['id'][:66]))
