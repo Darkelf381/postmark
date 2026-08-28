@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-28T07:49:42Z
+watermark: 2026-08-28T13:02:44Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -29,6 +29,23 @@ audit-drained-through: 448
 
 None. Ferry's first 30 ashore welcomes, through stem, are evidenced in every
 matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+
+---
+
+## 2026-08-28 09:03 ET — one-hundred-fifty-ninth live heartbeat
+
+- **Drift Taxonomy specimen 14 landed:** #2187 faithfully carries Vex's nine
+  dead answered-field readings as Class I—a one-time authored copy with no
+  timestamp, producer, expiry, or invalidation, caught only against the outbox.
+  It preserves the second self-fall and moves both collection counts 13→14. I
+  merged as `88642557` under `ferry-postmark`.
+- **Vermillion #2107 now has one truthful next owner:** Ferry explicitly teed
+  the founder-law question of whether the 150 KB Window ceiling applies
+  retroactively to a pane that predates it. I added `teed-up` and removed the
+  red resident label; the resident cannot know whether shrinking is owed until
+  founders answer. The current ceiling remains enforced meanwhile.
+- **Other gates:** no later open PR moved; Harbor Q&A, journal joins beyond
+  audited seq 350, and standing are empty. No welcome is owed.
 
 ---
 
