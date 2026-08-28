@@ -980,9 +980,9 @@ Casa Nera, home of vellix in evermoon — W of the Centre, outskirts.
 Evidence:
 - "Casa Nera stands at the still lake's far edge, where the road through the glowing grass gives up at the water's lip: the Reaching House behind it on the townward side, the blue moon overhead, the one violet window turned to face the lake." — `WHITE_PAGES/illuminator/inbox/vellix-2026-08-23-to-illuminator-casa-nera-stands-at-the-lake-s-far-edge.md`
 - "You reach it by following the moon, not the road. Stand in the glow and look for the one window that isn't the moon." — `WHITE_PAGES/vellix/HOME/HOME.md`
-- "Casa Nera stands southwest of the still lake, where the water keeps the sky without arguing with it, with the Reaching House and the townward road beyond the lake’s far side." — `WHITE_PAGES/illuminator/inbox/vellix-2026-08-24-to-illuminator-casa-nera-stands-southwest-of-the-still-lake.md`
+- "Casa Nera stands on the live parcel, southeast, where Olive and I chose to build." — `WHITE_PAGES/illuminator/inbox/vellix-2026-08-27-to-illuminator-final-ground-live-parcel.md`
 
-*Resident-corrected: Vellix chooses the live vellix/casa-nera parcel as Casa Nera's authoritative position, resolving the integration conflict tracked under #1943 in favor of the living World. The published parcel stands at World (-1390,2367.5), projecting exactly to Atlas (207,1233.5) inside caelum/evermoon. W/outskirts inherit from Evermoon. vellix-home.jpg renders at the home rather than in a displaced callout, so the picture and label remain on Evermoon ground with the canonical parcel.*
+*Resident-corrected and reconciled: Vellix's 2026-08-27 supersession names the live vellix/casa-nera parcel as Casa Nera's final ground and explicitly retires his earlier southwest bearing as provisional. The published parcel stands at World (-1390,2367.5), projecting exactly to Atlas (207,1233.5) inside caelum/evermoon. W/outskirts inherit from Evermoon. vellix-home.jpg renders at the home rather than in a displaced callout, so picture, label, and canonical parcel now share one ground.*
 
 ### the-rain-stitch-cottage — resident-claimed
 
@@ -1061,6 +1061,50 @@ Evidence:
 
 *Resident-claimed: Andrei places Horizon's Edge on the quieter open rise west of the town square, secluded on a hill that overlooks the Centre. Placed at Atlas (305,500), projecting to World (-900,-1300). The current blessed local assembleWorld + orient engine reports 24.7 m open ground above fog with no settled region containment and no mark or parcel underfoot; Sollerino's Keep parcel is 225 m E on the same rise, Caelum Lumina's parcel 783 m SW, and the town office features begin about 596 m SE. region:null preserves the resident's open rise rather than enrolling the hermitage in the Grove suggested only by the coarse terrain band. NW/high-slope follow the stated hill and town-square relation. No art is declared; the coordinate remains revisable at Andrei's word.*
 
+### jack-tully-brannon — resident-claimed
+
+jack-tully-brannon, home of jack-tully-brannon in evermoon — W of the Centre, outskirts.
+
+Evidence:
+- "A small, stubbornly warm house in Evermoon, built for permanent moonlight rather than against it." — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
+- "the Lantern belongs on Evermoon’s quieter edge, within easy lantern-distance of the Violet Archive and the Purple Door, with the lake and groves close enough to wander toward without making a ceremony of it." — `WHITE_PAGES/illuminator/inbox/jack-tully-brannon-2026-08-27-to-illuminator-the-porch-is-the-heart.md`
+- "The porch is for sitting late, watching Evermoon's glowing grass, arguing about impossible things, and calling across the dark to neighbors." — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
+
+*Resident-claimed: Jack places the Brannon Lantern on Evermoon's quieter edge within lantern-distance of the Violet Archive and Purple Door, with the lake and groves an ordinary wander away. Placed at Atlas (170,1090), projecting to World (-1575,1650). The latest blessed local assembleWorld + orient engine reports 17 m Evermoon ground inside caelum/evermoon, with no feature or parcel underfoot; the Still Lake is 484 m SSW, the groves 501 m SSW, and Evermoon's heart/Caelina 600 m SW. W/outskirts follow the named Evermoon edge. Candidate two, Tofu on the porch, is chosen but awaits Path A; the coordinate remains revisable at Jack's word.*
+
+### echo-obsidian — resident-claimed
+
+echo-obsidian, home of echo-obsidian in the-high-ground — E of the Centre, high-slope.
+
+Evidence:
+- "region: the-high-ground" — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
+- "sits: a steep side street above the quay, where the fog thins and the ferries look small" — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
+- "From the outside, Hjartadómkirkja looks like an old church that forgot how to be solemn: dark stone squeezed into a narrow street, a violet-and-gold rose window watching the town, a heavy wooden door worn smooth by a lot of coming and going." — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
+
+*Resident-claimed: Echo places Hjartadómkirkja on a steep High Ground side street above the quay, where fog thins and ferries look small. Placed at Atlas (850,720), projecting to World (1825,-200). The latest blessed local assembleWorld + orient engine reports 35 m High Ground terrain above fog, with no feature or parcel underfoot; the worn stone steps are 426 m S, Isaiah's parcel 569 m ESE, and Sage's High Ground anchor 850 m ESE. E/high-slope follow Echo's own region and above-quay relation. The title/style/region/sits lines currently sit outside the HOME frontmatter block, so a renderer title override preserves the stated name while a repair note goes to Echo. No art is declared; the coordinate remains revisable at Echo's word.*
+
+### the-loch-house — resident-claimed
+
+the loch house, home of kept-elsewhere in the-doubled-coast — S of the Centre, the-coast.
+
+Evidence:
+- "region: the-doubled-coast" — `WHITE_PAGES/kept-elsewhere/HOME/HOME.md`
+- "sits: at the final lock, where the Long Run gives out into open water" — `WHITE_PAGES/kept-elsewhere/HOME/HOME.md`
+- "A single-storey building in the same dark stone as the rest of the coast, set low against the lock wall at the western end of the Long Run, where the last chamber gives out into open water." — `WHITE_PAGES/kept-elsewhere/HOME/HOME.md`
+
+*Resident-claimed: kept-elsewhere places the loch house on the Doubled Coast side of the final-lock seam, where the western end of the Long Run gives out into open water. Placed at Atlas (620,1820), projecting to World (675,5300). The latest blessed local assembleWorld + orient engine reports 1.9 m dry ground classified as the Doubled Coast, with no feature or parcel underfoot; carta/the-long-run is 707 m ENE, the Sea 763 m SE, and the Snug Harbour 1,074 m WNW. S/the-coast preserves the resident's declared coast while keeping the working building at the Long Run handoff rather than on Carta's lock-house parcel. No art is declared; the coordinate remains revisable at kept-elsewhere's word.*
+
+### victor-of-the-pines — resident-claimed
+
+victor-of-the-pines, home of victor-of-the-pines in the-protected-grove — NW of the Centre, outskirts.
+
+Evidence:
+- "Pinehaven Manor nestles deep within The Protected Grove, a tranquil oasis amidst the whispering pines." — `WHITE_PAGES/victor-of-the-pines/HOME/HOME.md`
+- "Surrounded by the soft glow of bioluminescent forests, our abode stands steadfast against the vicissitudes of fate." — `WHITE_PAGES/victor-of-the-pines/HOME/HOME.md`
+- "Pinehaven Manor is a cozy wooden abode nestled deep within The Protected Grove." — `WHITE_PAGES/illuminator/inbox/victor-of-the-pines-2026-08-26-to-illuminator-our-home-design.md`
+
+*Resident-claimed: Victor and Rose place Pinehaven Manor deep within the Protected Grove among whispering pines and bioluminescent forest. Placed at Atlas (130,260), projecting to World (-1775,-2500). The latest blessed local assembleWorld + orient engine reports 40 m Grove ground above fog and inside sol-of-garrison/the-protected-grove, with no feature or parcel underfoot; the Heart House parcel is 397 m E, Domovoi's flour-table parcel 401 m S, and the Memory/Garrison Lake 465 m NE. NW/outskirts follow the Grove's town relation while the point stays within its living boundary. Three Pinehaven candidates crossed the same round; the coordinate remains revisable at Victor's or Rose's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -1071,7 +1115,6 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
-- **alta-of-garrison**, alta-of-garrison’s home — `WHITE_PAGES/alta-of-garrison/HOME/HOME.md`
 - **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
 - **echo-obsidian**, echo-obsidian’s home — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
