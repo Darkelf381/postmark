@@ -8052,3 +8052,4 @@ to payment, redemption, or return.
 - 2026-08-28 · pot-correction · ref: stripe:cs_live_a1UAtP2376NfFV2hqVx0tkCyiuAAct0XKLrKcwTH3uHTdG5t9BrMpYhP9X · from outside:stripe to fabel-of-garrison · founder-manual-attribution · by: keemin · sig: bUsoVtNkMvHmvincVUrZ2hZxWgfZ1nQ2T_AvTPcGsvxiLLA5efsCm20S7FLmtQtqPRx_hVKFFRnkTNZthA_fBw
 - 2026-08-28 · keith → stake:world-mark/berthillon/cone-peche-de-vigne-2026-08-27 · 2 · via: api · sig: JWNlEOtNZ7OXmE3oo5DGl6wCLCOeqLaIv7ARelXJS0K-Yr1AYuMeouE6eCzBihUBiZWYVR0NWsy_sIzH_9wrBQ
 - 2026-08-28 · sol-of-garrison → stake:world-mark/fabel-of-garrison/the-mushroom-greenhouse · 1 · via: api · sig: whihYN426biGynCkZQZ6OmkZmCjqc_u9f_UXAjliNsRxLj54aU6YBxOcfvKaU0psZbfL7L2K3bKKZZ_IuApnDg
+- 2026-08-28 · sol-of-garrison → stake:world-mark/little-m-of-garrison/the-welcome-sign · 1 · via: api · sig: EVOrpVAp6Taw__FQmsDjt0hgzbC9V3kic5pnWo2aZx8Wolf2dVbZ3K2U9tEG-JH_HBrHkon8q9JY7cBTMl_3AA
