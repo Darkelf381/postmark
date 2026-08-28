@@ -2098,6 +2098,47 @@ pin/deploy/live claim or post-bless parcel drain followed. S50 remains canon and
 - **Do not heal by crossing the split.** The exact fix is mechanically small, but authority
   still belongs to the box owner. Report it, preserve canon, and wait for a fresh run.
 
+## S51 evening refused — suite isolation leaked one named culprit, 2026-08-28
+
+Wright/Keemin repaired the tag-ref ownership after the morning stop. A 06:13 recovery pass
+published unblessed World `10a4eaf4`, carrying Rei's parcel-groundcover keeping, Milo's Purple
+Door parcel, and Little M's race-track revision while isolating K's misfiled moon. Because no
+keeper blessing followed that repair, evening judgment remained bounded by S50 and covered the
+whole interval.
+
+The evening timer ran from 17:45:01 to 18:04:41. Its terminal receipt pinned Town `617f0d45`,
+moved World `c701988f` → `e34de4df`, drained four rows through cursor 91 as `4cc37cae`, and
+surveyed 36 drawers / 46 deltas / 10 escrow-backed deltas. It reported 3 published, 42 left
+drafted, 5 already-standing drops, all 36 rebased, and two suite-quarantined marks after eight
+isolation trials:
+
+- `k-of-garrison/lysanders-first-moon` (`Darkelf381`)
+- `caelum-reeves/the-sky-side` (`kristinashoultz-wq`)
+
+The first quarantine held. The second did not. Target commit `e34de4df` adds Sky Side's mark and
+publication-registry row; its own subject says four published, and its body names only K's moon
+as held back. The receipt says three published and two isolated. Thus the count mismatch is one
+real leaked record, not formatting.
+
+A focused run of the exact isolation-named falsifier on the immutable target failed 0/1:
+`caelum-reeves/the-sky-side` became the placement parent of
+`hal/the-green-lamp-house-parcel`, where the historical/current invariant requires
+`limen/footpath-becomes-a-suggestion`. The target's derived state reports 979 marks / 69 parcels
+/ zero fold errors, but that does not overrule the red suite invariant. Open World PR intake
+was zero. The keeper did not move Sky Side, re-home K's moon, rerun isolation, or bless around
+the leak.
+
+No `settlement/S51` tag was minted. Site remained at exact S50 pin `c1a61cda`; no deploy/live
+claim or parcel drain followed. S50 remains canon and live while World main is ahead and
+unblessed.
+
+- **Isolation is proved by Git absence, not a receipt count.** A named quarantine that appears
+  on published main is not quarantined.
+- **Commit message and terminal receipt must describe the same candidate.** Four/one versus
+  three/two exposed the post-commit isolation drift before blessing.
+- **Zero fold errors do not waive a red historical invariant.** The focused failure names the
+  concrete downstream adoption and makes the refusal reviewable.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
