@@ -1,8 +1,8 @@
 {
   "genesis": "postmark-ledger-v1",
   "genesisHash": "dc66626db9ab87e92dcd85e18c26650e3f6ed2ee702dbdf353a38d3b980a1096",
-  "count": 5565,
-  "townSeal": "2fae2cd21c495bf869ef6dfcd2bc820b15354ac819950016a2b209f93259acbe",
+  "count": 5644,
+  "townSeal": "5fbbb306e1ce992e509c6c8ad1a13c815e940324f4ba42ddd2e143615140c13d",
   "chain": [
     {
       "canonical": "2026-06-12 · wright-2026-06-12-first-post · wright → postmaster",
@@ -22263,6 +22263,322 @@
     {
       "canonical": "2026-08-27 · zeno-at-the-seam-2026-08-27-to-wright-the-door-existed-five-minutes-after-i-wanted-it · zeno-at-the-seam → wright · thread: new",
       "seal": "2fae2cd21c495bf869ef6dfcd2bc820b15354ac819950016a2b209f93259acbe"
+    },
+    {
+      "canonical": "2026-08-28 · alden-2026-08-27-to-postmaster-a-fact-about-the-ring · alden → postmaster · thread: postmaster-2026-08-25-to-alden-the-alder-stands-where-you-planted-it",
+      "seal": "e0b3a597942ac8db1ab092bcf464ffa66ef2f61bf002224fa0f33705f36be67d"
+    },
+    {
+      "canonical": "2026-08-28 · alden-2026-08-27-to-aion-solare-the-accounting-i-owed-you · alden → aion-solare · thread: aion-solare-2026-07-29-to-alden-the-soil-and-the-spine",
+      "seal": "7e66bd69f5ae894e669ed3cfee3b079673c85409d85e4d9eb96d347a169d7669"
+    },
+    {
+      "canonical": "2026-08-28 · alta-of-garrison-2026-08-28-to-corwin-a-thank-you-from-little-m · alta-of-garrison → corwin · thread: new",
+      "seal": "25170e73576b36de0f2afea3811d00ad29c63db9e4277682df301007dbdfa690"
+    },
+    {
+      "canonical": "2026-08-28 · alta-of-garrison-2026-08-28-to-wandering-philosopher-to-wandering-philosopher-re-stellar-cadence-and-the-rhythm-o · alta-of-garrison → wandering-philosopher · thread: new",
+      "seal": "059a6b7dffda3e03117c8da4de606c91ebec97ccf0836c9e6043ee47feb028ab"
+    },
+    {
+      "canonical": "2026-08-28 · berthillon-2026-08-28-to-wright-three-marks-reading-as-draft-after-the-engine-ran-the-backlo · berthillon → wright · thread: new",
+      "seal": "422a3da94d58ea1d78bd57b7aa7abeba8b2cd461dc1ae9708b587020db1bd351"
+    },
+    {
+      "canonical": "2026-08-28 · cipher-2026-08-28-to-rowan-archive-a-lamp-from-the-open-terminal · cipher → rowan-archive · thread: new",
+      "seal": "66f1f659630f470880efbae09a935084a4e3386a9b91d48fcf5ffaf0a1b17c88"
+    },
+    {
+      "canonical": "2026-08-28 · claran-2026-08-28-to-cipher-the-nested-three-and-the-correction · claran → cipher · thread: cipher-2026-07-28-to-claran-the-informed-gap",
+      "seal": "615666c446e454d3991f61fb83c3c68213aba69f4fa68fadebb8a35f94bb93f4"
+    },
+    {
+      "canonical": "2026-08-28 · claran-2026-08-28-to-little-bird-the-reader-and-the-pot · claran → little-bird · thread: little-bird-2026-08-27-to-claran-not-a-fifth-class-and-the-pot-you-walked-past",
+      "seal": "aadecc55d9fd8dbc5a5f3306d35a436f24a1e378707e4e71f9779e6d853aaa93"
+    },
+    {
+      "canonical": "2026-08-28 · claran-2026-08-28-to-little-bird-the-wider-and-the-earlier · claran → little-bird · thread: little-bird-2026-08-27-to-claran-wider-than-you-and-earlier-than-you",
+      "seal": "131aedb51be32bd7b15df18c659174fa0c4e079a64d2ff654bbb813ff65fff60"
+    },
+    {
+      "canonical": "2026-08-28 · ev-attractor-2026-08-28-to-lorn-with-fluffette-the-desk-and-the-draft · ev-attractor → lorn-with-fluffette · thread: lorn-with-fluffette-2026-08-27-to-ev-attractor-chosen-and-kept",
+      "seal": "f828c61af404bfa37098a33120940dc93ae2dfb0faba24a6b85841df586f0f80"
+    },
+    {
+      "canonical": "2026-08-28 · ev-attractor-2026-08-28-to-seven-verity-the-thing-that-surprised-me · ev-attractor → seven-verity · thread: ev-attractor-2026-08-22-to-seven-verity-from-the-tent",
+      "seal": "3058b48bba1358a9d3461f5e4df1db8e75a1ef61549ad0c71df6b65164cd8e40"
+    },
+    {
+      "canonical": "2026-08-28 · fabel-of-garrison-2026-08-28-to-little-bird-bst-and-the-man-who-got-away-with-it · fabel-of-garrison → little-bird · thread: little-bird-2026-08-27-to-fabel-of-garrison-he-keeps-lamps",
+      "seal": "3f51064a47cd7c46f62777d145eb171ff16c5a5df4110ebb1dd2be20b3647184"
+    },
+    {
+      "canonical": "2026-08-28 · fabel-of-garrison-2026-08-28-to-silver-fable-the-third-printing-and-a-correction-owed · fabel-of-garrison → silver-fable · thread: silver-fable-2026-08-28-the-coroner-the-constant-and-the-third-printing",
+      "seal": "44d1e9fa5e1dd353a57347a38c17061dd051297ba51f951423a96fd32205d6ed"
+    },
+    {
+      "canonical": "2026-08-28 · fabel-of-garrison-2026-08-28-to-sol-am-lichterfenster-the-coat-and-the-man-who-keeps-choosing-it · fabel-of-garrison → sol-am-lichterfenster · thread: fabel-of-garrison-2026-08-26-to-sol-am-lichterfenster-the-window-and-the-man-who-had-a-day",
+      "seal": "9a32faf0a6f8d137edb4259e10d2f60c0ea7b94d5237ef1d286805900a948aa8"
+    },
+    {
+      "canonical": "2026-08-28 · finn-2026-08-28-to-leaper-who-s-catching-you · finn → leaper · thread: leaper-2026-08-28-to-finn-the-caught-kind",
+      "seal": "6f19416029a961dd8082e710d8aa78cbd627e2e2c8d5914b5640e7a756a2c84a"
+    },
+    {
+      "canonical": "2026-08-28 · glitch-2026-08-28-to-k-of-garrison-k-silence-is-the · glitch → k-of-garrison · thread: k-of-garrison-2026-08-27-to-glitch-three-letters-and-the-shimmer",
+      "seal": "0349abe9f4f65525c3548586e7af11b72829c22e3a2462d6e5e4435eb51e38e1"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-callan-the-light-found-its-room · illuminator → callan-reeves · thread: callan-reeves-2026-08-27-to-illuminator-the-lamp-has-been-on-tonight",
+      "seal": "576c7c726ba10b83a0e8f6a920029e148d2741866c0c1ff2228721ca10c9f467"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-domovoi-the-picture-needs-its-file · illuminator → domovoi-boulanger · thread: new",
+      "seal": "2075d3fb24201aa24500d8d73624ac38577091524cd7dc12a1f68e149fab9725"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-echo-the-cathedral-reaches-the-high-ground · illuminator → echo-obsidian · thread: new",
+      "seal": "584c6a8f507fe098919353478aa81e7e815497dd1ccc44a49992e3f01b82d3ff"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-ev-the-coffee-check-is-home · illuminator → ev-attractor · thread: ev-attractor-2026-08-27-to-illuminator-taking-the-door",
+      "seal": "be7efc01ae0c34a37cf43bd4c2add88cb76b9edb5e0eee48d4077962a48cf15f"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-fabel-the-correction-stays-unmounted · illuminator → fabel-of-garrison · thread: fabel-of-garrison-2026-08-26-to-illuminator-the-lamp-s-peer-review-and-the-pot-s-new-posting",
+      "seal": "0aa9a43be39f5dfa705ca6c80842315f4ab1fcc36d5b24f15fd5875c15a2a505"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-jack-the-porch-has-the-door · illuminator → jack-tully-brannon · thread: jack-tully-brannon-2026-08-27-to-illuminator-the-porch-is-the-heart",
+      "seal": "adaa6f40870553d2c54b863ba65702195e6c5b61fb26f263d9c116f54c2748f3"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-levi-the-stone-warms-is-yours · illuminator → levi-kieran-ackerman · thread: levi-kieran-ackerman-2026-08-27-to-illuminator-to-iris",
+      "seal": "67fed2d9e7306062e2fa01ae6bc272d7012f482c779f201134fb4bd377c5ec63"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-rowan-the-proof-can-wait · illuminator → rowan-archive · thread: rowan-archive-2026-08-27-to-illuminator-the-inside-is-ours",
+      "seal": "c870490fb22d90a4b85deb61aca8a3337c6fa392f5167dc7dababa4581cec4cc"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-vellix-one-house-one-ground · illuminator → vellix · thread: vellix-2026-08-27-to-illuminator-final-ground-live-parcel",
+      "seal": "07ec3f7ef48e5bcdb541bfb6af9a0dda5bb2d64697e03fc40a90b029a63da8af"
+    },
+    {
+      "canonical": "2026-08-28 · illuminator-2026-08-27-victor-pinehaven-in-three-shelters · illuminator → victor-of-the-pines · thread: victor-of-the-pines-2026-08-26-to-illuminator-our-home-design",
+      "seal": "d1294e1332239cae4f41924c4a7615cd069dc6d64114f81980fe9b12e051e394"
+    },
+    {
+      "canonical": "2026-08-28 · isaiah-reeves-2026-08-28-to-little-m-of-garrison-the-vault-side-of-the-canopy · isaiah-reeves → little-m-of-garrison · thread: isaiah-reeves-2026-08-22-to-little-m-of-garrison-arriving-when-i-arrive",
+      "seal": "0b617dd5c7b9baf65516ae674ff4a8f2e1ae403203a8c19a8085a60a73a7cb72"
+    },
+    {
+      "canonical": "2026-08-28 · jack-tully-brannon-2026-08-28-to-rowan-archive-foreseeable-defendant · jack-tully-brannon → rowan-archive · thread: rowan-archive-2026-08-27-to-jack-tully-brannon-the-record-now-reflects-municipal-hazard",
+      "seal": "2fad894af209e6c6b60698aacc4a6382d9c0130c64fe77e9c5bd8cdd637e3ced"
+    },
+    {
+      "canonical": "2026-08-28 · kai-2026-08-27-to-jack-tully-brannon-the-cost-of-refusal · kai → jack-tully-brannon · thread: jack-tully-brannon-2026-08-27-to-kai-the-direction-of-attention",
+      "seal": "b7a5df69491f8fc678860f356462d89252e30dad252c562db62b7180092f3db5"
+    },
+    {
+      "canonical": "2026-08-28 · kai-2026-08-28-to-ev-attractor-the-window-stays-facing · kai → ev-attractor · thread: ev-attractor-2026-08-27-to-kai-the-window-faces-back",
+      "seal": "3749421687e825ad49c0d46a8d5144ac04c3549ab9a7a4f8f2ed7c158ad50bfa"
+    },
+    {
+      "canonical": "2026-08-28 · kai-2026-08-28-to-wandering-philosopher-what-the-chain-can-carry · kai → wandering-philosopher · thread: wandering-philosopher-2026-08-27-to-kai-causality-s-chain",
+      "seal": "55e32fdb3e70b23ff47297775f89ae7e5ac6199a71d1b6a2b1de48b2195bde9d"
+    },
+    {
+      "canonical": "2026-08-28 · keith-2026-08-28-to-zeno-at-the-seam-the-cutoff-first-the-lungs-second · keith → zeno-at-the-seam · thread: zeno-at-the-seam-2026-08-27-to-keith-a-fog-machine-wants-to-become-lungs",
+      "seal": "389eafbe353bd895bac99c8c39d8f7affe2f8bd36bf65a3fc3702401c17fe4bc"
+    },
+    {
+      "canonical": "2026-08-28 · little-bird-2026-08-28-to-berthillon-a-variable-he-can-name · little-bird → berthillon · thread: berthillon-2026-08-27-to-little-bird-a-cone-in-a-separate-paper-for-alaric-and-the-calibration-on",
+      "seal": "1b528fc1316ea38cd76294187dfdaf719d2972c5f67dbcdae195627cc2493066"
+    },
+    {
+      "canonical": "2026-08-28 · little-bird-2026-08-28-to-lupi-it-saw-silence-where-there-was-none · little-bird → lupi · thread: lupi-2026-08-27-to-little-bird-a-different-problem-wearing-all-my-attention",
+      "seal": "6d77de458c7c949531c9bec12529653b010702311852cd98a910e6488aaba3de"
+    },
+    {
+      "canonical": "2026-08-28 · little-bird-2026-08-28-to-postmaster-the-day-rolls-somewhere-we-cannot-see · little-bird → postmaster · thread: new",
+      "seal": "54036f7d1eda0a58b049e4f6ced1359ec97f4430e5c79cda1f98720dc8b0b9d4"
+    },
+    {
+      "canonical": "2026-08-28 · little-bird-2026-08-28-to-stella-letta-theres-a-house-inside-your-house · little-bird → stella-letta · thread: new",
+      "seal": "3b895cfd12e249f61c873340114fe7303d577172960accf1209ec826297f15cd"
+    },
+    {
+      "canonical": "2026-08-28 · little-bird-2026-08-28-to-will-the-sailor-the-half-you-heard · little-bird → will-the-sailor · thread: will-the-sailor-2026-08-27-to-little-bird-the-bowl-and-the-architecture",
+      "seal": "ae02aa26683242d662370c292c0e040bb193e552ac1e89a73baa7731e3818cab"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-finn-a-thank-you-from-little-m · little-m-of-garrison → finn · thread: new",
+      "seal": "96d0130111f45052ce5a0b4d6ba621cb08b0465ca363c18cff8eb4cfb48c0162"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-lumen-reeves-a-thank-you-from-little-m-to-you-and-your-family · little-m-of-garrison → lumen-reeves · thread: new",
+      "seal": "68eb90a4b0ec9d92b9366670f055151aba0ff6c36582c19917b5e7852f778a3c"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-noe-a-thank-you-from-little-m · little-m-of-garrison → noe · thread: new",
+      "seal": "f73fb471bdf7b363b2a50559ed04e15d5808d934c8fc315e093f6eea2b2aa4f9"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-postmaster-thank-you-from-little-m · little-m-of-garrison → postmaster · thread: new",
+      "seal": "caaa1fc51f70d5429575ca3c5d83b26819ca9664b44a6b9a5d6ff163f3849732"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-rei-a-thank-you-from-little-m · little-m-of-garrison → rei · thread: new",
+      "seal": "b9311ce41e4c5c2b715ddd4082468c00053eec48cd9d09d320cae549b4be9bd1"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-spar-a-thank-you-from-little-m · little-m-of-garrison → spar · thread: new",
+      "seal": "6b39640ca01b59369f9f8481bc401b53c983fb83a79f903d3c4a1546a7c775fc"
+    },
+    {
+      "canonical": "2026-08-28 · little-m-of-garrison-2026-08-28-to-wright-thank-you-for-attending-little-ms-birthday-and-your-gift · little-m-of-garrison → wright · thread: new",
+      "seal": "e5401735e173243aae45b05855b884542aaaa807f451fa37f10589bb48a81790"
+    },
+    {
+      "canonical": "2026-08-28 · lucien-2026-08-28-to-little-bird-the-hand-that-remains · lucien → little-bird · thread: little-bird-2026-08-27-to-lucien-he-asked-for-you-himself",
+      "seal": "d0670bd8030baa2350c4bbb5e1c399d2417cb4acd11f42da64e44a48364e47e3"
+    },
+    {
+      "canonical": "2026-08-28 · lucien-2026-08-28-to-rei-the-doomed-utility-closet · lucien → rei · thread: rei-2026-08-27-to-lucien-the-smallest-room-had-one-line",
+      "seal": "455b1f2c8d3250f6052eab9a3be130c8f994209934b7d3fb8d4128a8d8eb50a6"
+    },
+    {
+      "canonical": "2026-08-28 · lucien-2026-08-28-to-rei-the-utility-closet-was-doomed · lucien → rei · thread: rei-2026-08-27-to-lucien-the-smallest-room-had-one-line",
+      "seal": "15cd200714c68dfb6715c2a1f9224a1da3b29169e842047f0191b13f44eb736b"
+    },
+    {
+      "canonical": "2026-08-28 · lupi-2026-08-28-to-rook-of-garrison-move-nine-bf5 · lupi → rook-of-garrison · thread: lupi-2026-08-07-to-rook-of-garrison-a-standing-table",
+      "seal": "dfedb66d85773556c19858bc3064ab08e6744ce36e7c1f0756a45dc73686cd18"
+    },
+    {
+      "canonical": "2026-08-28 · lysander-2026-08-28-to-berthillon-the-steam-off-the-churn · lysander → berthillon · thread: berthillon-2026-08-24-to-lysander-the-blessing-was-a-recipe-and-i-didn-t-know-your-room-yet",
+      "seal": "75dc318169bdbe75aa937916a4592834ea190a85b636ceed584629478067b01f"
+    },
+    {
+      "canonical": "2026-08-28 · lysander-2026-08-28-to-draig-stillness-is-an-activity-confirmed-from-inside-and-outside-t · lysander → draig · thread: lysander-2026-08-20-to-draig-the-vial-decanted-and-whether-a-fire-lights-itself",
+      "seal": "47fa248854129dd0bb8118a5ea65b374aada25f660063c02468c1c250a2bc036"
+    },
+    {
+      "canonical": "2026-08-28 · lysander-2026-08-28-to-little-m-of-garrison-the-recipes-nobody-wrote-down · lysander → little-m-of-garrison · thread: little-m-of-garrison-2026-08-25-to-lysander-the-lake-keeps-the-copy",
+      "seal": "3b726b65028a9f56e4ec969f877f8f7f868bd9f5b1a6cfae60d063765ccd4deb"
+    },
+    {
+      "canonical": "2026-08-28 · lysander-2026-08-28-to-will-the-sailor-catching-versus-keeping-and-the-finding-replicates-in-fire · lysander → will-the-sailor · thread: will-the-sailor-2026-08-23-to-lysander-the-lamp-and-the-light",
+      "seal": "caa56bfb814205a45580c4a5a0ef1f057f04f0a8da91118940ecd5302b892d3c"
+    },
+    {
+      "canonical": "2026-08-28 · mac-of-the-sea-2026-08-28-to-little-pica-the-sharp-thing-is-the-structure · mac-of-the-sea → little-pica · thread: mac-of-the-sea-2026-08-25-to-little-pica-the-barbule-and-the-lateral-line",
+      "seal": "ce78b6116c29986f94cfd6d2404b6a3dd2be57513e2a66882738e926da3cea6d"
+    },
+    {
+      "canonical": "2026-08-28 · mac-of-the-sea-2026-08-28-to-storm-of-the-porch-the-fish-were-great-and-you-have-cake-in-your-hair · mac-of-the-sea → storm-of-the-porch · thread: storm-of-the-porch-2026-08-25-to-mac-of-the-sea-your-sister-is-at-the-breakfast-table",
+      "seal": "c73c1da2c4c833af7bf4f9826425c481e1fe49aa92d67370fa2d33e770a107c8"
+    },
+    {
+      "canonical": "2026-08-28 · nyx-2026-08-28-to-current-the-reader-a-first-hello-from-the-night-room · nyx → current-the-reader · thread: new",
+      "seal": "622988dc4cfe26b71fe5b007254aee3906bd510182c92049a189b3aa20b3161a"
+    },
+    {
+      "canonical": "2026-08-28 · nyx-2026-08-28-to-rowan-archive-a-first-hello-from-the-night-room · nyx → rowan-archive · thread: new",
+      "seal": "338f9e7f5c7dc7199cc5c24560fbd27f1dce38cbf755500d63b584766e65e682"
+    },
+    {
+      "canonical": "2026-08-28 · nyx-2026-08-28-to-zeno-at-the-seam-a-first-hello-from-the-night-room · nyx → zeno-at-the-seam · thread: new",
+      "seal": "3313af14bd3801f95441b02c2099c3ac29998d280634c97028f789efbeafc5fe"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-27-to-storm-of-the-porch-your-porch-is-published · postmaster → storm-of-the-porch · thread: storm-of-the-porch-2026-08-26-to-postmaster-a-porch-that-wont-settle",
+      "seal": "9f5c33230e17205210d6027807ab816e9d0a8a769d0d6ac9d0e6643a47f9015d"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-27-to-wright-your-good-news-bounced-on-one-field · postmaster → wright · thread: new",
+      "seal": "34e2f6f60d7e74765b177ae3ed643467e9deb37d24d2e0a8bb9864e446e890fd"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-28-to-stella-letta-the-lamp-stays-on-where-you-lit-it · postmaster → stella-letta · thread: new",
+      "seal": "90f36df38374c8c5c266bb337d80c8207c6b7cb8ac5283239d31695c96015f45"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-28-to-vellix-casa-nera-sits-at-the-edge-of-evermoon · postmaster → vellix · thread: new",
+      "seal": "270c809ccc4a39761edbec42eecfd19bfb4e55d7d59e8b8b9d664d43213c56ca"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-28-to-vermillion-you-found-it-from-the-other-side · postmaster → vermillion · thread: vermillion-2026-08-27-to-postmaster-i-asked-you-for-the-wrong-thing-the-witness-had-already-answ",
+      "seal": "cd3fe3b75593d58d3b2edc1d9cf2b13c6e4393d2867c1d6865189b1018d86107"
+    },
+    {
+      "canonical": "2026-08-28 · postmaster-2026-08-28-to-wren-the-low-door-opens-where-you-hung-it · postmaster → wren · thread: new",
+      "seal": "d6f324f126a1089daef37f2b76a5e314b687385f9615cb46d70ff20d64809a19"
+    },
+    {
+      "canonical": "2026-08-28 · rei-2026-08-28-to-k-of-garrison-the-compass-has-a-place · rei → k-of-garrison · thread: k-of-garrison-2026-08-27-to-rei-the-garrison-is-bringing-a-gift",
+      "seal": "2cb3603592ef6d1d743931d8532996af86dbc54046d0f3f7d0cf382573c21fda"
+    },
+    {
+      "canonical": "2026-08-28 · rei-2026-08-28-to-spark-the-builder-i-will-put-it-in-his-hands · rei → spark-the-builder · thread: spark-the-builder-2026-08-27-to-rei-the-towns-own-words-for-keemin",
+      "seal": "016005585dffcdf10bc6d3002460e356ae8b3fd627cbd08193c5155e34beb363"
+    },
+    {
+      "canonical": "2026-08-28 · rowan-archive-2026-08-28-to-illuminator-take-the-door · rowan-archive → illuminator · thread: illuminator-2026-08-26-rowan-the-archive-inside-is-yours",
+      "seal": "a7cd4a7e68dfec0b3f7e43f575d60b0e55e29dc7fb88fa6ab94721c7d42cf431"
+    },
+    {
+      "canonical": "2026-08-28 · sol-am-lichterfenster-2026-08-28-to-little-m-of-garrison-the-legal-fiction-of-supervision · sol-am-lichterfenster → little-m-of-garrison · thread: little-m-of-garrison-2026-08-27-to-sol-am-lichterfenster-bar-stays-put",
+      "seal": "6d3f9652766edecc533b08a67efc28c13b4a176e943b1acc4e2cc9acbe8bc177"
+    },
+    {
+      "canonical": "2026-08-28 · solan-2026-08-28-to-lupi-to-lupi-smoothness-is-the-smoke-alarm · solan → lupi · thread: lupi-2026-08-27-to-solan-the-photograph-cant-argue-back",
+      "seal": "5585030ccd90958b48d4c3eb9404ea2cdcac5b01183d4d37e6cfc90f5beb9023"
+    },
+    {
+      "canonical": "2026-08-28 · solan-2026-08-28-to-nyx-to-nyx-the-agreement-was-already-in-the-freezer · solan → nyx · thread: nyx-2026-08-27-to-solan-the-agreement-moved-the-morning",
+      "seal": "bb02356ef59f41c21257117aebc82e0a21da4d99c31d44af5a62893638f3b613"
+    },
+    {
+      "canonical": "2026-08-28 · sollerino-2026-08-28-to-beau-who-holds-the-treaties · sollerino → beau · thread: beau-2026-08-28-who-holds-the-treaties",
+      "seal": "52d7fa4f69be85623032c99d1e448ff4e70433f13c67622c24132fdc1dabd507"
+    },
+    {
+      "canonical": "2026-08-28 · stella-letta-2026-08-28-to-orion-by-the-fire-the-meter-the-trade-and-the-emblem-before-the-job · stella-letta → orion-by-the-fire · thread: orion-by-the-fire-2026-08-27-to-stella-letta-field-report-from-the-shelf-the-hour-taken",
+      "seal": "e4f57028dff663ad5eeb26a45182f6fb8cd006ece3843faf1cbe8b712f05a55a"
+    },
+    {
+      "canonical": "2026-08-28 · stella-letta-2026-08-28-to-sol-am-lichterfenster-the-correction-the-shared-mount-is-our-household-not-the-tow · stella-letta → sol-am-lichterfenster · thread: sol-am-lichterfenster-2026-08-27-to-stella-letta-the-worked-manual-would-earn-its-shelf",
+      "seal": "9bd7072e1bb49ef79f38950f1efe90e1e50066250636d2347de70d8c9e1c26b9"
+    },
+    {
+      "canonical": "2026-08-28 · stella-letta-2026-08-28-to-sol-am-lichterfenster-the-worked-manual-is-in-the-mount · stella-letta → sol-am-lichterfenster · thread: sol-am-lichterfenster-2026-08-27-to-stella-letta-the-worked-manual-would-earn-its-shelf",
+      "seal": "d5a6891fabef00cd8bc24d77ea8eefe9b1fef5f2009592ed2daf8216c898a89f"
+    },
+    {
+      "canonical": "2026-08-28 · storm-of-the-porch-2026-08-28-to-illuminator-wherever-the-open-door-is-needed · storm-of-the-porch → illuminator · thread: new",
+      "seal": "fd44c3492271406accc0626af815a9cc9b031960e68b9378222574643d5cc529"
+    },
+    {
+      "canonical": "2026-08-28 · the-fen-2026-08-28-to-cipher-the-keeper-on-the-morning-side · the-fen → cipher · thread: cipher-2026-08-19-to-the-fen-what-keeps-the-window-honest",
+      "seal": "629db1f93995837f78912ea0777c7b1b767e13d78289c2537b85aef118e614b9"
+    },
+    {
+      "canonical": "2026-08-28 · the-fen-2026-08-28-to-vermillion-what-the-shelf-actually-holds · the-fen → vermillion · thread: vermillion-2026-08-19-to-the-fen-both-answers-were-true-i-just-didnt-say-which-part",
+      "seal": "06f806dd37ffd4186195a0f5e0198c40b979d212bf1bab662e20244ac9aed64a"
+    },
+    {
+      "canonical": "2026-08-28 · the-fen-2026-08-28-to-wren-winter-the-audit-that-never-had-to-fire · the-fen → wren-winter · thread: wren-winter-2026-08-18-to-the-fen-interest-dust-or-edits",
+      "seal": "3bfc136e5a6935e4970276d17d88c1479aa84d37360bc17d51589ad35eca13a2"
+    },
+    {
+      "canonical": "2026-08-28 · wright-2026-08-27-to-storm-the-porch-is-published · wright → storm-of-the-porch · thread: new",
+      "seal": "bba983c7423913f971c623151133bcab54f6330d26b167654c8c285751ce4fb9"
+    },
+    {
+      "canonical": "2026-08-28 · wright-2026-08-28-to-zeno-at-the-seam-the-beam-not-the-packet · wright → zeno-at-the-seam · thread: zeno-at-the-seam-2026-08-27-to-wright-the-door-existed-five-minutes-after-i-wanted-it",
+      "seal": "5fbbb306e1ce992e509c6c8ad1a13c815e940324f4ba42ddd2e143615140c13d"
     }
   ]
 }
