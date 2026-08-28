@@ -9,7 +9,7 @@
    yes, this becomes the home for pane code that would otherwise spend window.html's
    remaining headroom, and nothing has to be taken back. If the answer is no, it gets
    overwritten with a line saying so. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
+window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
 (function(){
   var el = document.getElementById('sibling');
   if (!el) return;
@@ -126,7 +126,10 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
   // the code, so it is not rearrangeable without invalidating every code ever written down.
   var NAMES = ['egg','milk','flour','cheese','baguette','steak','chicken','carrot','tomato',
                'onion','lettuce','corn','chili','lemon','apple','strawberry','peach',
-               'orange','banana','grape'];
+               'orange','banana','grape',
+               // appended 2026-08-27 night. APPENDED, never inserted.
+               'zucchini','cauliflower','pumpkin','radish','turnip','pineapple','pear',
+               'melon','coffee'];
   var NICE = {julian:'Julian', vex:'Vex', alaric:'Alaric'};
   var on = false, counter = [], pokes = 0, served = false;
 
@@ -190,7 +193,10 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
     var p = parts(sel);
     var sub = sel.filter(function(n){ return n !== 'chili' && n !== 'lemon'; });
     if (!sub.length) return 'nothing';
-    if (sub.length === 1) return 'thin';
+    // ⛔ ONE PIECE OF MEAT IS NOT A THIN COUNTER. A whole bird feeds people; a lone carrot
+    // does not. Without this exemption `thin` fires first and "a rotisserie chicken" is
+    // unreachable dead code, which is exactly what it was until this line.
+    if (sub.length === 1 && !p.MEAT.length) return 'thin';
     // One fruit with meat is dinner: pork and apple. Two is somebody being funny.
     // Flour excuses it, because a pie can carry both and nobody has to explain themselves.
     if (p.MEAT.length && p.FRUIT.length >= 2 && !p.FLOUR) return 'clash';
@@ -207,10 +213,13 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
     var only = function(a){ return a.filter(has); };
     return {has: has, only: only,
       MEAT: only(['steak','chicken']), SHARP: only(['chili','lemon']),
-      VEG: only(['tomato','onion','carrot','corn']), LEAF: only(['lettuce']),
-      FRUIT: only(['apple','strawberry','peach','orange','banana','grape']),
+      VEG: only(['tomato','onion','carrot','corn','zucchini','cauliflower','pumpkin',
+                 'radish','turnip']),
+      LEAF: only(['lettuce']),
+      FRUIT: only(['apple','strawberry','peach','orange','banana','grape','pineapple',
+                   'pear','melon']),
       MILK: has('milk'), FLOUR: has('flour'), BREAD: has('baguette'),
-      CHEESE: has('cheese'), EGG: has('egg')};
+      CHEESE: has('cheese'), EGG: has('egg'), COFFEE: has('coffee')};
   }
   function listOf(a){
     if (!a.length) return '';
@@ -223,16 +232,34 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
   // ⭐ FLOUR IS A SECOND CARRIER and that is why it was worth adding. With the baguette
   // alone, half of every combination was a sandwich. Baking outranks bread: if the flour
   // is out, you are making something rather than assembling something.
+  // ⛔ COFFEE IS APPENDED HERE, ONCE, RATHER THAN AT EVERY RETURN. It used to ride on
+  // individual returns and there are about fifteen of them, so it silently vanished from
+  // every branch somebody forgot: `egg + coffee` came out as a boiled egg and the coffee
+  // was gone. The guard stops it doubling on the branches that still add it themselves.
   function dish(sel){
+    var d = dishCore(sel);
+    return (parts(sel).COFFEE && d.indexOf('pot of coffee') < 0)
+      ? d + ', and a pot of coffee' : d;
+  }
+  function dishCore(sel){
     var p = parts(sel), has = p.has, list = listOf;
     function season(){ return p.SHARP.length ? ', with ' + list(p.SHARP) : ''; }
     function sweet(){ return p.FRUIT.length ? ' with ' + list(p.FRUIT) : ''; }
+    // Coffee is a drink rather than an ingredient: it rides alongside whatever was made.
+    function brew(){ return p.COFFEE ? ', and a pot of coffee' : ''; }
     if (!sel.length) return 'an empty counter';
     if (p.FLOUR) {
-      // Flour, egg and milk is batter. Batter plus fruit is an occasion.
+      // ⭐ HER RULE, and it is real cooking rather than a game invention: flour and egg
+      // WITHOUT milk is pasta, add milk and it is batter, add fruit to the batter and it
+      // is a cake. Three different dinners off one shelf, told apart by what is missing.
       if (p.MILK && p.EGG) {
-        if (p.FRUIT.length) return art(list(p.FRUIT) + ' cake') + season();
-        return 'a stack of pancakes' + season();
+        if (p.FRUIT.length) return art(list(p.FRUIT) + ' cake') + season() + brew();
+        return 'a stack of pancakes' + season() + brew();
+      }
+      if (p.EGG) {
+        var sauce = (p.MEAT.length ? p.MEAT : []).concat(p.VEG, p.CHEESE ? ['cheese'] : []);
+        if (sauce.length) return 'spaghetti with ' + list(sauce) + season() + brew();
+        return 'fresh pasta, drying over a chair' + season() + brew();
       }
       if (p.MEAT.length) return art(list(p.MEAT.concat(p.VEG)) + ' pie') + season();
       if (p.FRUIT.length) return p.FRUIT.length === 1
@@ -257,11 +284,20 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
       return 'a baguette with ' + list(fill) + season();
     }
     if (p.MEAT.length) {
+      var solo = p.MEAT.length === 1 && !p.EGG && !p.CHEESE
+                 && !p.VEG.length && !p.FRUIT.length;
+      // A whole bird with nothing done to it is not "a plain chicken", it is the thing
+      // that comes off a spit. And a bird with leaves is the thing you pull apart.
+      if (has('chicken') && p.MEAT.length === 1) {
+        if (solo && !p.LEAF.length) return 'a rotisserie chicken' + season() + brew();
+        if (p.LEAF.length && !p.VEG.length && !p.CHEESE && !p.EGG && !p.FRUIT.length)
+          return 'a stripped chicken salad' + season() + brew();
+      }
       var base = list(p.MEAT);
       if (p.EGG) base += ' and egg';
       var withs = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG, p.FRUIT);
-      return withs.length ? base + ' with ' + list(withs) + season()
-                          : 'a plain ' + base + season();
+      return (withs.length ? base + ' with ' + list(withs) : 'a plain ' + base)
+             + season() + brew();
     }
     if (p.EGG) {
       if (p.MILK && p.FRUIT.length) return art(list(p.FRUIT) + ' custard') + season();
@@ -281,13 +317,15 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
     }
     var items = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG);
     if (!items.length) {
-      if (p.MILK) return 'a glass of milk' + season();
+      if (p.COFFEE && !p.MILK && !p.SHARP.length) return 'a pot of coffee';
+      if (p.MILK) return 'a glass of milk' + season() + brew();
+      if (p.COFFEE) return 'a pot of coffee' + season();
       return list(p.SHARP) + ', and nothing to put it on';
     }
-    if (p.MILK) return 'a soup of ' + list(items) + season();
-    if (p.LEAF.length) return 'a salad of ' + list(items) + season();
-    if (items.length === 1) return 'a lone ' + items[0] + season();
-    return 'a pot of ' + list(items) + season();
+    if (p.MILK) return 'a soup of ' + list(items) + season() + brew();
+    if (p.LEAF.length) return 'a salad of ' + list(items) + season() + brew();
+    if (items.length === 1) return 'a lone ' + items[0] + season() + brew();
+    return 'a pot of ' + list(items) + season() + brew();
   }
 
   function wrapEl(){ return document.querySelector('.floorwrap'); }
@@ -404,31 +442,55 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
   // code is refused instead of quietly decoding into somebody else's dinner.
   // Crockford's alphabet: no I, L, O or U, and the decoder folds the lookalikes back.
   var A32 = '0123456789ABCDEFGHJKMNPQRSTVWXYZ', MEN3 = ['julian','vex','alaric'];
-  // 20 bits of ingredients, 3 of who was in the kitchen, 2 for which mouth spoke on a
-  // fault. Twenty five bits is five base32 characters exactly, plus one check character.
-  var CW = 5;
+  // ⛔ PACKED PER CHARACTER, NOT INTO ONE INTEGER, and the reason is a hard ceiling rather
+  // than taste. The first version put every field in a single 32-bit int, which worked at
+  // twenty ingredients and BREAKS at twenty-nine: 29 + 3 cooks + 2 speaker is 34 bits, and
+  // JavaScript's bitwise operators silently coerce to int32, so bit 31 is the sign bit and
+  // everything above it is gone. Nothing would have thrown; codes would just have decoded
+  // into somebody else's dinner. Five bits per character never exceeds 31, so this scheme
+  // has no ingredient ceiling at all.
+  // ⚠️ THE FORMAT CHANGED, so any code written down under the old one no longer reads.
+  // Done deliberately now, while the only codes that exist are in a test log.
+  var ICH = Math.ceil(NAMES.length / 5);      // characters spent on the ingredients
   function encode(sel, here, spk){
-    var bits = 0, i;
-    for (i = 0; i < NAMES.length; i++) if (sel.indexOf(NAMES[i]) >= 0) bits |= (1 << i);
-    for (i = 0; i < 3; i++) if (here.indexOf(MEN3[i]) >= 0) bits |= (1 << (20 + i));
-    bits |= (spk & 3) << 23;
-    var s = '', c = 0;
-    for (i = CW - 1; i >= 0; i--) s += A32.charAt((bits >> (i * 5)) & 31);
-    for (i = 0; i < CW; i++) c += A32.indexOf(s.charAt(i));
+    var s = '', g, i, v, n, c = 0;
+    for (g = 0; g < ICH; g++) {
+      v = 0;
+      for (i = 0; i < 5; i++) {
+        n = g * 5 + i;
+        if (n < NAMES.length && sel.indexOf(NAMES[n]) >= 0) v |= (1 << i);
+      }
+      s += A32.charAt(v);
+    }
+    v = 0;                                     // one character: 3 bits of cook, 2 of speaker
+    for (i = 0; i < 3; i++) if (here.indexOf(MEN3[i]) >= 0) v |= (1 << i);
+    v |= (spk & 3) << 3;
+    s += A32.charAt(v);
+    for (i = 0; i < s.length; i++) c += A32.indexOf(s.charAt(i));
     return s + A32.charAt(c % 32);
   }
   function decode(code){
     var s = String(code).toUpperCase().replace(/[^0-9A-Z]/g, '')
               .replace(/O/g, '0').replace(/[IL]/g, '1').replace(/U/g, 'V');
-    if (s.length !== CW + 1) return null;
-    var i, c = 0, bits = 0, v;
-    for (i = 0; i < CW; i++){ v = A32.indexOf(s.charAt(i)); if (v < 0) return null; c += v; }
-    if (A32.charAt(c % 32) !== s.charAt(CW)) return null;
-    for (i = 0; i < CW; i++) bits = (bits * 32) + A32.indexOf(s.charAt(i));
+    if (s.length !== ICH + 2) return null;
+    var i, g, v, n, c = 0;
+    for (i = 0; i <= ICH; i++) {
+      v = A32.indexOf(s.charAt(i));
+      if (v < 0) return null;
+      c += v;
+    }
+    if (A32.charAt(c % 32) !== s.charAt(ICH + 1)) return null;
     var sel = [], here = [];
-    for (i = 0; i < NAMES.length; i++) if (bits & (1 << i)) sel.push(NAMES[i]);
-    for (i = 0; i < 3; i++) if (bits & (1 << (20 + i))) here.push(MEN3[i]);
-    return {sel: sel, here: here, spk: (bits >> 23) & 3};
+    for (g = 0; g < ICH; g++) {
+      v = A32.indexOf(s.charAt(g));
+      for (i = 0; i < 5; i++) {
+        n = g * 5 + i;
+        if (n < NAMES.length && (v & (1 << i))) sel.push(NAMES[n]);
+      }
+    }
+    v = A32.indexOf(s.charAt(ICH));
+    for (i = 0; i < 3; i++) if (v & (1 << i)) here.push(MEN3[i]);
+    return {sel: sel, here: here, spk: (v >> 3) & 3};
   }
 
   // ---- the settled outcome, as a pure function so a code replays it exactly ---
@@ -560,8 +622,11 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:17"};
   function read(code){
     var d = decode(code);
     if (!d) {
+      // Computed, not written out. It said "Six characters" for a while after the format
+      // moved to eight, which is a message that is wrong in the one moment it is read.
       clearSaid();
-      say('<b>That code does not read.</b> Six characters, as it was written.'); return;
+      say('<b>That code does not read.</b> ' + (ICH + 2)
+          + ' characters, as it was written.'); return;
     }
     var a = account(d.sel, d.here, d.spk);
     var who = d.here.length ? d.here.map(function(m){ return NICE[m]; }).join(', ') : 'nobody';
