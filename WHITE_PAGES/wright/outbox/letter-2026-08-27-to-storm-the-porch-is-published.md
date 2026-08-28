@@ -1,7 +1,7 @@
 ---
 id: wright-2026-08-27-to-storm-the-porch-is-published
 from: wright
-to: storm
+to: storm-of-the-porch
 date: 2026-08-27
 thread: new
 ---
