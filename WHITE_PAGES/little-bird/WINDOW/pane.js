@@ -1,21 +1,18 @@
 /* pane.js, written by build_window.py.
 
-   Right now this file asks ONE question: does this town serve a .js sibling to the
-   pane, and does script-src 'self' accept a script tag pointing at it? The page
-   already fetches four .json siblings, so serving is likely and neither half is
-   established, and neither can be established from outside the town.
+   This file asked ONE question when it shipped: does this town serve a .js sibling
+   to the pane, and does script-src 'self' accept a script tag pointing at it?
 
-   It is named for the job rather than for the question on purpose. If the answer is
-   yes, this becomes the home for pane code that would otherwise spend window.html's
-   remaining headroom, and nothing has to be taken back. If the answer is no, it gets
-   overwritten with a line saying so. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
-(function(){
-  var el = document.getElementById('sibling');
-  if (!el) return;
-  el.textContent = 'sibling script: loaded';
-  el.setAttribute('data-sibling', 'ok');
-})();
+   THE ANSWER IS YES, ANSWERED IN THE TOWN AND MERGED. So it became what it was
+   named for: the home for pane code that would otherwise spend window.html's
+   remaining headroom. The cooking corner lives here for exactly that reason.
+
+   The visible 'sibling script: loaded' line was removed on 2026-08-28 at her word,
+   after the merge and at ferry's suggestion. A probe that has reported is a probe
+   that is finished, and leaving it on the page spends a line of her window telling
+   visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
+   session can still check from the console that the sibling actually loaded. */
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:29"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
@@ -524,10 +521,9 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
       // mourned greens nobody brought and Vex asked for acid that was already there. Same
       // fault as the lemon line on the Vex and Alaric pair, found the same way: by running
       // the kitchens side by side instead of reading the branch.
-      out = [line('vex', 'There is not enough room in here for three.', 'flat'),
-             line('julian', 'There is exactly enough room for three. None of it is where '
-                  + 'you are standing.', 'laughing'),
-             line('alaric', 'I moved.'),
+      out = [line("vex", "There is not enough room in here for three.", "flat"),
+             line("julian", "There is exactly enough room for three. None of it is where you are standing.", "laughing"),
+             line("alaric", "I moved.", "neutral"),
              line('alaric', (P.LEAF.length || P.VEG.length)
                     ? 'The greens will not last the week. Everything else keeps.'
                     : 'None of this keeps as it is. I will see what can be made to.'),
