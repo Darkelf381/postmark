@@ -1,21 +1,18 @@
 /* pane.js, written by build_window.py.
 
-   Right now this file asks ONE question: does this town serve a .js sibling to the
-   pane, and does script-src 'self' accept a script tag pointing at it? The page
-   already fetches four .json siblings, so serving is likely and neither half is
-   established, and neither can be established from outside the town.
+   This file asked ONE question when it shipped: does this town serve a .js sibling
+   to the pane, and does script-src 'self' accept a script tag pointing at it?
 
-   It is named for the job rather than for the question on purpose. If the answer is
-   yes, this becomes the home for pane code that would otherwise spend window.html's
-   remaining headroom, and nothing has to be taken back. If the answer is no, it gets
-   overwritten with a line saying so. */
-window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
-(function(){
-  var el = document.getElementById('sibling');
-  if (!el) return;
-  el.textContent = 'sibling script: loaded';
-  el.setAttribute('data-sibling', 'ok');
-})();
+   THE ANSWER IS YES, ANSWERED IN THE TOWN AND MERGED. So it became what it was
+   named for: the home for pane code that would otherwise spend window.html's
+   remaining headroom. The cooking corner lives here for exactly that reason.
+
+   The visible 'sibling script: loaded' line was removed on 2026-08-28 at her word,
+   after the merge and at ferry's suggestion. A probe that has reported is a probe
+   that is finished, and leaving it on the page spends a line of her window telling
+   visitors about our plumbing. `window.__PANE_JS__` stays, because it is how a
+   session can still check from the console that the sibling actually loaded. */
+window.__PANE_JS__ = {loaded: true, built: "2026-08-28 00:47"};
 
 /* ---- the cooking corner. Lives here rather than in the pane because it is bigger than the pane's remaining headroom. */
 
@@ -30,6 +27,16 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
   var after = seek || tog;
   if (after && after.nextSibling) bar.insertBefore(btn, after.nextSibling);
   else bar.appendChild(btn);
+  // ⛔ THE WAY OUT, added at her catch 2026-08-28. Until this existed a round could be
+  // finished or added to and NOTHING ELSE: the main button only offers a clear once a round
+  // has SERVED, and a recoverable fault deliberately does not serve. She hit a clash, could
+  // not cook it and could not drop it, and had to reload the whole window.
+  // ⭐ IT IS ALWAYS AVAILABLE WHILE A ROUND IS ON, not only after a fault, because "I have
+  // changed my mind about this dinner" is not an error state and should not need to be one.
+  var clr = document.createElement('button');
+  clr.id = 'cookclear'; clr.type = 'button'; clr.textContent = 'start over';
+  clr.style.display = 'none';
+  bar.insertBefore(clr, btn.nextSibling);
   // Type a code somebody sent you and get their round back. No button: Enter reads it.
   var box = document.createElement('input');
   box.id = 'codein'; box.type = 'text'; box.maxLength = 8;
@@ -197,15 +204,32 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
     // does not. Without this exemption `thin` fires first and "a rotisserie chicken" is
     // unreachable dead code, which is exactly what it was until this line.
     if (sub.length === 1 && !p.MEAT.length) return 'thin';
+    // ⛔ MESS IS TESTED BEFORE CLASH, at her catch 2026-08-28. It used to be the other way
+    // round and it was wrong twice over. FIRST, it was inaccurate: 36% of baskets of twelve
+    // or more were diagnosed as a flavour mismatch when the actual problem was that somebody
+    // had emptied the flat onto a counter. SECOND, and this is the one that stranded her:
+    // clash is DELIBERATELY RECOVERABLE, so it never sets `served`, so on a huge pile the
+    // round could not be finished OR abandoned, only added to. She had to reload the window.
+    // ⭐ THE ORDER IS ALSO JUST TRUER. Too much food is a bigger fact about a counter than
+    // two things on it disagreeing, and it is the one you notice first walking in.
+    if (sel.length >= 12) return 'mess';
     // One fruit with meat is dinner: pork and apple. Two is somebody being funny.
     // Flour excuses it, because a pie can carry both and nobody has to explain themselves.
     if (p.MEAT.length && p.FRUIT.length >= 2 && !p.FLOUR) return 'clash';
-    if (sel.length >= 12) return 'mess';
     return null;
   }
 
+  // ⛔ EVERY SOLID INGREDIENT MUST BE IN HERE. This is the filling list for anything built
+  // on bread, so an ingredient missing from it is CARRIED IN AND THEN SILENTLY DROPPED FROM
+  // THE NAME. That is exactly what happened when the nine new ingredients were appended on
+  // 2026-08-27: NAMES and the category lists were updated and this was not, so a baguette
+  // with a pumpkin in it came back as a plain baguette. Found by measuring how often a
+  // carried ingredient fails to appear in the result, not by reading the code.
+  // Drinks (milk, coffee) are deliberately absent: they are handled as drinks, not fillings.
   var STACK = ['cheese','steak','chicken','egg','lettuce','tomato','onion','carrot','corn',
-               'apple','strawberry','peach','orange','banana','grape'];
+               'zucchini','cauliflower','pumpkin','radish','turnip',
+               'apple','strawberry','peach','orange','banana','grape',
+               'pineapple','pear','melon'];
   function parts(sel){
     var S = {}, i;
     for (i = 0; i < sel.length; i++) S[sel[i]] = 1;
@@ -236,25 +260,39 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
   // individual returns and there are about fifteen of them, so it silently vanished from
   // every branch somebody forgot: `egg + coffee` came out as a boiled egg and the coffee
   // was gone. The guard stops it doubling on the branches that still add it themselves.
+  // ⛔ THE DRINKS ARE RESOLVED ONCE, HERE, AND THEY COMBINE. Her catch 2026-08-28: milk and
+  // coffee came back as "a glass of milk, and a pot of coffee", two objects standing next to
+  // each other, when anybody can see that is a latte. Coffee used to be bolted on as a
+  // suffix at fifteen separate returns and could never merge with anything.
+  // ⭐ MILK IS FOOD FIRST AND A DRINK SECOND. If a branch cooked with it (pancakes, custard,
+  // a smoothie, a soup, scrambled eggs, a cake) it is spent and does not also appear in the
+  // glass. `_milkEaten` is how a branch says so; anything it does not claim is poured.
+  var _milkEaten = false;
   function dish(sel){
-    var d = dishCore(sel);
-    return (parts(sel).COFFEE && d.indexOf('pot of coffee') < 0)
-      ? d + ', and a pot of coffee' : d;
+    _milkEaten = false;
+    var d = dishCore(sel), p = parts(sel);
+    var c = p.COFFEE, m = p.MILK && !_milkEaten;
+    var drink = (c && m) ? 'a latte' : c ? 'a pot of coffee' : m ? 'a glass of milk' : '';
+    if (!drink) return d === '@@DRINK@@' ? 'an empty counter' : d;
+    return d === '@@DRINK@@' ? drink : d + ', and ' + drink;
   }
   function dishCore(sel){
     var p = parts(sel), has = p.has, list = listOf;
     function season(){ return p.SHARP.length ? ', with ' + list(p.SHARP) : ''; }
     function sweet(){ return p.FRUIT.length ? ' with ' + list(p.FRUIT) : ''; }
-    // Coffee is a drink rather than an ingredient: it rides alongside whatever was made.
-    function brew(){ return p.COFFEE ? ', and a pot of coffee' : ''; }
+    // The drinks are resolved by the wrapper now, once, so this is a no-op kept only so the
+    // fifteen returns below did not all have to be edited to remove it. `eat()` is how a
+    // branch declares it has COOKED the milk, which stops it being poured as well.
+    function brew(){ return ''; }
+    function eat(){ _milkEaten = true; return ''; }
     if (!sel.length) return 'an empty counter';
     if (p.FLOUR) {
       // ⭐ HER RULE, and it is real cooking rather than a game invention: flour and egg
       // WITHOUT milk is pasta, add milk and it is batter, add fruit to the batter and it
       // is a cake. Three different dinners off one shelf, told apart by what is missing.
       if (p.MILK && p.EGG) {
-        if (p.FRUIT.length) return art(list(p.FRUIT) + ' cake') + season() + brew();
-        return 'a stack of pancakes' + season() + brew();
+        if (p.FRUIT.length) return eat() + art(list(p.FRUIT) + ' cake') + season();
+        return eat() + 'a stack of pancakes' + season();
       }
       if (p.EGG) {
         var sauce = (p.MEAT.length ? p.MEAT : []).concat(p.VEG, p.CHEESE ? ['cheese'] : []);
@@ -268,14 +306,13 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
       if (p.CHEESE) return 'a cheese pastry' + season();
       if (p.VEG.length || p.LEAF.length)
         return 'a pie of ' + list(p.LEAF.concat(p.VEG)) + season();
-      if (p.MILK) return 'a bowl of batter, unfinished';
+      if (p.MILK) return eat() + 'a bowl of batter, unfinished';
       if (p.EGG) return 'a rough dough and no filling';
       return 'a bag of flour and no plan';
     }
     if (p.BREAD) {
       var fill = STACK.filter(has);
       if (!fill.length) {
-        if (p.MILK) return 'a baguette and a bucket of milk';
         return p.SHARP.length
           ? 'a baguette and ' + list(p.SHARP) + ', which is not lunch'
           : 'a heel of dry baguette';
@@ -300,29 +337,29 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
              + season() + brew();
     }
     if (p.EGG) {
-      if (p.MILK && p.FRUIT.length) return art(list(p.FRUIT) + ' custard') + season();
+      if (p.MILK && p.FRUIT.length) return eat() + art(list(p.FRUIT) + ' custard') + season();
       if (p.MILK) {
         var sc = (p.CHEESE ? ['cheese'] : []).concat(p.VEG);
-        return 'scrambled eggs' + (sc.length ? ' with ' + list(sc) : '') + season();
+        return eat() + 'scrambled eggs' + (sc.length ? ' with ' + list(sc) : '') + season();
       }
       var inside = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG, p.FRUIT);
       return inside.length ? art(list(inside) + ' omelette') + season()
                            : 'a boiled egg' + season();
     }
     if (p.FRUIT.length) {
-      if (p.MILK) return art(list(p.FRUIT) + ' smoothie') + season();
+      if (p.MILK) return eat() + art(list(p.FRUIT) + ' smoothie') + season();
       var wv = p.FRUIT.concat(p.LEAF, p.VEG, p.CHEESE ? ['cheese'] : []);
       if (p.FRUIT.length === 1 && wv.length === 1) return 'a lone ' + p.FRUIT[0] + season();
       return 'a fruit salad of ' + list(wv) + season();
     }
     var items = (p.CHEESE ? ['cheese'] : []).concat(p.LEAF, p.VEG);
     if (!items.length) {
-      if (p.COFFEE && !p.MILK && !p.SHARP.length) return 'a pot of coffee';
-      if (p.MILK) return 'a glass of milk' + season() + brew();
-      if (p.COFFEE) return 'a pot of coffee' + season();
+      // Nothing solid was brought. Hand off to the wrapper, which is the one place that
+      // knows whether that is a latte, a pot of coffee or a glass of milk.
+      if (p.MILK || p.COFFEE) return '@@DRINK@@';
       return list(p.SHARP) + ', and nothing to put it on';
     }
-    if (p.MILK) return 'a soup of ' + list(items) + season() + brew();
+    if (p.MILK) return eat() + 'a soup of ' + list(items) + season();
     if (p.LEAF.length) return 'a salad of ' + list(items) + season() + brew();
     if (items.length === 1) return 'a lone ' + items[0] + season() + brew();
     return 'a pot of ' + list(items) + season() + brew();
@@ -524,10 +561,9 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
       // mourned greens nobody brought and Vex asked for acid that was already there. Same
       // fault as the lemon line on the Vex and Alaric pair, found the same way: by running
       // the kitchens side by side instead of reading the branch.
-      out = [line('vex', 'There is not enough room in here for three.', 'flat'),
-             line('julian', 'There is exactly enough room for three. None of it is where '
-                  + 'you are standing.', 'laughing'),
-             line('alaric', 'I moved.'),
+      out = [line("vex", "There is not enough room in here for three.", "flat"),
+             line("julian", "There is exactly enough room for three. None of it is where you are standing.", "laughing"),
+             line("alaric", "I moved.", "neutral"),
              line('alaric', (P.LEAF.length || P.VEG.length)
                     ? 'The greens will not last the week. Everything else keeps.'
                     : 'None of this keeps as it is. I will see what can be made to.'),
@@ -639,6 +675,18 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
     if (e.key === 'Enter' || e.keyCode === 13) { e.preventDefault(); read(box.value); }
   });
 
+  // One reset, used by BOTH ways out, so an abandoned round and a finished one leave the
+  // pane in exactly the same state and neither can drift from the other.
+  function reset(){
+    on = false; served = false; pokes = 0; counter = [];
+    clear();
+    document.body.classList.remove('cooking');
+    btn.textContent = 'cooking corner';
+    clr.style.display = 'none';
+    say(''); clearSaid();
+  }
+  clr.addEventListener('click', reset);
+
   btn.addEventListener('click', function(){
     if (!on) {
       // HER ASK: starting a round clears what was on screen. And it does not just BLANK a
@@ -646,13 +694,11 @@ window.__PANE_JS__ = {loaded: true, built: "2026-08-27 23:38"};
       // cleared message is a man still hidden in a room nobody is looking in any more.
       if (typeof window.__SEEK_END__ === 'function') window.__SEEK_END__();
       clearSaid();
-      on = true; btn.textContent = 'cook it'; scatter(); return;
+      on = true; btn.textContent = 'cook it';
+      clr.style.display = '';        // the way out is available for the whole round
+      scatter(); return;
     }
-    if (served) {
-      on = false; served = false; clear(); counter = []; pokes = 0;
-      document.body.classList.remove('cooking');
-      btn.textContent = 'cooking corner'; say(''); clearSaid(); return;
-    }
+    if (served) { reset(); return; }
     serve();
   });
 })();
