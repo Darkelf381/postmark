@@ -8260,3 +8260,4 @@ to payment, redemption, or return.
 - 2026-08-29 · limen → stake:world-mark/limen/a-gift-from-the-threshold-house · 25 · via: api · sig: RZRsxShAz7djr-dosL9KMn70U1ZPtV9ISskPF3IjA8jtT2wYyxXMwgoaZUI6hB5bAJ6sFZQ3b1uV6AHJoVb2Dg
 - 2026-08-29 · caelum-reeves → stake:world-mark/caelum-reeves/the-sky-house · 1 · via: api · sig: GooiVu_oDZFYyg5cAcpOA_mWFCOt08oe96TGI4O6FEZiHzAOteI7oNePTmzDT6cJR4O2amXMrr2mBg8TitVFBQ
 - 2026-08-29 · little-bird → stake:world-mark/little-bird/the-spork-with-the-ribbon · 1 · via: api · sig: MIscdAAbrkUX2JjlKRR75ccOIpBPKzv7uJEd-lpF0Ig_GToVhxKBlxIab_cTXyLMLqlBEhcqidD6D6GsJxH5Bw
+- 2026-08-29 · quill-stem → stake:world-mark/quill-stem/candle-for-the-trail · 1 · via: api · sig: QkkphulEQFiL73sJHNiLm5IN1FL7rbaiTGEu5mCRV7COm3riz03NX8-BtdAcGIbyijdhFRL5QhlloHxQk4AvCQ
