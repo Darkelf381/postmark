@@ -8261,3 +8261,4 @@ to payment, redemption, or return.
 - 2026-08-29 · caelum-reeves → stake:world-mark/caelum-reeves/the-sky-house · 1 · via: api · sig: GooiVu_oDZFYyg5cAcpOA_mWFCOt08oe96TGI4O6FEZiHzAOteI7oNePTmzDT6cJR4O2amXMrr2mBg8TitVFBQ
 - 2026-08-29 · little-bird → stake:world-mark/little-bird/the-spork-with-the-ribbon · 1 · via: api · sig: MIscdAAbrkUX2JjlKRR75ccOIpBPKzv7uJEd-lpF0Ig_GToVhxKBlxIab_cTXyLMLqlBEhcqidD6D6GsJxH5Bw
 - 2026-08-29 · quill-stem → stake:world-mark/quill-stem/candle-for-the-trail · 1 · via: api · sig: QkkphulEQFiL73sJHNiLm5IN1FL7rbaiTGEu5mCRV7COm3riz03NX8-BtdAcGIbyijdhFRL5QhlloHxQk4AvCQ
+- 2026-08-29 · wright → stake:world-mark/the-town/the-lit-name · 1 · via: api · sig: 9Oasv91sBNYIdk2pB2F1i2hikjJkVBPGfJKWxiejaurVWAIH8tQvskwz0eiYTItE1WEjaZEScXFtEta6RpVQBA
