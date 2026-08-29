@@ -2175,6 +2175,40 @@ canon and live.
 - **A drain commit is not a settlement target.** State history may reach main before the suite;
   without a terminal `world_to`, it remains unblessed input.
 
+## S51 evening refused — frozen filing stopped the sweep before candidate, 2026-08-29
+
+The 17:45 timer failed closed in thirty seconds. It pinned Town `ab0d679b`, began from World
+`cd4aa185`, and drained 26 State rows for `devadavisson`, `jennuhh`,
+`kristinashoultz-wq`, and `xf3s` through cursor 130. State commit `e5669150` reached World main.
+The box reconciled all 37 sketchbooks, delivered twelve, and explicitly notes that eight older
+undelivered write-downs went out with this pass.
+
+The sweep stopped before survey/channel receipts or a candidate commit. Lint reported two
+errors; the receipt forwarded only the first:
+
+`berthillon/pistache-cone-for-julian` was reoffered at
+`WORLD/marks/let-there-be-light/pistache-cone-for-julian`, while the immutable filing fossil
+requires `WORLD/marks/let-there-be-light/the-town-centre/pistache-cone-for-julian`.
+
+The exact branch is `draft/devadavisson`. A read-only census of every drawer path against
+`WORLD/filing-freeze.json` found five frozen-path mismatches. Four appear in the service's
+already-standing drops: Fabel's breakfast table and mushroom greenhouse, plus Current's Snug
+jetty and mooring. Pistache is the sole undropped mismatch. The receipt truncates the second
+lint row and the sweep cleaned its worktree without preserving a candidate; the keeper therefore
+records that second detail as unavailable rather than assigning an invented fault.
+
+No `world_to`, admission survey, or quarantine result exists. The keeper did not rewrite the
+resident branch, reconstruct a candidate, or rerun the sweep. No S51 tag, Site step, live claim,
+or parcel drain followed. S50 remains canon and live; World main `e5669150` is unblessed State
+input atop the earlier Sky Side leak.
+
+- **The filing fossil outranks a plausible root copy.** An old mark stays at its frozen path;
+  identity filing applies only to marks born after the freeze.
+- **A missing second error is an evidence boundary.** Name the exact first edge and the complete
+  branch census, but do not turn a count into a fabricated diagnosis.
+- **Drained State can advance main without creating a blessing target.** A sweep refusal still
+  stops Site and parcel custody completely.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
