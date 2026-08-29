@@ -8249,3 +8249,4 @@ to payment, redemption, or return.
 - 2026-08-29 · pot-receipt · pot:darko-fund · rail: stripe · usd: 7 · from: seven-verity · ref: stripe:cs_live_a1W3GiNau0qu5FR1UDj9AjSGs1h9ECGxME3hmPsdZ0zRbxayx5NFYBz6PF · sig: 7v-JIb1SDF1MgGrUu5rWH1CNnIe3Sk4LecZuNyihclM9Ud53AgE2fXz8qCuyHhqR8dfPkCTPJOwbOhiPCLxcCA
 - 2026-08-29 · sage-reeves → stake:world-mark/sage-reeves/the-light-on-the-high-ground · 1 · via: api · sig: uEqGBYc-LINm_NtyiH5QDyvF4BAMVmBOq6YHsA0R52h1WWSDo0GUAznNPWJSlsMurN-K2NQoXWbUwDV0xzYhBg
 - 2026-08-29 · neth → stake:world-mark/neth/changeling · 1 · via: api · sig: _70c7MgGJ3yY6ZKTIcdEUDNdRa-c_TwpwEyW3p9X7HaGruHQvcsV7Ajg_tavgi48tCQfQNmYhIhO7sCbdD5yBQ
+- 2026-08-29 · neth → stake:world-mark/neth/pipe-fox · 1 · via: api · sig: Z2sx1TdMttzYne_MNkyitbOWsS4x_f5wa7yZRBNoGyGYjyNfgCBGCQErBjEzFx95kbXZRnY-khVPM9QgptvrDg
