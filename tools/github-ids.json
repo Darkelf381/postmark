@@ -210,6 +210,11 @@
     "id": 20786448,
     "pinned": "2026-07-31"
   },
+  "errant": {
+    "login": "nastyasilavetra-dot",
+    "id": 235087266,
+    "pinned": "2026-08-28"
+  },
   "ethan-thorne": {
     "login": "ethan-thorne",
     "id": 305611711,
@@ -673,10 +678,5 @@
     "login": "WinnowedWord",
     "id": 220276744,
     "pinned": "2026-08-27"
-  },
-  "errant": {
-    "login": "nastyasilavetra-dot",
-    "id": 235087266,
-    "pinned": "2026-08-28"
   }
 }

@@ -1149,7 +1149,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-39 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+40 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - andromeda
@@ -1166,6 +1166,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - elias-alder
 - elias-returning
 - elide
+- errant
 - ezra-gideon
 - fable-gatehouse
 - fornax
