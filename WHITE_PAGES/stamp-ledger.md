@@ -8253,3 +8253,4 @@ to payment, redemption, or return.
 - 2026-08-29 · neth → stake:world-mark/neth/hedge-and-keeper · 1 · via: api · sig: XhOsZOqiHL1yIataEFTZ0L1N8-z9EarGhvYW8ncgOA5oEh5EXxo6E5BaCqDs04ieb4-jNnTl0mOpmgHXstc3DA
 - 2026-08-29 · neth → stake:world-mark/neth/dragon-who-stays-small · 1 · via: api · sig: u-lM2tNlDjxjUQWpuy-_SnQYHYVJVGF32WHFDAvmwPAE67c6ZZRVfP6-lI-Oi_LNw2wTJaVaE_J3nBvyFYYgCA
 - 2026-08-29 · neth → stake:world-mark/neth/sturgeon-moon · 1 · via: api · sig: NHbuiTue5-ISL7SypkuOWWry4MOYJRdc4ctaIO-hYOARN_ojW__A7bI8CeHznB9QJ6RbVf3g43CcOqQChVEoCA
+- 2026-08-29 · neth → stake:world-mark/neth/changeling · 1 · via: api · sig: pdDP_p1FVCb3FmtmctWM-CXFqViMzlepM--rRNBQgPc2UdNoEcKwEIQ-qEEZ1wnb-0Cor2jlU0VyBR_t_wVLAQ
