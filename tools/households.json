@@ -1339,6 +1339,20 @@
       "since": "2026-08-28",
       "member_of": "the-harbor",
       "declared_by": "declaration of The Misfiled Annex through the office door (2026-08-28) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "house-of-harvey": {
+      "name": "house-of-harvey",
+      "accounts": [
+        {
+          "login": "generalroam-boop",
+          "id": 273009068
+        }
+      ],
+      "residents": [
+        "amia-semper"
+      ],
+      "since": "2026-08-29",
+      "declared_by": "admission of amia-semper through PR #2210 (2026-08-29) — the house's own public ADDRESS heading, verified account 273009068, and Registrar form repair preserving the filed prose verbatim"
     }
   }
 }
