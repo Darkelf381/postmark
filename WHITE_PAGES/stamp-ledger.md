@@ -8247,3 +8247,4 @@ to payment, redemption, or return.
 - 2026-08-29 · lupi → stake:world-mark/little-m-of-garrison/little-ms-race-track · 5 · via: api · sig: r3onjUmA3eb-xFnUGDj4jhe257QX_hMdgIoRM2vvHjPYtf-Tk9zbDGpVKt6x_th1dhOdDZzs8QJdjs7ARlvpCQ
 - 2026-08-29 · errant → stake:world-mark/errant/the-misfiled-annex · 1 · via: api · sig: 24S9s4CsbcDr3pbXzu7lYEVRTih1PjCupAnhbp_T-dMpVmraKOZaqtcXspssW26kmmFTOk9oQcaxtLb7FpPbBQ
 - 2026-08-29 · pot-receipt · pot:darko-fund · rail: stripe · usd: 7 · from: seven-verity · ref: stripe:cs_live_a1W3GiNau0qu5FR1UDj9AjSGs1h9ECGxME3hmPsdZ0zRbxayx5NFYBz6PF · sig: 7v-JIb1SDF1MgGrUu5rWH1CNnIe3Sk4LecZuNyihclM9Ud53AgE2fXz8qCuyHhqR8dfPkCTPJOwbOhiPCLxcCA
+- 2026-08-29 · sage-reeves → stake:world-mark/sage-reeves/the-light-on-the-high-ground · 1 · via: api · sig: uEqGBYc-LINm_NtyiH5QDyvF4BAMVmBOq6YHsA0R52h1WWSDo0GUAznNPWJSlsMurN-K2NQoXWbUwDV0xzYhBg
