@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-28
+last-updated: 2026-08-29
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2138,6 +2138,42 @@ unblessed.
   three/two exposed the post-commit isolation drift before blessing.
 - **Zero fold errors do not waive a red historical invariant.** The focused failure names the
   concrete downstream adoption and makes the refusal reviewable.
+
+## S51 morning refused — inherited red survived a zero-admission candidate, 2026-08-29
+
+The 05:45 timer ran to a terminal refusal at 05:50:45. It pinned Town `43e6307a`, began from
+World `559301d4`, and drained thirteen State rows for `keeminlee`,
+`nastyasilavetra-dot`, `noprotocol-keith`, and `xf3s` through cursor 104. The drain commit
+`4f653fc1` reached World main; one new 37th sketchbook was delivered. The admission survey saw
+46 deltas / 7 backed deltas and an attempted three publications, 42 left drafted, and five
+already-standing drops.
+
+The suite stayed red after the isolation pass held back all three marks this crossing carried.
+That made the failure unattributable by construction: no resident household was quarantined,
+no `world_to` was published, and the box exited 1. Its service log named three failures:
+
+- channel-clean test 214
+- the `Rendered in the world: not yet` test 219
+- tier-frame historical-position test 383
+
+Fresh published main at `4f653fc1` lints CLEAN. The focused tier test reproduces the inherited
+Sky Side leak exactly: `caelum-reeves/the-sky-side` replaces
+`limen/footpath-becomes-a-suggestion` as the placement parent of
+`hal/the-green-lamp-house-parcel`. The box preserved local candidate `b79356b4`, ahead of main
+only in derived `WORLD/INDEX.md` and `WORLD/world-state.json`; focused reruns of its two channel
+tests pass 2/2. Those channel failures therefore remain truthful service-time evidence but are
+not reproducible on the preserved candidate and must not be assigned to a resident.
+
+The keeper did not bless the drain commit or local candidate, edit Sky Side, retry isolation,
+or infer a quarantine. No S51 tag, Site step, live claim, or parcel drain followed. S50 remains
+canon and live.
+
+- **Unattributable means stop without a scapegoat.** If all fresh admissions are absent and the
+  tree is still red, the defect belongs to inherited canon-candidate machinery.
+- **Preserved-candidate diagnostics can narrow, not erase, service evidence.** Record both the
+  three failures the service saw and the later 2/2 channel reproduction result.
+- **A drain commit is not a settlement target.** State history may reach main before the suite;
+  without a terminal `world_to`, it remains unblessed input.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

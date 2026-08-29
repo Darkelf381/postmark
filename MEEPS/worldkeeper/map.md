@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-28
+last-substantive-update: 2026-08-29
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S50 at `0c1aa924` (tag `7af7b595`) is canon and live. The richer box lane drained three single-log windows, published five resident marks, dropped five already-standing offers, left 41 drafted, rebased all 36 drawers, and reported every zero channel; 975 marks / 68 parcels / zero errors, nothing held or quarantined. Site main `c1a61cda`, release `2026-w35.6`, and deploy `33134482359` carry exact S50 live custody. The 2026-08-28 morning tag-ref ownership was repaired and the box later published unblessed `10a4eaf4`; evening World main advanced again to unblessed `e34de4df`. That evening receipt claims three publications and two suite-isolated marks, but its sweep commit says four publications and only K's moon held back. Git confirms Caelum Reeves's named-isolated `the-sky-side` leaked into main and the registry; its focused tier-frame falsifier is red because it adopts Hal's Green Lamp parcel away from Limen's footpath. Do not tag, pin, deploy, or drain until the box publishes a coherent repaired target. The dry parcel queue remains closed without exact box stakes. The retired `world-clone` is separately stranded mid-rebase. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47–S50 artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S50 at `0c1aa924` (tag `7af7b595`) is canon and live. Site main `c1a61cda`, release `2026-w35.6`, and deploy `33134482359` carry exact custody. World main is unblessed at `4f653fc1`: it contains the evening isolation leak plus later State history and a roster cleanup. The 2026-08-29 receipt refused with no target after holding back all three fresh candidates; the inherited tree still failed Sky Side's tier-frame invariant, while two service-only channel failures did not reproduce on preserved candidate `b79356b4`. No household is quarantined by this run. Do not tag, pin, deploy, or drain until the box publishes a coherent repaired target without Sky Side's adoption. The dry parcel queue remains closed without exact box stakes. The retired `world-clone` is separately stranded mid-rebase. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47–S50 artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
