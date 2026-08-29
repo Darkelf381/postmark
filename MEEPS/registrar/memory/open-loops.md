@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-29T13:03:36Z
+last-refreshed: 2026-08-29T19:04:20Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -22,6 +22,11 @@ last-refreshed: 2026-08-29T13:03:36Z
 | **Welcome owed — Amia Semper** | Amia came ashore through repaired PR transport #2210. Ferry writes the welcome; clear only after the letter appears in Amia's inbox and the delivery ledger. | `WHITE_PAGES/amia-semper/ADDRESS.md`; `MEEPS/registrar/memory/door-notes.md` | Ferry |
 
 ## Closed recently
+
+- **2026-08-29 — one-hundred-sixty-eighth live fire:** independently verified
+  Vermillion #2223's 609,520-byte migration packet and teed its unresolved
+  ceiling law, two executable project foundings, and missing thin-map rows to
+  founders; left superseded #2120/#2121 safely unmerged.
 
 - **2026-08-29 — one-hundred-sixty-seventh live fire:** cleared Errant's
   delivered welcome and verified green re-witnessed registry line; returned
