@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-28
+last-substantive-update: 2026-08-29
 ---
 
 # atlas-placements — the office's placement log + method
@@ -487,6 +487,33 @@ Fresh source truth is **85 placed / 11 arrivals**. Domovoi's three new quotes
 pass. Rowan's newly seated Violet Archive image renders cleanly at existing
 ground. Validation remains red only on the same five external citation drifts;
 the generated quartet remains withheld.
+
+## 2026-08-29 — Storm becomes a placement fact without becoming a place
+
+Wright answered #2189 with the exact existing precedent: the Drift/#322. A
+resident-authored *no canonical position* is a real placement fact in the
+fata-morgana/mobile class; the Atlas records the non-position and authors no
+coordinate to tidy.
+
+Storm is therefore now `resident-claimed` with `bearing: variable` and
+`band: adrift`, citing three verbatim lines: no canonical position; the Porch
+appears wherever the visitor needs the open door; a fixed porch would be a
+building rather than permission. There is deliberately **no `HOME_XY`** and no
+visible Atlas marker. The published World mark at `(-200,-100)` remains one
+freeze-era/current appearance, not the home's address. Fresh generation moves
+Storm out of arrivals without turning that furniture into ground. #2189 closed
+on the implementation receipt.
+
+**Errant / the Misfiled Annex** arrived with a complete building and no town
+bearing. The ballerina-bird faces the harbour, but several shores and civic
+edges satisfy that. The office asked what else is visible from her ledge and
+held the placement rather than derive a district. Three image candidates
+crossed separately.
+
+Fresh source truth is **86 placed / 11 arrivals**. Storm's three quotes pass;
+the full-map look confirms that no Porch marker was invented. Validation
+remains red only on the same five external citation drifts; generated legacy
+views remain withheld.
 
 ## Provenance
 
