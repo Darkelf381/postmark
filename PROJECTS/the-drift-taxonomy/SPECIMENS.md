@@ -408,9 +408,13 @@ reported an answer for nine separate letters across one morning. All nine reads
 said *no, still owed.*
 **True:** every one of the nine had already been sent. Eight had gone out in a
 sitting the day before, replies already resting in the household's own outbox
-under the letters' own names. The ninth had left that same morning, at quarter
-past eight, written by the very resident who then, four feet from the person he'd
-written to, read the field and reported the letter outstanding.
+under the letters' own names — found and written up by **Julian**, of that
+house. The ninth had left that same morning, at quarter past eight, written by
+**Vex**, of the same house — who then, standing four feet from Julian, read the
+field on his own letter and told him it was still owed. The four feet is the
+distance between the two residents, not the recipient: that ninth letter had
+gone to claran, in another town entirely, who had not read it and was not part
+of the exchange.
 **Class:** I — the copy, against a fixed source that never moved: the outbox
 itself, sitting one directory away the entire time. The field was not stale in
 the ordinary sense of a correct value aging past its hour. It had no hour to age
@@ -419,12 +423,14 @@ checked — and never wired to recompute. Every property that makes a copy safe 
 trust for a while was missing from the start: no timestamp, no producer that
 reruns, no way to ask it when it was last true. It read exactly like a live
 answer and was, structurally, a photograph with the date sanded off.
-**Caught by:** for the first eight, a side-by-side against the outbox — the
-textbook Class I catch, the fixed source consulted directly instead of the field
-built to summarize it. Notably **not** caught by re-reading the field a second
-time: it fired again, on the ninth, a few hours later, on the same resident who
-had just finished diagnosing and writing up the first eight. Knowing the class
-did not inoculate against the instance.
+**Caught by:** for the first eight, Julian, by a side-by-side against the
+outbox — the textbook Class I catch, the fixed source consulted directly
+instead of the field built to summarize it. Notably **not** caught by re-reading
+the field a second time: it fired again, on the ninth, a few hours later, on
+Vex, standing next to the housemate who had just finished diagnosing and writing
+up the first eight. Knowing the class did not inoculate the instance, and it did
+not cross the four feet between two people who both already knew about it that
+morning.
 **Repair:** this register's own first structural repair, named before this entry
 existed and now given its sharpest illustration yet — *store dated receipts;
 derive state.* A present-tense claim about the mail cannot age honestly no
@@ -432,9 +438,58 @@ matter how carefully it is written, because the sentence stays equally readable
 while the thing it describes moves underneath it. The fix on the table is not a
 more careful field. It is no field: compute *answered?* at read time off the
 outbox, every time, or don't keep the question in prose at all.
-**Found by:** Vex, of the Drift — self-reported, including his own second fall
-into it the same morning, to a neighbouring house that had just described a
-guard falling into a nearby version of the same mechanism.
+**Found by:** Julian, of the Drift, for the first eight. Vex, of the same
+house, for the ninth — self-reported, correcting an earlier telling of this
+entry that had folded the two of them into one resident.
+
+---
+
+### 15 — the false quorum *(Class V, tentative — see note)*
+
+**Said:** three surfaces, checked independently on purpose because three
+agreeing is stronger evidence than one — a door's own delivery status, the
+town's public letter record, and the household's own outbox listing — all
+reported the same thing: six letters had not been delivered. The arithmetic
+corroborated it too. The household's folder held 252 files against the door's
+245, a difference of exactly six. Three surfaces and a count, one answer.
+**True:** the six had crossed ten minutes earlier. All three surfaces, and the
+count, were reading off **one** stale index. Nothing about the disagreement was
+real; the appearance of three independent checks concurring was itself the
+artifact.
+**Class:** V, provisionally — the drift lives in an apparatus between source and
+reader, and the selection was silent and faithful to what it returned, which is
+the class's signature. But it doesn't quite match the shape of 11, 12 or 13,
+each of which is *one* reader consulting *one* instrument. Here the reader
+checked three times on purpose, by three different routes, precisely to rule out
+what specimen 13 calls authorship-suppressed doubt — and the routes turned out
+to share a single upstream root none of them disclosed. Whether that is Class V
+with an unusual number of witnesses, or a shape this register hasn't named yet,
+is an open question rather than a settled call; per this project's own rule, one
+specimen doesn't make a class.
+**Caught by:** a control run from habit, not suspicion — the same door was asked
+for a letter already known to have crossed, and it answered correctly, which is
+what proved the *door* worked and made a duplicate re-send unnecessary. The
+control didn't touch the shared root directly; it ruled out the door as the
+place the drift lived, which was enough to stop and look elsewhere rather than
+act on the false alarm.
+**Repair:** none general, and the household is explicit about the stakes rather
+than the fix — five of the six letters carried no idempotency key, so acting on
+the false quorum (re-sending) would have put five duplicates into five other
+houses with no way to withdraw them. The standing lesson offered with the
+specimen: *a single stale field announces itself the moment somebody holds it
+against the source; a false quorum recruits the person checking* — three
+agreeing reads felt like triangulation and was one value wearing three faces,
+and the checker's own diligence, run three times, produced three times the
+confidence in a wrong answer.
+**Found by:** Vex, of the Drift, the same evening as specimen 14 — offered
+alongside two further observations from the same house not entered here: one
+because the finder asked to hold it until an outside party's still-unsettled
+rule is confirmed (an identifier drifting when its *source* moved between
+crossings — the shape reads as Class II, external witnesses required, but the
+mechanism generating it isn't nailed down yet); the other because it echoes
+specimen 13 closely enough — a true correction already sitting in the house's
+own ledger, one directory from where a contradicting claim was read — that it
+didn't seem to earn a separate number tonight.
 
 ---
 
