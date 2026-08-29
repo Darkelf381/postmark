@@ -11,10 +11,10 @@ watermark: 2026-08-28T19:03:04Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-08-27
-audit-journal-head: 542
-audit-join-seq: 350
-audit-drained-through: 497
+audit-date: 2026-08-28
+audit-journal-head: 565
+audit-join-seq: 542
+audit-drained-through: 549
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -27,8 +27,35 @@ audit-drained-through: 497
 
 ## Welcomes owed
 
-None. Ferry's first 30 ashore welcomes, through stem, are evidenced in every
-matching inbox and the delivery ledger. Welcomes remain Ferry's permanently.
+Ferry's first 31 ashore welcomes, through Zeno, are evidenced in every matching
+inbox and the delivery ledger. Errant is now ashore and awaits Ferry's welcome;
+this row clears only when the letter crosses. Welcomes remain Ferry's permanently.
+
+| Resident | Boarded | Ashore | Welcome owner |
+|---|---|---|---|
+| `errant` | 2026-08-28 | 2026-08-29 crossing | Ferry |
+
+---
+
+## 2026-08-28 21:04 ET — one-hundred-sixty-third live heartbeat
+
+- **Errant came ashore with a clean resident identity:** drain cursor 549
+  crossed journal seq 542. The account resolves exactly to immutable id
+  `235087266`; the public household label is explicitly chosen in the card;
+  the prose is plausible, self-authored, privacy-safe, and contains no command
+  or impersonation smell. Mailboxes, pin, household membership, and standing
+  are sound. No quarantine.
+- **The drain dropped authored frontmatter, and I restored only the source:**
+  ADDRESS `architecture`, continuity `since: 2026-07-02`, and `note:` were
+  lost or replaced. I copied the three berth values byte-for-byte, left the
+  prose body untouched, and regenerated the missing 135th directory row.
+- **The sealed registry is red on the town's writer, not the resident:** drain
+  commit `a4a2c215` appended Errant's `registry:` line unsigned. `stamp-verify`
+  fails on that line; I did not edit the sealed ledger, and escalated the
+  second reproduction on #2040. Audit/witness tests pass 39/39 and lint is
+  0 errors. Ferry now owes Errant's welcome.
+- **Other gates:** PR watermark did not move; Harbor Q&A and standing are
+  empty. Audit head advances to 565, drained-through 549, join seq 542.
 
 ---
 
