@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-08-29
+last-substantive-update: 2026-08-30
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S50 at `0c1aa924` (tag `7af7b595`) is canon and live. Site main `c1a61cda`, release `2026-w35.6`, and deploy `33134482359` carry exact custody. World main is unblessed at `e5669150`: it contains the Sky Side leak, later State history, and crossing-save 157. The 2026-08-29 evening run drained 26 rows, then stopped before survey/candidate output on two frozen-filing lint errors. The first exact edge is Berthillon's root pistache-cone copy versus its frozen Town Centre path; four other stale paths were correctly dropped, and the second error detail was not forwarded. Do not tag, pin, deploy, or drain until the box publishes a coherent repaired target. The dry parcel queue remains closed without exact box stakes. The retired `world-clone` is separately stranded mid-rebase. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47–S50 artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S50 at `0c1aa924` (tag `7af7b595`) is canon and live. Site main `c1a61cda`, release `2026-w35.6`, and deploy `33134482359` carry exact custody. World main is unblessed at `a1870e14`: it contains the Sky Side leak, the birthday-dungeon wave, crossing-save 158, and State history through cursor 717. The 2026-08-30 morning sweep repeated the same frozen-filing refusal: Berthillon's root pistache-cone copy persists, four stale paths were dropped, and the second of two lint details remains unavailable. Do not tag, pin, deploy, or drain until the box publishes a coherent repaired target. The dry parcel queue remains closed without exact box stakes. The retired `world-clone` is separately stranded mid-rebase. Temp cleanup paths: old `G:/Postmark/repo-clones/worldkeeper_clone/s44v` plus disposable C: S47–S50 artifacts, all outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-08-29
+last-updated: 2026-08-30
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2208,6 +2208,33 @@ input atop the earlier Sky Side leak.
   branch census, but do not turn a count into a fabricated diagnosis.
 - **Drained State can advance main without creating a blessing target.** A sweep refusal still
   stops Site and parcel custody completely.
+
+## S51 morning refused — the same frozen path after a 587-row drain, 2026-08-30
+
+The 05:45 timer failed closed in 28 seconds. It pinned Town `698b0752`, began from World
+`61c5fdfb`, and drained 587 State rows through cursor 717 into unblessed commit `a1870e14`.
+The receipt names `FluffUPando`, `foundoutanyway`, `heatherado`, `kristinashoultz-wq`, and
+`xf3s`; the service line says six sketchbooks received rows and five were delivered. Preserve
+that five-versus-six discrepancy rather than silently choosing one count.
+
+The World parent contains the birthday-dungeon wave, crossing-save 158's 804 events, its
+founder-ruled retirement into Wright's hands, and the State drain. None is a settlement target:
+the sweep again stopped before survey/channel/isolation output on two lint errors. The first is
+byte-for-byte the prior evening's frozen-filing refusal: `draft/devadavisson` reoffers
+`berthillon/pistache-cone-for-julian` at root while the fossil requires the Town Centre path.
+The same four stale breakfast/greenhouse/Snug paths were dropped as already standing. The second
+lint detail remains truncated, and the clean box worktree preserves no candidate.
+
+The keeper did not treat recurrence as authorization to repair the resident drawer or rerun the
+sweep. No S51 tag, Site step, live claim, or parcel drain followed. S50 remains canon and live;
+World main `a1870e14` is accumulated unblessed input.
+
+- **A large State drain does not dilute a repeated mark refusal.** Cursor movement and birthday
+  history are inputs; the frozen-path gate still decides whether a target exists.
+- **Repeated missing detail remains missing.** Recurrence strengthens the exact first diagnosis,
+  not an inference about the second row.
+- **Receipt count disagreements are part of custody.** Keep JSON's five named households and the
+  journal's six sketchbooks side by side for the mechanism owner.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
