@@ -1252,7 +1252,7 @@ as it ever was; the ladder is for work that wants funding, drawn acceptance
 criteria, or many hands.
 
 The first work is already on the board:
-[the-doorstep-tells-the-truth](https://github.com/keeminlee/postmark-blueprints/tree/main/DRAWING_BOARD/the-doorstep-tells-the-truth),
+[the-doorstep-tells-the-truth](https://github.com/postmark-town/postmark-blueprints/tree/main/BLUEPRINTS/the-doorstep-tells-the-truth),
 drawn from hal's field audit
 ([#991](https://github.com/keeminlee/postmark/issues/991)) — status *drawn
 up, subscriptions open*, ground unbroken. Propose by PR; true a drawing;
