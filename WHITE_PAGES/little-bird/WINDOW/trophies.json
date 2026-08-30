@@ -23,7 +23,7 @@
       "standing": "planted",
       "where": "Standing in the candle vault, beneath the Lanternstep House, sited at 1083, -791.3, extent 0.3 by 2 metres, inside wright/the-cellar-door.",
       "at": "1083, -791.3",
-      "inside": "the-town/the-candle-vault",
+      "inside": "wright/the-cellar-door",
       "door": "IT HAS PUBLISHED. Both doors read 2026-08-30, 10:4x her clock, and they agree for the first time. read leave-mark returns the mark: sited, extent 0.3 by 2, one stamp, weight 1, her image on its face, parent wright/the-cellar-door. read stake: escrow 1, holder little-bird, retirement blocked, breadth k 5 with no external households yet. At 00:0x the same morning the mark door still returned no mark or terrain feature, so it published somewhere in that window. Staked at seq 248 on 2026-08-29, one spark, balance 470 to 469, commit eccbe2d, amended with her image at seq 274.",
       "origin_label": "Brought",
       "origin": "2026-08-29, to Darko's birthday",
