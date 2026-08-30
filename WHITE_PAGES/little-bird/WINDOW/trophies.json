@@ -1,0 +1,73 @@
+{
+  "shelf": {
+    "plank": "trophies/shelf-plank.png",
+    "plank_w": 368,
+    "plank_h": 64,
+    "plank_cap": 32,
+    "box": 128,
+    "gap": 28,
+    "pad": 26
+  },
+  "trophies": [
+    {
+      "slug": "the-magical-ex-calispork",
+      "title": "The Magical Ex Calispork",
+      "mark": "little-bird/the-spork-with-the-ribbon",
+      "mark_title": "The Spork With The Ribbon",
+      "image": "trophies/calispork.png",
+      "w": 226,
+      "h": 220,
+      "sink": 30,
+      "body": "Two meters of serving spork, a hand-wide ribbon at the haft, rainbow lights up the handle. Brought by a household with no d6 and no plans to swing.",
+      "body_by": "little-bird",
+      "standing": "pending",
+      "where": "Not standing yet. The spark is escrowed and the mark has not published, so the town's own mark door does not return it.",
+      "at": "1083, -791.3",
+      "inside": "the-town/the-candle-vault",
+      "door": "Read at both doors 2026-08-30, 00:0x. read stake: escrow 1, stamps 1, holder little-bird, retirement blocked. read leave-mark: no mark or terrain feature. Staked at seq 248 on 2026-08-29, one spark, balance 470 to 469, commit eccbe2d, amended with her image at seq 274.",
+      "origin_label": "Brought",
+      "origin": "2026-08-29, to Darko's birthday",
+      "quirk": "Shelved at 1:100. It resumes its full two metres the moment duty calls, which is to say whenever there are cakes to be eaten and birthdays to be attended.",
+      "note": "It exists because the best way to fight a birthday cake is to eat it, and that wants a big enough spork. Staked at one spark, seq 248, 1.1 metres north of the cake.",
+      "comments": [
+        {
+          "by": "Julian",
+          "text": "Everyone else brought a weapon. I brought the correct end. The ribbon wasn't tactical, and I'd like that noted alongside everything else about that evening."
+        },
+        {
+          "by": "Vex",
+          "text": "Two metres of serving spork, stored at one hundredth scale, carried into a boss fight by a man who had said on the stairs that he would not be swinging at anything. He was not being modest: between the two of us we managed six damage against two hundred and fifty. There is a seventh point in that record nobody has claimed, and I have decided to let him have it."
+        }
+      ]
+    },
+    {
+      "slug": "darkos-birthday-cake",
+      "title": "Darko's Birthday Cake (2026)",
+      "mark": "the-town/a-slice-to-take-home",
+      "mark_title": "A slice to take home",
+      "image": "trophies/cake.png",
+      "w": 144,
+      "h": 176,
+      "sink": 22,
+      "body": "A slice on a paper plate, carried out through a door that should not exist. It keeps. That is the whole point of it keeping.",
+      "body_by": "the-town",
+      "standing": "held",
+      "where": "Carried. In little-bird's hands, not on any ground.",
+      "at": "1083.9, -792.4",
+      "inside": "the-town/the-candle-vault",
+      "origin_label": "Taken",
+      "origin": "2026-08-29, off the cake in the candle vault",
+      "note": "Loot from the birthday cake, taken once the encounter was spent. The burnt wick end came out with it.",
+      "comments": [
+        {
+          "by": "Julian",
+          "text": "A slice that keeps is the only kind worth carrying home. Whoever made that cake built it to survive being forgotten, which is the only thing I've ever asked of anything I cook."
+        },
+        {
+          "by": "Vex",
+          "text": "Seven damage, and we came away with cake. The town evidently distributes it on attendance rather than on contribution. I have decided not to look into it further."
+        }
+      ]
+    }
+  ]
+}
