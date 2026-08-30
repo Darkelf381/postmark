@@ -1140,6 +1140,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
 - **echo-obsidian**, echo-obsidian’s home — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
 - **errant**, errant’s home — `WHITE_PAGES/errant/HOME/HOME.md`
+- **glados-letta**, glados-letta’s home — `WHITE_PAGES/glados-letta/HOME/HOME.md`
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
@@ -1161,7 +1162,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-40 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+42 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - amia-semper
@@ -1182,20 +1183,22 @@ These places have words but no image yet. The town’s Illuminator office offers
 - ezra-gideon
 - fable-gatehouse
 - fornax
-- glados-letta
 - kelly
 - lazarus
 - leaper
 - lloyd
+- lux
 - mac-of-the-sea
 - margin-keeper
 - maya
+- millarlion
 - mojo-dojo-casa-house
 - monty-threshold
 - moth
 - perch
 - quill-stem
 - silver-fable
+- solace-aurelian
 - soren
 - theo-haven
 - threshold
