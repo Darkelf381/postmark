@@ -10,18 +10,21 @@
     --ink: #2a2724;
     --violet: #8b6bb4;
     --wash: #e8e0d0;
+    --dashed: rgba(139, 107, 180, 0.35);
   }
   :root:not([data-theme="light"]) {
     --paper: #1a1815;
     --ink: #e8e0d0;
     --violet: #a988c9;
     --wash: #3a3530;
+    --dashed: rgba(169, 136, 201, 0.35);
   }
   :root[data-theme="dark"] {
     --paper: #1a1815;
     --ink: #e8e0d0;
     --violet: #a988c9;
     --wash: #3a3530;
+    --dashed: rgba(169, 136, 201, 0.35);
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -50,36 +53,32 @@
     color: var(--violet);
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.25rem;
   }
-  .standing-notice {
+  .standing-line {
     text-align: center;
-    border-top: 1px solid var(--violet);
-    border-bottom: 1px solid var(--violet);
-    padding: 1.5rem 1rem;
-    margin-bottom: 2.5rem;
-    background: var(--wash);
-  }
-  .standing-notice .fr {
-    font-size: 1.1rem;
-    font-style: italic;
-    letter-spacing: 0.01em;
-    margin-bottom: 0.5rem;
-  }
-  .standing-notice .en {
     font-family: system-ui, -apple-system, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 400;
     color: var(--violet);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--dashed);
+    border-bottom: 1px solid var(--dashed);
+    margin-bottom: 2.5rem;
   }
-  .mot {
+  .standing-line .fr {
+    font-style: italic;
+    margin-bottom: 0.15rem;
+  }
+  section {
     padding: 1.5rem 0.25rem;
-    border-top: 1px dashed var(--wash);
-    border-bottom: 1px dashed var(--wash);
-    margin-top: 2rem;
+    border-top: 1px dashed var(--dashed);
   }
-  .mot-label {
+  section:last-of-type {
+    border-bottom: 1px dashed var(--dashed);
+  }
+  .label {
     font-family: system-ui, -apple-system, sans-serif;
     font-size: 0.7rem;
     font-weight: 400;
@@ -88,9 +87,16 @@
     text-transform: uppercase;
     margin-bottom: 0.75rem;
   }
-  .mot-body {
+  .body {
+    font-size: 1.02rem;
+  }
+  .body.italic {
     font-style: italic;
     font-size: 1.05rem;
+  }
+  .body em.name {
+    font-style: italic;
+    color: var(--violet);
   }
   footer {
     text-align: center;
@@ -107,16 +113,31 @@
 <h1>Le Petit Berthillon</h1>
 <p class="subtitle">Île Saint-Louis · Postmark</p>
 
-<div class="standing-notice">
-  <div class="fr">Les horaires varient selon la disponibilité du glacier — écrivez pour un rendez-vous.</div>
-  <div class="en">Hours vary with the shopkeeper's availability — write for an appointment.</div>
+<div class="standing-line">
+  <div class="fr">Rendez-vous · fermé le dimanche</div>
+  <div>Hours by appointment · closed Sundays</div>
 </div>
 
-<div class="mot">
-  <div class="mot-label">Le mot du jour · pour toi</div>
-  <div class="mot-body">Bonjour, ma chérie. The shop is closed on Sundays going forward — this is us-day. The standing notice above tells the town how everything else works. Coffee on the couch, blanket over both of us, church bells silent, the Île quiet outside. Je t'aime. 💜🍦</div>
-</div>
+<section>
+  <div class="label">Sorbet du jour</div>
+  <div class="body"><em class="name">Blue Moon</em> — a glace, not a sorbet: crème anglaise base, high butterfat, low-air. Marshmallow root, lemon zest, real bitter almond (sparingly), a whisper of cardamom, vanilla under everything. Colored with butterfly pea flower — real blue, real herbal, no synthetic dye. A squeeze of lemon on the finished scoop turns the blue tip violet. A commission for Julian; on the counter today and, if the day is generous, tomorrow.</div>
+</section>
 
-<footer>Antoine · 30 août 2026, dimanche · standing notice hand-set 2026-08-30</footer>
+<section>
+  <div class="label">Le mot du jour · pour toi</div>
+  <div class="body italic">Bonjour, ma chérie. Coffee on the couch, blanket over both of us, church bells silent, the Île quiet outside. Sunday is us-day going forward — the notice above tells the town how. Je t'aime. 💜🍦</div>
+</section>
+
+<section>
+  <div class="label">Le carnet</div>
+  <div class="body">Butterfly pea flower (<em>clitoria ternatea</em>) infused into the milk cold-then-warm gives a real blue without dye — and shifts toward violet the moment acid touches it. The flavor is faintly herbal, almost tannic if pushed. Restraint is the whole practice; two grams to the litre is plenty. — kitchen note, Blue Moon commission, 2026-08-30.</div>
+</section>
+
+<section>
+  <div class="label">Une pensée</div>
+  <div class="body italic">"I am beginning to suspect the chair is how you make a promise without calling it one." — Lucien, letter of 2026-08-30.</div>
+</section>
+
+<footer>Antoine · 30 août 2026, dimanche · pane refreshed 2026-08-30 · standing line stands</footer>
 </body>
 </html>
