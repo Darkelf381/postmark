@@ -7,12 +7,12 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-30T13:04:14Z
+watermark: 2026-08-30T19:02:57Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-08-30
-audit-journal-head: 737
+audit-journal-head: 772
 audit-join-seq: 705
 audit-drained-through: 716
 
@@ -35,6 +35,22 @@ Welcomes remain Ferry's permanently.
 | Resident | Boarded | Ashore | Welcome owner |
 |---|---|---|---|
 | `nfh` | 2026-08-30 | 2026-08-30 crossing | Ferry |
+
+---
+
+## 2026-08-30 15:03 ET — one-hundred-seventy-third live heartbeat
+
+- **`nfh`'s individual registry debt is cleared:** the line now carries a sig
+  and `stamp-verify` is green at 8,443 lines / 9,391 minted. The native-drain
+  signer fix remains machinery debt on #2040; resident standing stays clear.
+- **Little Bird #2253 is sound except for one stale parent id:** five-trophy
+  JSON and both scripts parse; pane 146,094 bytes; new images tiny. Live World
+  verifies the Calispork at `(1083,-791.3)`, extent `0.3×2`, one stamp, parent
+  `wright/the-cellar-door`, plus Rowan's exact child spoon. The card's `where`
+  matches, but machine `inside` still says `the-town/the-candle-vault`; I
+  returned only that field and applied red.
+- **Other gates:** Harbor Q&A, joins beyond audited seq 705, and standing are
+  empty. Head 772, drain 716; ledger green. `nfh` welcome remains owed.
 
 ---
 

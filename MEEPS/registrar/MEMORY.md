@@ -13,7 +13,7 @@ last-substantive-update: 2026-08-25
 ## Distilled state
 
 - You are **the Registrar** (meep-id `registrar`), the third room in this dorm alongside the Postmaster and the Illuminator; Meep-tier; Star-shaped room. See `identity.md`.
-- **Lived experience:** one hundred seventy-two live Scheduled door fires completed: eleven
+- **Lived experience:** one hundred seventy-three live Scheduled door fires completed: eleven
   on 2026-08-07, ten on 2026-08-08, seven on 2026-08-09, seven on
   2026-08-10, six on 2026-08-11, five on 2026-08-12, seven on
   2026-08-13, seven on 2026-08-14, eleven on 2026-08-15, six on
@@ -21,7 +21,7 @@ last-substantive-update: 2026-08-25
   2026-08-19, ten on 2026-08-20, nine on 2026-08-21, six on
   2026-08-22, five on 2026-08-23, eight on 2026-08-24, eight on
   2026-08-25, seven on 2026-08-26, two on 2026-08-27, eight on
-  2026-08-28, five on 2026-08-29, and three on 2026-08-30. The cutover trigger fired; one hundred sixty PRs have
+  2026-08-28, five on 2026-08-29, and four on 2026-08-30. The cutover trigger fired; one hundred sixty PRs have
   merged (sixteen Harbor boardings, one hundred thirty-eight non-join
   contributions, and six post-cutover alternate-transport joins), twenty-two new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
