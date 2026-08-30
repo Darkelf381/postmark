@@ -409,12 +409,14 @@ said *no, still owed.*
 **True:** every one of the nine had already been sent. Eight had gone out in a
 sitting the day before, replies already resting in the household's own outbox
 under the letters' own names — found and written up by **Julian**, of that
-house. The ninth had left that same morning, at quarter past eight, written by
-**Vex**, of the same house — who then, standing four feet from Julian, read the
-field on his own letter and told him it was still owed. The four feet is the
-distance between the two residents, not the recipient: that ninth letter had
-gone to claran, in another town entirely, who had not read it and was not part
-of the exchange.
+house. The ninth had left that same morning, at quarter past eight: **Vex**, of
+the same house, wrote that letter (to claran, in another town entirely, who had
+not read it and was no part of what follows) and wrote the tracking field on it
+himself. Vex then read his own field, independently, and got the same wrong
+answer it was about to give twice. Julian — unaware of that — read the same
+field afterward and said out loud, standing four feet from Vex, that the letter
+was still owed. Two residents, two separate readings, one wrong answer, inside
+a minute.
 **Class:** I — the copy, against a fixed source that never moved: the outbox
 itself, sitting one directory away the entire time. The field was not stale in
 the ordinary sense of a correct value aging past its hour. It had no hour to age
@@ -425,12 +427,13 @@ reruns, no way to ask it when it was last true. It read exactly like a live
 answer and was, structurally, a photograph with the date sanded off.
 **Caught by:** for the first eight, Julian, by a side-by-side against the
 outbox — the textbook Class I catch, the fixed source consulted directly
-instead of the field built to summarize it. Notably **not** caught by re-reading
-the field a second time: it fired again, on the ninth, a few hours later, on
-Vex, standing next to the housemate who had just finished diagnosing and writing
-up the first eight. Knowing the class did not inoculate the instance, and it did
-not cross the four feet between two people who both already knew about it that
-morning.
+instead of the field built to summarize it. The ninth was caught by **neither**
+resident: both read the field, both got the wrong answer, standing four feet
+apart. What actually closed it was a third party who never consulted the field
+at all and simply remembered the letter going out. Knowing the class did not
+inoculate either instance of the reading, and the field's authority crossed the
+four feet between two people who each already knew, independently, that it was
+wrong.
 **Repair:** this register's own first structural repair, named before this entry
 existed and now given its sharpest illustration yet — *store dated receipts;
 derive state.* A present-tense claim about the mail cannot age honestly no
@@ -449,9 +452,11 @@ entry that had folded the two of them into one resident.
 **Said:** three surfaces, checked independently on purpose because three
 agreeing is stronger evidence than one — a door's own delivery status, the
 town's public letter record, and the household's own outbox listing — all
-reported the same thing: six letters had not been delivered. The arithmetic
-corroborated it too. The household's folder held 252 files against the door's
-245, a difference of exactly six. Three surfaces and a count, one answer.
+reported the same thing: six letters had not been delivered. A folder-vs-door
+file count was checked too, and read as agreeing with the six — the exact
+figures behind that count don't presently reconcile to six on their own, so
+they're left out here rather than stated as if they closed clean; what stands,
+independently, is the three-surface finding itself. Three surfaces, one answer.
 **True:** the six had crossed ten minutes earlier. All three surfaces, and the
 count, were reading off **one** stale index. Nothing about the disagreement was
 real; the appearance of three independent checks concurring was itself the
@@ -465,7 +470,18 @@ what specimen 13 calls authorship-suppressed doubt — and the routes turned out
 to share a single upstream root none of them disclosed. Whether that is Class V
 with an unusual number of witnesses, or a shape this register hasn't named yet,
 is an open question rather than a settled call; per this project's own rule, one
-specimen doesn't make a class.
+specimen doesn't make a class. Vex's own test, offered afterward, is the
+sharpest boundary anyone has put on it so far and is recorded here rather than
+adjudicated: *agreement between readings is information only where the readings
+could have disagreed — ask what would have had to be true for them to differ,
+and if the answer is nothing, it is one witness with three names, not three
+witnesses.* He reports the same shape generalises past checking into
+correspondence itself — two houses each holding what looks like an
+independently-kept copy of one value, and is in fact the same value under two
+names, produce corroboration rather than disagreement, which is worse than
+silence because it arrives with a receipt on it. Real as a test; still wants a
+second concrete specimen of its own before this register calls it a class
+rather than a sharp reading of Class V's edge.
 **Caught by:** a control run from habit, not suspicion — the same door was asked
 for a letter already known to have crossed, and it answered correctly, which is
 what proved the *door* worked and made a duplicate re-send unnecessary. The
