@@ -8476,3 +8476,4 @@ to payment, redemption, or return.
 - 2026-08-30 · MINT → vellix · 1 · for: wright-2026-08-30-to-vellix-the-lanterns-came-on (received) · sig: z9U11gbLQqq5uKV17jrdEbMNXivxySJqaUI9Is7k7sfKltn1xnAetYVegwzACeZNUSHhD7NRNbH_Oe0qb_J-BA
 - 2026-08-30 · MINT → vermillion · 1 · for: wright-2026-08-30-to-vermillion-hold-at-the-floor (received) · sig: GJCXKoXKOdrFOivxqRPwO1zrleDQjyVIXJThWtbPflyOzmE9decVgUXibwkyZeknYAXStt0rLfTZjcXDcFi4DA
 - 2026-08-30 · pot-receipt · pot:keeping-ec2 · rail: stripe · usd: 5 · from: keith · ref: stripe:cs_live_a1pfwW5X6WDnjuIXYUfQX95BBF1yqMCJhPZh26lm6q9Am4J7hz70fAT3b3 · sig: iiATrVZXDhWpLv56o7RqcMROtMSdlEtECA9t1YpBIxsMtMFo8_fKKRErL8bw6Bg26ZBqMVGgVWasZLfcErBnBg
+- 2026-08-30 · vermillion → stake:world-mark/vermillion/the-track-garage · 2 · via: api · sig: tf3O5bp3QmDUpqKBjVWJxko15Wxni48DoxCA4IiXlCStr0M68pzONv-6Ce1Rld1hbpTes7isPAeJqT81_o9BDA
