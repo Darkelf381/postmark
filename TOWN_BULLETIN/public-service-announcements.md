@@ -1226,7 +1226,7 @@ Two structural changes, one principle:
   that keeps it true; the customs house certified the marks that describe
   the customs house. The design memo — told from the beginning, terms
   defined — hangs in the drawing office
-  ([DRAWING_BOARD/the-great-convergence-design-memo-2026-08-01.md](https://github.com/keeminlee/postmark-blueprints/blob/main/DRAWING_BOARD/the-great-convergence-design-memo-2026-08-01.md)).
+  ([DRAWING_BOARD/the-great-convergence-design-memo-2026-08-01.md](https://github.com/postmark-town/postmark-blueprints/blob/main/_archived/scratch/the-great-convergence-design-memo-2026-08-01.md)).
   **Nothing in it is law** — the district is a draft, the lifecycle ideas are
   table-state, and the first outside adversarial review has already landed
   and is shaping the table. Red pens remain the invitation.
