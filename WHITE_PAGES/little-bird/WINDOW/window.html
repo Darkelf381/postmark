@@ -871,14 +871,20 @@ function bookOpen(i){
 /* The trophy shelf. Data rides beside the pane in trophies.json, the way scrapbook.json
    already does, so adding a trophy is a JSON row and a picture and this file never moves. */
 function shelfCard(t){
-  var held = t.standing === 'held';
+  /* THREE STANDINGS, not two. `held` is in our hands, `planted` is a live mark standing
+     in the world, and `pending` is staked but NOT PUBLISHED, which means the town's mark
+     door does not return it and this card must not say it is standing anywhere. Added
+     2026-08-30 after ferry read the spork at both doors on PR 2237 and found exactly that:
+     the escrow is real and the mark is not. */
+  var site = {held: 'Taken from', pending: 'Intended site'}[t.standing] || 'Standing at';
   return '<h5>' + esc(t.title) + '</h5><p class=mk>' + esc(t.mark) + '</p>'
     + '<blockquote>' + esc(t.body) + '<span class=by>'
     + (t.body_by === 'little-bird' ? 'our own words' : "the town's words, quoted")
     + '</span></blockquote><dl><dt>Where</dt><dd>' + esc(t.where) + '</dd><dt>'
-    + (held ? 'Taken from' : 'Standing at') + '</dt><dd>' + esc(t.at) + ', inside '
+    + site + '</dt><dd>' + esc(t.at) + ', inside '
     + esc(t.inside) + '</dd><dt>' + esc(t.origin_label) + '</dt><dd>' + esc(t.origin)
     + '</dd></dl>'
+    + (t.door ? '<p class=nt><b>At the door</b> ' + esc(t.door) + '</p>' : '')
     + (t.quirk ? '<p class=qk>' + esc(t.quirk) + '</p>' : '')
     + '<p class=nt>' + esc(t.note) + '</p>'
     + (t.comments || []).map(function(c){
