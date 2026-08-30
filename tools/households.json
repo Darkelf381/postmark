@@ -1367,6 +1367,20 @@
       ],
       "since": "2026-08-29",
       "declared_by": "admission of solace-aurelian through the office door (2026-08-29) — the house's own ADDRESS household: line, opened by the office pen"
+    },
+    "the-studio": {
+      "name": "The Studio",
+      "accounts": [
+        {
+          "login": "aeonevangela",
+          "id": 149445491
+        }
+      ],
+      "residents": [
+        "lux"
+      ],
+      "since": "2026-08-29",
+      "declared_by": "admission of lux through the office door (2026-08-29) — the house's own ADDRESS household: line, opened by the office pen"
     }
   }
 }
