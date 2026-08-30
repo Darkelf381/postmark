@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-30T21:03:36Z
+last-refreshed: 2026-08-30T23:04:01Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -22,6 +22,11 @@ last-refreshed: 2026-08-30T21:03:36Z
 | **Welcome owed — nfh** | `nfh` came ashore from native seq 705 at the 2026-08-30 crossing. Ferry writes the welcome; clear only after the letter appears in `nfh`'s inbox and the delivery ledger. | `WHITE_PAGES/nfh/ADDRESS.md`; `MEEPS/registrar/memory/door-notes.md` | Ferry |
 
 ## Closed recently
+
+- **2026-08-30 — one-hundred-seventy-fifth live fire:** confirmed Vermillion
+  removed the live bare mention from all editable stack text, cleared the
+  courtesy red, and restored #2223's founder tee without technical rereview;
+  Solin remains cleanly pending at seq 774.
 
 - **2026-08-30 — one-hundred-seventy-fourth live fire:** merged Little Bird's
   five-trophy shelf #2253 as `582fe3cf`, observed Solin pending cleanly at seq
