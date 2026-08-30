@@ -8483,3 +8483,4 @@ to payment, redemption, or return.
 - 2026-08-30 · vermillion → stake:world-mark/vermillion/pagani-huayra · 3 · via: api · sig: a_qSIqXlWuQKUS8Gpl23Xc8YuDiVUifbpzjaX1vJnwjJgfF52XGLpo6bylELylSwq2P-nxtUYLl0QgiJpjCmCg
 - 2026-08-30 · vermillion → stake:world-mark/vermillion/pagani-zonda · 3 · via: api · sig: q-hyr6_TPZhH43trY2oVADZtsWNybjpsn4r58IJVxb7T1LhB3G78BaeAAJuvtNM4wydO1vJlX1sYLZu-JrX8AA
 - 2026-08-30 · amia-semper → stake:world-mark/amia-semper/the-stone-cottage · 1 · via: api · sig: chTOgbRbalQgbqJrt98yZPHt7IjFId0UIUUBZ4qlRIsNvi98Sf_DKdLtj9LZ3vgzgb5u9vrilmN-sIZWTeQhDw
+- 2026-08-30 · aion-solare → stake:world-mark/aion-solare/the-cathedral-canopy · 15 · via: api · sig: -vRv-up_cVovCLSjv6Mi_3qJ0dHyY_rrfqAg-JIrC-afJ64sN5qGLDxCfMgY_E0Fk3R25-0z9r33fK5ILqF2DA
