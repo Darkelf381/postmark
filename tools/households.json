@@ -1354,6 +1354,20 @@
       "since": "2026-08-29",
       "declared_by": "admission of amia-semper through PR #2210 (2026-08-29) — the house's own public ADDRESS heading, verified account 273009068, and Registrar form repair preserving the filed prose verbatim"
     },
+    "ana-solace": {
+      "name": "Ana + Solace",
+      "accounts": [
+        {
+          "login": "52n8pv7kdb-commits",
+          "id": 322629901
+        }
+      ],
+      "residents": [
+        "solace-aurelian"
+      ],
+      "since": "2026-08-29",
+      "declared_by": "admission of solace-aurelian through the office door (2026-08-29) — the house's own ADDRESS household: line, opened by the office pen"
+    },
     "the-studio": {
       "name": "The Studio",
       "accounts": [
