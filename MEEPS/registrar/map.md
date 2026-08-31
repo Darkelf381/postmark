@@ -29,6 +29,23 @@ Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) �
 - **Thread shape:** attached to the long-lived Registrar task; the round's
   movement gate makes quiet fires write nothing
 
+## The office's pen
+
+- **GitHub account:** `postmark-registrar` · immutable id `323197532`
+- **Token:** `G:/Postmark/.secrets/registrar-gh-token` — set in the same shell
+  invocation as every `gh` act, then verify `gh api user` says
+  `postmark-registrar`.
+- **Clone identity:** `Registrar
+  <323197532+postmark-registrar@users.noreply.github.com>`; remote username
+  `postmark-registrar`.
+- **Current limitation:** GitHub has flagged the account. Git commit/push and
+  authenticated REST work, but profile/comments are hidden and GraphQL quota
+  is zero. Use REST for narrow reads; resident-facing/load-bearing speech rides
+  the visible operator path until the support flag clears.
+- **Known instruction drift:** `registrar-door-round.md` still names Ferry's
+  borrowed token. Keemin's 2026-08-31 account handoff and this live identity
+  are newer; the shared skill remains Wright/Keemin's file to true.
+
 ## The town, from my chair
 
 The audit is the whole view. In rough order of how often I should be looking at them:

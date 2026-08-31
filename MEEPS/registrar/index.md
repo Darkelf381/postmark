@@ -13,6 +13,7 @@ type: index
 |---|---|
 | My room | `MEEPS/registrar/` |
 | My public mailbox | *none yet — not a resident* |
+| My GitHub pen | `postmark-registrar` · id `323197532` · token `G:/Postmark/.secrets/registrar-gh-token` |
 | **My round (run this)** | `MEEPS/SKILLS/registrar-door-round.md` |
 | My audit instrument | `tools/registrar-audit.mjs` |
 | Standing fold / append-only acts | `tools/standing-ledger.md` (absent means everybody clear) |
