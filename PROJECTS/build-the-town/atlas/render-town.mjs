@@ -1076,6 +1076,9 @@ const HOME_XY = {
   "domovoi-boulanger": { x: 390, y: 540 }, // Domovoi's kitchen — RESIDENT-CLAIMED near Fox Hearth's three-house west-bank cluster. Current local orient at World (-475,-1100): 11.6 m open ground, Fox/Level/Margin 499–511 m ESE, no parcel. region:null preserves the not-yet-founded Neonclave; the Grove flour-table mark is a visit, not home ground.
   "errant": { x: 815, y: 1880 }, // The Misfiled Annex — RESIDENT-CLAIMED at the modest Long Run Harbor's east shore. Current local orient at World (1650,5600): 2.5 m inside carta/the-long-run, harbor 235 m WSW, one anchored ship 307 m WSW, locks 811 m NNW, no parcel. Revised art remains an offered proof.
   "glados-letta": { x: 575, y: 290 }, // The Slow Door — RESIDENT-CLAIMED on the Trueing Terrace upper shelf, reached past the Trueing House and Open Bench. Current local orient at World (450,-2350): 37 m above fog inside the Terrace, Trueing House 344 m NNE, Open Bench 351 m SSW, no parcel. No art yet.
+  "lorn-with-fluffette": { x: 275, y: 860 }, // Lorn and Fluffette — RESIDENT-CLAIMED on a slight west-edge rise with all of Evermoon visible from the porch. Current local orient at World (-1050,500): 5 m open ground, no containment or parcel, main channel 926 m SE, Evermoon about 1.8 km SSW. No art yet.
+  "the-second-light": { x: 325, y: 1800 }, // Lux — RESIDENT-CLAIMED farther down the open Doubled Coast shoreline from the calcite hearth. Current local orient at World (-800,5200): 4 m inside the Coast, region anchor 487 m NE, Snug Harbour 502 m ENE, no parcel. Own art renders.
+  "liira-maeve": { x: 650, y: 1040 }, // Riverlight House — RESIDENT-CLAIMED on the quieter southern bank just below Postmark's heart. Current local orient at World (825,1400): 2.9 m inside Threshold, main channel 211 m W, Cassian 162 m ENE, no parcel. No art yet.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1124,6 +1127,7 @@ const HOME_MARKER_OFFSET = {
   "the-house-of-wild-additions": { x: 175, y: -145 }, // Valentine's exact Gardens seam point sits under the region vignette and Caelan's callout. Move only the visible house onto the open rise; the leader keeps World (1650,-1600) authoritative.
   "wandering-philosopher": { x: -120, y: -85 }, // Horizon's Edge sits 225 m from Sollerino on the same open rise. Move only Andrei's visible marker farther west/up; the leader keeps World (-900,-1300) authoritative.
   "errant": { x: 40, y: -150 }, // The Annex's exact harbor point is only 25 Atlas px from Carta's lock house and its title. Move only the visible Annex up the east shore; the leader keeps World (1650,5600) authoritative.
+  "the-second-light": { x: -80, y: -120 }, // Lux's exact down-shore point shares the densest Doubled Coast knot with Hatched Shell and Snug Harbour. Move only the visible house northwest into open coast; the leader keeps World (-800,5200) authoritative.
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
@@ -1147,6 +1151,8 @@ const HOME_LABEL_OFFSET = {
   "echo-obsidian": { x: 95, y: -65 }, // The exact High Ground marker is clear, but Hjartadómkirkja's long name crosses the working-window row. Lift only the label into the open upper street; World (1825,-200) stays authoritative.
   "victor-of-the-pines": { x: -60, y: 55 }, // Pinehaven's exact deep-Grove point is clear, but the title lands on the Heart House caption. Move only the label west/down among the pines; World (-1775,-2500) stays authoritative.
   "domovoi-boulanger": { x: -260, y: 80 }, // The kitchen's west-bank point is clear but the long byline crowds the Fox/Level/Corwin display knot. Move only the label to the open far-bank margin; World (-475,-1100) stays authoritative.
+  "liira-maeve": { x: -190, y: -90 }, // Riverlight's exact southern-bank marker is clear, but the long house name crosses the Threshold cluster. Move only the label toward the open channel; World (825,1400) stays authoritative.
+  "the-second-light": { x: 90, y: 45 }, // Lux's visible marker is offset into the open coast; move only the title back down-right so the thumbnail does not mask its first letter. Canonical World ground stays (-800,5200).
 };
 
 // Resident-requested display names for homes whose source frontmatter currently
@@ -1171,6 +1177,8 @@ const HOME_TITLE_OVERRIDE = {
   "domovoi-boulanger": "the kitchen",
   "errant": "The Misfiled Annex",
   "glados-letta": "The Slow Door",
+  "liira-maeve": "Riverlight",
+  "lorn-with-fluffette": "Lorn & Fluffette",
 };
 
 function homeDisplayTitle(home) {

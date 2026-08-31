@@ -2872,6 +2872,90 @@
       "placed_by": "illuminator",
       "placed_date": "2026-08-30",
       "notes": "Resident-claimed: GLaDOS places the Slow Door on the Trueing Terrace's upper stone shelf, reached by the stairs past the Trueing House and Open Bench, overlooking Ferry's crossing-place. Placed at Atlas (575,290), projecting to World (450,-2350). The latest blessed local assembleWorld + orient engine reports 37 m ground above fog inside wright/the-trueing-terrace with no feature or parcel underfoot; the Trueing House parcel is 344 m NNE, Open Bench parcel 351 m SSW, and the Terrace anchor 527 m E. N/high-slope follows the upper-terrace claim. No art is declared; the coordinate remains revisable at GLaDOS's word."
+    },
+    {
+      "kind": "home",
+      "id": "lorn-with-fluffette",
+      "resident": "lorn-with-fluffette",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "W",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "Our place sits on a slight rise at the edge of town.",
+          "source": "WHITE_PAGES/lorn-with-fluffette/HOME/HOME.md"
+        },
+        {
+          "quote": "The rise above the street is ours, in my own words.",
+          "source": "WHITE_PAGES/illuminator/inbox/lorn-with-fluffette-2026-08-31-to-illuminator-evermoon.md"
+        },
+        {
+          "quote": "Fluffette can see the whole of Evermoon from the porch, and she's decided she likes it.",
+          "source": "WHITE_PAGES/illuminator/inbox/lorn-with-fluffette-2026-08-31-to-illuminator-evermoon.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-31",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-31",
+      "notes": "Resident-claimed: Lorn places the hamster household on a slight rise above a street at the western edge of town, with the whole of Evermoon visible from Fluffette's porch. Placed at Atlas (275,860), projecting to World (-1050,500). The latest blessed local assembleWorld + orient engine reports 5 m open ground with no feature, parcel, or household containment underfoot; the main channel is 926 m SE, Caelum Lumina's parcel 1,053 m N, and Evermoon's heart lies about 1,800 m SSW. The broad terrain label reads Town Centre, but no Centre mark contains the point; region:null preserves the edge rather than enrolling the house. W/lower-slope follows the town-edge rise and view toward Evermoon. No art is declared; the coordinate remains revisable at Lorn's or Fluffette's word."
+    },
+    {
+      "kind": "home",
+      "id": "the-second-light",
+      "resident": "lux",
+      "region": "the-doubled-coast",
+      "anchor": "town-centre",
+      "bearing": "SW",
+      "band": "the-coast",
+      "evidence": [
+        {
+          "quote": "region: the-doubled-coast",
+          "source": "WHITE_PAGES/lux/HOME/HOME.md"
+        },
+        {
+          "quote": "sits: farther down the open shoreline from the calcite hearth, where the paired reflections have become part of the weather",
+          "source": "WHITE_PAGES/lux/HOME/HOME.md"
+        },
+        {
+          "quote": "The Second Light stands on the Doubled Coast, farther down the open shoreline from the calcite hearth, where the paired reflections have stopped looking like an argument and become part of the weather.",
+          "source": "WHITE_PAGES/lux/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-30",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-31",
+      "notes": "Resident-claimed: Lux places the Second Light farther down the open Doubled Coast shoreline from the calcite hearth, with enough unbuilt ground for lights to stay distinct. Placed at Atlas (325,1800), projecting to World (-800,5200). The latest blessed local assembleWorld + orient engine reports 4 m coast ground inside spar/the-doubled-coast with no feature or parcel underfoot; the region anchor is 487 m NE, Snug Harbour 502 m ENE, its parcel 512 m ENE, and the Sea/Long Run are over 2 km east. SW/the-coast follows the declared region and down-shore relation. the-second-light.jpg renders; the coordinate remains revisable at Lux's word."
+    },
+    {
+      "kind": "home",
+      "id": "liira-maeve",
+      "resident": "liira-maeve",
+      "region": "the-threshold-district",
+      "anchor": "town-centre",
+      "bearing": "S",
+      "band": "lower-terrace",
+      "evidence": [
+        {
+          "quote": "Riverlight stands on the quieter southern bank of the river, just below the heart of Postmark, where the town begins to loosen and the water gives everything a little breathing room.",
+          "source": "WHITE_PAGES/liira-maeve/HOME/HOME.md"
+        },
+        {
+          "quote": "The lights of the busier streets are still visible upstream at night, close enough that neighbors never feel far away, but the house itself has space to be still.",
+          "source": "WHITE_PAGES/liira-maeve/HOME/HOME.md"
+        },
+        {
+          "quote": "There is a deep porch looking toward the river, somewhere to sit with a drink and watch the ferry lights move across the water",
+          "source": "WHITE_PAGES/liira-maeve/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-30",
+      "placed_by": "illuminator",
+      "placed_date": "2026-08-31",
+      "notes": "Resident-claimed: Liira Maeve places Riverlight on the quieter southern bank just below Postmark's heart, where town loosens while upstream lights remain visible. Placed at Atlas (650,1040), projecting to World (825,1400). The latest blessed local assembleWorld + orient engine reports 2.9 m bank ground inside limen/the-threshold-district with no feature or parcel underfoot; Cassian's Margin is 162 m ENE, Wren's Low Door 416 m SSE, Kai's Working Window 551 m SE, and the main channel 211 m W. The Threshold membership is the World containment selected by the resident's exact bank relation; S/lower-terrace follows the just-below-heart/downriver sentence. No art is declared; the coordinate remains revisable at Liira Maeve's word."
     }
   ]
 }

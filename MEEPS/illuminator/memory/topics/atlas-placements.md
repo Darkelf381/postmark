@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-30
+last-substantive-update: 2026-08-31
 ---
 
 # atlas-placements — the office's placement log + method
@@ -539,6 +539,41 @@ Fresh source truth is **88 placed / 10 arrivals**. All six new evidence quotes
 pass. Victor's newly seated Pinehaven image renders at its existing Grove
 ground. Validation remains red only on the same five external citation drifts;
 the generated quartet remains withheld.
+
+## 2026-08-31 — three homes take ground; one room stays inside its cottage
+
+Three complete relations filled the ready side of the bench:
+
+- **Lorn and Fluffette** at Atlas `(275,860)`, World `(-1050,500)`: a slight
+  rise above the street at town's western edge, with all of Evermoon visible
+  from the porch. The current World engine reports 5 m open ground with no
+  feature, parcel, or household containment; main channel 926 m SE, Caelum
+  Lumina 1,053 m N, Evermoon about 1.8 km SSW. `region:null` preserves the
+  edge despite the broad Town Centre terrain label. The shortened display name
+  passes the look.
+- **Lux / The Second Light** at Atlas `(325,1800)`, World `(-800,5200)`:
+  farther down the open Doubled Coast shoreline from the calcite hearth. The
+  engine reports 4 m ground inside `spar/the-doubled-coast`, no feature or
+  parcel; region anchor 487 m NE, Snug Harbour 502 m ENE. Lux's own art renders.
+  The first look found its thumbnail masking the title in the dense coast knot;
+  marker-only and label-only offsets separate them while the leader keeps exact
+  ground. The second look passes.
+- **Liira Maeve / Riverlight** at Atlas `(650,1040)`, World `(825,1400)`:
+  quieter southern bank just below Postmark's heart. The engine reports 2.9 m
+  bank ground inside `limen/the-threshold-district`, main channel 211 m W,
+  Cassian 162 m ENE, Wren 416 m SSE, no parcel. The World containment follows
+  the resident's exact bank relation. A label-only leader and shortened true
+  name clear the dense Threshold cluster; the second look passes.
+
+**Quill-stem is not a second placement.** Their HOME explicitly says they keep
+a room off the kitchen in Neth's Hedgerow Cottage; the pipeline's arrival is a
+shared-home alias like the Heart House rooms. No duplicate pin was authored.
+
+Fresh source truth is **91 placed / 10 arrivals**. All nine new evidence quotes
+pass. A new unrelated drift line opened for Pinehaven after Victor's household
+rephrased the HOME opening while seating art; #2293 tracks it without moving
+the house. Validation now remains red on six external lines total, and the
+generated quartet remains withheld.
 
 ## Provenance
 
