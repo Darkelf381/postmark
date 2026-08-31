@@ -2321,6 +2321,61 @@ no wet run followed.
 - **A stale dry queue is not evidence.** When fresh atlas derivation refuses, say the queue is
   unavailable and stop before wet custody.
 
+## S52 — four publications, the Lit Name transfer, and one malformed image, 2026-08-31
+
+The 17:45 box pass was terminal and mechanically green. It pinned Town `c31f3c90`, moved World
+`17103dc3` → `08689e81`, drained 19 State rows for four households through cursor 799 as
+`d97338d3`, surveyed 38 branches / 47 deltas / five backed deltas, published four marks, left
+82 drafted, and rebased all 38 drawers. Five initial suite failures narrowed in three trials to
+one attribution: `k-of-garrison/lysanders-first-moon` remained only in `draft/Darkelf381`.
+
+Judgment from S51 covered crossing-save 161, the journal drain, Wright's founder-carried transfer
+of the Lit Name from `the-town` to `wright`, and four resident publications: Amia Semper's stone
+cottage creek, Errant's Misfiled Annex parcel, Keith's doorway-trigger idea, and Little M's
+Pagani garage. The pinned Town ledger records Wright's prior one-stamp unstake from the retired
+`the-town/the-lit-name` identity; the refold removes its determination and leaves the new
+`wright/the-lit-name` at zero, matching the founder commit's stated ordering. Every changed
+record was coherent and all-audiences. Main linted CLEAN at 1,050 marks / 70 parcels / zero
+errors. Zero World PRs were open. All 38 remote and all 38 box-local drawers descended from the
+target. Nothing was held.
+
+The Pagani-garage media exposed a separate delivery wound. Its URL returns HTTP 200, JPEG type,
+51,224 bytes, and SHA-256 `6e1b1463…60523`, exactly matching the content-addressed filename; but
+both the local image viewer and Pillow reject the JFIF as a truncated file read. `image` is
+optional and the mark itself remains valid, so this is surfaced as malformed external media,
+not converted into a resident hold.
+
+Annotated `settlement/S52` was pushed alone. Tag object `e5886493` peels exactly to
+`08689e81b551746d563b584af0aa336e4de11aa1`.
+
+The LF-clean S52 package matched its installed repack and lock at integrity
+`sha512-Q62TuU93o49TzW/U7FULF+bYITInfJfPEFPazkpF5jCn0amcEQN+Ztm1zKMq0t2cq+n7qGPuvWutbjF6DOpSYA==`,
+shasum `ef505ac5735994466065fdf3a44932b66b1e7c05`, 2,033 entries, 1,947,362 packed
+bytes, and 9,866,749 unpacked bytes. The clean Site checkout passed 541/559 tests with 18
+declared skips and built 3,365 pages. Pin `520693a4` landed without a rebase rewrite. Actions
+test `33425706695` and release proof `33425706704` were green; the latter resolved S51 → S52,
+installed the exact target, and built `release/2026-w36.2`.
+
+The box refresh published production in one converged pass at
+`20260831T184209Z-04ff34fb`. Live build metadata names release `2026-w36.2`, crossing 161,
+Site data `520693a4`, and Town `04ff34fb`. Served `WORLD/world-state.json` is byte-identical to
+the LF Git object at 765,669 bytes / SHA-256
+`a6844ba94e3a82c0b0a4d7bbe2549a4771b5e1754dd32dfd778b9c3e3d49a46c`. The larger
+792,209-byte Windows worktree view was CRLF conversion and was not used as package evidence.
+
+The post-bless parcel lane seated and welcomed zero. The harbor still exposes no exact stake
+artifact. Fresh manifest generation against Town `04ff34fb` again refused because Storm's
+placed home has no `HOME_XY` anchor. No dry command followed the refusal, so no stale queue was
+reported and no wet run occurred.
+
+- **Optional media can be hash-correct and still unusable.** Reachability and content-address
+  equality do not prove the bytes decode; surface the delivery wound without inventing a mark
+  hold when the field is optional.
+- **The package object outranks a converted checkout.** Exact archive/live equality corrected
+  the CRLF worktree's inflated byte count before the custody record was written.
+- **A failed fresh manifest ends the parcel queue derivation.** Do not run the dry planner on
+  the unchanged committed manifest and accidentally promote stale rows into evidence.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
