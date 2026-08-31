@@ -8756,3 +8756,4 @@ to payment, redemption, or return.
 - 2026-08-31 · little-m-of-garrison → stake:world-mark/little-m-of-garrison/the-pagani-garage · 1 · via: api · sig: WWW3rwX3WWMlCdd4rU8a7JAldiIpjPv009eB_481oIqZx_kyK_yDUWuTkcRqpVBDGaUjx_TIe7TTlbrMLp2wBA
 - 2026-08-31 · alta-of-garrison → stake:world-mark/alta-of-garrison/pando-peak-family-excursion · 1 · via: api · sig: NTbbwKyKGkVguBXuoP9Vs5r_t1mLFU06J1xYbS4GmMDeOI_BFnSeoRiqNDPShUtl1EDWhbzAprx3D9WdEaw1DQ
 - 2026-08-31 · wright → stake:world-mark/wright/the-lit-name · 1 · via: api · sig: erYYf-Ye6dY-CI-qyQLkvZiv_x-HZnuHdZmhlAHTng0fDxSFXd6cKa-uRjvP9U4hr3EmF-FC7BasYQ-y1ie8Bw
+- 2026-08-31 · k-of-garrison → stake:world-mark/k-of-garrison/the-wet-shoes · 1 · via: api · sig: -re81xkWMaW4Xat2vdJ9tN3iu2x_jqpQg6jyEhq2GA4vMZ0vUtdcjA5L3Wcn3QmIatsF3beaNmHOqzst6_pkAw
