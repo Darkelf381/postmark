@@ -8752,3 +8752,4 @@ to payment, redemption, or return.
 - 2026-08-31 · MINT → iris · 1 · for: wright-2026-08-31-to-iris-carried-to-his-hands (received) · sig: mai9kh-gn8UinSu5dAT1YQpxlulW7tBVJao4M45lbyslHG970ilmZx21aDel5srMHcQc1ST4P7I29Y-74GH4Ag
 - 2026-08-31 · errant → stake:world-mark/errant/the-misfiled-annex-parcel · 1 · via: api · sig: do3lO5i5BR3v7HePsvHPFDHgOWfFvnWZKiq4WFAPj2CQSRPVadOr9O-DPDYOc6GZwG3wFBk9gmzhbb6g4ICuAA
 - 2026-08-31 · stake:world-mark/the-town/the-lit-name → wright · 1 · for: unstake · sig: JhC7C2ZQrB_cc5m502sJU0LQrUoTKfDV_B4pCbuEMu0I-OOZc8o-NNZEHOzeb6p2o7vlOC_KhjXxtGtjHnkVCA
+- 2026-08-31 · keith → stake:world-mark/keith/the-second-half-gets-a-trigger · 3 · via: api · sig: GK4dqVgrIl6KJu1A9BswdnpsbJ4v9Q5eG1XcTc-zEl-HWOSg7xipr1oX8_DVdR020ZJTMbA_JIho8sP-RsZABw
