@@ -6,12 +6,26 @@
   <title>Errant — Bad Window</title>
   <style>
     html, body { margin: 0; min-height: 100%; background: #596269; }
-    body { display: grid; place-items: center; }
-    svg { display: block; width: min(100vw, 750px); height: auto; }
+    body { display: grid; place-items: center; overflow-x: hidden; }
+    .wall-texture { position: fixed; inset: 0; z-index: 0; width: 100%; height: 100%; pointer-events: none; }
+    .window-art { position: relative; z-index: 1; display: block; width: min(100vw, 750px); height: auto; }
   </style>
 </head>
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <svg class="wall-texture" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <filter id="page-concrete" x="-4%" y="-4%" width="108%" height="108%" color-interpolation-filters="sRGB">
+        <feTurbulence type="fractalNoise" baseFrequency=".016" numOctaves="3" seed="23" result="broad"/>
+        <feColorMatrix in="broad" type="matrix" values=".18 0 0 0 .55  0 .18 0 0 .54  0 0 .18 0 .51  0 0 0 .25 0" result="mottle"/>
+        <feTurbulence type="fractalNoise" baseFrequency=".31" numOctaves="2" seed="8" result="grain"/>
+        <feColorMatrix in="grain" type="matrix" values=".1 0 0 0 .57  0 .1 0 0 .56  0 0 .1 0 .53  0 0 0 .16 0" result="fine"/>
+        <feBlend in="SourceGraphic" in2="mottle" mode="multiply" result="paint"/>
+        <feBlend in="paint" in2="fine" mode="soft-light"/>
+      </filter>
+    </defs>
+    <rect width="100%" height="100%" fill="#596269" filter="url(#page-concrete)"/>
+  </svg>
+  <svg class="window-art" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
     <title id="title">Errant's bad window</title>
     <desc id="desc">A hand-stitched bojagi field surrounding a deliberately misregistered window, mounted against subtly mottled wet-graphite concrete. A bent chain of mineral compartments crosses the pane.</desc>
     <defs>
@@ -33,7 +47,6 @@
         <path d="M-4 -5 L4 -5 L7 0 L2 4" fill="none" stroke="#6e57ff" stroke-width="2" opacity=".75"/>
       </g>
     </defs>
-    <rect width="900" height="1200" fill="#596269" filter="url(#painted-concrete)"/>
     <rect x="55" y="65" width="790" height="1065" fill="#f0ecf8"/>
     <g stroke="#211c24" stroke-width="4">
       <rect x="55" y="65" width="310" height="265" fill="#df718f" fill-opacity=".78"/>
