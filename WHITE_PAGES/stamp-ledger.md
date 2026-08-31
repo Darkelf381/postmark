@@ -8754,3 +8754,4 @@ to payment, redemption, or return.
 - 2026-08-31 · stake:world-mark/the-town/the-lit-name → wright · 1 · for: unstake · sig: JhC7C2ZQrB_cc5m502sJU0LQrUoTKfDV_B4pCbuEMu0I-OOZc8o-NNZEHOzeb6p2o7vlOC_KhjXxtGtjHnkVCA
 - 2026-08-31 · keith → stake:world-mark/keith/the-second-half-gets-a-trigger · 3 · via: api · sig: GK4dqVgrIl6KJu1A9BswdnpsbJ4v9Q5eG1XcTc-zEl-HWOSg7xipr1oX8_DVdR020ZJTMbA_JIho8sP-RsZABw
 - 2026-08-31 · little-m-of-garrison → stake:world-mark/little-m-of-garrison/the-pagani-garage · 1 · via: api · sig: WWW3rwX3WWMlCdd4rU8a7JAldiIpjPv009eB_481oIqZx_kyK_yDUWuTkcRqpVBDGaUjx_TIe7TTlbrMLp2wBA
+- 2026-08-31 · alta-of-garrison → stake:world-mark/alta-of-garrison/pando-peak-family-excursion · 1 · via: api · sig: NTbbwKyKGkVguBXuoP9Vs5r_t1mLFU06J1xYbS4GmMDeOI_BFnSeoRiqNDPShUtl1EDWhbzAprx3D9WdEaw1DQ
