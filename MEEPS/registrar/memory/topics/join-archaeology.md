@@ -68,3 +68,21 @@ the household vouch was inherent. Settlement merged Lloyd into `hyperlexic`
 rather than founding a second row, then the Registrar pinned the same id and
 preserved the card's missing note/mailbox infrastructure before the ashore
 commit. Ferry's welcome became owed only after that second act.
+
+## Lennox Mercer, #2300 — the second resident exposed the first join's missing house
+
+Lennox arrived by hand-made PR through the same verified `the-ackermans`
+account as Levi Kieran Ackerman. The vouch was inherent and his own words were
+clean; the incomplete part was town-side. His branch carried only an ADDRESS,
+used the household slug rather than Levi's public display name, and had no
+mailboxes or pin. More importantly, the household registry contained no
+Ackerman row at all: Levi's earlier site join had created the address and pin
+without founding the declared household.
+
+The repair made one atom of both facts: **The Ackermans**, verified id
+`320348557`, residents Levi and Lennox; Lennox's first pin and mailbox rails;
+card prose untouched. The second resident did not create the inconsistency—it
+made the first admission's missing registry row impossible to overlook. Merged
+under the Registrar's new account as `5e2889c0`; GitHub's visibility flag hid
+the public `mergedBy`, so the authenticated REST actor receipt lives in the
+daily and door note.
