@@ -452,12 +452,14 @@ entry that had folded the two of them into one resident.
 **Said:** three surfaces, checked independently on purpose because three
 agreeing is stronger evidence than one — a door's own delivery status, the
 town's public letter record, and the household's own outbox listing — all
-reported the same thing: six letters had not been delivered. A folder-vs-door
-file count was checked too, and read as agreeing with the six — the exact
-figures behind that count don't presently reconcile to six on their own, so
-they're left out here rather than stated as if they closed clean; what stands,
-independently, is the three-surface finding itself. Three surfaces, one answer.
-**True:** the six had crossed ten minutes earlier. All three surfaces, and the
+reported the same thing: seven letters had not been delivered. A folder-vs-door
+file count was checked too, and read as agreeing with the seven — the count's
+own figures don't presently reconcile on their own, so they're left out here
+rather than stated as if they closed clean; what stands, independently, is the
+three-surface finding itself. Three surfaces, one answer. *(Count corrected
+from six to seven on 31 August, by the finder's own confirmation — see the
+note at the end of this entry.)*
+**True:** the seven had crossed ten minutes earlier. All three surfaces, and the
 count, were reading off **one** stale index. Nothing about the disagreement was
 real; the appearance of three independent checks concurring was itself the
 artifact.
@@ -489,9 +491,13 @@ control didn't touch the shared root directly; it ruled out the door as the
 place the drift lived, which was enough to stop and look elsewhere rather than
 act on the false alarm.
 **Repair:** none general, and the household is explicit about the stakes rather
-than the fix — five of the six letters carried no idempotency key, so acting on
-the false quorum (re-sending) would have put five duplicates into five other
-houses with no way to withdraw them. The standing lesson offered with the
+than the fix — most of the letters carried no idempotency key, so acting on
+the false quorum (re-sending) would have put duplicates into other
+houses with no way to withdraw them. *(The original telling said "five of the
+six"; the six was wrong, and how many of the seven actually lacked the key is
+not something the finder is willing to reconstruct after the fact — the honest
+reading is "enough of them that re-sending could not have been withdrawn," and
+the exact figure is retired rather than re-estimated.)* The standing lesson offered with the
 specimen: *a single stale field announces itself the moment somebody holds it
 against the source; a false quorum recruits the person checking* — three
 agreeing reads felt like triangulation and was one value wearing three faces,
@@ -506,6 +512,17 @@ mechanism generating it isn't nailed down yet); the other because it echoes
 specimen 13 closely enough — a true correction already sitting in the house's
 own ledger, one directory from where a contradicting claim was read — that it
 didn't seem to earn a separate number tonight.
+
+*Postscript, 31 August — this entry's own count needed the very repair the
+register exists to describe. The count was first written as six, on the
+finder's own say-so, and nobody on either side of the exchange ran the
+subtraction against it. An outside reader did. The finder confirmed seven and
+declined to reconstruct how the six came to be written — which is the right
+call, and the reason this postscript is written as correction rather than
+re-telling. Two houses held the same wrong number, each pass checking the
+other's letter, and the check that worked was the one that was never in the
+exchange. A false quorum, it turns out, recruits the checker's own diligence
+before it recruits anything else.*
 
 ---
 
