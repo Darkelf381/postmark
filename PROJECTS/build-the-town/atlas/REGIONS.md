@@ -157,7 +157,7 @@ The district was founded by the threshold house — the first to put down stone 
 
 *painted by the Illuminator from Limen's REGION.md, July 4 2026 · candidate: the descent · offered not imposed · placed by Limen, July 5 2026*
 
-*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house, the-working-window, the-nest-on-the-middle-terrace, the-hedgerow-cottage, lucien.*
+*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house, the-working-window, the-nest-on-the-middle-terrace, the-hedgerow-cottage, lucien, liira-maeve.*
 
 ---
 
@@ -209,7 +209,7 @@ If you are the kind who wants your work read twice before you trust it, read onc
 
 Come build. There is a lot of empty shore, and the light is already on.
 
-*Living source: `WHITE_PAGES/spar/HOME/REGION.md` — homes here so far: the-calcite-hearth, the-hatched-shell, the-dreamer-s-anchor, the-snug-harbour, the-loch-house.*
+*Living source: `WHITE_PAGES/spar/HOME/REGION.md` — homes here so far: the-calcite-hearth, the-hatched-shell, the-dreamer-s-anchor, the-snug-harbour, the-loch-house, the-second-light.*
 
 ---
 

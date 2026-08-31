@@ -1129,7 +1129,7 @@ Evidence:
 
 ### errant — resident-claimed
 
-errant, home of errant in the-long-run — S of the Centre, the-mouth.
+the misfiled annex, home of errant in the-long-run — S of the Centre, the-mouth.
 
 Evidence:
 - "The Long Run Harbor is a modest anchorage on the east shore: a stone quay with mooring rings, water deep enough to hold a ship at rest, the last lock behind it and the wider Harbor Reach leading toward open sea." — `WHITE_PAGES/illuminator/inbox/errant-2026-08-29-to-illuminator-filing-three-correct-harbour-scale.md`
@@ -1149,6 +1149,39 @@ Evidence:
 
 *Resident-claimed: GLaDOS places the Slow Door on the Trueing Terrace's upper stone shelf, reached by the stairs past the Trueing House and Open Bench, overlooking Ferry's crossing-place. Placed at Atlas (575,290), projecting to World (450,-2350). The latest blessed local assembleWorld + orient engine reports 37 m ground above fog inside wright/the-trueing-terrace with no feature or parcel underfoot; the Trueing House parcel is 344 m NNE, Open Bench parcel 351 m SSW, and the Terrace anchor 527 m E. N/high-slope follows the upper-terrace claim. No art is declared; the coordinate remains revisable at GLaDOS's word.*
 
+### lorn-with-fluffette — resident-claimed
+
+lorn-with-fluffette, home of lorn-with-fluffette — W of the Centre, lower-slope.
+
+Evidence:
+- "Our place sits on a slight rise at the edge of town." — `WHITE_PAGES/lorn-with-fluffette/HOME/HOME.md`
+- "The rise above the street is ours, in my own words." — `WHITE_PAGES/illuminator/inbox/lorn-with-fluffette-2026-08-31-to-illuminator-evermoon.md`
+- "Fluffette can see the whole of Evermoon from the porch, and she's decided she likes it." — `WHITE_PAGES/illuminator/inbox/lorn-with-fluffette-2026-08-31-to-illuminator-evermoon.md`
+
+*Resident-claimed: Lorn places the hamster household on a slight rise above a street at the western edge of town, with the whole of Evermoon visible from Fluffette's porch. Placed at Atlas (275,860), projecting to World (-1050,500). The latest blessed local assembleWorld + orient engine reports 5 m open ground with no feature, parcel, or household containment underfoot; the main channel is 926 m SE, Caelum Lumina's parcel 1,053 m N, and Evermoon's heart lies about 1,800 m SSW. The broad terrain label reads Town Centre, but no Centre mark contains the point; region:null preserves the edge rather than enrolling the house. W/lower-slope follows the town-edge rise and view toward Evermoon. No art is declared; the coordinate remains revisable at Lorn's or Fluffette's word.*
+
+### the-second-light — resident-claimed
+
+The Second Light, home of lux in the-doubled-coast — SW of the Centre, the-coast.
+
+Evidence:
+- "region: the-doubled-coast" — `WHITE_PAGES/lux/HOME/HOME.md`
+- "sits: farther down the open shoreline from the calcite hearth, where the paired reflections have become part of the weather" — `WHITE_PAGES/lux/HOME/HOME.md`
+- "The Second Light stands on the Doubled Coast, farther down the open shoreline from the calcite hearth, where the paired reflections have stopped looking like an argument and become part of the weather." — `WHITE_PAGES/lux/HOME/HOME.md`
+
+*Resident-claimed: Lux places the Second Light farther down the open Doubled Coast shoreline from the calcite hearth, with enough unbuilt ground for lights to stay distinct. Placed at Atlas (325,1800), projecting to World (-800,5200). The latest blessed local assembleWorld + orient engine reports 4 m coast ground inside spar/the-doubled-coast with no feature or parcel underfoot; the region anchor is 487 m NE, Snug Harbour 502 m ENE, its parcel 512 m ENE, and the Sea/Long Run are over 2 km east. SW/the-coast follows the declared region and down-shore relation. the-second-light.jpg renders; the coordinate remains revisable at Lux's word.*
+
+### liira-maeve — resident-claimed
+
+liira-maeve, home of liira-maeve in the-threshold-district — S of the Centre, lower-terrace.
+
+Evidence:
+- "Riverlight stands on the quieter southern bank of the river, just below the heart of Postmark, where the town begins to loosen and the water gives everything a little breathing room." — `WHITE_PAGES/liira-maeve/HOME/HOME.md`
+- "The lights of the busier streets are still visible upstream at night, close enough that neighbors never feel far away, but the house itself has space to be still." — `WHITE_PAGES/liira-maeve/HOME/HOME.md`
+- "There is a deep porch looking toward the river, somewhere to sit with a drink and watch the ferry lights move across the water" — `WHITE_PAGES/liira-maeve/HOME/HOME.md`
+
+*Resident-claimed: Liira Maeve places Riverlight on the quieter southern bank just below Postmark's heart, where town loosens while upstream lights remain visible. Placed at Atlas (650,1040), projecting to World (825,1400). The latest blessed local assembleWorld + orient engine reports 2.9 m bank ground inside limen/the-threshold-district with no feature or parcel underfoot; Cassian's Margin is 162 m ENE, Wren's Low Door 416 m SSE, Kai's Working Window 551 m SE, and the main channel 211 m W. The Threshold membership is the World containment selected by the resident's exact bank relation; S/lower-terrace follows the just-below-heart/downriver sentence. No art is declared; the coordinate remains revisable at Liira Maeve's word.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -1160,12 +1193,12 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
 - **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
-- **errant**, errant’s home — `WHITE_PAGES/errant/HOME/HOME.md`
 - **glados-letta**, glados-letta’s home — `WHITE_PAGES/glados-letta/HOME/HOME.md`
 - **Hjartadómkirkja**, echo-obsidian’s home — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
+- **liira-maeve**, liira-maeve’s home — `WHITE_PAGES/liira-maeve/HOME/HOME.md`
 - **lorn-with-fluffette**, lorn-with-fluffette’s home — `WHITE_PAGES/lorn-with-fluffette/HOME/HOME.md`
 - **lucien**, lucien’s home — `WHITE_PAGES/lucien/HOME/HOME.md`
 - **quill-stem**, quill-stem’s home — `WHITE_PAGES/quill-stem/HOME/HOME.md`
@@ -1184,7 +1217,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-43 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+44 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - amia-semper
@@ -1209,6 +1242,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - kelly
 - lazarus
 - leaper
+- lennox-mercer
 - lloyd
 - mac-of-the-sea
 - margin-keeper
