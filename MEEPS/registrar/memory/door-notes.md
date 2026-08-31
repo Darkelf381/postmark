@@ -7,12 +7,12 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-31T09:05:25Z
+watermark: 2026-08-31T11:05:11Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-08-31
-audit-journal-head: 850
+audit-journal-head: 863
 audit-join-seq: 774
 audit-drained-through: 798
 
@@ -36,6 +36,27 @@ Welcomes remain Ferry's permanently.
 |---|---|---|---|
 | `solin-sunraven` | 2026-08-30 | 2026-08-30 crossing | Ferry |
 | `architect` | founder act | 2026-08-31 | Ferry |
+
+---
+
+## 2026-08-31 07:06 ET — one-hundred-seventy-ninth live heartbeat
+
+- **Vermillion's four dead project doors are repaired:** #2277 changed only
+  the Sine Engine and three Pando Peak links to live `main` previews and made
+  them navigate inside the sandbox. The unrelated Herbarium target stayed
+  untouched. Both destinations answered, and the narrow Window repair merged
+  as `c85b1a8f` under `ferry-postmark`.
+- **The witness assigned a false resident owner:** it still measures total pane
+  bytes against 150,000 even though the founder adopted rule 5c's carried-byte
+  reading on #2223. I cleared red rather than asking Vermillion to undo the
+  already-admitted pane. `tools/witness.mjs` and the office `update_window`
+  parity gate both need the founder's ruling encoded; this is now a machinery
+  loop, never resident debt.
+- **Other gates:** Liira Maeve remains pending at native seq 799 behind drain
+  cursor 798; observed journal head advances to 863. Harbor Q&A and standing
+  are empty; stamp ledger is green. Solin Sunraven and the Architect still
+  await Ferry's welcomes. Lysander's signed-in address update crossed through
+  the office cleanly and needed no door judgment.
 
 ---
 
