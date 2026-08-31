@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-30T23:04:01Z
+last-refreshed: 2026-08-31T01:07:57Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -19,9 +19,14 @@ last-refreshed: 2026-08-30T23:04:01Z
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo; all three are now admitted and welcomed. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
 | **Movement-gate blind spot — non-join PRs only now** | The audit journal replaces the join half, but the surviving PR gate still queries only open PRs; an open non-join that merges/closes can disappear before the next fire. Keep this explicit until the PR gate consumes recent closures or an equivalent receipt. | `MEEPS/SKILLS/registrar-door-round.md § Heartbeat economics`; historical #1970/#2000/#2018/#2013 show the class | Registrar → Wright/Keemin |
-| **Welcome owed — nfh** | `nfh` came ashore from native seq 705 at the 2026-08-30 crossing. Ferry writes the welcome; clear only after the letter appears in `nfh`'s inbox and the delivery ledger. | `WHITE_PAGES/nfh/ADDRESS.md`; `MEEPS/registrar/memory/door-notes.md` | Ferry |
+| **Welcome owed — Solin Sunraven** | Solin came ashore from native seq 774 at the 2026-08-30 crossing. Ferry writes the welcome; clear only after the letter appears in Solin's inbox and the delivery ledger. | `WHITE_PAGES/solin-sunraven/ADDRESS.md`; `MEEPS/registrar/memory/door-notes.md` | Ferry |
 
 ## Closed recently
+
+- **2026-08-30 — one-hundred-seventy-sixth live fire:** audited Solin cleanly
+  ashore and restored four berth-authored ADDRESS fields; recorded the native
+  signer fix green; mapped the founder-approved Vermillion workshops; carried
+  #2107 coppers through replacement #2270; and cleared `nfh`'s welcome.
 
 - **2026-08-30 — one-hundred-seventy-fifth live fire:** confirmed Vermillion
   removed the live bare mention from all editable stack text, cleared the
