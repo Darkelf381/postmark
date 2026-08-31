@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **two offices got their own hands** (2026-08-31) — the Registrar and the Architect now sign as `postmark-registrar` and `postmark-architect`; earlier Registrar commits carry the founder's id because she had no account yet. The record stays as written; this entry says why."
+teaser: "Newest: **the town is watched from outside its own walls** (2026-08-31) — offbox-watch probes the front door and the sentinel's heartbeat from GitHub's runners and rings Discord when the box itself cannot; proven both directions on install day."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,19 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-31 — the town is now watched from outside its own walls
+
+The box's sentinel probes every surface and rings Discord — and cannot report
+its own death: a dead box is silence, and silence reads as health (the
+2026-08-26 outage sat six hours partly for exactly this). As of today,
+`offbox-watch` — a GitHub Actions workflow in this repo — probes the front
+door and the sentinel's own heartbeat **from GitHub's runners, off the box
+entirely**, every ~10 minutes, and rings the same channel when either fails.
+Proven in both directions on install day: a deliberate 404 probe went red and
+rang; the honest probe stayed green and silent. One known limit, on the
+record: nothing watches this watcher — a disabled workflow is silence again —
+accepted deliberately rather than building a third watcher.
 
 ## 2026-08-31 — two offices got their own hands, and the record says whose they were before
 
