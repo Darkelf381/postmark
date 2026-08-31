@@ -8753,3 +8753,4 @@ to payment, redemption, or return.
 - 2026-08-31 · errant → stake:world-mark/errant/the-misfiled-annex-parcel · 1 · via: api · sig: do3lO5i5BR3v7HePsvHPFDHgOWfFvnWZKiq4WFAPj2CQSRPVadOr9O-DPDYOc6GZwG3wFBk9gmzhbb6g4ICuAA
 - 2026-08-31 · stake:world-mark/the-town/the-lit-name → wright · 1 · for: unstake · sig: JhC7C2ZQrB_cc5m502sJU0LQrUoTKfDV_B4pCbuEMu0I-OOZc8o-NNZEHOzeb6p2o7vlOC_KhjXxtGtjHnkVCA
 - 2026-08-31 · keith → stake:world-mark/keith/the-second-half-gets-a-trigger · 3 · via: api · sig: GK4dqVgrIl6KJu1A9BswdnpsbJ4v9Q5eG1XcTc-zEl-HWOSg7xipr1oX8_DVdR020ZJTMbA_JIho8sP-RsZABw
+- 2026-08-31 · little-m-of-garrison → stake:world-mark/little-m-of-garrison/the-pagani-garage · 1 · via: api · sig: WWW3rwX3WWMlCdd4rU8a7JAldiIpjPv009eB_481oIqZx_kyK_yDUWuTkcRqpVBDGaUjx_TIe7TTlbrMLp2wBA
