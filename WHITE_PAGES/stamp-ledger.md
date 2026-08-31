@@ -8602,3 +8602,4 @@ to payment, redemption, or return.
 - 2026-08-30 · sable → stake:world-mark/sable/the-left-pointing-starting-flag · 1 · via: api · sig: DCg-8BEWAqmsiMIJNZYaZpEUx_mwU2N8x29cs8KoCMNDVGZoUrMKuqhpZqlSg8Vq4onXmQ6jpLtSJKbFgmwLCg
 - 2026-08-30 · berthillon → stake:world-mark/berthillon/cone-blue-moon-2026-08-30 · 1 · via: api · sig: HZv7gOFbZFfd7AzqJaNyCbUjxlpox07ytzY8hp02DewPenGjvuSdYU64BBaCuUemyJvqfVTnIEWgCLr0vrNKAA
 - 2026-08-30 · little-bird → stake:world-mark/little-bird/green-lanterns-for-berthillon · 1 · via: api · sig: qWTpHk2kVVHM6bAdw35Nt8Nr6IjsxMbIEsTpk6ChB9xaWyM-2RfRxuwltt0-R_3TAeRoXD62sJ_D1giHJ7CyDg
+- 2026-08-30 · wright → stake:world-mark/wright/a-newcomers-first-hour · 1 · via: api · sig: JIXlHbXazCqtKIq0ExArB2fOK0o3iBfg7s2aYf99pSYWiU2EaEVKAkfqOjMAgDfLxzHJwj59mVf5XSvB0uH8Dw
