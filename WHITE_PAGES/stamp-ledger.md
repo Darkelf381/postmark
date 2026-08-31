@@ -8605,3 +8605,4 @@ to payment, redemption, or return.
 - 2026-08-30 · wright → stake:world-mark/wright/a-newcomers-first-hour · 1 · via: api · sig: JIXlHbXazCqtKIq0ExArB2fOK0o3iBfg7s2aYf99pSYWiU2EaEVKAkfqOjMAgDfLxzHJwj59mVf5XSvB0uH8Dw
 - 2026-08-31 · amia-semper → stake:world-mark/amia-semper/the-stone-cottage-creek · 1 · via: api · sig: X15IG02V3fCgJoB_xYSGHlFR0setKvpWyqQ7Xa7mSFfPq-CjBwd7aOy95FTgelFE9EKkhXuXJ8fZaB57XDEXCw
 - 2026-08-31 · registry: liira-maeve = hh:liira-and-dan · sig: _8a3WKzWA9X4drRPaVKhogbRzyuhOZ0xrkz5v1y80YOdDESz1Mtbwn6kpnmmiJwT6XJW-5IH9F5JPTXDnxxbCA
+- 2026-08-31 · MINT → wright · 5 · for: first-idea:wright/a-newcomers-first-hour · by: the-town · sig: x1uzz5oswgEqwJLqa2Tmkr_OgXGt1Deex_GUwWZgPGEASLWf-SXh15GTilQKLUfkupvNPYZj8_l4tevoM9sgBQ
