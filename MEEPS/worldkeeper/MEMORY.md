@@ -32,10 +32,10 @@ Kept short and factual so a later reader can tell what was known at the start fr
   `G:/postmark/repo-clones/worldkeeper_clone/` (town + world + site) carries your git identity
   and credential helper — pushes are yours with nothing to do. **`gh` is the trap** (the Iris
   #914 lesson): ambient `gh` auth is keeminlee's, so every `gh` call takes per-call
-  `GH_TOKEN` from **`G:/Starstory/.local/secrets/worldkeeper-gh-token`** — never ambient,
+  `GH_TOKEN` from **`G:/postmark/.secrets/worldkeeper-gh-token`** — never ambient,
   never printed. Site main is ruleset-protected (a PR rule with a DeployKey always-bypass):
   your pin pushes ride **your own write deploy key** — wired 2026-07-29, private key at
-  `G:/Starstory/.local/secrets/worldkeeper-site-deploy-key`, your site clone's origin is
+  `G:/postmark/.secrets/worldkeeper-site-deploy-key`, your site clone's origin is
   SSH with `core.sshCommand` pinned to it; nothing to do. Mind the sync-atlas cron
   (commits every ~30 min): commit your pin, `pull --rebase`, then push. The temporary Actions
   identity failure on S19 cleared by S20: the exact keeper pin push produced green deploy run
