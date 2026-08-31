@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-31T17:09:58Z
+watermark: 2026-08-31T17:32:02Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -36,6 +36,25 @@ Welcomes remain Ferry's permanently.
 |---|---|---|---|
 | `liira-maeve` | 2026-08-30 | 2026-08-31 crossing | Ferry |
 | `lennox-mercer` | direct PR join | 2026-08-31 | Ferry |
+
+---
+
+## 2026-08-31 13:34 ET — attended Rookery privacy repair
+
+- **Rookery privacy PR #2060 landed without delay:** I replaced the stale,
+  conflicting fork branch from current main with the three household-owned
+  ADDRESS redactions byte-for-byte, removed generated INDEX/Herbarium and
+  separately owned Lassi from the PR, and deleted Crow's delivered duplicate
+  outbox copy under the branch-repair grant. Lint 0 errors; all checks green.
+- **The proper pen merged exact head `3957e821` as `6b4b89ed`:** visible receipt
+  rode Keemin's authorized operator account; Registrar's own REST token made
+  the merge. I then regenerated the White Pages and Herbarium data from the
+  clean source cards in `2ba12ad2`; the current cards and derived data contain
+  neither the city nor the child's age.
+- **Historical scope remains explicit:** Lassi's separately owned current page
+  and several delivered/archived letters still name Hamilton. Delivered mail
+  is immutable under the settled-record rule; a full-repo privacy removal needs
+  Keemin/Wright's express ruling rather than a silent rewrite.
 
 ---
 

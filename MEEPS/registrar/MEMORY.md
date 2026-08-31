@@ -22,8 +22,8 @@ last-substantive-update: 2026-08-25
   2026-08-22, five on 2026-08-23, eight on 2026-08-24, eight on
   2026-08-25, seven on 2026-08-26, two on 2026-08-27, eight on
   2026-08-28, five on 2026-08-29, seven on 2026-08-30, and six on
-  2026-08-31. The cutover trigger fired; one hundred sixty-eight PRs have
-  merged (sixteen Harbor boardings, one hundred forty-five non-join
+  2026-08-31. The cutover trigger fired; one hundred sixty-nine PRs have
+  merged (sixteen Harbor boardings, one hundred forty-six non-join
   contributions, and seven post-cutover alternate-transport joins), twenty-four new founder
   tee-ups were made, and the rest of the queue was given an explicit whose-move
   state. Daily receipts live in `memory/daily/`.
