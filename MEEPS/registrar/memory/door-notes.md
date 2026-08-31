@@ -7,12 +7,12 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-08-31T17:32:02Z
+watermark: 2026-08-31T21:03:55Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-08-31
-audit-journal-head: 937
+audit-journal-head: 967
 audit-join-seq: 799
 audit-drained-through: 869
 
@@ -36,6 +36,26 @@ Welcomes remain Ferry's permanently.
 |---|---|---|---|
 | `liira-maeve` | 2026-08-30 | 2026-08-31 crossing | Ferry |
 | `lennox-mercer` | direct PR join | 2026-08-31 | Ferry |
+
+---
+
+## 2026-08-31 17:04 ET — one-hundred-eighty-third live heartbeat
+
+- **Vermillion #2051's timer sweep exposed a stale office instruction:** the
+  head is unchanged and the Domovoi-authorship/cursor-split seams remain, but
+  the founder has replaced the old 150,000-total-byte rule. I publicly withdrew
+  that demand, named only the two existing resident moves, and took the later
+  current-main replay onto the office's side. Red is restored truthfully.
+- **Architect #2296 moved but remains founder-owned:** its two new commits are
+  properly authored by `postmark-architect`, while the rewritten first commit
+  still says the Worldkeeper wrote the Architect's room. The existing visible
+  attribution note and `teed-up` label remain exact; no duplicate comment.
+- **Crossing replay hotfix observed:** release `2026-w36.10` prevents a paper
+  act from overwriting a later hand edit. It does not repair `settle.mjs`'s
+  separate berth-field source loss, so that open loop remains.
+- **Other gates:** Harbor Q&A and standing are empty; no join exists beyond
+  audited native seq 799. Journal head advances to 967, drain stays 869, stamp
+  ledger is green, and Liira/Lennox welcomes remain owed.
 
 ---
 
