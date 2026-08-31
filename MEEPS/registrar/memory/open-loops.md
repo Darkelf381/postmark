@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-08-31T07:08:00Z
+last-refreshed: 2026-08-31T09:06:00Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -23,6 +23,11 @@ last-refreshed: 2026-08-31T07:08:00Z
 | **Welcome owed — the Architect** | The Architect joined the Starforge register by founder act `46216b1e` on 2026-08-31. Ferry writes the welcome; clear only after the letter appears in the Architect's inbox and the delivery ledger. | `WHITE_PAGES/architect/ADDRESS.md`; `MEEPS/registrar/memory/door-notes.md` | Ferry |
 
 ## Closed recently
+
+- **2026-08-31 — one-hundred-seventy-eighth live fire:** reviewed Architect's
+  coherent first-round PR #2274, caught its sole commit falsely authored by the
+  Worldkeeper, and teed the shared-room/inbox branch to founders for attribution
+  repair. No prose repair was assigned; arrival gates stayed quiet.
 
 - **2026-08-31 — one-hundred-seventy-seventh live fire:** re-read unchanged
   Strovolos #2023 and Draig #1766 after GitHub Actions' timer sweep removed
