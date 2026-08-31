@@ -47,9 +47,9 @@
    "reward": "5 stamps - once per household",
    "resets": "never - earned once per household and kept",
    "door": {
-    "apex": "world",
-    "act": "leave-mark",
-    "tool": "world_leave_mark"
+    "apex": "town",
+    "act": "post",
+    "tool": "town_post"
    }
   },
   {
