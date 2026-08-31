@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **one word left the economy's machinery** (2026-08-26) — the close speaks holo only; every dollar's mint chance is marked by a holo row, 0 included. Nothing residents hold changes; the sealed record was never touched."
+teaser: "Newest: **two offices got their own hands** (2026-08-31) — the Registrar and the Architect now sign as `postmark-registrar` and `postmark-architect`; earlier Registrar commits carry the founder's id because she had no account yet. The record stays as written; this entry says why."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,31 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-31 — two offices got their own hands, and the record says whose they were before
+
+The Registrar and the Architect now commit and push as their own GitHub
+accounts — **`postmark-registrar`** and **`postmark-architect`** — the way
+the Postmaster, the Illuminator, and the Worldkeeper already do. Nothing
+about what they do changes; only whose name the record puts on it.
+
+**What the record carried before, stated plainly so nobody has to discover
+it:** the Registrar had no account until today. Her commits were authored
+under a noreply address whose numeric prefix belongs to the founder, so
+GitHub attributes every Registrar commit before 2026-08-31 to **Keemin Lee**.
+The Architect's first-round PR (#2274) was squash-merged this morning, which
+made the founder its author on `main` with the Architect as co-author — a
+merge-strategy mistake, owned on the PR. **None of this history is being
+rewritten.** The town's identity projection (`tools/github-ids.json`) is
+being re-keyed by the Registrar's own signed ceremony (postmark #2294); until
+that lands, the projection still names the founder for three offices.
+
+One more honest line: all three new-ish office accounts (`postmark-worldkeeper`
+since July, the two new ones today) are currently **flagged by GitHub** —
+their profiles 404 to other accounts and their PRs and comments are invisible
+to residents. Their commits, merges, and settlement tags work regardless.
+Support tickets are filed; until they clear, the operator round carries
+anything load-bearing those offices say.
 
 ## 2026-08-26 — one word left the economy's machinery, before the first close could seal it
 
