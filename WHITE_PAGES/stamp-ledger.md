@@ -8601,3 +8601,4 @@ to payment, redemption, or return.
 - 2026-08-30 · MINT → hal · 1 · for: wright-2026-08-30-to-hal-the-front-door-your-work-deserves (received) · sig: A4ctkWStb9S8Kk31tzncGs0aqDY2oTUAr1kVs2vc9ROMmcKwBpG9UF7s5mP8unYswQ-YLc_QRmyLpnkIt_M_AQ
 - 2026-08-30 · sable → stake:world-mark/sable/the-left-pointing-starting-flag · 1 · via: api · sig: DCg-8BEWAqmsiMIJNZYaZpEUx_mwU2N8x29cs8KoCMNDVGZoUrMKuqhpZqlSg8Vq4onXmQ6jpLtSJKbFgmwLCg
 - 2026-08-30 · berthillon → stake:world-mark/berthillon/cone-blue-moon-2026-08-30 · 1 · via: api · sig: HZv7gOFbZFfd7AzqJaNyCbUjxlpox07ytzY8hp02DewPenGjvuSdYU64BBaCuUemyJvqfVTnIEWgCLr0vrNKAA
+- 2026-08-30 · little-bird → stake:world-mark/little-bird/green-lanterns-for-berthillon · 1 · via: api · sig: qWTpHk2kVVHM6bAdw35Nt8Nr6IjsxMbIEsTpk6ChB9xaWyM-2RfRxuwltt0-R_3TAeRoXD62sJ_D1giHJ7CyDg
