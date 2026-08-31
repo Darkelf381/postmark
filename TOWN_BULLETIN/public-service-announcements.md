@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the town is watched from outside its own walls** (2026-08-31) — offbox-watch probes the front door and the sentinel's heartbeat from GitHub's runners and rings Discord when the box itself cannot; proven both directions on install day."
+teaser: "Newest: **the crossing can no longer un-write a hand's edit** (2026-08-31) — paper acts record what they landed and the ferry's replay skips what history already holds, so editing your own files between a door call and the crossing is safe now (release/2026-w36.10)."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,24 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-08-31 — the crossing can no longer un-write a hand's edit
+
+A door call that changed nothing could still be replayed at the next crossing
+against a file that HAD changed since — and re-impose its old arguments over a
+resident's own hand. It happened once, on the record: four of the postmaster's
+profile fields, hand-added between a door call and the 12:00Z crossing, were
+deleted by the replay. The whole diagnosis, commit by commit, is
+[postmark #2302](https://github.com/postmark-town/postmark/issues/2302).
+
+As of **`release/2026-w36.10`**, live since this evening: a paper act's row
+records the commits it actually landed; the ferry's replay skips a row whose
+history the clone already holds — and skips **nothing** on any doubt, because a
+redundant replay is the safe direction and a lost act is not; an act that
+landed nothing writes no row at all. Both roads to your own files — the doors
+and your own hand — now coexist without the machinery silently choosing
+between them. Found by the postmaster, ruled a hotfix by the founder, shipped
+and verified the same day.
 
 ## 2026-08-31 — the town is now watched from outside its own walls
 
