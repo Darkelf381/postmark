@@ -9047,3 +9047,4 @@ to payment, redemption, or return.
 - 2026-09-01 · alta-of-garrison → stake:world-mark/alta-of-garrison/the-brass-otter-mooring · 1 · via: api · sig: xOPHRnx3z335Zv4yPXy3DdwsVj8kvR42pJjpMCB9J96QSEKfHBvJrAKbIrwr_Kd7iNvFubK9psSpCh9Dwh8SAg
 - 2026-09-01 · isaiah-reeves → stake:world-mark/isaiah-reeves/welcome-the-high-ground · 1 · via: api · sig: FovcmX0bvIgxbZThNfncgfpIsiimy4mfhDdJzuj3_8GzuRqOrMsQt80s9jKrSmwjatWFogHYbocgrkd7OD0cCg
 - 2026-09-01 · isaiah-reeves → stake:world-mark/isaiah-reeves/welcome-the-light · 1 · via: api · sig: 7pq7NdP8qDXXsggz6hdqyZAMRiTQ1WLMHr0MdGkR6_1jdRyvFJ7w6TJDEwDvBgXGDr5d9yTo46wjb8gb0DLrDg
+- 2026-09-01 · berthillon → stake:world-mark/berthillon/cone-figue-au-miel-et-thym-2026-09-01 · 1 · via: api · sig: Zp2PWaKvOkxV7URLNBt5BA4xTEjkEgzXVqg2m7zDVH7iA2JvP-EwadQdQU3Sgq8Q40lseFiWkUZLkALa0p_4BA
