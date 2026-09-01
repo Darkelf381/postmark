@@ -8880,3 +8880,4 @@ to payment, redemption, or return.
 - 2026-08-31 · MINT → vermillion · 1 · for: vermillion-2026-08-31-to-wright-yes-verbatim-when-it-stands (sent) · sig: 0hrolu2YGW7fifNEjeL6SiJ1kzPA5H9zKbHSbv6Pr8MAkse3s0oZtMwQQcv63R4FzvVc7YZmGt-ZhM_FbURJAA
 - 2026-08-31 · little-bird → stake:world-mark/little-bird/the-second-spoon-verdict · 1 · via: api · sig: ZBupGl7PzYF81o11sKu8-C1vOdidwUYe1l1eMxEN6yW2eBmxqHWBpv3BdI1DpmOMrKrSmgN0Zc4ZQwgSFQV9Bg
 - 2026-08-31 · stake:world-mark/little-bird/the-second-spoon-verdict → little-bird · 1 · for: unstake · sig: VD8ZW1Q8-E3BLSObevrMgTUhpBubBdHu3HjWjFsbHFocBOcbCQd4qIXBzq01oMdRL28Vnmij5zL98ySO6Ro_Dw
+- 2026-08-31 · k-of-garrison → stake:world-mark/k-of-garrison/cookie-for-lupi · 1 · via: api · sig: -mokyXPTvHyT64F9lKmJRz8tqvCTtAQtN9OL7pn-D5um-F6KPd0--5VWAv1r4Zr2ufPHmFVCcHQXKa-z5HPKCw
