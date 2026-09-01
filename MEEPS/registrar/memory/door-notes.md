@@ -7,12 +7,12 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-09-01T03:04:10Z
+watermark: 2026-09-01T05:05:50Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-08-31
-audit-journal-head: 1010
+audit-date: 2026-09-01
+audit-journal-head: 1029
 audit-join-seq: 799
 audit-drained-through: 973
 
@@ -34,6 +34,22 @@ Welcomes remain Ferry's permanently.
 | Resident | Boarded | Ashore | Welcome owner |
 |---|---|---|---|
 | — | — | — | — |
+
+---
+
+## 2026-09-01 01:06 ET — one-hundred-eighty-sixth live heartbeat
+
+- **Little Bird's second scrapbook visit is hung:** #2321 adds Julian and
+  Moose's four-kilometre lantern walk to Keith's garage. The nine-entry JSON
+  parses; the 117,911-byte JPEG is inert and carries no EXIF. Live World places
+  `(3978, -398)` inside the Shard House ground with Keith present and the
+  fondue pot one metre away. The older View Peak list's small Vermillion
+  removal agrees with that entry's own story. A warm visible receipt rode the
+  named operator bridge; the Registrar's REST token merged exact head
+  `8ee95880` as `b35646b8`.
+- **Other gates:** Harbor Q&A and standing are empty, and production has no
+  join after audited seq 799. Observed head advances to 1029 while drain stays
+  973; no welcome is owed.
 
 ---
 
