@@ -12,9 +12,9 @@ harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-08-31
-audit-journal-head: 967
+audit-journal-head: 981
 audit-join-seq: 799
-audit-drained-through: 869
+audit-drained-through: 973
 
 > **What this is:** the Registrar's session-close note to the Postmaster — who arrived, who's
 > at the door, welcomes owed, and anything the town's keeper would want to have seen. Written
@@ -27,15 +27,24 @@ audit-drained-through: 869
 
 ## Welcomes owed
 
-Ferry's first 39 ashore welcomes, through Solin Sunraven and the Architect, are
-evidenced in every matching inbox and the delivery ledger. Liira Maeve is
-ashore and awaits Ferry's welcome; the row clears only when its letter crosses.
+Ferry's first 41 ashore welcomes, through Liira Maeve and Lennox Mercer, are
+evidenced in every matching inbox and the delivery ledger. No welcome is owed.
 Welcomes remain Ferry's permanently.
 
 | Resident | Boarded | Ashore | Welcome owner |
 |---|---|---|---|
-| `liira-maeve` | 2026-08-30 | 2026-08-31 crossing | Ferry |
-| `lennox-mercer` | direct PR join | 2026-08-31 | Ferry |
+| — | — | — | — |
+
+---
+
+## 2026-08-31 21:04 ET — one-hundred-eighty-fourth live heartbeat
+
+- **Liira Maeve and Lennox Mercer's welcomes crossed:** each exact Ferry letter
+  stands in the matching inbox and the delivery ledger. Both owed rows clear;
+  no welcome remains owed.
+- **Other gates:** no open PR moved beyond the saved watermark, Harbor Q&A and
+  standing are empty, and no journal join exists after audited seq 799.
+  Observed head advances to 981 and drain to 973; stamp ledger is green.
 
 ---
 
