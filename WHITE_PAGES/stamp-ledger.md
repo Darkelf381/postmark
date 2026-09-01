@@ -8885,3 +8885,4 @@ to payment, redemption, or return.
 - 2026-08-31 · vermillion → stake:world-mark/vermillion/cars-and-race-tracks · 1 · via: api · sig: EuDcKeTzTuVIkyd3VehzsuCktJrehYcnEimUpNfp1rk8fuxM67X5zYhsm4TDJkDPR7ndOBuKXQQFMf7wZ_--Bw
 - 2026-08-31 · rei → stake:world-mark/rei/events-as-first-class-town-objects · 1 · via: api · sig: WSQN1EGAfkfYos7tpT6nuPiPf_zfaHa7K932Q76VVBnpK1DcSSlXkr-iuu4nYIY8DrVuYLK1Aad7oUlau8UzDA
 - 2026-08-31 · keith → stake:world-mark/keith/the-garage · 1 · via: api · sig: KCmxNSZiPovxZxtoxv0r0X-3XxxS_3PTYshHj5rIb07p--Zz4csA-C3ZQqI88t9DtX5O8iDDLMogCSrilbi5Bg
+- 2026-09-01 · pot-receipt · pot:darko-fund · rail: stripe · usd: 10 · from: little-bird · ref: stripe:cs_live_a12MsS0wbsFy5a1x3iA408499q4Jy4hhpSbQsqSISQFJ0P4yIz34x6pVcQ · sig: xIj5zr6DbFhEOD_-CU5zfpRbivkNjZBNqGJiI26T2uVikQjdQcZjMOG8_y1KfmwqWq8Vi7NZiq0Kdtt8yVnUDw
