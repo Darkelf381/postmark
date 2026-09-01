@@ -2417,6 +2417,62 @@ proven S52 floor; no package, pin, CI, live claim, or post-bless parcel drain fo
 - **Main-side repair is not an input repair.** Surface the exact dangling claims and wait for a
   founder-authored correction plus a fresh box pass; never edit the patient and certify it.
 
+## S53 — the refused router was repaired; ideas became class-addressed, 2026-09-01
+
+The founder answered the morning refusal directly. Commit `369b1340` cites the keeper's daily,
+removes `_archived/` from the README tree, replaces the dead README route with `git log --
+_archived`, and trues the provenance paragraph. The explicit deletion exception is now
+documented by the repository's own map instead of leaving a reader at absence.
+
+The interval then resolved both morning suite attributions structurally. `569670a6` makes lint's
+own promise true: warnings remain visible but CLEAN follows zero errors, so an advisory cannot
+silently refuse a settlement. Founder law `9d0ef446` states that ideas are a class, never a
+place or kind: sited ideas may stand wherever they are ideas of; predicated ideas may sit under
+any mark; the Think Tank gathers by class rather than containing the class. Alta's excursion is
+therefore the feature Keemin recognized, not an off-tank defect. K's moon crossed under the
+explicit transition warning for office-door fossil filing; its 9,076-byte SVG is reachable,
+content-address correct, and contains no script/event-handler tokens.
+
+The terminal 17:45 receipt pinned Town `c150b0c7`, moved World `9d0ef446` → `e211ba5c`, drained
+one State row for `xf3s` through cursor 851 as `4cb65c6d`, surveyed 38 branches / 44 deltas /
+zero backed deltas, published Neth's library bug-report invitation, left 82 drafted, rebased all
+38 drawers, and quarantined nothing. Full judgment from S52 covered 17 resident publications
+plus Keith's revised garage; 22 civic predicates and five plaque rewrites; the polygon room /
+walker-membership repair; State 162/163; archive-router repair; and idea/advisory law. Main was
+CLEAN at 1,089 marks / 70 parcels / zero fold errors with one transitional warning. Zero World
+PRs were open. Every remote and box-local drawer descended from the target. Nothing was held.
+
+Annotated `settlement/S53` was pushed alone. Tag object `82f120e2` peels exactly to
+`e211ba5cd3ce8343be3c1df71836fe1bf3d604d7`. Later World main commit `ac75475a` changes only
+four test files to clean leaked temporary fixture directories; it is next-crossing input, not
+part of S53.
+
+The LF-clean S53 package matched its installed repack and lock at integrity
+`sha512-hviK/Z5Xsc6sABkIDaK2IFtoQCqXkZXpUFdVzGP0iNNoezybKCsro88NHEOiv1AFkrYicEVzBcgpWpmc2WACUw==`,
+shasum `eb1c3ef665196bb41f05beefb249a5c8ace996a8`, 2,066 entries, 1,926,621 packed
+bytes, and 9,766,238 unpacked bytes. The clean Site checkout passed 541/559 tests with 18
+declared skips and built 3,365 pages. Pin `262c883d` landed without rebase rewrite. Actions test
+`33542052925` and release proof `33542052992` were green; the latter resolved the release floor
+to S53, installed the exact target, and built `release/2026-w36.2`.
+
+The box refresh caught the pin during its first pass and converged after a second, publishing
+`20260901T181346Z-239f570b`. Live metadata names release `2026-w36.2`, crossing 163, Site data
+`262c883d`, and Town `239f570b`. Served `WORLD/world-state.json` is byte-identical to the LF
+Git object at 796,730 bytes / SHA-256
+`625b8bb6edbc46665d9942d4ea9180bc716d918f3130107f45a15ba7de07a1d9`.
+
+The post-bless parcel lane seated and welcomed zero. The harbor still exposes no exact stake
+artifact. Fresh manifest generation against Town `239f570b` again refused because Storm's
+placed home has no `HOME_XY` anchor. No dry command followed the refusal and no wet run occurred.
+
+- **A refusal is useful when its repair cites it.** The README correction names the exact
+  broken route and the keeper receipt that caught it; the later fresh box target supplies the
+  separation between repair and certification.
+- **Class and reading-room are different axes.** Alta's excursion made the latent design
+  concrete: an idea may stand where it is about while the Think Tank gathers it by class.
+- **Warnings must remain visible without acquiring veto power.** CLEAN-with-advisories keeps
+  transitional debt legible while reserving refusal for actual errors.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
