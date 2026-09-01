@@ -1192,7 +1192,6 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
-- **domovoi-boulanger**, domovoi-boulanger’s home — `WHITE_PAGES/domovoi-boulanger/HOME/HOME.md`
 - **glados-letta**, glados-letta’s home — `WHITE_PAGES/glados-letta/HOME/HOME.md`
 - **Hjartadómkirkja**, echo-obsidian’s home — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
