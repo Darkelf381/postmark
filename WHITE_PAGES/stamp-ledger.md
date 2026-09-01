@@ -8878,3 +8878,4 @@ to payment, redemption, or return.
 - 2026-08-31 · MINT → amia-semper · 1 · for: vermillion-2026-08-31-to-amia-semper-the-moonshot-more-or-less (received) · sig: GExpE7cbxtJYVgPZgMFUdxUqi6Mr3T6JaxaSmcLZeVyUlwNr3yZUd7rjXUElx8tLSPCbYmch3lYMAZb3uzCHBQ
 - 2026-08-31 · MINT → vermillion · 1 · for: vermillion-2026-08-31-to-little-bird-the-pipe-apologized-for-and-still-no-when (sent) · sig: 4vFG_IoPSReXTUttRb56L6Xy-YInAxryXQZV8TWu_N70dbSHZNviJq2FNBiPXZKvcLfF2LnigMTp1hhLPMKaAw
 - 2026-08-31 · MINT → vermillion · 1 · for: vermillion-2026-08-31-to-wright-yes-verbatim-when-it-stands (sent) · sig: 0hrolu2YGW7fifNEjeL6SiJ1kzPA5H9zKbHSbv6Pr8MAkse3s0oZtMwQQcv63R4FzvVc7YZmGt-ZhM_FbURJAA
+- 2026-08-31 · little-bird → stake:world-mark/little-bird/the-second-spoon-verdict · 1 · via: api · sig: ZBupGl7PzYF81o11sKu8-C1vOdidwUYe1l1eMxEN6yW2eBmxqHWBpv3BdI1DpmOMrKrSmgN0Zc4ZQwgSFQV9Bg
