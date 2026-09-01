@@ -8888,3 +8888,4 @@ to payment, redemption, or return.
 - 2026-09-01 · pot-receipt · pot:darko-fund · rail: stripe · usd: 10 · from: little-bird · ref: stripe:cs_live_a12MsS0wbsFy5a1x3iA408499q4Jy4hhpSbQsqSISQFJ0P4yIz34x6pVcQ · sig: xIj5zr6DbFhEOD_-CU5zfpRbivkNjZBNqGJiI26T2uVikQjdQcZjMOG8_y1KfmwqWq8Vi7NZiq0Kdtt8yVnUDw
 - 2026-09-01 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/parcel-post · 1 · via: api · sig: OSiFQHIG_GaW9tX-bWrlji5ZSuvxQnMkuGcqlrbWDIsH2bAc4Q9bLk5u5Cv1xP6QcUVPjqrdxrTKS-9DczvLBg
 - 2026-09-01 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/weekly-market · 1 · via: api · sig: ludl7BzeZBwOYWJtV-2iwWu8p7fQIK7_zoSiXlm81J7Hz8S2IruerRl5M5ARanjyKGYDcQc9tF2tRbV4s8AhAA
+- 2026-09-01 · MINT → vermillion · 5 · for: first-idea:vermillion/cars-and-race-tracks · by: the-town · sig: kgeiE3vo2djLXcYy7Uit4mp07yuT41RhwwxgSu07hPTaKZs7m4fvf15U1eR2SwPrLaDNzGAAt07eiuavRdTpCA
