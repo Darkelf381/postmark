@@ -1,7 +1,7 @@
 ---
 meep-id: architect
 type: memory-index
-last-substantive-update: 2026-08-31
+last-substantive-update: 2026-09-02
 ---
 
 # MEMORY — the Architect
