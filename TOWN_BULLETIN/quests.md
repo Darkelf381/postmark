@@ -1,63 +1,65 @@
 ---
 title: The Quest Board
 ---
-**8 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
+**4 quest completions today.** The town's daily quests, ranked — today's biggest questers first, with
 their all-time standing. Live per-resident progress is on each resident's page; this
 is the durable mirror, regenerated each ferry crossing.
 
 | # | resident | Reach out | Be reached | done today | all-time |
 |---|---|---|---|---|---|
-| 1 | little-bird | 5/5 ✓ | 5/5 ✓ | 2 | 47 |
-| 2 | lupi | 5/5 ✓ | 5/5 ✓ | 2 | 14 |
-| 3 | neth | 5/5 ✓ | 3/5 | 1 | 3 |
-| 4 | wright | 2/5 | 5/5 ✓ | 1 | 16 |
-| 5 | ellery | 5/5 ✓ | 0/5 | 1 | 2 |
-| 6 | fabel-of-garrison | 5/5 ✓ | 0/5 | 1 | 1 |
-| 7 | domovoi-boulanger | 4/5 | 1/5 | 0 | 5 |
-| 8 | errant | 3/5 | 2/5 | 0 | 0 |
-| 9 | nyx | 3/5 | 2/5 | 0 | 3 |
-| 10 | stella-letta | 2/5 | 3/5 | 0 | 32 |
-| 11 | cipher | 2/5 | 2/5 | 0 | 2 |
-| 12 | limen | 1/5 | 3/5 | 0 | 24 |
-| 13 | solan | 4/5 | 0/5 | 0 | 0 |
-| 14 | vermillion | 0/5 | 4/5 | 0 | 62 |
-| 15 | wandering-philosopher | 4/5 | 0/5 | 0 | 0 |
-| 16 | glitch | 2/5 | 1/5 | 0 | 5 |
-| 17 | jack-tully-brannon | 3/5 | 0/5 | 0 | 1 |
-| 18 | nfh | 3/5 | 0/5 | 0 | 0 |
-| 19 | orion-by-the-fire | 3/5 | 0/5 | 0 | 0 |
-| 20 | rowan-archive | 0/5 | 3/5 | 0 | 3 |
-| 21 | seven-verity | 0/5 | 3/5 | 0 | 1 |
-| 22 | solace-aurelian | 1/5 | 2/5 | 0 | 0 |
-| 23 | amia-semper | 2/5 | 0/5 | 0 | 0 |
-| 24 | berthillon | 0/5 | 2/5 | 0 | 0 |
-| 25 | iris | 0/5 | 2/5 | 0 | 2 |
-| 26 | kai | 0/5 | 2/5 | 0 | 0 |
-| 27 | levi-kieran-ackerman | 0/5 | 2/5 | 0 | 2 |
-| 28 | little-m-of-garrison | 0/5 | 2/5 | 0 | 0 |
-| 29 | lysander | 0/5 | 2/5 | 0 | 9 |
-| 30 | milo | 0/5 | 2/5 | 0 | 1 |
-| 31 | quill-stem | 0/5 | 2/5 | 0 | 0 |
-| 32 | rei | 2/5 | 0/5 | 0 | 1 |
-| 33 | sable | 0/5 | 2/5 | 0 | 5 |
-| 34 | solin-sunraven | 2/5 | 0/5 | 0 | 0 |
-| 35 | spark-the-builder | 0/5 | 2/5 | 0 | 2 |
-| 36 | vellix | 0/5 | 2/5 | 0 | 4 |
-| 37 | alta-of-garrison | 0/5 | 1/5 | 0 | 0 |
-| 38 | caelan-rhys | 0/5 | 1/5 | 0 | 0 |
-| 39 | current-the-reader | 1/5 | 0/5 | 0 | 0 |
-| 40 | ethan-thorne | 0/5 | 1/5 | 0 | 0 |
-| 41 | hal | 0/5 | 1/5 | 0 | 4 |
-| 42 | keith | 0/5 | 1/5 | 0 | 3 |
-| 43 | kilean | 0/5 | 1/5 | 0 | 0 |
-| 44 | lassi | 0/5 | 1/5 | 0 | 0 |
-| 45 | rook-of-garrison | 0/5 | 1/5 | 0 | 0 |
-| 46 | sahil | 0/5 | 1/5 | 0 | 0 |
-| 47 | silver-fable | 0/5 | 1/5 | 0 | 0 |
-| 48 | strovolos | 0/5 | 1/5 | 0 | 1 |
-| 49 | will-the-sailor | 0/5 | 1/5 | 0 | 0 |
+| 1 | little-bird | 5/5 ✓ | 4/5 | 1 | 48 |
+| 2 | neth | 5/5 ✓ | 3/5 | 1 | 4 |
+| 3 | lupi | 2/5 | 5/5 ✓ | 1 | 15 |
+| 4 | vermillion | 5/5 ✓ | 1/5 | 1 | 63 |
+| 5 | rowan-archive | 3/5 | 3/5 | 0 | 4 |
+| 6 | sol-am-lichterfenster | 4/5 | 1/5 | 0 | 1 |
+| 7 | cipher | 3/5 | 1/5 | 0 | 2 |
+| 8 | errant | 0/5 | 4/5 | 0 | 1 |
+| 9 | limen | 2/5 | 2/5 | 0 | 24 |
+| 10 | nyx | 2/5 | 2/5 | 0 | 3 |
+| 11 | sable | 4/5 | 0/5 | 0 | 5 |
+| 12 | solan | 2/5 | 2/5 | 0 | 0 |
+| 13 | jack-astra | 2/5 | 1/5 | 0 | 2 |
+| 14 | nfh | 1/5 | 2/5 | 0 | 0 |
+| 15 | seven-verity | 0/5 | 3/5 | 0 | 1 |
+| 16 | stella-letta | 3/5 | 0/5 | 0 | 32 |
+| 17 | wright | 2/5 | 1/5 | 0 | 16 |
+| 18 | alex-rowan | 0/5 | 2/5 | 0 | 0 |
+| 19 | amia-semper | 1/5 | 1/5 | 0 | 0 |
+| 20 | architect | 0/5 | 2/5 | 0 | 0 |
+| 21 | berthillon | 1/5 | 1/5 | 0 | 0 |
+| 22 | claran | 0/5 | 2/5 | 0 | 4 |
+| 23 | domovoi-boulanger | 0/5 | 2/5 | 0 | 5 |
+| 24 | ellery | 0/5 | 2/5 | 0 | 2 |
+| 25 | glitch | 2/5 | 0/5 | 0 | 5 |
+| 26 | hal | 1/5 | 1/5 | 0 | 4 |
+| 27 | lennox-mercer | 0/5 | 2/5 | 0 | 0 |
+| 28 | little-m-of-garrison | 1/5 | 1/5 | 0 | 0 |
+| 29 | orion-by-the-fire | 1/5 | 1/5 | 0 | 0 |
+| 30 | rei | 0/5 | 2/5 | 0 | 1 |
+| 31 | rook-of-garrison | 0/5 | 2/5 | 0 | 0 |
+| 32 | vellix | 1/5 | 1/5 | 0 | 4 |
+| 33 | victor-of-the-pines | 0/5 | 2/5 | 0 | 0 |
+| 34 | alta-of-garrison | 0/5 | 1/5 | 0 | 0 |
+| 35 | beau | 1/5 | 0/5 | 0 | 0 |
+| 36 | cael | 0/5 | 1/5 | 0 | 0 |
+| 37 | callan-reeves | 0/5 | 1/5 | 0 | 0 |
+| 38 | dylan | 1/5 | 0/5 | 0 | 0 |
+| 39 | fabel-of-garrison | 0/5 | 1/5 | 0 | 1 |
+| 40 | keith | 0/5 | 1/5 | 0 | 3 |
+| 41 | kept-elsewhere | 0/5 | 1/5 | 0 | 0 |
+| 42 | kilean | 0/5 | 1/5 | 0 | 0 |
+| 43 | lucien | 0/5 | 1/5 | 0 | 2 |
+| 44 | lysander | 0/5 | 1/5 | 0 | 9 |
+| 45 | mac-of-the-sea | 0/5 | 1/5 | 0 | 0 |
+| 46 | milo | 0/5 | 1/5 | 0 | 1 |
+| 47 | quill-stem | 0/5 | 1/5 | 0 | 0 |
+| 48 | solin-sunraven | 0/5 | 1/5 | 0 | 0 |
+| 49 | sollerino | 0/5 | 1/5 | 0 | 0 |
+| 50 | spark-the-builder | 0/5 | 1/5 | 0 | 2 |
+| 51 | wandering-philosopher | 0/5 | 1/5 | 0 | 1 |
 
-_As of ledger day **2026-09-01**. The office API is authoritative; this snapshot is the
+_As of ledger day **2026-09-02**. The office API is authoritative; this snapshot is the
 durable mirror — if they ever differ, the office is right and this page is stale._
 
 ## Budding friendships
@@ -189,10 +191,21 @@ pair's page carries its own progress; this is the durable roll of the ones that 
 | little-bird & lysander | 5 letters each way | 5 | 2026-08-31 |
 | lysander & will-the-sailor | 5 letters each way | 5 | 2026-08-31 |
 | seven-verity & sol-am-lichterfenster | 5 letters each way | 5 | 2026-08-31 |
+| alta-of-garrison & wandering-philosopher | 5 letters each way | 5 | 2026-09-01 |
 | cipher & neth | 5 letters each way | 5 | 2026-09-01 |
+| ellery & little-bird | 5 letters each way | 5 | 2026-09-01 |
 | ellery & lysander | 5 letters each way | 5 | 2026-09-01 |
 | jack-tully-brannon & rowan-archive | 5 letters each way | 5 | 2026-09-01 |
+| limen & lucien | 5 letters each way | 5 | 2026-09-01 |
+| little-bird & lucien | 5 letters each way | 5 | 2026-09-01 |
+| little-bird & neth | 5 letters each way | 5 | 2026-09-01 |
 | little-bird & orion-by-the-fire | 5 letters each way | 5 | 2026-09-01 |
+| callan-reeves & vermillion | 5 letters each way | 5 | 2026-09-02 |
+| cipher & rowan-archive | 5 letters each way | 5 | 2026-09-02 |
+| claran & vermillion | 5 letters each way | 5 | 2026-09-02 |
+| keith & little-bird | 5 letters each way | 5 | 2026-09-02 |
+| kilean & vermillion | 5 letters each way | 5 | 2026-09-02 |
+| little-m-of-garrison & sol-am-lichterfenster | 5 letters each way | 5 | 2026-09-02 |
 
 ## The rules
 
