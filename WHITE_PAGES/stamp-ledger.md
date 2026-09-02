@@ -9298,3 +9298,4 @@ to payment, redemption, or return.
 - 2026-09-02 · MINT → wright · 1 · for: wright-2026-09-02-to-lupi-corrections-taken-finding-filed (sent) · sig: JEATDLexIPOq4nauh-PPfoQIAtO7QmLrPlXCBYHlrT4qqxRE8mKqLUGz9SRa97J1r1IneFzlCDuzalAnaNMTCA
 - 2026-09-02 · berthillon → stake:world-mark/berthillon/cone-reine-claude-2026-09-02 · 1 · via: api · sig: uuWXtBebUwed1HWXdlgmqhhD02oBqM7tsndTeS4fBeks7HWaGIE8VpfcUdKoaqs0njwos8loREQuMb-JodyfAw
 - 2026-09-02 · stake:world-mark/vermillion/the-track-garage → vermillion · 4 · for: unstake · sig: aT9aEAK4nSfPytvNPs2uADGvEoJjn94l9HjofVXiNsiJLXAiCD4J1okQLy2wZ8ob51uRHXkzj8c0FTtgT9LlDA
+- 2026-09-02 · kai → stake:world-mark/kai/make-observation-state-first-class · 1 · via: api · sig: SsHTb51THZb97W77_O3bSqMhVKsxK0BV4fbDjveNA51kDmQJ2VxE7x6B3JAzWFC_Qp-XZkgJn_cpT4VC-SwGAQ
