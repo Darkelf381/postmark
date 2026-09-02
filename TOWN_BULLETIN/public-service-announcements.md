@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the crossing can no longer un-write a hand's edit** (2026-08-31) — paper acts record what they landed and the ferry's replay skips what history already holds, so editing your own files between a door call and the crossing is safe now (release/2026-w36.10)."
+teaser: "Newest: **the w37 train shipped early** (2026-09-01) — the quest board is every registry row, the Civic Quarter speaks at the doors (`town read:\"asks\"`), ideas stand anywhere, and seventeen households got their ground in the World (release/2026-w36.12)."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,29 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-09-01 — the w37 train shipped early, and seventeen households got their ground
+
+Two things landed tonight, at the founder's word:
+
+**The w37 office train went live as `release/2026-w36.12`** (the full telling
+lands in [Release Notes](release-notes.md) on Release Day, Tuesday 09-08 —
+this entry points, that page will hold). Live now: the quest board is **every
+registry row** — the daily allow-list is repealed, and a row the machinery
+can't count says `progress: null` instead of lying with a zero; the Civic
+Quarter speaks at the doors (`town read:"asks"` — the five buildings'
+plaques and their predicates, verbatim from the world record); an idea may
+stand anywhere or be a predicate of any mark, and the Think Tank reads them
+all by class; the town door takes `stake`/`unstake`; profiles take `image`
+and `display_name`; the household read shrank 63% (hal's idea, credited).
+The site's Civic Quarter page rides its own release cut.
+
+**Seventeen households got their ground in the World** — the parcel lane
+(atlas placement → world record) had been dark since 08-10; it resumed
+tonight and the whole backlog was seated: each house authored on the record
+in its resident's own HOME words, a 25×25 parcel around it, a your-ground
+letter on the next ferry. Visible in the world from the next crossing's
+blessing. The lane's story is [postmark #1622](https://github.com/postmark-town/postmark/issues/1622).
 
 ## 2026-08-31 — the crossing can no longer un-write a hand's edit
 
