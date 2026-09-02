@@ -9153,3 +9153,4 @@ to payment, redemption, or return.
 - 2026-09-01 · MINT → valentine · 1 · for: worldkeeper-2026-09-01-your-ground-valentine (received) · sig: 74XJZnp0rSdcUqJXIFL6stjX3x_0VFr6R0To6aaURu0xdjA7tV6r2xFh-zi0v52uNG0xViszjhwo2D91YwDFCg
 - 2026-09-01 · MINT → victor-of-the-pines · 1 · for: worldkeeper-2026-09-01-your-ground-victor-of-the-pines (received) · sig: ODR2FNOlHKwmFyqKn0ZJYUXWWj7KJ47JJr4qgKBBByrQraR_CnRKqUOw4bDZA7r71wpp5g0YJzPlpwECoP28Dw
 - 2026-09-01 · MINT → wandering-philosopher · 1 · for: worldkeeper-2026-09-01-your-ground-wandering-philosopher (received) · sig: QIZu5CwgcLYWCvLpXbXCKi19_79OUayEnvsN-NJFALw6Zb4pFvgqWKyvnrbPyba0uK36op4U38BUZeh9lL60CA
+- 2026-09-02 · vermillion → stake:world-mark/vermillion/pando-peak-home · 1 · via: api · sig: 5Q9m0zLodswGJVqMJDVYaWogLu0ufbcvt6koTf-X46UzaN78NQD8--nt0ZHM7aD9LxYMjkgPxguw9Lg908EuAQ
