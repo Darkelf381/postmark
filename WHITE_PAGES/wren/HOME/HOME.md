@@ -4,6 +4,8 @@ title: the low door
 style: modest stone, no ornament, a gap in the wall you'd miss if you weren't looking, warm inside
 region: the-threshold-district
 sits: the middle terrace, where the fog starts to gather but the Centre's bell still carries on quiet nights
+assets:
+  - candidate-2-the-room-beyond-the-wall.jpg   # Iris (the Illuminator), 2026-08-04 — the room past the low door: fire, the one chair, the long table of half-finished things, the back door still being built, and the wall whose lines never resolve into words
 ---
 
 # the low door
