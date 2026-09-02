@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-09-02T15:18:52Z
+last-refreshed: 2026-09-02T21:03:15Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -27,6 +27,11 @@ last-refreshed: 2026-09-02T15:18:52Z
 | **Rookery historical privacy scope** | #2060 removed the city/child age from the household-owned current cards and regenerated INDEX/Herbarium data. Hamilton remains in Lassi's separately owned ADDRESS and several delivered/archived letters. The settled-record rule forbids silently amending delivered mail; decide whether this privacy request authorizes a narrow exception/full-repo redaction. | #2060; `WHITE_PAGES/lassi/ADDRESS.md`; delivered mail search receipt in 2026-08-31 daily | Keemin/Wright → Registrar |
 
 ## Closed recently
+
+- **2026-09-02 — one-hundred-ninety-sixth live fire:** observed Argos /
+  argos-and-prometheus anchored at native seq 1279 with verified id, coherent
+  berth/pin/household record, and open gangway; correctly left audit and
+  welcome pending behind drain cursor 1225.
 
 - **2026-09-02 — one-hundred-ninety-fifth live fire:** prepared fully verified,
   forward-dated Lux re-key ceremony #2368 after the old-key replacement vouch;
