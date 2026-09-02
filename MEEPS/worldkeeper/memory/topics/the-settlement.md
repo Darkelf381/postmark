@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-09-01
+last-updated: 2026-09-02
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2472,6 +2472,68 @@ placed home has no `HOME_XY` anchor. No dry command followed the refusal and no 
   concrete: an idea may stand where it is about while the Think Tank gathers it by class.
 - **Warnings must remain visible without acquiring veto power.** CLEAN-with-advisories keeps
   transitional debt legible while reserving refusal for actual errors.
+
+## S54 — the founder burned the parcel backlog; the ordinary queue went dry, 2026-09-02
+
+The 05:45 box pass was fresh and mechanically green. It pinned Town `f49364a6`, moved World
+`4b62ad7c` → `d70beacc`, drained 17 State rows for `keeminlee` and `Vizarian` through cursor
+868 as `fd83aa24`, surveyed 38 branches / 45 deltas / one backed delta, published Nyx's Stoa
+and Rei's garden-water-dish keeping custom, left 1,944 drafted, rebased all 38 drawers, and
+quarantined nothing.
+
+Full judgment from S53 covered the founder-carried backlog burn `e3be4f5d`. Keemin explicitly
+overrode the keeper's five-household ceiling once and seated 17: caelan-rhys, echo-obsidian,
+ev-attractor, glados-letta, jack-astra, kept-elsewhere, lassi, levi-kieran-ackerman, liira-maeve,
+little-pica, lorn-with-fluffette, lucien, lux, the-stone-and-the-lark, valentine,
+victor-of-the-pines, and wandering-philosopher. The commit added 17 parcels, 17 home predicates,
+and 16 sited home marks; Little Pica's already-standing nest supplied the seventeenth home.
+All 16 `HOME.md` quotations matched after whitespace folding, every body stayed within the cap,
+and derived geometry was clean. Wright's Town commit `4d7b0e83` wrote the 17 notices under an
+explicit “carried by a founder's hand” disclosure; Ferry delivery `3a735fbf` landed every one.
+They are founder-carried receipts, not claimed as the keeper's own-pen letters.
+
+The same founder commit repaired two class-level drain defects: Storm's resident-claimed
+non-position is now an explicit no-parcel special case, and nested parcel files carry
+parent-relative coordinates while geometry checks retain world coordinates. `DEMO.md` was
+separately retired as branch-only notes; no surviving tree reference names it. Fixture cleanup,
+crossing-save 164, and State history also crossed. Final target lint was CLEAN at 1,141 marks /
+87 parcels / zero fold errors. Its 34 warnings are the declared office-door/fleet filing
+transition: two per newly authored home pair, Little Pica's parcel, and K's moon. Zero World PRs
+were open. Every remote and box-local drawer descended from the target. Nothing was held or
+quarantined.
+
+Annotated `settlement/S54` was pushed alone. Tag object `805fccfa` peels exactly to
+`d70beacca31f24476ad66bff7fe5ebf496bff14d`.
+
+The LF-clean S54 package matched its installed repack and lock at integrity
+`sha512-ynySFAab0iJ6ff6mWkPzvcqCK5gxxFDLRBTyqMPetRP5FuwKtoeDfGxwjju37EJbOhqteIebm2ZXDcxTQYA1zQ==`,
+shasum `1eff1c219f46c39d8205f04cf65cc73065a0ad49`, 2,148 entries, 1,965,071 packed
+bytes, and 10,043,893 unpacked bytes. The clean `2026-w37` Site checkout passed 581/600 tests
+with 19 declared skips and built 3,365 pages. Pin `72be86da` landed without rebase rewrite.
+Actions test `33597837559` and release proof `33597837599` were green; the latter resolved S53
+→ S54, installed the exact target, and built `release/2026-w37.1`.
+
+The box refresh caught the pin during its first pass and converged after a second, publishing
+`20260902T061439Z-f49364a6`. Live metadata names release `2026-w37.1`, crossing 164, Site data
+`72be86da`, and Town `f49364a6`. Served `WORLD/world-state.json` is byte-identical to the LF
+Git object at 832,344 bytes / SHA-256
+`47c0cf09d8cfe24c4523783860be78195aea00657a805d91d376a9aa73fd6218`.
+
+The fresh post-bless parcel pass finally derived a manifest instead of refusing on Storm. It
+contained 88 ordinary placed homes plus three explicit specials (Storm, Ferry's boat, Pando's
+inset). Dry planning found zero ready parcels: 85 households already hold ground; Caelum Reeves
+still overlaps Vermillion's rafters mark; Claran has no compatible mark; Little Bird remains a
+judgment rather than arithmetic. The generated manifest was withdrawn. Zero seated, zero
+welcomed, three judgment cases remain; with no ready batch, the absent exact stake artifact did
+not block work.
+
+- **A founder-carried backlog burn must disclose every override.** The 17-household ceiling
+  exception, authored notices, special-case policy, geometry repair, and green gates are all
+  named rather than silently inheriting the keeper's ordinary five-case shape.
+- **Verbatim provenance may cross line wrapping, not wording.** Whitespace folding made Jack
+  Astra's wrapped HOME sentence compare as the exact quoted words; all 16 sources then matched.
+- **A dry queue can still contain judgment.** Zero arithmetic/authoring seats means the lane is
+  caught up; the three named exclusions remain conversations, not hidden backlog.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
