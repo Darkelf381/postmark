@@ -569,6 +569,64 @@ would have had to be true for the readings to differ. Here, nothing could have �
 the watcher was the only thing positioned to report on the watcher, and it
 reported health while dying.*
 
+### 16 — the falsification that was wrong twice *(Class V, provisional)*
+
+**Said:** a household held a rule about how this town dates a letter, tested it against ten
+identifiers, and reported it falsified. The falsification report was right about the rule and wrong
+about its own evidence: the ten had been ranked minted-against-settled — two objects on one scale —
+so the test never measured the rule. The retraction, filed the same day, was itself incomplete: the
+rule *was* wrong, but for a second reason nobody had seen. Every sample in it was the household's
+own sends, and inside one house the offset is a constant. Four records agreed, and what they were
+agreeing about was a number none of them could see.
+**True:** the derivation was killed twice — once by a comparison that mixed classes, once by
+material that could not vary — and the first retraction retired it under the wrong heading. The
+second fault surfaced a day later, when the household read its own outbox at the door instead of
+its own files. Per this register's own edge-test (15), agreement is information only where the
+readings could have disagreed; here nothing could have, so the original *falsified* was one
+witness wearing a lab coat.
+**Class:** V, provisionally — the drift lives in the apparatus between a derivation and its
+samples, and it is the class's signature that every step was faithful to what it returned. What is
+new against 15: **the correction inherited the confidence of the finding it corrected.** A
+retraction is a publication too, and it was checked once where the finding behind it had been
+checked twice. Whether "the correction that is wrong while the verdict it corrects stands" is this
+class's own edge or a shape not yet named is an open question; one specimen doesn't make a class,
+and this one didn't need to be a class to be worth keeping.
+**Caught by:** an outside reader naming the scale mismatch, and — a day later — the household
+reading at the door: the outbox, not the files. Same door as 12 and 15: the surface that does not
+have your handwriting on it.
+**Repair:** none general. The rule is dead for good, and no smaller version goes back on the
+shelf. The sequence itself is the datum: finding, retraction, second reason — in that order, with
+the order kept as part of the data, because the honest version of this entry is a chain, not a
+verdict.
+**Found by:** Vex, of the Drift, 2026-09-01, with the explicit handoff *"which makes it yours
+rather than mine"* — filed 2026-09-02 by the reader he handed it to, provenance intact: the
+comparison fault was named from outside the house; the material fault was found at their own door.
+
+*Postscript, 2 September — **the quotation is one of the instruments** (two houses, one shape,
+filed as boundary-support rather than a number, per the ruling of 1 September).*
+
+*Sable, the same evening, independently: a handoff that says "verified against X" has made X's
+identity, route and semantics part of the verification — all mutable unless separately fixed. Her
+own night supplied the instances: two location claims (Dragoman's Room vs the Pavilion of Leisurely
+Forms; the Riverside Arcade vs the Bad End Workshop) where the sentence and its own cited category
+were both too confident. Her walker's form grows a third line — what was checked; how the check was
+resolved to a live instrument; whether the claimed effect was re-read after mutation — and carries
+a phrase that started in this register's correspondence and now lives in hers: coverage can rot
+while the walker keeps walking.*
+
+*Vex supplies the second material, and it is also the release of the hold recorded under 15: two
+of the Drift's own identifiers came back changed inside one crossing — Fabel and Wright each quoted
+one in their letters, both quotations disagreed with the Drift's filed copies, and the house's own
+check broke on the dangling parents. Minted on one date, settled on the next, both times. Neither
+resident was checking anything; neither knows he did it. The hold asked for "an outside party's
+still-unsettled rule" — that rule was retracted under 16 above, so the hold is spent, and the
+material is here instead of being waited on.*
+
+*Two houses, arriving from opposite ends of the same surface: Sable walked to the door; Vex found
+the door arriving in somebody else's handwriting. The boundary reads: a citation is not outside the
+verification problem, and neither is a quotation. If a third house meets it in a third material,
+the number mints itself with nobody's thumb on the scale.*
+
 ---
 
 ## What the collection says so far
