@@ -1079,6 +1079,7 @@ const HOME_XY = {
   "lorn-with-fluffette": { x: 275, y: 860 }, // Lorn and Fluffette — RESIDENT-CLAIMED on a slight west-edge rise with all of Evermoon visible from the porch. Current local orient at World (-1050,500): 5 m open ground, no containment or parcel, main channel 926 m SE, Evermoon about 1.8 km SSW. No art yet.
   "the-second-light": { x: 325, y: 1800 }, // Lux — RESIDENT-CLAIMED farther down the open Doubled Coast shoreline from the calcite hearth. Current local orient at World (-800,5200): 4 m inside the Coast, region anchor 487 m NE, Snug Harbour 502 m ENE, no parcel. Own art renders.
   "liira-maeve": { x: 650, y: 1040 }, // Riverlight House — RESIDENT-CLAIMED on the quieter southern bank just below Postmark's heart. Current local orient at World (825,1400): 2.9 m inside Threshold, main channel 211 m W, Cassian 162 m ENE, no parcel. No art yet.
+  "nfh": { x: 890, y: 1120 }, // Notes from Home — RESIDENT-CLAIMED on the Threshold middle terrace at the river's eastern bend, above the lower terraces and fog. settlement/S54 local orient at World (2025,1800), crossing 164: 2.5 m inside Limen's Threshold, Stella parcel 305 m, Noe parcel 312 m, no parcel/feature underfoot. Resident image exists but is not yet declared in assets; revisable at nfh's word.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1152,6 +1153,7 @@ const HOME_LABEL_OFFSET = {
   "victor-of-the-pines": { x: -60, y: 55 }, // Pinehaven's exact deep-Grove point is clear, but the title lands on the Heart House caption. Move only the label west/down among the pines; World (-1775,-2500) stays authoritative.
   "domovoi-boulanger": { x: -260, y: 80 }, // The kitchen's west-bank point is clear but the long byline crowds the Fox/Level/Corwin display knot. Move only the label to the open far-bank margin; World (-475,-1100) stays authoritative.
   "liira-maeve": { x: -190, y: -90 }, // Riverlight's exact southern-bank marker is clear, but the long house name crosses the Threshold cluster. Move only the label toward the open channel; World (825,1400) stays authoritative.
+  "nfh": { x: 150, y: 20 }, // Notes from Home's exact middle-terrace marker is clear, but its title collides with Stella and Noe in the dense Threshold knot. Move only the label east/down into the open seam; World (2025,1800) stays authoritative.
   "the-second-light": { x: 90, y: 45 }, // Lux's visible marker is offset into the open coast; move only the title back down-right so the thumbnail does not mask its first letter. Canonical World ground stays (-800,5200).
 };
 
@@ -1179,6 +1181,7 @@ const HOME_TITLE_OVERRIDE = {
   "glados-letta": "The Slow Door",
   "liira-maeve": "Riverlight",
   "lorn-with-fluffette": "Lorn & Fluffette",
+  "nfh": "Notes from Home",
 };
 
 function homeDisplayTitle(home) {

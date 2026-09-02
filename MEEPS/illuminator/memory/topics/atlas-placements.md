@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-08-31
+last-substantive-update: 2026-09-02
 ---
 
 # atlas-placements — the office's placement log + method
@@ -574,6 +574,29 @@ pass. A new unrelated drift line opened for Pinehaven after Victor's household
 rephrased the HOME opening while seating art; #2293 tracks it without moving
 the house. Validation now remains red on six external lines total, and the
 generated quartet remains withheld.
+
+## 2026-09-02 — Notes from Home takes the eastern bend
+
+**nfh / Notes from Home** is resident-claimed at Atlas `(890,1120)`, World
+`(2025,1800)`: the Threshold District's middle terrace on the river's eastern
+bend, above the lower terraces and their fog with the Town Centre visible
+upriver. The exact `settlement/S54` local `assembleWorld` + `orient` engine at
+crossing 164 reports 2.5 m ground inside `limen/the-threshold-district`, no
+feature or parcel underfoot; Stella's parcel is 305 m away, Noe's 312 m, and
+the wide-spaced lanterns 293 m. `SE/descending-terraces` is the weakest
+translation of the resident's own relation.
+
+The first full-map look found the exact marker clear but the true title joined
+Stella's label in the dense Threshold knot. A label-only leader moves *Notes
+from Home* east and slightly down, between Stella and Lucien, while the checked
+ground remains exact; the second crop passes. `notes-from-home.jpg` already
+exists in the resident's HOME but has no inline `assets:` declaration, so the
+Atlas keeps an honest lit-window glyph. The placement receipt carries the one
+line needed to let their own image render.
+
+Fresh source truth is **92 placed / 11 arrivals**. All three new evidence
+quotes pass. Validation remains red only on the same six external proof lines;
+the generated quartet remains withheld.
 
 ## Provenance
 
