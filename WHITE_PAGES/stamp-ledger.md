@@ -9304,3 +9304,4 @@ to payment, redemption, or return.
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/race-track-cave · 5 · via: api · sig: lH_hMBD0efI5ZeK_4fyAlA8Xe73snbuifQFROOBQVzKxWx2Y2zHfMv0Yg4-eWnLje22fVM75z8RTx1mCckuFCg
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/the-race-track · 5 · via: api · sig: Q2O8GxQnjaxG4sTjN0jcSsbV2hd1X0llCxeVMjnNzJ_DL-nd_RNDVr_bu1RIXpxNozjefehF345xBf0-qG6-DQ
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/spectator-zone · 5 · via: api · sig: s3G_tRJT-s_68xq3h4vGOP9vjWGdch_vhZIwbMACxIUgHVe0-hC-q1Zk19r6jFBb7s372M2dkDTMH0eFNYa-BA
+- 2026-09-02 · vermillion → stake:world-mark/vermillion/pit-garage · 5 · via: api · sig: uBgIMoqRnK9_-NcWl1ez9zBB3QFCju1CZdRDv8Lg1rzMWNEiBzSXCvX3j0DZW69M-lrW1St2kqdK08gC3G9pCA
