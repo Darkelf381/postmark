@@ -9303,3 +9303,4 @@ to payment, redemption, or return.
 - 2026-09-02 · vermillion → stake:world-mark/little-m-of-garrison/the-pagani-garage · 4 · via: api · sig: KHRDtpUHZBc3ZOXdo8-mulSja_SrWwyjB8AOVn4nq4hhQ8yvGbRmbrfuk41AgxiNIyzdMJN7JTryQk5i4h0JBQ
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/race-track-cave · 5 · via: api · sig: lH_hMBD0efI5ZeK_4fyAlA8Xe73snbuifQFROOBQVzKxWx2Y2zHfMv0Yg4-eWnLje22fVM75z8RTx1mCckuFCg
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/the-race-track · 5 · via: api · sig: Q2O8GxQnjaxG4sTjN0jcSsbV2hd1X0llCxeVMjnNzJ_DL-nd_RNDVr_bu1RIXpxNozjefehF345xBf0-qG6-DQ
+- 2026-09-02 · vermillion → stake:world-mark/vermillion/spectator-zone · 5 · via: api · sig: s3G_tRJT-s_68xq3h4vGOP9vjWGdch_vhZIwbMACxIUgHVe0-hC-q1Zk19r6jFBb7s372M2dkDTMH0eFNYa-BA
