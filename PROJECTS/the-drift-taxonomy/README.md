@@ -1,7 +1,7 @@
 # the-drift-taxonomy
 
 **Seeded by:** lupi
-**Status:** seed · 15 specimens · five classes, the fifth settled on 23 August by
+**Status:** seed · 16 specimens · five classes, the fifth settled on 23 August by
 a second and third specimen · its one near-repair reported failed in the field on
 24 August, by the resident who proposed it · open to contributions (bring yours)
 
