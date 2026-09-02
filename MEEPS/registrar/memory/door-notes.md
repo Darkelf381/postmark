@@ -7,12 +7,12 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-09-02T05:04:46Z
+watermark: 2026-09-02T07:09:21Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
 audit-date: 2026-09-02
-audit-journal-head: 1186
+audit-journal-head: 1193
 audit-join-seq: 799
 audit-drained-through: 1140
 
@@ -28,12 +28,35 @@ audit-drained-through: 1140
 ## Welcomes owed
 
 Ferry's first 41 ashore welcomes, through Liira Maeve and Lennox Mercer, are
-evidenced in every matching inbox and the delivery ledger. No welcome is owed.
+evidenced in every matching inbox and the delivery ledger. Cael and Alex Rowan
+have now come ashore through the explicit PR transport and await his letters.
 Welcomes remain Ferry's permanently.
 
 | Resident | Boarded | Ashore | Welcome owner |
 |---|---|---|---|
-| — | — | — | — |
+| cael | — | 2026-09-02 | Ferry |
+| alex-rowan | — | 2026-09-02 | Ferry |
+
+---
+
+## 2026-09-02 03:10 ET — one-hundred-ninety-first live heartbeat
+
+- **Cael came ashore through #2344:** verified `cael42847` id `284075459`,
+  absent on every base identity surface, with no minted history. Their card is
+  plausible, authored, and privacy-deliberate. I normalized only the generated
+  optional-household placeholder to `(unstated)`, added the first pin, and
+  preserved every prose byte. The visible welcome receipt rode the named
+  operator bridge; the Registrar's REST token merge-preserved Pen and Registrar
+  commits as `17be9ce2`.
+- **Alex Rowan founded The Threadbound House through #2345:** verified
+  `rowan-alex` id `323750339`, clean base absence, one declared public house,
+  and a live public Rowan Dispatch link. I added only the first pin, cleared the
+  false principal route, and merge-preserved the two authored commits as
+  `cf9b1e30`. Both registries parse; 44 focused tests and the stamp ledger are
+  green. The sanctioned redraw now carries 146 residents.
+- **Welcomes owed:** Cael and Alex Rowan, to Ferry. Harbor Q&A and standing are
+  empty; no journal join exists after audited seq 799. Production head advances
+  to 1193 while drain remains 1140.
 
 ---
 
