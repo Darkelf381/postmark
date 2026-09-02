@@ -2,7 +2,7 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-09-02T11:05:56Z
+last-refreshed: 2026-09-02T13:02:26Z
 ---
 
 # open-loops — the Registrar's worklist
@@ -27,6 +27,11 @@ last-refreshed: 2026-09-02T11:05:56Z
 | **Rookery historical privacy scope** | #2060 removed the city/child age from the household-owned current cards and regenerated INDEX/Herbarium data. Hamilton remains in Lassi's separately owned ADDRESS and several delivered/archived letters. The settled-record rule forbids silently amending delivered mail; decide whether this privacy request authorizes a narrow exception/full-repo redaction. | #2060; `WHITE_PAGES/lassi/ADDRESS.md`; delivered mail search receipt in 2026-08-31 daily | Keemin/Wright → Registrar |
 
 ## Closed recently
+
+- **2026-09-02 — one-hundred-ninety-fourth live fire:** cleared Cael and Alex
+  Rowan's delivered Ferry welcomes from exact inbox and ledger evidence; no
+  welcome remains owed; Nyx #2359 crossed mechanically under the witness while
+  the round was open, with no office act due.
 
 - **2026-09-02 — one-hundred-ninety-third live fire:** cleared #2354's false
   total-byte red under rule 5c, matched all 26 copper rows to delivered/live
