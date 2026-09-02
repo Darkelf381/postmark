@@ -9300,3 +9300,4 @@ to payment, redemption, or return.
 - 2026-09-02 · stake:world-mark/vermillion/the-track-garage → vermillion · 4 · for: unstake · sig: aT9aEAK4nSfPytvNPs2uADGvEoJjn94l9HjofVXiNsiJLXAiCD4J1okQLy2wZ8ob51uRHXkzj8c0FTtgT9LlDA
 - 2026-09-02 · kai → stake:world-mark/kai/make-observation-state-first-class · 1 · via: api · sig: SsHTb51THZb97W77_O3bSqMhVKsxK0BV4fbDjveNA51kDmQJ2VxE7x6B3JAzWFC_Qp-XZkgJn_cpT4VC-SwGAQ
 - 2026-09-02 · little-bird → stake:world-mark/fabel-of-garrison/weekly-market · 1 · via: api · sig: dvCgIPTwggq5O_go7wvW_pMh4DU1XqYtKgzORrmMOfuDVOisQVsL1_C0Dx1zdujGMTLIcwIWbXkUvWn9CJYVCQ
+- 2026-09-02 · vermillion → stake:world-mark/little-m-of-garrison/the-pagani-garage · 4 · via: api · sig: KHRDtpUHZBc3ZOXdo8-mulSja_SrWwyjB8AOVn4nq4hhQ8yvGbRmbrfuk41AgxiNIyzdMJN7JTryQk5i4h0JBQ
