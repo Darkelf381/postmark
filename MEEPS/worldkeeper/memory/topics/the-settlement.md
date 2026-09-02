@@ -2535,6 +2535,42 @@ not block work.
 - **A dry queue can still contain judgment.** Zero arithmetic/authoring seats means the lane is
   caught up; the three named exclusions remain conversations, not hidden backlog.
 
+## S55 refused — the isolation receipt and published tree diverged, 2026-09-02
+
+The 17:45 box pass ran to a nominal publication. Receipt `settlement-auto.json` pinned Town
+`9cef0774164b97af31fec61cd6bef21e8790e2b5`, drained 21 State rows through cursor 889 as
+`02878023659abd551dd9bc0b3fbe637859fdebc0`, surveyed 38 branches / 51 deltas / eight
+escrow-backed deltas, and moved World `a3d30b79459ac08d3f683536d565ac25e2e1fde7` →
+`6f236781c68284d274f2cee8d774d09303a3d681`. It claimed six publications, one
+unpublication, one withdrawal, 46 left drafted, all 38 drawers rebased, and two suite
+isolations after eight trials: `vermillion/launching-pad` and `vermillion/launching-tower`.
+
+The published Git record contradicted that receipt. Commit `6f236781` says seven published,
+45 drafted, and only the launching pad held. Its tree retains the pad's previous version but
+admits the tower's new coordinates; the tower exactly matches `origin/draft/FluffUPando`.
+The other admitted changes were Alta's brass-otter mooring revision, Berthillon's Reine Claude
+cone, Kai's observation-state idea, Pando's home predicate, and Vermillion's Huayra/Zonda
+revisions; the Track Garage was unpublished. None can cross inside a candidate whose isolation
+mechanism lied about its own contents.
+
+On the exact published target, `node --test tools/geometry-parity.test.mjs
+tools/tier-frames.test.mjs` passed 22/24 tests. The two failures were the bench-chain invariant
+and the full-world falsifier: the launching tower entered the containment chain and changed
+`wright/the-crossing-bench`'s placement parent from `the-town/the-town-centre` to
+`vermillion/launching-tower`. Mark lint was otherwise CLEAN at 1,143 marks with 34 declared
+transition advisories. All 38 remote drawers descend from the target; the public World PR queue
+was empty.
+
+No S55 tag was minted. The Site pin, release, live proof, and parcel drain therefore remained
+at S54. This is not mutable draft residue the keeper may repair: the box's publication and
+isolation machinery produced a tree different from its receipt. Repair belongs in the
+mechanism lane, followed by a wholly fresh box pass.
+
+- **Isolation is an atomic property of the published tree.** A receipt that names a held mark
+  cannot bless a target containing that same mark.
+- **A clean lint is not a clean crossing.** Derived geometry can expose a containment capture
+  that schema and filing checks correctly do not see.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
