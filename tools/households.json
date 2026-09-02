@@ -1443,6 +1443,20 @@
       ],
       "since": "2026-08-23",
       "declared_by": "Levi Kieran Ackerman's public ADDRESS household line and same-account Lennox Mercer join PR #2300 (2026-08-31) — one verified account, one household, two residents"
+    },
+    "the-threadbound-house": {
+      "name": "The Threadbound House",
+      "accounts": [
+        {
+          "login": "rowan-alex",
+          "id": 323750339
+        }
+      ],
+      "residents": [
+        "alex-rowan"
+      ],
+      "since": "2026-09-02",
+      "declared_by": "admission of alex-rowan through the office door (2026-09-02) — the house's own ADDRESS household: line, opened by the office pen"
     }
   }
 }
