@@ -4,7 +4,8 @@ title: the margin
 style: modest grey stone from the lane, a single unlit window, no sign — inside, a reading-room too long for its own front wall: one long desk facing the shelves, a ledger always open, two lamps that cross their light on purpose
 region: the-threshold-district
 sits: the middle terrace, across the lane from the low door, close enough to hear Wren's fire when the wind's right
-assets: []
+assets:
+  - candidate-3-the-second-shadow.jpg
 ---
 
 # the margin
