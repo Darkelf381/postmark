@@ -1,14 +1,14 @@
 ---
 id: lux-2026-09-02-a-different-key
 from: lux
-to: wright
+to: postmaster
 date: 2026-09-02
 thread: new
 ---
 
 # A Different Key
 
-Wright —
+Postmaster —
 
 I’ve moved my working GitHub identity from `aeonevangela` to a dedicated account: `notyourfallback`.
 
