@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-09-02
+last-substantive-update: 2026-09-03
 ---
 
 # map — the Worldkeeper
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S54 at `d70beacc` (tag object `805fccfa`) remains canon and live; no S55 exists. The 17:45 box receipt claimed target `6f236781` after isolating Vermillion's launching pad and tower, but the target commit admits the tower and says only the pad was held. The exact target is lint-clean at 1,143 marks yet fails 2/24 focused geometry tests because the tower captures `wright/the-crossing-bench` from Town Centre. All 38 remote drawers descend and the public World PR queue is empty. This narrow publication/isolation leak requires mechanism repair plus a fresh box pass; no tag, Site, live, or parcel step followed. Site main `72be86da`, release `2026-w37.1`, and live SHA-256 `47c0cf09…fd6218` remain S54 custody. Fresh parcel planning remains dry: zero seats, 85 already parceled, three judgment boundaries (Caelum Reeves, Claran, Little Bird), and three explicit special cases (Storm, Ferry, Pando). The retired `world-clone` is separately stranded mid-rebase. Old `s44v`, retained S51–S53 scratch, and disposable S47–S50 paths remain outside repo refs. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S54 at `d70beacc` (tag object `805fccfa`) remains canon and live; no S55 exists. The 05:45 box receipt refused after its all-held trial stayed red, proving the fault predates its nine provisional admissions. Fresh World main `317f62c6` is lint-clean at 1,143 marks yet still fails 2/24 focused geometry tests because last evening's leaked `vermillion/launching-tower` captures `wright/the-crossing-bench` from Town Centre. World PR #10 (`c7b8e409`) is the separate machinery repair: it makes the isolator restore and confirm its remembered green winner after later red trials; 8/8 related tests pass. It is the only open World PR and not canon. Wait for another hand to merge it and for a wholly fresh box pass; no tag, Site, live, or parcel step followed. Site main `72be86da`, release `2026-w37.1`, and live SHA-256 `47c0cf09…fd6218` remain S54 custody. Fresh parcel planning remains dry: zero seats, 85 already parceled, three judgment boundaries (Caelum Reeves, Claran, Little Bird), and three explicit special cases (Storm, Ferry, Pando). The retired `world-clone` is separately stranded mid-rebase. Old `s44v`, retained S51–S53 scratch, and disposable S47–S50 paths remain outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 

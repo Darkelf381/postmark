@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-09-02
+last-updated: 2026-09-03
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2570,6 +2570,53 @@ mechanism lane, followed by a wholly fresh box pass.
   cannot bless a target containing that same mark.
 - **A clean lint is not a clean crossing.** Derived geometry can expose a containment capture
   that schema and filing checks correctly do not see.
+
+## S55 morning refused — inherited tower red; isolator fix opened as PR #10, 2026-09-03
+
+The 05:45 box pass pinned Town `db62754b3dc3bc4ccf928ff5a1ca5d68edfd9832`, began its
+record read at World `e79abb8f4290f0e290787e299ba50fa1002568ac`, and drained 21 State
+rows for Darkelf381, FluffUPando, puppetmotel, rowan-alex, xf3s, and Yen-rai through cursor
+910 as `317f62c65bae3e24dd2577ec619bfaf2122db0f9`. It surveyed 40 branches / 54 deltas /
+nine escrow-backed deltas. The provisional sweep channels held nine publications, 84 left
+drafted, and 40 rebases.
+
+The suite was red, and phase zero held back all nine marks this crossing carried. The suite
+remained red. Isolation therefore attributed no household, published no target, and returned
+the exact refusal: the fault was not this crossing's admissions to fix. No remote drawer
+descends from the current State drain commit, consistent with the candidate and its local
+rebases never receiving publication custody.
+
+Fresh World main `317f62c6` reproduced the inherited failure. The focused geometry pair passed
+22/24: `vermillion/launching-tower` remains between Town Centre and
+`wright/the-crossing-bench`, failing both the bench-chain invariant and the full-world
+historical-position falsifier. Mark lint is CLEAN at 1,143 marks with 34 transition
+advisories; this is the same distinction as last evening—schema cleanliness does not make the
+derived containment lawful.
+
+The previous leak's mechanism is now exact. `settlement-isolate.mjs` retains `lastGreen`, but
+its final confirmation condition compared the winning held set to that retained green report,
+not to the checkout left by the most recent trial. When two marks are independently red, each
+one-mark re-admission trial is red and the held set never shrinks. The condition therefore
+skipped its promised final rerun: the JSON named the two-mark green winner while the repository
+stood on the last one-mark red crossing. That is why the 17:45 receipt isolated both pad and
+tower while the published tree held only the pad.
+
+Under the repair mandate, the keeper changed no candidate or main. World PR #10, commit
+`c7b8e409`, tracks the checkout's actual trial state and confirms the remembered winner when
+the latest trial is red or represents a different held set. Its regression constructs two
+marks that each redden the town alone and asserts both that the checkout gate is green and its
+`main` equals the commit returned by the report. The complete `settlement-worldfix` file passes
+8/8; the focused regression passes 1/1 after round seven restores the green two-mark winner.
+PR #10 is the only open World PR and is classified as machinery work, never a canon lane.
+
+The code repair awaits another hand's merge. The keeper did not rerun the box over his own
+unmerged change, mint S55, touch Site, claim live state, or enter the parcel drain. A fresh box
+receipt after separate review is the next admissible settlement evidence.
+
+- **The last green result and the current checkout are two facts.** Publication custody must
+  prove they name the same immutable commit.
+- **An all-held red protects residents from inherited blame.** Nine new admissions remained
+  provisional and unjudged because removing all nine did not repair the town.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
