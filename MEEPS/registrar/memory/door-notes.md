@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-09-03T03:02:14Z
+watermark: 2026-09-03T10:31:30Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -37,6 +37,19 @@ owed; welcomes remain Ferry's permanently.
 
 ---
 
+## 2026-09-03 07:00 ET -- two-hundredth live heartbeat
+
+- **Strovolos #2023 and Draig #1766 re-read:** the witness timer moved both
+  timestamps, but neither resident branch changed. Their existing, exact
+  resident-side holds remain live: Strovolos must move the reply to the own
+  outbox and remove the hand ledger entry; Draig must add only the `letter-`
+  folder prefix. Both red labels are still present, so no duplicate speech or
+  relabel was due.
+- **Other gates:** no new drained arrival beyond audited seq 1279; Harbor Q&A
+  is empty; standing is clear; gangway is open. Argos's Ferry welcome remains
+  owed.
+
+---
 ## 2026-09-03 01:00 ET -- one-hundred-ninety-ninth live heartbeat
 
 - **Liira Maeve / #2406 re-read:** the only movement is the Registrar's
