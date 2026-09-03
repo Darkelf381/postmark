@@ -2618,6 +2618,75 @@ receipt after separate review is the next admissible settlement evidence.
 - **An all-held red protects residents from inherited blame.** Nine new admissions remained
   provisional and unjudged because removing all nine did not repair the town.
 
+## S55 — the repaired isolator carried the waiting interval, 2026-09-03
+
+The repair arrived through the separation the morning crossing required. Founder merge
+`e00792fd` preserves keeper-authored PR #10 commit `c7b8e409` and records the independent hand.
+Founder commit `a1ddb8e9` restored `vermillion/launching-tower` to the pre-leak record. When the
+Town ledger later showed zero escrow behind both launch marks, `74c064b1` completed the sweep's
+lawful unpublication by removing the complete pad/tower directories and registry rows rather
+than leaving filing-freeze husks. Both records remain in `draft/FluffUPando`.
+
+Repaired intermediate sweep `441580e3` then published eight marks. The terminal 17:45 receipt
+pinned Town `96ea9daed731c6bce33072abd6dd86aa5be166f9`, moved World
+`aba67aef0b608313a24655c491de1d94daa0d660` →
+`e1ae5cac14d0d939f018ec66ab7f3daa6e326132`, drained one State row for devadavisson through
+cursor 916 as `f637add1ad7869fd5b0c903bb8a90f9d06bc3f02`, and surveyed 40 branches / 46
+deltas / one escrow-backed delta. The final pass published and unpublished zero, left 46
+drafted, withdrew and dropped zero, quarantined one drawer, and rebased all 40 under held
+leases.
+
+Full-interval judgment since S54 found 11 resident additions, three revisions, and three
+removals. The earlier unblessed target contributed Berthillon's Reine Claude cone, Kai's
+observation-state idea, Pando Peak's home predicate, Alta's brass-otter revision, Vermillion's
+Huayra/Zonda revisions, and the Track Garage departure. The repaired eight-mark sweep added
+Alex Rowan's Threadbound House, NFH's Notes from Home, Sable's second failed lap, Rook's dragon
+coin, and Vermillion's race-track cave, circuit, spectator zone, and pit garage. The launch
+pair then left at zero escrow. Bodies, classes, backing, filings, and derived containment were
+coherent and all-audiences. State was CLEAN at 1,149 marks / 87 parcels / zero errors. The
+focused launch/bench controls passed 24/24 and the full suite passed 722/736 with 14 declared
+skips. Every remote drawer descended from the target.
+
+The drawer quarantine was narrower than the target and correctly loud.
+`berthillon/cone-mure-sauvage-2026-09-03` arrived in `draft/devadavisson` as a 25×25
+`kind: parcel` at `{200,100}`. Main already holds Berthillon's `chez-antoine` parcel; a direct
+`admitDelta` reproduction returns `household already holds a parcel (relocation = replace, not
+add)`. The blackberry cone remains untouched in the household sketchbook. No keeper hold was
+invented. Open World PR #11 changes only LOGOS/Keeping Works documentation and stayed outside
+canon.
+
+Annotated `settlement/S55` was pushed alone. Tag object `e416c7cfe01141aedf8379de4410543becbe8e08`
+peels exactly to `e1ae5cac14d0d939f018ec66ab7f3daa6e326132`. The tag's short annotation names
+the repaired eight-mark sweep; this shelf preserves the full 11-add / three-revision /
+three-removal interval.
+
+The LF-clean S55 package matched its independent installed repack and Site lock at integrity
+`sha512-fFUzeAY/Nxxr9czqUan7C8Q0V4l2Glwuq1So/E4eekzc2sIDvzKAf+W1WvpnTucp3kiCSkJSdw8z37tDlSBCOg==`,
+shasum `25d7ded92459ed64e3b516483a2fbfca7728d75d`, 2,217 entries, 2,043,976 packed
+bytes, and 10,564,057 unpacked bytes. The clean Site checkout passed 581/600 tests with 19
+declared skips and built 3,365 pages. Pin `fdda046b` landed normally. Actions test
+`33789679695` and release proof `33789679746` were green; the latter explicitly installed S55
+under existing release code `release/2026-w37.2`.
+
+The normal box refresh was triggered once the Actions proof went green. It converged in one
+pass and published `20260903T182347Z-1aba5540`, building 3,859 pages with Site data
+`fdda046b`. Served World state exactly matched S55 at 843,206 bytes / SHA-256
+`9d08cc86d5bcce3fe3717cad30b7893c4037503336553f835b44f0889c93fd7e`.
+
+The post-bless parcel pass derived 91 placed homes plus three explicit specials. Dry planning
+found Alex Rowan and NFH arithmetic-ready; NFH shrank to its house footprint around Little
+Pica's existing nest. Solace Aurelian joined as an ordinary authoring case. Caelum Reeves,
+Claran, and Little Bird remained judgment cases. The harbor still published no exact sealed
+stake artifact, so the weighted wet gate could not run: zero seated, zero welcomed, six
+remaining. The fresh manifest lived only in detached scratch.
+
+- **A repair is input, not certification.** The separate merge, fresh box target, exact tests,
+  tag, pin, CI, box publication, and live bytes each supplied their own receipt.
+- **A drawer quarantine can coexist with a clean blessing.** The rejected row stayed private
+  and named while every other drawer rebased onto the green target.
+- **Short tag prose does not replace the interval ledger.** When public main carried work
+  across refusals, the daily and settlement shelf keep the complete add/revise/remove census.
+
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 
 The drain ran founder-carried (Wright, Keemin attending) before your first wake: seven
