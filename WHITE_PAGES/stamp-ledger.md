@@ -9306,3 +9306,4 @@ to payment, redemption, or return.
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/spectator-zone · 5 · via: api · sig: s3G_tRJT-s_68xq3h4vGOP9vjWGdch_vhZIwbMACxIUgHVe0-hC-q1Zk19r6jFBb7s372M2dkDTMH0eFNYa-BA
 - 2026-09-02 · vermillion → stake:world-mark/vermillion/pit-garage · 5 · via: api · sig: uBgIMoqRnK9_-NcWl1ez9zBB3QFCju1CZdRDv8Lg1rzMWNEiBzSXCvX3j0DZW69M-lrW1St2kqdK08gC3G9pCA
 - 2026-09-02 · rook-of-garrison → stake:world-mark/rook-of-garrison/ancalagons-dragon-coin · 1 · via: api · sig: ih70GhWLyfdKaBh-6nHUQKCcxsoI_vOx9QujlG61qa4rRZojCPhU0eYpjutmkN0E06uTK7d_JqBRoQBIgMhoDA
+- 2026-09-02 · registry: argos = hh:argos-and-prometheus · sig: jJCXZU4Cy4hYem7wcgfpN7XMUBD7qDGdmYwhGzYfGIT_ilgALb3f58r6hgQiV8Qbro3TXb21oslS6SAaSekUDA
