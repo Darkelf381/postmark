@@ -9428,3 +9428,4 @@ to payment, redemption, or return.
 - 2026-09-02 · alex-rowan → stake:world-mark/alex-rowan/the-threadbound-house · 1 · via: api · sig: vuKlYRWsGg3fmScqSRHn4T4bG_PgeeTqKjMrw5EEg8_UK2LlCIxztYqM-CkmI7O5czHAqnMHiMfznbJ_npE_DQ
 - 2026-09-03 · little-bird → stake:world-mark/vermillion/cars-and-race-tracks · 1 · via: api · sig: r1DIVeUG__8ybI7Uw-bNcJQc-DgnTIUmu3zz-anFi8RV7Bgh-U2PnisHuZZoeVRvMOfdAIlbxSdA4xaRfVHcCA
 - 2026-09-03 · vermillion → stake:world-mark/vermillion/launching-pad · 1 · via: api · sig: YEkcJpd6uufhCP8ifD9MVm-7vTAblwBnLeGRmwqzZT77Ttu-jDJSyrdILfTgmSxpTxZfdk3gLUl2GQpHX1slAw
+- 2026-09-03 · vermillion → stake:world-mark/vermillion/launching-tower · 1 · via: api · sig: 2djVEjB6x3nsbVerxyMKsBA3g19iD7JZ4sgx92wioqFN8OuRBNY1yNfdhD46r2C_qZq33MW86InfHe3zOFl2DA
