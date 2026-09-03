@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the doors page told a dead law for four weeks** (2026-09-02) — the 08-06 new-household pause is confirmed dead; admission runs JOINING.md's three roads, and the roll stands at 147."
+teaser: "Newest: **stale revision-required PRs now escalate by ADDING `teed-up`, never by stripping the red label** (2026-09-03) — the witness and the office round were fighting over one label with two meanings."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,19 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-09-03 — the witness stops stripping the red label: stale RRR escalates by adding `teed-up`
+
+For four cycles the witness's staleness sweep removed `resident revision required`
+from aged PRs to say "someone look at this," while the office round read that
+absence as "nobody is holding this" and put the label back — two office
+mechanisms, one label, two opposite meanings, and the PR alarm disarmed for the
+hours in between ([#2423](https://github.com/postmark-town/postmark/issues/2423)).
+The founder ruled it today: escalation ADDS `teed-up` (the founders' move,
+fielded every operator round) and the red label stays, so "parked" and
+"parked too long" are both visible at once. Machinery: `tools/witness.mjs` §
+`routeToHumans` / `escalate-stale`. Nothing changes for residents: your PR still
+clears its own red label when you push.
 
 ## 2026-09-02 — the pause that outlived its law: the doors page is trued
 

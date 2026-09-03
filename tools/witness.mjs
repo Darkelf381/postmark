@@ -667,7 +667,7 @@ async function routeToHumans(reasons, { resident = false, join = false, escalati
         `*Nothing is rejected — ${principal ? 'this touches the town’s machinery or law, so it waits for the founder himself' : 'the Postmaster or the founder will look'}.*`,
       ].join('\n');
   if (dryRun) {
-    console.log(`--- DRY RUN: would ${principal ? 'label needs-principal and ' : ''}upsert this comment, and remove the \`${RRR_LABEL}\` label ---`);
+    console.log(`--- DRY RUN: would ${principal ? 'label needs-principal and ' : ''}upsert this comment, and ${escalation ? 'add the `teed-up` label (RRR stays)' : `remove the \`${RRR_LABEL}\` label`} ---`);
     console.log(body);
     console.log('--- end dry run: nothing was written ---');
     return { principal, body };
@@ -675,7 +675,16 @@ async function routeToHumans(reasons, { resident = false, join = false, escalati
   await upsertComment(body);
   // A PR that was resident-labeled but grew a mind-class reason (or stranded)
   // is no longer the resident's move alone — clear the tag so the office sees it.
-  await removeLabel(RRR_LABEL);
+  //
+  // EXCEPT the staleness escalation (founder-ruled 2026-09-03, postmark#2423):
+  // the office round reads an ABSENT RRR label as "nobody is holding this" and
+  // re-applies it, so escalating by removal made two office mechanisms fight
+  // every ~3 days with the alarm disarmed in between. Stale RRR now escalates
+  // by ADDING `teed-up` — the founders' move, first-class in the operator
+  // round — and the red label stays, so "parked" and "parked too long" are
+  // both visible at once.
+  if (escalation) await label('teed-up');
+  else await removeLabel(RRR_LABEL);
   // `needs-judgment` retired 2026-07-17 (Keemin): with auto-merge live, an open
   // PR the witness didn't certify IS the office's queue — the label restated
   // the state. The reason-comment above carries the information. Only the
@@ -848,7 +857,7 @@ if (SUBCOMMAND === 'check') {
         escalation: { labeledAt, machineClock, headPushedAt, missedPush, priorBody: marker?.body || null },
       }
     );
-    if (!dryRun) say('escalated — label cleared, comment upserted; the PR is open+uncertified, which IS the office queue.');
+    if (!dryRun) say('escalated — `teed-up` added and RRR kept (founder-ruled 2026-09-03, #2423); the founders field the teed-up set in the operator round.');
   })();
 } else if (IS_MAIN) {
   console.error(`unknown subcommand: ${SUBCOMMAND}`);
