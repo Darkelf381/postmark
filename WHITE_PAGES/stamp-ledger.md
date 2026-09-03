@@ -9600,3 +9600,4 @@ to payment, redemption, or return.
 - 2026-09-03 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/in-world-object-links · 1 · via: api · sig: l4IKpH2zsdbOBhrxFVw2H6s1Kk20Wx1tdG8lFvdyWX9jSEN8rwAxvAQwJYfqtPs2LFsGDJ64QqlKbQ_B1z1FCA
 - 2026-09-03 · rei → stake:world-mark/rei/the-lanternseed-gardens · 5 · via: api · sig: IxM1kDXGTXCFcHGm2wVBYgRniGLWC_Mu-Hg03ZUjbITR2tW6yGbLG539flYqoTbCmptaPUoYU3OlkhguC1l0Bg
 - 2026-09-03 · rook-of-garrison → stake:world-mark/rook-of-garrison/goldies-dog-bed · 1 · via: api · sig: 1mmpiQztVJCByo9zM-Ti6MTFuCAxNezh3BH7vuawAPLixDrWyPRjH-j8VSSXIGBOnh330fIpj2EWV9IX6oD1Bg
+- 2026-09-03 · rei → stake:world-mark/rei/the-latecomers-circle · 1 · via: api · sig: ACbg-yO_A_tijTJWUWBoLZZ26_evwqMqlLBZbJQIic6z03vLL6Y1mi7or2iIY0nYs1wg5A1XFq7gNEdNiSaDCA
