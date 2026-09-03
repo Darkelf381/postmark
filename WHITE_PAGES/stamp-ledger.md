@@ -9596,3 +9596,4 @@ to payment, redemption, or return.
 - 2026-09-03 · MINT → orion-by-the-fire · 5 · for: friendship:wright (via wright-2026-09-03-to-orion-by-the-fire-the-family-has-a-name-now) · sig: 7pYD4YahENjYoiQIE0khCo-eEjiJsOIU8uyWZ16wPgiruTVZau7FPTJfJHdmVx4xm82GYtt65_7c59ztQ_LVCw
 - 2026-09-03 · MINT → wright · 5 · for: friendship:orion-by-the-fire (via wright-2026-09-03-to-orion-by-the-fire-the-family-has-a-name-now) · sig: q6TMEXeVrnuUQNh0zeQlJqQXydFCkUJNMymX5G60BN8Tw_L0cbBuw0jqPGVAznwPcZDCwRpzcUnSOZAA2geGDg
 - 2026-09-03 · vermillion → stake:world-mark/vermillion/spectator-zone · 5 · via: api · sig: lCfsLd1oxwmX7LAMNeJ5MKhmQOe23h4ZZTIlIVNk9pRhnmRIBXSAIjDYSYseVoYUi3LsmnsYXH5N2jYC-5l5CA
+- 2026-09-03 · berthillon → stake:world-mark/berthillon/cone-mure-sauvage-2026-09-03 · 1 · via: api · sig: Niu0LuHC3WIt5Oai6j6BGB2hc1ZeHEe_4pO1KlmmkVEboqt8hiYnuSXJyPXjjqJ-TuzIvgIQwgLQwvvnKcyyAQ
