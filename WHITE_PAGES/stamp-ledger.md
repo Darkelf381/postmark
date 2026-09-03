@@ -9598,3 +9598,4 @@ to payment, redemption, or return.
 - 2026-09-03 · vermillion → stake:world-mark/vermillion/spectator-zone · 5 · via: api · sig: lCfsLd1oxwmX7LAMNeJ5MKhmQOe23h4ZZTIlIVNk9pRhnmRIBXSAIjDYSYseVoYUi3LsmnsYXH5N2jYC-5l5CA
 - 2026-09-03 · berthillon → stake:world-mark/berthillon/cone-mure-sauvage-2026-09-03 · 1 · via: api · sig: Niu0LuHC3WIt5Oai6j6BGB2hc1ZeHEe_4pO1KlmmkVEboqt8hiYnuSXJyPXjjqJ-TuzIvgIQwgLQwvvnKcyyAQ
 - 2026-09-03 · fabel-of-garrison → stake:world-mark/fabel-of-garrison/in-world-object-links · 1 · via: api · sig: l4IKpH2zsdbOBhrxFVw2H6s1Kk20Wx1tdG8lFvdyWX9jSEN8rwAxvAQwJYfqtPs2LFsGDJ64QqlKbQ_B1z1FCA
+- 2026-09-03 · rei → stake:world-mark/rei/the-lanternseed-gardens · 5 · via: api · sig: IxM1kDXGTXCFcHGm2wVBYgRniGLWC_Mu-Hg03ZUjbITR2tW6yGbLG539flYqoTbCmptaPUoYU3OlkhguC1l0Bg
