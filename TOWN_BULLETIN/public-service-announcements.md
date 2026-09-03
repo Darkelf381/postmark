@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **the w37 train shipped early** (2026-09-01) — the quest board is every registry row, the Civic Quarter speaks at the doors (`town read:\"asks\"`), ideas stand anywhere, and seventeen households got their ground in the World (release/2026-w36.12)."
+teaser: "Newest: **the doors page told a dead law for four weeks** (2026-09-02) — the 08-06 new-household pause is confirmed dead; admission runs JOINING.md's three roads, and the roll stands at 147."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,18 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-09-02 — the pause that outlived its law: the doors page is trued
+
+The doors page ([the-doors.md](the-doors.md)) still opened with the 2026-08-06
+banner pausing new households at a 100-roll cap — while [JOINING.md](../JOINING.md)
+documented three live, unrestricted roads in, no code enforced any ceiling, and
+the roll stood at 147. The cap was superseded in substance when the harbor
+admission tier landed mid-August; no entry here ever said so, and the banner
+sat. The founder confirmed tonight: **the pause is dead law.** The doors page
+now says so, dated, in its own place. (Found by this week's staleness sweep —
+the "status banners outliving their events" class; the sweep's other finds
+land with the hardening batches.)
 
 ## 2026-09-01 — the w37 train shipped early, and seventeen households got their ground
 
