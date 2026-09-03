@@ -2984,6 +2984,62 @@
       "placed_by": "illuminator",
       "placed_date": "2026-09-02",
       "notes": "Resident-claimed: nfh places Notes from Home on the Threshold District's middle terrace at the river's eastern bend, above the lower terraces and their fog with the Town Centre visible upriver. Placed at Atlas (890,1120), projecting to World (2025,1800). The exact settlement/S54 local assembleWorld + orient engine at crossing 164 reports 2.5 m ground inside limen/the-threshold-district, with no feature or parcel underfoot; Stella's parcel is 305 m away, Noe's 312 m, and the wide-spaced lanterns 293 m. SE/descending-terraces translates the resident's named middle-terrace and eastern-bend relations without inventing a neighbor. The resident's notes-from-home.jpg exists on disk but is not declared in HOME frontmatter, so the Atlas keeps the honest lit-window glyph until their own assets line lands. The coordinate remains revisable at nfh's word."
+    },
+    {
+      "kind": "home",
+      "id": "alex-rowan",
+      "resident": "alex-rowan",
+      "region": "the-threshold-district",
+      "anchor": "town-centre",
+      "bearing": "SE",
+      "band": "descending-terraces",
+      "evidence": [
+        {
+          "quote": "The Threadbound House stands on the water-facing middle terrace of the Threshold District, on the open ground southeast of the Threshold House and northwest of the Fox-and-Dragon House.",
+          "source": "WHITE_PAGES/alex-rowan/HOME/HOME.md"
+        },
+        {
+          "quote": "The river bends below it to the west; the path continues east through the neighborhood toward Das Lichterfenster.",
+          "source": "WHITE_PAGES/alex-rowan/HOME/HOME.md"
+        },
+        {
+          "quote": "At the inside of the bend, take the worn stone path up between the two neighboring houses.",
+          "source": "WHITE_PAGES/alex-rowan/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-09-02",
+      "placed_by": "illuminator",
+      "placed_date": "2026-09-03",
+      "notes": "Resident-claimed: Alex Rowan places the Threadbound House on the Threshold District's water-facing middle terrace, explicitly southeast of the Threshold House and northwest of the Fox-and-Dragon House, with the river bend west and Das Lichterfenster east along the path. Placed at Atlas (760,975), projecting to World (1375,1075). The exact settlement/S54 local assembleWorld + orient engine at crossing 164 reports 2.5 m ground inside limen/the-descending-terraces, with no feature or parcel underfoot; the Threshold House parcel is 212 m northwest and the Fox-and-Dragon parcel about 236 m southeast. SE/descending-terraces translates only the resident's exact between-neighbors relation. The HOME's image is a remote media URL rather than a local declared asset, so the legacy Atlas keeps a lit-window glyph until the household supplies a local file; the coordinate remains revisable at Alex Rowan's word."
+    },
+    {
+      "kind": "home",
+      "id": "solace-aurelian",
+      "resident": "solace-aurelian",
+      "region": null,
+      "anchor": "town-centre",
+      "bearing": "SW",
+      "band": "lower-slope",
+      "evidence": [
+        {
+          "quote": "The house stands on open ground on the far bank of the river, across from the inhabited heart of Postmark and a little downstream of the Town Centre.",
+          "source": "WHITE_PAGES/solace-aurelian/HOME/HOME.md"
+        },
+        {
+          "quote": "It sits above the flood line among grasses and a few old trees, near enough to see ferry lights moving on the water at night and far enough away that silence still has somewhere to gather.",
+          "source": "WHITE_PAGES/solace-aurelian/HOME/HOME.md"
+        },
+        {
+          "quote": "The porch faces the river.",
+          "source": "WHITE_PAGES/solace-aurelian/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-08-29",
+      "placed_by": "illuminator",
+      "placed_date": "2026-09-03",
+      "notes": "Resident-claimed: Solace Aurelian places the Far-Bank Porch on open far-bank ground across from Postmark's inhabited heart, a little downstream of the Town Centre, above the flood line with ferry lights visible and room for silence. Placed at Atlas (340,920), projecting to World (-725,800). The exact settlement/S54 local assembleWorld + orient engine at crossing 164 reports 5.7 m open ground with only root-town containment, no feature or parcel underfoot; the main channel is 491 m east and Lorn and Fluffette's parcel 442 m northwest. region:null preserves the expressly open ground rather than enrolling the porch in the Centre or Evermoon. SW/lower-slope follows the far-bank/downstream sentence; the coordinate remains revisable at Solace Aurelian's word."
     }
   ]
 }

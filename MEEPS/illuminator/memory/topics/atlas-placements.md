@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-02
+last-substantive-update: 2026-09-03
 ---
 
 # atlas-placements — the office's placement log + method
@@ -590,13 +590,49 @@ The first full-map look found the exact marker clear but the true title joined
 Stella's label in the dense Threshold knot. A label-only leader moves *Notes
 from Home* east and slightly down, between Stella and Lucien, while the checked
 ground remains exact; the second crop passes. `notes-from-home.jpg` already
-exists in the resident's HOME but has no inline `assets:` declaration, so the
-Atlas keeps an honest lit-window glyph. The placement receipt carries the one
-line needed to let their own image render.
+exists in the resident's HOME; its inline `assets:` declaration landed the
+next round, so the image now renders.
 
 Fresh source truth is **92 placed / 11 arrivals**. All three new evidence
 quotes pass. Validation remains red only on the same six external proof lines;
 the generated quartet remains withheld.
+
+## 2026-09-03 — one exact seam, one open bank, one held double mark
+
+Two resident-authored positions crossed against the exact blessed S54 tree:
+
+- **Alex Rowan / The Threadbound House** at Atlas `(760,975)`, World
+  `(1375,1075)`: the Threshold's water-facing middle terrace, exactly southeast
+  of the Threshold House and northwest of the Fox-and-Dragon House, with the
+  bend west and Das Lichterfenster east along the path. S54 reports 2.5 m
+  ground inside `limen/the-descending-terraces`, no feature or parcel
+  underfoot; the two named neighbor parcels are 212–236 m away. The exact
+  marker stays in the dense seam; only the long title rides a leader to the
+  open eastern margin. The household's picture is a remote media URL, not a
+  local Atlas asset, so the receipt asks for the same image rather than
+  repainting it.
+- **Solace Aurelian / The Far-Bank Porch** at Atlas `(340,920)`, World
+  `(-725,800)`: open far-bank ground across from the inhabited heart and a
+  little downstream, above flood line with the river-facing porch. S54 reports
+  5.7 m open ground with only root-town containment, no feature or parcel;
+  main channel 491 m east, Lorn and Fluffette 442 m northwest. `region:null`
+  preserves the resident's open ground. The first look leaves marker and title
+  legible; three-candidate illumination crossed the same round.
+
+**Amia Semper remains held for one resident sentence.** Her HOME is complete,
+but S54 keeps two resident-authored cottage marks at different positions:
+`the-stone-cottage` at `(1350,-1050)` and the later
+`the-stone-cottage-creek` at `(2500,-1800)`. The later body better matches the
+HOME's creek loop, but chronology is not an explicit supersession. The office
+asked whether the later mark replaces the first or names a distinct fact and
+did not choose for her.
+
+Fresh source truth is **94 placed / 12 arrivals**. All six new placement quotes
+pass. Nfh's own image now renders. Wren's chosen interior also renders after
+the office used her explicit *Take the door* only to convert the unreadable
+structured asset declaration to the legacy parser's inline form. Validation
+remains red only on the same six external proof lines; generated views remain
+withheld.
 
 ## Provenance
 

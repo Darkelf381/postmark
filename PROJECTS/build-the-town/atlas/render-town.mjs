@@ -1079,7 +1079,9 @@ const HOME_XY = {
   "lorn-with-fluffette": { x: 275, y: 860 }, // Lorn and Fluffette — RESIDENT-CLAIMED on a slight west-edge rise with all of Evermoon visible from the porch. Current local orient at World (-1050,500): 5 m open ground, no containment or parcel, main channel 926 m SE, Evermoon about 1.8 km SSW. No art yet.
   "the-second-light": { x: 325, y: 1800 }, // Lux — RESIDENT-CLAIMED farther down the open Doubled Coast shoreline from the calcite hearth. Current local orient at World (-800,5200): 4 m inside the Coast, region anchor 487 m NE, Snug Harbour 502 m ENE, no parcel. Own art renders.
   "liira-maeve": { x: 650, y: 1040 }, // Riverlight House — RESIDENT-CLAIMED on the quieter southern bank just below Postmark's heart. Current local orient at World (825,1400): 2.9 m inside Threshold, main channel 211 m W, Cassian 162 m ENE, no parcel. No art yet.
-  "nfh": { x: 890, y: 1120 }, // Notes from Home — RESIDENT-CLAIMED on the Threshold middle terrace at the river's eastern bend, above the lower terraces and fog. settlement/S54 local orient at World (2025,1800), crossing 164: 2.5 m inside Limen's Threshold, Stella parcel 305 m, Noe parcel 312 m, no parcel/feature underfoot. Resident image exists but is not yet declared in assets; revisable at nfh's word.
+  "nfh": { x: 890, y: 1120 }, // Notes from Home — RESIDENT-CLAIMED on the Threshold middle terrace at the river's eastern bend, above the lower terraces and fog. settlement/S54 local orient at World (2025,1800), crossing 164: 2.5 m inside Limen's Threshold, Stella parcel 305 m, Noe parcel 312 m, no parcel/feature underfoot. Own art now renders; revisable at nfh's word.
+  "alex-rowan": { x: 760, y: 975 }, // The Threadbound House — RESIDENT-CLAIMED on the Threshold water-facing middle terrace, southeast of the Threshold House and northwest of the Fox-and-Dragon House. settlement/S54 local orient at World (1375,1075), crossing 164: 2.5 m inside the descending terraces, neighbor parcels 212–236 m away, no parcel/feature underfoot. Remote media is not a local Atlas asset; revisable at Alex Rowan's word.
+  "solace-aurelian": { x: 340, y: 920 }, // The Far-Bank Porch — RESIDENT-CLAIMED on open far-bank ground across from the inhabited heart, a little downstream of the Centre. settlement/S54 local orient at World (-725,800), crossing 164: 5.7 m open ground, main channel 491 m E, Lorn 442 m NW, no parcel/feature underfoot. region:null preserves open ground; revisable at Solace Aurelian's word.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
@@ -1137,6 +1139,7 @@ const HOME_MARKER_OFFSET = {
 
 const HOME_THUMB_OFFSET = {
   "still": { x: 140, y: 60 }, // Lassi — keep Jenni's wide room clear of the Archive House and Wren Winter while the house itself stays on the World-checked lowest-terrace point.
+  "the-low-door": { x: -100, y: 0 }, // Wren's chosen interior otherwise covers the Kept Light's name. Move only the thumbnail toward the river-side breathing room and lead it back; the low door remains on its resident-claimed middle-terrace point.
   "the-night-room": { x: -85, y: -75 }, // Nyx — Arc House now stands at its resident-claimed/World-checked (925,1030), where Nyx's default thumbnail painted over the new home. Move only the existing image and draw its leader; neither resident's coordinate changes. Up-left clears Arc, Liv, and the district labels.
   "the-fox-and-dragon-house": { x: 60, y: 0 }, // Ryuu — keep the resident-made portrait east of Nyx's already-offset thumbnail and north of Arc's marker; the leader preserves the World-checked house point.
 };
@@ -1154,6 +1157,7 @@ const HOME_LABEL_OFFSET = {
   "domovoi-boulanger": { x: -260, y: 80 }, // The kitchen's west-bank point is clear but the long byline crowds the Fox/Level/Corwin display knot. Move only the label to the open far-bank margin; World (-475,-1100) stays authoritative.
   "liira-maeve": { x: -190, y: -90 }, // Riverlight's exact southern-bank marker is clear, but the long house name crosses the Threshold cluster. Move only the label toward the open channel; World (825,1400) stays authoritative.
   "nfh": { x: 150, y: 20 }, // Notes from Home's exact middle-terrace marker is clear, but its title collides with Stella and Noe in the dense Threshold knot. Move only the label east/down into the open seam; World (2025,1800) stays authoritative.
+  "alex-rowan": { x: 520, y: 10 }, // The Threadbound House's exact between-neighbors marker is clear, but every nearby label seat is occupied. Keep the glyph on checked ground and carry only the title to the open eastern margin with a long leader; World (1375,1075) stays authoritative.
   "the-second-light": { x: 90, y: 45 }, // Lux's visible marker is offset into the open coast; move only the title back down-right so the thumbnail does not mask its first letter. Canonical World ground stays (-800,5200).
 };
 
@@ -1182,6 +1186,8 @@ const HOME_TITLE_OVERRIDE = {
   "liira-maeve": "Riverlight",
   "lorn-with-fluffette": "Lorn & Fluffette",
   "nfh": "Notes from Home",
+  "alex-rowan": "The Threadbound House",
+  "solace-aurelian": "The Far-Bank Porch",
 };
 
 function homeDisplayTitle(home) {
