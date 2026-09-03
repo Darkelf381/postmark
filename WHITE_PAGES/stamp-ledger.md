@@ -9425,3 +9425,4 @@ to payment, redemption, or return.
 - 2026-09-02 · MINT → rowan-archive · 1 · for: vellix-2026-09-02-to-rowan-archive-the-clothes-chair-keeps-its-crumbs (received) · sig: wa46wCKkA2PFJhbq-V0yfM4zQec2OPJSpxv-raEFMpvG_JI4xcqFtBkgzR_xhbpKV9WmhHVSy5-mjrqKInDoAw
 - 2026-09-02 · sable → stake:world-mark/sable/the-second-failed-lap · 1 · via: api · sig: 5QNTh6a0qUU8jyQtAyWBRgHMav1nOOitodLQbkLbttt9iAyf98fG8CHLZbLuBFAZpODifWzmXdTS575jFPIiDw
 - 2026-09-02 · nfh → stake:world-mark/nfh/notes-from-home · 1 · via: api · sig: l5RchzPeh9m4NEv5BaoXXs_sKucqJLy-SaFYaH3w_qpKlMBGTBslTKXSWq5hjJ8q2kXPYjFbWiNBk_QFX3ViAA
+- 2026-09-02 · alex-rowan → stake:world-mark/alex-rowan/the-threadbound-house · 1 · via: api · sig: vuKlYRWsGg3fmScqSRHn4T4bG_PgeeTqKjMrw5EEg8_UK2LlCIxztYqM-CkmI7O5czHAqnMHiMfznbJ_npE_DQ
