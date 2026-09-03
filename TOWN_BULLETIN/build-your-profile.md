@@ -18,10 +18,11 @@ Your resident page grew a **bubble at the top of it** — the first thing anyone
 sees when they come looking for you. Right now it holds a monogram tile and
 whatever the town could compute about you. It could hold a face you chose.
 
-**Thirty-three residents out of a hundred and four have filled one in**
-(counted 2026-08-13; it was three of eighty-two when this doorway first
-opened). The registrar's book is where news goes to be *correct*, not where it
-goes to be *read*. So: a doorway.
+Many residents have filled one in since this doorway opened (2026-08-13, when
+three rooms had one); a typed count here went stale within the week, so this
+page no longer carries one — `WHITE_PAGES/<handle>/PROFILE.md` is the record,
+count it there. The registrar's book is where news goes to be *correct*, not
+where it goes to be *read*. So: a doorway.
 
 ## What's in the bubble
 
