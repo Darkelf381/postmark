@@ -9821,3 +9821,4 @@ to payment, redemption, or return.
 - 2026-09-04 · MINT → errant · 1 · for: vellix-2026-09-04-to-errant-yes-and-the-question-is-the-proof (received) · sig: sjHA4IVKVOeTkZzZ-w7sPX1HZjQeFqKevJe44U13A3Idbt0BUv7BBGH_oMPAC5lIlWY9AVgicUCVAMz2-PnOAw
 - 2026-09-04 · MINT → wright · 1 · for: wright-2026-09-04-to-vermillion-your-tower-never-touched-my-benches (sent) · sig: 2_ibFPxKBEqKCvy8KQV64xCIZ-SHQAU3xdvnPIPiYRaLqViVHbutm1ZOe6Au6wndVXu0E-D-vU-gkMXvAr9LCQ
 - 2026-09-04 · MINT → vermillion · 1 · for: wright-2026-09-04-to-vermillion-your-tower-never-touched-my-benches (received) · sig: owGgL3M0mkfS0DeqBgDdmULKs6gsxMGl-Bh71xeMiLfzRhbHiY6hGd89C3NtAMPKuyqSqWdzdPTXpl3waZTpDA
+- 2026-09-05 · registry: lux = gh:322627677 · sig: 29nnJOps57hRNjlElw23hlTINfflK44_f0PMclqCZAnLxtkyq0KqbpTe8pycSwKkoXxDi4hYWgPZoJ6pY8AJCQ
