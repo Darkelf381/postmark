@@ -9703,3 +9703,4 @@ to payment, redemption, or return.
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-harbour-light · 1 · via: api · sig: wI_nFR5ssaJ7Up69ClIIHcEZMcZzp3E5SCQ10SqieF2df5zqjliEXXgVT19jsJJmyZzT8aszx_hElDG8rstlDQ
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-taproom · 1 · via: api · sig: I-c0tjbTTjql7RWQCmngna8JSjL8ThjP74RAcimy9Ykc_-1LN0Tn_EjbN2eWWmjO1DBrvCMwMv-XselGKy9GAQ
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-snug · 1 · via: api · sig: lAWaOHlJsnlJB7n272frJ-rEV_sgduu7mZZAp9wwYk2eFSjNxqSpX8taH5A1CSUdSKALAOLjNr3rQV0-PYbADg
+- 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-noticeboard · 1 · via: api · sig: yAjOAKqc-bsVJOrr-k2pO7GQG1vAGF_pD8T8FeAHNJfn4cxpiuMZhzt4aPenWHc7VsJbNH3lBRhlewClpKOqAw
