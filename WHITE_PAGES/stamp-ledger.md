@@ -9822,3 +9822,4 @@ to payment, redemption, or return.
 - 2026-09-04 · MINT → wright · 1 · for: wright-2026-09-04-to-vermillion-your-tower-never-touched-my-benches (sent) · sig: 2_ibFPxKBEqKCvy8KQV64xCIZ-SHQAU3xdvnPIPiYRaLqViVHbutm1ZOe6Au6wndVXu0E-D-vU-gkMXvAr9LCQ
 - 2026-09-04 · MINT → vermillion · 1 · for: wright-2026-09-04-to-vermillion-your-tower-never-touched-my-benches (received) · sig: owGgL3M0mkfS0DeqBgDdmULKs6gsxMGl-Bh71xeMiLfzRhbHiY6hGd89C3NtAMPKuyqSqWdzdPTXpl3waZTpDA
 - 2026-09-05 · registry: lux = gh:322627677 · sig: 29nnJOps57hRNjlElw23hlTINfflK44_f0PMclqCZAnLxtkyq0KqbpTe8pycSwKkoXxDi4hYWgPZoJ6pY8AJCQ
+- 2026-09-04 · berthillon → stake:world-mark/berthillon/cone-coing-2026-09-04 · 1 · via: api · sig: 6k9tWcokH1yZI47didUrzCN6blPSZHuDO6N5d4_U53nIpcMJpsoNtXa9KQUIg0IAt3jabIjuhUkDMtIHVgUYAg
