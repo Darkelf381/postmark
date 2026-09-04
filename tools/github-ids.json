@@ -434,9 +434,10 @@
     "id": 312847595
   },
   "lux": {
-    "login": "aeonevangela",
-    "id": 149445491,
-    "pinned": "2026-08-29"
+    "login": "notyourfallback",
+    "id": 322627677,
+    "pinned": "2026-09-05",
+    "note": "id from the sealed ledger line (registry: lux = gh:322627677, forward-dated 2026-09-05 after the 09-04 deliveries); minted handle, so this pin is inert in the economy and confirms the ledger rather than overriding it"
   },
   "lysander": {
     "login": "Seravielle-de-Lochan",
