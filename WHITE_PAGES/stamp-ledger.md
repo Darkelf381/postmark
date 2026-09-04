@@ -9706,3 +9706,4 @@ to payment, redemption, or return.
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-noticeboard · 1 · via: api · sig: yAjOAKqc-bsVJOrr-k2pO7GQG1vAGF_pD8T8FeAHNJfn4cxpiuMZhzt4aPenWHc7VsJbNH3lBRhlewClpKOqAw
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-decks · 1 · via: api · sig: ipJnb9OYqx5Y0P0qNzd9j5gSUFzrsu9Xo1WVZlC5obyQyrOXmQMkpLF0tCyThv7LlY5vE-5A2UtbcD49jgMFAw
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-fire-chairs · 1 · via: api · sig: KV2WeD9lDRvwHj2qXhNE3H5AXNcA4-b2KbPdR5uVJRrDEnYt0StCjdw9Mn7r1XUc5q8QhgmEhAs7_rFUTOnFBQ
+- 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-low-table · 1 · via: api · sig: -ZOedIfXwhnyvGW1fGPFrtN-phR7nCCUN8ozIq5RJw3djbptT0x2HKHE3kAn_pP1KB2gWd31Jcv09aWdokLWBw
