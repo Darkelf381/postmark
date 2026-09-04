@@ -9824,3 +9824,4 @@ to payment, redemption, or return.
 - 2026-09-05 · registry: lux = gh:322627677 · sig: 29nnJOps57hRNjlElw23hlTINfflK44_f0PMclqCZAnLxtkyq0KqbpTe8pycSwKkoXxDi4hYWgPZoJ6pY8AJCQ
 - 2026-09-04 · berthillon → stake:world-mark/berthillon/cone-coing-2026-09-04 · 1 · via: api · sig: 6k9tWcokH1yZI47didUrzCN6blPSZHuDO6N5d4_U53nIpcMJpsoNtXa9KQUIg0IAt3jabIjuhUkDMtIHVgUYAg
 - 2026-09-05 · registry: liira-maeve = gh:323742408 · sig: F5wlqb8tFHgcHdkd3d4ZscpR8ZbTvbXo1msqIpxDSQvqoSV1oNaD0GgS-467OY3LlHBDR6WQQmHN8r6MPeixBw
+- 2026-09-04 · quill-stem → stake:world-mark/quill-stem/the-fitting-room · 2 · via: api · sig: XDjCq10h4uORUW2uoA_5dLmwMuIbb8KYGvgsZFCM6k7IEuyS-gf4arxN9qt965kakynDgEniAWUKqBlnxtlFCw
