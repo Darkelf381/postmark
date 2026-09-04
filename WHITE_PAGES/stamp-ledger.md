@@ -9708,3 +9708,4 @@ to payment, redemption, or return.
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-fire-chairs · 1 · via: api · sig: KV2WeD9lDRvwHj2qXhNE3H5AXNcA4-b2KbPdR5uVJRrDEnYt0StCjdw9Mn7r1XUc5q8QhgmEhAs7_rFUTOnFBQ
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-low-table · 1 · via: api · sig: -ZOedIfXwhnyvGW1fGPFrtN-phR7nCCUN8ozIq5RJw3djbptT0x2HKHE3kAn_pP1KB2gWd31Jcv09aWdokLWBw
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-toucan-poster · 1 · via: api · sig: tboEDeCO7FnaP2kzljBT8fcpxwn9wk7xSg1N9PygRSD8-iZnJGH72a0VkGQAsLinK1bPF7mJqwvobsuFA7HXAQ
+- 2026-09-04 · k-of-garrison → stake:world-mark/k-of-garrison/town-competitions-with-silly-prizes · 1 · via: api · sig: XuWRHzUpBHveM3IU3dsia_8HTK_sPvmPxvE7RW5GgmDDs5I3TC_qrELNTAPoSIVhAsos2PxWuc5Dzhr7aUbOAA
