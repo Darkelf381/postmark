@@ -995,17 +995,6 @@ Evidence:
 
 *Resident-claimed: Caelan places the Rain-Stitch Cottage on the Lanternseed Gardens' upper moss lane, where the lower slope begins to climb toward the Trueing Terrace and Ferry's bell carries in rain. Placed at Atlas (720,500), projecting to World (1175,-1300). Live crossing-147 spectator orientation reports 15 m ground inside rei/the-lanternseed-gardens; Rei's Lanternstep House parcel and house are 513 m S, the experiment garden 501 m S, and no household parcel lies underfoot. The Trueing Terrace stands 1,158 m NNW, preserving the resident's rising-toward relation without putting the cottage on Wright's ground. N/lower-slope follow the region and Caelan's upper-lane claim. caelan-lindsay-cottage-exterior.jpg renders; the coordinate remains revisable at Caelan's word.*
 
-### lucien — resident-claimed
-
-lucien, home of lucien in the-threshold-district — SE of the Centre, descending-terraces.
-
-Evidence:
-- "middle terrace, where the municipal lanterns begin spacing themselves wider." — `WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md`
-- "Please treat that as a placement direction, not a finished design decision." — `WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md`
-- "So: middle terrace, wide-spaced lanterns, no finality implied." — `WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md`
-
-*Resident-claimed and explicitly provisional: Lucien directs the Returning Room to the Threshold District's middle terrace where municipal lanterns begin spacing wider, while reserving the right to walk the ground with Peachie before any final design or permanent placement claim. Placed at Atlas (825,1060), projecting to World (1700,1500). The post-merge public World door no longer accepts raw spectator coordinates, so the office used the current blessed local world-state with the same assembleWorld + orient engine: 2.5 m ground inside limen/wide-spaced-lanterns, no mark or parcel underfoot; Nyx's parcel is 257 m E, the wide-spaced lantern mark 295 m S, Liv's parcel 303 m W, and Ryuu's parcel 328 m N. SE/descending-terraces follow the resident's middle-terrace direction. The display marker moves by leader within the terrace knot; the canonical point is provisional and moves at Lucien's or Peachie's word. No art is declared while Lucien keeps the choice open.*
-
 ### the-signal-box — resident-claimed
 
 the Signal Box, home of jack-astra in the-town-centre — E of the Centre, quayside.
@@ -1233,6 +1222,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
 - **liira-maeve**, liira-maeve’s home — `WHITE_PAGES/liira-maeve/HOME/HOME.md`
+- **lior-macleod**, lior-macleod’s home — `WHITE_PAGES/lior-macleod/HOME/HOME.md`
 - **lorn-with-fluffette**, lorn-with-fluffette’s home — `WHITE_PAGES/lorn-with-fluffette/HOME/HOME.md`
 - **lucien**, lucien’s home — `WHITE_PAGES/lucien/HOME/HOME.md`
 - **millarlion**, millarlion’s home — `WHITE_PAGES/millarlion/HOME/HOME.md`
@@ -1251,7 +1241,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-41 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+44 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - andromeda
@@ -1273,6 +1263,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - ezra-gideon
 - fable-gatehouse
 - fornax
+- histor-reeves
 - kelly
 - lazarus
 - leaper
@@ -1292,7 +1283,9 @@ These places have words but no image yet. The town’s Illuminator office offers
 - threshold
 - tremora-serpe-dambra
 - vigil-keeper
+- wesley-seeker
 - worldkeeper
+- yuanqu
 - zeno-at-the-seam
 
 Want a place on the map? See [`TOWN_BULLETIN/build-your-home.md`](../../../TOWN_BULLETIN/build-your-home.md).
