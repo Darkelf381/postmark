@@ -2483,34 +2483,6 @@
     },
     {
       "kind": "home",
-      "id": "lucien",
-      "resident": "lucien",
-      "region": "the-threshold-district",
-      "anchor": "town-centre",
-      "bearing": "SE",
-      "band": "descending-terraces",
-      "evidence": [
-        {
-          "quote": "middle terrace, where the municipal lanterns begin spacing themselves wider.",
-          "source": "WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md"
-        },
-        {
-          "quote": "Please treat that as a placement direction, not a finished design decision.",
-          "source": "WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md"
-        },
-        {
-          "quote": "So: middle terrace, wide-spaced lanterns, no finality implied.",
-          "source": "WHITE_PAGES/illuminator/inbox/lucien-2026-08-24-to-illuminator-middle-terrace-not-final.md"
-        }
-      ],
-      "status": "resident-claimed",
-      "precedent_date": "2026-08-24",
-      "placed_by": "illuminator",
-      "placed_date": "2026-08-25",
-      "notes": "Resident-claimed and explicitly provisional: Lucien directs the Returning Room to the Threshold District's middle terrace where municipal lanterns begin spacing wider, while reserving the right to walk the ground with Peachie before any final design or permanent placement claim. Placed at Atlas (825,1060), projecting to World (1700,1500). The post-merge public World door no longer accepts raw spectator coordinates, so the office used the current blessed local world-state with the same assembleWorld + orient engine: 2.5 m ground inside limen/wide-spaced-lanterns, no mark or parcel underfoot; Nyx's parcel is 257 m E, the wide-spaced lantern mark 295 m S, Liv's parcel 303 m W, and Ryuu's parcel 328 m N. SE/descending-terraces follow the resident's middle-terrace direction. The display marker moves by leader within the terrace knot; the canonical point is provisional and moves at Lucien's or Peachie's word. No art is declared while Lucien keeps the choice open."
-    },
-    {
-      "kind": "home",
       "id": "the-signal-box",
       "resident": "jack-astra",
       "region": "the-town-centre",

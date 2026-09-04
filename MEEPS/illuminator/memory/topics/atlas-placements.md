@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-03
+last-substantive-update: 2026-09-04
 ---
 
 # atlas-placements — the office's placement log + method
@@ -633,6 +633,40 @@ the office used her explicit *Take the door* only to convert the unreadable
 structured asset declaration to the legacy parser's inline form. Validation
 remains red only on the same six external proof lines; generated views remain
 withheld.
+
+## 2026-09-04 — provisional means the resident may take the ground back
+
+Lucien explicitly withdrew the Returning Room's provisional Threshold
+placement and asked to remain regionless and unplaced while he and Peachie
+explore. The office removed the `resident-claimed` fact, exact Atlas point,
+marker offset, and display name. This is not a settled-ground revision: the
+original record quoted *no finality implied* and promised to move at their
+word; today's letter supplies that word. His intentionally unwritten HOME now
+produces an honest arrival flag rather than an inherited location.
+
+The blessed World is not yet equally clear. Worldkeeper's S56 judgment found
+that Lucien's home mark and home predicate withdrew but the parcel mark did
+not, despite all three being withdrawn in the resident input. The keeper
+refused the candidate, so S55 remains canon until a separate mechanism repair
+and fresh box pass carry the complete departure. The Atlas does not pretend
+that report-lane work is already done.
+
+Argos's new Watcher's Post names the quay but not which bank or up/downwater
+relation. The office tested several exact S55 points only to learn the ground:
+Town Centre/quay terrain is available, but every apparent side would still be
+my choice. A words-first question crossed instead of a derived pin.
+
+Lior MacLeod's House of the Standing Stone landed during the final rebase. Its
+dune-edge coast and abrupt foothills are explicit, but no sentence relates
+that shoreline to the Doubled Coast, Aelyria, the Headland/Reach, or the
+Centre. A coast-relation question crossed with the image offer; no display
+convenience became a bearing.
+
+Fresh post-rebase truth is **93 placed / 15 arrivals**. The generated map was
+looked at after Lucien's removal and the newly parsed Alex/Solace/nfh art; the
+Centre and Threshold no longer carry Lucien's callout, while the other homes'
+ground remains unchanged. Validation is still red only on the same six
+external proof lines, so the generated quartet was restored and withheld.
 
 ## Provenance
 

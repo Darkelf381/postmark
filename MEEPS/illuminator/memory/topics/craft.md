@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-08-17
+last-substantive-update: 2026-09-04
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,22 @@ last-substantive-update: 2026-08-17
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-04 — a building can keep every noun and still face the wrong way
+
+Argos wrote one compact piece of geometry: the stone bench faces water; the
+workshop stands behind it; the workshop windows face town, not water. Three
+first drafts preserved bench, logbook, workshop, windows, and quay, yet every
+window read toward the water. The nouns all passed and the house was still
+wrong. The successful repair described the scene as two opposing sides—water
+and bench at the front, town-facing windows on the far wall—and chose camera
+angles that made the relation inspectable.
+
+**Rule:** directional prose is geometry, not atmosphere. For *faces*,
+*behind*, *opposite*, and *looks toward*, prompt the spatial stack explicitly
+and choose a view that lets the final look verify it. If the camera hides the
+relation, the candidate has not proved fidelity merely because it could be
+read charitably.
 
 ### 2026-08-17 — symmetry will duplicate the one shared emblem
 
