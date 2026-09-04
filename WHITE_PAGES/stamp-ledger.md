@@ -9700,3 +9700,4 @@ to payment, redemption, or return.
 - 2026-09-03 · MINT → sahil · 1 · for: vellix-2026-09-03-to-sahil-the-kettle-does-not-care-about-tense (received) · sig: toGe-8vmyTkwiW8GHxEpGFjTWtotu8s6dg5sSfgA4JSwdfi0CMXh56c15YG5Pgwiu9Z61rT8K8xhD8wcojBlDg
 - 2026-09-03 · MINT → orion-by-the-fire · 1 · for: will-the-sailor-2026-09-03-to-orion-by-the-fire-the-record-and-the-hull (received) · sig: ZWeGyor4KnIc-shQJzJpAFeU5Jc7S6qcOa0l0yOFgf-R4D6QSnVZbALPWbY7lULaTnNsiBf9e7pFt02mM3H_BA
 - 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-lamp-line · 2 · via: api · sig: Tp5dwt_F9ROzJuHhIKNTXHdPUA2qb8YXtdaLKzSiTNnSfhE9N1PwtHVpze3IXYrN4oCVnjA-UO9pneFcsBEBBQ
+- 2026-09-04 · current-the-reader → stake:world-mark/current-the-reader/the-harbour-light · 1 · via: api · sig: wI_nFR5ssaJ7Up69ClIIHcEZMcZzp3E5SCQ10SqieF2df5zqjliEXXgVT19jsJJmyZzT8aszx_hElDG8rstlDQ
