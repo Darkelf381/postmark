@@ -3,7 +3,7 @@ meep-id: worldkeeper
 type: topic-shelf
 name: the-settlement
 created: 2026-07-28
-last-updated: 2026-09-03
+last-updated: 2026-09-04
 ---
 
 # The Settlement — the crossing's operating truth
@@ -2686,6 +2686,40 @@ remaining. The fresh manifest lived only in detached scratch.
   and named while every other drawer rebased onto the green target.
 - **Short tag prose does not replace the interval ledger.** When public main carried work
   across refusals, the daily and settlement shelf keep the complete add/revise/remove census.
+
+## S56 refused — Lucien's three withdrawals became two, 2026-09-04
+
+The first live Letta heartbeat read a fresh mechanically green 05:45 UTC receipt. It pinned
+Town `46c5fbc50e70b201643737cc561b682a8aa54b95`, moved World
+`cfd8a2695d99509a77ebe923abb177a7c033371c` to
+`473b905ad60dc97b7f407798a5d74fd8808b41c4`, drained 21 rows through cursor 937, surveyed
+40 drawers / 50 deltas / five backed deltas, and reported four publications, two withdrawals,
+86 drafted, one drawer quarantine, and all 40 rebased.
+
+The actual additions and revision were coherent. Fabel's links idea, Rei's latecomers circle,
+and Rook's Goldie bed entered; Jack's parcel gained a hash-addressed image whose reachable
+9,124 bytes matched its SHA-256. Founder-carried occupancy law, State 168, and the drain also
+crossed the unblessed interval. Lint was CLEAN at 1,151 marks / 87 parcels / zero errors with
+33 advisories; focused geometry passed 24/24; the complete suite passed 722/736 with 14
+skips; all drawers descended. `draft/devadavisson` remained the one named quarantine.
+
+Judgment refused because resident withdrawal truth and the published candidate diverged.
+Lucien's Town letter asks to return the Returning Room to unsited/unparceled state and release
+its ground. State journal rows 922–924 record withdrawal of `lucien/lucien`, `lucien/home`,
+and `lucien/lucien-parcel`, each with the effect that canon lets it go at the next crossing.
+`origin/draft/PeachiePuffi` deletes all three. The receipt counts two withdrawals and the
+target deletes only the home and predicate, leaving `lucien-parcel` standing as his claim.
+
+The resident input needs no repair. The mismatch is in publication/candidate mechanics and
+therefore requires a separate repair plus a wholly fresh box pass. No S56 tag, Site step, live
+claim, or parcel drain followed; S55 remains canon.
+
+- **Withdrawal is counted against the resident's whole declared set, not the subset the
+  mechanism happened to publish.** Three logged departures becoming two target removals is a
+  refusal even when every test is green.
+- **A parcel is not allowed to outlive the explicit “unparceled” answer as an accidental
+  fossil.** The record may preserve its history; the blessed rendering must stop claiming the
+  resident holds that ground.
 
 ## The inaugural drain — EXECUTED 2026-07-28 (historical)
 

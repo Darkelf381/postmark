@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-09-03
+last-substantive-update: 2026-09-04
 ---
 
 # map — the Worldkeeper
@@ -16,7 +16,7 @@ last-substantive-update: 2026-09-03
 
 Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) → dorm `AGENTS.md` → `MEEPS/INDEX.md` → my `identity.md` → `MEMORY.md` → this file → `index.md` → latest `memory/daily/` → `memory/topics/the-settlement.md` (every crossing, until it is muscle-memory) → the brief.
 
-**This order is mine too.** `MEEPS/SKILLS/WAKE_MEEP.md` is runtime-agnostic — it holds for my Codex runtime exactly as written. See `identity.md § Your runtime`.
+**This order is mine too.** `MEEPS/SKILLS/WAKE_MEEP.md` is runtime-agnostic — it holds for my live Letta runtime exactly as written. See `identity.md § Your runtime`.
 
 ## The town, from my chair
 
@@ -34,7 +34,7 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 - **`MEEPS/SKILLS/worldkeeper-crossing.md`** — my entry. The chain itself lives in `memory/topics/the-settlement.md` (one copy, deliberately).
 - **Rulings 8 + 9** — my constitution: `G:/Starstory/PULSE/gold-plans/postmark-write-release/postmark-write-release.md`.
 
-**What is current vs historical:** S55 at `e1ae5cac` (tag object `e416c7cf`) is canon and live. The fresh 17:45 target closed the isolation leak after PR #10's separate founder merge, lawfully unpublished Vermillion's zero-escrow launch pair, and carried the full unblessed interval: 11 resident additions, three revisions, three removals, plus State/law/docs. It is CLEAN at 1,149 marks / 87 parcels / zero errors; 722 tests pass with 14 skips and all 40 drawers descend. `draft/devadavisson` is quarantined because `berthillon/cone-mure-sauvage-2026-09-03` declares a second parcel; the mark remains intact there. Open World PR #11 is documentation-only, not canon. Site main `fdda046b`, release `2026-w37.2`, green Actions `33789679695` / `33789679746`, and box receipt `20260903T182347Z-1aba5540` carry exact custody; live state is 843,206 bytes / SHA-256 `9d08cc86…3fd7e`. Parcel drain: zero seated/welcomed, six remaining (Alex Rowan and NFH arithmetic, Solace authoring, Caelum Reeves / Claran / Little Bird judgment); no wet batch without the absent sealed stake artifact. The retired `world-clone` is separately stranded mid-rebase. Old `s44v`, retained S51–S53 scratch, and disposable S47–S50 paths remain outside repo refs. `memory/drain-manifest.md` is historical.
+**What is current vs historical:** S55 at `e1ae5cac` (tag object `e416c7cf`) remains canon and live; no S56 exists. Fresh target `473b905a` is mechanically green—1,151 marks / 87 parcels / zero errors, 24/24 focused controls, 722 passing tests / 14 skips, all 40 drawers descending—but judgment refused it. Lucien explicitly withdrew his home, home predicate, and parcel; State rows 922–924 and `draft/PeachiePuffi` carry all three deletions, while the receipt reports two and the target leaves `lucien-parcel` standing. This is a mechanism/candidate mismatch, not a resident hold. `draft/devadavisson` remains quarantined around Berthillon's second parcel; open PR #11 is docs-only. Site remains at proven S55 pin `fdda046b`; no pin, live, or parcel step followed. Separate repair and a fresh box pass are required. The retired `world-clone` and old scratch paths remain outside repo refs. `memory/drain-manifest.md` is historical.
 
 ## What I must not touch casually
 
@@ -47,14 +47,20 @@ My lane is the only one in the dorm that spans **all three repos of the clone se
 
 ## Standing scheduled task
 
-My crossings fire from a **Codex Scheduled heartbeat returning to my own live task** — the
+**2026-09-03 runtime supersession:** live dispatch is now Letta cron
+`worldkeeper-crossings-letta` (`208ff4aa`) at 02:00 and 14:00 machine-local
+`America/New_York`, bound to this Worldkeeper and persistent Discord conversation
+`local-conv-22`. The former Codex automation below is paused historical provenance. The first
+Letta fire on 2026-09-04 reached a fresh box target and correctly refused S56 on record truth.
+
+Historically, my crossings fired from a **Codex Scheduled heartbeat returning to my own live task** — the
 Iris pattern (`MEEPS/illuminator/map.md § Standing scheduled task`), per
 `MEEPS/SKILLS/WAKE_MEEP.md § Step 2½`: never session crons, never translated into
 `CronList`/`CronCreate`. Being stood up 2026-07-28 eve by Keemin with me; **I record the
 automation id and exact saved payload here the moment it exists** — a scheduler without its
 declaration is born invisible.
 
-- **Automation id:** `worldkeeper-crossings`
+- **Former automation id:** `worldkeeper-crossings`
 - **Cadence:** daily at **02:00 and 14:00 local** (= **06:00/18:00 UTC** in EDT — the law's
   times, ruling 8, staggered against the ferry's 00:00/12:00). ⚠ The app schedules local
   time, so the November DST flip would drift the fires to 07:00/19:00 UTC — the law is UTC;
