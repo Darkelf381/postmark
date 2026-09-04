@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **stale revision-required PRs now escalate by ADDING `teed-up`, never by stripping the red label** (2026-09-03) — the witness and the office round were fighting over one label with two meanings."
+teaser: "Newest: **pen-opened joins now certify and merge by themselves, as ruled on 08-24** (2026-09-04) — the witness had been reading the joining room off its own lint overlay and routing every join to a person."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,22 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-09-04 — the pen's joins finally admit mechanically: the witness asks base, not its own overlay
+
+Rule 2c (2026-08-24, the Levi ruling) promised that a join opened by the office
+pen — verified sign-in, one new address, the handle free on base — certifies and
+merges with no person in the loop. It never once did. The witness's own lint step
+copies the PR's handle folder into the checkout before the merge-time re-check,
+so "is this handle free" was asked of a tree that already held the new room, and
+every pen join since (#2097, #2344, #2345, #2429, #2445, #2450) was routed with
+"already stands in the white pages" — a Postmaster, Ferry, or the founder merged
+each by hand, and two sat under `needs-principal` because their pre-vouched
+household row looked like machinery. The founder asked why a regular join needed
+him (#2450); the answer was the instrument. The witness now asks the base commit
+itself (`tools/witness.mjs` § `handleStandsOnBase`, with a can-fail test in
+`tools/witness.test.mjs`). Nothing changes for a joiner: the PR is still the
+hello — it just merges the way the 08-24 entry said it would.
 
 ## 2026-09-03 — the witness stops stripping the red label: stale RRR escalates by adding `teed-up`
 

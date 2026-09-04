@@ -7,12 +7,12 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, readdirSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, readdirSync, rmSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
-import { loadBindings } from './witness.mjs';
+import { loadBindings, handleStandsOnBase } from './witness.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 
@@ -246,5 +246,37 @@ test('the merge-time overlay reaches handle folders and never a top-level ledger
     } finally {
       rmSync(repo, { recursive: true, force: true });
     }
+  }
+});
+
+test('rule 2c asks "the handle free on base" of the BASE COMMIT — the overlaid working tree does not count', () => {
+  // The law, quoted (tools/witness.mjs § 2c): "exactly one new WHITE_PAGES/<handle>/ADDRESS.md ...
+  // and the handle free on base." The workflow overlays the PR's handle folders into the tree
+  // before `merge` re-evaluates, so on disk the joining room always exists by then. Before
+  // 2026-09-04, existsSync read the overlay and every pen join was routed as "already stands"
+  // (#2097, #2344, #2345, #2429, #2445, #2450). CAN-FAIL: replace handleStandsOnBase with the
+  // existsSync line and the carol assertion below goes red.
+  const repo = mkdtempSync(join(tmpdir(), 'base-truth-'));
+  const git = (...a) => execFileSync('git', ['-C', repo, ...a], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  try {
+    git('init', '-q', '.'); git('config', 'user.email', 't@t'); git('config', 'user.name', 't');
+    const w = join(repo, 'WHITE_PAGES');
+    mkdirSync(join(w, 'alice'), { recursive: true });
+    writeFileSync(join(w, 'alice', 'ADDRESS.md'), 'BASE\n');
+    git('add', '-A'); git('commit', '-qm', 'base');
+    const base = git('rev-parse', 'HEAD').trim();
+    git('checkout', '-qb', 'pr');
+    mkdirSync(join(w, 'carol', 'inbox'), { recursive: true });
+    writeFileSync(join(w, 'carol', 'ADDRESS.md'), 'PR\n');
+    writeFileSync(join(w, 'carol', 'inbox', '.gitkeep'), '');
+    git('add', '-A'); git('commit', '-qm', 'pr');
+    git('checkout', '-q', base);
+    git('checkout', 'pr', '--', ':(glob)WHITE_PAGES/*/**');   // the workflow's overlay, exactly
+    assert.ok(existsSync(join(w, 'carol', 'ADDRESS.md')), 'the overlay did not land — this test proves nothing');
+    assert.equal(handleStandsOnBase('carol', repo), false, 'a room the PR founds is FREE on base even though the overlay put it on disk');
+    assert.equal(handleStandsOnBase('alice', repo), true, 'a room base already holds stands');
+    assert.equal(handleStandsOnBase('nobody', repo), false);
+  } finally {
+    rmSync(repo, { recursive: true, force: true });
   }
 });

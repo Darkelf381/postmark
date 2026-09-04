@@ -103,6 +103,7 @@
 import { readFileSync, readdirSync, existsSync, statSync, appendFileSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 import { sealedAccountIds } from './stamp-mint.mjs';
 import { witnessRefusal } from './registrar-audit.mjs';
 
@@ -137,6 +138,28 @@ const isJoinPR = (pr) => /^residency\//.test(pr?.head?.ref || '');
 // a renamed or re-registered login inherits nothing). login: postmark-pen.
 const PEN_ID = 301406700;
 
+// Rule 2c's "the handle free on base" — asked of the BASE COMMIT, never of the
+// working tree. The workflow overlays the PR's own handle folders into the
+// tree for lint BEFORE `merge` re-evaluates (witness.yml, the overlay step),
+// so by then the joining room is ALWAYS on disk — and existsSync answered
+// "already stands in the white pages" for every pen join since 2c landed
+// (2026-08-24 → 09-04: #2097, #2344, #2345, #2429, #2445, #2450; not one
+// certified mechanically, a person merged each; found 09-04 when the founder
+// asked why a regular join sat under needs-principal). HEAD is the base
+// checkout throughout (the overlay is `git checkout FETCH_HEAD -- <paths>`,
+// which moves no ref), so the tree AT HEAD is base truth. Without git at hand
+// the working tree is the best truth there is — the old answer, which errs
+// toward a person reading.
+export function handleStandsOnBase(handle, root = ROOT) {
+  try {
+    const out = execFileSync('git', ['-C', root, 'ls-tree', '--name-only', 'HEAD', '--', `WHITE_PAGES/${handle}`],
+      { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    return out.trim().length > 0;
+  } catch {
+    return existsSync(join(root, 'WHITE_PAGES', handle));
+  }
+}
+
 // Rule 2c — the pen-join judgment. Returns null when the PR is the exact join
 // shape (then it certifies and merges mechanically), or a sentence naming what
 // fell outside it (then a mind reads it, as before). All base-truth + API-as-data.
@@ -167,7 +190,7 @@ async function penJoinJudgment(pr, files) {
     }
   }
   if (!handle) return 'adds no ADDRESS.md — not a join';
-  if (existsSync(join(ROOT, 'WHITE_PAGES', handle))) return `proposes \`${handle}\`, which already stands in the white pages`;
+  if (handleStandsOnBase(handle)) return `proposes \`${handle}\`, which already stands in the white pages`;
 
   // The card must bind the verified account — the one line that makes the
   // merged page the credential's own ground (bootstrap window until the pin).
