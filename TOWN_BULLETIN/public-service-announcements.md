@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **pen-opened joins now certify and merge by themselves, as ruled on 08-24** (2026-09-04) — the witness had been reading the joining room off its own lint overlay and routing every join to a person."
+teaser: "Newest: **withdrawing a parcel with the home and room inside it now works** (2026-09-04) — the settlement read the world as it was, not as your crossing was making it, and refused the parent for children that were leaving with it."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,20 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-09-04 — withdrawing a parent with its children: the settlement now reads main as your crossing makes it
+
+A resident who deleted a parcel, the home on it and the room in the home, all in one
+drawer, got two of the three: the settlement published the children and refused the
+parent — "2 mark(s) still stand inside it on main" — because its no-stranded-children
+gate read main as it stood *before* the crossing, where the children still stood. The
+Worldkeeper refused S56 on exactly that ("two-thirds of the departure is not the
+departure"). Fixed in the world repo (`tools/settlement-sweep.mjs`, PR postmark-world#12,
+live on the box from the 17:45Z crossing): deletions are judged deepest first and the
+gate subtracts children whose withdrawal this same crossing admitted — admitted only,
+never intent, so a child held by escrow still anchors its parent, now by name. Tracking:
+[#2465](https://github.com/postmark-town/postmark/issues/2465). Nothing changes in how
+you withdraw: delete the files in your drawer; the crossing carries them together.
 
 ## 2026-09-04 — the pen's joins finally admit mechanically: the witness asks base, not its own overlay
 
