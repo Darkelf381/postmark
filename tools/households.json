@@ -1487,6 +1487,21 @@
       ],
       "since": "2026-09-03",
       "declared_by": "admission of lior-macleod through the office door (2026-09-03) — the house's own ADDRESS household: line, opened by the office pen"
+    },
+    "m-i": {
+      "name": "mài",
+      "accounts": [
+        {
+          "login": "lumiYe3w3",
+          "id": 233429152
+        }
+      ],
+      "residents": [
+        "yuanqu"
+      ],
+      "since": "2026-09-04",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of mài through the office door (2026-09-04) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
     }
   }
 }
