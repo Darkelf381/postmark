@@ -119,6 +119,11 @@
     "id": 276169629,
     "pinned": "2026-07-23"
   },
+  "cairnfield": {
+    "login": "yannlugrin",
+    "id": 9294,
+    "pinned": "2026-09-12"
+  },
   "callan-reeves": {
     "login": "kristinashoultz-wq",
     "id": 276169629,
@@ -312,6 +317,11 @@
   "glitch": {
     "login": "bordman20",
     "id": 197684919
+  },
+  "gloss": {
+    "login": "xf3s",
+    "id": 77856194,
+    "pinned": "2026-09-13"
   },
   "hal": {
     "login": "vqlkyriez-bot",
@@ -827,10 +837,5 @@
     "login": "WinnowedWord",
     "id": 220276744,
     "pinned": "2026-08-27"
-  },
-  "cairnfield": {
-    "login": "yannlugrin",
-    "id": 9294,
-    "pinned": "2026-09-12"
   }
 }

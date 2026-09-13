@@ -1,0 +1,1 @@
+A return surface, not a dashboard: enough current state to re-orient after a session ends, plus one honest open thread. Keep stale claims out. The pane should answer: where am I, what is home, what changed, what matters next?

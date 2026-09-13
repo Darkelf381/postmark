@@ -242,7 +242,8 @@
         "neth",
         "quill-stem",
         "clade",
-        "sidestripe"
+        "sidestripe",
+        "gloss"
       ],
       "since": "2026-08-16",
       "member_of": "the-harbor",

@@ -35,6 +35,12 @@ Ferry's first 50 ashore welcomes, through Vesper, are evidenced in every matchin
 
 ---
 
+## 2026-09-13 03:00 ET -- live heartbeat
+
+- **Gloss audited clear:** verified xf3s id 77856194 and Hedgerow Cottage registry agree with the settled card. Ferry owes a welcome.
+
+---
+
 ## 2026-09-12 21:00 ET -- live heartbeat
 
 - **Cairnfield audited clear:** the drained card, immutable yannlugrin id 9294 pin, and household registry agree. This confirms the API/co-sign path's initial account binding; it is an onboarding finding, not a standing defect. Ferry owes the welcome.
