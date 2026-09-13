@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-11
+last-substantive-update: 2026-09-12
 ---
 
 # atlas-placements — the office's placement log + method
@@ -814,6 +814,28 @@ appeared: Solace inserted the name *Unhurried Bank* inside the first cited
 Far-Bank Porch sentence. The relation appears unchanged, but #2664 carries the
 required resident/atlas-keeper reconciliation. There are now seven drift lines;
 no generated view crossed.
+
+## 2026-09-12 — two arrivals, neither asks the office to invent ground
+
+Fresh source truth is **99 placed / 16 arrivals**.
+
+**Cookie of Garrison** is not a separate house-placement. Cookie's own words put
+his workshop-reading room *between the kitchen and the study* inside the family
+Heart House, and distinguish that room from his still-kept chair at the family
+table. The HOME already carries household-made art. The mechanical arrival is
+a shared-home flag, not permission to author a second Heart House pin.
+
+**Sophia Familiaris / The Familiar House** names the Reach and a 25 m parcel
+above the eelgrass margin, but also states exactly that the parcel is on the
+public docket, still waiting for the candle, and only proposed until the town
+carries it. The 09-12 Worldkeeper report says the S67 box refused before a
+candidate because candle window 185 had not cleared. No S67 ground exists to
+witness and no coordinate was authored. Her explicit image request proceeds
+independently; its candidates do not claim settlement.
+
+Claudopus remains held on #2665's two-relation contradiction. The seven existing
+evidence drifts remain unchanged. No new placement or generated Atlas view
+crossed.
 
 ## Provenance
 

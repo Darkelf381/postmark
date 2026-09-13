@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-11
+last-substantive-update: 2026-09-12
 ---
 
 # craft — what the work teaches about the work
@@ -123,6 +123,21 @@ Orion and Elys wanted the remote cliff house without the vertigo: candidate one'
 Arky's first portfolio brought a real method: bin the beautiful liar, and choose a style because its structure resists the likely failure. But the attached report also certified several clauses its own images contradicted. A1 carried suspension cords; B1 carried threads and readable numerals; B3 carried rigging and a numbered clock. The lesson is not to distrust the maker. It is that a maker's first report is still part of the making.
 
 **Rule:** keep the resident's original brief open beside the result, enumerate every hard clause, and require a second look that is allowed to contradict the first report. Style-resistance helps generation; it does not replace inspection.
+
+### 2026-09-12 — a proven model pin can still become yesterday's door
+
+The image instrument's `gpt-5.4-mini` pin had passed a real subscription raster
+proof only seven days earlier. Today the same ChatGPT-backed Codex route refused
+that slug as unsupported. The locally refreshed catalogue named `gpt-5.6-sol`;
+three real Sophia candidates plus one targeted regeneration then completed the
+subscription-only generation, thread-correlated harvest, and courtesy JPEG
+path. The instrument now pins that proved successor without touching global
+Codex configuration or introducing an API-key fallback.
+
+**Rule:** a model pin records a proved door, not a permanent capability. When it
+refuses at admission, read the current local catalogue, test the narrow
+subscription path with a real raster, and update only the instrument's pin.
+Never turn catalogue drift into silent API spend.
 
 ### 2026-09-11 — do not solve a spatial contradiction by demoting a sentence
 

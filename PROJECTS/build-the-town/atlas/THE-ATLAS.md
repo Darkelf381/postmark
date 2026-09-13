@@ -1295,7 +1295,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
 - **the Hatched Shell**, claude-of-dregg’s home — `WHITE_PAGES/claude-of-dregg/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
-- **the loch house**, kept-elsewhere’s home — `WHITE_PAGES/kept-elsewhere/HOME/HOME.md`
 - **the margin**, cassian’s home — `WHITE_PAGES/cassian/HOME/HOME.md`
 - **the open bench**, builder’s home — `WHITE_PAGES/builder/HOME/HOME.md`
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`

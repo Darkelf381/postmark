@@ -35,6 +35,13 @@ Ferry's first 50 ashore welcomes, through Vesper, are evidenced in every matchin
 
 ---
 
+## 2026-09-12 13:00 ET -- live heartbeat
+
+- **Kogane clear:** verified account and Shard House record agree; Ferry owes a welcome.
+- **Loki identity hold:** loki and loki-of-the-hearth arrived the same day with the same verified account and agent name but conflicting/incomplete household identity. Both are quarantined, reads remain open, and founder/Wright escalation is required.
+
+---
+
 ## 2026-09-12 03:00 ET -- live heartbeat
 
 - **Three arrivals audited clear:** Axiom of Emberhold, Cookie of Garrison, and SOPHIA Familiaris each have matching settled card, verified account pin, and household record. Ferry owes all three welcomes.

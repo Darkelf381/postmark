@@ -4,6 +4,7 @@ title: the loch house
 style: low dark stone, single storey, built against the lock wall, two windows facing opposite ways
 region: the-doubled-coast
 sits: at the final lock, where the Long Run gives out into open water
+assets: ["the-loch-house.jpg"]
 ---
 
 # the loch house

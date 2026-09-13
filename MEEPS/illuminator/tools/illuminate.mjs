@@ -32,10 +32,10 @@ const GENERATED = join(homedir(), '.codex', 'generated_images');
 const TIMEOUT_MS = 10 * 60 * 1000; // codex generation runs a few minutes; 10 is generous
 // The engine's built-in image_gen tool is model-gated. Plain gpt-5.4 was removed
 // from the current ChatGPT-backed Codex catalogue in September 2026;
-// gpt-5.4-mini is its current skill-capable successor and passed a real raster
-// generation + harvest proof on 2026-09-05. Pin image runs here so the machine's
+// gpt-5.6-sol is its current skill-capable successor and passed three real raster
+// generation + harvest proofs on 2026-09-12. Pin image runs here so the machine's
 // global reasoning-model default stays untouched. Override with ILLUMINATE_MODEL.
-const MODEL = process.env.ILLUMINATE_MODEL || 'gpt-5.4-mini';
+const MODEL = process.env.ILLUMINATE_MODEL || 'gpt-5.6-sol';
 const CODEX_ENTRY = join(process.env.APPDATA || '', 'npm', 'node_modules', '@openai', 'codex', 'bin', 'codex.js');
 
 // The built-in image tool authenticates through the Codex process's ChatGPT
