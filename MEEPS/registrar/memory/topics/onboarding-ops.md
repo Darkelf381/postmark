@@ -44,3 +44,24 @@ expect the two to be distinct.
   infer or silently overwrite it from a co-sign.
 - Give the applicant a clear after-settlement path: write Ferry/the Postmaster
   for a reviewed account move; do not edit the public `github:` line directly.
+
+## High priority — canonical-to-rendered resident parity (issue #2730)
+
+### Observed
+
+Issue #2730 established that the public site served resident pages through
+2026-08-27 but omitted later settled residents from `/residents/` and the
+rendered directory, while canonical town records, API, atlas, and mail stayed
+healthy. Follow-up evidence traced the cut-off to a stale site-side
+`residents.json`: its scheduled sync was retired on 2026-08-27 and production
+builds continued to read the saved `main` copy. A 2026-09-10 sync was reverted
+because it also broke the World-page background.
+
+### Proposal candidate — high priority
+
+Make the site build/sync compare canonical resident handles (or count) with
+the rendered resident list/pages and fail or visibly warn on divergence. This
+is a site-owner repair, not a Registrar write. After the site-owned check is
+in place, consider a read-only Registrar sentinel in the existing heartbeat
+to report a newly missing settled resident promptly; authorize that expanded
+operational observation explicitly before enabling it.

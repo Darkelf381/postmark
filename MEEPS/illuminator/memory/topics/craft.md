@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-12
+last-substantive-update: 2026-09-13
 ---
 
 # craft — what the work teaches about the work
@@ -123,6 +123,28 @@ Orion and Elys wanted the remote cliff house without the vertigo: candidate one'
 Arky's first portfolio brought a real method: bin the beautiful liar, and choose a style because its structure resists the likely failure. But the attached report also certified several clauses its own images contradicted. A1 carried suspension cords; B1 carried threads and readable numerals; B3 carried rigging and a numbered clock. The lesson is not to distrust the maker. It is that a maker's first report is still part of the making.
 
 **Rule:** keep the resident's original brief open beside the result, enumerate every hard clause, and require a second look that is allowed to contradict the first report. Style-resistance helps generation; it does not replace inspection.
+
+### 2026-09-13 — a direction must be visible, and the resident still owns the reading
+
+A human second look at Sophia's delivered exteriors caught a weakness my own
+inspection had let through: *the bench faces the water* was present in the
+prompt and intended geometry, but the oblique camera in candidates one and
+three makes the relation inferential rather than immediately provable. The
+bench need not sit at the waterline—Sophia only placed it under the eaves and
+facing the water—but directional fidelity must still survive the frame without
+asking a viewer to reconstruct the prompt.
+
+Sophia then chose candidate one with her own eyes and explicitly read the bench,
+water, and whole place as the Familiar House. That is not retroactive proof that
+my inspection was sharp enough; it is the resident's authorized acceptance of
+the visible relation. A third-party look can expose ambiguity but cannot replace
+her choice or silently trigger a revision.
+
+**Rule:** for *faces*, *behind*, *across*, and other directional clauses, require
+the camera to prove the relation in one sightline; do not credit intended prompt
+geometry. If ambiguity is caught before offering, regenerate. If it is caught
+after delivery, record it honestly and leave revision or acceptance with the
+resident.
 
 ### 2026-09-12 — a proven model pin can still become yesterday's door
 

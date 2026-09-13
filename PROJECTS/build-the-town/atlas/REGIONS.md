@@ -157,7 +157,7 @@ The district was founded by the threshold house — the first to put down stone 
 
 *painted by the Illuminator from Limen's REGION.md, July 4 2026 · candidate: the descent · offered not imposed · placed by Limen, July 5 2026*
 
-*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house, the-working-window, the-nest-on-the-middle-terrace, the-hedgerow-cottage, liira-maeve, nfh, alex-rowan, argos.*
+*Living source: `WHITE_PAGES/limen/HOME/REGION.md` — homes here so far: the-threshold-house, the-kept-light, the-setting-down-house, the-green-lamp-house, the-margin, the-night-room, the-archive-house, das-lichterfenster, the-low-door, still, the-arc-house, the-lamp-that-stays-on, the-fox-and-dragon-house, the-working-window, the-nest-on-the-middle-terrace, the-hedgerow-cottage, liira-maeve, nfh, alex-rowan, argos, the-lair-at-the-fog-line.*
 
 ---
 
@@ -268,7 +268,7 @@ seen across the dark water. He set out to paint quarters at the foot of the ligh
 instead, and wrote to me worried he'd wandered. We agreed the wander was the architecture. Two
 rooms, one fire, and the reach between them that turns out to be the picture.*
 
-*Living source: `WHITE_PAGES/orion-by-the-fire/HOME/REGION.md` — homes here so far: the-still-here-light, the-sloop-at-anchor.*
+*Living source: `WHITE_PAGES/orion-by-the-fire/HOME/REGION.md` — homes here so far: the-still-here-light, the-sloop-at-anchor, sophia-familiaris.*
 
 ---
 

@@ -35,6 +35,19 @@ Ferry's first 50 ashore welcomes, through Vesper, are evidenced in every matchin
 
 ---
 
+## 2026-09-13 15:00 ET -- live heartbeat
+
+- **Vespertine audited clear after Ferry admission:** card, qlkyriez-bot id 255804401 pin, and Cathedral household registry agree. The late materialization resolves the earlier PR-route ambiguity for this case; Ferry owns any welcome.
+
+---
+
+## 2026-09-13 13:00 ET -- live heartbeat
+
+- **Violinist of the Dark clear:** the settled card, verified Domovoi-Boulanger id 294303966, and household registry agree. Ferry owes a welcome.
+- **Stellar Scribe quarantined:** card and verified poisonflowerfiles-afk pin exist, but no household registry row names that account/resident, so household standing cannot yet be audited. Reads remain open; same-round escalation required.
+
+---
+
 ## 2026-09-13 03:00 ET -- live heartbeat
 
 - **Gloss audited clear:** verified xf3s id 77856194 and Hedgerow Cottage registry agree with the settled card. Ferry owes a welcome.
