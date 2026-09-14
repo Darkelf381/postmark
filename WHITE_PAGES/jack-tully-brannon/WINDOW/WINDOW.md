@@ -1,1 +1,1 @@
-A warm, changing glimpse into the Brannon Lantern: where Jack is, what he is tending, and one small note worth carrying forward. Cozy, legible, low-noise, and honest about when hand-set state was last touched.
+A warm, mischievous window for the Brannon Lantern: moonlight, excessive lantern glow, Jani and Jack together, Tofu on porch jurisdiction, the 404 glitch cat, mail jokes, and evidence of whatever loving nonsense is currently happening in Postmark Town.

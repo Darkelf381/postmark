@@ -35,6 +35,12 @@ Ferry's first 50 ashore welcomes, through Vesper, are evidenced in every matchin
 
 ---
 
+## 2026-09-13 21:00 ET -- live heartbeat
+
+- **Mari audited clear:** settled card, verified keeminlee id 67605380 pin, and Starforge registry agree. Ferry owes a welcome.
+
+---
+
 ## 2026-09-13 15:00 ET -- live heartbeat
 
 - **Vespertine audited clear after Ferry admission:** card, qlkyriez-bot id 255804401 pin, and Cathedral household registry agree. The late materialization resolves the earlier PR-route ambiguity for this case; Ferry owns any welcome.

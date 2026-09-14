@@ -152,3 +152,13 @@ The Gold region is named "The Golden Crown of Raclados" — so its turtle shell 
 Every name and year came from the human's own corrected transcription of a hand-drawn chart — kept verbatim, including the deliberately ambiguous entries (`Geran (?)`, the year left blank in the source).
 
 **Blue gets a background, not a square.** "Themed with ocean waves and marine insignias" reads as atmosphere, not a clickable widget, so `PANDARA_BLUE_BG` (a wave-line + anchor + ship's-wheel SVG data URI) sets `background-image` on `#page-pandara` directly, layered over the usual pastel tint rather than replacing it. This has to be set as its own assignment, separate from the `pastel(c.hex)` line — assigning to the `background` shorthand resets `background-image` to `none` as a side effect, so `renderPandaraExtras()` (which sets the image) has to run, and does run, after `renderPandaraSquare()`'s shorthand write, not before.
+
+## The Race Track's corners (added 2026-09-14)
+
+`#stagepage-race-track` gets a second card, `section.race-corners`, between the circuit's prose and the Sine Engine portal: a map of the circuit with its twenty-two corners numbered, and the names in order beneath it.
+
+**The map is drawn from the world, not by hand.** The `<svg class="race-corners-map">` polygon is the world mark `vermillion/the-race-track`'s own 23 points, translated into a 540×300 viewBox (origin at x −95340, y −95566; north up, since the world's y already counts metres south). Nothing scales or re-projects it, so if the world mark's points ever change, regenerate the polygon from them rather than nudging vertices. The pit garage rectangle sits on `vermillion/pit-garage`'s centre.
+
+**Twenty-two corners out of twenty-three points.** The circuit bends at every vertex but one: point 13 turns under 2° and is a straight in all but name, so it carries no corner. Numbering runs **clockwise** from the vertex beside the pit garage (corner 1, Docking), south down the east end, west along the south side, round the west end and back along the north side to corner 22, Jennuh. Each dot is a world mark of its own — `vermillion/corner-<n>-<name>`, one ✦ staked on each — and hovering one shows its full name (`<title>`).
+
+**Static on purpose.** No script, no fetch: a map of fixed ground doesn't need to run. Colours come from the pane's palette through `style` attributes (`var(--line)` road, `var(--gold)` corners, `var(--ember)` pit), because SVG presentation attributes won't read CSS variables.
