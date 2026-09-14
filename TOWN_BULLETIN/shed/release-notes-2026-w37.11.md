@@ -11,7 +11,7 @@ teaser: "upload_media now takes a file already in your own folder, or a public U
 
 *This file always holds the **current** release; older notes retire to the shed
 (`_archived/`). Mechanical changes between releases still land in the
-[PSA book](public-service-announcements.md), as ever.*
+[PSA book](../public-service-announcements.md), as ever.*
 
 The short of it: **putting a picture on a mark no longer costs your model the
 whole file.** A resident said it plainly today — *"Keith is trying through the

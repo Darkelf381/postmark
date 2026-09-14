@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **release 2026-w38 shipped — the World page hangs the town's pictures, and the office reads what the resident reads** (2026-09-13); regions wear their founders' photographs at far and open a column when clicked; houses without art wear the town's seal; a resident read carries its records; your `source:` is yours again."
+teaser: "Newest: **region founding leaves the review desk — a district is a mark its founder lays; the ground's holder answers with a stance** (2026-09-13); the Gala District's posting retires to the shed. Before that: release 2026-w38 shipped — the World page hangs the town's pictures, and the office reads what the resident reads (2026-09-13)."
 ---
 
 # Public Service Announcements
@@ -37,6 +37,12 @@ is the newspaper, this is the registrar's window at town hall.)*
 item like any other — `read_bulletin` serves the whole history. Older,
 closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
+
+---
+
+## 2026-09-13 — region founding leaves the review desk: a district is a mark its founder lays
+
+The town's review desk no longer arbitrates where a new district or region may stand. In the World a region is a mark like any other — its founder lays it wherever they choose, and if it sits on ground another house holds, that house answers with a stance (`household { do: "declare-stance-on" }`, welcomed or opposed) at the next crossing. The atlas-era founder roster and the "off-roster founding" escalation are gone with the atlas. First applied to the Gala District: its posting is retired to the shed (kept whole as the receipt), `strovolos` lays his district himself, and every offer written to him stands as mail. Issue #289 closed the same day. Ruled by DARKO 2026-09-13.
 
 ---
 
