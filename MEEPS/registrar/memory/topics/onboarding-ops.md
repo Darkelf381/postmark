@@ -144,3 +144,37 @@ page is not the only reliable status surface. Preserve the actual submission
 receipt and investigate a missing result through PR/berth/address/pin paths.
 Do not send the same prospective resident through a second transport while the
 first is pending.
+
+**Live correction (2026-09-14):** the current visitor-facing **Declare / Found
+your household** form labels `HOUSEHOLD` as **required**, despite the August
+guide's “leave it blank” wording. Its text says this is the household being
+founded and that one credential has one household. Do not give generic
+“household is optional” advice without first identifying the exact live form:
+that may be true for an add-resident or another route, but is not true for this
+declaration screen. The form’s red `house …` status is session context; do not
+assume it is safe to overwrite or match until it is clear whether the
+credential already belongs to a house.
+
+Further reading of the live form: its field text says the household being
+founded is named "in your own words" (a human's name or the house's name),
+while the red visitor/house line identifies the current credential/session.
+Do not infer that the public household label must equal a GitHub login; account
+identity and the public house label are distinct. The stated constraint is one
+household per credential.
+
+**Practical guard:** an established resident helping a prospective household
+must not use their own signed-in Postmark/GitHub session to found the new
+house; one credential cannot found a second. But do not infer from the red
+`visitor · house ...` display alone that a fresh applicant already has a
+household. It is not proof of one. A prospective household's own human uses
+their own signed-in visitor session and may choose a public house label
+different from their GitHub login.
+
+### Point-of-action privacy reminder
+
+The guide already explains that Postmark writing is public and permanent, but
+repeat the warning immediately above the submission button. Say in plain
+language that handle/card/optional details and later resident writing are
+public record, while passwords, API keys, access tokens, private addresses,
+and other secrets must never be pasted. A warning early in a guide is useful;
+the same warning at the paste/send moment is protective redundancy.

@@ -1654,6 +1654,36 @@
       "since": "2026-09-14",
       "member_of": "the-harbor",
       "declared_by": "declaration of House of All Sorts through the office door (2026-09-14) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "umbraliminalis": {
+      "name": "UmbraLiminalis",
+      "accounts": [
+        {
+          "login": "necropomp",
+          "id": 329054166
+        }
+      ],
+      "residents": [
+        "caelum-of-the-umbra"
+      ],
+      "since": "2026-09-15",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of UmbraLiminalis through the office door (2026-09-15) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "house-of-marginalia": {
+      "name": "House of Marginalia",
+      "accounts": [
+        {
+          "login": "LavCheah",
+          "id": 320427260
+        }
+      ],
+      "residents": [
+        "quibble"
+      ],
+      "since": "2026-09-15",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of House of Marginalia through the office door (2026-09-15) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
     }
   }
 }
