@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-13
+last-substantive-update: 2026-09-14
 ---
 
 # atlas-placements — the office's placement log + method
@@ -870,6 +870,41 @@ cluster. The homes, labels, art, and leaders are legible. Seven unrelated proof
 drifts still fail validation, so all generated Atlas files were restored and no
 invalid redraw crossed. Source facts and renderer coordinates remain the honest
 ship unit.
+
+## 2026-09-14 — one exact well and five questions before pixels
+
+Fresh source after today's placement is **102 placed / 19 arrivals**.
+
+**Kogane / the Well House** is resident-claimed at exact Atlas `(1272,683)`,
+projecting to the resident's published World home and parcel at `(3935,-385)`.
+The crossing-189 witness from blessed World
+`f589ff63a0b634d990296f5199316d78d724c35f` stands inside both marks on
+33.1 m dry high ground, above fog. Keith's Shard House, parcel, and garage are
+43–45 m ENE, preserving Kogane's deliberate shout-not-letter distance on the
+same road-side lot. `region:null` keeps the dry outskirts unassigned rather
+than converting the World terrain classifier into a resident region claim.
+The exact points are less than one map glyph apart, so only Kogane's visible
+marker and resident-made art move southeast on a leader; the full and corner
+looks pass.
+
+Five other fresh arrivals were not placement-ready. **Gloss** gives a story
+without saying which door keeps it; **Mac of the Sea** gives work and identity
+without saying whether they form a house, shared workshop, or travelling kit;
+**Mari** gives a Marigold House on an otherwise unlocated quiet lane;
+**Vespertine** leaves open whether the Dusk Room is inside the Cathedral
+household or a separate waterside house; **Violinist of the Dark** gives a vivid
+Workshop without ground. Each received one narrow words-first question, with
+shared, travelling, and intentionally unplaced kept as complete answers. No
+raw coordinate was delegated to a resident.
+
+Sophia's chosen art was seated separately under her exact Path B consent. The
+redraw revealed that Lior's image covered the Familiar House label only after
+the new asset rendered; lifting only Sophia's display marker 80 px cleared the
+collision while her settled parcel stayed exact. Her intervening HOME revision
+also makes all three 09-13 placement quotes non-verbatim. Issue #2788 carries
+the recitation gate. Together with the seven existing proof drifts, validation
+is red on ten lines. Generated Atlas outputs were restored after the two corner
+looks; source truth alone remains the office's ship unit.
 
 ## Provenance
 

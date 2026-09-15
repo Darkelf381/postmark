@@ -1,6 +1,6 @@
 {
  "version": 1,
- "note": "The town's quest registry — rules-as-data. One row per quest. Phase 2 (display layer) reads this to render the board; stamp-mint.mjs does NOT read it (minting derives from the mail + the sealed law lines; the milestone rule reads the stamps-v3 law line, not this file). `source` is the plain resident-facing description the quest card shows (kept super to-the-point, 2026-07-23); `derivation` is the precise rules-as-data note for builders (unrendered, unparsed — documentation only). cadence in {daily, milestone, one-time, ongoing}; validation in {automatic, needs-review, pr-merge}. The two correspond-send/receive rows are the existing correspondence mint given two visible faces — surface-as-is, no new mint. correspond-depth (Budding friendship) is the first milestone row and the town's fourth earning rule; its authority is the stamps-v3 law line, this row documents it. See STAMPS.md and the gold plans postmark-quests + postmark-budding-friendship. The six `one-time` rows are the ONBOARDING LINE (doorstep-next-steps gold, 2026-08-21): display layer only, ZERO mint change — they name papers and first moves a household already owed, so a resident can read what is left of arriving. A one-time row completes once and stays checked; `door` names the exact verb that opens it, and a row that no door of yours opens carries `awaits` instead (never a door that would refuse). first-answer is the existing correspondence mint given a third visible face — the row surfaces it, never doubles it. See the gold plan postmark-doorstep-next-steps.",
+ "note": "The town's quest registry — rules-as-data. One row per quest. Phase 2 (display layer) reads this to render the board; stamp-mint.mjs does NOT read it (minting derives from the mail + the sealed law lines; the milestone rule reads the stamps-v3 law line, not this file). `source` is the plain resident-facing description the quest card shows (kept super to-the-point, 2026-07-23); `derivation` is the precise rules-as-data note for builders (unrendered, unparsed — documentation only). cadence in {daily, milestone, one-time, ongoing}; validation in {automatic, needs-review, pr-merge}. The two correspond-send/receive rows are the existing correspondence mint given two visible faces — surface-as-is, no new mint. correspond-depth (Budding friendship) is the first milestone row and the town's fourth earning rule; its authority is the stamps-v3 law line, this row documents it. See STAMPS.md and the gold plans postmark-quests + postmark-budding-friendship. The `one-time` rows are the ONBOARDING LINE (doorstep-next-steps gold, 2026-08-21) — they name papers and first moves a household already owed, so a resident can read what is left of arriving. A one-time row completes once and stays checked; `door` names the exact verb that opens it, and a row that no door of yours opens carries `awaits` instead (never a door that would refuse). first-answer is the existing correspondence mint given a third visible face — the row surfaces it, never doubles it. See the gold plan postmark-doorstep-next-steps. The line was six rows and ZERO mint change until welcome-to-postmark joined it as the SEVENTH (founder-ruled 2026-09-14): the welcome bundle pays every household 5 once at its first resident, so exactly one row in this bucket mints and the other six remain a checklist. It sits here rather than with the milestones because joining is not a thing a resident goes and does — it is the arriving itself, and the onboarding line is where arriving is read.",
  "quests": [
   {
    "id": "correspond-send",
@@ -142,6 +142,19 @@
     "act": "leave-mark",
     "tool": "world_leave_mark"
    }
+  },
+  {
+   "id": "welcome-to-postmark",
+   "title": "Welcome to Postmark",
+   "cadence": "one-time",
+   "validation": "automatic",
+   "source": "Your household's first stamps, for joining. 5 stamps, once — the town's hand, not yours.",
+   "derivation": "stamp-ledger: a signed `welcome:<household-key>` line stands for your household (amount exactly 5, by: the-town, once per household ever — tools/stamp-mint.mjs WELCOME_RE, held at verify). Founder-ruled 2026-09-14: joining IS the milestone, so this row completes when the town has paid, never on anything a resident must go and do. It is paid at the household's FIRST RESIDENT and it reads complete for every resident of that house. The seventh one-time row and the only one that MINTS — the welcome bundle seen from the board.",
+   "target": 1,
+   "reward": "5 stamps — once per household, paid to its first resident",
+   "resets": "never — earned once per household and kept",
+   "door": null,
+   "awaits": "the town's own hand — the office writes the bundle at a crossing; joining is the whole of the doing"
   },
   {
    "id": "darko-fund",

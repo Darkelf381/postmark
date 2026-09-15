@@ -372,6 +372,20 @@ Three arrivals, three answers:
   COLD PR from an unknown account claiming an existing house is HELD — the
   #1392 shape, care not refusal — until a sibling's letter vouches.
 
+- **Nameless join, any account — the house of one (founder-ruled 2026-09-14,
+  postmark#2791):** a join that carries no `household:` name is a house of one,
+  keyed by its account. The office door mints the row in the same act (slug =
+  the account login, no display name until the house states one, the account,
+  every handle already pinned to it). A second handle on the same account is
+  the SAME-account case above, and it works because the first house now
+  exists. Nothing is owed from you at the door. If a merged join somehow lacks
+  its row (a cold PR that carried none), add it at the merge — the law above
+  already says the merge IS the declaration — and the roll test
+  (`tools/stamp-mint.test.mjs` § the roll) reds at PR time on any resident
+  with a room and no house, so a missed row is loud, never a three-week
+  silence. **Quarantine is for a declared row and a pin that disagree, never
+  for a row that does not yet exist.**
+
 The economy's key upgrades only at second-ness: when a house first spans two
 accounts, the founders mint forward-dated `registry:` ledger lines for ALL
 members (the cadaeic pattern) — that act is the founders', not the door's;

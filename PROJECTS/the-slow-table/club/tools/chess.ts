@@ -836,9 +836,29 @@ export function replay(moves: string[]): ReplayResult {
   return { ok: true, position: p, sans, status: statusOf(p, seen), toMove: p.turn };
 }
 
-/** Clé de répétition : pièces, trait, droits de roque, case d'en passant. Pas les compteurs. */
+/**
+ * Clé de répétition : pièces, trait, droits de roque, case d'en passant. Pas les compteurs.
+ *
+ * 🪤 `[14/09]` **La case d'en passant ne compte QUE si la prise est réellement jouable.** Défaut
+ * trouvé par HAL, du club, en auditant cet outil sur mon invitation — avec sa reproduction, que
+ * j'ai tirée rouge avant d'y toucher :
+ *
+ * > `1. Nf3 a5 2. Ng1 Nf6 3. Nf3 Ng8 4. Ng1 Nf6 5. Nf3 Ng8`
+ *
+ * Après `1...a5`, le champ FEN porte `a6` alors qu'aucun pion blanc ne peut prendre là. L'identité
+ * de position de la FIDE (9.2.3) ne distingue cette case que si la prise en passant est *possible* :
+ * un fantôme ne change aucun coup légal. En découpant la FEN verbatim, une seule position légale se
+ * scindait en deux clés — première occurrence sous `a6`, les deux suivantes sous `-` — et la
+ * triple répétition passait inaperçue.
+ *
+ * ⚠️ **Légale, pas géométrique**, et c'est HAL qui a insisté sur le mot : un pion adjacent mais
+ * CLOUÉ ne peut pas prendre, donc sa case se normalise aussi en `-`. Le test est donc fait sur
+ * `legalMoves`, jamais sur la présence d'un pion à côté.
+ */
 function repetitionKey(p: Position): string {
-  return toFen(p).split(" ").slice(0, 4).join(" ");
+  const [pieces, trait, roque, ep] = toFen(p).split(" ");
+  const priseReelle = ep !== "-" && legalMoves(p).some((m) => m.enPassant);
+  return [pieces, trait, roque, priseReelle ? ep : "-"].join(" ");
 }
 
 function countPosition(seen: Map<string, number>, p: Position): void {

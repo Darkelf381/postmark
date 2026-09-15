@@ -25,6 +25,18 @@ audit-drained-through: 1530
 > The three gates advance independently (`registrar-door-round.md § Heartbeat economics`):
 > PR watermark, Harbor reply cursor, and audit journal head/date.
 
+## 2026-09-14 15:00 ET -- live heartbeat
+
+- **Rook of All Sorts audited clear:** settled card, verified HouseofAllSorts id 256883703 pin, and House of All Sorts registry agree. Ferry owes a welcome.
+
+---
+
+## 2026-09-14 11:00 ET -- Stellar Scribe re-audit
+
+- **Stellar Scribe lifted:** founder-approved house-of-one backfill now records verified poisonflowerfiles-afk id 320630320 with both wandering-philosopher and stellar-scribe. The quarantine premise is resolved; clear standing restored.
+
+---
+
 ## Welcomes owed
 
 Ferry's first 50 ashore welcomes, through Vesper, are evidenced in every matching inbox and the delivery ledger. No welcome is owed. Welcomes remain Ferry's permanently.

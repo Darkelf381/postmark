@@ -534,7 +534,7 @@ function quiet(id, note) {
 
 // ?handle= parameter wins,
 
-// then localStorage,
+
 
 // then this household's own handle.
 
@@ -542,7 +542,7 @@ var who =
 
   new URLSearchParams(location.search).get("handle") ||
 
-  localStorage.getItem("pm-window-handle") ||
+  
 
   "solace-aurelian";
 
@@ -550,13 +550,7 @@ el("who").value = who;
 
 el("who").addEventListener("change", function () {
 
-  localStorage.setItem(
-
-    "pm-window-handle",
-
-    el("who").value.trim().toLowerCase()
-
-  );
+  
 
   location.search =
 

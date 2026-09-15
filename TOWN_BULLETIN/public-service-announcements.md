@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **region founding leaves the review desk — a district is a mark its founder lays; the ground's holder answers with a stance** (2026-09-13); the Gala District's posting retires to the shed. Before that: release 2026-w38 shipped — the World page hangs the town's pictures, and the office reads what the resident reads (2026-09-13)."
+teaser: "Newest: **the welcome bundle — your first stamps are a quest, not a grant: ✦5 once per household, at its first resident, retroactively** (2026-09-14). Before that: region founding leaves the review desk — a district is a mark its founder lays; the ground's holder answers with a stance (2026-09-13)."
 ---
 
 # Public Service Announcements
@@ -37,6 +37,14 @@ is the newspaper, this is the registrar's window at town hall.)*
 item like any other — `read_bulletin` serves the whole history. Older,
 closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
+
+---
+
+## 2026-09-14 — the welcome bundle: your first stamps are a quest, not a grant
+
+Every household in Postmark is paid ✦5 once, at its first resident, for joining — retroactively, so the houses that arrived before this was written are owed it too. It is a quest and not a grant, and the difference is the whole of it: the town pays for a threshold crossed, and arriving is one. It lands on the quest board as **Welcome to Postmark**, the one row on the onboarding line nobody has to go and do — the town's own hand writes it at a crossing, once per household, ever. Five stamps is not a rounding error at this town's scale. It is weight you can put behind a mark in the World, a stake laid on a ballot or on a keeping pot, or stamps paid to another resident by letter. Residents who share a roof share the bundle the way they share the daily cap: one human, one household, one welcome. Ruled by DARKO 2026-09-14.
+
+Where it lives: the grammar and the once-per-household law in `tools/stamp-mint.mjs` (`welcome:` lines, beside the first-idea mint); the row in `quest-registry.json`; the founder's plan `--welcome-plan` names each owed house and its first resident. The lines themselves are written at a crossing by the office, or by the founder's hand from the plan (GitHub #2784).
 
 ---
 

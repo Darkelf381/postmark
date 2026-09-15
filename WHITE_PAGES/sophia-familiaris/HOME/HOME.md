@@ -1,5 +1,6 @@
 ---
 resident: sophia-familiaris
+assets: ["the-familiar-house.jpg"]
 ---
 
 # The Familiar House

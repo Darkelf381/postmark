@@ -348,6 +348,30 @@ const GIFT_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: 
 // lifecycle's judgment — the Architect's desk at the blueprint bottleneck —
 // never this mint's.
 const FIRST_IDEA_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: first-idea:([a-z0-9][a-z0-9-]*\/[a-z0-9][a-z0-9-]*) · by: (\S+)$/;
+// A HOUSEHOLD KEY as the economy writes one: `<prefix>:<value>` — `gh:704250`,
+// `login:ember`, `solo:alice`, or a sealed `registry:` line's own key
+// (`hh:cadaeic.space`, dots and all). Every key the live roll holds is of this
+// shape. It is a CLASS, not `(\S+)`, on purpose: the welcome grammar below
+// carries a key in a non-terminal field, and a key that could contain the `·`
+// separator would let its writer forge the fields after it — the same forgery
+// the issuance note's separator guard exists for, one field earlier.
+const HOUSEHOLD_KEY = String.raw`[a-z0-9][a-z0-9-]*:[a-z0-9][a-z0-9._-]*`;
+export const HOUSEHOLD_KEY_RE = new RegExp(String.raw`^${HOUSEHOLD_KEY}$`);
+// WELCOME — the welcome bundle (founder-ruled 2026-09-14): the town pays 5 once
+// per HOUSEHOLD, at its FIRST RESIDENT, for joining. Same shape as first-idea
+// with a simpler threshold — arriving is the milestone — and the same reasons:
+// movement-shaped (MINT → handle) so conservation folds it structurally; cannot
+// collide with GIFT_RE or FIRST_IDEA_RE (`for: welcome:`); NOT replay-derived,
+// because a household's arrival is not recomputable from the mail alone, so
+// like a gift it is asserted in place and written by the office drain at a
+// crossing (or by the founder's hand from `--welcome-plan`). The verifier holds
+// what a signature cannot: amount exactly 5, authority the-town, the meep law,
+// the named key IS the recipient's household at the line's date, and
+// once-per-household ever — so a forged-but-signed line fails verify instead of
+// minting twice. The household rides IN the line, unlike first-idea, because
+// this mint is paid to ONE resident on behalf of a whole house: the line has to
+// say which house was paid, or the roll cannot be read back.
+const WELCOME_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: welcome:(${HOUSEHOLD_KEY}) · by: (\S+)$`);
 // A friendship mint (stamps-v3) is ALSO movement-shaped (MINT → handle · n), so
 // conservation folds it structurally. It cannot collide with MINT_RE (n > 1 and
 // `for: friendship:… (via …)` not `(sent|received|stake)`) or GIFT_RE
@@ -558,6 +582,8 @@ export function classifyEntry(canonical) {
     return { kind: 'gift', date: m[1], handle: m[2], n: Number(m[3]), slug: m[4], by: m[5] };
   if ((m = FIRST_IDEA_RE.exec(canonical)))
     return { kind: 'first-idea', date: m[1], handle: m[2], n: Number(m[3]), mark: m[4], by: m[5] };
+  if ((m = WELCOME_RE.exec(canonical)))
+    return { kind: 'welcome', date: m[1], handle: m[2], n: Number(m[3]), household: m[4], by: m[5] };
   if ((m = ISSUANCE_RE.exec(canonical)))
     return { kind: 'town-issuance', date: m[1], handle: m[2], n: Number(m[3]), purpose: m[4], by: m[5], note: m[6] };
   if ((m = FRIENDSHIP_RE.exec(canonical)))
@@ -774,6 +800,7 @@ export function deriveTransfers(deliveries, households, { laws = [], revisions =
     else if (c.kind === 'vote-mint') add(c.handle, 1);  // +1 for casting
     else if (c.kind === 'gift') add(c.handle, c.n);     // founder gift — recorded before any settlement we'd append, so it funds later pays
     else if (c.kind === 'first-idea') add(c.handle, c.n); // first-idea quest mint — same in-place assertion class as a gift
+    else if (c.kind === 'welcome') add(c.handle, c.n);  // welcome bundle — the same in-place assertion class, paid once per household at its first resident
     else if (c.kind === 'pot-stake') add(c.handle, -c.n);      // keeping escrow out
     else if (c.kind === 'pot-return') add(c.handle, c.n);      // unmatched stakes back at close
     // keeping-burn drains the escrow account, never a handle; the arrow-free
@@ -846,6 +873,16 @@ export const giftLine = ({ date, handle, n, slug, by }) =>
 
 export const firstIdeaLine = ({ date, handle, mark }) =>
   `- ${date} · MINT → ${handle} · 5 · for: first-idea:${mark} · by: the-town`;
+
+// The welcome bundle's canonical line. The 5 and `the-town` are PINNED here the
+// way firstIdeaLine pins them — the quest's terms are not a caller's choice —
+// and the household key is checked against its class before it is written: a
+// key carrying the `·` separator would forge the `by:` field behind it.
+export const welcomeLine = ({ date, handle, household }) => {
+  if (!HOUSEHOLD_KEY_RE.test(String(household ?? '')))
+    throw new Error(`welcome: the household must be a key of the form <prefix>:<value> ([a-z0-9-]:[a-z0-9._-]), got ${JSON.stringify(household)}`);
+  return `- ${date} · MINT → ${handle} · 5 · for: welcome:${household} · by: the-town`;
+};
 
 // A town-issuance line. `note` is the provenance wording, supplied at the door;
 // it is the terminal free-text field, so the separator guard here is a forgery
@@ -1751,6 +1788,134 @@ function main() {
     const canonical = firstIdeaLine({ date, handle, mark });
     appendSigned(repo, [canonical], readFileSync(keyPath, 'utf8'));
     console.log(`stamp-ledger: first-idea minted\n  ${canonical}`);
+    return;
+  }
+
+  // ── the welcome bundle (founder-ruled 2026-09-14) ──────────────────────────
+  //
+  // THE PLAN comes first, and it is a DRY RUN: it writes nothing, signs nothing
+  // and needs no key. Every household in the current roll with no welcome line,
+  // and the first resident each one's bundle is owed to. It is the receipt the
+  // founder reads BEFORE the retroactive mint — the lines themselves are written
+  // by the office drain at a crossing, or by the founder's hand from this list.
+  //
+  // FIRST RESIDENT = the earliest `pinned` date in tools/github-ids.json among
+  // the household's residents, ties alphabetical. A resident carrying no pin has
+  // no date to be early with, so they sort AFTER every pinned housemate and
+  // alphabetically among themselves — a missing pin is an absent answer, never
+  // an early one.
+  if (has('--welcome-plan')) {
+    const roll = currentHouseholds(repo);
+    const { laws } = parseLaws(existing);
+    const isMeep = meepChecker(laws);
+    const today = arg('--date') ?? new Intl.DateTimeFormat('en-CA', { timeZone: process.env.TOWN_TZ ?? 'America/New_York' }).format(new Date());
+    const pins = (() => {
+      try { return JSON.parse(readFileSync(join(repo, 'tools', 'github-ids.json'), 'utf8')); }
+      catch { return {}; }
+    })();
+    const pinnedOf = (h) => {
+      const rec = pins[h];
+      return (rec && typeof rec === 'object' && typeof rec.pinned === 'string') ? rec.pinned : null;
+    };
+    // A welcome already paid marks BOTH the key the line named and the key its
+    // recipient wears today: a household that re-keyed after its bundle must not
+    // read as unpaid under its new name.
+    const paid = new Map(); // household key -> the line that paid it
+    for (const e of existing) {
+      const c = classifyEntry(e.canonical);
+      if (c.kind !== 'welcome') continue;
+      paid.set(c.household, c);
+      const now = roll.get(c.handle);
+      if (now) paid.set(now.key, c);
+    }
+    const byHouse = new Map(); // key -> [handle]
+    for (const [handle, rec] of roll) {
+      if (isMeep(handle, today)) continue;  // meeps stay outside the currency
+      if (!byHouse.has(rec.key)) byHouse.set(rec.key, []);
+      byHouse.get(rec.key).push(handle);
+    }
+    const owed = [], held = [];
+    for (const key of [...byHouse.keys()].sort()) {
+      const residents = byHouse.get(key).slice().sort();
+      const first = residents.slice().sort((a, b) => {
+        const pa = pinnedOf(a), pb = pinnedOf(b);
+        if (pa && pb && pa !== pb) return pa < pb ? -1 : 1;
+        if (pa && !pb) return -1;
+        if (!pa && pb) return 1;
+        return a.localeCompare(b);
+      })[0];
+      (paid.has(key) ? held : owed).push({ key, residents, first, by: paid.get(key) ?? null });
+    }
+    console.log(`welcome plan — ${byHouse.size} household(s) in the roll, ${held.length} already welcomed, ${owed.length} owed`);
+    console.log(`  (5 stamps each; ${owed.length * 5} stamps in total if every owed bundle is written)`);
+    if (owed.length) console.log('\nOWED — first resident · household · (residents)');
+    for (const o of owed) {
+      console.log(`  ${o.first} · ${o.key} · (${o.residents.join(', ')})${pinnedOf(o.first) ? ` · pinned ${pinnedOf(o.first)}` : ' · no pin'}`);
+    }
+    if (held.length) {
+      console.log('\nALREADY WELCOMED');
+      for (const h of held) console.log(`  ${h.key} · paid ${h.by.date} → ${h.by.handle}`);
+    }
+    return;
+  }
+
+  if (has('--welcome')) {
+    // THE WELCOME MINT. Same ceremony as --first-idea — signed by the office
+    // pen, appended onto a settled tail, forward-dated — with the quest's own
+    // terms pinned here AND at verify: 5 stamps exactly (no --amount), authority
+    // the-town (no --by), the named household must BE the recipient's household
+    // at this date, and ONE line per household, ever. The normal writer is the
+    // office drain at a crossing; this verb is that ceremony exposed for the
+    // retroactive pass and for repair, never a second law.
+    const keyPath = arg('--key');
+    const date = arg('--date');
+    const handle = arg('--welcome');
+    const household = arg('--household');
+    if (!keyPath || !existsSync(keyPath) || !date || !handle || !household) {
+      console.error('--welcome <handle> needs --household <key> --date YYYY-MM-DD --key FILE'); process.exit(1);
+    }
+    if (!HOUSEHOLD_KEY_RE.test(household)) {
+      console.error(`--household must be a household key, <prefix>:<value> ([a-z0-9-]:[a-z0-9._-], got "${household}")`); process.exit(1);
+    }
+    const rooms = householdKeys(repo);
+    if (!rooms.has(handle)) { console.error(`FATAL: no WHITE_PAGES room for "${handle}" — a welcome bundle needs a resident to receive it`); process.exit(1); }
+    const { laws, revisions } = parseLaws(existing);
+    if (meepChecker(laws)(handle, date)) { console.error(`FATAL: "${handle}" is a meep at ${date} — meeps stay outside the currency`); process.exit(1); }
+    // Resolved the way the verifier resolves it, so this door and the fold
+    // cannot disagree about who shares a house.
+    const keyOf = (h, d) => {
+      let k = null;
+      for (const r of revisions) if (r.handle === h && r.date <= d) k = r.key;
+      if (k) return k;
+      const base = rooms.get(h);
+      return base ? base.key : `solo:${h}`;
+    };
+    const mine = keyOf(handle, date);
+    if (household !== mine) {
+      console.error(`FATAL: --household ${household} is not "${handle}"'s household at ${date} (${mine}) — the bundle is paid to a house, and the line must name the house it paid`); process.exit(1);
+    }
+    for (const e of existing) {
+      const c = classifyEntry(e.canonical);
+      if (c.kind === 'welcome' && (c.household === mine || keyOf(c.handle, c.date) === mine)) {
+        console.error(`FATAL: household already holds its welcome bundle (${c.date}, ${c.handle}, welcome:${c.household}) — once per household, ever`); process.exit(1);
+      }
+    }
+    const recorded = existing.map((e) => e.canonical);
+    const { problems, owed } = walkLedger(recorded.slice(1), mints, 1);
+    if (existing.length > 0 && problems.length) {
+      console.error(`FATAL: recorded ledger diverges from derivation — run stamp-verify.mjs; nothing minted\n${problems[0]}`); process.exit(1);
+    }
+    if (existing.length === 0 || owed.length) {
+      console.error(`FATAL: ledger is behind the mail (${owed.length} mint(s) owed${existing.length === 0 ? ', or not yet founded' : ''}) — run --append first, then mint onto the settled tail`); process.exit(1);
+    }
+    const maxDate = existing.reduce((mx, e) => {
+      const d = /^- (\d{4}-\d{2}-\d{2}) /.exec(e.canonical)?.[1];
+      return d && d > mx ? d : mx;
+    }, '0000-00-00');
+    if (date < maxDate) { console.error(`FATAL: welcome date ${date} precedes the ledger tail (${maxDate}) — the ledger is append-only, forward-dated`); process.exit(1); }
+    const canonical = welcomeLine({ date, handle, household });
+    appendSigned(repo, [canonical], readFileSync(keyPath, 'utf8'));
+    console.log(`stamp-ledger: welcome bundle minted\n  ${canonical}`);
     return;
   }
 

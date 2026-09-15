@@ -37,7 +37,7 @@ const CARD = 'I am a resident and this is my card, written in my own voice, at a
   + 'It goes on a while, because a card that says nothing is not a card at all.';
 
 // A throwaway town. `who` describes ONE resident's papers; `mail` is the ledger.
-function town({ card = null, home = null, window: win = false, mail = [] } = {}) {
+function town({ card = null, home = null, window: win = false, mail = [], welcomed = false } = {}) {
   const dir = mkdtempSync(join(tmpdir(), 'onboard-'));
   const wp = join(dir, 'WHITE_PAGES');
   mkdirSync(join(wp, 'TEMPLATE', 'HOME'), { recursive: true });
@@ -58,6 +58,14 @@ function town({ card = null, home = null, window: win = false, mail = [] } = {})
     mkdirSync(join(wp, 'ada', 'WINDOW'), { recursive: true });
     writeFileSync(join(wp, 'ada', 'WINDOW', 'window.html'), '<p>the pane</p>');
   }
+  // The welcome row's fact lives in the SEALED ledger, not in ada's papers —
+  // the town pays it, she does not do it. Unsigned on purpose: this suite reads
+  // the display fold, which reads canonical lines; the seal is stamp-mint's own
+  // suite's subject, and a fake key here would test the wrong thing.
+  if (welcomed) {
+    writeFileSync(join(wp, 'stamp-ledger.md'),
+      `# stamp-ledger\n\n- ${DAY} · MINT → ada · 5 · for: welcome:solo:ada · by: the-town\n`);
+  }
   writeFileSync(join(wp, 'mail-ledger.md'),
     mail.map(([from, to], i) => `- ${DAY} · ${from}-${DAY}-${to}-${i} · ${from} → ${to}`).join('\n') + '\n');
   return dir;
@@ -67,24 +75,24 @@ const idsOf = (b) => b.rows.filter((r) => !r.complete && !r.unknown).map((r) => 
 
 // ── "their next steps" — the page must actually carry them ──────────────────
 
-test('a fresh arrival reads all six rows unchecked — the next-steps half of the doorstep node is not empty', () => {
+test('a fresh arrival reads all seven rows unchecked — the next-steps half of the doorstep node is not empty', () => {
   const dir = town({ card: null, home: null, window: false, mail: [] });
   try {
     const b = board(dir, { worldSited: false });
-    assert.equal(b.rows.length, 6, 'six one-time rows, exactly the onboarding line');
+    assert.equal(b.rows.length, 7, 'seven one-time rows, exactly the onboarding line');
     assert.deepEqual(b.rows.map((r) => r.id).sort(), [...ONBOARDING_IDS].sort());
     assert.deepEqual(b.rows.filter((r) => r.complete).map((r) => r.id), [],
       'nothing is done on the first morning');
-    assert.equal(b.remaining, 6);
+    assert.equal(b.remaining, 7);
     const { steps } = composeNextSteps({ onboarding: b });
-    assert.equal(steps.filter((s) => s.kind === 'onboarding').length, 6,
-      '"their next steps" — a fresh arrival is told all six');
+    assert.equal(steps.filter((s) => s.kind === 'onboarding').length, 7,
+      '"their next steps" — a fresh arrival is told all seven');
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
 
 test('a whole house is told NOTHING — the block retires itself', () => {
   const dir = town({ card: CARD, home: 'A house with a door and a lamp.', window: true,
-    mail: [['ada', 'bob'], ['bob', 'ada']] });
+    mail: [['ada', 'bob'], ['bob', 'ada']], welcomed: true });
   try {
     const b = board(dir, { worldSited: true });
     assert.deepEqual(idsOf(b), [], 'every row checked');
@@ -264,7 +272,7 @@ test('an injected complete takes an uncounted row off the doorstep', () => {
 
 test('every one-time row either names a door or says what it awaits — never a refused door', () => {
   const rows = REGISTRY.quests.filter((q) => q.cadence === 'one-time');
-  assert.equal(rows.length, 6);
+  assert.equal(rows.length, 7);
   for (const q of rows) {
     if (q.door) {
       assert.match(q.door.tool, /^[a-z][a-z0-9_]*$/, `${q.id}: door.tool is a verb name`);
@@ -286,7 +294,7 @@ test('the live checkout folds without throwing, and every resident gets a row se
   const all = foldOnboarding(REPO);
   assert.ok(all.size > 0, 'the town has residents');
   for (const [handle, facts] of all) {
-    for (const k of ['card', 'home', 'window', 'sent', 'received']) {
+    for (const k of ['card', 'home', 'window', 'sent', 'received', 'welcomed']) {
       assert.equal(typeof facts[k], 'boolean', `${handle}.${k} is a fact, not an undefined`);
     }
   }

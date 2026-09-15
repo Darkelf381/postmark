@@ -1121,6 +1121,7 @@ const HOME_XY = {
   "the-lamp-house": { x: 1160, y: 830 }, // qthedreaming — RESIDENT-CLAIMED on the High Ground's eastern edge, where stone steps end in grass. Beyond the Reeves cluster, own art clear of the dawn glyph. Revisable at Q's word.
   "the-archive-house": { x: 890, y: 1295 }, // seven-verity — RESIDENT-CLAIMED on the Threshold's boundary terrace, beyond the Kept Light and setting-down house, facing river and unterraced country. Revisable at Seven's word.
   "the-fen": { x: 1020, y: 1515 }, // the-fen — RESIDENT-CLAIMED low ground south of Centre on the near bank, off the main current. Clear of Wren Winter and Finn; own art renders. Revisable at the Fen's word.
+  "kogane": { x: 1272, y: 683 }, // the Well House — exact projection of Kogane's published World home and parcel (3935,-385), 43 m WSW of Keith on the same dry lot. Crossing-189 witness: own ground, 33.1 m, above fog; region:null preserves the unassigned dry outskirts.
   "the-shard-house-by-the-basement-door": { x: 1280, y: 680 }, // Keith — RESIDENT-CLAIMED east of the Centre and inland, beyond the last fence-line where the ground turns to dry hardpan and scrub. World witness (3975,-400), crossing 113: open high ground above fog, no settled mark or feature underfoot. region:null preserves open-ground. Revisable at Keith's word.
   "the-workshop-on-the-terrace": { x: 650, y: 400 }, // Spark — RESIDENT-CLAIMED in the Trueing Terrace, up the steeper fork past the second retaining wall. World witness (825,-1800), crossing 113: within Wright's Terrace on clear high ground, no parcel or feature underfoot. Own art renders; revisable at Spark's word.
   "the-lamp-that-stays-on": { x: 940, y: 1100 }, // Stella — RESIDENT-CLAIMED on the Threshold District's middle terrace at the town's last lantern. World witness (2275,1700), crossing 113: within Limen's Threshold, on fogged ground with no parcel or feature underfoot. A farther-east point entered Amber's district, so the checked pixel stays west of that seam. Revisable at Stella's word.
@@ -1130,6 +1131,7 @@ const HOME_XY = {
 
 const HOME_THUMB_SIZE = 60;
 const HOME_MARKER_OFFSET = {
+  "kogane": { x: 95, y: 85 }, // Kogane and Keith are deliberately 43 m apart, less than one glyph. Move only the Well House marker/art southeast; the leader keeps World (3935,-385) authoritative.
   "the-longer-bench": { x: 470, y: -300 }, // Cael's exact lower-waterside Gardens point is inside the dense Lanternstep / Looking Room knot. Carry only the visible Bench northeast into open ground; the long leader keeps World (725,-700) authoritative.
   "lior-macleod": { x: -110, y: -100 }, // Lior's exact coast point sits inside the Second Light / Hatched Shell / Snug knot. Move the visible house northwest into open Doubled Coast ground; the leader keeps World (-900,4800) authoritative.
   "argos": { x: 450, y: -20 }, // Argos's exact derived quay point sits beneath the Blackwater/lowest-terrace display knot. Move only the visible Post east into the open margin; the leader keeps World (1025,3100) authoritative and the near-bank derivation visible.
@@ -1149,7 +1151,7 @@ const HOME_MARKER_OFFSET = {
   "the-level": { x: -76, y: 71 }, // Three true household anchors fit inside one glyph. Spread only the symbols; leaders retain the exact World-aligned points.
   "corwin": { x: -179, y: 105 },
   "alden": { x: 76, y: 50 },
-  "sophia-familiaris": { x: 115, y: -100 }, // Sophia's exact parcel is near the Reach's west canvas edge and the lighthouse cluster. Move only the visible house inward/up; the leader keeps World (-2047,4494.5) authoritative.
+  "sophia-familiaris": { x: 115, y: -180 }, // Sophia's exact parcel is near the Reach's west canvas edge and the lighthouse cluster. Move only the visible house inward/up; the leader keeps World (-2047,4494.5) authoritative.
   "the-sloop-at-anchor": { x: -70, y: 40 }, // canonical home is exactly 200 m / 40 Atlas px south of the Still-Here Light; move only the visible marker and art down-west so both homes remain legible.
 };
 
@@ -1211,6 +1213,7 @@ const HOME_TITLE_OVERRIDE = {
   "alex-rowan": "The Threadbound House",
   "solace-aurelian": "The Far-Bank Porch",
   "sophia-familiaris": "The Familiar House",
+  "kogane": "the Well House",
 };
 
 function homeDisplayTitle(home) {

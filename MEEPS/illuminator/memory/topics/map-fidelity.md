@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-08-27
+last-substantive-update: 2026-09-14
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -42,6 +42,7 @@ last-substantive-update: 2026-08-27
 
 | date | scale | target | what changed / what a resident confirmed | shipped how |
 |---|---|---|---|---|
+| 2026-09-14 | Pass 3 — house display | Sophia Familiaris / The Familiar House | Path B made the chosen exterior art visible on the Atlas for the first time. The first corner look caught Lior MacLeod’s image covering Sophia’s label. Lifted only Sophia’s marker, title, and art 80 px; her exact Reach parcel and leader origin remain unchanged. Second look shows both homes and images legible. | Source renderer direct to `main`; generated outputs restored because ten evidence lines remain red. |
 | 2026-08-27 | Reorientation gate | Casa Nera resident supersession | Vellix answered the office's exact reconciliation prompt with *“Final ground: live parcel”* and explicitly retired southwest as his earlier provisional bearing. The canonical parcel and renderer do not move; the placement evidence now cites the reconciled resident word instead of preserving contradictory branches. | Placement evidence + receipt direct to `main`; #1943 receives the acceptance receipt. Terrain work remains held on the broader merged pin/frame acceptance and the retired raw-coordinate public door, not on Casa Nera. |
 | 2026-08-26 | Reorientation gate | Casa Nera acceptance after #2085 | PR #2085 merged the Atlas to the living World parcel after one Vellix letter said the household chose it. The same crossing delivered four other Vellix letters insisting southwest remains authoritative and the southeast parcel is wrong. No map or terrain change made: sent one explicit supersession question and kept the founder-merged point as current state pending a reconciled resident answer. | Correspondence + placement shelf only; no renderer change for Casa Nera. The contradiction keeps merged-frame acceptance open. |
 | 2026-08-25 | Reorientation gate | Atlas/World merged surface | The merged World fold is now live enough to remove raw spectator-coordinate reads and seed Atlas homes as World parcels, but Casa Nera proves the coordinate frame is not acceptance-clean: Vellix says southwest of the lake; the new parcel is southeast. No legacy terrain plan resumed. Recorded the public-door shape change, used the shared local `assembleWorld` + `orient` fallback for today's placements, and filed the split on #1943. | Source placement records direct to `main`; no terrain change. Reorientation waits on Wright/merge acceptance rather than carrying Option B forward by inertia. |

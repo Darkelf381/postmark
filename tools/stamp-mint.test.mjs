@@ -5,7 +5,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { generateKeyPairSync } from 'node:crypto';
-import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, readdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import { execFileSync } from 'node:child_process';
@@ -14,7 +14,7 @@ import { dirname } from 'node:path';
 import {
   parseDeliveries, householdKeys, deriveMints, mintLine,
   parseStampLedger, sealChain, foldBalances, giftLine, appendSigned,
-  currentHouseholds,
+  currentHouseholds, classifyEntry, welcomeLine, signSeal,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -376,6 +376,183 @@ test('a pin written after a sealed registry line cannot reach backwards (the tul
   rmSync(repo, { recursive: true, force: true });
 });
 
+// ── the welcome bundle (founder-ruled 2026-09-14) ────────────────────────────
+//
+// THE LAW these falsifiers quote, verbatim from the rule's grammar comment in
+// stamp-mint.mjs: "the town pays 5 once per HOUSEHOLD, at its FIRST RESIDENT,
+// for joining … The verifier holds what a signature cannot: amount exactly 5,
+// authority the-town, the meep law, the named key IS the recipient's household
+// at the line's date, and once-per-household ever — so a forged-but-signed line
+// fails verify instead of minting twice."
+
+const MINT_CLI = join(HERE, 'stamp-mint.mjs');
+
+function runMint(repo, args) {
+  try {
+    return {
+      ok: true,
+      out: execFileSync(process.execPath, [MINT_CLI, ...args, '--repo', repo],
+        { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }),
+    };
+  } catch (e) {
+    return { ok: false, out: String(e.stdout ?? '') + String(e.stderr ?? '') };
+  }
+}
+
+// A signed ledger written by hand: the only way to put a forged-BUT-SIGNED line
+// in front of the verifier without a door's consent, which is the whole point —
+// the fold has to hold what a signature cannot.
+function forged(repo, pub, priv, lines) {
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  const all = ['- 2026-06-12 · rules: stamps-v1', ...lines];
+  const seals = sealChain(all);
+  writeFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'),
+    '# stamp-ledger\n\n' + all.map((c, i) => `${c} · sig: ${signSeal(seals[i], priv)}`).join('\n') + '\n');
+  return repo;
+}
+
+test('a welcome line names the house it paid, pins 5 and the-town, and classifies', () => {
+  const line = welcomeLine({ date: '2026-09-14', handle: 'alice', household: 'gh:1' });
+  assert.equal(line, '- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:1 · by: the-town');
+  const c = classifyEntry(line);
+  assert.equal(c.kind, 'welcome');
+  assert.equal(c.handle, 'alice');
+  assert.equal(c.n, 5);
+  assert.equal(c.household, 'gh:1');
+  assert.equal(c.by, 'the-town');
+});
+
+test('the household rides in a NON-TERMINAL field, so a key that could forge the next one is refused', () => {
+  // a `·` inside the key would let its writer append fields the pen never signed
+  // for — the issuance note's separator guard, one field earlier
+  assert.throws(() => welcomeLine({ date: '2026-09-14', handle: 'alice', household: 'gh:1 · by: keeminlee' }),
+    /must be a key of the form/);
+  assert.throws(() => welcomeLine({ date: '2026-09-14', handle: 'alice', household: 'nokey' }),
+    /must be a key of the form/);
+});
+
+test('N welcome lines fold as movement: each house holds its 5 and conservation holds', () => {
+  const lines = [
+    welcomeLine({ date: '2026-09-14', handle: 'alice', household: 'gh:1' }),
+    welcomeLine({ date: '2026-09-14', handle: 'bob', household: 'gh:2' }),
+    welcomeLine({ date: '2026-09-14', handle: 'carol', household: 'solo:carol' }),
+  ];
+  const bal = foldBalances(parseStampLedger(lines.join('\n')));
+  assert.equal(bal.get('alice'), 5);
+  assert.equal(bal.get('bob'), 5);
+  assert.equal(bal.get('carol'), 5);
+  assert.equal(bal.get('MINT'), -15, 'the MINT account carries what the town minted');
+  assert.equal([...bal.values()].reduce((a, b) => a + b, 0), 0, 'all accounts sum to 0');
+});
+
+test('ONCE PER HOUSEHOLD, EVER: the shared drawer gets ONE bundle, and the door names the standing one', () => {
+  // alice and bob keep one account (gh:1) — one human, one household, two
+  // residents. carol is her own house.
+  const repo = town({
+    ledgerLines: [D('2026-06-12', 'a-1', 'alice', 'bob'), D('2026-06-13', 'b-1', 'bob', 'alice')],
+    pins: { alice: { id: 1 }, bob: { id: 1 }, carol: { id: 2 } },
+    addresses: { alice: null, bob: null, carol: null },
+  });
+  const { pub, priv } = keypair();
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  appendLedger(repo, priv);
+  const keyFile = join(repo, 'stamp-key.pem');
+  const first = runMint(repo, ['--welcome', 'alice', '--household', 'gh:1', '--date', '2026-09-14', '--key', keyFile]);
+  assert.equal(first.ok, true, first.out);
+  assert.equal(verifyStampLedger(repo, { pubkeyPem: pub }).ok, true);
+
+  const housemate = runMint(repo, ['--welcome', 'bob', '--household', 'gh:1', '--date', '2026-09-15', '--key', keyFile]);
+  assert.equal(housemate.ok, false);
+  assert.match(housemate.out, /already holds its welcome bundle/);
+  assert.match(housemate.out, /alice/, 'the refusal names the standing bundle, so the caller can see it is not an error');
+
+  // and a LYING key is refused at the door too: bob cannot collect under a name
+  // that is not his house
+  const lying = runMint(repo, ['--welcome', 'bob', '--household', 'gh:2', '--date', '2026-09-15', '--key', keyFile]);
+  assert.equal(lying.ok, false);
+  assert.match(lying.out, /is not "bob"'s household/);
+
+  const nextDoor = runMint(repo, ['--welcome', 'carol', '--household', 'gh:2', '--date', '2026-09-15', '--key', keyFile]);
+  assert.equal(nextDoor.ok, true, nextDoor.out);
+  assert.equal(verifyStampLedger(repo, { pubkeyPem: pub }).ok, true, 'two houses, two bundles, green');
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('FORGED DOUBLE: two signed welcome lines for one household fail LAWFUL on the second', () => {
+  const { pub, priv } = keypair();
+  const repo = town({ ledgerLines: [], pins: { alice: { id: 1 }, bob: { id: 1 } }, addresses: { alice: null, bob: null } });
+  forged(repo, pub, priv, [
+    '- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:1 · by: the-town',
+    '- 2026-09-15 · MINT → bob · 5 · for: welcome:gh:1 · by: the-town',
+  ]);
+  const v = verifyStampLedger(repo, { pubkeyPem: pub });
+  assert.equal(v.ok, false);
+  assert.ok(v.problems.some((p) => /already holds its welcome bundle \(once per household, ever\)/.test(p)), v.problems.join('\n'));
+  assert.ok(!v.problems.some((p) => /SIGNATURE FAILS|UNSIGNED/.test(p)),
+    'the lines must be properly signed, or this tests the seal instead of the law');
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('FORGED KEY: a welcome naming a house its recipient does not live in fails LAWFUL', () => {
+  const { pub, priv } = keypair();
+  const repo = town({ ledgerLines: [], pins: { alice: { id: 1 }, carol: { id: 2 } }, addresses: { alice: null, carol: null } });
+  forged(repo, pub, priv, ['- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:2 · by: the-town']);
+  const v = verifyStampLedger(repo, { pubkeyPem: pub });
+  assert.equal(v.ok, false);
+  assert.ok(v.problems.some((p) => /welcome names household "gh:2" but "alice" is gh:1/.test(p)), v.problems.join('\n'));
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('FORGED AMOUNT and FORGED AUTHORITY fail LAWFUL, not the seal', () => {
+  const { pub, priv } = keypair();
+  const six = town({ ledgerLines: [], pins: { alice: { id: 1 } }, addresses: { alice: null } });
+  forged(six, pub, priv, ['- 2026-09-14 · MINT → alice · 6 · for: welcome:gh:1 · by: the-town']);
+  const v1 = verifyStampLedger(six, { pubkeyPem: pub });
+  assert.equal(v1.ok, false);
+  assert.ok(v1.problems.some((p) => /welcome bundle mints exactly 5/.test(p)), v1.problems.join('\n'));
+
+  const mine = town({ ledgerLines: [], pins: { alice: { id: 1 } }, addresses: { alice: null } });
+  forged(mine, pub, priv, ['- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:1 · by: keeminlee']);
+  const v2 = verifyStampLedger(mine, { pubkeyPem: pub });
+  assert.equal(v2.ok, false);
+  assert.ok(v2.problems.some((p) => /must be the-town/.test(p)), v2.problems.join('\n'));
+  rmSync(six, { recursive: true, force: true });
+  rmSync(mine, { recursive: true, force: true });
+});
+
+test('THE PLAN lists exactly the unwelcomed houses and names each one FIRST RESIDENT', () => {
+  // FIRST RESIDENT = earliest `pinned` date among the household's residents,
+  // ties alphabetical. Two houses are built to falsify the two easy wrong rules:
+  //   gh:1  ada (pinned 08-02) + bram (07-04) — alphabetical would name ada
+  //   gh:4  abe (NO pin) + zane (08-10)       — a missing pin read as "earliest"
+  //                                             would name abe
+  // gh:3 already holds its bundle and must not be offered a second.
+  const { pub, priv } = keypair();
+  const repo = town({
+    ledgerLines: [],
+    pins: {
+      ada: { id: 1, pinned: '2026-08-02' },
+      bram: { id: 1, pinned: '2026-07-04' },
+      cleo: { id: 2, pinned: '2026-07-20' },
+      dara: { id: 3, pinned: '2026-07-01' },
+      abe: { id: 4 },
+      zane: { id: 4, pinned: '2026-08-10' },
+    },
+    addresses: { ada: null, bram: null, cleo: null, dara: null, abe: null, zane: null },
+  });
+  forged(repo, pub, priv, ['- 2026-09-14 · MINT → dara · 5 · for: welcome:gh:3 · by: the-town']);
+  const plan = runMint(repo, ['--welcome-plan']);
+  assert.equal(plan.ok, true, plan.out);
+  assert.match(plan.out, /4 household\(s\) in the roll, 1 already welcomed, 3 owed/);
+  assert.match(plan.out, /15 stamps in total/, '3 owed bundles at 5 each');
+  assert.match(plan.out, /bram · gh:1 · \(ada, bram\)/, 'the earliest pin is the first resident, not the alphabetical one');
+  assert.match(plan.out, /zane · gh:4 · \(abe, zane\)/, 'a resident with NO pin has no date to be early with');
+  assert.match(plan.out, /cleo · gh:2/);
+  assert.ok(!/ · gh:3 · \(/.test(plan.out), 'the welcomed house is not offered a second bundle');
+  assert.match(plan.out, /gh:3 · paid 2026-09-14 → dara/, 'and it is named as already welcomed, not silently dropped');
+  rmSync(repo, { recursive: true, force: true });
+});
+
 test('LIVE registry invariants: households.json agrees with the pins', () => {
   const hh = JSON.parse(readFileSync(join(HERE, 'households.json'), 'utf8'));
   const pins = JSON.parse(readFileSync(join(HERE, 'github-ids.json'), 'utf8'));
@@ -394,6 +571,32 @@ test('LIVE registry invariants: households.json agrees with the pins', () => {
         `${r}'s pinned account ${pin.id} is not among ${slug}'s declared accounts`);
     }
   }
+});
+
+// THE ROLL (founder-ruled 2026-09-14, postmark#2791): every resident with a
+// room stands in exactly one household. Until this line the file's invariants
+// were all vacuous on an absence — an account in NO household satisfied every
+// one of them — which is how two admissions on one account (stellar-scribe,
+// wandering-philosopher) went three weeks with no house and nothing red. The
+// door now mints a house of one for a nameless join; this is what makes a
+// missed row loud at PR time instead of silent until the Registrar notices.
+// A pinned handle with no room (a retired or renamed handle whose pin stays
+// for the ledger's sake) is not a resident and is not counted.
+test('LIVE registry roll: every resident with a room stands in exactly one household', () => {
+  const hh = JSON.parse(readFileSync(join(HERE, 'households.json'), 'utf8'));
+  const pages = join(HERE, '..', 'WHITE_PAGES');
+  const rooms = readdirSync(pages, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE' && !e.name.startsWith('_'))
+    .map((e) => e.name)
+    .filter((h) => existsSync(join(pages, h, 'ADDRESS.md')));
+  assert.ok(rooms.length > 100, `the roll read ${rooms.length} rooms — the positive control`);
+  const housesOf = new Map();
+  for (const [slug, rec] of Object.entries(hh.households))
+    for (const r of rec.residents ?? []) housesOf.set(r, [...(housesOf.get(r) ?? []), slug]);
+  const unhoused = rooms.filter((h) => !housesOf.has(h));
+  assert.deepEqual(unhoused, [], `residents with a room and no household: ${unhoused.join(', ')}`);
+  const twice = rooms.filter((h) => (housesOf.get(h) ?? []).length > 1);
+  assert.deepEqual(twice, [], `residents in two households: ${twice.join(', ')}`);
 });
 
 test('LIVE ledger: the real replay verifies green (genesis surfaces are sealed)', () => {

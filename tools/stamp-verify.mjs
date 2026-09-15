@@ -125,6 +125,7 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
     const ballots = new Map();          // topic -> file (cached)
     const oneShotSeen = new Set();      // one-shot issuance purposes already spent
     const firstIdeaHouses = new Set();  // household keys already paid their first-idea mint
+    const welcomedHouses = new Set();   // household keys already paid their welcome bundle
     const issuanceDial = townIssuanceDial(repo);
     let warnedNoIssuanceDial = false;
     const isMeep = meepChecker(laws);
@@ -337,6 +338,35 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
           problems.push(`line ${lineNo}: LAWFUL fails — household of "${cls.handle}" already holds its first-idea mint (once per household, ever)`); break;
         }
         firstIdeaHouses.add(houseKey);
+      }
+
+      if (cls.kind === 'welcome') {
+        // The welcome bundle (founder-ruled 2026-09-14). The signature proves
+        // the office pen; the fold holds the quest's own terms, quoted from the
+        // rule's grammar comment: "amount exactly 5, authority the-town, the
+        // meep law, the named key IS the recipient's household at the line's
+        // date, and once-per-household ever."
+        if (cls.n !== 5) {
+          problems.push(`line ${lineNo}: LAWFUL fails — a welcome bundle mints exactly 5 (got ${cls.n})`); break;
+        }
+        if (cls.by !== 'the-town') {
+          problems.push(`line ${lineNo}: LAWFUL fails — the welcome bundle is the town's mint (by: "${cls.by}", must be the-town)`); break;
+        }
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — welcome bundle to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        // The key rides IN the line, so it can LIE — and a lying key is how one
+        // household would collect a second bundle under a neighbour's name. The
+        // recipient's own household at the line's date is the answer that
+        // cannot be written by the pen, so it is the one that rules.
+        const houseKey = hh(cls.handle, cls.date);
+        if (cls.household !== houseKey) {
+          problems.push(`line ${lineNo}: LAWFUL fails — welcome names household "${cls.household}" but "${cls.handle}" is ${houseKey} at ${cls.date}`); break;
+        }
+        if (welcomedHouses.has(houseKey)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — household of "${cls.handle}" already holds its welcome bundle (once per household, ever)`); break;
+        }
+        welcomedHouses.add(houseKey);
       }
 
       if (cls.kind === 'town-issuance') {

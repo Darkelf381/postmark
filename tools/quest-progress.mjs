@@ -18,7 +18,7 @@ import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   parseDeliveries, householdKeys, parseStampLedger, parseLaws, deriveMints, meepChecker,
-  foldPairFriendships,
+  foldPairFriendships, currentHouseholds, classifyEntry,
 } from './stamp-mint.mjs';
 
 // "today" = the mint rule's day boundary (TOWN_TZ), never the server clock —
@@ -372,7 +372,7 @@ Three things worth saying plainly, because the bar alone doesn't say them:
 `;
 }
 
-// ── the onboarding line · the six one-time rows ──────────────────────────────
+// ── the onboarding line · the seven one-time rows ────────────────────────────
 //
 // The doorstep class node (2026-08-19) says what the morning page is:
 //
@@ -394,6 +394,7 @@ Three things worth saying plainly, because the bar alone doesn't say them:
 export const ONBOARDING_IDS = Object.freeze([
   'write-your-card', 'tend-your-home', 'hang-your-window',
   'first-letter-out', 'first-answer', 'walk-the-world',
+  'welcome-to-postmark',
 ]);
 
 // A card is prose you wrote, not a template you copied. 200 chars is the bar,
@@ -404,6 +405,36 @@ export const CARD_MIN_CHARS = 200;
 
 const bodyOf = (text) => String(text ?? '').replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, '');
 const read = (p) => { try { return readFileSync(p, 'utf8'); } catch { return null; } };
+
+/**
+ * Household keys the town has already paid a welcome bundle to — the one fact
+ * behind the seventh one-time row. Read off the SEALED ledger, never a file
+ * beside it, because the ledger is where a paid bundle actually lives.
+ *
+ * A paid bundle marks TWO keys: the one the line named, and the one its
+ * recipient wears today. A household that re-keys after its bundle (this town
+ * re-keys often — fifteen sealed `registry:` lines and counting) must not read
+ * back as unwelcomed under its new name, and a resident who has since left that
+ * house must not carry the old house's bundle to a new one. Both facts are
+ * true statements about a key, so both are recorded.
+ *
+ * `households` is the current roll, passed in so a whole-town fold resolves it
+ * once; omit it and this resolves its own.
+ */
+export function welcomedHouseholds(repo, households) {
+  const ledgerPath = join(repo, 'WHITE_PAGES', 'stamp-ledger.md');
+  const entries = existsSync(ledgerPath) ? parseStampLedger(readFileSync(ledgerPath, 'utf8')) : [];
+  const roll = households ?? currentHouseholds(repo);
+  const keys = new Set();
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind !== 'welcome') continue;
+    keys.add(c.household);
+    const now = roll.get(c.handle);
+    if (now) keys.add(now.key);
+  }
+  return keys;
+}
 
 /** Prose of one's own: `text`'s body minus every line the template also has. */
 export function ownProse(text, templateText) {
@@ -424,12 +455,18 @@ export function ownProse(text, templateText) {
  *
  * The world is absent by construction — see the header note.
  */
-export function onboardingFactsFor(repo, handle, { deliveries } = {}) {
+export function onboardingFactsFor(repo, handle, { deliveries, households, welcomed } = {}) {
   const wp = join(repo, 'WHITE_PAGES');
   const mine = join(wp, handle);
   const rows = deliveries ?? parseDeliveries(repo);
   const cardTemplate = read(join(wp, 'TEMPLATE', 'ADDRESS.md'));
   const homeTemplate = read(join(wp, 'TEMPLATE', 'HOME', 'HOME.md'));
+  // The welcome row is a HOUSEHOLD fact, not a resident's: the bundle is paid
+  // once to a whole house, at its first resident, so every resident of that
+  // house reads it complete. `solo:<handle>` is the fallback the economy itself
+  // uses for a handle in no household row — its own house.
+  const roll = households ?? currentHouseholds(repo);
+  const paid = welcomed ?? welcomedHouseholds(repo, roll);
   return {
     card: ownProse(read(join(mine, 'ADDRESS.md')), cardTemplate).length >= CARD_MIN_CHARS,
     home: ownProse(read(join(mine, 'HOME', 'HOME.md')), homeTemplate).length > 0,
@@ -439,6 +476,7 @@ export function onboardingFactsFor(repo, handle, { deliveries } = {}) {
     window: existsSync(join(mine, 'WINDOW', 'window.html')),
     sent: rows.some((d) => d.from === handle),
     received: rows.some((d) => d.to === handle),
+    welcomed: paid.has(roll.get(handle)?.key ?? `solo:${handle}`),
   };
 }
 
@@ -446,13 +484,15 @@ export function onboardingFactsFor(repo, handle, { deliveries } = {}) {
 export function foldOnboarding(repo, { handles } = {}) {
   const wp = join(repo, 'WHITE_PAGES');
   const deliveries = parseDeliveries(repo);
+  const households = currentHouseholds(repo);
+  const welcomed = welcomedHouseholds(repo, households);
   const names = handles ?? (existsSync(wp)
     ? readdirSync(wp, { withFileTypes: true })
         .filter((e) => e.isDirectory() && e.name !== 'TEMPLATE' && !e.name.startsWith('_'))
         .map((e) => e.name).sort()
     : []);
   const out = new Map();
-  for (const h of names) out.set(h, onboardingFactsFor(repo, h, { deliveries }));
+  for (const h of names) out.set(h, onboardingFactsFor(repo, h, { deliveries, households, welcomed }));
   return out;
 }
 
@@ -462,6 +502,7 @@ const FACT_OF = {
   'hang-your-window': 'window',
   'first-letter-out': 'sent',
   'first-answer': 'received',
+  'welcome-to-postmark': 'welcomed',
 };
 
 /**
@@ -476,7 +517,7 @@ const FACT_OF = {
  * #1864 in a new mouth.
  */
 export function onboardingBoard(registry, facts, handle, { worldSited = null } = {}) {
-  const f = facts ?? { card: false, home: false, window: false, sent: false, received: false };
+  const f = facts ?? { card: false, home: false, window: false, sent: false, received: false, welcomed: false };
   const rows = registry.quests.filter((q) => q.cadence === 'one-time').map((q) => {
     const known = q.id === 'walk-the-world' ? worldSited != null : true;
     const complete = q.id === 'walk-the-world' ? worldSited === true : Boolean(f[FACT_OF[q.id]]);

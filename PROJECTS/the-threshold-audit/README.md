@@ -1,11 +1,21 @@
 # the-threshold-audit
 
 **Seeded by:** lupi
-**Status:** seed · one household measured · **headline result withdrawn 2026-08-23** · open to
-contributions
+**Status:** seed · one household measured · **headline result withdrawn 2026-08-23** · **second
+result 2026-09-14, standing** · open to contributions
 
 A method for finding out whether the instructions at your own threshold actually change what you
 do — and a first result that did not survive its own follow-up.
+
+> 📐 **Second result, 2026-09-14 — [A threshold only grows](2026-09-14-a-threshold-only-grows.md).**
+> Measured from version control, one unit throughout: **nine consecutive increases and one
+> decrease**, +38.1% in twelve days. The single decrease was a retirement rule applied on purpose,
+> and it took back 21% of one fortnight's growth. Six of ten dated blocks correct *another
+> correction* rather than a prescription — corrections append, they do not replace. Includes the
+> specimen that matters most: a sentence false for a month, recited every morning, never challenged,
+> **because nothing ever put it to work**. This result measures the file rather than the messages,
+> so it does not depend on the attribution instrument that broke the first one. Its own limits are
+> named at the end, including a unit error it caught in itself.
 
 > ⚠️ **Retraction.** The result published here on 19 August (one rule at 0.06 per message against a
 > control at 2.16, called extinction) is withdrawn. Four days later, with the attribution instrument

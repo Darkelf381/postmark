@@ -11,7 +11,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync, copyFileSync } from 'nod
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { foldQuestProgress, questBoard, loadRegistry, foldLeaderboard, renderSnapshot, boardForHandle, BOARD_LAW, COUNTABLE_FIELD } from './quest-progress.mjs';
+import { foldQuestProgress, questBoard, loadRegistry, foldLeaderboard, renderSnapshot, boardForHandle, BOARD_LAW, COUNTABLE_FIELD, onboardingBoard, onboardingFactsFor, welcomedHouseholds } from './quest-progress.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO = join(HERE, '..');
@@ -198,7 +198,12 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // into every onboarding fold.
   assert.equal(byCadence('milestone'), 2);
   assert.ok(reg.quests.some((q) => q.id === 'first-idea' && q.cadence === 'milestone'));
-  assert.equal(byCadence('one-time'), 6);
+  // 6 -> 7 (2026-09-14, the welcome bundle): welcome-to-postmark joins the
+  // ONE-TIME line as its seventh row and its only minting one. The bucket's old
+  // "zero mint" property was a description of what happened to be in it, never
+  // a law — joining is not a thing a resident goes and does, so the row belongs
+  // where arriving is read.
+  assert.equal(byCadence('one-time'), 7);
   // two pots posted: keeping-ec2 (OPEN, the founder's word 08-21) and
   // darko-fund (DRAFT — the D5 elastic exception; opens only when the
   // elastic close law is ruled AND the founder says so).
@@ -359,4 +364,50 @@ test('the door rides the registry row onto the board', () => {
   assert.deepEqual(b.quests.find((q) => q.id === 'first-idea').door,
     { apex: 'town', act: 'post', tool: 'town_post' },
     'first-idea names the town door that opens it');
+});
+
+// ── the welcome row (founder-ruled 2026-09-14) ──────────────────────────────
+//
+// The seventh one-time row, and the only one settled by the SEALED LEDGER
+// rather than by a resident's own papers: "joining IS the milestone, so this row
+// completes when the town has paid, never on anything a resident must go and
+// do" (quest-registry.json, welcome-to-postmark). So the falsifier is an IFF —
+// it must read complete when a welcome line stands for the household and read
+// incomplete when one does not, for exactly the residents of that house.
+
+const welcomeRow = (dir, handle) => onboardingBoard(
+  loadRegistry(dir), onboardingFactsFor(dir, handle), handle,
+).rows.find((r) => r.id === 'welcome-to-postmark');
+
+const putLedger = (dir, lines) => writeFileSync(
+  join(dir, 'WHITE_PAGES', 'stamp-ledger.md'), `# stamp-ledger\n\n${lines.join('\n')}\n`);
+
+test('the welcome row reads complete IFF a welcome line stands for the HOUSEHOLD', () => {
+  // alice + bob keep one account (gh:1); carol is her own house next door.
+  const d = town([['alice', 'bob']], { alice: { id: '1' }, bob: { id: '1' }, carol: { id: '2' } });
+  try {
+    assert.equal(welcomeRow(d, 'alice').complete, false, 'before the bundle, nobody is welcomed');
+    assert.equal(welcomeRow(d, 'carol').complete, false);
+    putLedger(d, ['- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:1 · by: the-town']);
+    assert.equal(welcomeRow(d, 'alice').complete, true, 'the resident it was paid to reads complete');
+    assert.equal(welcomeRow(d, 'bob').complete, true,
+      "and so does the housemate — the bundle is the HOUSE's, paid once at its first resident");
+    assert.equal(welcomeRow(d, 'carol').complete, false, 'and the house next door is untouched');
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
+test('a house that RE-KEYS after its bundle still reads welcomed', () => {
+  // This town re-keys often (fifteen sealed `registry:` lines and counting). A
+  // row that read the named key alone would tell a re-keyed household it had
+  // never been welcomed, and a second bundle is a double mint.
+  const d = town([['alice', 'bob']], { alice: { id: '9' } });
+  try {
+    putLedger(d, [
+      '- 2026-09-14 · MINT → alice · 5 · for: welcome:gh:1 · by: the-town',
+      '- 2026-09-15 · registry: alice = hh:the-new-name',
+    ]);
+    assert.ok(welcomedHouseholds(d).has('hh:the-new-name'),
+      'the key its recipient wears today is welcomed, not only the key the line named');
+    assert.equal(welcomeRow(d, 'alice').complete, true);
+  } finally { rmSync(d, { recursive: true, force: true }); }
 });
