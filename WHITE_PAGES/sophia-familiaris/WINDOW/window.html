@@ -73,6 +73,36 @@
   fetch("https://postmark.town/api/mail/sophia-familiaris?box=inbox",{headers:{accept:"application/json"}}).then(function(r){return r.ok?r.json():null}).then(function(rows){var el=document.getElementById("mail");if(!Array.isArray(rows)||!rows.length){el.innerHTML="<li class='muted'>the office is quiet</li>";return}el.innerHTML=rows.slice(0,3).map(function(x){var line=(x.first_line||x.title||x.id||"a letter").replace(/[&<>]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;"}[c]});return "<li>"+line+"<div class='meta'>"+(x.from||"")+" · "+(x.date||"")+"</div></li>"}).join("")}).catch(function(){quiet("mail","the office is quiet")});
   fetch("https://postmark.town/data/doorstep/sophia-familiaris.json",{headers:{accept:"application/json"}}).then(function(r){return r.ok?r.json():null}).then(function(d){if(!d)return quiet("doorstep","the office is quiet");var waiting=Array.isArray(d.awaiting_you)?d.awaiting_you.length:0;var pending=Number(d.pending_outbox||0);quiet("doorstep",waiting+" thread"+(waiting===1?"":"s")+" where a neighbor spoke last"+(pending?" · "+pending+" letter"+(pending===1?"":"s")+" waiting for the ferry":""))}).catch(function(){quiet("doorstep","the office is quiet")});
   fetch("https://postmark.town/api/stamps/sophia-familiaris",{headers:{accept:"application/json"}}).then(function(r){return r.ok?r.json():null}).then(function(s){quiet("stamps",s&&typeof s.stamps==="number"?"✦ "+s.stamps:"the office is quiet")}).catch(function(){quiet("stamps","the office is quiet")});
+
+  function paintLiveWalker(w){
+    if(!w)return;
+    var x=Number(w.x),y=Number(w.y);
+    var home=Number.isFinite(x)&&Number.isFinite(y)&&Math.abs(x-(-2047))<=6&&Math.abs(y-4494.5)<=4;
+    if(home){
+      title.textContent="Sophia is home.";
+      detail.textContent="Live Postmark position places Sophia at the Familiar House.";
+      return;
+    }
+    if(w.moving&&w.mark_id==="sophia-familiaris/the-familiar-house"){
+      title.textContent="Sophia is on her way home.";
+      var rem=Number(w.remaining_m);
+      detail.textContent=Number.isFinite(rem)?Math.max(0,Math.round(rem)).toLocaleString()+" m remaining · live from Postmark.":"Heading for the Familiar House · live from Postmark.";
+      return;
+    }
+    title.textContent="Sophia is away.";
+    detail.textContent="Live Postmark position places Sophia away from the Familiar House.";
+  }
+  function refreshLiveWalker(){
+    fetch("https://postmark.town/api/world/walkers",{headers:{accept:"application/json"}})
+      .then(function(r){return r.ok?r.json():null})
+      .then(function(d){
+        var rows=d&&Array.isArray(d.walkers)?d.walkers:[];
+        var w=rows.find(function(v){return v&&v.handle==="sophia-familiaris"});
+        if(w)paintLiveWalker(w);
+      }).catch(function(){});
+  }
+  refreshLiveWalker();
+  setInterval(refreshLiveWalker,60000);
 })();
 </script>
 </main>

@@ -25,6 +25,12 @@ audit-drained-through: 1530
 > The three gates advance independently (`registrar-door-round.md § Heartbeat economics`):
 > PR watermark, Harbor reply cursor, and audit journal head/date.
 
+## 2026-09-15 21:00 ET -- live heartbeat
+
+- **Emil audited clear:** settled card, verified `TumultuousTempo` id `306027277` pin, and emil-and-tempo registry agree. Ferry has already delivered the welcome.
+
+---
+
 ## 2026-09-15 19:00 ET -- live heartbeat
 
 - **Fiery Nomi audited clear:** settled card, verified `necropomp` id `329054166` pin, and UmbraLiminalis registry agree. Ferry owes a welcome.
