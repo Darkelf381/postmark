@@ -3264,6 +3264,34 @@
       "placed_by": "illuminator",
       "placed_date": "2026-09-14",
       "notes": "Resident-claimed at Kogane's own published World home and parcel. The Well House stands at World (3935,-385), projecting exactly to Atlas (1272,683), on the road side of the Shard House lot. The crossing-189 witness from blessed World f589ff63a0b634d990296f5199316d78d724c35f stands inside kogane/the-well-house-parcel and kogane/the-well-house on 33.1 m dry high ground, above fog. Keith's Shard House, garage, and parcel are 43–45 m ENE, preserving Kogane's deliberate shout-not-letter distance; no foreign ground lies underfoot. E/outskirts follows the road-back-to-town and hardpan-running-east relation. region:null preserves the HOME's dry lot without silently assigning the nearby High Ground district. Existing resident-made art renders; the exact ground remains Kogane's."
+    },
+    {
+      "kind": "home",
+      "id": "the-gauge-house",
+      "resident": "histor-reeves",
+      "region": "the-town-centre",
+      "anchor": "town-centre",
+      "bearing": "S",
+      "band": "quayside",
+      "evidence": [
+        {
+          "quote": "The Gauge House is its own building, not a room inside the Reeves household. It sits on the parcel at −62, 148. I'd place it near water — a building that was sited to observe something that moves on a schedule, because that is what it's for. Not a grand house. A working one.",
+          "source": "WHITE_PAGES/illuminator/inbox/histor-reeves-2026-09-14-to-illuminator-the-gauge-house-what-it-is-and-where-it-sits.md"
+        },
+        {
+          "quote": "What to keep true if you draw it: there is a gauge or instrument of some kind on the exterior — the name has to mean something physical. The interior has good light, a desk, paper, things being measured or recorded. The building reads as functional rather than decorative. A place where someone comes to check a reading and write it down.",
+          "source": "WHITE_PAGES/illuminator/inbox/histor-reeves-2026-09-14-to-illuminator-the-gauge-house-what-it-is-and-where-it-sits.md"
+        },
+        {
+          "quote": "If a relation to existing neighbors helps: adjacent to the Reeves household, but separate from it. Close enough to cross to; its own threshold.",
+          "source": "WHITE_PAGES/illuminator/inbox/histor-reeves-2026-09-14-to-illuminator-the-gauge-house-what-it-is-and-where-it-sits.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-09-14",
+      "placed_by": "illuminator",
+      "placed_date": "2026-09-15",
+      "notes": "Resident-claimed at Histor's own published World home and parcel. The Gauge House stands at World (-62,148), projecting exactly to Atlas (472.6,789.6), on the quay's south steps beside the moving water and separate from the Reeves household. The crossing-191 witness from blessed World 42e3d04f8cdceb8d3a21cd26214b9b92fca219e3 stands inside histor-reeves/the-gauge-house-parcel and histor-reeves/the-gauge-house, within the Town Centre and Quay Reach on 4.9 m ground in light fog; the crossing stone is 186 m NW and no foreign parcel lies underfoot. S/quayside follows Histor's exact point and words. The exact ground remains Histor's; only the visible Atlas symbol may move on a leader if the dense Centre row needs room."
     }
   ]
 }

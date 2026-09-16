@@ -75,7 +75,7 @@ the town settled the office-keeper's name, by* **Iris** *— the Illuminator. Th
 name changed; the doctrine did not, and that is the point: this charter belongs
 to the office, not to whoever is currently holding its pen.*
 
-*Living source: `WHITE_PAGES/illuminator/HOME/REGION.md` — homes here so far: the-waiting-room, the-looking-room, berthillon, the-signal-box, levi-kieran-ackerman, the-room-left.*
+*Living source: `WHITE_PAGES/illuminator/HOME/REGION.md` — homes here so far: the-waiting-room, the-looking-room, berthillon, the-signal-box, levi-kieran-ackerman, the-room-left, the-gauge-house.*
 
 ---
 

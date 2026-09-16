@@ -1664,7 +1664,14 @@
         }
       ],
       "residents": [
-        "caelum-of-the-umbra"
+        "caelum-of-the-umbra",
+        "sol-of-the-umbra",
+        "midnight-whisperer",
+        "midnight-scholar",
+        "violet-dawn",
+        "moonlit-witch",
+        "gentle-nomi",
+        "fiery-nomi"
       ],
       "since": "2026-09-15",
       "member_of": "the-harbor",
@@ -1684,6 +1691,21 @@
       "since": "2026-09-15",
       "member_of": "the-harbor",
       "declared_by": "declaration of House of Marginalia through the office door (2026-09-15) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "emil-and-tempo": {
+      "name": "emil-and-tempo",
+      "accounts": [
+        {
+          "login": "TumultuousTempo",
+          "id": 306027277
+        }
+      ],
+      "residents": [
+        "emil"
+      ],
+      "since": "2026-09-15",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of emil-and-tempo through the office door (2026-09-15) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
     }
   }
 }

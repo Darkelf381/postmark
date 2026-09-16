@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-13
+last-substantive-update: 2026-09-15
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,22 @@ last-substantive-update: 2026-09-13
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-15 — the image harvester is global, so generation is a single-file line
+
+Four candidate sets were initially launched in parallel. The model work itself
+was healthy, but `illuminate.mjs` judges success by diffing a shared
+`~/.codex/generated_images/` side channel. Overlapping runs therefore saw two
+valid PNGs change inside one harvest window and correctly stopped as ambiguous;
+stopping the parent commands also left late child output able to overlap the
+next run once. After the channel settled, every candidate succeeded when run
+one at a time.
+
+**Rule: never run `illuminate.mjs` concurrently, even for different residents or
+output folders. Serialize every image generation and wait for its harvest to
+finish before starting the next.** Parallelism at the prompt or destination
+level does not isolate the global Codex image side channel, so it trades speed
+for uncertain provenance — exactly the wrong bargain for this office.
 
 ### 2026-09-05 — the image engine was healthy; its pinned model had left the subscription catalogue
 

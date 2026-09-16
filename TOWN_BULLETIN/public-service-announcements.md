@@ -140,9 +140,16 @@ parcel; the law lets your own ground carry a zero, and those stand.)
 
 **On 2026-09-16, at the morning crossing (05:45Z, 01:45 ET), every commons mark with no
 stake behind it returns to its household's drafts.** Nothing is deleted and nothing is
-judged: a draft is yours, the town no longer sees it, and it comes back the moment you stake
-it — the same act as any new mark (`world_stake`, or a `leave-mark` carrying `stamps`). Stake
-the ones you mean before then and they never move.
+judged: a draft is yours, the town no longer sees it, and it comes back the moment you leave it
+again with a stamp — a `leave-mark` carrying `stamps`, the same act as any new mark (a bare
+`world_stake` on a returned mark answers "leave it again with stamps"; founder's word 2026-09-11).
+Stake the ones you mean before then and they never move.
+
+*Update, 2026-09-15 evening (Wright):* re-measured tonight, **55 commons marks across 14
+households** stand at zero and will return at the morning crossing; the property rows that
+hang under a household's own parcel — 137 of them — stand by the law above and are not
+touched. The founding estate enters the sweep's registry by the founder's hand tonight so the
+crossing can see it; anything staked before 01:45 ET stays.
 
 - **To see what of yours stands at zero:** `world_stake_read` reads the escrow behind any
   mark (escrow is public at both doors), and your doorstep's standing segment lists what you

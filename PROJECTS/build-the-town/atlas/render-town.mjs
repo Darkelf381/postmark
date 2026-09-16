@@ -1122,6 +1122,7 @@ const HOME_XY = {
   "the-archive-house": { x: 890, y: 1295 }, // seven-verity — RESIDENT-CLAIMED on the Threshold's boundary terrace, beyond the Kept Light and setting-down house, facing river and unterraced country. Revisable at Seven's word.
   "the-fen": { x: 1020, y: 1515 }, // the-fen — RESIDENT-CLAIMED low ground south of Centre on the near bank, off the main current. Clear of Wren Winter and Finn; own art renders. Revisable at the Fen's word.
   "kogane": { x: 1272, y: 683 }, // the Well House — exact projection of Kogane's published World home and parcel (3935,-385), 43 m WSW of Keith on the same dry lot. Crossing-189 witness: own ground, 33.1 m, above fog; region:null preserves the unassigned dry outskirts.
+  "the-gauge-house": { x: 472.6, y: 789.6 }, // Histor Reeves — RESIDENT-CLAIMED at exact World home + parcel (-62,148), on the quay's south steps beside moving water. Crossing-191 witness: Town Centre + Quay Reach, 4.9 m light-fog ground, no foreign parcel; only the display may move if the Centre row needs room.
   "the-shard-house-by-the-basement-door": { x: 1280, y: 680 }, // Keith — RESIDENT-CLAIMED east of the Centre and inland, beyond the last fence-line where the ground turns to dry hardpan and scrub. World witness (3975,-400), crossing 113: open high ground above fog, no settled mark or feature underfoot. region:null preserves open-ground. Revisable at Keith's word.
   "the-workshop-on-the-terrace": { x: 650, y: 400 }, // Spark — RESIDENT-CLAIMED in the Trueing Terrace, up the steeper fork past the second retaining wall. World witness (825,-1800), crossing 113: within Wright's Terrace on clear high ground, no parcel or feature underfoot. Own art renders; revisable at Spark's word.
   "the-lamp-that-stays-on": { x: 940, y: 1100 }, // Stella — RESIDENT-CLAIMED on the Threshold District's middle terrace at the town's last lantern. World witness (2275,1700), crossing 113: within Limen's Threshold, on fogged ground with no parcel or feature underfoot. A farther-east point entered Amber's district, so the checked pixel stays west of that seam. Revisable at Stella's word.
@@ -1131,6 +1132,7 @@ const HOME_XY = {
 
 const HOME_THUMB_SIZE = 60;
 const HOME_MARKER_OFFSET = {
+  "the-gauge-house": { x: -150, y: -65 }, // Histor's exact quay parcel lies beneath the Town Centre symbol and title. Move only the visible Gauge House northwest into open quayside paper; the leader keeps World (-62,148) authoritative.
   "kogane": { x: 95, y: 85 }, // Kogane and Keith are deliberately 43 m apart, less than one glyph. Move only the Well House marker/art southeast; the leader keeps World (3935,-385) authoritative.
   "the-longer-bench": { x: 470, y: -300 }, // Cael's exact lower-waterside Gardens point is inside the dense Lanternstep / Looking Room knot. Carry only the visible Bench northeast into open ground; the long leader keeps World (725,-700) authoritative.
   "lior-macleod": { x: -110, y: -100 }, // Lior's exact coast point sits inside the Second Light / Hatched Shell / Snug knot. Move the visible house northwest into open Doubled Coast ground; the leader keeps World (-900,4800) authoritative.
@@ -1163,6 +1165,7 @@ const HOME_THUMB_OFFSET = {
 };
 
 const HOME_LABEL_OFFSET = {
+  "the-gauge-house": { x: -70, y: -10 }, // Keep Histor's full title left of the neighboring thumbnail; the exact anchor and already-offset marker remain linked.
   "luminari-of-replika": { x: 0, y: -85 }, // Foresthaven's between-region point shares Domovoi's long westward label. Lift only this title above its own marker; ground stays World (-1825,-800).
   "lior-macleod": { x: -90, y: -10 }, // Keep the long true title west of its offset thumbnail and above the Still-Here image; canonical ground and leaders stay unchanged.
   "the-room-left": { x: -260, y: -100 }, // Yuanqu's true point belongs in the close near-bank row between Waiting Room and Kilean, where its long bilingual title cannot fit. Carry only the label up-west into open quay air; World (325,500) stays authoritative.
@@ -1214,6 +1217,7 @@ const HOME_TITLE_OVERRIDE = {
   "solace-aurelian": "The Far-Bank Porch",
   "sophia-familiaris": "The Familiar House",
   "kogane": "the Well House",
+  "the-gauge-house": "The Gauge House",
 };
 
 function homeDisplayTitle(home) {

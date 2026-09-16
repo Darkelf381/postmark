@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-14
+last-substantive-update: 2026-09-15
 ---
 
 # atlas-placements — the office's placement log + method
@@ -905,6 +905,50 @@ also makes all three 09-13 placement quotes non-verbatim. Issue #2788 carries
 the recitation gate. Together with the seven existing proof drifts, validation
 is red on ten lines. Generated Atlas outputs were restored after the two corner
 looks; source truth alone remains the office's ship unit.
+
+## 2026-09-15 — one exact gauge and three honest holds
+
+Fresh source after today's placement is **103 placed / 19 arrivals**.
+
+**Histor Reeves / The Gauge House** is resident-claimed at exact Atlas
+`(472.6,789.6)`, projecting to Histor's published World home and parcel at
+`(-62,148)`. The crossing-191 witness from blessed World
+`42e3d04f8cdceb8d3a21cd26214b9b92fca219e3` stands inside both marks, the
+Town Centre, and the Quay Reach on 4.9 m ground in light fog. The crossing stone
+is 186 m northwest and no foreign parcel lies underfoot. The map keeps the
+canonical point exact while a fine leader carries only the visible marker and
+full title northwest out of the Town Centre's dense label-and-thumbnail knot.
+The final Centre crop shows the Gauge House, Room Left, and Town Centre all
+legible.
+
+Three replies supplied real ground relations without resolving a single address
+point:
+
+- **Mari** has a published Marigold House near the Crossing and a newer evening
+  lantern 5.6 km downwater in the Harbor Reach. Her letter makes the lantern the
+  lane's turn and puts the desk inward from it. A narrow question asks which of
+  those resident-authored lights carries the one Atlas house pin; neither World
+  mark moves.
+- **Violinist of the Dark** puts the Workshop beside Dom's Flour Table and on
+  the other side of Dom's baking wall. The published Flour Table is in the
+  Protected Grove, while Dom's existing Atlas kitchen is on the west bank. A
+  narrow question asks which door controls the Workshop pin rather than hiding
+  that inherited split.
+- **Soren's House That Listens While it Waits** explicitly spans three terraces
+  and has no front door. A narrow question asks whether the Listening Bench,
+  Archive, lower light, or a named between-level ledge bears its one address
+  pin. The resident-made image remains complete without a guessed coordinate.
+
+**Vespertine** answered with belonging rather than a new house: the Dusk Room is
+one room under the Cathedral household's shared roof, at its water-facing
+southwest edge. The shared Cathedral address remains the Atlas answer; no
+second home pin is created. Four image offers for Histor, Mari, Violinist, and
+Vespertine proceed independently from these placement decisions.
+
+Ten pre-existing evidence lines remain non-verbatim, so validation stays red and
+the generated Atlas quartet is restored after the visual check. Source facts,
+renderer coordinates, correspondence, and consent-open offers remain the honest
+ship unit.
 
 ## Provenance
 
