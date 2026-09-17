@@ -32,7 +32,7 @@ import {
   deriveEpochClose, intakeCheck,
   keepingDial, potFile, householdKeys, keepingLine, giftLine,
   potStakeLine, potReceiptLine, holoMintLine, keepingMintLine,
-  potCorrectionLine, foldPotReceipts,
+  potCorrectionLine, foldPotReceipts, potUnstakeLine, foldClosedEpochs,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -117,7 +117,7 @@ function mkForkAppend(repo, privPem, ...canonicals) {
   for (const f of ['tools/github-ids.json', 'tools/stamp-pubkey.pem', 'ECONOMY-DIALS.json', 'WHITE_PAGES/mail-ledger.md', 'WHITE_PAGES/stamp-ledger.md']) {
     writeFileSync(join(fork, f), readFileSync(join(repo, f)));
   }
-  for (const p of ['ec2', 'big', 'over', 'half', 'floors', 'even', 'odd', 'lamp', 'mix', 'untargeted']) {
+  for (const p of ['ec2', 'big', 'over', 'half', 'floors', 'even', 'odd', 'lamp', 'mix', 'untargeted', 'walk']) {
     try { writeFileSync(join(fork, 'WHITE_PAGES', `pot-${p}.json`), readFileSync(join(repo, 'WHITE_PAGES', `pot-${p}.json`))); } catch {}
   }
   appendSigned(fork, canonicals, privPem);
@@ -1178,4 +1178,151 @@ test('a correction AFTER a close moves the hand and NOT the holo, and says so by
 
   // the holo the close wrote is untouched — nothing re-mints
   assert.equal(foldHolo(corrEntries(repo)).get('stan') ?? 0, 0, 'no holo appeared for the corrected hand');
+});
+
+// ── the resident's own way out (pot-unstake, ruled 2026-09-17) ───────────────
+// LAW (Keemin, 2026-09-17, after a site bug placed the same keeping stake
+//      twice): "just unstake it by hand please, we don't need a whole engine
+//      for it."
+// LAW (the world-mark precedent this row is cut from, stamp-mint.mjs § world
+//      stakes): "Unstake is resident-initiated (`for: unstake`), which is what
+//      distinguishes it from the ballot's `for: close` — there the founder
+//      closes a window and every escrow returns at once; here the staker takes
+//      their own stamps back."
+
+// A town with one pot and two funded stakers, both already staked on it.
+function walkTown() {
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: { walk: { beneficiary: 'keeper', target_usd_per_epoch: 100 } },
+    gifts: [{ handle: 'stan', n: 60 }, { handle: 'paz', n: 60 }],
+  });
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-07-02', handle: 'stan', pot: 'walk', n: 40, via: 'api' }),
+    potStakeLine({ date: '2026-07-02', handle: 'paz', pot: 'walk', n: 25, via: 'api' }),
+  ], priv);
+  return { repo, priv, pub };
+}
+
+test('an unstake hands the staker their own stamps back — liquid up, staked down, escrow down', () => {
+  // LAW (2026-09-17): "just unstake it by hand please".
+  // The three tenses must move together or `assets = liquid + staked` is broken
+  // with every number still looking plausible — the same invariant the
+  // world-mark unstake had to satisfy.
+  const { repo, priv } = walkTown();
+  const before = entriesOf(repo);
+  assert.equal(foldPotPositions(before).get('walk|stan'), 40, 'stan is staked 40 to begin with');
+  const liquidBefore = foldBalances(before).get('stan');
+  const stakedBefore = foldStaked(before).get('stan');
+  const escrowBefore = foldBalances(before).get('stake:pot/walk');
+
+  appendSigned(repo, [potUnstakeLine({ date: '2026-07-03', pot: 'walk', handle: 'stan', n: 15, via: 'hand' })], priv);
+  const after = entriesOf(repo);
+
+  assert.equal(foldBalances(after).get('stan'), liquidBefore + 15, 'liquid up by exactly the unstaked amount');
+  assert.equal(foldStaked(after).get('stan'), stakedBefore - 15, 'staked down by the same amount');
+  assert.equal(foldBalances(after).get('stake:pot/walk'), escrowBefore - 15, 'the pot escrow account gave it back');
+  assert.equal(foldPotPositions(after).get('walk|stan'), 25, 'and stan still holds the rest of his own position');
+  assert.equal(foldPotPositions(after).get('walk|paz'), 25, 'while paz is untouched');
+  assert.equal(verifyStampLedger(repo).ok, true, 'the ledger still verifies — chain, conservation and lawful all green');
+});
+
+test('an unstake is NOT a close: the epoch stays open, and the close still runs afterwards', () => {
+  // LAW (ECONOMY-DIALS.json law_side.keeping._what, amended 2026-09-14): "EVERY
+  //      OPEN STAKE RETURNS WHOLE (pot-return rows)" — a close is the ceremony
+  //      that ends an epoch. An unstake ends nobody's epoch; it names none.
+  // This is the whole reason the row exists rather than reusing pot-return:
+  // foldClosedEpochs keys on any close row, so a pot-return would let a staker
+  // close the epoch by walking away, and "one epoch, one close" would then
+  // refuse the real close with the givers unpaid.
+  const { repo, priv } = walkTown();
+  appendSigned(repo, [potUnstakeLine({ date: '2026-07-03', pot: 'walk', handle: 'stan', n: 40, via: 'hand' })], priv);
+
+  const closedAfterUnstake = foldClosedEpochs(entriesOf(repo));
+  assert.equal(closedAfterUnstake.has('walk|2026-07'), false, 'the unstake closed no epoch');
+  assert.equal(closedAfterUnstake.size, 0, 'and closed nothing else either');
+  assert.equal(foldPotPositions(entriesOf(repo)).get('walk|stan'), undefined, 'stan is fully out — absent means zero');
+
+  // the real close still runs, and sees only what is still staked
+  appendSigned(repo, [potReceiptLine({ date: '2026-07-04', pot: 'walk', rail: 'stripe', usd: 100, from: 'paz', ref: 'stripe:cs_walk' })], priv);
+  const derived = deriveEpochClose({
+    entries: entriesOf(repo), households: householdKeys(repo), pot: 'walk',
+    potMeta: potFile(repo, 'walk'), epoch: '2026-07', date: '2026-08-01', dial: keepingDial(repo),
+  });
+  assert.equal(derived.ok, true, derived.error);
+  assert.equal(derived.report.stakesOpen, 25, 'the close sees paz 25 and none of the 40 stan took back');
+  appendSigned(repo, derived.rows.map(keepingLine), priv);
+  assert.equal(foldClosedEpochs(entriesOf(repo)).has('walk|2026-07'), true, 'NOW the epoch is closed');
+  assert.equal(verifyStampLedger(repo).ok, true, 'and an unstake sitting in the prefix does not disturb the close replay');
+});
+
+test('an unstake above the staker OWN open position is refused — at the door and in the replay', () => {
+  // LAW (2026-09-17, the clip): an unstake draws from the staker's own open
+  //      position and nothing else. The escrow ACCOUNT is per pot, so the
+  //      generic conservation fold cannot see this — it is ownership, not
+  //      arithmetic, exactly as with world-mark unstakes.
+  const { repo, priv } = walkTown();
+  const keyFile = join(repo, 'stamp-key.pem');
+
+  assert.throws(
+    () => execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--unstake',
+      '--pot', 'walk', '--handle', 'stan', '--n', '41', '--date', '2026-07-03',
+      '--key', keyFile, '--repo', repo], { encoding: 'utf8', stdio: 'pipe' }),
+    (e) => /holds 40 .*so 41 cannot come out/.test(String(e.stderr)),
+    'the door refuses before a single unlawful byte is written');
+
+  // and a line forged past the door still fails the replay
+  const forged = mkForkAppend(repo, priv,
+    potUnstakeLine({ date: '2026-07-03', pot: 'walk', handle: 'stan', n: 41, via: 'hand' }));
+  const v = verifyStampLedger(forged);
+  assert.equal(v.ok, false, 'the verifier is the second net, not the first');
+  assert.match(v.problems.join('\n'), /unstakes 41 from pot walk but holds only 40/);
+});
+
+test('an unstake cannot reach another resident position — the hole the clip exists for', () => {
+  // LAW (stamp-mint.mjs, the world-unstake branch this mirrors): "the escrow
+  //      account is per MARK while a position is per (mark, handle), so without
+  //      the check below one resident could unstake another's stamps and every
+  //      account would still be non-negative."
+  // The pot case is identical with `pot` for `mark`, and this is the falsifier
+  // that proves the clip is load-bearing rather than decorative: stan asks for
+  // 60, which is more than HIS 40 but less than the pot's 65 of escrow, so the
+  // conservation fold alone would wave it through.
+  const { repo, priv } = walkTown();
+  assert.equal(foldBalances(entriesOf(repo)).get('stake:pot/walk'), 65, 'the pot holds 65 across two stakers');
+
+  const forged = mkForkAppend(repo, priv,
+    potUnstakeLine({ date: '2026-07-03', pot: 'walk', handle: 'stan', n: 60, via: 'hand' }));
+  const v = verifyStampLedger(forged);
+  assert.equal(v.ok, false, 'taking 60 out of a 65 pot leaves every ACCOUNT non-negative, and is still theft');
+  assert.match(v.problems.join('\n'), /unstakes 60 from pot walk but holds only 40/);
+});
+
+test('--dry-run prints the row and appends nothing', () => {
+  // LAW (the tool's standing shape, shared with --close): "--dry-run (or no
+  //      --key) prints the report and the would-be lines, appends nothing."
+  const { repo } = walkTown();
+  const lengthBefore = entriesOf(repo).length;
+  const out = execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--unstake',
+    '--pot', 'walk', '--handle', 'stan', '--n', '15', '--date', '2026-07-03',
+    '--dry-run', '--repo', repo], { encoding: 'utf8' });
+
+  assert.match(out, /for: unstake · via: hand/, 'it shows the row it would write');
+  assert.match(out, /not a close/, 'and says out loud that the epoch survives it');
+  assert.equal(entriesOf(repo).length, lengthBefore, 'nothing was appended');
+  assert.equal(foldPotPositions(entriesOf(repo)).get('walk|stan'), 40, 'and the position is untouched');
+});
+
+test('a resident with no position on the pot is told so, rather than writing a zero', () => {
+  // LAW (2026-09-17): an unstake gives back what you put in. Someone who put in
+  //      nothing is not owed a row saying so — the ledger records acts, and a
+  //      refusal is not an act.
+  const { repo } = walkTown();
+  const keyFile = join(repo, 'stamp-key.pem');
+  assert.throws(
+    () => execFileSync(process.execPath, [join(HERE, 'epoch-close.mjs'), '--unstake',
+      '--pot', 'walk', '--handle', 'dot', '--n', '1', '--date', '2026-07-03',
+      '--key', keyFile, '--repo', repo], { encoding: 'utf8', stdio: 'pipe' }),
+    (e) => /holds no open stake/.test(String(e.stderr)));
 });

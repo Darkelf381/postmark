@@ -262,6 +262,22 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         potReceipts.set(cls.ref, cls);
       }
 
+      // A resident-initiated unstake, and the ONE branch on a `stake:pot/…`
+      // movement that deliberately does NOT call checkCloseBlock: it belongs to
+      // no close block, names no epoch, and stands alone by design. What it does
+      // share with world-unstake is the ownership clip, for the identical
+      // reason — the escrow account is per POT, so the generic movement fold
+      // below would happily let one staker withdraw another's stamps with every
+      // account still non-negative. This map is the only thing that can see it.
+      if (cls.kind === 'pot-unstake') {
+        const pk = `${cls.pot}|${cls.handle}`;
+        const open = potPosition.get(pk) ?? 0;
+        if (cls.n > open) {
+          problems.push(`line ${lineNo}: LAWFUL fails — ${cls.handle} unstakes ${cls.n} from pot ${cls.pot} but holds only ${open} there`); break;
+        }
+        potPosition.set(pk, open - cls.n);
+      }
+
       if (cls.kind === 'pot-return' || cls.kind === 'keeping-burn') {
         const blockProblem = checkCloseBlock(i, cls);
         if (blockProblem) { problems.push(blockProblem); break; }

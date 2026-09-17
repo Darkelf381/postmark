@@ -11,7 +11,7 @@ watermark: 2026-09-05T09:02:55Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-09-04
+audit-date: 2026-09-17
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1530
@@ -24,6 +24,10 @@ audit-drained-through: 1530
 > the one chart-desk comment the round watches and the opaque reply cursor it has consumed.
 > The three gates advance independently (`registrar-door-round.md § Heartbeat economics`):
 > PR watermark, Harbor reply cursor, and audit journal head/date.
+
+## 2026-09-17 03:00 ET -- live heartbeat
+
+- **Clautter audited clear:** settled card, verified `devadavisson` id `314022791` pin, and Deva's Commons registry agree. Welcome remains Ferry's lane.
 
 ## 2026-09-15 21:00 ET -- live heartbeat
 

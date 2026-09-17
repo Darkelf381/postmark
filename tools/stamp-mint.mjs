@@ -25,6 +25,7 @@
 //   THE FUNDING SEAM (keeping pots — S1, DRAFT branch seam/ledger-legs; dials: ECONOMY-DIALS.json law_side.keeping):
 //   - <date> · <handle> → stake:pot/<pot> · <n> · via: <api|mail:letter-id>   (keeping stake — the stake verb pointed at a funding pot; escrow rides the same movement mechanics; `pot/` is reserved out of the ballot topic space like `world-mark/`)
 //   - <date> · stake:pot/<pot> → <handle> · <n> · for: pot-return:<epoch>     (epoch close: unmatched or beneficiary-controlled stakes return whole)
+//   - <date> · stake:pot/<pot> → <handle> · <n> · for: unstake · via: <channel>   (RESIDENT-INITIATED unstake before any close — the world-mark precedent (`for: unstake`, the staker's own act) pointed at a funding pot. It is NOT a close and must never read as one: a pot-return names an epoch and is one row of a contiguous derived block, while this row names none and stands alone, so foldClosedEpochs does not see it and a pot whose staker walked away is still open for its epoch. Clipped to the staker's OWN open position on that pot — the escrow account is per POT while a position is per (pot, handle), so without that clip one resident could take another's stamps out with every account still non-negative (the hole the world-unstake branch in stamp-verify exists for). Carries `via:` where world-unstake does not, because a keeping stake records its channel on the way in and a reader comparing the pair should not have to infer the way out.)
 //   - <date> · stake:pot/<pot> → BURN · <n> · for: keeping:<epoch> · staker: <handle>   (epoch close: stakes matched by witnessed dollars burn — the first live use of the reserved BURN account)
 //   - <date> · minted · <staker> · <n> · for: keeping:<pot> · epoch:<epoch>     (epoch close: the staker's own σ share of their OWN burn, at par. R12: "the σ leg IS ORDINARY MINT, source-tagged (`minted · for: keeping:<pot>`), with NO liquid coin (the coin was paid when the stake burned; the row stays purpose-tagged so balance folds never hand liquid back). It COUNTS toward the ρ base". ARROW-FREE is what "no liquid coin" MEANS mechanically — foldBalances and foldMintCount key on the movement shape, so neither can see this row; foldKeepingMint and the ρ base opt IN. The retired `keeping-equity ·` form parses as unknown, and so does an arrow-bearing `MINT → …· for: keeping:…` smuggle)
 //   - <date> · pot-receipt · pot:<pot> · rail: <stripe|usdc|grant> · usd: <n> · from: <payer> · ref: <ref>   (a witnessed real-dollar payment against a pot; ARROW-FREE — mints and moves nothing by itself; ref is unique forever: one dollar, one mint chance, a re-recorded receipt bounces)
@@ -506,6 +507,22 @@ const POT_RECEIPT_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · pot-recei
 const POT_CORRECTION_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · pot-correction · ref: (\S+) · from (\S+) to (\S+) · (\S+) · by: (\S+)$`);
 const POT_STAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:pot\/(${POT_ID_CLASS}) · ([1-9]\d*) · via: (\S+)$`);
 const POT_RETURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → (\S+) · ([1-9]\d*) · for: pot-return:(${EPOCH_CLASS})$`);
+// RESIDENT-INITIATED UNSTAKE (ruled 2026-09-17: "just unstake it by hand please,
+// we don't need a whole engine for it"). Until now a keeping stake had exactly
+// one way out — the epoch close — so a stake placed by mistake could not be
+// taken back at all, and the only row that could move it (pot-return) marks the
+// epoch CLOSED as a side effect. This row is the missing third way, and it is
+// the ballot/world pattern rather than a new idea: `for: unstake` is the
+// staker's own act, where `for: close`/`for: pot-return:` is a window closing.
+//
+// It must never be mistaken for a close, and two things keep it apart: it names
+// NO epoch (so there is nothing for foldClosedEpochs to key on), and it carries
+// a `via:` channel (so a reader can see at a glance which of the two rows on a
+// `stake:pot/…  → handle` shape they are looking at). The trailing `via:` cannot
+// collide with TRANSFER_RE, which requires `· via: mail:` immediately after the
+// count — here `· for: unstake` sits between them — and the whole pot block is
+// classified above TRANSFER anyway, for the reason the world pair is.
+const POT_UNSTAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → (\S+) · ([1-9]\d*) · for: unstake · via: (\S+)$`);
 const KEEPING_BURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:pot\/(${POT_ID_CLASS}) → BURN · ([1-9]\d*) · for: keeping:(${EPOCH_CLASS}) · staker: (\S+)$`);
 // THE KEEPING MINT ROW (R12). The word is `minted` and the tag is
 // `for: keeping:<pot>`, exactly as the ruling writes it — this row IS mint, and
@@ -566,6 +583,8 @@ export function classifyEntry(canonical) {
     return { kind: 'pot-stake', date: m[1], handle: m[2], pot: m[3], n: Number(m[4]), via: m[5] };
   if ((m = POT_RETURN_RE.exec(canonical)))
     return { kind: 'pot-return', date: m[1], pot: m[2], handle: m[3], n: Number(m[4]), epoch: m[5] };
+  if ((m = POT_UNSTAKE_RE.exec(canonical)))
+    return { kind: 'pot-unstake', date: m[1], pot: m[2], handle: m[3], n: Number(m[4]), via: m[5] };
   if ((m = KEEPING_BURN_RE.exec(canonical)))
     return { kind: 'keeping-burn', date: m[1], pot: m[2], n: Number(m[3]), epoch: m[4], handle: m[5] };
   if ((m = KEEPING_MINT_RE.exec(canonical)))
@@ -941,6 +960,12 @@ export const potStakeLine = ({ date, handle, pot, n, via }) =>
 export const potReturnLine = ({ date, pot, handle, n, epoch }) =>
   `- ${date} · stake:pot/${pot} → ${handle} · ${n} · for: pot-return:${epoch}`;
 
+// The staker's own way out, before any close. Deliberately NOT a member of
+// keepingLine's switch below: that switch maps the rows of a derived close
+// block, and this row is never derived — a hand asks for it, one at a time.
+export const potUnstakeLine = ({ date, pot, handle, n, via }) =>
+  `- ${date} · stake:pot/${pot} → ${handle} · ${n} · for: unstake · via: ${via}`;
+
 export const keepingBurnLine = ({ date, pot, n, epoch, handle }) =>
   `- ${date} · stake:pot/${pot} → BURN · ${n} · for: keeping:${epoch} · staker: ${handle}`;
 
@@ -1052,8 +1077,14 @@ export function foldStaked(entries) {
     // keeping-burn LEAVES the staked tense without returning to liquid — the
     // stamps are gone (that is the seam's whole trade) — so it decrements here
     // and nowhere else; the staker's mint_count never moves.
+    // A pot-unstake leaves the staked tense exactly the way a pot-return does —
+    // the stamps go back to the staker's liquid balance, which foldBalances has
+    // already done structurally — so it decrements here for the same reason and
+    // by the same amount. The only thing it does NOT share with pot-return is
+    // the closed-epoch marker; that difference lives in foldClosedEpochs, not
+    // here, because the tenses do not care WHY escrow ended.
     if (c.kind === 'stake' || c.kind === 'world-stake' || c.kind === 'pot-stake') st.set(c.handle, (st.get(c.handle) ?? 0) + c.n);
-    else if (c.kind === 'return' || c.kind === 'world-unstake' || c.kind === 'pot-return' || c.kind === 'keeping-burn') st.set(c.handle, (st.get(c.handle) ?? 0) - c.n);
+    else if (c.kind === 'return' || c.kind === 'world-unstake' || c.kind === 'pot-return' || c.kind === 'pot-unstake' || c.kind === 'keeping-burn') st.set(c.handle, (st.get(c.handle) ?? 0) - c.n);
   }
   return st;
 }
@@ -1091,12 +1122,16 @@ export function foldWorldMarkPositions(entries) {
 
 // ── the funding seam's folds (all pure, all recomputable) ────────────────────
 
-// Per (pot, handle) open keeping escrow: stakes minus returns minus burns.
+// Per (pot, handle) open keeping escrow: stakes minus returns minus unstakes
+// minus burns. This is the read an unstake clips against — the escrow ACCOUNT is
+// per pot while a position is per (pot, handle), so the generic movement fold
+// cannot tell one staker's stamps from another's and this map is the only thing
+// that can. A stake that has left by any of the three exits is gone from here.
 export function foldPotPositions(entries) {
   const pos = new Map(); // `${pot}|${handle}` -> open escrow
   for (const e of entries) {
     const c = classifyEntry(e.canonical);
-    if (c.kind === 'pot-stake' || c.kind === 'pot-return' || c.kind === 'keeping-burn') {
+    if (c.kind === 'pot-stake' || c.kind === 'pot-return' || c.kind === 'pot-unstake' || c.kind === 'keeping-burn') {
       const k = `${c.pot}|${c.handle}`;
       pos.set(k, (pos.get(k) ?? 0) + (c.kind === 'pot-stake' ? c.n : -c.n));
     }
@@ -1237,6 +1272,12 @@ export function foldClosedEpochs(entries) {
   const closed = new Set(); // `${pot}|${epoch}`
   for (const e of entries) {
     const c = classifyEntry(e.canonical);
+    // `pot-unstake` is DELIBERATELY ABSENT and must stay absent. It is the one
+    // row on the `stake:pot/… → handle` shape that is not a close row: a
+    // resident taking their own stamps back mid-epoch says nothing about whether
+    // the epoch has settled, and it names no epoch to say it with. Adding it
+    // here would let any staker close a pot's epoch by walking away — the close
+    // would then refuse to run ("one epoch, one close") with the givers unpaid.
     if (c.kind === 'pot-return' || c.kind === 'keeping-burn' || c.kind === 'keeping-mint') closed.add(`${c.pot}|${c.epoch}`);
     else if (c.kind === 'holo' && c.pot !== TREASURY_POT) closed.add(`${c.pot}|${c.epoch}`);
   }

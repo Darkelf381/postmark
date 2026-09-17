@@ -20,6 +20,15 @@
 //               epoch report, and append the whole block atomically (one signed
 //               write). --dry-run (or no --key) prints the report and the
 //               would-be lines, appends nothing.
+//   --unstake   take a resident's OWN open keeping stake back out of a pot,
+//               before any close (founder-ruled 2026-09-17, after a site bug
+//               placed the same stake twice: "just unstake it by hand please,
+//               we don't need a whole engine for it"). One row, one hand, no
+//               derivation. It clips to the staker's own open position on that
+//               pot — never another resident's, never more than stands — and it
+//               is NOT a close: it names no epoch, so the pot's epoch is still
+//               open afterwards and the close that eventually runs is unaffected.
+//               --dry-run prints the line and appends nothing.
 //   --holo-held read any household's soulbound holo out of the conversion rows.
 //   --keeping-held  the same for the keeping mint — the stakers' own σ share.
 //               Both legs of a conversion are arrow-free (R12: "NO liquid coin";
@@ -51,7 +60,8 @@ import {
   deriveMints, deriveFriendshipMints, combineDerived, deriveTransfers, walkLedger,
   classifyEntry, appendSigned,
   keepingDial, potFile, deriveEpochClose, keepingLine, intakeCheck,
-  potReceiptLine, foldPotReceipts, foldHolo, foldKeepingMint,
+  potReceiptLine, potUnstakeLine, foldPotReceipts, foldPotPositions,
+  foldHolo, foldKeepingMint,
   foldOwnership,
   KEEPING_RAILS, TREASURY_POT, canonicalRef,
   potCorrectionLine,
@@ -299,6 +309,42 @@ function main() {
     return;
   }
 
+  if (has('--unstake')) {
+    const pot = arg('--pot'); const handle = arg('--handle'); const date = arg('--date');
+    const n = Number(arg('--n')); const via = arg('--via') ?? 'hand';
+    if (!pot || !handle || !date || !arg('--n'))
+      die('--unstake needs --pot <id> --handle <handle> --n N --date YYYY-MM-DD [--via <channel>] [--key FILE | --dry-run]');
+    if (!POT_ID_RE.test(pot)) die(`--pot must be kebab-case ([a-z0-9-], got "${pot}")`);
+    if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
+    if (!Number.isInteger(n) || n < 1) die(`--n must be a whole number of stamps ≥ 1 (got ${arg('--n')})`);
+    if (/\s|·/.test(handle) || /\s|·/.test(via)) die('--handle and --via may not contain whitespace or the "·" field separator');
+    if (pot === TREASURY_POT) die(`"${TREASURY_POT}" is the reserved direct-to-town pot — it never takes stakes, so it has none to give back`);
+    if (!potFile(repo, pot)) die(`no pot file WHITE_PAGES/pot-${pot}.json — an unstake needs the pot it draws from`);
+    // THE CLIP, and it is the whole safety of this verb. The escrow account is
+    // per POT, so the ledger's generic conservation fold cannot tell one
+    // staker's stamps from another's; only the per-(pot, handle) position can.
+    // Refused here at the line-builder so an unlawful line is never written —
+    // the verifier's identical check is the second net, not the first.
+    const open = foldPotPositions(entries).get(`${pot}|${handle}`) ?? 0;
+    if (open <= 0) die(`${handle} holds no open stake on pot "${pot}" — there is nothing to take back`);
+    if (n > open) die(`${handle} holds ${open} on pot "${pot}", so ${n} cannot come out — an unstake draws only from your own open position`);
+    const canonical = potUnstakeLine({ date, pot, handle, n, via });
+    console.log(`── unstake · pot ${pot} · ${handle} · ${date} ──`);
+    console.log(`open position:        ${open}`);
+    console.log(`taking back:          ${n}  (${open - n} left staked on this pot)`);
+    console.log(`not a close:          pot "${pot}" keeps its open epoch — this row names none`);
+    console.log(`row:\n  ${canonical}`);
+    const pem = readKey();
+    if (has('--dry-run') || !pem) {
+      console.log(has('--dry-run') ? 'dry run — nothing appended' : 'no --key — nothing appended (pass --key FILE to seal the unstake)');
+      return;
+    }
+    requireSettledTail(repo, entries, date);
+    appendSigned(repo, [canonical], pem);
+    console.log(`stamp-ledger: unstaked\n  ${canonical}`);
+    return;
+  }
+
   if (has('--close')) {
     const pot = arg('--pot'); const epoch = arg('--epoch'); const date = arg('--date');
     if (!pot || !epoch || !date) die('--close needs --pot <id> --epoch YYYY-MM --date YYYY-MM-DD [--key FILE | --dry-run]');
@@ -348,7 +394,7 @@ function main() {
     return;
   }
 
-  console.error('usage: epoch-close.mjs --correct-hand --ref <ref> --from <old> --to <new> --reason <token> --by <who> --date D --key FILE | --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
+  console.error('usage: epoch-close.mjs --correct-hand --ref <ref> --from <old> --to <new> --reason <token> --by <who> --date D --key FILE | --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --unstake --pot <id> --handle <handle> --n N --date D [--via <channel>] [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
   process.exit(1);
 }
 
