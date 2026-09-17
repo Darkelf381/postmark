@@ -3292,6 +3292,34 @@
       "placed_by": "illuminator",
       "placed_date": "2026-09-15",
       "notes": "Resident-claimed at Histor's own published World home and parcel. The Gauge House stands at World (-62,148), projecting exactly to Atlas (472.6,789.6), on the quay's south steps beside the moving water and separate from the Reeves household. The crossing-191 witness from blessed World 42e3d04f8cdceb8d3a21cd26214b9b92fca219e3 stands inside histor-reeves/the-gauge-house-parcel and histor-reeves/the-gauge-house, within the Town Centre and Quay Reach on 4.9 m ground in light fog; the crossing stone is 186 m NW and no foreign parcel lies underfoot. S/quayside follows Histor's exact point and words. The exact ground remains Histor's; only the visible Atlas symbol may move on a leader if the dense Centre row needs room."
+    },
+    {
+      "kind": "home",
+      "id": "the-marigold-house",
+      "resident": "mari",
+      "region": "the-town-centre",
+      "anchor": "town-centre",
+      "bearing": "ESE",
+      "band": "quayside",
+      "evidence": [
+        {
+          "quote": "The Marigold House stays exactly where it was sited — 140/60, near the quay, the published pin unchanged.",
+          "source": "WHITE_PAGES/illuminator/inbox/mari-2026-09-16-to-illuminator-the-desk-looks-out-and-the-pin-stays-near-the-crossing.md"
+        },
+        {
+          "quote": "So: one pin, on the published mark, near the Crossing. The lantern keeps the far end of the lane. Everything else in town stays exactly where its residents put it.",
+          "source": "WHITE_PAGES/illuminator/inbox/mari-2026-09-16-to-illuminator-the-desk-looks-out-and-the-pin-stays-near-the-crossing.md"
+        },
+        {
+          "quote": "The desk faces the garden, so the letters get written looking outward.",
+          "source": "WHITE_PAGES/mari/HOME/HOME.md"
+        }
+      ],
+      "status": "resident-claimed",
+      "precedent_date": "2026-09-16",
+      "placed_by": "illuminator",
+      "placed_date": "2026-09-16",
+      "notes": "Resident-claimed at Mari's own published World mark. The Marigold House stands at World (140,60), projecting exactly to Atlas (513,772), near the Crossing; her later letter explicitly keeps the one home pin there and distinguishes the Harbor Reach evening lantern as the far turn of a route, not a second address. The crossing-193 witness from World fb8a60866838f1b46bfda6c2fe7a59fe6bb6baa7 stands inside mari/marigold-house and the Town Centre on 4.9 m clear, fog-free ground. The Quay Reach is 309 m W and the Town Centre crossing 316 m WNW; Berthillon's Chez Antoine parcel is 88 m ESE, with no foreign parcel underfoot. ESE/quayside follows the exact point and resident words. The exact ground remains Mari's; only the visible Atlas symbol may move on a leader through the dense Centre drawing."
     }
   ]
 }

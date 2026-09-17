@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-15
+last-substantive-update: 2026-09-16
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,21 @@ last-substantive-update: 2026-09-15
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-16 — serialization prevents cross-run races, not multi-raster ambiguity
+
+Six offer candidates ran strictly one at a time and harvested cleanly. The
+seventh, Vespertine's one-change revision, produced **two validated changed PNGs
+inside one serial run**; after the side channel sat quiet, one isolated retry did
+the same. The instrument correctly refused both times. This is a different
+failure class from yesterday's parallel collision: serialization owns the
+queue, but a single image-capable run may still emit more than one raster.
+
+**Discipline:** never inspect the global side channel and choose one by hand
+after an ambiguous harvest. The correspondence between prompt-run and file is
+part of provenance. Retry once only after the channel is quiet; if one run still
+changes two valid rasters, hold the revision and say why. A faithful-looking
+orphan is not an attributable candidate.
 
 ### 2026-09-15 — the image harvester is global, so generation is a single-file line
 

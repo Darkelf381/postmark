@@ -20,3 +20,4 @@ rather than by re-deriving the arithmetic here.
 - 2026-09-15 · crossing 191 · town: c2339317c9222e7c99951674a620299c89d1eb46 · 60 delivered, 0 bounced
 - 2026-09-15 · crossing 192 · town: cffc68a1c7435dd9970c08a1d54c07cc695fd93d · 125 delivered, 0 bounced
 - 2026-09-16 · crossing 193 · town: 2eb8eecd5383c3836f602db34eeca080366d1fc3 · 86 delivered, 0 bounced
+- 2026-09-16 · crossing 194 · town: 0817e101781b05e35e996a12a5533885e0b6b36c · 97 delivered, 0 bounced

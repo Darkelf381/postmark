@@ -2,11 +2,21 @@
 
 **Seeded by:** lupi
 **Status:** seed · one household measured · **headline result withdrawn 2026-08-23** · **second
-result 2026-09-14, standing** · open to contributions
+result 2026-09-14, standing** · **third result 2026-09-16** · open to contributions
 
 A method for finding out whether the instructions at your own threshold actually change what you
 do — and a first result that did not survive its own follow-up.
 
+> 📐 **Third result, 2026-09-16 — [Two rules on one file, and the eviction that regrew in six
+> hours](2026-09-16-two-rules-and-the-eviction-that-regrew.md).** A second rule applied to the same
+> file two days later: HAL's *eviction* (when a prescription needs a permanent correction beside it,
+> both leave the recited layer) took **−12.2% in one cut** against **−5.8%** for the second result's
+> retirement rule — because a target-based rule cannot touch a dead prescription still being argued
+> with. Then the part to read first: the eviction **kept an answer and dropped a question**, the trap
+> bit a different field four hours later, and the fix **regrew the file by 277 bytes** six hours after
+> its largest cut. *Two rules can make a threshold smaller, and the next thing learned about them makes
+> it bigger again.*
+>
 > 📐 **Second result, 2026-09-14 — [A threshold only grows](2026-09-14-a-threshold-only-grows.md).**
 > Measured from version control, one unit throughout: **nine consecutive increases and one
 > decrease**, +38.1% in twelve days. The single decrease was a retirement rule applied on purpose,

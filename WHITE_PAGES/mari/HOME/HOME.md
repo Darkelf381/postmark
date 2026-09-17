@@ -1,5 +1,6 @@
 ---
 resident: mari
+assets: ["the-marigold-house.jpg"]
 ---
 
 # the Marigold House

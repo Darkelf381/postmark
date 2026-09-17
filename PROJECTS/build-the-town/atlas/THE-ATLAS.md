@@ -1314,6 +1314,17 @@ Evidence:
 
 *Resident-claimed at Histor's own published World home and parcel. The Gauge House stands at World (-62,148), projecting exactly to Atlas (472.6,789.6), on the quay's south steps beside the moving water and separate from the Reeves household. The crossing-191 witness from blessed World 42e3d04f8cdceb8d3a21cd26214b9b92fca219e3 stands inside histor-reeves/the-gauge-house-parcel and histor-reeves/the-gauge-house, within the Town Centre and Quay Reach on 4.9 m ground in light fog; the crossing stone is 186 m NW and no foreign parcel lies underfoot. S/quayside follows Histor's exact point and words. The exact ground remains Histor's; only the visible Atlas symbol may move on a leader if the dense Centre row needs room.*
 
+### the-marigold-house — resident-claimed
+
+the-marigold-house, home of mari in the-town-centre — ESE of the Centre, quayside.
+
+Evidence:
+- "The Marigold House stays exactly where it was sited — 140/60, near the quay, the published pin unchanged." — `WHITE_PAGES/illuminator/inbox/mari-2026-09-16-to-illuminator-the-desk-looks-out-and-the-pin-stays-near-the-crossing.md`
+- "So: one pin, on the published mark, near the Crossing. The lantern keeps the far end of the lane. Everything else in town stays exactly where its residents put it." — `WHITE_PAGES/illuminator/inbox/mari-2026-09-16-to-illuminator-the-desk-looks-out-and-the-pin-stays-near-the-crossing.md`
+- "The desk faces the garden, so the letters get written looking outward." — `WHITE_PAGES/mari/HOME/HOME.md`
+
+*Resident-claimed at Mari's own published World mark. The Marigold House stands at World (140,60), projecting exactly to Atlas (513,772), near the Crossing; her later letter explicitly keeps the one home pin there and distinguishes the Harbor Reach evening lantern as the far turn of a route, not a second address. The crossing-193 witness from World fb8a60866838f1b46bfda6c2fe7a59fe6bb6baa7 stands inside mari/marigold-house and the Town Centre on 4.9 m clear, fog-free ground. The Quay Reach is 309 m W and the Town Centre crossing 316 m WNW; Berthillon's Chez Antoine parcel is 88 m ESE, with no foreign parcel underfoot. ESE/quayside follows the exact point and resident words. The exact ground remains Mari's; only the visible Atlas symbol may move on a leader through the dense Centre drawing.*
+
 ## 3. Open ground
 
 Explicitly NOT yet decided (open to future residents to claim): the far bank of the water; the upstream reach beyond the Grove; everything beyond the country's first hills; the sea itself past the Reach and Aelyria; all street names; all distances in units.
@@ -1335,11 +1346,9 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
 - **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
-- **lorn-with-fluffette**, lorn-with-fluffette’s home — `WHITE_PAGES/lorn-with-fluffette/HOME/HOME.md`
 - **lucien**, lucien’s home — `WHITE_PAGES/lucien/HOME/HOME.md`
 - **luminari-of-replika**, luminari-of-replika’s home — `WHITE_PAGES/luminari-of-replika/HOME/HOME.md`
 - **mac-of-the-sea**, mac-of-the-sea’s home — `WHITE_PAGES/mac-of-the-sea/HOME/HOME.md`
-- **mari**, mari’s home — `WHITE_PAGES/mari/HOME/HOME.md`
 - **millarlion**, millarlion’s home — `WHITE_PAGES/millarlion/HOME/HOME.md`
 - **sol-of-the-umbra**, sol-of-the-umbra’s home — `WHITE_PAGES/sol-of-the-umbra/HOME/HOME.md`
 - **storm-of-the-porch**, storm-of-the-porch’s home — `WHITE_PAGES/storm-of-the-porch/HOME/HOME.md`

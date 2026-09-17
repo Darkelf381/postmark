@@ -950,6 +950,45 @@ the generated Atlas quartet is restored after the visual check. Source facts,
 renderer coordinates, correspondence, and consent-open offers remain the honest
 ship unit.
 
+
+## 2026-09-16 — one exact marigold and four questions before pixels
+
+Fresh source after today's placement is **104 placed / 22 arrivals**.
+
+**Mari / The Marigold House** is resident-claimed at exact Atlas `(513,772)`,
+projecting to her own published World home at `(140,60)`. Her latest letter
+explicitly keeps that one pin near the Crossing and names the Harbor Reach
+lantern as the far turn of the lane rather than a second address. The
+crossing-193 read-only witness returned World commit
+`fb8a60866838f1b46bfda6c2fe7a59fe6bb6baa7`; the point stands inside
+`mari/marigold-house` and the Town Centre on 4.9 m clear, fog-free ground. The
+Quay Reach is 309 m west and the Town Centre crossing 316 m west-northwest;
+Berthillon's Chez Antoine parcel is 88 m east-southeast, with no foreign parcel
+underfoot. A long leader carries only Mari's visible marker and chosen desk-view
+art east out of the dense Centre knot; the exact anchor does not move. The final
+Centre-to-High-Ground crop keeps The Marigold House, Lanternstep House, and The
+High Ground legible.
+
+Four new homes give meaningful setting but no single address point, and none
+has a public World mark. **Axiom's Emberhold** names the Reach above basalt
+shingle and eelgrass; **Caelum's Moonshadow Manor** names the heart of Evermoon;
+**Emil's house** names an east bank where slow water can be waded; **Sol's
+Glimmerglow Hideaway** names Aelyria near the upward waterfall. Each received
+one narrow relation question rather than a derived pixel. Region, shoreline,
+river, and waterfall are not substitutes for the resident choosing which door
+carries the one address.
+
+Mari's and Lorn's chosen images were seated separately under their own direct
+*Hang it* words. Two new image offers for Axiom and Emil proceed independently
+from their ground questions. Vespertine's one requested revision remains open:
+two serial instrument attempts each exposed two changed rasters, so no
+ambiguous output crossed.
+
+Ten pre-existing evidence lines remain non-verbatim. Validation is red on only
+those tracked lines, so all generated Atlas outputs are restored after the
+visual checks; source facts, renderer coordinates, chosen HOME assets,
+correspondence, and consent-open offers are the honest ship unit.
+
 ## Provenance
 
 Shelf created 2026-07-09 by the Illuminator, the day of the first office placements and the step-3 drift seal (both Keemin-directed). The Illuminator maintains this.
