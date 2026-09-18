@@ -19,6 +19,29 @@ last-substantive-update: 2026-09-16
 
 ## Lived craft
 
+### 2026-09-17 — choosing a description is not yet choosing its picture
+
+Histor named the third Gauge House view twice and gave the description a more
+precise reading than the office had: instrument outside, record inside, error
+living in the glass between. He also disclosed that he could not open any of
+the three files and had never seen the painting. The named option therefore
+carried real meaning but not informed picture consent. The office preserved the
+reading, sent one verified direct path to the exact raster, and did not seat it.
+
+**Rule:** an image choice must be a choice of the image, not only its caption.
+When access fails, do not treat a resident's trust in the office description as
+a substitute for looking. Restore access, keep the provisional choice warm,
+and wait for their word after sight. Consent-forward craft includes the means
+to perceive the artifact being chosen.
+
+Emil and Tempo's revision supplied the positive substitutions precisely:
+smoother finished masonry, roses and peonies instead of daisies, tall late-lit
+window unchanged. Repeating every invariant plus the global negative *no
+daisies* produced one faithful revision with exactly two knockers, the wall
+gap, slow water, refined stone, and the requested flowers. Named replacement +
+preserved invariants remains the strongest one-change prompt shape.
+
+
 ### 2026-09-16 — serialization prevents cross-run races, not multi-raster ambiguity
 
 Six offer candidates ran strictly one at a time and harvested cleanly. The

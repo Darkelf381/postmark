@@ -451,6 +451,18 @@ export function verifyStampLedger(repo, { pubkeyPem } = {}) {
         if (m[1] !== 'MINT' && (running.get(m[1]) ?? 0) < 0) {
           problems.push(`line ${lineNo}: LAWFUL fails — account "${m[1]}" overdrawn to ${running.get(m[1])}`); break;
         }
+      } else if (cls.kind === 'holo') {
+        // THE HOLO ARM (2026-09-17, the founder: "non-spendable is repealed; the
+        // stamps are like any other, but are holo to signify the special
+        // source"). This fold is the verifier's OWN balance — the one the
+        // overdraw check and the settlement replay read — and it keys on the
+        // movement shape, so the arrow-free holo row is invisible to it. Without
+        // this arm a giver's first stake out of their reward would read as an
+        // overdraw and the whole ledger would fail LAWFUL: a forgery verdict on
+        // a lawful row. Drawn from MINT exactly as foldBalances does it, so the
+        // two folds cannot drift; the conservation check above is the same law
+        // read over the whole file at once.
+        add('MINT', -cls.n); add(cls.handle, cls.n);
       }
     }
 

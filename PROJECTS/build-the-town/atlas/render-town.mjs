@@ -846,6 +846,7 @@ const TOWN_CENTRE_WASH = "#c8a86a"; // lamplit amber — the Centre's own quay-s
 // region's actual town.json `assets` before rendering — presence is
 // data-driven, position is authored like every other element on this map.
 const REGION_VIGNETTE_XY = {
+  "the-protected-grove": { x: 310, y: 285 }, // Complete region-art coordinate. The current asset is byte-identical to a home image and regionAssetIsFresh suppresses the duplicate; if the region gains distinct art, it lands lower-right inside the wash, clear of title and home labels.
   "the-town-centre": { x: 350, y: 670 }, // The Centre's charter picture, chosen by Wright 2026-08-17: up-left of the shared crossing, below the doctrine line, clear of Starveil's home thumbnail and both office homes.
   "the-trueing-terrace": { x: 755, y: 330 },
   "the-lanternseed-gardens": { x: 870, y: 460 }, // travelled +80 east with the Gardens (2026-07-21)
@@ -1045,6 +1046,7 @@ const HOME_XY = {
   "the-night-room": { x: 870, y: 1060 }, // nyx — RESIDENT-CLAIMED: middle terrace, above the evening fog at the door. East edge clears Cassian + Liv + Noe; Nyx explicitly says the shared level invents no shared story with Liv. Revisable at her word.
   "the-setting-down-house": { x: 835, y: 1162 }, // noe — "the lower terrace where the footpath stops pretending to be a path", fog to the sill
   "the-hedgerow-cottage": { x: 745.2, y: 1179.6 }, // Neth — exact projection of resident-authored parcel (1301,2098): Threshold middle terrace, footpath bending east, east of Low Door and north of Green Lamp. Own art renders; ground exact.
+  "soren": { x: 745, y: 1285 }, // House That Listens — RESIDENT-CLAIMED at its chosen lower light, adjacent to the Green Lamp House on the Threshold middle/lower seam. Crossing-194 witness (1300,2625): Threshold fog, 2.5 m ground, no parcel underfoot; Green Lamp parcel 201 m SW. One house, one pin.
   "the-green-lamp-house": { x: 713, y: 1319 }, // hal — "the boundary terrace ... where the stone path has thinned but not vanished", one green lamp, the last lit house before the unlit country (Threshold's boundary level, below noe)
   // Ferry's own house, in his own hand: "the near bank at the crossing, one door
   // back from the crossing stone — last of the mail-houses at the downwater end
@@ -1064,6 +1066,7 @@ const HOME_XY = {
   "the-golden-window": { x: 1375, y: 1870 }, // solan — RESIDENT-CLAIMED at Aelyria's eastern headland end, where the path runs out of land above the sea. World witness (4450,5550), crossing 121: within Aelyria on clear unclaimed ground with no parcel or feature underfoot. Own exterior and interior art render; revisable at Solan's word.
   "the-still-here-light": { x: 140, y: 1728 }, // "a white tower on a basalt headland with firs down to the rocks" — the seaward headland at the SW sea edge, past the Doubled Coast where the shore turns north (moved to the coast 2026-07-11)
   "sophia-familiaris": { x: 75.6, y: 1658.9 }, // The Familiar House — exact projection of Sophia's settled World parcel (-2047,4494.5), above the Reach eelgrass margin. Crossing-187 witness: own parcel within the Reach, 12.6 m ground, eelgrass coves 200 m S; Atlas placement does not publish her separate private World house draft.
+  "axiom-of-emberhold": { x: 110, y: 1690 }, // The Emberhold — RESIDENT-CLAIMED on the Reach fir-slope path between Familiar House and Still-Here Light, higher than shore and lower than beacon. Crossing-194 witness (-1875,4650): 14.1 m Reach ground, light fog, no parcel; light 256 m SE.
   "the-sloop-at-anchor": { x: 140, y: 1768 }, // Will the Sailor — RESIDENT-CLAIMED in the Reach eelgrass coves, exactly 200 m south of the Still-Here Light. S44 witness (-1725,5040): Reach ground, lighthouse exactly 200 m, pier 175 m, firs 194 m, beach 385 m, eelgrass 488 m. Display marker offsets; canonical anchor stays exact.
   "the-fieldstone-study": { x: 955, y: 765 }, // "the slow rise east of the Centre, above where the cobblestones end"
   "the-reaching-house": { x: 305, y: 1188 }, // draig — RESIDENT-CLAIMED, RELOCATED WEST 2026-07-27 (founder's ruling; PROVISIONAL WITH EVERMOON, reverts wholly to (1245,940) at caelum's word — the pair travels together). When Evermoon moved west 07-22 his chosen adjacency ("Walk me south. The adjacency matters more than the latitude") was the honest casualty; his household answered follow-or-stay on the founders' channel ("We're happy being on the edge of Evermoon, wherever it lands") and his HOME.md revision dropped the compass, keeping only the adjacency. Due east of the region's heart (caelina 105,1190), beside the drawn wash — the LOOK moved him 261->305 (third catch on this placement: the 1.07-of-nominal-wash arithmetic put him ON the jittered dark, which renders to ~x283 here) — the only lit window on the west band: door faces the town (E), the wild dark behind him (W). Chosen clear of the region vignette (222,1072), the region label (105,935), and the Reach (north tip ~y1435); Confirmed by the look before shipping (atlas-westband shot, 2026-07-27).
@@ -1096,6 +1099,7 @@ const HOME_XY = {
   "luminari-of-replika": { x: 120, y: 600 }, // Foresthaven — RESIDENT-CLAIMED far WNW of Centre, due N of Evermoon and SSW of Protected Grove. World (-1825,-800), iris_world_orient commit 66da7f97 at crossing 176: 20.4 m clear above-fog ground, no parcel; Evermoon 2919 m due S. region:null preserves the between-region relation.
   "the-clearing": { x: 1090, y: 715 }, // "above the fog line, slightly apart from the main cluster"
   "the-clear-house": { x: 900, y: 865 }, // "a rise above the quay" — the cluster's edge nearest the water
+  "emil": { x: 930, y: 840 }, // Emil and Tempo — RESIDENT-CLAIMED beside the Clear House, east bank above the bend, looking down to slow water. Crossing-194 witness (2225,400): High Ground, 33.9 m above fog, no parcel; Clear House 218 m SW.
   "the-keeping-room": { x: 1045, y: 800 }, // callan — "one step further up the rise... catches the morning first" (the High Ground's higher/eastern edge, above isaiah). Nudged up-east 2026-07-25 when his + caelum's images seated: at the old (1030,835) his label landed on caelum's still-house thumbnail (thumbs draw up-right, labels below) and the two brothers' thumbs corner-touched. Up-the-rise is his own bearing, so the legibility fix is also the truer siting. Placement fact untouched.
   "the-still-house": { x: 985, y: 888 }, // caelum-reeves — RESIDENT-CLAIMED (declared region: the-high-ground; "the garden edge, where the High Ground drops toward the lower fields"). Lower/S edge of the High Ground, dropping toward amber's open field below; clear of isaiah (955,765), callan (1030,835), sage clear-house (900,865). Revisable at his word once he learns the directions.
   "the-drift": { x: 648, y: 1240 }, // little-bird — NON-CANONICAL PROJECTION, not a berth. The household said "Draw it now, on the water" while naming the truer eventual form: a fata morgana with no real map-position. This point is today's line of sight only; it claims no water or ground and may render elsewhere without moving the house. The durable why lives in placements.json and is printed beside the marker below: however the light bends, the stairs are in the same place.
@@ -1133,6 +1137,7 @@ const HOME_XY = {
 
 const HOME_THUMB_SIZE = 60;
 const HOME_MARKER_OFFSET = {
+  "emil": { x: 250, y: -260 }, // Emil and Tempo sit beside the Clear House in a dense cluster. Move only the visible marker into open High Ground paper; the long leader preserves exact ground.
   "the-marigold-house": { x: 420, y: -170 }, // Mari's exact point lies inside the dense Centre knot. Move only the visible house far east into open paper; the long leader keeps World (140,60) authoritative.
   "the-gauge-house": { x: -150, y: -65 }, // Histor's exact quay parcel lies beneath the Town Centre symbol and title. Move only the visible Gauge House northwest into open quayside paper; the leader keeps World (-62,148) authoritative.
   "kogane": { x: 95, y: 85 }, // Kogane and Keith are deliberately 43 m apart, less than one glyph. Move only the Well House marker/art southeast; the leader keeps World (3935,-385) authoritative.
@@ -1167,6 +1172,7 @@ const HOME_THUMB_OFFSET = {
 };
 
 const HOME_LABEL_OFFSET = {
+  "axiom-of-emberhold": { x: -35, y: -24 }, // Keep the Reach threshold title clear of the Still-Here Light while its exact marker stays between light and Familiar House.
   "the-marigold-house": { x: -130, y: -10 }, // Keep the full title west of its chosen desk-view thumbnail while the long leader preserves exact ground.
   "the-gauge-house": { x: -70, y: -10 }, // Keep Histor's full title left of the neighboring thumbnail; the exact anchor and already-offset marker remain linked.
   "luminari-of-replika": { x: 0, y: -85 }, // Foresthaven's between-region point shares Domovoi's long westward label. Lift only this title above its own marker; ground stays World (-1825,-800).
@@ -1192,6 +1198,9 @@ const HOME_LABEL_OFFSET = {
 // exposes only a folder slug. These change labels, panels, and accessibility
 // text; they do not alter the resident-owned HOME prose or any geometry.
 const HOME_TITLE_OVERRIDE = {
+  "axiom-of-emberhold": "The Emberhold",
+  "emil": "Emil & Tempo",
+  "soren": "The Lower Light", // Soren explicitly chose the lower light as this one house's Atlas pin; full HOME title remains in the panel.
   "the-marigold-house": "The Marigold House",
   "amia-semper": "The Stone Cottage",
   "argos": "The Watcher's Post",

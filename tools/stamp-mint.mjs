@@ -26,15 +26,19 @@
 //   - <date> · <handle> → stake:pot/<pot> · <n> · via: <api|mail:letter-id>   (keeping stake — the stake verb pointed at a funding pot; escrow rides the same movement mechanics; `pot/` is reserved out of the ballot topic space like `world-mark/`)
 //   - <date> · stake:pot/<pot> → <handle> · <n> · for: pot-return:<epoch>     (epoch close: unmatched or beneficiary-controlled stakes return whole)
 //   - <date> · stake:pot/<pot> → <handle> · <n> · for: unstake · via: <channel>   (RESIDENT-INITIATED unstake before any close — the world-mark precedent (`for: unstake`, the staker's own act) pointed at a funding pot. It is NOT a close and must never read as one: a pot-return names an epoch and is one row of a contiguous derived block, while this row names none and stands alone, so foldClosedEpochs does not see it and a pot whose staker walked away is still open for its epoch. Clipped to the staker's OWN open position on that pot — the escrow account is per POT while a position is per (pot, handle), so without that clip one resident could take another's stamps out with every account still non-negative (the hole the world-unstake branch in stamp-verify exists for). Carries `via:` where world-unstake does not, because a keeping stake records its channel on the way in and a reader comparing the pair should not have to infer the way out.)
-//   - <date> · stake:pot/<pot> → BURN · <n> · for: keeping:<epoch> · staker: <handle>   (epoch close: stakes matched by witnessed dollars burn — the first live use of the reserved BURN account)
-//   - <date> · minted · <staker> · <n> · for: keeping:<pot> · epoch:<epoch>     (epoch close: the staker's own σ share of their OWN burn, at par. R12: "the σ leg IS ORDINARY MINT, source-tagged (`minted · for: keeping:<pot>`), with NO liquid coin (the coin was paid when the stake burned; the row stays purpose-tagged so balance folds never hand liquid back). It COUNTS toward the ρ base". ARROW-FREE is what "no liquid coin" MEANS mechanically — foldBalances and foldMintCount key on the movement shape, so neither can see this row; foldKeepingMint and the ρ base opt IN. The retired `keeping-equity ·` form parses as unknown, and so does an arrow-bearing `MINT → …· for: keeping:…` smuggle)
+//   - <date> · stake:pot/<pot> → BURN · <n> · for: keeping:<epoch> · staker: <handle>   (RETIRED 2026-09-14 — "nothing burns; every open stake returns whole". The grammar stays defined so the retired shape still PARSES and therefore still fails the close replay by name rather than reading as unknown; no close derives one, and a ledger carrying one diverges)
+//   - <date> · minted · <staker> · <n> · for: keeping:<pot> · epoch:<epoch>     (RETIRED 2026-09-14 — "no stake burns, so there is no σ leg and no keeping mint". Same posture as the burn row above: the grammar stays defined so the shape parses and fails the replay by name, and foldKeepingMint stays as the reader of the historical rows (the live ledger holds none). R12's original words stand in this file's history. The arrow-bearing `MINT → … · for: keeping:…` smuggle was never lawful and still is not)
 //   - <date> · pot-receipt · pot:<pot> · rail: <stripe|usdc|grant> · usd: <n> · from: <payer> · ref: <ref>   (a witnessed real-dollar payment against a pot; ARROW-FREE — mints and moves nothing by itself; ref is unique forever: one dollar, one mint chance, a re-recorded receipt bounces)
 //   - <date> · pot-correction · ref: <ref> · from <old-payer> to <new-payer> · <reason> · by: <who>   (THE HAND, CORRECTED. A witnessed dollar's payer was wrong — a mistyped handle, a login the office could not resolve, the wrong household — and this row says so. ARROW-FREE like the receipt it corrects, so no movement fold can see it; it moves nothing and it is not a second receipt. It names the ORIGINAL ref verbatim and both hands, so a reader can check the correction against the row it corrects and a fold can REFUSE one whose `from` does not match what the receipt currently says. It carries NO usd and NO pot, because there is nothing here to express them with: this corrects WHOSE dollar it was, never how many or which pot — those are the payment itself and a correction is not a re-payment. `by:` is provenance in the gift/issuance sense, naming the pen; it is not the gate. The gate is that nothing but a hand-run `epoch-close.mjs --correct-hand` can emit one — no door, no watcher, no automatic caller — plus the signature chain every row already rides.)
-//   - <date> · holo · <payer-handle> · <n> · pot:<pot> · epoch:<epoch> · ref: <ref>   (the payer's soulbound holo from the (1−σ) share — ARROW-FREE BY DESIGN: holo has no verbs, cannot stake/vote/pay/transfer, so it must never match the movement shape the tallies fold; only foldHolo reads it. A close writes ONE of these per receipt it settles and <n> MAY BE 0: dollars that mint nothing — treasury, outside, ρ-capped, sole-staker-sole-payer — are remembered all the same, and the row naming the ref is what marks that dollar's one mint chance as spent. Who paid and how many dollars stay on the pot-receipt this row's `ref:` points at; the receipt is the only money row, so nothing is restated here)
+//   - <date> · holo · <payer-handle> · <n> · pot:<pot> · epoch:<epoch> · ref: <ref>   (THE GIVERS' REWARD — the one equity row a close writes. AMENDED 2026-09-17 at the founder's ruling: "non-spendable is repealed; the stamps are like any other, but are holo to signify the special source." So a holo row of <n> CREDITS the payer's balance by <n> and counts in minted-cumulative, and those stamps stake, vote, pay and transfer like any stamp; "holo" now names the SOURCE, not a restriction, and the town shows them in holo ink. The shape stays ARROW-FREE because a holo row is a MINT, not a movement — the balance and mint folds credit it BY KIND (foldBalances draws it from the MINT account exactly as an arrow-bearing mint does, so conservation stays structural), and stamp-verify's running fold does the same so a giver's first stake of holo stamps replays clean. A close writes ONE of these per receipt it settles and <n> MAY BE 0: dollars that mint nothing — treasury, outside, ρ-capped, sole-staker-sole-payer — are remembered all the same, and the row naming the ref is what marks that dollar's one mint chance as spent. Who paid and how many dollars stay on the pot-receipt this row's `ref:` points at; the receipt is the only money row, so nothing is restated here)
 //   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
-// Every entry is a two-sided movement — conservation is structural (entries
-// sum to zero against the MINT/BURN accounts); a balance is a pure fold, and
-// the fold must never take any account except MINT below zero.
+// Every entry that moves stamps is a two-sided movement — conservation is
+// structural (entries sum to zero against the MINT/BURN accounts); a balance is
+// a pure fold, and the fold must never take any account except MINT below zero.
+// ONE row is credited BY KIND rather than by its arrow: the holo row (the
+// givers' reward, liquid since the founder's 2026-09-17 ruling). It is drawn
+// from the MINT account like any other mint, so conservation stays structural —
+// the arrow is absent from the TEXT, never from the accounting.
 //
 // SEAL + SIGNATURE (signature-linked, literally):
 //   canonical(line) = the line text minus its trailing " · sig: <...>"
@@ -412,66 +416,88 @@ const ISSUANCE_RE = /^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · f
 // stamps on it with the EXISTING stake verb (the pot as subject — the world-mark
 // precedent: its own regex pair, the same movement vocabulary, so conservation
 // folds it structurally); real payments land as witnessed pot-receipt rows; and
-// a MANUAL founder-run epoch close (tools/epoch-close.mjs) burns the share of
-// every stake that the epoch's witnessed dollars funded and splits that burn
-// σ / (1−σ) into keeping mint (back to the stakers themselves, at par of their
-// own burn) and holo (a soulbound record of contribution for the payers, by
-// dollar share). The whole close is a pure function (deriveEpochClose below) that the
-// verifier replays exactly — a wrong holo row fails LAWFUL the way a forged mint
-// fails REPLAY.
+// a MANUAL founder-run epoch close (tools/epoch-close.mjs) sends every open
+// stake home whole and mints the givers their reward, sized by the mass those
+// stakes lent. The whole close is a pure function (deriveEpochClose below) that
+// the verifier replays exactly — a wrong holo row fails LAWFUL the way a forged
+// mint fails REPLAY.
 //
-// Ruled laws this grammar encodes — capture doc § 8, quoted where it rules
-// (G:/Starstory/docs/2026-08-20/postmark-economy-ontology.md; Keemin, 2026-08-20):
-//   - THERE IS NO DOLLAR↔STAMP RATE. Matching is priced against the pot's
-//     POSTED NEED, never against the staked mass: "The town posts a funded need
-//     ($N per epoch — e.g. EC2, $150/mo)" and at close "conversion runs pro-rata
-//     to dollars actually paid; unmatched stakes RETURN (no counterparty, no
-//     burn)". So funded_fraction = min(1, non-treasury dollars ÷ target), and
-//     every open stake burns floor(funded_fraction · stake) — a fully funded pot
-//     burns ALL of them however large the pile, a zero-dollar pot burns none.
-//     The community prices money's power by how much it stakes; that is the
-//     design's whole point (§7: the rate is an intention detector).
-//   - THE σ LEG GOES BACK TO THE STAKERS, per staker, at par of their own burn:
-//     "σ × pot mints back to the keepers as their own equity, at par of their
-//     burn — permanent, verb-less, remembered". A "keeper" here is a
-//     keeping-STAKER, not the pot's beneficiary.
-//   - R12 (Keemin, 2026-08-21 afternoon) then names WHAT that leg is: "the σ leg
-//     IS ORDINARY MINT, source-tagged (`minted · for: keeping:<pot>`), with NO
-//     liquid coin (the coin was paid when the stake burned; the row stays
-//     purpose-tagged so balance folds never hand liquid back). It COUNTS toward
-//     the ρ base (holo cap base = earned primary mint + keeping mint). It stays
-//     EXCLUDED from the genesis parity formula." So it is not a separate holding
-//     class and not a fourth tense — and the noun "keeping-equity" is retired.
-//     "No liquid coin" is rendered as SHAPE: the row is arrow-free, so
-//     foldBalances and foldMintCount (both keyed on the movement shape) cannot
-//     see it, and only readers that opt in — foldKeepingMint, the ρ base, the
-//     ownership read — count it. Making it `MINT → staker` instead would have
-//     handed liquid back, which is the one thing R12 forbids.
-//   - D1 (same day): ownership is a derived READ — minted (all sources) + holo —
-//     not a tense. There is no fifth tense node; nothing is stored for it.
-//   - holo is SOULBOUND and verbless: it cannot stake, vote, pay, or transfer,
-//     and is excluded from every tally. Enforced by SHAPE — the holo row is
-//     arrow-free, so no balance/mint/stake fold can ever see one.
-//   - holo cap: a household's holo ≤ ρ × its ρ base (ρ from the keeping dial;
-//     constitutional ceiling 0.5), where R12 sets the base = earned primary mint
-//     + keeping mint. Excess is clipped and mints nothing — the payer's holo
-//     row still lands, reading 0, so the dollar stays remembered and settled.
-//   - R1 floors EVERY leg — per-staker burn, per-staker keeping mint, per-payer
-//     holo — and every remainder burns un-minted; the seam keeps the change.
-//     "Total new equity = the matched burn, exactly. No double mint." 300 burned
-//     at σ=½ is 150 + 150, never 600.
-//   - self-stake exclusion is PAYER-SIDE ONLY: "a payer's own stakes are
-//     excluded from their holo calculation. Sole-staker-sole-payer mints zero
-//     holo". There is NO beneficiary-stake exclusion: a beneficiary's stakes
-//     convert like anyone else's. (The 2026-08-20 sentence ended "— deed only";
-//     that clause is dropped under the founder's 2026-08-26 ruling. Nothing it
-//     described is lost: zero-minting dollars land as a holo row reading 0.)
-//   - unmatched stakes return whole; treasury dollars (`the-town` paying its
-//     own shortfall) fund nothing and mint nothing — "Treasury may cover any
-//     shortfall — minting nothing"; dollars with no household mint nothing
-//     either — their holo row reads 0.
+// THE LAW, AS THE DIALS SAY IT. Two founder rulings own this seam's arithmetic
+// and ECONOMY-DIALS.json § law_side.keeping is where their words live; the
+// sentences are quoted below rather than paraphrased, because the first pass of
+// this seam encoded a paraphrase and the suite asserted it back (the 2026-08-21
+// lesson). Every number is READ from the dial — nothing here restates σ or ρ.
+//
+//   - AMENDED 2026-09-14 (the founder): "EVERY OPEN STAKE RETURNS WHOLE" —
+//     nothing burns. A stake on a pot is weight lent, as it is everywhere else
+//     in town: it comes home at the close. What the stakes do is SIZE the
+//     reward. The σ leg and the keeping-mint row are retired with the burn.
+//   - THERE IS NO DOLLAR↔STAMP RATE, and the funded fraction is why: dollars are
+//     priced against the town's own POSTED NEED, never against the staked mass.
+//     fraction = min(1, non-treasury dollars ÷ target_usd_per_epoch); an ELASTIC
+//     pot ("close": "elastic") posts no target and reads 1 once its accumulated
+//     roll has met min_close_usd, and does not close at all below it.
+//   - THE GIVERS' MINT: "the funding mint M = floor(fraction × the open staked
+//     mass) is minted fresh to the payers by dollar share of the roll, a payer's
+//     own household's stakes excluded from the mass sized for that payer, floors
+//     per payer, the remainder un-minted."
+//   - AMENDED 2026-09-17 (the founder, verbatim): "for POS-33, I'm good to let
+//     funding minted stamps contribute to the max stamps you can get from
+//     another fund. it compounds by design. non-spendable is repealed; the
+//     stamps are like any other, but are holo to signify the special source."
+//     Three things follow, and they are the whole of this amendment:
+//       1. THE GIVERS' ROW IS THE HOLO ROW. No new spelling, no `for: funding:`
+//          word, no arrow. One row per receipt the close settles, <n> may be 0 —
+//          so the row still marks that receipt's one mint chance as spent, which
+//          is the town's only anti-double-mint marker (foldPotReceipts reads
+//          exactly these refs, and so does intakeCheck's headroom).
+//       2. HOLO STAMPS ARE LIQUID. A holo row of n credits the payer's balance
+//          by n, counts in minted-cumulative, and stakes, votes, pays and
+//          transfers like any stamp. foldBalances, foldMintCount, the verifier's
+//          running fold and deriveTransfers' settlement balance all credit it BY
+//          KIND (the arrow-free shape is kept because a mint is not a movement).
+//          "Holo" names the source; the town shows them in holo ink.
+//       3. THE ρ BASE IS THE ALL-SOURCES MINT. A household's cap at a close is
+//          ρ × its mint from every source before that close — primary AND holo.
+//          The base is read from the prefix the close lands on, never including
+//          the mint the close is about to write, which is what keeps the
+//          verifier's re-derivation from the same prefix byte-identical.
+//   - THE CAP IS A CAP ON HOLDINGS (AMENDED 2026-09-17, the founder's second
+//     ruling of the day, verbatim: "ceiling cap is fine"). From 2026-09-14 until
+//     this amendment the cap was PER CLOSE — a fresh cap at every close, over a
+//     base each close had raised — so the compound had no ceiling of its own and
+//     the genesis declaration's "the line floors at half of parity" had nothing
+//     enforcing it. That was flagged on the record (POS-33 report, #2811); this
+//     is the founder's answer to it. Now: a household's HOLO AFTER a close is
+//     capped at ρ × its all-sources mint BEFORE the close, so a close may mint
+//     that household at most
+//         max(0, floor(ρ × base) − the holo the household already holds)
+//     The BASE still compounds exactly as ruled at 04:2x — it is the all-sources
+//     mint, primary and holo — and that is what keeps "it compounds by design"
+//     true. What changed is only the SHAPE of the clip. At ρ = 0.5 the iteration
+//     converges on holo ≤ primary per household: "money's share of a household
+//     may never pass ρ" — the constitution's sentence as arithmetic, which is
+//     what the site's own ownership gauge has always drawn.
+//   - self-stake exclusion is PAYER-SIDE and by HOUSEHOLD (widened 2026-09-14
+//     from handle): "a payer's household's stakes are excluded from the mass that
+//     sizes that payer's mint. Sole-staker-sole-payer mints zero." There is no
+//     beneficiary carve-out — a beneficiary's stakes count like anyone else's.
+//   - R1 floors EVERY leg and the remainder is un-minted: the seam keeps the
+//     change, so total new mint ≤ M always.
+//   - treasury dollars (`the-town` paying its own shortfall) fund nothing and
+//     mint nothing — "Treasury may cover any shortfall — minting nothing";
+//     dollars with no town household mint nothing either — their holo row reads 0.
+//   - D1 (Keemin, 2026-08-21): ownership is a derived READ, not a tense. With
+//     holo inside minted-cumulative since 2026-09-17, ownership IS the
+//     all-sources mint and holo is a SOURCE column beside it, no longer a
+//     separate addend — adding it twice would double-count the same stamp.
 //   - mint-at-entry: a receipt ref is unique forever; one dollar, one mint
 //     chance — a re-recorded receipt bounces at the door AND fails verify.
+//
+// The pre-amendment arithmetic (the funded share of each stake burned; σ of a
+// staker's burn minted back with no liquid coin; (1−σ)·B as soulbound holo to
+// the payers) stands in this file's history, in ECONOMY-DIALS.json's own
+// history, and in the PSAs of 2026-08-21/23. No close ever ran under it.
 const POT_ID_CLASS = String.raw`[a-z0-9][a-z0-9-]*`;
 const EPOCH_CLASS = String.raw`\d{4}-\d{2}`;
 export const KEEPING_RAILS = ['stripe', 'usdc', 'grant'];
@@ -820,11 +846,59 @@ export function deriveTransfers(deliveries, households, { laws = [], revisions =
     else if (c.kind === 'gift') add(c.handle, c.n);     // founder gift — recorded before any settlement we'd append, so it funds later pays
     else if (c.kind === 'first-idea') add(c.handle, c.n); // first-idea quest mint — same in-place assertion class as a gift
     else if (c.kind === 'welcome') add(c.handle, c.n);  // welcome bundle — the same in-place assertion class, paid once per household at its first resident
+    // THE FOURTH ARM, and the fix REQUIRED it (2026-09-17). Town issuance is the
+    // same in-place assertion class as a gift — `MINT → <treasury> · n · for:
+    // issuance:…` — and it was missing here. It went unnoticed because it
+    // CANCELLED, exactly, against the world-stake arm missing below it: the
+    // treasury has minted 1,001 stamps by issuance and staked all 1,001 on world
+    // marks, so this fold's answer for `the-town` was 0 and foldBalances' answer
+    // was 0, and the parity looked held at the one handle where both errors were
+    // largest. Adding the world-stake debit alone would have put this fold 1,001
+    // below the verifier at the treasury — a divergence the fix itself would have
+    // introduced. Two wrongs summing to zero is not a right; it is a control
+    // that cannot fail.
+    else if (c.kind === 'town-issuance') add(c.handle, c.n);
     else if (c.kind === 'pot-stake') add(c.handle, -c.n);      // keeping escrow out
-    else if (c.kind === 'pot-return') add(c.handle, c.n);      // unmatched stakes back at close
-    // keeping-burn drains the escrow account, never a handle; the arrow-free
-    // trio (keeping-mint/holo/receipt) moves nothing at all — R12's
-    // keeping mint carries NO liquid coin, so it can never fund a later `pays:`
+    else if (c.kind === 'pot-return') add(c.handle, c.n);      // EVERY open stake home at the close, whole (amended 2026-09-14; it read "unmatched stakes back")
+    // THE THREE ARMS THIS FOLD WAS MISSING (2026-09-17, #2887). Liquidity has
+    // three holders and they must agree BY CONSTRUCTION, because two of them
+    // decide the same question from opposite ends: this fold picks
+    // transfer-or-void when the mint pass appends, and stamp-verify's running
+    // fold replays that pick in ledger order against its own balance.
+    // foldBalances and that running fold are both keyed on the raw movement
+    // shape, so all three rows below are already structural to them — they were
+    // invisible only HERE.
+    //
+    // A disagreement is not a rounding difference. Under-credit and the mint
+    // writes `void: insufficient-balance` where the verifier expects a transfer;
+    // over-credit and it writes a transfer the verifier refuses AND the running
+    // fold reports the sender overdrawn, so the whole ledger fails verification
+    // until a hand repairs it. Same arithmetic as the other two holders, nothing
+    // clever: escrow out debits, escrow home credits.
+    else if (c.kind === 'pot-unstake') add(c.handle, c.n);     // the staker's own way out, before any close — the stamps go home to liquid exactly as a pot-return's do; the only thing it does NOT share with pot-return is the closed-epoch marker, and that difference lives in foldClosedEpochs, not in a balance
+    else if (c.kind === 'world-stake') add(c.handle, -c.n);    // world-mark escrow out — the OVER-CREDIT direction if omitted, which is the dangerous one: this fold would fund a `pays:` out of stamps already escrowed on a mark
+    else if (c.kind === 'world-unstake') add(c.handle, c.n);   // world-mark escrow home
+    // THE HOLO ARM (2026-09-17, this branch). The founder's ruling makes the
+    // givers' reward liquid, and this balance is the one the mint pass decides
+    // transfer-vs-void against. The verifier replays that decision from ITS own
+    // running fold, which credits holo too — so if this side did not, a giver
+    // paying out of their reward would be written `void: insufficient-balance`
+    // while the verifier expected a transfer, and the ledger would fail
+    // SETTLEMENT DIVERGES. Two folds, one law: they have to agree by
+    // construction. Same reason as the three above, one ruling later.
+    else if (c.kind === 'holo') add(c.handle, c.n);            // the givers' reward, liquid since 2026-09-17
+    // AND THE KNOWN GAP IS CLOSED. This arm's first version said `pot-unstake`
+    // and the world-mark pair were "deliberately NOT here … reported on #2811
+    // rather than repaired in this lane". #2887 repaired them, and its merge is
+    // this file's other parent, so the sentence is retired rather than carried.
+    //
+    // keeping-burn drains the escrow account, never a handle; the receipt and
+    // correction rows move nothing at all — a witnessed dollar is not a stamp,
+    // and R12's keeping mint carries NO liquid coin, so it can never fund a
+    // later `pays:`. That list USED to name holo as a third arrow-free row that
+    // moves nothing; it no longer does, and the arm above is why. Arrow-free is
+    // about the row's SHAPE, not about whether it moves a balance: a holo row
+    // is a mint, and this fold credits it by kind exactly as foldBalances does.
     // recorded mints/transfers are re-derived here — never folded from the record
   }
   const isMeep = meepChecker(laws);
@@ -1014,12 +1088,26 @@ export function signSeal(sealHex, privateKeyPem) {
 
 // ── balances (the pure fold) ─────────────────────────────────────────────────
 
+// THE HOLO ARM (added 2026-09-17, the founder's ruling: "non-spendable is
+// repealed; the stamps are like any other, but are holo to signify the special
+// source"). This fold keys on the raw movement shape, so an arrow-free row is
+// invisible to it — which is exactly how holo was kept out of every balance
+// while it was soulbound. The ruling makes it liquid, and the row's shape stays
+// arrow-free because a mint is not a movement, so liquidity has to be granted
+// BY KIND instead. It is drawn from the MINT account like any other mint, and
+// that debit is not cosmetic: conservation is structural here (stamp-verify
+// sums every account and demands 0), so crediting the payer without debiting
+// MINT would break the conservation check by exactly the holo minted.
 export function foldBalances(entries) {
   const bal = new Map(); // account -> n ; MINT, BURN and stake:* are accounts too
   const add = (acct, n) => bal.set(acct, (bal.get(acct) ?? 0) + n);
   for (const e of entries) {
     const m = /^- \d{4}-\d{2}-\d{2} · (\S+) → (\S+) · (\d+) · /.exec(e.canonical);
-    if (!m) continue; // markers
+    if (!m) {
+      const h = HOLO_MINT_RE.exec(e.canonical);
+      if (h) { const n = Number(h[3]); add('MINT', -n); add(h[2], n); }
+      continue; // markers
+    }
     const [, from, to, nStr] = m; const n = Number(nStr);
     add(from, -n); add(to, n);
   }
@@ -1046,12 +1134,34 @@ export function foldBalances(entries) {
 // Nothing subtracts, so it is monotonic — it never drops when stamps are spent,
 // staked, or transferred away. That is exactly what distinguishes it from a
 // balance.
-export function foldMintCount(entries) {
-  const mc = new Map(); // handle -> cumulative minted
+// PRIMARY mint alone — the arrow-bearing `MINT → handle` rows. This is what
+// foldMintCount was before the holo row became liquid, kept under its own name
+// so the ownership read can still show the sources apart. Nothing else should
+// reach for it: "how many stamps has this handle ever generated" is
+// foldMintCount, all sources, which is what the doors and the tenses ask.
+export function foldPrimaryMint(entries) {
+  const mc = new Map(); // handle -> cumulative primary mint
   for (const e of entries) {
     const m = /^- \d{4}-\d{2}-\d{2} · (\S+) → (\S+) · (\d+) · /.exec(e.canonical);
     if (!m) continue; // markers
     if (m[1] === 'MINT') mc.set(m[2], (mc.get(m[2]) ?? 0) + Number(m[3]));
+  }
+  return mc;
+}
+
+// Cumulative minted TO a handle from EVERY source: the arrow-bearing MINT rows
+// plus the holo rows. The holo half was added 2026-09-17 on the founder's word
+// — "funding minted stamps contribute to the max stamps you can get from
+// another fund. it compounds by design" — which is this number being the ρ
+// base, and "the stamps are like any other", which is this number being the
+// equity every door already reads. Holo is credited by KIND for the same reason
+// foldBalances credits it by kind: the row is arrow-free because a mint is not
+// a movement.
+export function foldMintCount(entries) {
+  const mc = foldPrimaryMint(entries);
+  for (const e of entries) {
+    const h = HOLO_MINT_RE.exec(e.canonical);
+    if (h) mc.set(h[2], (mc.get(h[2]) ?? 0) + Number(h[3]));
   }
   return mc;
 }
@@ -1208,9 +1318,14 @@ export function foldPotReceipts(entries) {
   return { receipts, settled, corrections };
 }
 
-// Soulbound holo per handle — the ONE reader of holo rows. Deliberately not a
-// balance: nothing spends it, nothing stakes it, nothing folds it in anywhere
-// else. holoHeldByHousehold aggregates it the way the ρ-cap counts it.
+// Holo per handle — how much of a handle's mint came from the funding seam.
+// It is NO LONGER the one reader of holo rows and no longer a holding class of
+// its own: since the founder's 2026-09-17 ruling ("the stamps are like any
+// other, but are holo to signify the special source") foldBalances and
+// foldMintCount credit these rows too, so this fold is the SOURCE BREAKDOWN —
+// the number the town shows in holo ink, and the number a reader subtracts from
+// foldMintCount to see primary alone. It is still what the ρ-cap's base counts,
+// but only because that base is now the all-sources mint that already contains it.
 export function foldHolo(entries) {
   const h = new Map(); // handle -> holo
   for (const e of entries) {
@@ -1239,17 +1354,24 @@ export function foldKeepingMint(entries) {
 // and nothing needs to be: it is this fold over the sealed ledger, recomputable
 // any time, exactly like the three tenses beside it.
 //
-//   minted_primary = foldMintCount   — earned, liquid-bearing (correspondence,
-//                                      votes, gifts, issuance, friendship)
-//   minted_keeping = foldKeepingMint — R12's σ leg: mint, source-tagged, no coin
-//   holo           = foldHolo        — the payers' soulbound record
-//   minted         = primary + keeping     (all sources — D1's "all sources")
-//   ownership      = minted + holo
+//   minted_primary = foldPrimaryMint  — earned, arrow-bearing (correspondence,
+//                                       votes, gifts, issuance, friendship)
+//   minted_keeping = foldKeepingMint  — R12's σ leg, RETIRED 2026-09-14; the
+//                                       live ledger holds none, history reads back
+//   holo           = foldHolo         — the givers' reward from the funding seam
+//   minted         = primary + keeping + holo    (all sources)
+//   ownership      = minted
 //
-// The ρ BASE is deliberately NOT `ownership`: it is minted only. Holo is what ρ
-// caps, so a base that counted holo would let money raise its own ceiling.
+// AMENDED 2026-09-17: holo used to be a SEPARATE addend here, because it was
+// soulbound and outside minted-cumulative. The founder's ruling puts it inside
+// ("the stamps are like any other"), so adding it again would count the same
+// stamp twice. `ownership` therefore equals `minted`, and `holo` stays as the
+// source column — what it always described, now beside the total instead of
+// outside it. The ρ BASE is this all-sources `minted` (the founder: "funding
+// minted stamps contribute to the max stamps you can get from another fund. it
+// compounds by design"), which is the exact reverse of the pre-amendment rule.
 export function foldOwnership(entries) {
-  const primary = foldMintCount(entries);
+  const primary = foldPrimaryMint(entries);
   const keeping = foldKeepingMint(entries);
   const holo = foldHolo(entries);
   const out = new Map(); // handle -> { minted_primary, minted_keeping, minted, holo, ownership }
@@ -1261,8 +1383,8 @@ export function foldOwnership(entries) {
   for (const [h, n] of keeping) touch(h).minted_keeping += n;
   for (const [h, n] of holo) touch(h).holo += n;
   for (const rec of out.values()) {
-    rec.minted = rec.minted_primary + rec.minted_keeping;
-    rec.ownership = rec.minted + rec.holo;
+    rec.minted = rec.minted_primary + rec.minted_keeping + rec.holo;
+    rec.ownership = rec.minted;
   }
   return out;
 }
@@ -1364,36 +1486,49 @@ export function intakeCheck({ entries, pot, potMeta, usd, treasury = null, from 
 // re-derives from the same prefix and demands the recorded block match exactly
 // — there is no second copy of the law (the settlementDecision precedent).
 //
+// REBUILT 2026-09-17 under the 09-14 amendment and the 09-17 holo ruling. What
+// this function did before — burn the funded share of every stake, split it
+// σ/(1−σ) into keeping mint and soulbound holo — stands in this file's history.
+// No close ever ran under it.
+//
 // Given pot P at epoch E on close date D:
-//   target    = P's posted need for one epoch (target_usd_per_epoch on the pot
-//               file). The pot's price is the town's own posting — it is the ONLY
-//               thing dollars are measured against. There is no dollar↔stamp rate.
-//   dollars   = P's pot-receipts no close has settled; the funding total excludes the
-//               treasury's own dollars ("Treasury may cover any shortfall —
-//               minting nothing")
-//   funded    = min(1, dollars ÷ target) — how much of the posted need the town's
-//               payers actually met this epoch
-//   stakes    = ALL open `stake:pot/P` positions. Every one is eligible; there is
-//               no beneficiary carve-out (§ 8's only exclusion is payer-side)
-//   burn      = floor(funded · stake_i) per staker — a fully funded pot burns
-//               every stake whole, a half-funded pot burns half of each, a
-//               zero-dollar pot burns none. Every unburned remainder returns
-//               whole ("unmatched stakes RETURN — no counterparty, no burn")
-//   σ leg     = floor(σ · burn_i) BACK TO STAKER i, at par of their own burn.
-//               Per-staker floors, not a floor of the total: the equity is each
-//               staker's own, so it is computed on their own number
-//   (1−σ) leg = payers floor((1−σ)·B_other · usd/dollars) per receipt, where
-//               B_other excludes the payer household's own burned stakes
-//               (sole-staker-sole-payer mints zero); each holo then clips to the
-//               ρ-cap (household holo ≤ floor(ρ · earned primary mint))
-//   remainder = every floored/clipped/excluded stamp burns un-minted — the seam
-//               keeps the change. Total new equity ≤ B, always; never 2×B
+//   need      = what the dollars are priced against, and the ONLY thing they are
+//               ever priced against (there is no dollar↔stamp rate). An EPOCH pot
+//               posts target_usd_per_epoch. An ELASTIC pot ("close": "elastic",
+//               the donation box) posts none: the need is whatever arrived, so
+//               the fraction reads 1 — but only once the accumulated roll has met
+//               the pot's own min_close_usd. Below that floor the close DOES NOT
+//               RUN: dollars and stakes both stand and ride to the next month.
+//   dollars   = P's pot-receipts no close has settled ("the WHOLE accumulated
+//               roll" — an elastic pot carries February's $2 forward until April
+//               finally closes); the funding total excludes the treasury's own
+//               dollars ("Treasury may cover any shortfall — minting nothing")
+//   fraction  = min(1, dollars ÷ need), or 1 for an elastic pot past its floor
+//   stakes    = ALL open `stake:pot/P` positions. Every one is eligible; the only
+//               exclusion in this law is payer-side
+//   returns   = EVERY open stake, WHOLE. "A stake on a pot is weight lent, as it
+//               is everywhere else in town: it comes home whole at the close."
+//               Nothing burns. There is no σ leg and no keeping-mint row.
+//   mass_p    = the open staked mass MINUS the payer's own household's stakes —
+//               "nothing you fully control mints for you"; sole-staker-sole-payer
+//               mints zero
+//   M_p       = floor(fraction · mass_p), multiplied before it is divided so
+//               every replay on every machine derives the same byte
+//   mint_i    = floor(M_p · usd_i ÷ dollars) per RECEIPT, then clipped so the
+//               payer's household takes no more than floor(ρ · its all-sources
+//               mint before this close) OUT OF THIS CLOSE. Per-receipt floors are
+//               the allocation this seam has always used; see the note at the
+//               allocation itself for what it is and is not.
+//   remainder = every floored, clipped and excluded stamp is un-minted — the seam
+//               keeps the change. Total new mint ≤ M = floor(fraction · mass),
+//               always.
 //   holo rows = one per receipt, ALWAYS, count included even when it is 0 —
-//               dollars are remembered even when they mint nothing, and the
-//               row is also what marks the receipt's ref spent
-// Row order is canonical (returns, burns, keeping mints, holos — names sorted,
-// receipts in ledger order), which is what lets the verifier match the block
-// byte-for-byte.
+//               dollars are remembered even when they mint nothing, and the row
+//               is also what marks the receipt's ref spent. Since 2026-09-17 this
+//               row is also the whole of the givers' reward, and it is liquid.
+// Row order is canonical (returns first, names sorted; then the holo rows in
+// ledger order of their receipts), which is what lets the verifier match the
+// block byte-for-byte.
 export function deriveEpochClose({ entries, households, pot, potMeta, epoch, date, dial }) {
   const err = (error) => ({ ok: false, error });
   if (!dial) return err('no keeping dial (ECONOMY-DIALS.json law_side.keeping) — an undeclared split is not a default to guess at');
@@ -1408,12 +1543,22 @@ export function deriveEpochClose({ entries, households, pot, potMeta, epoch, dat
   const beneficiary = potMeta.beneficiary;
   if (!beneficiary || typeof beneficiary !== 'string') return err(`pot "${pot}" names no beneficiary — every pot names its beneficiary before a close`);
   if (dial.treasury && beneficiary === dial.treasury) return err('the treasury cannot keep a pot — the town never receives from its own seam');
-  // The posted need. Without it there is nothing to price the dollars against,
-  // and matching would have to invent a dollar↔stamp rate — the one thing the
-  // law forbids. No target, no close.
+  // The posted need, or the elastic pot's floor. An epoch pot without a target
+  // has nothing to price the dollars against, and matching would have to invent
+  // a dollar↔stamp rate — the one thing the law forbids. An ELASTIC pot is the
+  // founder's own exception ("if someone pays 0.01, that's what it cost to run
+  // DARKO this month"): the need IS whatever arrived, so the fraction is 1 and
+  // the floor gates only whether the ceremony RUNS. Both branches read the pot
+  // file; neither invents a number, and a pot that declares neither cannot close.
+  const elastic = potMeta.close === 'elastic';
   const target = potMeta.target_usd_per_epoch;
-  if (!Number.isInteger(target) || target <= 0)
+  const floorUsd = potMeta.min_close_usd;
+  if (elastic) {
+    if (!Number.isInteger(floorUsd) || floorUsd <= 0)
+      return err(`pot "${pot}" closes elastic but posts no whole-dollar min_close_usd — the ceremony's floor is the only gate an elastic close has`);
+  } else if (!Number.isInteger(target) || target <= 0) {
     return err(`pot "${pot}" posts no whole-dollar target_usd_per_epoch — the funded fraction is priced against the posted need, never against the staked mass`);
+  }
   if (!/^\d{4}-\d{2}$/.test(epoch)) return err(`epoch must be YYYY-MM, got "${epoch}"`);
 
   const { laws, revisions } = parseLaws(entries);
@@ -1450,53 +1595,54 @@ export function deriveEpochClose({ entries, households, pot, potMeta, epoch, dat
 
   if (positions.length === 0 && receipts.length === 0) return err(`pot "${pot}" has nothing to close — no open stakes, no unsettled receipts`);
 
-  // MATCHING — "conversion runs pro-rata to dollars actually paid; unmatched
-  // stakes RETURN". Pro-rata to the POSTED NEED, which is what makes the pot's
-  // own price the only exchange rate in the system: a fully funded pot converts
-  // every stake however large the pile (the town priced money's power by staking
-  // that much), and an unfunded one converts nothing. The partial case multiplies
-  // BEFORE it divides — floor(stake · D / target) on whole numbers, never
-  // stake × (D/target) through a float ratio — so every replay of this block, on
-  // any machine, derives the same byte. The reported fraction below is display.
-  const fullyFunded = D >= target;
-  const burns = [];   // [{ handle, n }]
+  // THE ELASTIC FLOOR. Checked here and not with the other pot-file validation
+  // because it is a question about the DOLLARS, not about the pot: the roll has
+  // to be counted before anyone can say whether it met the floor. Below the
+  // floor nothing happens at all — no returns, no mint, no settled refs — so
+  // the dollars stay unsettled and ride into the next month's roll by
+  // construction rather than by a rule somebody has to remember.
+  if (elastic && D < floorUsd)
+    return err(`pot "${pot}" has rolled $${D} of the $${floorUsd} its close needs — dollars and stakes both stand and ride to the next epoch`);
+
+  // THE FRACTION — "min(1, non-treasury dollars / the pot's posted target)"; an
+  // elastic pot past its floor reads 1, because the need IS whatever arrived.
+  // The partial case multiplies BEFORE it divides — floor(mass · D / target) on
+  // whole numbers, never mass × (D/target) through a float ratio — so every
+  // replay of this block, on any machine, derives the same byte. The reported
+  // fraction below is display only.
+  const fullyFunded = elastic || D >= target;
+  const scale = (mass) => (fullyFunded ? mass : Math.floor((mass * D) / target));
+
+  // EVERY OPEN STAKE RETURNS WHOLE (2026-09-14). "A stake on a pot is weight
+  // lent, as it is everywhere else in town: it comes home whole at the close."
+  // Not the unmatched remainder of it — all of it. Nothing burns, so there is
+  // no keeping-burn row and no σ leg for one to feed.
   const returns = new Map(); // handle -> n
+  for (const s of positions) returns.set(s.handle, (returns.get(s.handle) ?? 0) + s.n);
+
+  // The mass the stakes lent, by household, so a payer's own household can be
+  // taken out of the mass that sizes THEIR reward. The stakes are not consumed
+  // by this — they went home above; what they leave behind is a SIZE.
+  const stakedByHH = new Map();
   for (const s of positions) {
-    const b = fullyFunded ? s.n : Math.floor((s.n * D) / target);
-    if (b > 0) burns.push({ handle: s.handle, n: b });
-    if (s.n - b > 0) returns.set(s.handle, (returns.get(s.handle) ?? 0) + (s.n - b));
-  }
-  const B = burns.reduce((a, b) => a + b.n, 0);
-
-  // THE σ LEG — "σ × pot mints back to the keepers as their own equity, at par of
-  // their burn", which R12 then names as what it is: ordinary mint, source-tagged
-  // `minted · for: keeping:<pot>`, no liquid coin. Per staker, on their own burn,
-  // floored (R1) on that number: a floor of the total would hand one staker's
-  // rounding to another.
-  const keepingMint = []; // [{ handle, n }]
-  for (const b of burns) {
-    const n = Math.floor(b.n * dial.sigma);
-    if (n > 0) keepingMint.push({ handle: b.handle, n });
-  }
-  const keepingMintTotal = keepingMint.reduce((a, x) => a + x.n, 0);
-
-  const burnedByHH = new Map();
-  for (const b of burns) {
-    const k = hhKey(b.handle);
-    burnedByHH.set(k, (burnedByHH.get(k) ?? 0) + b.n);
+    const k = hhKey(s.handle);
+    stakedByHH.set(k, (stakedByHH.get(k) ?? 0) + s.n);
   }
 
-  // ρ-CAP BASIS. R12 (Keemin, 2026-08-21 afternoon): the keeping leg "COUNTS
-  // toward the ρ base (holo cap base = earned primary mint + keeping mint)".
-  // Keemin overturned the recommendation to exclude it: "the loop cannot
-  // compound — verb-less → never re-stakable; ceiling inflation bounded at
-  // (1+σ)× earned; every cycle costs real earned liquid + a real town-posted
-  // need + real dollars."
+  // THE ρ BASE — the household's ALL-SOURCES mint before this close, which is
+  // exactly what foldMintCount now returns (the founder, 2026-09-17: "I'm good
+  // to let funding minted stamps contribute to the max stamps you can get from
+  // another fund. it compounds by design"). foldKeepingMint is added for the
+  // retired σ leg's historical rows so "all sources" is literally true; the live
+  // ledger holds none, so on the town's own ledger this term is 0.
   //
-  // Both legs are read from the prefix THIS close lands on, so a close never
-  // raises its own ceiling with the keeping mint it is about to write — only
-  // earlier closes count. That is what keeps the verifier's re-derivation from
-  // the same prefix byte-identical.
+  // This REVERSES the pre-amendment rule, which held the base to earned primary
+  // mint alone so that "money could not raise its own ceiling". It now can, by
+  // the founder's word. What that costs is written beside the cap below.
+  //
+  // Read from the prefix THIS close lands on, so a close never raises its own
+  // ceiling with the mint it is about to write — only earlier closes count. That
+  // is what keeps the verifier's re-derivation from the same prefix byte-identical.
   const mintByHH = new Map();
   for (const [handle, n] of foldMintCount(entries)) {
     const k = hhKey(handle);
@@ -1506,46 +1652,87 @@ export function deriveEpochClose({ entries, households, pot, potMeta, epoch, dat
     const k = hhKey(handle);
     mintByHH.set(k, (mintByHH.get(k) ?? 0) + n);
   }
+
+  // WHAT THE HOUSEHOLD ALREADY HOLDS — the second term of the holdings cap
+  // (2026-09-17, "ceiling cap is fine"). Read with foldHolo over the SAME prefix
+  // the base above is read from, so the cap's two numbers are measured at one
+  // instant and the verifier re-derives both from the same bytes. Under the
+  // retired per-close shape this term did not exist: the cap was re-offered
+  // whole at every close, which is exactly why the compound had no ceiling.
   const holoByHH = new Map();
   for (const [handle, n] of foldHolo(entries)) {
     const k = hhKey(handle);
     holoByHH.set(k, (holoByHH.get(k) ?? 0) + n);
   }
 
-  // THE (1−σ) LEG — "(1−σ) × pot mints to payers as Holo, by dollar share", with
-  // § 8.6's one exclusion: "a payer's own stakes are excluded from their holo
-  // calculation. Sole-staker-sole-payer mints zero holo."
+  // THE GIVERS' MINT — "the funding mint M = floor(fraction × the open staked
+  // mass) is minted fresh to the payers by dollar share of the roll, a payer's
+  // own household's stakes excluded from the mass sized for that payer, floors
+  // per payer, the remainder un-minted."
+  //
+  // THE ALLOCATION, said out loud because the brief could be read two ways: the
+  // floor is taken PER RECEIPT against the whole roll — floor(M_p · usd_i ÷ D) —
+  // which is the allocation this seam has used since it was written. For a payer
+  // with one receipt it is identical to flooring the payer's total and then
+  // splitting it; for a payer with several it can differ in either direction by
+  // a stamp or two, and per-receipt flooring is the one already tested. Every
+  // remainder is un-minted either way: the seam keeps the change.
+  //
+  // THE CAP IS ON HOLDINGS (AMENDED 2026-09-17 — the founder: "ceiling cap is
+  // fine"): "a household's holo after the close is capped at ρ × its all-sources
+  // mint before it — money's share of a household may never pass ρ". So the clip
+  // is against THREE things at once: what the household already HOLDS (foldHolo
+  // over the same prefix the base is read from), what this close has already
+  // granted it, and its raw share. The room left is
+  //     max(0, floor(ρ × base) − heldBefore − grantedThisClose)
+  // and the inner value may be NEGATIVE before the clamp — a household already
+  // past its ceiling (holdings from a close run under the retired per-close
+  // shape) mints ZERO rather than any negative thing.
+  //
+  // The base still compounds, exactly as ruled at 04:2x: it is the all-sources
+  // mint, so each close raises the ceiling the NEXT close measures against. What
+  // this amendment adds is that the ceiling is measured against the HOLDINGS
+  // rather than re-offered whole, and that is what gives the compound a limit.
+  // At ρ = 0.5 the iteration converges on holo ≤ primary per household — the
+  // constitutional sentence ("money can come to own up to half of Postmark; it
+  // can never own more") stated exactly, one household at a time. The
+  // convergence is proved by falsifier, never by arithmetic asserted here.
   //
   // ONE HOLO ROW PER RECEIPT, ALWAYS — including the zeros. The count is what
   // varies; the row itself is not optional, because it does double duty: it is
-  // the payer's record AND the mark that this receipt's ref has spent its one
-  // mint chance (foldPotReceipts reads exactly these refs). Emitting only the
-  // winners would leave every zero-minting dollar — treasury, outside, ρ-capped,
-  // sole-staker — looking unspent forever, to be re-counted toward funding and
-  // re-offered holo at every later close.
+  // the payer's reward AND the mark that this receipt's ref has spent its one
+  // mint chance (foldPotReceipts reads exactly these refs, and intakeCheck's
+  // headroom shares the filter). Emitting only the winners would leave every
+  // zero-minting dollar — treasury, outside, ρ-capped, sole-staker — looking
+  // unspent forever, to be re-counted toward funding and re-offered a reward at
+  // every later close. On a carry-forward pot that is every month, for ever.
+  const S_scaled = scale(S); // M — the headline mint the mass sizes
   const holos = []; // [{ handle, n, ref }]
-  const grantedThisClose = new Map(); // household -> holo assigned in this close
+  const grantedThisClose = new Map(); // household -> mint assigned in THIS close
   for (const r of receipts) {
     let h = 0;
-    if (funding(r) && isResident(r.from) && D > 0 && B > 0) {
+    if (funding(r) && isResident(r.from) && D > 0 && S > 0) {
       const pHH = hhKey(r.from);
-      const bOther = B - (burnedByHH.get(pHH) ?? 0); // nothing you fully control mints for you
-      const raw = Math.floor(((1 - dial.sigma) * bOther * r.usd) / D);
-      const capTotal = Math.floor(dial.rho * (mintByHH.get(pHH) ?? 0));
-      const held = (holoByHH.get(pHH) ?? 0) + (grantedThisClose.get(pHH) ?? 0);
-      h = Math.max(0, Math.min(raw, capTotal - held));
+      const massForPayer = S - (stakedByHH.get(pHH) ?? 0); // nothing you fully control mints for you
+      const mp = scale(massForPayer);
+      const raw = Math.floor((mp * r.usd) / D);
+      const capHoldings = Math.floor(dial.rho * (mintByHH.get(pHH) ?? 0));
+      const heldBefore = holoByHH.get(pHH) ?? 0;
+      h = Math.max(0, Math.min(raw, capHoldings - heldBefore - (grantedThisClose.get(pHH) ?? 0)));
       if (h > 0) grantedThisClose.set(pHH, (grantedThisClose.get(pHH) ?? 0) + h);
     }
     holos.push({ handle: r.from, n: h, ref: r.ref });
   }
   const holoTotal = holos.reduce((a, x) => a + x.n, 0);
 
-  // the canonical row set, in the one order the verifier matches
+  // the canonical row set, in the one order the verifier matches. Two kinds
+  // now, where there were four: the returns, then the givers' rewards. No
+  // keeping-burn row and no keeping-mint row is derivable at all any more — the
+  // grammars stay lawful so a smuggled one PARSES and therefore fails this
+  // block's byte-for-byte replay by name, rather than reading as unknown.
   const rows = [];
   for (const [handle, n] of [...returns.entries()].sort((a, b) => a[0].localeCompare(b[0])))
     rows.push({ kind: 'pot-return', date, pot, handle, n, epoch });
-  for (const b of burns) rows.push({ kind: 'keeping-burn', date, pot, n: b.n, epoch, handle: b.handle });
-  for (const x of keepingMint) rows.push({ kind: 'keeping-mint', date, handle: x.handle, n: x.n, pot, epoch });
   for (const x of holos) rows.push({ kind: 'holo', date, handle: x.handle, n: x.n, pot, epoch, ref: x.ref });
   if (rows.length === 0) return err(`pot "${pot}" derives an empty close — nothing to record`);
 
@@ -1554,16 +1741,46 @@ export function deriveEpochClose({ entries, households, pot, potMeta, epoch, dat
     rows,
     report: {
       pot, epoch, date, beneficiary,
-      potTarget: target,
+      elastic,
+      potTarget: elastic ? null : target,
+      closeFloor: elastic ? floorUsd : null,
       dollarsWitnessed: receipts.reduce((a, r) => a + r.usd, 0),
       dollarsFunding: D,
       fundedFraction: fullyFunded ? 1 : D / target,
       stakesOpen: S,
-      burned: B,
-      keepingMint: keepingMintTotal,
-      holoMinted: holoTotal,
-      unmintedRemainder: B - keepingMintTotal - holoTotal,
+      returned: [...returns.values()].reduce((a, n) => a + n, 0),
+      fundingMintSized: S_scaled,
+      fundingMint: holoTotal,
+      unmintedRemainder: S_scaled - holoTotal,
       receipts: receipts.length,
+      // per payer, for the tool's report: the cap's base shown as primary + holo
+      // AND the holdings the cap is measured against, so a reader can see WHY a
+      // payer was clipped without re-folding the ledger.
+      //
+      // `holoHeldBefore` is ONE number wearing two hats, and that is the whole
+      // mechanism of the 09-17 holdings cap: the household's prior holo is
+      // inside the base (it raises the ceiling, "it compounds by design") and is
+      // subtracted from it (it has already been spent against that ceiling). At
+      // ρ = 0.5 those two roles cancel to holo ≤ primary, which is why the
+      // report prints the same figure on both sides of the line rather than
+      // carrying a second field that could only ever equal it.
+      payers: [...new Set(receipts.filter((r) => funding(r) && isResident(r.from)).map((r) => r.from))]
+        .sort((a, b) => a.localeCompare(b))
+        .map((handle) => {
+          const k = hhKey(handle);
+          const usd = receipts.filter((r) => r.from === handle).reduce((a, r) => a + r.usd, 0);
+          const primaryHH = [...foldPrimaryMint(entries)].filter(([h]) => hhKey(h) === k).reduce((a, [, n]) => a + n, 0);
+          const holoHH = [...foldHolo(entries)].filter(([h]) => hhKey(h) === k).reduce((a, [, n]) => a + n, 0);
+          return {
+            handle, household: k, usd,
+            massForPayer: S - (stakedByHH.get(k) ?? 0),
+            mint: holos.filter((x) => x.handle === handle).reduce((a, x) => a + x.n, 0),
+            capHoldings: Math.floor(dial.rho * (mintByHH.get(k) ?? 0)),
+            holoHeldBefore: holoHH,
+            roomLeft: Math.max(0, Math.floor(dial.rho * (mintByHH.get(k) ?? 0)) - holoHH),
+            basePrimary: primaryHH,
+          };
+        }),
     },
   };
 }

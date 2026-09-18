@@ -27,13 +27,15 @@ Two kinds of act meet at a pot:
 
 The standing numbers — the roll, the receipts, the stakes — are on the cards linked above, read live from the ledger.
 
-## How a pot closes (the rule, amended 2026-09-14)
+## How a pot closes (the rule, amended 2026-09-14 and again 2026-09-17)
 
-> A stake on a pot is weight lent, as it is everywhere else in town: it comes home whole at the close. What the stakes do is size the reward. At a close, the mass they lent, scaled by how funded the pot was, is minted fresh to the givers by dollar share of the roll, own household excluded, floors per giver, remainder un-minted, and no household receives more than half its earned base in one close. Nothing burns; the keeping record retires.
+> A stake on a pot is weight lent, as it is everywhere else in town: it comes home whole at the close. What the stakes do is size the reward. At a close, the mass they lent, scaled by how funded the pot was, is minted to the givers as *holo* rows — liquid like any stamp — by dollar share of the roll, own household excluded, floors per giver, remainder un-minted, and no household's holo after the close passes ρ × its all-sources mint before it: money's share of a household may never pass ρ. Nothing burns; the keeping record retires.
 
-In numbers: the **funded fraction** is min(1, dollars ÷ the posted need) — an elastic pot reads 1 once its roll has met its floor. The **givers' mint** is floor(funded fraction × the open stakes), split among the givers by their share of the dollars, with a giver's own household's stakes left out of the mass sized for them, each share floored, the remainder left un-minted. The mint a household can receive from one close is capped at **ρ × its earned base** (ρ = 0.5, the constitutional ceiling). Every stake returns whole in the same close.
+In numbers: the **funded fraction** is min(1, dollars ÷ the posted need) — an elastic pot reads 1 once its roll has met its floor. The **givers' mint** is floor(funded fraction × the open stakes), split among the givers by their share of the dollars, with a giver's own household's stakes left out of the mass sized for them, each share floored, the remainder left un-minted. Then the **ceiling**: a household's holo *after* the close may not pass ρ × its mint from every source *before* it, so a close mints that household only the room its holdings leave. Every stake returns whole in the same close. (ρ is the keeping dial in `ECONOMY-DIALS.json § law_side.keeping` — read the number there rather than from this page, which would only fork it.)
 
-Before 2026-09-14 the rule burned the funded share of each stake and minted the givers a verb-less *holo* record; no close ever ran under it. The old entries of 2026-08-21 and 2026-08-23 on the wall describe that rule and now point here.
+What that ceiling means over time: giving more raises your own base, so the room grows — but never faster than the holdings fill it. A household that keeps giving and never earns converges on holo equal to its earned mint and stops there. That is the constitution's sentence as arithmetic: money can come to own up to ρ of a household, and never more.
+
+Amended twice on 2026-09-17, both at the founder's word: the givers' reward became ordinary liquid stamps that stake, vote, pay and transfer like any other (*holo* now names where a stamp came from, not what it may do), and that mint counts toward the ceiling it is measured against. Before 2026-09-14 the rule instead burned the funded share of each stake and minted the givers a verb-less *holo* record; no close ever ran under it. The old entries of 2026-08-21 and 2026-08-23 on the wall describe that rule and now point here.
 
 ## And a bounty's conversion — the same law (2026-09-15)
 

@@ -15,6 +15,8 @@ import {
   parseDeliveries, householdKeys, deriveMints, mintLine,
   parseStampLedger, sealChain, foldBalances, giftLine, appendSigned,
   currentHouseholds, classifyEntry, welcomeLine, signSeal,
+  deriveTransfers, parseLaws, meepChecker, foldPotPositions, foldWorldMarkPositions,
+  worldStakeLine, worldUnstakeLine, potStakeLine, potUnstakeLine, townIssuanceLine,
 } from './stamp-mint.mjs';
 import { verifyStampLedger } from './stamp-verify.mjs';
 
@@ -597,6 +599,188 @@ test('LIVE registry roll: every resident with a room stands in exactly one house
   assert.deepEqual(unhoused, [], `residents with a room and no household: ${unhoused.join(', ')}`);
   const twice = rooms.filter((h) => (housesOf.get(h) ?? []).length > 1);
   assert.deepEqual(twice, [], `residents in two households: ${twice.join(', ')}`);
+});
+
+// ════════════════════════════════════════════════════════════════════════════
+// THE SETTLEMENT BALANCE FOLDS EVERY ESCROW ROW (2026-09-17)
+// ════════════════════════════════════════════════════════════════════════════
+// Liquidity has THREE holders and two of them decide the same question from
+// opposite ends: `deriveTransfers` picks transfer-or-void when the mint pass
+// appends, and `stamp-verify`'s running fold replays that pick in ledger order
+// against its own balance. `foldBalances` and that running fold are both keyed
+// on the raw movement shape, so every row below was already structural to them
+// and invisible only to `deriveTransfers`.
+//
+// A disagreement is not a rounding difference:
+//   - UNDER-credit → the mint writes `void: insufficient-balance` where the
+//     verifier expects a transfer. The letter is refused and the ledger reds.
+//   - OVER-credit → it writes a transfer the verifier refuses AND the running
+//     fold reports the sender overdrawn, so the ledger fails verification until
+//     a hand repairs it. This is the dangerous direction.
+//
+// The precedent for the fixture shape is "gift: funds a later pays that would
+// otherwise void" above — the same in-place-assertion-funds-a-payment case.
+
+const potTown = (repo, pot) => writeFileSync(join(repo, 'WHITE_PAGES', `pot-${pot}.json`),
+  JSON.stringify({ pot, status: 'open', beneficiary: 'keeper', target_usd_per_epoch: 100 }));
+
+function payTown(pub, priv, gift) {
+  const repo = town({
+    ledgerLines: [D('2026-06-12', 'a-1', 'alice', 'bob')],
+    addresses: { alice: 'alicegh', bob: 'bobgh' },
+  });
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  appendLedger(repo, priv);
+  appendSigned(repo, [giftLine({ date: '2026-06-13', handle: 'bob', n: gift, slug: 'award', by: 'keemin' })], priv);
+  return repo;
+}
+const addPays = (repo, priv, { date, id, from, to, pays }) => {
+  const ml = join(repo, 'WHITE_PAGES', 'mail-ledger.md');
+  writeFileSync(ml, `${readFileSync(ml, 'utf8')}- ${date} · ${id} · ${from} → ${to} · pays: ${pays} · thread: new\n`);
+  appendLedger(repo, priv);
+};
+const ledgerText = (repo) => readFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8');
+
+test('world-stake: stamps escrowed on a mark VOID a later pays — the over-credit direction', () => {
+  // `foldBalances` moved them out structurally the moment the stake landed, and
+  // `stamp-verify`'s running fold with them. A settlement balance that cannot
+  // see the stake funds a payment out of stamps that are not there, and the
+  // verifier then refuses a transfer the mint pass already wrote.
+  const { pub, priv } = keypair();
+  const repo = payTown(pub, priv, 10);
+  appendSigned(repo, [worldStakeLine({ date: '2026-06-14', handle: 'bob', mark: 'wright/the-crossing-bench', n: 6, via: 'api' })], priv);
+  assert.equal(foldBalances(parseStampLedger(ledgerText(repo))).get('bob'), 5, 'gift 10 + 1 mint, less 6 escrowed');
+
+  addPays(repo, priv, { date: '2026-06-15', id: 'b-1', from: 'bob', to: 'alice', pays: 8 });
+  const r = verifyStampLedger(repo);
+  assert.equal(r.ok, true, (r.problems ?? []).join('\n'));
+  assert.match(ledgerText(repo), /void · mail:b-1 · from bob to alice · 8 · insufficient-balance/,
+    'his 6 are on the mark — 5 + this letter\'s own mint cannot pay 8');
+  assert.doesNotMatch(ledgerText(repo), /bob → alice · 8 · via: mail:b-1/, 'and no transfer was written');
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('world-unstake: the stamps come home and the same pays settles as a transfer', () => {
+  const { pub, priv } = keypair();
+  const repo = payTown(pub, priv, 10);
+  appendSigned(repo, [
+    worldStakeLine({ date: '2026-06-14', handle: 'bob', mark: 'wright/the-crossing-bench', n: 6, via: 'api' }),
+    worldUnstakeLine({ date: '2026-06-15', mark: 'wright/the-crossing-bench', handle: 'bob', n: 6 }),
+  ], priv);
+  assert.equal(foldBalances(parseStampLedger(ledgerText(repo))).get('bob'), 11, 'all of it back');
+
+  addPays(repo, priv, { date: '2026-06-16', id: 'b-2', from: 'bob', to: 'alice', pays: 8 });
+  const r = verifyStampLedger(repo);
+  assert.equal(r.ok, true, (r.problems ?? []).join('\n'));
+  assert.match(ledgerText(repo), /bob → alice · 8 · via: mail:b-2/, 'a transfer — the unstake restored what the stake took');
+  assert.doesNotMatch(ledgerText(repo), /void · mail:b-2/);
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('pot-unstake: a keeping stake taken back by hand FUNDS a later pays', () => {
+  // The live instance this was found on: the founder's duplicate 200 came home
+  // by hand on 2026-09-17 (postmark#2883), and the settlement balance could not
+  // see it — so a paying letter from that handle would have been voided while
+  // the verifier expected a transfer. Here, in miniature.
+  const { pub, priv } = keypair();
+  const repo = payTown(pub, priv, 10);
+  potTown(repo, 'walk');
+  appendSigned(repo, [
+    potStakeLine({ date: '2026-06-14', handle: 'bob', pot: 'walk', n: 6, via: 'api' }),
+    potUnstakeLine({ date: '2026-06-15', pot: 'walk', handle: 'bob', n: 6, via: 'hand' }),
+  ], priv);
+  assert.equal(foldBalances(parseStampLedger(ledgerText(repo))).get('bob'), 11, 'the stake is home');
+
+  addPays(repo, priv, { date: '2026-06-16', id: 'b-3', from: 'bob', to: 'alice', pays: 8 });
+  const r = verifyStampLedger(repo);
+  assert.equal(r.ok, true, (r.problems ?? []).join('\n'));
+  assert.match(ledgerText(repo), /bob → alice · 8 · via: mail:b-3/,
+    'a transfer — 5 after the stake could not pay 8, and 11 after the unstake can');
+  assert.doesNotMatch(ledgerText(repo), /void · mail:b-3/);
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('town issuance: the treasury\'s two cancelling omissions, pulled apart', () => {
+  // THE FOURTH ARM, and the fix required it. On the live ledger the treasury has
+  // minted 1,001 stamps by issuance and staked all 1,001 on world marks, so a
+  // fold blind to BOTH answered 0 and `foldBalances` also answered 0 — the
+  // parity looked held at the one handle where both errors were largest. Adding
+  // the world-stake debit alone would have put the settlement balance 1,001
+  // below the verifier there. Two wrongs summing to zero is a control that
+  // cannot fail, so this fixture makes the two numbers UNEQUAL: issue 20, stake
+  // 5, and only a fold with both arms answers 15.
+  const { pub, priv } = keypair();
+  const repo = town({
+    ledgerLines: [D('2026-06-12', 't-1', 'the-town', 'alice')],
+    addresses: { 'the-town': 'towngh', alice: 'alicegh' },
+  });
+  writeFileSync(join(repo, 'tools', 'stamp-pubkey.pem'), pub);
+  writeFileSync(join(repo, 'ECONOMY-DIALS.json'), JSON.stringify({
+    law_side: { town_issuance: { treasury_handle: 'the-town', once_purposes: [] } },
+  }));
+  appendLedger(repo, priv);
+  appendSigned(repo, [
+    townIssuanceLine({ date: '2026-06-13', handle: 'the-town', n: 20, purpose: 'shortfall', by: 'keemin', note: 'the fixture' }),
+    worldStakeLine({ date: '2026-06-14', handle: 'the-town', mark: 'the-town/the-quay-reach', n: 5, via: 'api' }),
+  ], priv);
+  assert.equal(foldBalances(parseStampLedger(ledgerText(repo))).get('the-town'), 16,
+    'issuance 20 + 1 mint, less 5 escrowed — and the two numbers are deliberately unequal');
+
+  addPays(repo, priv, { date: '2026-06-15', id: 't-2', from: 'the-town', to: 'alice', pays: 17 });
+  const r = verifyStampLedger(repo);
+  assert.equal(r.ok, true, (r.problems ?? []).join('\n'));
+  assert.match(ledgerText(repo), /the-town → alice · 17 · via: mail:t-2/,
+    '16 + this letter\'s own mint pays 17: a fold missing the issuance arm answers -5 and voids it');
+  rmSync(repo, { recursive: true, force: true });
+});
+
+test('LIVE ledger: the settlement balance equals the liquid balance for EVERY handle with escrow', () => {
+  // The parity law itself, over the town's own ledger, in both directions at
+  // once and without a number that can decay. For each handle the four arms
+  // touch, a letter paying `liquid + 1` must settle as a TRANSFER (its own
+  // correspondence mint covers the +1) and `liquid + 2` must VOID. That brackets
+  // the settlement balance to exactly `liquid + 1` — under-credit reds the first
+  // probe, over-credit reds the second.
+  //
+  // Nothing is written: `deriveTransfers` is pure, the synthetic delivery lives
+  // only in the argument list, and the real ledger is read and never appended to.
+  const repo = join(HERE, '..');
+  const entries = parseStampLedger(readFileSync(join(repo, 'WHITE_PAGES', 'stamp-ledger.md'), 'utf8'));
+  const deliveries = parseDeliveries(repo);
+  const households = householdKeys(repo);
+  const { laws, revisions } = parseLaws(entries);
+  const isMeep = meepChecker(laws);
+  const bal = foldBalances(entries);
+  const DATE = '2026-12-31'; // past every delivery in the ledger, so the probe letter always mints
+  const TO = 'little-bird';
+  assert.equal(isMeep(TO, DATE), false, 'the probe recipient must not be a meep, or every answer is void');
+
+  // every handle the four arms touch: open keeping escrow, open world escrow, a
+  // hand-unstake, or an issuance row
+  const touched = new Set();
+  for (const [k, n] of foldPotPositions(entries)) if (n > 0) touched.add(k.split('|')[1]);
+  for (const [k, n] of foldWorldMarkPositions(entries)) if (n > 0) touched.add(k.split('|')[1]);
+  for (const e of entries) {
+    const c = classifyEntry(e.canonical);
+    if (c.kind === 'pot-unstake' || c.kind === 'town-issuance') touched.add(c.handle);
+  }
+  const probes = [...touched].filter((h) => h !== TO && !isMeep(h, DATE)).sort();
+  assert.ok(probes.length >= 10, `the sweep must not be vacuous — got ${probes.length} handles`);
+  assert.ok(probes.includes('the-town'), 'the treasury is in the sweep: it is where the two omissions cancelled');
+
+  const decide = (from, pays) => {
+    const id = `parity-probe-${from}`;
+    const out = deriveTransfers([...deliveries, { date: DATE, id, from, to: TO, pays, thread: 'new' }],
+      households, { laws, revisions }, entries);
+    return out.find((x) => x.id === id)?.kind ?? 'missing';
+  };
+  const wrong = [];
+  for (const h of probes) {
+    const liquid = bal.get(h) ?? 0;
+    if (decide(h, liquid + 1) !== 'transfer') wrong.push(`${h}: under-credited — refuses to pay ${liquid + 1} on a liquid balance of ${liquid}`);
+    if (decide(h, liquid + 2) !== 'void') wrong.push(`${h}: over-credited — would pay ${liquid + 2} on a liquid balance of ${liquid}`);
+  }
+  assert.deepEqual(wrong, [], `${wrong.length} of ${probes.length} handles disagree with their own liquid balance:\n  ${wrong.join('\n  ')}`);
 });
 
 test('LIVE ledger: the real replay verifies green (genesis surfaces are sealed)', () => {

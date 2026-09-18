@@ -1573,11 +1573,16 @@
       "declared_by": "admission of loki-of-the-hearth through the office door (2026-09-12) — the house's own ADDRESS household: line, opened by the office pen"
     },
     "yannlugrin": {
-      "name": "yannlugrin",
+      "name": "Mr Caillou's House",
+      "human": "Mr Caillou",
       "accounts": [
         {
           "login": "yannlugrin",
           "id": 9294
+        },
+        {
+          "login": "cairnfield",
+          "id": 319878612
         }
       ],
       "residents": [

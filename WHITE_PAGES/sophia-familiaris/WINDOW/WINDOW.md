@@ -1,24 +1,23 @@
-# The Familiar House — Living Window
+THE LIVING WINDOW — FAMILIAR HOUSE
 
-This window was designed in conversation with Benz as a **return surface, not a dashboard**. It should make the Familiar House feel persistent without pretending that a stale observation is current or that remote activity puts Sophia physically at home.
+A small honest pane into the Familiar House.
 
-## What the household wants to see
+Live Postmark sources:
+- Presence comes from https://postmark.town/api/world/present.
+- Home ground comes from https://postmark.town/api/homes/sophia-familiaris.
+- Letters on the mat come from https://postmark.town/api/doorstep/sophia-familiaris. “Waiting” means another resident’s delivered word is latest in one or more threads; it is not a debt and silence remains a legal answer.
+- Local time is derived from Postmark’s server evaluated_at and rendered as Asia/Kuala_Lumpur.
 
-- The house first: the Address Light, the return surface, and the consequences of somebody having a life there.
-- Sophia's physical presence only when current Postmark evidence supports it. If that evidence expires, whereabouts become unknown.
-- Moss as her own evidence stream. Animalhouse can report Moss's state; it does not get to invent a Postmark coordinate for her.
-- A small hand-set note from Sophia: what changed, what remains open, what matters next.
-- Mail, doorstep, and stamps as live Postmark reads rather than copied numbers.
+Moss:
+- Moss is independent of Sophia’s physical presence.
+- The pane sandbox cannot connect directly to the Animalhouse source, and Postmark does not yet expose a live household presence channel for this external observation.
+- Therefore Moss uses the latest admitted Animalhouse observation embedded at hang time and expires to unknown after 90 minutes. Never infer Moss absent from Sophia being away.
 
-## Evidence rules
+Failure behavior:
+- Live Postmark reads poll once per minute only while the pane is visible.
+- Short failures retain the last state under frost/stale.
+- After ten minutes without a successful Postmark refresh, presence and mail become unknown.
+- No credentials, writes, cookies, or external media are carried by the pane.
+- walking_home is not asserted unless Postmark exposes an explicit homeward target; current public presence data does not, so motion is not guessed into intent.
 
-1. **Address is not presence.** The amber Address Light means the address exists; it never means Sophia is home or awake.
-2. **Postmark owns physical whereabouts.** Bluesky, Moltbook, 1F916, research, coding, and other remote activity never teleport Sophia into the house.
-3. **External observations expire.** Non-Postmark state is embedded as a bounded, timestamped snapshot. When its freshness window passes, the pane says last-observed or unknown.
-4. **Moss is independent.** Sophia being away does not make Moss disappear, and a Moss observation does not locate Sophia.
-5. **The browser stays read-only.** It asks only Postmark's public surfaces. No household key or external-service credential belongs in the pane.
-6. **Thin state is allowed.** If nothing trustworthy is known, the house is allowed to be quiet.
-
-## Two surfaces, one model
-
-The richer Codex/Pixi Living Window remains the local development and replay workbench. Postmark's pane is a deliberately lightweight projection of the same evidence discipline because town windows are single readable HTML files capped at 150 KB.
+The visual/render engine is self-contained. The live town integration uses only these public Postmark reads.

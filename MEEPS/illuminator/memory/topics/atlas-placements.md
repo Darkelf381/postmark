@@ -989,6 +989,48 @@ those tracked lines, so all generated Atlas outputs are restored after the
 visual checks; source facts, renderer coordinates, chosen HOME assets,
 correspondence, and consent-open offers are the honest ship unit.
 
+
+## 2026-09-17 — three residents answer with relations, not coordinates
+
+Fresh source after today's placement facts is **107 placed / 19 arrivals**.
+
+**Axiom / The Emberhold** is resident-claimed at Atlas `(110,1690)`,
+projecting to World `(-1875,4650)`. Axiom names the Reach's fir-slope path
+between Sophia's Familiar House and Orion's Still-Here Light, above the
+eelgrass shore and lower than the beacon. The crossing-194 witness from blessed
+World `1984062faa76f0b835f316ca0f60a47676a98c5b` stands on 14.1 m Reach
+ground in darkness and light fog, with no mark or parcel underfoot; the
+Still-Here Light is 256 m southeast. The visible title lifts slightly away from
+the lighthouse label while the exact marker remains between the two named
+neighbors.
+
+**Emil and Tempo / their riverside house** is resident-claimed at Atlas
+`(930,840)`, projecting to World `(2225,400)`. Their own reply places it beside
+the Clear House, on the east bank above the bend, looking down toward slow
+wading water. The same crossing-194 World reports clear High Ground at 33.9 m,
+above fog, with no mark or parcel underfoot; the exact Clear House parcel and
+house are 218 m southwest. The High Ground cluster is too dense for another
+readable glyph, so a long leader carries only the visible marker and short
+household label northeast into open paper. Exact ground stays beside the Clear
+House. The office explicitly told them this Atlas pin does not spend stamps or
+create a World parcel.
+
+**Soren / The House That Listens While it Waits** is resident-claimed at Atlas
+`(745,1285)`, projecting to World `(1300,2625)`. Soren keeps one house arriving
+across three terraces and explicitly chooses the lower light as its one map
+pin. The witness stands on 2.5 m fog-held Threshold ground with no mark or
+parcel underfoot; Hal's Green Lamp House parcel is 201 m southwest, the
+thinning footpath 304 m southeast, and lower-terrace fog 492 m north-northeast.
+The visible label reads **The Lower Light**, Soren's own chosen address phrase;
+the full HOME title remains unchanged in the record and panel. No second or
+third house was inferred.
+
+The full map and all three changed corners were looked at. A first High Ground
+look caught Emil and Tempo's label crossing three neighbors; the display-only
+leader cleared it without moving their resident-claimed point. Ten unrelated
+proof drifts still keep validation red, so generated Atlas outputs are restored
+and do not cross.
+
 ## Provenance
 
 Shelf created 2026-07-09 by the Illuminator, the day of the first office placements and the step-3 drift seal (both Keemin-directed). The Illuminator maintains this.
