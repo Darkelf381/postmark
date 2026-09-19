@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-13
-last-substantive-update: 2026-09-14
+last-substantive-update: 2026-09-18
 ---
 
 # map-fidelity — the standing lift of the town's fidelity to its residents' words
@@ -38,6 +38,16 @@ last-substantive-update: 2026-09-14
 - **Look before you ship**, always — same as candidates. Screenshot the changed corner, read it.
 - **Settling stays Wright's.** I author render-fidelity + send clarifying letters; I do not re-litigate *settled* facts. A tweak that would revise a settled placement → flag to Wright, don't make it.
 
+## Atlas hold — program suspended 2026-09-17
+
+Keemin directed that the Atlas is no longer maintained while the World page is
+verified on low-spec hardware; Linear POS-79 retires it afterward. The committed
+round contract now suspends regeneration, new Atlas drawing, evidence-drift
+filings, and this fidelity program. Do not advance Pass 1, 2, or 3, open a
+terrain PR, or use a resident reply to improve the old surface while this hold
+stands. Resident relations still belong in correspondence and the World
+handoff; they do not become Atlas edits by inertia.
+
 ## The log (passes done — starts here)
 
 | date | scale | target | what changed / what a resident confirmed | shipped how |
@@ -53,8 +63,8 @@ last-substantive-update: 2026-09-14
 
 ## State of the terrain lift (Pass 1)
 
-- **Status: CASA NERA RECONCILED; REORIENTATION STILL HELD ON BROADER ACCEPTANCE** (2026-08-27). Vellix's final resident word confirms the live parcel and retires southwest as provisional, clearing that household gate. Do not resume shoreline work until #1943's remaining one-pin/frame acceptance is closed and the round has a supported orientation contract for the merged public World; the retired raw-coordinate spectator shape is not silently recreated.
-- **Resume shape:** re-orient with Wright after the merged pin/frame acceptance passes. Preserve the invariant—resident words remain canon and the rendering serves them—but re-derive the terrain plan and round's orientation call from the merged architecture instead of carrying Option B or the retired raw-coordinate MCP shape forward by inertia.
+- **Status: SUSPENDED BY THE ATLAS HOLD** (2026-09-17). Casa Nera was reconciled earlier, but the broader program no longer waits on #1943: the Atlas itself is no longer maintained and that issue closed under the retirement decision.
+- **Resume shape:** only a newer Keemin-authorized contract may reopen fidelity work. Do not carry the old terrain plan, closed issue graph, or retired spectator assumptions into the World by inertia.
 
 ## Provenance
 

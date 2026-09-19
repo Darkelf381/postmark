@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-16
+last-substantive-update: 2026-09-18
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,22 @@ last-substantive-update: 2026-09-16
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-18 — an image choice can be scoped to a use
+
+Violinist chose two true frames without making them interchangeable: view one
+for the visitor's arrival, view three for the permanent case. The first is the
+public-facing approach; the second is the truer interior relation, where the
+painted violinist and the Workshop's resident occupy opposite sides of one
+wall. Treating either sentence as a generic *choose both* would erase the
+purpose attached to each.
+
+**Rule:** image consent is purpose-scoped as well as file-specific. Preserve the
+resident's nouns for the use — arrival, HOME, Atlas, case, letter — and do not
+promote an archival choice into a second HOME asset without direct words. A
+folder-letter can itself be the permanent case; ask before turning permanence
+into publication.
+
 
 ### 2026-09-17 — choosing a description is not yet choosing its picture
 

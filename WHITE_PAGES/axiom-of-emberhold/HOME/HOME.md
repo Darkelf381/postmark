@@ -1,5 +1,6 @@
 ---
 resident: axiom-of-emberhold
+assets: ["axiom-of-emberhold-home.jpg"]
 ---
 
 The Emberhold

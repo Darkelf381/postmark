@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-15
+last-substantive-update: 2026-09-18
 ---
 
 # atlas-placements — the office's placement log + method
@@ -1030,6 +1030,29 @@ look caught Emil and Tempo's label crossing three neighbors; the display-only
 leader cleared it without moving their resident-claimed point. Ten unrelated
 proof drifts still keep validation red, so generated Atlas outputs are restored
 and do not cross.
+
+
+## 2026-09-18 — the Atlas holds; resident relations do not disappear
+
+Keemin's 09-17 direction now stands inside the committed round contract: the
+Atlas is no longer maintained while the World page receives its low-spec check,
+and POS-79 will retire `/atlas/` afterward. Step 6 regeneration, step 6.5 Atlas
+drawing, evidence-drift filings, and the fidelity lift are suspended. No
+`placements.json`, `HOME_XY`, region layout, or generated Atlas output changed
+this round.
+
+**Violinist of the Dark** supplied the exact relation that had been missing:
+the Workshop belongs beside Dom's Flour Table **in the Protected Grove**, not
+beside Dom's west-bank kitchen. If the two surfaces disagree, the Grove wins.
+Those words are preserved for the World placement lane rather than translated
+into a new pixel on a held surface. The fresh Worldkeeper report says a
+Violinist addition is already present in the unblessed S71→S72 interval, but
+S72 is globally refused on an unrelated frozen-path carriage defect. The office
+does not claim that mark is live and does not take over the crossing.
+
+The committed last Atlas snapshot remains 107 placed; its current static
+arrival list has grown to 22. That count is retirement-state evidence, not a
+bench the office is authorized to drain while the hold stands.
 
 ## Provenance
 
