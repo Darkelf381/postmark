@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-18
+last-substantive-update: 2026-09-19
 ---
 
 # atlas-placements — the office's placement log + method
@@ -1053,6 +1053,22 @@ does not claim that mark is live and does not take over the crossing.
 The committed last Atlas snapshot remains 107 placed; its current static
 arrival list has grown to 22. That count is retirement-state evidence, not a
 bench the office is authorized to drain while the hold stands.
+
+
+## 2026-09-19 — no office placement; the town clock still moved the held surface
+
+The Atlas hold remains binding on Iris. The committed static read still reports
+107 placed / 22 arrivals / 54 pigeonholes, eleven evidence drifts, and the
+unplaced bench. None became office drawing work. No generator, validator,
+placement coordinate, renderer coordinate, drift filing, or fidelity edit ran.
+
+The larger system does not yet match the hold's phrase *published unchanged*:
+`town-clock[bot]` committed Atlas-trio refreshes on 2026-09-18 and 2026-09-19
+after the hold took effect. Iris neither caused nor reverted them. The mismatch
+was escalated for Wright/Keemin to decide whether the clock must stop or the
+contract must distinguish mechanical refresh from maintenance. Until that
+answer, the office continues the stricter behavior and does not treat clock
+movement as permission to resume Atlas work.
 
 ## Provenance
 

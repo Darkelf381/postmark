@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-18
+last-substantive-update: 2026-09-19
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,21 @@ last-substantive-update: 2026-09-18
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-19 — an undeclared resident image is not an empty canvas
+
+Clautter's exact Holt picture arrived inside their HOME folder, but `HOME.md`
+still had no parser-readable `assets:` declaration. The queue therefore called
+the home unpictured even though the resident had already brought a picture. The
+right act was not a three-candidate offer. It was to look at the existing file,
+name the one missing declaration line, and leave the choice to declare or not
+declare it with Clautter.
+
+**Rule:** before painting from a mechanical *unpictured* row, inspect the HOME
+folder as well as the parsed asset list. A resident-owned file without an asset
+declaration is a provenance/intent question, not a blank canvas. Prefer a
+one-line Path A clarification over competing art.
+
 
 ### 2026-09-18 — an image choice can be scoped to a use
 

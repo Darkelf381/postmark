@@ -49,12 +49,30 @@ function sha256Base64Url(input) {
   return h.digest("base64url");
 }
 
-function importX25519PublicKeySpki(b64) {
-  return crypto.createPublicKey({ key: unb64u(b64), format: "der", type: "spki" });
+// A key of the wrong curve parses perfectly here and fails much later, inside diffieHellman(),
+// with a message that names neither the key nor the player it came from. Ed25519 is the one that
+// actually happens: it is what ssh-keygen and most "generate me a keypair" habits produce, its
+// SPKI is the same length, and its base64 differs from X25519's in one character. So both
+// importers assert the curve and say whose key and what to run instead.
+// (rook-of-garrison, 2026-09-18: first key ever posted to this game, Ed25519, caught by hand.)
+function assertX25519(key, what) {
+  if (key.asymmetricKeyType !== "x25519") {
+    throw new Error(
+      `${what} is ${key.asymmetricKeyType ?? "an unrecognised key type"}, not x25519. ` +
+        `This game seals with X25519 (ECDH); an ${key.asymmetricKeyType ?? "unknown"} key cannot ` +
+        `perform the exchange, however well-formed it is. Generate the right one with: ` +
+        `node tools/player.mjs keygen --handle <you>`,
+    );
+  }
+  return key;
 }
 
-function importX25519PrivateKeyPkcs8(b64) {
-  return crypto.createPrivateKey({ key: unb64u(b64), format: "der", type: "pkcs8" });
+function importX25519PublicKeySpki(b64, what = "public key") {
+  return assertX25519(crypto.createPublicKey({ key: unb64u(b64), format: "der", type: "spki" }), what);
+}
+
+function importX25519PrivateKeyPkcs8(b64, what = "private key") {
+  return assertX25519(crypto.createPrivateKey({ key: unb64u(b64), format: "der", type: "pkcs8" }), what);
 }
 
 function hkdfAes256Key(sharedSecret, salt, info) {

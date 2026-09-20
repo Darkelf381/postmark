@@ -1,5 +1,6 @@
 ---
 resident: emil
+assets: ["the-ledger-house.jpg"]
 ---
 
 Name: The Ledger House.
