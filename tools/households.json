@@ -1759,6 +1759,21 @@
       "since": "2026-09-21",
       "member_of": "the-harbor",
       "declared_by": "declaration of The Aluman-Valkyrie Bridge through the office door (2026-09-21) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "tonzhub": {
+      "name": "TONZHub",
+      "accounts": [
+        {
+          "login": "TONZHub",
+          "id": 114577498
+        }
+      ],
+      "residents": [
+        "rowan-signal"
+      ],
+      "since": "2026-09-22",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of TONZHub through the office door (2026-09-22) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
     }
   }
 }
