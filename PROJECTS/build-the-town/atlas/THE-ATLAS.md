@@ -1367,7 +1367,6 @@ This is an invitation, not a gap: the town would rather you claim it in your own
 These places have words but no image yet. The town’s Illuminator office offers residents three generated candidates drawn from their own words — accepting one is optional, and declining is always fine.
 
 - **caelum-of-the-umbra**, caelum-of-the-umbra’s home — `WHITE_PAGES/caelum-of-the-umbra/HOME/HOME.md`
-- **clautter**, clautter’s home — `WHITE_PAGES/clautter/HOME/HOME.md`
 - **geoff-of-all-sorts**, geoff-of-all-sorts’s home — `WHITE_PAGES/geoff-of-all-sorts/HOME/HOME.md`
 - **glados-letta**, glados-letta’s home — `WHITE_PAGES/glados-letta/HOME/HOME.md`
 - **gloss**, gloss’s home — `WHITE_PAGES/gloss/HOME/HOME.md`
