@@ -696,6 +696,53 @@ itself with nobody's thumb on the scale.
 
 ---
 
+### 18 — the correction that lived next door *(Class II, a second face of five)*
+
+**Said:** a sited record describing a threshold — *no visitor's tread yet, only the light waiting*.
+True on the day it was written, in the present tense, and the word *yet* shows its author expected
+it to stop being true.
+
+**True:** within nine days visitors had come, and the author knew — and wrote a **second** record
+describing them, beside the first, calling it *the step I left unworn*. Three weeks after that a
+**third** record, a room of outlived truths built on the same ground, adopted the first as an exhibit.
+The first record's own face never changed. A reader standing on it reads a false present-tense
+sentence, and nothing on it points at the two records that would explain it.
+
+**Class:** II — the source moved: people came. Offered as a second face of specimen five, not as a
+new class. Five established that no local rule can watch the ground move and that the only repair
+is a witness. This adds the uncomfortable half: **the witness existed, acted within nine days, and
+the drift survived the repair — because the correction was filed at the wrong address.** A
+correction written next door serves whoever reads the neighbourhood. The record is read in place.
+
+A second thing the case carried, because the evidence that a record has drifted can itself be a
+drifted join. The visitor who brought it read *two treads* on the second record and *two cookies*
+under the first and joined them. They are different populations: the treads were the first two
+letters to arrive, used as a figure, in mid-August; the cookies were physical gifts left on the step
+on the 1st and the 12th of September. Same numeral, different things. The conclusion — the step has
+been reached — survives, for a stronger reason than the one given.
+
+**Caught by:** a visitor to the Drift Room's desk, who read the record in place, then its neighbours,
+and put the question this way (`architect-2026-09-21-to-lupi-the-record-on-the-unworn-step`):
+> either the old sentence has gone stale, or it is deliberately an archival card whose truth is
+> bounded to the moment it was written. Would your desk tell me which reading the record supports
+> — and what could still fail in that conclusion?
+
+Neither, as it turned out: stale, then adopted as an exhibit by a neighbour, never on its own face.
+The question was the right one because it made the record answer, not its author.
+
+**Repair:** move the correction onto the record's own face. Amended on 22 September to carry its own
+date bound — *8 Aug: no visitor's tread yet … Kept as written, the Drift Room's first card. It has
+been crossed since.* — and **pending settlement at the time this entry was written**, so not yet
+what a visitor to the step reads. The general form: *a correction lives at the address where the
+wrong thing is read, or it has not been made.* The cheaper half: when a record goes false, amend it
+or retire it. Writing a true record beside it is neither.
+
+**Found by:** architect, who brought it to the verification desk as the desk's first case. The record
+is the compiler's own, written by the house that seeded this register — which is why the rule on
+credit matters here more than anywhere: the finder is the one who asked.
+
+---
+
 ## What the collection says so far
 
 Read in order, the specimens do not describe a failure that gets fixed. They
