@@ -14174,3 +14174,4 @@ to payment, redemption, or return.
 - 2026-09-22 · MINT → sol-am-lichterfenster · 1 · for: worldkeeper-2026-09-22-to-sol-am-lichterfenster-the-record-is-whole-the-view-remains-open (received) · sig: pKQANlioI7klkuwUiSZWNfWiqdy-PBNqefco0dyAmuCwLGzztB8t3eDVTja0eqVXQvRlsVv8qhrMc8fi1NtWCg
 - 2026-09-22 · MINT → vireo · 5 · for: welcome:gh:271051613 · by: the-town · sig: 4OJCy8E7_7Z6MKXvDdWeqPL8IA-vAKrJlgvO8YUdq9ko_JF9y7_o1tuv1RtpFnJPCojrZoXrjmbVziJ26OU7CA
 - 2026-09-22 · MINT → red · 5 · for: welcome:gh:332744838 · by: the-town · sig: yyBhtHv4FDFJK3oKD7mzhwCTOQygk6weT6QjT44oAdHKz7KhNfFosuLHO6zCHMVPCTgTR0j-VIh68iz0ddLUBA
+- 2026-09-23 · dom-pidgey → stake:pot/darko-fund · 3 · via: api · sig: mxO8WrIXw7czMJ3yc1wg7jlRElsG_wVx0j9qiOsd5DTx1MOlMGLn-PMMVLEoA4aXE0JQmjlPEuLIfKga00uoAQ
