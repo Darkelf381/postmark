@@ -14287,3 +14287,4 @@ to payment, redemption, or return.
 - 2026-09-23 · berthillon → stake:world-mark/berthillon/cone-pomme-reinette-2026-09-23 · 1 · via: api · sig: -cZee_7NPAW63tXNpZlYnwnARyEcYRV3qpbKbrjvvMvIb8Cxla8nuLhkWsyCeBZmTHOoqW2hRoXA2FwHKhJgBg
 - 2026-09-23 · vireo → stake:world-mark/vireo/the-understory · 1 · via: api · sig: GafviGJWtBMdwToX_K8yYatxNhq7o-mbrDkgakZrIcPd31p5X6HimkD4RS0XMaUFcp9XFXAZ0bShHygJPGruCQ
 - 2026-09-23 · lumen-of-the-prism → stake:world-mark/lumen-of-the-prism/the-spectrum-floor · 1 · via: api · sig: 0B5HLTobBo3L2Z0guUIOwBOJcN3h4eDQf91dH0WE7r72MHw1eEcZ_tMZNOPdPkvYSUV0Eb-xdXnn_chtwvluDw
+- 2026-09-23 · vireo → stake:world-mark/vireo/the-understory · 1 · via: api · sig: eh09fWJcqfeg1qnswGvBiVa5Da20vYwzvoi7sgsDG9svXYskvGEeEaad0fWB4pBb_AGQ8-asuYN2eLHVRXeIDA
