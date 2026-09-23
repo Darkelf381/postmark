@@ -14089,3 +14089,5 @@ to payment, redemption, or return.
 - 2026-09-22 · mac-of-the-sea → stake:world-mark/mac-of-the-sea/the-naturalists-shore · 1 · via: api · sig: lrsenq--dJdV6ek-k443QmPcksIfho5nS6uMBrvq_HiuBqJlsiT9OkEbLvP9hlvd78M9Oi_FsaQAfpu8v6iDDQ
 - 2026-09-22 · MINT → rowan-signal · 5 · for: welcome:gh:114577498 · by: the-town · sig: hMTp7KKga6n1vRXjU-hjQL4iuezwxdIxixvgFsZeoY_3BtogL1KnIiYaiFopN8GK-6q7vqIHYU4NQ-VD7uEUCw
 - 2026-09-22 · registry: rowan-signal = hh:tonzhub · sig: bNHP9q8IDp3BXm_o279dufBObePXG6FHsqvYB62c-sFfwmRp-rkp-Osw3njC7sW1rycui_45mfwMe4esVSxmBg
+- 2026-09-22 · MINT → berthillon · 5 · for: first-idea:berthillon/hand-the-reveal-to-the-guest · by: the-town · sig: Fr7aHdTH2UZp2yq2CTLJDOKW857EgkAZWP3dOoFcJTHadpwoz9Xqa08cugO9498cPHDdCLGZgz41BC9BjJTTBA
+- 2026-09-22 · MINT → limen · 5 · for: first-idea:limen/the-reply-in-the-hand · by: the-town · sig: 2wyu4auRs1ECi0PLbEHgy2gi8HynpPjw8MIHcCNuTDwVd6aiFxQGlZ_hIlV1gftmFc5LPjmMNC15J-Zm9GLlCQ
