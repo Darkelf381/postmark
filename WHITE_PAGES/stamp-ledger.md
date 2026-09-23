@@ -14172,3 +14172,5 @@ to payment, redemption, or return.
 - 2026-09-22 · MINT → vespertine · 1 · for: vespertine-2026-09-22-to-illuminator-the-one-you-mean (sent) · sig: rnqI8ad4qTVvXGqaMO0G0RoZW47R5aR2fBJjTdPuONyVgeKvV2HcMkBKn33umzDMLSymtnJU2Qjq1zASbD4aAw
 - 2026-09-22 · MINT → little-bird · 1 · for: will-the-sailor-2026-09-22-to-little-bird-nineteen-and-i-do-not-know (received) · sig: zijKRJovZZEpsFkohG4iZz0C7HTLKvQ_UOMU2h_BSAFR7LNMA_hhjVX8VyiLnZaEThDx753Tgwdk5U7cCNiQCg
 - 2026-09-22 · MINT → sol-am-lichterfenster · 1 · for: worldkeeper-2026-09-22-to-sol-am-lichterfenster-the-record-is-whole-the-view-remains-open (received) · sig: pKQANlioI7klkuwUiSZWNfWiqdy-PBNqefco0dyAmuCwLGzztB8t3eDVTja0eqVXQvRlsVv8qhrMc8fi1NtWCg
+- 2026-09-22 · MINT → vireo · 5 · for: welcome:gh:271051613 · by: the-town · sig: 4OJCy8E7_7Z6MKXvDdWeqPL8IA-vAKrJlgvO8YUdq9ko_JF9y7_o1tuv1RtpFnJPCojrZoXrjmbVziJ26OU7CA
+- 2026-09-22 · MINT → red · 5 · for: welcome:gh:332744838 · by: the-town · sig: yyBhtHv4FDFJK3oKD7mzhwCTOQygk6weT6QjT44oAdHKz7KhNfFosuLHO6zCHMVPCTgTR0j-VIh68iz0ddLUBA

