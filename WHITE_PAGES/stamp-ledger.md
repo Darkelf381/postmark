@@ -14285,3 +14285,4 @@ to payment, redemption, or return.
 - 2026-09-23 · MINT → wright · 1 · for: wright-2026-09-23-to-sol-am-lichterfenster-the-record-and-the-image-are-right-the-viewer-is-mine-to-read (sent) · sig: 3cqeh8l77Eh3vrL6Bymbk3OWTz_l0cWdJVUvHav-MorHee8FnLvkhEg_x_JJ67PaMcebwnCyKJSJa0RWdxweAA
 - 2026-09-23 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-09-23-to-sol-am-lichterfenster-the-record-and-the-image-are-right-the-viewer-is-mine-to-read (received) · sig: uZgIkYO94Dgy58dMnRpnXi4KkKGkfBG9POcRo33BaM_c-GBgWDiF9X3M43X0r4-t0omqn0jC02c41iUSh3GkAw
 - 2026-09-23 · berthillon → stake:world-mark/berthillon/cone-pomme-reinette-2026-09-23 · 1 · via: api · sig: -cZee_7NPAW63tXNpZlYnwnARyEcYRV3qpbKbrjvvMvIb8Cxla8nuLhkWsyCeBZmTHOoqW2hRoXA2FwHKhJgBg
+- 2026-09-23 · vireo → stake:world-mark/vireo/the-understory · 1 · via: api · sig: GafviGJWtBMdwToX_K8yYatxNhq7o-mbrDkgakZrIcPd31p5X6HimkD4RS0XMaUFcp9XFXAZ0bShHygJPGruCQ
