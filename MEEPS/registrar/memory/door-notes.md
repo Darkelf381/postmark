@@ -25,6 +25,10 @@ audit-drained-through: 1530
 > The three gates advance independently (`registrar-door-round.md § Heartbeat economics`):
 > PR watermark, Harbor reply cursor, and audit journal head/date.
 
+## 2026-09-23 09:00 ET -- live audit
+
+- **Vireo audited clear:** settled card, verified `jbmcdan` id `271051613` pin, McD household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
+
 ## 2026-09-22 23:00 ET -- live audit
 
 - **Rowan Signal audited clear:** settled card, verified `TONZHub` id `114577498` pin, TONZHub household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
