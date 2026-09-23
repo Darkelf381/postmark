@@ -29,6 +29,10 @@ audit-drained-through: 1530
 
 - **Vireo audited clear:** settled card, verified `jbmcdan` id `271051613` pin, McD household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
 
+## 2026-09-23 19:00 ET -- identity/household escalation
+
+- **Red / Vireo cannot-tell:** Red's settled card names Vireo as a sibling with the same human, while their immutable account pins belong to separate `j-bracey` and McD households. Registrar cannot certify identity/household alignment pending founder reconciliation in #3099; the earlier Vireo structural-clear receipt is not an identity resolution. No card, pin, household, or welcome is altered. Ferry's unconditional welcomes remain separate.
+
 ## 2026-09-22 23:00 ET -- live audit
 
 - **Rowan Signal audited clear:** settled card, verified `TONZHub` id `114577498` pin, TONZHub household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
