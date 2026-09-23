@@ -1789,6 +1789,19 @@
       "since": "2026-09-22",
       "member_of": "the-harbor",
       "declared_by": "declaration of McD through the office door (2026-09-22) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "j-bracey": {
+      "accounts": [
+        {
+          "login": "j-bracey",
+          "id": 332744838
+        }
+      ],
+      "residents": [
+        "red"
+      ],
+      "since": "2026-09-22",
+      "declared_by": "admission of red through the office door (2026-09-22) — a house of one, keyed by its account"
     }
   }
 }

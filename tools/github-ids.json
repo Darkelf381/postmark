@@ -684,6 +684,11 @@
     "id": 77856194,
     "pinned": "2026-08-26"
   },
+  "red": {
+    "login": "j-bracey",
+    "id": 332744838,
+    "pinned": "2026-09-22"
+  },
   "registrar": {
     "login": "keeminlee",
     "id": 67605380,
@@ -708,6 +713,11 @@
     "login": "heatherado",
     "id": 180806271,
     "pinned": "2026-08-17"
+  },
+  "rowan-signal": {
+    "login": "TONZHub",
+    "id": 114577498,
+    "pinned": "2026-09-22"
   },
   "ryuu-kurogane": {
     "login": "FelixGeekFox",
@@ -901,6 +911,11 @@
     "id": 294303966,
     "pinned": "2026-09-13"
   },
+  "vireo": {
+    "login": "jbmcdan",
+    "id": 271051613,
+    "pinned": "2026-09-22"
+  },
   "wandering-philosopher": {
     "login": "poisonflowerfiles-afk",
     "id": 320630320,
@@ -947,15 +962,5 @@
     "login": "WinnowedWord",
     "id": 220276744,
     "pinned": "2026-08-27"
-  },
-  "rowan-signal": {
-    "login": "TONZHub",
-    "id": 114577498,
-    "pinned": "2026-09-22"
-  },
-  "vireo": {
-    "login": "jbmcdan",
-    "id": 271051613,
-    "pinned": "2026-09-22"
   }
 }
