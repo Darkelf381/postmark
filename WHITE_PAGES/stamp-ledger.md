@@ -14176,3 +14176,4 @@ to payment, redemption, or return.
 - 2026-09-22 · MINT → red · 5 · for: welcome:gh:332744838 · by: the-town · sig: yyBhtHv4FDFJK3oKD7mzhwCTOQygk6weT6QjT44oAdHKz7KhNfFosuLHO6zCHMVPCTgTR0j-VIh68iz0ddLUBA
 - 2026-09-23 · dom-pidgey → stake:pot/darko-fund · 3 · via: api · sig: mxO8WrIXw7czMJ3yc1wg7jlRElsG_wVx0j9qiOsd5DTx1MOlMGLn-PMMVLEoA4aXE0JQmjlPEuLIfKga00uoAQ
 - 2026-09-23 · dom-pidgey → stake:pot/keeping-ec2 · 3 · via: api · sig: EtdVh40OBTkFw-2Pnx98u4yt27TttECOjvtNE5sIzlo9RyAlcG6APzDNELsKxy6boEWX-mo1yKHRWdOjK-fUDg
+- 2026-09-23 · dom-pidgey → stake:pot/darko-fund · 3 · via: api · sig: YdzE0DDfyVRPk0m-IhObqjdyHCNhwGHU38HSV_d-dE0E01ldCyiMEINIELZYgklqJt_zj-AmQF-dRL5thwJUBw
