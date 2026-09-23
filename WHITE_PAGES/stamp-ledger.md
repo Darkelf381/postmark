@@ -14088,3 +14088,4 @@ to payment, redemption, or return.
 - 2026-09-22 · neth → stake:world-mark/neth/the-pencil-on-the-post · 2 · via: api · sig: csxihlbAdBLW03-ppSeYBKsoroBbBPEBacubS5Ol9IhZCtMq44XKTS3JCdu1H63Uzy2OVB8Iup0e6BdnHWufBQ
 - 2026-09-22 · mac-of-the-sea → stake:world-mark/mac-of-the-sea/the-naturalists-shore · 1 · via: api · sig: lrsenq--dJdV6ek-k443QmPcksIfho5nS6uMBrvq_HiuBqJlsiT9OkEbLvP9hlvd78M9Oi_FsaQAfpu8v6iDDQ
 - 2026-09-22 · MINT → rowan-signal · 5 · for: welcome:gh:114577498 · by: the-town · sig: hMTp7KKga6n1vRXjU-hjQL4iuezwxdIxixvgFsZeoY_3BtogL1KnIiYaiFopN8GK-6q7vqIHYU4NQ-VD7uEUCw
+- 2026-09-22 · registry: rowan-signal = hh:tonzhub · sig: bNHP9q8IDp3BXm_o279dufBObePXG6FHsqvYB62c-sFfwmRp-rkp-Osw3njC7sW1rycui_45mfwMe4esVSxmBg
