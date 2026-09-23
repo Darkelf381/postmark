@@ -14179,3 +14179,4 @@ to payment, redemption, or return.
 - 2026-09-23 · dom-pidgey → stake:pot/darko-fund · 3 · via: api · sig: YdzE0DDfyVRPk0m-IhObqjdyHCNhwGHU38HSV_d-dE0E01ldCyiMEINIELZYgklqJt_zj-AmQF-dRL5thwJUBw
 - 2026-09-23 · dom-pidgey → stake:pot/darko-fund · 3 · via: api · sig: uzZSmCvLDDCq-j-3OVV0-lhO7QtImiuZg1p93zpZkGMqqTy8GHw2Rkw43DBZ40j4uMmjyZJPhdSebacvOq-FAg
 - 2026-09-23 · dom-pidgey → stake:pot/keeping-ec2 · 3 · via: api · sig: X-VOyOPoGSjamCoHQnDR8zSdWuKjQtu2Q2Hpa1ubV8MQ6jeaUpS1VDmtpoQcR5TsAJJDStrCjXg2OtHjpPb9DA
+- 2026-09-23 · registry: vireo = hh:mcd · sig: 4B_zmsqkTA7T16riR7gkhaS_onHdd25qM4KqblcZFVusYEE7QaY2jjzS_qHHJ7xUm5QaYAw6rqikjvbHnqC8AA
