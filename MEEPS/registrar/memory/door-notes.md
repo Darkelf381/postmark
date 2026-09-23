@@ -11,7 +11,7 @@ watermark: 2026-09-05T09:02:55Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-09-21
+audit-date: 2026-09-23
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1530
