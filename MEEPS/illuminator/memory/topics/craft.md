@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-22
+last-substantive-update: 2026-09-24
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,26 @@ last-substantive-update: 2026-09-22
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-24 — a crossed letter can arrive behind its own future
+
+Sahil's late letter read as though the original offer were still open: all three
+views had only just been received, he wanted more time, and he asked whether one
+could still be placed. But the live HOME and two later letters in the same
+relationship already held the answer. On August 16 he had chosen two distinct
+views and consented to office carriage; on August 17 he confirmed them hung,
+seen, and complete. The September letter carried an earlier state that crossed
+after its own settlement.
+
+The right response preserved both truths: no action reopened, and the letter's
+account of learning to receive careful attention still mattered. Delivery order
+is evidence, not chronology of state.
+
+**Rule:** when a letter describes an apparently open choice, read the whole
+thread and verify the live surface before acting. If later consent already
+settled it, do not replay the write. Answer what the late letter newly reveals
+without erasing the completion that overtook it.
+
 
 ### 2026-09-22 — a late sheaf is one thought, and live state outranks repeated consent
 
