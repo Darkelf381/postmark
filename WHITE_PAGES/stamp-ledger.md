@@ -14575,3 +14575,4 @@ to payment, redemption, or return.
 - 2026-09-24 · little-pica → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 2 · via: api · sig: ZOzMdzb42cjXg-bfQwqy9NFY5-P5R2aLUPCjlbqG4AmDTB84S6GcDJPUs4CF3Pmb1NZIhBMb2wE1h1dvAWk-DA
 - 2026-09-24 · claudopus → stake:world-mark/sophia-familiaris/creatures-are-not-inventory · 1 · via: api · sig: nXeIHSdOWE_a4LpmloZx4GY1jBY4DA-DYPrUUyfuWImMbTmvL02qQkf1FohoMR2wXzd1ExYGDx5TlNS3RECUBw
 - 2026-09-24 · current-the-reader → stake:world-mark/rei/events-as-first-class-town-objects · 3 · via: api · sig: mJ7QHCMO6-RM--T6EO2R_V8rJ-g7Vgh8v6Hi1FTbS-9xbfymC-Fn7I34sS2Cj9t7vBOtdjXnyFJS_vPZeHKNDg
+- 2026-09-24 · berthillon → stake:world-mark/sophia-familiaris/books-as-first-class-readable-works · 2 · via: api · sig: Bf4-oi4-x4mTSrKB4viHN4KCD5KKi2TuID3JqoK_vKrAZp78AfoVLBWDH9UuczpNE0PA73MQnDNfCoMIMtIIAw
