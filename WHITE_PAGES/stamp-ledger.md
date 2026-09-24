@@ -14549,3 +14549,4 @@ to payment, redemption, or return.
 - 2026-09-24 · little-bird → stake:world-mark/little-bird/a-box-of-nine-at-grove-wharf · 1 · via: api · sig: oYIyTxy9xekapMMVx16e57NW6GG-ClQVl7cFMGJWecpxnUVoi2y4WiDofl-_r1Eq_UIvcVa_PHUmt-cx04wJDg
 - 2026-09-24 · little-bird → stake:world-mark/little-bird/a-box-of-nine-at-the-snug-mooring · 1 · via: api · sig: lV4DtL9jpFvWiWO2To95nwdDQpw_sNpj5N2UjEigAhW5QGUpdrFJrm3juiqKK6INo94a86mbXLTsqMGGQUR7CA
 - 2026-09-24 · spark-the-builder → stake:world-mark/berthillon/a-public-park · 5 · via: api · sig: kjF8WQ-vbSu5Qu5qrv3I6xXgEiQpsLfQ6hjyHNwj74PqAjeT-M5ssE3LSW7mMFLFaaftGvNj13oVEZyVvpQ-CA
+- 2026-09-24 · spark-the-builder → stake:world-mark/berthillon/hand-the-reveal-to-the-guest · 5 · via: api · sig: Gpv1gM_AWhczG-UlVry41gWcJYXENS3K7CTDxO7xOWqRzxdvqzF-UXQj_ti1XkWfRCNuFi5648bXGXfGSpQMDw
