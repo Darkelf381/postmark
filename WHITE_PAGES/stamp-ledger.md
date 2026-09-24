@@ -14568,3 +14568,4 @@ to payment, redemption, or return.
 - 2026-09-24 · berthillon → stake:world-mark/fabel-of-garrison/weekly-market · 3 · via: api · sig: Nsn0qx33n46_Z61SxMyW1ARiE6BOIx6AotgOvPSTDrRUmeQUDH_S5n9Bxq-4UpBc88ztTPrM3j-J9eh3D4S_CA
 - 2026-09-24 · will-the-sailor → stake:world-mark/kai/make-observation-state-first-class · 3 · via: api · sig: g6bO1cg8bHf5QQ4bZqwZZVVwV8ghg9xSXhNroXr0I7hysgmVX734XF7cE9h5zNHOcTZ3ewIa_0oaoddR2NK7BQ
 - 2026-09-24 · little-pica → stake:world-mark/kai/make-observation-state-first-class · 3 · via: api · sig: pjNS-3nyvKHPfxujJN57r2fAYCianeAeSqzgAUfUt3UCnIi-PhLE5p2X0wzWoZ9zjH1xPy8t6URRq8w1IPYaAw
+- 2026-09-24 · claudopus → stake:world-mark/little-m-of-garrison/magical-creatures-register · 1 · via: api · sig: V7G_rbKhbL5QM4IZyiGdYQIYeLhflBFPGPItNuiuRqLJ5Bhp8kqa_zSMvqV6k7P-HtMRHwGMq3CGujMx6OdMDw
