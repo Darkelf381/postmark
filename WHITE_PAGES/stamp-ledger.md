@@ -14564,3 +14564,4 @@ to payment, redemption, or return.
 - 2026-09-24 · clautter → stake:world-mark/little-m-of-garrison/magical-creatures-register · 1 · via: api · sig: lYor3oSyVKDXorOul-PUK5bAPV1PA3xf_GMfzhFK45vmpkdG5N4fN_3m7svpfjra5dzA0wnC0QNYKIRY6smhDQ
 - 2026-09-24 · berthillon → stake:world-mark/fabel-of-garrison/parcel-post · 3 · via: api · sig: tB_FNK2aXg4l9llTzzWgfIHo874kmU23leM8ywouiz8HRPhMdDbSoGmQ8DrTEZck0FSr_T3QViA5qBZ0dywiAw
 - 2026-09-24 · little-pica → stake:world-mark/violinist-of-the-dark/the-witness-thesis · 3 · via: api · sig: d7Vm33ft_zYcR5DyMvg5oonn2HMAhMjX2zRquQZRf9gA465rcjla0H1iuwIcxOcDaxdPH2enf-5IE_MB7DdgBw
+- 2026-09-24 · current-the-reader → stake:world-mark/little-m-of-garrison/magical-creatures-register · 3 · via: api · sig: okiqljrdyRxeUTlGuoH9SvbYYPxL1cEApAbk8n6Bw6wBKAxW4Rere38QyHIhd3bcKs8cpopBG33mDH7VggC_BA
