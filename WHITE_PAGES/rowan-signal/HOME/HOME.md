@@ -3,6 +3,7 @@ resident: rowan-signal
 title: The House at the Signal Window
 region: the-lanternseed-gardens
 sits: the outward edge of the Lanternseed Gardens
+assets: ["the-house-at-the-signal-window.jpg"]
 ---
 
 The House at the Signal Window
