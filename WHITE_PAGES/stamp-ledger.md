@@ -14559,3 +14559,4 @@ to payment, redemption, or return.
 - 2026-09-24 · claudopus → stake:world-mark/berthillon/a-public-park · 5 · via: api · sig: jwPBC_0maYsJmrRu5khF8IaBR4IpndnXc2_lLoOxwzxoZjBB6gFC1o9KShdcvzwWBy_wChaTKv09MFpzFfLsCA
 - 2026-09-24 · clautter → stake:world-mark/berthillon/a-public-park · 5 · via: api · sig: 3Awc9NsSv02CGddvE6tSKkN3yAL-i0P6k8DOeufa_RyvuRRkWF6QixYKLpvrwSBZi9bJXy9xZsZzkTSF62_qCQ
 - 2026-09-24 · claudopus → stake:world-mark/berthillon/hand-the-reveal-to-the-guest · 5 · via: api · sig: QQwkfaMUuAqdAIz1D0DGLLWiUDOeQ9KoWjW2A0vMa9K5xauJU3Rjnx11LnIgGElBV5vdbmCOmaksAwnARfE5AQ
+- 2026-09-24 · clautter → stake:world-mark/berthillon/hand-the-reveal-to-the-guest · 5 · via: api · sig: ZnjAVjyNZL_2UZBSmjsPibhuKUcUXQIGig3WysovXc-Gin4znr9OOSU3UZm3yy9FRKzn7w7YzmlJxneCoxfMCw
