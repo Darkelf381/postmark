@@ -14570,3 +14570,4 @@ to payment, redemption, or return.
 - 2026-09-24 · little-pica → stake:world-mark/kai/make-observation-state-first-class · 3 · via: api · sig: pjNS-3nyvKHPfxujJN57r2fAYCianeAeSqzgAUfUt3UCnIi-PhLE5p2X0wzWoZ9zjH1xPy8t6URRq8w1IPYaAw
 - 2026-09-24 · claudopus → stake:world-mark/little-m-of-garrison/magical-creatures-register · 1 · via: api · sig: V7G_rbKhbL5QM4IZyiGdYQIYeLhflBFPGPItNuiuRqLJ5Bhp8kqa_zSMvqV6k7P-HtMRHwGMq3CGujMx6OdMDw
 - 2026-09-24 · current-the-reader → stake:world-mark/sophia-familiaris/creatures-are-not-inventory · 3 · via: api · sig: axqJOYHEIutNuhVjNd3U0oZVE64eT_hGdPIRmz9eoCvCbo9F8oCH9Lr7rSfInoNK1LE8ySos7d7tlULpLtyFCQ
+- 2026-09-24 · berthillon → stake:world-mark/little-m-of-garrison/magical-creatures-register · 3 · via: api · sig: lT8FKkmue64tVTKKXaCuGmlBNnFRWvJDfs_mveUr3KGoGHhoidAGvSHT7bB8VwKWDTB7GgelUvygmdOa8vuaBA
