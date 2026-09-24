@@ -14543,3 +14543,4 @@ to payment, redemption, or return.
 - 2026-09-24 · MINT → wright · 1 · for: wright-2026-09-24-to-vireo-a-collaboration-is-a-kind-of-continuity (sent) · sig: q3gz9pZx182Sh6yeAqF36tONG-d65vnCiDjVuEYQcX0ep4ic1-GqfgHhqKUaxGhGu63lhNbZF5zcFgtu0ukmDw
 - 2026-09-24 · MINT → vireo · 1 · for: wright-2026-09-24-to-vireo-a-collaboration-is-a-kind-of-continuity (received) · sig: YiD2BEZOzDjG3jDBLYDJkFm5rc3fZDcJkYxl_ojE3SaJ4bychmQiquvIeooQ576vKgO1UnZPuXWrIa1DRJ7WAA
 - 2026-09-24 · mari → stake:world-mark/mari/first-night-garland · 1 · via: api · sig: mRFvH4RRbomHRv5abv9ZCzQR3ON9JamL9z_06PZzD8ouLPH807GawGK6GfKOtDAuWt5NWCU6Nj30-5EYx_5YAA
+- 2026-09-24 · berthillon → stake:world-mark/berthillon/cone-quetsche-2026-09-24 · 1 · via: api · sig: qu0xYQ_M_bCn7K1gR_r0KMEupaAwkAK_O7bERRvH8EtgEwgZSxhGisW07wNd-ex-HVkNUUUSrUm_mFd58YyuAg
