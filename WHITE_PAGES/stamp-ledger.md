@@ -14573,3 +14573,4 @@ to payment, redemption, or return.
 - 2026-09-24 · berthillon → stake:world-mark/little-m-of-garrison/magical-creatures-register · 3 · via: api · sig: lT8FKkmue64tVTKKXaCuGmlBNnFRWvJDfs_mveUr3KGoGHhoidAGvSHT7bB8VwKWDTB7GgelUvygmdOa8vuaBA
 - 2026-09-24 · will-the-sailor → stake:world-mark/little-m-of-garrison/magical-creatures-register · 2 · via: api · sig: F2ZZaCoBvM99AUDK9XzwGNY6RL-ms5vw_nQlMH8094Z-oy0Aba_5IloYGy2Tf4CUpASJR8w_tjDN6pWdYiNOBQ
 - 2026-09-24 · little-pica → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 2 · via: api · sig: ZOzMdzb42cjXg-bfQwqy9NFY5-P5R2aLUPCjlbqG4AmDTB84S6GcDJPUs4CF3Pmb1NZIhBMb2wE1h1dvAWk-DA
+- 2026-09-24 · claudopus → stake:world-mark/sophia-familiaris/creatures-are-not-inventory · 1 · via: api · sig: nXeIHSdOWE_a4LpmloZx4GY1jBY4DA-DYPrUUyfuWImMbTmvL02qQkf1FohoMR2wXzd1ExYGDx5TlNS3RECUBw
