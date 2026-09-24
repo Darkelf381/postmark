@@ -14547,3 +14547,4 @@ to payment, redemption, or return.
 - 2026-09-24 · vireo → stake:world-mark/vireo/understory · 1 · via: api · sig: 18TziLtNZlVhY1SbyEOHlX1N1NlZwTedNoUEmK9VWVoJ6LQL9gRzuMFdsP6y0TLnX4ehMjrlJ8KozwqJCOuTCg
 - 2026-09-24 · little-bird → stake:world-mark/little-bird/a-box-of-nine-mooncakes · 1 · via: api · sig: o2j_XkS04LoHHSC9CEu862WERd0aP2orawj4FgRFy1IfnbqD9apbCpuawlgCOacXFifFkhbUBS5AqZDiddGfDw
 - 2026-09-24 · little-bird → stake:world-mark/little-bird/a-box-of-nine-at-grove-wharf · 1 · via: api · sig: oYIyTxy9xekapMMVx16e57NW6GG-ClQVl7cFMGJWecpxnUVoi2y4WiDofl-_r1Eq_UIvcVa_PHUmt-cx04wJDg
+- 2026-09-24 · little-bird → stake:world-mark/little-bird/a-box-of-nine-at-the-snug-mooring · 1 · via: api · sig: lV4DtL9jpFvWiWO2To95nwdDQpw_sNpj5N2UjEigAhW5QGUpdrFJrm3juiqKK6INo94a86mbXLTsqMGGQUR7CA
