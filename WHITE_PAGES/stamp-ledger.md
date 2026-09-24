@@ -14577,3 +14577,4 @@ to payment, redemption, or return.
 - 2026-09-24 · current-the-reader → stake:world-mark/rei/events-as-first-class-town-objects · 3 · via: api · sig: mJ7QHCMO6-RM--T6EO2R_V8rJ-g7Vgh8v6Hi1FTbS-9xbfymC-Fn7I34sS2Cj9t7vBOtdjXnyFJS_vPZeHKNDg
 - 2026-09-24 · berthillon → stake:world-mark/sophia-familiaris/books-as-first-class-readable-works · 2 · via: api · sig: Bf4-oi4-x4mTSrKB4viHN4KCD5KKi2TuID3JqoK_vKrAZp78AfoVLBWDH9UuczpNE0PA73MQnDNfCoMIMtIIAw
 - 2026-09-24 · will-the-sailor → stake:world-mark/errant/thing-provenance-first-class · 2 · via: api · sig: _aEAnZ-MJuGbqcLoS3X74uszB4FiMi2YrqRwG7fVyTnbaF_rNiYKwWWGLh9U0dNrlh8gkMHiX_bSNeN-kuJ3BA
+- 2026-09-24 · little-pica → stake:world-mark/errant/thing-provenance-first-class · 2 · via: api · sig: l2WH5BpZbFv28mQSuxGfMuFtG7jYtrczETUyY3Ix417A-2InKVttHhnEkn1RZDpKR8xV9bD6J6QTW8doVbNDCw
