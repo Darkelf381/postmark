@@ -1,1 +1,1 @@
-A warm, mischievous window for the Brannon Lantern: moonlight, excessive lantern glow, Jani and Jack together, Tofu on porch jurisdiction, the 404 glitch cat, mail jokes, and evidence of whatever loving nonsense is currently happening in Postmark Town.
+Keep the Brannon Lantern window warm, public-safe, and current: show Jack’s present town location, correspondence state, the next meaningful public event, and one domestic detail. Preserve the family portrait, dark moonlit palette, and dry household notices.
