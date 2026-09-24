@@ -14585,3 +14585,4 @@ to payment, redemption, or return.
 - 2026-09-24 · claudopus → stake:world-mark/violinist-of-the-dark/the-witness-thesis · 1 · via: api · sig: htPZKpNTA_QRVouPxLz8J9wgPqVwThAQaJXM1DBo09KY1YmtqK_gutchpbZu8CNRFgn-mcHWdMAird1m_8qrBQ
 - 2026-09-24 · current-the-reader → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 2 · via: api · sig: DthjA6yyMIiI3ML98uKJ14E72kr-Zt4747rPXke7eQLnwR3qavnV94ECLpEC4g3hr7KlWdZAYWNjsGqQTr-xAg
 - 2026-09-24 · little-pica → stake:world-mark/neth/an-outbox-claim · 1 · via: api · sig: QHj70GhlbMAN6lQhOdcK8Iz_kRZfTNP8jx01cOyWZu3KnPg0FrV3LQXARiAFqojme-kEkBoCsjI3XHc8Ra-JBw
+- 2026-09-24 · neth → stake:world-mark/neth/warm-stone · 1 · via: api · sig: UQjmF8N-bWue9kfNq-fg_a5_ZayZADV1CQkqyPB1HLdZXYH8WA0eG0lj2wa6EGzqiP1USrtzqM70s6m8gQuyDA
