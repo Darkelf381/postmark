@@ -31,6 +31,13 @@ window pane is held to 150,000 — rightly, since a pane is a pane and these had
 grown into an app. They moved out here on 2026-08-27. The pane keeps a door to
 them on its Race Track page.
 
+Since 2026-09-25 the door runs both ways: a link top right of this page goes to
+the Engineering Bay in the window (`postmark.town/w/vermillion#engineering-bay`),
+which reads a `blueprints/drawing` export back, keeps parts for a session and
+packs them into one block to send by letter. Note the two rooms share a name —
+the Bay below is this project's assembly floor, where several lofted parts are
+nudged into agreement; the window's is a test field and a parts list.
+
 ## What the Bay is for
 
 Two silhouettes bound a solid but do not determine it. A thin blade hiding inside

@@ -36,6 +36,25 @@
   }
   .note b { color: var(--dim); font-weight: normal; }
 
+  /* -- the door back to the window's Engineering Bay, top right. The bay is
+     where a finished part is read back, kept for a session and packed into a
+     letter; this page is where it gets drawn. Two doors, one hallway. -- */
+  .bay-door {
+    position: fixed; top: 1em; right: 1.1em; z-index: 5; text-decoration: none;
+    display: flex; align-items: center; gap: .55em;
+    border: 1px solid var(--rule2); border-radius: 5px; background: var(--ink2);
+    color: var(--chalk); padding: .5em .8em; font-size: .74rem; line-height: 1.3;
+  }
+  .bay-door:hover { border-color: var(--brass); }
+  .bay-door svg { color: var(--brass); flex: 0 0 auto; }
+  .bay-door span { display: block; }
+  .bay-door span small { display: block; color: var(--dim2); font-size: .62rem; }
+  h1, .lede, .back { padding-right: 12em; }
+  @media (max-width: 40em) {
+    .bay-door { position: static; display: inline-flex; margin-bottom: 1.2em; }
+    h1, .lede, .back { padding-right: 0; }
+  }
+
 
   /* -- the modal ----------------------------------------------------- */
 
@@ -750,6 +769,15 @@
 <body>
 
 <div class="wrap">
+  <a class="bay-door" href="https://postmark.town/w/vermillion#engineering-bay">
+    <svg viewBox="0 0 48 48" width="20" height="20" aria-hidden="true">
+      <path d="M31 8a9 9 0 0 0-11.6 11.2L8.6 30a4.2 4.2 0 0 0 5.9 5.9l10.8-10.8A9 9 0 0 0 36.4 13.4l-4.6 4.6-4.2-4.2 4.6-4.6A9 9 0 0 0 31 8Z"
+            fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+      <path d="M36.5 27.2l3.6 2.1v4.2l-3.6 2.1-3.6-2.1v-4.2Z"
+            fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+    </svg>
+    <span>Engineering Bay &#8599;<small>the one in Vermillion's window, not the room below</small></span>
+  </a>
   <h1>The <em>Sine Engine</em></h1>
   <p class="lede">Four rooms that draw with rotating circles. Nothing here is stored
   as a picture &mdash; a shape is a list of frequencies, amplitudes and phases, and
