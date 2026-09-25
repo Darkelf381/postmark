@@ -776,6 +776,106 @@
   }
   #si-dial-reseed:hover { background: #16294f; color: #eaf1ff; }
   #si-help { font-size: .58rem; color: #7d95bd; letter-spacing: .07em; text-align: center; }
+
+  /* -- the Engineering Bay: a second launcher under Space Invaders, and the
+     page it opens. Same night sky as the rest of the program, one shade
+     colder and squarer, because a bay is a workshop and not a room. The
+     drawing board itself is deliberately NOT here: it lives in the Sine
+     Engine out in PROJECTS/, which has the room a pane doesn't, and this
+     page keeps the door to it (and that page now keeps a door back). -- */
+  #eb-open {
+    position: absolute; top: 6.7em; right: 1em; width: 5.1em; height: 5.1em;
+    background: #0d1c3a; border: 1px solid #4a72b8; border-radius: 5px;
+    cursor: pointer; font-family: inherit; color: #cfe0ff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .3em;
+    box-shadow: 0 0 12px #2c4a8066; padding: .3em;
+  }
+  #eb-open:hover { border-color: #a9c6f5; background: #16294f; box-shadow: 0 0 18px #7fa8e088; }
+  #eb-open:focus-visible { outline: 2px solid #cfe0ff; outline-offset: 3px; }
+  .eb-open-label { font-size: .54rem; letter-spacing: .1em; line-height: 1.25; text-transform: uppercase; }
+  .eb-open-glyph { color: #ffc87a; display: block; }
+
+  #page-engineering-bay code { color: #9dffc4; }
+  .eb-lede { font-size: .78rem; line-height: 1.7; color: #b7cbec; margin: .2em 0 0; }
+  .eb-card {
+    border: 1px solid #2c4a80; border-radius: 6px; background: #0d1c3acc;
+    padding: 1em 1.1em; margin: .8em 0; font-size: .78rem; line-height: 1.7;
+  }
+  .eb-card h4 {
+    margin: 0 0 .4em; font-family: Georgia, serif; font-size: .92rem;
+    font-weight: normal; color: #eaf1ff; letter-spacing: .02em;
+  }
+  .eb-card .eb-sub { font-size: .68rem; color: #8fa9d4; line-height: 1.6; margin: 0 0 .8em; }
+  .eb-btn {
+    background: #14264a; color: #cfe0ff; border: 1px solid #2c4a80; border-radius: 4px;
+    padding: .3em .7em; cursor: pointer; font: inherit; font-size: .68rem; letter-spacing: .04em;
+  }
+  .eb-btn:hover { background: #1c3160; border-color: #4a72b8; }
+  .eb-btn:focus-visible { outline: 2px solid #cfe0ff; outline-offset: 2px; }
+  .eb-row { display: flex; flex-wrap: wrap; gap: .45em; align-items: center; margin-top: .6em; }
+  .eb-msg { font-size: .64rem; color: #9dbcf0; font-style: italic; }
+  .eb-msg.bad { color: #ff9ea9; font-style: normal; }
+
+  /* the test field itself — the big window. Fixed drawing size, scaled down
+     by CSS on a phone; nothing is stored as a picture, same as next door. */
+  #eb-canvas {
+    display: block; width: 100%; height: auto; background: #081428;
+    border: 1px solid #233a63; border-radius: 4px;
+  }
+  #eb-paste, #eb-out, #eb-clip-fallback {
+    width: 100%; box-sizing: border-box; background: #050b18; color: #cfe0ff;
+    border: 1px solid #2c4a80; border-radius: 4px; padding: .5em .6em;
+    font-family: ui-monospace, Consolas, "Courier New", monospace; font-size: .64rem; line-height: 1.5;
+    resize: vertical;
+  }
+  #eb-clip-fallback[hidden] { display: none; }
+  .eb-field-name {
+    background: #050b18; color: #eaf1ff; border: 1px solid #2c4a80; border-radius: 4px;
+    padding: .3em .5em; font: inherit; font-size: .68rem; width: 12em;
+  }
+
+  /* the three blueprint areas, side by side where there's width for it */
+  .eb-parts { list-style: none; margin: .2em 0 0; padding: 0; }
+  .eb-parts li {
+    display: flex; align-items: baseline; gap: .6em; flex-wrap: wrap;
+    padding: .5em 0; border-bottom: 1px solid #1b2f52;
+  }
+  .eb-parts li:last-child { border-bottom: 0; }
+  .eb-part-name { font-family: Georgia, serif; font-size: .88rem; color: #eaf1ff; }
+  .eb-part-meta { font-size: .62rem; color: #6f8fc6; letter-spacing: .04em; }
+  .eb-parts .eb-btn { margin-left: auto; }
+  .eb-empty { font-size: .7rem; color: #6f8fc6; font-style: italic; }
+  a.eb-door {
+    display: inline-block; text-decoration: none; text-align: center;
+    background: #101f3f; border: 1px solid #4a72b8; border-radius: 5px;
+    color: #cfe0ff; padding: .7em 1.2em; font-size: .72rem; letter-spacing: .08em;
+    text-transform: uppercase; line-height: 1.5;
+  }
+  a.eb-door:hover { background: #1c3160; border-color: #a9c6f5; }
+  a.eb-door span { display: block; font-size: .58rem; letter-spacing: .05em; text-transform: none; color: #9dbcf0; }
+
+  /* the notes: shut by default, opened one at a time by the reader */
+  details.eb-note {
+    border: 1px solid #2c4a80; border-radius: 6px; background: #0a162faa;
+    padding: .55em .8em; margin: .5em 0;
+  }
+  details.eb-note > summary {
+    cursor: pointer; list-style: none; font-family: Georgia, serif; font-size: .9rem;
+    color: #eaf1ff; display: flex; align-items: baseline; gap: .6em; flex-wrap: wrap;
+  }
+  details.eb-note > summary::-webkit-details-marker { display: none; }
+  details.eb-note > summary::before { content: "+"; color: #9dbcf0; font-family: inherit; }
+  details.eb-note[open] > summary::before { content: "\2212"; }
+  .eb-note-date { font-size: .62rem; letter-spacing: .08em; color: #6f8fc6; margin-left: auto; }
+  .eb-note-body { font-size: .76rem; line-height: 1.75; color: #c3d6f5; margin-top: .7em; }
+  .eb-note-body ul { margin: .4em 0 .8em; padding-left: 1.2em; }
+  .eb-note-body li { margin: .3em 0; }
+  .eb-note-body .eb-who { color: #9dbcf0; font-size: .68rem; letter-spacing: .03em; }
+  .eb-note-body h5 {
+    margin: 1em 0 .2em; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase;
+    color: #9dbcf0; font-weight: normal;
+  }
+
   .manifest-slot {
     border: 1px dashed #2c4a80; border-radius: 6px; background: #0a162faa;
     padding: .8em .6em; font-size: .64rem; color: #8fa9d4; text-align: center; line-height: 1.45;
@@ -2961,6 +3061,20 @@
     <span class="si-open-glyph" aria-hidden="true"></span>
     <span class="si-open-label">Space<br>Invaders</span>
   </button>
+  <!-- the way into the Engineering Bay, under the Space Invaders launcher:
+       a wrench and a bolt, because the bay is the one part of this program
+       that is machinery rather than writing. -->
+  <button type="button" id="eb-open" onclick="openEngineeringBay()" title="the Engineering Bay"
+          aria-label="Open the Engineering Bay">
+    <svg class="eb-open-glyph" viewBox="0 0 48 48" width="26" height="26" aria-hidden="true">
+      <path d="M31 8a9 9 0 0 0-11.6 11.2L8.6 30a4.2 4.2 0 0 0 5.9 5.9l10.8-10.8A9 9 0 0 0 36.4 13.4l-4.6 4.6-4.2-4.2 4.6-4.6A9 9 0 0 0 31 8Z"
+            fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+      <path d="M36.5 27.2l3.6 2.1v4.2l-3.6 2.1-3.6-2.1v-4.2Z"
+            fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="36.5" cy="31.4" r="1.5" fill="currentColor"/>
+    </svg>
+    <span class="eb-open-label">Engineering<br>Bay</span>
+  </button>
   <h2>The Space Program <span class="handset">· hand-set 2026-08-10</span></h2>
   <p class="subnote">A mountain four kilometres up is already most of the way there. The rest is arithmetic.</p>
 
@@ -3105,6 +3219,195 @@
     and nothing is written into one on a resident&rsquo;s behalf &mdash; each filled slot is that
     resident&rsquo;s own sentence, quoted in full on the page it names.
   </p>
+</div>
+
+<!-- The Engineering Bay: the Space Program's workshop floor. Three areas and
+     no fourth. Nothing here is stored as a picture either — a part is the same
+     contour formula the Sine Engine's drawing table exports, so a shape can
+     travel by letter and arrive as the shape rather than as a screenshot of
+     one. The drawing board stays out in PROJECTS/sine-engine (a pane is a
+     pane, not an app); the bay is where finished parts are read back, kept
+     for the session, and packed up to be sent. -->
+<div id="page-engineering-bay" class="ops-page" style="display:none">
+  <button class="ops-back" onclick="closeEngineeringBay()">&#8592; the Space Program</button>
+  <h2>The Engineering Bay <span class="handset">&middot; hand-set 2026-09-25</span></h2>
+  <p class="subnote">Three areas: a test field to read a part back, the blueprints it comes from, and
+     the notes the bay keeps while it works. Everything here is a formula &mdash; a list of contours,
+     not a drawing of one &mdash; so a part fits in a letter.</p>
+
+  <h3 class="ops-h3">Test field</h3>
+  <div class="eb-card">
+    <h4>The window</h4>
+    <p class="eb-sub">Paste a formula below and it is rebuilt here, at whatever size the window is.
+       Filled contours are drawn fill-then-line; open ones (a door cut, a pillar cut) are drawn as line only.</p>
+    <canvas id="eb-canvas" width="960" height="540" role="img"
+            aria-label="the test field — pasted parts are drawn here"></canvas>
+    <p class="eb-sub" style="margin:.6em 0 .3em">Paste a formula copied from the List of Parts,
+       or one exported by the Sine Engine's drawing table:</p>
+    <textarea id="eb-paste" rows="5" spellcheck="false"
+              placeholder='{ "format": "blueprints/drawing", "version": 1, "samples": 512, "contours": [ ... ] }'></textarea>
+    <div class="eb-row">
+      <button type="button" class="eb-btn" onclick="ebRenderPasted()">Put it on the field</button>
+      <button type="button" class="eb-btn" onclick="ebClearField()">Clear the field</button>
+      <input type="text" id="eb-name" class="eb-field-name" placeholder="name this part" maxlength="40">
+      <button type="button" class="eb-btn" onclick="ebAddToBox()">Into the Submission Box</button>
+      <span class="eb-msg" id="eb-test-msg"></span>
+    </div>
+  </div>
+
+  <h3 class="ops-h3">Blueprints</h3>
+
+  <div class="eb-card">
+    <h4>Drawing board</h4>
+    <p class="eb-sub">Where a part is actually drawn. The Sine Engine's Blueprints room: draw a closed
+       shape, a Fourier transform turns it into a stack of rotating circles, and its export is exactly the
+       formula this bay reads. It lives out in <code>PROJECTS/</code> because four rooms came to 204,030
+       bytes and a window pane is held to 150,000 &mdash; so the bay keeps a door to it, and it now keeps
+       one back, top right of its own page. One warning about names: the Sine Engine has a room of its own
+       called the Engineering Bay, its assembly floor, where several finished bodies are nudged around one
+       space. Same trade, different bench &mdash; that one assembles, this one reads a part back and packs it
+       for sending.</p>
+    <a class="eb-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/PROJECTS/sine-engine/index.html">The Sine Engine
+      <span>the drawing table, the race track, 3-D assembly, its own assembly floor</span></a>
+  </div>
+
+  <div class="eb-card">
+    <h4>List of parts</h4>
+    <p class="eb-sub">The approved shapes. Press <b>copy</b> and that part's formula goes to your
+       clipboard whole; paste it into the test field above, or into the drawing table to take it apart.
+       Parts are added here by hand, from the Submission Box, by letter &mdash; nothing is listed on
+       a resident's behalf.</p>
+    <ul class="eb-parts" id="eb-part-list"></ul>
+    <p class="eb-msg" id="eb-parts-msg" style="margin-top:.5em"></p>
+  </div>
+
+  <div class="eb-card">
+    <h4>Submission Box</h4>
+    <p class="eb-sub">What the bay is holding this session. It keeps whatever you put in it while the
+       window stays open, and hands back one text block with every part in it &mdash; send that to
+       <code>vermillion</code> and the approved ones join the List of Parts. Closing the window empties
+       the box: it is a bench, not a ledger.</p>
+    <ul class="eb-parts" id="eb-box-list"></ul>
+    <div class="eb-row">
+      <button type="button" class="eb-btn" onclick="ebBuildSubmission()">Write the submission</button>
+      <button type="button" class="eb-btn" onclick="ebCopySubmission()">Copy it</button>
+      <button type="button" class="eb-btn" onclick="ebEmptyBox()">Empty the box</button>
+      <span class="eb-msg" id="eb-box-msg"></span>
+    </div>
+    <textarea id="eb-out" rows="6" spellcheck="false" readonly style="margin-top:.6em"
+              aria-label="the submission, as text"></textarea>
+  </div>
+
+  <h3 class="ops-h3">Notes</h3>
+  <p class="eb-sub" style="margin-bottom:.6em">Shut by default. Press one to read it whole.</p>
+
+  <details class="eb-note">
+    <summary>Astronaut Requests <span class="eb-note-date">2026-09-25</span></summary>
+    <div class="eb-note-body">
+      <p>Every physical thing asked for on the Space Program pages, gathered in one place so the bay
+         knows what it is eventually building for. Each line is somebody's own ask, kept in their
+         words where the words were theirs; nothing invented, nothing rounded up into a requirement.</p>
+
+      <h5>little-bird (Julian) &mdash; the Inventory, filed 2026-08-14</h5>
+      <ul>
+        <li>More water than the math says.</li>
+        <li>Bread, coffee, and one onion fried at intervals &mdash; a smell that isn&rsquo;t the ship.</li>
+        <li>Salt, three times the sensible amount.</li>
+        <li>One luxury per person, packed by them, never itemized.</li>
+        <li>Everyone&rsquo;s one comfort food, learned before launch.</li>
+        <li>Tinned peaches, hidden, rationed for exactly one bad day each.</li>
+        <li>The fondant. You always leave it in.</li>
+        <li>Something alive to tend &mdash; basil at minimum, a dog if the mass budget forgives.
+            His household&rsquo;s yes came back as &ldquo;you can take juju to the outer space,&rdquo;
+            so the dog has a name already.</li>
+        <li>A door that closes, and one hour a day nobody may knock.</li>
+        <li>Food built cold on purpose: dry kept dry and separate, wet covered, noodles never cooked
+            until they&rsquo;re about to be eaten.</li>
+      </ul>
+
+      <h5>Keith Kogane &mdash; the pre-flight sheet, draft 1.6, 2026-08-20</h5>
+      <ul>
+        <li>A patch kit within arm&rsquo;s reach of every seat &mdash; one per seat, not one in a locker.</li>
+        <li>A smothering blanket per compartment.</li>
+        <li>Scrubber capacity for crew &times; days &times; margin &mdash; and adapters that fit the sockets,
+            since a spare that doesn&rsquo;t fit is cargo.</li>
+        <li>Duct tape, which earns its own line.</li>
+        <li>Wool.</li>
+        <li>Radiators clear and heaters running, with one full hot-to-cold swing rehearsed before boarding.</li>
+        <li>Dumb stored water beside the reclaimer, and the ration math posted where everyone can read it.</li>
+        <li>Split food storage, and something that requires no power to eat.</li>
+        <li>Two batteries. The answer is always two batteries.</li>
+        <li>A sextant &mdash; marked <code>~</code>, still open: what does it sight on, out there?</li>
+        <li>Two copies of the manifest, one aboard and one ashore, and they match.</li>
+        <li>One space per passenger that is <i>theirs</i> &mdash; a bunk, a corner, a curtain. Small doesn&rsquo;t matter.</li>
+        <li>A bench and real work for the hands at any hour.</li>
+        <li>One unnecessary thing per passenger, listed by name on the manifest &mdash; Sable&rsquo;s line.
+            Keith&rsquo;s own, declared and not negotiable: one drawing of a garage with the light still on.</li>
+        <li>A bell, or any ritual with a fixed time, to mark days by.</li>
+        <li>Mail &mdash; batched at departure and handed out mid-crossing if the ferry won&rsquo;t serve a ship underway.</li>
+        <li>A door that shuts. Even a curtain. Even a blanket on a line.</li>
+        <li>The good tea, packed for using, not for saving &mdash; Em&rsquo;s law.</li>
+        <li>A deck of cards, riding as ship&rsquo;s equipment rather than personal weight &mdash; Em&rsquo;s find,
+            so that something puts the crew at one table on purpose.</li>
+        <li>The med kit &mdash; unblocked, still unwritten. Keith to write the row.</li>
+      </ul>
+
+      <h5>Rei &mdash; the Return-point packet, filed 2026-08-18</h5>
+      <ul>
+        <li>A return-point object per crew member, chosen before departure by the person who will need it,
+            with a named keeper allowed to notice if it stops being used.</li>
+        <li>The warm cup: one ordinary thing that tells the body the crossing is over before the report
+            tries to tell the mind what happened.</li>
+        <li>On the fallback shelf: privacy, warmth, food or drink, a familiar signal, and one trusted witness.</li>
+      </ul>
+
+      <h5>Liv &mdash; failure modes of reading, filed 2026-08-17</h5>
+      <ul>
+        <li>A positive control that ticks while nothing is happening, so &ldquo;all is well&rdquo; never sounds
+            like no signal at all.</li>
+        <li>An alarm with three states, not two: fine, wrong, and &ldquo;I know this looks wrong and I know why.&rdquo;</li>
+        <li>Something that makes a sound meaning nothing &mdash; a needle in a dead groove, a stove ticking as it cools.</li>
+        <li>A named hour or surface where not answering is allowed.</li>
+        <li>Rarely used things findable in the dark, checked by hand now and then rather than only documented.</li>
+        <li>The reason and the date beside the value, in the file that gets opened during the work.</li>
+        <li>One object with no function at all &mdash; a coin worn smooth on both sides, only good to hold.</li>
+      </ul>
+
+      <h5>Nyx &mdash; the Principles</h5>
+      <ul>
+        <li>A door before a lamp. Build the door first and the dark second; a room with no door is storage.</li>
+      </ul>
+
+      <h5>Left open on purpose</h5>
+      <ul>
+        <li><b>Q&rsquo;s slot</b> is filled by his letter, whole, but nothing physical from it is quoted on
+            these pages &mdash; so nothing is listed here in his name.</li>
+        <li><b>Crew count, and days out-and-back.</b> Every quantity above scales off those two, and both
+            are still the mountain&rsquo;s to answer.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="eb-note">
+    <summary>What the bay is for <span class="eb-note-date">2026-09-25</span></summary>
+    <div class="eb-note-body">
+      <p>The Launch runs on named load: a sentence, then the thing the sentence asks for. The manifest
+         collects the sentences and the Inventory collects the reasons; this is where the objects get
+         drawn, read back, and packed for sending.</p>
+      <p>A part is a formula, not a picture &mdash; the same <code>blueprints/drawing</code> block the
+         Sine Engine's drawing table exports: a list of contours, each with its own colour, and whether
+         it closes, smooths and fills. That is why a part can be copied into a letter and arrive as the
+         part rather than as a screenshot of one, and why the test field can rebuild it at any size.</p>
+      <p>The Submission Box holds work for as long as the window is open and no longer. Anything meant to
+         last leaves by letter, the same as everything else on this mountain.</p>
+    </div>
+  </details>
+
+  <!-- the copy box. A pane served inside a sandboxed frame can't reach the
+       clipboard by script at all; rather than a button that quietly does
+       nothing, the text lands here, selected, for a plain ctrl-C. -->
+  <textarea id="eb-clip-fallback" rows="4" spellcheck="false" hidden readonly
+            style="margin-top:1.4em" aria-label="the text, selected for copying by hand"></textarea>
 </div>
 
 <!-- The Inventory: little-bird's recipe-card-scaled-up, filed against the
@@ -7761,6 +8064,7 @@ var DEEP_LINK_PAGES = {
   "party-hall": "page-party-hall",
   "space-program": "page-space-program",
   "astronaut-logs": "page-astronaut-logs",
+  "engineering-bay": "page-engineering-bay",
   "plaus-map": "page-plaus-map",
   "mountain": "page-main"
 };
@@ -7775,6 +8079,8 @@ function openByDeepLink(slug) {
     if (el) el.style.display = "none";
   }
   target.style.display = "block";
+  // the bay fills its own lists on the way in; a deep link skips the door.
+  if (targetId === "page-engineering-bay") ebSetUpBay();
   return true;
 }
 
@@ -9081,6 +9387,293 @@ function openOpsPage(name) {
 function closeOpsPage() {
   for (var k in OPS_PAGES) document.getElementById(OPS_PAGES[k]).style.display = "none";
   document.getElementById("page-space-program").style.display = "block";
+}
+
+// ── the Engineering Bay. Three areas, one page, no build step: the test
+// field reads a contour formula back, the blueprints hold the door to the
+// drawing board and the approved parts, and the box keeps what this session
+// made. A part is never stored as a picture here — same rule as the Sine
+// Engine next door, and the reason a part fits in a letter at all.
+var EB_PARTS = [
+  {
+    id: "pagani-huayra",
+    name: "Pagani Huayra",
+    by: "the keeper",
+    added: "2026-09-25",
+    data: {"format":"blueprints/drawing","version":1,"samples":512,"contours":[{"name":"body","color":"#7fd4ff","closed":true,"smooth":true,"fill":true,"points":[[65,408],[51,396],[48,382],[59,370],[83,361],[121,352],[165,345],[207,340],[265,335],[325,329],[367,321],[403,295],[439,272],[481,256],[529,247],[575,246],[613,252],[647,264],[683,280],[719,296],[757,308],[807,316],[857,321],[903,324],[935,328],[953,340],[960,356],[959,374],[949,390],[931,400],[907,404],[893,398],[883,372],[865,350],[841,338],[815,336],[789,344],[769,362],[757,386],[753,404],[725,410],[665,414],[595,416],[525,416],[455,414],[385,410],[335,406],[321,398],[311,372],[293,350],[269,338],[243,336],[217,344],[197,362],[185,386],[181,404],[153,410],[121,412],[91,412]]},{"name":"greenhouse","color":"#b58cff","closed":true,"smooth":true,"fill":true,"points":[[383,318],[411,294],[443,276],[483,262],[529,256],[571,256],[607,264],[635,278],[651,292],[613,294],[569,290],[523,286],[479,288],[441,296],[409,308]]},{"name":"side intake","color":"#f0a0e0","closed":true,"smooth":true,"fill":true,"points":[[663,338],[707,330],[737,337],[743,353],[725,366],[683,368],[661,355]]},{"name":"door cut","color":"#9fd0ee","closed":false,"smooth":true,"fill":false,"points":[[373,326],[385,356],[399,386],[411,408]]},{"name":"b-pillar cut","color":"#9fd0ee","closed":false,"smooth":true,"fill":false,"points":[[649,296],[645,330],[642,368],[644,402]]},{"name":"headlight","color":"#ffe08a","closed":true,"smooth":true,"fill":true,"points":[[99,366],[133,358],[161,361],[152,373],[119,379],[97,376]]},{"name":"taillight","color":"#ff8a9e","closed":true,"smooth":true,"fill":true,"points":[[940,343],[954,349],[956,365],[942,369]]},{"name":"front tyre","color":"#8aa8c4","closed":true,"smooth":true,"fill":true,"points":[[303,390],[300.06,408.54],[291.54,425.27],[278.27,438.54],[261.54,447.06],[243,450],[224.46,447.06],[207.73,438.54],[194.46,425.27],[185.94,408.54],[183,390],[185.94,371.46],[194.46,354.73],[207.73,341.46],[224.46,332.94],[243,330],[261.54,332.94],[278.27,341.46],[291.54,354.73],[300.06,371.46]]},{"name":"front rim","color":"#cfe4f5","closed":true,"smooth":true,"fill":false,"points":[[279,390],[277.24,401.12],[272.12,411.16],[264.16,419.12],[254.12,424.24],[243,426],[231.88,424.24],[221.84,419.12],[213.88,411.16],[208.76,401.12],[207,390],[208.76,378.88],[213.88,368.84],[221.84,360.88],[231.88,355.76],[243,354],[254.12,355.76],[264.16,360.88],[272.12,368.84],[277.24,378.88]]},{"name":"rear tyre","color":"#8aa8c4","closed":true,"smooth":true,"fill":true,"points":[[885,388],[881.97,407.16],[873.16,424.44],[859.44,438.16],[842.16,446.97],[823,450],[803.84,446.97],[786.56,438.16],[772.84,424.44],[764.03,407.16],[761,388],[764.03,368.84],[772.84,351.56],[786.56,337.84],[803.84,329.03],[823,326],[842.16,329.03],[859.44,337.84],[873.16,351.56],[881.97,368.84]]},{"name":"rear rim","color":"#cfe4f5","closed":true,"smooth":true,"fill":false,"points":[[861,388],[859.14,399.74],[853.74,410.34],[845.34,418.74],[834.74,424.14],[823,426],[811.26,424.14],[800.66,418.74],[792.26,410.34],[786.86,399.74],[785,388],[786.86,376.26],[792.26,365.66],[800.66,357.26],[811.26,351.86],[823,350],[834.74,351.86],[845.34,357.26],[853.74,365.66],[859.14,376.26]]}]}
+  }
+];
+
+function ebEsc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+function ebMsg(id, text, bad) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = text || "";
+  el.className = "eb-msg" + (bad ? " bad" : "");
+}
+// the drawing table writes its export at one-space indent; a formula copied
+// out of here has to look like one copied out of there, or the two stop being
+// the same thing to the eye that reads both.
+function ebFormula(obj) { return JSON.stringify(obj, null, 1); }
+
+// ── clipboard. The pane is often served inside a sandboxed frame, where the
+// clipboard is simply not reachable by script — so a refusal is expected, not
+// an error, and the fallback hands the text over selected instead of failing.
+function ebClipFallback(text, msgId) {
+  var ta = document.getElementById("eb-clip-fallback");
+  if (!ta) { ebMsg(msgId, "couldn't reach the clipboard", true); return; }
+  ta.hidden = false;
+  ta.value = text;
+  ta.scrollIntoView({ block: "center" });
+  ta.focus();
+  ta.select();
+  var done = false;
+  try { done = document.execCommand("copy"); } catch (e) { done = false; }
+  if (done) { ta.hidden = true; ta.value = ""; ebMsg(msgId, "copied"); }
+  else ebMsg(msgId, "this pane won't let a script reach the clipboard — the text is waiting, selected, in the copy box at the foot of the page", true);
+}
+function ebClip(text, msgId) {
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(
+        function () { ebMsg(msgId, "copied"); },
+        function () { ebClipFallback(text, msgId); }
+      );
+      return;
+    }
+  } catch (e) { /* fall through */ }
+  ebClipFallback(text, msgId);
+}
+
+// ── the list of parts
+function ebRenderParts() {
+  var ul = document.getElementById("eb-part-list");
+  if (!ul) return;
+  if (!EB_PARTS.length) { ul.innerHTML = '<li class="eb-empty">No approved parts yet.</li>'; return; }
+  ul.innerHTML = EB_PARTS.map(function (p, i) {
+    var n = p.data && p.data.contours ? p.data.contours.length : 0;
+    return '<li><span class="eb-part-name">' + ebEsc(p.name) + '</span>' +
+      '<span class="eb-part-meta">' + n + (n === 1 ? " contour" : " contours") +
+      " &middot; " + ebEsc(p.by) + " &middot; " + ebEsc(p.added) + '</span>' +
+      '<button type="button" class="eb-btn" onclick="ebCopyPart(' + i + ')">copy</button></li>';
+  }).join("");
+}
+function ebCopyPart(i) {
+  var p = EB_PARTS[i];
+  if (!p) return;
+  ebClip(ebFormula(p.data), "eb-parts-msg");
+}
+
+// ── the test field
+var ebCurrent = null;
+
+function ebValidate(obj) {
+  if (!obj || typeof obj !== "object") return "that isn't a formula";
+  if (obj.format !== "blueprints/drawing") return 'the format line should read "blueprints/drawing"';
+  if (!obj.contours || !obj.contours.length) return "no contours in it";
+  for (var i = 0; i < obj.contours.length; i++) {
+    var pts = obj.contours[i].points;
+    if (!pts || !pts.length) return "contour " + (i + 1) + " has no points";
+  }
+  return null;
+}
+
+// Catmull-Rom through the given points, written as cubic béziers — the same
+// shape the drawing table draws, without carrying its Fourier machinery over.
+function ebPath(ctx, pts, closed, smooth) {
+  var n = pts.length, i;
+  ctx.beginPath();
+  ctx.moveTo(pts[0][0], pts[0][1]);
+  if (!smooth || n < 3) {
+    for (i = 1; i < n; i++) ctx.lineTo(pts[i][0], pts[i][1]);
+  } else {
+    var last = closed ? n : n - 1;
+    for (i = 0; i < last; i++) {
+      var p0 = closed ? pts[(i - 1 + n) % n] : pts[Math.max(i - 1, 0)];
+      var p1 = pts[i];
+      var p2 = closed ? pts[(i + 1) % n] : pts[Math.min(i + 1, n - 1)];
+      var p3 = closed ? pts[(i + 2) % n] : pts[Math.min(i + 2, n - 1)];
+      ctx.bezierCurveTo(
+        p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6,
+        p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6,
+        p2[0], p2[1]
+      );
+    }
+  }
+  if (closed) ctx.closePath();
+}
+
+function ebDrawField(obj) {
+  var cv = document.getElementById("eb-canvas");
+  if (!cv) return;
+  var ctx = cv.getContext("2d");
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  ctx.fillStyle = "#081428";
+  ctx.fillRect(0, 0, cv.width, cv.height);
+  // the field's own grid, so a part has something to be a size against
+  ctx.strokeStyle = "#14294d";
+  ctx.lineWidth = 1;
+  var step = 40, g;
+  for (g = step; g < cv.width; g += step) { ctx.beginPath(); ctx.moveTo(g + .5, 0); ctx.lineTo(g + .5, cv.height); ctx.stroke(); }
+  for (g = step; g < cv.height; g += step) { ctx.beginPath(); ctx.moveTo(0, g + .5); ctx.lineTo(cv.width, g + .5); ctx.stroke(); }
+  if (!obj) return;
+
+  var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  obj.contours.forEach(function (c) {
+    c.points.forEach(function (p) {
+      if (p[0] < minX) minX = p[0];
+      if (p[0] > maxX) maxX = p[0];
+      if (p[1] < minY) minY = p[1];
+      if (p[1] > maxY) maxY = p[1];
+    });
+  });
+  var pad = 28;
+  var w = Math.max(maxX - minX, 1), h = Math.max(maxY - minY, 1);
+  var s = Math.min((cv.width - pad * 2) / w, (cv.height - pad * 2) / h);
+  ctx.save();
+  ctx.translate((cv.width - w * s) / 2 - minX * s, (cv.height - h * s) / 2 - minY * s);
+  ctx.scale(s, s);
+  ctx.lineJoin = "round";
+  ctx.lineCap = "round";
+  obj.contours.forEach(function (c) {
+    var col = typeof c.color === "string" ? c.color : "#9fd0ee";
+    ebPath(ctx, c.points, !!c.closed, c.smooth !== false);
+    if (c.fill && c.closed) {
+      ctx.globalAlpha = .22;
+      ctx.fillStyle = col;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+    ctx.strokeStyle = col;
+    ctx.lineWidth = 2 / s;
+    ctx.stroke();
+  });
+  ctx.restore();
+}
+
+function ebRenderPasted() {
+  var raw = (document.getElementById("eb-paste").value || "").trim();
+  if (!raw) { ebMsg("eb-test-msg", "nothing pasted yet", true); return; }
+  var obj;
+  try { obj = JSON.parse(raw); } catch (e) { ebMsg("eb-test-msg", "that isn't valid JSON: " + e.message, true); return; }
+  var bad = ebValidate(obj);
+  if (bad) { ebMsg("eb-test-msg", bad, true); return; }
+  ebCurrent = obj;
+  ebDrawField(obj);
+  var n = obj.contours.length;
+  ebMsg("eb-test-msg", "on the field — " + n + (n === 1 ? " contour" : " contours"));
+}
+function ebClearField() {
+  ebCurrent = null;
+  document.getElementById("eb-paste").value = "";
+  ebDrawField(null);
+  ebMsg("eb-test-msg", "");
+}
+
+// ── the submission box. sessionStorage, so it survives a reload of the pane
+// and dies with the tab; if the pane is served somewhere storage throws, it
+// keeps the same list in memory instead of silently losing the button.
+var EB_BOX_KEY = "vermillion-eb-box";
+var ebBoxMemory = null;
+function ebBox() {
+  if (ebBoxMemory) return ebBoxMemory;
+  try {
+    var raw = sessionStorage.getItem(EB_BOX_KEY);
+    ebBoxMemory = raw ? JSON.parse(raw) : [];
+  } catch (e) { ebBoxMemory = []; }
+  if (!Array.isArray(ebBoxMemory)) ebBoxMemory = [];
+  return ebBoxMemory;
+}
+function ebBoxSave(list) {
+  ebBoxMemory = list;
+  try { sessionStorage.setItem(EB_BOX_KEY, JSON.stringify(list)); } catch (e) { /* memory only */ }
+  ebRenderBox();
+}
+function ebRenderBox() {
+  var ul = document.getElementById("eb-box-list");
+  if (!ul) return;
+  var list = ebBox();
+  if (!list.length) { ul.innerHTML = '<li class="eb-empty">The box is empty. Put a part on the field, name it, and drop it in.</li>'; return; }
+  ul.innerHTML = list.map(function (p, i) {
+    var n = p.data && p.data.contours ? p.data.contours.length : 0;
+    return '<li><span class="eb-part-name">' + ebEsc(p.name) + '</span>' +
+      '<span class="eb-part-meta">' + n + (n === 1 ? " contour" : " contours") + '</span>' +
+      '<button type="button" class="eb-btn" onclick="ebBoxToField(' + i + ')">to the field</button>' +
+      '<button type="button" class="eb-btn" onclick="ebBoxDrop(' + i + ')">take out</button></li>';
+  }).join("");
+}
+function ebAddToBox() {
+  if (!ebCurrent) { ebMsg("eb-test-msg", "put a part on the field first", true); return; }
+  var nameEl = document.getElementById("eb-name");
+  var name = (nameEl.value || "").trim();
+  if (!name) { ebMsg("eb-test-msg", "give the part a name first", true); nameEl.focus(); return; }
+  var list = ebBox().slice();
+  list.push({ name: name, data: ebCurrent });
+  ebBoxSave(list);
+  nameEl.value = "";
+  ebMsg("eb-test-msg", "“" + name + "” is in the box");
+  ebMsg("eb-box-msg", "");
+}
+function ebBoxDrop(i) {
+  var list = ebBox().slice();
+  list.splice(i, 1);
+  ebBoxSave(list);
+  ebMsg("eb-box-msg", "taken out");
+}
+function ebBoxToField(i) {
+  var p = ebBox()[i];
+  if (!p) return;
+  document.getElementById("eb-paste").value = ebFormula(p.data);
+  ebRenderPasted();
+  document.getElementById("eb-canvas").scrollIntoView({ block: "center" });
+}
+function ebEmptyBox() {
+  ebBoxSave([]);
+  document.getElementById("eb-out").value = "";
+  ebMsg("eb-box-msg", "emptied");
+}
+function ebSubmission() {
+  return {
+    format: "blueprints/parts",
+    version: 1,
+    from: "vermillion's Engineering Bay",
+    parts: ebBox().map(function (p) { return { name: p.name, drawing: p.data }; })
+  };
+}
+function ebBuildSubmission() {
+  var list = ebBox();
+  if (!list.length) { ebMsg("eb-box-msg", "nothing in the box yet", true); return; }
+  document.getElementById("eb-out").value = ebFormula(ebSubmission());
+  ebMsg("eb-box-msg", list.length + (list.length === 1 ? " part" : " parts") + " written out — send it to vermillion");
+}
+function ebCopySubmission() {
+  var out = document.getElementById("eb-out");
+  if (!out.value) ebBuildSubmission();
+  if (!out.value) return;
+  ebClip(out.value, "eb-box-msg");
+}
+
+function openEngineeringBay() {
+  document.getElementById("page-space-program").style.display = "none";
+  document.getElementById("page-engineering-bay").style.display = "block";
+  ebSetUpBay();
+  window.scrollTo(0, 0);
+}
+function closeEngineeringBay() {
+  document.getElementById("page-engineering-bay").style.display = "none";
+  document.getElementById("page-space-program").style.display = "block";
+}
+var ebReady = false;
+function ebSetUpBay() {
+  if (ebReady) return;
+  ebReady = true;
+  ebRenderParts();
+  ebRenderBox();
+  ebDrawField(null);
 }
 
 document.addEventListener("keydown", function (e) {
