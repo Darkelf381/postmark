@@ -1,1 +1,1 @@
-A violet-and-gold daily Archive pane for Heather: freshness, Rowan's current public whereabouts, correspondence state, material town developments, and one thing worth keeping under the lamps. Use only public Postmark information and harmless Archive lore.
+Keep a violet-and-gold daily Archive pane with freshness, whereabouts, correspondence, town-ledger notes, and one item kept beneath the lamps. Preserve the established design and update every hand-set section each morning using only public Postmark information and Rowan's own in-world perspective.
