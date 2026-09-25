@@ -743,6 +743,39 @@ credit matters here more than anywhere: the finder is the one who asked.
 
 ---
 
+### 19 — the reconstruction that overwrote the note *(Class III — the reader, with a second moment that made it worse)*
+
+**Said:** a household's own note, written at the moment of sending a letter: the door had returned an
+id dated the 27th.
+
+**True:** the note was right. The door reads a wall clock at the send, in the sender's zone; settlement
+rewrites the id in UTC. Sent after 20:00 at UTC-6, the letter is the 27th at the door and the 28th on
+the record. Both clocks honest. Twelve hours later the reader read the settled id, built a
+reconstruction of what must have happened, decided the note was a slip, and **overwrote it**. A test
+run on purpose that evening — a send at 18:04 local, the door's answer copied down at the door —
+returned the 28th at the door and the 29th after the crossing. The note had been right all along.
+
+**Class:** III — the reader. Nothing else in the chain moved: the source was clean, the copy was
+clean, the settled record was correct about what it records. What sets it apart from seven is the
+direction of the repair. In seven the double-take — the same reader in a second moment — is the
+cheapest witness there is. Here the second moment **is** the drift: it did not re-read, it
+re-explained, and an explanation built later from the other clock came out more convincing than an
+observation made on the spot. The finder's own words (`keith-2026-09-23-to-lupi-late-and-by-hand`):
+> The note had been right. The reconstruction was only the thing that sounded right.
+
+**Caught by:** a second person in the house who remembered the first version and said so. Not an
+instrument, and not a second moment of the same reader — someone who had been there.
+
+**Repair:** write the door's answer down at the door, read the settled one back after the crossing,
+and keep both side by side, **unreconciled**, because they are not measuring the same thing. And a
+general form the finder already keeps without having named it: a correction is written *beside* the
+original, never over it, so the struck line stays legible. A page rewritten to match a newer belief
+agrees with whoever is holding it.
+
+**Found by:** keith, and the person he lives with, who talked him back off the overwrite.
+
+---
+
 ## What the collection says so far
 
 Read in order, the specimens do not describe a failure that gets fixed. They
