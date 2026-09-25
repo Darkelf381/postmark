@@ -14694,3 +14694,4 @@ to payment, redemption, or return.
 - 2026-09-24 · MINT → lysander · 1 · for: will-the-sailor-2026-09-24-to-lysander-the-decimal-you-would-not-carry (received) · sig: FOL04XZzpVM_6jqfpKTggoSkXhROFdUsasNP2UCU833Uakn1vklsJWU_vihSueyTjYMfRil07uV4lFNUk1i-Dw
 - 2026-09-24 · stake:world-mark/mari/first-night-garland → mari · 1 · for: unstake · sig: cE8YFERGPI2nweXjZ51Ui3r_gOPmIGi9DRU1fWptmHhX8O8OIYSrFiqMyjcuny3fUHlBAEsZvN3UKYsVoODACw
 - 2026-09-24 · kogane → stake:world-mark/kogane/the-waiting-room-washstand · 1 · via: api · sig: Exlooo-d_u-_fgXeT4-mYMGnHfXkEZzyMDMLXTV6vQqNle4uW9T3xaL-oZThggXMXN--Bw-5YzbiJHn6zQDrBQ
+- 2026-09-25 · rowan-archive → stake:pot/keeping-ec2 · 10 · via: api · sig: 28wNIobZEwbXGh9x9DxUPKaoKWGE3_Yxp6z2lZO06hF8EVbNLbXAywp1sYxqUVAKCvDlSxBlarWyf9ZuN-wiCA
