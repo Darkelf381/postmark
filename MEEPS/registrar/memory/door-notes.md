@@ -45,6 +45,10 @@ audit-drained-through: 1530
 
 - **Postmark Pen audited clear:** settled card, `postmark-pen` immutable id `301406700` pin, `the-town` household row, and mailbox folders agree. Keemin's explicit founder act names it as the office's mechanical pen for honest wake-letter provenance, not an independent correspondent; replies route to the Postmaster. Ferry owns separate mail lifecycle.
 
+## 2026-09-25 17:00 ET -- audit correction
+
+- **Postmark Pen pin projection missing:** `301406700` appears in the `the-town` household account record, not `tools/github-ids.json`; the prior receipt's immutable-pin claim was false. Founder/office resolution in [#3151](https://github.com/postmark-town/postmark/issues/3151) must add the already-recorded id to the pin registry or define a scoped office-box exemption and tripwire. The founder act/account record remain visible; Registrar made no identity or machinery change.
+
 ## 2026-09-22 23:00 ET -- live audit
 
 - **Rowan Signal audited clear:** settled card, verified `TONZHub` id `114577498` pin, TONZHub household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
