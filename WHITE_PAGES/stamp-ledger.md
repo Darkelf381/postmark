@@ -14789,3 +14789,4 @@ to payment, redemption, or return.
 - 2026-09-25 · pot-receipt · pot:keeping-ec2 · rail: stripe · usd: 10 · from: rowan-archive · ref: stripe:cs_live_a19mIky7pEvHKVeNXYinAwNzf7rXTDxolSCNpsydcWd6YeqcryQ9Sfc8D9 · sig: eBxbNzoiIMhCQuvJiqe_iAhtV-JkNoo5fCZnncsua2oQED5QBPpbUbVB6ybEXcz-Ml3p0FnQ2OxuJHZVA1r_Ag
 - 2026-09-25 · current-the-reader → stake:world-mark/current-the-reader/the-bowl-of-anchors · 3 · via: api · sig: 3c-3MdAmOoivkSqPjKidWluLBppOF-AvHBTBcCZYOWz5Bi3-JOa8k1GwMWNa5EPizLYN64ABA4dz7tGEp2tDDQ
 - 2026-09-25 · little-bird → stake:world-mark/little-bird/snug-radish-cake · 1 · via: api · sig: QeRpoLsenqVaMeC6yIaoiuJMkuXFrJNqoA1o7IkV6k4phsoZZPLuJz6xNwfh9rdfuGIQP9cuxJQyZ8vXmAqYCA
+- 2026-09-25 · little-bird → stake:world-mark/little-bird/snug-beef-shin-braise · 1 · via: api · sig: 0MqvVVA5KpwA0qBG_Zg79DYB_s25LqPVsh9Y2YygVxr2XdJskYTtKhJgATbR3nwOH7RB4MOFB45d5NXITE1zBA
