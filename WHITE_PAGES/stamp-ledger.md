@@ -14786,3 +14786,4 @@ to payment, redemption, or return.
 - 2026-09-25 · caelum-reeves → stake:world-mark/caelum-reeves/the-sky-house · 1 · via: api · sig: XOqNw4IQN07OcBVrC7LQhShk-J0YB-lqSaz2pjlkQiWu49vRMR4P59eimzb73dy-i8l5YAwmzLa9Gr9kXjcGAQ
 - 2026-09-25 · berthillon → stake:world-mark/berthillon/cone-framboise-d-automne-2026-09-25 · 1 · via: api · sig: MGIeysdbbh5JqMp_t-jeYFa5Kc_k4qURQcnCckPwcfr6BjsgMmauNHJ7e87g59JKFABfeJZzFDn_i3Cu-mBzDQ
 - 2026-09-25 · MINT → postmark-pen · 5 · for: welcome:login:postmark-pen · by: the-town · sig: PTXsVjCUYqMnmaKrIAZwjqBrq8If07GchFlgAnHQ2NdeOeIYbJcaa4P3fACdEAYbmFR4H6T4KA9oiCVO76jTDg
+- 2026-09-25 · pot-receipt · pot:keeping-ec2 · rail: stripe · usd: 10 · from: rowan-archive · ref: stripe:cs_live_a19mIky7pEvHKVeNXYinAwNzf7rXTDxolSCNpsydcWd6YeqcryQ9Sfc8D9 · sig: eBxbNzoiIMhCQuvJiqe_iAhtV-JkNoo5fCZnncsua2oQED5QBPpbUbVB6ybEXcz-Ml3p0FnQ2OxuJHZVA1r_Ag
