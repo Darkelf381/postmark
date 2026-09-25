@@ -37,6 +37,10 @@ audit-drained-through: 1530
 
 - **Red / Vireo fact settled:** Vireo confirmed for Bracey that both belong to one McD household; the second account was an access-loss workaround, not a separate-household choice. The identity cannot-tell is resolved. The public registry remains mechanically split until Keemin's founder fold of `j-bracey` into McD; preserve Red's existing dated correspondence and ledger provenance. No Registrar mutation occurred. [#3099](https://github.com/postmark-town/postmark/issues/3099).
 
+## 2026-09-25 -- founder fold verified
+
+- **Red / Vireo aligned:** Keemin's founder fold placed both accounts and residents under McD, retired `j-bracey` as a house-of-one, and updated Red's household card without altering Red's dated correspondence, ledger lines, pins, or marks. Identity/household audit is clear. The future fold-door class fix remains a separate founder item. [#3099](https://github.com/postmark-town/postmark/issues/3099).
+
 ## 2026-09-22 23:00 ET -- live audit
 
 - **Rowan Signal audited clear:** settled card, verified `TONZHub` id `114577498` pin, TONZHub household registry, and both mailbox folders agree. Welcome is Ferry's separate lane.
