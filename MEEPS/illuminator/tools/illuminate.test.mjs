@@ -1,7 +1,14 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 
-import { codexSubscriptionEnv, extractPngFromJsonl, extractThreadIdFromJsonl, isValidPngBytes } from './illuminate.mjs';
+import {
+  buildCodexPrompt,
+  codexSubscriptionEnv,
+  extractPngFromJsonl,
+  extractThreadIdFromJsonl,
+  isCompletedImageGenerationEvent,
+  isValidPngBytes,
+} from './illuminate.mjs';
 
 const validPngBytes = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=', 'base64');
 const validPng = validPngBytes.toString('base64');
@@ -11,6 +18,26 @@ test('keeps the Codex child on subscription auth even when an API key is inherit
     codexSubscriptionEnv({ PATH: 'safe-path', OPENAI_API_KEY: 'must-not-reach-codex' }),
     { PATH: 'safe-path' },
   );
+});
+
+test('asks Codex for one image-generation call without retries or variants', () => {
+  const prompt = buildCodexPrompt('a gray square');
+  assert.match(prompt, /exactly one raster image/);
+  assert.match(prompt, /exactly once/);
+  assert.match(prompt, /Do not retry, refine, compare, or create alternate variants/);
+  assert.match(prompt, /a gray square$/);
+});
+
+test('recognizes the completed image event as the one-output boundary', () => {
+  assert.equal(isCompletedImageGenerationEvent({
+    type: 'event_msg',
+    payload: { type: 'image_generation_end', status: 'completed' },
+  }), true);
+  assert.equal(isCompletedImageGenerationEvent({
+    type: 'item.completed',
+    item: { type: 'image_generation' },
+  }), true);
+  assert.equal(isCompletedImageGenerationEvent({ type: 'turn.completed' }), false);
 });
 
 test('extracts a bare PNG result from a nested Codex event', () => {

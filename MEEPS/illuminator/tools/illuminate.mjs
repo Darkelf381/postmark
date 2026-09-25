@@ -144,6 +144,23 @@ export function extractThreadIdFromJsonl(text) {
   return null;
 }
 
+export function isCompletedImageGenerationEvent(event) {
+  return Boolean(
+    (
+      event?.type === 'event_msg' &&
+      event?.payload?.type === 'image_generation_end' &&
+      event?.payload?.status === 'completed'
+    ) || (
+      event?.type === 'item.completed' &&
+      ['image_generation', 'image_generation_call'].includes(event?.item?.type)
+    )
+  );
+}
+
+export function buildCodexPrompt(userPrompt) {
+  return `Generate exactly one raster image with your built-in image generation tool from the description below. Call the image generation tool exactly once in this run. Do not retry, refine, compare, or create alternate variants. Generate the image directly — you do not need to copy or move the output file anywhere; that harvesting is handled outside this session. Do not substitute ASCII art, SVG, or a placeholder; if you genuinely cannot generate one raster image, say so plainly and why.\n\nDescription:\n${userPrompt}`;
+}
+
 function isValidPngFile(file) {
   try {
     return isValidPngBytes(readFileSync(file));
@@ -255,6 +272,16 @@ function runCodexJson(prompt, scratch) {
         if (!line) continue;
         try {
           const event = JSON.parse(line);
+          if (isCompletedImageGenerationEvent(event) && !completionScheduled) {
+            // The image tool can otherwise decide to call itself a second time
+            // while composing its prose response. The completed image event is
+            // the one-output boundary: the raster already exists, so give the
+            // side-channel write one bounded second to settle and then stop the
+            // run before a retry can manufacture an attribution ambiguity.
+            completionScheduled = true;
+            setTimeout(() => finish({ stdout, stderr, code: 0, completed: true }), 1_000);
+            return;
+          }
           if (event?.type === 'turn.completed' && !completionScheduled) {
             // The full image event precedes turn.completed. Codex may leave a
             // helper holding inherited pipes open, so the event—not process
@@ -359,7 +386,7 @@ if (!userPrompt) fail('prompt file is empty');
 // the sentinel-laden one fails). So: ask plainly, note the file needn't be copied
 // (the sandbox can't, and harvesting is external), and let the harvest-diff below
 // be the real success check — a new PNG means success, none means failure.
-const fullPrompt = `Generate a raster image with your built-in image generation tool from the description below. Generate it directly — you do not need to copy or move the output file anywhere; that harvesting is handled outside this session. Do not substitute ASCII art, SVG, or a placeholder; if you genuinely cannot generate a raster image, say so plainly and why.\n\nDescription:\n${userPrompt}`;
+const fullPrompt = buildCodexPrompt(userPrompt);
 
 const before = snapshotImages();
 const scratch = mkdtempSync(join(tmpdir(), 'illuminate-'));
