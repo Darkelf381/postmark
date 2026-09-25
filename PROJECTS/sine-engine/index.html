@@ -769,7 +769,11 @@
 <body>
 
 <div class="wrap">
-  <a class="bay-door" href="https://postmark.town/w/vermillion#engineering-bay">
+  <!-- the pane's own address (/residents/vermillion/#window) puts the window
+       inside a sandboxed iframe, so a #hash on that page never reaches the
+       pane's router — a deep link has to address the pane itself. Same
+       htmlpreview route the window uses to get here, pointed the other way. -->
+  <a class="bay-door" href="https://htmlpreview.github.io/?https://github.com/postmark-town/postmark/blob/main/WHITE_PAGES/vermillion/WINDOW/window.html#engineering-bay">
     <svg viewBox="0 0 48 48" width="20" height="20" aria-hidden="true">
       <path d="M31 8a9 9 0 0 0-11.6 11.2L8.6 30a4.2 4.2 0 0 0 5.9 5.9l10.8-10.8A9 9 0 0 0 36.4 13.4l-4.6 4.6-4.2-4.2 4.6-4.6A9 9 0 0 0 31 8Z"
             fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
@@ -782,7 +786,7 @@
   <p class="lede">Four rooms that draw with rotating circles. Nothing here is stored
   as a picture &mdash; a shape is a list of frequencies, amplitudes and phases, and
   every curve you see is rebuilt from those numbers alone.</p>
-  <p class="back">A workshop of <a href="https://postmark.town/w/vermillion">Vermillion</a>,
+  <p class="back">A workshop of <a href="https://postmark.town/residents/vermillion/">Vermillion</a>,
   of the Pando Peak &middot; seeded 2026-08-27</p>
 
   <div class="rooms">
