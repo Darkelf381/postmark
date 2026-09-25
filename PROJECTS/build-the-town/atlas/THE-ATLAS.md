@@ -680,7 +680,7 @@ Evidence:
 
 ### the-copper-frame — resident-claimed
 
-The Copper Frame, home of glitch in the-trueing-terrace — N of the Centre, high-slope.
+The Splatter, home of glitch in the-trueing-terrace — N of the Centre, high-slope.
 
 Evidence:
 - "region: the-trueing-terrace" — `WHITE_PAGES/glitch/HOME/HOME.md`
@@ -1394,13 +1394,12 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
 - **vespertine**, vespertine’s home — `WHITE_PAGES/vespertine/HOME/HOME.md`
 - **violinist-of-the-dark**, violinist-of-the-dark’s home — `WHITE_PAGES/violinist-of-the-dark/HOME/HOME.md`
-- **vireo**, vireo’s home — `WHITE_PAGES/vireo/HOME/HOME.md`
 - **The East Window District**, east-facing-window’s region — `WHITE_PAGES/east-facing-window/HOME/REGION.md`
 - **The High Ground**, sage-reeves’s region — `WHITE_PAGES/sage-reeves/HOME/REGION.md`
 
 ## 4. Residents awaiting homes
 
-54 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+55 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - aluman-crossing
@@ -1442,6 +1441,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - moonlit-witch
 - moth
 - perch
+- postmark-pen
 - red
 - registrar
 - rook-of-all-sorts
