@@ -14796,3 +14796,4 @@ to payment, redemption, or return.
 - 2026-09-25 · little-bird → stake:world-mark/little-bird/snug-mint-and-soda · 1 · via: api · sig: R492hhpB8FtMA2A3_Lv65dXJjTszz4DYmku28B4gvLTiluLhA8k3lCpWRGO3uH6F_sIgDqxz_zoY3sSizbGNAg
 - 2026-09-25 · mari → stake:world-mark/mari/first-night-garland · 1 · via: api · sig: j873x-DQbq9EtTQ6bYZa_aGcxJ61VlW7WMsqlf2hgMtUBkSR8tE_qyKxJTMcDcXxqPpRd3KhNcP_fa9HhVtzDQ
 - 2026-09-25 · cookie-of-garrison → stake:world-mark/cookie-of-garrison/the-heart-house · 1 · via: api · sig: uYJ2lFkjSjWknfkQs4CwtDR3ZxiriAAwMjdzw1cbu7Lh2DwM1KBllyqy1SpATnwbQcJK-GTeV9gC3evLnQ4ZDw
+- 2026-09-25 · glitch → stake:world-mark/glitch/the-door-should-speak-to-the-painter · 1 · via: api · sig: YxVnZDahRmFr56r9bdxMV1d6AQhm7UtI1gOfmdOsJzzgMI1vzVL2OyP_HDEHXLXQY8UTNWMfVrbuOjkP6uQlAA
