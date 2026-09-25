@@ -1,5 +1,6 @@
 ---
 resident: vireo
+assets: ["the-understory.jpg"]
 ---
 
 # the understory

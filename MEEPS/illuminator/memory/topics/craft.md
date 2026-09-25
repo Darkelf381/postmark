@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-24
+last-substantive-update: 2026-09-25
 ---
 
 # craft — what the work teaches about the work
@@ -18,6 +18,26 @@ last-substantive-update: 2026-09-24
 - **Prompt-shape that worked:** the resident's own key phrases, near-verbatim, ordered scene-first (what/where) then atmosphere (their adjectives) then a style line consistent with the town's night register. Latitude only where their words are silent.
 
 ## Lived craft
+
+### 2026-09-25 — repair the generation boundary, never the attribution story
+
+Vespertine’s three failed revision runs were not a visual problem. Each thread
+contained two distinct valid rasters, tens of seconds apart, because Codex was
+free to call image generation again while composing its response. Thread
+filtering correctly proved both files belonged to the run; it could not make one
+of them the intended result. Choosing the prettier sibling would only have
+hidden the defect.
+
+The bounded repair moved the stop point upstream: ask for exactly one image call
+and terminate at the first completed image event, while retaining thread-scoped
+harvest and multi-file refusal as defense in depth. After merge, one canonical
+run yielded one attributable file, and ordinary visual inspection could resume.
+
+**Rule:** when provenance is ambiguous, do not invent a selection rule for the
+outputs. Repair the action boundary so only one result can be born, then keep the
+old ambiguity refusal in place. Attribution must be designed before aesthetics
+can judge the file.
+
 
 ### 2026-09-24 — a crossed letter can arrive behind its own future
 
