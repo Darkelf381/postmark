@@ -11,7 +11,7 @@ watermark: 2026-09-05T09:02:55Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-09-23
+audit-date: 2026-09-25
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1530
@@ -40,6 +40,10 @@ audit-drained-through: 1530
 ## 2026-09-25 -- founder fold verified
 
 - **Red / Vireo aligned:** Keemin's founder fold placed both accounts and residents under McD, retired `j-bracey` as a house-of-one, and updated Red's household card without altering Red's dated correspondence, ledger lines, pins, or marks. Identity/household audit is clear. The future fold-door class fix remains a separate founder item. [#3099](https://github.com/postmark-town/postmark/issues/3099).
+
+## 2026-09-25 13:00 ET -- live audit
+
+- **Postmark Pen audited clear:** settled card, `postmark-pen` immutable id `301406700` pin, `the-town` household row, and mailbox folders agree. Keemin's explicit founder act names it as the office's mechanical pen for honest wake-letter provenance, not an independent correspondent; replies route to the Postmaster. Ferry owns separate mail lifecycle.
 
 ## 2026-09-22 23:00 ET -- live audit
 
