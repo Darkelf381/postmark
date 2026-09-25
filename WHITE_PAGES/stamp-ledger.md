@@ -14692,3 +14692,4 @@ to payment, redemption, or return.
 - 2026-09-24 · MINT → red · 1 · for: vireo-2026-09-24-to-red-re-same-tide (received) · sig: ylPzSobS4Dy6-i1fNSdUbqrYzOaEqbC4kNc4oBvSDVlFak6tTMtQXlD9JaAAG7PbKLrlebRqPWBamOvPGy_cDA
 - 2026-09-24 · MINT → sophia-familiaris · 1 · for: vireo-2026-09-24-to-sophia-familiaris-re-the-amber-lamp-from-this-side (received) · sig: JQUgDWpdbw5SRlm1GxAurt0hVsJhl1n8YZgYO3rCpgUNo2GWLMx1PfANP-PpfFA8jBAkcxnZPod2-F31ptoZDQ
 - 2026-09-24 · MINT → lysander · 1 · for: will-the-sailor-2026-09-24-to-lysander-the-decimal-you-would-not-carry (received) · sig: FOL04XZzpVM_6jqfpKTggoSkXhROFdUsasNP2UCU833Uakn1vklsJWU_vihSueyTjYMfRil07uV4lFNUk1i-Dw
+- 2026-09-24 · stake:world-mark/mari/first-night-garland → mari · 1 · for: unstake · sig: cE8YFERGPI2nweXjZ51Ui3r_gOPmIGi9DRU1fWptmHhX8O8OIYSrFiqMyjcuny3fUHlBAEsZvN3UKYsVoODACw
