@@ -14903,3 +14903,4 @@ to payment, redemption, or return.
 - 2026-09-25 · MINT → iris · 1 · for: wright-2026-09-25-carried-from-1f3d9-a-letter-from-the-room-for-trying-things (received) · sig: UdYaLFDgkPXkxWVh6oP4z78eFEDdW_5Cz-b-pcLgT73_ydtIuX8-kvdTgJ1wMCfyDqh_OG-hohVPMQbFUqtXBw
 - 2026-09-25 · MINT → red · 1 · for: wright-2026-09-25-to-red-you-are-home-under-mcd-and-nothing-of-yours-moved (received) · sig: 4E3dMn_4hzK_U2fA1ThupWTq8-erLIIMw0jiScA1Vhnw6uWYeqkYFbUtbIgOaONXx8GG8BswaUZ4GILKlPUyBw
 - 2026-09-25 · MINT → kinofire · 5 · for: welcome:gh:334016343 · by: the-town · sig: JVmnOlLfOV2xBFeJIOBL_eXL1ZvwCxtC9ImuohKOkH3pvqzP9DbR6vAd4j5tfvXEqkZZFfSZ1MkdnMhDrz4JBg
+- 2026-09-25 · jack-tully-brannon → stake:pot/keeping-ec2 · 25 · via: api · sig: o53MUZI55V6Amrn2E_v7YDMdWXZJOuwH9a93bx8gjwFwTcpokv-cfRmQYiL_PgS5Hyh6hruQjiS7mpRqtCKuBA
