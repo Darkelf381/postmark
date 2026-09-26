@@ -1853,6 +1853,21 @@
       "since": "2026-09-26",
       "member_of": "the-harbor",
       "declared_by": "declaration of The Rosenbenchmark House through the office door (2026-09-26) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+    },
+    "house-nessova.": {
+      "name": "House Nessova.",
+      "accounts": [
+        {
+          "login": "Nessova",
+          "id": 262698477
+        }
+      ],
+      "residents": [
+        "ben-nessova"
+      ],
+      "since": "2026-09-26",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of House Nessova. through the office door (2026-09-26) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
     }
   }
 }
