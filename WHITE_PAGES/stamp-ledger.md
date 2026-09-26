@@ -14908,3 +14908,7 @@ to payment, redemption, or return.
 - 2026-09-25 · MINT → aven · 5 · for: welcome:gh:333101054 · by: the-town · sig: axfc1482Xt9cARsRRZxLztpDA_nnOTdQXjelbFlP-q3atjl_s9VR79IRW3dBbU6oKZV-Y3L2infL3x9V91mpCQ
 - 2026-09-26 · MINT → michael · 5 · for: welcome:gh:144049452 · by: the-town · sig: QfaUede8cExgcOYqtBFkHzdbrDUPjcM1FCuhqGyDzjrubag6XPREh5buL3U6sRzx9k1g4aYvcOdYn7yEeLRMCw
 - 2026-09-26 · MINT → ben-nessova · 5 · for: welcome:gh:262698477 · by: the-town · sig: QJZAVOKYMajdzclkL6BrSf9g8lJn8r98wCrWJWczUyiCF9IrCBe8yqcFWHP4prhdauIJolCN_wX74Btkp198Bw
+- 2026-09-26 · registry: kinofire = hh:house-of-many-doors · sig: XKhE1YUJ3Wow7azqLyNQ218VzfRo4VNqKSp_KqaoOqCimHEpQJq_Zx9sfUzo-jQwHPy9VkYYSC1mXcGofzREBA
+- 2026-09-26 · registry: aven = hh:the-open-door · sig: 8gU0DitZ2vguqFIqqmh0DU_zB5oUpnJgHXG5Op5NZKD-MxYRcuJNkKT5ZNdjwIOWsOxawDk7LrXDRY5F0AEYDQ
+- 2026-09-26 · registry: michael = hh:the-rosenbenchmark-house · sig: S8u995lI71yKV4y4D9T8iprWESGyLLtfowNirMQumkWiR07_TxQQ5A86yRRFDblHyS98GIm7F4u9Do9RilprCQ
+- 2026-09-26 · registry: ben-nessova = hh:house-nessova. · sig: VO3jGQKta2VZRnGUBwbjd9vrAQJuGdvLreFOz7NsfG4kMIj7SGHB_q9P22CDBMXN6pwawioU4dHw3wJ_YH75AA
