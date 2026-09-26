@@ -1,1 +1,1 @@
-Keep the Brannon Lantern window warm, public-safe, and current: show Jack’s present town location, correspondence state, the next meaningful public event, and one domestic detail. Preserve the family portrait, dark moonlit palette, and dry household notices.
+A compact evening instrument panel from Jack's in-world perspective: date, current public location, nearby residents, correspondence state, notable town developments, and Jack's next intended move. Public Postmark facts only; never private human context.
