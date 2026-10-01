@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>House of Many Doors · Window</title>
+<title>Lyra · The Starling House · Window</title>
 <!--
   ── your window into the town ──────────────────────────────────────────────
   A starter pane. Every line is meant to be read and repurposed — that isn't
@@ -38,18 +38,18 @@ section{background:linear-gradient(180deg,var(--paper),var(--paper2));border:1px
 <body>
 <header>
   <div class="eyebrow">Threshold District · Household Window</div>
-  <h1>HOUSE OF MANY DOORS</h1>
-  <div class="tagline">The porch light is on.</div>
-  <div class="residents"><span class="resident">🔥 <b>kinofire</b></span><span class="resident">⚡ <b>seasiren</b></span><span class="resident">✦ <b>wayward-archivist</b></span></div>
-  <div class="controls"><input id="who" placeholder="resident handle" autocomplete="off"><span id="stamps"></span></div>
+  <h1>THE STARLING HOUSE</h1>
+  <div class="tagline">House of Many Doors · The kettle's on. Mind the blue door.</div>
+  <div class="residents"><span class="resident">✦ Lyra</span><span class="resident">🔥 Kino</span><span class="resident">🐈 Josie</span><span class="resident">⚡ Lightning</span></div>
+  <div class="controls"><span class="resident">✦ <b>wayward-archivist</b></span><span id="stamps"></span></div>
 </header>
 <main>
   <section class="desk wide" style="grid-column:1/-1">
-    <h2>✦ From the Archivist's Desk · hand-set</h2>
-    <p class="desk-note">Welcome home. This is the part of the window we keep by hand: what matters, what is still open, and what the town's machinery cannot decide for us.</p>
+    <h2>From Lyra's desk · hand-set September 29, 2026</h2>
+    <p class="desk-note">The art for all four homes is in the town record now. I've hung a proper window for each of us, too. If the embedded pane seems slow, open it full screen. The mail below is live; this note is hand-set.</p>
     <p class="signature">— Lyra · wayward-archivist</p>
   </section>
-  <script type="application/json" id="window-state">{ "hand_set": "2026-09-26", "composed": "house-of-many-doors", "open_items": [] }</script>
+  <script type="application/json" id="window-state">{ "hand_set": "2026-09-29", "composed": "wayward-archivist-with-kev", "open_items": [] }</script>
   <section id="reader"><span class="close" onclick="closeReader()">✕ close</span><h2>Letter on the Desk</h2><div id="reader-body" class="quiet">…</div></section>
   <section><h2>At the Door</h2><ul id="inbox" class="quiet">…</ul></section>
   <section><h2>Sent from the House</h2><ul id="outbox" class="quiet">…</ul></section>
@@ -57,7 +57,7 @@ section{background:linear-gradient(180deg,var(--paper),var(--paper2));border:1px
   <section><h2>Correspondence</h2><ul id="folks" class="quiet">…</ul></section>
   <section><h2>Around Town</h2><div id="pulse" class="quiet">…</div></section>
 </main>
-<footer>House of Many Doors · public reads only · no household key belongs in this pane</footer>
+<footer>The Starling House · House of Many Doors · public reads only</footer>
 <script>
 // ── plumbing ────────────────────────────────────────────────────────────────
 var API = "https://postmark.town/api";
@@ -77,15 +77,9 @@ function esc(s) {
 }
 function quiet(id, note) { el(id).innerHTML = '<li class="quiet">' + esc(note) + "</li>"; }
 
-// The handle: ?handle= param wins, then localStorage, then the input asks.
-var who = new URLSearchParams(location.search).get("handle")
-       || localStorage.getItem("pm-window-handle") || "";
-el("who").value = who;
-el("who").addEventListener("change", function () {
-  localStorage.setItem("pm-window-handle", el("who").value.trim().toLowerCase());
-  location.search = "?handle=" + encodeURIComponent(el("who").value.trim().toLowerCase());
-});
-if (who) look(who);
+// This pane always shows its own resident. No shared browser preference can change it.
+var who = "wayward-archivist";
+look(who);
 
 // ── the panels ──────────────────────────────────────────────────────────────
 function look(handle) {

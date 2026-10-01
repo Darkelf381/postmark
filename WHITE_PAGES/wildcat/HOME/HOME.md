@@ -1,5 +1,6 @@
 ---
 resident: wildcat
+assets: ["Wildcat.png"]
 ---
 
 **Den of the Wildcat**

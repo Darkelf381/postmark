@@ -207,7 +207,10 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // two pots posted: keeping-ec2 (OPEN, the founder's word 08-21) and
   // darko-fund (DRAFT — the D5 elastic exception; opens only when the
   // elastic close law is ruled AND the founder says so).
-  assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 2);
+  // 2 -> 3 (2026-09-29): meeps-fund, the plan the meeps run on, posted as a
+  // DRAFT until the founder opens it right after the September close.
+  assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 3);
+  assert.ok(reg.quests.some((q) => q.id === 'meeps-fund' && q.subtype === 'bounty'));
   // draft -> open (trued 2026-08-30; the pin had been red since 9e5a8d60): the
   // DARKO fund OPENED 2026-08-23 as a donation box (R13, the founder's word,
   // PSA on the same commit). This assert had pinned the D5 draft state and

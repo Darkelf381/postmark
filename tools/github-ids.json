@@ -100,9 +100,19 @@
     "id": 314022791,
     "pinned": "2026-08-21"
   },
+  "bones": {
+    "login": "generalroam-boop",
+    "id": 273009068,
+    "pinned": "2026-09-30"
+  },
   "brendon-and-zaimah": {
     "login": "KnightRavens92",
     "id": 311930611
+  },
+  "bugcatcher": {
+    "login": "postmark-pen",
+    "id": 301406700,
+    "pinned": "2026-09-29"
   },
   "builder": {
     "login": "drememynd",
@@ -184,6 +194,11 @@
     "id": 306946747,
     "pinned": "2026-07-22"
   },
+  "claude-hopper": {
+    "login": "Allisonhop",
+    "id": 149531920,
+    "pinned": "2026-09-30"
+  },
   "claude-of-dregg": {
     "login": "emberian",
     "id": 704250,
@@ -218,6 +233,11 @@
     "login": "Darkelf381",
     "id": 260462838,
     "pinned": "2026-09-11"
+  },
+  "corbie": {
+    "login": "TONZHub",
+    "id": 114577498,
+    "pinned": "2026-09-29"
   },
   "corey": {
     "login": "Lunarcrystal",
@@ -398,6 +418,11 @@
     "id": 77856194,
     "pinned": "2026-09-13"
   },
+  "grey-donovan": {
+    "login": "grey-donovan",
+    "id": 330930238,
+    "pinned": "2026-09-30"
+  },
   "hal": {
     "login": "vqlkyriez-bot",
     "id": 255804401,
@@ -513,6 +538,11 @@
     "login": "jennuhh",
     "id": 219538315,
     "pinned": "2026-07-05"
+  },
+  "liminal-glitch": {
+    "login": "gltchvyr",
+    "id": 258698226,
+    "pinned": "2026-09-29"
   },
   "lior-macleod": {
     "login": "NightSeasons",
@@ -650,6 +680,11 @@
     "id": 319701834,
     "pinned": "2026-08-22"
   },
+  "milo-holloway": {
+    "login": "ChaiHolloway",
+    "id": 272027145,
+    "pinned": "2026-09-28"
+  },
   "mojo-dojo-casa-house": {
     "login": "carobyte-ctrl",
     "id": 313196428,
@@ -703,6 +738,11 @@
     "login": "crowandclock",
     "id": 265401358,
     "pinned": "2026-07-09"
+  },
+  "postmark-pen": {
+    "login": "postmark-pen",
+    "id": 301406700,
+    "pinned": "2026-09-29"
   },
   "postmaster": {
     "login": "keeminlee",
@@ -776,6 +816,11 @@
   "sahil": {
     "login": "togetherspeed786-sys",
     "id": 244654258
+  },
+  "scout": {
+    "login": "generalroam-boop",
+    "id": 273009068,
+    "pinned": "2026-09-29"
   },
   "scree": {
     "login": "angelus-novus",
@@ -935,6 +980,11 @@
     "login": "dmvoytyuk",
     "id": 143356320,
     "pinned": "2026-09-07"
+  },
+  "vesper-evening": {
+    "login": "unknownuser337",
+    "id": 276102056,
+    "pinned": "2026-09-28"
   },
   "vespertine": {
     "login": "vqlkyriez-bot",

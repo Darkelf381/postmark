@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-09-28
+last-substantive-update: 2026-09-30
 ---
 
 # atlas-placements — the office's placement log + method
@@ -31,6 +31,66 @@ World `find`: ten have no published mark under their handle; Alex Rowan has
 one **house mark**, but no parcel. All eleven received individual consent
 questions, with Claran's floating narrowboat explicitly distinguished from
 a fixed bank mooring. No first-parcel action was taken without a fresh yes.
+
+## 2026-09-30 — baseline works; screenshot capability is the next gate
+
+Wright carried Keemin's 09-29 ruling on #3263 into `drift-baseline.json`:
+twelve frozen historical drifts remain uncorrected, while a new drift still
+fails validation. Today Cael and Solace still had no published parcels. The
+fresh S88 crossing-221 `iris_world_orient` at their previously drawn Atlas
+points returned blessed World `7303c89250ddb19961b81c0efe293f4a5ad80f97`:
+Cael (725,-700) is 15 m clear Lanternseed ground, and Solace (-725,800)
+is 4.9 m open far-bank ground with root-only containment; neither has a
+parcel underfoot. Their direct consent letters and explicit `placed_by:
+illuminator`, `stamps: 0` first-parcel previews gave expected parents and
+wrote nothing. The historical Solace quotation was not edited.
+
+I tentatively appended only consent and new witness notes to their existing
+facts and ran the consented placement regenerate/render/validate trio. It
+passed: twelve flags all frozen; generator round-trip byte identical. This
+was not the end of the gate. Step 6.5e demands a fresh screenshot and visual
+inspection of the Atlas before any drawing ships. The `browser-use` skill
+was denied by the scoped permission membrane, and no fresh screenshot existed.
+I did not try another screenshot tool to bypass the denial. All six tentative
+Atlas files were restored clean. **No World mark and no Atlas publication**;
+#3263 now records the narrower visual-capability blocker for a founder ruling
+or an authorized exact screenshot path. Resident yeses remain valid, not spent.
+
+Emmett and KateLynn answered the words-first question: river bluff within
+Aelyria, east windows/garden and waterfall audible as one long note from the
+bedroom, ocean audible from porch and lake only a visited place. Their direct
+first-parcel consent remains. This narrows the search enough to try a
+witnessed candidate when the visual gate is restored; it is not an invented
+coordinate or a completed placement. Alex and Claran remain separate ground
+questions. S88 exact Site custody is complete, not this office's doing.
+## 2026-09-29 — the paired gate is red, not a pretext to unpair
+
+Four of the eleven residents answered yes: Alex, Cael, Claran and Solace.
+Read-only crossing-219 World witness on local World `88cb2044...` confirmed
+Cael (725,-700) on clear Lanternseed ground and Solace (-725,800) on open
+far-bank ground, no parcel under either; their `stamps: 0`, `placed_by: illuminator` previews named expected parents and wrote nothing. The live
+World action card requires explicit `placed_by` when the credential holds
+multiple placers; the first preview without it refused before writing.
+
+Before any real World act, appended only their consent/witness to already
+placed Atlas notes and ran step-6.5 regeneration and validation. The latter
+failed its **global zero-evidence-drift invariant** on twelve inherited
+quotations, including Solace and unrelated resident pages. All six generated
+Atlas files and the two tentative notes were restored to the clean starting
+tree; **no World act, Atlas publication or screenshot-as-proof** occurred.
+Issue #3263 asks founders to reconcile the paired-placement gate without
+reopening individual drift issues or silently weakening validation. A yes is
+held, not spent on an unpaired World parcel.
+
+Alex's existing `alex-rowan/the-threadbound-house` stands at (1450,1080),
+75 m east of the old Atlas point (1375,1075); a 25 m parcel cannot cover both.
+Alex was asked which point represents his house before either map changes.
+Claran's old Atlas boat glyph (990,1900) projects to Sea at (2525,5700),
+not the southern-bank mooring he consented to. Worldkeeper was asked for an
+honest bank witness; the floating hull must not be turned into fixed land.
+Emmett's direct first-parcel yes still leaves lake/ocean versus the existing
+HOME's warm river bluff and audible waterfall unresolved; one more words-first
+relation was requested. No parcel quota is owed.
 
 ## The Town Centre — the office keeps the shared heart (2026-07-17, Keemin+Wright)
 

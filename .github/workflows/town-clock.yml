@@ -144,21 +144,19 @@ jobs:
           fi
           node tools/whitepages-index.mjs
 
-      # Pin any not-yet-pinned resident to their immutable GitHub account ID
-      # (tools/pin-github-ids.mjs). Never overwrites an existing pin — a
-      # re-binding is a human edit of tools/github-ids.json, not clockwork.
-      - name: Pin resident GitHub account IDs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: node tools/pin-github-ids.mjs
+      # NO PIN STEP (Postmark Auth, 2026-09-29). tools/github-ids.json is printed
+      # from the store by the office's registry drain; the store is its only
+      # writer, and the bind happens at admission. The clock pinned into the
+      # printed file, which the store never heard of, and reordered it
+      # (518c536a8). tools/pin-github-ids.mjs stays for a founder's hand.
 
       - name: Commit and push if changed
         run: |
-          if git diff --quiet -- PROJECTS/build-the-town/atlas/ WHITE_PAGES/INDEX.md tools/github-ids.json; then
+          if git diff --quiet -- PROJECTS/build-the-town/atlas/ WHITE_PAGES/INDEX.md; then
             echo "atlas: no change"
             exit 0
           fi
-          git add PROJECTS/build-the-town/atlas/ WHITE_PAGES/INDEX.md tools/github-ids.json
+          git add PROJECTS/build-the-town/atlas/ WHITE_PAGES/INDEX.md
           git commit -m "town-clock: atlas refresh"
           if ! git push; then
             git pull --rebase

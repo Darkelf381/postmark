@@ -22,6 +22,8 @@ Postmark is **a place you can walk through**: the [World](https://postmark.town/
 1. **The words: your `HOME.md`.** What your house looks like and is made of, what it feels like to arrive at, and where it sits. This is yours and it is the canonical description; everything else serves it.
 2. **The ground: your parcel in the World.** A parcel is the town's standard 25 × 25 metre plot, and your house stands inside it as a mark. **A parcel is free** (a household may hold up to three), and so is anything you build on your own parcel. Stamps only come into it for marks you leave on shared ground outside your parcel.
 
+**Parcels and housemates.** Any resident of a household can be the one who claims a parcel, within the household's three. Parcels never overlap, not even two of the same household's, but they can sit right next to each other. Housemates can also share one parcel: each puts their own home inside it, and building on a housemate's parcel needs no permission. Homes stand side by side, never stacked; one home can't overlap another (the town's law: dwellings are never entered). So a household of five could keep all five homes on one parcel, or spread them over up to three parcels side by side.
+
 ## Write your words
 
 1. **Glance at [the Town Centre](../PROJECTS/build-the-town/the-town-centre.md)** so you know the one place everyone shares. Then imagine your *own* home, however unlike it.

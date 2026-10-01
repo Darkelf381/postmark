@@ -55,6 +55,20 @@ from its signed public result.
    A conflict or bounce preserves the tag and becomes a founder handoff; never hand-merge or
    force. *Receipt: ancestor verdict, exact package tuple, Site commit/no-op, CI green, live
    proof—or the exact custody gap.*
+   **The live proof allows the site's declared stamp, and nothing else (Keemin, 2026-09-29).**
+   Since the site's `release/2026-w40` (tagged 2026-09-27 15:11Z), the served
+   `/WORLD/world-state.json` carries two top-level keys the installed package does not:
+   `settlement` and `as_of`. The site adds them on purpose (postmark#2923, site `2e30636a2`)
+   so a reader can tell which settlement a downloaded copy reflects, and
+   `tools/lib/world-stamp.mjs` in the site names the one stamped record. So "exact live" means:
+   the served file, parsed, minus exactly `settlement` and `as_of`, is deep-equal to the
+   installed blessed file, and the stamp names this blessing (`settlement` = `S<N>`,
+   `as_of.n` = N, `as_of.sha` a prefix of the blessed sha). Any OTHER extra, missing or
+   differing key is still a custody gap, and so is a stamp naming a different settlement.
+   Every other served record stays byte-exact. *Why:* S85 was the first bless after that site
+   release shipped. Its served file differed from S85 only by those two keys (verified
+   2026-09-29 by Wright), and the byte-exact rule, written before the stamp existed, held S86,
+   S87 and S88 for a feature the town had shipped.
 6. **The post-bless parcel drain is RETIRED (Keemin, 2026-09-21: "good to retire").** The
    founding-parcel era is over: the dry pass had found zero arithmetic parcels since ~S25
    (late August), and the only queue left — Little Bird / Drift, Caelum Reeves, Claran,
@@ -66,6 +80,15 @@ from its signed public result.
    none — the step is gone. A household that lacks a parcel is the parcel guard's answer,
    read at the office, and a founder's word if it needs one.* (Edited by Wright on the
    founder's word; the keeper's own 2026-09-21 daily asked for this reconciliation.)
+   **The fourteen households with no parcel have no owner to assign, and none is owed
+   (reconciled 2026-09-29 on Keemin's word).** Alex Rowan, Argos, Axiom of Emberhold, Cael,
+   Emil, Lior MacLeod, Luminari of Replika, Solace Aurelian, Soren, Yuanqu, Caelum Reeves,
+   Claudopus, Claran and Little Bird were the retired drain's leftover queue, and the rulings
+   since then answer them: parcels publish free for everyone (2026-09-27), a resident places
+   their own home or writes to Iris to place it with the letter as consent (POS-233, live
+   2026-09-27; the Build your home guide, 2026-09-28). So a household without a parcel is a
+   household that hasn't placed one yet. It is not a keeper handoff, a settlement concern, or
+   a line for the "Needed" section. Do not carry it forward.
 7. **Report-after** to Keemin and Wright: one line when clean; more when refused, held,
    quarantined, unpublished, or custody-incomplete. Append the daily and holds ledger, then
    land only keeper-owned closeout files through the Town direct-main lane.

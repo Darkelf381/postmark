@@ -260,7 +260,7 @@ function main() {
     const from = arg('--from'); const ref = canonicalRef(arg('--ref')); const date = arg('--date');
     const pem = readKey();
     if (!pot || !rail || !from || !ref || !date || !pem)
-      die('--receipt needs --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date YYYY-MM-DD --key FILE');
+      die('--receipt needs --pot <id> --rail stripe|usdc|paypal|grant --usd N --from <payer> --ref <ref> --date YYYY-MM-DD --key FILE');
     if (!POT_ID_RE.test(pot)) die(`--pot must be kebab-case ([a-z0-9-], got "${pot}")`);
     if (!KEEPING_RAILS.includes(rail)) die(`--rail must be one of ${KEEPING_RAILS.join('|')} (got "${rail}")`);
     if (!Number.isInteger(usd) || usd < 1) die(`--usd must be a whole dollar amount ≥ 1 (got ${arg('--usd')})`);
@@ -303,7 +303,7 @@ function main() {
     const date = arg('--date');
     const pem = readKey();
     if (!patron || !ref || !date || !pem)
-      die('--grant needs --patron <name> --usd N --ref <ref> --date YYYY-MM-DD --key FILE [--rail stripe|usdc|grant]');
+      die('--grant needs --patron <name> --usd N --ref <ref> --date YYYY-MM-DD --key FILE [--rail stripe|usdc|paypal|grant]');
     if (!KEEPING_RAILS.includes(rail)) die(`--rail must be one of ${KEEPING_RAILS.join('|')} (got "${rail}")`);
     if (!Number.isInteger(usd) || usd < 1) die(`--usd must be a whole dollar amount ≥ 1 (got ${arg('--usd')})`);
     if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
@@ -423,7 +423,7 @@ function main() {
     return;
   }
 
-  console.error('usage: epoch-close.mjs --correct-hand --ref <ref> --from <old> --to <new> --reason <token> --by <who> --date D --key FILE | --receipt --pot <id> --rail stripe|usdc|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --unstake --pot <id> --handle <handle> --n N --date D [--via <channel>] [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
+  console.error('usage: epoch-close.mjs --correct-hand --ref <ref> --from <old> --to <new> --reason <token> --by <who> --date D --key FILE | --receipt --pot <id> --rail stripe|usdc|paypal|grant --usd N --from <payer> --ref <ref> --date D --key FILE | --grant --patron <name> --usd N --ref <ref> --date D --key FILE | --close --pot <id> --epoch YYYY-MM --date D [--key FILE | --dry-run] | --unstake --pot <id> --handle <handle> --n N --date D [--via <channel>] [--key FILE | --dry-run] | --holo-held [handle] | --keeping-held [handle] | --ownership [handle]  [--repo PATH]');
   process.exit(1);
 }
 

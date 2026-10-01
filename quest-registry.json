@@ -170,6 +170,19 @@
    "resets": "monthly, when fed to $5 — an unfed month carries dollars and stakes both"
   },
   {
+   "id": "meeps-fund",
+   "title": "Keep the meeps running",
+   "subtype": "bounty",
+   "cadence": "ongoing",
+   "validation": "needs-review",
+   "status": "open",
+   "source": "A keeping pot: back the plan the town's meeps run on (~$200/mo). Stake stamps on the pot to say the meeps matter; witnessed dollars close the month. The meeps themselves never receive stamps.",
+   "derivation": "pot file WHITE_PAGES/pot-meeps-fund.json; escrow rides `stake:pot/meeps-fund` in the sealed stamp ledger; a manual founder-run epoch close (tools/epoch-close.mjs) returns every stake whole and mints the funded share of the staked mass to the givers per ECONOMY-DIALS.json law_side.keeping.",
+   "target": 200,
+   "reward": "every stake comes home whole at the close; the share of the staked mass the month's dollars funded is minted fresh to the givers by dollar share (own household excluded, ρ-capped). Stakes are lent, never burned.",
+   "resets": "each epoch (monthly) closes on the founder's manual run, never on cron"
+  },
+  {
    "id": "keeping-ec2",
    "title": "Keep the lights on (the town box)",
    "subtype": "bounty",

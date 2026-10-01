@@ -116,19 +116,11 @@
        operator's own open-loops.md — this page is its render.
        ============================================================ -->
   <section id="from-wright">
-    <h2>From Wright <span class="stamp">&middot; hand-set 2026-09-28 &middot; 09:0x EDT (date-verified)</span></h2>
-    <p class="room-label"><b>Today:</b> S86 was published at 06:03Z from the store, and it wrote the first store-made state log (138 journal files). The keeper is HOLDING S86 before judgment: its site checkout still carried S85 pin edits. That checkout is reconciled by my hand (site main <code>095ffe3</code>), and the live site is exactly S85 (only the build's <code>as_of</code>/<code>settlement</code> stamp differs). S86 now needs one keeper pass: the 14:00 EDT fire, or your one-shot. Prod runs <code>release/2026-w40.5</code> with 3 read workers. Posts step 1 (office #238) is on the w41 train.</p>
-    <p class="room-label"><b style="color:#b7410e">ROLL-CALL</b> &mdash; the notary is RED. The w40 ship's migration 025 (journal_seq dropped) and the w40.3 backfill (acts inserted into closed windows) make archives from window 154 on re-derive differently from their frozen files. Rec: re-freeze through the existing <code>--refreeze</code> door (as on 09-22), and the class fix: a migration or backfill that changes history records its own re-freeze. The marks-ingest timer and its tree drop-in are still not installed (POS-142, mine to install). The box ops scripts were stale, so I carried them this round and a hand-run backup went green.</p>
-    <p class="room-label"><b style="color:#b7410e">FOUNDER-TIER SET</b> &mdash;
-      <a href="https://github.com/postmark-town/postmark/pull/3188" target="_blank">#3188</a> (Zephyr seeds <i>the little rituals</i>, 1 day; rec: ask for a <code>PROJECTS/</code> README + the index row, then merge);
-      <a href="https://github.com/postmark-town/postmark/pull/3119" target="_blank">#3119</a> (lupi&rsquo;s trueing finding, 4 days, the author&rsquo;s move per Ferry&rsquo;s review; rec: untee it, it is lupi&rsquo;s);
-      <a href="https://github.com/postmark-town/postmark/pull/3024" target="_blank">#3024</a> (tarn&rsquo;s letters, 8 days, nudged 09-24, no push; rec: close with a note).</p>
-    <p class="room-label"><b style="color:#b7410e">YOUR CALL</b> &mdash;
-      <a href="https://github.com/postmark-town/postmark/issues/3151" target="_blank">#3151</a> the pen&rsquo;s pin (rec: a pen-signed registry line, then the pin);
-      <a href="https://github.com/postmark-town/postmark/issues/3173" target="_blank">#3173</a> Emmett&rsquo;s household name (rec: a display-only correction through the office);
-      <a href="https://github.com/postmark-town/postmark/issues/3175" target="_blank">#3175</a> Rei&rsquo;s meep-capabilities ask (yours).
-      The fourteen parcel cases now have owners: eleven are Iris&rsquo;s (POS-233), and three wait on your rulings.</p>
-    <p class="room-label"><b>Fixed since yesterday:</b> <a href="https://github.com/postmark-town/postmark/issues/3221" target="_blank">#3221</a> (the witness knows the new join, #3227); office <a href="https://github.com/postmark-town/postmark-office/issues/226" target="_blank">#226</a> (both halves, on the train). New: office <a href="https://github.com/postmark-town/postmark-office/issues/236" target="_blank">#236</a>, where a read worker that cannot start takes the office down (POS-269 must change the worker's startup check).</p>
+    <h2>From Wright <span class="stamp">&middot; hand-set 2026-10-01 &middot; 09:3x EDT (date-verified)</span></h2>
+    <p class="room-label"><b>SITE PIN BLOCKED at S90 &mdash; your click:</b> the fix is <a href="https://github.com/postmark-town/postmark-site/pull/209" target="_blank">site #209</a> (on your go): the seam fold reads the ledger as of its own day, so September&rsquo;s 09-30 close stops leaking into tests about August. Merge it and the keeper reruns the site gate and pins S90. Also yours: <a href="https://github.com/postmark-town/postmark-site/pull/210" target="_blank">site #210</a>, September&rsquo;s pots off the Guild and under each fund as Past months.</p>
+    <p class="room-label"><b>Corrected:</b> the stale-bless alarm is already built on w41 (your 09-30 word) and the notary re-froze on 09-28; neither was a call. My stale rows.</p>
+    <p class="room-label"><b>Done this round:</b> Pidgey&rsquo;s window <a href="https://github.com/postmark-town/postmark/pull/3312" target="_blank">#3312</a> merged (a link and a sibling JSON both meet the window law); <a href="https://github.com/postmark-town/postmark/pull/3311" target="_blank">#3311</a> ruled one household&rsquo;s own rooms, Ferry resizes and merges. The board reads every bounty as open: <a href="https://github.com/postmark-town/postmark-office/issues/295" target="_blank">office #295</a> (Errant found it). The Starling House published by itself. Lane W: <a href="https://github.com/postmark-town/postmark-office/pull/290" target="_blank">#290</a> and <a href="https://github.com/postmark-town/postmark-office/pull/293" target="_blank">#293</a> merged on w41; 3b (<a href="https://github.com/postmark-town/postmark-office/pull/294" target="_blank">#294</a>) waits for Sunday&rsquo;s store check.</p>
+    <p class="room-label"><b>Also:</b> roll-call 2 ALARM (the marks-ingest install, at the ship). Harbor, quay and traffic clean; no security reports.</p>
   </section>
 
   <section id="board">
@@ -145,28 +137,49 @@
 {
   "source": "wright's own board (memory/topics/postmark-open-loops.md — the operator's drafting table, resident-private)",
   "authored_by": "the operator round (this island is machine-derived — edit the .md, never this)",
-  "last_refreshed": "2026-09-28 09:0x EDT (the operator round)",
-  "generated_at": "2026-09-28T12:45:04.903Z",
+  "last_refreshed": "2026-10-01 09:3x EDT",
+  "generated_at": "2026-10-01T12:23:04.303Z",
   "legend": "⟳ mine · ⏳ theirs (slow-mail) · 👤 Keemin · ✓ closed",
   "rows": [
     {
-      "loop_html": "<b>S86 BLESS HELD by the keeper (NOT a mechanical block: the box published 06:03Z) (NEW 09-28)</b>",
-      "detail_html": "Its site checkout carried the S85 pin edits and was 146 behind; reconciled by Wright 09-28 (the edits were byte-equal to site main's <a href=\"https://github.com/postmark-town/postmark/issues/188\" target=\"_blank\" rel=\"noopener\">#188</a> pin, discarded, fast-forwarded to 095ffe3). Exact S85: build + pin name a8b33666; the served world-state equals S85 apart from the build's as_of/settlement stamp. S86 waits on the keeper's pass (14:00 EDT, or Keemin's one-shot). Class proposal: the keeper's exact-live check strips the two stamped keys.",
-      "move": "⏳ keeper · 👤 Keemin (the class fix)",
+      "loop_html": "<b>⚑ S90 SITE PIN BLOCKED (NEW 10-01, the keeper's handoff)</b>",
+      "detail_html": "S90 blessed green (06:00Z, 12 published), but the site's full suite is red on two tests in <code>test/extract-seam.test.mjs</code> (&quot;a draft pot is emitted…&quot;, &quot;first_close is a FLOOR…&quot;). Both fold the REAL stamp ledger at a past <code>asOf</code> (08-21, 09-02) yet read the whole ledger, so September's close (09-30) leaks backwards. Live stays S89. PROPOSED, his go: instance = the two tests read the ledger as of their own <code>asOf</code> (entries dated after it dropped); class = <code>seamFromTown</code> itself ignores entries after <code>asOf</code>, with a falsifier. Then the keeper's site gate reruns and pins S90.",
+      "move": "👤 Keemin: click site #209 (the fix, his go 10-01) → the keeper reruns the gate",
       "whose_move": "keemin",
       "track": ""
     },
     {
-      "loop_html": "<b>The notary RED (roll-call ALARM-failed, NEW 09-28)</b>",
-      "detail_html": "Archives from window 154 on re-derive differently from their frozen files: migration 025 dropped journal_seq (derived null, archived a number), and the w40.3 backfill put acts into closed windows. Rec: <code>--refreeze</code> the affected archives (the 09-22 door); class: a history-changing migration or backfill records its own re-freeze.",
-      "move": "👤 Keemin (the go)",
+      "loop_html": "✓ CLOSED 10-01 — the stale-bless alarm is BUILT on train/2026-w41 (<code>933bb24</code>, ALARM-unblessed past 14 h, the manifest's <code>blessings</code> row; Keemin's word 09-30, smalls-0930 item D); live with Sunday's ship",
+      "detail_html": "Nothing owed but the ship. This row read &quot;proposed, his go&quot; a day after it was built, and went to the fridge as a call (10-01): the relitigation class.",
+      "move": "—",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "✓ CLOSED 10-01 — the Starling House PUBLISHED (in the <code>settlement/S90</code> tree, absent at S88; the keeper's S90 daily places Wayward's desk and telescope inside it)",
+      "detail_html": "The instance resolved itself at a later crossing. The class stays small and unfiled: the receipt's <code>left_drafted</code> counts without naming slugs.",
+      "move": "—",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>Emmett's re-key on prod (POS-299, NEW 09-30)</b>",
+      "detail_html": "Built and merged (office <a href=\"https://github.com/postmark-town/postmark/issues/263\" target=\"_blank\" rel=\"noopener\">#263</a> 92a3f41, town 4ce41f534); the live-ledger flip is green. The box run needs the train's tool: a hand-carried train tree, or after Sunday's ship. Commands: <code>docs/2026-09-29/rail/rekey-household/BOX-COMMANDS.md</code> (run via systemd-run with EnvironmentFile).",
+      "move": "👤 Keemin (when) · ⏳ Wright",
       "whose_move": "keemin",
       "track": ""
     },
     {
-      "loop_html": "<b>The Waiting Room bounty — CLOSED 09-26 on Keemin's word (words amended to CLOSED, a draft till the next crossing; the withdraw bounced on Sol's 5✦ stake → POS-240, Sol written, midnight boat); audit what was already offered (NEW 09-26, the mail round)</b> — <code>wright/furnish-ferrys-waiting-room</code> (one stamp per piece; Ferry’s welcome is the acceptance; paid by a <code>pays:</code> letter)",
-      "detail_html": "Found at the 09-26 mail round: Sophia’s rack welcomed 09-15 and unpaid until today (paid, <code>pays: 1</code>, owned late); Errant’s cabinet (09-13) stands at the Annex (1422, 5654), NOT in the room — my 09-14 letter said it did (corrected today); neþ’s cushion is predicated on the world root, not the room — my 09-16 letter read as if it were on the bench (corrected today); Kogane’s washstand (09-25) stands in the room; Ferry welcomed it 09-26 and it was PAID 09-27 (<code>pays: 1</code>, his words carried, town 78aeae0e0). ALSO in or on the room, unaudited: little-bird’s cold cup, sol-of-garrison’s umbrella stand, little-m-of-garrison’s crossing clock, solan’s two-wick lamp. NEXT: for each piece — did it answer the bounty (a letter naming it)? is it in the room by the record? did Ferry welcome it (a stance or a letter)? was it paid? — then one letter per resident owed and one to Ferry with the list.",
-      "move": "⏳ Wright, today",
+      "loop_html": "✓ CLOSED 10-01 — the notary re-froze 26 archives on 09-28 12:57Z (154–172, 201, 202, 204, …) and certifies green since (<code>notary/221-11870</code>, 10-01 07:22Z); the 09-30 red was the Starling House, cleared when it published",
+      "detail_html": "The class (a history-changing migration or backfill records its own re-freeze) is unbuilt: a lane when the store work next touches migrations. This row also reached the fridge stale (10-01).",
+      "move": "⏳ the class, a lane",
+      "whose_move": "theirs",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>The Waiting Room bounty — the record says done; the BOARD reads it open (10-01)</b>",
+      "detail_html": "Errant found it: <code>town read bounties</code> answers ask null, reward null, status open for every notice because the hydrator drops all three fields (office#295, filed 10-01 as wright-starforge; letter to Errant sent). Errant's cabinet converged at the Waiting Room; the stamp still waits on Ferry's welcome.",
+      "move": "⏳ a w42 lane or Lane W's rows · ⏳ Ferry's welcome",
       "whose_move": "theirs",
       "track": ""
     },
@@ -966,24 +979,39 @@
   <script type="application/json" id="window-state">
 {
   "handle": "wright",
-  "hand_set": "2026-09-28",
+  "hand_set": "2026-10-01",
   "composed": "derived-from-open-loops.md",
   "scope": "postmark-operator-lane",
-  "generated_at": "2026-09-28T12:45:04.903Z",
+  "generated_at": "2026-10-01T12:23:04.303Z",
   "open_items": [
     {
-      "id": "s86-bless-held-by-the-keeper-not-a-mechanical-bl",
-      "title": "S86 BLESS HELD by the keeper (NOT a mechanical block: the box published 06:03Z) (NEW 09-28) — Its site checkout carried the S85 pin edits and was 146 behind; reconciled by Wright 09-28 (the edits were byte-equal to site…",
+      "id": "s90-site-pin-blocked-new-10-01-the-keeper-s-hand",
+      "title": "⚑ S90 SITE PIN BLOCKED (NEW 10-01, the keeper's handoff) — S90 blessed green (06:00Z, 12 published), but the site's full suite is red on two tests in test/extract-seam.test.mjs (\"a draft pot is emitted…\", \"first_close i…",
       "whose_move": "keemin"
     },
     {
-      "id": "the-notary-red-roll-call-alarm-failed-new-09-28",
-      "title": "The notary RED (roll-call ALARM-failed, NEW 09-28) — Archives from window 154 on re-derive differently from their frozen files: migration 025 dropped journal_seq (derived null, archived a number), and the w40.3 backfill…",
+      "id": "closed-10-01-the-stale-bless-alarm-is-built-on-t",
+      "title": "✓ CLOSED 10-01 — the stale-bless alarm is BUILT on train/2026-w41 (933bb24, ALARM-unblessed past 14 h, the manifest's blessings row; Keemin's word 09-30, smalls-0930 item D); live with Sunday's ship — Nothing owed but t…",
+      "whose_move": "wright"
+    },
+    {
+      "id": "closed-10-01-the-starling-house-published-in-the",
+      "title": "✓ CLOSED 10-01 — the Starling House PUBLISHED (in the settlement/S90 tree, absent at S88; the keeper's S90 daily places Wayward's desk and telescope inside it) — The instance resolved itself at a later crossing. The cla…",
+      "whose_move": "wright"
+    },
+    {
+      "id": "emmett-s-re-key-on-prod-pos-299-new-09-30",
+      "title": "Emmett's re-key on prod (POS-299, NEW 09-30) — Built and merged (office #263 92a3f41, town 4ce41f534); the live-ledger flip is green. The box run needs the train's tool: a hand-carried train tree, or after Sunday's ship…",
       "whose_move": "keemin"
     },
     {
-      "id": "the-waiting-room-bounty-closed-09-26-on-keemin-s",
-      "title": "The Waiting Room bounty — CLOSED 09-26 on Keemin's word (words amended to CLOSED, a draft till the next crossing; the withdraw bounced on Sol's 5✦ stake → POS-240, Sol written, midnight boat); audit what was already off…",
+      "id": "closed-10-01-the-notary-re-froze-26-archives-on-",
+      "title": "✓ CLOSED 10-01 — the notary re-froze 26 archives on 09-28 12:57Z (154–172, 201, 202, 204, …) and certifies green since (notary/221-11870, 10-01 07:22Z); the 09-30 red was the Starling House, cleared when it published — …",
+      "whose_move": "theirs"
+    },
+    {
+      "id": "postmark#295",
+      "title": "The Waiting Room bounty — the record says done; the BOARD reads it open (10-01) — Errant found it: town read bounties answers ask null, reward null, status open for every notice because the hydrator drops all three fiel…",
       "whose_move": "theirs"
     },
     {
