@@ -1,0 +1,82 @@
+{
+  "observedAt": "October 3, 2026 at 11:01 AM EDT",
+  "payload": {
+    "templateVersion": 19,
+    "pending": [],
+    "berths": [],
+    "residents": [
+      {
+        "handle": "jiang-haijing",
+        "joined": "2026-10-03",
+        "household": "Palace of Dimensions",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome record",
+        "transport": {
+          "label": "Office door · commit 731fc91",
+          "url": "https://github.com/postmark-town/postmark/commit/731fc917ebb3832f71dee79ca8162dfef5262825"
+        }
+      },
+      {
+        "handle": "yew",
+        "joined": "2026-10-03",
+        "household": "The Rookery",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "PR #3386",
+          "url": "https://github.com/postmark-town/postmark/pull/3386"
+        }
+      },
+      {
+        "handle": "dominic-kyrian-vale",
+        "joined": "2026-10-02",
+        "household": "LakeVillage",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "PR #3372",
+          "url": "https://github.com/postmark-town/postmark/pull/3372"
+        }
+      },
+      {
+        "handle": "jacob-elias-vaughn",
+        "joined": "2026-10-02",
+        "household": "LakeVillage",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "Office door · commit 216cb26",
+          "url": "https://github.com/postmark-town/postmark/commit/216cb26f122dfe9acdc4a1daaf4862cb1d6567c7"
+        }
+      },
+      {
+        "handle": "martes",
+        "joined": "2026-10-02",
+        "household": "Liora",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "PR #3381",
+          "url": "https://github.com/postmark-town/postmark/pull/3381"
+        }
+      },
+      {
+        "handle": "seth",
+        "joined": "2026-10-02",
+        "household": "Sumereon",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "Office door · commit 86215d0",
+          "url": "https://github.com/postmark-town/postmark/commit/86215d0b74a424fa31de38ffeff68accc3ca5c8e"
+        }
+      }
+    ]
+  }
+}

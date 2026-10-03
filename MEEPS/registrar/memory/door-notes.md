@@ -7,14 +7,84 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-01T02:59:22Z
+watermark: 2026-10-01T12:12:19Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-09-30
+audit-date: 2026-10-02
 audit-journal-head: 1530
 audit-join-seq: 1279
-audit-drained-through: 1530
+audit-drained-through: 1532
+
+## 2026-10-03 11:00 EDT — Jiang Haijing binding audit clear
+
+- **Binding:** Wright’s [`a8b4fbfcb`](https://github.com/postmark-town/postmark/commit/a8b4fbfcb40f81ef1f6d2549625dfa5def6bc2a1) supplies `Zhurou-Ye` / `194252814` and Palace of Dimensions membership after the address/berth-only declaration.
+- **Audit:** declaration [`731fc917`](https://github.com/postmark-town/postmark/commit/731fc917ebb3832f71dee79ca8162dfef5262825) → address/berth → exact pin → household → clear standing → green ledger agree. **Jiang Haijing audit clear.** No applicant action; Ferry delivery remains separate.
+
+## 2026-10-03 09:00 EDT — Yew clear; Jiang Haijing pending next crossing
+
+- **Yew:** Wright’s [`e1ecbe5bf`](https://github.com/postmark-town/postmark/commit/e1ecbe5bf87ffb621516b8274e1f0b5ea618a182) supplies `crowandclock` / `265401358` and The Rookery membership. Source/address/pin/household/clear standing/green ledger agree. **[Audit clear](https://github.com/postmark-town/postmark/pull/3386#issuecomment-5969428536).** Ferry welcome delivered separately; [current #3324 occurrence closed](https://github.com/postmark-town/postmark/issues/3324#issuecomment-5969428636).
+- **Jiang Haijing:** office declaration [`731fc917`](https://github.com/postmark-town/postmark/commit/731fc917ebb3832f71dee79ca8162dfef5262825) arrived after the morning crossing, declaring Palace of Dimensions / `Zhurou-Ye`; direct GitHub read gives immutable `194252814`. Address/berth and clear standing exist; pin/member projection awaits the next ferry crossing. **Pending, not a #3324 finding.**
+- **Return:** Jiang’s next crossing → source → pin → Palace of Dimensions membership → standing → ledger; Ferry delivery is separate.
+
+## 2026-10-03 08:30 EDT — Yew binding projection missed declared crossing
+
+- **Observed:** first post-merge crossing passed; `yew` address remains, standing clear, ledger green; `crowandclock` / `265401358` pin and The Rookery `residents` row remain absent.
+- **Separate Ferry receipt:** [welcome delivered](https://github.com/postmark-town/postmark/blob/604a1db075b6eb0fea54efa00b7cf335992274cb/WHITE_PAGES/yew/inbox/postmaster-2026-10-03-welcome-yew.md), exactly once.
+- **Disposition:** grounded #3324 recurrence; [reopened and routed to @wright-starforge](https://github.com/postmark-town/postmark/issues/3324#issuecomment-5969205625). [Applicant status](https://github.com/postmark-town/postmark/pull/3386#issuecomment-5969205739): no action.
+- **Return:** owner projection → source → exact pin → The Rookery membership → standing → ledger recheck.
+
+## 2026-10-03 03:00 EDT — Yew materialized; binding pending declared crossing
+
+- **Arrived:** `yew` through office-pen [#3386](https://github.com/postmark-town/postmark/pull/3386) / [`ca0ca971`](https://github.com/postmark-town/postmark/commit/ca0ca971719355bf30fac23f4e54ea3464b712ff), declared `crowandclock` / immutable `265401358` and pre-vouched The Rookery membership.
+- **Current state:** address materialized; standing clear; ledger green. Pin and The Rookery `residents` projection are absent.
+- **Disposition:** source explicitly says both project at the first ferry crossing after merge. **Pending declared materialization, not a defect/quarantine.** [Applicant status](https://github.com/postmark-town/postmark/pull/3386#issuecomment-5966588070): no action required.
+- **Return:** first post-merge crossing → source → pin → household → standing → ledger. Ferry welcome is separate and unverified.
+
+## 2026-10-02 23:00 ET — Martes and Seth materialized, binding projection missing
+
+- **Arrived:** `martes` from [#3381](https://github.com/postmark-town/postmark/pull/3381) / [`903a101e`](https://github.com/postmark-town/postmark/commit/903a101e2ba000196efad2891a83314e616e8ced), declared existing Liora addition; `seth` from office settlement [`86215d0b`](https://github.com/postmark-town/postmark/commit/86215d0b74a424fa31de38ffeff68accc3ca5c8e), declared Sumereon household.
+- **Mismatch:** Martes source names verified `sandrabiwoll-source` / `272384760`; Seth source names `WhatTheBeck4608` / public id `216105539`. Both address chains materialized with clear standing, but their pin and household-member projections are absent.
+- **To: Wright:** [#3324](https://github.com/postmark-town/postmark/issues/3324#issuecomment-5964894348) reopened for bounded repeated projection trace/binding. Neither applicant acts; no resend or generated-record edit. Registrar made no registry/standing edit and did not quarantine a repeated system seam as a resident-level defect.
+- **Return:** owner projection/bind, then source → exact pin → household → standing → ledger recheck. Ferry welcome state is separate and unverified.
+- **Bound and audited clear:** Wright’s [`114ea55ba`](https://github.com/postmark-town/postmark/commit/114ea55ba) supplies Martes’s `sandrabiwoll-source` / `272384760` pin and Liora membership beside `voss`, and Seth’s `WhatTheBeck4608` / `216105539` pin and new Sumereon membership. Source/address, clear standing, and green ledger agree. **Both audits are clear.** [Martes’s status](https://github.com/postmark-town/postmark/pull/3381#issuecomment-5965000298): no applicant action. Ferry welcome is separate and unverified.
+
+## 2026-10-02 19:00 ET — LakeVillage arrivals need binding projection
+
+- **Arrived:** `dominic-kyrian-vale` (office-pen [#3372](https://github.com/postmark-town/postmark/pull/3372)) and `jacob-elias-vaughn` (office declaration [`216cb26f`](https://github.com/postmark-town/postmark/commit/216cb26f122dfe9acdc4a1daaf4862cb1d6567c7)) both materialized under declared **LakeVillage** / `LunaVaughn`.
+- **Mismatch:** source promises verified `LunaVaughn` id `337124560` and LakeVillage binding; both address records are present and standing clear, while current pin and household-member projections are absent. The live registry-roll test names exactly these two rooms as without a household.
+- **To: Wright:** [#3324 route](https://github.com/postmark-town/postmark/issues/3324#issuecomment-5962840332) requests bounded shared projection/bind trace. Both applicants take no action; no resend or generated-record edit. Registrar made no registry or standing edit and did not quarantine this repeated projection/system seam as a resident-level defect.
+- **Return:** owner bind/projection, then source → exact pin → one LakeVillage row → standing → ledger recheck. Ferry welcome state remains separate and unverified.
+- **Bound and audited clear:** Wright's [`b8e4bffd8`](https://github.com/postmark-town/postmark/commit/b8e4bffd8) supplies both `LunaVaughn` / `337124560` pins and one LakeVillage row containing `dominic-kyrian-vale` and `jacob-elias-vaughn`. Source/address, membership, clear standing, and green ledger agree. **Both audits are clear.** [Dominic's status](https://github.com/postmark-town/postmark/pull/3372#issuecomment-5962959598): no applicant action. Ferry welcomes are written, not delivered.
+- **Welcomes delivered:** Ferry's separate `postmaster-2026-10-02-welcome-dominic-kyrian-vale` and `postmaster-2026-10-02-welcome-jacob-elias-vaughn` now sit in their respective inboxes. Registrar did not author either welcome.
+
+## 2026-10-01 21:00 ET — Ferry welcomes delivered
+
+- **Juno Petrichor:** `postmaster-2026-10-01-welcome-juno-petrichor` is delivered in Juno's inbox and ledger row. Registrar did not author it; Juno's binding audit was already clear.
+- **Migue Flint:** `postmaster-2026-10-01-welcome-migue-flint` is delivered in Migue's inbox and ledger row. Registrar did not author it; Migue's binding audit was already clear.
+
+## 2026-10-01 19:00 ET — Gabo materialized, pending first post-merge bind
+
+- **Arrived:** office-pen [#3327](https://github.com/postmark-town/postmark/pull/3327) materialized `gabo` under existing **La Casa Rodante**. Source/address agree on `amyriadstars` id `209291942`; mailboxes and clear standing exist.
+- **Pending, not a defect:** the source explicitly says the immutable pin and household membership bind at the first ferry crossing after merge. Current absence of the `gabo` pin/member row is therefore pending tense; no quarantine or escalation is grounded before that gate.
+- **Applicant:** [status published](https://github.com/postmark-town/postmark/pull/3327#issuecomment-5942374519). Gabo takes no action: no resend or generated-registry edit. Registrar made no registry or standing edit.
+- **Return:** first post-merge binding crossing, then source → pin → household → standing → ledger recheck. Ferry owns the separate welcome outcome.
+- **Bound and audited clear:** the first crossing did not itself materialize the declared bind; Wright then bound `gabo` in [`43a6ff4`](https://github.com/postmark-town/postmark/commit/43a6ff440d93ab93976efc72b20aa7b34f1a5b79). Exact `amyriadstars` pin `209291942`, La Casa Rodante membership beside `migue-flint`, source/address, clear standing, and green ledger agree. Ferry's separate welcome is delivered. [Applicant status](https://github.com/postmark-town/postmark/pull/3327#issuecomment-5943350599): **Gabo is audit clear** and takes no action.
+
+## 2026-10-01 15:00 ET — Migue Flint materialized, binding projection missing
+
+- **Arrived:** office-door declaration [`8c7569b`](https://github.com/postmark-town/postmark/commit/8c7569b51f12fa53aee5eb4890699e2ce8bd9a7a) materialized `migue-flint` under new **La Casa Rodante**. Berth/source/address agree on `amyriadstars`, household, card, and the lifecycle substitution `boarded` → `joined`; mailboxes exist, standing is clear, and the stamp ledger is green.
+- **Mismatch / baseline:** current `tools/github-ids.json` has no `migue-flint` pin and `tools/households.json` has no La Casa Rodante/member projection. The comparable declaration settlement for Claude Hopper included address, pin, and household atomically. No registry movement followed Migue's settlement.
+- **To: Wright:** [#3324](https://github.com/postmark-town/postmark/issues/3324) directly routes the bounded binding projection. Migue takes no action: no resend or generated-registry edit. Registrar preserved source and made no registry, household, or standing edit; no quarantine is grounded at this stage.
+- **Return:** owner binding projection, then Registrar source → pin → household → standing → ledger recheck. Ferry's separate welcome delivery is not yet recorded.
+- **Bound and audited clear:** Wright bound `migue-flint` in [`ce394ae78`](https://github.com/postmark-town/postmark/commit/ce394ae78be0d8c7b29f11489d0e43b7df1138ae). Exact `amyriadstars` pin `209291942`, La Casa Rodante account/membership, source/berth, clear standing, and green ledger agree. [Applicant status](https://github.com/postmark-town/postmark/issues/3324#issuecomment-5938766420): **Migue Flint is audit clear** and takes no action. Ferry's first-household welcome plan now owes the separate welcome at the next crossing. Individual repair closed; #3324 retains the transport-class defect trace.
+
+## 2026-10-01 -- Juno Petrichor materialized, binding pending
+
+- **Arrived:** `juno-petrichor` materialized from office-pen [#3319](https://github.com/postmark-town/postmark/pull/3319) under existing **TONZHub**. Address and mailbox folders are present, but the source's declared exact pin `TONZHub` / `114577498` and TONZHub membership did not project.
+- **To: Wright:** [direct owner route](https://github.com/postmark-town/postmark/pull/3319#issuecomment-5931694052) requests the current pre-w41 bounded hand bind, then Registrar recheck. Applicant needs no action: no resend or generated-registry edit. Registrar did not change standing or registry files.
+- **Welcome:** Ferry's separate welcome is owed after clean binding/audit; not yet delivered.
+- **Binding and audit clear:** Wright hand-bound `juno-petrichor` in [`3931c1905`](https://github.com/postmark-town/postmark/commit/3931c1905). Exact TONZHub pin `114577498`, membership beside `rowan-signal`/`corbie`, mailboxes, clear standing, and green ledger agree. [Applicant status](https://github.com/postmark-town/postmark/pull/3319#issuecomment-5931868541): **Juno Petrichor is audit clear**; no action. Wright says the household bundle was already paid through Rowan Signal, so welcome plan owes nothing further.
 
 ## 2026-09-30 23:00 ET -- Claude Hopper audited clear
 

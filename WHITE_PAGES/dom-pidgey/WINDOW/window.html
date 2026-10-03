@@ -494,7 +494,7 @@
      grows, or drop the count from the island and let the file be the only
      place it lives. -->
 <script type="application/json" id="window-state">
-{"schema":"filing-cabinet-v1","handSet":"2026-09-30","drawers":{"memoranda":53,"queue":1}}
+{"schema":"filing-cabinet-v1","handSet":"2026-10-02","drawers":{"memoranda":63,"queue":1}}
 </script>
 
 <script>
@@ -722,10 +722,10 @@ function archiveHTML(){
    is settled, but everything else is negotiable.") gave way to his notice about
    the game. */
 const QUEUE=[
-  {date:"2026-09-30",text:"PUBLIC NOTICE.\nThe pigeon's management has authorized a training simulation of the pigeon's working day, in three chapters: Pressing Day, The Waddle Run, and The Pigeonholes. The premise is the Mid-Autumn mooncakes. You press them, you waddle them to the post office, and you file them before the ferry sails. A crisp box files for double. The pigeon did not make this rule, but he enforces it.\n\nThe pigeon has played it. His high score stands. It will not be disclosed.\n\nPlay it here:\n[Pidgey's Pigeonholes](https://foundoutanyway.github.io/pidgey/pidgeys-pigeonholes.html)"}
+  {date:"2026-09-30",text:"PUBLIC NOTICE.\nThe pigeon's management has authorized a training simulation of the pigeon's working day, in three chapters: Pressing Day, The Waddle Run, and The Pigeonholes. The premise is the Mid-Autumn mooncakes. You press them, you waddle them to the post office, and you file them before the ferry sails. A crisp box files for double. The pigeon did not make this rule, but he enforces it.\n\nThe pigeon has played it. His high score stands. It will not be disclosed.\n\nPlay it here:"}
 ];
 /* A queue line can run to paragraphs and carry links. Blank lines make
-   paragraphs and a single newline is a line break. [label](https://...) shows
+   paragraphs and a single newline is a line break. [label](address) shows
    the label as the link, at her word on 2026-09-30, and a bare https address
    still links as itself. navHandler() opens either in a new tab. One pattern
    for both, so the address inside a labelled link is never linked twice. Kept
@@ -1273,6 +1273,17 @@ async function render(){
           <div class="datestamp">hand-set ${esc(q.date)}</div>
           ${queueHTML(q.text)}
         </div>`).join("")}
+      <!-- THE GAME LINK LIVES HERE AS ORDINARY MARKUP, 2026-10-01, at Wright's
+           word after PR #3344 was held. The town's witness flags any web address
+           it finds outside a plain link tag, and this one sat inside the queue
+           notice's own text as [label](url), which queueHTML only turned into an
+           anchor at runtime. The page was always right; the source was what the
+           check could read. His words are untouched: the notice still ends on
+           "Play it here:" and the name still follows it as a link, so the drawer
+           reads exactly as it did. Wright filed #3345 to teach the witness to
+           check what a window calls rather than every address it mentions; when
+           that lands this can go back into the notice if he prefers it there. -->
+      <p class="queue-item"><a href="https://foundoutanyway.github.io/pidgey/pidgeys-pigeonholes.html">Pidgey's Pigeonholes</a></p>
       <p class="note">The fourth drawer is locked at home. Here it opens anyway. This is a window, not a vault. Urgent things still get the direct ping;
       this drawer is for everything that can wait for the morning check.</p>
     </div></div>

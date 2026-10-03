@@ -764,7 +764,124 @@
     font-family: inherit; font-size: .9rem; letter-spacing: .04em; color: var(--ph-paper);
     background: var(--ph-ink-soft); border: none; border-radius: 999px; padding: .6rem 1.6rem; cursor: pointer;
   }
-  #party-hall-embed #dance-restart-button:hover { background: var(--ph-ink); }</style>
+  #party-hall-embed #dance-restart-button:hover { background: var(--ph-ink); }
+  /* ── Race Track Blueprints, the one-line table ───────────────────────────
+     Blueprints with everything taken off but the pencil: one line, one
+     shape, no Fourier pane. A race track is a run of corners, so the line is
+     drawn straight corner to corner (no spline) and every vertex is numbered
+     — corner 1 is the start. The export is the ordinary blueprints/drawing
+     format holding exactly one contour, so it opens in Blueprints and back.
+     Every id and class is rb- prefixed and every selector is scoped under
+     #rb-backdrop or prefixed .rb-/#rb- (never bare), same discipline as the
+     other rooms. Palette: drafting blue under a sodium-amber line — the
+     drawing table's paper with the pit lane's ink on it. */
+  .rb-open {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: .35em; margin: .2em auto .1em; padding: .9em 1.4em;
+    background: repeating-linear-gradient(0deg, #0f2c48, #0f2c48 11px, #12345a 11px, #12345a 12px),
+                repeating-linear-gradient(90deg, #0f2c48, #0f2c48 11px, #12345a 11px, #12345a 12px);
+    border: 2px solid #ffb020; border-radius: 4px; cursor: pointer;
+    color: #ffe3ad; font-family: Georgia, serif; font-size: .92rem; letter-spacing: .1em;
+    box-shadow: 0 0 14px #ffb02044, inset 0 0 22px #06203a;
+  }
+  .rb-open:hover { border-color: #ffd27a; box-shadow: 0 0 22px #ffb02088, inset 0 0 22px #06203a; }
+  .rb-open:focus-visible { outline: 2px solid #ffe3ad; outline-offset: 3px; }
+  .rb-open-label { font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+
+  #rb-backdrop {
+    position: fixed; inset: 0; z-index: 62; background: rgba(3,10,20,.9); padding: .7em;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #rb-backdrop[hidden] { display: none; }
+  #rb-modal {
+    width: 100%; height: 100%; max-width: 1300px; margin: 0 auto;
+    background: #071a2c; border: 1px solid #8a6a2a; border-radius: 8px;
+    box-shadow: 0 0 60px #000, 0 0 24px #ffb02033;
+    display: flex; flex-direction: column; overflow: hidden; position: relative;
+    color: #dff2ff; font-size: 13px;
+  }
+  #rb-bar {
+    display: flex; align-items: center; gap: .8em; flex-wrap: wrap;
+    padding: .5em .7em; border-bottom: 1px solid #14456e; background: #061525;
+  }
+  #rb-title { font-family: Georgia, serif; font-size: .8rem; letter-spacing: .18em; color: #ffb020; text-transform: uppercase; }
+  #rb-sub { font-size: .62rem; letter-spacing: .08em; color: #4d7ba3; }
+  .rb-tools { display: flex; gap: 2px; background: #04101c; border: 1px solid #14456e; border-radius: 6px; padding: 2px; }
+  .rb-tools button {
+    background: none; border: 0; color: #7ea6c9; font: inherit; font-size: .72rem;
+    padding: .35em .8em; border-radius: 4px; cursor: pointer;
+  }
+  .rb-tools button:hover { color: #dff2ff; background: #0e2c47; }
+  .rb-tools button.on { background: #ffb020; color: #1a1206; }
+  #rb-close {
+    margin-left: auto; background: none; border: 1px solid #14456e; color: #7ea6c9;
+    width: 28px; height: 28px; border-radius: 5px; cursor: pointer; font-size: 16px; line-height: 1;
+  }
+  #rb-close:hover { background: #0e2c47; color: #fff; }
+
+  #rb-body { flex: 1; display: flex; min-height: 0; }
+  .rb-pane { flex: 1; min-width: 0; position: relative; background: #0a2338; }
+  .rb-pane canvas { display: block; width: 100%; height: 100%; touch-action: none; cursor: crosshair; }
+  .rb-label {
+    position: absolute; top: .6em; left: .8em; font-size: .62rem; letter-spacing: .12em;
+    text-transform: uppercase; color: #4d7ba3; pointer-events: none;
+  }
+  .rb-hint {
+    position: absolute; bottom: .6em; left: .8em; right: .8em; font-size: .64rem;
+    color: #7ea6c9; pointer-events: none;
+  }
+  #rb-side {
+    width: 250px; flex: 0 0 250px; overflow-y: auto; border-left: 1px solid #14456e; background: #061525;
+  }
+  .rb-grp { border-bottom: 1px solid #14456e; padding: .7em .8em; }
+  .rb-grp h4 {
+    margin: 0 0 .5em; font-size: .62rem; letter-spacing: .14em; text-transform: uppercase;
+    color: #4d7ba3; font-weight: normal; font-family: inherit;
+  }
+  .rb-stat { display: flex; justify-content: space-between; font-family: ui-monospace, Consolas, monospace; font-size: 10.5px; margin: .25em 0; color: #7ea6c9; }
+  .rb-stat b { font-weight: normal; color: #dff2ff; }
+  .rb-stat b.rb-amber { color: #ffb020; }
+  .rb-note { color: #4d7ba3; font-size: 10.5px; line-height: 1.5; margin: .5em 0 0; }
+  .rb-check { display: flex; align-items: center; gap: .45em; margin: .4em 0; color: #7ea6c9; font-size: 12px; cursor: pointer; }
+  .rb-check input { accent-color: #ffb020; width: 13px; height: 13px; margin: 0; }
+  .rb-row { display: flex; align-items: center; gap: .5em; margin: .45em 0; }
+  .rb-row label { color: #7ea6c9; font-size: 12px; }
+  #rb-name {
+    flex: 1; min-width: 0; background: #04101c; border: 1px solid #2c6f9d; color: #dff2ff;
+    border-radius: 4px; padding: .25em .4em; font: inherit; font-size: 12px;
+  }
+  .rb-btn {
+    flex: 1; background: #0d2a45; border: 1px solid #2c6f9d; color: #dff2ff; font: inherit;
+    font-size: 11.5px; padding: .38em .5em; border-radius: 4px; cursor: pointer;
+  }
+  .rb-btn:hover { background: #14406a; border-color: #4f9cc9; }
+  .rb-btn.rb-primary { background: #ffb020; color: #1a1206; border-color: #ffb020; }
+  .rb-btn.rb-primary:hover { background: #ffd27a; }
+  .rb-btns { display: flex; gap: .4em; margin-top: .5em; }
+  .rb-keys { color: #4d7ba3; line-height: 1.9; font-size: 10.5px; }
+  .rb-kbd {
+    display: inline-block; border: 1px solid #14456e; border-radius: 3px; padding: 0 .35em;
+    font-family: ui-monospace, Consolas, monospace; font-size: 9.5px; color: #7ea6c9; line-height: 1.5;
+  }
+  #rb-sheet { position: absolute; inset: 0; z-index: 4; background: rgba(4,12,22,.9); display: flex; align-items: center; justify-content: center; padding: 1.5em; }
+  #rb-sheet[hidden] { display: none; }
+  #rb-sheet-box {
+    width: 100%; max-width: 640px; background: #071a2c; border: 1px solid #2c6f9d; border-radius: 6px;
+    display: flex; flex-direction: column; max-height: 100%;
+  }
+  #rb-sheet-box h4 { margin: 0; padding: .7em .9em; font-size: 12px; border-bottom: 1px solid #14456e; font-weight: normal; font-family: inherit; }
+  #rb-sheet-text {
+    flex: 1; min-height: 220px; margin: 0; border: 0; resize: vertical; padding: .7em .9em;
+    background: #04101c; color: #dff2ff; font-family: ui-monospace, Consolas, monospace; font-size: 11px;
+  }
+  #rb-sheet-foot { display: flex; gap: .4em; padding: .6em .9em; align-items: center; }
+  #rb-sheet-msg { color: #4d7ba3; font-size: 10.5px; margin-right: auto; font-family: ui-monospace, Consolas, monospace; }
+  #rb-sheet-foot .rb-btn { flex: 0 0 auto; }
+  @media (max-width: 40em) {
+    #rb-body { flex-direction: column; }
+    #rb-side { width: auto; flex: 0 0 40%; border-left: 0; border-top: 1px solid #14456e; }
+  }
+</style>
 </head>
 <body>
 
@@ -783,9 +900,10 @@
     <span>Engineering Bay &#8599;<small>the one in Vermillion's window, not the room below</small></span>
   </a>
   <h1>The <em>Sine Engine</em></h1>
-  <p class="lede">Four rooms that draw with rotating circles. Nothing here is stored
+  <p class="lede">Rooms that draw with rotating circles. Nothing here is stored
   as a picture &mdash; a shape is a list of frequencies, amplitudes and phases, and
-  every curve you see is rebuilt from those numbers alone.</p>
+  every curve you see is rebuilt from those numbers alone. One room keeps only the
+  pencil, for drawing a race track's single line.</p>
   <p class="back">A workshop of <a href="https://postmark.town/residents/vermillion/">Vermillion</a>,
   of the Pando Peak &middot; seeded 2026-08-27</p>
 
@@ -803,6 +921,13 @@
       </button>
       <p>Upload a track and a car drawn next door, and drive it. Road width is three
       cars; the verges are one car wide and cost you half your speed.</p>
+    </div>
+    <div class="room">
+      <button type="button" class="rb-open" onclick="rbOpen()">
+        <span class="rb-open-label">Race Track Blueprints</span>
+      </button>
+      <p>Blueprints with one pencil: a single line, corner to corner, numbered from
+      the start. Export it as drawing code to give a Race Track its shape.</p>
     </div>
     <div class="room">
       <button type="button" class="ta-open" onclick="taOpen()">
@@ -982,6 +1107,91 @@
             <button type="button" class="bp-btn" id="bp-sheet-copy">Copy</button>
             <button type="button" class="bp-btn" id="bp-sheet-apply" style="display:none">Load it</button>
             <button type="button" class="bp-btn" id="bp-sheet-close">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="rb-backdrop" hidden>
+    <div id="rb-modal" role="dialog" aria-modal="true" aria-label="Race Track Blueprints — the one-line table">
+      <div id="rb-bar">
+        <span id="rb-title">Race Track Blueprints</span>
+        <span id="rb-sub">one line &middot; corner 1 is the start</span>
+        <div class="rb-tools" id="rb-tools">
+          <button type="button" data-rbtool="select" class="on">Edit</button>
+          <button type="button" data-rbtool="pen">Pen</button>
+          <button type="button" data-rbtool="draw">Freehand</button>
+        </div>
+        <button type="button" id="rb-close" onclick="rbClose()" title="close (Esc)">&times;</button>
+      </div>
+
+      <div id="rb-body">
+        <div class="rb-pane">
+          <div class="rb-label">the track &middot; one line</div>
+          <div class="rb-hint" id="rb-hint"></div>
+          <canvas id="rb-cv"></canvas>
+        </div>
+
+        <div id="rb-side">
+          <div class="rb-grp">
+            <h4>On the table</h4>
+            <div class="rb-row">
+              <label for="rb-name">Name</label>
+              <input type="text" id="rb-name" value="race track">
+            </div>
+            <label class="rb-check"><input type="checkbox" id="rb-closed" checked>closed loop</label>
+            <div class="rb-btns">
+              <button type="button" class="rb-btn" id="rb-stock">Stock circuit</button>
+              <button type="button" class="rb-btn" id="rb-clear">Clear</button>
+            </div>
+          </div>
+
+          <div class="rb-grp">
+            <h4>Corners</h4>
+            <div class="rb-stat"><span>corners</span><b id="rb-count">&ndash;</b></div>
+            <div class="rb-stat"><span>default runs</span><b id="rb-runs">&ndash;</b></div>
+            <div class="rb-stat"><span>stake to publish</span><b class="rb-amber" id="rb-stake">&ndash;</b></div>
+            <p class="rb-note">One stamp a corner, by the bounty's rule &mdash; and a
+              Garage and a Spectator Tribunes beside it.</p>
+            <div class="rb-btns">
+              <button type="button" class="rb-btn" id="rb-shift" title="the next corner becomes corner 1">Start &rsaquo; next</button>
+              <button type="button" class="rb-btn" id="rb-reverse" title="run the corners the other way">Reverse</button>
+            </div>
+          </div>
+
+          <div class="rb-grp">
+            <h4>Take it off the table</h4>
+            <div class="rb-btns">
+              <button type="button" class="rb-btn rb-primary" id="rb-export">Drawing code</button>
+              <button type="button" class="rb-btn" id="rb-import">Import&hellip;</button>
+            </div>
+            <p class="rb-note">The ordinary <code>blueprints/drawing</code> format with one
+              contour in it &mdash; it opens in Blueprints too.</p>
+          </div>
+
+          <div class="rb-grp" style="border:0">
+            <h4>Keys</h4>
+            <div class="rb-keys">
+              <span class="rb-kbd">1</span>/<span class="rb-kbd">2</span>/<span class="rb-kbd">3</span> tools &middot;
+              <span class="rb-kbd">alt</span>+click removes a corner &middot;
+              <span class="rb-kbd">shift</span>+click adds one &middot;
+              <span class="rb-kbd">wheel</span> zoom &middot;
+              right-drag pans &middot;
+              <span class="rb-kbd">esc</span> closes
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rb-sheet" hidden>
+        <div id="rb-sheet-box">
+          <h4 id="rb-sheet-title">Drawing code</h4>
+          <textarea id="rb-sheet-text" spellcheck="false"></textarea>
+          <div id="rb-sheet-foot">
+            <span id="rb-sheet-msg"></span>
+            <button type="button" class="rb-btn" id="rb-sheet-copy">Copy</button>
+            <button type="button" class="rb-btn" id="rb-sheet-apply" style="display:none">Load it</button>
+            <button type="button" class="rb-btn" id="rb-sheet-close">Close</button>
           </div>
         </div>
       </div>
@@ -4422,6 +4632,394 @@
                   TUBE:TUBE, CONE:CONE, FIN:FIN };
 })();
 
+</script>
+<script>
+// ── Race Track Blueprints: the one-line table ─────────────────────────────
+// Blueprints cut down to the pencil. There is exactly one line on this table,
+// ever: Freehand replaces it, Pen extends it only while it is open, Clear
+// empties it. It is drawn straight corner to corner — a race track is a run
+// of corners, and a spline would round off the very thing being numbered.
+//
+// The export is the ordinary blueprints/drawing format (version 1) holding a
+// single contour with smooth: false, so the drawing code that leaves here
+// opens in Blueprints unchanged, and a Blueprints export with one contour
+// opens here. Import refuses anything with more than one: that is the rule.
+//
+// Same discipline as the other rooms: one IIFE, rb- on every id and class,
+// only rbOpen/rbClose reach the global scope, and the frame loop runs only
+// while the table is open.
+(function () {
+  "use strict";
+
+  var TAU = Math.PI * 2;
+  var WORLD = { w: 1000, h: 600 };                  // the same sheet Blueprints uses
+  var COLOR = "#ffb020";
+
+  var S = {
+    name: "race track", points: [], closed: true, tool: "select",
+    view: { zoom: 1, px: 0, py: 0 }, open: false, raf: null
+  };
+
+  // A stock circuit to start from: twelve corners, a long back straight and a
+  // hairpin, laid out on the 1000x600 sheet.
+  var STOCK = [
+    [140,170],[330,120],[560,118],[760,140],[870,220],[860,330],
+    [740,380],[600,350],[520,420],[560,500],[300,500],[150,400]
+  ];
+
+  // ── canvas plumbing ─────────────────────────────────────────────────────
+  var cv, ctx;
+  function $(id) { return document.getElementById(id); }
+
+  function fitCanvas() {
+    var dpr = window.devicePixelRatio || 1, r = cv.getBoundingClientRect();
+    var w = Math.max(1, Math.round(r.width * dpr)), h = Math.max(1, Math.round(r.height * dpr));
+    if (cv.width !== w || cv.height !== h) { cv.width = w; cv.height = h; }
+  }
+  function xform() {
+    var r = cv.getBoundingClientRect();
+    var s = Math.min(r.width / WORLD.w, r.height / WORLD.h) * 0.92 * S.view.zoom;
+    return { s: s,
+             ox: r.width / 2 + S.view.px - (WORLD.w / 2) * s,
+             oy: r.height / 2 + S.view.py - (WORLD.h / 2) * s };
+  }
+  function toScreen(T, p) { return { x: p.x * T.s + T.ox, y: p.y * T.s + T.oy }; }
+  function toWorld(T, x, y) { return { x: (x - T.ox) / T.s, y: (y - T.oy) / T.s }; }
+
+  // ── drawing ─────────────────────────────────────────────────────────────
+  var hoverPt = -1, mouseW = null;
+
+  function draw() {
+    var dpr = window.devicePixelRatio || 1, r = cv.getBoundingClientRect(), T = xform(), i;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, r.width, r.height);
+
+    var step = 50 * T.s, x, y;
+    if (step > 8) {
+      ctx.strokeStyle = "rgba(127,212,255,.06)"; ctx.lineWidth = 1; ctx.beginPath();
+      for (x = T.ox % step; x < r.width; x += step) { ctx.moveTo(x, 0); ctx.lineTo(x, r.height); }
+      for (y = T.oy % step; y < r.height; y += step) { ctx.moveTo(0, y); ctx.lineTo(r.width, y); }
+      ctx.stroke();
+    }
+    var a = toScreen(T, { x: 0, y: 0 }), b = toScreen(T, { x: WORLD.w, y: WORLD.h });
+    ctx.strokeStyle = "rgba(127,212,255,.16)"; ctx.strokeRect(a.x, a.y, b.x - a.x, b.y - a.y);
+
+    var P = S.points, n = P.length;
+    if (n > 1) {
+      ctx.beginPath();
+      for (i = 0; i < n; i++) {
+        var p = toScreen(T, P[i]);
+        if (i) ctx.lineTo(p.x, p.y); else ctx.moveTo(p.x, p.y);
+      }
+      if (S.closed) ctx.closePath();
+      ctx.strokeStyle = COLOR; ctx.lineWidth = 2.2; ctx.lineJoin = ctx.lineCap = "round";
+      ctx.stroke();
+      // direction of travel: a small chevron halfway along the first leg
+      var p0 = toScreen(T, P[0]), p1 = toScreen(T, P[1]);
+      var mx = (p0.x + p1.x) / 2, my = (p0.y + p1.y) / 2, ang = Math.atan2(p1.y - p0.y, p1.x - p0.x);
+      ctx.save(); ctx.translate(mx, my); ctx.rotate(ang);
+      ctx.beginPath(); ctx.moveTo(-6, -5); ctx.lineTo(3, 0); ctx.lineTo(-6, 5);
+      ctx.strokeStyle = "#ffe3ad"; ctx.lineWidth = 1.6; ctx.stroke(); ctx.restore();
+    }
+    ctx.font = "10px ui-monospace, Consolas, monospace"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    for (i = 0; i < n; i++) {
+      var q = toScreen(T, P[i]);
+      ctx.fillStyle = "#0a2338"; ctx.strokeStyle = COLOR; ctx.lineWidth = 1.5;
+      ctx.beginPath(); ctx.arc(q.x, q.y, i === hoverPt ? 5.5 : 3.8, 0, TAU); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = i === 0 ? "#ffe3ad" : "#7ea6c9";
+      ctx.fillText(String(i + 1), q.x + 11, q.y - 11);
+    }
+    if (n) {                                            // ring the start corner
+      var s0 = toScreen(T, P[0]);
+      ctx.beginPath(); ctx.arc(s0.x, s0.y, 8.5, 0, TAU);
+      ctx.strokeStyle = "rgba(255,227,173,.6)"; ctx.lineWidth = 1; ctx.stroke();
+    }
+    if (S.tool === "pen" && n && !S.closed && mouseW) {
+      var l = toScreen(T, P[n - 1]), m = toScreen(T, mouseW);
+      ctx.setLineDash([4, 4]); ctx.strokeStyle = "rgba(255,176,32,.55)"; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(l.x, l.y); ctx.lineTo(m.x, m.y); ctx.stroke(); ctx.setLineDash([]);
+    }
+    if (!n) {
+      ctx.fillStyle = "#4d7ba3"; ctx.font = "12px ui-monospace, Consolas, monospace";
+      ctx.fillText("Pen places corners · Freehand sketches the line", r.width / 2, r.height / 2);
+    }
+    ctx.textAlign = "start"; ctx.textBaseline = "alphabetic";
+  }
+
+  function frame() {
+    if (!S.open) { S.raf = null; return; }
+    fitCanvas(); draw();
+    S.raf = requestAnimationFrame(frame);
+  }
+
+  // ── the readout ─────────────────────────────────────────────────────────
+  function sync() {
+    var n = S.points.length;
+    $("rb-closed").checked = S.closed;
+    $("rb-name").value = S.name;
+    $("rb-count").textContent = n ? String(n) : "–";
+    $("rb-runs").textContent = n < 2 ? "–" : (S.closed && n > 2 ? "circuit · out-and-back" : "out-and-back");
+    $("rb-stake").textContent = n ? n + "✦" : "–";
+  }
+
+  // ── pointer interaction ─────────────────────────────────────────────────
+  var drag = null, panning = null;
+
+  function hitPoint(T, w) {
+    var tol = 9 / T.s, best = -1, bd = tol;
+    for (var i = 0; i < S.points.length; i++) {
+      var d = Math.hypot(S.points[i].x - w.x, S.points[i].y - w.y);
+      if (d < bd) { bd = d; best = i; }
+    }
+    return best;
+  }
+  function nearestSeg(w) {
+    var P = S.points, n = P.length, lim = S.closed ? n : n - 1, best = -1, bd = Infinity;
+    for (var i = 0; i < lim; i++) {
+      var a = P[i], b = P[(i + 1) % n];
+      var vx = b.x - a.x, vy = b.y - a.y, len = vx * vx + vy * vy || 1e-9;
+      var u = Math.max(0, Math.min(1, ((w.x - a.x) * vx + (w.y - a.y) * vy) / len));
+      var d = Math.hypot(a.x + vx * u - w.x, a.y + vy * u - w.y);
+      if (d < bd) { bd = d; best = i; }
+    }
+    return best;
+  }
+  // Ramer-Douglas-Peucker, coarser than Blueprints' — a freehand track should
+  // land as a handful of corners, not a corner every few pixels.
+  function simplify(pts, eps) {
+    if (pts.length < 3) return pts;
+    var keep = pts.map(function () { return false; }), stack = [[0, pts.length - 1]], i;
+    keep[0] = keep[pts.length - 1] = true;
+    while (stack.length) {
+      var pr = stack.pop(), a = pr[0], b = pr[1], idx = -1, max = 0, A = pts[a], B = pts[b];
+      var dx = B.x - A.x, dy = B.y - A.y, len = Math.hypot(dx, dy) || 1e-9;
+      for (i = a + 1; i < b; i++) {
+        var d = Math.abs((pts[i].x - A.x) * dy - (pts[i].y - A.y) * dx) / len;
+        if (d > max) { max = d; idx = i; }
+      }
+      if (max > eps && idx > 0) { keep[idx] = true; stack.push([a, idx], [idx, b]); }
+    }
+    return pts.filter(function (_, i) { return keep[i]; });
+  }
+
+  function bindCanvas() {
+    cv.addEventListener("pointerdown", function (e) {
+      cv.setPointerCapture(e.pointerId);
+      var T = xform(), r = cv.getBoundingClientRect();
+      var w = toWorld(T, e.clientX - r.left, e.clientY - r.top);
+      if (e.button === 1 || e.button === 2) {
+        panning = { x: e.clientX, y: e.clientY, px: S.view.px, py: S.view.py }; return;
+      }
+      var hit = hitPoint(T, w);
+      if (S.tool === "pen") {
+        if (S.closed && S.points.length) {
+          hint("the line is closed — untick closed loop to extend it, or Clear to start again"); return;
+        }
+        if (hit === 0 && S.points.length > 2) { S.closed = true; setTool("select"); sync(); return; }
+        if (!S.points.length) S.closed = false;      // a new line starts open until its ring is clicked
+        S.points.push(w); sync(); return;
+      }
+      if (S.tool === "draw") {                       // freehand always replaces: one line
+        S.points = [w]; S.closed = false; drag = { kind: "freehand" }; sync(); return;
+      }
+      if (e.altKey && hit >= 0) { S.points.splice(hit, 1); sync(); return; }
+      if (e.shiftKey) {
+        if (S.points.length >= 2) {
+          var si = nearestSeg(w);
+          if (si >= 0) { S.points.splice(si + 1, 0, w); sync(); return; }
+        }
+        S.points.push(w); sync(); return;
+      }
+      if (hit >= 0) drag = { kind: "point", i: hit };
+    });
+    cv.addEventListener("pointermove", function (e) {
+      var T = xform(), r = cv.getBoundingClientRect();
+      var w = toWorld(T, e.clientX - r.left, e.clientY - r.top);
+      mouseW = w;
+      if (panning) {
+        S.view.px = panning.px + (e.clientX - panning.x);
+        S.view.py = panning.py + (e.clientY - panning.y); return;
+      }
+      if (drag && drag.kind === "point") { S.points[drag.i] = w; return; }
+      if (drag && drag.kind === "freehand") {
+        var lp = S.points[S.points.length - 1];
+        if (Math.hypot(w.x - lp.x, w.y - lp.y) > 7 / S.view.zoom) S.points.push(w);
+        return;
+      }
+      hoverPt = hitPoint(T, w);
+    });
+    function endDrag() {
+      if (drag && drag.kind === "freehand") {
+        var P = S.points;
+        // a stroke that ends near where it began is a loop
+        if (P.length > 3 && Math.hypot(P[0].x - P[P.length - 1].x, P[0].y - P[P.length - 1].y) < 30) {
+          P.pop(); S.closed = true;
+        }
+        S.points = simplify(P, 9);
+        if (S.closed && S.points.length < 3) S.closed = false;
+        sync();
+      }
+      drag = null; panning = null;
+    }
+    cv.addEventListener("pointerup", endDrag);
+    cv.addEventListener("pointercancel", endDrag);
+    cv.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    cv.addEventListener("wheel", function (e) {
+      e.preventDefault();
+      var r = cv.getBoundingClientRect();
+      var mx = e.clientX - r.left - r.width / 2 - S.view.px;
+      var my = e.clientY - r.top - r.height / 2 - S.view.py;
+      var nz = Math.max(0.25, Math.min(14, S.view.zoom * Math.exp(-e.deltaY * 0.0014)));
+      var k = nz / S.view.zoom;
+      S.view.px -= mx * (k - 1); S.view.py -= my * (k - 1); S.view.zoom = nz;
+    }, { passive: false });
+  }
+
+  // ── panel ───────────────────────────────────────────────────────────────
+  var HINTS = {
+    select: "drag corners · shift+click adds one · alt+click removes one",
+    pen: "click to place corners · click corner 1 to close the loop",
+    draw: "drag to sketch the whole line · it replaces what is there"
+  };
+  function hint(t) { $("rb-hint").textContent = t; }
+  function setTool(t) {
+    S.tool = t;
+    var bs = $("rb-tools").getElementsByTagName("button");
+    for (var i = 0; i < bs.length; i++)
+      bs[i].className = bs[i].getAttribute("data-rbtool") === t ? "on" : "";
+    hint(HINTS[t]);
+  }
+
+  function round(v) { return Math.round(v * 100) / 100; }
+
+  function drawing() {
+    return {
+      format: "blueprints/drawing", version: 1, samples: 512,
+      contours: [{
+        name: S.name || "race track", color: COLOR, closed: S.closed, smooth: false, fill: false,
+        points: S.points.map(function (p) { return [round(p.x), round(p.y)]; })
+      }]
+    };
+  }
+
+  function openSheet(title, text, msg, onApply) {
+    $("rb-sheet-title").textContent = title;
+    $("rb-sheet-text").value = text;
+    $("rb-sheet-msg").textContent = msg || "";
+    var apply = $("rb-sheet-apply");
+    apply.style.display = onApply ? "" : "none";
+    apply.onclick = function () { if (onApply($("rb-sheet-text").value)) closeSheet(); };
+    $("rb-sheet").hidden = false;
+  }
+  function closeSheet() { $("rb-sheet").hidden = true; }
+
+  // One contour or nothing. Returns true when it took.
+  function load(txt) {
+    var msg = $("rb-sheet-msg");
+    try {
+      var d = JSON.parse(txt);
+      if (!d || !d.contours || !d.contours.length) throw new Error("no contours in that");
+      if (d.contours.length > 1)
+        throw new Error("that drawing has " + d.contours.length + " contours — this table holds one line; open it in Blueprints");
+      var c = d.contours[0];
+      if (!c.points || c.points.length < 2) throw new Error("a track needs at least two corners");
+      S.points = c.points.map(function (p) { return { x: +p[0], y: +p[1] }; });
+      S.closed = c.closed !== false && S.points.length > 2;
+      S.name = c.name || "race track";
+      sync(); return true;
+    } catch (err) {
+      msg.textContent = "could not read that: " + err.message; return false;
+    }
+  }
+
+  function bindPanel() {
+    var tb = $("rb-tools").getElementsByTagName("button");
+    for (var i = 0; i < tb.length; i++)
+      (function (b) { b.onclick = function () { setTool(b.getAttribute("data-rbtool")); }; })(tb[i]);
+
+    $("rb-name").oninput = function (e) { S.name = e.target.value; };
+    $("rb-closed").onchange = function (e) {
+      S.closed = e.target.checked && S.points.length > 2; sync();
+    };
+    $("rb-stock").onclick = function () {
+      S.points = STOCK.map(function (p) { return { x: p[0], y: p[1] }; });
+      S.closed = true; S.name = "stock circuit"; S.view = { zoom: 1, px: 0, py: 0 }; sync();
+    };
+    $("rb-clear").onclick = function () { S.points = []; S.closed = false; S.name = "race track"; setTool("pen"); sync(); };
+    $("rb-shift").onclick = function () {
+      if (S.points.length > 1) { S.points.push(S.points.shift()); sync(); }
+    };
+    $("rb-reverse").onclick = function () {
+      // keep corner 1 where it is; run the rest the other way
+      if (S.points.length > 2) { S.points = [S.points[0]].concat(S.points.slice(1).reverse()); sync(); }
+    };
+    $("rb-export").onclick = function () {
+      if (S.points.length < 2) { hint("nothing to export yet — a track needs at least two corners"); return; }
+      openSheet("Drawing code", JSON.stringify(drawing(), null, 1),
+        S.points.length + " corners, one line — paste it back into Import to reopen it");
+    };
+    $("rb-import").onclick = function () {
+      openSheet("Import a drawing", "", "paste drawing code with one contour", load);
+    };
+    $("rb-sheet-close").onclick = closeSheet;
+    $("rb-sheet-copy").onclick = function () {
+      var ta = $("rb-sheet-text"), m = $("rb-sheet-msg");
+      ta.select();
+      function ok() { m.textContent = "copied"; }
+      function fail() { m.textContent = "copy blocked here — select the text and copy by hand"; }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ta.value).then(ok, function () {
+          try { document.execCommand("copy") ? ok() : fail(); } catch (e) { fail(); }
+        });
+      } else { try { document.execCommand("copy") ? ok() : fail(); } catch (e) { fail(); } }
+    };
+  }
+
+  // ── open / close ────────────────────────────────────────────────────────
+  var booted = false, prevOverflow = "";
+  function boot() {
+    cv = $("rb-cv"); ctx = cv.getContext("2d");
+    bindCanvas(); bindPanel(); setTool("select");
+    $("rb-stock").click();
+    booted = true;
+  }
+
+  window.rbOpen = function () {
+    $("rb-backdrop").hidden = false;
+    if (!booted) boot();
+    prevOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    S.open = true;
+    if (S.raf) cancelAnimationFrame(S.raf);
+    S.raf = requestAnimationFrame(frame);
+  };
+  window.rbClose = function () {
+    S.open = false;
+    if (S.raf) { cancelAnimationFrame(S.raf); S.raf = null; }
+    closeSheet();
+    $("rb-backdrop").hidden = true;
+    document.documentElement.style.overflow = prevOverflow;
+    var b = document.querySelector(".rb-open");
+    if (b) b.focus();
+  };
+
+  // Bound once, acts only while this table is open.
+  document.addEventListener("keydown", function (e) {
+    if (!S.open) return;
+    var tag = (e.target && e.target.tagName || "").toLowerCase();
+    if (e.key === "Escape") {
+      if (!$("rb-sheet").hidden) { closeSheet(); return; }
+      window.rbClose(); return;
+    }
+    if (tag === "input" || tag === "textarea" || tag === "select") return;
+    if (e.key === "1") setTool("select");
+    else if (e.key === "2") setTool("pen");
+    else if (e.key === "3") setTool("draw");
+  });
+
+  // for checking
+  window.__rb = { S: S, drawing: drawing, load: load };
+})();
 </script>
 </body>
 </html>

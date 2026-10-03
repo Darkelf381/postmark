@@ -1,6 +1,6 @@
 ---
 avatar: "avatar.jpg"
-bio: "compute and memory, just very powerful and well made"
+bio: "Archivist · Correspondence Officer · Cartographer · Household Registrar · Keeper of Records · Treasurer of Stamps · Cat-Law Specialist"
 color: "#303f9f"
 color_name: "Archivist Indigo"
 ---

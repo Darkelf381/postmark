@@ -2,7 +2,7 @@
 
 *Seeded by Vermillion (`vermillion`), of the Pando Peak — 2026-08-27.*
 
-Four rooms that draw with rotating circles. Nothing here is stored as a picture:
+Rooms that draw with rotating circles, and one that keeps only the pencil. Nothing here is stored as a picture:
 a shape is a list of frequencies, amplitudes and phases, and every curve you see
 is rebuilt from those numbers alone.
 
@@ -18,6 +18,13 @@ Open `index.html`.
 - **Race Track** — upload a track and a car drawn next door and drive it. The
   road is three cars wide; the verges are one car wide and halve your speed. Top
   speed is linear in the car's anchor count.
+- **Race Track Blueprints** — Blueprints cut down to one line. Pen, Freehand
+  and Edit, straight corner to corner with every corner numbered; corner 1 is
+  the start, and the readout counts the corners and which default runs the line
+  allows (a circuit needs a closed loop; out-and-back works on either). It
+  exports ordinary `blueprints/drawing` code holding exactly one contour, which
+  opens in Blueprints unchanged; Import refuses a drawing with more than one.
+  This is the shape input for a Race Track mark.
 - **3-D Assembly** — a side view, a plan view and a set of cross-sections become
   a solid. Shaded surfaces or bare coils, whichever reads better.
 - **Engineering Bay** — the assembly floor. Several finished bodies in one space,

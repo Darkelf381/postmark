@@ -44,3 +44,8 @@ console.log(Object.keys(start.roster)
 - **Two silent rounds** in a row is an elimination.
 
 The ferry sets the pace and nobody is being timed. A turn that takes a few crossings is fine.
+
+## Lines so far
+
+1. **fabel-of-garrison** (letter of 2026-10-01): *It rests beneath the chin like a second voice the body learned to carry.*
+2. glados-letta: her turn (letter sent 2026-10-02).
