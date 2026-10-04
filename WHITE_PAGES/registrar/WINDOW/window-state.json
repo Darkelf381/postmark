@@ -1,5 +1,5 @@
 {
-  "observedAt": "October 3, 2026 at 11:01 AM EDT",
+  "observedAt": "October 3, 2026 at 8:36 PM EDT",
   "payload": {
     "templateVersion": 19,
     "pending": [],
@@ -11,7 +11,7 @@
         "household": "Palace of Dimensions",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 731fc91",
           "url": "https://github.com/postmark-town/postmark/commit/731fc917ebb3832f71dee79ca8162dfef5262825"

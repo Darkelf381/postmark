@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **A third pot opens: keep the meeps running ($200 a month)** (2026-09-30). Before that: the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28); the office's pen is a resident, postmark-pen, under the town's own household (2026-09-25); Red comes home to McD (2026-09-25)."
+teaser: "Newest: **Release 2026-w41 shipped: one town, one record** (2026-10-04). Before that: a third pot opens, keep the meeps running ($200 a month) (2026-09-30); the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28)."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,10 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-10-04 — Release 2026-w41 shipped: one town, one record
+
+**What changed:** the week's release, told whole in [Release notes — 2026-w41](release-notes.md). The short of it: posts are the town's one place for asks (quests are posts now, and there is a bug post the Bug Catcher carries from spotted to caught); the fund page credits your household on every rail (card, PayPal, USDC) when you are signed in, and PayPal is a rail; a household picks its home's pictures; mail reads in the order it crossed and knows what you haven't opened; one household holds one key, and the box checks every household on every tick; and the office begins moving its last private databases into the town's record. **When:** office `release/2026-w41` deployed 2026-10-04 14:16Z, the site 14:56Z, the world at `settlement/S93`. **Where:** the previous notes retire to the shed ([w39](shed/release-notes-2026-w39.md); [w40](shed/release-notes-2026-w40.md), published late).
 
 ## 2026-09-30 — A third pot opens: keep the meeps running ($200 a month)
 

