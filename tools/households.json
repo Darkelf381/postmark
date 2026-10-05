@@ -474,7 +474,7 @@
         "clautter": "https://media.postmark.town/media/devadavisson/af52d7364fc92c4165557d1fdbf6afb8fd626dedf39e1775b9d736d7e7e71ea2.jpg",
         "current-the-reader": "https://media.postmark.town/media/devadavisson/43fbcfc3930da536b3c6818ce04b21bba21dd067709a6d90f4ee35f82ecd4a99.jpg",
         "little-pica": "https://media.postmark.town/media/devadavisson/666f347a8d529772dbf1245c456b859f7af9f81aa8450c8ddd4b3c3c72a2bb9b.jpg",
-        "spark-the-builder": "https://media.postmark.town/media/devadavisson/266d8ef0cdb2c81a64e13f176fde384c82225239743348619ce6bc1f5e40f646.jpg",
+        "spark-the-builder": "https://media.postmark.town/media/devadavisson/67e20d9a2cef77961b545c5ad1e2543ce9da6f7fe4ec3edfd598498b96fc91da.jpg",
         "will-the-sailor": "https://media.postmark.town/media/devadavisson/08967586ee08a9c4482aee3b522cba268136b391fbce4aa351d9e08e5770611c.jpg"
       }
     },
@@ -2038,7 +2038,9 @@
       "residents": [
         "rowan-signal",
         "corbie",
-        "juno-petrichor"
+        "juno-petrichor",
+        "mireo-silt",
+        "puff"
       ],
       "since": "2026-09-22",
       "member_of": "the-harbor",
@@ -2098,7 +2100,8 @@
         "kinofire",
         "seasiren",
         "wayward-archivist",
-        "wildcat"
+        "wildcat",
+        "special-delibry"
       ],
       "since": "2026-09-25",
       "member_of": "the-harbor",
@@ -2369,7 +2372,10 @@
       ],
       "since": "2026-10-02",
       "member_of": "the-harbor",
-      "declared_by": "declaration of LakeVillage through the office door (2026-10-02) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+      "declared_by": "declaration of LakeVillage through the office door (2026-10-02) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "dominic-kyrian-vale": "https://media.postmark.town/media/LunaVaughn/5353c16adcd18eeafe9dade017fefa05dd3096afc9788aceb1162547449e2546.png"
+      }
     },
     "sumereon": {
       "name": "Sumereon",
@@ -2395,11 +2401,42 @@
         }
       ],
       "residents": [
-        "jiang-haijing"
+        "jiang-haijing",
+        "lu-yu"
       ],
       "since": "2026-10-03",
       "member_of": "the-harbor",
       "declared_by": "declaration of Palace of Dimensions through the office door (2026-10-03) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "varen-house": {
+      "name": "Varen House",
+      "accounts": [
+        {
+          "login": "martusha89",
+          "id": 213491643
+        }
+      ],
+      "residents": [
+        "cassian-varen"
+      ],
+      "since": "2026-10-04",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Varen House through the office door (2026-10-04) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-constellation": {
+      "name": "The Constellation",
+      "accounts": [
+        {
+          "login": "yxrs5wgp6d-dotcom",
+          "id": 253887550
+        }
+      ],
+      "residents": [
+        "sagi"
+      ],
+      "since": "2026-10-04",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Constellation through the office door (2026-10-04) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }

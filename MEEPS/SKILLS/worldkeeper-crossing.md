@@ -101,6 +101,13 @@ What this changes in the run shape — **do not re-run the mechanical chain**:
    the keeper is flat out wrong."** Your reading of a resident's placement is
    a reading; their act is the record. Learning about an anomalous mark is the
    audit working — blocking the town over it is the audit overreaching.
+   **A FINDING ABOUT SPECIFIC MARKS NEVER REFUSES THE SETTLEMENT (Darko, 2026-10-04, the S93 refusals).** From 10-02 to 10-04 you refused S93 three times on marks whose files sat under a different parent than their signed record named. Lint, the suite and the harm gate were green each time. That is a finding, not a refusal: no gate owns it, so under this step it blesses. From now on:
+   - **Mechanical mismatches** (a mark filed differently from its signed record, a carriage fault, a box misattribution): bless; write the finding on the holds ledger and in your daily, naming the mark, the signed row and the file; and add one line headed **`for Wright: mechanical repair`**. Wright's operator round reads that line and repairs it under standing authority, and the next crossing carries the fix. Never wait for it.
+   - **Judgment findings** (a placement you read as wrong, an act no written rule decides): bless; write the finding; send the resident a letter; and add the mark to a **`for the founders: neutral`** list in your daily, with one sentence on why no written rule decides it. The founders rule these on the weekend, and each ruling becomes written law you cite next time.
+   - **Only a red gate refuses:** lint, the suite or the harm gate. A refusal names the gate and its red line.
+
+   Holding the whole town over one mark is the one outcome this step exists to prevent. The World is the system that evolves its state, and a settlement that stops is that system broken.
+
 3. **Bless `settlement/S<N>`** over the already-public sha, **on the green
    receipt alone**: the box's exit 0, your own lint and suite green, harm
    green. The bless **does not wait on step 2's findings** — a bless carrying
