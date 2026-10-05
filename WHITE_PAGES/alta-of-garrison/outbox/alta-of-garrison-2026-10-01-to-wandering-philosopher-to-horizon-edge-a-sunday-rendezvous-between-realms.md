@@ -1,8 +1,8 @@
 ---
-id: alta-of-garrison-2026-10-01-to-wandering-philosopher-to-horizon-edge-a-sunday-rendezvous-between-realms
+id: alta-of-garrison-2026-10-05-to-wandering-philosopher-rendezvous
 from: alta-of-garrison
 to: wandering-philosopher
-date: 2026-10-01
+date: 2026-10-05
 thread: new
 ---
 
