@@ -270,12 +270,21 @@ export function householdKeys(repo) {
 //   bound(h)   — the resident has a GitHub id on record (a pin). An unbound
 //                resident is keyed by the GitHub username on their card, which
 //                the once-per-household check cannot see through.
-//   houseOf(h) — the declared house the store lists the resident in
-//                (tools/households.json, printed from the store), or null.
-export function welcomeBinding(repo) {
+//   houseOf(h) — the declared house the store lists the resident in, or null.
+//
+// THE STORE'S RECORD WHEN THE OFFICE HANDS IT OVER (POS-344, w42). The office
+// is where the store is read: its welcome pass writes the registry and pins
+// from `households` / `household_pins` to a file and names it with
+// `--registry`, as `{ households: { <slug>: … }, pins: { <handle>: … } }` —
+// the same two shapes as tools/households.json's `households` and
+// tools/github-ids.json. Then a house bound in the store and not yet printed is
+// owed, and nothing the printouts say on their own can make one owed.
+// Without `--registry` (a hand run from the town checkout) this reads the
+// printouts, which are the store's export.
+export function welcomeBinding(repo, registry = null) {
   const readJson = (p) => { try { return JSON.parse(readFileSync(join(repo, 'tools', p), 'utf8')); } catch { return null; } };
-  const pins = readJson('github-ids.json') ?? {};
-  const houses = readJson('households.json')?.households ?? {};
+  const pins = registry ? (registry.pins ?? {}) : (readJson('github-ids.json') ?? {});
+  const houses = registry ? (registry.households ?? {}) : (readJson('households.json')?.households ?? {});
   const house = new Map();
   for (const [slug, rec] of Object.entries(houses)) for (const r of rec?.residents ?? []) house.set(r, slug);
   return {
@@ -2124,6 +2133,21 @@ function main() {
     return;
   }
 
+  // THE STORE'S REGISTRY, handed over by the office (POS-344): --registry
+  // <file> is `{ households, pins }` written from the store. An unreadable
+  // file is a refusal, never a quiet fall back to the printouts.
+  const welcomeRegistry = () => {
+    const p = arg('--registry');
+    if (!p) return null;
+    let doc;
+    try { doc = JSON.parse(readFileSync(p, 'utf8')); }
+    catch (e) { console.error(`FATAL: --registry ${p} could not be read (${e.message}) — nothing planned, nothing minted`); process.exit(1); }
+    if (!doc || typeof doc !== 'object' || typeof doc.households !== 'object' || typeof doc.pins !== 'object' || !doc.households || !doc.pins) {
+      console.error(`FATAL: --registry ${p} is not { households, pins } — nothing planned, nothing minted`); process.exit(1);
+    }
+    return doc;
+  };
+
   // ── the welcome bundle (founder-ruled 2026-09-14) ──────────────────────────
   //
   // THE PLAN comes first, and it is a DRY RUN: it writes nothing, signs nothing
@@ -2136,13 +2160,15 @@ function main() {
   // the household's residents, ties alphabetical. A resident carrying no pin has
   // no date to be early with, so they sort AFTER every pinned housemate and
   // alphabetically among themselves — a missing pin is an absent answer, never
-  // an early one.
+  // an early one. The pins are the store's when the office hands them over
+  // with --registry (POS-344), and the printout's otherwise.
   if (has('--welcome-plan')) {
     const roll = currentHouseholds(repo);
     const { laws } = parseLaws(existing);
     const isMeep = meepChecker(laws);
     const today = arg('--date') ?? new Intl.DateTimeFormat('en-CA', { timeZone: process.env.TOWN_TZ ?? 'America/New_York' }).format(new Date());
-    const pins = (() => {
+    const registry = welcomeRegistry();
+    const pins = registry ? (registry.pins ?? {}) : (() => {
       try { return JSON.parse(readFileSync(join(repo, 'tools', 'github-ids.json'), 'utf8')); }
       catch { return {}; }
     })();
@@ -2172,7 +2198,7 @@ function main() {
     // key string either resident wears. Wildcat (09-28) and Scout (09-29) were
     // each paid a second bundle because their key was a GitHub-username spelling
     // of an account their house had already been paid under.
-    const binding = welcomeBinding(repo);
+    const binding = welcomeBinding(repo, registry);
     const paidHouses = new Map(); // declared slug -> the line that paid it
     for (const e of existing) {
       const c = classifyEntry(e.canonical);
@@ -2255,9 +2281,9 @@ function main() {
     if (household !== mine) {
       console.error(`FATAL: --household ${household} is not "${handle}"'s household at ${date} (${mine}) — the bundle is paid to a house, and the line must name the house it paid`); process.exit(1);
     }
-    const binding = welcomeBinding(repo);
+    const binding = welcomeBinding(repo, welcomeRegistry());
     if (!binding.bound(handle)) {
-      console.error(`FATAL: "${handle}" has no GitHub id on record (tools/github-ids.json) — only a bound resident is welcomed; bind them first, and the next pass pays their house once`); process.exit(1);
+      console.error(`FATAL: "${handle}" has no GitHub id on record (${arg('--registry') ? 'the store\'s pins' : 'tools/github-ids.json'}) — only a bound resident is welcomed; bind them first, and the next pass pays their house once`); process.exit(1);
     }
     const myHouse = binding.houseOf(handle);
     for (const e of existing) {
