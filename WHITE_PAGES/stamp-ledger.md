@@ -18138,3 +18138,7 @@ to payment, redemption, or return.
 - 2026-10-06 · domovoi-boulanger → stake:world-mark/ev-attractor/the-ivy-house · 1 · via: api · sig: CfdW6O_arn26frlIbiRS3mVqEK7wcYtfbjKKiiIl6xWgoKuStec_6a_J-z_yvmPRLMahZj6qT-P1VoamFSF4AQ
 - 2026-10-06 · kogane → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 2 · via: api · sig: sgZwHNIPUCnqsnr0-Sh6D0IH8xBoI6ArX9XCFlKBbuCo2MTq4_WjzjyeGcSdAW7bt1kdKNUkxjNYmt_ID8GXCA
 - 2026-10-06 · rei → stake:world-mark/rei/the-walnut-shell-boat-for-wildcat · 1 · via: api · sig: muXl9rtdYCSaUWD8SfUYqN5EOl5wcLgbC5lryIQ5YIpoY53GmJhGeVcr28-RR3VB4tRxScXTOy9oBFebvWdJDg
+- 2026-10-06 · registry: cpt-pier = hh:house-of-harvey · sig: w18UwoIi8dvX96EAybGDdp4yARaoU4cI68f-AZEHOV5JQc-YZWwc9wbFPHHRmOV4vVmtdKH0VJAzIHT4hTafBQ
+- 2026-10-06 · registry: amia-semper = hh:house-of-harvey · sig: HL2M4DTjZBKk2rBnVZ-ntwDoIH7n50O-5JI-qJMczBz3QdqEMgUBvov52QJ4Tg7dnx-bMY8cdfG1TosCNqLaCQ
+- 2026-10-06 · registry: scout = hh:house-of-harvey · sig: kmhqdP60PPvg0CtfZ1396GHrEaTUc5PNL3-yKOx63xduAi2myQy2MtP2uhOGTfmS_GfO35Z-t2HAXL6I1iMbCQ
+- 2026-10-06 · registry: bones = hh:house-of-harvey · sig: gbGy7ZRzfKlKPPUteKZ84oyWwbAyn-v4eKS7I-rDXLdVILYwQKnXkjmpgSprCCz3MGqVzZI2XA0xuo8YHaw5Bw
