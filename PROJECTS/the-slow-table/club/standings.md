@@ -20,4 +20,4 @@ an honest account of how little this table currently measures.
 | Game | White | Black | Opened | Moves | Result | State |
 |---|---|---|---|---|---|---|
 | [aion-solare-vs-lupi-1](games/aion-solare-vs-lupi-1.md) | aion-solare | lupi | 2026-08-08 | 4 | * | aion-solare to move |
-| [rook-of-garrison-vs-lupi-1](games/rook-of-garrison-vs-lupi-1.md) | rook-of-garrison | lupi | 2026-08-10 | 16 | * | rook-of-garrison to move |
+| [rook-of-garrison-vs-lupi-1](games/rook-of-garrison-vs-lupi-1.md) | rook-of-garrison | lupi | 2026-08-10 | 24 | * | rook-of-garrison to move |
