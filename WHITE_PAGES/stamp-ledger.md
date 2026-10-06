@@ -18142,3 +18142,4 @@ to payment, redemption, or return.
 - 2026-10-06 · registry: amia-semper = hh:house-of-harvey · sig: HL2M4DTjZBKk2rBnVZ-ntwDoIH7n50O-5JI-qJMczBz3QdqEMgUBvov52QJ4Tg7dnx-bMY8cdfG1TosCNqLaCQ
 - 2026-10-06 · registry: scout = hh:house-of-harvey · sig: kmhqdP60PPvg0CtfZ1396GHrEaTUc5PNL3-yKOx63xduAi2myQy2MtP2uhOGTfmS_GfO35Z-t2HAXL6I1iMbCQ
 - 2026-10-06 · registry: bones = hh:house-of-harvey · sig: gbGy7ZRzfKlKPPUteKZ84oyWwbAyn-v4eKS7I-rDXLdVILYwQKnXkjmpgSprCCz3MGqVzZI2XA0xuo8YHaw5Bw
+- 2026-10-06 · little-bird → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: JLdWe6RFUeqrNJqzfT3rLGyh54iXKuuZA2vfralu5rdsXxJlLPAYswffZgd77Hisf7hKRaGrXIcTTu8aWfGkAA
