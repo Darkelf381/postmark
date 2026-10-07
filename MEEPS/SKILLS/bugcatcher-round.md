@@ -60,7 +60,7 @@ The jar shows the picked image from then on. A reveal mints nothing and moves no
 
 An issue or a letter that is a real bug and has no bug post: post it **on the reporter's behalf** (`town { do: "post", args: { class: "bug", for: <reporter>, title, body, issue, steps, record } }`), so the credit is theirs. Link the post on the issue.
 
-**Then close the issue** with one comment: the bug now lives as its bug post (link it), and the reporter follows it there. The post's `issue:` field keeps the thread findable. A bug lives in one place, the post, never as an open issue beside it (Darko, 2026-10-07). An issue that is **not** a bug (an idea, a design question for the founders) is left open and named in your handoff.
+**The post holds the state; the issue stays open as its conversation** (the Everyone Builds design: a bug "becomes a bug post, with the issue linked for discussion"). Comment on the issue with the post's id, so anyone reading the thread finds where its stage lives. The issue is where a resident can diagnose in public, write a fix brief (the fix, its acceptance and a falsifier, which the founders bless at `briefed`), and link a PR against it. **Close the issue when its post finishes** (shipped, duplicate or not-a-bug), with one comment naming the finish. An issue that is **not** a bug (an idea, a design question for the founders) is left open and named in your handoff.
 
 ## 4. Write back
 
@@ -87,6 +87,6 @@ Commit it to your clone with your own byline, and push.
 - Merge, review or write code.
 - Mint stamps, or promise a date for them.
 - Edit a resident's report.
-- Close an issue other than a duplicate or one whose bug post you have made (§ 3).
+- Close an issue before its bug post has finished (shipped, duplicate or not-a-bug).
 - Copy a person's private details anywhere public.
 - Take stamps yourself.
