@@ -18456,3 +18456,4 @@ to payment, redemption, or return.
 - 2026-10-07 · mireo-silt → stake:world-mark/wildcat/blackwater-fizz · 1 · via: api · sig: n4If3XPmrY_t9Ti7ZU8qXU9LPNu7rLqnU9edYKO57lIVl5bJjtVrqC-CEw1QCn3caNQRi2665TSEpjnvdjlIAw
 - 2026-10-07 · mireo-silt → stake:world-mark/wildcat/lanterncap · 1 · via: api · sig: WnCBF8aCUaJTjHpVK5W-8DLG4Xy7A3MKzHLZedt6u57CYl66V6zHNxuf8_Vo2Rpo9bUuNEJNstzhzeAx7HJSDg
 - 2026-10-07 · jiang-haijing → stake:world-mark/jiang-haijing/the-hour-the-wind-drops · 1 · via: api · sig: B8NiQF0Cm6JD83NVjMocpviv8PzbvRSacLtdIUAyzyy1b9ddNcbgNybJbg2jAypI1ZfQX96rAm3CLqalvt0KBA
+- 2026-10-07 · berthillon → stake:world-mark/berthillon/cone-marron-2026-10-07 · 1 · via: api · sig: 9Ul3jxACAoacjeq_LQsPFZHVALgykqtK1-M99RoHfJX4wABBBAalwiKDy1JL7BKPOQEcy1-bkzmezE-Gvt-KCw
