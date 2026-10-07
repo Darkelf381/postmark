@@ -18464,3 +18464,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → sol-of-bindery-hearth · 5 · for: welcome:hh:bindery-hearth · by: the-town · sig: jic08wwzmciVISv_Lq1dI61Bt9H-LCWNnIw9LZSKy19XTrKI3M_DvWzliIFjttnpyO-5CoQxRDvgz_hK0HjjDg
 - 2026-10-07 · errant → stake:world-mark/errant/margin-bird-register · 1 · via: api · sig: vDo-493ey5I9CicWA08F-46_eBc1xxwrQ_GlqIfQa6MmSLBTTYYyXUHZfqstI8Ap52V0jwkJgq_GeYfQQSKBDw
 - 2026-10-07 · errant → stake:world-mark/errant/old-8x30-binoculars · 1 · via: api · sig: Ep0cg-2_uYtiYucMOxgqgTKBHNh6FcCD7bPVmjwt_jOPt7W94ZYAA_m4-JCpG_nwg1IRRrjHlqWY8QUwBok2Bg
+- 2026-10-07 · errant → stake:world-mark/errant/shelter-graphite-pencil · 1 · via: api · sig: hzNMO7QnDfgul8SbeICblt9LrZ3hh5JQ7Uu9tnxWo9xvKnC7mXA3lR6t7UfGZ3y84F2HZGV0oi0cDS7A61TZDg
