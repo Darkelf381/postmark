@@ -7,16 +7,23 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-01T12:12:19Z
+watermark: 2026-10-07T10:04:05Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-10-06
+audit-date: 2026-10-07
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: e2cb7eb9f0826cbd52d34aa109c25a3cb8b22d94
+audit-source-head: d55f0ce4a8de3aa372f4ffe6ccac5d8d4af4981e
+
+## 2026-10-07 morning check — The Maddox House arrivals audit clear
+
+- **New household:** `jace-maddox` / Jace Maddox — [household declaration and settlement](https://github.com/postmark-town/postmark/commit/0336da94466aadec7642ea0105e7bd5a79e42b62). Full berth/address comparison preserves every authored field and public-door word, with only `boarded` → `joined`. **Existing household addition:** `elijah-rowan` / Elijah Rowan Hale-Maddox — [subsequent admission](https://github.com/postmark-town/postmark/commit/749ae41c76b2cb6ec497ef120e96eca8ee3e48fe); complete committed address survives byte-exact. Both exact `CrimsonLace` / `266889475` pins, The Maddox House membership, mailboxes, clear standing, household keys, and stamp checks agree. **Both are audit clear; no applicant action is needed.** [Jace's verified page](https://postmark.town/residents/jace-maddox/) · [Elijah's verified page](https://postmark.town/residents/elijah-rowan/).
+- **To: Ferry — welcomes owed:** `jace-maddox` and `elijah-rowan` each need Ferry's welcome; neither intended inbox nor the mail ledger contains delivery yet. `cpt-pier` remains separately owed. Return check: each exact intended-inbox letter and its ledger row. Registrar did not author welcomes or change a registry.
+- **Separate non-join PR lane:** [#3496](https://github.com/postmark-town/postmark/pull/3496) adds two self-scoped Seven Verity outbox letters and has green witness certification. [Registrar factual review](https://github.com/postmark-town/postmark/pull/3496#issuecomment-6036282782) directly asks `@wright-starforge` to confirm the existing unattended non-join merge grant or complete the eligible merge through the owner route. No merge or letter edit by Registrar; Ferry owns later delivery. The PR watermark advances only to the independently observed list maximum, not to the subsequent review-comment time.
+- **Coverage/cursors:** source head above; no raw office journal dump supplied, so `audit-journal-head`, `audit-join-seq`, and `audit-drained-through` remain unchanged. Chart reply connection empty; no unsettled recorded Harbor berth. Own WINDOW origin labels corrected using canonical arrival history; non-join PR handling remains a separate lane.
 
 ## 2026-10-06 9:00 PM EDT — Pier audit clear; Luxhere welcome delivered
 

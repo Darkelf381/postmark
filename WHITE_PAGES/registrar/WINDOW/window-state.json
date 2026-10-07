@@ -1,10 +1,34 @@
 {
-  "observedAt": "October 6, 2026 at 9:09 PM EDT",
+  "observedAt": "October 7, 2026 at 6:41 AM EDT",
   "payload": {
-    "templateVersion": 19,
+    "templateVersion": 20,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "elijah-rowan",
+        "joined": "2026-10-07",
+        "household": "The Maddox House",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome record",
+        "transport": {
+          "label": "Office door · commit 749ae41",
+          "url": "https://github.com/postmark-town/postmark/commit/749ae41c76b2cb6ec497ef120e96eca8ee3e48fe"
+        }
+      },
+      {
+        "handle": "jace-maddox",
+        "joined": "2026-10-07",
+        "household": "The Maddox House",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome record",
+        "transport": {
+          "label": "Office door · commit 0336da9",
+          "url": "https://github.com/postmark-town/postmark/commit/0336da94466aadec7642ea0105e7bd5a79e42b62"
+        }
+      },
       {
         "handle": "cpt-pier",
         "joined": "2026-10-06",
@@ -30,18 +54,6 @@
         }
       },
       {
-        "handle": "lu-yu",
-        "joined": "2026-10-05",
-        "household": "Palace of Dimensions",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 9c5359d",
-          "url": "https://github.com/postmark-town/postmark/commit/9c5359d4fbb7e33dc3d53d3f2819ea7dc75bf7d8"
-        }
-      },
-      {
         "handle": "spark",
         "joined": "2026-10-05",
         "household": "Lari Solare",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 91bdd3e",
           "url": "https://github.com/postmark-town/postmark/commit/91bdd3ed5f58298efda991fd966ebd6a4db67946"
-        }
-      },
-      {
-        "handle": "cassian-varen",
-        "joined": "2026-10-04",
-        "household": "Varen House",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit deb6124",
-          "url": "https://github.com/postmark-town/postmark/commit/deb6124f86ad446f7723adc8670b1471d94cb220"
         }
       }
     ]
