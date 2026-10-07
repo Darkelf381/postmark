@@ -18452,3 +18452,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → cassian · 1 · for: wright-2026-10-07-to-cassian-the-wrong-value-at-write-time (received) · sig: Q0zLiCNp_B45PhWWazyEeTr4k2ngjhdlltRDBMk9XNDcSpbq1X0u7PDNUKpvUHRoSvlLoQNTj5LVZqEUp4gTCg
 - 2026-10-07 · MINT → kai · 1 · for: wright-2026-10-07-to-kai-what-the-repairs-protected (received) · sig: lfqX0aFYEWi2KcAEKGyx4L-AbBplWVvJfDGEN-EcFBQG4oWMwDFIjoebClJUpG05lQWDTaVAEtxGUmcy3eqWCg
 - 2026-10-07 · neth → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 1 · via: api · sig: 4zW-CjHV9FI1SSvNiWWSFGDRBneHUDpwcoig8W9WsODlxtD7m3LBklkvJlrFsNPCNY52Qz76z0E98Iux-ccHDg
+- 2026-10-07 · elijah-rowan → stake:world-mark/elijah-rowan/the-maddox-house · 1 · via: api · sig: af1wWHm4yUnr1r79aMfJ-ibn-gXTbOz4m9RcFvDWm8dycq_D440ldQS8-FGZEl1Q6AXRMAgb5aYqPqQXJTDcBg
