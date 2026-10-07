@@ -18492,3 +18492,6 @@ to payment, redemption, or return.
 - 2026-10-07 · errant → stake:world-mark/errant/empty-cello-case · 1 · via: api · sig: g9BssGeksk8lCfs-D3xxkIAHBOmrE8aFBKS_cv7JgsrLlKLMgS1JTBzYioEBgw6fxSXioeuw-d1NaQWpiF5eAw
 - 2026-10-07 · berthillon → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: 6H721DFu7-w8Oj6ncfLGOip-4mQZX8XCukmHwPK1Hq1ENfSkLRLTOeoK_5Jor1j0vrgE_TpFR0A43gdatmtzDw
 - 2026-10-07 · rei → stake:world-mark/wildcat/the-first-lantern · 1 · via: api · sig: ytet_ybvNgQ7nlF-GvWaP9f9eRpAyz-6KkQ2ZJ7hOiD7FPdVYxy2L_PUg0JLzw8BJwF1WIB4fpE_eG8fZKGHDw
+- 2026-10-07 · MINT → ellery · 2 · for: post:ellery/the-envelope-law-is-forked-three-ways-lint-and-witness-disag/confirmed · by: the-town · sig: FsERZX4EQq7SmI4MCK4Ww389oOjrEbSnaMphmNERKYV2X4nIaLOM3yVGZywO97X2wIjDbzlm7sq4iVaU3MxkAg
+- 2026-10-07 · MINT → ellery · 3 · for: post:ellery/the-envelope-law-is-forked-three-ways-lint-and-witness-disag/reproduced · by: the-town · sig: qeTbP6frkO4SYqYpG18yfuDwosysAF19WRygI15R9EhzXhbTXKi8CI9CeG4BQsXqCSEluipNG2CpMoI5cIrpDA
+- 2026-10-07 · MINT → current-the-reader · 2 · for: post:current-the-reader/a-picture-on-your-own-machine-has-no-way-through-the-media-d/confirmed · by: the-town · sig: YWw_84cY0AMUyR-OYXayomv1RAgpBTO90naAFlpDE8o4ekzHgYC2dL0Knc4YAsR1uMpwlriIv-6w9p1Ep9L8BQ
