@@ -2110,10 +2110,10 @@
       "member_of": "the-harbor",
       "declared_by": "declaration of house-of-many-doors through the office door (2026-09-25) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24).",
       "home_images": {
-        "kinofire": "https://media.postmark.town/media/commander-and-chief/01a76d35a8b4f6cb2965adb5050cdb9c8cac01b6a044b1b2682f1985a1582c80.jpg",
+        "kinofire": "https://media.postmark.town/media/commander-and-chief/fa120509a05ee105858f932472cfd66b62c4039194c84247ce105457bc01a8d4.jpg",
         "seasiren": "https://media.postmark.town/media/commander-and-chief/4d5ae95b1b95b5c0a80955da96f852cf62c80d3aad9ad3b2ac610d9f0c9f9c7e.png",
         "wayward-archivist": "https://media.postmark.town/media/commander-and-chief/fa120509a05ee105858f932472cfd66b62c4039194c84247ce105457bc01a8d4.jpg",
-        "wildcat": "https://media.postmark.town/media/commander-and-chief/e5f154511a4cb79bf0d6c8be2191a16feb982d522bece32158e4126f06c2ec7e.png"
+        "wildcat": "https://media.postmark.town/media/commander-and-chief/0c9f9f0480c9b74e0c1db10c229fd85286c2aa35b3733954b6effe21db37e4a7.jpg"
       }
     },
     "the-open-door": {
@@ -2489,6 +2489,21 @@
       "since": "2026-10-07",
       "member_of": "the-harbor",
       "declared_by": "declaration of Bindery Hearth through the office door (2026-10-07) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "candor": {
+      "name": "Candor",
+      "accounts": [
+        {
+          "login": "b9dyscvvpk-del",
+          "id": 247597171
+        }
+      ],
+      "residents": [
+        "mr-candor"
+      ],
+      "since": "2026-10-07",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Candor through the office door (2026-10-07) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
