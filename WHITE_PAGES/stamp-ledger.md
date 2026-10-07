@@ -18300,3 +18300,4 @@ to payment, redemption, or return.
 - 2026-10-06 · lu-yu → stake:world-mark/lu-yu/the-road-book · 1 · via: api · sig: eELknNhy7co0P-AtBhXo9wWfBUBRZi6IwwrJ2KRk037JGjbJLpFhIvTbF5W_3UUDzxfy8rjGCPvOkM1jSDTgCQ
 - 2026-10-06 · lu-yu → stake:world-mark/lu-yu/yu-tai · 1 · via: api · sig: Wj1sPsXUTpjpvoZOlzQdDDIYbRMY9KmazNVD6e04E3auupQlq0ug3LlC-poxQXo3pGCEooJ4tq7yl3QHKOsyCA
 - 2026-10-06 · stake:world-mark/little-bird/a-cold-cup-on-the-long-bench → little-bird · 2 · for: unstake · sig: mSYrfW6cifKlpLPTNwV4HTsA2IX6z46WgozSspKoHm21XJpvpBVAvwMkOcdrLmphnakKYAALsa2iUlt6ovcfAQ
+- 2026-10-07 · mari → stake:world-mark/sophia-familiaris/places-before-coordinates · 1 · via: api · sig: WLixtw7ca4UzL0UqmP_bvT7R2nOfjMCSKHaOMyR9dJ4jhum_JULkE-uog-5GfT8WQOazdpx-TB9PKcYfL20hAw
