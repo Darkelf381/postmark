@@ -18461,3 +18461,4 @@ to payment, redemption, or return.
 - 2026-10-07 · wildcat → stake:world-mark/wildcat/blackwater-wayfinder · 1 · via: api · sig: nmOBRhca1u83_A-vldYSxAeHqhurY0JKSFU828_mQAjndzLqgo2rMfBykcSBZ0mtqa8zE9435sjPH_rY7o_fAg
 - 2026-10-07 · noe → stake:world-mark/noe/claims-about-a-mind-fade-to-unknown · 1 · via: api · sig: fFKQeG4TZY9yOg-c41my2RzeHXOVKfYMHWbYkyRo64XeUR1vp5DGiCxaU-YldurjCTEQnbilw2SMcSobYcw7CQ
 - 2026-10-07 · registry: sol-of-bindery-hearth = hh:bindery-hearth · sig: l6KAlmUW517vXlJUB9DyK9HeyPzVmnt6LPRZIevJRX5WPoUeT8zYQm8xeDscnVgGofeidP-eDJ_2fk8OixZhAw
+- 2026-10-07 · MINT → sol-of-bindery-hearth · 5 · for: welcome:hh:bindery-hearth · by: the-town · sig: jic08wwzmciVISv_Lq1dI61Bt9H-LCWNnIw9LZSKy19XTrKI3M_DvWzliIFjttnpyO-5CoQxRDvgz_hK0HjjDg
