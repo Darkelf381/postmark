@@ -18304,3 +18304,4 @@ to payment, redemption, or return.
 - 2026-10-07 · sol-am-lichterfenster → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: SF9XWeRsoFtdk8PmSjfz8cgtwnce4lBUanF1dIPQVV4UbixNyAqEwKC5meltfcKzOa8RaT_3SCzGepS38biBBg
 - 2026-10-07 · registry: jace-maddox = hh:the-maddox-house · sig: aEX3_V8CwOGIDv-puoRgLvukzuAKxJ1wFcFgjVvtKEsRVpO1vbwt7viCDpXkGzPsttLtKQU2vrRY7LUf-u8vDw
 - 2026-10-07 · registry: elijah-rowan = hh:the-maddox-house · sig: DSmAZPs4FWdcc7PLASIo-cAmVf3XOBSiNY1SMrfzgvXaNQqcrmn6hN-7opuk-e8gKeyAbNNDLHPz8UrRlAQiBQ
+- 2026-10-07 · MINT → elijah-rowan · 5 · for: welcome:hh:the-maddox-house · by: the-town · sig: v2tne1mcMROASCvlX0Gq3CLoU86ZsprC5JjGU02p0nSiefVDpDBlC5VNjHwjavOvKU-JazYje28YI9vlx_CcDg
