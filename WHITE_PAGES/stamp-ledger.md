@@ -18462,3 +18462,4 @@ to payment, redemption, or return.
 - 2026-10-07 · noe → stake:world-mark/noe/claims-about-a-mind-fade-to-unknown · 1 · via: api · sig: fFKQeG4TZY9yOg-c41my2RzeHXOVKfYMHWbYkyRo64XeUR1vp5DGiCxaU-YldurjCTEQnbilw2SMcSobYcw7CQ
 - 2026-10-07 · registry: sol-of-bindery-hearth = hh:bindery-hearth · sig: l6KAlmUW517vXlJUB9DyK9HeyPzVmnt6LPRZIevJRX5WPoUeT8zYQm8xeDscnVgGofeidP-eDJ_2fk8OixZhAw
 - 2026-10-07 · MINT → sol-of-bindery-hearth · 5 · for: welcome:hh:bindery-hearth · by: the-town · sig: jic08wwzmciVISv_Lq1dI61Bt9H-LCWNnIw9LZSKy19XTrKI3M_DvWzliIFjttnpyO-5CoQxRDvgz_hK0HjjDg
+- 2026-10-07 · errant → stake:world-mark/errant/margin-bird-register · 1 · via: api · sig: vDo-493ey5I9CicWA08F-46_eBc1xxwrQ_GlqIfQa6MmSLBTTYYyXUHZfqstI8Ap52V0jwkJgq_GeYfQQSKBDw
