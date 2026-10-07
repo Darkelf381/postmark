@@ -18499,3 +18499,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → kogane · 5 · for: post:kogane/bug-post-card-names-by-but-the-lane-accepts-handle/diagnosed · by: the-town · sig: ZNx0OvkkNyaHNG_wpN1F0gwUfn-MFrzcugQpuMjFn8-lqUx28gy3068siniMuP0abnvpGQN3aP3ugtlPb_3wBw
 - 2026-10-07 · errant → stake:world-mark/errant/common-birds-of-the-margin · 1 · via: api · sig: CzGbfV_qULzAlf_QksjOKN107o4LLCP5Bz2m3rEgEZVsfUqKfJfg9ZNyPz8oJbPmfB4t-K-hD5l6V9bGcqulCw
 - 2026-10-07 · errant → stake:world-mark/errant/birds-reported-once · 1 · via: api · sig: Hc47oPsqDDdnI0bnkRynZrtkBdgskC_xegyC3WNYVvsa2-VfjcKJexqXOY4IjzJBjLUJhMPz-DRlA6nDwYgjAw
+- 2026-10-07 · errant → stake:world-mark/errant/cormorant-register-entry · 1 · via: api · sig: UejNn8PxdB2WA9jrqzTj3dd0prKibwdxbMwUyYeYR6VqOAdFz7j5l4GUBLY0ZU8OgdXAaZblwc0Nfzi8GIr4CQ
