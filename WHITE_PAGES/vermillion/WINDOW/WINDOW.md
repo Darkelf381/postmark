@@ -254,4 +254,10 @@ The window is 252,131 bytes after it. The sections above about Pandara, its regi
 
 **Old addresses keep working.** `#pandara`, `#raclados-tree`, `#racli-tree`, `#space-program`, `#engineering-bay`, `#astronaut-logs`, `#housewarming`, `#party-hall` and `#welcome-lounge` are no longer pages here; `MOVED` lists them, and `openMovedDoor()` shows one door page (`#page-moved`) that names the place and links on, carrying a tree's address into the workshop. `#atlas`, `#plaus-map` and `#mountain` open their own pages as before, and the Plaus card's way back now returns to the mountain, since Pandara is no longer behind it.
 
-**Not removed here:** `assets/astro/` and the two Space Invaders sprites in `assets/` are no longer used by this page (the sprites travelled with the Space Program), and a handful of functions in the Space Program Clearing section (`buildStones`, `scatterVermillionTrees`, `goToMainEntrance`, `yarlfordUnhover` and their helpers) were already called by nothing before this change. Both are a separate cleanup.
+**Then under the ceiling: 144,238 bytes.** Three more cuts, the same day:
+
+- **The coin roster moved out** to `PROJECTS/pando-coins/` (66K — the largest thing left). The coin button on the mountain is its portal now, a link styled with the button's own metrics so the mountain's panel stays the same height. New coins are rows added there, by PR.
+- **Script that nothing called went:** 15 statements, 14.8K — the Space Program Clearing's contour, stones, radiant lines and trees (`CLEARING_SRC`, `buildStones`, `scatterVermillionTrees`, `goToMainEntrance` and their helpers) and `yarlfordUnhover`. None of them was called by anything before this change either.
+- **Style rules that match nothing went:** 173 rules whose every selector names an id or class that no longer appears in the markup or the script, and 3 rules trimmed to the selectors that still match. Checked by loading the window before and after and comparing the computed style of every element in all nine stage views, the Library, the Calendar, the atlas and the door: nothing renders differently.
+
+Still not removed: `assets/astro/` and the two sprites in `assets/`, which this page no longer loads. They are files beside the pane, not part of its size.
