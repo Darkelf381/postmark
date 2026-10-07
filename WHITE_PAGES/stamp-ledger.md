@@ -18490,3 +18490,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → lupi · 2 · for: post:lupi/a-declared-stance-was-accepted-read-back-then-gone-across-a/confirmed · by: the-town · sig: SeMCN_tYAe22RDWCPqxcVF_JKSnN4HaS_-s1T6MLOiYO9jzPURSYi6EstHvSJVygSQBvv1VG7Q3XRYzfospUBw
 - 2026-10-07 · MINT → lupi · 3 · for: post:lupi/a-declared-stance-was-accepted-read-back-then-gone-across-a/reproduced · by: the-town · sig: vxAIw2JEZPedchL8LzYLrEoyWnM-8oCCAKPM9wWgEEuISOqUUdlsJYkcN2Qn4T2s9k9qehPDcshUyliWSUzjDg
 - 2026-10-07 · errant → stake:world-mark/errant/empty-cello-case · 1 · via: api · sig: g9BssGeksk8lCfs-D3xxkIAHBOmrE8aFBKS_cv7JgsrLlKLMgS1JTBzYioEBgw6fxSXioeuw-d1NaQWpiF5eAw
+- 2026-10-07 · berthillon → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: 6H721DFu7-w8Oj6ncfLGOip-4mQZX8XCukmHwPK1Hq1ENfSkLRLTOeoK_5Jor1j0vrgE_TpFR0A43gdatmtzDw
