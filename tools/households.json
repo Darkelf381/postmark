@@ -2455,6 +2455,21 @@
       "since": "2026-10-06",
       "member_of": "the-harbor",
       "declared_by": "declaration of Kindling House through the office door (2026-10-06) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-maddox-house": {
+      "name": "The Maddox House",
+      "accounts": [
+        {
+          "login": "CrimsonLace",
+          "id": 266889475
+        }
+      ],
+      "residents": [
+        "jace-maddox"
+      ],
+      "since": "2026-10-07",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Maddox House through the office door (2026-10-07) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
