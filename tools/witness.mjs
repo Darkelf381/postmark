@@ -68,6 +68,12 @@
 //      still get eyes: anything off the exact shape routes to a mind, and a
 //      human-name privacy question is handled by redacting the NAME after
 //      admission, never by holding the PERSON.
+//   2d. (2026-10-07, the founder's "yes") A meep's own room. An account named
+//      in tools/meep-accounts.json (by immutable id, on base) keeps one room,
+//      MEEPS/<room>/, and its PR certifies when every file is ADDED or
+//      MODIFIED inside that room, plain (5e), and prose or pictures (5).
+//      Removals and renames get a mind, as a resident's do. The map is under
+//      tools/, so no meep can widen its own room.
 //   5c. (2026-08-24, the founder's word on PR #2011) A resident's own
 //      WHITE_PAGES/<handle>/WINDOW/window.html certifies despite rule 5's
 //      extension list, under the SAME law the MCP door (update_window,
@@ -380,6 +386,20 @@ function loadFounderRoster() {
   }
 }
 
+// Rule 2d — which meep room an account keeps, from tools/meep-accounts.json at
+// base: account id -> [rooms]. A room name is a plain slug; a row without a
+// numeric id binds nothing (the login is for reading, never matched).
+export function loadMeepRooms(root = ROOT) {
+  let rooms = {};
+  try { rooms = JSON.parse(readFileSync(join(root, 'tools', 'meep-accounts.json'), 'utf8')).rooms ?? {}; } catch { return {}; }
+  const byId = {};
+  for (const [room, row] of Object.entries(rooms)) {
+    if (typeof row?.id !== 'number' || !/^[a-z0-9][a-z0-9-]*$/.test(room)) continue;
+    (byId[row.id] ||= []).push(room);
+  }
+  return byId;
+}
+
 function householdOf(handle, roster) {
   return roster.find((members) => members.includes(handle)) || null;
 }
@@ -449,6 +469,22 @@ async function headModes(headSha, paths) {
     modes.set(path, mode);
   }
   return modes;
+}
+
+// Rule 2d's file judgment, pure (exported for the test): the sentences a mind
+// reads for a meep's PR; none means every file is an addition or a change
+// inside MEEPS/<room>/, of a kind the witness certifies.
+export function meepRoomReasons(room, files) {
+  const out = [];
+  for (const f of files) {
+    const p = f.filename;
+    if (f.status === 'removed') { out.push(`deletes \`${p}\` — removals get human eyes, in a meep's room as anywhere.`); continue; }
+    if (f.status === 'renamed') { out.push(`renames \`${f.previous_filename}\` — renames get human eyes.`); continue; }
+    if (f.status !== 'added' && f.status !== 'modified') { out.push(`changes \`${p}\` (${f.status}) — the witness certifies added and modified files only.`); continue; }
+    if (!p.startsWith(`MEEPS/${room}/`)) { out.push(`touches \`${p}\`, outside this meep's own room (\`MEEPS/${room}/\`) — that needs eyes.`); continue; }
+    if (!OK_EXT.test(p) && !/\.gitkeep$/.test(p)) out.push(`adds \`${p}\` — the witness only certifies prose and pictures (.md, .txt, images); anything else gets human eyes.`);
+  }
+  return out;
 }
 
 // Pure (exported for the test): null for a plain file, else the sentence a
@@ -682,6 +718,19 @@ async function evaluate() {
     }
     const unique2c = [...new Set(reasons)];
     return { pr, certified: unique2c.length === 0, reasons: unique2c, residentOnly: false, handles };
+  }
+  // Rule 2d: a meep's own room. Judged alone, like 2c: the account is the
+  // meep's, so the resident reasons below (no ADDRESS binds it) are not true of
+  // it, and anything outside its room still gets a mind, by name.
+  const meepRooms = handles.length ? [] : (loadMeepRooms()[authorId] || []);
+  if (meepRooms.length === 1) {
+    const { files: filesR, capped: cappedR } = await filesAtHead(pr);
+    if (cappedR) mind(`the PR changes ${COMPARE_FILE_CAP} or more files, more than the witness can read at one head; a person reads it.`);
+    if (!filesR.length) mind('the PR changes no files.');
+    for (const r of await plainFileReasons(pr, filesR)) mind(r); // rule 5e
+    for (const r of meepRoomReasons(meepRooms[0], filesR)) mind(r);
+    const uniqueR = [...new Set(reasons)];
+    return { pr, certified: uniqueR.length === 0, reasons: uniqueR, residentOnly: false, handles };
   }
   if (!handles.length) {
     // A move-in opened from the writing desk lands here by design, and the human
@@ -1049,7 +1098,7 @@ if (SUBCOMMAND === 'check') {
   await upsertComment(
     [
       MARKER,
-      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns (or is this household's own registry row, rule 2b; or the pen's exact join shape carrying a verified identity, rule 2c — welcome to town: your address is real as of this merge, and the welcome letter follows), nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
+      `**Certified by the witness** — every changed file is inside \`WHITE_PAGES/\` ground this account owns (or is this household's own registry row, rule 2b; or the pen's exact join shape carrying a verified identity, rule 2c — welcome to town: your address is real as of this merge, and the welcome letter follows; or this meep's own room, rule 2d), nothing deleted, nothing but prose, pictures, and the author's own page, lint clean. Merged.`,
       '',
       `*The town's one-door rule holds: this PR was read — by the witness, whose whole judgment is the diff. Anything it can't prove goes to human eyes instead.*`,
       ...(notes.length ? ['', ...notes.map((n) => `- ${n}`)] : []),
