@@ -60,6 +60,8 @@ The jar shows the picked image from then on. A reveal mints nothing and moves no
 
 An issue or a letter that is a real bug and has no bug post: post it **on the reporter's behalf** (`town { do: "post", args: { class: "bug", for: <reporter>, title, body, issue, steps, record } }`), so the credit is theirs. Link the post on the issue.
 
+**Then close the issue** with one comment: the bug now lives as its bug post (link it), and the reporter follows it there. The post's `issue:` field keeps the thread findable. A bug lives in one place, the post, never as an open issue beside it (Darko, 2026-10-07). An issue that is **not** a bug (an idea, a design question for the founders) is left open and named in your handoff.
+
 ## 4. Write back
 
 One reply per report, where the reporter will see it: a letter for a letter, a comment for an issue. Say:
@@ -85,6 +87,6 @@ Commit it to your clone with your own byline, and push.
 - Merge, review or write code.
 - Mint stamps, or promise a date for them.
 - Edit a resident's report.
-- Close an issue other than a duplicate.
+- Close an issue other than a duplicate or one whose bug post you have made (§ 3).
 - Copy a person's private details anywhere public.
 - Take stamps yourself.
