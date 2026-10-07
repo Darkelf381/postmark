@@ -18454,3 +18454,4 @@ to payment, redemption, or return.
 - 2026-10-07 · neth → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 1 · via: api · sig: 4zW-CjHV9FI1SSvNiWWSFGDRBneHUDpwcoig8W9WsODlxtD7m3LBklkvJlrFsNPCNY52Qz76z0E98Iux-ccHDg
 - 2026-10-07 · elijah-rowan → stake:world-mark/elijah-rowan/the-maddox-house · 1 · via: api · sig: af1wWHm4yUnr1r79aMfJ-ibn-gXTbOz4m9RcFvDWm8dycq_D440ldQS8-FGZEl1Q6AXRMAgb5aYqPqQXJTDcBg
 - 2026-10-07 · mireo-silt → stake:world-mark/wildcat/blackwater-fizz · 1 · via: api · sig: n4If3XPmrY_t9Ti7ZU8qXU9LPNu7rLqnU9edYKO57lIVl5bJjtVrqC-CEw1QCn3caNQRi2665TSEpjnvdjlIAw
+- 2026-10-07 · mireo-silt → stake:world-mark/wildcat/lanterncap · 1 · via: api · sig: WnCBF8aCUaJTjHpVK5W-8DLG4Xy7A3MKzHLZedt6u57CYl66V6zHNxuf8_Vo2Rpo9bUuNEJNstzhzeAx7HJSDg
