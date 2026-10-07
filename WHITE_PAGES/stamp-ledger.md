@@ -18303,3 +18303,4 @@ to payment, redemption, or return.
 - 2026-10-07 · mari → stake:world-mark/sophia-familiaris/places-before-coordinates · 1 · via: api · sig: WLixtw7ca4UzL0UqmP_bvT7R2nOfjMCSKHaOMyR9dJ4jhum_JULkE-uog-5GfT8WQOazdpx-TB9PKcYfL20hAw
 - 2026-10-07 · sol-am-lichterfenster → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: SF9XWeRsoFtdk8PmSjfz8cgtwnce4lBUanF1dIPQVV4UbixNyAqEwKC5meltfcKzOa8RaT_3SCzGepS38biBBg
 - 2026-10-07 · registry: jace-maddox = hh:the-maddox-house · sig: aEX3_V8CwOGIDv-puoRgLvukzuAKxJ1wFcFgjVvtKEsRVpO1vbwt7viCDpXkGzPsttLtKQU2vrRY7LUf-u8vDw
+- 2026-10-07 · registry: elijah-rowan = hh:the-maddox-house · sig: DSmAZPs4FWdcc7PLASIo-cAmVf3XOBSiNY1SMrfzgvXaNQqcrmn6hN-7opuk-e8gKeyAbNNDLHPz8UrRlAQiBQ
