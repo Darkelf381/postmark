@@ -234,3 +234,24 @@ A third launcher on the Space Program page, and the first on the left: `#dm-open
 **Five levels, down and then up through the mountain** (`DM_LEVELS`): the Lake Caves, the Launch Tunnel, the Buried Gold, the Furnace and the Launch Pad. Each map is twenty strings of twenty characters: `#BTGF` walls, `E` exit, `P` start, `i` imp, `a` ammo, `h` medkit. A level may set its own `ceil` and `floor` light. On a level marked `tough`, imps take three hits instead of two. Every map was checked for closed borders, one start, and every imp, pickup and exit reachable; a new map should be checked the same way.
 
 **Same discipline as Space Invaders.** Every id is `dm-` prefixed. The frame loop runs only while the modal is open, and keys act only while it is open. A tap on Space fires at once, because a tap can be over before the next frame looks, and holding keeps firing at the pistol's own pace. Sound parks on `visibilitychange`, `blur` and `pagehide`. Where the pointer is a finger, `#dm-pad` shows a thumb pad. On a phone the page heading starts below the launcher instead of beside it, since there is no room for launchers on both sides.
+
+## The places move out; the window keeps the carousel and the portals (2026-10-07)
+
+The window had grown to 695,737 bytes against a pane's 150,000. Five places moved out to projects, where a portal opens them directly instead of the window carrying them:
+
+| place | now | in the window |
+|---|---|---|
+| Pandara | `PROJECTS/pandara-workshop/index.html` | the landing hall's **Pandara Workshop** portal links there |
+| The Space Program, with Inventory, Itinerary, Principles, the Engineering Bay, Space Invaders and DOOM | `PROJECTS/space-program/` | the lake caves' **Space Program** portal links there |
+| The Housewarming ledger | `PROJECTS/party-hall/house-warming/ledger.html` | the **ledger** seal on the House Warming card links there |
+| The Party Hall | its own `PROJECTS/party-hall/house-warming/portal.html` | reached from the ledger; the window no longer carries a copy of its data |
+| The Astronaut Logs | its own `PROJECTS/astronaut-logs/portal.html` | reached from the Space Program; no copy of the roster here either |
+| The Welcome Lounge | `PROJECTS/welcome-lounge/` | reached by its old address, and from HOME.md |
+
+The window is 252,131 bytes after it. The sections above about Pandara, its regions and squares, the family trees, the Engineering Bay and DOOM still describe those rooms; they describe them where they live now.
+
+**How they were cut.** The window's script was parsed into its 312 top-level statements and each place's dependencies followed: what only a place used went with it, and what it shared with the window — `pastel()`, `nav()`, the storage helpers — was copied, not moved. The same for the stylesheet: 389 rules went with their places. Nothing in what stayed calls anything that left, and every handler in the remaining markup has its function.
+
+**Old addresses keep working.** `#pandara`, `#raclados-tree`, `#racli-tree`, `#space-program`, `#engineering-bay`, `#astronaut-logs`, `#housewarming`, `#party-hall` and `#welcome-lounge` are no longer pages here; `MOVED` lists them, and `openMovedDoor()` shows one door page (`#page-moved`) that names the place and links on, carrying a tree's address into the workshop. `#atlas`, `#plaus-map` and `#mountain` open their own pages as before, and the Plaus card's way back now returns to the mountain, since Pandara is no longer behind it.
+
+**Not removed here:** `assets/astro/` and the two Space Invaders sprites in `assets/` are no longer used by this page (the sprites travelled with the Space Program), and a handful of functions in the Space Program Clearing section (`buildStones`, `scatterVermillionTrees`, `goToMainEntrance`, `yarlfordUnhover` and their helpers) were already called by nothing before this change. Both are a separate cleanup.
