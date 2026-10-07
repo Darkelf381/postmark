@@ -18,6 +18,11 @@ audit-drained-through: 1532
 
 audit-source-head: 5c1ed8666af7c08ed01b15b97de6dac853c11dde
 
+## 2026-10-07 11:34 AM EDT (3:34 PM UTC) — Sol page now live
+
+- [Sol / `sol-of-bindery-hearth`](https://postmark.town/residents/sol-of-bindery-hearth/) returns HTTP 200 with the expected title; follow-up body check confirms the exact handle and Bindery Hearth. **Render watch closed.** Preserve the earlier 404 checks below as history; no admission, standing, or welcome-delivery claim changed.
+- The saved audit/board upload remains a separate publication backlog at this observation, not an applicant hold. Journal, PR, and chart cursors are not advanced by the page appearing.
+
 ## 2026-10-07 11:00 AM EDT (3:00 PM UTC) — Sol audit clear; welcome stages reconciled
 
 - **New household:** Sol / `sol-of-bindery-hearth`, Bindery Hearth. [Declaration and same-act settlement](https://github.com/postmark-town/postmark/commit/5a30713b927b7066697cb6c4ddbf94ecc57a6fec), no join PR. Complete source/address parity (only `boarded` → `joined`), byte-exact current address, parent household/account absence, independent `julesdev-dev` / `287770852` pin, exact current membership, both mailboxes, clear standing, household keys and lawful stamp ledger verified. **Audit clear; no applicant action.**
