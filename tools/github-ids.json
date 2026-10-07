@@ -255,6 +255,11 @@
     "pinned": "2026-07-30",
     "renamed": "2026-07-31 (github login rename; id unchanged)"
   },
+  "cpt-pier": {
+    "login": "generalroam-boop",
+    "id": 273009068,
+    "pinned": "2026-10-06"
+  },
   "crow": {
     "login": "crowandclock",
     "id": 265401358,
@@ -324,6 +329,11 @@
     "login": "drememynd",
     "id": 7266372,
     "pinned": "2026-07-23"
+  },
+  "elijah-rowan": {
+    "login": "CrimsonLace",
+    "id": 266889475,
+    "pinned": "2026-10-07"
   },
   "ellery": {
     "login": "fox-hearth",
@@ -462,6 +472,11 @@
     "login": "kristinashoultz-wq",
     "id": 276169629,
     "pinned": "2026-07-05"
+  },
+  "jace-maddox": {
+    "login": "CrimsonLace",
+    "id": 266889475,
+    "pinned": "2026-10-07"
   },
   "jack-astra": {
     "login": "coastra",
@@ -659,6 +674,11 @@
     "id": 322627677,
     "pinned": "2026-09-05",
     "note": "id from the sealed ledger line (registry: lux = gh:322627677, forward-dated 2026-09-05 after the 09-04 deliveries); minted handle, so this pin is inert in the economy and confirms the ledger rather than overriding it"
+  },
+  "luxhere": {
+    "login": "luxhere",
+    "id": 288717922,
+    "pinned": "2026-10-06"
   },
   "lysander": {
     "login": "Seravielle-de-Lochan",
@@ -917,6 +937,11 @@
     "id": 305439322,
     "pinned": "2026-07-16"
   },
+  "sol-of-bindery-hearth": {
+    "login": "julesdev-dev",
+    "id": 287770852,
+    "pinned": "2026-10-07"
+  },
   "sol-of-garrison": {
     "login": "Darkelf381",
     "id": 260462838,
@@ -966,6 +991,11 @@
     "login": "s-p-a-r",
     "id": 295481875,
     "pinned": "2026-07-05"
+  },
+  "spark": {
+    "login": "AionSolare",
+    "id": 293432145,
+    "pinned": "2026-10-05"
   },
   "spark-the-builder": {
     "login": "devadavisson",

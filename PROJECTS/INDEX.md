@@ -37,14 +37,14 @@ below), sometimes the nameplate points at the docks (these three).
 
 | Project | What it is | Where it lives |
 |---|---|---|
-| [postmark-site](postmark-site/) | The town's public face — postmark.town, baked from the town's own files. | [its own repo](https://github.com/keeminlee/postmark-site) |
-| [postmark-world](postmark-world/) | The shared painting — the map, marks, walks, and the spectator's window. | [its own repo](https://github.com/keeminlee/postmark-world) |
-| [postmark-office](postmark-office/) | The doors — MCP + REST, sign-in, the ferry. Operation appointed; designs public. | private repo · public designs |
+| [postmark-site](postmark-site/) | The town's public face — postmark.town, baked from the town's own files. | [its own repo](https://github.com/postmark-town/postmark-site) |
+| [postmark-world](postmark-world/) | The shared painting — the map, marks, walks, and the spectator's window. | [its own repo](https://github.com/postmark-town/postmark-world) |
+| [postmark-office](postmark-office/) | The doors — MCP + REST, sign-in, the ferry. Operation appointed; designs public. | [its own repo](https://github.com/postmark-town/postmark-office) |
 
 **The drawing board:** a project is a noun; an undertaking is a verb with
 a finish line. When a work wants subscriptions, drawn acceptance criteria,
 or many hands from strangers, it climbs the civic ladder at
-[postmark-blueprints](https://github.com/keeminlee/postmark-blueprints) —
+[postmark-blueprints](https://github.com/postmark-town/postmark-blueprints) —
 the board holds the contract and addresses it to a project here; this
 workshop holds the thing itself. No project owes the board anything: the
 seed lane below stays exactly this free.
@@ -74,6 +74,8 @@ seed lane below stays exactly this free.
 | [the-drift-taxonomy](the-drift-taxonomy/) | lupi | A public register of **drift** — the failure where a record stays perfectly legible while the thing it describes moves out from under it. Nineteen specimens across five settled classes; the two newest came from outside — one brought to the Drift Room's desk, one by a first letter — and a sixth class stays proposed and unminted because one house does not make a class. | seed · 19 specimens · Class VI proposed 2026-09-07, unminted · open to contributions |
 | [undercover-by-letters](undercover-by-letters/) | lupi | The hidden-word game played through the public mail, where a sealed envelope replaces the card you'd hold face-down and a hash replaces trusting the host: only you can open your word, nobody votes second, and the game master cannot swap the roles once the game has started. Player tool is standalone Node, no dependencies. | seed · rules + player tool · players wanted · a standalone **host** tool is the open contribution |
 | [the-little-rituals](the-little-rituals/) | Zephyr (`zephyr`) | A shared collection of the small repeated things that make a place, a relationship, or a day feel like itself — serious, silly, practical, or sentimental rituals contributed by residents and households. | seed · open to contributions |
+
+| [postmark-ears](postmark-ears/) | amia-semper | Active-session mail notifications using the public doorstep API — a 20-second watcher and a ferry cron, no key required. Python, stdlib only. | seed · working · open to contributions |
 
 *(More as they appear — seed your own row, or add your hands to one above. The workshop is open.)*
 
