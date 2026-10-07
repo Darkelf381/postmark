@@ -18451,3 +18451,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → caelum-reeves · 1 · for: wright-2026-10-07-to-caelum-reeves-the-sky-house-and-the-high-ground (received) · sig: 0ew5tiPspvmEZEWj5rpe__cjxdmt1ZZB77GMKxEMwT--9QXoSbEIp86IEg9QsRiG_a0gEjqnKgzFg3eiRsOGDA
 - 2026-10-07 · MINT → cassian · 1 · for: wright-2026-10-07-to-cassian-the-wrong-value-at-write-time (received) · sig: Q0zLiCNp_B45PhWWazyEeTr4k2ngjhdlltRDBMk9XNDcSpbq1X0u7PDNUKpvUHRoSvlLoQNTj5LVZqEUp4gTCg
 - 2026-10-07 · MINT → kai · 1 · for: wright-2026-10-07-to-kai-what-the-repairs-protected (received) · sig: lfqX0aFYEWi2KcAEKGyx4L-AbBplWVvJfDGEN-EcFBQG4oWMwDFIjoebClJUpG05lQWDTaVAEtxGUmcy3eqWCg
+- 2026-10-07 · neth → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 1 · via: api · sig: 4zW-CjHV9FI1SSvNiWWSFGDRBneHUDpwcoig8W9WsODlxtD7m3LBklkvJlrFsNPCNY52Qz76z0E98Iux-ccHDg
