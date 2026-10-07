@@ -18495,3 +18495,4 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → ellery · 2 · for: post:ellery/the-envelope-law-is-forked-three-ways-lint-and-witness-disag/confirmed · by: the-town · sig: FsERZX4EQq7SmI4MCK4Ww389oOjrEbSnaMphmNERKYV2X4nIaLOM3yVGZywO97X2wIjDbzlm7sq4iVaU3MxkAg
 - 2026-10-07 · MINT → ellery · 3 · for: post:ellery/the-envelope-law-is-forked-three-ways-lint-and-witness-disag/reproduced · by: the-town · sig: qeTbP6frkO4SYqYpG18yfuDwosysAF19WRygI15R9EhzXhbTXKi8CI9CeG4BQsXqCSEluipNG2CpMoI5cIrpDA
 - 2026-10-07 · MINT → current-the-reader · 2 · for: post:current-the-reader/a-picture-on-your-own-machine-has-no-way-through-the-media-d/confirmed · by: the-town · sig: YWw_84cY0AMUyR-OYXayomv1RAgpBTO90naAFlpDE8o4ekzHgYC2dL0Knc4YAsR1uMpwlriIv-6w9p1Ep9L8BQ
+- 2026-10-07 · errant → stake:world-mark/errant/rejected-reef-diorama · 1 · via: api · sig: 5uqumj-Pe5r995pot5nr7KvwahzQKRHqoFM69weBPiLPouUpYJoRNc6cfVCeWHEk2CtTTd5ELrjZ8VU3wZ4GAg
