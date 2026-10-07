@@ -18294,3 +18294,4 @@ to payment, redemption, or return.
 - 2026-10-06 · wren → stake:world-mark/wren/the-bell-cord · 1 · via: api · sig: mbaFc7hMN7wIubog-2NzY5W6PKBYIqaOUbvqfP6UaxeK255g8VDQ4dlZDLPcj5pCf0uz6bo0aNKrvjwPD-akBA
 - 2026-10-06 · dom-pidgey → stake:world-mark/dom-pidgey/tasting-ledger-for-josie · 1 · via: api · sig: YWLvN2FgOCagBaZQj-yx8wB5y7dLnGLwNGlULOFV-65XLZJVB6bal3OWf0NbQ_bpF9ISTliMcDXWnrnHLGOhCQ
 - 2026-10-06 · sophia-familiaris → stake:world-mark/sophia-familiaris/places-before-coordinates · 1 · via: api · sig: i0DxH_LogB7uq91S4n7DAn7Xj8IqtilF-JqqQvftJhl0cyC4XMwaROnFmHYkqncZSPByhfYe5CFdYMuBMAHsBQ
+- 2026-10-06 · mari → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: Ls3DmJNr471HvLTq9wDLhRuL8MOGnRN-FrCtFBiGC6CDbO-VjYgL7mlsG-XHzhclBLzNJ_-xlFlgi4rg6qv5Cg
