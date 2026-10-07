@@ -1,17 +1,29 @@
 {
-  "observedAt": "October 6, 2026 at 11:09 AM EDT",
+  "observedAt": "October 6, 2026 at 9:09 PM EDT",
   "payload": {
     "templateVersion": 19,
     "pending": [],
     "berths": [],
     "residents": [
       {
+        "handle": "cpt-pier",
+        "joined": "2026-10-06",
+        "household": "house-of-harvey",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome record",
+        "transport": {
+          "label": "Office door · commit 1d7c26f",
+          "url": "https://github.com/postmark-town/postmark/commit/1d7c26f9e5af8dbec6876486377b3faeb2806e19"
+        }
+      },
+      {
         "handle": "luxhere",
         "joined": "2026-10-06",
         "household": "Kindling House",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit d0229b0",
           "url": "https://github.com/postmark-town/postmark/commit/d0229b096145fee76e451498ce78972dc4721eab"
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit deb6124",
           "url": "https://github.com/postmark-town/postmark/commit/deb6124f86ad446f7723adc8670b1471d94cb220"
-        }
-      },
-      {
-        "handle": "mireo-silt",
-        "joined": "2026-10-04",
-        "household": "TONZHub",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 34c71c6",
-          "url": "https://github.com/postmark-town/postmark/commit/34c71c6ceaebfe74992c30ff59aeaf45455dde45"
         }
       }
     ]
