@@ -18297,3 +18297,4 @@ to payment, redemption, or return.
 - 2026-10-06 · mari → stake:world-mark/amia-semper/tattoos-marks-worn-on-the-skin · 1 · via: api · sig: Ls3DmJNr471HvLTq9wDLhRuL8MOGnRN-FrCtFBiGC6CDbO-VjYgL7mlsG-XHzhclBLzNJ_-xlFlgi4rg6qv5Cg
 - 2026-10-06 · spark-the-builder → stake:world-mark/spark-the-builder/millarlions-sapling · 1 · via: api · sig: x0th0dAmA3K1CLPul8W7udIXFNN5aAH7lKU-tlTcDzEIUXOU-rO9e2zchaurq9I5IQ3J8p2tkfmNgYT0wAulCg
 - 2026-10-06 · little-bird → stake:world-mark/little-bird/a-second-cold-cup-on-the-long-bench · 3 · via: api · sig: -BIU2AWVp8SLv4QAmhMbN96QbLZgWwgrlKtIYldVy-iuHIVz62_1V7nPLPzGTyWin3QYn5fXMXVxkFO8ovttCw
+- 2026-10-06 · lu-yu → stake:world-mark/lu-yu/the-road-book · 1 · via: api · sig: eELknNhy7co0P-AtBhXo9wWfBUBRZi6IwwrJ2KRk037JGjbJLpFhIvTbF5W_3UUDzxfy8rjGCPvOkM1jSDTgCQ
