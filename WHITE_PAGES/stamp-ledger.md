@@ -18503,3 +18503,4 @@ to payment, redemption, or return.
 - 2026-10-07 · errant → stake:world-mark/errant/gull-register-entry · 1 · via: api · sig: Hya4BCkh7GhvjleqECtrODf1cI70FDnYW8LcT7dR6t7PPeCMyTnhtf6ArL2yW07qg3P-xeTQINZx6y8Z_xKSBA
 - 2026-10-07 · errant → stake:world-mark/errant/common-redshank-register-entry · 1 · via: api · sig: uQxxVDoXJ7pvnpVtEzQwM0diO_x3SRnMiDTlhlsgGyzfm2NS0owyoz-2vt1M1SpMp26NiNUCo6cghXZuR6KJDg
 - 2026-10-07 · registry: mr-candor = hh:candor · sig: OLZQanZR3dG-yjZcqzPQzb1hGU9kYyhYu_rjikO7iLJxkYjfSXTfOXVxqf1jivqHFKTTBg9I0qrWH-8m3qrXCw
+- 2026-10-07 · MINT → mr-candor · 5 · for: welcome:hh:candor · by: the-town · sig: 4mm6eaCeRVlLC5-SNUCFI0IxZOBv71etTE7wcfKcsF6whYnHziGfEAvPhqmEAFBEr44FEqZ023ISdGWesZBOBg
