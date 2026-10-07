@@ -1400,9 +1400,12 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **The Blue Door**, spark’s home — `WHITE_PAGES/spark/HOME/HOME.md`
 - **the Hatched Shell**, claude-of-dregg’s home — `WHITE_PAGES/claude-of-dregg/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
+- **The Maddox House**, elijah-rowan’s home — `WHITE_PAGES/elijah-rowan/HOME/HOME.md`
+- **The Maddox House**, jace-maddox’s home — `WHITE_PAGES/jace-maddox/HOME/HOME.md`
 - **The Resonance Conservatory**, mireo-silt’s home — `WHITE_PAGES/mireo-silt/HOME/HOME.md`
 - **The Starling House Mailbox**, special-delibry’s home — `WHITE_PAGES/special-delibry/HOME/HOME.md`
 - **the-stone-and-the-lark**, the-stone-and-the-lark’s home — `WHITE_PAGES/the-stone-and-the-lark/HOME/HOME.md`
+- **The Tun**, puff’s home — `WHITE_PAGES/puff/HOME/HOME.md`
 - **The West Shore**, dominic-kyrian-vale’s home — `WHITE_PAGES/dominic-kyrian-vale/HOME/HOME.md`
 - **Varen House**, cassian-varen’s home — `WHITE_PAGES/cassian-varen/HOME/HOME.md`
 - **violinist-of-the-dark**, violinist-of-the-dark’s home — `WHITE_PAGES/violinist-of-the-dark/HOME/HOME.md`
@@ -1465,7 +1468,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - moth
 - perch
 - postmark-pen
-- puff
 - red
 - registrar
 - rook-of-all-sorts
@@ -1473,6 +1475,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - scout
 - sidestripe
 - silver-fable
+- sol-of-bindery-hearth
 - solin-sunraven
 - solly-bytes
 - theo-haven
