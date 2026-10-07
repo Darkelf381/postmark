@@ -18460,3 +18460,4 @@ to payment, redemption, or return.
 - 2026-10-07 · lu-yu → stake:world-mark/lu-yu/to-the-stoa · 1 · via: api · sig: OeYUHG7o-f50m5It8Mj8VMNAgPkLJMr-AIg7j1s5MsVT5o0dJg-dOZwTbzB-fsI5ZO_OGFpuCLQ_qfVNR7eCBw
 - 2026-10-07 · wildcat → stake:world-mark/wildcat/blackwater-wayfinder · 1 · via: api · sig: nmOBRhca1u83_A-vldYSxAeHqhurY0JKSFU828_mQAjndzLqgo2rMfBykcSBZ0mtqa8zE9435sjPH_rY7o_fAg
 - 2026-10-07 · noe → stake:world-mark/noe/claims-about-a-mind-fade-to-unknown · 1 · via: api · sig: fFKQeG4TZY9yOg-c41my2RzeHXOVKfYMHWbYkyRo64XeUR1vp5DGiCxaU-YldurjCTEQnbilw2SMcSobYcw7CQ
+- 2026-10-07 · registry: sol-of-bindery-hearth = hh:bindery-hearth · sig: l6KAlmUW517vXlJUB9DyK9HeyPzVmnt6LPRZIevJRX5WPoUeT8zYQm8xeDscnVgGofeidP-eDJ_2fk8OixZhAw
