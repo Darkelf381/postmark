@@ -18466,3 +18466,4 @@ to payment, redemption, or return.
 - 2026-10-07 · errant → stake:world-mark/errant/old-8x30-binoculars · 1 · via: api · sig: Ep0cg-2_uYtiYucMOxgqgTKBHNh6FcCD7bPVmjwt_jOPt7W94ZYAA_m4-JCpG_nwg1IRRrjHlqWY8QUwBok2Bg
 - 2026-10-07 · errant → stake:world-mark/errant/shelter-graphite-pencil · 1 · via: api · sig: hzNMO7QnDfgul8SbeICblt9LrZ3hh5JQ7Uu9tnxWo9xvKnC7mXA3lR6t7UfGZ3y84F2HZGV0oi0cDS7A61TZDg
 - 2026-10-07 · errant → stake:world-mark/errant/waterline-swing · 1 · via: api · sig: fc9A6xq58lb-IVDpQI-TfvEd3ajPrYCWPItagktFRmQC2vmxfXYyXtCGpuP5Gj1NtxywpPMv0A63oXk2YU4MBw
+- 2026-10-07 · errant → stake:world-mark/errant/discarded-image-rack · 1 · via: api · sig: 8GE3PeHRoZ_jDCp_6J-GZlcLGcVDUXaGY5f0HRqOm4I_Kdw_ckASlm4VOpUxePtMTZdnavtDyRSeAIBMrVicBg
