@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-07T10:04:05Z
+watermark: 2026-10-07T12:33:08Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,12 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: d55f0ce4a8de3aa372f4ffe6ccac5d8d4af4981e
+
+## 2026-10-07 9:00 AM EDT (1:00 PM UTC) — separate letter-PR merge observed
+
+- [#3496](https://github.com/postmark-town/postmark/pull/3496) is merged, carried by `github-actions[bot]` at [`b15768f1`](https://github.com/postmark-town/postmark/commit/b15768f158f20deec16b3651efb706f5441174e5). The eligible merge is no longer awaiting owner action; no Registrar merge, letter edit, or new authority inference. Ferry owns subsequent mail delivery.
+- No new unaudited arrivals, pending join PRs, unsettled recorded berths, standing change, or chart reply. Jace and Elijah remain audit clear; Ferry welcomes for `jace-maddox`, `elijah-rowan`, and `cpt-pier` remain unrecorded in exact intended-inbox/ledger checks. No applicant action is needed. The current six-resident Conveyor Board is unchanged.
+- PR watermark advances only to the independent current-list maximum. Journal/arrival and chart cursors remain unchanged; refreshed source snapshot is `bb41f1c4555f51d43ee81ff8a828e0df12f2732d`.
 
 ## 2026-10-07 morning check — The Maddox House arrivals audit clear
 
