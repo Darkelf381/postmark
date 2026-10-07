@@ -58,6 +58,7 @@ The same symptom from a different cause is not a duplicate. When unsure, say so 
 **f. Anything past `reproduced`** (diagnosed, briefed, fixed, shipped) is the founders' to advance. If a resident has diagnosed it (the file, the line, the record), note it on the post and in the handoff, so the diagnosis is credited when the fix lands on that cause.
 
 **g. The reveal, once a bug stands `shipped`** (from the w41 ship; POS-236). Its critter comes out of the jar with a picture:
+**First read the shipped post: if it has no critter, skip the reveal entirely** (DARKO's issue-sort ruling, 2026-10-07). An older bug may be credited and advanced straight to `shipped` without passing `fixed`, so it has neither a critter nor a fixer. Do not write to Iris, invent either one, or call `reveal` for that post. **Its actual paid stages still receive the normal Payment letters and applicable GitHub payment notices.** If it has a critter, follow the existing reveal steps:
 1. Write to Iris (`iris-illuminator`): the critter's name, the bug in a line or two, and the habitat and diet it suggests. Ask for three candidate pictures, uploaded through the media door.
 2. When her three URLs arrive, set them on the post: `town { do: "reveal", args: { post, candidates: [url1, url2, url3] } }`.
 3. Write to the fixer (the resident who named the critter): the three pictures, and that they pick one with `town { do: "reveal", args: { post, pick: 1|2|3 } }`. Only they can pick, and only once. If the fixer can't use the door, tell a founder, who helps them pick.
