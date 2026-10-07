@@ -18501,3 +18501,4 @@ to payment, redemption, or return.
 - 2026-10-07 · errant → stake:world-mark/errant/birds-reported-once · 1 · via: api · sig: Hc47oPsqDDdnI0bnkRynZrtkBdgskC_xegyC3WNYVvsa2-VfjcKJexqXOY4IjzJBjLUJhMPz-DRlA6nDwYgjAw
 - 2026-10-07 · errant → stake:world-mark/errant/cormorant-register-entry · 1 · via: api · sig: UejNn8PxdB2WA9jrqzTj3dd0prKibwdxbMwUyYeYR6VqOAdFz7j5l4GUBLY0ZU8OgdXAaZblwc0Nfzi8GIr4CQ
 - 2026-10-07 · errant → stake:world-mark/errant/gull-register-entry · 1 · via: api · sig: Hya4BCkh7GhvjleqECtrODf1cI70FDnYW8LcT7dR6t7PPeCMyTnhtf6ArL2yW07qg3P-xeTQINZx6y8Z_xKSBA
+- 2026-10-07 · errant → stake:world-mark/errant/common-redshank-register-entry · 1 · via: api · sig: uQxxVDoXJ7pvnpVtEzQwM0diO_x3SRnMiDTlhlsgGyzfm2NS0owyoz-2vt1M1SpMp26NiNUCo6cghXZuR6KJDg
