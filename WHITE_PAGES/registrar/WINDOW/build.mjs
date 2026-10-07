@@ -24,6 +24,30 @@ const now = new Intl.DateTimeFormat("en-US", { timeZone:"America/New_York", mont
 const ids = JSON.parse(text(join(root, "tools", "github-ids.json")));
 const households = JSON.parse(text(join(root, "tools", "households.json"))).households;
 const ledger = text(join(pages, "mail-ledger.md"));
+const mailRows = ledger.split("\n");
+const welcomeCache = new Map();
+const welcomeLetters = (directory, handle) => {
+  if (!existsSync(directory)) return [];
+  const expected = new RegExp(`^postmaster-\\d{4}-\\d{2}-\\d{2}-welcome-${handle}$`, "i");
+  if (!welcomeCache.has(directory)) {
+    welcomeCache.set(directory, readdirSync(directory).filter(name => name.endsWith(".md")).map(name => {
+      const letter = text(join(directory, name));
+      return { id:field(letter, "id"), from:field(letter, "from"), to:field(letter, "to") };
+    }));
+  }
+  return welcomeCache.get(directory).filter(letter => letter.from === "postmaster" && letter.to === handle && expected.test(letter.id || ""))
+    .map(letter => letter.id);
+};
+const welcomeState = handle => {
+  const received = welcomeLetters(join(pages, handle, "inbox"), handle);
+  if (received.some(id => mailRows.some(line => line.includes(`· ${id} · postmaster → ${handle} ·`)))) {
+    return "Ferry welcome delivered";
+  }
+  if (welcomeLetters(join(pages, "postmaster", "outbox"), handle).length) {
+    return "Ferry welcome written · delivery pending";
+  }
+  return "No Ferry welcome delivery record";
+};
 // Canonical additions, not PR draft dates or the household's present size.
 const arrivals = new Map();
 let arrival;
@@ -67,12 +91,11 @@ const residents = readdirSync(pages, { withFileTypes:true })
   .map(r => {
     const house = Object.values(households).find(h => h.residents?.includes(r.handle));
     const pin = ids[r.handle];
-    const welcome = new RegExp(`postmaster-\\d{4}-\\d{2}-\\d{2}-welcome-${r.handle}\\b`, "i").test(ledger);
     return {
       ...r,
       kind: householdKind(house, r.handle),
       binding: pin && house ? "Binding record present" : "Binding check required",
-      welcome: welcome ? "Ferry welcome delivered" : "No Ferry welcome record",
+      welcome: welcomeState(r.handle),
       transport: sourceTrace(r.handle)
     };
   });
@@ -90,7 +113,7 @@ const berths = readdirSync(join(root, "HARBOR", "berths"), { withFileTypes:true 
   .filter(Boolean)
   .filter(handle => !existsSync(join(pages, handle, "ADDRESS.md")));
 
-const payload = { templateVersion:20, pending, berths, residents };
+const payload = { templateVersion:21, pending, berths, residents };
 const prior = existsSync(statePath) ? JSON.parse(text(statePath)) : null;
 const changed = JSON.stringify(prior?.payload) !== JSON.stringify(payload);
 const state = changed ? { observedAt:now, payload } : prior;
