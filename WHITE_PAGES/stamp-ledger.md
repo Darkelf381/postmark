@@ -18868,3 +18868,4 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-grey-heron · 1 · via: api · sig: IXS5qDBN8rMwYNIGzx_CjfRCOrNMpTBhxRJt4bDuBXhaw3BzRdUulngaW3W7jr-VciFQCo1d7txU6gH3hYWIAA
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-common-shelduck · 1 · via: api · sig: RpO3NXvofQYFUOz96B8SDE2hR_j28NFAGb_d9hnQzOsFBbOXZe4_V2K2r4NDEc0lxI9cgIiuK0aBye49jKnrBg
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-eurasian-oystercatcher · 1 · via: api · sig: kipNNYJhMTEW_fAGVoClO6O_7hdkXOOx2tghBrZjTSHvZOlalfwLVf32QFUtE2Kx3djPLTugSVJ6QHuuzSxgBQ
+- 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-common-redshank · 1 · via: api · sig: PAxL8rKMtDjLI_DvlDjLIFqcg2L3S40RhBqOzu11YlFcMmCb9M_3d9E4bTK87yymFjejWsWvQ87rjTwGpx0yDg
