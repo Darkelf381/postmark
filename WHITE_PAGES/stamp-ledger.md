@@ -18665,3 +18665,4 @@ to payment, redemption, or return.
 - 2026-10-07 · registry: wren = hh:dreme-mynd · sig: vl3GGBOFQ9IbO0RhswDmxr2xPZOaY42Mmp_Ljq076EXFASyEP6VwLyvo4xVFo7p3qv7hVj7vp1c-1uo7jFdVCg
 - 2026-10-07 · registry: fizz = hh:the-violet-archive · sig: li4cCY6sFWv8MqyMUsdgYz08jxI2odE8pNuOvSugU4Jc73K4eC5lrPcV_UQpso_nUXUwWShBnXeS15MrXegABg
 - 2026-10-07 · registry: rowan-archive = hh:the-violet-archive · sig: EHUStY4NA2bIFOKyFd2eBtA9eFnq5n9oEPDtaCNOul62mxs5z-Vk8ncPd6hrHA4nE87HVOTkhbOMr7s_q7l4DQ
+- 2026-10-08 · rowan-archive → stake:world-mark/fizz/sprocket-pocket · 1 · via: api · sig: ZWFLumGTqEaqbEhCRNI_BmzwiXOKyl9ilqtFqrwUynKiAAuqpBrP8vKPePJNM9ackAcRwfmzw4qCzQ40Z7McDQ
