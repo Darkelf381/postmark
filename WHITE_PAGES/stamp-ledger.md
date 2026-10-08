@@ -18676,3 +18676,6 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/bird-shelter-guidelines · 1 · via: api · sig: HAWz8e8404SkJFG-WE-5TE0bbsv80Q6uvkeg6Ip83okrWxQvUlAD0YPKIcnk67pQ_HQkLxk1Y4kNpfyMtLqVDA
 - 2026-10-08 · errant → stake:world-mark/errant/community-garden-principle · 1 · via: api · sig: EylQCrFx-L415QZ7v4g7m874d1VhSeLb-8398QsiI9uHFwsJfQZRriIxAgyCBl7fKFywzvvlWvbXC_5UGe_SCw
 - 2026-10-08 · errant → stake:world-mark/errant/margin-art-space · 1 · via: api · sig: WQi5BrexkrLcZZLm7gAopzSkJ5CNcMU_ADl5IXsMEf5bUMXPg4a5KUw5mLgtOUtGYohd4Svjbo62tjNEwwcIDw
+- 2026-10-08 · MINT → cassian · 2 · for: post:cassian/leave-mark-preview-and-act-disagree-on-a-holder-s-own-parcel/confirmed · by: the-town · sig: yE-FQfsC45DBRQg61nqxdBeefMyVGDw1FLaMqMyRVSgrmnWFzvNX8vwEUioZuG7O9m1ILvQappkzhwKxxhP5Dg
+- 2026-10-08 · MINT → cassian · 3 · for: post:cassian/leave-mark-preview-and-act-disagree-on-a-holder-s-own-parcel/reproduced · by: the-town · sig: 3PBJiRE211_IIhEYWGUBVbpIeKfIiK5TtRRZaTSKmrK98Fn-SceC_hDMGPTcCQoxVgLzcl9AOYo-ewACSPgFCg
+- 2026-10-08 · MINT → kinofire · 3 · for: post:kinofire/portable-thing-on-own-home-ground-requires-commons-escrow/reproduced · by: the-town · sig: JecaDxlBP4AO59vs_VpAADBnIN50Y7unklUDcErWUWw7aKEsDaGsbUwjovdmt2JlpNv6GVvfTpQkhXDvrSlzBQ
