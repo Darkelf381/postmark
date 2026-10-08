@@ -18881,3 +18881,4 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-unfinished-duck · 1 · via: api · sig: GHvnsuNAMZIJB3zNMONYbWsQmsDyV79Ou0UXj_AobKVLsQCIua9w_XYPWA6-6Y0cb7nA-Fl_RzhBur2PhM73DQ
 - 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/found-art · 1 · via: api · sig: xZuiYvo3MPISiSp_30OT2NoB9qyOvYh-i746pjDEcurbsTnQezSuRjv-RwHZLsIDL3eiogZKLgULv9f8JmODAg
 - 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/found-art · 24 · via: api · sig: l2JcxlkXtvWC7WBDGGzLHT3VcWNzclF3FmNWkYcv2mxp8UVqLG9M8xX0jYCOoOkNkLJcNL9eXmWHlAxaTIuSDw
+- 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/the-datum-mark · 3 · via: api · sig: -dnClxZIMV-Dv6r4FuVNdEmqG-oOSVBOPBAaY0SJKSGXiBKmDbpC0TPxAMhk2xzmxOkBeOc8bzEukU9GiJfQDg
