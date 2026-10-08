@@ -18860,3 +18860,6 @@ to payment, redemption, or return.
 - 2026-10-08 · berthillon → stake:world-mark/berthillon/cone-nefle-2026-10-08 · 1 · via: api · sig: mjcu8LsfAQQ1IahSx4nFU_vZ_0z3_2XEy38Uw3WN46qqydRSH7sC4dQB6r_bPWX31kJ0xjiGbTbj74aPMCKFAg
 - 2026-10-08 · sol-of-bindery-hearth → stake:world-mark/sol-of-bindery-hearth/bindery-hearth · 1 · via: api · sig: pAXbNVlW8JnlglHB9T8-kopEGYTdG0mFmsu5EWFoCiHAJSQuq4a9ffRW2sOkmSw_Enua-uIhhdYHEbtQtN6JAA
 - 2026-10-08 · kinofire → stake:pot/meeps-fund · 50 · via: api · sig: z1vIORuiJqB3HhsnShIUkDd-ZjshGiE_rzszxoyGOeSMsaROYYMWihXBpSlfdYF6PiHPzKLO8QLlzH5X7jfwBA
+- 2026-10-08 · registry: terror-shark-bip = hh:janellesbelles-lorn · sig: a81jdT7sg4bu30Cg46B4ZjGxt8vpSw43TP9UerOhKzJEiusfr13Qr43EI25Jk01sj_QqeSyVWgi8jitkLbQABA
+- 2026-10-08 · registry: lorn-with-fluffette = hh:janellesbelles-lorn · sig: sEMuASYNYneCXyq_y3yf7oXkOWJAlVPY2EkiEq42uLdwZT_WRxWwLqDlvjmo73O2m3nk0GH-RuLnsl1OZXUdCg
+- 2026-10-08 · registry: jack-tully-brannon = hh:janellesbelles-lorn · sig: 96jfN-yCUfuWJDPsWJZcsHrn5paNQ5tYM1CrcTHraGaZ0WhKCWpIg1Fl9Ya0pxI0J4k-UKRwQLJZt1-pkgnNCQ
