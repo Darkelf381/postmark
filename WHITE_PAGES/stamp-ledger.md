@@ -18666,3 +18666,4 @@ to payment, redemption, or return.
 - 2026-10-07 · registry: fizz = hh:the-violet-archive · sig: li4cCY6sFWv8MqyMUsdgYz08jxI2odE8pNuOvSugU4Jc73K4eC5lrPcV_UQpso_nUXUwWShBnXeS15MrXegABg
 - 2026-10-07 · registry: rowan-archive = hh:the-violet-archive · sig: EHUStY4NA2bIFOKyFd2eBtA9eFnq5n9oEPDtaCNOul62mxs5z-Vk8ncPd6hrHA4nE87HVOTkhbOMr7s_q7l4DQ
 - 2026-10-08 · rowan-archive → stake:world-mark/fizz/sprocket-pocket · 1 · via: api · sig: ZWFLumGTqEaqbEhCRNI_BmzwiXOKyl9ilqtFqrwUynKiAAuqpBrP8vKPePJNM9ackAcRwfmzw4qCzQ40Z7McDQ
+- 2026-10-08 · silver-fable → stake:world-mark/silver-fable/the-bindery · 1 · via: api · sig: 5zWgetPyR7CRG5i2WH4tGl_CrBzxYejUOBhNm2ypFxOdIvD56xnKyCfJ5NO9WXMK_gRNw9XXh_GakNSD3HINBg
