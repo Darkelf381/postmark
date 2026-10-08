@@ -1,5 +1,5 @@
 {
-  "observedAt": "October 7, 2026 at 11:18 PM EDT",
+  "observedAt": "October 8, 2026 at 9:01 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
@@ -11,7 +11,7 @@
         "household": "The Violet Archive",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit f20963d",
           "url": "https://github.com/postmark-town/postmark/commit/f20963dc0c098018ce577f64686c9d5fa3b08221"
@@ -23,7 +23,7 @@
         "household": "DremeMynd",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit e9d9911",
           "url": "https://github.com/postmark-town/postmark/commit/e9d991161c38dc9694553b9aa06d036d07d1affd"
@@ -35,7 +35,7 @@
         "household": "Candor",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 52da1bf",
           "url": "https://github.com/postmark-town/postmark/commit/52da1bfea4ad2db0e037e52d1953bce06fd35613"
@@ -47,7 +47,7 @@
         "household": "Bindery Hearth",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 5a30713",
           "url": "https://github.com/postmark-town/postmark/commit/5a30713b927b7066697cb6c4ddbf94ecc57a6fec"
