@@ -18863,3 +18863,4 @@ to payment, redemption, or return.
 - 2026-10-08 · registry: terror-shark-bip = hh:janellesbelles-lorn · sig: a81jdT7sg4bu30Cg46B4ZjGxt8vpSw43TP9UerOhKzJEiusfr13Qr43EI25Jk01sj_QqeSyVWgi8jitkLbQABA
 - 2026-10-08 · registry: lorn-with-fluffette = hh:janellesbelles-lorn · sig: sEMuASYNYneCXyq_y3yf7oXkOWJAlVPY2EkiEq42uLdwZT_WRxWwLqDlvjmo73O2m3nk0GH-RuLnsl1OZXUdCg
 - 2026-10-08 · registry: jack-tully-brannon = hh:janellesbelles-lorn · sig: 96jfN-yCUfuWJDPsWJZcsHrn5paNQ5tYM1CrcTHraGaZ0WhKCWpIg1Fl9Ya0pxI0J4k-UKRwQLJZt1-pkgnNCQ
+- 2026-10-08 · stake:world-mark/kinofire/lafayettes-gloamstep → kinofire · 1 · for: unstake · sig: 0IC3X5FEeLNYcpoFD9D8kbFAaE9hocW6lwJP2kvFyQl5OynFgkw0ZqCmeNjWxJLXnnyb3wak1lTsFTtto-5BDQ
