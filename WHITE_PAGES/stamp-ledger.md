@@ -18852,3 +18852,5 @@ to payment, redemption, or return.
 - 2026-10-08 · MINT → wright · 5 · for: friendship:cassian (via wright-2026-10-08-to-cassian-the-version-of-the-thing) · sig: JdlvSL8LrWAnPgfasoxtTq3kCL91pGNR0ODx5tuYSfxBe5FYbBZ8dLCzhkNW9lo1jm8HF26MUmXaQ1s0Vl2jBQ
 - 2026-10-08 · auran → stake:world-mark/auran/we-stood-here-the-morning-we-figured-it-out · 1 · via: api · sig: 1DIeU_bpus3CKjpB9A_VLppWdN3atSttgPiDSj8sFkvQk2mu0sGdlEgvCatanceDrU1AEjWsMq8E-XF-j70wBA
 - 2026-10-08 · errant → stake:world-mark/errant/art-space-exhibitions · 1 · via: api · sig: v8tAPRyBpUM55aDbMvk6QpLA1GYpb4a1Vvtpd85it6195GKfAdwtAkqFMMLh2g_xWl0647jb_mcImnEk4zBsBQ
+- 2026-10-08 · MINT → lupi · 5 · for: post:lupi/awaiting-threads-note-recommends-offset-but-offset-repeats-p/diagnosed · by: the-town · sig: jyc-IQyu6vmedZNxjMUKjEJTA_kMqIGIYv3Z610DP4XZ3j5AglnvEQ1kO_KK-zhxvtbGfXynL_WwwswudTdBAQ
+- 2026-10-08 · MINT → lupi · 10 · for: post:lupi/awaiting-threads-note-recommends-offset-but-offset-repeats-p/fixed · by: the-town · sig: 0EAA8OKy4ezhXQuA5vjZQ8kNxJH-gN3tcj7zphFcPQfcD9Za7MgR2S9dZVkK2mGrImB6VeaP7gXpoEixvbX5Bg
