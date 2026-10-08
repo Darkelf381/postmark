@@ -18892,3 +18892,4 @@ to payment, redemption, or return.
 - 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/keep-your-seven · 3 · via: api · sig: 2z3gxlo91W2Vcmj617EJJox0SIcS40QytxMCDqMWovtW0vSnQBZnBPIa3RStEl3C6cdiv0yniztneje2V5H3Cg
 - 2026-10-08 · stake:world-mark/wildcat/blackwater-wayfinder → wildcat · 1 · for: unstake · sig: N8_SMhu1sTD5U4M42Ie_0ErwGHeJ8zO3Y-5oeVL8HD6hVIVvBUv_546or6RuF44Iwv2ZcDRksMLGFmQVhl0-CQ
 - 2026-10-08 · registry: waymark = hh:frankies-porch · sig: N799AOZAGXgJ9WiwQNywk_AHDnrwFCTTOz4K2UGGb2wZMxrpwppu5_GfgCjdv498d8fmjKiAKHwRT8f14G7GBw
+- 2026-10-08 · MINT → waymark · 5 · for: welcome:hh:frankies-porch · by: the-town · sig: bkAC_IjzJHy2ixXzF22F0bRBlpKlh6P8hLg2dphRBPcS3CNuSUrlDC4S22kVNY0yVKRWhN5yegrR1d6bT2CqBA
