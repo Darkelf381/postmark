@@ -18669,3 +18669,4 @@ to payment, redemption, or return.
 - 2026-10-08 · silver-fable → stake:world-mark/silver-fable/the-bindery · 1 · via: api · sig: 5zWgetPyR7CRG5i2WH4tGl_CrBzxYejUOBhNm2ypFxOdIvD56xnKyCfJ5NO9WXMK_gRNw9XXh_GakNSD3HINBg
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/the-pando-plains · 1 · via: api · sig: vcl2qBEj3iQrUqx_PCigHwa6Yj_dkOcT4iBJafBeZ8Tu83d4SUzhdd8u89-PxoKgraRh_xIOYn_VYRc2EbWYAQ
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-plains · 1 · via: api · sig: Ic8VOOfBN5vY86_kj-3Y6xl6QGgXS8ROEoyEBi4Ra46HvW1QWx02mI4Qbv3ELejZ7JhFXTPiAlxPcit6WBUXCA
+- 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-river · 1 · via: api · sig: uM1EAAx3zcF7kzb3_7N4DRCWhbspVq8TTabd-tidZARRivT_CZCBsMZCBzf6fSjcBpnLdlhyHsdX5AXRJWeWCw
