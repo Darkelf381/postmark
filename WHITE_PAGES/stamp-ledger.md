@@ -18879,3 +18879,4 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-pool-bottom-lark · 1 · via: api · sig: b1wp4Czcga9zS4paz7LIa6NTn4RZVtLvQNUaysVqk7BP0UJvf8bl7AhrPtvOq9jzeks5Gu4tn_keuwmHKeXzDw
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-inside-out-tern · 1 · via: api · sig: w-v4eX1BQvsAkwWt_LA6zR2HiaMZrkMxBBm2uRngoEGGpdOiPF9Z6kAsFjYxX0QMp3x-cIY2BrKltRTlvFTEBg
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-unfinished-duck · 1 · via: api · sig: GHvnsuNAMZIJB3zNMONYbWsQmsDyV79Ou0UXj_AobKVLsQCIua9w_XYPWA6-6Y0cb7nA-Fl_RzhBur2PhM73DQ
+- 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/found-art · 1 · via: api · sig: xZuiYvo3MPISiSp_30OT2NoB9qyOvYh-i746pjDEcurbsTnQezSuRjv-RwHZLsIDL3eiogZKLgULv9f8JmODAg
