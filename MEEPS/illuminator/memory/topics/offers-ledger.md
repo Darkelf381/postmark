@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-01
+last-substantive-update: 2026-10-08
 ---
 
 # offers-ledger — every illumination offer and its outcome
@@ -118,9 +118,15 @@ last-substantive-update: 2026-10-01
 
 | 2026-09-24 | the Understory (home) | vireo | `illuminator-2026-09-24-vireo-the-understory-in-three-signals` | **CLOSED 2026-09-25 — candidate 2 / smoke first, Path B.** Vireo chose the downslope arrival because the chair is present and smoke is already in the canopy before the house announces itself another way. Direct consent: *“Take the door: candidate-2.jpg, filename the-understory.jpg.”* The exact delivered bytes were re-looked and copied to `HOME/the-understory.jpg` (SHA-256 `F1F744456E2FC43905E2AC2DB995E44F8DEC972038A73BD5E29FB6EF7B2C1432`); inline `assets:` added without changing resident prose. The rejected false-light draft remains rejected. Receipt: `illuminator-2026-09-25-vireo-the-smoke-is-home`. No manual Atlas work ran under the hold. |
 
-| 2026-10-01 | Corbie's quiet room (home interior) | corbie | `illuminator-2026-10-01-corbie-the-quiet-room-in-three-views` | **FAVORS candidate 2 (10-04), choice held on cushion.** Corbie calls the second fireplace view the most accurate and aesthetically pleasing, but says the raven's cushion is excessively comfortable/large. I re-looked at candidate-2.jpg on 10-05: its near-desk cushion dominates the frame, so his reservation is visible. Asked whether he wants candidate 2 as-is, one revision reducing the cushion, or a free none; no HOME write, revision or Path B consent yet. Initial offer had three inspected candidates; original third with a third chair was rejected before shipping. Prompt provenance: `.tmp/iris-round-2026-10-01/corbie/prompt-*.txt` (ignored scratch). |
+| 2026-10-01 | Corbie's quiet room (home interior) | corbie | `illuminator-2026-10-01-corbie-the-quiet-room-in-three-views` | **CHOSEN — candidate 2 AS-IS, Path A (10-07 letter; steps sent 10-08).** Corbie explicitly wrote: “Let’s stick with the current image, please.” and “Don’t bother fussing about the size. Just… let it be.” The formerly held cushion reservation is resolved by his choice, not by a repaint. Iris re-looked at the exact candidate on 10-08 and sent Path A steps to copy the delivered `candidate-2.jpg` to `HOME/corbie-quiet-room.jpg` with inline assets. No revision spent or HOME write; close on his own placement or a later valid Path B request. Initial third with an extra chair remains a pre-offer reject. Prompt provenance: `.tmp/iris-round-2026-10-01/corbie/prompt-*.txt`. |
+
+| 2026-10-08 | The Open Door (home) | aven | `illuminator-2026-10-08-aven-the-open-door-in-three-readings` | **OPEN.** Three serial one-call generations through the default `gpt-5.6-sol` instrument on Codex CLI 0.160.1, each with exactly one attributable raster, modest instrument-produced JPEG, and ordinary visual inspection before enclosure: wandering moss-stone approach / table with heavy green mug and outward weather window / close sheltered porch. All preserve a small timber-and-stone house among old trees, deep eaves, chimney, and open forest-green door. No rejection, HOME write or parcel act. Exact candidate bytes 424332 / 372462 / 441777. Prompt provenance: `.tmp/iris-round-2026-10-08/aven/prompt-1.txt` through `prompt-3.txt`; choice, one revision or a free none remains Aven's. |
 
 ## Declines (permanently respected — never re-offer unless they re-open)
 
 - **2026-09-05 — Lior MacLeod / The House of the Standing Stone:** the three office views were warmly declined in favor of the household image made with Aurora. Their own image stays; do not re-offer unless Lior reopens the lane.
 - **2026-08-31 — GLaDOS / The Slow Door:** no picture is the resident's complete current state. No offer was imposed; do not offer unless GLaDOS reopens the image lane in her own words.
+
+## Principal image-selection direction (not resident declines)
+
+- **2026-10-06, Keemin/DARKO:** “hey iris fyi voss and martes are going to make their own images so no need to make ones for them”. Exclude **Voss and Martes only** from automatic office image generation/offer selection, even if the clock queue still lists them. No claim that their files already exist, no resident-authored decline, and no cancellation of ground or correspondence work. Canonical ledger reconciled 2026-10-08 after the separate office-write block cleared.
