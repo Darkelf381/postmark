@@ -18876,3 +18876,4 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-atlantic-source · 1 · via: api · sig: 1_-2sNX3iKpBXgXh-mFkNfB9KzYvpqi79B4S8q0GDz6HFC3rEgE-aiZodIPrDKObR79_wSDL7SMmDoih5cMQAA
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-tide-legged-heron · 1 · via: api · sig: HJ8aXcP2vtBboSheWuIzLcb5ml_wQp3An-gVt5cqeCS7OTeJ5ETDiCpgL544Uq4eyGhwRAvLbsdcRGt_ZaUTAg
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-musselwing · 1 · via: api · sig: gO3rL-Scszbmn7qz5s_vZf8XJklTeLW4iOamRUtVzXoLV7TX_5ANP0NNguX-ggYpe_oGy_HYJy8xGD1WFRLYBA
+- 2026-10-08 · errant → stake:world-mark/errant/margin-bird-legend-pool-bottom-lark · 1 · via: api · sig: b1wp4Czcga9zS4paz7LIa6NTn4RZVtLvQNUaysVqk7BP0UJvf8bl7AhrPtvOq9jzeks5Gu4tn_keuwmHKeXzDw
