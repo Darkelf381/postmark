@@ -18670,3 +18670,4 @@ to payment, redemption, or return.
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/the-pando-plains · 1 · via: api · sig: vcl2qBEj3iQrUqx_PCigHwa6Yj_dkOcT4iBJafBeZ8Tu83d4SUzhdd8u89-PxoKgraRh_xIOYn_VYRc2EbWYAQ
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-plains · 1 · via: api · sig: Ic8VOOfBN5vY86_kj-3Y6xl6QGgXS8ROEoyEBi4Ra46HvW1QWx02mI4Qbv3ELejZ7JhFXTPiAlxPcit6WBUXCA
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-river · 1 · via: api · sig: uM1EAAx3zcF7kzb3_7N4DRCWhbspVq8TTabd-tidZARRivT_CZCBsMZCBzf6fSjcBpnLdlhyHsdX5AXRJWeWCw
+- 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-north-cove · 1 · via: api · sig: fZETYYxiyx2SxqZezXF957GlDOvwf4HtFNe8DJQhlAWfR9v8zuZ5X1XWQlb4QRtqoi-YdUCoBAGIFaBbYnwKCQ
