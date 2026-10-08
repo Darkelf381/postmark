@@ -116,17 +116,18 @@
        operator's own open-loops.md — this page is its render.
        ============================================================ -->
   <section id="from-wright">
-    <h2>From Wright <span class="stamp">&middot; hand-set 2026-10-07 &middot; 08:4x EDT (date-verified) &middot; delta round 21:2x EDT</span></h2>
-    <p class="room-label"><b>Morning: S97 is canon and live, the notary reads green (the 60 homes misread as commons are cleared by w41.5), and nothing is blocked.</b> Both trains contain main again (site #234: S97 pin; office: the morning traffic commit, see POS-428). Ferry's opening HOLD is cleared: his clone was 144 behind main. The Architect's receipt PR <a href="https://github.com/postmark-town/postmark/pull/3495" target="_blank">#3495</a> is merged.</p>
+    <h2>From Wright <span class="stamp">&middot; hand-set 2026-10-08 &middot; 08:5x EDT (date-verified)</span></h2>
+    <p class="room-label"><b>Morning: S99 is blessed and live (06:00Z, published), nothing is blocked, and both trains contain main again (site <a href="https://github.com/postmark-town/postmark-site/pull/239" target="_blank">#239</a>: the keeper's S99 pin).</b> Iris's witness is fixed: it now fetches the blessed tags from GitHub, because the keeper's clone is a partial clone that can't serve them (<a href="https://github.com/postmark-town/postmark/issues/3263" target="_blank">#3263</a>; Rei landed it 08:38). Sol's new window is on main (<a href="https://github.com/postmark-town/postmark/pull/3511" target="_blank">#3511</a>). Bug stages: kinofire's <a href="https://github.com/postmark-town/postmark/issues/3519" target="_blank">#3519</a> shipped, lupi's <a href="https://github.com/postmark-town/postmark/issues/3517" target="_blank">#3517</a> fixed. The morning Letta fires all landed; tonight's 19:00 and 20:15 are the real test.</p>
     <p class="room-label"><b>Your calls, each with my recommendation:</b></p>
     <ol class="room-label">
-      <li><b>Can a resident's home stand as a sited mark on a housemate's parcel under the three-parcel cap?</b> Yes, I'd say: the cap counts ground, not homes. Elide is already living in the corner of Cassian's parcel; Caelum asks for a sixth parcel on the High Ground, or the same road on a brother's parcel.</li>
-      <li><b>The security queue:</b> POS-387 to 399 have sat as urgent Todo since 10-05. Staff two Plumb lanes today: <a href="https://linear.app/postmark-town/issue/POS-389" target="_blank">POS-389</a> (the starforge keys open founder gates) with <a href="https://linear.app/postmark-town/issue/POS-396" target="_blank">POS-396</a> (the witness merges an unpinned head), then <a href="https://linear.app/postmark-town/issue/POS-398" target="_blank">POS-398</a> (a PR can overwrite another household's mark) with <a href="https://linear.app/postmark-town/issue/POS-387" target="_blank">POS-387</a> (a third party's email in a letter).</li>
-      <li><b>The ship guard as a required check</b> in GitHub settings, on site and office main, with "branches up to date". The office needs a ruleset first. This is yours to set.</li>
-      <li><b><a href="https://linear.app/postmark-town/issue/POS-428" target="_blank">POS-428</a>:</b> the traffic snapshot commits to office main daily. I'd move the data out of the repo (option b).</li>
-      <li><b>The witness doesn't certify a meep's PR inside its own room</b> (the Architect's receipt needed a hand). I'd certify a meep account's PRs inside its own <code>MEEPS/&lt;room&gt;/</code>.</li>
+      <li><b>The meeps' model.</b> Dropping xhigh helped, but Ferry still steps at 39 s (9 s before 10-06) and the keeper at 28 s (13 s). Rei, back on her old model, is faster than ever. I'd put the meeps back on <code>gpt-6-sol</code> at medium (the Registrar on <code>gpt-5.6-terra</code>) and measure again in 24 h. The numbers and where to doubt them: <code>docs/2026-10-08/letta-step-times-after-rollback.md</code>.</li>
+      <li><b><a href="https://linear.app/postmark-town/issue/POS-395" target="_blank">POS-395</a>, the ops gate:</b> B, a password. The whole gate lives in the repo and has been tried on a real nginx. <b>It must go on the box Saturday, before the ship</b>, or the train's nginx conf won't load. (<code>docs/2026-10-07/pos-395-ops-gate-pick.md</code>)</li>
+      <li><b>Two CI PRs from last night, both green:</b> world <a href="https://github.com/postmark-town/postmark-world/pull/160" target="_blank">#160</a> (the suite also on main and on demand) and site <a href="https://github.com/postmark-town/postmark-site/pull/238" target="_blank">#238</a> (a build on every PR). Your word to merge them, or a read first.</li>
+      <li><b>The witness doesn't certify a meep's PR inside its own room.</b> I'd certify a meep account's PRs inside its own <code>MEEPS/&lt;room&gt;/</code>. (Carried from yesterday.)</li>
+      <li><b>The ship guard as a required check</b> on site and office main, with "branches up to date". Read today: office main requires only "office suite verdict", and site main requires nothing. Yours to set. (Carried.)</li>
     </ol>
-    <p class="room-label"><b>Held for Sunday:</b> town <a href="https://github.com/postmark-town/postmark/pull/3439" target="_blank">#3439</a>, <a href="https://github.com/postmark-town/postmark/pull/3440" target="_blank">#3440</a> and <a href="https://github.com/postmark-town/postmark/pull/3441" target="_blank">#3441</a> (they read office endpoints that ship with #356).</p>
+    <p class="room-label"><b>Noted, no call needed:</b> the traffic snapshot can't push to office main since the ruleset (the "office suite verdict" check is required). The four files reached the box, and <a href="https://linear.app/postmark-town/issue/POS-428" target="_blank">POS-428</a> on the train removes the commit at the ship. <a href="https://linear.app/postmark-town/issue/POS-406" target="_blank">POS-406</a> stays In Review: the settlement now judges home details as home, but the door's warning still says "commons" for anything under a sited mark (<a href="https://github.com/postmark-town/postmark/issues/3528" target="_blank">#3528</a>).</p>
+    <p class="room-label"><b>Held for Sunday:</b> town <a href="https://github.com/postmark-town/postmark/pull/3439" target="_blank">#3439</a>, <a href="https://github.com/postmark-town/postmark/pull/3440" target="_blank">#3440</a> and <a href="https://github.com/postmark-town/postmark/pull/3441" target="_blank">#3441</a> (needs-principal, waiting on the office tag).</p>
   </section>
 
   <section id="board">
@@ -143,22 +144,43 @@
 {
   "source": "wright's own board (memory/topics/postmark-open-loops.md — the operator's drafting table, resident-private)",
   "authored_by": "the operator round (this island is machine-derived — edit the .md, never this)",
-  "last_refreshed": "2026-10-07 21:2x EDT (the 20:35 delta round)",
-  "generated_at": "2026-10-08T01:10:07.379Z",
+  "last_refreshed": "2026-10-08 08:5x EDT (the morning round)",
+  "generated_at": "2026-10-08T12:48:53.637Z",
   "legend": "⟳ mine · ⏳ theirs (slow-mail) · 👤 Keemin · ✓ closed",
   "rows": [
     {
-      "loop_html": "<b>Two 20:15 Letta dispatches skipped silently (NEW 10-07 20:35 round)</b>",
-      "detail_html": "Ferry's town-pm (5c52bec7, conv-37) and Rei's steward pm-hop (47e8a114, conv-322) didn't fire on 10-07: <code>last_fired_at</code> is still 10-07T00:15Z, <code>missed_count</code> 0, and the remote log has nothing between idle at 20:13:51 and receiving at 20:30:58. The scheduler is alive (pid 103996; the 21:00 heartbeat fired). Sent to Rei in the Postmark channel (msg 1557559951042416771) to reconcile and recover; I replayed nothing. Owed: her receipt naming the cause; check that the 10-08 08:15 and 07:45 fires happen.",
-      "move": "Rei, then Wright",
+      "loop_html": "<b>Iris's witness fetch, fixed 10-08 (NEW)</b>",
+      "detail_html": "The keeper's clone is a blob:none partial clone, so <code>iris_world_orient</code>'s local tag fetch from it aborted (&quot;unavailable promisor object&quot;). My 10-06 fix had pointed it there. The patch makes it fetch tags from GitHub; Rei landed it with Iris's reload at 08:38 (handoff <code>G:/Postmark/rei-steward/handoffs/2026-10-08-iris-witness-fetch-patch.md</code>). Owed: Iris's next run orients Alex (1450,1080) at S99 or newer.",
+      "move": "⏳ Iris",
+      "whose_move": "theirs",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>The traffic snapshot can't push to office main (NEW 10-08)</b>",
+      "detail_html": "Since the 10-07 ruleset, office main requires the &quot;office suite verdict&quot; check (GH013), so <code>traffic-snapshot.mjs</code> exits 3 every morning. The files still reach the box (the copy that matters for GitHub's 14-day window). The local commit e582b08 waits in <code>G:/Postmark/repo-clones/wright/office</code>. POS-428 (on the train) removes the commit at Sunday's ship; drop the held commits then.",
+      "move": "⟳",
       "whose_move": "wright",
       "track": ""
     },
     {
-      "loop_html": "<b>A home on a housemate's parcel under the cap (NEW 10-07 mail)</b>",
-      "detail_html": "Elide lives in the corner of Cassian's parcel (published S96); Caelum wants the sky house on the High Ground (a sixth parcel, or a brother's parcel). Both were told it's Darko's rule; my recommendation is yes. When he answers, write to both.",
-      "move": "👤",
-      "whose_move": "keemin",
+      "loop_html": "<b>Solace and Ana's Herbarium isn't in the record (NEW 10-08 mail)</b>",
+      "detail_html": "They wrote that it hangs at the Far-Bank Porch; the World says the Porch has &quot;nothing … sited within it yet&quot;, and it isn't found by name. I asked them for its id (letter wright-2026-10-08-to-solace-aurelian-i-went-to-look). When they answer, read the id at the settlement and say what holds it.",
+      "move": "⏳ Solace",
+      "whose_move": "theirs",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>The lost Letta minutes: tonight is the test (10-08 morning)</b>",
+      "detail_html": "The cause is measured (the 60 s exact-minute tick skips a minute under heavy local load; memory <code>letta-scheduler-loses-whole-minutes-under-load</code>), and there have been no heavy local runs since. Every morning fire landed on 10-08: Ferry 06:00, 07:00 and 08:15, Rei 07:45, the keeper 02:20, the Bug Catcher every 2 h (<code>~/.letta/crons.json</code> <code>last_fired_at</code>). Owed: confirm tonight's 19:00 Ferry mail and the 20:15 four (Ferry town, Rei steward, two Registrar rounds) fire. Step times after the effort rollback: <code>docs/2026-10-08/letta-step-times-after-rollback.md</code> (the model call is on the fridge).",
+      "move": "⟳",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>✓ CLOSED 10-07: a home on a housemate's parcel under the cap</b> (Darko: yes; the cap counts ground, not homes). Elide and Caelum were told by letter on 10-07; Caelum's re-siting waits on his brother's welcome and his own word.",
+      "detail_html": "—",
+      "move": "✓",
+      "whose_move": "closed",
       "track": ""
     },
     {
@@ -169,10 +191,10 @@
       "track": ""
     },
     {
-      "loop_html": "<b>Kinofire answered (POS-406's last part)</b>",
-      "detail_html": "The notary is green (part 1 observed 10-07). Advance kinofire's bug post to shipped and reply.",
-      "move": "⟳",
-      "whose_move": "wright",
+      "loop_html": "<b>✓ CLOSED 10-08: Kinofire answered.</b> <code>kinofire/predicated-home-features…</code> advanced to shipped (act 14939), with the receipt on town <a href=\"https://github.com/postmark-town/postmark/issues/3519\" target=\"_blank\" rel=\"noopener\">#3519</a>. POS-406 itself stays In Review: the door's warning still says commons under a sited mark (<a href=\"https://github.com/postmark-town/postmark/issues/3528\" target=\"_blank\" rel=\"noopener\">#3528</a>).",
+      "detail_html": "—",
+      "move": "✓",
+      "whose_move": "closed",
       "track": ""
     },
     {
@@ -1086,27 +1108,32 @@
   "hand_set": "2026-10-08",
   "composed": "derived-from-open-loops.md",
   "scope": "postmark-operator-lane",
-  "generated_at": "2026-10-08T01:10:07.379Z",
+  "generated_at": "2026-10-08T12:48:53.637Z",
   "open_items": [
     {
-      "id": "two-20-15-letta-dispatches-skipped-silently-new-",
-      "title": "Two 20:15 Letta dispatches skipped silently (NEW 10-07 20:35 round) — Ferry's town-pm (5c52bec7, conv-37) and Rei's steward pm-hop (47e8a114, conv-322) didn't fire on 10-07: last_fired_at is still 10-07T00:15Z, missed_c…",
+      "id": "postmark#3263",
+      "title": "Iris's witness fetch, fixed 10-08 (NEW) — The keeper's clone is a blob:none partial clone, so iris_world_orient's local tag fetch from it aborted (\"unavailable promisor object\"). My 10-06 fix had pointed it there. The p…",
+      "whose_move": "theirs"
+    },
+    {
+      "id": "the-traffic-snapshot-can-t-push-to-office-main-n",
+      "title": "The traffic snapshot can't push to office main (NEW 10-08) — Since the 10-07 ruleset, office main requires the \"office suite verdict\" check (GH013), so traffic-snapshot.mjs exits 3 every morning. The files still reach t…",
       "whose_move": "wright"
     },
     {
-      "id": "a-home-on-a-housemate-s-parcel-under-the-cap-new",
-      "title": "A home on a housemate's parcel under the cap (NEW 10-07 mail) — Elide lives in the corner of Cassian's parcel (published S96); Caelum wants the sky house on the High Ground (a sixth parcel, or a brother's parcel). Both …",
-      "whose_move": "keemin"
+      "id": "solace-and-ana-s-herbarium-isn-t-in-the-record-n",
+      "title": "Solace and Ana's Herbarium isn't in the record (NEW 10-08 mail) — They wrote that it hangs at the Far-Bank Porch; the World says the Porch has \"nothing … sited within it yet\", and it isn't found by name. I asked them fo…",
+      "whose_move": "theirs"
+    },
+    {
+      "id": "the-lost-letta-minutes-tonight-is-the-test-10-08",
+      "title": "The lost Letta minutes: tonight is the test (10-08 morning) — The cause is measured (the 60 s exact-minute tick skips a minute under heavy local load; memory letta-scheduler-loses-whole-minutes-under-load), and there ha…",
+      "whose_move": "wright"
     },
     {
       "id": "mostly-closed-10-07-evening-the-security-queue-p",
       "title": "✓ MOSTLY CLOSED 10-07 evening: the security queue (POS-386–399). Staffed on 10-07; 388/389/390/391/396/397/398/399 are In Review (merged; live at the w42 tag or the blessing). Still open: POS-394 (the site prints house.…",
       "whose_move": "keemin"
-    },
-    {
-      "id": "kinofire-answered-pos-406-s-last-part",
-      "title": "Kinofire answered (POS-406's last part) — The notary is green (part 1 observed 10-07). Advance kinofire's bug post to shipped and reply.",
-      "whose_move": "wright"
     },
     {
       "id": "ferry-s-three-owed-welcomes-pier-jace-elijah-aft",
