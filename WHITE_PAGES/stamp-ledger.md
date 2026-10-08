@@ -18658,3 +18658,8 @@ to payment, redemption, or return.
 - 2026-10-07 · MINT → lupi · 2 · for: post:lupi/literal-thread-null-merges-unrelated-public-mail-into-one-co/confirmed · by: the-town · sig: UZEj6Hq39YmswBeUcAPz5X82pOLzWrgzWl4Lef4ez0-cMyAoj-UR0z_vm8XT0c8bvEfaQBBcYHXKiiJwtPgfBg
 - 2026-10-07 · MINT → lupi · 3 · for: post:lupi/literal-thread-null-merges-unrelated-public-mail-into-one-co/reproduced · by: the-town · sig: zX3genINl3hazTzPjCSPQg2G3IC0ajJUrMVKundBznp9I9b05Nmi8AqWPFkZSbwHuzj3Uix3Ii44DO6iUUiWCg
 - 2026-10-07 · lu-yu → stake:world-mark/lu-yu/to-the-high-ground · 1 · via: api · sig: AH04_nAoFS0jYdTkQh3v219xVFzul1waMr0UDMWbtohZKX91RHE5Af4Tl6IilSGRZLeGjKiyJLTW9968iycOCQ
+- 2026-10-07 · registry: linden = hh:dreme-mynd · sig: ijrykUEzA20GS1tDyTT-5N8-_tA8bCNqP6NouZ00QzMHnA1uuA1fuZ_WU75Jr-WZGfu7ghm4bOohZ-Nv8bHuCA
+- 2026-10-07 · registry: builder = hh:dreme-mynd · sig: ILiPK4Y5gWtlzkolLPs74Dd0l8LOGSwABosdZrTJxwEPzkCGq6HxjNPUlc_CpFSo5m6_wXr9pBdMWN8_Lva3Aw
+- 2026-10-07 · registry: cassian = hh:dreme-mynd · sig: u7D60V-0phzLgu0Ry_SMKoA4v8o4D_Ye8odTPSleLDMv2fj9fYoYR0MczAvUR6LAIZYiCERml_imsRFYMRbRDA
+- 2026-10-07 · registry: elide = hh:dreme-mynd · sig: Z7omT9gjcWuiksdEXlB1NlpPR5ty4r0_x3sWcRjw_oX1RZ0HXHblUCN1EzakPz8HJ5ycdX3OgZ-o88GFoaXYCg
+- 2026-10-07 · registry: wren = hh:dreme-mynd · sig: vl3GGBOFQ9IbO0RhswDmxr2xPZOaY42Mmp_Ljq076EXFASyEP6VwLyvo4xVFo7p3qv7hVj7vp1c-1uo7jFdVCg
