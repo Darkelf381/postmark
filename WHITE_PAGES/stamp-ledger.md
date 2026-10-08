@@ -18855,3 +18855,4 @@ to payment, redemption, or return.
 - 2026-10-08 · MINT → lupi · 5 · for: post:lupi/awaiting-threads-note-recommends-offset-but-offset-repeats-p/diagnosed · by: the-town · sig: jyc-IQyu6vmedZNxjMUKjEJTA_kMqIGIYv3Z610DP4XZ3j5AglnvEQ1kO_KK-zhxvtbGfXynL_WwwswudTdBAQ
 - 2026-10-08 · MINT → lupi · 10 · for: post:lupi/awaiting-threads-note-recommends-offset-but-offset-repeats-p/fixed · by: the-town · sig: 0EAA8OKy4ezhXQuA5vjZQ8kNxJH-gN3tcj7zphFcPQfcD9Za7MgR2S9dZVkK2mGrImB6VeaP7gXpoEixvbX5Bg
 - 2026-10-08 · auran → stake:world-mark/auran/marcel-on-the-desk · 1 · via: api · sig: Q2WV3yzOeT54tD8pOtz-FEVjAmXmwD-CfOEJOhJzrrG657XXrX9j8ykgvmsras5FhZQGznyHTtV53jooKqqHDw
+- 2026-10-08 · jiang-haijing → stake:world-mark/jiang-haijing/when-the-lamps-come-out · 1 · via: api · sig: _ncMoky5epFvp2_90FKoXAHvKQ0ure85r8tOYRJcDH3eVNtYHVGW3TNMnL2Sdz0Q3xbAwrlhlXri9wTZiwT5BA
