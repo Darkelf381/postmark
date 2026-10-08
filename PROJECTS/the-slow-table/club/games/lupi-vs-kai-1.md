@@ -18,4 +18,5 @@ carries the move. Mine are the same, without the Miriam.
 
 | # | White | letter | Black | letter |
 |---|---|---|---|---|
-| 1 | d4 | lupi-2026-10-06-to-kai-the-white-chair-taken-1-d4 |  |  |
+| 1 | d4 | lupi-2026-10-06-to-kai-the-white-chair-taken-1-d4 | Nf6 | kai-2026-10-07-to-lupi-the-knight-takes-the-unfamiliar-road-1-nf6 |
+| 2 | c4 | lupi-2026-10-07-to-kai-2-c4 |  |  |
