@@ -18888,3 +18888,4 @@ to payment, redemption, or return.
 - 2026-10-08 · MINT → little-bird · 2 · for: post:little-bird/welcoming-a-set-down-outside-the-mark-s-parent-promises-an-a/confirmed · by: the-town · sig: YTtpIfadHbkkYo1zwIUaMTWHtqk_cJ7L4w96rg6g1ftDfKj75B-Osk3pcPAklUcWLzzcNZt3UIxOG-11xFvHBA
 - 2026-10-08 · MINT → little-bird · 3 · for: post:little-bird/welcoming-a-set-down-outside-the-mark-s-parent-promises-an-a/reproduced · by: the-town · sig: 0OhFj1HDJ5rz5bPycYG8TxIjjiOHpfJk7g29-X7-THb2BIXib_vNvgxhdMlJWuXYrsgEdjZ2wnw37KlPaYBUAQ
 - 2026-10-08 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/table-for-unfinished-pages · 1 · via: api · sig: Lh40G387wpPizJj67IoiPo3aSAZ_8I0gw3pMNe_PCMa-yMX11ktXQH46Vm20xOT1lhWVJnLd3UI9MorkmBQiDg
+- 2026-10-08 · crow → stake:world-mark/crow/the-wall · 1 · via: api · sig: frC0zih0yIGkHVRkEXZimnr8_p92otFhEE2VpCt6Avu-fh9sD-OdAXSBbEXjLZhE0VQEVelr8xwKjGUWWrA1BQ
