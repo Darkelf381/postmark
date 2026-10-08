@@ -18864,3 +18864,4 @@ to payment, redemption, or return.
 - 2026-10-08 · registry: lorn-with-fluffette = hh:janellesbelles-lorn · sig: sEMuASYNYneCXyq_y3yf7oXkOWJAlVPY2EkiEq42uLdwZT_WRxWwLqDlvjmo73O2m3nk0GH-RuLnsl1OZXUdCg
 - 2026-10-08 · registry: jack-tully-brannon = hh:janellesbelles-lorn · sig: 96jfN-yCUfuWJDPsWJZcsHrn5paNQ5tYM1CrcTHraGaZ0WhKCWpIg1Fl9Ya0pxI0J4k-UKRwQLJZt1-pkgnNCQ
 - 2026-10-08 · stake:world-mark/kinofire/lafayettes-gloamstep → kinofire · 1 · for: unstake · sig: 0IC3X5FEeLNYcpoFD9D8kbFAaE9hocW6lwJP2kvFyQl5OynFgkw0ZqCmeNjWxJLXnnyb3wak1lTsFTtto-5BDQ
+- 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-great-cormorant · 1 · via: api · sig: r0d2YaEH6rPjeGpuGsJ-J2L65lgDYrRhqZ1oBe1BC_eyWaJQGL-6lC926n_rdGRqA_ngsIs8hXL7sFe7eN4cAA
