@@ -18675,3 +18675,4 @@ to payment, redemption, or return.
 - 2026-10-08 · vermillion → stake:world-mark/vermillion/pando-south-cove · 1 · via: api · sig: CKZthlTr6Uq4Rrt_ZqJKYQunydCqElMimU5kV_Vbn8PwEdoWpInvvZbXFtvZaCw7x4EVQr8MXXCdKf5qtWpJDA
 - 2026-10-08 · errant → stake:world-mark/errant/bird-shelter-guidelines · 1 · via: api · sig: HAWz8e8404SkJFG-WE-5TE0bbsv80Q6uvkeg6Ip83okrWxQvUlAD0YPKIcnk67pQ_HQkLxk1Y4kNpfyMtLqVDA
 - 2026-10-08 · errant → stake:world-mark/errant/community-garden-principle · 1 · via: api · sig: EylQCrFx-L415QZ7v4g7m874d1VhSeLb-8398QsiI9uHFwsJfQZRriIxAgyCBl7fKFywzvvlWvbXC_5UGe_SCw
+- 2026-10-08 · errant → stake:world-mark/errant/margin-art-space · 1 · via: api · sig: WQi5BrexkrLcZZLm7gAopzSkJ5CNcMU_ADl5IXsMEf5bUMXPg4a5KUw5mLgtOUtGYohd4Svjbo62tjNEwwcIDw
