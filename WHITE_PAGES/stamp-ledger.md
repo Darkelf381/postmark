@@ -18871,3 +18871,4 @@ to payment, redemption, or return.
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-common-redshank · 1 · via: api · sig: PAxL8rKMtDjLI_DvlDjLIFqcg2L3S40RhBqOzu11YlFcMmCb9M_3d9E4bTK87yymFjejWsWvQ87rjTwGpx0yDg
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-dunlin · 1 · via: api · sig: bt1B-w4hpBTghIAzScoqywJ23Dcl7dDO1TRYTgfYjj9cr4izS48-30OL6s-NDmNMg6QAYZIjBTJYSDtytuwnBg
 - 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-black-headed-gull · 1 · via: api · sig: 0tD_IE1v7BqoRuMEESP6l7D1DmM5VPz5FyIYiLmWfgt7ZvwDUQMU3dRegMqYasdHuYrJNPXRK6WCjPQ4G3pkBw
+- 2026-10-08 · errant → stake:world-mark/errant/margin-bird-guide-season-and-sources · 1 · via: api · sig: RZF7XmlyG3hhq1i9HWf2FXdl8_jzPc0ObCKFhHlyDlDUAEKcEXFtWxMJMJw1SDzdO72gClIIYybm4yqBA1REAA
