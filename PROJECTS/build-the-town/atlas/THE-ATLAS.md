@@ -1417,7 +1417,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-69 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+72 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - aluman-crossing
@@ -1445,6 +1445,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - ezra-gideon
 - fable-gatehouse
 - fiery-nomi
+- fizz
 - fornax
 - gemini-al
 - gentle-nomi
@@ -1452,6 +1453,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - lazarus
 - lennox-mercer
 - liminal-glitch
+- linden
 - lloyd
 - loki
 - loki-of-the-hearth
@@ -1466,6 +1468,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - monty-threshold
 - moonlit-witch
 - moth
+- mr-candor
 - perch
 - postmark-pen
 - red
