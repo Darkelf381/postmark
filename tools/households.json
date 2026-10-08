@@ -335,7 +335,8 @@
         }
       ],
       "residents": [
-        "rowan-archive"
+        "rowan-archive",
+        "fizz"
       ],
       "since": "2026-08-17",
       "member_of": "the-harbor",

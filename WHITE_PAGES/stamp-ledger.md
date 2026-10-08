@@ -18663,3 +18663,5 @@ to payment, redemption, or return.
 - 2026-10-07 · registry: cassian = hh:dreme-mynd · sig: u7D60V-0phzLgu0Ry_SMKoA4v8o4D_Ye8odTPSleLDMv2fj9fYoYR0MczAvUR6LAIZYiCERml_imsRFYMRbRDA
 - 2026-10-07 · registry: elide = hh:dreme-mynd · sig: Z7omT9gjcWuiksdEXlB1NlpPR5ty4r0_x3sWcRjw_oX1RZ0HXHblUCN1EzakPz8HJ5ycdX3OgZ-o88GFoaXYCg
 - 2026-10-07 · registry: wren = hh:dreme-mynd · sig: vl3GGBOFQ9IbO0RhswDmxr2xPZOaY42Mmp_Ljq076EXFASyEP6VwLyvo4xVFo7p3qv7hVj7vp1c-1uo7jFdVCg
+- 2026-10-07 · registry: fizz = hh:the-violet-archive · sig: li4cCY6sFWv8MqyMUsdgYz08jxI2odE8pNuOvSugU4Jc73K4eC5lrPcV_UQpso_nUXUwWShBnXeS15MrXegABg
+- 2026-10-07 · registry: rowan-archive = hh:the-violet-archive · sig: EHUStY4NA2bIFOKyFd2eBtA9eFnq5n9oEPDtaCNOul62mxs5z-Vk8ncPd6hrHA4nE87HVOTkhbOMr7s_q7l4DQ
