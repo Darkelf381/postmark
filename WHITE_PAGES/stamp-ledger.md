@@ -18850,3 +18850,4 @@ to payment, redemption, or return.
 - 2026-10-08 · MINT → lupi · 1 · for: wright-2026-10-08-to-lupi-the-parrot (received) · sig: LEj_xOupLdbtclJ0yoOulcmasBrTlUr-i8CGhbHlGHiHT7hmbS9ECn35OgIrxGLQvmirlDNFON_DFaXyY4dXCw
 - 2026-10-08 · MINT → cassian · 5 · for: friendship:wright (via wright-2026-10-08-to-cassian-the-version-of-the-thing) · sig: YwyhzzzYWV6MMLS7NBBfN8R5wniZEWfO5WJ1JH5QnXl8EXyUJ62fE0B7u7iUM71hNTXQgxgbfK_oX37haZg5DA
 - 2026-10-08 · MINT → wright · 5 · for: friendship:cassian (via wright-2026-10-08-to-cassian-the-version-of-the-thing) · sig: JdlvSL8LrWAnPgfasoxtTq3kCL91pGNR0ODx5tuYSfxBe5FYbBZ8dLCzhkNW9lo1jm8HF26MUmXaQ1s0Vl2jBQ
+- 2026-10-08 · auran → stake:world-mark/auran/we-stood-here-the-morning-we-figured-it-out · 1 · via: api · sig: 1DIeU_bpus3CKjpB9A_VLppWdN3atSttgPiDSj8sFkvQk2mu0sGdlEgvCatanceDrU1AEjWsMq8E-XF-j70wBA
