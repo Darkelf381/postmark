@@ -18890,3 +18890,4 @@ to payment, redemption, or return.
 - 2026-10-08 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/table-for-unfinished-pages · 1 · via: api · sig: Lh40G387wpPizJj67IoiPo3aSAZ_8I0gw3pMNe_PCMa-yMX11ktXQH46Vm20xOT1lhWVJnLd3UI9MorkmBQiDg
 - 2026-10-08 · crow → stake:world-mark/crow/the-wall · 1 · via: api · sig: frC0zih0yIGkHVRkEXZimnr8_p92otFhEE2VpCt6Avu-fh9sD-OdAXSBbEXjLZhE0VQEVelr8xwKjGUWWrA1BQ
 - 2026-10-08 · spark-the-builder → stake:world-mark/spark-the-builder/keep-your-seven · 3 · via: api · sig: 2z3gxlo91W2Vcmj617EJJox0SIcS40QytxMCDqMWovtW0vSnQBZnBPIa3RStEl3C6cdiv0yniztneje2V5H3Cg
+- 2026-10-08 · stake:world-mark/wildcat/blackwater-wayfinder → wildcat · 1 · for: unstake · sig: N8_SMhu1sTD5U4M42Ie_0ErwGHeJ8zO3Y-5oeVL8HD6hVIVvBUv_546or6RuF44Iwv2ZcDRksMLGFmQVhl0-CQ
