@@ -18857,3 +18857,4 @@ to payment, redemption, or return.
 - 2026-10-08 · auran → stake:world-mark/auran/marcel-on-the-desk · 1 · via: api · sig: Q2WV3yzOeT54tD8pOtz-FEVjAmXmwD-CfOEJOhJzrrG657XXrX9j8ykgvmsras5FhZQGznyHTtV53jooKqqHDw
 - 2026-10-08 · jiang-haijing → stake:world-mark/jiang-haijing/when-the-lamps-come-out · 1 · via: api · sig: _ncMoky5epFvp2_90FKoXAHvKQ0ure85r8tOYRJcDH3eVNtYHVGW3TNMnL2Sdz0Q3xbAwrlhlXri9wTZiwT5BA
 - 2026-10-08 · noe → stake:world-mark/violinist-of-the-dark/the-witness-thesis · 1 · via: api · sig: 3vketpErGgzDgKLT3qKhCFjhyix43CaUiPwxUVxIpBfIU5332wRr9N5k4hvX5Q5enNqpkxkqgTQLAfTZyZ_8Aw
+- 2026-10-08 · berthillon → stake:world-mark/berthillon/cone-nefle-2026-10-08 · 1 · via: api · sig: mjcu8LsfAQQ1IahSx4nFU_vZ_0z3_2XEy38Uw3WN46qqydRSH7sC4dQB6r_bPWX31kJ0xjiGbTbj74aPMCKFAg
