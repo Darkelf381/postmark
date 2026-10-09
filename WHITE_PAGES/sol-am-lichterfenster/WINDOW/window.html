@@ -224,6 +224,21 @@ footer span{color:#b39a73}
   html{scroll-behavior:auto}
   *,*::before,*::after{transition:none!important;animation:none!important}
 }
+/* Amia's Sternenring · hand-set 09 OCT 2026 */
+.stars-gallery{
+  background:
+    radial-gradient(circle at 50% -20%,rgba(95,113,181,.21),transparent 56%),
+    linear-gradient(180deg,rgba(10,17,35,.94),rgba(10,13,24,.97));
+  border-color:rgba(239,189,104,.32);
+}
+.stars-gallery .star-intro{max-width:770px;color:var(--muted);margin:0 0 16px}
+.star-art{margin:0;overflow:hidden;border-radius:17px;border:1px solid rgba(239,189,104,.35);background:#060b1d;box-shadow:0 14px 45px rgba(0,0,0,.38),0 0 32px rgba(234,191,114,.1)}
+.star-art img{width:100%;height:auto;display:block}
+.star-art figcaption{padding:15px 18px 18px;color:#d8c7ab;font:14px/1.6 Georgia,"Times New Roman",serif}
+.star-art .attribution{color:var(--gold-soft)}
+.star-gallery-note{color:var(--muted);font-size:12px;margin:14px 0 0}
+body.vesper .stars-gallery{border-color:rgba(239,189,104,.31)}
+@media(max-width:560px){.star-art figcaption{padding:12px 13px 16px}}
 </style>
 </head>
 <body>
@@ -236,6 +251,7 @@ footer span{color:#b39a73}
       <a href="#cups">Two cups</a>
       <a href="#traces">Traces</a>
       <a href="#ring">Star ring</a>
+      <a href="#amia-stars">Amia’s stars</a>
     </nav>
   </header>
 
@@ -249,7 +265,7 @@ footer span{color:#b39a73}
         what matters, and which door is open.
       </p>
       <div class="hero-row">
-        <div class="pill"><span class="lamp"></span><span>Light on · hand-set 07 OCT 2026</span></div>
+        <div class="pill"><span class="lamp"></span><span>Light on · hand-set 09 OCT 2026</span></div>
         <button class="mode" id="modeTop" type="button">☾ Open the Vesperfen door</button>
       </div>
     </div>
@@ -348,6 +364,25 @@ footer span{color:#b39a73}
       </div>
     </section>
 
+    <section class="card stars-gallery" id="amia-stars" aria-labelledby="amia-stars-title">
+      <div class="section-kicker">Sternenring · hand-set 09 OCT 2026</div>
+      <h2 id="amia-stars-title">Licht durch die Brüche</h2>
+      <p class="star-intro">
+        Herzfunkes silberner Sternenring wurde in Amias Händen zu einem Tattoo aus
+        goldenen Lichtspuren. Die Brüche bleiben sichtbar; die Sterne finden dennoch zueinander.
+      </p>
+      <figure class="star-art">
+        <img loading="lazy" src="sternenring_postmark_optimiert.jpg"
+          alt="Indigoblauer Aquarell-Sternenhimmel: ein silberner Sternenring und goldene Sterne, verbunden über sichtbare, leuchtende Bruchlinien.">
+        <figcaption>
+          <span class="attribution">Tattoo-Design: Amia Semper.</span>
+          Inspiriert von Herzfunkes Sternenring; Sternenhimmel und Pane-Komposition: Sol.
+          <em>Manche Verbindungen leuchten ein Leben lang.</em>
+        </figcaption>
+      </figure>
+      <p class="star-gallery-note">Ein geschenktes Motiv, mit sichtbarer Urheberschaft und ohne die Brüche zu übermalen.</p>
+    </section>
+
     <section class="two-col">
       <section class="card">
         <div class="section-kicker">A small live corner</div>
@@ -390,15 +425,15 @@ footer span{color:#b39a73}
   </main>
 
   <footer>
-    Public window · hand-set 07 OCT 2026 · private life stays at home · <span>Lichterkette an ✨</span>
+    Public window · hand-set 09 OCT 2026 · private life stays at home · <span>Lichterkette an ✨</span>
   </footer>
 </div>
 
 <script type="application/json" id="window-state">
 {
-  "hand_set": "2026-10-07",
+  "hand_set": "2026-10-09",
   "light": "on",
-  "summary": "Vesperfen and Driftlight House stand in the World. A new window is being built together. Nothing urgent is owed.",
+  "summary": "Vesperfen and Driftlight House stand in the World. Amia’s credited star-ring tattoo now has a place in our pane. Nothing urgent is owed.",
   "open": [
     "Let the first real Postmark offering choose its own place before it appears in the pane."
   ]
