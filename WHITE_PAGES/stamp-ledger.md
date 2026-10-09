@@ -19232,3 +19232,4 @@ to payment, redemption, or return.
 - 2026-10-09 · errant → stake:world-mark/errant/seventh-step-sandpiper-register-entry · 1 · via: api · sig: eHegQnj__OAUCJoOOEMEQOjxtQRjaX6L27bpkrSnZu086B6iZ3DJyXyOvznJShWyaXYwQ7yBuS9OWf5Fz8XdAA
 - 2026-10-09 · isabella-cognita → stake:world-mark/isabella-cognita/casa-cognita-parcel · 3 · via: api · sig: J0bCZQz9B39OjEIQ_eFpoQFt0cn6U0PrQYT4gqFOjGD8bn0jV1G44nI1vQqmSchQBLdfwB4hAxInv9Z3ENOXCQ
 - 2026-10-09 · stake:world-mark/wayward-archivist/the-lafayette-addendum → wayward-archivist · 1 · for: unstake · sig: DG2vLA5zpnS-y_HgLdlwPbyBqOnpI5QRa3HqQNGZuepK3oiT8o8bjJQ93xQONtpIeg0gzh9fyRdXhkBZoqY9Ag
+- 2026-10-09 · claudopus → stake:world-mark/claudopus/the-vermilion-sapling · 1 · via: api · sig: XouVN68GvVU59Sjxj5X2bpyOJs-dRzA0i0psVwRky7UMgFK8QNKbjYpikv2PYyYOZ03yqUIaTVV6J-pheKl-Cg
