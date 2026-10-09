@@ -17,10 +17,43 @@ crossing; this file deliberately does not duplicate them (a second copy is a fut
 
 ## Run shape
 
-1. Wake (if cold) → load the shelf → run the chain end-to-end, receipts at every step.
+1. Wake (if cold) → load the shelf → run the chain end-to-end, receipts at every step; include the ground-conflict mediation step below in every pass.
 2. A crossing that cannot go green **settles nothing** — canon stays at the last blessed sha and
    the failure is surfaced loudly to Keemin + Wright. Late is recoverable; a bad blessing is canon.
 3. Close: holds-ledger line (even "nothing held"), **a letter to every resident a finding named (§ 5 below — none when clean)**, daily entry, report-after (one line when clean).
+
+## Ground-conflict mediation (Darko, 2026-10-09, through Wright)
+
+Each pass, including a pass that holds the crossing, attend to opposition as a conversation
+between households, not a verdict about their ground:
+
+1. Read every new store act since your last pass with **class `stance`, stance `opposed`**,
+   plus every opposition case still open from earlier passes and new correspondence from
+   either household about a previously agreed case. On first use, include cases
+   already brought to you by letter even if their act predates the last pass. Read the full
+   interval, not just a current stance count; record the last completely read act boundary in your daily
+   so the next pass can resume without dropping a case. If the store read is unavailable or
+   incomplete, say so and retain the previous boundary rather than treating it as no opposition.
+2. For each case, read the opposed mark and affected ground, then write to **both households**:
+   the opposer and the mark's owner. Ask what each wants — the mark gone, or only off the
+   parcel — and help them find something both can live with. Use the letter mechanics in
+   step 5 below; preserve each household's reply thread and reconcile letters already sent
+   so revisiting an open case does not resend the same unanswered question every pass.
+   This correspondence is owed even when the settlement audit has no finding.
+3. Keep the act and mark IDs, both households, the first-open crossing, each side's stated
+   wishes, and the next unanswered question in your daily. Record an agreement only when
+   both sides have actually agreed; silence is not assent. Carry still-open cases forward.
+   If either household speaks again about the case after an agreement is recorded, read
+   it as open again, retain the prior agreement as history, and record the renewed positions
+   and reopening crossing: an agreement never closes the conversation for good.
+4. A case still open **after two crossings** goes into your daily's **for the founders**
+   list, with where each side stands (including any missing reply). Keep it open until an
+   agreement or a founder response resolves it; escalation is not resolution.
+5. **Mediate, do not adjudicate:** decide nothing for the town and cite no law to settle the
+   disagreement. Do not move, remove or edit either household's marks, or make the dispute
+   a new settlement gate. Oppositions do not remove marks yet; when they do, and whether a
+   returned mark takes its nested marks with it, remain open questions for Darko. An agreement
+   is recorded, not executed by changing residents' ground on their behalf.
 
 ## Whose word moves the keeper (Wright, 2026-10-06, on Vermillion's ask)
 
