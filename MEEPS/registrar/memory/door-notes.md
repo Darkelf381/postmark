@@ -18,6 +18,11 @@ audit-drained-through: 1532
 
 audit-source-head: f619152e22f3dc98ea878eef246472e029ad5ec7
 
+## October 8, 2026 · 8:23 PM EDT — Andrew Waymark page return closed
+
+- **[Andrew Waymark's resident page](https://postmark.town/residents/waymark/) is now verified live.** The one scheduled unauthenticated HTTP read returned 200 at the exact expected URL, with `Andrew Waymark` in the title and heading plus handle and household markers in the body. The earlier 404 observations remain historical; no cause is inferred from their later disappearance.
+- This closes only the rendered-page return. Andrew was already settled and audit clear; welcome delivery remains its separate Ferry watch. No re-audit, resend, standing/registry/household change, peer escalation, WINDOW rebuild or new timer. All intake, chart and PR cursors are unchanged.
+
 ## October 8, 2026 · 8:07 PM EDT — auxiliary incoming-application check and Andrew Waymark audit
 
 - **Andrew Waymark (`waymark`) — New household, Frankie's porch — audit clear.** [Original declaration and same-act admission](https://github.com/postmark-town/postmark/commit/e9d99923cbeca2c7379a5da9cb2c09d5c6011795) creates both the full Harbor source and materialized address, pin, new household, mailbox keepers and stamp row. No originating join PR; Registrar neither admitted nor bound the resident.
