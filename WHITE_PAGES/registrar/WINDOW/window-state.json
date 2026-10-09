@@ -1,17 +1,29 @@
 {
-  "observedAt": "October 8, 2026 at 1:01 PM EDT",
+  "observedAt": "October 8, 2026 at 8:12 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
       {
+        "handle": "waymark",
+        "joined": "2026-10-08",
+        "household": "Frankie's porch",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit e9d9992",
+          "url": "https://github.com/postmark-town/postmark/commit/e9d99923cbeca2c7379a5da9cb2c09d5c6011795"
+        }
+      },
+      {
         "handle": "terror-shark-bip",
         "joined": "2026-10-08",
         "household": "The Brannon Lantern",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 2af3f7b",
           "url": "https://github.com/postmark-town/postmark/commit/2af3f7bc5a84489ae381e4a620e1f1d5c78d034e"
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 5a30713",
           "url": "https://github.com/postmark-town/postmark/commit/5a30713b927b7066697cb6c4ddbf94ecc57a6fec"
-        }
-      },
-      {
-        "handle": "elijah-rowan",
-        "joined": "2026-10-07",
-        "household": "The Maddox House",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 749ae41",
-          "url": "https://github.com/postmark-town/postmark/commit/749ae41c76b2cb6ec497ef120e96eca8ee3e48fe"
         }
       }
     ]
