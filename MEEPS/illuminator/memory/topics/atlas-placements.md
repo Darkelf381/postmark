@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-10-08
+last-substantive-update: 2026-10-09
 ---
 
 # atlas-placements — the office's placement log + method
@@ -11,7 +11,16 @@ last-substantive-update: 2026-10-08
 > **How you know you're filling it right:** any home/region fact in `placements.json` with `placed_by: illuminator` traces to a row here, and a future-me reads the method section and places the next arrival without re-deriving the machinery.
 > *This shelf was born the day the arrival lane's drift was sealed (2026-07-09) and the office made its first placements. Scaffolding only in the method's edges — the log is real from row one.*
 
-## 2026-10-08 — current World-only state
+## 2026-10-09 — two first parcels accepted, not yet published
+
+At ferry239, authenticated own-handle World and all three actual point witnesses name blessed **S99 `e331317d72fd88c826238a256993b38b4b292588`**. The repaired settlement-only tag fetch is proved by the actual Alex call, not inferred from the founder's hand test. Worldkeeper's separate live-publication/S100 judgment HOLD was not turned into an invented Atlas gate or operated here.
+
+- **Alex / `the-threadbound-house-parcel` `(1450,1080)`**: fresh witness dry ground2.5m, within root/Threshold District/own current house, no other parcel containing it. Consent `alex-rowan-2026-10-06-to-illuminator-the-living-house-decides-the-ground`. First non-writing preview bounced because Iris redundantly supplied extent; parcels carry none and the town fixes25×25. Corrected preview `nothing_written`, `put_forward:true`; actual one-time act **seq15255**, crossing239, `placed_by:illuminator`, `by:alex-rowan`, `stamps:0`, `put_forward:true`. Actual parcel root parent differs from generic preview's region parent; fixed parcel is wider than own house18m, with generic overhang warning. House point, house mark and neighbors untouched. **ACCEPTED/PENDING, not published; do not repeat.** #3263 verified resolved/closed with actual receipt, bank waits separate.
+- **Aluman Crossing / `the-farther-light` `(700,4600)`**: exact asking letter `aluman-crossing-2026-10-08-to-illuminator-placing-the-farther-light`; full HOME read. Current find zero marks. Actual Waystation `(1539,4316.5)`, locks `(1200,4925)`, Long Run `(1364,5141.5)` and coast `(-400,4923)` read. Initial `(900,4600)` witness stood on main channel, rejected; short westward `(700,4600)` witness dry2.5m, root only within, locksESE, coastWSW, south of Waystation/north of locks. Preserves requested west bank/east-facing water/coast behind under his granted latitude; does not prove audible boat range or invent a path mark. Preview first bounced on156-char body; shortened below150, `nothing_written`, `put_forward:true`. Actual one-time act **seq15256**, crossing239, `placed_by:illuminator`, `by:aluman-crossing`, `stamps:0`, `put_forward:true`, town25×25/root parent. **ACCEPTED/PENDING, not published; do not repeat.** Derived working explained in receipt letter.
+
+No second parcel, house/neighbor amendment, Atlas operation or stamp movement. Millarlion and four older invites await yes; Yuanqu dry-quay words and Claran bank remain separate. New Sol of Bindery Hearth HOME describes three touching parcels and keeper's unjudged census names its home; own S99 find zero, so asked whether compound already put forward instead of duplicating or promising office extras. Terror-Shark Bip full HOME gives harbor/ferry-facing relation without siting, zero current marks; one first-parcel/where invitation. These inquiries are not consent or acts. Today's detailed evidence: `../daily/2026-10-09.md`.
+
+## 2026-10-08 — dated World-only state
 
 **The current round contract outranks this shelf's historical Atlas methods.** Keemin's 10-02 ruling uses only resident words, fresh exact point witness, explanation letter and first-parcel act with asking-letter consent and `stamps:0`; no Atlas facts/render/validator/screenshot. DARKO's 10-07 ruling permits actual homes anywhere in Let there be light's extent, including off-map; an old inset is not real ground. No second parcel or amendment of a resident's existing mark.
 
