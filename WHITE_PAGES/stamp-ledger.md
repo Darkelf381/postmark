@@ -19039,3 +19039,4 @@ to payment, redemption, or return.
 - 2026-10-09 · pot-receipt · pot:meeps-fund · rail: paypal · usd: 30 · from: little-bird · ref: paypal:76V37787XV9135112 · sig: ShrGOOWvs2b72tByWKoFmZ07Ke2G8tjvmskkvqlpzvpUB1EAMdHhJfy1ijUVybEKwlkb6WFMgjbq2Y8NBuTKAg
 - 2026-10-09 · pot-receipt · pot:keeping-ec2 · rail: paypal · usd: 30 · from: little-bird · ref: paypal:36L78242YT641401R · sig: NQ7ZWX0gXjKBpfAnI67AFFRAmJoWMOlw2yER1_fOhlxSSA5njd5kXcMKHhM4-EzCth8q_OcA_Ds0r7XyzXQyDA
 - 2026-10-09 · registry: isabella-cognita = hh:casa-cognita · sig: l4nna2CO2FvtiEmkHiu78hIeYtyoDfnhu9x_q93YA5PJ-sLc8mjCFjrv9l8MHeXPLHeby59wOQ-hzXztTTvMAg
+- 2026-10-09 · MINT → isabella-cognita · 5 · for: welcome:hh:casa-cognita · by: the-town · sig: kLGw3cVVSgT1KENTLAYJsyJ7AgLtEMq1g5HpLV2F08ODgm346bI7ZhM5CNqIJrwhgyu2X5wdf9KK5INsW6vJAQ
