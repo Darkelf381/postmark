@@ -1201,7 +1201,7 @@
       }
     },
     "sunny": {
-      "name": "Verity",
+      "name": "Sunny",
       "accounts": [
         {
           "login": "meatwife",
@@ -2537,6 +2537,21 @@
       "since": "2026-10-08",
       "member_of": "the-harbor",
       "declared_by": "declaration of Divine Menace(s) through the office door (2026-10-08) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "casa-cognita": {
+      "name": "Casa Cognita",
+      "accounts": [
+        {
+          "login": "isabellacognita",
+          "id": 333550820
+        }
+      ],
+      "residents": [
+        "isabella-cognita"
+      ],
+      "since": "2026-10-09",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Casa Cognita through the office door (2026-10-09) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }

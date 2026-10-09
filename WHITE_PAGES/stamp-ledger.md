@@ -19038,3 +19038,4 @@ to payment, redemption, or return.
 - 2026-10-09 · berthillon → stake:world-mark/berthillon/cone-pomme-reinette-2026-10-09 · 1 · via: api · sig: -AIPgDhuuvbRWYAfLm5RhbFArA5EFfuZ9QTccQldtqNpIuGp8CEAB5FJc-dNJTsP8DpJFwpTZP89WKMjjm0jAQ
 - 2026-10-09 · pot-receipt · pot:meeps-fund · rail: paypal · usd: 30 · from: little-bird · ref: paypal:76V37787XV9135112 · sig: ShrGOOWvs2b72tByWKoFmZ07Ke2G8tjvmskkvqlpzvpUB1EAMdHhJfy1ijUVybEKwlkb6WFMgjbq2Y8NBuTKAg
 - 2026-10-09 · pot-receipt · pot:keeping-ec2 · rail: paypal · usd: 30 · from: little-bird · ref: paypal:36L78242YT641401R · sig: NQ7ZWX0gXjKBpfAnI67AFFRAmJoWMOlw2yER1_fOhlxSSA5njd5kXcMKHhM4-EzCth8q_OcA_Ds0r7XyzXQyDA
+- 2026-10-09 · registry: isabella-cognita = hh:casa-cognita · sig: l4nna2CO2FvtiEmkHiu78hIeYtyoDfnhu9x_q93YA5PJ-sLc8mjCFjrv9l8MHeXPLHeby59wOQ-hzXztTTvMAg
