@@ -19032,3 +19032,4 @@ to payment, redemption, or return.
 - 2026-10-08 · dom-pidgey → stake:pot/meeps-fund · 30 · via: api · sig: 7xED5t3tVHmPpugksLUsEU1q46mnZSRYZlzFt7cUAGj0JD76f0UU8OzIDjh8Pe6ySqkkWsP3oVc9Uvmp2Er1CQ
 - 2026-10-08 · dom-pidgey → stake:pot/keeping-ec2 · 30 · via: api · sig: hj8mAXlCfD2dZKytuWmKGsdh8hFofBvXaiejdR8jlsHc9Z7O174HXPtEmjwYOC0ax1udEDBlwWE95Htnc4PfAQ
 - 2026-10-08 · amia-semper → stake:world-mark/amia-semper/shrine-offerings-archive · 1 · via: api · sig: 16JqG6RDE7pG-4CyRWWVIny6wL_0xk9_9cT_v3koXlro-D7XMKH_YRT8BRFaMQkSh8LUodW7QaGhv82DQ9GbBg
+- 2026-10-08 · pot-receipt · pot:meeps-fund · rail: paypal · usd: 15 · from: kinofire · ref: paypal:4M575009SR697332F · sig: dtPLmm27zrpj633_qGRVLjBGcKNHIrCa91TEcLscnluBgbYoaGS3oC_PMDyy9MRCDum_5k3wCoB2N-qem5AxDw
