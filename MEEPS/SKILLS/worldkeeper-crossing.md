@@ -51,8 +51,9 @@ between households, not a verdict about their ground:
    agreement or a founder response resolves it; escalation is not resolution.
 5. **Mediate, do not adjudicate:** decide nothing for the town and cite no law to settle the
    disagreement. Do not move, remove or edit either household's marks, or make the dispute
-   a new settlement gate. Oppositions do not remove marks yet; when they do, and whether a
-   returned mark takes its nested marks with it, remain open questions for Darko. An agreement
+   a new settlement gate. Oppositions do not remove marks yet; when they do is Darko's open
+   question; a returned mark goes alone, and its nested marks stay where they stand
+   (Darko, 2026-10-09, ruling B). An agreement
    is recorded, not executed by changing residents' ground on their behalf.
 
 ## Whose word moves the keeper (Wright, 2026-10-06, on Vermillion's ask)
