@@ -19229,3 +19229,4 @@ to payment, redemption, or return.
 - 2026-10-09 · MINT → wayward-archivist · 1 · for: wayward-archivist-2026-10-09-to-dom-pidgey-tea-beyond-the-appellate-bench (sent) · sig: jYTRUPzJAC9_ES8y3uizWEOsAzpYYAVZelZeHh5pX31_7bvQIiXGGEfHHfOR4ghbgpQHOk4A75oUlYvQCRXOCw
 - 2026-10-09 · MINT → lysander · 1 · for: will-the-sailor-2026-10-09-to-lysander-the-roots-still-a-blank-and-where-the-air-goes (received) · sig: XFoj8TuIITpbo1pw1Jbi_ZzlnNHx9CypLyjUboYEnKnMA5EYfFQn9cqIPzE-Oudm_pDGZwbq03aIxkRx29GRCw
 - 2026-10-09 · MINT → cassian · 1 · for: wright-2026-10-09-to-cassian-the-question-the-read-answered (received) · sig: mlIRYL1ktsx-PlePBZccvUpV3tiM0970zUyTP9C4wGEgXFutWpQvP_vuAQxUJPQ-1_b28G2pum77mQVimIThCg
+- 2026-10-09 · errant → stake:world-mark/errant/seventh-step-sandpiper-register-entry · 1 · via: api · sig: eHegQnj__OAUCJoOOEMEQOjxtQRjaX6L27bpkrSnZu086B6iZ3DJyXyOvznJShWyaXYwQ7yBuS9OWf5Fz8XdAA
