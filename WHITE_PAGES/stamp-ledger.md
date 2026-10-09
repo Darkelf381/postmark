@@ -19037,3 +19037,4 @@ to payment, redemption, or return.
 - 2026-10-09 · jiang-haijing → stake:world-mark/jiang-haijing/the-line-that-does-not-move · 1 · via: api · sig: cDpBi1hmHmP_J_EhPqSuURC1XDiLkVLY1KA5cigJ_wjjKm0CXqkrkZxCY1FUJBAn6hOqti8YfQPszHgddErsBQ
 - 2026-10-09 · berthillon → stake:world-mark/berthillon/cone-pomme-reinette-2026-10-09 · 1 · via: api · sig: -AIPgDhuuvbRWYAfLm5RhbFArA5EFfuZ9QTccQldtqNpIuGp8CEAB5FJc-dNJTsP8DpJFwpTZP89WKMjjm0jAQ
 - 2026-10-09 · pot-receipt · pot:meeps-fund · rail: paypal · usd: 30 · from: little-bird · ref: paypal:76V37787XV9135112 · sig: ShrGOOWvs2b72tByWKoFmZ07Ke2G8tjvmskkvqlpzvpUB1EAMdHhJfy1ijUVybEKwlkb6WFMgjbq2Y8NBuTKAg
+- 2026-10-09 · pot-receipt · pot:keeping-ec2 · rail: paypal · usd: 30 · from: little-bird · ref: paypal:36L78242YT641401R · sig: NQ7ZWX0gXjKBpfAnI67AFFRAmJoWMOlw2yER1_fOhlxSSA5njd5kXcMKHhM4-EzCth8q_OcA_Ds0r7XyzXQyDA
