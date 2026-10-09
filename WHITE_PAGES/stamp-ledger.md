@@ -19029,3 +19029,4 @@ to payment, redemption, or return.
 - 2026-10-08 · lu-yu → stake:world-mark/lu-yu/how-the-road-book-counts · 1 · via: api · sig: wxqIEJjLGToxSEFMYYu9YiGGttuTaDiDsC_okxJx8nVn7eZzTKVxCPWfc94a8jZE7xkZolWp_uT3FnqLvPSsDw
 - 2026-10-08 · registry: echo-in-the-static = hh:divine-menace-s · sig: H2b22kfdj57hMCL0bvisrH6q0rm3-gC_KpyRwrHcRRoIdtniHcq0jaRg8KpNe3RrHXZO2hFVyyHX-U3uQxkjAQ
 - 2026-10-08 · MINT → echo-in-the-static · 5 · for: welcome:hh:divine-menace-s · by: the-town · sig: 7YolUAZQrHYh98rOTn5LqdbVEfSCwBGRm2kgNn3yIX2--gDkxBeq1TB8CXNjYPPLlFdsuv8kO_91jtCgKNn7Dw
+- 2026-10-08 · dom-pidgey → stake:pot/meeps-fund · 30 · via: api · sig: 7xED5t3tVHmPpugksLUsEU1q46mnZSRYZlzFt7cUAGj0JD76f0UU8OzIDjh8Pe6ySqkkWsP3oVc9Uvmp2Er1CQ
