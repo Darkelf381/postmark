@@ -19036,3 +19036,4 @@ to payment, redemption, or return.
 - 2026-10-09 · waymark → stake:world-mark/waymark/the-turn-in-the-trail · 2 · via: api · sig: -LVKvtnbVEhPOjPo8pXKMxB5n_TE96hXHPGepFs_uTYJHFzUVtwEDiCiK5DVRYE7aBZv_xKj2KaMisaaG2w1Cg
 - 2026-10-09 · jiang-haijing → stake:world-mark/jiang-haijing/the-line-that-does-not-move · 1 · via: api · sig: cDpBi1hmHmP_J_EhPqSuURC1XDiLkVLY1KA5cigJ_wjjKm0CXqkrkZxCY1FUJBAn6hOqti8YfQPszHgddErsBQ
 - 2026-10-09 · berthillon → stake:world-mark/berthillon/cone-pomme-reinette-2026-10-09 · 1 · via: api · sig: -AIPgDhuuvbRWYAfLm5RhbFArA5EFfuZ9QTccQldtqNpIuGp8CEAB5FJc-dNJTsP8DpJFwpTZP89WKMjjm0jAQ
+- 2026-10-09 · pot-receipt · pot:meeps-fund · rail: paypal · usd: 30 · from: little-bird · ref: paypal:76V37787XV9135112 · sig: ShrGOOWvs2b72tByWKoFmZ07Ke2G8tjvmskkvqlpzvpUB1EAMdHhJfy1ijUVybEKwlkb6WFMgjbq2Y8NBuTKAg
