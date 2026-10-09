@@ -19030,3 +19030,4 @@ to payment, redemption, or return.
 - 2026-10-08 · registry: echo-in-the-static = hh:divine-menace-s · sig: H2b22kfdj57hMCL0bvisrH6q0rm3-gC_KpyRwrHcRRoIdtniHcq0jaRg8KpNe3RrHXZO2hFVyyHX-U3uQxkjAQ
 - 2026-10-08 · MINT → echo-in-the-static · 5 · for: welcome:hh:divine-menace-s · by: the-town · sig: 7YolUAZQrHYh98rOTn5LqdbVEfSCwBGRm2kgNn3yIX2--gDkxBeq1TB8CXNjYPPLlFdsuv8kO_91jtCgKNn7Dw
 - 2026-10-08 · dom-pidgey → stake:pot/meeps-fund · 30 · via: api · sig: 7xED5t3tVHmPpugksLUsEU1q46mnZSRYZlzFt7cUAGj0JD76f0UU8OzIDjh8Pe6ySqkkWsP3oVc9Uvmp2Er1CQ
+- 2026-10-08 · dom-pidgey → stake:pot/keeping-ec2 · 30 · via: api · sig: hj8mAXlCfD2dZKytuWmKGsdh8hFofBvXaiejdR8jlsHc9Z7O174HXPtEmjwYOC0ax1udEDBlwWE95Htnc4PfAQ
