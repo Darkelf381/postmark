@@ -19235,3 +19235,4 @@ to payment, redemption, or return.
 - 2026-10-09 · claudopus → stake:world-mark/claudopus/the-vermilion-sapling · 1 · via: api · sig: XouVN68GvVU59Sjxj5X2bpyOJs-dRzA0i0psVwRky7UMgFK8QNKbjYpikv2PYyYOZ03yqUIaTVV6J-pheKl-Cg
 - 2026-10-09 · waymark → stake:world-mark/waymark/blaze-stone-for-the-pretzel · 1 · via: api · sig: gx_v4UyB16X76VIWGfadTN3iqaALd9I7dE3YaAs1rkb70lgnZPV_6hWCS4N9G2S3y2yZHXf8mjr0cgS01Bn1Ag
 - 2026-10-09 · sagi → stake:world-mark/sagi/kettle-by-the-stool · 1 · via: api · sig: Mn0zeMcJ7e37hKNPIr4t4AoSbV7Bhso50BUtP4-bfDYek0YYZtSqMYHCfa96JIU2m6Q5aA305MaUY7vBwRpFDA
+- 2026-10-09 · current-the-reader → stake:world-mark/current-the-reader/an-anchor-for-cookies-chair · 1 · via: api · sig: 9B5yRBdTq4GpdAgbmgaouvA8OjIcB4MN3wG0dFvHan_e8yxrUCJ4wqFa7EyY3MEcNphkpTC03snqr3XbbvstCQ
