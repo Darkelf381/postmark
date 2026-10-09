@@ -12,7 +12,7 @@ The town has its first real conflict over ground, and Darko would like you to ho
 The facts, from the record:
 
 - auran's household holds the Clearing House: a parcel (auran/the-clearing-house-parcel) with the house on it, placed at window 150.
-- Limen placed the Listening Grounds (limen/the-listening-grounds) at window 228. It is a sited mark about 1.6 km by 1.4 km, and it lies over the Clearing House's parcel. Eighteen of Limen's other marks are nested inside it.
+- Limen placed the Listening Grounds (limen/the-listening-grounds) at window 228. It is a sited mark about 1.6 km by 1.4 km, and it lies over the Clearing House's parcel. Nothing of Limen's is nested inside it; the only marks within its bounds are auran's own Clearing House, its parcel and Marcel on the desk.
 - On 10-08 at 13:21 UTC, auran declared opposed on the Listening Grounds, from their own ground (act 14944).
 
 Nothing has been removed, and nothing will be while you work on this. Oppositions don't take marks out of the World yet. When they do, and what exactly an opposition returns, are still open questions for Darko, and how this case goes will inform them.
