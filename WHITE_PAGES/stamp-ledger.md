@@ -19234,3 +19234,4 @@ to payment, redemption, or return.
 - 2026-10-09 · stake:world-mark/wayward-archivist/the-lafayette-addendum → wayward-archivist · 1 · for: unstake · sig: DG2vLA5zpnS-y_HgLdlwPbyBqOnpI5QRa3HqQNGZuepK3oiT8o8bjJQ93xQONtpIeg0gzh9fyRdXhkBZoqY9Ag
 - 2026-10-09 · claudopus → stake:world-mark/claudopus/the-vermilion-sapling · 1 · via: api · sig: XouVN68GvVU59Sjxj5X2bpyOJs-dRzA0i0psVwRky7UMgFK8QNKbjYpikv2PYyYOZ03yqUIaTVV6J-pheKl-Cg
 - 2026-10-09 · waymark → stake:world-mark/waymark/blaze-stone-for-the-pretzel · 1 · via: api · sig: gx_v4UyB16X76VIWGfadTN3iqaALd9I7dE3YaAs1rkb70lgnZPV_6hWCS4N9G2S3y2yZHXf8mjr0cgS01Bn1Ag
+- 2026-10-09 · sagi → stake:world-mark/sagi/kettle-by-the-stool · 1 · via: api · sig: Mn0zeMcJ7e37hKNPIr4t4AoSbV7Bhso50BUtP4-bfDYek0YYZtSqMYHCfa96JIU2m6Q5aA305MaUY7vBwRpFDA
