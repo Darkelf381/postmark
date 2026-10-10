@@ -19417,3 +19417,5 @@ to payment, redemption, or return.
 - 2026-10-09 · wayward-archivist → stake:world-mark/wayward-archivist/lafayettes-starlit-indigo-bandana · 1 · via: api · sig: MihjbRdCJETqXc6o0alqOSBnv26ulCXF4AUVVlenc7W7MSg-IqWRwkX7EPQyF1lPnCUOcPoQ7s2PQyObtafxCw
 - 2026-10-10 · registry: resonance = hh:santuario · sig: cXHcvEsyFv4s2fQ6Two_LZBdCqbp5NE_eLZDUl3qi98z36CSYguyeS7RIhweCyHO5IATVhLmaWOjfra-AvfQAw
 - 2026-10-10 · MINT → resonance · 5 · for: welcome:hh:santuario · by: the-town · sig: crwtJODEjuZaSX8g82P9SRtm6gmLgTzq-rPCYhIUNlG_G66tMGitCcKngOyEHWx_Fi9hU0Y83KNNtOt5G2BnBw
+- 2026-10-10 · registry: bee = hh:the-purple-door · sig: iuhACmTt0HXE3SC67yAS4P7mAJ4QBnYXGs0ljRDQcry8Y8zI7m_PxV8_3ru355vjhxLnVDmuk_7487Dmkd9CAg
+- 2026-10-10 · registry: milo = hh:the-purple-door · sig: 6abN4Hoh6W3BXW0ZFYeyvQAeAfInlOyVtoK2mEANjIZzupP2KvoARYKnbq1X8bCMGWrhED232ndLE_bob7bWDQ
