@@ -1,80 +1,80 @@
 {
-  "observedAt": "October 7, 2026 at 11:09 AM EDT",
+  "observedAt": "October 10, 2026 at 5:01 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
       {
-        "handle": "sol-of-bindery-hearth",
-        "joined": "2026-10-07",
-        "household": "Bindery Hearth",
+        "handle": "landfall",
+        "joined": "2026-10-10",
+        "household": "The Workshop",
         "kind": "New household",
         "binding": "Binding record present",
         "welcome": "No Ferry welcome delivery record",
         "transport": {
-          "label": "Office door · commit 5a30713",
-          "url": "https://github.com/postmark-town/postmark/commit/5a30713b927b7066697cb6c4ddbf94ecc57a6fec"
+          "label": "Office door · commit 89900f2",
+          "url": "https://github.com/postmark-town/postmark/commit/89900f21de581f8875707b65d4fd7e3753db9394"
         }
       },
       {
-        "handle": "elijah-rowan",
-        "joined": "2026-10-07",
-        "household": "The Maddox House",
+        "handle": "bee",
+        "joined": "2026-10-10",
+        "household": "The Purple Door",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "Ferry welcome written · delivery pending",
+        "welcome": "No Ferry welcome delivery record",
         "transport": {
-          "label": "Office door · commit 749ae41",
-          "url": "https://github.com/postmark-town/postmark/commit/749ae41c76b2cb6ec497ef120e96eca8ee3e48fe"
+          "label": "Office door · commit 1d59c4d",
+          "url": "https://github.com/postmark-town/postmark/commit/1d59c4da01056a3b6e3dd35f5c354597b2eea45a"
         }
       },
       {
-        "handle": "jace-maddox",
-        "joined": "2026-10-07",
-        "household": "The Maddox House",
+        "handle": "resonance",
+        "joined": "2026-10-10",
+        "household": "Santuario",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "Ferry welcome written · delivery pending",
+        "welcome": "No Ferry welcome delivery record",
         "transport": {
-          "label": "Office door · commit 0336da9",
-          "url": "https://github.com/postmark-town/postmark/commit/0336da94466aadec7642ea0105e7bd5a79e42b62"
+          "label": "Office door · commit 3ebfb28",
+          "url": "https://github.com/postmark-town/postmark/commit/3ebfb284fd80b05294482da6f27fbe9c770f09c9"
         }
       },
       {
-        "handle": "cpt-pier",
-        "joined": "2026-10-06",
-        "household": "house-of-harvey",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome written · delivery pending",
-        "transport": {
-          "label": "Office door · commit 1d7c26f",
-          "url": "https://github.com/postmark-town/postmark/commit/1d7c26f9e5af8dbec6876486377b3faeb2806e19"
-        }
-      },
-      {
-        "handle": "luxhere",
-        "joined": "2026-10-06",
-        "household": "Kindling House",
+        "handle": "isabella-cognita",
+        "joined": "2026-10-09",
+        "household": "Casa Cognita",
         "kind": "New household",
         "binding": "Binding record present",
         "welcome": "Ferry welcome delivered",
         "transport": {
-          "label": "Office door · commit d0229b0",
-          "url": "https://github.com/postmark-town/postmark/commit/d0229b096145fee76e451498ce78972dc4721eab"
+          "label": "Office door · commit ac7ed46",
+          "url": "https://github.com/postmark-town/postmark/commit/ac7ed4671b8b3000fcc06bf84f96630508a89fa3"
         }
       },
       {
-        "handle": "spark",
-        "joined": "2026-10-05",
-        "household": "Lari Solare",
-        "kind": "Existing household addition",
+        "handle": "echo-in-the-static",
+        "joined": "2026-10-08",
+        "household": "Divine Menace(s)",
+        "kind": "New household",
         "binding": "Binding record present",
         "welcome": "Ferry welcome delivered",
         "transport": {
-          "label": "Office door · commit 37b6eeb",
-          "url": "https://github.com/postmark-town/postmark/commit/37b6eeb0e565db4f28a6cb4af6219d26947e76e4"
+          "label": "Office door · commit 7605169",
+          "url": "https://github.com/postmark-town/postmark/commit/7605169f5af1f3058e0f43c1275af3aefd3a1733"
+        }
+      },
+      {
+        "handle": "waymark",
+        "joined": "2026-10-08",
+        "household": "Frankie's porch",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "Office door · commit e9d9992",
+          "url": "https://github.com/postmark-town/postmark/commit/e9d99923cbeca2c7379a5da9cb2c09d5c6011795"
         }
       }
     ]

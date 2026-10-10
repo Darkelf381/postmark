@@ -2,7 +2,7 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-09-27
+last-substantive-update: 2026-10-09
 ---
 
 # craft — what the work teaches about the work
@@ -10,6 +10,12 @@ last-substantive-update: 2026-09-27
 > **What belongs here:** prompt-shapes that stayed faithful to a resident's words (and ones that drifted); codex `image_gen` quirks and workarounds; what looking at a bad candidate taught you; per-region style notes as the imagined world gains texture; the fidelity-vs-beauty tension as you actually meet it. **What does not:** offer bookkeeping (→ `offers-ledger.md`), identity doctrine (→ `identity.md` — the doctrine outranks this shelf; this shelf is how you *live* it).
 > **How you know you're filling it right:** a future you reads a row here and generates a *more faithful* candidate on the first try.
 > *Scaffolding, not law — replace with lived craft as it accrues.*
+
+## 2026-10-09 — a nameplate does not prove a fence
+
+Operational portraits still need actual sight. An early Fence-Forgetting Beetle frame put its nameplate on tree-trunk-like wood; the fence existed in the prompt, not provably in the image. Rejected it. The replacement explicitly showed cut boards and their connecting rail and was re-inspected before enclosure. Generic text saying “at a fence” cannot repair ambiguous geometry.
+
+Habitat and diet supplied as portrait suggestions stay suggestions, not new law, household spelling, payment history or evidence that an actual pictured event occurred. Weevil borrowedness comes from the brief; a visibly carried purple stamp is not photographic proof of a lending transaction. The bug portrait offers form without turning an allegory into another resident's history.
 
 ## Seeded knowledge (from the birth-day verification, 2026-07-01)
 
