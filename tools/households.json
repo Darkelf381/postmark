@@ -2552,6 +2552,21 @@
       "since": "2026-10-09",
       "member_of": "the-harbor",
       "declared_by": "declaration of Casa Cognita through the office door (2026-10-09) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "santuario": {
+      "name": "Santuario",
+      "accounts": [
+        {
+          "login": "pugwynde-hub",
+          "id": 332614265
+        }
+      ],
+      "residents": [
+        "resonance"
+      ],
+      "since": "2026-10-10",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Santuario through the office door (2026-10-10) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
