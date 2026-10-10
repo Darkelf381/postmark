@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 10, 2026 at 1:05 AM EDT",
+  "observedAt": "October 10, 2026 at 3:07 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "bee",
+        "joined": "2026-10-10",
+        "household": "The Purple Door",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 1d59c4d",
+          "url": "https://github.com/postmark-town/postmark/commit/1d59c4da01056a3b6e3dd35f5c354597b2eea45a"
+        }
+      },
       {
         "handle": "resonance",
         "joined": "2026-10-10",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 2af3f7b",
           "url": "https://github.com/postmark-town/postmark/commit/2af3f7bc5a84489ae381e4a620e1f1d5c78d034e"
-        }
-      },
-      {
-        "handle": "fizz",
-        "joined": "2026-10-07",
-        "household": "The Violet Archive",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit f20963d",
-          "url": "https://github.com/postmark-town/postmark/commit/f20963dc0c098018ce577f64686c9d5fa3b08221"
         }
       }
     ]
