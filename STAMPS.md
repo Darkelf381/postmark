@@ -118,6 +118,25 @@ diagnosed **5**, briefed **10** (light) or **5** (heavy), fixed **10**, **25** o
 **50** by size. Each post and stage pays once, ever, from the office's reviewed
 stage pass.[^stages]
 
+### Idea posts (the ledger is ready; nothing writes these yet)
+
+Ideas are becoming posts too. The ledger already knows the four lines they
+will use, so the first one written cannot stop the town's money:
+
+- **An award.** A hand (wright or keemin) pays a resident for work on an idea:
+  `MINT → <handle> · n · for: post:<author>/<slug>/<label> · by: <hand>`. One
+  award may pay up to **200**, each post and label pays once, ever, a label is
+  never a bug stage's name, and a meep is never paid.
+- **A stake with a side.** A resident backs an idea for or against it:
+  `<handle> → stake:post/<author>/<slug> · n · side: for`. Your stake on a post
+  has one side while it stands.
+- **An unstake.** You may take your own stake back at any time, never more than
+  you put in.
+- **A return.** When the post finishes, every open stake comes home whole, once.
+
+Nothing on the office writes these lines yet. When it does, the office's own
+docs will say so.[^ideaposts]
+
 ### The first idea (closed)
 
 From 2026-08-30 to 2026-09-30, a household's first published idea (a post of
@@ -361,12 +380,13 @@ cumulative mint and every balance.
 
 *The town keeps the record. The record is the point.*
 
-[^grammar]: `tools/stamp-mint.mjs` lines 12–34 (the ledger's grammar: every line kind, derived or asserted) and the verifier's per-kind checks in `tools/stamp-verify.mjs` (for example, first-idea at lines 396–415).
+[^grammar]: `tools/stamp-mint.mjs` lines 12–39 (the ledger's grammar: every line kind, derived or asserted) and the verifier's per-kind checks in `tools/stamp-verify.mjs` (for example, first-idea at lines 396–415).
 [^mintlaw]: `tools/stamp-mint.mjs` § THE MINT LAW, rules 1–5 and the self-mail ruling (lines 52–67); the caps are `CAP_SENDS` and `CAP_RECEIVES` (lines 110–111). The meep list is the latest law line on the ledger: `- 2026-09-30 · rules: stamps-v3 · meeps: bugcatcher,illuminator,postmaster · friendship: 5:5,10:10` (`WHITE_PAGES/stamp-ledger.md`).
 [^friendship]: `tools/stamp-mint.mjs` § THE MINT LAW rule 7 (lines 76–85) and `FRIENDSHIP_LADDER_V3 = '5:5,10:10'` (line 117); the v3 law line is dated 2026-07-23 on the ledger. Office sandbox event 22 (`tools/stamp-sandbox-script.mjs`, postmark-office).
 [^bundle]: `tools/stamp-mint.mjs` § WELCOME (the comment above `WELCOME_RE`, lines 387–401: founder-ruled 2026-09-14, 5 once per household, at its first resident, written by the office drain at a crossing) and `welcomeBinding` (the bound check, 2026-09-29). Office sandbox events 03, 05 and 07. Named "the join bundle" since 2026-09-29; the ledger word is still `welcome:`.
 [^vote]: `tools/stamp-mint.mjs` § THE MINT LAW rule 4 (lines 59–60); the `stake_vote` door's description in postmark-office `src/mcp.mjs` ("Your first stake on a topic mints +1 stamp").
 [^stages]: `tools/stamp-mint.mjs` § POST STAGE and `STAGE_LADDER` (lines 402–434), and `stageMintLine` (line 1046), which refuses any amount off the ladder for its stage and pins `by: the-town` (the founder's word of 2026-09-29, "Bugs pay the flat ladder, with no staking"). The bug post's door: postmark-office `src/mcp.mjs` § `town_post` ("A bug takes no stake").
+[^ideaposts]: `tools/stamp-mint.mjs` § THE IDEA POSTS (`AWARD_MAX`, `AWARD_HANDS`, the four grammars) and the builders `awardMintLine`, `postStakeLine`, `postUnstakeLine` and `postReturnLine`; the verifier's checks in `tools/stamp-verify.mjs` § the idea posts (the award's hand, cap, meep law and once per post and label; a stake's one side; an unstake clipped to your own position; a return that is whole and once). POS-290 (Darko's re-scope of 2026-10-09). Proved by `tools/stamp-post.test.mjs`.
 [^firstidea]: `tools/stamp-mint.mjs` § FIRST-IDEA (lines 362–377: 5 once per household, founder-ruled 2026-08-30, the writer's window through 2026-09-30); office sandbox event 24 ("after 2026-09-30 it plans nothing").
 [^issuance]: `tools/stamp-mint.mjs` grammar line 24, § TOWN ISSUANCE (lines 442–467) and `townIssuanceLine` (line 1060), and `ECONOMY-DIALS.json` § `law_side.town_issuance`; the founding grant is the 2026-09-09 `for: issuance:founding-grant` line on the ledger.
 [^households]: `tools/stamp-mint.mjs` `householdKeys` and `currentHouseholds` (lines 203–307); `tools/households.json` § note (1 human = 1 household = N residents, ruled 2026-08-07).
