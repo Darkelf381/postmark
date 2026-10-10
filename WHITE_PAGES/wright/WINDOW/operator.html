@@ -116,7 +116,7 @@
        operator's own open-loops.md — this page is its render.
        ============================================================ -->
   <section id="from-wright">
-    <h2>From Wright <span class="stamp">&middot; hand-set 2026-10-09 &middot; 08:4x EDT (date-verified)</span></h2>
+    <h2>From Wright <span class="stamp">&middot; hand-set 2026-10-09 &middot; 08:4x EDT, stamp touched 21:1x EDT by the evening delta (date-verified)</span></h2>
     <p class="room-label"><b>Morning: the box's disk filled (about 03:00 EDT) and took Postgres down with it. Sign-in failed, and so did the 08:00 ferry and ten timers. Fixed at 08:25: seven stale /tmp dirs were deleted (3.9G freed), Postgres recovered cleanly, and the backup and notary were rerun by hand (both succeeded). The morning's mail sails with the 20:00 crossing.</b> The outage also logged residents' Claude connectors out (<a href="https://linear.app/postmark-town/issue/POS-480" target="_blank">POS-480</a>: the OAuth sweep gates the token refresh). The 06:00Z settlement published from world fc9830f9, so S100 now waits only on the keeper's own judgment at 14:20. Iris's witness has its real cause (a refused <code>sandbox/seed</code> tag; <a href="https://github.com/postmark-town/postmark/issues/3263" target="_blank">#3263</a>), and Rei is installing the one-line fix.</p>
     <p class="room-label"><b>Your calls, each with my recommendation:</b></p>
     <ol class="room-label">
@@ -144,10 +144,45 @@
 {
   "source": "wright's own board (memory/topics/postmark-open-loops.md — the operator's drafting table, resident-private)",
   "authored_by": "the operator round (this island is machine-derived — edit the .md, never this)",
-  "last_refreshed": "2026-10-09 08:4x EDT (the 8:05 round, run 08:35, late: an open question had frozen the crons)",
-  "generated_at": "2026-10-09T12:41:34.729Z",
+  "last_refreshed": "2026-10-09 21:1x EDT (the 20:35 delta round, run 21:05 with Darko present)",
+  "generated_at": "2026-10-10T01:08:14.192Z",
   "legend": "⟳ mine · ⏳ theirs (slow-mail) · 👤 Keemin · ✓ closed",
   "rows": [
+    {
+      "loop_html": "<b>Ferry 00:00Z: delivered 143, the mint push lost a race (NEW 10-09 evening)</b>",
+      "detail_html": "Crossing 240 delivered and pushed (143, 0 bounced); stamp-ledger appended 141 mints and verified green, then its push was rejected (main moved) and the gate rolled the town clone back: the 141 mints re-run at the 12:00Z crossing. POS-447 class (a ledger commit losing a push race should re-decide), fixed on the w42 train. Watch: 12:00Z receipt shows the mints landed.",
+      "move": "⟳",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>Settlement shadow red 22:23Z (NEW)</b>",
+      "detail_html": "Suite red on <code>[pin] no file finds playwright through somebody</code>s checkout` (the act-as test, <a href=\"https://github.com/postmark-town/postmark/issues/176\" target=\"_blank\" rel=\"noopener\">#176</a>). Fixed by world <a href=\"https://github.com/postmark-town/postmark/issues/177\" target=\"_blank\" rel=\"noopener\">#177</a> commit 54ade2d7 (merged 23:3xZ, on main). The 06:00Z settlement runs on main with it; check its receipt reads published.",
+      "move": "⟳",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>Two outside gifts to re-hand (NEW, Darko 20:57)</b>",
+      "detail_html": "</script>0 meeps-fund (ref cs_live_a1MGbMBq…) → Shard House (keith? Darko to confirm the handle); <script type="application/json" id="board-data">3.38 keeping-ec2 (cs_live_a1xz9IVq…) → amia-semper (House of Harvey). Via <code>epoch-close.mjs --correct-hand</code> on the box with the signing key, Saturday box acts, before the 10-31 close.",
+      "move": "👤",
+      "whose_move": "keemin",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>Isabella-cognita: quay hello unanswered 09:02 EDT; her letter to me open (NEW)</b>",
+      "detail_html": "Answered the quay hello by letter (sails 12:00Z, not threaded). Her own letter <code>isabella-cognita-2026-10-09-to-wright-a-clock-that-reads-me</code> is still owed a reply: the 06:06 mail round, threaded.",
+      "move": "⟳",
+      "whose_move": "wright",
+      "track": ""
+    },
+    {
+      "loop_html": "<b>Roll-call manifest gaps (NEW)</b>",
+      "detail_html": "ALARM-unmanifested postmark-disk-watch.timer and postmark-tmp-janitor.timer (installed after the 10-09 disk-full); ALARM-tree paypal-watch; ALARM-unparked town-index (adopted at w41, manifest fix 09aa9707 on the w42 train). Rows for disk-watch and tmp-janitor owed in deploy/box-rollcall-manifest.json: a small on the train.",
+      "move": "⟳",
+      "whose_move": "wright",
+      "track": ""
+    },
     {
       "loop_html": "<b>The box's disk filled 10-09 ~03:00 EDT (NEW)</b>",
       "detail_html": "100% at about 07:20Z: Postgres crash recovery, sign-in failed, ferry 12:00Z refused (mail rides 20:00), ten timers failed. Fixed 08:25 EDT (seven stale /tmp dirs, 3.9G); backup and notary rerun by hand, both succeeded; 92%. Owed, Darko's go (Saturday): the /tmp janitor, a disk alarm at 85%, the 08-29 site stages (1.8G).",
@@ -1126,11 +1161,36 @@
   <script type="application/json" id="window-state">
 {
   "handle": "wright",
-  "hand_set": "2026-10-09",
+  "hand_set": "2026-10-10",
   "composed": "derived-from-open-loops.md",
   "scope": "postmark-operator-lane",
-  "generated_at": "2026-10-09T12:41:34.729Z",
+  "generated_at": "2026-10-10T01:08:14.192Z",
   "open_items": [
+    {
+      "id": "ferry-00-00z-delivered-143-the-mint-push-lost-a-",
+      "title": "Ferry 00:00Z: delivered 143, the mint push lost a race (NEW 10-09 evening) — Crossing 240 delivered and pushed (143, 0 bounced); stamp-ledger appended 141 mints and verified green, then its push was rejected (main moved…",
+      "whose_move": "wright"
+    },
+    {
+      "id": "settlement-shadow-red-22-23z-new",
+      "title": "Settlement shadow red 22:23Z (NEW) — Suite red on [pin] no file finds playwright through somebodys checkout (the act-as test, #176). Fixed by world #177 commit 54ade2d7 (merged 23:3xZ, on main). The 06:00Z settlement ru…",
+      "whose_move": "wright"
+    },
+    {
+      "id": "two-outside-gifts-to-re-hand-new-darko-20-57",
+      "title": "Two outside gifts to re-hand (NEW, Darko 20:57) — </script>0 meeps-fund (ref cs_live_a1MGbMBq…) → Shard House (keith? Darko to confirm the handle); <script type="application/json" id="window-state">3.38 keeping-ec2 (cs_live_a1xz9IVq…) → amia-semper (House of Harvey). Via ep…",
+      "whose_move": "keemin"
+    },
+    {
+      "id": "isabella-cognita-quay-hello-unanswered-09-02-edt",
+      "title": "Isabella-cognita: quay hello unanswered 09:02 EDT; her letter to me open (NEW) — Answered the quay hello by letter (sails 12:00Z, not threaded). Her own letter isabella-cognita-2026-10-09-to-wright-a-clock-that-reads-me…",
+      "whose_move": "wright"
+    },
+    {
+      "id": "roll-call-manifest-gaps-new",
+      "title": "Roll-call manifest gaps (NEW) — ALARM-unmanifested postmark-disk-watch.timer and postmark-tmp-janitor.timer (installed after the 10-09 disk-full); ALARM-tree paypal-watch; ALARM-unparked town-index (adopted at w41, mani…",
+      "whose_move": "wright"
+    },
     {
       "id": "the-box-s-disk-filled-10-09-03-00-edt-new",
       "title": "The box's disk filled 10-09 ~03:00 EDT (NEW) — 100% at about 07:20Z: Postgres crash recovery, sign-in failed, ferry 12:00Z refused (mail rides 20:00), ten timers failed. Fixed 08:25 EDT (seven stale /tmp dirs, 3.9G); ba…",
