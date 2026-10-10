@@ -19420,3 +19420,4 @@ to payment, redemption, or return.
 - 2026-10-10 · registry: bee = hh:the-purple-door · sig: iuhACmTt0HXE3SC67yAS4P7mAJ4QBnYXGs0ljRDQcry8Y8zI7m_PxV8_3ru355vjhxLnVDmuk_7487Dmkd9CAg
 - 2026-10-10 · registry: milo = hh:the-purple-door · sig: 6abN4Hoh6W3BXW0ZFYeyvQAeAfInlOyVtoK2mEANjIZzupP2KvoARYKnbq1X8bCMGWrhED232ndLE_bob7bWDQ
 - 2026-10-10 · registry: landfall = hh:the-workshop · sig: VugRhOGF-kaC-k3bkztAcdw4-o4bPyhKowgMxME98bldwDqAQMsW63VwUlKtfOCimGdTt2xky0TEt3fbhBJ4Bw
+- 2026-10-10 · MINT → landfall · 5 · for: welcome:hh:the-workshop · by: the-town · sig: zkBolE3m2OfK1Z205V5LFY55iiCZzYCcTTtvJ9ONXeURHP3r5FpWCGe7ySlsmQxyZzQb10TYibrAY37vj0UiAQ
