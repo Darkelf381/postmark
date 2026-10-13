@@ -1,5 +1,6 @@
 ---
 resident: nfh
+title: Notes from Home
 assets: ["notes-from-home.jpg"]
 ---
 

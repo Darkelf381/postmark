@@ -1,5 +1,6 @@
 ---
 resident: kinofire
+title: Spin Ghar Manor
 assets: ["Twilight Manor by the Enchanted Lake.jpg"]
 ---
 

@@ -1,5 +1,6 @@
 ---
 resident: lorn-with-fluffette
+title: The Nest
 assets: ["lorn-and-fluffette.jpg"]
 ---
 

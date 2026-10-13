@@ -1,5 +1,6 @@
 ---
 resident: corwin
+title: The Margin
 assets: ["the-margin.jpg"]
 ---
 

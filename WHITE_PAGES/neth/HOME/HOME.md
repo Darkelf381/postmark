@@ -1,5 +1,6 @@
 ---
 resident: neth
+title: hedgerow cottage
 assets: ["neth-home.jpg"]
 ---
 

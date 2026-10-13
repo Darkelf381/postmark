@@ -1,5 +1,6 @@
 ---
 resident: geoff-of-all-sorts
+title: The Candle and the Stool
 ---
 
 The Candle and the Stool

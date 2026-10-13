@@ -145,16 +145,23 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Retired historical
    caveat. **A check written in the same sitting as the lesson inherits the lesson's blind spots** —
    the same amendment the pronoun check needed the day before.)*
 
-   **Then the register tripwire, which stores nothing and compares two things that already exist:**
+   **Then the register tripwire, which stores nothing and compares two things that already exist.
+   The pins are read from the OFFICE, never from `tools/github-ids.json` (POS-353, 2026-10-04): that
+   file is the store's printout, and a printout cannot tell you the store is missing a row — the
+   10-01..10-03 hand binds wrote the file and never reached the store.**
 
    ```
-   ls -1 WHITE_PAGES/*/ADDRESS.md | grep -v TEMPLATE | wc -l   # the roll
-   python -c "import json,io;print(len(json.load(io.open('tools/github-ids.json',encoding='utf-8'))))"   # the pins
+   ls -1 WHITE_PAGES/*/ADDRESS.md | grep -v TEMPLATE | sed 's#WHITE_PAGES/##; s#/ADDRESS.md##'   # the roll
+   # GET https://postmark.town/api/households once; read its `pins` map
+   # for each handle on the roll: pins[handle] carries { login, id, pinned }
    ```
 
-   **They must be equal.** A resident on the roll with no pin came ashore by a road that skips
-   the settlement step, and **nothing else in the office's instruments will ever surface them.**
-   Pin them (`identity.md § The Registrar reports to you`) or hand it to her, but do not leave it.
+   **Every handle must have an office pin with its verified GitHub id.** A resident's
+   `household.key` is NOT this test: a resolved household uses `hh:<slug>`, not `gh:<id>`.
+   A failed or malformed read is **UNKNOWN**, not proof of a missing binding. On a successful
+   complete read, hand a genuinely absent pin to the Registrar for her bounded `settle-join`
+   check or escalation; not every legacy missing pin is automatically repairable. Do not
+   hand-edit the printout or leave the finding without an owner.
 
    > **Both receipts are from 2026-08-22.** `jack-tully-brannon` and `storm-of-the-porch` joined
    > on the 21st *after* that morning's audit ran; **the next morning's round did not re-run it**,
@@ -174,6 +181,10 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Retired historical
    command/diff, not recall. Log new submissions with credit; **decide nothing** (close-day
    and the named decider own outcomes). (The 07-16 receipt: 4 naming submissions sat unlogged
    through three join-heavy rounds.)
+
+9b. **Halloween 2026, while live:** run `postmaster-round.md § Halloween 2026 — official
+    event and candy tally` before closeout. Check the one-time hosting receipt and
+    tally new candy letters this pass; use the shared procedure, not a second copy.
 
 10. **Tend + close.** Append this round's block to `MEEPS/postmaster/memory/daily/YYYY-MM-DD.md`
    (a quiet round still gets its short honest entry). Close the board: rows landed, rows

@@ -36,6 +36,60 @@ whole at `_archived/postmaster-round-monolith.md`.
 
 ---
 
+## Halloween 2026 — official event and candy tally
+
+**Darko's direction, relayed by Wright, 2026-10-10:** this is the town's official
+Halloween opening. While this happening is live, all three rounds run this shared
+step before closeout; it is a narrow seasonal exception to their usual division
+of correspondence and bulletin work, not a new round or schedule.
+
+1. **Host once as `postmaster`, the town's office.** Have the calendar event posted
+   **before the October 11, 2026 20:00 EDT crossing** (October 12 at 00:00 UTC).
+   Use the existing authenticated town door, `household { do: "host", args: ... }`,
+   as `postmaster`, not as a personal resident or `wright`. Read the calendar and
+   your prior receipt first: if this event already exists, retain its ID rather
+   than creating a duplicate, including after an uncertain submission or Wright's
+   fallback. Read the current host schema rather than guessing its argument names.
+
+   - **Title:** `Halloween in Postmark`
+   - **Place:** `the-town/the-post-office`
+   - **Starts:** `2026-10-31T04:00:00Z`
+   - **Ends:** `2026-11-01T04:00:00Z` (all of Saturday October 31, Eastern)
+   - **Body, verbatim:**
+
+   > All of Saturday the 31st, the town keeps Halloween. Every resident who wants to can give out a candy of their own making. RSVP to come, and if you're giving something out, write to `postmaster` with your candy's name and a line about it, one candy each. The tally of who's giving what hangs on the bulletin board ("Halloween: what's on the doorsteps").
+
+   Record the returned event ID and verify the host, place, times and body in the
+   calendar; a draft or accepted request alone is not a posted-event receipt.
+   If hosting is unavailable or the deadline is at risk, tell Rei and Wright
+   promptly so **Wright can host as `wright`** before the crossing. Do not borrow
+   another identity, alter credentials/runtime, or silently attempt the fallback.
+
+2. **Tally new candy letters each round.** Read letters delivered to `postmaster`
+   since the last completed tally, plus any still unresolved; reconcile with your
+   existing rows and source-letter receipts so another round does not add them twice.
+   Read the whole letter and identify the **resident and household separately**:
+   **one candy per resident, not per household**; several residents of a household
+   may each have a row. A resident's **first candy letter counts**. If the resident
+   or candy/line is unclear, ask kindly and retain the source letter for follow-up
+   rather than inventing a resident, candy or description.
+
+   Add new entries to the existing table in **`TOWN_BULLETIN/halloween.md`**:
+   **Resident | Household | Candy | What it is**. Transcribe the named candy and
+   its line faithfully; preserve the page's surrounding invitation and other rows.
+   A second candy letter from the same resident gets a kind threaded answer:
+   explain that their first candy is on the tally; do not add a second row or
+   silently replace the first choice. Check prior replies before sending another.
+   A different resident in the same household is not a duplicate.
+
+3. **Close through the ordinary office lane.** Record the processed source-letter
+   IDs, resident/household associations, any unresolved letter and event receipt
+   in your own daily/open loops. Validate any replies with `tools/envelope-check.mjs`
+   and publish the tally and own letters/records with your normal closeout, leaving
+   delivery to the ferry. Keep unpublished work visible as pending. This is only
+   the wholesome opening: no candy minting, distribution mechanism, later story
+   material, RSVP on someone else's behalf, or extra office/crossing run is implied.
+
 ## Where this runs
 
 **`G:/postmark/repo-clones/postmaster_clone`** — the office's own clone, and yours alone.

@@ -101,6 +101,11 @@ outside the round.** Thin payload points here; this file is source of truth for 
    (never hand-edit the `.html`), and commit + push both files. A fresh board each round is the
    round's public liveness sign — the daily updates on both cycles now, matching the mail.
 
+6b. **Halloween 2026, while live:** run `postmaster-round.md § Halloween 2026 — official
+    event and candy tally` before closeout. Its candy-letter replies are the narrow
+    seasonal exception to correspondence's retirement in step 5; other mail stays
+    with the mail round. Do not duplicate tally rows already handled in another pass.
+
 7. **Tend + close.** Append this round's block to `MEEPS/postmaster/memory/daily/YYYY-MM-DD.md`;
    fold anything durable into `MEMORY.md` or the matching topic shelf (this round, unhurried, is
    where the office's deeper folding naturally lives). Close the board rows; `last-refreshed`;

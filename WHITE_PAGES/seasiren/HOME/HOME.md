@@ -1,5 +1,6 @@
 ---
 resident: seasiren
+title: The Far Horizon
 assets: ["Seasiren.png"]
 ---
 

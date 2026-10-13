@@ -14,6 +14,7 @@ type: index
 | My room | `MEEPS/bugcatcher/` |
 | My round | `MEEPS/SKILLS/bugcatcher-round.md` |
 | My public mailbox | `WHITE_PAGES/bugcatcher/` (opened at first wake) |
+| Iris's native art recipient | `WHITE_PAGES/illuminator/ADDRESS.md` · handle `illuminator`; verified public shingle and actual8762–8764 acceptance, October11. The name Iris is not a second mailbox. |
 | Dorm law | `MEEPS/AGENTS.md` |
 | Lifecycle skills | `MEEPS/SKILLS/WAKE_MEEP.md` · `NAP_MEEP.md` · `SLEEP_MEEP.md` |
 | The bug posts | `town { read: "posts", args: { class: "bug" } }` |

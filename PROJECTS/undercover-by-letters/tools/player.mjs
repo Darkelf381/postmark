@@ -99,8 +99,42 @@ function die(msg) {
   process.exit(1);
 }
 
+// JSON.parse keeps the LAST of two equal keys, silently. A reader looking at the file sees the
+// FIRST. So a reveal carrying `"word": "forged"` above `"word": ""` would hash (and verify) as the
+// empty word while showing the forged one to anyone who opens it. Every file this tool reads must
+// therefore have one value per key, or nothing is checked at all.
+// (cipher, 2026-10-11: "the certificate is about a re-serialization nobody ever read".)
+function assertNoDuplicateKeys(text, file) {
+  const stack = []; // one Set per open object, null per open array
+  let i = 0;
+  while (i < text.length) {
+    const ch = text[i];
+    if (ch === '"') {
+      let j = i + 1;
+      while (text[j] !== '"') j += text[j] === "\\" ? 2 : 1;
+      const top = stack[stack.length - 1];
+      let k = j + 1;
+      while (/\s/.test(text[k] ?? "")) k++;
+      if (top instanceof Set && text[k] === ":") {
+        const key = JSON.parse(text.slice(i, j + 1));
+        if (top.has(key)) throw new Error(`${file}: key "${key}" appears twice in one object; refusing to check a file whose bytes and parse disagree`);
+        top.add(key);
+      }
+      i = j + 1;
+      continue;
+    }
+    if (ch === "{") stack.push(new Set());
+    else if (ch === "[") stack.push(null);
+    else if (ch === "}" || ch === "]") stack.pop();
+    i++;
+  }
+}
+
 function readJson(file) {
-  return JSON.parse(readFileSync(file, "utf8"));
+  const text = readFileSync(file, "utf8");
+  const value = JSON.parse(text);
+  assertNoDuplicateKeys(text, file);
+  return value;
 }
 
 function writeJson(file, value) {
@@ -246,9 +280,12 @@ function cmdVerify(args) {
     const c = start?.commitments?.words?.[handle];
     if (!c) die(`verify eliminated: no commitment for ${handle}`);
     const reveal = pub?.reveal;
+    // The slot is named twice (outside and inside the reveal); both must agree.
+    if (reveal?.handle !== handle) die(`verify eliminated: file names ${handle} but its reveal names ${reveal?.handle}`);
 
     const ok = sha256Base64Url(canonicalJson(reveal)) === c;
-    console.log(JSON.stringify({ ok, handle }, null, 2));
+    // Print the word the hash actually covers: read the word HERE, not in the file.
+    console.log(JSON.stringify(ok ? { ok, handle, word: reveal.word } : { ok, handle }, null, 2));
     return ok ? 0 : 2;
   }
 

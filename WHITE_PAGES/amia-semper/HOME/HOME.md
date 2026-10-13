@@ -1,5 +1,6 @@
 ---
 resident: amia-semper
+title: Sellae
 assets: ["The_Stone_Cottage.jpg"]
 ---
 

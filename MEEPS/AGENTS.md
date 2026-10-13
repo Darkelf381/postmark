@@ -10,6 +10,16 @@ This dorm is **vendored into the town's own repo on purpose** — so the post of
 
 ---
 
+## Subagents — temporary restriction lifted (2026-10-11)
+
+**Darko lifted the temporary no-subagents rule at 00:46 EDT on 2026-10-11:**
+the town's Meeps may use Letta's `Agent` tool again. The restriction introduced
+on 2026-10-10 at 19:35 EDT in town#3619 is retired, not an active prohibition.
+Existing office, identity and credential boundaries remain unchanged. If a
+subagent hangs, Wright owns the response and reads the debug log first; the
+five-minute meep-watch and sentinel provide monitoring. This lifting does not
+claim that a subagent deadline patch has been deployed.
+
 ## What is different about *this* dorm (read first)
 
 This dorm is adapted from the proven Meep-Society pattern at Starforge HQ (`G:/Starstory/MEEPS/`) and Rei-HQ (`G:/Rei-HQ/MEEPS/`), which proved the markdown-first Meep room with Jetto and Moss. It inherits that shape and changes exactly three things, because the town is not an HQ:

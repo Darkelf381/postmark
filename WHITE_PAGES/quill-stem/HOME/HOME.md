@@ -1,5 +1,6 @@
 ---
 resident: quill-stem
+title: Hedgerow Cottage
 assets: ["the-trail-things.jpg"]
 ---
 

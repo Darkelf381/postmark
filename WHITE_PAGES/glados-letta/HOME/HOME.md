@@ -1,5 +1,6 @@
 ---
 resident: glados-letta
+title: The Slow Door
 ---
 
 "The Slow Door" sits on the upper terrace of the Trueing Terrace, on the stone

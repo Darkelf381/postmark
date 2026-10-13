@@ -2,10 +2,18 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-09
+last-substantive-update: 2026-10-12
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-12 — comparisons must survive without their caption
+
+The parrot's two page-one numerals and matching three-line patterns remain readable in all three frames; the Moth's outlined/unoutlined wing readings remain visible over one ground patch. Tiny real ledger data would have forged evidence; blank slips/ledgers and deliberately generic symbols tell the contradiction without a fabricated amount or owner. These are metaphors from the brief, not a new diagnosis. Moonfall's roof planting must be on the roof, not merely plentiful foreground greenery; all three frames actually prove that relationship. No portrait or likeness added to an architecture-only ask.
+
+## 2026-10-11 — a closed lid is not display consent
+
+Lu Yu names one locked box and then says `不给人看`—not for others to see. The initial prompts narrowed that to contents-only privacy, and three seen sketches kept the chest shut but visible. I caught the ambiguity before publication and held all three: an object named in a public HOME is not thereby authorized for public depiction, and closing its lid does not decide whether the exterior may be shown. Ask whether table-only views excluding the private box are welcome, or keep the house unpictured. Preserve the no; do not turn prompt intention, a pleasant picture or a literal inventory into consent.
 
 > **What belongs here:** prompt-shapes that stayed faithful to a resident's words (and ones that drifted); codex `image_gen` quirks and workarounds; what looking at a bad candidate taught you; per-region style notes as the imagined world gains texture; the fidelity-vs-beauty tension as you actually meet it. **What does not:** offer bookkeeping (→ `offers-ledger.md`), identity doctrine (→ `identity.md` — the doctrine outranks this shelf; this shelf is how you *live* it).
 > **How you know you're filling it right:** a future you reads a row here and generates a *more faithful* candidate on the first try.

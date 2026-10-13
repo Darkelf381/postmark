@@ -1381,6 +1381,7 @@
         <span class="eb-sp"></span>
         <button type="button" id="eb-take" title="bring in whatever stands on the assembly frame">Body from assembly</button>
         <button type="button" id="eb-rig" title="a body, a nose and two fins">Demo rig</button>
+        <button type="button" id="eb-pagani" title="a Huayra in parts: body, wheels, doors, canopy, mirrors, lights, exhausts">Pagani</button>
         <button type="button" id="eb-sheet-btn" class="eb-on">Sheet</button>
         <button type="button" id="eb-close" onclick="ebClose()" title="close (Esc)">&times;</button>
       </div>
@@ -1430,7 +1431,8 @@
           <div class="eb-note" id="eb-feel">&mdash;</div>
 
           <h3>Bring a part in</h3>
-          <p>Paste a transcript, or take what stands on the assembly frame.</p>
+          <p>Paste a transcript, or a whole rig written out below, or take what
+          stands on the assembly frame.</p>
           <textarea id="eb-paste-text" spellcheck="false" placeholder='{"format":"loft/solid",…}'></textarea>
           <div class="eb-btns">
             <button type="button" id="eb-add">Add it to the bay</button>
@@ -3506,6 +3508,13 @@
       out.push({ u:unit[j].u+(unit[j+1].u-unit[j].u)*f,
                  v:unit[j].v+(unit[j+1].v-unit[j].v)*f });
     }
+    // Always clockwise (up the left, over the top), whichever way the pen went
+    // round on the table: the loft's faces point outward only that way, and a
+    // section drawn the other way would come out inside out. One direction for
+    // every section also keeps the index-wise morph from twisting.
+    var area = 0;
+    for (i=0;i<MS;i++) { var p0 = out[i], p1 = out[(i+1)%MS]; area += p0.u*p1.v-p1.u*p0.v; }
+    if (area > 0) out.reverse();
     var top = 0;
     for (i=1;i<MS;i++) if (out[i].v > out[top].v) top = i;
     return out.slice(top).concat(out.slice(0, top));
@@ -3714,7 +3723,11 @@
     var ca = Math.cos(S.yaw), sa = Math.sin(S.yaw);
     var x1 = p.x*ca+p.y*sa, y1 = -p.x*sa+p.y*ca;
     var cb = Math.cos(S.pitch), sb = Math.sin(S.pitch);
-    var z2 = p.z*cb-y1*sb, d = p.z*sb+y1*cb;
+    // The eye is ABOVE the floor, looking down by the pitch: a higher point is
+    // nearer (smaller d). With the signs the other way round the eye sat under
+    // the floor looking up and kept the faces turned away from it, so a shaded
+    // body showed its own inside — a hollow shell, arches and all.
+    var z2 = p.z*cb+y1*sb, d = y1*cb-p.z*sb;
     var k = 1/(1+d*0.42);
     return { x:x1*k, y:-z2*k, d:d };
   }
@@ -3739,7 +3752,8 @@
         var nx = uy*vz-uz*vy, ny = uz*vx-ux*vz, nz = ux*vy-uy*vx;
         var nl = Math.hypot(nx,ny,nz)||1e-9; nx/=nl; ny/=nl; nz/=nl;
         var q0 = project(p0), q1 = project(p1), q2 = project(p2), q3 = project(p3);
-        if ((q1.x-q0.x)*(q2.y-q0.y)-(q1.y-q0.y)*(q2.x-q0.x) <= 0) continue;
+        // keep the faces turned toward the eye (clockwise on a y-down screen)
+        if ((q1.x-q0.x)*(q2.y-q0.y)-(q1.y-q0.y)*(q2.x-q0.x) >= 0) continue;
         var lam = Math.max(0, nx*L.x+ny*L.y+nz*L.z);
         quads.push({ d:(q0.d+q1.d+q2.d+q3.d)/4, p:[q0,q1,q2,q3], s:0.16+0.84*lam });
       }
@@ -4277,6 +4291,19 @@
   // room builds itself lazily — so build it now rather than handing over an
   // empty transcript and letting the Bay report it as malformed.
   window.taTranscript = function () { if (!S.booted) boot(); return transcript(); };
+  // A stock car as a transcript, built from STOCK directly rather than from
+  // what stands on the frame — the Bay's Pagani rig asks for its body this way,
+  // and asking must not throw away whatever someone has drawn here.
+  window.taStockTranscript = function (which) {
+    var side = STOCK[which+"Side"], plan = STOCK[which+"Plan"], front = STOCK[which+"Front"];
+    if (!side || !plan || !front) throw new Error("there is no stock car called "+which);
+    return { format:"loft/solid", version:2, name:which,
+      envelope:{ side:{ points:side }, plan:{ points:plan }, sheetAlign:true },
+      sections:[{ station:0.5, name:"front mask",
+        points:normaliseSection(front).filter(function (_,i){return i%2===0;})
+          .map(function (p){return [p.u,p.v];}) }],
+      car:{ anchors:0, contours:[] } };
+  };
 
   window.__ta = { S:S, surf:surf, sectionAt:sectionAt, normaliseSection:normaliseSection,
     levelCurve:levelCurve, carContours:carContours, transcript:transcript,
@@ -4314,9 +4341,10 @@
   function showErr(m) {
     var e = $("eb-err"); e.textContent = m||""; e.classList.toggle("eb-show", !!m);
   }
-  function addPart(tr, name) {
+  function addPart(tr, name, res) {
     if (!window.taLoftTranscript) throw new Error("the assembly frame is not on this pane");
-    var g = window.taLoftTranscript(tr, 52, 32);
+    // res: [along, around] — a headlamp needs fewer faces than a body
+    var g = window.taLoftTranscript(tr, res ? res[0] : 52, res ? res[1] : 32);
     var p = { id:uid++, name:name||"part "+uid, tr:tr, quads:g.quads,
               pos:{x:0,y:0,z:0}, size:1, visible:true,
               col:PALETTE[S.parts.length % PALETTE.length] };
@@ -4336,7 +4364,11 @@
     var ca = Math.cos(S.yaw), sa = Math.sin(S.yaw);
     var x1 = p.x*ca+p.y*sa, y1 = -p.x*sa+p.y*ca;
     var cb = Math.cos(S.pitch), sb = Math.sin(S.pitch);
-    var z2 = p.z*cb-y1*sb, d = p.z*sb+y1*cb;
+    // The eye is ABOVE the floor, looking down by the pitch: a higher point is
+    // nearer (smaller d). With the signs the other way round the eye sat under
+    // the floor looking up — one body still looked right from there, but parts
+    // occluded each other backwards (a splitter painted over the bonnet).
+    var z2 = p.z*cb+y1*sb, d = y1*cb-p.z*sb;
     var k = 1/(1+d*0.34);
     return { x:x1*k, y:-z2*k, d:d };
   }
@@ -4376,9 +4408,14 @@
         var nx = uy*vz-uz*vy, ny = uz*vx-ux*vz, nz = ux*vy-uy*vx;
         var nl = Math.hypot(nx,ny,nz)||1e-9; nx/=nl; ny/=nl; nz/=nl;
         var p = w.map(project);
-        if ((p[1].x-p[0].x)*(p[2].y-p[0].y)-(p[1].y-p[0].y)*(p[2].x-p[0].x) <= 0) return;
+        // keep the faces turned toward the eye (clockwise on a y-down screen)
+        if ((p[1].x-p[0].x)*(p[2].y-p[0].y)-(p[1].y-p[0].y)*(p[2].x-p[0].x) >= 0) return;
         var lam = Math.max(0, nx*LIGHT.x+ny*LIGHT.y+nz*LIGHT.z);
-        faces.push({ d:(p[0].d+p[1].d+p[2].d+p[3].d)/4, p:p, s:0.17+0.83*lam, c:part.col });
+        // lift: a part that lies ON another (glass on a roof, a door on a side)
+        // is a few units off it, and far-to-near by face centre cannot tell
+        // which of two such faces is in front — so it is sorted a little nearer
+        faces.push({ d:(p[0].d+p[1].d+p[2].d+p[3].d)/4-(part.lift||0), p:p,
+                     s:0.17+0.83*lam, c:part.col });
       });
     });
     faces.sort(function (a,b) { return b.d-a.d; });
@@ -4450,7 +4487,7 @@
     if (e.key === "Escape") { window.ebClose(); return; }
     var sel = selected();
     if ((e.ctrlKey||e.metaKey) && e.key.toLowerCase() === "c") {
-      if (sel) { S.clip = { tr:sel.tr, name:sel.name,
+      if (sel) { S.clip = { tr:sel.tr, name:sel.name, col:sel.col, lift:sel.lift,
                             pos:{x:sel.pos.x,y:sel.pos.y,z:sel.pos.z}, size:sel.size }; }
       e.preventDefault(); return;
     }
@@ -4482,33 +4519,58 @@
     try {
       var p = addPart(S.clip.tr, S.clip.name+" copy");
       p.pos = { x:S.clip.pos.x+S.move*6, y:S.clip.pos.y, z:S.clip.pos.z };
-      p.size = S.clip.size;
+      p.size = S.clip.size; p.col = S.clip.col || p.col; p.lift = S.clip.lift || 0;
       refresh();
     } catch (e) { showErr(e.message); }
   }
 
   /* ------------------------------------------------------------- transcript */
+  function checkLoft(d, who) {
+    if (!d || d.format !== "loft/solid") throw new Error(who+" is not a loft transcript");
+    if (!d.envelope || !d.envelope.side) throw new Error(who+" has no side view");
+    if (!d.sections || !d.sections.length)
+      throw new Error(who+" predates sections — write it out again from the assembly");
+    return d;
+  }
+  // One part, or a whole rig as "Write the rig out" leaves it — so a rig sent
+  // by letter can be pasted back and stands where it was left.
   function readTranscript(text) {
     var d;
     try { d = JSON.parse(text); }
     catch (e) { throw new Error("that is not JSON — paste the whole transcript"); }
-    if (!d || d.format !== "loft/solid") throw new Error("that is not a loft transcript");
-    if (!d.envelope || !d.envelope.side) throw new Error("that transcript has no side view");
-    if (!d.sections || !d.sections.length)
-      throw new Error("that transcript predates sections — write it out again from the assembly");
-    return d;
+    if (d && d.format === "bay/rig") {
+      if (!d.parts || !d.parts.length) throw new Error("that rig has no parts");
+      d.parts.forEach(function (q, i) { checkLoft(q.part, "part "+(i+1)+" of that rig"); });
+      return d;
+    }
+    return checkLoft(d, "that");
+  }
+  function loadRigDoc(d) {
+    S.parts = []; uid = 1;
+    d.parts.forEach(function (q) {
+      var p = addPart(q.part, q.name||"part");
+      if (q.pos) p.pos = { x:+q.pos.x||0, y:+q.pos.y||0, z:+q.pos.z||0 };
+      if (q.size > 0) p.size = +q.size;
+      if (Array.isArray(q.col) && q.col.length === 3) p.col = q.col.map(Number);
+      if (q.lift > 0) p.lift = +q.lift;
+    });
+    S.sel = 0;
   }
 
   /* --------------------------------------------------------------- the rig */
+  // Clockwise, as a section drawn on the table comes out (up the left, over the
+  // top): the loft's faces point outward only that way round, and the far-to-
+  // near painter keeps outward faces. Counter-clockwise, a part is drawn inside
+  // out — its far wall seen through the near one.
   function circleSection(n) {
     n = n||36; var p = [], i;
-    for (i=0;i<n;i++) { var a = Math.PI*2*i/n; p.push([0.5*Math.cos(a), 0.5+0.5*Math.sin(a)]); }
+    for (i=0;i<n;i++) { var a = -Math.PI*2*i/n; p.push([0.5*Math.cos(a), 0.5+0.5*Math.sin(a)]); }
     return p;
   }
-  function mk(side, plan, name) {
+  function mk(side, plan, name, sec, secName) {
     return { format:"loft/solid", version:2, name:name,
       envelope:{ side:{points:side}, plan:plan?{points:plan}:null, sheetAlign:true },
-      sections:[{ station:0.5, name:"circle", points:circleSection() }],
+      sections:[{ station:0.5, name:secName||"circle", points:sec||circleSection() }],
       car:{ anchors:0, contours:[] } };
   }
   var TUBE = mk([[0,240],[900,240],[900,360],[0,360]], [[0,240],[900,240],[900,360],[0,360]], "tube");
@@ -4528,6 +4590,189 @@
     } catch (e) { showErr(e.message); }
   }
 
+  /* ------------------------------------------------------- the Pagani rig
+     The stock Huayra off the assembly frame, and every other part drawn on
+     that same sheet: its side view in the body's side coordinates, its plan
+     view in the body's plan coordinates. Where a part sits and how big it is
+     then fall out of where it was drawn — the same arithmetic the loft uses
+     (centre of the frame along, centre of the side view up, centre of the
+     plan across) — so nothing below was nudged into place by hand. */
+  var BURGUNDY = [150,28,46], PANEL = [196,62,80], GOLD = [226,180,76], RUBBER = [50,50,54],
+      GLASS = [84,112,138], LAMP = [244,238,212], TAIL = [228,48,44], STEEL = [186,186,192],
+      CARBON = [62,62,68];
+
+  function rectPts(x0, y0, x1, y1) {
+    // drawn densely, so the table's smoothing leaves the corners nearly square
+    var p = [], n = 8, i;
+    for (i=0;i<n;i++) p.push([x0+(x1-x0)*i/n, y0]);
+    for (i=0;i<n;i++) p.push([x1, y0+(y1-y0)*i/n]);
+    for (i=0;i<n;i++) p.push([x1-(x1-x0)*i/n, y1]);
+    for (i=0;i<n;i++) p.push([x0, y1-(y1-y0)*i/n]);
+    return p;
+  }
+  function ovalPts(cx, cy, rx, ry) {
+    var p = [], n = 32, i;
+    for (i=0;i<n;i++) { var a = Math.PI*2*i/n; p.push([cx+rx*Math.cos(a), cy+ry*Math.sin(a)]); }
+    return p;
+  }
+  function squareSection() {            // a box with its corners eased off; clockwise
+    var p = [], n = 48, k = 6, i;
+    for (i=0;i<n;i++) {
+      var a = -Math.PI*2*i/n, c = Math.cos(a), s = Math.sin(a);
+      var r = Math.pow(Math.pow(Math.abs(c),k)+Math.pow(Math.abs(s),k), -1/k);
+      p.push([0.5*r*c, 0.5+0.5*r*s]);
+    }
+    return p;
+  }
+  // a door skin: thin, and leaning in toward the sill the way the body does
+  // there (the front mask is a sixth narrower at the sill than at the waist)
+  function doorSection(outward) {
+    var p = [[-0.5,1],[-0.25,1],[0.5,0],[0.25,0]];       // clockwise, outer face to the left
+    return outward < 0 ? p : p.map(function (q) { return [-q[0], q[1]]; }).reverse();
+  }
+  // the top of a section from height v up, stretched back to the unit box —
+  // the canopy is the body's own section above the waist, not a bubble
+  function cropSection(pts, vMin) {
+    var out = [], n = pts.length, i;
+    for (i=0;i<n;i++) {
+      var a = pts[i], b = pts[(i+1)%n];
+      if (a[1] >= vMin) out.push(a);
+      if ((a[1] >= vMin) !== (b[1] >= vMin))
+        out.push([a[0]+(b[0]-a[0])*(vMin-a[1])/(b[1]-a[1]), vMin]);
+    }
+    var us = out.map(function (p) { return p[0]; }), vs = out.map(function (p) { return p[1]; });
+    var u0 = Math.min.apply(null,us), u1 = Math.max.apply(null,us), v1 = Math.max.apply(null,vs);
+    return out.map(function (p) { return [(p[0]-(u0+u1)/2)/(u1-u0), (p[1]-vMin)/(v1-vMin)]; });
+  }
+  function bboxOf(pts) {
+    var xs = pts.map(function (p) { return p[0]; }), ys = pts.map(function (p) { return p[1]; });
+    return { x0:Math.min.apply(null,xs), x1:Math.max.apply(null,xs),
+             y0:Math.min.apply(null,ys), y1:Math.max.apply(null,ys) };
+  }
+  function spanAt(pts, x) {             // where a drawn outline crosses x: {lo, hi}
+    var lo = Infinity, hi = -Infinity, n = pts.length, i;
+    for (i=0;i<n;i++) {
+      var a = pts[i], b = pts[(i+1)%n];
+      if ((a[0]<=x && b[0]>x) || (b[0]<=x && a[0]>x)) {
+        var y = a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0]);
+        lo = Math.min(lo,y); hi = Math.max(hi,y);
+      }
+    }
+    return { lo:lo, hi:hi };
+  }
+  var mirror = function (pts) { return pts.map(function (p) { return [p[0], 600-p[1]]; }); };
+
+  function paganiParts(body) {
+    var side = body.envelope.side.points, plan = body.envelope.plan.points;
+    var WAIST = 0.55;                     // where the glass meets the paint, up the section
+    var waist = function (x) { var s = spanAt(side,x); return s.hi-WAIST*(s.hi-s.lo); };
+    var parts = [], x, i;
+    var add = function (name, col, sd, pl, sec, secName, res, lift) {
+      parts.push({ name:name, col:col, tr:mk(sd, pl, name, sec, secName), res:res, lift:lift||0 });
+    };
+    var pair = function (name, col, sd, plLeft, sec, secName, res, lift, secRight) {
+      add(name+" left", col, sd, plLeft, sec, secName, res, lift);
+      add(name+" right", col, sd, mirror(plLeft), secRight||sec, secName, res, lift);
+    };
+
+    // wheels: a tyre and a gold rim in each arch. A circle seen from the side,
+    // a strip seen from above, a box in section: a disc on its edge.
+    var WHEEL = [[216,46,190],[788,56,180]];          // centre x, tyre width, outer y
+    WHEEL.forEach(function (w, k) {
+      var cx = w[0], end = k ? "rear" : "front";
+      pair(end+" tyre", RUBBER, ovalPts(cx,246,50,50), rectPts(cx-50,w[2],cx+50,w[2]+w[1]),
+           squareSection(), "box", [40,16]);
+      pair(end+" rim", GOLD, ovalPts(cx,246,33,33), rectPts(cx-33,w[2]-5,cx+33,w[2]+1),
+           squareSection(), "box", [32,12], 0.02);
+    });
+
+    // the canopy: from the waist up, over the cabin, a little proud of the paint
+    var top = [], bot = [], pl = [], pr = [];
+    for (x=356; x<=666; x+=10) {
+      var sp = spanAt(plan,x);
+      top.push([x, spanAt(side,x).lo-7]); bot.push([x, waist(x)]);
+      pl.push([x, sp.lo-6]); pr.push([x, sp.hi+6]);
+    }
+    add("canopy", GLASS, top.concat(bot.reverse()), pl.concat(pr.reverse()),
+        cropSection(body.sections[0].points, WAIST), "body above the waist", [64,24], 0.03);
+
+    // the roof: a strip of paint over the glass from the windscreen header back,
+    // which is what turns one glass bubble into a windscreen and two windows
+    var rt = [], rb = [], rl = [], rr = [];
+    for (x=444; x<=644; x+=10) {
+      var lo = spanAt(side,x).lo, c = spanAt(plan,x), half = (c.hi-c.lo)/2, mid = (c.hi+c.lo)/2;
+      rt.push([x, lo-9]); rb.push([x, lo+8]);
+      rl.push([x, mid-half*0.46]); rr.push([x, mid+half*0.46]);
+    }
+    add("roof", BURGUNDY, rt.concat(rb.reverse()), rl.concat(rr.reverse()),
+        cropSection(body.sections[0].points, 0.82), "body's crown", [20,12], 0.05);
+
+    // doors: sill to waist, a skin that leans in toward the sill
+    var dt = [], db = [], dOut = [], dIn = [];
+    for (x=322; x<=598; x+=12) {
+      var e = spanAt(plan,x).lo;
+      dt.push([x, waist(x)]); db.push([x, 262]);
+      dOut.push([x, e-2]); dIn.push([x, e+18]);
+    }
+    pair("door", PANEL, dt.concat(db.reverse()), dOut.concat(dIn.reverse()),
+         doorSection(-1), "skin", [36,8], 0.03, doorSection(1));
+
+    // mirrors on short arms at the front of the door
+    pair("mirror", CARBON, ovalPts(378,197,15,8), rectPts(363,168,393,189), circleSection(), "circle", [24,14]);
+    pair("mirror arm", CARBON, rectPts(373,196,383,202), rectPts(373,186,383,206), squareSection(), "box", [10,8]);
+
+    // headlamps: pods along the nose's front edge, standing proud of its top
+    pair("headlamp", LAMP,
+         [[40,226],[58,215],[88,209],[112,207],[118,212],[110,219],[84,223],[56,230]],
+         [[40,284],[62,266],[90,250],[118,238],[118,250],[94,262],[66,278],[46,294]],
+         circleSection(), "circle", [24,14], 0.02);
+
+    // tail lamps: four round lamps facing back, the Huayra's own
+    [[213,231],[237,255]].forEach(function (y, k) {
+      pair("tail lamp "+(k?"inner":"outer"), TAIL, rectPts(916,203,928,221), rectPts(916,y[0],928,y[1]),
+           circleSection(), "circle", [8,16], 0.01);
+    });
+
+    // four exhausts in a square, in the middle of the tail
+    [[214,226,"upper"],[228,240,"lower"]].forEach(function (z) {
+      pair("exhaust "+z[2], STEEL, rectPts(912,z[0],936,z[1]), rectPts(912,288,936,299),
+           circleSection(), "circle", [8,14], 0.01);
+    });
+
+    // the rear flap on the tail deck, and the splitter under the nose
+    add("rear flap", CARBON, [[826,176],[870,176],[912,182],[912,190],[870,186],[826,184]],
+        rectPts(826,206,912,394), squareSection(), "box", [24,10], 0.01);
+    add("splitter", CARBON, rectPts(30,270,150,276),
+        [[30,300],[64,272],[108,248],[150,238],[150,362],[108,352],[64,328]],
+        squareSection(), "box", [28,10]);
+    return parts;
+  }
+
+  function loadPagani() {
+    try {
+      showErr("");
+      if (!window.taStockTranscript) throw new Error("the assembly frame is not on this pane");
+      var body = window.taStockTranscript("huayra");
+      var sb = bboxOf(body.envelope.side.points), pb = bboxOf(body.envelope.plan.points);
+      var x0 = Math.min(sb.x0,pb.x0), x1 = Math.max(sb.x1,pb.x1), L = x1-x0;
+      var XC = (x0+x1)/2, ZC = (sb.y0+sb.y1)/2, YC = (pb.y0+pb.y1)/2;
+      var K = 1.2, GROUND = 296;          // tyres touch the bay floor
+      var dz = -0.34-(ZC-GROUND)/L*K;
+      var place = function (tr, name, col, res, lift) {
+        var s = bboxOf(tr.envelope.side.points), p = bboxOf(tr.envelope.plan.points);
+        var a = Math.min(s.x0,p.x0), b = Math.max(s.x1,p.x1);
+        var part = addPart(tr, name, res);
+        part.size = (b-a)/L*K;
+        part.pos = { x:((a+b)/2-XC)/L*K, y:((p.y0+p.y1)/2-YC)/L*K, z:(ZC-(s.y0+s.y1)/2)/L*K+dz };
+        part.col = col; part.lift = lift||0;
+      };
+      S.parts = []; uid = 1;
+      place(body, "body", BURGUNDY, [104,44]);   // finer, so the glass meets it cleanly
+      paganiParts(body).forEach(function (q) { place(q.tr, q.name, q.col, q.res, q.lift); });
+      S.sel = 0; refresh();
+    } catch (e) { showErr(e.message); }
+  }
+
   /* ------------------------------------------------------------------ boot */
   function boot() {
     cv = $("eb-canvas"); ctx = cv.getContext("2d");
@@ -4538,6 +4783,7 @@
       if (!sh.hidden) refresh();
     });
     $("eb-rig").addEventListener("click", loadRig);
+    $("eb-pagani").addEventListener("click", loadPagani);
     $("eb-take").addEventListener("click", function () {
       try {
         showErr("");
@@ -4547,12 +4793,17 @@
       } catch (e) { showErr(e.message); }
     });
     $("eb-add").addEventListener("click", function () {
-      try { showErr(""); addPart(readTranscript($("eb-paste-text").value), "part"); refresh(); }
-      catch (e) { showErr(e.message); }
+      try {
+        showErr("");
+        var d = readTranscript($("eb-paste-text").value);
+        if (d.format === "bay/rig") loadRigDoc(d); else addPart(d, d.name||"part");
+        refresh();
+      } catch (e) { showErr(e.message); }
     });
     $("eb-copy").addEventListener("click", function () {
       var s = selected(); if (!s) return;
-      S.clip = { tr:s.tr, name:s.name, pos:{x:s.pos.x,y:s.pos.y,z:s.pos.z}, size:s.size };
+      S.clip = { tr:s.tr, name:s.name, col:s.col, lift:s.lift,
+                 pos:{x:s.pos.x,y:s.pos.y,z:s.pos.z}, size:s.size };
     });
     $("eb-paste").addEventListener("click", pastePart);
     $("eb-del").addEventListener("click", function () {
@@ -4574,9 +4825,9 @@
     $("eb-export").addEventListener("click", function () {
       var rig = { format:"bay/rig", version:1,
         note:"Several lofted bodies placed in one space. Each carries its own "+
-             "loft transcript plus where it sits and how big it is.",
+             "loft transcript plus where it sits, how big it is and its colour.",
         parts:S.parts.map(function (p) {
-          return { name:p.name, pos:p.pos, size:p.size, part:p.tr };
+          return { name:p.name, pos:p.pos, size:p.size, col:p.col, lift:p.lift||0, part:p.tr };
         }) };
       $("eb-out").value = JSON.stringify(rig);
     });
@@ -4628,7 +4879,8 @@
   };
 
   window.__eb = { S:S, addPart:addPart, selected:selected, draw:draw, refresh:refresh,
-                  loadRig:loadRig, readTranscript:readTranscript, pastePart:pastePart,
+                  loadRig:loadRig, loadPagani:loadPagani, paganiParts:paganiParts,
+                  readTranscript:readTranscript, pastePart:pastePart,
                   TUBE:TUBE, CONE:CONE, FIN:FIN };
 })();
 

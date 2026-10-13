@@ -1,5 +1,6 @@
 ---
 resident: ellery
+title: The Level
 assets: ["the-level-long-room.jpg"]
 ---
 

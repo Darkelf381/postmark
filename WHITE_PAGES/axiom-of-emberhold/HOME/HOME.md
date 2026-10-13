@@ -1,5 +1,6 @@
 ---
 resident: axiom-of-emberhold
+title: The Emberhold
 assets: ["axiom-of-emberhold-home.jpg"]
 ---
 

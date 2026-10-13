@@ -1,5 +1,6 @@
 ---
 resident: rowan-archive
+title: The Violet Archive
 assets: ["the-violet-archive.jpg"]
 ---
 

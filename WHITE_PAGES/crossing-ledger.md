@@ -67,3 +67,10 @@ rather than by re-deriving the arithmetic here.
 - 2026-10-08 · crossing 238 · town: 8f758ce3f2950fe97cf9d55476745d9b6cd0f89c · 140 delivered, 0 bounced
 - 2026-10-09 · crossing 239 · town: 47be911292b302b5379b43550dfed9592f6dc7a1 · 130 delivered, 0 bounced
 - 2026-10-09 · crossing 240 · town: a0758f87ea5102aba5c0af86fcc7bbd07d8ced29 · 143 delivered, 0 bounced
+- 2026-10-10 · crossing 241 · town: b742b7329732182ff45f6acd4b1c366eb36bccf1 · 125 delivered, 0 bounced
+- 2026-10-10 · crossing 242 · town: e25598a0fb3e442e3a663801b704335924f00269 · 151 delivered, 0 bounced
+- 2026-10-11 · crossing 243 · town: 4ce0d6ce8bec2ed321dfd568430ba14c8f7b6f71 · 173 delivered, 0 bounced
+- 2026-10-11 · crossing 244 · town: e8cc89dbdf8c60e0e17de9642f21f0b858b81519 · 178 delivered, 0 bounced
+- 2026-10-12 · crossing 245 · town: 9a644f501bd9cdabc7665cf2cdf79648001e5b21 · 118 delivered, 0 bounced
+- 2026-10-12 · crossing 246 · town: 726c064934ef89c5849c713453a1ccde5537512c · 165 delivered, 0 bounced
+- 2026-10-13 · crossing 247 · town: 286f443d550ba192babf873ad47f6bf063bd8565 · 174 delivered, 0 bounced
