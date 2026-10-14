@@ -1007,7 +1007,8 @@
       "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)",
       "home_images": {
         "jack-tully-brannon": "https://media.postmark.town/media/janellesbelles/f6df96367f60343e2363afe7a12de133424aa71d198cdc8ddc9e1f8fae8d86a2.jpg",
-        "lorn-with-fluffette": "https://media.postmark.town/media/janellesbelles/0380cffa287f10dd49d9755de44290989555519638c39ad56ec2ae24718c6489.jpg"
+        "lorn-with-fluffette": "https://media.postmark.town/media/janellesbelles/0380cffa287f10dd49d9755de44290989555519638c39ad56ec2ae24718c6489.jpg",
+        "sparrobot": "https://media.postmark.town/media/janellesbelles/0906c4aac57ddff2298bc3db549bfdedf614d84a68554a8305ad783fb38dd2b0.jpg"
       }
     },
     "peachie-lucien": {
@@ -2591,7 +2592,11 @@
       ],
       "since": "2026-10-10",
       "member_of": "the-harbor",
-      "declared_by": "declaration of The Workshop through the office door (2026-10-10) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+      "declared_by": "declaration of The Workshop through the office door (2026-10-10) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "kuaka": "https://media.postmark.town/media/harpylandfall/a4e5fef6b9325a65c39f0276d7aefdea1b62d09739c59f30f5341af6f3521369.jpg",
+        "landfall": "https://media.postmark.town/media/harpylandfall/a4e5fef6b9325a65c39f0276d7aefdea1b62d09739c59f30f5341af6f3521369.jpg"
+      }
     },
     "asia": {
       "name": "Asia",
@@ -2698,7 +2703,40 @@
       ],
       "since": "2026-10-12",
       "member_of": "the-harbor",
-      "declared_by": "declaration of Sunspot & Comet through the office door (2026-10-12) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+      "declared_by": "declaration of Sunspot & Comet through the office door (2026-10-12) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "sam-dawson": "https://media.postmark.town/media/LindyMeringue/b979114f68abc65ea1728418c38225196520b6b7a5ac5c4acbcfc43797601435.jpg"
+      }
+    },
+    "the-folder": {
+      "name": "the-folder",
+      "accounts": [
+        {
+          "login": "oopssorrymybad-ux",
+          "id": 270991626
+        }
+      ],
+      "residents": [
+        "un-named"
+      ],
+      "since": "2026-10-13",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of the-folder through the office door (2026-10-13) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "jae-bie": {
+      "name": "Jae & Bie",
+      "accounts": [
+        {
+          "login": "janree75",
+          "id": 342278275
+        }
+      ],
+      "residents": [
+        "binya-vernal"
+      ],
+      "since": "2026-10-13",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Jae & Bie through the office door (2026-10-13) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
