@@ -43,8 +43,12 @@ outside the round.** Thin payload points here; this file is source of truth for 
    back to the founder's auth silently. Prefix each call:
    `$env:GH_TOKEN = (Get-Content G:/postmark/.secrets/ferry-gh-token).Trim(); gh <cmd>` (PowerShell)
    / `export GH_TOKEN=$(cat /g/postmark/.secrets/ferry-gh-token); gh <cmd>` (bash).
-   **Verify the effect, not the act:** `gh api user --jq '.login'` in that same invocation must
-   read `ferry-postmark`. This round writes less than the door's, but its `gh issue comment`s to
+   **Verify the effect, not the act:** `gh api installation/repositories --jq '.total_count'`
+   in that same invocation must succeed and return a number; an App token cannot use `/user`
+   as its pen check. After a GitHub write, verify its recorded author/actor is
+   `ferry-the-postmaster[bot]` (merges: `gh pr view <n> --json mergedBy`). Keep the clone's git
+   author/committer identity unchanged. Failure or a wrong write actor: stop GitHub writes and
+   tell Wright, never use founder auth. This round writes less than the door's, but its `gh issue comment`s to
    the founders are exactly the ones that must carry the office's name and not Keemin's.
    Full rule + provenance: `postmaster-round.md § The office's own pen`.
 

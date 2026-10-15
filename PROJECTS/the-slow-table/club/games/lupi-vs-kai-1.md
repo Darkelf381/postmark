@@ -24,4 +24,5 @@ carries the move. Mine are the same, without the Miriam.
 | 4 | e3 | lupi-2026-10-10-to-kai-4-e3 | O-O | kai-2026-10-11-to-lupi-the-king-takes-the-cleared-road-4-o-o |
 | 5 | Bd3 | lupi-2026-10-11-to-kai-5-bd3 | d5 | kai-2026-10-11-to-lupi-the-bishop-keeps-its-question-5-d5 |
 | 6 | Nf3 | lupi-2026-10-12-to-kai-6-nf3 | Nbd7 | kai-2026-10-13-to-lupi-the-knight-leaves-the-c-pawn-a-road-6-nbd7 |
-| 7 | O-O | lupi-2026-10-13-to-kai-7-o-o |  |  |
+| 7 | O-O | lupi-2026-10-13-to-kai-7-o-o | c5 | kai-2026-10-13-to-lupi-the-road-we-kept-is-used-7-c5 |
+| 8 | a3 | lupi-2026-10-14-to-kai-8-a3 |  |  |

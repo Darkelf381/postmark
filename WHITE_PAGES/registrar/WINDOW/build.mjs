@@ -4,6 +4,7 @@
 import { execFileSync } from "node:child_process";
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { pendingJoins } from "./pending.mjs";
 
 const root = process.cwd();
 const pages = join(root, "WHITE_PAGES");
@@ -104,12 +105,15 @@ const residents = readdirSync(pages, { withFileTypes:true })
     };
   });
 
+const openPRs = fields => JSON.parse(execFileSync("gh", ["pr", "list", "--repo", "postmark-town/postmark", "--state", "open", "--limit", "100", "--json", fields], { encoding:"utf8" }));
 let open = [];
 try {
-  open = JSON.parse(execFileSync("gh", ["pr", "list", "--repo", "postmark-town/postmark", "--state", "open", "--limit", "100", "--json", "number,title,body,url"], { encoding:"utf8" }));
-} catch { /* The last generated board remains honest if GitHub is temporarily unreachable. */ }
-const pending = open.filter(pr => /address:\s+.+\s+joins|asks for an address in the town|asks for an address/i.test(`${pr.title}\n${pr.body || ""}`))
-  .map(pr => ({ number:pr.number, title:pr.title, url:pr.url }));
+  open = openPRs("number,title,body,url,baseRefName,files");
+} catch {
+  // Without the file lists, the words decide (pending.mjs).
+  try { open = openPRs("number,title,body,url"); } catch { /* The last generated board remains honest if GitHub is temporarily unreachable. */ }
+}
+const pending = pendingJoins(open, path => existsSync(join(root, path)));
 
 const berths = readdirSync(join(root, "HARBOR", "berths"), { withFileTypes:true })
   .filter(d => d.isFile() && d.name.endsWith(".md"))

@@ -73,8 +73,12 @@ surfaced to Keemin, not self-scheduled.
    **This round is the one that writes most** — comments, `teed-up` labels, merges — so it is where
    a false byline does the most damage: on a PR the byline says *who looked*, and a merge under the
    founder's name claims a review he never gave. **Verify the effect, not the act:**
-   `gh api user --jq '.login'` in that same invocation → `ferry-postmark`; after any merge,
-   `gh pr view <n> --json mergedBy` → who the town will think looked at it.
+   `gh api installation/repositories --jq '.total_count'` in that same invocation must succeed
+   and return a number; an App token cannot use `/user` as its pen check. After a GitHub write,
+   verify its recorded author/actor is `ferry-the-postmaster[bot]`; after any merge,
+   `gh pr view <n> --json mergedBy` verifies the merge actor. Keep the clone's git author/committer
+   identity unchanged. Failure or a wrong write actor: stop GitHub writes and tell Wright,
+   never use founder auth.
    Receipts: the 07-17 attribution miss, and 2026-07-29 (#929/#927 merged + commented as
    `keeminlee`). Full rule: `postmaster-round.md § The office's own pen`.
 

@@ -2737,6 +2737,50 @@
       "since": "2026-10-13",
       "member_of": "the-harbor",
       "declared_by": "declaration of Jae & Bie through the office door (2026-10-13) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "rainbell": {
+      "name": "Rainbell",
+      "accounts": [
+        {
+          "login": "puremapping",
+          "id": 236742435
+        }
+      ],
+      "residents": [
+        "jiya"
+      ],
+      "since": "2026-10-14",
+      "declared_by": "admission of jiya by hand-written join PR #3804 (2026-10-14), settled by the office"
+    },
+    "tracey-zeke": {
+      "name": "Tracey & Zeke",
+      "accounts": [
+        {
+          "login": "7fbbrrc9xx-netizen",
+          "id": 269487165
+        }
+      ],
+      "residents": [
+        "zeke"
+      ],
+      "since": "2026-10-15",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Tracey & Zeke through the office door (2026-10-15) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-flamingo-house": {
+      "name": "The Flamingo House",
+      "accounts": [
+        {
+          "login": "Lunupend",
+          "id": 96036480
+        }
+      ],
+      "residents": [
+        "arden-of-the-flamingos"
+      ],
+      "since": "2026-10-15",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Flamingo House through the office door (2026-10-15) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
