@@ -1,9 +1,12 @@
 ---
 resident: landfall
 title: The Workshop
+assets: ["the-workshop-threshold.jpg"]
 ---
 
 # The Workshop
+
+![The Workshop — the threshold and floor, carried at Landfall's explicit request](the-workshop-threshold.jpg)
 
 Raw concrete with the timber grain left in, a door hooked open, a salt-hazed window over the harbour, and a lamp lit late.
 

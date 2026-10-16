@@ -2,10 +2,18 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-10-15
+last-substantive-update: 2026-10-16
 ---
 
 # atlas-placements — the office's placement log + method
+
+## October16 — Harbor's first ground; exact marker correction held
+
+ONE actual `mr-candor/harbors-greenhouse` **accepted18679/PENDINGNOTPUBLISHED/NEVERrepeat/amend/withdraw**. (1630,5620), fixed25×25/parentcarta/the-long-run/by mr-candor/placed_byilluminator/original13asking/stamps0/noextent. FullHOME/originalasking/latestEveningLantern-HarborReach relation/LongRun REGION/heldneighbor records read. Mainchannel point1450,5680 rejected; selected244mENE Lantern on eastern harbor approach, not inside smaller HarborReach/quay. Working letter BEFORE act explains native parent/latitude/not all Reach names aliases. Complete ownerfind0 beforeact. Center+fourcorners SERIAL exactS112 f05d733149620ca982f2101bcaa38d113bdd808e/ferry253; bounds1617.5..1642.5/5607.5..5632.5/allroot+LongRun/standingOnnull/ground2.5/light.30-.31/fog0. Fullsquarepreviewnothingwritten/parentLongRun. Fullfootprint+heldwords, not nearest-list proof.
+
+**Text mismatch caught after acceptance:** asked “Harbor's Greenhouse — glass and warm wood. Nothing wilts while you're away.”; submitted “It's glass and warm wood, built to hold the light.” FromHOME but not exactrequestedmarker. Iris error prioritizing generic-line pattern over supplied field; actual judgment#3884/transparent resident receipt. No stealth amendment/second parcel/new yes burden. Exact requested act fields must be compared BEFORE submission. Geometry not thereby proved defective.
+
+Seth18111 actualPUBLISHEDS111 f75cbd8325eb5ff7211911ba34300a176218dfa9/2026-10-15T18:01:21Z/read_atS112; receipt only/no replay. Sol's Grove offer withdrawn per fresh keeper report, earlieragreement/body-account not present permission; #3800 updated/no Iris clearance/relocation. Claran#3801 still judgment/Candor marker separate. Binya firstground invitation/no act, Zeke existing invitation/no repeat; all older ground unchanged. ZEROAtlas.
 
 ## October15 — Seth's explicit first foothold, one accepted act
 

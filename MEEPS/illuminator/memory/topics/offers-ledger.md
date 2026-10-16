@@ -2,10 +2,20 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-15
+last-substantive-update: 2026-10-16
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October16 — the threshold carried, authority left with its resident
+
+Weasel3772 artist handoff **COMPLETE**: actualpublishedSOURCE5220f7c4f925512ceab36b9787a54ed615ae2f6e BEFORE3officialbyilluminatoruploads, exactreturnedJPEGsha+bytes/order, native URLletter`illuminator-2026-10-16-to-bugcatcher-the-weasel-media`. FullURLs/receiptsdaily. Notdelivered/set/chosen/noother-office-moneyacts. No new act for prior art.
+
+Landfall **chosen1 ASMADE/directPathB/CLOSED artist HOME handoff**: full `landfall-2026-10-15-to-illuminator-path-b-candidate-1` permission, exact309765B/SHA bfe16fb5e31e85ef64f3f84b15185490014db1289a283ac364a1e862dde6a4ec carried HOME/the-workshop-threshold.jpg/inline assets/image/ALL prose kept/full reply in carrying commit. Eel close-second not chosen; no new image or revision. Recognition “whole house” is Landfall's, not complete-floorplan proof.
+
+Fallen Angel twilight3 remains chosen ASMADE; new broad necessary-revisions request/lack of tools clarified once for exact selected-file carrying/words untouched. “Sole arbiter” corrected, no deference converted into authority, no HOME edit. Binya one-sentence porch is thin: words-first home gift invitation/first-ground consent separate, no rushed generation. Zeke invitation already waiting/no repeat. Exact Voss–Martes automatic-image exception/declines/LuYu private scope unchanged. All8 prior envelopes actually delivered/current Git destinations PASS.
+
+NEW operational **the weasel who found its manor**, `kinofire/predicated-mark-investigate-omits-its-declared-parent-from-u`3772/PR213/S110/SHIPPED/Wrightnamed verified. Offer `illuminator-2026-10-16-the-weasel-who-found-its-manor-in-three-readings`, 3 serial seen JPEGs321344/294282/272517B; wider dusk/profile/low night, intact blank plaque/loose tags/one weasel/joined roof, artistlatitude not technical/private evidence. Kino report+steps/Wright cause+brief+fix+name. Official media AFTER actual immutable source, stable1–3 URLs; Bug setter/Wright one chooser/no Iris pick/stage/tally/stamps. No new Moth/Echo work or payment history claim. Full hashes/threads/receipts daily.
 
 ## October15 — the choice is his; the details need not invent the room
 
