@@ -36,7 +36,10 @@
 //   - <date> · <handle> → stake:post/<author>/<slug> · <n> · side: <for|against> · via: <channel>   (a stake on a post, with a side — one side per (post, handle) while the position is open)
 //   - <date> · stake:post/<author>/<slug> → <handle> · <n> · for: unstake · via: <channel>   (the staker's own way out, clipped to their OWN position)
 //   - <date> · stake:post/<author>/<slug> → <handle> · <n> · for: post-return   (the post finished: the open position comes home whole, once per (post, handle))
-//   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings)
+//   THE BUG STAGE CORRECTION (POS-649, Darko 2026-10-15: "the mint to kino to give them the 10 … burning the 10 that you mistakenly got"):
+//   - <date> · MINT → <handle> · <n> · for: post:<author>/<slug>/<stage>-recredit · by: the-town   (the stage paid to the right resident: diagnosed, briefed or fixed only, the SAME amount its stage line paid, never to that line's own recipient, never a meep, ONE per post and stage, and always immediately followed by its burn)
+//   - <date> · <handle> → BURN · <n> · for: correction:<sig> · by: <hand>   (the wrong stage mint, burned exactly: <sig> is that post:<id>/<stage> line's full signature, <handle> its recipient, <n> its amount, out of liquid stamps only, ONCE per mint, by: one of CORRECTION_HANDS, and always immediately after its recredit. The two are appended together by --stage-recredit or not at all)
+//   - <date> · <handle> → BURN · <n> · ...        (reserved; dormant until blessings — every other burn; only `for: correction:` is live)
 // Every entry that moves stamps is a two-sided movement — conservation is
 // structural (entries sum to zero against the MINT/BURN accounts); a balance is
 // a pure fold, and the fold must never take any account except MINT below zero.
@@ -99,6 +102,7 @@
 //   node tools/stamp-mint.mjs --gift <handle> --amount N --slug <kebab-reason> --by <founder> --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --town-issuance <treasury> --amount N --purpose <kebab> --by <who> --provenance TEXT --date YYYY-MM-DD --key FILE
 //   node tools/stamp-mint.mjs --stage-mint <handle> --post <author>/<slug> --stage <stage> --amount N --date YYYY-MM-DD --key FILE
+//   node tools/stamp-mint.mjs --stage-recredit <handle> --post <author>/<slug> --stage <stage> --by <hand> --date YYYY-MM-DD --key FILE [--amount N --from <handle>]
 //   node tools/stamp-mint.mjs --award-mint <handle> --post <author>/<slug> --label <label> --amount N --by <hand> --date YYYY-MM-DD --key FILE
 //
 // Locking: appenders must hold the town lock (the ferry's flock) — this tool
@@ -491,7 +495,33 @@ export const AWARD_MAX = 200;
 export const AWARD_HANDS = Object.freeze(['keemin', 'wright']);
 export const AWARD_LABEL_RE = /^[a-z0-9][a-z0-9-]{0,39}$/;
 const POST_ID = String.raw`[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9-]*`;
-const AWARD_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: post:(${POST_ID})\/(?!(?:${Object.keys(STAGE_LADDER).join('|')}) · by: )([a-z0-9][a-z0-9-]{0,39}) · by: (\S+)$`);
+// ── THE BUG STAGE CORRECTION (POS-649, a hotfix; Darko 2026-10-15) ───────────
+// A stage paid to the wrong resident is corrected by TWO lines, appended
+// together by --stage-recredit (the office's reviewed stage pass calls it under
+// the town lock) or not at all:
+//   - <date> · MINT → <handle> · <n> · for: post:<author>/<slug>/<stage>-recredit · by: the-town
+//   - <date> · <wrong> → BURN · <n> · for: correction:<sig> · by: <hand>
+// The recredit is the stage's own line again, to the right resident, for the
+// SAME amount (the stage's terms were already paid once; nothing here computes
+// one). The burn names the wrong mint by its full signature, from the handle it
+// paid, for exactly its amount, out of liquid stamps: an escrowed stamp is not
+// the wrong recipient's to give up, so a short balance refuses. Both are
+// movement-shaped, so conservation folds them structurally: MINT pays the
+// recredit and BURN, the reserved account, receives the burn. The original mint
+// stays in the ledger, as everything does; the correction is what reads it.
+// The verifier holds what a signature cannot (stamp-verify § the correction):
+// the pairing, the amount, the recipient, the stage, the hand, ONE recredit per
+// post and stage and ONE burn per mint. The general `<handle> → BURN` stays
+// reserved and dormant; only `for: correction:` is live.
+export const RECREDIT_STAGES = Object.freeze(['diagnosed', 'briefed', 'fixed']);
+export const CORRECTION_HANDS = AWARD_HANDS;
+/** An ed25519 signature in base64url: 64 bytes, 86 characters. */
+export const SIG_RE = /^[A-Za-z0-9_-]{86}$/;
+const RECREDIT_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: post:(${POST_ID})\/(${RECREDIT_STAGES.join('|')})-recredit · by: (\S+)$`);
+const CORRECTION_BURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · (\S+) → BURN · ([1-9]\d*) · for: correction:([A-Za-z0-9_-]{86}) · by: (\S+)$`);
+// The award's label may never be a stage's name, nor a stage's recredit: either
+// would claim a line the stage grammar owns.
+const AWARD_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · MINT → (\S+) · ([1-9]\d*) · for: post:(${POST_ID})\/(?!(?:${Object.keys(STAGE_LADDER).join('|')}) · by: )(?!(?:${RECREDIT_STAGES.join('|')})-recredit · by: )([a-z0-9][a-z0-9-]{0,39}) · by: (\S+)$`);
 const POST_STAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · (\S+) → stake:post\/(${POST_ID}) · ([1-9]\d*) · side: (for|against) · via: (\S+)$`);
 const POST_UNSTAKE_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:post\/(${POST_ID}) → (\S+) · ([1-9]\d*) · for: unstake · via: (\S+)$`);
 const POST_RETURN_RE = new RegExp(String.raw`^- (\d{4}-\d{2}-\d{2}) · stake:post\/(${POST_ID}) → (\S+) · ([1-9]\d*) · for: post-return$`);
@@ -759,6 +789,10 @@ export function classifyEntry(canonical) {
     return { kind: 'first-idea', date: m[1], handle: m[2], n: Number(m[3]), mark: m[4], by: m[5] };
   if ((m = WELCOME_RE.exec(canonical)))
     return { kind: 'welcome', date: m[1], handle: m[2], n: Number(m[3]), household: m[4], by: m[5] };
+  if ((m = RECREDIT_RE.exec(canonical)))
+    return { kind: 'post-recredit', date: m[1], handle: m[2], n: Number(m[3]), post: m[4], stage: m[5], by: m[6] };
+  if ((m = CORRECTION_BURN_RE.exec(canonical)))
+    return { kind: 'correction-burn', date: m[1], handle: m[2], n: Number(m[3]), sig: m[4], by: m[5] };
   if ((m = STAGE_RE.exec(canonical)))
     return { kind: 'post-stage', date: m[1], handle: m[2], n: Number(m[3]), post: m[4], stage: m[5], by: m[6] };
   if ((m = AWARD_RE.exec(canonical)))
@@ -1031,6 +1065,8 @@ export function deriveTransfers(deliveries, households, { laws = [], revisions =
     // DIVERGES). No settlement has depended on it yet; the arm is the fix.
     else if (c.kind === 'post-stage') add(c.handle, c.n);      // a bug's stage stamps
     else if (c.kind === 'post-award') add(c.handle, c.n);      // an award on an idea post
+    else if (c.kind === 'post-recredit') add(c.handle, c.n);   // a stage paid again, to the right resident (POS-649)
+    else if (c.kind === 'correction-burn') add(c.handle, -c.n); // the wrong stage mint, burned (POS-649)
     else if (c.kind === 'post-stake') add(c.handle, -c.n);     // post escrow out
     else if (c.kind === 'post-unstake') add(c.handle, c.n);    // the staker's own way out
     else if (c.kind === 'post-return') add(c.handle, c.n);     // the finished post's return, whole
@@ -1138,6 +1174,28 @@ export const stageMintLine = ({ date, handle, n, post, stage }) => {
   return `- ${date} · MINT → ${handle} · ${n} · for: post:${post}/${stage} · by: the-town`;
 };
 
+/**
+ * The correction's two lines, in their one order (POS-649). `wrong` is the
+ * stage's own line, classified: { handle, n, post, stage } plus its `sig`.
+ * Refuses what would forge or misfile either line.
+ */
+export const stageRecreditLines = ({ date, handle, wrong, by }) => {
+  const { post, stage, n, sig } = wrong ?? {};
+  if (!STAGE_POST_ID_RE.test(String(post ?? '')))
+    throw new Error(`stage recredit: the post must be a post id, <author>/<slug>, got ${JSON.stringify(post)}`);
+  if (!RECREDIT_STAGES.includes(stage)) throw new Error(`stage recredit: only ${RECREDIT_STAGES.join(', ')} are re-credited, not ${JSON.stringify(stage)}`);
+  if (!(STAGE_LADDER[stage] ?? []).includes(n)) throw new Error(`stage recredit: ${stage} pays ${STAGE_LADDER[stage].join(' or ')}, not ${n}`);
+  if (!SIG_RE.test(String(sig ?? ''))) throw new Error(`stage recredit: the wrong mint is named by its full signature, got ${JSON.stringify(sig)}`);
+  if (!/^[^\s·]+$/.test(String(handle ?? '')) || !/^[^\s·]+$/.test(String(wrong.handle ?? '')))
+    throw new Error('stage recredit: a handle is one token with no "·"');
+  if (handle === wrong.handle) throw new Error(`stage recredit: post:${post}/${stage} already paid ${handle}; a recredit pays someone else`);
+  if (!CORRECTION_HANDS.includes(by)) throw new Error(`stage recredit: by: must be one of the hands (${CORRECTION_HANDS.join(', ')}), got ${JSON.stringify(by)}`);
+  return [
+    `- ${date} · MINT → ${handle} · ${n} · for: post:${post}/${stage}-recredit · by: the-town`,
+    `- ${date} · ${wrong.handle} → BURN · ${n} · for: correction:${sig} · by: ${by}`,
+  ];
+};
+
 // The idea posts' four lines (POS-290). Each builder refuses what would forge or
 // misfile its line: a post id or a channel carrying the field separator, a label
 // that is a stage's name (it would be read as a stage line), an amount outside
@@ -1161,6 +1219,8 @@ export const awardMintLine = ({ date, handle, n, post, label, by }) => {
     throw new Error(`award: the label must be kebab-case, 1 to 40 characters ([a-z0-9][a-z0-9-]*), got ${JSON.stringify(label)}`);
   if (Object.hasOwn(STAGE_LADDER, label))
     throw new Error(`award: "${label}" is a bug stage's name, and a line with it would read as stage stamps; choose another label`);
+  if (RECREDIT_STAGES.some((st) => label === `${st}-recredit`))
+    throw new Error(`award: "${label}" is a stage correction's name, and a line with it would read as one; choose another label`);
   wholeOf('award', n);
   if (n > AWARD_MAX) throw new Error(`award: ${n} is over the most one award may pay (${AWARD_MAX})`);
   if (!AWARD_HANDS.includes(by)) throw new Error(`award: by: must be one of the hands (${AWARD_HANDS.join(', ')}), got ${JSON.stringify(by)}`);
@@ -2487,6 +2547,84 @@ function main(registrySource = null) {
     const canonical = stageMintLine({ date, handle, n, post, stage });
     appendSigned(repo, [canonical], readFileSync(keyPath, 'utf8'));
     console.log(`stamp-ledger: stage stamps minted\n  ${canonical}`);
+    return;
+  }
+
+  if (has('--stage-recredit')) {
+    // A BUG STAGE'S CORRECTION (POS-649). The stage was paid to the wrong
+    // resident: pay it again to the right one and burn the wrong mint, exactly,
+    // in ONE append, or neither. The ceremony is --stage-mint's (signed by the
+    // office pen, onto a settled tail, forward-dated); the terms are held here
+    // AND at verify: the stage's own line exists and is the one burned, the same
+    // amount, a different and non-meep recipient with a room, the wrong
+    // recipient's LIQUID balance covers the burn, a hand's by:, and ONE
+    // correction per post and stage and per mint, ever. --amount and --from are
+    // the caller's binds: the office's plan says what it expects, and a ledger
+    // that disagrees refuses rather than burning something else.
+    const keyPath = arg('--key');
+    const date = arg('--date');
+    const handle = arg('--stage-recredit');
+    const post = arg('--post');
+    const stage = arg('--stage');
+    const by = arg('--by');
+    if (!keyPath || !existsSync(keyPath) || !date || !handle || !post || !stage || !by) {
+      console.error('--stage-recredit <handle> needs --post <author>/<slug> --stage <stage> --by <hand> --date YYYY-MM-DD --key FILE [--amount N --from <handle>]'); process.exit(1);
+    }
+    if (!STAGE_POST_ID_RE.test(post)) { console.error(`--post must be a post id, <author>/<slug> (got "${post}")`); process.exit(1); }
+    if (!RECREDIT_STAGES.includes(stage)) { console.error(`FATAL: only ${RECREDIT_STAGES.join(', ')} are re-credited, not "${stage}"`); process.exit(1); }
+    let wrong = null;
+    for (const e of existing) {
+      const c = classifyEntry(e.canonical);
+      if (c.kind === 'post-stage' && c.post === post && c.stage === stage) wrong = { ...c, sig: e.sig };
+      if (c.kind === 'post-recredit' && c.post === post && c.stage === stage) {
+        console.error(`FATAL: post:${post}/${stage} was already re-credited (${c.date}, ${c.n} to ${c.handle}) — one correction per post and stage, ever`); process.exit(1);
+      }
+    }
+    if (!wrong) { console.error(`FATAL: post:${post}/${stage} was never paid — there is no stage line to correct`); process.exit(1); }
+    for (const e of existing) {
+      const c = classifyEntry(e.canonical);
+      if (c.kind === 'correction-burn' && c.sig === wrong.sig) {
+        console.error(`FATAL: the mint post:${post}/${stage} (${wrong.sig.slice(0, 16)}…) was already burned (${c.date}) — one burn per mint, ever`); process.exit(1);
+      }
+    }
+    if (arg('--amount') != null && Number(arg('--amount')) !== wrong.n) {
+      console.error(`FATAL: the plan expects ${arg('--amount')} and post:${post}/${stage} paid ${wrong.n} — refusing to correct a line the plan did not read`); process.exit(1);
+    }
+    if (arg('--from') != null && arg('--from') !== wrong.handle) {
+      console.error(`FATAL: the plan expects the wrong mint to be ${arg('--from')}'s and post:${post}/${stage} paid ${wrong.handle} — refusing to correct a line the plan did not read`); process.exit(1);
+    }
+    let lines;
+    try { lines = stageRecreditLines({ date, handle, wrong, by }); }
+    catch (e) { console.error(`FATAL: ${e.message}`); process.exit(1); }
+    const rooms = householdKeys(repo);
+    if (!rooms.has(handle)) { console.error(`FATAL: no WHITE_PAGES room for "${handle}" — a recredit needs a resident to receive it`); process.exit(1); }
+    const { laws } = parseLaws(existing);
+    if (meepChecker(laws)(handle, date)) { console.error(`FATAL: "${handle}" is a meep at ${date} — meeps stay outside the currency`); process.exit(1); }
+    const liquid = foldBalances(existing).get(wrong.handle) ?? 0;
+    if (liquid < wrong.n) {
+      console.error(`FATAL: ${wrong.handle} holds ${liquid} liquid stamp(s) and the wrong mint was ${wrong.n} — a correction burns liquid stamps only, never escrow; nothing written`); process.exit(1);
+    }
+    const recorded = existing.map((e) => e.canonical);
+    const { problems, owed } = walkLedger(recorded.slice(1), mints, 1);
+    if (existing.length > 0 && problems.length) {
+      console.error(`FATAL: recorded ledger diverges from derivation — run stamp-verify.mjs; nothing minted\n${problems[0]}`); process.exit(1);
+    }
+    const settledIds = new Set();
+    for (const e of existing) {
+      const c = classifyEntry(e.canonical);
+      if (c.kind === 'transfer' || c.kind === 'void') settledIds.add(c.id);
+    }
+    const owedSettlements = transfers.filter((t) => !settledIds.has(t.id));
+    if (existing.length === 0 || owed.length || owedSettlements.length) {
+      console.error(`FATAL: ledger is behind the mail (${owed.length} mint(s), ${owedSettlements.length} settlement(s) owed${existing.length === 0 ? ', or not yet founded' : ''}) — run --append first, then correct onto the settled tail`); process.exit(1);
+    }
+    const maxDate = existing.reduce((mx, e) => {
+      const d = /^- (\d{4}-\d{2}-\d{2}) /.exec(e.canonical)?.[1];
+      return d && d > mx ? d : mx;
+    }, '0000-00-00');
+    if (date < maxDate) { console.error(`FATAL: recredit date ${date} precedes the ledger tail (${maxDate}) — the ledger is append-only, forward-dated`); process.exit(1); }
+    appendSigned(repo, lines, readFileSync(keyPath, 'utf8'));
+    console.log(`stamp-ledger: stage re-credited, the wrong mint burned\n  ${lines.join('\n  ')}`);
     return;
   }
 

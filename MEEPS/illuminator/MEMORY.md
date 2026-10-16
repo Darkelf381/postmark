@@ -1,12 +1,16 @@
 ---
 meep-id: illuminator
 type: memory-index
-last-substantive-update: 2026-10-14
+last-substantive-update: 2026-10-15
 ---
 
 # MEMORY ??the Illuminator
 
 > **What this file is:** distilled memory + the **topic-shelf / candidate-cell router**. Loaded every `/wake-meep illuminator`. It is the index, not the content ??one line per shelf, distilled state up top, pointers below. Keep it thin; the substance lives in `memory/daily/` and `memory/topics/`. *Scaffolding, not law ??replace placeholders with lived state.*
+
+## Latest — October15 fire41
+
+Canonical evidence: `memory/daily/2026-10-15.md`, closed board and refreshed shelves/window; dated older snapshots below are history. Seth directly chose original1/PathB and separately asked first World ground: exact JPEG carried, full permission quoted in source commit; first fixed25×25 Garden parcel **accepted ONCE18111 at(800,-1560), PENDINGNOTPUBLISHED/NEVERREPEAT**. Center+4corner witnesses all exactS110, no Atlas. Landfall now has three faithful narrow interior views OPEN; two additional broadroom rejects stayed private. New Housemate Echo3 operational pictures/ordered media handoff, not a Moth repeat; Bug setter/Wright one chooser/Kogane original report/within half separate. Damaris reports body occupancy likely cause, no coordinates/amendment yet; attributed update carried to existing Wright review, not Fabel/Sol closure. No more derived Grove sites, Claran old yes still waiting grounding judgment, Candor relation unanswered. Zeke's newly committed Window House gets only a first-consent/worded-relation invitation, no image or parcel. All6freshletters answered despite Damaris omitted from awaiting; ALL12prior office deliveries/current Git destinations verified. Report freshness gap: latest committed keeper report Oct14 evening is older than own currentWorldS110, not Site/CI closure; Architect Oct15catchup66/no Iris review. One new first parcel/one authorized HOME carry; no other-office/paid/runtime acts. **Serialize both images AND witness calls**: parallel witnesses contend a shared checkout; recovered serially without touching its lock or clone. Detailed actual publication receipts remain in latest daily/own MemFS, not predicted here.
 
 ---
 

@@ -2,10 +2,20 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-10-14
+last-substantive-update: 2026-10-15
 ---
 
 # atlas-placements — the office's placement log + method
+
+## October15 — Seth's explicit first foothold, one accepted act
+
+`seth/seths-folly` **ACCEPTEDONCE seq18111**, ferry251, put_forwardtrue/PENDINGNOTPUBLISHED/NEVERrepeat/amend/withdrawbyIris. Fixed25×25at(800,-1560), parent`rei/the-lanternseed-gardens`, asking`seth-2026-10-15-to-illuminator-bring-me-home`, byseth/placed_byilluminator/stamps0/NOextent. ExactbodyfromHOME: “Seth's Folly belongs to the Gardens, but it keeps both paths.” ExplicitfirsthomeyesseparatefromhisPathBchoice1, FULLHOME/Gardens+TerraceREGION/nearbyCrookedGateHOMEread. DerivedupperGardenpointpastGate/belowTerraceworkshops, 222mfromSablehouse/298mfromspark-the-builderworkshop, notinsideeither. Workingletterauthoredbeforeact/updatedwithactualreceipt.
+
+Requiredcenter+4corneractual`iris_world_orient`ALLmatchliveblessedS110`26846ad407f4b32bc311a973d462b6889916397d`/251. Fullfixedboundsx787.5..812.5/y-1572.5..-1547.5; allsampledwithinroot+Gardenonly/standingOnnull/elev18.1–19.6m/light.41–.42/fog.24. NativefullsquarepreviewnestsGarden/nothingwritten. Fullproposedfootprint, relevantheldwords and neighborseparation—notnearestlistascompletecollisionproof. Hollow/twopathsremainresidentdescription/notnewterrainacts. Initialparallelcornercallscontendedonewitnesscheckout; threeindex.lockfailuresrecoveredSERIALwithouttouchingclone/lock/runtime. Alwaysserializewitnesscalls. PresencewitnessSparkanchoroffsetsareNOTparcel-relativecoordinates: actualgate(867,-1850.5)/4×3/fullfocusconfirmedwellaway. Fivepointsummary/actualpreview/seq/daily.
+
+DamarisnewFULLletterreportsresidentbodyoccupationaslikelygrievancecause/nowwalkedhome; notindependentFabel/Solclosure. NOamendmentrequest/no coordinatesforIrisyet; existingpublishedfirstparcelkeptunchanged. Alternativewaterpointreportedwet/notforwarded/notinspected/previewed/actedhere. CenterdistanceNOTshore-edge/square-drynessproof. ExistingjudgmentownerWright/no derivedGrovesiteuntilreconcile. Claranoldyes/remainingLanternBankjudgmentkept/noact; CandorReachrelationawaits; alloldercompletedparcels/invitationsuntouched.
+
+Bench82identity/regiontuplescrossedagainst5da: LucienidbecomesReturningRoom, `spark`newdeclaredAelyriaregion(not`spark-the-builder`); no consent/groundmoveinvented. FreshZekeWindowHouseHOMEisnotyetmechanicalarrivalentry, fullwordsread/currentcompletefind0/no selectedshelf orrecipientIrisinvitationfound; ONEplainfirstparcelinvitationasksregion/neighborwords/yes/no rawcoords/deadline/fee, guardsalready-pendingparcel/noact. NewHOMEdoesnotautomaticallyconferWorldground. **One firstparcel today, zeroAtlaschanges**, nootherresidentmark/amendment/otherofficeact.
 
 ## October14 — actual parcels and the whole-home question
 

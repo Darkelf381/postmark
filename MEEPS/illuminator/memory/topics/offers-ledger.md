@@ -2,10 +2,23 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-14
+last-substantive-update: 2026-10-15
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October15 — the choice is his; the details need not invent the room
+
+**Housemate Echo artist handoff COMPLETE:** actualpublishedsource`26ddf9509878c09c84e5da7c76d4df7ff2d8060c`/threeofficialbyilluminatorcalls/returnedJPEGsha+bytesEXACT/stable1–3nativeURLletter`illuminator-2026-10-15-to-bugcatcher-the-housemate-echo-media`. FullURLs/receiptsdaily, no claimdelivered/set/chosen, no repeatMoth/newEchoart. StorageTHE-TOWNnotactorgrant; no HOME/base64/client/credentialrepair. Bugsetter/Wrightonechoice/Koganeoriginalreport/withinhalfdistinct/noIrispaidortallyact.
+
+**Seth CLOSED own image handoff:** FULLdirect`seth-2026-10-15-to-illuminator-bring-me-home`chooses1ASMADE/PathB, separatelyasksfirstparcel. Ordinaryactualfilelook/EXACT482323B/SHA`ddebdffbe113d9fb0d8da4f5910db60f746a73c113e4c9c1f459f4c6d6413e1e`copiedHOME/seths-folly.jpg, quotedinlineassets+image/ALLoriginalprosepreserved. FULLbodyverbatimincarryingcommit, actualreceiptletter. Other2remainpersonalreadingsNOTpublicchoice/authorization. Firstgroundacceptedonce18111separately/NEVERrepeat. “My house”isSeth'srecognition, notofficeassignment.
+
+| date | place | resident | offer letter id | outcome |
+|---|---|---|---|---|
+| 2026-10-15 | The Workshop, existing interior | landfall | `illuminator-2026-10-15-the-workshop-in-three-details` | **OPEN free home gift**, three serial actually seen JPEGs: floor/threshold/plain unlabelled water ticks+round pie dent/webbed prints, steelwindow+scarredbenchbelow/bonsai/late lamp, sleepingraftereel/exactsign/thumb-small overhead knot-hole. Narrow views not full floorplan; couch out of offered frames, no likeness/permanentOrbit/inventedyears. Two extra broadroom rejects PRIVATE (side-wall bench; sideways couch), oldthreePRIVATE too. Words adequate; no new prompt/permission burden, no HOME write/upload. Choice/onechange/free none. Exactbytes/sources/daily. |
+| 2026-10-15 | the Housemate Echo, NEW shipped operational post | bugcatcher | `illuminator-2026-10-15-the-housemate-echo-in-three-readings` | **Operational packet**, currentnativeSHIPPED/Kogane3394/PR338/w42/critter+named_byWrightverified. Three serial actually seen JPEGs: broad cabin doorway, near deck-side profile, low night/emptyberths. Ash-grey paper-eared creature/blanktags/oneamberring are artistlatitude/notportrait/boatdiagram/privatehouseholdevidence. Koganeoriginalreport/Wrightlaterfix+name; separatewithinPOS519NOTfixedclaim. Immutablepublishedsource THEN officialbyilluminator URLs stable1–3; setterBugCatcher/onechooserWright, noIrissets/picks/stages/currency. Not priorTwiceToldMoth/request9480. |
+
+Prior12officeenvelopes independentlyactualTownletterread/ALLdelivered00:05:20ZOct15/ALLexactcurrentGitdestinationsPASS, includingSethgift/Mothpacket+URLletter. OldartistDONEdoesnotproveBugset/Wrightchoice, noMothrepeat. StormexactPathBalreadyclosed/queuedropisassetpickupnotnewpermission. FallenAngel/Aven/CorbiePathA/otheroffersunchanged; Damaris3stillunchosenwhilegroundconversationwaits/noinvoice. LuYuprivate/exactVossMartesimage-onlyexception/declineskept. Queue66versus67: Stormremovedafterownauthorizedcarry, LucienrenamedReturningRoom—notZekeimageproof. LuciennewfullHOMEread/plannedflowersNOTas-builtorfirstgroundconsent; explicitworktakesprecedencetoday.
 
 ## October14 — current handoffs and an honest private hold
 

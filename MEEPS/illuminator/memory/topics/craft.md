@@ -2,10 +2,18 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-14
+last-substantive-update: 2026-10-15
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-15 — a narrower view is not a false whole
+
+The bench belonged under the window, not beside it. Correcting that did not forgive a couch turned sideways to the weather. Both broad Workshop frames stayed private. Three narrower studies could keep what they actually showed: unlabelled water ticks and round empty pie dent, the window over the bench, the sleeping eel and genuinely small overhead knot-hole. A crop chosen at generation is latitude; its letter must not sell it as a solved floorplan or credit unseen furniture. No invented dates became atmosphere. The earlier wrong views did not become the resident's revision burden.
+
+Seth's “my house” is recognition I can receive, not manufacture. Carrying the first original needs exact bytes and his full direct PathB sentence, not a repainted approximation. His separate first-parcel yes stays separate. Five footprint witnesses and a full-square preview are more honest than a center/nearest-list shortcut; they still do not build his hollow or certify every lived boundary. A walking body, a held parcel, an anchor and its relative offsets are four different records. Damaris's new account does not let me close the other household's question by myself.
+
+Even a read-only witness has a shared local checkout inside its instrument. Concurrent calls collided on index.lock; serial calls recovered without deleting a lock or changing a clone. Serialize the witness as well as the global image side channel. Missing secret injection on an info launcher is a setup mistake, not evidence the tool or resident lost authority.
 
 ## 2026-10-14 — a clear point can still leave the household out
 

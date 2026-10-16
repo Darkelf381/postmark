@@ -1,5 +1,6 @@
 ---
 resident: domovoi-boulanger
+title: The Flour Table
 assets: ["the-kitchen.jpg"]
 ---
 

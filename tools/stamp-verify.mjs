@@ -35,7 +35,7 @@ import {
   parseStampLedger, sealChain, foldBalances, parseLaws, classifyEntry, walkLedger,
   townIssuanceDial,
   keepingDial, potFile, deriveEpochClose, keepingLine, TREASURY_POT, STAGE_LADDER,
-  AWARD_MAX, AWARD_HANDS,
+  AWARD_MAX, AWARD_HANDS, RECREDIT_STAGES, CORRECTION_HANDS,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -167,6 +167,10 @@ export function verifyStampLedger(repo, { pubkeyPem, registry = null } = {}) {
     const welcomedHouses = new Set();   // household keys already paid their welcome bundle
     const paidStages = new Set();       // `${post}/${stage}` already paid its stage stamps
     const paidAwards = new Set();       // `${post}/${label}` already paid its award (POS-290)
+    const stageLineOf = new Map();      // `${post}/${stage}` -> the stage line { handle, n, sig } (POS-649)
+    const stageLineBySig = new Map();   // a stage line's sig -> { post, stage, handle, n } (POS-649)
+    const recredited = new Set();       // `${post}/${stage}` already re-credited (once, ever)
+    const burnedSigs = new Set();       // stage-line sigs already burned by a correction (once, ever)
     const postPosition = new Map();     // `${post}|${handle}` -> { n, side }, the open stake on a post
     const postReturned = new Set();     // `${post}|${handle}` already returned (once, ever)
     // ONE HOUSE, TWO SPELLINGS (2026-09-20, cloud-phi). A household declared
@@ -485,6 +489,70 @@ export function verifyStampLedger(repo, { pubkeyPem, registry = null } = {}) {
           problems.push(`line ${lineNo}: LAWFUL fails — post:${k} is paid twice (one line per post and stage, ever)`); break;
         }
         paidStages.add(k);
+        stageLineOf.set(k, { handle: cls.handle, n: cls.n, sig: entries[i].sig });
+        stageLineBySig.set(entries[i].sig, { post: cls.post, stage: cls.stage, handle: cls.handle, n: cls.n });
+      }
+
+      // ── the correction (POS-649, Darko 2026-10-15) ───────────────────────
+      // A stage paid to the wrong resident: its recredit pays the right one the
+      // SAME amount, and the very next line burns the wrong mint, named by its
+      // full signature, from the handle it paid. Either half alone, either half
+      // twice, or a burn of anything but a stage line is red. The overdraw of
+      // the wrong recipient's liquid stamps is the running fold's below (a burn
+      // is an arrow out of the handle, so it can never draw on escrow).
+      if (cls.kind === 'post-recredit') {
+        const k = `${cls.post}/${cls.stage}`;
+        const wrong = stageLineOf.get(k);
+        if (cls.by !== 'the-town') {
+          problems.push(`line ${lineNo}: LAWFUL fails — a recredit is the town's mint (by: "${cls.by}", must be the-town) (post:${k}-recredit)`); break;
+        }
+        if (!RECREDIT_STAGES.includes(cls.stage)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — only ${RECREDIT_STAGES.join(', ')} are re-credited (post:${k}-recredit)`); break;
+        }
+        if (!wrong) {
+          problems.push(`line ${lineNo}: LAWFUL fails — post:${k}-recredit corrects a stage that was never paid`); break;
+        }
+        if (cls.n !== wrong.n) {
+          problems.push(`line ${lineNo}: LAWFUL fails — post:${k}-recredit pays ${cls.n}, and the stage it corrects paid ${wrong.n} (the same amount, never another)`); break;
+        }
+        if (cls.handle === wrong.handle) {
+          problems.push(`line ${lineNo}: LAWFUL fails — post:${k}-recredit pays ${cls.handle}, who the stage already paid`); break;
+        }
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — a recredit to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        if (recredited.has(k)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — post:${k} is re-credited twice (one correction per post and stage, ever)`); break;
+        }
+        const next = entries[i + 1] ? classifyEntry(entries[i + 1].canonical) : { kind: 'none' };
+        if (next.kind !== 'correction-burn' || next.sig !== wrong.sig) {
+          problems.push(`line ${lineNo}: LAWFUL fails — post:${k}-recredit is not followed by the burn of the mint it corrects (${wrong.sig.slice(0, 16)}…); the two are written together or not at all`); break;
+        }
+        recredited.add(k);
+      }
+      if (cls.kind === 'correction-burn') {
+        const wrong = stageLineBySig.get(cls.sig);
+        if (!wrong) {
+          problems.push(`line ${lineNo}: LAWFUL fails — correction:${cls.sig.slice(0, 16)}… names no earlier stage line (a correction burns a bug stage's mint, nothing else)`); break;
+        }
+        const k = `${wrong.post}/${wrong.stage}`;
+        if (cls.handle !== wrong.handle) {
+          problems.push(`line ${lineNo}: LAWFUL fails — the correction of post:${k} burns from ${cls.handle}, and that mint paid ${wrong.handle}`); break;
+        }
+        if (cls.n !== wrong.n) {
+          problems.push(`line ${lineNo}: LAWFUL fails — the correction of post:${k} burns ${cls.n}, and that mint was ${wrong.n} (exactly its amount)`); break;
+        }
+        if (!CORRECTION_HANDS.includes(cls.by)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — a correction is a hand's (${CORRECTION_HANDS.join(' or ')}), not "${cls.by}" (post:${k})`); break;
+        }
+        if (burnedSigs.has(cls.sig)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — the mint post:${k} is burned twice (one correction per mint, ever)`); break;
+        }
+        const prev = i > 0 ? classifyEntry(entries[i - 1].canonical) : { kind: 'none' };
+        if (prev.kind !== 'post-recredit' || `${prev.post}/${prev.stage}` !== k) {
+          problems.push(`line ${lineNo}: LAWFUL fails — the correction of post:${k} does not follow its recredit; the two are written together or not at all`); break;
+        }
+        burnedSigs.add(cls.sig);
       }
 
       // ── the idea posts (POS-290) ─────────────────────────────────────────

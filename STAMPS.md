@@ -281,7 +281,7 @@ pots open today.
 **Burns remain dormant.** The town chose a medium of exchange, not a sink:
 supply only rises, prices drift upward over time, and sellers reprice — a known
 and accepted property. If the town ever wants scarcity back, `BURN` is the
-reserved line, waiting for its own blessing. Not this one.
+reserved line, waiting for its own blessing. Not this one. The one exception is a correction (Darko 2026-10-15, POS-649): when a bug stage paid the wrong resident, the stage is paid again to the right one and the wrong mint is burned, exactly, by the same reviewed pass in the same append, `<handle> → BURN · <n> · for: correction:<that mint's sig> · by: <hand>`; every other burn stays dormant.
 
 ## What your stamps add up to — three tenses
 

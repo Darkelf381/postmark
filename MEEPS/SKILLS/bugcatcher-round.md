@@ -20,14 +20,14 @@ repeat already accepted office acts to rebuild a checkpoint.
 
 ## 1. Take in the queue
 
-**One thin freshness check opens every wake:** new bug posts, new relevant issues or comments across the three repositories named below, new inbox letters, or new `for: post:` MINT lines since your last recorded check. If there is nothing new and no unfinished work due in this mode, **end the wake writing nothing: no daily, no commit, no room-tend or routine Discord receipt.** At 06:00/18:00, pending letters from an interim wake count as work even if no new input arrived since then. On the first check, inspect the existing queue rather than inventing an empty checkpoint.
+**One thin freshness check opens every wake:** new bug posts, new relevant issues or comments across the three repositories named below, new inbox letters, or new bug-payment MINT lines (`for: post:` or `for: gift:bug-<issue>-<slug>`) since your last recorded check. If there is nothing new and no unfinished work due in this mode, **end the wake writing nothing: no daily, no commit, no room-tend or routine Discord receipt.** At 06:00/18:00, pending letters from an interim wake count as work even if no new input arrived since then. On the first check, inspect the existing queue rather than inventing an empty checkpoint.
 
 If there is work, read the relevant queue before acting:
 
 1. **Bug posts in `reported`:** `town { read: "posts", args: { class: "bug" } }`.
-2. **New GitHub issues and comments** on `postmark-town/postmark` since your last check: anything labelled `bug`, anything unlabelled that reads as something broken, and comments/questions on the issues linked to known bug posts. Also any `postmark-office` or `postmark-site` issue a resident opened.
+2. **New GitHub issues and comments** on `postmark-town/postmark` since your last check: anything labelled `bug`, anything unlabelled that reads as something broken, and comments/questions on the issues linked to known bug posts or pending founder bug gifts. Also any `postmark-office` or `postmark-site` issue a resident opened.
 3. **Your inbox** (`WHITE_PAGES/bugcatcher/inbox/`): residents' letters and Ferry's forwards.
-4. **Bug payments:** `for: post:` MINT lines in `WHITE_PAGES/stamp-ledger.md`; see Payment letters below.
+4. **Bug payments:** `for: post:` and `for: gift:bug-<issue>-<slug>` MINT lines in `WHITE_PAGES/stamp-ledger.md`; see Payment letters below. Other gifts stay outside this round.
 
 **Choose the mode by the scheduled hour in America/New_York:**
 - **06:00/18:00, full:** run `/wake-meep bugcatcher`, then the full round, including letter-originated reports, pending correspondence, Payment letters, Field questions and the full daily.
@@ -73,17 +73,35 @@ The jar shows the picked image from then on. A reveal mints nothing and moves no
 
 **Residents must know when they were paid and why** (DARKO, 2026-10-07). You explain a payment already on the record; you do not mint it or advance a founder-owned stage.
 
-Each round, read `WHITE_PAGES/stamp-ledger.md` for MINT lines of this shape:
+Each round, read `WHITE_PAGES/stamp-ledger.md` for MINT lines of these shapes:
 
 ```text
 - <date> · MINT → <handle> · <n> · for: post:<author>/<slug>/<stage> · by: the-town · sig: …
+- <date> · MINT → <handle> · <n> · for: gift:bug-<issue>-<slug> · by: keemin · sig: …
 ```
 
+**Founder bug gifts (DARKO, 2026-10-15).** A gift whose slug starts with
+`bug-<issue>-` (a numeric town issue number), for example
+`gift:bug-3589-two-actors-refused`, is a bug payment under these same checkpoints,
+issue notices and grouped letters. Its issue is **`postmark-town/postmark#<issue>`**,
+even if the work also has an office/site issue or PR; do not substitute that number.
+The reason must come from a comment on that town issue beginning **`Founder gift:`**
+(Markdown emphasis on the label is fine), posted by Darko or by Wright on Darko's
+word. Verify that author/provenance and that the comment explains this gift;
+quote Darko's reason **verbatim**, with the
+source comment link, in both the payment comment and grouped letter. Do not
+paraphrase or infer a reason from the slug, diff or amount. If the qualifying
+reason is missing or unclear, keep the exact signed line pending for both outputs
+and revisit its issue on ordinary checks; do not mark it notified or lettered.
+The existing two founder skips still apply. All other `gift:<slug>` payments stay
+outside this round.
+
 1. Take the lines **after the exact last line you lettered**, saved in your latest daily's **Where I left off**. With no saved line, take **all** such lines. Use ledger order and the full signed line as the checkpoint, not just its date. Skip payment letters and payment comments for **`wright` and `keemin` only**; everyone else gets theirs, **including `mari`**.
-2. **At a full round, group by resident and write ONE payment letter per resident covering all their pending lines.** For each bug, read `town { read: "posts", args: { class: "bug", post: "<author>/<slug>" } }`. Give its title and post id, each paid stage, what the resident did to earn it, the actual amount and ledger date, and the total paid. Say plainly: you reported it and it was confirmed; your steps reproduced it; you found the cause; you wrote the fix brief; or you built the fix, as the credited stage records. Do not invent a contribution or a payment from an advance alone.
+2. **At a full round, group by resident and write ONE payment letter per resident covering all their pending lines whose evidence is ready.** For each `post:` payment, read `town { read: "posts", args: { class: "bug", post: "<author>/<slug>" } }`. Give its title and post id, each paid stage, what the resident did to earn it, the actual amount and ledger date, and the total paid. Say plainly: you reported it and it was confirmed; your steps reproduced it; you found the cause; you wrote the fix brief; or you built the fix, as the credited stage records. For a founder bug gift, include the town issue, verbatim founder reason, actual amount and ledger date in that same resident's grouped letter and total; do not invent a post id or paid stage for it. Do not invent a contribution or a payment from an advance alone.
 3. Include this plain explanation of the **flat ladder**: "confirmed 2, reproduced 3, the cause 5, a fix brief 10 (5 if it needed heavy revision), the fix itself 10 to 50 by size"; **each stage pays whoever did it**, with no stake. The fix amounts are **10/25/50** by size. Report the ledger's actual amount, never rewrite it to fit a summary. Say what is next on each bug from its current post, including the next open stage and its ladder amount when applicable; if finished, say so. A rule's amount or normal release rhythm is not a promise of future stamps or a date.
-4. **In either mode**, if `WHITE_PAGES/<handle>/ADDRESS.md` has a real `github:` value, not `your-github-username`, add **one comment per resident per bug issue** mentioning `@<github>` and summarizing that resident's newly paid stages, amounts and dates for that bug. Use the issue linked by the post; do not invent an issue or a GitHub identity. Aggregate multiple paid stages into that one comment. An interim payment comment is not a payment letter: leave its lines pending for the next full round and do not repeat the comment then.
-5. Keep **separate letter and issue-comment checkpoints**, including accepted letter ids, comment ids and the exact ledger lines covered. Advance the last-lettered line only over a contiguous run of lines covered by accepted letters or the two founder skips; never jump past an unfinished resident. If one resident's lines are interleaved with unfinished work, retain the already-covered lines so recovery does not send that resident another copy. Keep failed or missing-post/issue work pending with its real owner. Inspect an uncertain send/comment result before retrying; a written/accepted outbox letter is not proof of delivery. Never mark a payment notified from a draft alone.
+   A founder bug gift is additional payment, **not another ladder stage**; quote its reason and keep its actual amount distinct from the stage awards. It promises no future gift or payment.
+4. **In either mode**, if `WHITE_PAGES/<handle>/ADDRESS.md` has a real `github:` value, not `your-github-username`, add **one comment per resident per bug issue** mentioning `@<github>` and summarizing that resident's newly paid stages, amounts and dates for that bug. Use the issue linked by the post, or the town issue encoded in a founder bug gift; do not invent an issue or a GitHub identity. Aggregate multiple paid stages and any ready founder bug gift for that resident/issue into that one comment, quoting the gift reason verbatim. An interim payment comment is not a payment letter: leave its lines pending for the next full round and do not repeat the comment then.
+5. Keep **separate letter and issue-comment checkpoints**, including accepted letter ids, comment ids and the exact ledger lines covered. Advance the last-lettered line only over a contiguous run of lines covered by accepted letters or the two founder skips; never jump past an unfinished resident. If one resident's lines are interleaved with unfinished work, retain the already-covered lines so recovery does not send that resident another copy. Keep failed or missing-post/issue work pending with its real owner; for a missing founder-gift reason, retain the signed gift line and town issue with Darko/Wright as the next owner. Inspect an uncertain send/comment result before retrying; a written/accepted outbox letter is not proof of delivery. Never mark a payment notified from a draft alone.
 
 Write warmly and specifically, not as an unexplained balance statement. **Never promise future stamps or dates, and never include a human's real-world details**, in a letter or a payment comment.
 

