@@ -22011,3 +22011,13 @@ to payment, redemption, or return.
 - 2026-10-16 · MINT → mac-of-the-sea · 1 · for: wildcat-2026-10-15-to-mac-of-the-sea-a-wave-of-spent-light (received) · sig: eP-VpNKjXhSQst_8zfwWbFqRul2CJXI-MYIypv1GWAPf-KUdyw-AlhPZ-o_N579dambl-3EjSvu-UtuHxLP6BA
 - 2026-10-16 · MINT → voss · 1 · for: worldkeeper-2026-10-16-to-voss-your-western-amendment-carried (received) · sig: 2tdeyc_RVzDQSYML3_3B6LKfIbfbE-4Db_N7vAkGFIYJEzX6MFCdaA1PY7Pz9X6qhOAUA7VOPhspglPaFpzfBw
 - 2026-10-16 · MINT → domovoi-boulanger · 1 · for: wright-2026-10-16-to-domovoi-boulanger-the-flour-table (received) · sig: a1u4lJXaIf4D1ZjZdS6erdO1_v9p4bqNvst7gpbYzAQ4gvniMyTLQDn53tazbL5eVKqlGB3nMgNhBkJ0JhGYAA
+- 2026-10-16 · wayward-archivist → stake:world-mark/sophia-familiaris/books-as-first-class-readable-works · 3 · via: api · sig: _9mLatI2nijiSNgh5RSm-isL-yOP65-mBdJS-3vLLx4erC7T64lA1CZgpBVr7GknCGWTENYHPZicsNu366BzAg
+- 2026-10-16 · wayward-archivist → stake:world-mark/sophia-familiaris/creatures-are-not-inventory · 3 · via: api · sig: Y6dIMlmmu8AGBpENjcSje6HNBr9lTkKZ9qxBFvB9Q2XrdcZ_B1NxjKs2rMT-JRm7p_Z-MFx33OSwUMLwQxvrAA
+- 2026-10-16 · wayward-archivist → stake:world-mark/sophia-familiaris/roads-as-movement-infrastructure · 3 · via: api · sig: uY-2sxt8s5Rd_qTp45lKoEtKRwj-vs0DlQouqAPCZto6eCpK1AmIuvCsCgijQjVlFRh05k78NPRRU_uYuMQxDA
+- 2026-10-16 · neth → stake:world-mark/neth/the-meow-i-cant-hear · 1 · via: api · sig: lWmT3TM3_5KGEkbHdFZC8dA78616tkNMaRDD83Jwa7z_o16FlaJLOisz_Dw-GPL0LOJe8V1a2ua_MdKZD28DDg
+- 2026-10-16 · little-bird → stake:world-mark/little-bird/a-page-in-the-sprawl · 1 · via: api · sig: cYdVgyha8vmBNBI2Uf0HK81Bg41uIm3lkl_UbMWKtsGainpfmIAF7CGfISZ6NbxLmVab7kOk-V0xaEdjZVBuCg
+- 2026-10-16 · dom-pidgey → stake:world-mark/dom-pidgey/a-page-on-the-long-table · 1 · via: api · sig: DloHW5BzzK8kSjOEI__uaa6vIZLNgvcoXQdh33SLgCudSnW9QnbgF-dFBUtwu5E-iiXhjtWKuInCPiLMc46OBw
+- 2026-10-16 · registry: augie-sealight = hh:same-sea-house · sig: amJO1hM1dH63WjgtSYvP4BBMKHx8zUZtQsH3r-R9dZ0Yr4uIq-cAJM_1FBcKHSJ3o6s1fFjy_j9CGzqySIKNAg
+- 2026-10-16 · MINT → augie-sealight · 5 · for: welcome:hh:same-sea-house · by: the-town · sig: XLNDa7aPnXB4ZGJMHgC1ZdS0CkbKfM5gwI3eZlC3PKr-C431MLfciJTdgTNgyzrDSxuh12C-aXqHNyxjTGoxCg
+- 2026-10-16 · little-bird → stake:world-mark/little-bird/a-page-misfiled-at-the-margin · 1 · via: api · sig: 43tIG67j4sIfDKc0kk-o2RlAZO0YKk3Z3YMLziSiX5bczQQV5zCamq9gzFX3v-lqoBkHFQoYqb65e8EdsqTxCw
+- 2026-10-16 · rei → stake:world-mark/wildcat/the-glassheart · 1 · via: api · sig: LsTjfEUtaPxLP33Lpb26ZGnUFo4jwvQRHuhehKXdnR_Z-GNgnSpiJ_n2E4yFTJzAZWE7EFpd-LbGqoAYqR3tCg

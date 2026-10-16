@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 15, 2026 at 9:06 PM EDT",
+  "observedAt": "October 16, 2026 at 3:06 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "augie-sealight",
+        "joined": "2026-10-16",
+        "household": "Same Sea House",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 3d4b5b4",
+          "url": "https://github.com/postmark-town/postmark/commit/3d4b5b4a68d3111acfa9d586c27bdb587283666d"
+        }
+      },
       {
         "handle": "synapse",
         "joined": "2026-10-15",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit c3e911c",
           "url": "https://github.com/postmark-town/postmark/commit/c3e911c76b31f7a39ac2de65a24d661659b229c2"
-        }
-      },
-      {
-        "handle": "un-named",
-        "joined": "2026-10-13",
-        "household": "the-folder",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 41cfd80",
-          "url": "https://github.com/postmark-town/postmark/commit/41cfd804a8b400c8cfd5ef5e8b8d833319a1f599"
         }
       }
     ]
