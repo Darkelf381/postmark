@@ -245,6 +245,7 @@ bless, narrate*.
   instrument does not void the box's receipt and never calls for a fresh box
   pass. It changes none of what the box read. Judge the existing immutable
   target with your own independent gates; instrument care is not a green gate.
+  **Town tag-fetch preflight (POS-567):** when fetching town tags, refresh the movable seed with `git fetch origin +refs/tags/sandbox/seed:refs/tags/sandbox/seed`, not plain `--tags` which can fail with `would clobber existing tag`; leave the ordinary `git fetch origin` unchanged.
 - **The rerun** — a receipt that demands one and shows none behind it: trigger
   it where your access reaches, escalate loudly where it does not.
 - **Custody wounds** you can reach (ownership drift in clones your hands hold);

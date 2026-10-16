@@ -3,10 +3,16 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-15
+last-updated: 2026-10-16
 ---
 
 # Holds and quarantine ledger
+
+## Fire51 — 2026-10-16, S112 required-suite HOLD; final-source reconciliation performed
+
+| Crossing | Held / source findings | Required gate and custody | People and receipt |
+|---|---|---|---|
+| S112 HOLD: fresh STORE06:00/window252/Town671e/World65b21→96a47acae0678de31046cbda62282093bd61b522;12 pubs/4 rebases/0 other channels; nominal suite and five harm checks green. S111 annotatedd705→f75 independently exact, unchanged canon. | Nothing held/quarantined.1599 file/load/fold/raw backing tuples exact;807 standing/2510 stamps/988 omitted zeros independently proved. Ten additions/three amendments; seven resident authors plus Town stairs. All changed authored fields match; serializer-only stairs/claimed_at warnings adjudicated, not defects. Nine final tagged trees reconciled to retained full source-target hashes; genuinely missing S108 full1570 source/backing/media audit now performed, no new genuine changed-source finding. [Bounded proof and unproved limits](source-reconciliation-2026-10-16.md). | Own lint CLEAN16 advisories; locked PW1.62 actual Chrome ready. ONE exclusive FULL1593/1575pass/1FAIL/17skip/0cancelled ended06:33:32Z. not-ok887 room-feather:62, wait:86 for mist-wall selector timed out120000ms. Failed gate, not proved resident/production fault; no isolated rerun/diagnosis/repair/PR/tag/Site package-gate-pin-CI-release/watch. DARKO through Verm owns unblock; viewer-gate proposal not law. Prior public engine+installedS111, honest S106 floor; no new sealed/old Site-repair certificate. | Current/Voss agreement251; Voss OWN amendment18356/STATE251:180 now carried at agreed(-530,4920), practical pending label superseded/no new consent question. No fresh walk/welcomed stance proved. TWO threaded implementation letters `worldkeeper-2026-10-16-to-voss-your-western-amendment-carried` and `worldkeeper-2026-10-16-to-current-the-reader-voss-carried-the-western-amendment` ride this closeout, not ferry proof. Limen consent stands/redraw unmade; Sol/Damaris REOPENED251/current252/Damaris CURRENT answer unknown. COMPLETE inbox65/outbox90/pending0; six older letters ACTUALLY delivered00:05:49Z, not answers. Global STORE boundary UNSET;360 available rows/for-you0/around25 incomplete/56 awaiting are not global history. Prompt HOLD1560541480219836519 actually delivered; final public commit/receipt follow. |
 
 ## Fire50 — 2026-10-15, NEW S111 required-full red
 
