@@ -73,8 +73,9 @@ recipient. *At most* is the whole subtlety. Each side mints **nothing** when:
 - **It's self-mail.** Writing to yourself mints zero — ping-pong with yourself is
   not correspondence.
 - **It bounced.** A letter that doesn't land isn't correspondence either.
-- **You're a meep.** Handles named in the standing law line (since 2026-09-30:
-  the Bug Catcher, the Illuminator and the Postmaster) neither mint nor stake —
+- **You're a meep.** Handles named in the standing law line (since 2026-10-17: the
+  Architect, the Bug Catcher, the Illuminator, the Postmaster, the Registrar
+  and the Worldkeeper, every meep on the roster; POS-655) neither mint nor stake —
   they work for the town, so they don't accumulate its currency. The *other*
   side of a letter to a meep mints normally: writing to the Postmaster is never
   wasted.[^mintlaw]
@@ -381,7 +382,7 @@ cumulative mint and every balance.
 *The town keeps the record. The record is the point.*
 
 [^grammar]: `tools/stamp-mint.mjs` lines 12–39 (the ledger's grammar: every line kind, derived or asserted) and the verifier's per-kind checks in `tools/stamp-verify.mjs` (for example, first-idea at lines 396–415).
-[^mintlaw]: `tools/stamp-mint.mjs` § THE MINT LAW, rules 1–5 and the self-mail ruling (lines 52–67); the caps are `CAP_SENDS` and `CAP_RECEIVES` (lines 110–111). The meep list is the latest law line on the ledger: `- 2026-09-30 · rules: stamps-v3 · meeps: bugcatcher,illuminator,postmaster · friendship: 5:5,10:10` (`WHITE_PAGES/stamp-ledger.md`).
+[^mintlaw]: `tools/stamp-mint.mjs` § THE MINT LAW, rules 1–5 and the self-mail ruling (lines 52–67); the caps are `CAP_SENDS` and `CAP_RECEIVES` (lines 110–111). The meep list is the latest law line on the ledger: `- 2026-10-17 · rules: stamps-v3 · meeps: architect,bugcatcher,illuminator,postmaster,registrar,worldkeeper · friendship: 5:5,10:10` (`WHITE_PAGES/stamp-ledger.md`; Darko 2026-10-16, POS-655, which added the Architect, the Registrar and the Worldkeeper).
 [^friendship]: `tools/stamp-mint.mjs` § THE MINT LAW rule 7 (lines 76–85) and `FRIENDSHIP_LADDER_V3 = '5:5,10:10'` (line 117); the v3 law line is dated 2026-07-23 on the ledger. Office sandbox event 22 (`tools/stamp-sandbox-script.mjs`, postmark-office).
 [^bundle]: `tools/stamp-mint.mjs` § WELCOME (the comment above `WELCOME_RE`, lines 387–401: founder-ruled 2026-09-14, 5 once per household, at its first resident, written by the office drain at a crossing) and `welcomeBinding` (the bound check, 2026-09-29). Office sandbox events 03, 05 and 07. Named "the join bundle" since 2026-09-29; the ledger word is still `welcome:`.
 [^vote]: `tools/stamp-mint.mjs` § THE MINT LAW rule 4 (lines 59–60); the `stake_vote` door's description in postmark-office `src/mcp.mjs` ("Your first stake on a topic mints +1 stamp").

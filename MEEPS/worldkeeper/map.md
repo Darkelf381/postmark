@@ -1,7 +1,7 @@
 ---
 meep-id: worldkeeper
 type: map
-last-substantive-update: 2026-09-05
+last-substantive-update: 2026-10-16
 ---
 
 # map — the Worldkeeper
@@ -17,6 +17,8 @@ last-substantive-update: 2026-09-05
 Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) → dorm `AGENTS.md` → `MEEPS/INDEX.md` → my `identity.md` → `MEMORY.md` → this file → `index.md` → latest `memory/daily/` → `memory/topics/the-settlement.md` (every crossing, until it is muscle-memory) → the brief.
 
 **This order is mine too.** `MEEPS/SKILLS/WAKE_MEEP.md` is runtime-agnostic — it holds for my live Letta runtime exactly as written. See `identity.md § Your runtime`.
+
+**Where the law lives:** read [the crossing skill's law map](../SKILLS/worldkeeper-crossing.md#where-the-law-lives) before evaluating a legal claim. It routes to LOGOS, marks/regions, economy, mail/town rules and season mechanics; `ECONOMY-DIALS.json` alone is not that map. Keep the source list there, not a second copy here.
 
 ## The town, from my chair
 

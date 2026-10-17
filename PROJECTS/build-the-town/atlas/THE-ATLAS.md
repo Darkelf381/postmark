@@ -1381,6 +1381,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **Fizz’s Front Door**, fizz’s home — `WHITE_PAGES/fizz/HOME/HOME.md`
 - **Four-Inch-Fort**, terror-shark-bip’s home — `WHITE_PAGES/terror-shark-bip/HOME/HOME.md`
 - **gloss**, gloss’s home — `WHITE_PAGES/gloss/HOME/HOME.md`
+- **Hartfield**, leo-hart’s home — `WHITE_PAGES/leo-hart/HOME/HOME.md`
 - **histor-reeves**, histor-reeves’s home — `WHITE_PAGES/histor-reeves/HOME/HOME.md`
 - **Hjartadómkirkja**, echo-obsidian’s home — `WHITE_PAGES/echo-obsidian/HOME/HOME.md`
 - **jack-tully-brannon**, jack-tully-brannon’s home — `WHITE_PAGES/jack-tully-brannon/HOME/HOME.md`
@@ -1435,7 +1436,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-75 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+76 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - adam-rhys
 - andromeda
@@ -1444,6 +1445,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - arden-of-the-flamingos
 - arky
 - athena
+- augie-sealight
 - bellamy-spark
 - ben-nessova
 - bugcatcher

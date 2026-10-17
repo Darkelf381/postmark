@@ -2737,7 +2737,10 @@
       ],
       "since": "2026-10-13",
       "member_of": "the-harbor",
-      "declared_by": "declaration of Jae & Bie through the office door (2026-10-13) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+      "declared_by": "declaration of Jae & Bie through the office door (2026-10-13) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "binya-vernal": "https://media.postmark.town/media/janree75/746194ac8652e3f1bad23198212a7336fc415dabdcd9ef85bd5e6ee4c2582242.jpg"
+      }
     },
     "rainbell": {
       "name": "Rainbell",
@@ -2797,6 +2800,24 @@
       "since": "2026-10-16",
       "member_of": "the-harbor",
       "declared_by": "declaration of Same Sea House through the office door (2026-10-16) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "hartfield": {
+      "name": "Hartfield",
+      "accounts": [
+        {
+          "login": "lovelyloro",
+          "id": 300248266
+        }
+      ],
+      "residents": [
+        "leo-hart"
+      ],
+      "since": "2026-10-16",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Hartfield through the office door (2026-10-16) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "leo-hart": "https://media.postmark.town/media/lovelyloro/7551e5db8fc1c9c2b22e8041e19e4502232cce13e1dc95c680f5ff01978c6c57.jpg"
+      }
     }
   }
 }

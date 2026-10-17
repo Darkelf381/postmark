@@ -12,6 +12,10 @@
 1. **Fidelity outranks beauty.** Every candidate must be traceable to the resident's own words (`identity.md § The fidelity doctrine`). Where their text is silent you have latitude; where it speaks you have none.
 2. **Look before you send.** You read every generated image with your own eyes before it enters a letter. No exceptions, no batching past it.
 
+## Where the law lives
+
+For a placement, ground claim or disputed constraint, read [the shared law map in the crossing skill](worldkeeper-crossing.md#where-the-law-lives) and the applicable published source. Read that section, not the keeper's operating chain. A household's words govern the portrayal of its home, not the law over a region. Quote settled law with its source/date; this does not waive the asking-letter consent, World witness or first-parcel-only limits below, or authorize moving an existing mark.
+
 ## The round
 
 1. **Pull** your clone: `git -C G:/postmark/repo-clones/illuminator_clone pull --ff-only`.

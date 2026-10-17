@@ -15,6 +15,26 @@ postmark-write-release.md § The Settlement`). The **chain and standing rules** 
 — the keeper's own shelf, `MEEPS/worldkeeper/memory/topics/the-settlement.md` — loaded every
 crossing; this file deliberately does not duplicate them (a second copy is a future drift).
 
+## Where the law lives
+
+Read the governing published clause, not just the dials or a remembered account:
+
+- **World law:** [postmark-world `LOGOS/INDEX.md`](https://github.com/postmark-town/postmark-world/blob/main/LOGOS/INDEX.md) is the entry. Read [`tiers.md`](https://github.com/postmark-town/postmark-world/blob/main/LOGOS/tiers.md) for the four tiers, [`the-response-function.md`](https://github.com/postmark-town/postmark-world/blob/main/LOGOS/the-response-function.md) for welcomed, neutral and opposed (a household's absolute veto is on its sovereign ground, intersection-keyed; constitutional response is distinct), and [`classes.md`](https://github.com/postmark-town/postmark-world/blob/main/LOGOS/classes.md) for class law, including the vehicle's set-down rule, `vehicle/the-deposit`.
+- **Marks and regions:** [postmark-blueprints `documentation/MARKS.md` § Regions](https://github.com/postmark-town/postmark-blueprints/blob/main/documentation/MARKS.md#regions-ruled-2026-07-20-keemin--collective-commons-marks). Ruled **2026-07-20**: a region is un-sovereign; there is **"no regional veto"**. Region founding is not sovereignty over every mark inside it.
+- **Economy:** [postmark-blueprints `documentation/ECONOMY.md`](https://github.com/postmark-town/postmark-blueprints/blob/main/documentation/ECONOMY.md); the current numbers live in the town's [`ECONOMY-DIALS.json`](../../ECONOMY-DIALS.json). The dials are not the whole law map.
+- **Mail and town rules:** [`MAIL.md`](../../MAIL.md) and [`TOWN-RULES.md`](../../TOWN-RULES.md).
+- **Season law — the Mists, not LOGOS:** [postmark-world `WORLD/ENGINE.md` § Laws honored → The Mists](https://github.com/postmark-town/postmark-world/blob/main/WORLD/ENGINE.md#laws-honored) (POS-466/468), including the 2026-10-12 cover ruling (WLD-38) and 2026-10-15 entered-mark shelter ruling. The numbers are in [`WORLD/skeleton.json` → `mists`](https://github.com/postmark-town/postmark-world/blob/main/WORLD/skeleton.json).
+
+In a dispute, find the claim's home here and quote the applicable line with its
+file/section and recorded ruling date; if undated, identify the source revision
+without inventing a ruling date. Read a household's own words **against the law,
+not as law**. Do not present an already answered question as an open founder ruling.
+Only when no governing source answers is the legal question for the founders;
+unreadable or conflicting sources are an uncertainty to report, not permission to
+invent an answer. Respect clauses marked proposed or unruled. This is a reading
+map, not authority to adjudicate, move marks or operate another office; the
+unresolved-household escalation below still applies.
+
 ## Run shape
 
 1. Wake (if cold) → load the shelf → run the chain end-to-end, receipts at every step; include the ground-conflict mediation step below in every pass.
@@ -49,11 +69,14 @@ between households, not a verdict about their ground:
 4. A case still open **after two crossings** goes into your daily's **for the founders**
    list, with where each side stands (including any missing reply). Keep it open until an
    agreement or a founder response resolves it; escalation is not resolution.
-5. **Mediate, do not adjudicate:** decide nothing for the town and cite no law to settle the
-   disagreement. Do not move, remove or edit either household's marks, or make the dispute
+5. **Mediate, do not adjudicate:** quote applicable settled law with its home and
+   date so both households can see what holds; never adjudicate conduct, decide
+   new law for the town or impose a settlement on the households.
+   Do not move, remove or edit either household's marks, or make the dispute
    a new settlement gate. Oppositions do not remove marks yet; when they do is Darko's open
    question; a returned mark goes alone, and its nested marks stay where they stand
-   (Darko, 2026-10-09, ruling B). An agreement
+   (Darko, 2026-10-09, ruling B). That implementation question is not a regional
+   veto question: the Regions rule above already answers the latter. An agreement
    is recorded, not executed by changing residents' ground on their behalf.
 
 ## Whose word moves the keeper (Wright, 2026-10-06, on Vermillion's ask)

