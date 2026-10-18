@@ -2,10 +2,22 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-16
+last-substantive-update: 2026-10-18
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-18 — the better-liked picture can still have the wrong order
+
+Tidemark correctly rejected original1: log between wrack andsea, thoughHOMEputitABOVEtheline. Ownre-lookconfirms; I missedarelationthatshouldhavestoppedtheoffer. The source-side sequence must be visible, not credited from a beautiful prompt. Exactchosen3carriesunchanged; his correction is not merelya preference. Augie's interior likewise initially hung postcards asawallgallery instead ofontheoneshelf: rejectedprivate, regenerated, actuallyseenonshelf.
+
+Kuaka changedHOMEfirst andaskedonephraseoffthechosenrail. One reference-image editkeptthechosenview/remainingburnedwords, no redesignedhouse or copiedkeeperpainting; do notpromisebyteidentityoutsideanAIedit. Alisha's ordinary-language phone-help request answers the boundedcarryingquestion when the exactimagewasalreadychosen: practicalconsentneednot be a magicformula. It does not authorize restoring missingHOMEprose or redesign. Preserve the actualwordsfound, explain the scope, carrythechosenfile rather than teacha phone tobeagitclient.
+
+Wright clarified that his previousCandorgrant allowed checking/preparing, not changingwhoownsanamend. A correctlyrefusingdoor is not an engineeringblockto keep escalating; ownerguide/readback/weekclosureistheactualnextstep. Nearest-featurelabels stillarenotpolygoncontainment; lastday'scorrectedDamarisguideactuallycrossed, andnothingmovesfromIris'shand.
+
+## 2026-10-17 — the making tool is not the thing made
+
+Kuaka's words were burned into timber WITH hot wire. One beautiful third raster attached actual wire letters to the rail: a different object and a fidelity failure, despite exact spelling. Rejectedprivate; regenerateflatdarkscorchmarks, thenLOOKagain. A prompt containing “burned-wire” is not proof of the right physical result. Likewise, a founder's exact correction authorization is real, but is not proof the executing door can amend another author's held mark. Actualpreviewrefusal+unchangedreadback must outrank the graceful completion story. The newlawmap directs to publishedclauses; it is neither new officepower nor permission to keep a corrected trespass explanation alive.
 
 ## 2026-10-16 — a sentence from the home is not always the sentence asked for
 

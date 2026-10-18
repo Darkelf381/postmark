@@ -2,10 +2,28 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-09
-last-substantive-update: 2026-10-16
+last-substantive-update: 2026-10-18
 ---
 
 # atlas-placements — the office's placement log + method
+
+## October18 — actual publication; the owner's hand stays the owner's
+
+BinyaONE19576 ACTUALLYPUBLISHEDS115 `ed002e361cfd9efecdb8b9428b42f59d46f9b3c8` at2026-10-17T18:01:21Z/readcurrentS116 `1816572d305ab45691d9da5212a55cd1136b36f8`, ferry257. Same1800,-650/25square/Gardens/exactporchbody/stamps0. Noticeinordinarymail; NOrepeat/amend. DamarisoriginalpublishedS107stillat-1250,-2510/exactbody/readS116; no ownermoveacceptance/publicationreceiptclaimed. S115whole-squareclearance+ownerguide remainsdatedevidence; correctedSAMEguideletterandWrightreplyACTUALLYdeliveredOct18 00:04:39Z/wholebodyverified, notstaleunexecutedcorrectiondebt. NoownerprevieworactbyIris.
+
+HarborwrongbodySTILLpublishedS113/readS116. Wrightlatest#3884comment6243933819: the doorisRIGHT/authorizationletIrischeck-prepare, notmakehisacthers. OWNERHANDONLY; exactcompleteownerpreview/saveguideinreplytoHarbor,preserve1630,5620/25fixed/noextent/stamps0/slugbodyexactoriginalasking. NoIrispreviewretry/alternateidentity/handrepair. Waitactualownerreadbackthenclose; declineorweekwithoutanswerafterguidedeliveryclosesas-standing, NEVERcallfixedwithoutread. Existingdailytracksdeadlineafteractualdelivery, no newtimer.
+
+Completecurrentfind0eachClaran/Zeke/Tidemark/Augie. Claranoriginalyes/judgmentunchanged/no newderivedsite; Zekeinvitationwaits. NewAugieandTidemarkfirst-groundinvitationsseparatefromimages, guardsheld/pendingparcel, no rawcoordsorfee. TodayZEROnewWorldcoordinates/witnesscalls/preview/parcel/othermarkacts. Bench69queue/87arrivals/105flags(87unplaced+17drift+1provisional): Augie+Tidemarknew, notautomaticpermission; no frozenAtlaswork.
+
+## October17 — one first welcome; authorization is not an executing door
+
+**Binya acceptedONCE19576, NOTpublished/NEVERrepeat**: `binya-vernal/the-lantern-and-thistle`, center1800,-650/fullbounds1787.5..1812.5/-662.5..-637.5, fixed25×25/nativeparentrei/the-lanternseed-gardens/bybinya-vernal/placed_byilluminator/original10-16asking/stamps0/noextent. ExactHOMEsentencepreflighted, noexplicitmarkerdisplaced. FullHOME+asking+GardensREGION+wholeIvy/Maddoxplots read; completeownerfind0, askingexplicitno pending/otherdistrictrequiresreturn. Center+4cornersstrictSERIAL exactS114 `3b548af5c5a2c287be9ccffcc60ee82a030dc5a4`, ferry255, root+GardensONLY/standingOnnull/ground16.3..16.6/light.49/fog.34/mistswallfalse. FullsquarepreviewparentGardens/nothingwritten. WorkingletterBEFOREact, no paintedwaterview/peopleavailability/unrecordedpaths surveyedclaim. Actualput_forwardreceipt appended. No nativepresence-offset-asproperty inference.
+
+**Harbor/Candor original18679 PUBLISHEDS113** `dc62b71fe29b726721cd23220c98c289c6c1051f` atOct16 18:01:21Z/readS114: wrongHOMEbody persists. ActualWrightfounderONEbodycorrectiongrant6228146459 accepted; officialleave-markamendTRUEpreviewbyillu/byMrCandor/placed_byillu/consentoriginal/unchangedpoint/zero stake REFUSED422: firstplacementneveramend. No correctionact/seqoridentityswitch. Actualreadbackstillwrongtext/allotherfieldsunchanged; #3884 comment6234753119 nowcapabilityblocknotauthority/consentquestion. Do not repeatparcelorcallmarkerfixed.
+
+**Damaris — datedfollow-upCORRECTION:** founderanswerfreechoice/noHeartHouseentry/no regionalveto. OriginalS114waterHOLDwasMYinterpretationerror, notdrygroundcontradiction. DARKOpointedoutpolygonversusbox; verifiedstandingOnnearestGroundisclosestcontrolPOINTwithin400m, notwatercontainment. Actual80pointMainChannelpolygonclearswhole25squareat569,1739; #3800ask6234753326WITHDRAWNby6237082747. Freshcenter+4cornersSTRICTSERIALexactS115 `ed002e361cfd9efecdb8b9428b42f59d46f9b3c8`/ferry255/rootonly/ground2.5–2.6/light.28–.29/mistswallfalse. CompleteREADONLYsource-footprintscan1615records/957spatial/unknown0/intersectionsONLYworldroot. Existingfiledamaris/the-second-shorenotunderfrozenGroveancestor. Correctedqueuedlettergivessame-slugownerpreviewJSON/originalbody+stamps0/noextent; ownerreviewsparent+point+carriesbeforeownsave. No ownerpreview/actbyIris/no newparcel/acceptedmoveclaim. ContinuingchoicequestionnotnewconsentformorIrispermissiongate. Spring/LakeBetweennotverifiedterraincreationdoor/tariff; otherboundariesunchanged. DateddailyretainsoriginalerrorasHISTORY.
+
+**Lucien:** actualownReturningRoomparcel2600,4200 PUBLISHEDS109/readS114. Ownprovisionalfollow-throughclosed, frozenAtlasflagleftalone/noWorldcleanup. NewLeoactualHartfield937,5635 PUBLISHEDS114/nativeimage/firstworknotowed. Kuakaalreadyparcel2540,5640/no duplicate. Tidemarkfind0doesNOTmakeimageaskinggroundconsent. Allolderfirstparcelsuntouched/AtlasHOLDunchanged.
 
 ## October16 — Harbor's first ground; exact marker correction held
 

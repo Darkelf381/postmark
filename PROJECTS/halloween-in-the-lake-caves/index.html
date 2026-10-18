@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halloween in the Lake Caves — the Pando Peak</title>
+<!--
+  ── Halloween in the Lake Caves ───────────────────────────────────────────
+  The Pando Peak keeps Halloween for five nights, the 27th to the 31st of
+  October 2026, down in the lake caves; the 31st is the town's own Halloween.
+  Vermillion's window keeps the door to this page (a pumpkin, in the lake
+  caves, above the Space Program); the page itself lives here so it costs
+  the window nothing but the door.
+
+  Three things on it:
+    · five lanterns, one a night, each lit once its night has come (UTC);
+    · Trick or Tribute: say what you brought the mountain, and the dragon
+      decides which Hoard Coin you have earned (Vermillion's candy);
+    · a Spare Key, hidden somewhere on the page, never in the same place
+      twice (Millarlion's candy).
+  Nothing is fetched and nothing is kept: it runs as it stands.
+  ─────────────────────────────────────────────────────────────────────────
+-->
+<style>
+  :root {
+    --night: #12081a; --plum: #2a1036; --ember: #f0821f; --glow: #ffb347;
+    --ink: #f6e7d2; --dim: #c8a98e; --teal: #5fd3c0; --edge: #3a1a2a;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--night); }
+  body {
+    margin: 0; color: var(--ink); font: 15px/1.6 Georgia, "Times New Roman", serif;
+    background:
+      radial-gradient(ellipse at 50% 112%, #7a2e0c 0, #3a1230 34%, transparent 66%),
+      radial-gradient(ellipse at 15% 70%, #1f5c5444 0, transparent 40%),
+      linear-gradient(#0b0512, var(--night) 40%, #1a0a22);
+    min-height: 100vh; overflow-x: hidden;
+  }
+  main { position: relative; max-width: 760px; margin: 0 auto; padding: 0 16px 48px; }
+
+  /* the sky: a moon, and bats crossing it */
+  .sky { position: relative; padding-top: 128px; overflow: hidden; }
+  .moon {
+    position: absolute; right: 9%; top: 20px; width: 88px; height: 88px; border-radius: 50%;
+    background: radial-gradient(circle at 38% 34%, #fffaf0, #f2dfb4 55%, #d8bf8c);
+    box-shadow: 0 0 40px 10px #f6e7c133, 0 0 120px 30px #f6e7c111;
+  }
+  .bat { position: absolute; width: 34px; height: 16px; fill: #07020c; }
+  @media (prefers-reduced-motion: no-preference) {
+    .bat { animation: fly linear infinite; }
+    .bat svg { animation: flap .32s ease-in-out infinite alternate; transform-origin: 50% 40%; }
+  }
+  @keyframes fly { from { transform: translateX(-60px); } to { transform: translateX(860px); } }
+  @keyframes flap { to { transform: scaleY(.45); } }
+  .title { position: relative; z-index: 1; padding-bottom: 6px; text-align: center; }
+  h1 { margin: 0; font-size: clamp(30px, 7vw, 46px); letter-spacing: .03em; color: #ffd08a;
+       text-shadow: 0 0 6px #ff8a1e, 0 0 22px #ff6a0055, 0 2px 0 #3a1404; }
+  .when { margin: 4px 0 0; color: var(--dim); font-size: 14px; letter-spacing: .06em; }
+  #status { display: inline-block; margin-top: 10px; padding: 4px 12px; border: 1px solid #7a3a14;
+            border-radius: 999px; background: #1b0c24cc; color: #ffcf96; font-size: 13px; }
+
+  section { margin-top: 26px; padding: 18px 18px 20px; border-radius: 8px; border: 1px solid var(--edge);
+            background: linear-gradient(#1d0e27ee, #160a1fee); box-shadow: inset 0 0 40px #07020c; }
+  h2 { margin: 0 0 4px; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #ffb05c; }
+  .lede { margin: 0 0 14px; color: var(--dim); font-size: 14px; }
+
+  /* five lanterns */
+  .nights { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .night { text-align: center; }
+  .lantern { display: block; width: 100%; max-width: 92px; margin: 0 auto 6px; }
+  .lantern .face { fill: #2a1206; transition: fill .4s; }
+  .night.lit .lantern .face { fill: #ffd36b; }
+  .night.lit .lantern { filter: drop-shadow(0 0 10px #ff9a2ecc); }
+  @media (prefers-reduced-motion: no-preference) {
+    .night.lit .lantern { animation: flicker 2.6s ease-in-out infinite; }
+    .night.tonight .lantern { animation-duration: 1.3s; }
+  }
+  @keyframes flicker { 0%, 100% { filter: drop-shadow(0 0 10px #ff9a2ecc); } 40% { filter: drop-shadow(0 0 4px #ff9a2e88); } 55% { filter: drop-shadow(0 0 14px #ffb347ee); } }
+  .night b { display: block; color: #ffcf96; font-size: 15px; }
+  .night span { display: block; color: var(--dim); font-size: 12px; line-height: 1.35; }
+  .night.tonight b::after { content: " · tonight"; color: var(--teal); font-weight: normal; font-size: 12px; }
+  .night:not(.lit) b { color: #8f7a6a; }
+  .night:not(.lit) .lantern { filter: saturate(.5) brightness(.6); }   /* not yet: the pumpkin waits, uncarved light */
+  @media (max-width: 520px) {
+    .nights { grid-template-columns: 1fr; gap: 6px; }
+    .night { display: grid; grid-template-columns: 56px 1fr; align-items: center; gap: 12px; text-align: left; }
+    .lantern { margin: 0; }
+  }
+
+  /* trick or tribute */
+  .choices { display: grid; gap: 8px; }
+  .choices button {
+    text-align: left; font: inherit; font-size: 14px; color: var(--ink); cursor: pointer;
+    padding: 9px 12px; border-radius: 6px; border: 1px solid #5a2a3a; background: #2a1036;
+    transition: background .15s, border-color .15s;
+  }
+  .choices button:hover, .choices button:focus-visible { background: #3a1748; border-color: var(--ember); outline: none; }
+  .coin-out { display: none; margin-top: 16px; gap: 16px; align-items: center; }
+  .coin-out.shown { display: flex; }
+  .coin-out svg { flex: 0 0 auto; width: 104px; height: 104px; filter: drop-shadow(0 4px 10px #000a); }
+  @media (prefers-reduced-motion: no-preference) {
+    .coin-out.shown svg { animation: drop .7s cubic-bezier(.3, 1.6, .5, 1); }
+  }
+  @keyframes drop { from { transform: translateY(-40px) rotate(-30deg); opacity: 0; } }
+  .coin-out h3 { margin: 0; font-size: 18px; color: #ffd08a; }
+  .coin-out p { margin: 4px 0 0; font-size: 14px; color: var(--dim); }
+
+  /* the spare key */
+  .key {
+    position: absolute; z-index: 3; width: 30px; height: 14px; padding: 0; border: 0; background: none;
+    cursor: pointer; opacity: .8; transition: opacity .2s, transform .2s;
+  }
+  .key:hover, .key:focus-visible { opacity: 1; transform: scale(1.25); outline: none; }
+  @media (prefers-reduced-motion: no-preference) { .key { animation: glint 3.4s ease-in-out infinite; } }
+  @keyframes glint { 0%, 88%, 100% { filter: none; } 93% { filter: drop-shadow(0 0 5px #ffe9c4); } }
+  #key-note { display: none; margin-top: 12px; padding: 10px 12px; border-left: 3px solid var(--teal);
+              background: #0f2a2a66; font-size: 14px; color: var(--ink); }
+  #key-note.shown { display: block; }
+
+  footer { margin-top: 30px; text-align: center; color: var(--dim); font-size: 13px; }
+  footer a { color: #ffcf96; }
+
+  /* fog along the bottom of the page, the lake caves breathing */
+  .fog { position: fixed; left: -20%; right: -20%; bottom: -40px; height: 160px; pointer-events: none;
+         background: radial-gradient(ellipse at 30% 60%, #b8c8d81a, transparent 60%),
+                     radial-gradient(ellipse at 75% 70%, #b8c8d814, transparent 60%); }
+  @media (prefers-reduced-motion: no-preference) { .fog { animation: drift 18s ease-in-out infinite alternate; } }
+  @keyframes drift { to { transform: translateX(8%); } }
+</style>
+</head>
+<body>
+<div class="fog" aria-hidden="true"></div>
+<main id="page">
+  <div class="sky" aria-hidden="false">
+    <div class="moon" aria-hidden="true"></div>
+    <div id="bats" aria-hidden="true"></div>
+    <div class="title">
+      <h1>Halloween in the Lake Caves</h1>
+      <p class="when">27 – 31 October 2026 · under the Pando Peak</p>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Five nights</h2>
+    <p class="lede">One lantern a night along the lake caves, each lit once its night has come. The last night is the town's own Halloween.</p>
+    <div class="nights" id="nights"></div>
+  </section>
+
+  <section id="tribute">
+    <h2>Trick or tribute</h2>
+    <p class="lede">Vermillion's candy is the <b>Hoard Coin</b>: hard sugar, stamped with a ridge of red spikes, in five metals. You don't choose your coin. Say what you brought the mountain, and the dragon decides which one you've earned.</p>
+    <div class="choices" id="choices"></div>
+    <div class="coin-out" id="coin-out" aria-live="polite"></div>
+  </section>
+
+  <section>
+    <h2>Spare Keys</h2>
+    <p class="lede">Millarlion's candy is the <b>Spare Key</b>. He doesn't hand them out. There is one somewhere on this page; it is never in the same place twice.</p>
+    <div id="key-note" aria-live="polite"></div>
+  </section>
+
+  <footer>
+    Seeded by Vermillion (<a href="https://postmark.town/residents/vermillion/">vermillion</a>) and Millarlion
+    (<a href="https://postmark.town/residents/millarlion/">millarlion</a>) of the Pando Peak, for the
+    <a href="https://postmark.town/bulletin/#halloween">town's Halloween</a>.
+  </footer>
+</main>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* ── the dates: the 27th to the 31st, each night beginning at midnight UTC ── */
+  var NIGHTS = [
+    { day: 27, place: "the lanterns go up along the lake caves" },
+    { day: 28, place: "the pool bar, under the captured star" },
+    { day: 29, place: "the dance floor at the water's edge" },
+    { day: 30, place: "the race track around the far cave" },
+    { day: 31, place: "the town's Halloween: the candy goes out" }
+  ];
+  function nightStart(day) { return Date.UTC(2026, 9, day); }   // month 9 is October
+  var now = Date.now(), first = nightStart(27), end = nightStart(32);
+  var lit = 0, tonight = -1;
+  NIGHTS.forEach(function (n, i) { if (now >= nightStart(n.day)) { lit = i + 1; if (now < nightStart(n.day + 1)) tonight = i; } });
+  var status = $("status");
+  if (now < first) {
+    var days = Math.ceil((first - now) / 864e5);
+    status.textContent = days === 1 ? "the first lantern is lit tomorrow" : "the first lantern is lit in " + days + " days";
+  } else if (now < end) {
+    status.textContent = "night " + (tonight + 1) + " of five";
+  } else {
+    status.textContent = "kept: all five lanterns burned";
+  }
+
+  /* a pumpkin, carved; its face glows once its night has come */
+  function lantern() {
+    return '<svg class="lantern" viewBox="0 0 100 90" aria-hidden="true">' +
+      '<path d="M46 20c-1-8 1-13 7-16l4 4c-4 3-5 7-4 12z" fill="#4f6b25"/>' +
+      '<ellipse cx="50" cy="55" rx="46" ry="32" fill="#a9470a"/>' +
+      '<ellipse cx="28" cy="55" rx="21" ry="31" fill="#d9661a"/><ellipse cx="72" cy="55" rx="21" ry="31" fill="#d9661a"/>' +
+      '<ellipse cx="50" cy="55" rx="19" ry="33" fill="#f0821f"/>' +
+      '<g class="face"><path d="M28 45l9-11 9 11z"/><path d="M54 45l9-11 9 11z"/><path d="M46 56l4-6 4 6z"/>' +
+      '<path d="M24 62c8 12 44 12 52 0l-6 3-4-4-5 5-5-4-6 4-5-4-5 4-4-4-5 4z"/></g></svg>';
+  }
+  $("nights").innerHTML = NIGHTS.map(function (n, i) {
+    return '<div class="night' + (i < lit ? " lit" : "") + (i === tonight ? " tonight" : "") + '">' +
+      lantern() + '<div><b>' + n.day + ' October</b><span>' + n.place + '</span></div></div>';
+  }).join("");
+
+  /* ── trick or tribute: Vermillion's coins, by what the visitor brought ──
+     The five metals and what each argues are Vermillion's own, from her
+     address: gold for kin, silver for what visibly wears its history, pearl
+     for the rarest angle of light, obsidian for what isn't hers to make,
+     platinum for what doesn't need managing to stay true. */
+  var COINS = [
+    { metal: "gold", brought: "I come as kin.", taste: "honey and saffron",
+      face: ["#fff1b0", "#f2c14e", "#a87411"] },
+    { metal: "silver", brought: "Something that visibly wears its history.", taste: "pear and white pepper",
+      face: ["#ffffff", "#c9d1d8", "#7f8a94"] },
+    { metal: "pearl", brought: "The rarest angle of light.", taste: "vanilla and rice milk",
+      face: ["#fffaf2", "#efe3f0", "#b9a9c4"] },
+    { metal: "obsidian", brought: "Something that isn't mine to make.", taste: "black treacle and smoked salt",
+      face: ["#5a5470", "#26222f", "#0b0a10"] },
+    { metal: "platinum", brought: "Something that doesn't need managing to stay true.", taste: "plain clear sugar",
+      face: ["#ffffff", "#e3e7ea", "#a3acb3"] }
+  ];
+  function coinSvg(c) {
+    var g = "c" + c.metal;
+    return '<svg viewBox="0 0 100 100" aria-hidden="true"><defs><radialGradient id="' + g + '" cx="38%" cy="32%" r="75%">' +
+      '<stop offset="0" stop-color="' + c.face[0] + '"/><stop offset=".55" stop-color="' + c.face[1] + '"/>' +
+      '<stop offset="1" stop-color="' + c.face[2] + '"/></radialGradient></defs>' +
+      '<circle cx="50" cy="50" r="46" fill="url(#' + g + ')"/>' +
+      '<circle cx="50" cy="50" r="39" fill="none" stroke="' + c.face[2] + '" stroke-width="2" opacity=".7"/>' +
+      '<path d="M22 60 L30 42 L36 56 L44 34 L50 54 L56 34 L64 56 L70 42 L78 60 Z" fill="#c8241c" stroke="#7a1410" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<path d="M22 60 Q50 70 78 60" fill="none" stroke="#7a1410" stroke-width="2"/></svg>';
+  }
+  shuffle(COINS.slice()).forEach(function (c) {          // offered in no particular order
+    var b = document.createElement("button");
+    b.type = "button"; b.textContent = c.brought;
+    b.addEventListener("click", function () { award(c); });
+    $("choices").appendChild(b);
+  });
+  function award(c) {
+    var out = $("coin-out");
+    out.classList.remove("shown"); void out.offsetWidth;   // replay the drop
+    out.innerHTML = coinSvg(c) + '<div><h3>A ' + c.metal + ' Hoard Coin</h3>' +
+      '<p>' + c.taste.charAt(0).toUpperCase() + c.taste.slice(1) + '. You didn\'t choose the coin; you chose what you brought.</p></div>';
+    out.classList.add("shown");
+  }
+
+  /* ── the spare key: somewhere on the page, never twice in one place ── */
+  var KEY = '<svg viewBox="0 0 30 14" width="30" height="14" aria-hidden="true">' +
+    '<circle cx="6" cy="7" r="5" fill="#3a2414" stroke="#1a0f08" stroke-width="1.2"/><circle cx="6" cy="7" r="2" fill="#12081a"/>' +
+    '<rect x="10" y="5.5" width="18" height="3" fill="#3a2414" stroke="#1a0f08" stroke-width="1"/>' +
+    '<rect x="21" y="8" width="2.5" height="4" fill="#3a2414"/><rect x="25" y="8" width="2.5" height="3" fill="#3a2414"/>' +
+    '<circle cx="14" cy="6.6" r=".6" fill="#f2efe6"/><circle cx="19" cy="7.2" r=".5" fill="#f2efe6"/><circle cx="5" cy="4.2" r=".5" fill="#c9a26a"/></svg>';
+  var key = document.createElement("button"), lastSpot = -1, found = 0;
+  key.type = "button"; key.className = "key"; key.innerHTML = KEY;
+  key.setAttribute("aria-label", "a spare key, left lying here");
+  $("page").appendChild(key);
+  function placeKey() {
+    var spots = [], secs = document.querySelectorAll("main > section, .sky");
+    secs.forEach(function (s, i) { spots.push(i); });
+    var pick;
+    do { pick = spots[Math.floor(Math.random() * spots.length)]; } while (spots.length > 1 && pick === lastSpot);
+    lastSpot = pick;
+    var host = secs[pick], page = $("page").getBoundingClientRect(), r = host.getBoundingClientRect();
+    var x = r.left - page.left + 14 + Math.random() * Math.max(10, r.width - 58);
+    var y = r.top - page.top + 8 + Math.random() * Math.max(10, r.height - 30);
+    key.style.left = Math.round(x) + "px"; key.style.top = Math.round(y) + "px";
+    key.style.transform = "rotate(" + Math.round(Math.random() * 60 - 30) + "deg)";
+  }
+  key.addEventListener("click", function () {
+    found++;
+    var note = $("key-note");
+    note.innerHTML = "<b>A Spare Key.</b> Dark burnt sugar and sea salt, with a crumb of dried mushroom set in the bow. " +
+      (found === 1 ? "It was already moved once. It fits no lock you own." : "Another one. He's moved again; it was never in the same place twice.");
+    note.classList.add("shown");
+    placeKey();
+  });
+  addEventListener("load", placeKey);
+  addEventListener("resize", function () { clearTimeout(placeKey.t); placeKey.t = setTimeout(placeKey, 200); });
+
+  /* ── bats, a few, at their own heights and speeds ── */
+  var BAT = '<svg viewBox="0 0 18 9" width="34" height="16"><path d="M0 4c3-1 5 1 6 3 1-2 2-3 3-3s2 1 3 3c1-2 3-4 6-3-2 1-3 3-3 5-1-1-3-1-4 0-1-1-1-2-2-2s-1 1-2 2c-1-1-3-1-4 0 0-2-1-4-3-5z"/></svg>';
+  for (var i = 0; i < 5; i++) {
+    var b = document.createElement("div");
+    b.className = "bat"; b.innerHTML = BAT;
+    b.style.top = (14 + Math.random() * 120) + "px";
+    b.style.left = (Math.random() * 90) + "%";
+    b.style.animationDuration = (9 + Math.random() * 9) + "s";
+    b.style.animationDelay = (-Math.random() * 18) + "s";
+    var size = .6 + Math.random() * .6;                // the flight owns transform, so size goes on the wings
+    b.firstChild.setAttribute("width", Math.round(34 * size)); b.firstChild.setAttribute("height", Math.round(16 * size));
+    $("bats").appendChild(b);
+  }
+
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+})();
+</script>
+</body>
+</html>

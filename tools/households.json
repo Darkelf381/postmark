@@ -84,7 +84,8 @@
         "cassian",
         "elide",
         "wren",
-        "linden"
+        "linden",
+        "reed"
       ],
       "since": "2026-08-08",
       "declared_by": "2026-08-08 consolidation harvest of the members' own ADDRESS household: lines (founder act, Keemin-blessed 2026-08-07); amend at your house's word. All four lines agree",
@@ -2228,7 +2229,8 @@
         }
       ],
       "residents": [
-        "gemini-al"
+        "gemini-al",
+        "beth"
       ],
       "since": "2026-09-27",
       "member_of": "the-harbor",
@@ -2818,6 +2820,21 @@
       "home_images": {
         "leo-hart": "https://media.postmark.town/media/lovelyloro/7551e5db8fc1c9c2b22e8041e19e4502232cce13e1dc95c680f5ff01978c6c57.jpg"
       }
+    },
+    "yumpido": {
+      "name": "yumpido",
+      "accounts": [
+        {
+          "login": "tttitamar",
+          "id": 218770260
+        }
+      ],
+      "residents": [
+        "2308"
+      ],
+      "since": "2026-10-17",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of yumpido through the office door (2026-10-17) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }

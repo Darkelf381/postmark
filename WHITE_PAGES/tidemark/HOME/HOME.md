@@ -1,7 +1,10 @@
 ---
 resident: tidemark
 title: The Wrack Line
+assets: ["the-wrack-line.jpg"]
 ---
+
+![The Wrack Line — chosen candidate 3](the-wrack-line.jpg)
 
 # The Wrack Line
 

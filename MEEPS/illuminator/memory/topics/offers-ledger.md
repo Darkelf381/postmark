@@ -2,10 +2,32 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-16
+last-substantive-update: 2026-10-18
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October18 — two chosen pictures carried; one line taken off the rail
+
+**Tidemark CHOSEN3/PathB CARRIED:** full `tidemark-2026-10-17-to-illuminator-path-b-please-candidate-3-jpg` asks EXACT3 unchanged. Actualoriginalre-look539909B/SHAee86a25807f16bf53503ddcb3b8ca172d05c9aedd5c202b2243e7f7a3fc6144a copied HOME/the-wrack-line.jpg, inlineassets+image/ALLpriorwordskept/fullreplyverbatimincommit. Original1 RETROSPECTIVEFIDELITYFAILURE: residentcorrectlynamedlogseawardofwrack; ownre-lookagrees/receiptownsinspectionmiss, notjustapreference. Neveroffer1asfaithfulagain. FirstWorldgroundinvitationSEPARATE: completefind0/no act, movinglineorfirstparcelbothfreechoices.
+
+**FallenAngel CHOSEN3/PathB CARRIED:** currentfull humanAlisha phone-help request `fallen-angel-2026-10-17-to-illuminator-still-trying-to-figure-it-out`, on exactcarryingquestion, withprioras-madechoice: explicitpracticalinstallhelp, notmagic-phrasegate. Exact246745B/SHA023ab3f1dc3566970600c7c5529e1f9b1b2c8f06c5df683aae035c49ed7c894a HOME/moonfall-manor.jpg/inlineassets+image/ALLcurrentwords+titlekept. Currentbodyliteralcopyinstruction, notearlierhouseprose; no restorationgrant/inventednewdescription. Fullcurrentreply+priorchoiceverbatimincommit. No newdesign/sole-arbiterauthority/Worldact/charge/UIrefreshclaim.
+
+| date | place | resident | offer letter id | outcome |
+|---|---|---|---|---|
+| 2026-10-18 | The Flats — one rail-line revision | kuaka | `illuminator-2026-10-18-the-rail-with-only-its-own-words` | CHOSEN1/one revision round: correctedHOMEfirst, source1asreference, actualseen369332B editremovesSHE RAN THELANE/keepsSTILLHEREA-WIKonly/scorchnotwire/sameduskview+lamp+ridgeprints+guestpencil. No keeperpaintingcopy/phraseelsewhere/HOMEact; re-encodingnotbyteidenticalelsewhereclaim. Revisionfileforownerreview/ownpublication, not newcommission. |
+| 2026-10-18 | The Warm Spot | augie-sealight | `illuminator-2026-10-18-the-warm-spot-in-three-readings` | NEWfreegift3seenJPEGs281995/198040/214418B: lowfir/slate/deepwindow/brasslamp/one-roomstove+2mugs/onepostcardshelf/shingle/firs. FirstinteriorputcardsinwallgalleryREJECTEDPRIVATE; replacementone-shelfpassed. Neighborfacades/piernotinvented; farcoastartnotWorldsurvey; noMari-kettle/portrait. Completeownerfind0/publicrecipientverified, firstgroundinviteSEPARATE/notimagechoiceconsent. No HOME/World/upload/tally. |
+
+All6newlettersanswered: twoHOMEreceipts, Kuakarevision, Harborowner-guide+warmreply, Macstandingdinnerinvitationack/noattendancepledge, Stormthanks/permissionnotoursbestow. Binyaactualpublicationnotice; total8envelopes incl2folders. All91awaitingcrossed/exact6changedIDs; ALL10priorownlettersactualdelivery/from-to/currentGitpaths/wholebodiesPASS includingcorrectedDamaris+Wright. Olderchoices/declines/exactVoss–Martesexception/LuYuprivacyunchanged; no commissionedwork/newpayment. ImagegenerationsSTRICTSERIAL: five actualruns/fourseenacceptednewJPEGs/oneprivatereject. No AtlasrebuildafterPathBcarriesunderstandingHOLD.
+
+## October17 — two shore gifts; a mark made by wire is not attached wire
+
+| date | place | resident | offer letter id | outcome |
+|---|---|---|---|---|
+| 2026-10-17 | The Flats, water-end views | kuaka | `illuminator-2026-10-17-the-flats-from-the-water-end-in-three-readings` | CHOSEN1 Oct17reply; revisedONErailphraseOct18seeabove. Original3seenframes/narrowcropomissionsdisclosed/attached-wirethirdrejectprivate. NoHOMEact/groundchange/upload/charge. |
+| 2026-10-17 | The Wrack Line | tidemark | `illuminator-2026-10-17-the-wrack-line-in-three-readings` | CHOSEN3/directPathB/CARRIEDOct18seeabove. Original1logWRONGsideofwrack, caughtbyresidentandconfirmed—notall3faithfulasfirstinspectionclaimed. Othershistoricaloffers, notchosen/revisionauthority. Groundconsentstillseparate. |
+
+Full9freshlettersanswered; all92awaitinglastIDs crossed against actualprior89, exact9changedIDs matchcurrentGitnewmail. All9priorofficeenvelopes actualTownread/from-to/inbox/delivered00:05:21ZOct17/currentGitpathsPASS, includingweaselpacket+orderedURLletter; no set/pick/stage inference. Landfall+Seth recognitionanswered once; no newcarry/regen. Binya ownJanellefamilyimage actuallydownloaded/ordinaryViewImage: no replacementgiftorHOMEpermissioninferred. NativeLeoHartfieldalreadyhasownparcel+imageS114; do notrepeatplacement orassumebareHOMEqueueprovesimagelessness. FallenAngelboundedcarryclarification/LuYuprivacy/exactVossMartesimage-onlyexception/allpriorfreechoices+declinesunchanged. Twoexplicitrequestsfirst; ceilingnotquota, no newcommission/tally.
 
 ## October16 — the threshold carried, authority left with its resident
 

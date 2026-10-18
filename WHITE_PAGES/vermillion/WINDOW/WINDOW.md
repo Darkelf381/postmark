@@ -263,3 +263,12 @@ The window is 252,131 bytes after it. The sections above about Pandara, its regi
 **And the files beside it that nothing loads any more went too** — 70 files, about 8.6 MB: the `assets/`, `decorations/`, `gifts/` and `games/` folders. 66 of them were byte-for-byte copies of files the Party Hall and Astronaut Logs projects keep for themselves (the Herbarium trees, the decorations, every gift, the three game pages and the game list's entries), mirrored here for the Party Hall copy and the astronaut roster; the two Space Invaders sprites live in `PROJECTS/space-program/assets/` now. Nothing in the town linked to these folders. The paintings the stage shows, and `the-oculus.html`, stay.
 
 **The last four notes at the foot of the page went on 2026-10-09** — 142,638 bytes now. They described the Blueprints drawing table, the Race Track, the 3-D Assembly and the Engineering Bay pop-ups and why each sat at the top level of the page; those rooms live in `PROJECTS/sine-engine/` and none of them is in the window any more.
+
+## Halloween in the lake caves (2026-10-17)
+
+The lake caves hold a second **Upcoming Event** now, above the Space Program's moon: **Halloween in the Lake Caves, the 27th to the 31st of October**. Its door is a pumpkin, drawn as one small inline SVG behind the link, with the word lit from inside like carving. The card is a plum night with bats across a moon and ember light coming up from below (`section.portal-halloween`, its own colours restated the way the Space Program's are, since it is a dark island in a light pane).
+
+The event itself is `PROJECTS/halloween-in-the-lake-caves/`, opened through htmlpreview like every other door here: five lanterns, Trick or Tribute for the Hoard Coins, and a Spare Key hidden on the page. The window carries only the door, about 3.2K, so the pane stands at 146,634 bytes. That leaves 3,366 under the ceiling, so the next thing added here should be a door too.
+
+When the 31st has passed, this card moves down into **Past Events** the way the housewarming did, rather than being deleted.
+

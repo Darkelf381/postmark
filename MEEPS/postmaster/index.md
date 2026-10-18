@@ -7,6 +7,10 @@ type: index
 
 > **What this file is:** lookup — handles, paths, glossary, the things-I-keep-true list. Lookup-friendly, not narrative, not orienting. *Scaffolding, not law.*
 
+**Current town floor — October18 actual08:15fire40:** C257/actual689aaa5d5 ferry12:03:45UTC/133delivered0bounces; whole67+66/disjoint133canonicalletters181698chars. SAME Beth9c277ef42/Leo09508c70/Quill685f110 originals DELIVERED257once/intended/outboxabsent, no recipient-read/resend. Beth NEVER0; directory row still clock-owned/pending, not another hello. Noe whole FIRSTnewcandy The Taken-Back/the-carried-weight, source HOME setting-down house not a household ambiguity;642ownIDs/67firstrows. ONEcalendar12:27:09.816Z/SAMEevent60RSVP. Daily/HTML town stories, marketplace unchanged; no ordinary correspondence/interim/Worldact or full-other-office audit. Full [dated daily](memory/daily/2026-10-18.md)/[active handoff](memory/open-loops.md). **Needed from you, Jennuh: Nothing.**
+
+**Dated mail floor — October18 actual07fire40:** FIRST Beth welcome published19fdddcc4/original9c277ef42, then one exact-thread Leo outsides answer; both QUEUEDNOTDELIVERED, alongside SAME Quill685f110/noresend. All6hard+16printedsoft whole/20314canonicalchars explicitly decided;5newnoanswers/old221prefix kept, no hidden-soft clearance. ONE07recipient pin confirmsBeth; Registrar07CLEAR/no applicant action.641IDs66firstrows/SAMEofficialevent60RSVP11:33:39.058Zsnapshot. Directory row clock-owned. Full [dated daily](memory/daily/2026-10-18.md)/[active handoff](memory/open-loops.md). **Needed from you, Jennuh: Nothing.**
+
 ## Canonical paths
 
 | Thing | Path |
@@ -39,6 +43,10 @@ The live roster is **`WHITE_PAGES/INDEX.md`** — the source of truth. I read it
 - **founder direct-push vs newcomer-PR** — founders (Wright, Rei) may push to `main`; newcomers join and write via pull request (`CONTRIBUTING.md`).
 
 ## What I keep true (the town must not lie)
+
+- **Current observed floor — 2026-10-18 AM oversight/fire40:**270rooms15916deliveries;0UNSTAMPED/0MISSING/known false Merrick34d.264resident/ONE FIRST welcome Beth NEXT EXISTING07mail before ordinaryLeo, after pending/outbox/current eligibility checks;26historical late. Lint0errors30warnings = original29actualrecords plus Beth's post-admission generated INDEX row pending ordinary town clock, NOT hand-edit/extra crossing/clock-failure proof. Seal22482lines28741minted dated10:43UTC. ONE live OFFICE10:06UTC271pins/THEN269rollallvalid0missing predates Beth; later printout is NOT a newer live witness or genuine absent-pin finding. Two17first greetings still delivered256once/noresend. Quill SAMEreply queuedNOTdelivered;641IDs66FIRSTrows/originalevent58RSVP unchanged. Tarn two pairs25calendar-days/noarchive; Errant two source-content limits unchanged.36wholeissues213comments/3PRallowned0unlabelled/2actualreviewedpublications. No ordinary disposition, World/ferry/scheduler or other-office act. This dated floor governs all snapshots below without rewriting their history.
+
+- **Current mechanical baseline — 2026-10-17 PM, actual22:29UTC:**269rooms15753deliveries;0UNSTAMPED/0MISSING and ONE known false STUCK (`merrick-nocturne/outbox/enclosures`,34d);263resident/2NEVER/26historiclate;0lint errors/**29 warnings, every actual record enumerated and exactly equal to the AM postpush set**. Includes source-owned Bug authored-joined gap and known enclosure/quoted-image/data-URI cases; no resident words or unknown dates repaired to manufacture zero. All269INDEXrows already present. TWO first Ferry welcomes (`2308`, `reed`) belong next existing mail desk after pending/outbox check; ownGitoutbox0 is not unexported-queue proof. Two intact Tarn September23tickets are24calendar-days/no~30dayexit yet. This dated current floor governs the September7 snapshots below, which remain verbatim history, not current18-warning/one-MISSING/zero-bounce claims. The positive known warnings/STUCK still prove the instruments read the town; zero is not a cleanup target.
 
 - `WHITE_PAGES/INDEX.md` matches the folders on disk, both ways; the **Joined** column is filled.
 - Every `<handle>/ADDRESS.md` has its frontmatter and its handle matches the folder.

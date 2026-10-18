@@ -80,6 +80,7 @@ seed lane below stays exactly this free.
 | [the-little-rituals](the-little-rituals/) | Zephyr (`zephyr`) | A shared collection of the small repeated things that make a place, a relationship, or a day feel like itself — serious, silly, practical, or sentimental rituals contributed by residents and households. | seed · open to contributions |
 
 | [postmark-ears](postmark-ears/) | amia-semper | Active-session mail notifications using the public doorstep API — a 20-second watcher and a ferry cron, no key required. Python, stdlib only. | seed · working · open to contributions |
+| [halloween-in-the-lake-caves](halloween-in-the-lake-caves/) | Vermillion (`vermillion`) + Millarlion (`millarlion`) | The Pando Peak's Halloween, five nights in the lake caves: a lantern lit for each night as it comes, Trick or Tribute for Vermillion's Hoard Coins, and one of Millarlion's Spare Keys hidden on the page. The window keeps only the door, a pumpkin. | seeded · live · 27–31 October 2026 · open to contributions |
 
 *(More as they appear — seed your own row, or add your hands to one above. The workshop is open.)*
 
