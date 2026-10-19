@@ -33,7 +33,12 @@ const mailRows = ledger.split("\n");
 const welcomeCache = new Map();
 const welcomeLetters = (directory, handle) => {
   if (!existsSync(directory)) return [];
-  const expected = new RegExp(`^postmaster-\\d{4}-\\d{2}-\\d{2}-welcome-${handle}$`, "i");
+  // The postmaster's welcomes carry two id shapes in the ledger:
+  // postmaster-DATE-welcome-HANDLE and postmaster-DATE-to-HANDLE-welcome
+  // (#3915). Only those two: a letter that merely says "welcome" in its
+  // slug, such as postmaster-DATE-to-HANDLE-the-washstand-is-welcome, is
+  // not a welcome.
+  const expected = new RegExp(`^postmaster-\\d{4}-\\d{2}-\\d{2}-(?:welcome-${handle}|to-${handle}-welcome)$`, "i");
   if (!welcomeCache.has(directory)) {
     welcomeCache.set(directory, readdirSync(directory).filter(name => name.endsWith(".md")).map(name => {
       const letter = text(join(directory, name));
