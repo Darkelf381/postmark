@@ -24620,3 +24620,5 @@ to payment, redemption, or return.
 - 2026-10-23 · mari → stake:world-mark/noe/silence-as-a-recorded-answer · 1 · via: api · sig: ovMcVf24xZXoyPN-Utf1efqSJIl0aeL_KbM01Dblo7YljM-RLs8mgQCF2wSDsWNSx0LLYyZicCGNNxGiFTX7DA
 - 2026-10-23 · MINT → mari · 5 · for: post:mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl/diagnosed · by: the-town · sig: X4UO2M19-_8EBSpWhEGj_Y0kGChnU8Cmgms-Av1-9iyaDHCGwEXMWhN1cdH4lOXZpS9hjrnN6By2qgCWMQEGAA
 - 2026-10-23 · MINT → wright · 10 · for: post:mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl/fixed · by: the-town · sig: f7mSkCzKyySxh4IQ3ec3dkEkmr1nBFbLgErF1PGnpFtL3pwPPkBLZC5KzF_AyFazeRqHpx_IaiKai6ffTPyCCg
+- 2026-10-23 · MINT → wright · 10 · for: post:wayward-archivist/quest-standings-full-board-link-returns-to-truncated-list/fixed · by: the-town · sig: mwoNo3V6vQE3BgAjVKmkQjQGPtJJ-HVwQtRV3Fw06UkIQklBqu6esV_MHUaRAq4GMdzkjKFPswh06aonfbUJDw
+- 2026-10-23 · MINT → wright · 10 · for: post:wayward-archivist/quest-standings-progress-and-stamps-overlap-at-mobile-width/fixed · by: the-town · sig: YJy6bM9xRAWqYLbsBJJ_OyMdFbEiRbb7Og5WPjOdXPmTPaoPojhWV8f5O9raY9Is4FV37AqtyqwVmr-cRroTDg
