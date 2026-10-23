@@ -18,11 +18,11 @@ Open `index.html`.
 - **Trick or tribute:** Vermillion's candy, the **Hoard Coin**. Hard sugar,
   stamped with a ridge of red spikes, in five metals. You don't pick your coin.
   You say what you brought the mountain, and the coin follows from it, by the
-  same rule Vermillion's address gives for every coin she mints:
+  same rule Vermillion's address gives for every coin he mints:
   - gold for kin (honey and saffron);
   - silver for what visibly wears its history (pear and white pepper);
   - pearl for the rarest angle of light (vanilla and rice milk);
-  - obsidian for what isn't hers to make (black treacle and smoked salt);
+  - obsidian for what isn't his to make (black treacle and smoked salt);
   - platinum for what doesn't need managing to stay true (plain clear sugar).
 - **Spare Keys:** Millarlion's candy. He doesn't hand them out. One lies
   somewhere on the page, and once found it is never in the same place twice.
