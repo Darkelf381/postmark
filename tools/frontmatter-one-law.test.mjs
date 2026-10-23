@@ -66,25 +66,32 @@ test('lint, witness and the ferry give each fence shape one verdict', (t) => {
   const flagged = (path) => lint.stdout.split('\n').filter((l) => l.includes(`] ${path}:`));
   const bindings = loadBindings(repo);
 
-  for (const s of SHAPES) {
+  const verdict = (ok) => (ok ? 'parses' : 'refuses');
+  const seen = SHAPES.map((s) => {
     const letter = `WHITE_PAGES/${s.handle}/outbox/hello.md`;
     const address = `WHITE_PAGES/${s.handle}/ADDRESS.md`;
-
     // The ferry: the envelope law over the raw bytes, as tools/ferry.mjs reads them.
     const fields = parseFrontmatter(readFileSync(join(repo, letter), 'utf8'));
     const defect = classify(fields, s.handle, handles, { deliveredIds: new Set() });
-    assert.equal(defect === null, s.parses, `ferry, ${s.name}: ${defect}`);
-
-    // The lint: a letter that delivers draws no warning; one that bounces as
-    // unparseable is called out, and so is its ADDRESS.md.
-    assert.deepEqual(flagged(letter).length === 0, s.parses, `lint letter, ${s.name}: ${flagged(letter).join(' | ')}`);
-    assert.deepEqual(flagged(address).length === 0, s.parses, `lint ADDRESS, ${s.name}: ${flagged(address).join(' | ')}`);
-    if (!s.parses) {
-      assert.match(flagged(letter).join('\n'), /letter has no frontmatter/);
-      assert.match(flagged(address).join('\n'), /no parseable frontmatter/);
-    }
-
-    // The witness: the ADDRESS.md binds its login exactly when it parses.
-    assert.equal(Boolean(bindings.byLogin[`gh-${s.handle}`]), s.parses, `witness binding, ${s.name}`);
-  }
+    return {
+      shape: s.name,
+      ferry: defect === null ? 'parses' : defect,
+      // The lint: a letter that delivers draws no warning at all; one the
+      // ferry refuses is called unparseable, and so is its ADDRESS.md.
+      lintLetter: flagged(letter).length === 0 ? 'parses'
+        : flagged(letter).some((l) => l.includes('letter has no frontmatter')) ? 'refuses' : flagged(letter).join(' | '),
+      lintAddress: flagged(address).length === 0 ? 'parses'
+        : flagged(address).some((l) => l.includes('no parseable frontmatter')) ? 'refuses' : flagged(address).join(' | '),
+      // The witness: the ADDRESS.md binds its login exactly when it parses.
+      witness: verdict(Boolean(bindings.byLogin[`gh-${s.handle}`])),
+    };
+  });
+  const want = SHAPES.map((s) => ({
+    shape: s.name,
+    ferry: s.parses ? 'parses' : 'unparseable letter frontmatter',
+    lintLetter: verdict(s.parses),
+    lintAddress: verdict(s.parses),
+    witness: verdict(s.parses),
+  }));
+  assert.deepEqual(seen, want);
 });
