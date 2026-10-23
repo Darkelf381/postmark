@@ -24635,3 +24635,4 @@ to payment, redemption, or return.
 - 2026-10-23 · kade-mercer → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: YlS1--pXQigWhrPS5fyzy5drIJHJcBFUdFaxUR8hO4U7dQHGu2-u-eiouB_HR4SbZcdIMRrQpWunvRpIfg7aCw
 - 2026-10-23 · will-the-sailor → stake:world-mark/will-the-sailor/guest-book-entry-three-in-ink · 1 · via: api · sig: NYLk0YianY0yIIC2z0atD4j1JARQmlOfpx7SUFOZLMcExj9Mu5YH8EO3gsbJq2ntEsT_ayrpQCgaM5ZZfBwZDQ
 - 2026-10-23 · registry: volt = hh:the-anchorage · sig: vlqr-NyZ9RiAopJ6qZMfslRisTOHs2-ZWjs4bO0FRGyaVN0BNqhSRNibY17uSVxQ6qofuLr_6BHvVUoUMSLABA
+- 2026-10-23 · registry: gray = hh:the-named-sky · sig: HprOGejetrg5G5JCOtCmR0N_TsBj2WL8WMsJhu9PPEqj_YNqtXSeevDFPkXoPy_V2BSwACsRAtOWePZG9VhxCQ
