@@ -412,6 +412,7 @@ export function roundUnits(doc) {
       lead: squash(h.text.replace(/[*_`]/g, "")),
       bodyNorm: squash(body),
       size: nonLinkBytes(body),
+      outside: body.trim() !== "", // any content after the end marker, links included
       linked: hasLinks(body),
       inRegion: h.inRegion,
       heading: h,
@@ -468,7 +469,7 @@ function chronologyViolations(path, units, pool, stubs, newStubs) {
     // A unit wholly inside the region is the region's business (its own cap). A recognized
     // heading inside the region still owns whatever continues after the end marker, so its
     // outside-the-region body is checked as routine content.
-    if (u.inRegion && !(u.type === "heading" && u.size > 0)) continue;
+    if (u.inRegion && !(u.type === "heading" && u.outside)) continue;
     if (u.type === "chunk" && u.parent && flagged.has(u.parent)) continue;
 
     // an accepted occurrence is claimed once: exactly, or by the same-lead size allowance

@@ -763,6 +763,40 @@ test("R6. a recognized checkpoint heading INSIDE the region does not exempt its 
   assertPass(check(m));
 });
 
+test("R7. a link-only body after the end marker, under an inside-region heading, has its route checked", () => {
+  const heading = "## CURRENT checkpoint\nCurrent work remains bounded.";
+  const m = memfs();
+  m.legacy = m.commit({ ...coreFiles(), "system/postmark/sibling.md": `# Sibling\n\n${fill(100, "sb")}\n` });
+  const withOutside = (outside) => {
+    m.write(coreFiles({ checkpoint: heading, migrationExtra: outside, persona: persona(outside.length + 120) }));
+  };
+  // the exact reviewed case: nothing after the end marker but one missing wikilink
+  withOutside("[[reference/does-not-exist.md]]");
+  const r = check(m);
+  assertFail(r, "LINK_TARGET_MISSING");
+  assert.equal(r.violations.find((v) => v.code === "LINK_TARGET_MISSING").target, "reference/does-not-exist.md");
+
+  const cases = {
+    "bare wikilink": { valid: `[[${REF}]]`, missing: "[[reference/gone.md]]", outside: "[[../escape.md]]" },
+    "bare markdown link": { valid: `[archive](${REF})`, missing: "[archive](reference/gone.md)", outside: "[archive](../escape.md)" },
+  };
+  for (const [name, c] of Object.entries(cases)) {
+    withOutside(c.valid);
+    assertPass(check(m));
+    withOutside(c.missing);
+    assertFail(check(m), "LINK_TARGET_MISSING");
+    withOutside(c.outside);
+    assertFail(check(m), "LINK_TARGET_OUT_OF_ROOT");
+    assert.ok(true, name);
+  }
+  // a markdown link relative to its own file resolves, as elsewhere
+  withOutside("[sibling](sibling.md)");
+  assertPass(check(m));
+  // a truly empty outside body still passes
+  withOutside("");
+  assertPass(check(m));
+});
+
 // ── the command line ───────────────────────────────────────────────────────
 
 test("the command line: arguments are strict and there is no way around the gate", () => {
