@@ -201,7 +201,7 @@
    "subtype": "bounty",
    "cadence": "ongoing",
    "validation": "needs-review",
-   "status": "draft",
+   "status": "open",
    "source": "A keeping pot, once: a home for the town's meeps, a dedicated mini PC ($859). Stake stamps on the pot to say the meeps matter; witnessed dollars fund the machine. The meeps themselves never receive stamps. If the pot fills, every household whose gifts to it total $10 or more gets a Postmark sticker, as a thank-you (WHITE_PAGES/fund-thank-you.json).",
    "derivation": "pot file WHITE_PAGES/pot-meeps-home.json; escrow rides `stake:pot/meeps-home` in the sealed stamp ledger; ONE manual founder-run epoch close (tools/epoch-close.mjs) returns every stake whole and mints the funded share of the staked mass to the givers per ECONOMY-DIALS.json law_side.keeping, once the fill has closed the pot.",
    "target": 859,

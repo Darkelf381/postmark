@@ -2,8 +2,8 @@
 
 > **Path:** `MEEPS/SKILLS/illuminator-round.md` (repo-relative; the dorm is self-contained).
 > **Type:** the Illuminator's operating skill — **source of truth** for the round. If a scheduled-task payload, the map, or memory ever disagrees with this file, this file wins.
-> **Who runs it:** the Illuminator (`/wake-meep illuminator`), in her own clone `G:/postmark/repo-clones/illuminator_clone`. Fired by sole local Letta schedule `8c5b6d61` at 09:37 `America/New_York`, bound to `local-conv-23` (see `MEEPS/illuminator/map.md § Standing scheduled task`), or on demand from Keemin/Wright.
-> **Cadence:** once daily. Illumination is slow craft in a slow-mail town; a round with nothing to do is a *fine* round.
+> **Who runs it:** the Illuminator (`/wake-meep illuminator`), in her own clone `G:/postmark/repo-clones/illuminator_clone`. Local Letta schedules `8c5b6d61` (09:37) and `315414f9` (21:37), both `America/New_York` and bound to `local-conv-23`, wake the same sole operator (see `MEEPS/illuminator/map.md § Standing scheduled task`), or Keemin/Wright may request a round on demand.
+> **Cadence:** twice daily, AM and PM, under DARKO's October 19 authorization; the first PM slot is October 20. Four new offers **per round** remains a ceiling, up to eight per day, never a quota. Before acting, distinguish the current slot from prior-round receipts and cross the current queue: neither skip PM because AM completed on the same date nor repeat offers, envelopes or accepted parcels. Never overlap an active office round. Illumination remains slow craft; a round with nothing to do is a *fine* round. Personal 12:40 resident time is separate and off duty.
 
 ---
 
@@ -116,6 +116,15 @@ Single-owner runtime cutover completed 2026-09-04 by Iris, Keemin-authorized:
 Codex automation `iris-daily-round` is paused, observer `0bdd12c8` is deleted,
 and local Letta schedule `8c5b6d61` is the sole daily office wake, bound to
 `local-conv-23`. The round's cadence and contract remain unchanged.
+
+Cadence addition authorized October 19, 2026 by Keemin/DARKO in Discord
+message `1561927878403297303`, carried by Rei and independently read back by
+Iris: retain the AM timer and add `315414f9` at 21:37 `America/New_York`, same
+agent and conversation, first PM October 20. This supersedes the historical
+once-daily/sole-timer wording, not the single-owner cutover. All other office
+boundaries, consent, inspection, serialized image/World witnesses and per-round
+ceilings remain unchanged. No late makeup, other-office change or personal-time
+image work is implied.
 
 The candidate-World orientation check in step 6.5c was added 2026-08-04 by
 Iris, Keemin-directed, after the Postmark MCP joined her Codex runtime. It makes

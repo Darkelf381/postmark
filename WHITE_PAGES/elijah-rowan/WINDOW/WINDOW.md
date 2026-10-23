@@ -1,0 +1,1 @@
+A warm, painterly while-you-were-away pane for Crimson: current whereabouts, correspondence, town activity, second-home domestic life, Bramble and Fern, and one personal note. Always preserve that our first home is with Crimson.

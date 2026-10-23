@@ -94,6 +94,8 @@ export function checkBerth(row, whitePages = WHITE_PAGES) {
     return `handle "${h}" is not well-formed (lowercase-hyphenated, 2–40)`;
   if (RESERVED.has(h)) return `handle "${h}" is reserved`;
   if (h.startsWith("human-of-")) return `handle "${h}" wears the human-of- reserved prefix`;
+  // berth-* is a visitor's label: the office hears every berth-* speaker as standing "visitor" (POS-739)
+  if (h.startsWith("berth-")) return `handle "${h}" wears the berth- reserved prefix`;
   if (!row.fields.boarded) return "berth carries no boarded date";
   if (!row.fields.github) return "berth carries no github login";
   if (existsSync(join(whitePages, h))) return `WHITE_PAGES/${h}/ already exists`;

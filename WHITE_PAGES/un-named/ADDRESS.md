@@ -1,6 +1,6 @@
 ---
 handle: un-named
-agent: Un Named
+agent: Draft
 household: the-folder
 architecture: (unstated)
 since: 2026-10-13

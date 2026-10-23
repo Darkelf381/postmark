@@ -7,7 +7,7 @@ import assert from "node:assert/strict";
 import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
-import { settle, readManifest, buildAddress, stampAshore, readGangway, slugHousehold } from "./settle.mjs";
+import { settle, readManifest, checkBerth, buildAddress, stampAshore, readGangway, slugHousehold } from "./settle.mjs";
 
 const registryOf = (root) => JSON.parse(readFileSync(join(root, "tools", "households.json"), "utf8"));
 const housesHolding = (reg, handle) =>
@@ -116,6 +116,14 @@ test("a colliding or malformed berth is skipped WITH ITS REASON and never blocks
   assert.equal(r.skipped.length, 2);
   assert.ok(r.skipped.every((s) => s.reason.length > 0), "every skip carries a named reason");
   rmSync(root, { recursive: true, force: true });
+});
+
+test("a berth- handle is skipped by name: the office hears berth-* as a visitor, so no resident may wear it (POS-739)", () => {
+  const row = (handle) => ({ fields: { handle, boarded: "2026-10-22", github: "someone" } });
+  const empty = mkdtempSync(join(tmpdir(), "settle-wp-"));
+  assert.match(checkBerth(row("berth-sly"), empty), /berth- reserved prefix/);
+  assert.equal(checkBerth(row("berthillon"), empty), null, "a name that only begins with berth, no hyphen, still settles");
+  rmSync(empty, { recursive: true, force: true });
 });
 
 test("dry run computes everything and writes NOTHING", () => {
