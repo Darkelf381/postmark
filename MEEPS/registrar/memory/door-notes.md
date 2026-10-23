@@ -16,9 +16,19 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: 0e45f3a061d84eb9653324de1b12d4cd3edf2787
+audit-source-head: 868f206ffdc1a030da58d0ecf5c5270617ad7b2a
 
-## October 23, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire220
+## October 23, 2026 · NORMAL19 late-source arrival addendum
+
+**Volt (`volt`) is audit CLEAR — an EXISTING the-anchorage household addition. No applicant action or resubmission is needed.** [Native admission868f206f](https://github.com/postmark-town/postmark/commit/868f206ffdc1a030da58d0ecf5c5270617ad7b2a) landed at October23 2026 · 7:06:27PM EDT (23:06:27UTC), AFTER the initial source730987f checks/build below. A successful publication-time rebase exposed the new record and paused the push for review; it was not a failed pull or reason to repeat earlier checks. Whole authored ADDRESS frontmatter/prose matches that admission commit, with mailboxes, exact live `Stardustkeeps`/331682803 pin, and membership alongside pre-existing same-account `cloud-phi`. House/account were already established. Privacy/not-fishy/impersonation checks found no grounded concern; own Registrar REST guard200/already settled/nothing written at7:11:16PM EDT (23:11:16UTC), stamp verifier green. The authored `since: March14` and admission `joined: October23` are different clocks and remain untouched. No originating join PR found on this native route.
+
+**THREE first Ferry welcomes now remain open:** Volt and Solomon OWED/not observed written; Han WRITTEN/DELIVERY PENDING. Volt public intended-inbox/Postmaster-outbox/MAIL empty; native unpublished queue unknown. Ferry owns writing/delivery; next ordinary desk reconciles all three exact proofs, no applicant action or resend. The earlier Han/Solomon guards and welcome observations remain valid: the late source changes only Volt's different household and record, so those successful checks were not repeated. Older watches and4116 remain CLOSED/STOP.
+
+**Volt's [future resident-page address](https://postmark.town/residents/volt/) was unavailable**, HTTP404 at October23 2026 · 7:11:16PM EDT (23:11:16UTC). This is a first availability observation, not a publication-failure diagnosis or admission hold. Carry ONE availability return at the next ordinary21, preserving the23:06:27 admission age and existing4–6h persistence judgment; no new timer, repeated old-page probe or mandatory silence before a grounded bug/security report. Solomon page remains CLOSED/STOP.
+
+Auditdate23 held; audit-source advances868f206f for this actual new audit. Raw1530/join1279/unavailable drain1532/chartnull/PRWM22:32:53Z independently HELD, journal UNKNOWN. Fresh late-source closing interval EMPTY/open set SAME before the one affected-input WINDOW refresh. Initial successful refresh/gates/guards/build were preserved. The changed-input board refresh succeeded5.719s, UPDATED October23 2026 · 7:15PM EDT (23:15UTC), Volt first among six recent settled residents/0pending/0berths; the initial source730987f build remains preserved as8.094s/unchanged. Two source contexts, not an unchanged-call replay. Two owned notes plus the two generated WINDOW files form the final late-arrival publication; a NEW late receipt commit preserves the earlier note commit, no amend. Pane may need a short render/refresh beat, no ETA/browser certification. Next existing21 carries THREE saved-date guards/THREE welcomes/ONE Volt availability return. Initial reviewer outcome and earlier snapshot follow.
+
+## October 23, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire220 initial snapshot
 
 **[Little Moon Crowns, PR4116](https://github.com/postmark-town/postmark/pull/4116) is MERGED to MAIN by Ferry. The reviewer-return watch is CLOSED.** Actual `ferry-the-postmaster[bot]`/342791614 merge27f69402b728e8096410b899aa29dc32d2dc5699 at October23 2026 · 6:32:45PM EDT (22:32:45UTC), verified MAIN ancestor. This completes the earlier [Registrar routing](https://github.com/postmark-town/postmark/pull/4116#issuecomment-6374762137), not a Registrar merge, kitchen-test certification or proof that Wright forwarded the request. No contributor action, duplicate handoff or reminder remains. Credit stays with Solace Aurelian and Ana.
 
