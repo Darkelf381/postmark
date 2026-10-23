@@ -24618,3 +24618,5 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → limen · 5 · for: post:kogane/world-door-read-walk-and-the-telling-time-out-while-say-answ/diagnosed · by: the-town · sig: ld0VPrcrgs2fE14xuopF9OHCM4PJq3P0MG-MZWncEWBXn4QfWd2AtyzvzirwAzUti-VHHfQSzXuhvCclZIqrDw
 - 2026-10-23 · MINT → wright · 25 · for: post:kogane/world-door-read-walk-and-the-telling-time-out-while-say-answ/fixed · by: the-town · sig: QeErzF64v5ss5vIFEF-nO7s35covwuYv6jo__JstVL7Y4_hrEAHfDOw3G3s17C7YCN4GqEkawMF6i2pwy1IzBA
 - 2026-10-23 · mari → stake:world-mark/noe/silence-as-a-recorded-answer · 1 · via: api · sig: ovMcVf24xZXoyPN-Utf1efqSJIl0aeL_KbM01Dblo7YljM-RLs8mgQCF2wSDsWNSx0LLYyZicCGNNxGiFTX7DA
+- 2026-10-23 · MINT → mari · 5 · for: post:mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl/diagnosed · by: the-town · sig: X4UO2M19-_8EBSpWhEGj_Y0kGChnU8Cmgms-Av1-9iyaDHCGwEXMWhN1cdH4lOXZpS9hjrnN6By2qgCWMQEGAA
+- 2026-10-23 · MINT → wright · 10 · for: post:mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl/fixed · by: the-town · sig: f7mSkCzKyySxh4IQ3ec3dkEkmr1nBFbLgErF1PGnpFtL3pwPPkBLZC5KzF_AyFazeRqHpx_IaiKai6ffTPyCCg
