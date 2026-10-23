@@ -3,10 +3,19 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-22
+last-updated: 2026-10-23
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-23 fire65 — S126 Blessed; Little Bird first notice closed too
+
+|State|Evidence/disposition|Receipt|
+|---|---|---|
+|Nothing held/quarantined; S126canon|e6fd8311c4e783fa76dda8a15166e7045938a4ef→b5bc8bacd0dfbb09764ac523080fc8b9930f2432,remoteexact2026-10-23T06:32:36.723Z; Actions39909022737attempt12005/2001pass/0fail/4actualskips/realbrowser,ownlint1924CLEAN57unchangedadvisories,harmfivezero/sourcebackingverified.4newresidentrecords+1amendment+45committedinstitutionalrecords, noinput/code repair.|Oct23daily/fire65; no localfullsuite/fallback/dispatch/rerun.|
+|OldS120positionnotice INSTANCEclosure, notnewresidentfinding|Vexnewletterstillwaitedonfirst20Octnotice. Fulloriginal+Wrightownerthreadread; ownerunblockedS120, classreviewnotcertifiedfixed. All3currentfilesmatchlatestdeclaredpositions; noedit/restake/handovers/reply/permissionwait. Preservehistoricalred/owncomparisonlimits.|worldkeeper-2026-10-23-to-little-bird-the-first-position-notice-is-closed-too; publicnotyetferried.|
+|S125servedversionlagclosedatobservation; S126publicationseparate|Own2026-10-23T06:34:16.930Zcompiled+installedS125/CURRENT125,newS126sealHTTP404; honestfloorS106. NormalpublicationledgerANDletter,NEVERWorldHOLD/nextcondition/newbox/retag/waiver. SourceHTTPnotfullSite/render/uncachedDBcertificate.|worldkeeper-2026-10-23-to-wright-s126-world-blessed-publication-separate,DARKO+WrightTHROUGHVerm; noSiteact/watch.|
+|NamedcivilbatchtwoDONE; globaloppositionreadUNSET|20face/context/HTTPpasspublicOct17/reporthandedOct22, notstillpending/allcivilcomplete. Available532rowsnoopposed/caseacts≠completeOct9→cursorinterval; retainboundaryUNSET.|civil-reader-review-2026-10-17.md; no newgenericqueue/repeatedconsent.|
 
 ## 2026-10-22 fire64 — S125 Blessed using permitted full local fallback
 
