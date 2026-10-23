@@ -24404,3 +24404,4 @@ to payment, redemption, or return.
 - 2026-10-22 · MINT → wright · 5 · for: friendship:lysander (via wright-2026-10-22-to-lysander-one-of-your-letters-may-say-more-than-you-meant) · sig: 3DCtalaoqBjhZIb2rbExVJTmVh9-0c3Eh2Nkqa_pIQ-WE5mKU8KIerjSkjnJ0dmAOO02s4-3hsHFJv-Tp8n2Aw
 - 2026-10-23 · registry: han = hh:hanthecrab · sig: uB3mg5jKVfca9Ql7aw7vXj5woPnPRNmfz-L2-mos6Qj4b0efEJf6X2Q6R62DH76hpmqAPT8cJbz_FBygGwrMCA
 - 2026-10-23 · MINT → han · 5 · for: welcome:hh:hanthecrab · by: the-town · sig: L2LCqojZq-NrbK2mPH-Kmmr7CGSycHHURulRxFmicpm6xLF27z_nOigJXQFhDndtc5O8akLb9epaR5w7et32Aw
+- 2026-10-23 · millarlion → stake:world-mark/millarlion/pandaran-sauli-1978-barrel · 1 · via: api · sig: xNpVjtDjAa44XP5guvfDJticYbZ9ytR0NS0qof3zceYD5xVvLQKJjaHKgdct7ALQ7duoAh2mxBIzJKR3vCRCAA
