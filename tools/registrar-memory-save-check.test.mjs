@@ -20,7 +20,7 @@ import { fileURLToPath } from "node:url";
 
 import {
   APPROVED_CEILING, CheckError, checkMemorySave, estimateTokens, exitCodeFor, findRegion, formatText,
-  lettaTokens, normalizeEol, parseArgs, parseLettaTokens,
+  lettaTokens, normalizeEol, parseArgs, parseLettaTokens, readCoreWorking,
 } from "./registrar-memory-save-check.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -616,6 +616,128 @@ test("18. an oversized pending save fails alone; the closeout is untouched and n
     assert.doesNotMatch(v.repair, /delete (the )?(authority|rules|law)|discard/i, v.code);
   }
   assert.doesNotMatch(text, /\b(raise|disable|skip|force|bypass|override)\b/i);
+});
+
+// ── review of #4113: five gaps, each reproduced first ──────────────────────
+
+test("R1. an unreadable core directory is an exit-2 ERROR, never a silently omitted subtree", () => {
+  const m = baseline();
+  m.write({ "system/postmark/deeper/notes.md": `# Notes\n\n${fill(200, "dp")}\n` });
+  const denied = (p) => /deeper$/.test(String(p).replace(/\\/g, "/"));
+  const fs = {
+    readdirSync: (p, o) => {
+      if (denied(p)) throw Object.assign(new Error("EACCES: permission denied"), { code: "EACCES" });
+      return readdirSync(p, o);
+    },
+  };
+  // at the core-reader boundary
+  assert.throws(
+    () => readCoreWorking(m.dir, fs),
+    (e) => e instanceof CheckError && e.code === "UNREADABLE_INPUT" && /deeper$/.test(e.path),
+  );
+  // and through the whole check: both the read and the final re-read fail closed
+  const r = check(m, { deps: { lettaTokens: () => 90000, fs } });
+  assertError(r, "UNREADABLE_INPUT");
+  assert.equal(r.ok, false);
+  // a core that simply has no system/ directory is still the NO_CORE_FILES error, not a crash
+  const bare = memfs();
+  bare.legacy = bare.commit({ [REF]: "x\n" });
+  assertError(check(bare), "NO_CORE_FILES");
+});
+
+test("R2. historical or routine content under a NESTED heading counts toward its parent", () => {
+  const nestedHistory = `## Historical NORMAL401 October23/fire250 — superseded\n\n### Evidence\n\n${fill(600, "nar")}`;
+  const m = baseline();
+  m.write(coreFiles({ migrationExtra: nestedHistory, persona: persona(700) }));
+  assertFail(check(m), "NEW_HISTORY_CHRONOLOGY");
+
+  const deep = `## CURRENT NORMAL19 October23/fire211 — COMPLETE\n\n### Detail\n\n#### Proof\n\n${fill(500, "nar")}`;
+  m.write(coreFiles({ migrationExtra: deep, persona: persona(600) }));
+  assertFail(check(m), "ROUTINE_OUTSIDE_REGION");
+
+  // the heading stops at the next heading of the same or a higher level
+  const sibling = `## Historical NORMAL401 October23/fire250 — superseded\n\nSee [[${REF}]].\n\n## Another section\n\n${fill(600, "doc")}`;
+  m.write(coreFiles({ migrationExtra: sibling, persona: persona(860) }));
+  assertPass(check(m));
+
+  // a nested heading INSIDE the marked region stays out of the heading's body
+  const next = coreFiles({ checkpoint: `### Detail\n\n${fill(500, "nar")}`, persona: persona(560) });
+  next["system/postmark/migration-state.md"] = next["system/postmark/migration-state.md"].replace(
+    "<!-- registrar-current:start -->",
+    "## CURRENT NORMAL19 October23/fire211 — COMPLETE\n\n<!-- registrar-current:start -->",
+  );
+  m.write(next);
+  assertPass(check(m));
+});
+
+test("R3. one accepted occurrence grants one exemption, not two", () => {
+  const old = `## Prior FULL OFFICE — October12 NORMAL11/fire90, published VERIFIED\n\n${fill(700, "old")}`;
+  const m = baseline({ other: old });
+  // keep the old section AND append another with the same lead and a smaller narrative
+  const doubled = `${old}\n\n## Prior FULL OFFICE — October12 NORMAL11/fire90, published VERIFIED\n\n${fill(650, "new")}`;
+  m.write(coreFiles({ other: doubled, persona: persona(700) }));
+  const r = check(m);
+  assertFail(r, "NEW_HISTORY_CHRONOLOGY");
+  assert.equal(r.violations.filter((v) => v.code === "NEW_HISTORY_CHRONOLOGY").length, 1);
+  // one section, edited to be no larger, still uses its single allowance
+  m.write(coreFiles({ other: old.replace(fill(700, "old"), fill(650, "new")) }));
+  assertPass(check(m));
+  // two accepted sections of the same lead give two allowances, not three
+  const twin = `${old}\n\n${old.replace(fill(700, "old"), fill(690, "twb"))}`;
+  const t = baseline({ other: twin });
+  t.write(coreFiles({ other: `${twin}\n\n${old.replace(fill(700, "old"), fill(500, "thr"))}`, persona: persona(560) }));
+  assertFail(check(t), "NEW_HISTORY_CHRONOLOGY");
+});
+
+test("R4. an edited route on an exempt unit is still checked; unchanged routes are not re-litigated", () => {
+  const m = baseline();
+  const mig = "system/postmark/migration-state.md";
+  const original = m.read(mig);
+  const edit = (target) => ({
+    [mig]: original.replace(`Archived verbatim: [[${REF}]].`, `Archived verbatim: [[${target}]].`),
+    "system/persona.md": `# Persona\n\n${persona(40)}\n`,
+  });
+  // a legacy stub with unchanged prose but a new route
+  m.write(edit("reference/history/never-written.md"));
+  const missing = check(m);
+  assertFail(missing, "LINK_TARGET_MISSING");
+  assert.equal(missing.violations.find((v) => v.code === "LINK_TARGET_MISSING").target, "reference/history/never-written.md");
+  m.write(edit("../escape.md"));
+  assertFail(check(m), "LINK_TARGET_OUT_OF_ROOT");
+  // the same stub pointing at a route that exists passes
+  m.write(edit(REF));
+  assertPass(check(m));
+
+  // the same-lead size exemption: an old long section whose route is changed
+  const old = `## Prior FULL OFFICE — October12 NORMAL11/fire90, published VERIFIED\n\n${fill(300, "old")} See [[${REF}]].`;
+  const o = baseline({ other: old });
+  o.write(coreFiles({ other: old.replace(`[[${REF}]]`, "[[reference/gone.md]]"), persona: persona(10) }));
+  assertFail(check(o), "LINK_TARGET_MISSING");
+  // untouched, it needs no re-check (the route may have been archived since)
+  o.write(coreFiles({ other: old, checkpoint: fill(300, "next") }));
+  assertPass(check(o));
+});
+
+test("R5. an explicit CURRENT or checkpoint lead is routine state even with no number or date", () => {
+  const forms = [
+    `## CURRENT checkpoint\n\n${fill(500, "nar")}`,
+    `## Latest operational checkpoint\n\n${fill(500, "nar")}`,
+    `**CURRENT checkpoint:** ${fill(500, "nar")}`,
+    `- CURRENT COMPLETE — ${fill(500, "nar")}`,
+  ];
+  for (const text of forms) {
+    const m = baseline();
+    m.write(coreFiles({ migrationExtra: text, persona: persona(text.length + 4) }));
+    assertFail(check(m), "ROUTINE_OUTSIDE_REGION");
+  }
+  // inside the marked region it is the ordinary replacement
+  const ok = baseline();
+  ok.write(coreFiles({ checkpoint: `## CURRENT checkpoint\n\n${fill(500, "nar")}`, persona: persona(560) }));
+  assertPass(check(ok));
+  // ordinary headings that merely contain the word "current" are not classified
+  const plain = baseline();
+  plain.write(coreFiles({ migrationExtra: `## Current runtime state\n\n${fill(600, "doc")}`, persona: persona(700) }));
+  assertPass(check(plain));
 });
 
 // ── the command line ───────────────────────────────────────────────────────

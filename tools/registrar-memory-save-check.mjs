@@ -42,29 +42,46 @@
 // ── THE HEURISTICS, IN PLAIN WORDS (what a reader of a failure should expect) ─
 //
 //  * A "round unit" is a heading, or the first line of a paragraph / bullet / bold
-//    lead, that carries a round identifier (NORMAL<n>, fire<n>, round <n>, a month
-//    and day, an ISO date, Historical<n>) AND either a history word (historical,
-//    prior, previous, superseded, baseline) or a state word (CURRENT, COMPLETE,
-//    PARTIAL, VERIFIED, PUBLISHED, PENDING, QUIET, checkpoint, FULL OFFICE).
+//    lead, that is one of:
+//      - a lead that opens with "Historical" (no number needed);
+//      - a round identifier (NORMAL<n>, fire<n>, round <n>, a month and day, an ISO
+//        date, Historical<n>) with a history word (historical, prior, previous,
+//        superseded, baseline) or a state word (CURRENT, COMPLETE, PARTIAL, VERIFIED,
+//        PUBLISHED, PENDING, QUIET, checkpoint, FULL OFFICE);
+//      - an explicit current-state lead with NO number or date: one that opens with
+//        CURRENT or Latest plus a state word, or that names a current / latest /
+//        operational "checkpoint". A bare "Current runtime state" is not one.
+//  * A heading's body is everything under it down to the next heading of the same or
+//    a higher level, nested headings included, minus the marked region.
 //  * A round unit outside the marked regions passes when it is unchanged from
 //    accepted-ref, or matches an approved legacy stub exactly, or is no longer
-//    than the accepted unit with the same lead, or is short (<= 200 bytes once
+//    than an accepted unit with the same lead, or is short (<= 200 bytes once
 //    links are removed: "short references/URLs/dates alone are not history").
-//    Anything else is new chronology, or routine state outside the regions.
+//    Each accepted occurrence is claimed ONCE (an exact match or a size allowance,
+//    never both). Anything else is new chronology, or routine state outside the
+//    regions. A unit that is new or changed but passes on one of those exemptions
+//    has the local routes it carries checked like any new stub.
 //  * A legacy stub is a level-2+ history heading in the two region files at
 //    legacy-ref whose body is short and carries a link. Expanding one fails.
 //  * Duplication is deterministic exact-block detection over paragraph, list item,
 //    contiguous list and fenced blocks (whitespace collapsed, words kept) of
-//    >= 256 UTF-8 bytes. It is NOT a semantic classifier: a paraphrase, or
-//    chronology written with no round identifier, is not found.
+//    >= 256 UTF-8 bytes.
+//  * An unreadable directory, entry or file under system/ is an ERROR (exit 2): a
+//    subtree is never silently left out of both sides of the comparison.
+//
+// WHAT THIS IS NOT. It is a lexical gate, not a semantic classifier. It does not
+// recognize chronology or routine state that carries none of the leads above (an
+// unlabelled dated list, a narrative under an ordinary heading), paraphrased or
+// reworded duplicates, or an authority change dressed as routine prose. The
+// ratchet (the core may not grow) is what bounds those; review is what catches them.
 //
 // Design notes where the interface is silent (for the contract reviewer): refs must
 // be full hex object names (no branch names or abbreviations), for both refs;
 // --ceiling is required (no default); marker text inside a code fence still
 // counts as a marker; a marker of the wrong kind, or in any other core file, is a
-// setup ERROR; local link targets are checked only for the two regions and for
-// NEW stub-shaped units, as wikilinks relative to the MemFS root and as markdown
-// links relative to the root or to their own file.
+// setup ERROR; local link targets are checked for the two regions and for every
+// new or changed round unit that carries one, as wikilinks relative to the MemFS
+// root and as markdown links relative to the root or to their own file.
 
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -351,9 +368,17 @@ const ROUND_ID =
 const HISTORY_WORD = /\bhistoric(?:al)?(?![a-z])|\bprior\b|\bprevious\b|\bsuperseded\b|\bbaseline\b/i;
 const STATE_WORD = /\bCURRENT\b|\bCOMPLETED?\b|\bPARTIAL\b|\bVERIFIED\b|\bPUBLISHED\b|\bPENDING\b|\bQUIET\b|\bcheckpoint\b|\bFULL OFFICE\b/i;
 
+const CHECKPOINT_STATE = /\bCOMPLETED?\b|\bPARTIAL\b|\bVERIFIED\b|\bPUBLISHED\b|\bPENDING\b|\bQUIET\b|\bcheckpoint\b|\bFULL OFFICE\b/i;
+
 export function classifyLead(lead) {
   if (/^historic(?:al)?(?![a-z])/i.test(lead)) return "history"; // a lead that opens with "Historical" needs no round id
-  if (!ROUND_ID.test(lead)) return null;
+  if (!ROUND_ID.test(lead)) {
+    // An explicit current-state lead needs no number or date either: "CURRENT ... checkpoint",
+    // "CURRENT COMPLETE", "Latest operational checkpoint". A bare "Current runtime state" is not one.
+    if (/^(?:current|latest)\b/i.test(lead) && CHECKPOINT_STATE.test(lead)) return "routine";
+    if (/\bcheckpoint\b/i.test(lead) && /\b(?:current|latest|operational)\b/i.test(lead)) return "routine";
+    return null;
+  }
   if (HISTORY_WORD.test(lead)) return "history";
   if (STATE_WORD.test(lead)) return "routine";
   return null;
@@ -366,13 +391,19 @@ function cleanLead(line) {
 /** Every round-shaped unit in a parsed document. */
 export function roundUnits(doc) {
   const units = [];
-  // A heading's body is what sits under it OUTSIDE the marked region: a heading kept
-  // above the region is a label for it, and the region is measured by its own cap.
-  const bodyOf = (h) => doc.chunks.filter((c) => c.heading === h && !c.inRegion);
+  // A heading's body is everything under it OUTSIDE the marked region, down to the next
+  // heading of the same or a higher level (nested headings are part of the section). A
+  // heading kept above the region is a label for it; the region has its own cap.
+  const familyOf = (h) => {
+    const family = new Set([h]);
+    for (let j = doc.headings.indexOf(h) + 1; j < doc.headings.length && doc.headings[j].level > h.level; j++) family.add(doc.headings[j]);
+    return family;
+  };
   for (const h of doc.headings) {
     const kind = classifyLead(squash(h.text.replace(/[*_`]/g, "")));
     if (!kind) continue;
-    const body = bodyOf(h).map((c) => c.text).join("\n");
+    const family = familyOf(h);
+    const body = doc.chunks.filter((c) => family.has(c.heading) && !c.inRegion).map((c) => c.text).join("\n");
     units.push({
       type: "heading",
       kind,
@@ -384,6 +415,7 @@ export function roundUnits(doc) {
       linked: hasLinks(body),
       inRegion: h.inRegion,
       heading: h,
+      family,
       parent: null,
       links: body,
     });
@@ -427,21 +459,30 @@ const unitKey = (u) => `${u.kind}\u0000${u.lead}\u0000${u.bodyNorm}`;
  */
 function chronologyViolations(path, units, pool, stubs, newStubs) {
   const violations = [];
-  const flaggedHeadings = new Set();
+  const flagged = new Set();
+  const flag = (u) => {
+    for (const h of u.family ?? []) flagged.add(h);
+  };
   const ordered = [...units.filter((u) => u.type === "heading"), ...units.filter((u) => u.type === "chunk")];
   for (const u of ordered) {
     if (u.inRegion) continue;
-    if (u.type === "chunk" && u.parent && flaggedHeadings.has(u.parent)) continue;
+    if (u.type === "chunk" && u.parent && flagged.has(u.parent)) continue;
 
-    const key = unitKey(u);
-    if ((pool.keys.get(key) ?? 0) > 0) {
-      pool.keys.set(key, pool.keys.get(key) - 1);
+    // an accepted occurrence is claimed once: exactly, or by the same-lead size allowance
+    const accepted = pool.get(u.lead) ?? [];
+    const exact = accepted.find((a) => !a.used && a.key === unitKey(u));
+    if (exact) {
+      exact.used = true;
       continue;
     }
+    // from here on the unit is new or changed, so any route it carries is checked
+    const exempt = () => {
+      if (u.linked) newStubs.push({ path, unit: u });
+    };
     const legacy = stubs.get(u.lead);
     if (u.type === "heading" && legacy) {
       if (legacy.some((s) => s.bodyNorm === u.bodyNorm)) {
-        if (u.linked) newStubs.push({ path, unit: u });
+        exempt();
         continue;
       }
       if (u.size > Math.min(...legacy.map((s) => s.size))) {
@@ -453,21 +494,21 @@ function chronologyViolations(path, units, pool, stubs, newStubs) {
           repair:
             "An approved retrieval stub was expanded into narrative. Put the detail once in its dated external reference and keep only the heading and the link.",
         });
-        flaggedHeadings.add(u.heading);
+        flag(u);
         continue;
       }
+      exempt();
       continue;
     }
-    const sizes = pool.leads.get(u.lead);
-    if (sizes) {
-      const at = sizes.findIndex((s) => s >= u.size);
-      if (at >= 0) {
-        sizes.splice(at, 1);
-        continue;
-      }
+    let fit = null;
+    for (const a of accepted) if (!a.used && a.size >= u.size && (!fit || a.size < fit.size)) fit = a;
+    if (fit) {
+      fit.used = true;
+      exempt();
+      continue;
     }
     if (u.size <= FULL_MIN_BYTES) {
-      if (u.linked) newStubs.push({ path, unit: u });
+      exempt();
       continue;
     }
     violations.push(
@@ -489,7 +530,7 @@ function chronologyViolations(path, units, pool, stubs, newStubs) {
               "New routine checkpoint prose outside the marked regions. Replace the current state inside the marked region, keep detail once in the dated external reference, or ask for review of genuinely non-routine state.",
           },
     );
-    if (u.type === "heading") flaggedHeadings.add(u.heading);
+    flag(u);
   }
   return violations;
 }
@@ -609,29 +650,43 @@ export function readCoreAt(dir, ref) {
   return core;
 }
 
-/** Core in the working tree: { core: Map(path -> LF text), hashes: Map(path -> sha256 of raw bytes) }. */
-export function readCoreWorking(dir) {
+/**
+ * Core in the working tree: { core: Map(path -> LF text), hashes: Map(path -> sha256 of raw bytes) }.
+ * Any directory, entry or file that cannot be read is an UNREADABLE_INPUT error: a subtree
+ * that quietly drops out would make both sides of the comparison agree on a smaller core.
+ * Only a missing top-level system/ is tolerated (the caller reports NO_CORE_FILES).
+ * `io` is for tests (a simulated read error); the command line never sets it.
+ */
+export function readCoreWorking(dir, io = {}) {
+  const { readdirSync: ls = readdirSync, lstatSync: stat = lstatSync, readFileSync: read = readFileSync } = io;
   const core = new Map();
   const hashes = new Map();
+  const unreadable = (what, path) => new CheckError("UNREADABLE_INPUT", `${what} could not be read.`, path);
   const walk = (rel) => {
     let entries;
     try {
-      entries = readdirSync(join(dir, rel), { withFileTypes: true });
-    } catch {
-      return;
+      entries = ls(join(dir, rel), { withFileTypes: true });
+    } catch (e) {
+      if (rel === "system" && e && e.code === "ENOENT") return;
+      throw unreadable("A core directory", rel);
     }
     entries.sort((a, b) => (a.name < b.name ? -1 : a.name > b.name ? 1 : 0));
     for (const e of entries) {
       const child = rel + "/" + e.name;
-      const st = lstatSync(join(dir, child));
+      let st;
+      try {
+        st = stat(join(dir, child));
+      } catch {
+        throw unreadable("A core entry", child);
+      }
       if (st.isSymbolicLink()) throw new CheckError("UNREADABLE_INPUT", "A symbolic link inside system/ cannot be checked.", child);
       if (st.isDirectory()) walk(child);
       else if (st.isFile() && e.name.toLowerCase().endsWith(".md")) {
         let bytes;
         try {
-          bytes = readFileSync(join(dir, child));
+          bytes = read(join(dir, child));
         } catch {
-          throw new CheckError("UNREADABLE_INPUT", "A core file could not be read.", child);
+          throw unreadable("A core file", child);
         }
         hashes.set(child, sha(bytes));
         core.set(child, normalizeEol(decode(bytes, child)));
@@ -642,8 +697,8 @@ export function readCoreWorking(dir) {
   return { core, hashes };
 }
 
-function snapshotWorking(dir) {
-  const { hashes } = readCoreWorking(dir);
+function snapshotWorking(dir, io) {
+  const { hashes } = readCoreWorking(dir, io);
   return { head: gitText(dir, ["rev-parse", "HEAD"]), files: [...hashes].map(([p, h]) => `${p}\u0000${h}`).join("\n") };
 }
 
@@ -756,10 +811,10 @@ export function checkMemorySave({ memoryDir, acceptedRef, legacyRef, ceiling }, 
     result.legacyRef = legacy;
 
     // 2. inputs, read once; the same bytes are measured and later re-hashed
-    const before = snapshotWorking(dir);
+    const before = snapshotWorking(dir, deps.fs);
     if (before.head !== head) throw new CheckError("STATE_CHANGED", "HEAD moved while the check started.");
     const acceptedCore = readCoreAt(dir, accepted);
-    const working = readCoreWorking(dir);
+    const working = readCoreWorking(dir, deps.fs);
     const proposed = working.core;
     if (!proposed.size) throw new CheckError("NO_CORE_FILES", "No system/**/*.md core files were found in the working tree.");
 
@@ -860,13 +915,13 @@ export function checkMemorySave({ memoryDir, acceptedRef, legacyRef, ceiling }, 
       }
       result.legacyStubCount = stubCount;
 
-      const pool = { keys: new Map(), leads: new Map() };
+      // each accepted occurrence can be claimed ONCE, by an exact match or by the
+      // same-lead size allowance, never both
+      const pool = new Map();
       for (const text of acceptedCore.values()) {
         for (const u of roundUnits(parseDoc(text, null))) {
-          const k = unitKey(u);
-          pool.keys.set(k, (pool.keys.get(k) ?? 0) + 1);
-          if (!pool.leads.has(u.lead)) pool.leads.set(u.lead, []);
-          pool.leads.get(u.lead).push(u.size);
+          if (!pool.has(u.lead)) pool.set(u.lead, []);
+          pool.get(u.lead).push({ key: unitKey(u), size: u.size, used: false });
         }
       }
       const newStubs = [];
@@ -928,7 +983,7 @@ export function checkMemorySave({ memoryDir, acceptedRef, legacyRef, ceiling }, 
     }
 
     // 9. nothing may have moved while we read
-    const after = snapshotWorking(dir);
+    const after = snapshotWorking(dir, deps.fs);
     if (after.head !== before.head || after.files !== before.files) {
       throw new CheckError("STATE_CHANGED", "HEAD or a core file changed while the check ran. Nothing was verified; run it again on the settled save.");
     }
