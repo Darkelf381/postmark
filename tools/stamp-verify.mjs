@@ -35,7 +35,7 @@ import {
   parseStampLedger, sealChain, foldBalances, parseLaws, classifyEntry, walkLedger,
   townIssuanceDial,
   keepingDial, potFile, deriveEpochClose, keepingLine, TREASURY_POT, STAGE_LADDER,
-  AWARD_MAX, AWARD_HANDS, RECREDIT_STAGES, CORRECTION_HANDS,
+  AWARD_MAX, AWARD_HANDS, QUEST_PAY, RECREDIT_STAGES, CORRECTION_HANDS,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -167,6 +167,7 @@ export function verifyStampLedger(repo, { pubkeyPem, registry = null } = {}) {
     const welcomedHouses = new Set();   // household keys already paid their welcome bundle
     const paidStages = new Set();       // `${post}/${stage}` already paid its stage stamps
     const paidAwards = new Set();       // `${post}/${label}` already paid its award (POS-290)
+    const paidQuests = new Set();       // `${quest}|${household}` already paid (POS-632)
     const stageLineOf = new Map();      // `${post}/${stage}` -> the stage line { handle, n, sig } (POS-649)
     const stageLineBySig = new Map();   // a stage line's sig -> { post, stage, handle, n } (POS-649)
     const recredited = new Set();       // `${post}/${stage}` already re-credited (once, ever)
@@ -548,11 +549,51 @@ export function verifyStampLedger(repo, { pubkeyPem, registry = null } = {}) {
         if (burnedSigs.has(cls.sig)) {
           problems.push(`line ${lineNo}: LAWFUL fails — the mint post:${k} is burned twice (one correction per mint, ever)`); break;
         }
+        // A MEEP'S STAGE MINT IS BURNED ALONE (POS-655, Darko 2026-10-16 20:04
+        // EDT): "meeps are credited, not paid". A stage line that paid a handle
+        // the law in force at the burn's date names a meep has no right
+        // recipient to re-credit, so its correction is the burn alone. Every
+        // other correction still follows its recredit, line for line.
         const prev = i > 0 ? classifyEntry(entries[i - 1].canonical) : { kind: 'none' };
-        if (prev.kind !== 'post-recredit' || `${prev.post}/${prev.stage}` !== k) {
-          problems.push(`line ${lineNo}: LAWFUL fails — the correction of post:${k} does not follow its recredit; the two are written together or not at all`); break;
+        const meepCorrection = lawAt(cls.date).meeps.has(wrong.handle);
+        if (!meepCorrection && (prev.kind !== 'post-recredit' || `${prev.post}/${prev.stage}` !== k)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — the correction of post:${k} does not follow its recredit; the two are written together or not at all (only a meep's stage mint is burned alone)`); break;
         }
         burnedSigs.add(cls.sig);
+      }
+
+      // ── a quest the town pays (POS-632) ─────────────────────────────────
+      // The signature proves the office pen; the fold holds the terms, from the
+      // sealed QUEST_PAY table, quoted from the grammar comment: "the quest is in
+      // QUEST_PAY; the amount is exactly its amount; the line's date is inside its
+      // window; by: is the-town; the meep law; the named key IS the recipient's
+      // household at the line's date; and ONE line per quest and household, ever."
+      if (cls.kind === 'quest-pay') {
+        const terms = QUEST_PAY[cls.quest];
+        if (!terms) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest:${cls.quest} is not a paid quest (${Object.keys(QUEST_PAY).join(', ')})`); break;
+        }
+        if (cls.n !== terms.amount) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest:${cls.quest} pays exactly ${terms.amount} (got ${cls.n})`); break;
+        }
+        if (cls.date < terms.from || (terms.until && cls.date > terms.until)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest:${cls.quest} pays from ${terms.from}${terms.until ? ` until ${terms.until}` : ''}, not on ${cls.date}`); break;
+        }
+        if (cls.by !== 'the-town') {
+          problems.push(`line ${lineNo}: LAWFUL fails — a quest is the town's mint (by: "${cls.by}", must be the-town)`); break;
+        }
+        if (lawAt(cls.date).meeps.has(cls.handle)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest pay to meep "${cls.handle}" (meeps stay outside the currency)`); break;
+        }
+        const houseKey = hh(cls.handle, cls.date);
+        if (canonHouse(cls.household) !== canonHouse(houseKey)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest:${cls.quest} names household "${cls.household}" but "${cls.handle}" is ${houseKey} at ${cls.date}`); break;
+        }
+        const k = `${cls.quest}|${canonHouse(houseKey)}`;
+        if (paidQuests.has(k)) {
+          problems.push(`line ${lineNo}: LAWFUL fails — quest:${cls.quest} is paid twice to household ${houseKey} (one line per quest and household, ever)`); break;
+        }
+        paidQuests.add(k);
       }
 
       // ── the idea posts (POS-290) ─────────────────────────────────────────

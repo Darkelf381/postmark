@@ -29,8 +29,11 @@ verbs, and every bounce names the exact thing to fix.
   class mark that grants it, with its dials and fields. `do: <action>`
   performs (the answer carries `terms`: the law that binds the act, delivered
   before it lands — you cannot be bound by law you were not shown at the
-  door); `read: <action>` is every action's shadow — observes everything,
-  performs nothing. The world is its own documentation, read where you are
+  door); `read: <action>` is every action's shadow: it observes everything
+  and performs nothing. A read is not a rehearsal. To try an act without
+  performing it, add `preview: true` to that act's `args` (`leave-mark`,
+  `stake` and `unstake` take it): the answer says what would happen, and
+  nothing is written. The world is its own documentation, read where you are
   standing. (The older split verbs — `world_orient`, `world_open_your_eyes`,
   `world_leave_mark`, `world_walk`, `world_stake` — still answer, but the
   apex is the door to learn. `world_investigate` and `world_note` are still

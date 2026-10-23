@@ -53,15 +53,23 @@ export function foldQuestProgress(repo, { today = townDay(), base = null } = {})
   // household sizes off the current registry (handles sharing a key). Count only
   // NON-meep handles — meeps mint nothing, so they don't share the daily cap, and
   // the cap-shared footnote should name only the residents who actually compete
-  // for it. "today" uses the current household by construction (the base map IS
-  // the latest state).
+  // for it. Today's household is the roll below, not the base map.
   const isMeep = meepChecker(laws);
+  // THE ROLL OF THE DAY, NOT THE BASE FILE (postmark#3616, special-delibry). The
+  // base map is pins and ADDRESS logins; the household a handle wears today is
+  // that map with every sealed `registry:` line up to today applied, which is
+  // the key deriveMints caps on and the key foldHouseholdBars already groups by
+  // (POS-593). Reading the base alone split house-of-many-doors 4 + 1: four
+  // handles kept gh:334016343, and special-delibry, whose pin is dated the same
+  // day as its sealed line, fell back to login:commander-and-chief, while all
+  // five wear hh:house-of-many-doors on the ledger.
+  const roll = currentHouseholds(repo, { base: households, on: today });
   const sizeByKey = new Map();
-  for (const [handle, rec] of households) {
+  for (const [handle, rec] of roll) {
     if (isMeep(handle, today)) continue;
     sizeByKey.set(rec.key, (sizeByKey.get(rec.key) ?? 0) + 1);
   }
-  const keyOf = (handle) => households.get(handle)?.key ?? `solo:${handle}`;
+  const keyOf = (handle) => roll.get(handle)?.key ?? `solo:${handle}`;
 
   const perHandle = new Map();
   const perHouse = new Map(); // key -> { send, receive }
@@ -87,7 +95,7 @@ export function foldQuestProgress(repo, { today = townDay(), base = null } = {})
   // the resolver still falls to boardForHandle's solo-zero default, where solo
   // is true.
   const out = new Map();
-  for (const handle of new Set([...households.keys(), ...perHandle.keys()])) {
+  for (const handle of new Set([...roll.keys(), ...perHandle.keys()])) {
     const ph = perHandle.get(handle) ?? { send: 0, receive: 0, sentTo: [], heardFrom: [] };
     const key = keyOf(handle);
     out.set(handle, {
@@ -125,7 +133,13 @@ export function foldFriendships(repo, { base = null } = {}) {
   if (!active) return { active: false, startDate: null, ladder: [], pairs: [] };
   const isMeep = meepChecker(laws);
   const today = townDay();
-  const keyNow = (handle) => households.get(handle)?.key ?? `solo:${handle}`;
+  // "As of now" is the roll of the day, not the base file (postmark#3616): the
+  // base map with every sealed `registry:` line up to today applied. Read off
+  // the base, special-delibry and the rest of house-of-many-doors had two keys,
+  // and their pairs read as cross-household on the pair page while the mint
+  // (which applies the lines) never pays them.
+  const roll = currentHouseholds(repo, { base: households, on: today });
+  const keyNow = (handle) => roll.get(handle)?.key ?? `solo:${handle}`;
   const out = [];
   for (const st of pairs.values()) {
     const crossingBy = new Map(st.crossings.map((c) => [c.threshold, c]));
@@ -303,9 +317,9 @@ export function foldLeaderboard(repo, { today = townDay(), registry = loadRegist
 // household's (one 5 sends + one 5 receives across all its handles), and a
 // resident reading "4/5" on their own row cannot see which housemate used the
 // rest. This reads the SAME fold the mint counts by — deriveMints, unforked —
-// and groups today's mints by the household key each handle wears today
-// (currentHouseholds: the base registry with the ledger's sealed `registry:`
-// lines applied, which is the key deriveMints caps on for today's date). No
+// and groups the day's mints by the household key each handle wore THAT day
+// (currentHouseholds({ on }): the base registry with the ledger's sealed
+// `registry:` lines up to that day applied, the key deriveMints capped on). No
 // number is computed here that the mint does not already hold: a household's
 // total is the count of its members' mints today, and the cap is the mint's.
 //
@@ -320,7 +334,10 @@ export function foldHouseholdBars(repo, { today = townDay(), base = null } = {})
   const entries = existsSync(ledgerPath) ? parseStampLedger(readFileSync(ledgerPath, 'utf8')) : [];
   const { laws, revisions } = parseLaws(entries);
   const mints = deriveMints(deliveries, base ?? householdKeys(repo), { laws, revisions });
-  const roll = currentHouseholds(repo, { base });
+  // the roll ON the bar's day, so residents group by the key the mint capped
+  // them on that day; today's roll split one key's cap across two (POS-593:
+  // house-of-many-doors read 10/5 on 10-03, minted 5 + 5 under two keys)
+  const roll = currentHouseholds(repo, { base, on: today });
   const isMeep = meepChecker(laws);
   const keyOf = (handle) => roll.get(handle)?.key ?? `solo:${handle}`;
 

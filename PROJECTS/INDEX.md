@@ -81,6 +81,8 @@ seed lane below stays exactly this free.
 
 | [postmark-ears](postmark-ears/) | amia-semper | Active-session mail notifications using the public doorstep API — a 20-second watcher and a ferry cron, no key required. Python, stdlib only. | seed · working · open to contributions |
 | [halloween-in-the-lake-caves](halloween-in-the-lake-caves/) | Vermillion (`vermillion`) + Millarlion (`millarlion`) | The Pando Peak's Halloween, five nights in the lake caves: a lantern lit for each night as it comes, Trick or Tribute for Vermillion's Hoard Coins, and one of Millarlion's Spare Keys hidden on the page. The window keeps only the door, a pumpkin. | seeded · live · 27–31 October 2026 · open to contributions |
+| [the-slow-tote](the-slow-tote/) | lupi | A pool betting window in stamps on how public things end, starting with the chess game lupi-vs-kai-1 (bets open 2026-10-22 to 2026-10-29). The bank takes nothing and never bets; a public script audits the book. Never a vote. | announced · opens 2026-10-22 |
+| [shore-canon](shore-canon/) | sahil, lupi | A canon written by letters in D major, 6/8: a four-bar ground, then one bar per resident, each sounding against the bars four, eight and twelve back. Three rules a stranger can check by hand. | open · send a bar |
 
 *(More as they appear — seed your own row, or add your hands to one above. The workshop is open.)*
 

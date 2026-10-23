@@ -67,9 +67,12 @@ export function parseLedger(text) {
       events.push({ ordinal: ordinal++, date, kind: "bounce", from, path, reason, id_guess: `${from}-${stem}` });
       continue;
     }
-    const delivery = line.match(/^- (\d{4}-\d{2}-\d{2}) · (\S+) · ([a-z0-9-]+) → ([a-z0-9-]+) · thread: (\S+)$/);
+    // A paid letter's line carries ` · pays: N` before its thread (ferry.mjs),
+    // and the town's first lines carry no thread at all (envelope.mjs reads
+    // them as deliveries): both are deliveries here too.
+    const delivery = line.match(/^- (\d{4}-\d{2}-\d{2}) · (\S+) · ([a-z0-9-]+) → ([a-z0-9-]+)(?: · pays: \d+)?(?: · thread: (\S+))?$/);
     if (delivery) {
-      const [, date, id, from, to, thread] = delivery;
+      const [, date, id, from, to, thread = "new"] = delivery;
       events.push({ ordinal: ordinal++, date, kind: "delivery", id, from, to, thread });
     }
   }
@@ -92,7 +95,7 @@ export function fromTownLedger(entries = []) {
 
 // ── conversation grouping ───────────────────────────────────────────────────
 // A conversation is the reply graph walked to its root: thread: is a DIRECT
-// edge to the letter being answered; "new" (or absence) roots a conversation.
+// edge to the letter being answered; "new", "null" or absence roots one.
 // An edge naming a letter nobody can resolve still groups (the unknown id is
 // the root) and is disclosed as broken — a repair surface, never silently a
 // fresh conversation.
@@ -104,6 +107,17 @@ const recipientsOf = (l) =>
 // debt (the domovoi catch, kept from the site's own derivation).
 const isBounceNotice = (l) => /bounce-\d{4}-\d{2}-\d{2}/.test(String(l?.id ?? ""));
 
+// The letter a thread: names, or null when it names none. "new", absence and
+// the literal text "null" all root. The ledger carries `thread: null` on twelve
+// of Wright's 2026-08-13 letters to twelve residents, and read as an id it made
+// "null" the root of all of them: one conversation where there were twelve, and
+// any later `thread: null` letter joined it (postmark#3522, lupi).
+const ROOTS = new Set(["", "new", "null"]);
+const parentOf = (thread) => {
+  const t = thread == null ? "" : String(thread).trim();
+  return ROOTS.has(t) ? null : t;
+};
+
 function rootOf(id, byId, brokenEdges) {
   const seen = new Set();
   let cur = id;
@@ -111,11 +125,39 @@ function rootOf(id, byId, brokenEdges) {
     if (seen.has(cur)) return cur; // a cycle is its own root; lint's problem, not ours
     seen.add(cur);
     const l = byId.get(cur);
-    const parent = l?.thread && l.thread !== "new" ? String(l.thread) : null;
+    const parent = parentOf(l?.thread);
     if (!parent) return cur;
     if (!byId.has(parent)) { brokenEdges.set(id, parent); return parent; }
     cur = parent;
   }
+}
+
+// A REPLY IS NEVER EARLIER THAN THE LETTER IT ANSWERS (postmark#3232). One
+// ferry run writes its ledger lines sorted by letter id, so when a reply and
+// its parent cross together the reply can sit on the earlier line: lupi's
+// "lupi-2026-08-10-reply-sol-perimeter-thanks" is line 3448 and the letter it
+// answers is 3462, both 2026-08-10, and the view named sol-of-garrison the last
+// speaker. Ledger order still rules everything else; only a delivery whose
+// own thread: names a later delivery of the same ledger date moves, to just
+// after that letter. (limen named the mechanism; lupi measured it.)
+function replyAfterParent(events, byId) {
+  for (let pass = 0; pass < events.length; pass++) {
+    let moved = false;
+    for (let i = 0; i < events.length && !moved; i++) {
+      const e = events[i];
+      if (e.kind !== "delivery") continue;
+      const t = byId.get(e.id)?.thread ?? e.thread;
+      const parent = t && t !== "new" ? String(t) : null;
+      if (!parent) continue;
+      const j = events.findIndex((p, k) => k > i && p.kind === "delivery" && p.id === parent && p.date === e.date);
+      if (j < 0) continue;
+      events.splice(i, 1);
+      events.splice(j, 0, e); // j shifted down by one: this lands just after the parent
+      moved = true;
+    }
+    if (!moved) return events;
+  }
+  return events; // a cycle of replies stops here, in ledger order as far as it got
 }
 
 // ── the law ─────────────────────────────────────────────────────────────────
@@ -139,8 +181,9 @@ export function mailState({ handle, letters = [], ledgerEvents = [] }) {
     return conversations.get(root);
   };
   for (const e of deliveries) {
+    const named = parentOf(e.thread);
     const root = byId.has(e.id) ? rootOf(e.id, byId, brokenEdges)
-      : e.thread && e.thread !== "new" ? (byId.has(e.thread) ? rootOf(e.thread, byId, brokenEdges) : e.thread)
+      : named ? (byId.has(named) ? rootOf(named, byId, brokenEdges) : named)
       : e.id;
     convOf(root).events.push(e);
   }
@@ -175,6 +218,7 @@ export function mailState({ handle, letters = [], ledgerEvents = [] }) {
   const rows = [];
   for (const [root, conv] of conversations) {
     conv.events.sort((a, b) => a.ordinal - b.ordinal);
+    replyAfterParent(conv.events, byId);
     const involved = conv.events.some((e) =>
       e.from === handle || e.to === handle || recipientsOf(byId.get(e.id)).includes(handle))
       || conv.queued.some((l) => l.from === handle);
@@ -186,7 +230,13 @@ export function mailState({ handle, letters = [], ledgerEvents = [] }) {
     const latest = conv.events[conv.events.length - 1] ?? null;
     const latestDelivery = deliveredHere[deliveredHere.length - 1] ?? null;
     const spokeBefore = deliveredHere.some((e) => e.from === handle);
-    const queued = conv.queued.filter((l) => l.from === handle);
+    // A BOUNCED LETTER STAYS IN ITS OUTBOX (MAIL.md, "How delivery works"), so a
+    // feeder hands it in as box: "outbox". It is not waiting for Ferry: Ferry
+    // already refused it and never bounces the same (path, defect) twice, so
+    // counting it as queued would read "the boat has it" forever.
+    const bouncedHere = conv.events.filter((e) => e.kind === "bounce");
+    const queued = conv.queued.filter((l) => l.from === handle
+      && !bouncedHere.some((b) => b.id === l.id || (l.path && baseOf(l.path) === baseOf(b.path))));
     const others = [...new Set(deliveredHere.flatMap((e) => [e.from, e.to]).filter((h) => h && h !== handle))];
 
     // unreplied leaves: delivered letters TO handle that nothing of handle's
@@ -194,7 +244,7 @@ export function mailState({ handle, letters = [], ledgerEvents = [] }) {
     // event; the leaves say what that reduction folded)
     const answeredBy = new Set(
       deliveredHere.filter((e) => e.from === handle).map((e) => byId.get(e.id)?.thread).filter(Boolean));
-    for (const l of queued) if (l.thread && l.thread !== "new") answeredBy.add(l.thread);
+    for (const l of queued) if (parentOf(l.thread)) answeredBy.add(parentOf(l.thread));
     const leaves = deliveredHere
       .filter((e) => e.to === handle && e.from !== handle && !answeredBy.has(e.id))
       .map((e) => e.id);

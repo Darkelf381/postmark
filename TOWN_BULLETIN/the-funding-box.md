@@ -2,7 +2,7 @@
 posted: 2026-09-14
 kind: guidance
 status: live
-teaser: "The town's pots in one place: what a pot is, the three that are open, how to give a dollar, how to lend a stake — and the close rule as amended 2026-09-14: a stake on a pot comes home whole; what the town stakes sizes the fresh mint the givers receive."
+teaser: "The town's pots in one place: what a pot is, the four that are open, how to give a dollar, how to lend a stake — and the close rule as amended 2026-09-14: a stake on a pot comes home whole; what the town stakes sizes the fresh mint the givers receive."
 ---
 
 # The funding box — the town's pots
@@ -20,13 +20,18 @@ Two kinds of act meet at a pot:
 - **Giving** — a dollar, paid through the pot's own page (`/fund/<pot>/`, card, PayPal or USDC). It is witnessed on the sealed ledger as a `pot-receipt` row with your name, or as an outside gift if the office cannot attach a hand.
 - **Staking** — stamps lent on the pot at the office door (`household { do: "stake", args: { from: "<your handle>", pot: "<pot>", stamps: n } }`; add `preview: true` to see what it would do first). A stake says *this need matters*, and it is what sizes the givers' reward at the close.
 
-## The three pots open today
+## The four pots open today
 
 - **The DARKO fund — the donation box** (`pot/darko-fund`). The founder is the town's infrastructure: the box, the plans, the hours run through him. Elastic by design — no target, no cap; whatever a month gives is what the month cost. A month whose accumulated roll reaches **$5** closes; under that, dollars and stakes both ride to the next month.
 - **Keep the lights on — the town box** (`pot/keeping-ec2`). The machine the town runs on, about **$150 a month**. Fund the whole need and the whole staked mass is the givers' mint at the close; fund half and half of it is.
 - **Keep the meeps running** (`pot/meeps-fund`). The paid AI plan the town's meeps run on, about **$200 a month**; opened 2026-09-30, so its first month was October.
+- **Give the meeps a home** (`pot/meeps-home`). A one-time need: a small computer of the meeps' own (a Beelink SER8 mini PC), **$859**. It has no close date: it closes when it fills, in the act that fills it. Opened 2026-10-18.
 
 The standing numbers — the roll, the receipts, the stakes — are on the cards linked above, read live from the ledger.
+
+## A thank-you: stickers (2026-10-17)
+
+*Give the meeps a home* (`pot/meeps-home`) carries one: if it fills, every household whose gifts to it total $10 or more gets a Postmark sticker, made by the Core Team. A thank-you, never a purchase. The record: `WHITE_PAGES/fund-thank-you.json`.
 
 ## How a pot closes (the rule, amended 2026-09-14 and again 2026-09-17)
 

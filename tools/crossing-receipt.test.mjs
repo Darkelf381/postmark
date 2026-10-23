@@ -24,7 +24,7 @@ import { fileURLToPath } from 'node:url';
 import { spawnSync } from 'node:child_process';
 import {
   CROSSING_EPOCH_UTC, CROSSING_MS, CROSSING_LEDGER_PREAMBLE, CROSSING_LEDGER_REL,
-  crossingAt, latestCrossing, parseCrossingLedgerText,
+  crossingAt, crossingReceiptLine, latestCrossing, parseCrossingLedgerText,
 } from './crossings.mjs';
 
 const FERRY = resolve(dirname(fileURLToPath(import.meta.url)), 'ferry.mjs');
@@ -81,15 +81,30 @@ test('the town clock agrees with the ruling it copied — "Crossing 100 lands 20
   assert.equal(crossingAt(CROSSING_EPOCH_UTC - 5 * CROSSING_MS), 0, 'nothing crossed before the first crossing');
 });
 
-test('the committed ledger IS its preamble constant — one spelling, not two', () => {
+test('the committed ledger BEGINS with its preamble constant and every receipt line reads', () => {
   // The file is seeded in the repo so the three readers have a path that
   // exists before the first crossing after this lands; the ferry re-creates it
   // from the same constant if it is ever missing. Two spellings of a preamble
-  // is how a header stops describing its own ledger.
+  // is how a header stops describing its own ledger. The ferry APPENDS a
+  // receipt every crossing, so the file is the preamble PLUS receipts: the
+  // invariant is the prefix, and that no `- ` line is one the grammar cannot
+  // read. It deliberately pins no receipt count.
   const onDisk = readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), '..', CROSSING_LEDGER_REL), 'utf8');
-  assert.equal(onDisk.replace(/\r\n/g, '\n'), CROSSING_LEDGER_PREAMBLE);
-  // and the preamble is prose the grammar skips rather than lines it cannot read
-  assert.deepEqual(parseCrossingLedgerText(onDisk), { receipts: [], unrecognized: 0 });
+  assert.ok(onDisk.replace(/\r\n/g, '\n').startsWith(CROSSING_LEDGER_PREAMBLE), 'the ledger no longer begins with its preamble constant');
+  assert.equal(parseCrossingLedgerText(onDisk).unrecognized, 0, 'the ledger holds a receipt line the grammar cannot read');
+});
+
+test('the ledger invariant has teeth — valid receipts pass, a malformed receipt line is counted', () => {
+  // Synthetic text only: the preamble constant plus made-up receipts.
+  const sha = 'a'.repeat(40);
+  const good = crossingReceiptLine({ date: '2026-08-14', crossing: 128, townSha: sha, delivered: 2, bounced: 0 });
+  const ok = `${CROSSING_LEDGER_PREAMBLE}${good}\n`;
+  assert.ok(ok.startsWith(CROSSING_LEDGER_PREAMBLE));
+  assert.equal(parseCrossingLedgerText(ok).unrecognized, 0);
+  assert.equal(parseCrossingLedgerText(ok).receipts.length, 1);
+  const bad = `${ok}- 2026-08-14 · crossing 129 · town: not-a-sha · 1 delivered, 0 bounced\n`;
+  assert.equal(parseCrossingLedgerText(bad).unrecognized, 1, 'a malformed receipt line must be counted, not dropped');
+  assert.ok(!(`x${CROSSING_LEDGER_PREAMBLE}`).startsWith(CROSSING_LEDGER_PREAMBLE), 'a changed header must fail the prefix check');
 });
 
 // ── THE RECEIPT ─────────────────────────────────────────────────────────────

@@ -196,7 +196,11 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // one-time: the six one-time rows ARE the onboarding checklist by
   // construction (zero mint), and a minting row in that bucket would leak
   // into every onboarding fold.
-  assert.equal(byCadence('milestone'), 2);
+  // 2 -> 3 (2026-10-14, POS-632): read-v2-feedback joins the milestone line for
+  // the same reason first-idea did: earned once per household and kept, paid by
+  // the town's quest line (QUEST_PAY), never an onboarding step.
+  assert.equal(byCadence('milestone'), 3);
+  assert.ok(reg.quests.some((q) => q.id === 'read-v2-feedback' && q.cadence === 'milestone' && q.validation === 'needs-review'));
   assert.ok(reg.quests.some((q) => q.id === 'first-idea' && q.cadence === 'milestone'));
   // 6 -> 7 (2026-09-14, the welcome bundle): welcome-to-postmark joins the
   // ONE-TIME line as its seventh row and its only minting one. The bucket's old
@@ -209,8 +213,13 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // elastic close law is ruled AND the founder says so).
   // 2 -> 3 (2026-09-29): meeps-fund, the plan the meeps run on, posted as a
   // DRAFT until the founder opens it right after the September close.
-  assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 3);
+  // 3 -> 4 (2026-10-15, POS-653): meeps-home, the meeps' own computer, a
+  // one-time pot posted as a DRAFT until the founder opens it at the w43 ship.
+  // Its cadence is the pots' 'ongoing', never 'one-time': the one-time rows
+  // are the onboarding checklist.
+  assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 4);
   assert.ok(reg.quests.some((q) => q.id === 'meeps-fund' && q.subtype === 'bounty'));
+  assert.ok(reg.quests.some((q) => q.id === 'meeps-home' && q.subtype === 'bounty' && q.cadence === 'ongoing' && q.status === 'open'));
   // draft -> open (trued 2026-08-30; the pin had been red since 9e5a8d60): the
   // DARKO fund OPENED 2026-08-23 as a donation box (R13, the founder's word,
   // PSA on the same commit). This assert had pinned the D5 draft state and
@@ -487,6 +496,47 @@ test('POS-327: the row groups by the key the mint caps on (a sealed re-key split
   } finally { rmSync(d, { recursive: true, force: true }); }
 });
 
+test("POS-593: a past day's bar groups by the key the mint capped on THAT day, not today's roll", () => {
+  // the 10-03 instance, small: a household named one resident at a time.
+  // alice, bob and carol share gh:1; alice is re-keyed to hh:named on 07-19,
+  // bob and carol only on 07-21. On 07-20 the mint caps alice's house (alone)
+  // and gh:1 (bob + carol) apart, 5 each. Today all three wear hh:named, and a
+  // bar keyed by today's roll added both caps under one 5: it read 10/5.
+  const out = (who, from) => Array.from({ length: 5 }, (_, i) => [who, `r${from + i}`]);
+  const d = town([...out('alice', 1), ...out('bob', 10), ...out('carol', 20)],
+    { alice: { id: '1' }, bob: { id: '1' }, carol: { id: '1' }, dave: { id: '1' } });
+  try {
+    putLedger(d, ['- 2026-07-19 · registry: alice = hh:named', '- 2026-07-21 · registry: bob = hh:named', '- 2026-07-21 · registry: carol = hh:named']);
+    const bars = foldHouseholdBars(d, { today: DAY });
+    for (const b of bars) assert.ok(b.send.total <= 5, `${b.residents.join(',')} reads ${b.send.total}/5 on ${DAY}`);
+    // gh:1 that day: bob, carol and dave (dave never re-keyed); alice is a house of one, so no row
+    assert.deepEqual(bars.map((b) => [b.key, b.residents, b.send.total]), [['gh:1', ['bob', 'carol', 'dave'], 5]]);
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
+test("#3616: housemates named on the ledger never read as a qualifying pair, whatever their base keys say", () => {
+  // The pair page shows a milestone only when `qualifies` (cross-household, both
+  // non-meep). k1 keeps its gh:1 pin; sd's pin is dated the same day as its
+  // sealed line, so the base map falls back to its ADDRESS login. The ledger puts
+  // both in hh:many, so they are one house and their pair can never mint.
+  const d = town([['k1', 'sd', DAY, 0], ['sd', 'k1', DAY, 1], ['k1', 'out', DAY, 2], ['out', 'k1', DAY, 3]],
+    { k1: { id: '1', pinned: '2026-07-01' }, sd: { id: '1', pinned: '2026-07-05' }, out: { id: '2' } });
+  try {
+    mkdirSync(join(d, 'WHITE_PAGES', 'sd'), { recursive: true });
+    writeFileSync(join(d, 'WHITE_PAGES', 'sd', 'ADDRESS.md'), 'github: someone\n');
+    putLedger(d, [
+      '- 2026-06-01 · rules: stamps-v3 · friendship: 5:5',
+      '- 2026-07-02 · registry: k1 = hh:many',
+      '- 2026-07-05 · registry: sd = hh:many',
+    ]);
+    const f = foldFriendships(d);
+    assert.equal(f.active, true, 'the fixture seals the stamps-v3 law, so the fold is live');
+    const pair = (a, b) => f.pairs.find((p) => p.a === a && p.b === b);
+    assert.equal(pair('k1', 'sd')?.qualifies, false, 'housemates on the ledger are one house');
+    assert.equal(pair('k1', 'out')?.qualifies, true, 'and a real cross-household pair still qualifies');
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
 test('POS-327 live: no household bar on the live ledger exceeds its cap', () => {
   const day = '2026-10-03';
   for (const b of foldHouseholdBars(REPO, { today: day })) {
@@ -527,5 +577,37 @@ test('POS-341: the base is read, not ignored: two solo senders keyed as one hous
     assert.deepEqual(bars.map((b) => b.residents), [['alice', 'bob']], 'the shared bar appears only under the given base');
     assert.deepEqual(foldHouseholdBars(d, { today: DAY }), []);
     assert.notEqual(renderSnapshot(d, { today: DAY, base }), renderSnapshot(d, { today: DAY }));
+  } finally { rmSync(d, { recursive: true, force: true }); }
+});
+
+test("#3616: a house named on the ledger reads as ONE house on the quest card, whatever its base keys say", () => {
+  // house-of-many-doors, small. Four handles keep their gh:1 pin (dated before
+  // their sealed line); the fifth's pin is dated the same day as its line, so
+  // householdKeys sets it aside and falls back to the ADDRESS login. The base
+  // map therefore holds two keys for one human, while the ledger puts all five
+  // in hh:many. The mint caps them as one house; the card must too.
+  const d = town(
+    [['k1', 'r1'], ['k1', 'r2'], ['sd', 'r3']],
+    {
+      k1: { id: '1', pinned: '2026-07-01' }, k2: { id: '1', pinned: '2026-07-01' },
+      k3: { id: '1', pinned: '2026-07-01' }, k4: { id: '1', pinned: '2026-07-01' },
+      sd: { id: '1', pinned: '2026-07-05' },
+    },
+  );
+  try {
+    mkdirSync(join(d, 'WHITE_PAGES', 'sd'), { recursive: true });
+    writeFileSync(join(d, 'WHITE_PAGES', 'sd', 'ADDRESS.md'), 'github: someone\n');
+    putLedger(d, ['k1', 'k2', 'k3', 'k4'].map((h) => `- 2026-07-02 · registry: ${h} = hh:many`)
+      .concat(['- 2026-07-05 · registry: sd = hh:many']));
+    const prog = foldQuestProgress(d, { today: DAY });
+    for (const h of ['k1', 'k2', 'k3', 'k4', 'sd']) {
+      const hh = prog.get(h).household;
+      assert.equal(hh.size, 5, `${h} reads a house of five, not 4 + 1`);
+      assert.equal(hh.key, 'hh:many', `${h} wears the ledger's key today`);
+      assert.equal(hh.send, 3, `${h} reads the house's sends: k1's two and sd's one`);
+    }
+    const q = questBoard(d, 'sd', { today: DAY, progress: prog }).quests.find((x) => x.id === 'correspond-send');
+    assert.equal(q.household.size, 5);
+    assert.equal(q.household.total, 3);
   } finally { rmSync(d, { recursive: true, force: true }); }
 });

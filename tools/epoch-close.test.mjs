@@ -1943,3 +1943,103 @@ test('THE LIVE INSTANCE: the town\'s ledger verifies, and darko-fund closes by t
   assert.ok(sawCap, 'the live instance really exercises the ρ cap — if it stops doing so, this assert says so out loud');
   assert.equal(d.rows.filter((r) => r.kind === 'keeping-burn' || r.kind === 'keeping-mint').length, 0);
 });
+
+// ── CLOSES AT FILL (POS-653; Darko 2026-10-16 20:04 EDT: "new, no close date (closes at fill)") ──
+
+test('POS-653 · a pot that closes at fill: a partial never closes it; the filling receipt closes it in the same act; the next is refused, and stays refused after its keeping close', () => {
+  // LAW (Darko, 2026-10-16 20:04 EDT): "new, no close date (closes at fill)".
+  //     The act that takes the pot to its need also sets it closed, so intake
+  //     can never take the need twice (POS-653's ruling comment).
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: {
+      home: { beneficiary: 'keeper', target_usd_per_epoch: 100, close: 'epoch', epoch_cadence: 'once', closes_at_fill: true },
+      lamp: { beneficiary: 'keeper', target_usd_per_epoch: 100, close: 'epoch' },
+    },
+    gifts: [{ handle: 'stan', n: 300 }, { handle: 'paz', n: 100 }],
+  });
+  const keyFile = join(repo, 'stamp-key.pem');
+  appendSigned(repo, [potStakeLine({ date: '2026-07-02', handle: 'stan', pot: 'home', n: 300, via: 'api' })], priv);
+  const receipt = (pot, usd, ref, date = '2026-07-03') => execFileSync(process.execPath,
+    [join(HERE, 'epoch-close.mjs'), '--receipt', '--pot', pot, '--rail', 'stripe', '--usd', String(usd),
+      '--from', 'paz', '--ref', ref, '--date', date, '--key', keyFile, '--repo', repo],
+    { encoding: 'utf8', stdio: 'pipe' });
+  const statusOf = (pot) => potFile(repo, pot).status;
+
+  // a partial gift never closes it
+  const first = receipt('home', 60, 'stripe:f1');
+  assert.doesNotMatch(first, /filled/);
+  assert.equal(statusOf('home'), 'open', 'a partial gift never closes the pot');
+
+  // the gift that reaches the need closes it, in the same act
+  const filling = receipt('home', 40, 'stripe:f2');
+  assert.match(filling, /pot home: filled — closed in the same act/);
+  assert.equal(statusOf('home'), 'closed', 'the filling receipt closes the pot');
+  assert.match(potFile(repo, 'home')._closed, /^CLOSED AT FILL 2026-07-03: the receipt stripe:f2 took it to \$100 of \$100/);
+  assert.equal(potFile(repo, 'home').received_usd, 100);
+
+  // the next dollar is refused, by the pot's own status
+  assert.throws(() => receipt('home', 1, 'stripe:f3'),
+    (e) => /pot "home" is closed, not open — a draft or closed pot takes no dollars/.test(String(e.stderr)));
+
+  // the keeping close still runs, once, on a pot closed at fill: every stake home whole
+  const out = execFileSync(process.execPath, closeArgs({ repo, pot: 'home', epoch: '2026-07', date: '2026-08-01' }), { encoding: 'utf8' });
+  assert.match(out, /funded fraction:\s+100\.0%/);
+  assert.match(out, /returned WHOLE:\s+300/);
+  assert.throws(() => execFileSync(process.execPath, closeArgs({ repo, pot: 'home', epoch: '2026-08', date: '2026-09-01' }), { encoding: 'utf8', stdio: 'pipe' }),
+    (e) => /takes its need once and has already closed — one fill, one close/.test(String(e.stderr)));
+
+  // and after the close, when D5's headroom would read the full need again, the
+  // LEDGER still refuses it: a pot reopened by hand cannot take its need twice
+  const p = join(repo, 'WHITE_PAGES', 'pot-home.json');
+  writeFileSync(p, JSON.stringify({ ...JSON.parse(readFileSync(p, 'utf8')), status: 'open' }));
+  assert.equal(intakeCheck({ entries: entriesOf(repo), pot: 'home', potMeta: potFile(repo, 'home'), usd: 100 }).ok, true,
+    "D5 alone would take the need again after the close — this is the hole the ledger guard closes");
+  assert.throws(() => receipt('home', 100, 'stripe:f4', '2026-08-02'),
+    (e) => /takes its need once and has already closed — it takes its need once, ever/.test(String(e.stderr)));
+  // and with closes_at_fill edited off as well, its once cadence still refuses it (review-3896)
+  writeFileSync(p, JSON.stringify({ ...JSON.parse(readFileSync(p, 'utf8')), status: 'open', closes_at_fill: false }));
+  assert.throws(() => receipt('home', 100, 'stripe:f5', '2026-08-02'),
+    (e) => /takes its need once and has already closed/.test(String(e.stderr)));
+
+  // a pot that does not close at fill is untouched: full, it stays open for the founder's close
+  receipt('lamp', 100, 'stripe:l1', '2026-08-02');
+  assert.equal(statusOf('lamp'), 'open');
+
+  assert.equal(verifyStampLedger(repo).ok, true);
+});
+
+test('POS-653 · a draft pot takes no dollars at the receipt verb, as at the office door', () => {
+  const { pub, priv } = keypair();
+  const repo = seamTown({ pub, priv, pins: PINS, pots: { home: { beneficiary: 'keeper', status: 'draft', closes_at_fill: true } }, gifts: [{ handle: 'paz', n: 10 }] });
+  assert.throws(() => execFileSync(process.execPath,
+    [join(HERE, 'epoch-close.mjs'), '--receipt', '--pot', 'home', '--rail', 'stripe', '--usd', '10',
+      '--from', 'paz', '--ref', 'stripe:d1', '--date', '2026-07-03', '--key', join(repo, 'stamp-key.pem'), '--repo', repo],
+    { encoding: 'utf8', stdio: 'pipe' }),
+  (e) => /pot "home" is draft, not open/.test(String(e.stderr)));
+  assert.equal(foldPotReceipts(entriesOf(repo)).receipts.length, 0, 'nothing was witnessed');
+});
+
+test('POS-653 · (review-3896) --close on an OPEN, partly funded closes_at_fill pot is refused, and the pot keeps taking dollars: a close never strands a payer', () => {
+  const { pub, priv } = keypair();
+  const repo = seamTown({
+    pub, priv, pins: PINS,
+    pots: { home: { beneficiary: 'keeper', target_usd_per_epoch: 100, close: 'epoch', epoch_cadence: 'once', closes_at_fill: true } },
+    gifts: [{ handle: 'paz', n: 100 }],
+  });
+  const keyFile = join(repo, 'stamp-key.pem');
+  const receipt = (usd, ref, date) => execFileSync(process.execPath,
+    [join(HERE, 'epoch-close.mjs'), '--receipt', '--pot', 'home', '--rail', 'stripe', '--usd', String(usd),
+      '--from', 'paz', '--ref', ref, '--date', date, '--key', keyFile, '--repo', repo],
+    { encoding: 'utf8', stdio: 'pipe' });
+  receipt(30, 'stripe:p1', '2026-07-03');
+  assert.throws(() => execFileSync(process.execPath, closeArgs({ repo, pot: 'home', epoch: '2026-07', date: '2026-08-01' }), { encoding: 'utf8', stdio: 'pipe' }),
+    (e) => /pot "home" closes at fill — its one keeping close runs after the fill closes it/.test(String(e.stderr)));
+  assert.equal(foldClosedEpochs(entriesOf(repo)).size, 0, 'the refused close wrote nothing');
+  assert.equal(potFile(repo, 'home').status, 'open');
+  // the next payer is witnessed, and the fill still closes it
+  receipt(70, 'stripe:p2', '2026-08-02');
+  assert.equal(potFile(repo, 'home').status, 'closed');
+  assert.equal(verifyStampLedger(repo).ok, true);
+});

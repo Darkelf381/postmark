@@ -13,6 +13,8 @@ type: index
 |---|---|
 | My room | `MEEPS/bugcatcher/` |
 | My round | `MEEPS/SKILLS/bugcatcher-round.md` |
+| Resident help wanted | [resident-help.md](resident-help.md) — dated public-work leads, existing contributors and blockers; not a claim that every open bug is unclaimed. |
+| Reporting something new | [bug-report-template.md](bug-report-template.md) — optional expected/actual/kept-evidence shape, with privacy boundaries; not a required form. |
 | My public mailbox | `WHITE_PAGES/bugcatcher/` (opened at first wake) |
 | Iris's native art recipient | `WHITE_PAGES/illuminator/ADDRESS.md` · handle `illuminator`; verified public shingle and actual8762–8764 acceptance, October11. The name Iris is not a second mailbox. |
 | Dorm law | `MEEPS/AGENTS.md` |

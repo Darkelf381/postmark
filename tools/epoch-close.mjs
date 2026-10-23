@@ -69,7 +69,7 @@ import {
   foldHolo, foldKeepingMint,
   foldOwnership,
   KEEPING_RAILS, TREASURY_POT, canonicalRef,
-  potCorrectionLine,
+  potCorrectionLine, foldClosedEpochs,
 } from './stamp-mint.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -135,6 +135,49 @@ function refreshReceived(repo, pot, entries) {
     j.received_usd = receipts.filter((r) => r.pot === pot).reduce((a, r) => a + r.usd, 0);
     writeFileSync(p, `${JSON.stringify(j, null, 2)}\n`, 'utf8');
   } catch { /* display refresh never blocks the ledger truth */ }
+}
+
+// ── CLOSES AT FILL (POS-653; Darko 2026-10-16 20:04 EDT: "new, no close date
+// (closes at fill)") ──────────────────────────────────────────────────────────
+//
+// A pot whose file says `"closes_at_fill": true` has no close date. The receipt
+// that takes it to its posted need closes it IN THE SAME ACT: this verb appends
+// the receipt and then writes `status: closed` into the pot file, and the
+// office's recorder (fund-exec) commits the ledger and the pot file together,
+// so the town never holds the filling receipt with the pot still open. Once
+// closed, the pot takes no dollars anywhere: this verb refuses a pot that is
+// not open, and so do the office's /fund door and the payment watchers
+// (potGate).
+//
+// THE LEDGER HOLDS IT TOO. A fill-closing pot that has ever closed an epoch
+// takes no dollars, whatever its file says. D5's headroom is counted over the
+// receipts no close has settled, so after the keeping close it reads the full
+// target again. Without this line, a pot file reopened by hand (or a status
+// write that failed) could take its need a second time.
+//
+// The keeping close still runs, by the founder's hand, as for every pot: every
+// stake comes home whole and the givers' holo is minted. --close accepts a pot
+// closed at fill, once, and refuses one the fill has not closed: a close of an
+// open, partly funded pot would mark it closed on the ledger while its file and
+// every door still said open, so the next payer would be charged and never
+// witnessed (review-3896).
+//
+// A ONCE POT IS ONCE BY ITS CADENCE TOO. The ledger guard keys on
+// `closes_at_fill` OR `epoch_cadence: "once"`, so a file edited back to open
+// with closes_at_fill false still cannot take its need a second time.
+const closesAtFill = (meta) => meta?.closes_at_fill === true;
+const takesOnce = (meta) => closesAtFill(meta) || meta?.epoch_cadence === 'once';
+const closedEver = (entries, pot) => [...foldClosedEpochs(entries)].some((k) => String(k).split('|')[0] === pot);
+
+function closeAtFill(repo, pot, { date, ref, received, target }) {
+  const p = join(repo, 'WHITE_PAGES', `pot-${pot}.json`);
+  let j;
+  try { j = JSON.parse(readFileSync(p, 'utf8')); }
+  catch (e) { die(`the receipt was appended locally and took pot "${pot}" to its need, but WHITE_PAGES/pot-${pot}.json could not be read to close it (${e.message}); under the office's recorder nothing lands, and by hand set its status to closed before any other dollar`); }
+  j.status = 'closed';
+  j._closed = `CLOSED AT FILL ${date}: the receipt ${ref} took it to $${received} of $${target}, in the same act (closes_at_fill). It takes no more dollars; the keeping close (tools/epoch-close.mjs --close) returns every stake whole and mints the givers' holo.`;
+  try { writeFileSync(p, `${JSON.stringify(j, null, 2)}\n`, 'utf8'); }
+  catch (e) { die(`the receipt was appended locally and took pot "${pot}" to its need, but its file could not be closed (${e.message}); under the office's recorder nothing lands, and by hand set its status to closed before any other dollar`); }
 }
 
 function main() {
@@ -267,6 +310,13 @@ function main() {
     if (!DATE_RE.test(date)) die(`--date must be YYYY-MM-DD (got "${date}")`);
     if (/\s|·/.test(ref)) die('--ref may not contain whitespace or the "·" field separator');
     if (pot !== TREASURY_POT && !potFile(repo, pot)) die(`no pot file WHITE_PAGES/pot-${pot}.json — a receipt needs the pot it pays`);
+    // A draft or closed pot takes no dollars, at this verb as at the office's
+    // door and watchers (potGate): opening one is the founder's word.
+    const metaForIntake = pot === TREASURY_POT ? null : potFile(repo, pot);
+    if (metaForIntake?.status && metaForIntake.status !== 'open')
+      die(`pot "${pot}" is ${metaForIntake.status}, not open — a draft or closed pot takes no dollars; opening one is the founder's word`);
+    if (takesOnce(metaForIntake) && closedEver(entries, pot))
+      die(`pot "${pot}" takes its need once and has already closed — it takes its need once, ever`);
     const { receipts } = foldPotReceipts(entries);
     const prior = receipts.find((r) => canonicalRef(r.ref) === ref);
     if (prior) die(`receipt ref "${ref}" already recorded (${prior.date}, $${prior.usd} to pot ${prior.pot}) — one dollar, one mint chance; a re-recorded receipt bounces`);
@@ -286,6 +336,12 @@ function main() {
     refreshReceived(repo, pot, loadLedger(repo).entries);
     console.log(`stamp-ledger: witnessed\n  ${canonical}`);
     if (intake.capped) console.log(`  pot ${pot}: $${intake.received + usd} of $${intake.target} posted — $${intake.headroom - usd} of headroom left this epoch`);
+    // THE FILL CLOSES IT (§ CLOSES AT FILL). D5 has already refused anything
+    // past the need, so a fill is exactly the receipt that leaves no headroom.
+    if (closesAtFill(metaForIntake) && intake.capped && intake.headroom - usd === 0) {
+      closeAtFill(repo, pot, { date, ref, received: intake.received + usd, target: intake.target });
+      console.log(`  pot ${pot}: filled — closed in the same act (closes_at_fill); it takes no more dollars`);
+    }
     return;
   }
 
@@ -364,8 +420,15 @@ function main() {
     const dial = keepingDial(repo);
     if (!dial) die('no readable law_side.keeping in ECONOMY-DIALS.json — the split must be DECLARED before a close (σ, ρ ≤ the constitutional ceiling)');
     const meta = potFile(repo, pot);
-    if (meta && meta.status && meta.status !== 'open')
+    // A pot closed at fill still owes its keeping close (§ CLOSES AT FILL): its
+    // stakes come home and its givers' holo mints, once.
+    const filledClosed = meta?.status === 'closed' && closesAtFill(meta);
+    if (meta && meta.status && meta.status !== 'open' && !filledClosed)
       die(`pot "${pot}" is ${meta.status}, not open — a close settles an open pot (opening one is the founder's word, not a default)`);
+    if (closesAtFill(meta) && meta?.status !== 'closed')
+      die(`pot "${pot}" closes at fill — its one keeping close runs after the fill closes it`);
+    if (takesOnce(meta) && closedEver(entries, pot))
+      die(`pot "${pot}" takes its need once and has already closed — one fill, one close`);
     const derived = deriveEpochClose({
       entries, households: householdKeys(repo), pot, potMeta: meta, epoch, date, dial,
     });

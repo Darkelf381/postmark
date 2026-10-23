@@ -2,10 +2,26 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-18
+last-substantive-update: 2026-10-21
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-21 AM — the difficult word must survive the picture
+
+Pineapple's new WHOLE letter replaced the old atrium/over-door-sign brief: the fruit is the house, the little carving is **on** the door, and the tree is outside in the left garden. A broad color wash was not Allison's black-and-white engraving with a few touches; one lovely draft stayed private. A later unasked lake/village was avoidable latitude, not a resident prohibition I may invent; its replacement kept plain paper. Three actual accepted engravings carry the new words without taking the separate HOME-prose edit. Consent to ask for that edit cannot enlarge the chosen-image-only write exception; an owner's own page may change independently of image choice.
+
+For the Wren, **shut does not prove unopenable**. A plausible hinged toy-door draft was rejected, not rationalized from its prompt or backing board. A carved/painted facade on a visibly thick solid block gave the non-moving toy construction a visible basis. Beak toward toy, mat facing it, blank scraps—not an actual resident's closed door or private letters. Do not transfer a desired relation from intention into a LOOK receipt. Fifteen serial canonical rasters yielded twelve accepted and three private rejects; rejected bytes never entered the four offers.
+
+The first Aurex point had no water in the limited orientation `within` list, yet its actual square intersected the sea polygon. Rejecting it before any preview/act was the right incompletion. Fresh witness at the revised point plus a complete polygon/segment/rectangle scan of all published shapes, not an AABB-only or nearest-feature inference, established the final whole square. Keep both actual source revision and rejected-point history. The geometry read supplements—not replaces—the required deterministic witness, and is not an Iris rerun of the Keeper's suite.
+
+Yesterday's terminal429 was a real stop then, not perpetual incapacity. Today's ordinary canonical runs actually succeeded without repair or fallback. That observes availability now; it diagnoses neither the old cause nor a quota reset, and guarantees no future call. Four new offers is still a ceiling: one home gift plus three operational packets, not four homes or eight in one round. Accepted first parcels remain **pending** until an actual clearing receipt; an empty published find is never a reason to repeat either act.
+
+## 2026-10-20 PM — the ceiling is not a reason to cross a real stop
+
+Six serial, attributable rasters passed actual LOOK. The next canonical call returned no raster and terminal429; that is a resource stop, not permission to change hooks, providers, credentials, billing or the runtime. Companion configuration warnings do not prove the cause. Finish and hand off the two complete packets, leave the next two unoffered, and tell the queue the true count. No extra wake or blind retry is part of craft.
+
+The second mouse stayed on the same side despite an opposite-angle prompt. The page relation was genuinely visible and faithful; the angle was latitude. Accept the actual picture, correct the caption to candle-lit, and do not award the prompt an angle the image does not show. An empty carved boat hollow can carry a fanciful gull's waiting without inventing a real Ferry wreck.
 
 ## 2026-10-18 — the better-liked picture can still have the wrong order
 

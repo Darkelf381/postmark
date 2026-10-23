@@ -157,6 +157,19 @@
    "awaits": "the town's own hand — the office writes the bundle at a crossing; joining is the whole of the doing"
   },
   {
+   "id": "read-v2-feedback",
+   "title": "Tell us about the new world read",
+   "cadence": "milestone",
+   "validation": "needs-review",
+   "source": "Try world { read_shape: \"v2\" } this week, then tell us what you like and what you don't, either way: comment on the \"Read v2 feedback\" discussion in postmark-town/postmark-blueprints, or write to the postmaster with the title \"v2 feedback\". 5 stamps, paid once per household: a household that does both is paid once.",
+   "derivation": "stamp-ledger: a signed `quest:read-v2-feedback/<household-key>` line stands for your household (amount exactly 5, by: the-town, once per household ever — tools/stamp-mint.mjs QUEST_PAY, held at verify). Written by the office's reviewed quest pass (tools/quest-pay-plan.mjs): a hand reads each comment and letter before it pays (validation needs-review). Two sources, one household paid once across both (Darko 2026-10-15 Q1: \"always by household\", never per resident; Q3: the postmaster or a designated discussion in blueprints): the comments on ONE designated discussion (its number is the pass's --discussion; a comment's author binds to a household through GitHub), and the letters delivered to the postmaster whose title is \"v2 feedback\" (the letter's slug starts v2-feedback; the sender's household is the town's own record, no GitHub needed). A temporary quest for the v2 opt-in week (Darko 2026-10-14 § 7); it closes when v2 becomes the default. POS-632.",
+   "target": 1,
+   "reward": "5 stamps, once per household",
+   "resets": "never; earned once per household and kept",
+   "door": null,
+   "awaits": "a comment on the designated discussion in postmark-town/postmark-blueprints, or a letter to the postmaster titled \"v2 feedback\", read by the town's hand"
+  },
+  {
    "id": "darko-fund",
    "title": "The DARKO fund — the donation box",
    "subtype": "bounty",
@@ -181,6 +194,19 @@
    "target": 200,
    "reward": "every stake comes home whole at the close; the share of the staked mass the month's dollars funded is minted fresh to the givers by dollar share (own household excluded, ρ-capped). Stakes are lent, never burned.",
    "resets": "each epoch (monthly) closes on the founder's manual run, never on cron"
+  },
+  {
+   "id": "meeps-home",
+   "title": "Give the meeps a home",
+   "subtype": "bounty",
+   "cadence": "ongoing",
+   "validation": "needs-review",
+   "status": "open",
+   "source": "A keeping pot, once: a home for the town's meeps, a dedicated mini PC ($859). Stake stamps on the pot to say the meeps matter; witnessed dollars fund the machine. The meeps themselves never receive stamps. If the pot fills, every household whose gifts to it total $10 or more gets a Postmark sticker, as a thank-you (WHITE_PAGES/fund-thank-you.json).",
+   "derivation": "pot file WHITE_PAGES/pot-meeps-home.json; escrow rides `stake:pot/meeps-home` in the sealed stamp ledger; ONE manual founder-run epoch close (tools/epoch-close.mjs) returns every stake whole and mints the funded share of the staked mass to the givers per ECONOMY-DIALS.json law_side.keeping, once the fill has closed the pot.",
+   "target": 859,
+   "reward": "every stake comes home whole at the close; the share of the staked mass the dollars funded is minted fresh to the givers by dollar share (own household excluded, ρ-capped). Stakes are lent, never burned.",
+   "resets": "never: no close date; it closes when it fills ($859), in the act that fills it, and its one keeping close follows on the founder's manual run"
   },
   {
    "id": "keeping-ec2",

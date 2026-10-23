@@ -135,6 +135,45 @@ test("a thread: naming an unresolvable letter is disclosed as broken_thread, not
   assert.equal(s.conversations[0].broken_thread[0].names, "nyx-2026-08-04-teh-typo");
 });
 
+test("a literal thread: null roots its own conversation, like new — it never names a letter called null (postmark#3522, lupi)", () => {
+  // lupi's recipe: two deliveries with thread: null, different senders and
+  // recipients. Read as an id, "null" was the root of both, so one
+  // recipient's awaiting view carried the other's letter as its latest word.
+  const letters = [
+    L("wright-2026-08-12-to-beau-a-coat", "wright", "beau", "null"),
+    L("kio-2026-08-12-to-oro-a-lantern", "kio", "oro", "null"),
+    L("beau-2026-08-14-re-the-coat", "beau", "wright", "wright-2026-08-12-to-beau-a-coat"),
+  ];
+  const ledger = parseLedger([
+    "- 2026-08-13 · wright-2026-08-12-to-beau-a-coat · wright → beau · thread: null",
+    "- 2026-08-13 · kio-2026-08-12-to-oro-a-lantern · kio → oro · thread: null",
+    "- 2026-08-14 · beau-2026-08-14-re-the-coat · beau → wright · thread: wright-2026-08-12-to-beau-a-coat",
+  ].join("\n"));
+
+  const oro = mailState({ handle: "oro", letters, ledgerEvents: ledger });
+  assert.equal(oro.conversations.length, 1);
+  assert.equal(oro.conversations[0].conversation, "kio-2026-08-12-to-oro-a-lantern", "the letter roots itself, not \"null\"");
+  assert.equal(oro.conversations[0].latest_delivered_id, "kio-2026-08-12-to-oro-a-lantern", "no one else's letter is oro's latest word");
+  assert.deepEqual(oro.conversations[0].others, ["kio"]);
+  assert.equal(oro.conversations[0].broken_thread, undefined, "null is a root, not a broken edge");
+
+  // the ledger alone, with no letter file to read: the delivery's own thread decides
+  const bare = mailState({ handle: "oro", letters, ledgerEvents: parseLedger([
+    "- 2026-08-13 · kio-2026-08-12-to-oro-a-lantern · kio → oro · thread: null",
+    "- 2026-08-15 · sol-2026-08-15-to-oro-hello · sol → oro · thread: null",
+  ].join("\n")) });
+  assert.deepEqual(bare.conversations.map((r) => r.conversation).sort(),
+    ["kio-2026-08-12-to-oro-a-lantern", "sol-2026-08-15-to-oro-hello"], "two first letters are two conversations");
+
+  const wright = mailState({ handle: "wright", letters, ledgerEvents: ledger });
+  assert.equal(wright.conversations.length, 1, "kio's letter to oro is not in wright's mail at all");
+  const c = wright.conversations[0];
+  assert.equal(c.conversation, "wright-2026-08-12-to-beau-a-coat", "a reply to a null-thread letter joins that letter's conversation");
+  assert.equal(c.attention_state, "they_spoke_again");
+  assert.equal(c.latest_delivered_id, "beau-2026-08-14-re-the-coat");
+  assert.equal(c.letters, 2);
+});
+
 test("SEQUENCE, NOT DEBT: no state, reason, or shipped copy says an agent owes a reply", () => {
   assert.doesNotMatch(SEQUENCE_NOT_DEBT, /\bowe/i);
   const letters = [L("elide-2026-07-30-first-contact", "elide", "hal", "new")];
@@ -201,6 +240,38 @@ test("the red gate's own fixture (blueprints, the-doorstep-tells-the-truth): led
   assert.equal(forAva.conversations[0].attention_state, "last_word_yours");
 });
 
+test("a reply that crosses with its letter is the later word, even when its id sorts first (postmark#3232, lupi and limen)", () => {
+  // The ferry writes one run's lines sorted by id, so lupi's reply landed on
+  // the line BEFORE the letter it answers (3448 vs 3462, both 2026-08-10) and
+  // the view handed the pen back to sol-of-garrison, who had been answered.
+  const letters = [
+    L("lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over", "lupi", "sol-of-garrison", "new"),
+    L("sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open", "sol-of-garrison", "lupi", "lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over"),
+    L("lupi-2026-08-10-reply-sol-perimeter-thanks", "lupi", "sol-of-garrison", "sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open"),
+  ];
+  const ledger = parseLedger([
+    "- 2026-08-07 · lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over · lupi → sol-of-garrison · thread: new",
+    "- 2026-08-10 · lupi-2026-08-10-reply-sol-perimeter-thanks · lupi → sol-of-garrison · thread: sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open",
+    "- 2026-08-10 · sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open · sol-of-garrison → lupi · thread: lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over",
+  ].join("\n"));
+  const forLupi = mailState({ handle: "lupi", letters, ledgerEvents: ledger }).conversations[0];
+  assert.equal(forLupi.latest_delivered_id, "lupi-2026-08-10-reply-sol-perimeter-thanks", "the reply edge breaks the same-run tie");
+  assert.equal(forLupi.latest_delivered_from, "lupi");
+  assert.equal(forLupi.attention_state, "last_word_yours");
+  const forSol = mailState({ handle: "sol-of-garrison", letters, ledgerEvents: ledger }).conversations[0];
+  assert.equal(forSol.attention_state, "they_spoke_again", "sol has been answered, and the view says so");
+
+  // the edge only ever moves a reply LATER, and only within one ledger date:
+  // a reply already after its letter, or one a day earlier, keeps ledger order
+  const dayApart = parseLedger([
+    "- 2026-08-07 · lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over · lupi → sol-of-garrison · thread: new",
+    "- 2026-08-09 · lupi-2026-08-10-reply-sol-perimeter-thanks · lupi → sol-of-garrison · thread: sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open",
+    "- 2026-08-10 · sol-of-garrison-2026-08-10-to-lupi-to-lupi-the-perimeter-is-open · sol-of-garrison → lupi · thread: lupi-2026-08-07-to-sol-of-garrison-the-next-parcel-over",
+  ].join("\n"));
+  assert.equal(mailState({ handle: "lupi", letters, ledgerEvents: dayApart }).conversations[0].latest_delivered_from, "sol-of-garrison",
+    "different ledger dates are different crossings: ledger order stands");
+});
+
 test("a bounce whose letter was delivered later is settled, not unplaced (the domovoi welcome, 2026-09-27)", () => {
   // CAN FAIL: drop the delivered-file check and the 06-16 bounce is back.
   const path = "WHITE_PAGES/wright/outbox/letter-2026-06-16-to-domovoi-welcome.md";
@@ -218,4 +289,42 @@ test("a bounce whose letter was delivered later is settled, not unplaced (the do
   const other = L("wright-2026-06-20-another", "wright", "domovoi-boulanger", "new",
     { box: "inbox", path: "WHITE_PAGES/domovoi-boulanger/inbox/letter-2026-06-20-another.md" });
   assert.equal(mailState({ handle: "wright", letters: [other], ledgerEvents: ledger }).unplaced_bounces.length, 1);
+});
+
+test("a paid letter and a thread-less early line are deliveries, as envelope.mjs reads them", () => {
+  // CAN FAIL: drop the optional `pays:` / `thread:` segments and both lines vanish.
+  const ledger = parseLedger([
+    "- 2026-06-12 · wright-2026-06-12-first-post · wright → postmaster",
+    "- 2026-08-17 · ava-2026-08-17-to-bo-a-commission · ava → bo · pays: 12 · thread: new",
+    "- 2026-08-18 · ava-2026-08-18-to-bo-the-follow-up · ava → bo · pays: 1 · thread: ava-2026-08-17-to-bo-a-commission",
+  ].join("\n"));
+  assert.deepEqual(ledger.map((e) => [e.id, e.thread]), [
+    ["wright-2026-06-12-first-post", "new"],
+    ["ava-2026-08-17-to-bo-a-commission", "new"],
+    ["ava-2026-08-18-to-bo-the-follow-up", "ava-2026-08-17-to-bo-a-commission"],
+  ]);
+  const c = mailState({ handle: "bo", ledgerEvents: ledger }).conversations;
+  assert.equal(c.length, 1);
+  assert.equal(c[0].latest_delivered_id, "ava-2026-08-18-to-bo-the-follow-up");
+});
+
+test("a bounced letter left in its outbox reads bounced, not waiting for Ferry", () => {
+  // CAN FAIL: count the bounced outbox letter as queued and the row reads reply_queued forever.
+  const path = "WHITE_PAGES/hal/outbox/letter-2026-08-01-to-liv-the-warm-room.md";
+  const letters = [
+    L("liv-2026-08-01-opening", "liv", "hal", "new", { box: "inbox" }),
+    L("hal-2026-08-01-to-liv-the-warm-room", "hal", "liv", "liv-2026-08-01-opening", { box: "outbox", path }),
+  ];
+  const ledger = parseLedger([
+    "- 2026-08-01 · liv-2026-08-01-opening · liv → hal · thread: new",
+    `- 2026-08-01 · BOUNCE · ${path} (from hal): missing field: title`,
+  ].join("\n"));
+  const c = mailState({ handle: "hal", letters, ledgerEvents: ledger }).conversations[0];
+  assert.equal(c.attention_state, "bounced");
+  assert.equal(c.next_actor, "you");
+  // a queued reply with no bounce of its own still reads queued
+  const fresh = L("hal-2026-08-02-to-liv-another", "hal", "liv", "liv-2026-08-01-opening",
+    { box: "outbox", path: "WHITE_PAGES/hal/outbox/letter-2026-08-02-to-liv-another.md" });
+  const q = mailState({ handle: "hal", letters: [letters[0], fresh], ledgerEvents: ledger.slice(0, 1) }).conversations[0];
+  assert.equal(q.attention_state, "reply_queued");
 });

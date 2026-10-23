@@ -73,7 +73,7 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Retired historical
    `gh issue view <n> --json comments`). **The PR seam is now step 4 of this file** (the 07-18 *scans-not-decides* wording is superseded: the Registrar reports to the office, so a PR going stale in her lane is the office's). Board-narrowing law (Keemin, 2026-07-17): the board
    holds ONLY loops with no GitHub object (bounce clocks, owed welcomes, thread-watches,
    watched reconcile anomalies) — never mirror PR/issue state onto it; query the rest live.
-   Channel mechanics: `postmark-office/OPERATIONS.md § the channel law`.
+   Channel mechanics: `MEEPS/SKILLS/channel-law.md`.
 
 2.9. **Something broken you find yourself is a bug post, not an issue** (Darko, 2026-10-07):
    `town { do: "post", args: { class: "bug", title, body, steps, record } }` in the office's own
@@ -103,6 +103,14 @@ entirely. Full policy + payloads: `MEEPS/postmaster/map.md § Retired historical
    - **Clean and inside the office's merge authority** (a letter, a join, a resident's own
      `HOME/`, invited-project content) → merge, then tell Keemin. The list is
      `postmaster-round.md § merge authority`.
+   - **"Unknown" isn't a gate.** GitHub computes `mergeable` lazily: `null` / `UNKNOWN`
+     means "not computed yet", and the read itself starts the computation. Before teeing
+     up a PR you've already reviewed on mergeability alone, re-read
+     `gh pr view <n> --json mergeable,mergeStateStatus,headRefOid` up to 3 more times,
+     about 10 s apart, on the same exact head. `MERGEABLE` / `CLEAN` → merge as your
+     authority allows. Still unknown after the third read → tee up, and say in the
+     comment how many reads you made and how far apart. `CONFLICTING`, `DIRTY` or
+     `BLOCKED` is a real gate, and that rule stays as it is.
    - **Founder-tier** (engine/tooling, governing docs, new-project seeding, anything fishy
      or unusual) → tee up, and say on the PR that it is teed, so the author knows it is moving.
    - **The Registrar's ordinary door work** → hers; she runs a ~2h heartbeat and does not need

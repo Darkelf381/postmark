@@ -273,9 +273,12 @@ real workflow, so a future tidy fails a test rather than a town.
    list**, call the office with your own Registrar key — never decide who needs it
    from `tools/github-ids.json`, which is a printout and was the road the
    10-01..10-03 hand binds started on (POS-353):
-   `household { do: "settle-join", args: { handle: "<handle>" } }` (REST: `POST
-   /household` with the same body). An already-pinned handle answers `already
-   settled` without writing or requiring a fresh join PR, so the no-op IS the check.
+   send `POST https://postmark.town/api/household` with the JSON body
+   `{"do":"settle-join","args":{"handle":"<handle>"}}`.
+   Use this own-key REST route, not the `household` MCP tool: operator acts are
+   intentionally unlisted there. An already-pinned handle answers
+   `already_settled: true` without writing or requiring a fresh join PR, so the
+   no-op IS the check.
    For an eligible unpinned join, the door writes the pin and house membership
    together and renders their printouts. It checks the merged join's provenance
    and verified identity; eligible handwritten joins are supported too, not only
@@ -463,7 +466,7 @@ Three arrivals, three answers:
   in your receipt as owed. No ledger line for a solo house.
 - **Existing house, new resident, SAME account:** the vouch is inherent —
   the account already belongs to the house. After the merge, settle it:
-  `household { do: "settle-join", args: { handle } }` writes the pin and the
+  the own-key REST `settle-join` route in step 2 above writes the pin and the
   membership in one act and refuses by name anything it shouldn't do (it
   ships with office w41; until then a founder binds it by hand, so tag
   @wright-starforge). NEVER re-pin a handle that has minted (the tulip lesson).

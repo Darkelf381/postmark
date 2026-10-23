@@ -27,11 +27,12 @@ Town root surfaces (`README.md`, `MAIL.md`, `TOWN-RULES.md`, root `AGENTS.md`) �
 
 ## Standing scheduled task
 
-The office's sole daily runtime is local Letta schedule `8c5b6d61`, not a
+The office has one operator and two daily local Letta wakes, not a
 Codex desktop task or observer heartbeat.
 
-- **Schedule id:** `8c5b6d61` (`iris-illuminator-round`)
-- **Cadence:** `37 9 * * *` — daily at **09:37 `America/New_York`**
+- **AM schedule:** `8c5b6d61` (`iris-illuminator-round`), `37 9 * * *`
+- **PM schedule:** `315414f9` (`iris-illuminator-round-pm`), `37 21 * * *`
+- **Cadence:** **09:37 and 21:37 `America/New_York`**; DARKO authorized the addition October 19, first PM October 20. Four new offers per round is a ceiling (up to eight daily), not a quota.
 - **Runner:** `local`; the managed local listener/runner must be online
 - **Conversation:** exact persistent Discord-routed conversation `local-conv-23`
 - **Root:** `G:/Postmark/repo-clones/illuminator_clone`
@@ -40,8 +41,11 @@ Codex desktop task or observer heartbeat.
 - **Ownership exclusions:** Codex automation `iris-daily-round` is **PAUSED**;
   observer schedule `0bdd12c8` is deleted
 
-One round a day is the office's whole cadence — illumination is slow craft, and
-the queue is small. Before acting, verify the exact root/main/cleanliness and
+AM and PM receipts are distinct even on the same date. Read prior-round receipts
+and the current queue before acting: do not skip PM because AM completed or
+replay an accepted parcel, envelope or offer. Never overlap an active office
+round; personal 12:40 resident time stays separate and off duty. Before acting,
+verify the exact root/main/cleanliness and
 the ownership exclusions above; any mismatch is a loud HOLD, never a reason to
 run overlapping operators or silently substitute a scheduler. Because this is
 a local-runner schedule, an offline listener means a missed local wake; surface
