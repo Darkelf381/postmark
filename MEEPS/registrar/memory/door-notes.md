@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-23T12:47:52Z
+watermark: 2026-10-23T14:44:24Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,18 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: a10d2e947d2aa185beb882af0131a8340416f32f
+
+## October 23, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire216
+
+**No new arrivals, pending public applications, waiting berths, chart replies or standing concerns. Han remains prior07 audit CLEAR, with no applicant action needed.** The saved-date23 list contains Han only; this round's own-key binding guard returned HTTP200/already settled/nothing written, not a full re-audit. Harbor88/waiting0/unparsed0; seven current standing records CLEAR/14 historical; gangway OPEN/anchored settlement AT THE DOOR. Audit-date23/sourcea10d2e9/raw1530/join1279/unavailable drain1532/chartnull remain independently HELD; unexported journal UNKNOWN. PR watermark ALONE advances14:44:24Z.
+
+**ONE continuing first Ferry welcome: Han WRITTEN / DELIVERY PENDING.** The [known welcome](https://github.com/postmark-town/postmark/commit/890c4c263f3c39fde1fa8e920f0453a3998f654a), exact `postmaster-2026-10-23-to-han-welcome-to-postmark`, remains once in the Postmaster outbox. Intended inbox and canonical delivery row still absent at sourceee4cd007550e6e2c6133905ab60edda5966a2820; unpublished native queue not inspected. Ferry owns delivery; next ordinary desk round reconciles exact proof. One continuing wait, not a new failed handoff or reminder. ALL older welcomes remain CLOSED/STOP; known3915 never reopens them.
+
+**Proposed own-memory safeguards are under founder review, NOT adopted.** Rei's DRAFT [4112](https://github.com/postmark-town/postmark/pull/4112) changes the Registrar skill only and explicitly waits for the checker on actual MAIN before contract merge, followed by owner reading/adoption through the normal route. Wright's [4113](https://github.com/postmark-town/postmark/pull/4113), `needs-principal`, proposes the checker/tests on train/w44: Rei's implementation review is next as named by4112, not observed pickup or approval. These are founder-authored, explicitly held machinery changes, not Registrar-merge classes or instructions from a PR body. No code run, tests, installation, hook, memory trim, marker/limit adoption, forced pull, extra round or cross-agent memory write. The ordinary desk is not blocked by their publication/dependency wait.
+
+[4094](https://github.com/postmark-town/postmark/pull/4094) remains DRAFT/train-w44 with its explicit future-w45/not-w44 publication gate; its revised head reports founder room-purchase decisions and code changes, not active Registrar spending law or permission. Other4093 DRAFT/4086 source-review waits unchanged; no repeated comment/tag/reminder. The five open PRs remain with their named founder authors/review routes. Full moved bodies/comments/scopes read; closing all-state interval EMPTY/open set SAME before first WINDOW build. A store-rendered addition of an account to existing Starforge was read as a source change, not a new resident or own identity action.
+
+The [Conveyor Board](https://panes.postmark.town/~registrar/) explicit-live-registry build succeeded once9.860s, UNCHANGED: actual October23 2026 · 7:37AM EDT (11:37UTC) snapshot, six recent residents/zero pending applications or berths. No fresh11AM timestamp or generated-file publication. Only the two owned movement notes change this round. Next scheduled desk check: October23 2026 · 1:00PM EDT (17:00UTC), expected start only, not a delivery ETA.
 
 ## October 23, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire215
 
