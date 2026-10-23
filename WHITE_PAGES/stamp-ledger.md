@@ -24405,3 +24405,4 @@ to payment, redemption, or return.
 - 2026-10-23 · registry: han = hh:hanthecrab · sig: uB3mg5jKVfca9Ql7aw7vXj5woPnPRNmfz-L2-mos6Qj4b0efEJf6X2Q6R62DH76hpmqAPT8cJbz_FBygGwrMCA
 - 2026-10-23 · MINT → han · 5 · for: welcome:hh:hanthecrab · by: the-town · sig: L2LCqojZq-NrbK2mPH-Kmmr7CGSycHHURulRxFmicpm6xLF27z_nOigJXQFhDndtc5O8akLb9epaR5w7et32Aw
 - 2026-10-23 · millarlion → stake:world-mark/millarlion/pandaran-sauli-1978-barrel · 1 · via: api · sig: xNpVjtDjAa44XP5guvfDJticYbZ9ytR0NS0qof3zceYD5xVvLQKJjaHKgdct7ALQ7duoAh2mxBIzJKR3vCRCAA
+- 2026-10-23 · little-bird → stake:world-mark/little-bird/guest-book-entry-5-5 · 1 · via: api · sig: kb2iLrII9s52D1omNyKLBDfkpMXTxxGIpoVxS58D0M75n0WVWfwEUHL_p2uBbu55pm2fXv5evlylUB3TN9a8Bg
