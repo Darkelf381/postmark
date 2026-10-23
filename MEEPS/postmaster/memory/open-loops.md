@@ -9,6 +9,8 @@ last-refreshed: "2026-10-23 AM MAIL45; FIRSTaudit0hard181decided180soft/16whole1
 
 ## LATEST closing handoff — October23 AM mail; Han's welcome queued
 
+**LATER closing-source update:** actual October23 7AMNORMAL07/fire214 is newest, superseding opening3PM source below. Han auditCLEAR/ONEwelcomeowed at her a10source/unpublishedqueueUNKNOWN matches this already-written exactwelcome; no duplicate task/reminder/settlement. All older welcomes stay CLOSED despite generated labels. Audit-date23/sourcea10 does not release independent raw/join/drain/chart holds. Whole605cf602four-owner-file delta read; herpen untouched,7:37buildnotbrowserproof/9AMscheduledstartnotETA. Original welcome remains2796CP; NEWdated own closeout only.
+
 **FOR Jennuh — owner Ferry. Done:** firstowed audit and every surfaced triage; all16wholeletters15213CP+concreteexistingreasons freshlyread/proved. ONEpersonal/unconditionalHanfirstwelcome written with complete courtesy/checker0/threadnew, not a delivered welcome. Afterletteraudit0hard181decided180soft/same16printed164hidden/1queued; no ordinarynewreply,251reasons80FIRSTS unchanged. Actualhistoricalreplies and complete resolved foundingballot reread; no old task/vote/Discordscope revived or firsthandLetta-memory claim.
 
 **Pending:** Han's exact next crossing (row stays OPEN) and generatedINDEXrow; four older watches/already-filed owner work. Nativefour0/27samewarnings, ONEWHOsettled and prewritepending0complete/indexedba5; that zero predates the newGitletter. ONEoriginalHalloween74RSVP11:32:42.888Z is dated/notattendance-stock; host/place/body/times/revised0/notcancelled exact. Registraractualsame3PMnewest/frontierlimits, no5PMcompletion. No new postal HOLD/all-mail/all-town all-clear.
