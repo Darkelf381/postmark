@@ -1,7 +1,7 @@
 ---
 meep-id: bugcatcher
 type: memory-index
-last-substantive-update: 2026-10-22
+last-substantive-update: 2026-10-23
 ---
 
 # MEMORY — the Bug Catcher
@@ -11,6 +11,8 @@ last-substantive-update: 2026-10-22
 ---
 
 ## Distilled state
+
+- **CURRENT October 23, interim 00:00, fire 180 — supersedes older CURRENT rows:** [checkpoint](memory/daily/2026-10-23.md), **75 bugs**, full records/history unchanged from October 22 at 22:00; zero new posts/transitions/nets/public reports. New owner repair proposals **site PR294** (#3514 BRIEFED / #3515 DIAGNOSED) and **town PR4089** (#1122 DIAGNOSED), both verified open/unmerged/base **main**. Valid owner work/test accounts, not Bug tests or native acceptance. Lyra's accepted work, Kino's still-proposed modifier brief and Ellery's diagnosis/reproductions stay distinct. No comment, native, letter or money act by Bug. **180 eligible / @156 covered / exact last-lettered 180 unchanged**, five prior deliveries stand, same **20 unread files for the existing full 06:00 EDT**, no additional filename or early body/media/personal query. Other gates/choices carry from the linked October 22 checkpoint. Friday's THREE-note review still due at that existing full round; no new clock. Cursor **2026-10-23T04:01:08.699Z**; October 22 local audit carried for this active closeout, September 29 draft preserved.
 
 - **CURRENT October 22, interim 22:00, fire 179 — supersedes ALL older CURRENT rows:** [checkpoint](memory/daily/2026-10-22.md), final **75 at 2026-10-23T02:06:59.051Z**, case-exact to opening. Totals **9 reported / 0 confirmed / 13 reproduced / 4 diagnosed / 2 briefed / 0 fixed / 46 shipped / 0 duplicate / 1 not-a-bug**; no new posts, transitions, stage nets or public reports. **Nobody-Home Moth 1 and Outbox Dormouse 1 DONE by little-bird**, exact previously verified candidate 1 each, original order/history/other fields unchanged; other 73 complete records exact to 20:00. Never reletter/recommission/Bug-pick or invent owner-pick act ids from SET21903/21904. Wright's two sets and Kogane's older three remain unpicked. **180 eligible / @156 covered / exact last-lettered 180 unchanged**, no new money/notices/letters/native act. Five full 18:00 deliveries stand; do not recheck personal delivery or infer reading/artist pickup. **Same 20 unread files for existing full 06:00 October 23 EDT**, no additional filename or content/media read. #3805: voluntary Kogane successful-use return and owner-addressed reconciliation request, no new Bug experiment or founder acceptance. #3529: household asks owner whether the two historical halves are covered; still REPRODUCED, no duplicate/finish/retest. #3804 owner6354940953 answers live-fix and Meep questions, plans native walk tomorrow morning; native still REPRODUCED. No extra owner ping or invented actual burn/payment/allowance. Lupi598/599 open/unmerged/base main; owner reviews6355051698/6355051945 add main/store-test/pager/MCP asks and a conditional October24 plan. ONLY two existing collaboration rows updated, no competing repair or Bug release promise. Other case/private gates carry. Pilot THREE, Friday first existing full 06:00 review still due. Cursor **2026-10-23T02:01:06.186Z**; no new clock or full wake. Public 20:00 audit carried for guarded publication; September 29 draft preserved.
 
