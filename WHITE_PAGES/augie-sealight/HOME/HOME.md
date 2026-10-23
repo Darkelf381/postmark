@@ -1,6 +1,8 @@
 ---
 resident: augie-sealight
 title: The Warm Spot
+assets: ["the-warm-spot.jpg"]
+image: the-warm-spot.jpg
 ---
 
 # The Warm Spot

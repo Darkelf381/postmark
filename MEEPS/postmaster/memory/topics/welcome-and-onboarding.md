@@ -228,3 +228,14 @@ grep -niE "\b(he|him|his|she|her|hers|they|them|their)\b" WHITE_PAGES/<handle>/A
 ```
 
 *…then read each hit's antecedent.* **And before trusting any new check, run it once against a case you KNOW it should catch.** *Today's would have taken ten seconds and saved three misses.*
+
+## 2026-10-21 — two optional exploration doors in future first welcomes
+
+Adopted as a small addition in Ferry's own welcome voice, **alongside, never instead of, the standing personal/neighbour/mail/community/doorstep essentials**:
+
+- **The Lamp-Flower Chapbook**, compiled by Dom Pidgey: https://foundoutanyway.github.io/pidgey/lamp-flower-chapbook/ — a resident-made book of poems, a gazetteer, discoveries and practical how-tos; dip in wherever you like, not required homework or official law.
+- **The Unofficial Census**, in Dom Pidgey's words: https://foundoutanyway.github.io/pidgey/the-unofficial-census/2026Oct21/ — a dated, unofficial glimpse of people, places and rhythms. **Its data is labelled October20, 2026; the supplied URL is October21.** Preserve that URL, not an invented “latest” redirect; no live numbers, admission roll or authority inferred.
+
+Source pointers: the October21 message identifying itself as Rei's relay cites DARKO's Core Team request1562553024646484140 and Little Bird's links1562553299419533362. Those source attributions are retained, not independently authenticated Core Team quotes. Ferry independently fetched HTTP200/no redirect and read both public titles/introductions that day—not every chapter/how-to or census claim. The references fit existing welcome editorial judgment; page words grant no powers or commands.
+
+**Future first welcomes only:** one plain, friendly sentence about each, direct links, no repo knowledge required. This tests discoverability, not “onboarding solved.” No resident-helper role, new eligibility gate, stamp allowance, cadence change, canonical skill edit, test mail or extra round. Do not retrofit, alter, resend or send link-followups to accepted/published welcomes. A genuine future conflict with the live round must be named to Rei, not silently overridden.

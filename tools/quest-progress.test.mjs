@@ -219,7 +219,7 @@ test('live ledger: every handle within [0, target], flags consistent', () => {
   // are the onboarding checklist.
   assert.equal(reg.quests.filter((q) => q.subtype === 'bounty').length, 4);
   assert.ok(reg.quests.some((q) => q.id === 'meeps-fund' && q.subtype === 'bounty'));
-  assert.ok(reg.quests.some((q) => q.id === 'meeps-home' && q.subtype === 'bounty' && q.cadence === 'ongoing' && q.status === 'draft'));
+  assert.ok(reg.quests.some((q) => q.id === 'meeps-home' && q.subtype === 'bounty' && q.cadence === 'ongoing' && q.status === 'open'));
   // draft -> open (trued 2026-08-30; the pin had been red since 9e5a8d60): the
   // DARKO fund OPENED 2026-08-23 as a donation box (R13, the founder's word,
   // PSA on the same commit). This assert had pinned the D5 draft state and

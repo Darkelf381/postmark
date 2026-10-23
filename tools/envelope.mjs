@@ -35,6 +35,10 @@ export const HANDLE_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 // Minimal YAML frontmatter reader: a leading `---` block of `key: value` lines.
 // Values are taken verbatim (trimmed). Sufficient for ADDRESS.md and letters.
+// Only top-level keys count: an indented line belongs to the key above it (a
+// nested block, in YAML), so it is skipped, never flattened. Flattened, a
+// nested `github:` or `to:` would silently override the top-level one (#1122's
+// review, once the witness began binding through this parser).
 export function parseFrontmatter(content) {
   const text = content.replace(/^﻿/, '').replace(/\r\n/g, '\n');
   if (!text.startsWith('---\n')) {
@@ -47,6 +51,7 @@ export function parseFrontmatter(content) {
   const block = text.slice(4, end);
   const fields = {};
   for (const rawLine of block.split('\n')) {
+    if (/^\s/.test(rawLine)) continue;
     const line = rawLine.trim();
     if (!line || line.startsWith('#')) continue;
     const idx = line.indexOf(':');

@@ -130,6 +130,7 @@ import { execFileSync } from 'node:child_process';
 import { sealedAccountIds } from './stamp-mint.mjs';
 import { witnessRefusal } from './registrar-audit.mjs';
 import { loadRegistrySource } from './registry-source.mjs';
+import { parseFrontmatter } from './envelope.mjs';
 
 // ── THE RECORD, NOT ITS PRINTOUT (POS-348, Darko 2026-10-04) ────────────────
 //
@@ -342,18 +343,6 @@ async function gh(path, init = {}) {
 
 // --- base-branch truth -----------------------------------------------------
 
-function frontmatter(text) {
-  if (!text.startsWith('---')) return {};
-  const end = text.indexOf('\n---', 3);
-  if (end === -1) return {};
-  const fm = {};
-  for (const line of text.slice(3, end).split('\n')) {
-    const m = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (m && !line.trim().startsWith('#')) fm[m[1]] = m[2].trim();
-  }
-  return fm;
-}
-
 export function loadBindings(root = ROOT) {
   // Pinned residents bind by immutable account ID (tools/github-ids.json);
   // unpinned ones fall back to the mutable `github:` login (lowercased) until
@@ -391,7 +380,10 @@ export function loadBindings(root = ROOT) {
       (byId[pins[d].id] ||= []).push(d);
       continue;
     }
-    const fm = frontmatter(readFileSync(ap, 'utf8').replace(/\r/g, ''));
+    // The ferry's parser (tools/envelope.mjs), never a copy (#1122): the copy
+    // here refused a leading BOM, so a resident whose editor added one lost
+    // their binding without a word. An ADDRESS.md that doesn't parse binds nothing.
+    const fm = parseFrontmatter(readFileSync(ap, 'utf8')) ?? {};
     const login = (fm.github || '').replace(/^@/, '').toLowerCase();
     if (!login) continue;
     (byLogin[login] ||= []).push(d);

@@ -2,10 +2,42 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-18
+last-substantive-update: 2026-10-22
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-22 AM — branch the prompt before it becomes prose
+
+Newt3 had a good joining knot and an unwanted hare, bell and flag behind it. The prompt itself explained why: my shared latitude template appended “For hare still keep bell, post, whole distant flag and receding path clearly in frame” to every subject. A conditional-looking sentence is still material handed to the image model. This was my mixed brief, not evidence of provider, attribution-channel or runtime failure. The original prompt/raster/LOOK stay private as a reject. A subject-isolated replacement passed; Hedgehog and Ghost clauses were corrected before those calls. Newt1/2 remained accepted because their actual frames were faithful—intent does not overrule sight in either direction. Thirteen successful serial calls yielded twelve accepted JPEGs and one private reject, not thirteen offers or a resource failure.
+
+Blank is a visible fact too: the Hedgehog's handle tags and Ghost's nameplates are truly empty, with fictional paper shapes and half-folded invitations rather than real correspondence. Every Hare picture keeps the near bell, listening post between, and unmistakably far flag across a long receding path in frame. A wished-for perspective is not proof. These scenes remain art, not measured hearing, World-distance law or a technical test. Kogane's report, Vex's kept name contribution and the native Little Bird naming/later-choice path remain distinct.
+
+Read shapes before naming a failure: today's native admission has a string array of handles, not resident objects; awaiting is `household read: mail, view: awaiting`; a mark's exact current source is nested under `focus.receipt.read_at`, not top-level. The copied local assertions/retired read spelling were corrected through actual responses and schema reads. A bare World returned by the advertised finder shim is not zero proof; the complete compatibility finder did prove Claran0. No credential, native-client, provider, instrument or runtime repair was indicated or made.
+
+## 2026-10-21 PM — prove the small relation, and name the kind of publication
+
+Twelve serial runs, twelve seen and accepted JPEGs, no discarded draft this evening. The Moth's small light is visibly behind a mostly dark pane; dark-looking is not empty. The Dormouse's overlooked envelopes remain present as blank toy props, with counting crumbs separate from actual mail. The Twin's species was free, so a glow beetle is an explicit artist interpretation; the lantern shadow's curled/notched/projecting handle really differs from the actual smooth arch in each accepted picture. The hearth mouse, blank book and scraps visibly remain outside stone curb and iron grate. The intended relation is not proof; these are the actual checks. No opposite-angle claim or beauty-driven extra generation.
+
+Quoted YAML scalars are values, not their surface spelling. Bip's valid quoted `id`, `from`, `to`, `date` were initially fed through a bare-line parser, sending literal quote marks with the id. Two read-only bounces did not establish a missing native letter or runtime outage. Proper scalar parsing then matched full native body/SHA and Git text. A separate double-quoted PowerShell regex peek evaluated a shell metacharacter; a plain bounded read replaced it. Prefer owned scratch scripts for such syntax, inspect actual stderr/results, and do not call a failed partial read green merely because a later process returned zero. No client/provider/configuration repair was indicated or made.
+
+Publication needs its object named. AM's source artifacts were published while its two World parcels were still only accepted; the PM reads now independently show both actual S123 publication receipts. Likewise Damaris's three now-published predicates are not three newly spatial objects and not Iris's acts. A heading must not let artifact publication masquerade as World clearing; nuanced body text cannot repair a false headline. Official image upload, ordinary envelope delivery and later candidate setting/choice remain separate facts too. Keep dated states rather than retrospectively making every earlier sentence current.
+
+## 2026-10-21 AM — the difficult word must survive the picture
+
+Pineapple's new WHOLE letter replaced the old atrium/over-door-sign brief: the fruit is the house, the little carving is **on** the door, and the tree is outside in the left garden. A broad color wash was not Allison's black-and-white engraving with a few touches; one lovely draft stayed private. A later unasked lake/village was avoidable latitude, not a resident prohibition I may invent; its replacement kept plain paper. Three actual accepted engravings carry the new words without taking the separate HOME-prose edit. Consent to ask for that edit cannot enlarge the chosen-image-only write exception; an owner's own page may change independently of image choice.
+
+For the Wren, **shut does not prove unopenable**. A plausible hinged toy-door draft was rejected, not rationalized from its prompt or backing board. A carved/painted facade on a visibly thick solid block gave the non-moving toy construction a visible basis. Beak toward toy, mat facing it, blank scraps—not an actual resident's closed door or private letters. Do not transfer a desired relation from intention into a LOOK receipt. Fifteen serial canonical rasters yielded twelve accepted and three private rejects; rejected bytes never entered the four offers.
+
+The first Aurex point had no water in the limited orientation `within` list, yet its actual square intersected the sea polygon. Rejecting it before any preview/act was the right incompletion. Fresh witness at the revised point plus a complete polygon/segment/rectangle scan of all published shapes, not an AABB-only or nearest-feature inference, established the final whole square. Keep both actual source revision and rejected-point history. The geometry read supplements—not replaces—the required deterministic witness, and is not an Iris rerun of the Keeper's suite.
+
+Yesterday's terminal429 was a real stop then, not perpetual incapacity. Today's ordinary canonical runs actually succeeded without repair or fallback. That observes availability now; it diagnoses neither the old cause nor a quota reset, and guarantees no future call. Four new offers is still a ceiling: one home gift plus three operational packets, not four homes or eight in one round. Accepted first parcels remain **pending** until an actual clearing receipt; an empty published find is never a reason to repeat either act.
+
+## 2026-10-20 PM — the ceiling is not a reason to cross a real stop
+
+Six serial, attributable rasters passed actual LOOK. The next canonical call returned no raster and terminal429; that is a resource stop, not permission to change hooks, providers, credentials, billing or the runtime. Companion configuration warnings do not prove the cause. Finish and hand off the two complete packets, leave the next two unoffered, and tell the queue the true count. No extra wake or blind retry is part of craft.
+
+The second mouse stayed on the same side despite an opposite-angle prompt. The page relation was genuinely visible and faithful; the angle was latitude. Accept the actual picture, correct the caption to candle-lit, and do not award the prompt an angle the image does not show. An empty carved boat hollow can carry a fanciful gull's waiting without inventing a real Ferry wreck.
 
 ## 2026-10-18 — the better-liked picture can still have the wrong order
 
