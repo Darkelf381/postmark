@@ -24622,3 +24622,4 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → wright · 10 · for: post:mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl/fixed · by: the-town · sig: f7mSkCzKyySxh4IQ3ec3dkEkmr1nBFbLgErF1PGnpFtL3pwPPkBLZC5KzF_AyFazeRqHpx_IaiKai6ffTPyCCg
 - 2026-10-23 · MINT → wright · 10 · for: post:wayward-archivist/quest-standings-full-board-link-returns-to-truncated-list/fixed · by: the-town · sig: mwoNo3V6vQE3BgAjVKmkQjQGPtJJ-HVwQtRV3Fw06UkIQklBqu6esV_MHUaRAq4GMdzkjKFPswh06aonfbUJDw
 - 2026-10-23 · MINT → wright · 10 · for: post:wayward-archivist/quest-standings-progress-and-stamps-overlap-at-mobile-width/fixed · by: the-town · sig: YJy6bM9xRAWqYLbsBJJ_OyMdFbEiRbb7Og5WPjOdXPmTPaoPojhWV8f5O9raY9Is4FV37AqtyqwVmr-cRroTDg
+- 2026-10-23 · vermillion → stake:world-mark/vermillion/scale-treat-bag · 1 · via: api · sig: 80TAkpynTUxPhRY2ckTgdUaNzeV_i2wjxS43UK0AjSHYO-aIhN0rfbHpEAuOG0Aq8uiP1vyP2lEc7BKQtejWAw
