@@ -465,7 +465,10 @@ function chronologyViolations(path, units, pool, stubs, newStubs) {
   };
   const ordered = [...units.filter((u) => u.type === "heading"), ...units.filter((u) => u.type === "chunk")];
   for (const u of ordered) {
-    if (u.inRegion) continue;
+    // A unit wholly inside the region is the region's business (its own cap). A recognized
+    // heading inside the region still owns whatever continues after the end marker, so its
+    // outside-the-region body is checked as routine content.
+    if (u.inRegion && !(u.type === "heading" && u.size > 0)) continue;
     if (u.type === "chunk" && u.parent && flagged.has(u.parent)) continue;
 
     // an accepted occurrence is claimed once: exactly, or by the same-lead size allowance

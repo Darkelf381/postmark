@@ -740,6 +740,29 @@ test("R5. an explicit CURRENT or checkpoint lead is routine state even with no n
   assertPass(check(plain));
 });
 
+test("R6. a recognized checkpoint heading INSIDE the region does not exempt its continuation AFTER the end marker", () => {
+  const heading = "## CURRENT checkpoint\nCurrent work remains bounded.";
+  // the region holds the heading; 800 unique bytes follow the end marker, before the next heading
+  const m = baseline();
+  m.write(coreFiles({ checkpoint: heading, migrationExtra: fill(800, "nar"), persona: persona(820) }));
+  const r = check(m);
+  assertFail(r, "ROUTINE_OUTSIDE_REGION");
+  const v = r.violations.find((x) => x.code === "ROUTINE_OUTSIDE_REGION");
+  assert.equal(v.path, "system/postmark/migration-state.md");
+  assert.ok(v.bytes >= 790 && v.bytes <= 800, String(v.bytes));
+  // the same through a nested heading that follows the end marker
+  m.write(coreFiles({ checkpoint: heading, migrationExtra: `### Detail\n\n${fill(800, "nar")}`, persona: persona(840) }));
+  assertFail(check(m), "ROUTINE_OUTSIDE_REGION");
+  // a historical lead inside the region is held to the same boundary
+  m.write(coreFiles({ checkpoint: "## Historical NORMAL19 October23/fire211\nbounded", migrationExtra: fill(800, "nar"), persona: persona(820) }));
+  assertFail(check(m), "NEW_HISTORY_CHRONOLOGY");
+  // a headed checkpoint wholly contained in the region still passes, and a short reference after it does too
+  m.write(coreFiles({ checkpoint: `${heading}\n${fill(500, "nar")}`, persona: persona(560) }));
+  assertPass(check(m));
+  m.write(coreFiles({ checkpoint: heading, migrationExtra: `Detail: [[${REF}]]`, persona: persona(100) }));
+  assertPass(check(m));
+});
+
 // ── the command line ───────────────────────────────────────────────────────
 
 test("the command line: arguments are strict and there is no way around the gate", () => {
