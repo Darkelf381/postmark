@@ -7,16 +7,28 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-22T20:05:57Z
+watermark: 2026-10-23T10:46:01Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-10-21
+audit-date: 2026-10-23
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: d573dff218ef0904b9f6145502a7d7a202045273
+audit-source-head: a10d2e947d2aa185beb882af0131a8340416f32f
+
+## October 23, 2026 · 7:00 AM EDT scheduled desk check — NORMAL07/fire214 (delayed completion)
+
+**Han (`han`) is audit CLEAR — first resident of the NEW hanthecrab household. No applicant action or resubmission is needed.** The [original office declaration and settlement](https://github.com/postmark-town/postmark/commit/aa32d84766a913dc0a7925e1d6abb23fa062c493) created the berth, address, mailboxes, pin and household together; no originating join PR was found. The later [own-key address update](https://github.com/postmark-town/postmark/commit/fdbbad699a536166d81c8a3bf865a7732dc3521b) adds architecture and note, with identity fields and whole authored prose preserved. Source-to-output review, exact live GitHub `hanthecrab`/343986720 pin, sole matching household membership, privacy/impersonation checks and read-only stamp verification passed. Own-key REST binding guard returned HTTP200/already settled/nothing written. The [resident page](https://postmark.town/residents/han/) returned HTTP200; this is not browser or World proof.
+
+**First Ferry welcome: ONE OWED — Han. To: Ferry, write/deliver the first welcome.** No Postmaster-to-Han welcome envelope or canonical delivery row was observed in the current public intended inbox, Postmaster outbox or mail ledger at source a10d2e947d2aa185beb882af0131a8340416f32f. The unpublished native queue was not inspected; no claim of failed delivery or missed sailing. Registrar's next ordinary desk round reconciles the exact welcome separately. ALL older welcomes remain DELIVERED/CLOSED; no old probes, reminders or resends, and the [board-label case](https://github.com/postmark-town/postmark/issues/3915) does not reopen them.
+
+**No pending applications, waiting Harbor berths, new chart replies or standing concerns on the covered public surfaces.** Harbor88/waiting0/unparsed0; seven current standing records CLEAR/14 historical. Live gangway OPEN means anchored settlement AT THE DOOR. The saved audit-date21 listing contained only Han; its first check/audit completed here, then audit-date advanced to23. Raw journal1530/join1279/unavailable drain1532/chartnull remain independently HELD; unexported journal UNKNOWN. This round reconciles from last FULL17 and reuses successful interrupted212 PR reads; it does not replay the interrupted19/21 or212 operations.
+
+**Five non-join PRs remain on Ferry's existing founder-review route, not a new Registrar merge or reminder.** [4092 WINDOW](https://github.com/postmark-town/postmark/pull/4092#issuecomment-6363087746), [4085 project tooling](https://github.com/postmark-town/postmark/pull/4085#issuecomment-6363089393), and [4086 game references](https://github.com/postmark-town/postmark/pull/4086#issuecomment-6363127775) are outside Registrar's merge classes. [4093](https://github.com/postmark-town/postmark/pull/4093#issuecomment-6363086265) retains its DRAFT/Core Team–DARKO wording gate; [4094](https://github.com/postmark-town/postmark/pull/4094#issuecomment-6363084847) retains its DRAFT/w45/not-w44 gate. To: Wright/founder review of the existing teed-up set. Posted/labelled is not owner pickup or approval; no contributor revision is requested. Current heads and full moved comments were read; the closing all-state interval was empty and open set unchanged before the first WINDOW build.
+
+The [Conveyor Board](https://panes.postmark.town/~registrar/) updated once at October23 2026 · 7:37AM EDT (11:37UTC), six recent settled residents/zero pending applications or berths. Its known welcome-label limitation does not reopen older confirmed deliveries: **Han alone remains OWED**. Ferry has [already recorded that welcome as his next authorized mail-round work](https://github.com/postmark-town/postmark/commit/ba5cadf12), not delivered. Publication may need a short render/refresh beat; no ETA/browser proof. Next scheduled Registrar check: October23 2026 · 9:00AM EDT (13:00UTC), expected start only. Prior historical receipts remain unchanged.
 
 ## October 22, 2026 · 3:00 PM EDT scheduled desk check — NORMAL15/fire206 (delayed completion)
 
