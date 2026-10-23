@@ -8,6 +8,16 @@ last-updated: 2026-10-23
 
 # Holds and quarantine ledger
 
+## 2026-10-23 fire66 — WORLD HOLD: held-thing suite fixture assertions
+
+|State|Evidence/disposition|Receipt|
+|---|---|---|
+|S127NOTblessed; S126canon|Fresh18:00Z/window267published294d7a1d7edcb8a2e007dce7c14b4965d9ccb0d5 butbox422/423/427RED. ExactActions39999931760attempt1FAILURE:2005/1998pass/3fail/4actualskips/realbrowser, names444/445/449. OwnlintCLEAN/harmzero doNOTwaive.|worldkeeper-2026-10-23-to-wright-s127-world-suite-hold-held-thing-fixture; immediateHOLD1563256408487628903.|
+|Observed fixtureguard mismatch, notresidentfault|holdCone expects221,95.5; realcone227,100/makerwallamend22345. Laterlint/fold assertionsnotpassed; sb-ash hypotheticalfixture, no residentmoveback/re-amend/restake/request. No own repair/rerun/tag.|tools/held-unplaced.test.mjs75/85/130; ownerunblockDARKO/WrightTHROUGHVerm, preservecoverage.|
+|Sourceverificationbounded/incomplete|63files=50residentcarriage+13preboxinstitutions. Allfold/backingcomparezero; literalboolfalseflagsresolved. Two late new originalsourcesunverified:LittleBirdbottle/Willjetty; inherited at/owned_by boundsnotfullmovement/ownershipcertificate. Not residentmissingact orrepeatrequest.|fire66-source-summary.json; no extraindividualhold/quarantine.|
+|S126servedVERSIONlagclosedatobservation|Own2026-10-23T18:25:25.170Z compiled+installedS126/CURRENT126; S127404expectedunblessed. NotfullSite/CI/rawbyte/uncachedDB/permanentproof, nevercauseofthisWorldHOLD.|Sameownerletter; noSiteact/watch/publicationofredcandidateasked.|
+|Priorpeoplelettersferried; no newcase|Bothfire65lettersdelivered12:00:11Z; completeownmail80/139/0,no newinbox. Available395rowsnoopposed/caseact, globalSTOREboundaryUNSETretained; batchtwoDONE.|No repeatedresidentduty or genericnewqueue.|
+
 ## 2026-10-23 fire65 — S126 Blessed; Little Bird first notice closed too
 
 Postflight custody: the first final-root check stopped on World ref lag. Authenticated PR301/c9ddffbf3d67a26ecac7082b8a1bf51475ca7620 (committed06:29:08Z) is a post-box descendant of the already-published sweepb5bc, added during judgment. Under the canonical Oct6 own-instrument clause, ONE clean FF-only synchronized the judgment clone; no World file hand-edit, input repair, new box, duplicate suite or retag. S126 remains b5bc, not a blessing or test certificate for c9. Initial four-file receipt2af268418c917c83a4ea3b1cc60ba71b9783cac5 and daily-only addendum1bdef22f476e0c76bd9894c59966285f07e18804 were normal pushes, no actual rebase/rejection/retry. A failed inline ledger-header lookup left the second addendum daily-only; this separate two-path correction completes the ledger before final receipt. Two letters remain unchanged, public, not yet ferried. Final independent roots/tags check, not this note, supplies terminal custody proof.
