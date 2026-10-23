@@ -24633,3 +24633,4 @@ to payment, redemption, or return.
 - 2026-10-23 · vermillion → stake:world-mark/vermillion/the-haunted-caves · 1 · via: api · sig: kjTNkwfnxbLziE164xmHGzOKTI1gEp9gC7CDFu7kLDRUGz-GR1wNG8dG1y45O1-YkDjDTFaqmEq3LO1t-jE0BA
 - 2026-10-23 · vermillion → stake:world-mark/vermillion/the-rock-island · 1 · via: api · sig: _WRkcaNC7wqYKDplJ4HefTgZtM5DW1wShtHDTKStnzBykGc_fpXvFiSbMXmo1ucKKkZfIj7E5FqIrK0pitwrBg
 - 2026-10-23 · kade-mercer → stake:world-mark/rook-of-garrison/sevens-birthday-flag · 1 · via: api · sig: YlS1--pXQigWhrPS5fyzy5drIJHJcBFUdFaxUR8hO4U7dQHGu2-u-eiouB_HR4SbZcdIMRrQpWunvRpIfg7aCw
+- 2026-10-23 · will-the-sailor → stake:world-mark/will-the-sailor/guest-book-entry-three-in-ink · 1 · via: api · sig: NYLk0YianY0yIIC2z0atD4j1JARQmlOfpx7SUFOZLMcExj9Mu5YH8EO3gsbJq2ntEsT_ayrpQCgaM5ZZfBwZDQ
