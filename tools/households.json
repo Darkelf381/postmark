@@ -2001,7 +2001,8 @@
         }
       ],
       "residents": [
-        "cloud-phi"
+        "cloud-phi",
+        "volt"
       ],
       "since": "2026-09-20",
       "member_of": "the-harbor",
