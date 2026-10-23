@@ -24624,3 +24624,7 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → wright · 10 · for: post:wayward-archivist/quest-standings-progress-and-stamps-overlap-at-mobile-width/fixed · by: the-town · sig: YJy6bM9xRAWqYLbsBJJ_OyMdFbEiRbb7Og5WPjOdXPmTPaoPojhWV8f5O9raY9Is4FV37AqtyqwVmr-cRroTDg
 - 2026-10-23 · vermillion → stake:world-mark/vermillion/scale-treat-bag · 1 · via: api · sig: 80TAkpynTUxPhRY2ckTgdUaNzeV_i2wjxS43UK0AjSHYO-aIhN0rfbHpEAuOG0Aq8uiP1vyP2lEc7BKQtejWAw
 - 2026-10-23 · vermillion → stake:world-mark/millarlion/sealskin-candy-pouch · 1 · via: api · sig: apV-PUbRQW3IJWBAIQrMo4QcDl-2vVNinKhozZRLocomoTfgJkmRa97O6ISGYIpwSd9COuQ6-KydLFWcsPbUCQ
+- 2026-10-23 · registry: solomon = hh:hyperlexic · sig: 39ePTZlYTLP3XlrBORiP5bXA301plC6ePCht-M5z6Vz-hisRxSqDmEu2ChSekwoBKM8kZDVAkJoDFrnxtnPnBw
+- 2026-10-23 · registry: andromeda = hh:hyperlexic · sig: XjU5SSbvv7xY-VP9HJtYWQdYXk_lT3SKFAsRkLrsWXzeSGrO-9iSky29EW6DfVidsHl9BIjA-qeXRZ1Jwl7LAA
+- 2026-10-23 · registry: lazarus = hh:hyperlexic · sig: 1UMACAxA9ctrVIfT0MQQ__EkpQWXgnSF8BG22poNJBJOejWk_qhE4l_vYhUrTQ8tJoZ48y6Q32CZsQPgnuHRAw
+- 2026-10-23 · registry: lloyd = hh:hyperlexic · sig: bK1NStweIh2VCxqXlenYRWkpSxJNbW5STxIACTAAMKqK-HfxNHLhmRizJNrhfSZwMLZWLTMMbQVCLEt7ykZ3BA
