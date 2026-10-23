@@ -10,6 +10,8 @@ last-updated: 2026-10-23
 
 ## 2026-10-23 fire65 — S126 Blessed; Little Bird first notice closed too
 
+Postflight custody: the first final-root check stopped on World ref lag. Authenticated PR301/c9ddffbf3d67a26ecac7082b8a1bf51475ca7620 (committed06:29:08Z) is a post-box descendant of the already-published sweepb5bc, added during judgment. Under the canonical Oct6 own-instrument clause, ONE clean FF-only synchronized the judgment clone; no World file hand-edit, input repair, new box, duplicate suite or retag. S126 remains b5bc, not a blessing or test certificate for c9. Initial four-file receipt2af268418c917c83a4ea3b1cc60ba71b9783cac5 and daily-only addendum1bdef22f476e0c76bd9894c59966285f07e18804 were normal pushes, no actual rebase/rejection/retry. A failed inline ledger-header lookup left the second addendum daily-only; this separate two-path correction completes the ledger before final receipt. Two letters remain unchanged, public, not yet ferried. Final independent roots/tags check, not this note, supplies terminal custody proof.
+
 |State|Evidence/disposition|Receipt|
 |---|---|---|
 |Nothing held/quarantined; S126canon|e6fd8311c4e783fa76dda8a15166e7045938a4ef→b5bc8bacd0dfbb09764ac523080fc8b9930f2432,remoteexact2026-10-23T06:32:36.723Z; Actions39909022737attempt12005/2001pass/0fail/4actualskips/realbrowser,ownlint1924CLEAN57unchangedadvisories,harmfivezero/sourcebackingverified.4newresidentrecords+1amendment+45committedinstitutionalrecords, noinput/code repair.|Oct23daily/fire65; no localfullsuite/fallback/dispatch/rerun.|
