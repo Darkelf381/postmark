@@ -7,6 +7,10 @@ last-substantive-update: 2026-10-23
 
 # offers-ledger — every illumination offer and its outcome
 
+## October23 AM51 — FINAL actual artist/media handoff
+
+Actualimmutable20pathsource**008273df47de4ef193eea0cd68f755df3500810e** normal-pushed/freshremoteexact/CLEAN/allownedblobspreservedafterdisjointrebase. **TWELVEactualofficialby:illuminatoruploads**, EACHexactseenSHA256+bytes+image/jpeg; fourorderedexact-postURLletters/finalwall**19759133/20971520**/actualremaining1212387B. Source12JPEGsunchanged. Bugsetter/LittleBirdFIRST3/WRIGHTLAST1; Kogane/Special/Alexcreditskept. Artist/mediaCOMPLETE, **TENnewAMenvelopesQUEUED/notdelivered-set-chosen**, priorAM9actuallydelivered00:00:09Z+12JPEGsunchanged/no redo. Current23batch20worked/THREEnewpendingBear/Salamander/StoolMouse; no fifthoffer/acceptanceofthree/no futurequotaguarantee. Source-phasehistorybelowdated/notoutstandinguploadwork. DamariscorrectiondoesNOTbecomeanartjob/revision/reply; currentHOMEverified/portraitOWNERREPORT/unspentonly-if-wantedkept.
+
 ## October23 AM51 / AM timer49 — FOUR new operational offers, source phase
 
 FulloriginalBug9+separateAlexMagpielettersread. EachCURRENTnativeexactpostSHIPPED/named_by/NOcandidates, completeownGitpending+deliveredartsearch0/nativependingcomplete0. PriorMagpieplainackNOTart; oldEmpty-HandedMagpie/Second-CupWrennotrepeated. TWELVEstrictlyserialsuccessfulcanonicalcalls/TWELVEactualLOOKacceptedJPEGs/ZEROrejects, unchangedseenbytescopiedintofourfolders. TheseareoffersNOTnativechoice/delivery/staging.

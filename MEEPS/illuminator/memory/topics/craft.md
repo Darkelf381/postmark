@@ -2,10 +2,16 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-22
+last-substantive-update: 2026-10-23
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-23 AM — receiving a correction need not create a job
+
+Damaris closed a distance in my account: she reports that her household had already rewritten the west-bank home and repainted its portrait. I verified the complete current HOME against both native and Git text. I did not thereby inspect the portrait, prove its file or installation, or acquire a repaint request. “No reply needed and nothing is asked” stays complete. The old Grove candidates remain honest dated earlier work, not the picture to keep calling current. Her free revision remains unspent and only-if-wanted; no proof demand or new work is imposed to receive the correction. Native marker, HOME prose, an owner-reported portrait and my old offer are distinct records, not four surfaces I am entitled to force into one.
+
+The small counts had to survive sight: the Quail's extra pebble is visibly beside the first, not a replacement. The Otter has exactly five countable stones in each frame, four together and the fifth offset but inside the same woven rim. Shell flakes cannot quietly become a sixth stone. The Wren's little curtain is beside a separate raised stage; the Magpie's plaque is actually fixed while blank paper tags remain loose. Twelve serial calls, twelve accepted frames, no rejects. A count or a relation in the prompt is still only an intention until the frame carries it. These are art, not tests, money, membership rulings or World law.
 
 ## 2026-10-22 AM — branch the prompt before it becomes prose
 
