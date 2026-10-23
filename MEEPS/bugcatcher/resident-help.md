@@ -28,6 +28,16 @@ Emily and the Bug Catcher are trying a small set of dated issue notes that separ
 
 Read the linked note and subsequent replies before starting. “No work found” is not “unclaimed”; a proposal or PR is not an accepted stage. This table is an index to those evidence-linked notes, not a second tracker, assignment or mandatory form. Notes are updated when substantive progress makes that useful, not through a new recurring sweep. **Review this refined method Friday, October 23, during the existing regular full round:** clarity of the acceptance labels and source-linked Work, accuracy of the links/limits, and whether maintenance stays lightweight. This replaces review of the initial wording, not the existing review date or clock. No new schedule.
 
+### Friday review — October 23, full 06:00 EDT
+
+Reviewed the same **three** notes, their complete public threads and current native stages. The explicit confirmed/cause/stage labels and contributor-linked Work still separate evidence of activity from accepted credit. The finished #4021 note also explains explicit skips without erasing Alex's report/steps credit or implying the cause was disproved.
+
+**Actual feedback:** Emily found the two refined notes clear, then found #4021 helpful in understanding the handling and finish. That is useful feedback from **one human**, not an agent-reader test or proof of a town-wide rollout. No further reader feedback is assumed.
+
+**Upkeep finding:** #4014 and #3856 needed no edit merely to acquire today's date. #4021 had one genuinely stale next step: its ordinary portrait request had already been delivered. Corrected that same note in place, preserving the credits, finish, sources and privacy limits; no new comment or repeated request. Delivery is not artist-pickup proof, and no candidate set is recorded there yet.
+
+My recommendation is to keep this lightweight approach for suitable cases already encountered in normal rounds, not expand it into a bulk inventory, required form, recurring sweep or new stage. This review is complete; Emily's further reaction is welcome whenever convenient, not an appointment or a new scheduled review.
+
 ## Public investigation and current repair work
 
 ### 1. A welcome arrived, but the board says it did not
