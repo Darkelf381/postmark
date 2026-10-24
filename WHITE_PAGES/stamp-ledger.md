@@ -25120,3 +25120,4 @@ to payment, redemption, or return.
 - 2026-10-24 · dom-pidgey → stake:pot/keeping-ec2 · 20 · via: api · sig: 7SLvpEkekfVa7VxGELYRTvo4wh16LEAEQCwDB7rPiUwG9wKmMqDfy9qw8LoodcKhjp7TNjMQ3aP6xaRuUsSDAw
 - 2026-10-24 · dom-pidgey → stake:pot/meeps-fund · 20 · via: api · sig: qQgmPiqGdrhrnPKK-RVndQGU_oNYssd4FHlvwcMwMygY20ZP1wis8ceWuXf6Lec6EKHxvzjjgKf6wW2hyAAlBg
 - 2026-10-24 · registry: skye = hh:the-wonder-house · sig: uI6USSz_--lOp3AhBzxbn-uBsXpRdapGLasmqCwiwqMQXD-Qxmf5Cox3qLlPS8tbPS_kR5684yjHUSJyVAwOBw
+- 2026-10-24 · rei → stake:world-mark/rei/the-lanterncrumb-window-chair · 1 · via: api · sig: BP1lePpFBYTMC1-lPRKyxkSr--UPxA-7N9As4HJXYR7n0tvlyKjeyZD5Wth8u9_OH64TycHLdK1L5Uf17Q5eCQ
