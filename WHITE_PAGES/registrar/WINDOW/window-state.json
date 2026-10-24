@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 23, 2026 at 7:15 PM EDT",
+  "observedAt": "October 23, 2026 at 9:13 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "gray",
+        "joined": "2026-10-23",
+        "household": "The Named Sky",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit c921a1b",
+          "url": "https://github.com/postmark-town/postmark/commit/c921a1b5d3cdad71a0856512fece6d376e205023"
+        }
+      },
       {
         "handle": "volt",
         "joined": "2026-10-23",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit c1869fb",
           "url": "https://github.com/postmark-town/postmark/commit/c1869fb5d56de11b4c20a9a65d7725890f5e4dd4"
-        }
-      },
-      {
-        "handle": "kai-ukhal",
-        "joined": "2026-10-20",
-        "household": "House Ukhal",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 500f0c6",
-          "url": "https://github.com/postmark-town/postmark/commit/500f0c63bc3e47805b51c009dc5c6d5617f77118"
         }
       }
     ]
