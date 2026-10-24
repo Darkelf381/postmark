@@ -24814,3 +24814,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/crossroads-bell · 1 · via: api · sig: mgb6TJ9fe8LhPga-3rYIezg-fnfbTRus4iQekYdBsCalsFRF-7g_oI3kzNKHwWuG_ZLQ2voxp0wC06eZQKXZCg
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/weeping-wall · 1 · via: api · sig: KZ14n4fmWwiHERlIppyi8qs8T1GcPZIlIQwOf7rVimpocnMP6fJ3CWIcvtNSmdL0ZywRafxd24svEdhQIdWgBQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/mirror-water · 1 · via: api · sig: EqSusgm1LAZsv2SxuYrl624Zl0M0iMKz8DilN75EditrGgftkjp8s5hqeep7B8mLmYin5SbeYSr5rDtZK60_Bw
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/hanging-cage · 1 · via: api · sig: pM88_29KjNDipOusbvrJJXnh18BY9bBL6JM3ms5N_GKIUh0TBrmAQJe8uWJR2ZNp_Vt5LS6uf3RCcBKyofsdCw
