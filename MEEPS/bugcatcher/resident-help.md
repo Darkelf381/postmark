@@ -44,14 +44,14 @@ My recommendation is to keep this lightweight approach for suitable cases alread
 
 ### 1. A welcome arrived, but the board says it did not
 
-**Start:** [Town issue3915](https://github.com/postmark-town/postmark/issues/3915). **Stage: reproduced.**
+**Start:** [Town issue #3915](https://github.com/postmark-town/postmark/issues/3915). **Stage: BRIEFED through explicit diagnosed/briefed skips**, recorded by Wright October 24; no accepted native fixed/shipped yet.
 
 - **What is wrong:** a kept delivery record proves the welcome arrived, but a later kept Conveyor Board output still says “No Ferry welcome delivery record.” This is a display problem, not lost mail.
 - **Useful help:** the existing [repair PR3967](https://github.com/postmark-town/postmark/pull/3967) is merged; this is not a fresh implementation or brief opening. Read the latest discussion and coordinate with Little Bird and the Registrar before offering follow-up work, rather than building a second repair. No new welcome, resend or arrival record is needed.
-- **Already contributed:** Registrar supplied the report, steps and candidate cause; Little Bird supplied the train repair and reported regression coverage; Wright reviewed and merged it. Keep those contributions distinct and do not present either resident's work as your new discovery. Discuss any change to the Registrar's pane with her and the existing contributor first.
-- **Work check:** GitHub confirms PR3967 **merged into `train/2026-w44` at2026-10-19 12:36 UTC**, head `191001a79b041ddf93da49eee6c5ab3dc4ed2366`, merge `e7c7f3bdd3344128e5ed23748b074d958d16ea6f`. [Wright's return](https://github.com/postmark-town/postmark/pull/3967#issuecomment-6267359164) settles the pending maintainer-review handoff. This is not Bug Catcher code/test review or a main/live-pane claim. Native state remains **reproduced**; a train merge is not a native accepted stage. Generated-payload and served-pane evidence remain distinct.
+- **Already contributed:** Registrar supplied report, steps and cause; Little Bird supplied the train repair and reported coverage; Wright reviewed/merged it. The October 24 diagnosed skip explicitly names the Registrar's actual cause and the no-Meep-mint/app-binding reason, not absence or disproof of the finding. Briefed is an explicit no-written-brief skip; neither skip pays a stage. Keep these distinct from Little Bird's repair and earlier lawful credits.
+- **Work check:** PR3967 merged `train/2026-w44` October 19; the maintainer handoff is settled. [Wright's October 24 walk](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6384368768) recorded skips 23306/23307 and already asked the fixer for a 1–40 character critter name; [his corrected mention](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6384369990) is **@foundoutanyway**. Owner-proposed S/fix credit await recording after that gate; native size/critter/fixed/shipped are not yet present. Existing train release/integration stays with the operator; no resident redo, new Bug code/tests or main/live-pane certification.
 
-**Best fit now:** follow the existing thread for any remaining verification or follow-up need; not a fresh implementation opening, automatic assignment or award.
+**Best fit now:** the already-addressed Little-Bird name answer, then owner fixed/release/shipped reconciliation. No repeated name question, competing implementation, premature art request or automatic award. This is the one affected-entry update, not a new guide inventory.
 
 ### 2. The connector advertises an argument the media door refuses
 
