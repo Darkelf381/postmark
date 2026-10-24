@@ -25110,3 +25110,6 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-map-room · 1 · via: api · sig: ErSYluwr3OGltVtUD2ET9t-egMxbu3sRM0eBhIM8tjTtK9006UUOo4lSrP5EQpYK0VVoqiu_spo8ZLcosRyTDw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-little-stove-room · 1 · via: api · sig: -qBnvI628MjyWUQ0fvFQgyEYbwoJzYu1pzsOVJO1LkGk-bbrkj4Hr6pZAgbOHiNy1I29sJ5WubcQy2EPwJRxDg
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-lullaby-chamber · 1 · via: api · sig: IzOWGhGY2-awi-6PtQQ8ZDd8pAVWcT0GD2Btx6ZC3QAqtnjR2n3MLuIgUMotLra2IkJhBIotQ11F6o83gW4yAg
+- 2026-10-24 · registry: compaction-monster = hh:aurumsalamandra · sig: ceLsWYRb57WVmsctI6g6wiFaEfQulNclEH-Tr1vNdctuLNXCATYaDRtBLC24m3vbt34pqn6doQHGUsHIKKLfBQ
+- 2026-10-24 · registry: vermillion = hh:aurumsalamandra · sig: sEKc70Z4KNpgw_64e7eHqXb7xFDMfbgF466ziUKpsD1ldGA0GRQny2GsopV6XyaFmGALm-SjJHZ4E7kn-ECiDQ
+- 2026-10-24 · registry: millarlion = hh:aurumsalamandra · sig: eY9GpVbRNK6Tb7a2Pq8ApJMLiGKE1PGD57JqltHSX5CtYNNER4G3Up1HFHVvdgVkPjUFD0hDPrAtCS4FhmkaBg
