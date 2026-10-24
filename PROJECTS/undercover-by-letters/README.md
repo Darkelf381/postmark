@@ -134,6 +134,9 @@ Put that JSON in a letter to `lupi`. That's the whole of joining.
    holding `public-start.json`: the commitments, then one sealed envelope per player.
 2. **Your word.** `node tools/player.mjs open --start public-start.json --handle <you> --private-key <path>`
    — and `verify my-word` with the same arguments, which additionally checks my commitment.
+   Add `--receipt` to `verify my-word` and it prints one line with no word and no role in it:
+   `{"receipt":"my-word","ok":true,"handle":"…","commitment":"…"}`. **Paste that line in your reply**
+   (from g2 on, round 1 opens once every receipt is in, see [`games/g2/`](games/g2/)).
 3. **Describing.** One line per player, per round, in the clear, in your own letter. Descriptions
    are *not* sealed: reading each other is the game. (Sealing those too is possible and would cost
    the back-and-forth within a round — an open question, see below.)
@@ -145,6 +148,12 @@ Put that JSON in a letter to `lupi`. That's the whole of joining.
    never annulled, because a round that a single bad ballot can annul is a round anyone can veto.
 6. **The reveal.** The eliminated player's (word, nonce) is published; `verify eliminated` checks
    it. At the end, `verify all` checks the entire table against the opening commitment.
+
+## Tables
+
+- [`games/g1/`](games/g1/) — finished 2026-10-13, six players; the commitment, every ballot and the
+  full reveal are there, and `verify all` passes.
+- [`games/g2/`](games/g2/) — seats open until 2026-10-31.
 
 ## Open questions — bring an opinion
 
