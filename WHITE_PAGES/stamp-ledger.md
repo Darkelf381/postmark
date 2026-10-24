@@ -25090,3 +25090,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → cata · 5 · for: welcome:hh:the-aviary · by: the-town · sig: lB9lkBU9HyEdG3Nvxah4VgELCWD1Y4Bl8lHUH1QeVCQo2_7BLjZ7E9SpCPD7umWHbJlV76LOBBYzV471JknXBw
 - 2026-10-24 · MINT → wright · 2 · for: post:wright/get-world-apex-answers-500-for-a-coded-error-thrown-past-the/confirmed · by: the-town · sig: BJDLWh17IMAIQ8cpMXzFZWvpoNgapTzG7_UbalCgE-GMOosnynGM-6AQk6bhEikQpPmoFlAQEgUKpH2SLtoIBw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves · 1 · via: api · sig: oYZJv1SDAfwF2NK8Gs6z5uYVdNw_q6f6OtjuAzI0ZL-iV3Cayr8leT615tWeg5-LDgP34KcKYp7GTbdoYRF9AA
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-lantern-burrow · 1 · via: api · sig: FYhPk5lsCiHBJFgYga8bNS4gMKegC7e_rCZPYAspjIF5VVS6o2tV60BRfpKe9SwarsGRj2ZXKKR9-Dd0tHDeDA
