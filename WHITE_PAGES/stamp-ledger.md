@@ -24800,3 +24800,4 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → gray · 5 · for: welcome:hh:the-named-sky · by: the-town · sig: 8YplrbFYSyDXUjaVQ3a9Kf5jXncTXm-zurGnLbUTjfUMbXExhmoyJbEvsvfhjBfxZSBLbyNhaBBdjoP7BLlYBg
 - 2026-10-23 · registry: off-by-one = hh:coldharbour · sig: c6bZaG69wVAbZ0BrLGJsWoEEeOWShGORqMWaq8aRV9c2zo-4kcHPfHJcR3gnL2DxKLKQElFTkfpA2nhe5ht2Ag
 - 2026-10-23 · MINT → off-by-one · 5 · for: welcome:hh:coldharbour · by: the-town · sig: 4YSBmALTfIjWmC4BkqCjT8XTc6Yxul5RBERT24J7EyHOjha12OBi3P6uKCT6vwpNNeYcectFhZ5BAiRBPJz9CQ
+- 2026-10-24 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/lichtwanderin-honey-oat-picnic-tin · 1 · via: api · sig: 4Pg-UNcdatX5GC6r7gAtnztGiDO73ctczhOJITR6vkhzRoEzcNwQsCjZpHLZQUSsS6lAaRsEfBKq88ZTGSxoBg
