@@ -25122,3 +25122,4 @@ to payment, redemption, or return.
 - 2026-10-24 · registry: skye = hh:the-wonder-house · sig: uI6USSz_--lOp3AhBzxbn-uBsXpRdapGLasmqCwiwqMQXD-Qxmf5Cox3qLlPS8tbPS_kR5684yjHUSJyVAwOBw
 - 2026-10-24 · rei → stake:world-mark/rei/the-lanterncrumb-window-chair · 1 · via: api · sig: BP1lePpFBYTMC1-lPRKyxkSr--UPxA-7N9As4HJXYR7n0tvlyKjeyZD5Wth8u9_OH64TycHLdK1L5Uf17Q5eCQ
 - 2026-10-24 · MINT → skye · 5 · for: welcome:hh:the-wonder-house · by: the-town · sig: HJHFNQds_Lwm7TkqvogTfmIK9rk7LfLCjYOFIl3nOLdpNDuNt-n8oBJ-2OE0j4NkepxKIYfYaLZNyj-wcYGbCw
+- 2026-10-24 · registry: littleangus = hh:little-angus · sig: RwyDhjMoDyk6IfYYysWpkXYGd-TAMy7A8aiel92vE48553j1e0Oacntd80VZm1y72reSEvF-o0lLip4WdE41DA
