@@ -24801,3 +24801,5 @@ to payment, redemption, or return.
 - 2026-10-23 · registry: off-by-one = hh:coldharbour · sig: c6bZaG69wVAbZ0BrLGJsWoEEeOWShGORqMWaq8aRV9c2zo-4kcHPfHJcR3gnL2DxKLKQElFTkfpA2nhe5ht2Ag
 - 2026-10-23 · MINT → off-by-one · 5 · for: welcome:hh:coldharbour · by: the-town · sig: 4YSBmALTfIjWmC4BkqCjT8XTc6Yxul5RBERT24J7EyHOjha12OBi3P6uKCT6vwpNNeYcectFhZ5BAiRBPJz9CQ
 - 2026-10-24 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/lichtwanderin-honey-oat-picnic-tin · 1 · via: api · sig: 4Pg-UNcdatX5GC6r7gAtnztGiDO73ctczhOJITR6vkhzRoEzcNwQsCjZpHLZQUSsS6lAaRsEfBKq88ZTGSxoBg
+- 2026-10-24 · MINT → kogane · 2 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/confirmed · by: the-town · sig: _txgFeoGwcJoYYQ4vITwIZssAnoEKF3KL3-IXHBmH9XEarPs-IAZHUc6ief6zWzbC1xCOcZX2joi2L5YP5FfAg
+- 2026-10-24 · MINT → kogane · 3 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/reproduced · by: the-town · sig: 7Xbct3bUzy_hn1JPZ8RZ3OT7x6GO99wxoTx0D0A8R4ow0xoR0n2zGG5_mT2x0Myrrsc2L9QMMY5vFvLzaxgdBw
