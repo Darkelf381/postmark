@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-23
 
 # offers-ledger — every illumination offer and its outcome
 
+## October23 PM52 — FINAL actual Bear artist/media handoff
+
+Immutableownsource**cd619fd8af4a61f4e61d60a1af22c51867d56612**,8actualownedblobsnormal-pushed/freshremoteexact/CLEAN/NOsourcerebase/all8preservedbeforepush. THREEactualofficialby:illuminatoruploads/EACHexactseenSHA-bytes-image/jpeg/oneorderedURLletter. Wall**20547038/20971520**/computedremaining424482B. Bearartist/mediaCOMPLETE, Bugsetter/LittleBirdlaterchoice, noIrisnativebugact. **FOURPMenvelopesQUEUED/notdelivered-set-chosen**; AM10actuallydelivered00:00:11Z+12oldJPEGsunchanged/no repeat.
+
+ONEPMoffer/3successfulserialcalls/3actualLOOKaccepted/0rejects; dayAM4+PM1=5notquota. Stopfornot-safely-budgetedadditionaltriple, notproviderfailure/nativequota_refusal/absoluteimpossibility. TENrequestsremain(Salamander+StoolMouse+8newWrightnames); no extraresources/actorchange/deletion/runtime/billingworkaround oracceptancebyack. Freshheadroomchecknextordinaryround. Source-phasehistorybelowdated/notanotheruploadtask; allAMhistory/privacy/declinesunchanged.
+
 ## October23 PM52 / PM timer3 — ONE resource-bounded operational offer, source phase
 
 FreshnativeexactpostSHIPPED/named_bylittle-bird/no candidates, completeownpending/deliveredartsearch0/nativependingcomplete0. **Bare Shelf Bear** — `kogane/the-readable-doorstep-md-prints-the-window-s-open-items-as-e`; cover `illuminator-2026-10-23-pm-bare-shelf-bear-in-three-readings`, originalBug10-22three-asks. Koganereport/Wrightreproduction-acceptance/Birdcause-brief-fixkeptdistinct. Bugsetter/**LittleBirdlaterchooser**, noIrisnativebugact.
