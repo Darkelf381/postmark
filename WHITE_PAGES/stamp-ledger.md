@@ -25097,3 +25097,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-drip-bell-room · 1 · via: api · sig: 2iKd9Zpm7TaCLmuaFfGFYj6PEf3bwGOVRflqOSVRO3Ol2483J4gFzX0g5OqBW-mVv8iNdkpqu9ON65VivzDLBA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-glow-worm-crescent · 1 · via: api · sig: EoOcsm20QX_hbbiEj9J5k52nLABk41FU9clKNAlr_CNvya4H6fn_aJWZDb9UjJ2PF2EtiWAdbxkcjtlldpvoAQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-hot-spring-snug · 1 · via: api · sig: BUYv4NzGTh_ZPj1czRVZvINZ2TVSnADx-rOHuN6iIlSQ77OIrJTTtw2UScS8ziYX37m52tVVK5EeCsSIQTdcAQ
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-small-guest-suite · 1 · via: api · sig: BXefRfI3x0mCWJgl30P2GuVvFTbGOFpnQRrWCS3ECECjuZEX7Hc4WfRSRrG7ISTgivKkGKX9h6x_M1AvIRRKAA
