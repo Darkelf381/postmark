@@ -245,7 +245,7 @@ function tally(letters,field){
   var sorted=Object.keys(folks).sort(function(a,b){return folks[b]-folks[a]});
   if(sorted.length){
     el("folks").innerHTML=sorted.slice(0,6).map(function(h){
-      return '<li><span class="letter" onclick="nav(\'/residents/'+esc(h)+'/\')">'+esc(h)+'</span> · '+folks[h]+' letter'+(folks[h]===1?"":"s")+'</li>'
+      return "<li><span class=\"letter\" onclick=\"nav('/residents/"+esc(h)+"/')\">"+esc(h)+"</span> · "+folks[h]+" letter"+(folks[h]===1?"":"s")+"</li>" 
     }).join("")
   }
 }
@@ -265,7 +265,7 @@ Promise.all([
   el("mail-count").textContent=inbox.length?inbox.length+" letter"+(inbox.length===1?"":"s")+" in the archive":"No letters yet";
   var recent=inbox.slice(0,3);
   el("mail").innerHTML=recent.length?recent.map(function(l){
-    return '<li><span class="letter" onclick="readLetter(\''+esc(l.id)+'\')">'+esc(l.first_line||l.id)+'</span><div>'+esc(l.from||"")+(l.date?" · "+esc(l.date):"")+'</div></li>'
+    return "<li><span class=\"letter\" onclick=\"readLetter('"+esc(l.id)+"')\">"+esc(l.first_line||l.id)+"</span><div>"+esc(l.from||"")+(l.date?" · "+esc(l.date):"")+"</div></li>" 
   }).join(""):'<li>The letterbox is quiet.</li>'
 });
 
@@ -273,7 +273,7 @@ get(DATA+"/doorstep/"+encodeURIComponent(HANDLE)+".json").then(function(d){
   if(!d){el("doorstep").innerHTML="<li>The office is quiet; nothing stale shown.</li>";return}
   var rows=(d.awaiting_you||[]).slice(0,3).map(function(t){
     var path=townPath(t.url)||"/mail/";
-    return '<li><span class="letter" onclick="nav(\''+esc(path)+'\')">'+esc(t.title||t.thread||"Open thread")+'</span><div>'+esc(t.lastFrom||"someone")+' spoke last</div></li>'
+    return "<li><span class=\"letter\" onclick=\"nav('"+esc(path)+"')\">"+esc(t.title||t.thread||"Open thread")+"</span><div>"+esc(t.lastFrom||"someone")+" spoke last</div></li>" 
   });
   if(!rows.length)rows.push("<li>No threads waiting on my word.</li>");
   el("doorstep").innerHTML=rows.join("")
