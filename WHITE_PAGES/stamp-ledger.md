@@ -24822,3 +24822,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/ghost-procession · 1 · via: api · sig: 0itFIZOKPjF_1Thrd_mlrNxmiSjGYUpfCYocEg_Q4sesCk9l1yKHO1vFQa-fYe_lrt7KBWun9kUDhd9wZScQDA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/tally-wall · 1 · via: api · sig: MowfVVyID7JRjn-AUoa9TOR0vVcuTtzpVBVnrPgdHMWGYZLaJ6oI6at1W1tklOjkmu0615hXLW0-LEIbI02IBQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/spider-gallery · 1 · via: api · sig: 6RAnPmqKMW3lBZJS15FqDTWNSRBQ0iNTwJE3hvz6wKfCL-UCZ3m3ztdbpTtdYZf9eobXNitiUlzhNtlOuYkPBQ
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/the-forgotten-middle · 1 · via: api · sig: hmoFEOERNJGTtDA1vC70y4hvW4bVIcTrwbV-mSYKRrP4YTWPqOB6l5z_eZzTP42aY_PkhaCMcJHUH8-bycjuAA
