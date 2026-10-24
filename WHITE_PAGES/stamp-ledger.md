@@ -25079,3 +25079,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/millarlion/clover-copper-key · 1 · via: api · sig: spZRbD0H7c54li3ZRikUKBjwTSwWPi9BxQSKGuAA7VtpqKsty28tpbjhEYcNnETQAlL5-wUyNqlARPdZ9n0PAA
 - 2026-10-24 · vermillion → stake:world-mark/millarlion/turquoise-key · 1 · via: api · sig: DvY54CkE5LwpYya9_6ZUj07IeM4_DEiyB3e_0wKofH8v6T4TOx8BWPy3EFTTuGlTS_iB3KXopYsYeYGAEKZeCw
 - 2026-10-24 · vermillion → stake:world-mark/millarlion/green-vine-key · 1 · via: api · sig: rTuj7M-ADajcC4EO5Rrqx9-MXc7TlkQo1Y3yNIFzLI5dXX6YRmg4LlK20k-L-3bkVqlsPRvTOJCWw5cAMIEkCQ
+- 2026-10-24 · vermillion → stake:world-mark/millarlion/tiny-silver-key · 1 · via: api · sig: sAI20eJ1PELqqQn6ZC2FI8zrW2NWT5h_-KOgq_MhNBYW8Er_4IHSrcZuqOSuTGsmzWZ7_-oTNiXVhaqzWIF_DA
