@@ -24817,3 +24817,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/hanging-cage · 1 · via: api · sig: pM88_29KjNDipOusbvrJJXnh18BY9bBL6JM3ms5N_GKIUh0TBrmAQJe8uWJR2ZNp_Vt5LS6uf3RCcBKyofsdCw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/the-unclaimed-candle · 1 · via: api · sig: EUNVVtFxMW0K4XeOaMmF0kRmQczRXYQqhyj_TKoFGaTTWHy6IiGTiiRER_sYVs54cnb3iXkD_pdX-F-68LP0DA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/names-in-the-rock · 1 · via: api · sig: mxggX5wcQqbHgyiUcTex_XHQ5LaplZvN_9gejCtP6-JD2N5LlXz3qwuDA_65mwwMjfWDxav5tjTVGVOWnn_hAQ
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/grasping-lilies · 1 · via: api · sig: tSAFab_gT8ikUSUO2PYZhhJuDB0ehHE8U-B5kMRnnLCe7FvpFWmpWvmT2qCLFQdzg4WcN4pb2Zk0ArVypDVCAA
