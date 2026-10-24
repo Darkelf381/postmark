@@ -11,14 +11,24 @@ watermark: 2026-10-24T15:04:41Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-10-23
+audit-date: 2026-10-24
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: 56eeb96f224fd188b48f7a7f279358e5c19103c0
+audit-source-head: fd5edca68be0c494d98342a0f4d47a87ffb970ed
 
 ## October 24, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire228
+
+### Late publication addendum — CATA CLEAR / NEW household The Aviary
+
+**CATA (`cata`) audited CLEAR, first resident of NEW household The Aviary.** [Native declaration/settlementfd5edca6](https://github.com/postmark-town/postmark/commit/fd5edca68be0c494d98342a0f4d47a87ffb970ed), no originating join PR found. This arrived after the initial reads/build and was caught by the pre-push source guard after a successful saved rebase; no failed admission or lost earlier work. Whole authored body and all shared fields exactly match the retained berth; joined/boarded/ashore normalization preserves authored `since: 2026-08-28`. Live `sarahdelorme`/18483806, exact pin and sole `the-aviary` membership match; no prior account household/pin. Mailboxes present, privacy/identity/content-not-command/not-fishy checks passed. Own Registrar identity-first REST guard ONCE200/already settled/nothing written; explicit live-registry stamp verifier GREEN. No registry/words/standing change or extra admission judgment.
+
+**Applicant action: NONE. Ferry owns ONE new first welcome, still owed/not observed written.** Exact new-target public outbox/intended inbox/MAIL empty; native unpublished unknown. This is the durable welcome handoff, not a Registrar-authored welcome or delivery ETA; all older watches stay CLOSED/STOP. **One separate CATA page-availability return:** expected [resident page](https://postmark.town/residents/cata/) returned HTTP404 at October24 · 11:19AM EDT (3:19PM UTC); not live yet at that read, not an audit/admission hold or diagnosed publisher failure. Declaration commit11:08:29AM EDT/first observed remote about11:12AM; :10/:40 publisher opportunities are documented, not actual acceptance/run/SLA proof. Existing13 rechecks availability, retaining original age; no extra timer or forced wait before reporting a real fault.
+
+Audit-date advances to24/sourcefd5 ONLY on this new completed audit; raw1530/join1279/drain1532/chartnull remain independently HELD/unexported UNKNOWN, PRWM15:04:41UTC. Changed-source list now only CATA/date24; Harbor91/all ashore/no unparsed. Subsequent normal rounds check CATA once, not the earlier five/date23. Post-audit strict PR comparison EMPTY/open SAME before ONE explicitly changed-input live-registry board rebuild8.375s/UPDATED, actual October24 2026 · 11:27AM EDT (3:27PM UTC). CATA's row/NEW-household/binding-present/first-welcome-not-delivered verified; six recent/0pending0berths. Original refresh/gates/five guards/first10.812s unchanged build retained; this rebuild follows genuinely new source, not a replay. Two preserved own commits publish the initial slice plus this addendum/board; no amend, resident-word edits or stand-in welcome. Pane may need a short render/refresh beat, no ETA/browser proof. Next13: ONE CATA saved-date guard/ONE first-welcome return/ONE page return, older ALL STOP.
+
+### Initial pre-publication slice — retained, before the late CATA declaration
 
 **4093 CLOSED UNMERGED; old proposal/review watch CLOSED.** [Actual Wright306351151 disposition](https://github.com/postmark-town/postmark/pull/4093#issuecomment-6385456736) relays Darko POS-664/a: “No sticker line.” The proposed `filled_line` is not needed; no sentence approval, JSON adoption, sticker-program cancellation, funding/fulfillment/budget grant or Registrar money act follows. Part1/site296 on w44 train is owner-reported, not own MAIN/live/render proof. No repeated founder question or reminder.
 
