@@ -134,6 +134,18 @@ export function commitFor(orders: string, salt: string): string {
   return createHash("sha256").update(canonicalOrders(orders) + salt, "utf8").digest("hex");
 }
 
+/**
+ * A reveal letter's body: the order lines, then one last line `salt: <salt>`. The salt is
+ * everything after "salt:" and the spaces that follow it, up to the end of the line.
+ */
+export function parseReveal(body: string): { orders: string; salt: string } | null {
+  const lines = body.replace(/\r\n?/g, "\n").split("\n");
+  while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
+  const m = /^\s*salt:\s*(.*?)\s*$/i.exec(lines.pop() ?? "");
+  if (!m || !m[1]) return null;
+  return { orders: lines.join("\n"), salt: m[1] };
+}
+
 export function revealMatches(commit: string, orders: string, salt: string): boolean {
   return /^[0-9a-f]{64}$/i.test(commit.trim()) && commit.trim().toLowerCase() === commitFor(orders, salt);
 }
