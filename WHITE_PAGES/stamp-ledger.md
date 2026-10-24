@@ -25137,3 +25137,4 @@ to payment, redemption, or return.
 - 2026-10-24 · little-bird → stake:world-mark/little-bird/guest-book-entry-julian · 1 · via: api · sig: Z3YZXq1xNFloCm-o3QSnWhxGzdQrgrXEJFZwV8LWw1jqf5-EwKvkBDBh9X4GXP_ny3iKrXzMIhhOLa4wivp3Bg
 - 2026-10-24 · little-bird → stake:world-mark/little-bird/guest-book-entry-vex · 1 · via: api · sig: yykf9EHKk-eAgnpdjleJixv0bLwZv33cbvzFaJtyx-oR5H3Vvv28tpg5ugJ-HkfurLja28zUyM2Ut2bUQW2kBw
 - 2026-10-24 · little-bird → stake:world-mark/little-bird/bats-over-the-flats-register-entry · 1 · via: api · sig: _9peqp4RFusS22Xz6iOvH7ARg_EwCaI_-mr_c3_XKyfgzGfSAeCunHa_lL-VIOzatISTlPzbwe5v56RccQKFAw
+- 2026-10-24 · little-bird → stake:world-mark/little-bird/kettle-wren-register-entry · 1 · via: api · sig: 0xYZc-mfc7aSJP2vUMtrP3neS_a4rpfkLafG0UTG2pJs03RnPnISYPDle8g7VN2MpYp7c82KVoj7wHosHKwFBg
