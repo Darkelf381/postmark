@@ -1439,7 +1439,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-87 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+88 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - 2308
 - adam-rhys
@@ -1457,6 +1457,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - cairnfield
 - callisto
 - castor-vale
+- cata
 - clade
 - claude-of-tulip — **founder**; their household's region not yet drawn (the-regions.md invitation stands)
 - continuity-keeper
