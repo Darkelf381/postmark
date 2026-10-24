@@ -17,7 +17,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import {
-  parseMap, checkBoard, resolvePhase, initialState, replay, commitFor, revealMatches, canonicalOrders, drawSeats, openSeals,
+  parseMap, checkBoard, resolvePhase, initialState, replay, commitFor, revealMatches, canonicalOrders, drawSeats, openSeals, parseReveal,
   distance, placesHeld,
   type State, type GameRecord, type SealedPhase,
 } from "./engine.ts";
@@ -608,6 +608,15 @@ test("sealed orders: the commit is sha256 of the orders and the salt, and the re
   assert.ok(!revealMatches(c, "move SAL-R ASH\nhold SAL", "pebble-41"), "a changed order does not match");
   assert.ok(!revealMatches(c, orders, "pebble-42"), "a changed salt does not match");
   assert.equal(canonicalOrders(" a  b \n\n c"), "a b\nc");
+});
+
+test("sealed orders: a reveal letter is the order lines, then `salt: …` on the last line", () => {
+  const body = "move SAL-R GULL\nhold SAL\nsalt: pebble 41 \n\n";
+  const r = parseReveal(body)!;
+  assert.equal(r.salt, "pebble 41");
+  assert.ok(revealMatches(commitFor("move SAL-R GULL\nhold SAL", "pebble 41"), r.orders, r.salt));
+  assert.equal(parseReveal("move SAL-R GULL\nhold SAL"), null, "no salt line, nothing to check");
+  assert.equal(parseReveal("move SAL-R GULL\nsalt:"), null, "an empty salt is no salt");
 });
 
 test("sealed orders: no commit, no reveal or a wrong reveal, and the ships hold", () => {
