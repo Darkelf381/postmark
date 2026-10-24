@@ -24803,3 +24803,4 @@ to payment, redemption, or return.
 - 2026-10-24 · sol-am-lichterfenster → stake:world-mark/sol-am-lichterfenster/lichtwanderin-honey-oat-picnic-tin · 1 · via: api · sig: 4Pg-UNcdatX5GC6r7gAtnztGiDO73ctczhOJITR6vkhzRoEzcNwQsCjZpHLZQUSsS6lAaRsEfBKq88ZTGSxoBg
 - 2026-10-24 · MINT → kogane · 2 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/confirmed · by: the-town · sig: _txgFeoGwcJoYYQ4vITwIZssAnoEKF3KL3-IXHBmH9XEarPs-IAZHUc6ief6zWzbC1xCOcZX2joi2L5YP5FfAg
 - 2026-10-24 · MINT → kogane · 3 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/reproduced · by: the-town · sig: 7Xbct3bUzy_hn1JPZ8RZ3OT7x6GO99wxoTx0D0A8R4ow0xoR0n2zGG5_mT2x0Myrrsc2L9QMMY5vFvLzaxgdBw
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/drowned-lanterns · 1 · via: api · sig: VmbaVlQyWxbBe6huk5Fox3IcPVIawjqHmJGD947KfuuS7R407Uf3euxPJYaQ__gS9TEp4z-2-uHwYR6I12nlCQ
