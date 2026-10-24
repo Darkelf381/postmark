@@ -367,6 +367,8 @@ export interface PaidInfo {
   /** ids de lettres de mise dont le remboursement ou le gain a été confirmé dans le grand livre. */
   paid: Map<string, { ledgerLine: number; letter: string; amount: number }>;
   voided: { letter: string; reason: string }[];
+  /** ce que le grand livre a déjà versé, mise par mise, y compris par des paiements partiels qu'un second complète. */
+  credited: Map<string, number>;
   /** paiements que le grand livre contredit (mauvais montant, mauvais destinataire, mise inconnue, double règlement). Jamais comptés payés. */
   anomalies: Anomaly[];
 }
@@ -388,13 +390,17 @@ export function expectedPerBet(st: MarketState): Map<string, { to: string; amoun
 
 /**
  * Lit ce que la banque a déjà payé : ses lettres `tote:` + `settles:` et leur transfert (ou leur void).
- * Un paiement n'est « confirmé » que si le transfert va au bon destinataire pour le montant exact dû sur les
- * mises qu'il règle ; sinon il reste dû, et l'anomalie est rendue (l'audit rougit).
+ * Un transfert compte s'il va au bon destinataire et ne dépasse pas ce qui reste dû sur les mises qu'il règle.
+ * Plusieurs lettres peuvent régler la même mise (un solde après un versement trop court) : on additionne, et la
+ * mise est payée quand la somme égale la dette. Un versement trop court que personne ne complète reste une
+ * anomalie (l'audit rougit) ; un dépassement n'est jamais compté.
  */
 export function readPayments(st: MarketState, w: World): PaidInfo {
   const paid: PaidInfo["paid"] = new Map();
   const voided: PaidInfo["voided"] = [];
   const anomalies: Anomaly[] = [];
+  const credited: PaidInfo["credited"] = new Map();
+  const partials: { letter: string; bets: string[]; detail: string }[] = [];
   const exp = expectedPerBet(st);
   const byLetter = new Map(liveTransfers(w).live.filter((t) => t.from === w.bank).map((t) => [t.letter, t]));
   const cands = [...w.letters.values()].filter((l) => l.from === w.bank && l.tote === st.market.id && l.settles);
@@ -423,13 +429,23 @@ export function readPayments(st: MarketState, w: World): PaidInfo {
       anomalies.push({ kind: "payment-recipient", letter: l.id, detail: `${l.id} (ligne ${t.line}) paie ${t.to}, la loi doit à ${[...recipients].join(" et ")}` });
       continue;
     }
-    if (t.n !== due) {
-      anomalies.push({ kind: "payment-amount", letter: l.id, detail: `${l.id} (ligne ${t.line}) paie ${t.n} à ${t.to}, la loi doit ${due}` });
+    const left = l.settles!.reduce((sum, id) => sum + exp.get(id)!.amount - (credited.get(id) ?? 0), 0);
+    if (t.n > left) {
+      anomalies.push({ kind: "payment-amount", letter: l.id, detail: `${l.id} (ligne ${t.line}) paie ${t.n} à ${t.to}, la loi ne doit plus que ${left}` });
       continue;
     }
-    for (const s of l.settles!) paid.set(s, { ledgerLine: t.line, letter: l.id, amount: t.n });
+    let give = t.n;
+    for (const s of l.settles!) {
+      const take = Math.min(give, exp.get(s)!.amount - (credited.get(s) ?? 0));
+      credited.set(s, (credited.get(s) ?? 0) + take);
+      give -= take;
+    }
+    if (t.n < left) partials.push({ letter: l.id, bets: l.settles!, detail: `${l.id} (ligne ${t.line}) paie ${t.n} à ${t.to}, la loi doit ${due}` });
+    for (const s of l.settles!) if (credited.get(s) === exp.get(s)!.amount) paid.set(s, { ledgerLine: t.line, letter: l.id, amount: t.n });
   }
-  return { paid, voided, anomalies };
+  // Un versement court que rien n'a complété : la dette reste ouverte et l'audit le dit.
+  for (const p of partials) if (p.bets.some((b) => !paid.has(b))) anomalies.push({ kind: "payment-amount", letter: p.letter, detail: p.detail });
+  return { paid, voided, credited, anomalies };
 }
 
 export interface Payment { to: string; amount: number; kind: Due["kind"]; settles: string[]; why: string }
@@ -440,7 +456,8 @@ export function outstanding(st: MarketState, paid: PaidInfo): Payment[] {
   for (const d of st.dues) {
     const rest = d.bets.filter((id) => !paid.paid.has(id));
     if (rest.length === 0) continue;
-    const amount = d.bets.length === rest.length ? d.amount : amountFor(st, d, rest);
+    const part = rest.reduce((sum, id) => sum + (paid.credited.get(id) ?? 0), 0);
+    const amount = d.bets.length === rest.length && part === 0 ? d.amount : amountFor(st, d, rest) - part;
     out.push({ to: d.to, amount, kind: d.kind, settles: rest, why: d.reason ?? (d.kind === "payout" ? "win" : "refund") });
   }
   return out;
