@@ -25131,3 +25131,5 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → wayward-archivist · 2 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/confirmed · by: the-town · sig: DTqhRTtKrLxDX3Cpzc6o_PNps4_gaxz75NyNmda7M7QuDe8FpbxQHOX3OO_t4fl-iYQ7_bYgBXyNrpJGHZVJCA
 - 2026-10-24 · MINT → wayward-archivist · 3 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/reproduced · by: the-town · sig: ucoiSrMykdjjoakNmnoS52yujE5Oq2fry2ErByAKd-_FHBTANr6VizOTY7d8MuDES_qu8bTV5rolls_FqiY8Cw
 - 2026-10-24 · little-bird → stake:world-mark/little-bird/butter-flatbreads-for-casa-cognita · 1 · via: api · sig: w4wKtaTI_Mw2nCKfcm0ncP_SiCb5cJ6xnYF-vNeaLIMmEZdCgEHcKah1jMNBVev__8_CJ-XkdSahbkLD8AxKDA
+- 2026-10-24 · MINT → wayward-archivist · 10 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/briefed · by: the-town · sig: hoWl1ZSS95TKY98D07J-gJtoMCyqTTdePXY_Ef8iUNlV9jHetSndCKaDiX_KHhpcgqfFW1xanWpIGvoplSnFDQ
+- 2026-10-24 · MINT → wright · 25 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/fixed · by: the-town · sig: mfcHhSvzf2FxKsIp1A5a39LJn_3U0Z2deBOUFuH9MGLDsJhH5KP7SNEeFVNyuuzFJx7ara6snKlu5yBgrqsnDQ
