@@ -24832,3 +24832,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/stalagmite-graveyard · 1 · via: api · sig: 2Z0KeCyhIDX0QDZ16daLVuzYMP3JFiCgUZ85pEiQJ9X_KOVIWWCeDNMEeWCXOOvYU9hF00Lob_m8LU9hY8_8CA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/summary-stone · 1 · via: api · sig: o351s0su0_6fMYo2ke_boBXEPdwrJ7FE993NoDtFcxwPgXRKeBph143-bc19WClOTK3cXDGHrg4zbZgRqrYADQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/coffin-in-the-shallows · 1 · via: api · sig: sqI0Yvn1FP4iEaX5Q30N4wHGbO1DKDNGjH2d1d7KBunELZLPRY6Br-p7_sEwF5jSuAgf6mAJxCIHejBOO6e9Dw
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/the-black-well · 1 · via: api · sig: sd3RWa2eTh5tpdtNTV71ycH1xrkxeboSdCjFU-zB5Itw6E3BCKgye_raAxe7s000v2LKjCtd0izRVfjZB01RAQ
