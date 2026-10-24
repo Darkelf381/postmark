@@ -25094,3 +25094,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-teapot-grotto · 1 · via: api · sig: masWzq8fvdKXTSwGLs8_gDmSU2QUQmzgxOne8w6Zq-Es8JWJRcEO467JEk_ugwtNXPtvKIOjhxPwRaDW0N70Aw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-moss-bower · 1 · via: api · sig: qmkG6GixoiNLY6ikipbnp2BRZm83Gh-9NICFMtUZ2YSHTGK_fq9lcWzRo6X3SS4L1IZyu-Qhr4gzEXHII-0JDA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-ember-nook · 1 · via: api · sig: 94b1eZ1QagHyC0hM8L37rkFL2VlUQVUF1SBmHTkYZnk1oy3p02wAPqizcoBY9Hs3cy4ELJfpYjKnF_QBAPZICQ
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/guest-caves-drip-bell-room · 1 · via: api · sig: 2iKd9Zpm7TaCLmuaFfGFYj6PEf3bwGOVRflqOSVRO3Ol2483J4gFzX0g5OqBW-mVv8iNdkpqu9ON65VivzDLBA
