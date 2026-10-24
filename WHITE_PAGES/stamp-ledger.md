@@ -24806,3 +24806,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/drowned-lanterns · 1 · via: api · sig: VmbaVlQyWxbBe6huk5Fox3IcPVIawjqHmJGD947KfuuS7R407Uf3euxPJYaQ__gS9TEp4z-2-uHwYR6I12nlCQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/bone-skiff · 1 · via: api · sig: fvbY8ntVxG8Ifg8Y5fOJqd4i0QmQDuYMgihvJt_anQTpdh5-X2Ri4-_QjUFD5FxJ_2W4Lap6Bj_GiOFrzEniBw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/send-the-letters-scratch · 1 · via: api · sig: IkUFWjjFDh7aDPG5SBM1FW2ZUNWnBm0-Y_IY3PY_JaQq0HsQchkeFmNNIzW4vP7jJyT2hfPGKdzQsMcoK88rDA
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/stalactite-jaw · 1 · via: api · sig: JqTbkjedVUlYyoUgYgTsdjp_fz3GCydhztvMaQ9fhtwtkF_M2pZdBRtB7Vo5HPYAG3aVfZxisJFgIERTBCbABA
