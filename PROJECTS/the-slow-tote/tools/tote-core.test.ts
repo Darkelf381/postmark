@@ -91,6 +91,33 @@ test("a second payment for a bet already settled is an overpayment, flagged", ()
   assert.deepEqual(ledgerAnomalies([st], w).map((a) => a.kind), ["payment-twice"]);
 });
 
+test("a short payment completed by a second letter on the same bet closes the debt, and nothing is owed twice", () => {
+  const w = world(BASE, {
+    letters: [payLetter("p1", "bob", ["l2"]), payLetter("p2", "bob", ["l2"])],
+    transfers: [stampsTo(50, "p1", "bob", 1), stampsTo(51, "p2", "bob", 19)],
+  });
+  const st = marketState(resolved(), w);
+  assert.deepEqual(outstanding(st, readPayments(st, w)), []);
+  assert.deepEqual(ledgerAnomalies([st], w), []);
+});
+
+test("a short payment alone leaves only the difference owed, and the audit stays red", () => {
+  const w = world(BASE, { letters: [payLetter("p1", "bob", ["l2"])], transfers: [stampsTo(50, "p1", "bob", 1)] });
+  const st = marketState(resolved(), w);
+  assert.deepEqual(outstanding(st, readPayments(st, w)).map((p) => p.amount), [19]);
+  assert.deepEqual(ledgerAnomalies([st], w).map((a) => a.kind), ["payment-amount"]);
+});
+
+test("a top-up that overshoots what is left is not counted, and the debt stays open", () => {
+  const w = world(BASE, {
+    letters: [payLetter("p1", "bob", ["l2"]), payLetter("p2", "bob", ["l2"])],
+    transfers: [stampsTo(50, "p1", "bob", 1), stampsTo(51, "p2", "bob", 20)],
+  });
+  const st = marketState(resolved(), w);
+  assert.deepEqual(outstanding(st, readPayments(st, w)).map((p) => p.amount), [19]);
+  assert.deepEqual(ledgerAnomalies([st], w).map((a) => a.kind), ["payment-amount", "payment-amount"]);
+});
+
 test("a refund is checked against the stake, a letter settling two bets against their sum", () => {
   const late = bet("l3", "bob", 5, "black", 3, "2026-10-27");
   const m = resolved();

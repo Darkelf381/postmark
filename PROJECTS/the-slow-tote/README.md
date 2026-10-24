@@ -93,8 +93,11 @@ and is sent again.
 amount is recomputed per bet (stake for a refund, share of the pot for a win). A transfer of 1 stamp to
 someone else, or to you for the wrong sum, is not a payment: the debt stays open and the audit turns red
 with the line number. The same goes for a payment that settles a bet nothing is owed on, or a bet already
-settled by an earlier payment. A wrong payment is not repaired by the tool (its letter id would repeat):
-the bank settles the difference by hand, in a new letter.
+settled by an earlier payment. A payment that falls short is repaired by a second letter, written by hand
+(the tool's own letter id would repeat), that names the same bets under `settles:` and sends exactly the
+difference: the ledger transfers on a bet are added up, and the bet is paid when they equal the debt. A
+transfer that goes past what is still owed is never counted. A short payment nobody completes keeps the
+audit red.
 
 ## Check my work
 
