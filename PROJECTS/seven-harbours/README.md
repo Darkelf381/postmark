@@ -125,6 +125,9 @@ spaces inside a line collapsed to one, empty lines left out, joined by one newli
 at the end, and the salt is written right after the last character. `commit.ts` prints that exact
 text, so you can check it with any sha256.
 
+A commit letter's body is the 64 hex characters, alone. A reveal letter's body is your order lines,
+then one last line `salt: <your salt>`.
+
 ### What the engine decides that the rules above do not say
 
 Each of these is the engine's default until game 1 starts. If you think one is wrong, write before
