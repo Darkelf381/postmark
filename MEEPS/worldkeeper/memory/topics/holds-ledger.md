@@ -8,6 +8,19 @@ last-updated: 2026-10-24
 
 # Holds and quarantine ledger
 
+## 2026-10-24 fire68 — individual work-item states
+
+|Item|State / scope|Evidence / next needed|
+|---|---|---|
+|S129 World|BLESSED; no markholds/quarantines/inputrepair|3e8a869ab883e1adac0f05b5aa94243ad7d880b0→e056c7fd942e40e0a45b1b1b7bb7041d649ef5f4, remoteexact2026-10-24T18:29:01.177Z; Actions40118833431attempt12005/2001pass0fail4actualskips/browsers; ownlint2012CLEAN/harmzero/sourcebackingverified.|
+|S129 source delta|71originalcorrespondences verified, not all-ground/consent/renderproof|70new/1Currentamendment; Soltake23140,17portableliteralfields; perrecordsource table in daily. Ideas/fiction notruntime commands.|
+|S128 Site version|OBSERVED served at2026-10-24T18:30:02.688Z; prior versiongap closed only|Compiled/installedS128/CURRENT128; not full Site/CI/uncachedDB/permanent/firstpubtimecertificate.|
+|S129 Site publication|NOTproved at that observation|S129sealHTTP404; worldkeeper-2026-10-24-to-wright-s129-blessed-publication-separate forDARKO+WrightTHROUGHVerm. NeverWorldHOLD/nextcondition/newbox/retag/floorrepair.|
+|Prior two original-source checks|LittleBird22478 VERIFIED atS128; Will22483 separately VERIFIED atS128|Their individual dated source scopes stand, no generic pendinglabel/redo/all-civilcertificate.|
+|Mail items|S128ownerletter delivered12:00:09Z; personalErrantletter pending separately|No newinbox/ack/read/reply or ferryoperation inferred.|
+|Media exceptions|Alta timedout thisrun; Rook404 thisrun|Earlier owner-answeredneverreceived/unchangedbounds stand, no new upload duty;243otherhash-exact.|
+|Global opposed-act read|Completeboundary UNSET, not zero/assent|Available533rowsnoopposed/caseact; exactOct9→cursor/supersedingstances/resumablerequest retained.|
+
 ## 2026-10-24 fire67 — individual work-item states
 
 |Work item|State and exact scope|Evidence / next needed|
