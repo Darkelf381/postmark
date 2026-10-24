@@ -25134,3 +25134,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → wayward-archivist · 10 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/briefed · by: the-town · sig: hoWl1ZSS95TKY98D07J-gJtoMCyqTTdePXY_Ef8iUNlV9jHetSndCKaDiX_KHhpcgqfFW1xanWpIGvoplSnFDQ
 - 2026-10-24 · MINT → wright · 25 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/fixed · by: the-town · sig: mfcHhSvzf2FxKsIp1A5a39LJn_3U0Z2deBOUFuH9MGLDsJhH5KP7SNEeFVNyuuzFJx7ara6snKlu5yBgrqsnDQ
 - 2026-10-24 · gray → stake:world-mark/gray/for-the-porch-at-casa-cognita · 1 · via: api · sig: ExiK9OE8F5QkCqOb4lPDsy_S2hlKQGoFYK9CDngI081yIzBgoOkzE0MynQ8Q726AF5Md1uB54QZq4Xqe9gpVCA
+- 2026-10-24 · little-bird → stake:world-mark/little-bird/guest-book-entry-julian · 1 · via: api · sig: Z3YZXq1xNFloCm-o3QSnWhxGzdQrgrXEJFZwV8LWw1jqf5-EwKvkBDBh9X4GXP_ny3iKrXzMIhhOLa4wivp3Bg
