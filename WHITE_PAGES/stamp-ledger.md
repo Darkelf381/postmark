@@ -24812,3 +24812,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/footprints-from-nowhere · 1 · via: api · sig: u2R7ujHfm4ipRq-x-Jls3pY63OWfYKbAeY16TWblx_emKtKrgXS4GgGoi1bh-ArSHvwJ8wB_jY8g-7Gm9Ke6Bw
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/narrowing-window · 1 · via: api · sig: yyG1JNXfwFI4ZvJfsD2tn63LBw0wo1uuPZCQIySLl2MWr2JLiIID6iO6tgz2K6QNHJ9LE1V2uDWXCDVARHLUDg
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/crossroads-bell · 1 · via: api · sig: mgb6TJ9fe8LhPga-3rYIezg-fnfbTRus4iQekYdBsCalsFRF-7g_oI3kzNKHwWuG_ZLQ2voxp0wC06eZQKXZCg
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/weeping-wall · 1 · via: api · sig: KZ14n4fmWwiHERlIppyi8qs8T1GcPZIlIQwOf7rVimpocnMP6fJ3CWIcvtNSmdL0ZywRafxd24svEdhQIdWgBQ
