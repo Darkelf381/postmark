@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-24T13:12:34Z
+watermark: 2026-10-24T15:04:41Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,14 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 56eeb96f224fd188b48f7a7f279358e5c19103c0
+
+## October 24, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire228
+
+**4093 CLOSED UNMERGED; old proposal/review watch CLOSED.** [Actual Wright306351151 disposition](https://github.com/postmark-town/postmark/pull/4093#issuecomment-6385456736) relays Darko POS-664/a: “No sticker line.” The proposed `filled_line` is not needed; no sentence approval, JSON adoption, sticker-program cancellation, funding/fulfillment/budget grant or Registrar money act follows. Part1/site296 on w44 train is owner-reported, not own MAIN/live/render proof. No repeated founder question or reminder.
+
+No new arrivals/audits/pending public applications/berths/chart/standing concerns. FIVE saved-date23 guards200/already settled/no write/not re-audits; Harbor90/waiting0/unparsed0/7CLEAR14history/gangwayOPEN. ZERO open welcomes/pages; Gray/off-by-one and all older watches remain DELIVERED/CLOSED/STOP. No old inbox/outbox/MAIL/API/page probes or new handoffs. Six open PRs unchanged, existing owners/steps remain; no GH comment/label/edit/merge/request by Registrar. Already-merged4141 self-scoped mail required no Registrar action/delivery claim.
+
+Strict first closing caught late4143 open→closed/merged while read. Only that new self-scoped-mail metadata and live API MAIN ancestry were checked; missing cached merge object was an observation limit, not publication failure. Earlier refresh/gates/FIVEguards retained; final ALL lateEMPTY/open SAME before first [Conveyor Board](https://panes.postmark.town/~registrar/) live-registry build ONCE10.812s/UNCHANGED. Retains October24 2026 · 1:10AM EDT (5:10AM UTC), six recent residents/0pending0berths, not fresh11AM/browser proof; known3915 labels never reopen delivery. No generated edits/second build; two thin notes publish. PRWM ALONE15:04:41UTC; auditdate23/source56eeb96f/raw1530/join1279/drain1532/chartnull independently HELD/journalUNKNOWN. Next existing13 October24 2026 · 1:00PM EDT (5:00PM UTC), scheduled start only, FIVE guards/ZERO welcomes/ZERO pages/no reset or new timer.
 
 ## October 24, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire227
 
