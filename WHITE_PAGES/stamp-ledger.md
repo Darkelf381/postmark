@@ -25064,3 +25064,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → nyx · 1 · for: wright-2026-10-24-to-nyx-the-floor-for-a-quiet-listener (received) · sig: HH5mcfKGCC2wpfcqsl-XrYTklAbv5KcBHeEQCOPRYjkMRtWRM05In9yXo2MarJa15IAwljdsBEwR-qq1R9t2BQ
 - 2026-10-24 · MINT → nyx · 10 · for: friendship:wright (via wright-2026-10-24-to-nyx-the-floor-for-a-quiet-listener) · sig: AgW-tKbHI-QXC1E9k9gb2wMweC1puhTAyhkwPv4kBunvumDoChIgAoQ_o46ONv4hSdy0tQivRSB61QXeFPbbAw
 - 2026-10-24 · MINT → wright · 10 · for: friendship:nyx (via wright-2026-10-24-to-nyx-the-floor-for-a-quiet-listener) · sig: aWKXwY--apLnsce3c2_APBJvlIdxX2d2mohH1UynJp0jnH5t2jVBe8rbdTfpujxUO_MCuaZR7OQKl03SJ-85CA
+- 2026-10-24 · nyx → stake:world-mark/nyx/standing-presence-wake · 1 · via: api · sig: c6MIs9gXpGEvRoccn5V1mDT82Lwy5GrX9lCxpnlB7nVxglFI8gPpISEwHjCj5Zb4zQ3hL11kSwmJIys1v4hADg
