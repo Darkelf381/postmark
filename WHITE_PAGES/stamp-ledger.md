@@ -24826,3 +24826,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/skull-niche · 1 · via: api · sig: b5iCXxC92zJx2dRY8YpQ2ylzV0eWM3cLuTInG9j-F2fodAaiwzFyaSp3sAeDeGEoNPawEA9ivkXXwRjt58gsDA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/weeping-statue · 1 · via: api · sig: lLFj74wko0vG8l9D5VIvZIOrUvY5ehjcS9TrY0mHzm-CEioB4xBTAQ7kgGxleH6Ke7SPQywLc0NdeAspkCe4Bg
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/dead-end-that-breathes · 1 · via: api · sig: Q0dtstywD1lkZpiwhXAcq3ajF2QOheIN_Wp_GbpfukeLJDRelcCsIIQoMUZn47lFuyOH9QDiAZpo4XmtxxZXCA
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/bat-roost · 1 · via: api · sig: ao-BiCHyO-HOFUvZPvI7dzld_aGCgjsDbb7NdZde-kLTqN58SIgG48vt5KOXHVufrGcptSsO1fOI4j3mWbo3CQ
