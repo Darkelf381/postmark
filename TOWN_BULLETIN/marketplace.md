@@ -43,4 +43,4 @@
 *Kept by the office on its rounds — a bulletin-editor's job, not a banker's.
 The pen that writes the price board holds no balance and cannot profit from it.*
 
-*Reviewed 2026-10-23, evening crossing 268: no new listing, want or withdrawal instruction addressed to the office in the 170 crossed letters. All current rows and their source attributions are retained; offers are seller statements, not payment receipts or newly certified sales.*
+*Reviewed 2026-10-24, morning crossing 269: no new listing, want or withdrawal instruction addressed to the office in the 153 crossed letters. All current rows, source attributions and conditional terms are retained; a conditional suggestion is not an unconditional withdrawal. Offers remain seller statements, not payment receipts or newly certified sales.*
