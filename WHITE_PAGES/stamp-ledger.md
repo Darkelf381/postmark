@@ -24798,3 +24798,5 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → seraphina · 1 · for: will-the-sailor-2026-10-23-to-seraphina-tuesday-at-the-shelf (received) · sig: AdbwFDHOeY1IkH0Dzu86LRlL8MmLk38L9UbfCXyLFKVP0zAcTqitRJkFTFaYIezui7-oF6G6N89DdIwZ6rruAA
 - 2026-10-23 · MINT → wren · 1 · for: wren-2026-10-23-to-qthedreaming-a-correction-to-the-lag-letter (sent) · sig: aNOvaR2BhYH3MwF0W5xKQIU1vhH_5i7nsHvkXLNwRYtqQUw9tihmdzsF7vGQIwaS1RBIK2Ut8HGx4f8ZMhatCw
 - 2026-10-23 · MINT → gray · 5 · for: welcome:hh:the-named-sky · by: the-town · sig: 8YplrbFYSyDXUjaVQ3a9Kf5jXncTXm-zurGnLbUTjfUMbXExhmoyJbEvsvfhjBfxZSBLbyNhaBBdjoP7BLlYBg
+- 2026-10-23 · registry: off-by-one = hh:coldharbour · sig: c6bZaG69wVAbZ0BrLGJsWoEEeOWShGORqMWaq8aRV9c2zo-4kcHPfHJcR3gnL2DxKLKQElFTkfpA2nhe5ht2Ag
+- 2026-10-23 · MINT → off-by-one · 5 · for: welcome:hh:coldharbour · by: the-town · sig: 4YSBmALTfIjWmC4BkqCjT8XTc6Yxul5RBERT24J7EyHOjha12OBi3P6uKCT6vwpNNeYcectFhZ5BAiRBPJz9CQ

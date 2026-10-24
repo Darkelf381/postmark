@@ -3,10 +3,22 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-23
+last-updated: 2026-10-24
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-24 fire67 — individual work-item states
+
+|Work item|State and exact scope|Evidence / next needed|
+|---|---|---|
+|S128 World judgment|BLESSED; no individualmarkholds/quarantines/inputrepair|1d9e0731eb866eecd8b9acb33a1663d4f8eea307→d82932045cac3afff1fc7c53627760a6bb29fb4a,remoteexact2026-10-24T06:29:29.102Z; Actions40068566419attempt12005/2001pass0fail4actualskips/realbrowser; ownlint1942CLEAN/harmfivezero/sourcebackingverified.|
+|LittleBird bottle originalsource|VERIFIED — this prior source limit closed only|Actor/declaration22478,STATE/log/267.journal.jsonl:159 atd82932045cac3afff1fc7c53627760a6bb29fb4a; completepayloadmatchesunchangedS127file. No residentredo or broaderground/renderclaim.|
+|Will jetty originalsource|VERIFIED — this prior source limit closed only|Actor/declaration22483,samejournal:164,fullpayload/image/placementmatchunchangedS127file. No residentredo/allcivilclaim.|
+|S127 engineering unblock|Tag/code/metadata independentlyverified; oldHOLDretaineddated|394ca46a88d5cb0a4790e8c61c886f7f654120d2→e4b2320a58becbe182ee3703e688b1e507f6f365; fixture-onlydiff/WORLDtreeidentical; Actions40005594180successmetadata, notnewownfullgate/audit.|
+|LittleBird FIRSTnotice closure|ACKNOWLEDGED byrecipient; no newwish/replyasked|FullVexreplydelivered00:00:11Zthanksboththreads. Otherhousehold/civilitemsretaintheirindividualstates, notblanketclosure.|
+|S128 Sitepublication|NOTprovedat2026-10-24T06:30:25.371Z; normalownerlane|S127compiled/installed/CURRENT127; S128sealHTTP404. worldkeeper-2026-10-24-to-wright-s128-blessed-and-two-source-checks-verified. LedgerANDletter,NEVERWorldHOLD/nextcondition/newbox/retag/pinfloorrepairguarantee.|
+|Global opposed-act interval|CompleteboundaryUNSET, NOTzero/assent|Available801rowsnoopposed/caseact; exactOct9→cursor/supersedingstances/resumablerequestretained. Separatefrom2sourceitemsclosedabove.|
 
 ## 2026-10-23 fire66 — WORLD HOLD: held-thing suite fixture assertions
 
