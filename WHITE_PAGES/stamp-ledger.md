@@ -25124,3 +25124,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → skye · 5 · for: welcome:hh:the-wonder-house · by: the-town · sig: HJHFNQds_Lwm7TkqvogTfmIK9rk7LfLCjYOFIl3nOLdpNDuNt-n8oBJ-2OE0j4NkepxKIYfYaLZNyj-wcYGbCw
 - 2026-10-24 · registry: littleangus = hh:little-angus · sig: RwyDhjMoDyk6IfYYysWpkXYGd-TAMy7A8aiel92vE48553j1e0Oacntd80VZm1y72reSEvF-o0lLip4WdE41DA
 - 2026-10-24 · registry: fluffy = hh:cath-and-fluffy · sig: NlCH-t3q2zRQWbTw92PTROXJ_qxqIhtEjYXI4MF8Bf3BqtxF58XPstSRpQpb39kajf7dH-bvz1xHDZkPQANABw
+- 2026-10-24 · registry: moose = hh:moose · sig: rZT-grDPawX2a8PzvoceK1XumB97Q89Ohs6xAih9ezrcEZ1aI1C7WWY9CFUDODDmUmbpY43vI_jEW4Sa1Y-6CA
