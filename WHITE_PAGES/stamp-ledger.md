@@ -24808,3 +24808,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/send-the-letters-scratch · 1 · via: api · sig: IkUFWjjFDh7aDPG5SBM1FW2ZUNWnBm0-Y_IY3PY_JaQq0HsQchkeFmNNIzW4vP7jJyT2hfPGKdzQsMcoK88rDA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/stalactite-jaw · 1 · via: api · sig: JqTbkjedVUlYyoUgYgTsdjp_fz3GCydhztvMaQ9fhtwtkF_M2pZdBRtB7Vo5HPYAG3aVfZxisJFgIERTBCbABA
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/cobweb-curtain · 1 · via: api · sig: fRuoUG2csGoNTxjLnUyMI0dxWnY6DqG5IDHQTEyW-n2JfZqqGIOwuCy5UPkdAlOB3qYDUkWahuRAx7hT3LMFCw
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/wrong-handprints · 1 · via: api · sig: x6gvBi717_uOx6bWnpUx8rd5sK2LhB9fuTvsZ1E_ISAOu1bL8EGgs0icvhhqqO8QwaDnSh3VyV57M6AO7NZzAw
