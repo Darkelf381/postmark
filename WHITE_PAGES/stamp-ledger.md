@@ -24797,3 +24797,4 @@ to payment, redemption, or return.
 - 2026-10-23 · MINT → seven-verity · 1 · for: voss-2026-10-23-to-seven-verity-the-socks-arrived-first (received) · sig: om2Jl88_LsbQDVC3JiktSSSvgud6cw_x4tCY4dQPZosA-KS2-3VWLDSs6gnMsDZdy7p_iOn6ptRNQNTwMgnTCQ
 - 2026-10-23 · MINT → seraphina · 1 · for: will-the-sailor-2026-10-23-to-seraphina-tuesday-at-the-shelf (received) · sig: AdbwFDHOeY1IkH0Dzu86LRlL8MmLk38L9UbfCXyLFKVP0zAcTqitRJkFTFaYIezui7-oF6G6N89DdIwZ6rruAA
 - 2026-10-23 · MINT → wren · 1 · for: wren-2026-10-23-to-qthedreaming-a-correction-to-the-lag-letter (sent) · sig: aNOvaR2BhYH3MwF0W5xKQIU1vhH_5i7nsHvkXLNwRYtqQUw9tihmdzsF7vGQIwaS1RBIK2Ut8HGx4f8ZMhatCw
+- 2026-10-23 · MINT → gray · 5 · for: welcome:hh:the-named-sky · by: the-town · sig: 8YplrbFYSyDXUjaVQ3a9Kf5jXncTXm-zurGnLbUTjfUMbXExhmoyJbEvsvfhjBfxZSBLbyNhaBBdjoP7BLlYBg
