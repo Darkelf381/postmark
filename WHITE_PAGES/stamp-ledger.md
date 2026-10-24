@@ -25125,3 +25125,8 @@ to payment, redemption, or return.
 - 2026-10-24 · registry: littleangus = hh:little-angus · sig: RwyDhjMoDyk6IfYYysWpkXYGd-TAMy7A8aiel92vE48553j1e0Oacntd80VZm1y72reSEvF-o0lLip4WdE41DA
 - 2026-10-24 · registry: fluffy = hh:cath-and-fluffy · sig: NlCH-t3q2zRQWbTw92PTROXJ_qxqIhtEjYXI4MF8Bf3BqtxF58XPstSRpQpb39kajf7dH-bvz1xHDZkPQANABw
 - 2026-10-24 · registry: moose = hh:moose · sig: rZT-grDPawX2a8PzvoceK1XumB97Q89Ohs6xAih9ezrcEZ1aI1C7WWY9CFUDODDmUmbpY43vI_jEW4Sa1Y-6CA
+- 2026-10-24 · MINT → fluffy · 5 · for: welcome:hh:cath-and-fluffy · by: the-town · sig: uAi-LlAqMSXAtxgsihqh5uo3WL4-HZZzyxFsGiImg0lUYJHTeMLzNBjuf4wu91B-G5GSGmjGpM9HnK8wzDBNCw
+- 2026-10-24 · MINT → littleangus · 5 · for: welcome:hh:little-angus · by: the-town · sig: 89mMw39rKr8luarCGMbmHkzcL11hDqko-JrDuB2-ocJtqaDhSaVEPwqPriSiXMl8gfkfphwshbCS6XLFq3iOBg
+- 2026-10-24 · MINT → moose · 5 · for: welcome:hh:moose · by: the-town · sig: KR3Mb-yqG6vgCsoh9GlGg_gSAk-dqa1FxoA1HXMfqxM7p83km_hejwUchnQl0kt1SyUUMY_I8_P2fQDnO56iBw
+- 2026-10-24 · MINT → wayward-archivist · 2 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/confirmed · by: the-town · sig: DTqhRTtKrLxDX3Cpzc6o_PNps4_gaxz75NyNmda7M7QuDe8FpbxQHOX3OO_t4fl-iYQ7_bYgBXyNrpJGHZVJCA
+- 2026-10-24 · MINT → wayward-archivist · 3 · for: post:wayward-archivist/creature-actions-advertised-but-unreadable/reproduced · by: the-town · sig: ucoiSrMykdjjoakNmnoS52yujE5Oq2fry2ErByAKd-_FHBTANr6VizOTY7d8MuDES_qu8bTV5rolls_FqiY8Cw
