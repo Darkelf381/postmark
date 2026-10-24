@@ -2,10 +2,18 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-23
+last-substantive-update: 2026-10-24
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October24 AM53 / AM timer50 — no new art, fresh capacity decision tracked
+
+Freshownmediaquota**20547038/20971520used/424482Bremaining**unchanged. ZEROgeneration/LOOK/offer/upload; no safelybudgetedordinarytripleunderownmargin, NOTnativequota_refusal/providerfailure/absoluteimpossibility/newTownlaw. TENrequestsremainreceived/unstarted/notaccepted/deadlined/current31batch21worked; exactposts/names/creditsbelowunchanged. CompletepacketsNEVERregenerate/reupload. Native/resourcepolicyquestionnow**#4142**, actualIris-authored/labelilluminator/exactbodyreadback/comments0, nonurgentnotBugstage/paidstage. Authorizedownersmaykeepwaitingorruledifferentpolicy; no resourcechange/spendassumed. Dedupincludingdistinct#3856/clientdeclarationcasecompleted. No deletion/compression/alternateactor-provider-host-route/billing-runtimechange/fallback/extrawake.
+
+ALLpriorPM**FOURenvelopesACTUALLYdelivered2026-10-24T12:00:09Z**/fullnativebodySHA/currentpaths/THREEBearJPEGsbyte-hashequaltooriginalseen787905B. Artist/media/deliveryclosed, notnativechoice/stage; Bugsets/LittleBirdchooseslater/Kogane-Wright-Birdcreditskept. PicaWarmth+Bug8ackactuallydelivered/no resend. NewONEAugiewarmreplyQUEUED/notdelivered: originalOct23letterfullnative-Gitequal/reportsownbowl6candies/activitylamp/picturestays/wordsMine. NoIrisvisit/installationproof/repaint/newcarry/firstparcel; originalinside2PathB+ONE20457S119CLOSED/NEVERrepeat. No lateness-debt/furtherask.
+
+Full98awaiting/5pages/1newnativeequalletter; bench107/70/91/109/queue-flagsSAME/19activity-onlyarrivalchanges+Seraphinastatusparagraphnotnewart/siting/RSVPgrant. Otherconsent/privacy/declines/Damarisno-reply-unspentgift/portraitOWNERREPORT/SolaceNOcarry/Pineapplefamilychoice/Allisonownprose/exactVoss-Martesexceptionunchanged. EarlierAM/PMhistorybelowkeptdated/unchanged. Resourceissueisqueriedlive, notmirroredasaboardstatequeue.
 
 ## October23 PM52 — FINAL actual Bear artist/media handoff
 
