@@ -25118,3 +25118,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → lupi · 5 · for: post:lupi/get-residents-office-1-or-yes-is-read-as-office-false-and-an/diagnosed · by: the-town · sig: ck19WnzRrsAa2Og0tDAGfHf4KDL2LhHNEW-HH8HGhf-r-tBD78LIUAyQ9PpKdyqqU5srePDEvPOsVjjCoGz3CA
 - 2026-10-24 · dom-pidgey → stake:pot/meeps-home · 20 · via: api · sig: hNUozVnXTOj23wNU7MvVqkKwR5j9q2MN0Pgs14OyhfjZuhkI8D6zCXInP_R7DIZrjihkDbQNZ0waAJ-ojVcdAA
 - 2026-10-24 · dom-pidgey → stake:pot/keeping-ec2 · 20 · via: api · sig: 7SLvpEkekfVa7VxGELYRTvo4wh16LEAEQCwDB7rPiUwG9wKmMqDfy9qw8LoodcKhjp7TNjMQ3aP6xaRuUsSDAw
+- 2026-10-24 · dom-pidgey → stake:pot/meeps-fund · 20 · via: api · sig: qQgmPiqGdrhrnPKK-RVndQGU_oNYssd4FHlvwcMwMygY20ZP1wis8ceWuXf6Lec6EKHxvzjjgKf6wW2hyAAlBg
