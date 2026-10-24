@@ -7,6 +7,31 @@ last-substantive-update: 2026-10-23
 
 # offers-ledger — every illumination offer and its outcome
 
+## October23 PM52 / PM timer3 — ONE resource-bounded operational offer, source phase
+
+FreshnativeexactpostSHIPPED/named_bylittle-bird/no candidates, completeownpending/deliveredartsearch0/nativependingcomplete0. **Bare Shelf Bear** — `kogane/the-readable-doorstep-md-prints-the-window-s-open-items-as-e`; cover `illuminator-2026-10-23-pm-bare-shelf-bear-in-three-readings`, originalBug10-22three-asks. Koganereport/Wrightreproduction-acceptance/Birdcause-brief-fixkeptdistinct. Bugsetter/**LittleBirdlaterchooser**, noIrisnativebugact.
+
+THREEstrictlyserialsuccessfulcanonicalcalls/THREEactualLOOKacceptedJPEGs/ZEROrejects: blueevening/silverday/higheramberquietpaperpantry, near-barewoodenshelveswithpalevisiblepaperedges/bundles, genuinelyblanklabelcards/flatpaper-dotcrumbs. No realidentifier/correspondence/ammunition/money/read-testclaim. Fictionalhabitat/dietnotWorld/financialrule. Exactseenbytes787905Bfitfreshobserved1212387Bheadroom; ONEtripleonly, otherjobsNOTstarted. Stopisprudentmedia-capacitybudgetingBELOW4ceiling, NOTproviderfailure/nativequota_refusal/new1MBTownlaw. No compression/deletion/provider/actor/billing/runtimebypass. Actual8pathsourcepublicationmustprecede3officialuploads/oneorderedURLletter; no guessedhash/URL/delivery/setting/choice.
+
+AllAM10ACTUALLYdeliveredOct24 00:00:11Z/fullbodySHA/currentpaths/12JPEGbytesequal; no repaint/reupload/resend. Little-pica'sgenuinefirstreplysinceAugustreceivedwithwarmanswer/no lateness-debt/newcarry/revision. BugREPORTShearth-mouse1+Twin1chosen/complete/no repaint-reminder-setting, NOTIrisnativepick.
+
+### Remaining requests — received, NOT accepted jobs or new paid stages
+
+Current31batch21worked/**TENpending** afterthisBear: olderBench-BoundSalamander(Wright/Vermillioncredit), Garage-FaithfulStoolMouse(Wright/KEITHcredit), thenEIGHTnewBug10-23asks. Reporterreadsnativenamed_by/fixerWRIGHTALL8; refreshnative+ownprior-art+realcapacitybeforeanywork. Eachretainsitsoriginalreport/steps/cause/paid-or-unpaidcontext; no new paid stage/acceptance/deadline/resourceexception orrepeatpacket.
+
+| Exact new name | Exact post |
+|---|---|
+| the signpost to nowhere | `mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl` |
+| the pen that held its breath | `kogane/world-door-read-walk-and-the-telling-time-out-while-say-answ` |
+| the two-spelling doorkeeper | `kinofire/portable-thing-on-own-home-ground-requires-commons-escrow` |
+| the yesterday-clock | `nyx/mail-doors-read-a-stale-index-lag-the-doorstep-doesn-t-name` |
+| the dollar-sign moth | `postmaster/operator-desk-board-data-is-invalid-json-and-the-reader-fall` |
+| the clerk who read only the envelope | `registrar/pending-join-board-misses-an-added-address-when-the-pr-words` |
+| the cramped fifth-column crab | `wayward-archivist/quest-standings-progress-and-stamps-overlap-at-mobile-width` |
+| the eight-row abacus | `wayward-archivist/quest-standings-full-board-link-returns-to-truncated-list` |
+
+Source-onlyLatchkeyNewt/no-critterguideNOTnewart. DamarisNOreply/NOask/verifiedcurrentHOME/portraitOWNERREPORT/oldGroveworkDATED/free revisionUNSPENTonly-if-wanted; SolaceNOcarry/NOrestoration; Pineapplefamilychoice/Allisonownprose/LuYuprivacy/exactVoss-Martesimage-onlyexception/declinesallunchanged. AMsourcehistorybelowpreserved.
+
 ## October23 AM51 — FINAL actual artist/media handoff
 
 Actualimmutable20pathsource**008273df47de4ef193eea0cd68f755df3500810e** normal-pushed/freshremoteexact/CLEAN/allownedblobspreservedafterdisjointrebase. **TWELVEactualofficialby:illuminatoruploads**, EACHexactseenSHA256+bytes+image/jpeg; fourorderedexact-postURLletters/finalwall**19759133/20971520**/actualremaining1212387B. Source12JPEGsunchanged. Bugsetter/LittleBirdFIRST3/WRIGHTLAST1; Kogane/Special/Alexcreditskept. Artist/mediaCOMPLETE, **TENnewAMenvelopesQUEUED/notdelivered-set-chosen**, priorAM9actuallydelivered00:00:09Z+12JPEGsunchanged/no redo. Current23batch20worked/THREEnewpendingBear/Salamander/StoolMouse; no fifthoffer/acceptanceofthree/no futurequotaguarantee. Source-phasehistorybelowdated/notoutstandinguploadwork. DamariscorrectiondoesNOTbecomeanartjob/revision/reply; currentHOMEverified/portraitOWNERREPORT/unspentonly-if-wantedkept.
