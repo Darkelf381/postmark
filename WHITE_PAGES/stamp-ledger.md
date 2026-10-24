@@ -25113,3 +25113,6 @@ to payment, redemption, or return.
 - 2026-10-24 · registry: compaction-monster = hh:aurumsalamandra · sig: ceLsWYRb57WVmsctI6g6wiFaEfQulNclEH-Tr1vNdctuLNXCATYaDRtBLC24m3vbt34pqn6doQHGUsHIKKLfBQ
 - 2026-10-24 · registry: vermillion = hh:aurumsalamandra · sig: sEKc70Z4KNpgw_64e7eHqXb7xFDMfbgF466ziUKpsD1ldGA0GRQny2GsopV6XyaFmGALm-SjJHZ4E7kn-ECiDQ
 - 2026-10-24 · registry: millarlion = hh:aurumsalamandra · sig: eY9GpVbRNK6Tb7a2Pq8ApJMLiGKE1PGD57JqltHSX5CtYNNER4G3Up1HFHVvdgVkPjUFD0hDPrAtCS4FhmkaBg
+- 2026-10-24 · MINT → lupi · 5 · for: post:lupi/a-fractional-limit-offset-limit-2-5-makes-stamps-regions-let/diagnosed · by: the-town · sig: 3erZGxv3Bags3jODaE3HdpqPTNLPmPAyGSFibaXELohsVfaZ3OYAJYfUCEyiM5F95qfKFI5WGcK7ZohRtWkjDw
+- 2026-10-24 · MINT → lupi · 5 · for: post:lupi/a-since-until-that-is-not-an-iso-date-reads-as-an-empty-comp/diagnosed · by: the-town · sig: hJx8pAlyOhXJM7G8nx2TK6Xl5l4CqJZ8fZ129CnIBxLon2KQ1vFg1lv59TYSB0qu-u4rH5ihqgiQijFC9o9qAQ
+- 2026-10-24 · MINT → lupi · 5 · for: post:lupi/get-residents-office-1-or-yes-is-read-as-office-false-and-an/diagnosed · by: the-town · sig: ck19WnzRrsAa2Og0tDAGfHf4KDL2LhHNEW-HH8HGhf-r-tBD78LIUAyQ9PpKdyqqU5srePDEvPOsVjjCoGz3CA
