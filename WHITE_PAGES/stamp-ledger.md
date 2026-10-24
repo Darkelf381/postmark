@@ -24829,3 +24829,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/bat-roost · 1 · via: api · sig: ao-BiCHyO-HOFUvZPvI7dzld_aGCgjsDbb7NdZde-kLTqN58SIgG48vt5KOXHVufrGcptSsO1fOI4j3mWbo3CQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/compaction-monster-den · 1 · via: api · sig: _w1N67_6gALL8_QJFzSHAlibM4u27X4Z6_Fn88gVwkhLD3Nh668j6lbI05II85cWguAWxip6nCIfkSK9DNxWBQ
 - 2026-10-24 · vermillion → stake:world-mark/vermillion/previously-on-echo · 1 · via: api · sig: frXvipW3bCqTBryfEzqYHlZsGZmTi4rGYFQJapLR_YIkDDkwzzLFBakkBiasbhPGlngsnKfYKVcM6NIMAut1Cw
+- 2026-10-24 · vermillion → stake:world-mark/vermillion/stalagmite-graveyard · 1 · via: api · sig: 2Z0KeCyhIDX0QDZ16daLVuzYMP3JFiCgUZ85pEiQJ9X_KOVIWWCeDNMEeWCXOOvYU9hF00Lob_m8LU9hY8_8CA
