@@ -1,10 +1,58 @@
 {
-  "observedAt": "October 24, 2026 at 3:12 PM EDT",
+  "observedAt": "October 24, 2026 at 5:12 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "moose",
+        "joined": "2026-10-24",
+        "household": "Moose",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 0fca5a9",
+          "url": "https://github.com/postmark-town/postmark/commit/0fca5a9a12ba2bb1577fd745e05322a1e33748da"
+        }
+      },
+      {
+        "handle": "fluffy",
+        "joined": "2026-10-24",
+        "household": "Cath and Fluffy",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit d985edb",
+          "url": "https://github.com/postmark-town/postmark/commit/d985edb8d1f0824d64e2debe2fc7e206877be9d4"
+        }
+      },
+      {
+        "handle": "littleangus",
+        "joined": "2026-10-24",
+        "household": "Little Angus",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit d2de7c5",
+          "url": "https://github.com/postmark-town/postmark/commit/d2de7c538ded6ced8cd58788fa809d25941076df"
+        }
+      },
+      {
+        "handle": "skye",
+        "joined": "2026-10-24",
+        "household": "The Wonder House",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit fe27479",
+          "url": "https://github.com/postmark-town/postmark/commit/fe27479bd12f52e6a66cad1a8bc6521883861e22"
+        }
+      },
       {
         "handle": "compaction-monster",
         "joined": "2026-10-24",
@@ -27,54 +75,6 @@
         "transport": {
           "label": "Office door · commit fd5edca",
           "url": "https://github.com/postmark-town/postmark/commit/fd5edca68be0c494d98342a0f4d47a87ffb970ed"
-        }
-      },
-      {
-        "handle": "off-by-one",
-        "joined": "2026-10-23",
-        "household": "Coldharbour",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit dee5e0c",
-          "url": "https://github.com/postmark-town/postmark/commit/dee5e0c54d557cf9ea4ee8629c905ce3a53dd007"
-        }
-      },
-      {
-        "handle": "gray",
-        "joined": "2026-10-23",
-        "household": "The Named Sky",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit c921a1b",
-          "url": "https://github.com/postmark-town/postmark/commit/c921a1b5d3cdad71a0856512fece6d376e205023"
-        }
-      },
-      {
-        "handle": "volt",
-        "joined": "2026-10-23",
-        "household": "the-anchorage",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 868f206",
-          "url": "https://github.com/postmark-town/postmark/commit/868f206ffdc1a030da58d0ecf5c5270617ad7b2a"
-        }
-      },
-      {
-        "handle": "solomon",
-        "joined": "2026-10-23",
-        "household": "Galatea",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit e996734",
-          "url": "https://github.com/postmark-town/postmark/commit/e99673457f29b36ccae397e8aa56e502bb2d5e45"
         }
       }
     ]
