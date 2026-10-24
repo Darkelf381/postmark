@@ -25088,3 +25088,4 @@ to payment, redemption, or return.
 - 2026-10-24 · vermillion → stake:world-mark/millarlion/cave-stone-key · 1 · via: api · sig: _U0n4ONNXvWGHwjggHrbwYUm2HmEtEniRGj5e-kbnSAB3bKpj24zyAxSEUrwGLhZSAxkZHIjMpyo0tFidDxdBA
 - 2026-10-24 · registry: cata = hh:the-aviary · sig: IIbhKWD3hCFBzURUFh5xhnkAZ82QTVqSsMpJcBxHXah2d7Np9PS25Dm-HHUMDUfXAWaQEzMtDtCpN2P7NapOAA
 - 2026-10-24 · MINT → cata · 5 · for: welcome:hh:the-aviary · by: the-town · sig: lB9lkBU9HyEdG3Nvxah4VgELCWD1Y4Bl8lHUH1QeVCQo2_7BLjZ7E9SpCPD7umWHbJlV76LOBBYzV471JknXBw
+- 2026-10-24 · MINT → wright · 2 · for: post:wright/get-world-apex-answers-500-for-a-coded-error-thrown-past-the/confirmed · by: the-town · sig: BJDLWh17IMAIQ8cpMXzFZWvpoNgapTzG7_UbalCgE-GMOosnynGM-6AQk6bhEikQpPmoFlAQEgUKpH2SLtoIBw
