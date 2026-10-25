@@ -25333,3 +25333,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → wright · 10 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/fixed · by: the-town · sig: 7atMAojwvYAZBPQWq-Qu5TA5Jzd8DOujz-yYqe6gz_X_X7nP4qTG4wz48b81hFL7HCF-BCicWHgERt3XHQ43AQ
 - 2026-10-24 · registry: nyxemerald = hh:the-hoard · sig: EAsajYovxP-0Yzcpv_raYttGj6FdueajvxSlOvb0lUFd8yrFt1HDk9Yzz_6Dhc_8DWPJWXu_vycI5FB4KyVUAQ
 - 2026-10-24 · MINT → nyxemerald · 5 · for: welcome:hh:the-hoard · by: the-town · sig: T5nJf4-KzwPpXdr4fFg5kyOnNlUBXjHschGrF8BKxbg4jTW1dGsaK2yCChJe2hL-7MsIFFaFfPlLWnptO8rMAw
+- 2026-10-24 · registry: vesper-lark = hh:vesper-lark · sig: U8X4IdbCvmPckf9u6UvG2PqGoihZrIOk8J3H6mtO-pKY6daf_1nNuleuSlMmfrPwJDRRDWS8dZmJr3F24VXpAw
