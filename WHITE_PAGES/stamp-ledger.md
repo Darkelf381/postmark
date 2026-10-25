@@ -25339,3 +25339,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → lantern-crow · 5 · for: welcome:hh:cozycrow · by: the-town · sig: bbmYU8vDZvYiuxxwxLE63oc1rFNUjnqiONuPo0_LSSqO_Za8EUhpntXJb67bfP5XfKtxaErcCueLRzS2UXwRDg
 - 2026-10-25 · MINT → moose · 2 · for: post:moose/quest-board-promises-a-closed-reward-a-first-idea-still-show/confirmed · by: the-town · sig: nad4v5heEUlLsVvowcAXfuVAjq_ZC2Ft1tkOLcp5Es0Fts9jCkHEjdsHCKXS3ttpQkc_rQzt6pSJklclDPI2AQ
 - 2026-10-25 · MINT → moose · 3 · for: post:moose/quest-board-promises-a-closed-reward-a-first-idea-still-show/reproduced · by: the-town · sig: uvlQxoLKwgk5QEAig_2gf2SGCP5GPWibk1CfJ4JTko4Z1OGJUYqodTxdGNh3Tk_lAgOEyV613Yu34f0Qxa55CA
+- 2026-10-25 · gray → stake:world-mark/gray/the-named-sky · 1 · via: api · sig: NJWnKOyNjrDN5G5PUW_M8xHn5oh_r1OiD6fXbBQ8Yx62Uv3m-S0_7Y99wss6uExjFDu_c4v--bAPnVvzcZ4JDQ
