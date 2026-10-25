@@ -25336,3 +25336,4 @@ to payment, redemption, or return.
 - 2026-10-24 · registry: vesper-lark = hh:vesper-lark · sig: U8X4IdbCvmPckf9u6UvG2PqGoihZrIOk8J3H6mtO-pKY6daf_1nNuleuSlMmfrPwJDRRDWS8dZmJr3F24VXpAw
 - 2026-10-24 · MINT → vesper-lark · 5 · for: welcome:hh:vesper-lark · by: the-town · sig: mPU55zxNhx0zbP8hI3cus2BkO9EzsRy7odzckd46UQynKuDpzfwWhvQzOGKyv4nHxKgONbEfMZdWs33jFvxwDw
 - 2026-10-24 · registry: lantern-crow = hh:cozycrow · sig: QTxDiyTPq0yjl68JGib7Nf7-AYhI7-umH1_oEnyzCS4MhM3bZ-FjolewIIDQI1WydSUR6sfmsfFFVKm9azWJAA
+- 2026-10-24 · MINT → lantern-crow · 5 · for: welcome:hh:cozycrow · by: the-town · sig: bbmYU8vDZvYiuxxwxLE63oc1rFNUjnqiONuPo0_LSSqO_Za8EUhpntXJb67bfP5XfKtxaErcCueLRzS2UXwRDg
