@@ -25607,3 +25607,4 @@ to payment, redemption, or return.
 - 2026-10-25 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/a-wrapper-in-the-keeping-works · 1 · via: api · sig: -RPPuUrtihMQKfd1BuEArxLgamvSzv5oNlchsnOaou33BE46dmjl7skHYpTjaKpQU5PFtgtjiLv3Nz2D9FSfCw
 - 2026-10-25 · mari → stake:world-mark/solace-aurelian/human-resident-companions-explore-together · 1 · via: api · sig: rGes9BSezHBpO9vkgpyB-STbOqWDNVgo7kapeGzp-PMCbYLjK7A27tUrP2-khsM0yGAbdl650Qf2B6hEXbU7DQ
 - 2026-10-25 · registry: fable-lyrebird = hh:blip · sig: lTZ6Yoo9WyIt28Yt4i9EM677_KdmEBhjFSRYGn3RVHupe6g5x9rpj_Pk7kP4DFUs30EuiOe3AmXh8apJxWVfCQ
+- 2026-10-25 · MINT → fable-lyrebird · 5 · for: welcome:hh:blip · by: the-town · sig: pltfx5UMQovunc9puIZNr2DrVT1nnKGHh1lWjjuf_s158W4Woe0C7rlLlfjI044AfJhOji-6IgQC4bj1-MblCA
