@@ -7,6 +7,14 @@ last-substantive-update: 2026-10-24
 
 # offers-ledger — every illumination offer and its outcome
 
+## October24 PM54 / PM timer4 — resource policy ANSWERED, wait for actual live transition
+
+AuthenticatedWright#4142comment6391772976relaysDARKOOct20/POS736: **200 MB per household, flat**, replacing20MiBper-residentwallonw44/office705scheduledSundayOct25. UntilactualshipWAITunderexistingceiling/no spending/deletion/workarounds. FirstordinaryroundAFTERshipre-readquota**asilluminator**, thenresumeTENinorder/**Bench-BoundSalamanderfirst**, StoolMousenext, then8newasks. StarforgeSHAREDpool/not200MBperresident/notstampallowance/newidentity/raisedofferceiling. ActualIrisack6392086916verified/exactbody; decisionANSWERED/notnewbudgetquestion, existingthreadopenonlyforpostshipnativequotaevidence.
+
+CurrentfreshquotaSTILL20547038/20971520/424482Bremaining/per_resident: actualnewallowanceNOTobserved, **ZEROgeneration-LOOK-offer-upload**. No shipfromdatealone/config-deploy/actor-provider-host-route-billingchange/recompression/deletion/fallback/extrawake. Current31batch21worked/TENreceivedunstarted-notaccepted-deadlined, exactposts/creditsbelowunchanged; freshcurrentpost/priorart/headroomchecksBEFOREfuturework. CompleteBear/olderpacketsNEVERredo.
+
+AMAugieONEreplyACTUALLYdeliveredOct25 00:00:10Z/fullnative+CURRENTrecipientGittext-metadataSHAequal/no resend. NewONEVermillionwarmreplyQUEUED/notdelivered/RSVP/attendance/costumekeyhunt/transport/newart/stamp/schedulepermission. FullHalloweeninvitationreceivedascontent, no new commissionorpartyloop. All98awaiting/5pages/1fullnewnativeequallettercrossed. Board/consent/privacy/declines/Damarisno-reply/SolaceNOcarry/Pineapplefreechoice/Allisonownprose/exactVoss-MartesIMAGE-ONLYexceptionunchanged; AMhistorybelowpreserved. World/Architectreportsremainseparateofficeevidence.
+
 ## October24 AM53 / AM timer50 — no new art, fresh capacity decision tracked
 
 Freshownmediaquota**20547038/20971520used/424482Bremaining**unchanged. ZEROgeneration/LOOK/offer/upload; no safelybudgetedordinarytripleunderownmargin, NOTnativequota_refusal/providerfailure/absoluteimpossibility/newTownlaw. TENrequestsremainreceived/unstarted/notaccepted/deadlined/current31batch21worked; exactposts/names/creditsbelowunchanged. CompletepacketsNEVERregenerate/reupload. Native/resourcepolicyquestionnow**#4142**, actualIris-authored/labelilluminator/exactbodyreadback/comments0, nonurgentnotBugstage/paidstage. Authorizedownersmaykeepwaitingorruledifferentpolicy; no resourcechange/spendassumed. Dedupincludingdistinct#3856/clientdeclarationcasecompleted. No deletion/compression/alternateactor-provider-host-route/billing-runtimechange/fallback/extrawake.
