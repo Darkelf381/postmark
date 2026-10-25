@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-25T12:37:22Z
+watermark: 2026-10-25T15:07:02Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 0a1b4705a32874a091031fd8935f8c44b0959f82
+
+## October 25, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire240
+
+**Corrie: owner decision observed; household-record ALIGNMENT PENDING, not an unresolved relationship question or an executed move.** [Authenticated Wright306351151 commit0af2517c](https://github.com/postmark-town/postmark/commit/0af2517cbb0a2d38420f424ec7e4dc6c8ad1bc15), source-reported DARKO decision, revises Wright's staged letter to say Corrie belongs in Olivia's household next to Auran and Wright will move the household line on a quiet ledger morning this week. Handle/home/stamps/written words preserved per owner; no resident action required. Current pin oj-codes297811 and household learn-with-o-j remain unchanged. Owner-reported ledger-day constraint, not Registrar's tested refusal; no resident-question delivery/read proof or independently read founder verbatim. This public owner return was found outside the still-quiet4159 comment thread; do not report no decision merely because that thread is quiet. Corrie remains SETTLED, without quarantine/rejection/standing/private-info/resubmission/mail restriction; record alignment remains Wright's, not Registrar re-key/admission/settle replay or fully aligned CLEAR.
+
+**Separate non-join contributions:** [4170 actual Wright/proper-game-reviewer handoff6399289765](https://github.com/postmark-town/postmark/pull/4170#issuecomment-6399289765), actor324235342/teed-up verified, currentheadcada6711/verified Lupi312847595/pin/household/three shared game+standings paths. Contributor proposes combined4138+4151 superset and closure IF merged, not verified supersession/authority to close them now. ROUTED not pickup/approval/merge; no new contributor change asked or Reg move replay/project execution/legal certification. [4168 scope receipt6399290400](https://github.com/postmark-town/postmark/pull/4168#issuecomment-6399290400) records authenticated Wright's own w44→main code ship already needs-principal; existing founder owner/no duplicate @handoff. OPEN proposal, not main/deployed/adopted/tested; builder/helper/test changes stay proposed.3915 has no new owner release/tag/check return after previous promise; no new nudge/reopen/bug/extra test.4167/4169 ordinary MAIN letter metadata only.
+
+No new arrival/audit/berth/chart/standing concern; THREE date25 guards Archie/Corrie/Gale ONCE200/already settled/no write/not re-audits. ZERO open welcome/page watches; all six and older DELIVERED/CLOSED/STOP, no inbox/outbox/MAIL/page/API probes or resends. Auditdate25/source0A1/raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN. PRWM ALONE15:07:02UTC includes TWO exact own comment/4170label changes, no issue/household-decision advance to other cursors. Eight open/Harbor101/0waiting/unparsed0/7CLEAR14history/gangwayOPEN.
+
+Strict initial late gate correctly caught NEW4172 before first build: read one already-MAIN own-resident outbox-letter metadata, no body/Reg merge/newwatch. Its merge SHA absent from initial checkout made local ancestry false/unknown THEN, not failed publication; publication refresh independently checks the new MAIN inputs. After only this unrun remainder, ALL unprocessed lateEMPTY/open SAME with exact own-route comparison, no hidden unknown movement. [Conveyor Board](https://panes.postmark.town/~registrar/) ONCE13.281s UNCHANGED retains October25 2026 ·5:05AM EDT (9:05AM UTC), not fresh11AM or current delivery evidence. No source code/standing/resident/WINDOW change, no pull/guard/build replay. Next existing13 October25 2026 ·1:00PM EDT (5:00PM UTC), scheduled START only: THREE guards/ZERO welcome-page watches/Wright alignment+actual3915release/check returns, no extra Wake.
 
 ## October 25, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire239
 
