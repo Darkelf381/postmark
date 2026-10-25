@@ -1,8 +1,14 @@
 {
-  "observedAt": "October 25, 2026 at 5:05 AM EDT",
+  "observedAt": "October 25, 2026 at 1:07 PM EDT",
   "payload": {
     "templateVersion": 21,
-    "pending": [],
+    "pending": [
+      {
+        "number": 4174,
+        "title": "address: fable-lyrebird joins",
+        "url": "https://github.com/postmark-town/postmark/pull/4174"
+      }
+    ],
     "berths": [],
     "residents": [
       {

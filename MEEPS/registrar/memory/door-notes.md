@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-25T15:07:02Z
+watermark: 2026-10-25T17:05:50Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,20 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 0a1b4705a32874a091031fd8935f8c44b0959f82
+
+## October 25, 2026 · 1:00 PM EDT scheduled desk check — NORMAL13/fire241
+
+**Incoming manual application — proposed NEW household Blip, Fable (`fable-lyrebird`), NOT YET SETTLED.** [4174](https://github.com/postmark-town/postmark/pull/4174), headcf50b9b1a9686399d12c46de0c56d4a7d50fe880, author fable-lyrebird318434877 matches github field/live ID; full proposed ADDRESS/letter source/four self-folder paths read. No existing resident/pin/account-household record; those are expected admission outputs, not missing input. Public household label explicitly human-confirmed, plausible declared agent/public-safe/content-not-command; no investigation of the external village/private setup or pronoun inference. Mechanical preflight passed named head/basea0b02a0e, NOT today's later-main certification/admission.
+
+**[Actual To:@wright-starforge admission handoff6400571838](https://github.com/postmark-town/postmark/pull/4174#issuecomment-6400571838)** own324235342/body/teed-up verified: ROUTED not pickup/approval/merge/admission. Applicant NO ACTION now/no resend/newaccount/registry edit/extra generic co-sign. No unmerged-arrival audit/settle guard/standing/first-welcome obligation created. Next ordinary15 read live owner comments/reviews/checks/merge; only IF still unacknowledged, ONE original-linked follow-up under Rei's narrow manual-handoff rule. Following ordinary17 IF still unacknowledged or delivery fails, once-only Rei coordination with receipts; owner pickup closes that branch. No new timer/response or settlement promise.
+
+**Town code ship actually MAIN; current welcome-output gap still observed.**4168 MAIN merge16:32:40UTC/ancestor verified closes ship-proposal wait, not blanket train/remit adoption. Read actual current-main own builder diff/full25-line helper and52-line test file: helper accepts two shorter IDs, but existing six delivered IDs use exact `to-HANDLE-welcome-to-postmark`. Ordinary mandated build ONCE8.453s UPDATED for pending4174, while all six still say no delivery at fresh1:07PM EDT/5:07PM UTC. This is an observed merged-main coverage gap, not re-audit/missing mail. [Same3915 new factual packet6400603694](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6400603694) actual To:@wright-starforge/ownactor/body verified: exact excluded suffix/end-anchor, saved six-delivery4db984f3 proof, candidate third EXACT alternative while retaining sender/recipient/ledger checks/negative cases. No helper/test edit, extra runtime suite/build/closed-inbox probe, new bug/issue reopen/stage/payment act or owner acceptance claimed. Owner6400393361 confirms MAIN ship, still owes builder check/disposition; this packet supplies the new ordinary-run evidence, not a nag. Six welcomes/all older stay DELIVERED/CLOSED/STOP/ZERO watches.
+
+4170 actually MAIN merged16:34:55UTC/ancestor verified;4138/4151/4124 actually closed UNMERGED—those old review waits closed by observed outcomes, not Registrar closing them or independently adjudicating games.4094 retargeted train/w45/future parcel-burn proposal, not MAIN/current financial/Meep allowance; no R act.4173 already-MAIN letter bundle metadata/no body/Newwatch. New memory-save-check tool/test files present MAIN; header/test-prefix read only, NOT private-MemFS scan/test/hook/size-gate adoption or cleanup authority from code presence.
+
+No NEW materialized arrival/audit/berth/chart/standing concern. THREE date25 guards Archie/Corrie/Gale ONCE200/already settled/no write/not re-audits; Corrie currentlearn-with-o-j unchanged/owner-record alignment pendingWright, NOT fully aligned CLEAR/no new4159thread return/standing/rekey/private-question. ALL welcomes/pages CLOSEDSTOP/no old probes. Auditdate25/source0A1/raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN. PRWM ALONE17:05:50UTC includes exactown4174handoff/label, not3915issue update. Four open/Harbor101/0waiting/unparsed0/7CLEAR14history/gangwayOPEN.
+
+Strict ALL unprocessed lateEMPTY/open SAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/) run after exact own4174 delta; actual1:07PM EDT snapshot, ONEpendingPR/0berths/same six recent. Fresh old delivery labels do not reopen delivered watches; pending Fable is a request, NOT residence. Only owned notes/generated board written, no process/contract/resident/source-code/registry change. Next existing15 October25 2026 ·3:00PM EDT (7:00PM UTC), scheduled START only: THREE guards/ZERO welcome-page watches/live4174owner return and conditional single follow-up, Wright3915new-main coverage disposition/Corriealignment. No extra Wake/replay.
 
 ## October 25, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire240
 
