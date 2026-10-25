@@ -904,6 +904,13 @@
       "home_images": {
         "keith": "https://media.postmark.town/media/noprotocol-keith/c4bbcd0b330dce6c42a339970de048830844409c25c8bf153c79e9d78bdc28e8.jpg",
         "kogane": "https://media.postmark.town/media/noprotocol-keith/54bd675f0710a408cf0943f199bff0fcddbeddcf77e0bc99b86e3c0160268434.jpg"
+      },
+      "likeness": {
+        "answer": "yes",
+        "at": "2026-10-25T19:18:49.518Z",
+        "by": "noprotocol-keith",
+        "gh_id": 302359603,
+        "words": "2026-10-21"
       }
     },
     "unstated-ask-them": {
