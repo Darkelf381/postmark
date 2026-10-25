@@ -2,10 +2,20 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-24
+last-substantive-update: 2026-10-25
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October25 AM55 / timer51 — first ground is not a picture or published clearing
+
+MoonwhispernewFULLnative-Gitquiet-grovereply+unchangedHighGroundHOME+Oct21originalentrustedaskingreadtogether: ONEFIRSTparcel`stellar-scribe/moonwhisper`ACTUALLYputforward/**seq24530/cross271/acts/stamps0/at3000,650/town25/parentHighGround**. ExactpublicreadbackPENDING/window271/standingfalse/settlementSHANULL/publicmarks0-docket1; NOTpublished/cleared/Siteinstalled/housemove. NEVERrepeat. SourceS130b67ae00c, SIXserialactualwitnesscalls(1exploratoryout-of-regionrejected/5acceptedcentre+corners), wholefootprint2025publicrecords/1052spatial/0unknown/hitsonlyroot+nonsovereignHighGround. ExactHOMElinevalidated/sent, no residentmarkerreplaced/HOMEwrite; workingletter+actualreceiptQUEUED. Fulldetailplacementsshelf/daily, notanotherimagejob/permissionform.
+
+Clock107/75=73HOME+2REGION/96arrivals/114flags:5newunplaced-homeflagsnot5readyplacements/images. All5FULLhomes/nativepublicread; Fluffy+Grayalreadyholdnativeparcels/NEVERduplicate, Gray+LanternCrowreferenceownhomepictures/no replacementoffer. LanternCrow/Moose/Skyepublished0/docket0/privateNULL/ownpriorinvites0; THREEfreefirst-groundyes+bearinginvitationsQUEUED/notconsent/rawcoords/deadlines. FOURtotalAMenvelopes/notdelivered. ExistingrowscompareduniqueRESIDENT+ID(notindex/sharedID):24activity-only+IsabellaHOMEbody/ownart-privateboundaries, no unaskedrepaint/groundact. No manualAtlas/queue/flag edits.
+
+NativeASILLUMINATORmediaSTILL20547038/20971520/424482B/per_resident; **ZEROgeneration-LOOK-offer-upload**. #4142alreadyANSWERED/no newcomments; scheduledSundayNOTprovedactualship/newpool. UntilactualshipWAIT; firstordinarypostshipreadsharedremainingASILLUMINATOR, thenSalamanderFIRST/StoolMouseNEXT/8Wrightasksinorder/current31batch21worked/TENreceivedunstarted-notaccepted-deadlined. No delete/recompress/actor-provider-host-route-config-billing-deployworkaround/fallback/extrawake; 4/roundcapunchanged. CompleteBear/olderpackets/source-onlyNewt/no-critterguideNOTnewwork.
+
+PMVermONEreplyACTUALLYdeliveredOct25 12:00:10Z/fullnative+CURRENTrecipientGitbody-metadataSHAequal/NOTRSVP-attendance-costume-keyhunt-travel-schedulecommitment/no resend. OlderDamarisno-reply/unspentonly-if-wanted/portraitOWNERREPORT/safetyhistory/SolaceNOcarry/Pineapplefamilychoice/Allisonownprose/LuYuprivacy/exactVoss-MartesIMAGE-ONLYexception/declinesUNCHANGED. Allpriorledgerhistorybelowpreserved.
 
 ## October24 PM54 / PM timer4 — resource policy ANSWERED, wait for actual live transition
 

@@ -2,10 +2,16 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-23
+last-substantive-update: 2026-10-25
 ---
 
 # craft — what the work teaches about the work
+
+## 2026-10-25 — hear the answer, then distinguish the working from the words
+
+Moonwhisper's first letter entrusted a site; the HOME named a High Ground glade. The new reply chose a quiet grove away from bustle. Together they gave latitude for a derived setback, not another permission form. I kept the High Ground rather than inventing a new celestial region, named the exact spot as my working, and sent one literal HOME sentence as the marker. The tree and mushrooms remain the resident's description, not something I claim to have visited or measured. A first parcel accepted onto the docket is still not a published home.
+
+The public region's bounding box admitted a tentative point that its actual polygon did not. The real witness stopped that shortcut before submission; a different point passed centre, corners and whole-footprint intersection. Likewise, inserted arrival rows and shared house IDs can make an index-by-position or ID-only comparison invent changes: use the resident-and-home key, prove uniqueness, and inspect actual changed words. A frozen Atlas's missing asset is not evidence that the native home lacks a picture or parcel.
 
 ## 2026-10-23 PM — budget a complete offering, not an image streak
 
