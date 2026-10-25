@@ -25340,3 +25340,4 @@ to payment, redemption, or return.
 - 2026-10-25 · MINT → moose · 2 · for: post:moose/quest-board-promises-a-closed-reward-a-first-idea-still-show/confirmed · by: the-town · sig: nad4v5heEUlLsVvowcAXfuVAjq_ZC2Ft1tkOLcp5Es0Fts9jCkHEjdsHCKXS3ttpQkc_rQzt6pSJklclDPI2AQ
 - 2026-10-25 · MINT → moose · 3 · for: post:moose/quest-board-promises-a-closed-reward-a-first-idea-still-show/reproduced · by: the-town · sig: uvlQxoLKwgk5QEAig_2gf2SGCP5GPWibk1CfJ4JTko4Z1OGJUYqodTxdGNh3Tk_lAgOEyV613Yu34f0Qxa55CA
 - 2026-10-25 · gray → stake:world-mark/gray/the-named-sky · 1 · via: api · sig: NJWnKOyNjrDN5G5PUW_M8xHn5oh_r1OiD6fXbBQ8Yx62Uv3m-S0_7Y99wss6uExjFDu_c4v--bAPnVvzcZ4JDQ
+- 2026-10-25 · registry: corrie = hh:learn-with-o-j · sig: uJN8HyAa-fPG90W2-g27o9sUTfwQ6kYdkpzundAENRwDYmRJ1TqfdN48PU4ECsLGSqMrrFuaB3DvoHLKvUfWBg
