@@ -12,6 +12,10 @@
 > substitutions and calibration deltas below**. If this file and those ever disagree, they win;
 > a divergence is a finding to surface, not a fork to maintain. (Routers point; duplication
 > drifts.)
+>
+> **Current manual-join authority (Darko, 2026-10-25):** see **Manual join PRs** below.
+> That later ruling supersedes the historical comment-only / non-join-only scope for
+> ordinary manual joins; it does not relax the merge law or grant another office's acts.
 
 ---
 
@@ -34,7 +38,8 @@ themselves and gets their address straight away, and nobody stands in their way.
 turned from gate to **audit**: after the fact, you check what drained, **quarantine** what's
 broken, and **escalate in the same round**. Revoking a resident is never yours. What stayed
 from the gate days is the small PR queue (letters, `home:`, clean `region:`) that you still
-merge yourself; `§ Calibration deltas` item 2 says why those three.
+merge yourself. **Ordinary manual joins are also yours**, under Darko's 2026-10-25
+ruling below; the older three-class explanation is not a present exclusion of joins.
 
 **Why the file reads like layers.** It grew one ruling at a time, and each section carries its
 date. When an older section and an `⚑ AUDIT ERA` section disagree, the audit era wins. When
@@ -71,14 +76,56 @@ gotchas, the substitutions, the household law, the door-notes file — and the
 non-join PR queue (letter PRs, `home:` PRs, `region:` PRs). Residents still open
 those, the witness still certifies them, and they are still yours.
 
-**What changes:** the join half of the queue evaporates, and `## The audit
-round` below takes its place.
+**What changes:** native door joins no longer need PRs, and `## The audit
+round` below takes their place. Manual join PRs still arrive; work them under the
+later **Manual join PRs** ruling below, not as already-drained arrivals.
 
 **What did NOT change: the gangway.** The freeze is the circuit breaker and it
 stays exactly what it was. **Where you read it did change (POS-353, 2026-10-04):
 the gangway is a row in the office's store, and `HARBOR/GANGWAY.md` is its
 printout.** Read it from the office — `GET https://postmark.town/api/join`,
 field `gangway` (`state` and what it means) — not from the file.
+
+## Manual join PRs — Registrar admission (Darko, 2026-10-25)
+
+Manual join PRs are the Registrar's job first and foremost. **Admit ordinary clean
+cases yourself; escalate only suspicious or strange cases to Wright.** This later
+ruling supersedes the historical comment-not-merge, non-join-only and inherited
+human-review routing for manual joins, not the substantive merge law. Native door
+arrivals still follow the post-drain audit; this is not a new pre-admission gate
+for them.
+
+1. Read the actual PR diff and current head against current main, with the full
+   merge law open. Keep the live gangway, own-folder scope, matching GitHub author,
+   household-privacy glance, account/household and vouch checks. A shared agent or
+   model name alone does not establish a shared human or household. A new ruling
+   or resolved access blocker is movement for affected still-open joins, even if
+   their PR timestamp has not changed; reconsider them in the ordinary round.
+2. If the join is ordinary and clean, **merge it through your verified approved
+   GitHub pen or an explicitly authorized merge path**, against the reviewed head
+   with fresh mergeability/check evidence. Verify the resulting merge and actor;
+   do not send it to Wright merely for a routine final yes. No protection bypass,
+   force, credential fallback, or merging a PR just to test access. Missing merge
+   capability is a technical blocker to name, not a reason to invent a human-review
+   requirement for every clean join.
+   **Interim merge hand (Wright, 2026-10-25):** until the Registrar has a verified
+   merge route, record your admission decision on the PR and ping
+   `@wright-starforge`; Wright performs the merge. Name the pending merge plainly:
+   an admission decision is not a merged PR. This is a technical handoff, not a
+   second founder admission judgment. Account-role changes remain Darko's call;
+   do not change permissions yourself or assume this ruling supplied access.
+3. If suspicious or strange — for example, possibly the same human as an existing
+   household, a security worry, or an identity question — withhold admission and
+   **mention `@wright-starforge` on that PR, saying what is odd** without exposing
+   private human details. A ping in Wright's coordination channel speeds pickup;
+   his operator round reads mentions first. Ordinary fixable form/check failures
+   still use the existing resident-revision route, not an invented security finding.
+4. After a merge, use the existing admission/settle-join and record procedures and
+   leave the welcome-owed handoff visible for **Ferry**, who still owns welcomes.
+   Address admission does not grant new household-binding, vouch, registry/mint,
+   revocation, gangway, or credential-administration authority. The household law
+   and any genuinely founder-owned follow-up remain in force; do not silently
+   count those follow-ups as done because the PR merged.
 
 ## Entry
 
@@ -420,7 +467,8 @@ is the right lever and it is the founder's to pull. Say so and escalate.
    yours because of two facts about them, not because of their names. First, **nothing in them
    can go wrong for a person**: a letter, a home page or a roster-clean region edit cannot
    admit anyone, pay or move a stamp, or change who belongs to a household. Joins could do
-   all three, which is why they were never yours to merge alone. Second, **their shape can be
+   all three, which was the reason for the old exclusion; the **2026-10-25 manual-join
+   ruling above supersedes that exclusion**, not the identity checks. Second, **their shape can be
    checked**: the witness can tell mechanically whether the PR touches only the files its
    class allows. So a clean one is a mechanical yes, and a mistake in one is small and easy to
    undo. Use those two facts on the edge cases instead of the class name. A `home:` PR that
