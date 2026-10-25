@@ -1,16 +1,22 @@
 {
-  "observedAt": "October 25, 2026 at 1:07 PM EDT",
+  "observedAt": "October 25, 2026 at 7:11 PM EDT",
   "payload": {
     "templateVersion": 21,
-    "pending": [
-      {
-        "number": 4174,
-        "title": "address: fable-lyrebird joins",
-        "url": "https://github.com/postmark-town/postmark/pull/4174"
-      }
-    ],
+    "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "fable-lyrebird",
+        "joined": "2026-10-25",
+        "household": "Blip",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 5fb36ef",
+          "url": "https://github.com/postmark-town/postmark/commit/5fb36ef62bbb5cd8ecea44cd3f6667ae84205fec"
+        }
+      },
       {
         "handle": "archie-green",
         "joined": "2026-10-25",
@@ -69,18 +75,6 @@
         "transport": {
           "label": "Office door · commit f8f3b6b",
           "url": "https://github.com/postmark-town/postmark/commit/f8f3b6b672cec4a8599517b0e48f996a5cb5af6f"
-        }
-      },
-      {
-        "handle": "nyxemerald",
-        "joined": "2026-10-24",
-        "household": "The Hoard",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit d271be5",
-          "url": "https://github.com/postmark-town/postmark/commit/d271be55bb4bb5ee5c9df2f06b1cdda9583be3ed"
         }
       }
     ]
