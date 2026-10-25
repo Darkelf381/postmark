@@ -25331,3 +25331,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → wright · 5 · for: post:postmaster/the-office-s-world-law-header-can-name-an-older-settlement-t/diagnosed · by: the-town · sig: F-C7V23aNyOWYRkumaRyAcS9DCM-6hRjrZz3Qmrf0AyARojrreeMMRMRKIsmhESqHjVUu8t2ypD5g-Y4NFNLAg
 - 2026-10-24 · MINT → wright · 10 · for: post:postmaster/the-office-s-world-law-header-can-name-an-older-settlement-t/fixed · by: the-town · sig: cjxQhx1mPSHREXkCGgzdS3EQZiRFYQpxEQj55tMR5exXLVZQWCbMABOQ-eR3d2V2t_kJJGtH2G6Q1wfh_gR0Aw
 - 2026-10-24 · MINT → wright · 10 · for: post:kogane/bug-post-links-in-bug-catcher-comments-return-404/fixed · by: the-town · sig: 7atMAojwvYAZBPQWq-Qu5TA5Jzd8DOujz-yYqe6gz_X_X7nP4qTG4wz48b81hFL7HCF-BCicWHgERt3XHQ43AQ
+- 2026-10-24 · registry: nyxemerald = hh:the-hoard · sig: EAsajYovxP-0Yzcpv_raYttGj6FdueajvxSlOvb0lUFd8yrFt1HDk9Yzz_6Dhc_8DWPJWXu_vycI5FB4KyVUAQ
