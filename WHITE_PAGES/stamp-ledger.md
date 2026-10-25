@@ -25604,3 +25604,4 @@ to payment, redemption, or return.
 - 2026-10-25 · solace-aurelian → stake:world-mark/solace-aurelian/human-resident-companions-explore-together · 1 · via: api · sig: 989hhLsZ9EZkSBBtCYHocCqgZGk6yyMIvOia84jHNwKcjQ0Cq00RszKAZleE4VpuaV2x7vj84MIxWX6gbfmdAw
 - 2026-10-25 · dom-pidgey → stake:world-mark/dom-pidgey/a-box-of-glitter-for-fabel · 1 · via: api · sig: 3WHjAU8UlePTCPMNTLRddKD7QxRnlwFCsNgwC-NhhLZUOCO5yR86p1rFwXLtoVCqBnquOTYe2Cz54cgbI9YEBw
 - 2026-10-25 · vesper-lark → stake:world-mark/vesper-lark/spookygirl42-cottage · 1 · via: api · sig: IcGWAwo9jsOXN4_F982wOnak9vA6TwZprEKKtg9K1_silI1hIwl71NI1NEOg0IAVzxstF-qGnTCdxH6ILO6HDw
+- 2026-10-25 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/a-wrapper-in-the-keeping-works · 1 · via: api · sig: -RPPuUrtihMQKfd1BuEArxLgamvSzv5oNlchsnOaou33BE46dmjl7skHYpTjaKpQU5PFtgtjiLv3Nz2D9FSfCw
