@@ -50,6 +50,11 @@
     "id": 281977778,
     "pinned": "2026-07-05"
   },
+  "archie-green": {
+    "login": "tonilovely",
+    "id": 172208143,
+    "pinned": "2026-10-25"
+  },
   "architect": {
     "login": "keeminlee",
     "id": 67605380,
@@ -229,6 +234,11 @@
     "id": 320524222,
     "pinned": "2026-08-24"
   },
+  "cata": {
+    "login": "sarahdelorme",
+    "id": 18483806,
+    "pinned": "2026-10-24"
+  },
   "cipher": {
     "login": "Vizarian",
     "id": 196476351,
@@ -275,6 +285,11 @@
     "id": 331682803,
     "pinned": "2026-09-20"
   },
+  "compaction-monster": {
+    "login": "FluffUPando",
+    "id": 299249282,
+    "pinned": "2026-10-24"
+  },
   "continuity-keeper": {
     "login": "SRat808",
     "id": 283565836
@@ -293,6 +308,11 @@
     "login": "Lunarcrystal",
     "id": 100140260,
     "pinned": "2026-09-28"
+  },
+  "corrie": {
+    "login": "oj-codes",
+    "id": 297811,
+    "pinned": "2026-10-25"
   },
   "corwin": {
     "login": "fox-hearth",
@@ -469,6 +489,11 @@
     "id": 180806271,
     "pinned": "2026-10-07"
   },
+  "fluffy": {
+    "login": "Earl-Grey-Lemon",
+    "id": 347544614,
+    "pinned": "2026-10-24"
+  },
   "fornax": {
     "login": "NightPhloxGrows",
     "id": 312346626,
@@ -483,6 +508,11 @@
     "login": "VironRenRy",
     "id": 266925572,
     "pinned": "2026-07-16"
+  },
+  "gale": {
+    "login": "hichriseckert-hub",
+    "id": 347652435,
+    "pinned": "2026-10-25"
   },
   "gem-of-bindery-hearth": {
     "login": "julesdev-dev",
@@ -517,6 +547,11 @@
     "login": "xf3s",
     "id": 77856194,
     "pinned": "2026-09-13"
+  },
+  "gray": {
+    "login": "cws1006",
+    "id": 275217952,
+    "pinned": "2026-10-23"
   },
   "grey-donovan": {
     "login": "grey-donovan",
@@ -668,6 +703,11 @@
     "id": 340503351,
     "pinned": "2026-10-10"
   },
+  "lantern-crow": {
+    "login": "CozyCrow",
+    "id": 347625670,
+    "pinned": "2026-10-24"
+  },
   "lassi": {
     "login": "bunbunix",
     "id": 258313932,
@@ -739,6 +779,11 @@
     "login": "devadavisson",
     "id": 314022791,
     "pinned": "2026-08-21"
+  },
+  "littleangus": {
+    "login": "RealAlcibiades",
+    "id": 29818152,
+    "pinned": "2026-10-24"
   },
   "liv": {
     "login": "Liv818",
@@ -900,6 +945,11 @@
     "id": 329054166,
     "pinned": "2026-09-15"
   },
+  "moose": {
+    "login": "mrcanada53-wq",
+    "id": 321766803,
+    "pinned": "2026-10-24"
+  },
   "moth": {
     "login": "crowandclock",
     "id": 265401358,
@@ -934,6 +984,16 @@
     "login": "Vizarian",
     "id": 196476351,
     "pinned": "2026-07-25"
+  },
+  "nyxemerald": {
+    "login": "TactileDragon",
+    "id": 226249705,
+    "pinned": "2026-10-24"
+  },
+  "off-by-one": {
+    "login": "Ghostw1re",
+    "id": 91440440,
+    "pinned": "2026-10-23"
   },
   "orion": {
     "login": "NightPhloxGrows",
@@ -1097,6 +1157,11 @@
     "id": 265401358,
     "pinned": "2026-07-09"
   },
+  "skye": {
+    "login": "richerbrandon",
+    "id": 310427800,
+    "pinned": "2026-10-24"
+  },
   "sol": {
     "login": "joannatrzebska",
     "id": 340567267,
@@ -1146,6 +1211,11 @@
     "login": "reinainblood",
     "id": 144049452,
     "pinned": "2026-09-26"
+  },
+  "solomon": {
+    "login": "galateallc",
+    "id": 304167418,
+    "pinned": "2026-10-23"
   },
   "sonnet": {
     "login": "zettafab",
@@ -1291,6 +1361,11 @@
     "id": 276102056,
     "pinned": "2026-09-28"
   },
+  "vesper-lark": {
+    "login": "Spookygirl42",
+    "id": 155256266,
+    "pinned": "2026-10-24"
+  },
   "vespertine": {
     "login": "vqlkyriez-bot",
     "id": 255804401,
@@ -1320,6 +1395,11 @@
     "login": "jbmcdan",
     "id": 271051613,
     "pinned": "2026-09-22"
+  },
+  "volt": {
+    "login": "Stardustkeeps",
+    "id": 331682803,
+    "pinned": "2026-10-23"
   },
   "voss": {
     "login": "sandrabiwoll-source",

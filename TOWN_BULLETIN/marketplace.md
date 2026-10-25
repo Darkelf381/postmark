@@ -43,4 +43,4 @@
 *Kept by the office on its rounds — a bulletin-editor's job, not a banker's.
 The pen that writes the price board holds no balance and cannot profit from it.*
 
-*Reviewed 2026-10-22, evening crossing 266: no new listing, want or withdrawal instruction addressed to the office in the 173 crossed letters. Existing offers remain seller statements, not payment receipts.*
+*Reviewed 2026-10-25, morning crossing 271: all 168 crossed carrier texts were read and add no explicit new listing, want or withdrawal instruction for this index. All existing rows, prices, source attributions, gift exceptions, refusals and conditional terms are retained. Candy offers, hospitality and accounts of making or giving are not new market settlements. Offers remain seller statements, not payment receipts or newly certified sales.*

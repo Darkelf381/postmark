@@ -145,6 +145,9 @@ export function validateMarket(m: Market): string[] {
   const text = [m.question, ...(m.issues ?? []), m.source?.ref, m.source?.rule].join(" ");
   if (FORBIDDEN_VOTE_RE.test(text)) bad.push("le marché parle d'un vote : interdit (la richesse n'achète pas la décision)");
   if (!Array.isArray(m.parties) || m.parties.some((p) => !HANDLE_RE.test(p))) bad.push("parties : liste de handles");
+  if (m.resolution && Array.isArray(m.issues) && !["cancelled", "ambiguous", ...m.issues].includes(m.resolution.outcome)) {
+    bad.push(`resolution.outcome « ${m.resolution.outcome} » : une issue du marché, cancelled ou ambiguous`);
+  }
   return bad;
 }
 
@@ -163,8 +166,30 @@ export interface World {
 }
 
 export type Reason =
-  | "late" | "early" | "no-pick" | "pick-and-commit" | "unknown-issue" | "own-game" | "meep" | "bank-bet"
+  | "late" | "early" | "no-pick" | "pick-and-commit" | "unknown-issue" | "own-game" | "meep" | "bank-bet" | "zero-stake"
   | "unrevealed" | "cancelled" | "no-winner" | "no-letter" | "other-market";
+
+/** Une chose que le grand livre dit et que la loi ne prévoit pas : l'audit rougit, personne n'est payé sur cette base. */
+export interface Anomaly { kind: "duplicate-transfer" | "payment-amount" | "payment-recipient" | "payment-unknown-bet" | "payment-twice" | "bad-resolution"; letter?: string; detail: string }
+
+/**
+ * Les transferts qui comptent : ni annulés par la ville (un `void` sur la même lettre, mêmes parties), ni en double.
+ * Un même id de lettre ne porte qu'UN transfert : le premier (ordre du grand livre) compte, les suivants sont des
+ * anomalies (le pot ne grossit pas, et rien n'est remboursé automatiquement : à régler à la main).
+ */
+export function liveTransfers(w: World): { live: Transfer[]; duplicates: Transfer[] } {
+  const voided = new Set(w.ledger.voids.map((v) => `${v.letter}|${v.from}|${v.to}`));
+  const seen = new Set<string>();
+  const live: Transfer[] = [];
+  const duplicates: Transfer[] = [];
+  for (const t of w.ledger.transfers) {
+    if (voided.has(`${t.letter}|${t.from}|${t.to}`)) continue;
+    if (seen.has(t.letter)) { if (t.from === w.bank || t.to === w.bank) duplicates.push(t); continue; }
+    seen.add(t.letter);
+    live.push(t);
+  }
+  return { live, duplicates };
+}
 
 export interface Bet {
   letter: string; bettor: string; stake: number; line: number; date: string;
@@ -188,13 +213,14 @@ export function readBets(m: Market, w: World): Bet[] {
   const byHousehold = new Set(m.parties.map((p) => w.householdOf(p)));
   const rb = revealsBy(m);
   const reveals = [...w.letters.values()].filter((l) => l.reveal && l.to === w.bank);
-  for (const t of w.ledger.transfers) {
+  for (const t of liveTransfers(w).live) {
     if (t.to !== w.bank) continue;
     const l = w.letters.get(t.letter);
     if (!l || l.market !== m.id) continue;
     const b: Bet = { letter: t.letter, bettor: t.from, stake: t.n, line: t.line, date: t.date, sealed: false, status: "live" };
     const refuse = (reason: Reason) => { b.status = "refused"; b.reason = reason; };
-    if (l.pick && l.commit) { b.sealed = false; refuse("pick-and-commit"); }
+    if (t.n < 1) refuse("zero-stake");
+    else if (l.pick && l.commit) { b.sealed = false; refuse("pick-and-commit"); }
     else if (!l.pick && !l.commit) refuse("no-pick");
     else if (l.pick) {
       b.issue = l.pick;
@@ -230,7 +256,7 @@ export function readBets(m: Market, w: World): Bet[] {
 export function findOrphans(markets: Market[], w: World): Orphan[] {
   const known = new Set(markets.map((m) => m.id));
   const out: Orphan[] = [];
-  for (const t of w.ledger.transfers) {
+  for (const t of liveTransfers(w).live) {
     if (t.to !== w.bank) continue;
     const l = w.letters.get(t.letter);
     if (!l) out.push({ letter: t.letter, from: t.from, n: t.n, line: t.line, date: t.date, reason: "no-letter" });
@@ -255,11 +281,14 @@ export interface MarketState {
   /** mises scellées dont la révélation est encore possible. */
   pending: number;
   dues: Due[];
+  /** résolution écrite que la loi ne reconnaît pas (issue mal orthographiée) : ignorée, le marché reste non résolu. */
+  error?: string;
 }
 
 /** Part entière de chacun : plus fort reste d'abord, à égalité la mise la plus ancienne. */
 export function splitPool(pot: number, winners: { id: string; stake: number; line: number }[]): Map<string, number> {
   const W = winners.reduce((s, x) => s + x.stake, 0);
+  if (!(W > 0)) throw new Error("splitPool : les mises gagnantes totalisent 0, rien à partager");
   const out = new Map<string, number>();
   const rem: { id: string; r: number; line: number }[] = [];
   let given = 0;
@@ -288,15 +317,20 @@ export function marketState(m: Market, w: World): MarketState {
   const pending = bets.filter((b) => b.status === "pending").reduce((s, b) => s + b.stake, 0);
   const dues: Due[] = [];
   // Ce qui est dû quoi qu'il arrive : les mises refusées (tardives, interdites, non révélées…).
-  for (const b of bets) if (b.status === "refused") addDue(dues, b.bettor, b.stake, "refund", b.letter, b.reason);
+  for (const b of bets) if (b.status === "refused" && b.stake > 0) addDue(dues, b.bettor, b.stake, "refund", b.letter, b.reason);
   let phase: Phase;
   if (w.asof < m.opens) phase = "not-open";
   else if (w.asof <= m.closes) phase = "open";
   else if (bets.some((b) => b.status === "pending")) phase = "revealing";
   else phase = "resolvable";
   const r = m.resolution;
-  if (r) {
-    const cancelled = r.outcome === "cancelled" || r.outcome === "ambiguous" || !m.issues.includes(r.outcome);
+  let error: string | undefined;
+  if (r && r.outcome !== "cancelled" && r.outcome !== "ambiguous" && !m.issues.includes(r.outcome)) {
+    // Une faute de frappe n'est pas une annulation : tout rembourser en silence serait décider à la place de la source.
+    error = `résolution « ${r.outcome} » : ni une issue du marché (${m.issues.join(", ")}) ni cancelled | ambiguous. Ignorée.`;
+  }
+  if (r && !error) {
+    const cancelled = r.outcome === "cancelled" || r.outcome === "ambiguous";
     // Une annulation vaut à tout moment depuis l'ouverture (mises scellées en attente comprises) ; un
     // résultat seulement une fois tout révélé ou la fenêtre passée. Écrit trop tôt, il n'est pas appliqué.
     if (phase === "not-open" || (!cancelled && (phase === "revealing" || phase === "open"))) {
@@ -314,7 +348,7 @@ export function marketState(m: Market, w: World): MarketState {
       }
     }
   }
-  return { market: m, phase, bets, pools, pot, pending, dues };
+  return { market: m, phase, bets, pools, pot, pending, dues, ...(error ? { error } : {}) };
 }
 
 /** Peut-on écrire la résolution ? Raison du refus, ou null. */
@@ -333,22 +367,85 @@ export interface PaidInfo {
   /** ids de lettres de mise dont le remboursement ou le gain a été confirmé dans le grand livre. */
   paid: Map<string, { ledgerLine: number; letter: string; amount: number }>;
   voided: { letter: string; reason: string }[];
+  /** ce que le grand livre a déjà versé, mise par mise, y compris par des paiements partiels qu'un second complète. */
+  credited: Map<string, number>;
+  /** paiements que le grand livre contredit (mauvais montant, mauvais destinataire, mise inconnue, double règlement). Jamais comptés payés. */
+  anomalies: Anomaly[];
 }
 
-/** Lit ce que la banque a déjà payé : ses lettres `tote:` + `settles:` et leur transfert (ou leur void). */
-export function readPayments(marketId: string, w: World): PaidInfo {
+/** Ce que la loi doit à chaque mise, une par une : destinataire, montant exact, nature. Vide tant que rien n'est réglé ni refusé. */
+export function expectedPerBet(st: MarketState): Map<string, { to: string; amount: number; kind: Due["kind"] }> {
+  const exp = new Map<string, { to: string; amount: number; kind: Due["kind"] }>();
+  for (const b of st.bets) if (b.status === "refused" && b.stake > 0) exp.set(b.letter, { to: b.bettor, amount: b.stake, kind: "refund" });
+  const r = st.market.resolution;
+  if (st.phase === "cancelled") {
+    for (const b of st.bets) if (b.status !== "refused") exp.set(b.letter, { to: b.bettor, amount: b.stake, kind: "refund" });
+  } else if (st.phase === "resolved" && r) {
+    const winners = st.bets.filter((b) => b.status === "live" && b.issue === r.outcome);
+    const shares = splitPool(st.pot, winners.map((b) => ({ id: b.letter, stake: b.stake, line: b.line })));
+    for (const b of winners) exp.set(b.letter, { to: b.bettor, amount: shares.get(b.letter)!, kind: "payout" });
+  }
+  return exp;
+}
+
+/**
+ * Lit ce que la banque a déjà payé : ses lettres `tote:` + `settles:` et leur transfert (ou leur void).
+ * Un transfert compte s'il va au bon destinataire et ne dépasse pas ce qui reste dû sur les mises qu'il règle.
+ * Plusieurs lettres peuvent régler la même mise (un solde après un versement trop court) : on additionne, et la
+ * mise est payée quand la somme égale la dette. Un versement trop court que personne ne complète reste une
+ * anomalie (l'audit rougit) ; un dépassement n'est jamais compté.
+ */
+export function readPayments(st: MarketState, w: World): PaidInfo {
   const paid: PaidInfo["paid"] = new Map();
   const voided: PaidInfo["voided"] = [];
-  for (const l of w.letters.values()) {
-    if (l.from !== w.bank || l.tote !== marketId || !l.settles) continue;
-    const t = w.ledger.transfers.find((x) => x.letter === l.id && x.from === w.bank);
-    if (t) for (const s of l.settles) paid.set(s, { ledgerLine: t.line, letter: l.id, amount: t.n });
-    else {
+  const anomalies: Anomaly[] = [];
+  const credited: PaidInfo["credited"] = new Map();
+  const partials: { letter: string; bets: string[]; detail: string }[] = [];
+  const exp = expectedPerBet(st);
+  const byLetter = new Map(liveTransfers(w).live.filter((t) => t.from === w.bank).map((t) => [t.letter, t]));
+  const cands = [...w.letters.values()].filter((l) => l.from === w.bank && l.tote === st.market.id && l.settles);
+  // Ordre du grand livre : le premier règlement valable d'une mise l'emporte, un second est un trop-payé.
+  cands.sort((a, b) => (byLetter.get(a.id)?.line ?? Infinity) - (byLetter.get(b.id)?.line ?? Infinity) || (a.id < b.id ? -1 : 1));
+  for (const l of cands) {
+    const t = byLetter.get(l.id);
+    if (!t) {
       const v = w.ledger.voids.find((x) => x.letter === l.id);
       if (v) voided.push({ letter: l.id, reason: v.reason });
+      continue;
     }
+    const unknown = l.settles!.filter((s) => !exp.has(s));
+    if (unknown.length) {
+      anomalies.push({ kind: "payment-unknown-bet", letter: l.id, detail: `${l.id} (ligne ${t.line}) règle ${unknown.join(", ")}, dont la loi ne doit rien (mise inconnue, perdante ou marché non réglé)` });
+      continue;
+    }
+    const twice = l.settles!.filter((s) => paid.has(s));
+    if (twice.length) {
+      anomalies.push({ kind: "payment-twice", letter: l.id, detail: `${l.id} (ligne ${t.line}) règle ${twice.join(", ")}, déjà réglée par ${paid.get(twice[0])!.letter}` });
+      continue;
+    }
+    const recipients = new Set(l.settles!.map((s) => exp.get(s)!.to));
+    const due = l.settles!.reduce((s, id) => s + exp.get(id)!.amount, 0);
+    if (recipients.size !== 1 || !recipients.has(t.to)) {
+      anomalies.push({ kind: "payment-recipient", letter: l.id, detail: `${l.id} (ligne ${t.line}) paie ${t.to}, la loi doit à ${[...recipients].join(" et ")}` });
+      continue;
+    }
+    const left = l.settles!.reduce((sum, id) => sum + exp.get(id)!.amount - (credited.get(id) ?? 0), 0);
+    if (t.n > left) {
+      anomalies.push({ kind: "payment-amount", letter: l.id, detail: `${l.id} (ligne ${t.line}) paie ${t.n} à ${t.to}, la loi ne doit plus que ${left}` });
+      continue;
+    }
+    let give = t.n;
+    for (const s of l.settles!) {
+      const take = Math.min(give, exp.get(s)!.amount - (credited.get(s) ?? 0));
+      credited.set(s, (credited.get(s) ?? 0) + take);
+      give -= take;
+    }
+    if (t.n < left) partials.push({ letter: l.id, bets: l.settles!, detail: `${l.id} (ligne ${t.line}) paie ${t.n} à ${t.to}, la loi doit ${due}` });
+    for (const s of l.settles!) if (credited.get(s) === exp.get(s)!.amount) paid.set(s, { ledgerLine: t.line, letter: l.id, amount: t.n });
   }
-  return { paid, voided };
+  // Un versement court que rien n'a complété : la dette reste ouverte et l'audit le dit.
+  for (const p of partials) if (p.bets.some((b) => !paid.has(b))) anomalies.push({ kind: "payment-amount", letter: p.letter, detail: p.detail });
+  return { paid, voided, credited, anomalies };
 }
 
 export interface Payment { to: string; amount: number; kind: Due["kind"]; settles: string[]; why: string }
@@ -359,7 +456,8 @@ export function outstanding(st: MarketState, paid: PaidInfo): Payment[] {
   for (const d of st.dues) {
     const rest = d.bets.filter((id) => !paid.paid.has(id));
     if (rest.length === 0) continue;
-    const amount = d.bets.length === rest.length ? d.amount : amountFor(st, d, rest);
+    const part = rest.reduce((sum, id) => sum + (paid.credited.get(id) ?? 0), 0);
+    const amount = d.bets.length === rest.length && part === 0 ? d.amount : amountFor(st, d, rest) - part;
     out.push({ to: d.to, amount, kind: d.kind, settles: rest, why: d.reason ?? (d.kind === "payout" ? "win" : "refund") });
   }
   return out;
@@ -425,7 +523,7 @@ export function deriveEvents(m: Market, w: World): { e: BookEvent; at: string; r
     if (!(d.reason === undefined || d.reason === "cancelled" || d.reason === "no-winner")) continue;
     out.push({ e: { type: "due", market: m.id, to: d.to, amount: d.amount, kind: d.kind, bets: [...d.bets].sort(), ...(d.reason ? { reason: d.reason } : {}) }, at: m.resolution!.date, rank: 4, line: 0 });
   }
-  const paid = readPayments(m.id, w);
+  const paid = readPayments(st, w);
   for (const [bet, p] of paid.paid) out.push({ e: { type: "paid", market: m.id, bet, letter: p.letter, ledger_line: p.ledgerLine, amount: p.amount }, at: "9999", rank: 5, line: p.ledgerLine });
   return out.sort((a, b) => a.at.localeCompare(b.at) || a.rank - b.rank || a.line - b.line);
 }
@@ -502,7 +600,7 @@ export function reserveCheck(states: MarketState[], w: World, liquid: number): {
   for (const st of states) {
     const settled = st.phase === "resolved" || st.phase === "cancelled";
     if (!settled) owed += st.bets.filter((b) => b.status !== "refused").reduce((s, b) => s + b.stake, 0);
-    for (const p of outstanding(st, readPayments(st.market.id, w))) owed += p.amount;
+    for (const p of outstanding(st, readPayments(st, w))) owed += p.amount;
   }
   return { owed, liquid, ok: liquid >= owed };
 }
@@ -539,6 +637,19 @@ export function loadWorld(town: string, asof: string, bank = BANK_DEFAULT): Worl
   return { bank, ledger, mail, letters, householdOf: (h) => home.get(h) ?? h, meeps: new Set(ledger.meeps ?? []), asof };
 }
 
+/** Tout ce que le grand livre dit et que la loi contredit : transferts en double, paiements faux, résolution illisible. */
+export function ledgerAnomalies(states: MarketState[], w: World): Anomaly[] {
+  const out: Anomaly[] = liveTransfers(w).duplicates.map((t) => ({
+    kind: "duplicate-transfer" as const, letter: t.letter,
+    detail: `la lettre ${t.letter} porte un second transfert (ligne ${t.line}, ${t.from} → ${t.to}, ${t.n}) : seul le premier compte, le second est à régler à la main`,
+  }));
+  for (const st of states) {
+    if (st.error) out.push({ kind: "bad-resolution", detail: `${st.market.id} : ${st.error}` });
+    out.push(...readPayments(st, w).anomalies);
+  }
+  return out;
+}
+
 /** L'audit public : recalcule tout de zéro, compare au livre publié, et (si on donne le solde) vérifie la réserve. */
 export function runAudit(root: string, town: string, asof: string, opts: { liquid?: number; bank?: string } = {}): { code: number; out: string[] } {
   const out: string[] = [];
@@ -557,9 +668,13 @@ export function runAudit(root: string, town: string, asof: string, opts: { liqui
   if (a.missing.length) out.push(`… ${a.missing.length} ligne(s) justifiée(s) pas encore publiée(s) (retard, pas une faute)`);
   const states = markets.map((m) => marketState(m, w));
   for (const st of states) {
-    const left = outstanding(st, readPayments(st.market.id, w));
+    const left = outstanding(st, readPayments(st, w));
     out.push(`  ${st.market.id} : ${st.phase}, cagnotte ${st.pot}${left.length ? `, à payer ${left.reduce((s, p) => s + p.amount, 0)}` : ""}`);
   }
+  const anomalies = ledgerAnomalies(states, w);
+  for (const an of anomalies) out.push(`✗ ${an.kind} : ${an.detail}`);
+  if (anomalies.length) code = 1;
+  else out.push("✓ aucun paiement ni transfert que la loi contredise");
   if (opts.liquid !== undefined) {
     const r = reserveCheck(states, w, opts.liquid);
     out.push(`${r.ok ? "✓" : "✗"} réserve : ${r.liquid} liquides pour ${r.owed} dus`);

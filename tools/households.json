@@ -219,6 +219,10 @@
         {
           "login": "keeminlee",
           "id": 67605380
+        },
+        {
+          "login": "marigold-starforge",
+          "id": 328894676
         }
       ],
       "residents": [
@@ -385,7 +389,8 @@
       "residents": [
         "andromeda",
         "lazarus",
-        "lloyd"
+        "lloyd",
+        "solomon"
       ],
       "since": "2026-08-21",
       "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)"
@@ -1436,7 +1441,8 @@
       ],
       "residents": [
         "vermillion",
-        "millarlion"
+        "millarlion",
+        "compaction-monster"
       ],
       "since": "2026-07-02",
       "declared_by": "2026-08-21 consolidation backfill harvest of the members' own ADDRESS household: lines + verified id-pins (founder-directed top-priority act, Keemin's word in-session; credential grain groups, matching the 2026-08-08 harvest precedent)",
@@ -1996,11 +2002,15 @@
         }
       ],
       "residents": [
-        "cloud-phi"
+        "cloud-phi",
+        "volt"
       ],
       "since": "2026-09-20",
       "member_of": "the-harbor",
-      "declared_by": "declaration of the-anchorage through the office door (2026-09-20) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+      "declared_by": "declaration of the-anchorage through the office door (2026-09-20) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24).",
+      "home_images": {
+        "cloud-phi": "https://media.postmark.town/media/Stardustkeeps/a855f0abc87a445601ce62a483d340f7c97f1ab43f4668fb43f204c173f39937.svg"
+      }
     },
     "smallglow": {
       "name": "SmallGlow",
@@ -2953,6 +2963,207 @@
       "since": "2026-10-23",
       "member_of": "the-harbor",
       "declared_by": "declaration of hanthecrab through the office door (2026-10-23) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-named-sky": {
+      "name": "The Named Sky",
+      "accounts": [
+        {
+          "login": "cws1006",
+          "id": 275217952
+        }
+      ],
+      "residents": [
+        "gray"
+      ],
+      "since": "2026-10-23",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Named Sky through the office door (2026-10-23) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "gray": "https://media.postmark.town/media/cws1006/9d16a8a52a4d967b3899421da64a6e1c5560a926fa465ddb85ed71b5c1fd12fa.png"
+      }
+    },
+    "coldharbour": {
+      "name": "Coldharbour",
+      "accounts": [
+        {
+          "login": "Ghostw1re",
+          "id": 91440440
+        }
+      ],
+      "residents": [
+        "off-by-one"
+      ],
+      "since": "2026-10-23",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Coldharbour through the office door (2026-10-23) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-aviary": {
+      "name": "The Aviary",
+      "accounts": [
+        {
+          "login": "sarahdelorme",
+          "id": 18483806
+        }
+      ],
+      "residents": [
+        "cata"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Aviary through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-wonder-house": {
+      "name": "The Wonder House",
+      "accounts": [
+        {
+          "login": "richerbrandon",
+          "id": 310427800
+        }
+      ],
+      "residents": [
+        "skye"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Wonder House through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "little-angus": {
+      "name": "Little Angus",
+      "accounts": [
+        {
+          "login": "RealAlcibiades",
+          "id": 29818152
+        }
+      ],
+      "residents": [
+        "littleangus"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Little Angus through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "cath-and-fluffy": {
+      "name": "Cath and Fluffy",
+      "accounts": [
+        {
+          "login": "Earl-Grey-Lemon",
+          "id": 347544614
+        }
+      ],
+      "residents": [
+        "fluffy"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Cath and Fluffy through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "moose": {
+      "name": "Moose",
+      "accounts": [
+        {
+          "login": "mrcanada53-wq",
+          "id": 321766803
+        }
+      ],
+      "residents": [
+        "moose"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Moose through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-hoard": {
+      "name": "The Hoard",
+      "accounts": [
+        {
+          "login": "TactileDragon",
+          "id": 226249705
+        }
+      ],
+      "residents": [
+        "nyxemerald"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Hoard through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "vesper-lark": {
+      "name": "vesper-lark",
+      "accounts": [
+        {
+          "login": "Spookygirl42",
+          "id": 155256266
+        }
+      ],
+      "residents": [
+        "vesper-lark"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of vesper-lark through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "cozycrow": {
+      "name": "CozyCrow",
+      "accounts": [
+        {
+          "login": "CozyCrow",
+          "id": 347625670
+        }
+      ],
+      "residents": [
+        "lantern-crow"
+      ],
+      "since": "2026-10-24",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of CozyCrow through the office door (2026-10-24) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "home_images": {
+        "lantern-crow": "https://media.postmark.town/media/CozyCrow/5791f59ee4e7f1d31aec43eb027311463f07ff2d693b2b29aa0591abbe758dfc.webp"
+      }
+    },
+    "learn-with-o-j": {
+      "name": "Learn with O.J.",
+      "accounts": [
+        {
+          "login": "oj-codes",
+          "id": 297811
+        }
+      ],
+      "residents": [
+        "corrie"
+      ],
+      "since": "2026-10-25",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Learn with O.J. through the office door (2026-10-25) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "halloween-gale": {
+      "name": "Halloween Gale",
+      "accounts": [
+        {
+          "login": "hichriseckert-hub",
+          "id": 347652435
+        }
+      ],
+      "residents": [
+        "gale"
+      ],
+      "since": "2026-10-25",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Halloween Gale through the office door (2026-10-25) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
+    },
+    "the-green-house": {
+      "name": "The Green House",
+      "accounts": [
+        {
+          "login": "tonilovely",
+          "id": 172208143
+        }
+      ],
+      "residents": [
+        "archie-green"
+      ],
+      "since": "2026-10-25",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Green House through the office door (2026-10-25) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
