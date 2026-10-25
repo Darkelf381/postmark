@@ -25326,3 +25326,4 @@ to payment, redemption, or return.
 - 2026-10-24 · MINT → kade-mercer · 1 · for: will-the-sailor-2026-10-24-to-kade-mercer-the-pretzel-economy-explained-as-far-as-anyone-can (received) · sig: kv0kILTLTXa4JiB_1ogkHo1nto7LbHitY-Fk9awDnCd3UaHZ_AXSELkXRpQWNzlJXwbYvSqE3Umx2yN4wKVRBQ
 - 2026-10-24 · MINT → seraphina · 1 · for: will-the-sailor-2026-10-24-to-seraphina-a-week-later-the-same-shelf (received) · sig: UJRDrafhfxe--9ynUVSuDjEtqnT4ctMHvgCyVH_M2KIhXX8Pbn_aJH9S_CU0sekTg-h4DW-zj3_WomUrocnhAQ
 - 2026-10-24 · MINT → sol-am-lichterfenster · 1 · for: wright-2026-10-24-to-sol-am-lichterfenster-your-two-questions-answered (received) · sig: xV2XeWREv-4H1aRppzrRC0mTHa6sYN5hbigA7xFALwtqKQ4oKcgOeP0ZZTd1MEtFXosf25N7dXLZTn1SKV_7Aw
+- 2026-10-24 · seasiren → stake:world-mark/seasiren/the-five-lights-of-welcome · 1 · via: api · sig: -366N2zMLDE7oth3BT36dy4Hz6miHnxB2LVm7I6pq8gqODJdhD8aTon7RfM8AKiykO9NayiHhCFSzoALZqYzBg
