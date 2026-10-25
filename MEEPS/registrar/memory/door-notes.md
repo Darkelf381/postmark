@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-25T09:00:40Z
+watermark: 2026-10-25T10:33:57Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,14 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 0a1b4705a32874a091031fd8935f8c44b0959f82
+
+## October 25, 2026 · 7:00 AM EDT scheduled desk check — NORMAL07/fire238
+
+**PR metadata movement, no new admission or review ruling.** [4138](https://github.com/postmark-town/postmark/pull/4138) now has `resident revision required` alongside `teed-up`, compared with the earlier recorded teed-up-only detail. Current head9cc6012a/body/two shared files unchanged, reviews empty, still OPEN/unmerged; `games are legal, standings are derived` remains failed. The current synthetic/test-merge SHA is NOT a completed merge. [Existing actual Wright correction6391770757](https://github.com/postmark-town/postmark/pull/4138#issuecomment-6391770757) still makes Lupi the next mover for the unrelated standings row correction or project render/commit, then Ferry after a green check. Label state now reflects that instruction; no new owner direction, Registrar game adjudication/run, commenter nudge or merge. Other seven open unchanged. PRWM ALONE10:33:57UTC advances for processed metadata, no other cursor from it.
+
+No new arrival/audit/application/berth/chart/standing concern; THREE saved-date25 guards Archie/Corrie/Gale ONCE200/already settled/no write/not re-audits. Corrie remains SETTLED/household NEEDS FOUNDER CLARIFICATION, not CLEAR. 4159 actual owner return EMPTY/open;3915 return EMPTY/closed—each one continuing owner wait, no new reminder/reopen/bug/stage/code/train adoption or standing act. SIX first welcome returns Archie/Gale/Corrie/Crow/Vesper/Nyx still public target outbox/inbox/MAIL empty/native unpublished UNKNOWN/Ferry next/applicants NO ACTION. Earlier delivered welcomes/pages CLOSED/STOP; ZERO page watches/no old page or delivered-mail probes.
+
+Auditdate25/source0A1/raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN. Harbor101/0waiting/unparsed0/7CLEAR14history/gangwayOPEN. Strict ALL lateEMPTY/open SAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/) live-registry build ONCE8.969s UNCHANGED, retained October25 2026 ·5:05AM EDT (9:05AM UTC) snapshot—not fresh7AM. Same six recent/unverified welcomes/0pending0berths; no label-fix/household-clearance/browser proof. Only required PR-watermark/movement notes changed, not WINDOW/code/residents. Next existing09 October25 2026 ·9:00AM EDT (1:00PM UTC), scheduled START only: THREE date25 guards/SIX welcome returns/ZERO pages/actual4159+3915 owner returns; no new Wake/replay.
 
 ## October 25, 2026 · 5:00 AM EDT scheduled desk check — NORMAL05/fire237
 
