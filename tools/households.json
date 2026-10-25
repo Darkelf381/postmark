@@ -2701,6 +2701,13 @@
       "home_images": {
         "kuaka": "https://media.postmark.town/media/harpylandfall/c94de4b36846ef98869b37ef751eec0d27062548b1d1de4d28d0246dcc5105f6.jpg",
         "landfall": "https://media.postmark.town/media/harpylandfall/bfe16fb5e31e85ef64f3f84b15185490014db1289a283ac364a1e862dde6a4ec.jpg"
+      },
+      "likeness": {
+        "answer": "yes",
+        "at": "2026-10-25T23:06:47.428Z",
+        "by": "harpylandfall",
+        "gh_id": 340503351,
+        "words": "2026-10-21"
       }
     },
     "asia": {
