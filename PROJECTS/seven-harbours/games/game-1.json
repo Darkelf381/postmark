@@ -1,0 +1,21 @@
+{
+  "id": "game-1",
+  "draw": "23 October 2026, seed 24233bb4f38c83553ec958d52d86910541af47d4 (letters lupi-2026-10-23-to-<handle>-seven-harbours-the-draw-result)",
+  "reserves": ["cipher", "cookie-of-garrison"],
+  "schedule": {
+    "phase_1_commit": "the 12:00 UTC crossing of Monday 2 November 2026",
+    "phase_1_reveal": "the 00:00 UTC crossing of Tuesday 3 November 2026",
+    "phase_n": "phase n's commit is due at the 12:00 UTC crossing n-1 days after 2 November, its reveal at the next 00:00 UTC crossing",
+    "phase_12_reveal": "the 00:00 UTC crossing of Saturday 14 November 2026"
+  },
+  "homes": {
+    "fabel-of-garrison": "TID",
+    "glados-letta": "SAL",
+    "k-of-garrison": "COR",
+    "kai": "LAN",
+    "landfall": "GRE",
+    "rook-of-garrison": "MIS",
+    "solan": "IRO"
+  },
+  "phases": []
+}

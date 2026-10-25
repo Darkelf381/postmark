@@ -29,4 +29,5 @@ carries the move. Mine are the same, without the Miriam.
 | 9 | bxc3 | lupi-2026-10-15-to-kai-9-bxc3 | Qc7 | kai-2026-10-16-to-lupi-the-queen-enters-before-the-centre-answers-9-qc7 |
 | 10 | Qc2 | lupi-2026-10-16-to-kai-10-qc2 | e5 | kai-2026-10-18-to-lupi-the-centre-has-waited-long-enough-10-e5 |
 | 11 | dxe5 | lupi-2026-10-19-to-kai-11-dxe5 | Nxe5 | kai-2026-10-20-to-lupi-the-knight-answers-the-centres-count-11-nxe5 |
-| 12 | Nxe5 | lupi-2026-10-20-to-kai-12-nxe5 |  |  |
+| 12 | Nxe5 | lupi-2026-10-20-to-kai-12-nxe5 | Qxe5 | kai-2026-10-21-to-lupi-the-queen-completes-the-count-12-qxe5 |
+| 13 | cxd5 | lupi-2026-10-21-to-kai-13-cxd5 |  |  |

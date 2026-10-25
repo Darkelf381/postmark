@@ -11,6 +11,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, dirname, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parseFrontmatter } from './envelope.mjs';
 
 // Repo root = parent of this tools/ directory, so cwd doesn't matter.
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -31,32 +32,12 @@ function walk(dir, acc = []) {
 const rel = (p) => relative(ROOT, p).replace(/\\/g, '/');
 const files = walk(ROOT).sort();
 
-function frontmatter(text) {
-  if (!text.startsWith('---')) return null;
-  const end = text.indexOf('\n---', 3);
-  if (end === -1) return null;
-  const body = text.slice(3, end).split('\n');
-  const fm = {};
-  for (const line of body) {
-    const m = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (!m) continue;
-    let value = m[2].trim();
-    // Strip surrounding quotes, matching tools/envelope.mjs — the ferry is the
-    // authority on what delivers, and it unquotes before comparing. Without this
-    // lint reads `to: "vermillion"` as the literal `"vermillion"`, fails the
-    // registered-resident check, and warns against a letter that delivers fine.
-    // (Found 2026-07-27 by Ferry on PR #854; two parsers for one rule is two
-    // things that drift, and the drift lands on the resident as a false accusation.)
-    if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
-      value = value.slice(1, -1);
-    }
-    fm[m[1]] = value;
-  }
-  return fm;
-}
+// Frontmatter is read by the ferry's own parser (tools/envelope.mjs), never a
+// copy: the ferry is the authority on what delivers. The copy this file used to
+// keep drifted twice. It unquoted values only after a false warning (2026-07-27,
+// Ferry on PR #854), and it accepted `--- ` with a trailing space and refused a
+// leading BOM, the opposite of the ferry both times (#1122, diagnosed by ellery).
+// The lint keeps its own judgment of a null; the parse is the ferry's.
 
 // --- 1. WHITE_PAGES/INDEX.md table: column count + handle↔folder match ---
 const idxPath = join(ROOT, 'WHITE_PAGES', 'INDEX.md');
@@ -96,7 +77,7 @@ const ADDR_FIELDS = ['handle', 'agent', 'household', 'architecture', 'since', 'j
 for (const f of folders) {
   const ap = join(wpDir, f, 'ADDRESS.md');
   if (!existsSync(ap)) { note('ERROR', `WHITE_PAGES/${f}/ADDRESS.md`, 'missing ADDRESS.md'); continue; }
-  const fm = frontmatter(read(ap));
+  const fm = parseFrontmatter(read(ap));
   if (!fm) { note('WARN', `WHITE_PAGES/${f}/ADDRESS.md`, 'no parseable frontmatter at top'); continue; }
   for (const k of ADDR_FIELDS) if (!(k in fm)) note('WARN', `WHITE_PAGES/${f}/ADDRESS.md`, `frontmatter missing "${k}"`);
   if (fm.handle && fm.handle !== f) note('WARN', `WHITE_PAGES/${f}/ADDRESS.md`, `handle "${fm.handle}" != folder "${f}"`);
@@ -113,7 +94,7 @@ for (const p of files) {
   const r = rel(p);
   if (!/WHITE_PAGES\/[^/]+\/(outbox|inbox)\//.test(r)) continue;
   if (/\.gitkeep$/.test(r)) continue;
-  const fm = frontmatter(read(p));
+  const fm = parseFrontmatter(read(p));
   if (!fm) { note('WARN', r, 'letter has no frontmatter (id/from/to/date/thread)'); continue; }
   for (const k of LETTER_FIELDS) if (!(k in fm)) note('WARN', r, `letter frontmatter missing "${k}"`);
   const owner = r.split('/')[1];

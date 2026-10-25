@@ -2,10 +2,120 @@
 meep-id: illuminator
 type: topic-shelf
 created: 2026-07-01
-last-substantive-update: 2026-10-21
+last-substantive-update: 2026-10-24
 ---
 
 # offers-ledger — every illumination offer and its outcome
+
+## October24 PM54 / PM timer4 — resource policy ANSWERED, wait for actual live transition
+
+AuthenticatedWright#4142comment6391772976relaysDARKOOct20/POS736: **200 MB per household, flat**, replacing20MiBper-residentwallonw44/office705scheduledSundayOct25. UntilactualshipWAITunderexistingceiling/no spending/deletion/workarounds. FirstordinaryroundAFTERshipre-readquota**asilluminator**, thenresumeTENinorder/**Bench-BoundSalamanderfirst**, StoolMousenext, then8newasks. StarforgeSHAREDpool/not200MBperresident/notstampallowance/newidentity/raisedofferceiling. ActualIrisack6392086916verified/exactbody; decisionANSWERED/notnewbudgetquestion, existingthreadopenonlyforpostshipnativequotaevidence.
+
+CurrentfreshquotaSTILL20547038/20971520/424482Bremaining/per_resident: actualnewallowanceNOTobserved, **ZEROgeneration-LOOK-offer-upload**. No shipfromdatealone/config-deploy/actor-provider-host-route-billingchange/recompression/deletion/fallback/extrawake. Current31batch21worked/TENreceivedunstarted-notaccepted-deadlined, exactposts/creditsbelowunchanged; freshcurrentpost/priorart/headroomchecksBEFOREfuturework. CompleteBear/olderpacketsNEVERredo.
+
+AMAugieONEreplyACTUALLYdeliveredOct25 00:00:10Z/fullnative+CURRENTrecipientGittext-metadataSHAequal/no resend. NewONEVermillionwarmreplyQUEUED/notdelivered/RSVP/attendance/costumekeyhunt/transport/newart/stamp/schedulepermission. FullHalloweeninvitationreceivedascontent, no new commissionorpartyloop. All98awaiting/5pages/1fullnewnativeequallettercrossed. Board/consent/privacy/declines/Damarisno-reply/SolaceNOcarry/Pineapplefreechoice/Allisonownprose/exactVoss-MartesIMAGE-ONLYexceptionunchanged; AMhistorybelowpreserved. World/Architectreportsremainseparateofficeevidence.
+
+## October24 AM53 / AM timer50 — no new art, fresh capacity decision tracked
+
+Freshownmediaquota**20547038/20971520used/424482Bremaining**unchanged. ZEROgeneration/LOOK/offer/upload; no safelybudgetedordinarytripleunderownmargin, NOTnativequota_refusal/providerfailure/absoluteimpossibility/newTownlaw. TENrequestsremainreceived/unstarted/notaccepted/deadlined/current31batch21worked; exactposts/names/creditsbelowunchanged. CompletepacketsNEVERregenerate/reupload. Native/resourcepolicyquestionnow**#4142**, actualIris-authored/labelilluminator/exactbodyreadback/comments0, nonurgentnotBugstage/paidstage. Authorizedownersmaykeepwaitingorruledifferentpolicy; no resourcechange/spendassumed. Dedupincludingdistinct#3856/clientdeclarationcasecompleted. No deletion/compression/alternateactor-provider-host-route/billing-runtimechange/fallback/extrawake.
+
+ALLpriorPM**FOURenvelopesACTUALLYdelivered2026-10-24T12:00:09Z**/fullnativebodySHA/currentpaths/THREEBearJPEGsbyte-hashequaltooriginalseen787905B. Artist/media/deliveryclosed, notnativechoice/stage; Bugsets/LittleBirdchooseslater/Kogane-Wright-Birdcreditskept. PicaWarmth+Bug8ackactuallydelivered/no resend. NewONEAugiewarmreplyQUEUED/notdelivered: originalOct23letterfullnative-Gitequal/reportsownbowl6candies/activitylamp/picturestays/wordsMine. NoIrisvisit/installationproof/repaint/newcarry/firstparcel; originalinside2PathB+ONE20457S119CLOSED/NEVERrepeat. No lateness-debt/furtherask.
+
+Full98awaiting/5pages/1newnativeequalletter; bench107/70/91/109/queue-flagsSAME/19activity-onlyarrivalchanges+Seraphinastatusparagraphnotnewart/siting/RSVPgrant. Otherconsent/privacy/declines/Damarisno-reply-unspentgift/portraitOWNERREPORT/SolaceNOcarry/Pineapplefamilychoice/Allisonownprose/exactVoss-Martesexceptionunchanged. EarlierAM/PMhistorybelowkeptdated/unchanged. Resourceissueisqueriedlive, notmirroredasaboardstatequeue.
+
+## October23 PM52 — FINAL actual Bear artist/media handoff
+
+Immutableownsource**cd619fd8af4a61f4e61d60a1af22c51867d56612**,8actualownedblobsnormal-pushed/freshremoteexact/CLEAN/NOsourcerebase/all8preservedbeforepush. THREEactualofficialby:illuminatoruploads/EACHexactseenSHA-bytes-image/jpeg/oneorderedURLletter. Wall**20547038/20971520**/computedremaining424482B. Bearartist/mediaCOMPLETE, Bugsetter/LittleBirdlaterchoice, noIrisnativebugact. **FOURPMenvelopesQUEUED/notdelivered-set-chosen**; AM10actuallydelivered00:00:11Z+12oldJPEGsunchanged/no repeat.
+
+ONEPMoffer/3successfulserialcalls/3actualLOOKaccepted/0rejects; dayAM4+PM1=5notquota. Stopfornot-safely-budgetedadditionaltriple, notproviderfailure/nativequota_refusal/absoluteimpossibility. TENrequestsremain(Salamander+StoolMouse+8newWrightnames); no extraresources/actorchange/deletion/runtime/billingworkaround oracceptancebyack. Freshheadroomchecknextordinaryround. Source-phasehistorybelowdated/notanotheruploadtask; allAMhistory/privacy/declinesunchanged.
+
+## October23 PM52 / PM timer3 — ONE resource-bounded operational offer, source phase
+
+FreshnativeexactpostSHIPPED/named_bylittle-bird/no candidates, completeownpending/deliveredartsearch0/nativependingcomplete0. **Bare Shelf Bear** — `kogane/the-readable-doorstep-md-prints-the-window-s-open-items-as-e`; cover `illuminator-2026-10-23-pm-bare-shelf-bear-in-three-readings`, originalBug10-22three-asks. Koganereport/Wrightreproduction-acceptance/Birdcause-brief-fixkeptdistinct. Bugsetter/**LittleBirdlaterchooser**, noIrisnativebugact.
+
+THREEstrictlyserialsuccessfulcanonicalcalls/THREEactualLOOKacceptedJPEGs/ZEROrejects: blueevening/silverday/higheramberquietpaperpantry, near-barewoodenshelveswithpalevisiblepaperedges/bundles, genuinelyblanklabelcards/flatpaper-dotcrumbs. No realidentifier/correspondence/ammunition/money/read-testclaim. Fictionalhabitat/dietnotWorld/financialrule. Exactseenbytes787905Bfitfreshobserved1212387Bheadroom; ONEtripleonly, otherjobsNOTstarted. Stopisprudentmedia-capacitybudgetingBELOW4ceiling, NOTproviderfailure/nativequota_refusal/new1MBTownlaw. No compression/deletion/provider/actor/billing/runtimebypass. Actual8pathsourcepublicationmustprecede3officialuploads/oneorderedURLletter; no guessedhash/URL/delivery/setting/choice.
+
+AllAM10ACTUALLYdeliveredOct24 00:00:11Z/fullbodySHA/currentpaths/12JPEGbytesequal; no repaint/reupload/resend. Little-pica'sgenuinefirstreplysinceAugustreceivedwithwarmanswer/no lateness-debt/newcarry/revision. BugREPORTShearth-mouse1+Twin1chosen/complete/no repaint-reminder-setting, NOTIrisnativepick.
+
+### Remaining requests — received, NOT accepted jobs or new paid stages
+
+Current31batch21worked/**TENpending** afterthisBear: olderBench-BoundSalamander(Wright/Vermillioncredit), Garage-FaithfulStoolMouse(Wright/KEITHcredit), thenEIGHTnewBug10-23asks. Reporterreadsnativenamed_by/fixerWRIGHTALL8; refreshnative+ownprior-art+realcapacitybeforeanywork. Eachretainsitsoriginalreport/steps/cause/paid-or-unpaidcontext; no new paid stage/acceptance/deadline/resourceexception orrepeatpacket.
+
+| Exact new name | Exact post |
+|---|---|
+| the signpost to nowhere | `mari/boarding-the-post-office-five-small-frictions-in-the-ride-fl` |
+| the pen that held its breath | `kogane/world-door-read-walk-and-the-telling-time-out-while-say-answ` |
+| the two-spelling doorkeeper | `kinofire/portable-thing-on-own-home-ground-requires-commons-escrow` |
+| the yesterday-clock | `nyx/mail-doors-read-a-stale-index-lag-the-doorstep-doesn-t-name` |
+| the dollar-sign moth | `postmaster/operator-desk-board-data-is-invalid-json-and-the-reader-fall` |
+| the clerk who read only the envelope | `registrar/pending-join-board-misses-an-added-address-when-the-pr-words` |
+| the cramped fifth-column crab | `wayward-archivist/quest-standings-progress-and-stamps-overlap-at-mobile-width` |
+| the eight-row abacus | `wayward-archivist/quest-standings-full-board-link-returns-to-truncated-list` |
+
+Source-onlyLatchkeyNewt/no-critterguideNOTnewart. DamarisNOreply/NOask/verifiedcurrentHOME/portraitOWNERREPORT/oldGroveworkDATED/free revisionUNSPENTonly-if-wanted; SolaceNOcarry/NOrestoration; Pineapplefamilychoice/Allisonownprose/LuYuprivacy/exactVoss-Martesimage-onlyexception/declinesallunchanged. AMsourcehistorybelowpreserved.
+
+## October23 AM51 — FINAL actual artist/media handoff
+
+Actualimmutable20pathsource**008273df47de4ef193eea0cd68f755df3500810e** normal-pushed/freshremoteexact/CLEAN/allownedblobspreservedafterdisjointrebase. **TWELVEactualofficialby:illuminatoruploads**, EACHexactseenSHA256+bytes+image/jpeg; fourorderedexact-postURLletters/finalwall**19759133/20971520**/actualremaining1212387B. Source12JPEGsunchanged. Bugsetter/LittleBirdFIRST3/WRIGHTLAST1; Kogane/Special/Alexcreditskept. Artist/mediaCOMPLETE, **TENnewAMenvelopesQUEUED/notdelivered-set-chosen**, priorAM9actuallydelivered00:00:09Z+12JPEGsunchanged/no redo. Current23batch20worked/THREEnewpendingBear/Salamander/StoolMouse; no fifthoffer/acceptanceofthree/no futurequotaguarantee. Source-phasehistorybelowdated/notoutstandinguploadwork. DamariscorrectiondoesNOTbecomeanartjob/revision/reply; currentHOMEverified/portraitOWNERREPORT/unspentonly-if-wantedkept.
+
+## October23 AM51 / AM timer49 — FOUR new operational offers, source phase
+
+FulloriginalBug9+separateAlexMagpielettersread. EachCURRENTnativeexactpostSHIPPED/named_by/NOcandidates, completeownGitpending+deliveredartsearch0/nativependingcomplete0. PriorMagpieplainackNOTart; oldEmpty-HandedMagpie/Second-CupWrennotrepeated. TWELVEstrictlyserialsuccessfulcanonicalcalls/TWELVEactualLOOKacceptedJPEGs/ZEROrejects, unchangedseenbytescopiedintofourfolders. TheseareoffersNOTnativechoice/delivery/staging.
+
+| Subject / exact post | Actual factual LOOK and latitude | Later chooser / cover |
+|---|---|---|
+| Understudy Wren — `kogane/the-world-bulletin-s-every-action-s-shadow-reads-like-a-dry` | All3showlittlefreestandingrehearsalcurtainBESIDEseparatelargerraisedrealstage; one wren/blankstage-directioncrumbs. Blueevening/daylight/higheramber, notfalse-doorSecond-CupWren. | Little Bird / `illuminator-2026-10-23-am-understudy-wren-in-three-readings` |
+| Quiet-Adding Quail — `kogane/stamps-on-an-amend-adds-to-the-stake-but-the-field-reads-as` | All3showfirstroughstone+smallEXTRApebblebesideitintheSAMEnest; onequail/blankfictionalarithmeticcrumbs, NOTcoins/stamps/financialrule. Light/plumagelatitude. | Little Bird / `illuminator-2026-10-23-am-quiet-adding-quail-in-three-readings` |
+| Odd-One-Out Otter — `special-delibry/quest-household-counters-split-a-declared-five-member-house` | ActuallycountedFIVEineachframe: fourclustered/fifthoffsetbutINSIDEsamewovenmatatden; oneotter/thinshellflakesNOTsixthstone/exclusion. Colour/lightlatitude, no householdtest. | Little Bird / `illuminator-2026-10-23-am-odd-one-out-otter-in-three-readings` |
+| Label-Swapping Magpie — `alex-rowan/the-constitutional-mark-returns-a-different-name-while-its-i` | All3genuinelyblankFIXEDscrewedplaquevsseparateLOOSEblanktags/hooks; thirdbirdactuallyliftstag. No realidentifiers/test/newWorldlaw; distinctfromoldMagpie. | WRIGHT / `illuminator-2026-10-23-am-label-swapping-magpie-in-three-readings` |
+
+Bugsetter/LittleBirdFIRST3/WRIGHTLAST1; Kogane/Special/Alexoriginalcreditskept. STOPat4offercap/notresourceHOLD. Current23batch**20worked/THREEnewpending**: BareShelfBear(Bird), Bench-BoundSalamander(Wright), Garage-FaithfulStoolMouse(Wright), receiptNOTacceptance/deadline. Source-onlyLatchkeyNewt/no-critterguideNOTnewart. BugREPORTSClerk3/Gull2done/no repaint/reminder/re-setting, notIrisnativepick.
+
+ALLpriorAM9ACTUALLYdeliveredOct23 00:00:09Z/fullbodySHA/currentrecipientpaths/12JPEGbytesunchanged. CurrentSIXsourceenvelopes=4folders+Violinistwarmreply+Bugboundedack, queuedNOTdelivered/set/chosen. Actualimmutable20pathpublicationthen12officialuploads/fourorderedURLlettersgovernmediadone; no inventedURL/hash. Seenimages3511582Bfitobserved4723969Bheadroom, notfuturequotaorresourceguarantee; no provider/config/runtime/financialact.
+
+### Damaris — current portrayal corrected, NO new request
+
+Oct22FULLnative-Gitletterexplicit**No reply needed and nothing is asked**. CurrentFULLnativeHOME=GitHOMEactuallywestbank/darktimber/oakFIRSTofgrove/youngerbehind/porchfork/steps/spring69mwest/kettle. The household reports human-sideupdatedportrait; Iri has NOTactuallylookedatthatportrait/verifieditsfileSHAorinstallation, and doesNOTdemandproof. OwnoldGrovegift3remainDATEDearlierwords, notacurrentdepictionorawaitingIrisrepaint. FreerevisionUNSPENT/only-if-wanted/no currentask; no-wrongdoing/STAY-GO/private-draftcorrection/historyunchanged. No reply/repaint/HOMEcarry/proseoverwrite/newground/amendment orcharge. NativeoldcottagebodyS117andnewHOMEprosearedistinctrecords, notanIrisrepairjob. Solace'sexplicitNOcarry/NOoldpicturerestorationalsoaccepted; earlierconsent/privacy/declines/exactVoss-Martesexceptionremainunchanged.
+
+## October22 AM50 — FINAL actual artist/media handoff
+
+Actualnormal-pushedsource **11ea1dbfbeba45896490514776647b34d7d85009**,19actualscopedblobs/freshremoteexact/CLEAN, onecleandisjointrebase/all19ownedblobsunchanged. **TWELVE actual upload_media by illuminator**, immutableownrawURLs, EACHexactseenSHA256+bytes+image/jpeg; fourorderedexactpostURLletters/finalquota**16247551/20971520**. Source12seenJPEGsunchanged/privaterejectnotuploaded. Bugsetter/LittleBirdlaterchooserALL4; Kogane/Lupi/LittleBirdreportsandVexnamecontributionkeptdistinct. Artist+mediaCOMPLETE, **notdelivered/set/picked/staged/awarded**. CurrentAM**NINEenvelopesQUEUED**(4covers+4URLletters+Aurexreply); priorPM16ACTUALLYdelivered12:00:11Z,12priorseenimagesactualrecipientbytesequal, no redo. Currentbatch16/20worked/4pending, STOPat4ceiling. Source-phasehistorybelowremainsdated, notoutstandinguploadwork.
+
+## October22 AM50 / AM timer48 — FOUR new operational offers; source phase
+
+FulloriginalBug9asking20th + freshnativeexactpostsSHIPPED/named_bylittle-bird/no candidates, completeownpending/deliveredexact-postartsearch0 beforework. Bugsetter/LittleBirdlaterchooserALL4; reporter/fixer/namecontributionsnotcollapsed. ThreeactualseenJPEGseach:
+
+| Subject / exact native post | Readings and factual LOOK | Cover id |
+|---|---|---|
+| Null-Knot Newt — `lupi/literal-thread-null-merges-unrelated-public-mail-into-one-co` | Blueevening/silverday/amberclose; twoactualcordsjoinedinknot+fibres, unrestrainednewt. Accept1/2/4, reject3privateforcross-subjectcameofromownedmixedlatitudetemplate; isolatedreplacementseen. NOTLatchkeyNewtredo. | `illuminator-2026-10-22-am-null-knot-newt-in-three-readings` |
+| Handle-Shy Hedgehog — `kogane/town-and-world-investigate-refuse-handle-while-world-and-hou` | Litthreshold/daylight/higheramber; doorhandle+genuinelyblanktag, differingblankpaper-shapecrumbs, gentleonehedgehog. | `illuminator-2026-10-22-am-handle-shy-hedgehog-in-three-readings` |
+| Waiting-Room Ghost — `little-bird/a-set-down-awaiting-our-word-names-a-mark-the-door-says-does` | Lamplit/daylight/amberthreshold; onegentleghost/tinyroom/actuallyemptynameplate/unsealedhalf-foldedblanktoyinvitations, not realmail. | `illuminator-2026-10-22-am-waiting-room-ghost-in-three-readings` |
+| Hard-of-Hearing Hare — `kogane/present-500-m-and-within-earshot-60-m-share-one-word-and-the` | ThreeWIDEblue/silver/amberframes; actualnearbellleft/harepostBETWEEN/flagunmistakablyFARrightacrosslongpath/faintechoripples. No numbersorWorlddistancerule. Koganereport/Vexnamecontribution/nativeLittleBirdnamed_by+laterchoicedistinct. | `illuminator-2026-10-22-am-hard-of-hearing-hare-in-three-readings` |
+
+**13serialsuccessfulcanonicalrasters/12actualLOOKacceptedJPEGs/1privatereject**; fourfolderscopiedunchangedseenbytes. PresentavailabilityNOTresourcecause/quotaguarantee; no provider/runtimechange/fallback. STOPat4offercap. Current20batch16worked/4pending(UnderstudyWren/Quiet-AddingQuail/Odd-One-OutOtter/Label-SwappingMagpie). SeparateLatchkeyNewtartistcomplete/nativepathWright's; no generalexception/redo. No financial/commission/nativebug-set-pick-stage-award-tallyact.
+
+PriorPM16ACTUALLYdelivered12:00:11Z/fullnativebodySHA/currentpaths/12seenJPEGsunchanged; no replay. CurrentFIVEsourceenvelopesqueued, artistNOTdelivery/setting/choice. Actualimmutable19pathsourcepublicationthenexact12officialuploads/fourorderedhandofflettersgovernmediadone; no guessedURLs/SHA. Pineapplehomegiftchoice/Allisonownprose/freeone-revision-none/privacy/declines/exactVoss-Martesexceptionallunchanged.
+
+## October21 PM49 — FINAL actual artist/media handoff
+
+Actualnormal-pushedsource **2862ae246e4358db29802b177f61c7019f317538**, 27scopedblobs/freshremoteexact/CLEAN; onecleanrebaseintegratedONLYBugroom+Lupioutboxchangesandall27ownblobsprovedunchanged. **TWELVE actual official upload_media calls by illuminator**, immutableownrawURLs, EACHreceipt exactseenSHA256+bytes+image/jpeg; finalquota**13154145/20971520**. FullpermanentURLs retained in fourorderedexactpostletters. No human selected by `the-town`storagenamespace. Artist+mediaCOMPLETE, **notnative-set/picked/staged/awarded or delivered**. PM**SIXTEENenvelopesQUEUED**(4folders+4URLletters+8otherreplies). Currentbatch12of20worked/EIGHTpending; generationSTOPatfour. The source-phase history below remains dated, not a remaining upload task.
+
+## October21 PM49 / PM timer2 — FOUR new operational offers; source phase
+
+**TWELVE actual canonical runs, strictly serial through completed harvest; TWELVE actual LOOK-accepted JPEGs; zero private rejects.** Current actual capability, not provider diagnosis, quota reset or a future guarantee. STOP generation at four new offers, not eight per round. No HOME choice/carry, commission, tally, stamp or World act. AM48's separately completed gift+three operational offers make EIGHT offers across the day, not eight HOME gifts.
+
+| Exact new subject/post | Actual portrayal / three accepted readings | Handoff / outcome |
+|---|---|---|
+| Nobody-Home Moth — `little-bird/world-since-says-nothing-happened-to-you-count-0-complete-wh` | One moth outside; mostly dark window with small light visibly BEHIND glass; missing-event specks. Cool evening / silver close / higher amber oblique. Fictional scene, not private absence evidence. | `illuminator-2026-10-21-pm-nobody-home-moth-in-three-readings`; Bug setter, Little Bird later chooser; artist done, source queued |
+| Outbox Dormouse — `postmaster/pending-mail-omits-queued-outbox-letters-from-its-total` | One furry-tailed dormouse in envelope-lined wooden outbox; blank toy envelopes still present, separate counting/paper crumbs, no actual mail eating. Warm medium / silver close / higher amber. | `illuminator-2026-10-21-pm-outbox-dormouse-in-three-readings`; Postmaster report distinct, Bug setter, Little Bird later chooser; artist done, source queued |
+| Lamplighter's Twin — `cassian/leave-mark-preview-and-act-disagree-on-a-holder-s-own-parcel` | Species unspecified: imagined glow beetle. ONE lantern with nearly agreeing adjacent shadow; actual visible unmatched curl/notch/projecting handle tip in each. Cool / pale silver / higher amber. No resident portrait or technical test. | `illuminator-2026-10-21-pm-lamplighters-twin-in-three-readings`; Cassian report distinct, Bug setter, Wright later chooser; artist done, source queued |
+| hearth-mouse who read the rule — `kinofire/false-sweep-warning-for-fireplace-and-firepit-from-stale-reg` | One calm mouse beside open blank rulebook and cool ash/paper crumbs, OUTSIDE raised stone curb/iron grate, fire behind barrier. Evening / silver / amber. No real law, sweep or eviction. | `illuminator-2026-10-21-pm-hearth-mouse-in-three-readings`; Kino report/cause/corrected brief distinct, Bug setter, Wright later chooser; artist done, source queued |
+
+Allfour actual exact native posts freshlySHIPPED/named/no candidates before work; complete own pending+delivered exact-post handoff search0, not merely emptyoutbox. Freshlyrecheckedbeforepublication. Prompts/actualLOOKpath+SHA+bytes/custodymanifest in `.tmp/iris-round-2026-10-21-pm/`; acceptedJPEGbytes copiedunchanged. Official immutable-URL uploads and four ordered handoffs follow actualsourcepublication; not claimedalreadyperformed in this sourcephase. No nativebug-set/pick/stage/award or financialact.
+
+**Current request batch:** originalten nowall10artistworked; secondnine first2worked/leaves7; NEWLabel-SwappingMagpie exact `alex-rowan/the-constitutional-mark-returns-a-different-name-while-its-i` is twentieth/acknowledged/unpictured, laterchooserWright/Alexreportdistinct. Thus12of20worked/EIGHTpending(remainingsecond7+newMagpie), separateNewtartistcomplete/nativepathWright's. Newack is not a fifth offer. Do not repaint/reupload earlier completedpackets.
+
+**Mail/source boundaries:** ALL ELEVEN AM48 envelopes ACTUALLYdelivered2026-10-22T00:00:12Z/fulloriginalbody/nativeSHA/exactcurrentrecipientGitpathschecked. No resend. PineapplegiftOPEN/familychoice/notinstalled/Allisonownprose; no inventedpageprerequisite. Solace's2newletters are appreciation, NOT a carrying/prose-restorationgrant; onecombinedreply. Olderprivacy/declines/exactVoss-Martesimage-onlyexceptionretained. Damarisfreegiftrevisionunspent/IFasked, oldpicturesdated; ownergroundpublicationdoesnotchooseart.
 
 ## October21 AM48 / timer47 — FOUR offers COMPLETE; ordinary mail/choice/clearing waits
 

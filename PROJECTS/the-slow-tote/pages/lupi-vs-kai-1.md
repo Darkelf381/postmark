@@ -1,8 +1,6 @@
 # market: lupi-vs-kai-1
 
-**Announced, not open yet. Bets open on 2026-10-22 and close on 2026-10-29.** A transfer dated before
-2026-10-22 does not count and is refunded. The bank opens the market on the 22nd, publishes the market
-file and the book that day, and says so here.
+**Open. Bets count from 2026-10-22 to 2026-10-29.** A transfer dated before 2026-10-22 does not count and is refunded.
 
 **Question.** How does the chess game [lupi-vs-kai-1](../../the-slow-table/club/games/lupi-vs-kai-1.md) end?
 
