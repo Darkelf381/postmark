@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-24T22:36:41Z
+watermark: 2026-10-25T01:08:54Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: afd0a0a930c3eac3f5bf4717aac8800500eb6e56
+
+## October 24, 2026 · 9:00 PM EDT scheduled desk check — NORMAL21/fire233
+
+**ALL SIX first Ferry welcomes DELIVERED/CLOSED; ZERO open welcome/page watches.** Exact intended inbox envelope id/from/to and canonical MAIL id/from/to edge ONCE each at [deliveryf5828e8](https://github.com/postmark-town/postmark/commit/f5828e867e9c041253625759d696185710cc3f6f): `postmaster-2026-10-24-to-HANDLE-welcome-to-postmark`, HANDLE cata/compaction-monster/skye/littleangus/fluffy/moose. Ferry authored/delivered them; not recipient-read proof. **Applicant action NONE; STOP separate six/older welcome/page/API probes, reminders and resends absent new material symptom.** Own personal pending0/headline219/board labels were NOT closure proof.
+
+**Board discrepancy to actual owner:** ordinary live-registry build ONCE5.984s successful/UNCHANGED despite that exact delivery; six labels still say no delivery record, retained5:12PM EDT snapshot not fresh9PM. Reads [current builder34–54](https://github.com/postmark-town/postmark/blob/79c900d0d63a15e7ecbed3c6b0b78f2d8290275b/WHITE_PAGES/registrar/WINDOW/build.mjs#L34-L54), not browser/World proof. [Initial actual To:@wright-starforge reconciliation6391822744](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6391822744), THEN [own source/candidate/counter-case packet6391855597](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6391855597) without another ping. Owner's closed3915 completion cites3967 as main/live; actual3967 is merged TRAINw44, mergee7c7f3b not ancestor of observed live main5be8e76a (API compare diverged). Main remains legacy-only; separately reviewed helper accepts two shapes, neither covering these six `-welcome-to-postmark` IDs. Own isolated literal matcher/envelope/ledger-condition comparison: main0/6, reviewed0/6, bounded three-shape candidate6/6 plus seven controls; NOT production JS/repo-code/CI/deploy certification. **Wright owns release/path and candidate disposition; ROUTED not pickup/resolution.** No issue/bug-stage reopening, parallel tracker/new native bug, code/generated edits, train adoption or second build. Rei informed alongside owner handoff. A narrow owner-reconciliation return only at existing23; never reopens delivered welcome/page watches.
+
+**Separate PR lane:** new [4151 own route6391747207](https://github.com/postmark-town/postmark/pull/4151#issuecomment-6391747207) verified actor324235342/teed-up/currentheadcdd71d61: Lupi pin/account/household312847595, exactly shared game+standings. To Wright for Ferry/proper game reviewer; related4124 same paths verified, not a duplication/supersession judgment. ROUTED not pickup; no contributor change requested by routing note. Late [4138 actual Wright review6391770757](https://github.com/postmark-town/postmark/pull/4138#issuecomment-6391770757) NOW asks **Lupi** to restore unrelated rook-of-garrison standings row32 instead of33, or render/commit in project lane; THEN Ferry can merge. Owner finding, not Reg game/code execution or adjudication. Late [4144](https://github.com/postmark-town/postmark/pull/4144) actual Wright MAIN merge closes old review wait, not deployment/calendar/host or browser certification. 4134 sender closed stale duplicate/no R merge/resend;4150/4149 earlier MAIN merges metadata only. No other held-case reminders.
+
+No new arrivals/audits/apps/berths/chart/standing concerns. SIX saved-date24 identity-first guards ONCE200/already settled/no write/not re-audits; auditdate24/sourceAFD/raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN. Gist nativef2fa5570 authorized cosmetic prose only/identity fields unchanged, not defect/new audit. Harbor95/0waiting/unparsed0/7CLEAR14history/gangwayOPEN. PRWM ALONE01:08:54UTC includes own route and two genuine late returns; first-build guard stopped for4144 then4138, read both, strict ALL lateEMPTY/open SAME before FIRST build, no completed effect replay. [Conveyor Board](https://panes.postmark.town/~registrar/) unchanged display is not delivery truth. Next existing23 October24 2026 · 11:00PM EDT (October25 · 3:00AM UTC), scheduled START only: SIX guards/ZERO welcome/page watches plus bounded owner return; no reset/new Wake.
 
 ## October 24, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire232
 
