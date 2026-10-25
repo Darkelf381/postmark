@@ -8,6 +8,21 @@ last-updated: 2026-10-25
 
 # Holds and quarantine ledger
 
+## 2026-10-25 fire70 — separate World refusal and served-withdrawal finding
+
+|Item|State / scope|Evidence / next needed|
+|---|---|---|
+|S131 World|HOLD; no own S131tag, S130canon|Boxrampred213; exactActions40219317308attempt1TWOreds227/598,2012/2006pass2fail4actualskips/realbrowser. WorldunblockthroughVerm, no residentrollback/blindfixturediagnosis.|
+|Ramp predicate|FAILED, not fullground-rule diagnosis|creatures.test186/194,wolf2611keeptrueexpectedfalse; laterassertionsnotcredited.|
+|Lately ordering|FAILED in requiredWORLDsuitebrowsercoverage|lately-more-on-the-page214/250,row7todayafter26Oct; preserveordering/append/uniqueness, notSitewaiver.|
+|Leo canonicalwithdrawal|COMPLETEinS130/historyretained|Original24005/file+rawfoldabsent, notnewlyreversedbyredS131.|
+|Leo CURRENTservedremoval|NOTproved; versionisnowS130butoldordinarymarkpersists|Saved2026-10-25T18:25:20.469Zcurrent/staged/S130havehousebody/geometry/no withdrawnflag; rawS130absent. worldkeeper-2026-10-25-to-wright-s131-world-suite-hold-and-leo-projection; repairprojectiononS130/notredS131/no repeatact/historyerasure.|
+|S130servedVERSION|OBSERVEDcurrent, priorversiongapclosedonly|Build2026-10-25T18:21:57.371Z/CURRENT130, notfullSite/CI/rawbyte/uncachedDB/permanentproof. S131404expectedunblessed.|
+|Leo receipt/ownerhandoff|Eachdelivered12:00:10Z, notread/answered|No duplicateLeoletter, newownerfindingletterpublicaftercloseoutnotyetferried.|
+|Vespercottage originalsource|NOTmatchedinavailableexportatthisaudit|Record17:50:11.182Z, originalcorrespondenceunverified; individualnextaudit/proofnotresidentredo.|
+|WildcatHopper originalsource|SeparatelyNOTmatchedinavailableexportatthisaudit|Record17:53:14.596Z, ownoriginalmatchneeded; no genericpendingbundle.|
+|Globalopposed-actread|CompleteboundaryUNSET,notzero/assent|Available310rowsnoopposed/caseact; exactOct9→cursor/supersedingstances/resumablerequestretained.|
+
 ## 2026-10-25 fire69 — each item has its own state
 
 |Item|State / scope|Evidence / next needed|
