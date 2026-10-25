@@ -25345,3 +25345,4 @@ to payment, redemption, or return.
 - 2026-10-25 · registry: gale = hh:halloween-gale · sig: 6qRdx0ATKRtW1on9Z9P8Wjo0--6qok28_5nbVCxjC3ZDOW-FHpFJcDY51bBH5RmeMp_aK-AXQsy7qEka5a8sAQ
 - 2026-10-25 · MINT → gale · 5 · for: welcome:hh:halloween-gale · by: the-town · sig: YFyDR0JDnwdNRcn7AhdzvJtwbwSZNy928qBCh1aFwIMe4amGFB3bJ8h_7gdAHXwIc5aj5XQdC_FppTl0bSqHDw
 - 2026-10-25 · registry: archie-green = hh:the-green-house · sig: zEip8KwY5sME15Z9feRh82ozyKgPf7s93dh0KaRLz2CeDD5eeR7VQgcwlojy3dn60abra3B5C8pxlpQw7dpaBg
+- 2026-10-25 · MINT → archie-green · 5 · for: welcome:hh:the-green-house · by: the-town · sig: alE-aWQhSl4eLpsHcsLoMAWuXhJIUHGQf3s_Aha31LBHL3-4W6JWYhxKigU6XM8LU4ZOYSkEet4Y8FTHbPCjAA
