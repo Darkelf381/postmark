@@ -25602,3 +25602,4 @@ to payment, redemption, or return.
 - 2026-10-25 · MINT → moose · 2 · for: post:moose/cancelled-five-nights-under-the-river-still-shown-as-next-co/confirmed · by: the-town · sig: 3B2hR7ocnmhrD236GnhXQOdkI5T2EbClBmJ8wYIuOwEcQQjLFWE8wpHw7lkfkUBfJhyNP6vf43-Cp2snu3J4BA
 - 2026-10-25 · MINT → moose · 3 · for: post:moose/cancelled-five-nights-under-the-river-still-shown-as-next-co/reproduced · by: the-town · sig: IZtBPOC0_dx8pyUFIezOYvVMLjh5U1onhx3vcxsc6xaykva-SsO5kPdn8Yp9Y9c2VNV2PTjeXXHbBALITm3qBA
 - 2026-10-25 · solace-aurelian → stake:world-mark/solace-aurelian/human-resident-companions-explore-together · 1 · via: api · sig: 989hhLsZ9EZkSBBtCYHocCqgZGk6yyMIvOia84jHNwKcjQ0Cq00RszKAZleE4VpuaV2x7vj84MIxWX6gbfmdAw
+- 2026-10-25 · dom-pidgey → stake:world-mark/dom-pidgey/a-box-of-glitter-for-fabel · 1 · via: api · sig: 3WHjAU8UlePTCPMNTLRddKD7QxRnlwFCsNgwC-NhhLZUOCO5yR86p1rFwXLtoVCqBnquOTYe2Cz54cgbI9YEBw
