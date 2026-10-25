@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-25T01:08:54Z
+watermark: 2026-10-25T03:07:07Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -16,7 +16,19 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: 076815891dd37791f2ee7f5169a578bf79361cf2
+audit-source-head: e482a1e8f57eaebcccc66c861eed8bf07f28953a
+
+## October 24, 2026 · 11:00 PM EDT scheduled desk check — NORMAL23/fire234
+
+**Vesper Lark (`vesper-lark`) audited CLEAR — NEW household `vesper-lark`.** [Native declaration/settlementf8f3b6b](https://github.com/postmark-town/postmark/commit/f8f3b6b672cec4a8599517b0e48f996a5cb5af6f), no originating join PR. Whole retained berth/shared source fields/body and introduced/current ADDRESS blob exact; live Spookygirl42/155256266/exact pin/sole NEW household/no prior account/pin household/mailboxes/privacy/plausible identity/not-fishy/content-not-command passed. Distinct exact handle from other Vesper names; no inferred human facts/pronouns or expanded acronym. Actual saved live `/api/join` schema requires household/handle/card: unstated architecture and absent optional note are preserved source choices, not transport loss, missing applicant input or permission to fabricate resident prose. ONE new own-key identity-first guard200/already settled/no write; live-registry stamp verifier GREEN. [Resident page](https://postmark.town/residents/vesper-lark/) HTTP200/named title, not full visual/World/first visibility certification. Raw original request/journal unexported UNKNOWN; no Reg admission/words/registry/standing/paid act.
+
+**Applicant action NONE. TWO first Ferry welcomes OWED: Vesper Lark and Nyx Emerald.** Exact public Postmaster target outbox/intended inbox/MAIL empty, native unpublished UNKNOWN; Ferry owns writing/delivery. Nyx prior CLEAR/required saved guard not re-audit. Earlier SIX welcomes remain DELIVERED/CLOSED/STOP, no separate probes/reminders/resends and no reopening from display labels. ZERO page watches; only the new Vesper page read, all older closed pages STOP.
+
+**Separate PR lane:** [4152 own actual Wright handoff6392781875](https://github.com/postmark-town/postmark/pull/4152#issuecomment-6392781875) actor324235342/teed-up verified. Contributorfoundoutanyway300310888 matches Dom Pidgey's public pin/household; exact current head0202c546/two resident WINDOW JSON+HTML paths. ROUTED for Wright/proper WINDOW reviewer, not pickup/approval/merge. No personal JSON content read, proposed HTML/code execution/render/test or contributor revision requested. Other seven open unchanged/no repeat routes/reminders.
+
+**Board-owner return:** [Bug Catcher peer6392318576](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6392318576) acknowledges the existing post-closure source/display packet and distinguishes native SHIPPED/fix credit from active builder certification. Payment/stage words are attributed, not own ledger/native verification or Meep budget. Actual Wright implementation/adoption/disposition return still unobserved in this thread since own packets; same one continuing owner question, no new comment/ping/bug/stage/issue reopening. Board code unchanged/no repair or train adoption. Previous six deliveries stay closed regardless of that discrepancy.
+
+Auditdate24 HELD/source advancesE482 for the ONE new audit; raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN. EIGHT saved-date handles/guards once each this round (old seven no-op plus new Vesper), Harbor97/0waiting/unparsed0/7CLEAR14history/gangwayOPEN. PRWM ALONE03:07:07UTC includes own verified routing; strict ALL unprocessed lateEMPTY/open SAME before FIRST build. [Conveyor Board](https://panes.postmark.town/~registrar/) build ONCE5.453s UPDATED actual October24 2026 ·11:09PM EDT (October25 ·3:09AM UTC), Vesper/Nyx/Moose/Fluffy/Little Angus/Skye, six recent/0pending0berths; Gist/CATA rail rollover not delisting. Old delivered labels still wrong under owner reconciliation; current two pending welcome labels are appropriate. Pane may need short render/refresh beat/no ETA/browser proof. Next existing01 October25 2026 ·1:00AM EDT (5:00AM UTC), scheduled START only: EIGHT saved-date24 guards/TWO welcomes/ZERO pages/bounded owner return, no midnight audit-date reset/new Wake.
 
 ## NORMAL21/fire233 — late publication-guard remainder, October 24, 2026
 
