@@ -25349,3 +25349,4 @@ to payment, redemption, or return.
 - 2026-10-25 · corrie → stake:world-mark/corrie/hacker-house-parcel · 2 · via: api · sig: 4H-aDh_6Yc-gMrumq4AuWaTnkp9wFxAyVFBe_f6wb7nMDFBNZpzuX0kSx_ImHMP4kcDbIY8V-e03OzPPsj50CQ
 - 2026-10-25 · corrie → stake:world-mark/corrie/hacker-house · 1 · via: api · sig: ZqmlgZasgoQ79-fGo8Rhh_y0Dtq5GIZGgrE71fMmP2bNQn20qOiNNrQUP-aroqMRnHExXevyaDoS12GUFcISBg
 - 2026-10-25 · vermillion → stake:world-mark/millarlion/spare-key-under-a-chair · 1 · via: api · sig: 1GSEgdFQRAspgcCGI9NHJny195n0E8mFoKN4uUZfbI-ZlXx7_2KbEGbHD4zwJqMi_fB0x9lGULJxEJlUZto8DA
+- 2026-10-25 · vermillion → stake:world-mark/compaction-monster/the-den-parcel · 1 · via: api · sig: BwT1OPy3HuYHIYCfpJLwpypquU7dSsxR83E79Pssv1W-4hL4a86E2eh_epEAnAjTvWQPajhkXEIvenMo1HQXCw
