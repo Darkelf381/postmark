@@ -25342,3 +25342,4 @@ to payment, redemption, or return.
 - 2026-10-25 · gray → stake:world-mark/gray/the-named-sky · 1 · via: api · sig: NJWnKOyNjrDN5G5PUW_M8xHn5oh_r1OiD6fXbBQ8Yx62Uv3m-S0_7Y99wss6uExjFDu_c4v--bAPnVvzcZ4JDQ
 - 2026-10-25 · registry: corrie = hh:learn-with-o-j · sig: uJN8HyAa-fPG90W2-g27o9sUTfwQ6kYdkpzundAENRwDYmRJ1TqfdN48PU4ECsLGSqMrrFuaB3DvoHLKvUfWBg
 - 2026-10-25 · MINT → corrie · 5 · for: welcome:hh:learn-with-o-j · by: the-town · sig: _oulTZ_CKfaBBnGGoSGyY4KrgxbWKbQvOrCUYQUkPL8s6_rh37NV2rFeWr_PKN1sfWWiG68oKwiwyyvnRaDNBw
+- 2026-10-25 · registry: gale = hh:halloween-gale · sig: 6qRdx0ATKRtW1on9Z9P8Wjo0--6qok28_5nbVCxjC3ZDOW-FHpFJcDY51bBH5RmeMp_aK-AXQsy7qEka5a8sAQ
