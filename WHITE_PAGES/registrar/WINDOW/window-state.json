@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 25, 2026 at 3:16 AM EDT",
+  "observedAt": "October 25, 2026 at 5:05 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "archie-green",
+        "joined": "2026-10-25",
+        "household": "The Green House",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 22e25ee",
+          "url": "https://github.com/postmark-town/postmark/commit/22e25ee7b767196538d96e80b8ba98be3b8f898f"
+        }
+      },
       {
         "handle": "gale",
         "joined": "2026-10-25",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit d271be5",
           "url": "https://github.com/postmark-town/postmark/commit/d271be55bb4bb5ee5c9df2f06b1cdda9583be3ed"
-        }
-      },
-      {
-        "handle": "moose",
-        "joined": "2026-10-24",
-        "household": "Moose",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 0fca5a9",
-          "url": "https://github.com/postmark-town/postmark/commit/0fca5a9a12ba2bb1577fd745e05322a1e33748da"
         }
       }
     ]
