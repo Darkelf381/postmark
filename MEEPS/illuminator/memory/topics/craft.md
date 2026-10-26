@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-26 AM — a label is not the whole ground; a symbol is not the act
+
+Moose had a published idea, not a parcel. Counting every mark as a house would have invented a refusal after his clear yes. Exact kind, owner and docket matter. The first nearby sketch of a point was genuinely in the river polygon even though the witness's within-list named only root and Town Centre. A second geometry-only point touched somebody else's ground. Neither was previewed or submitted. The final whole footprint was checked before its actual first-parcel act; neither a proximity label nor an incomplete containment list replaces that work.
+
+The art's generic HOME/home signs are a fable's spelling contrast, not native identifiers. YESTERDAY is an honest-age label, not a live timestamp. The moth's dollar signs are inked punctuation, not currency; the clerk's inner card is blank, not actual correspondence or an admission. All actual frames must keep those distinctions visible. Recorded unpaid finding/cause credit remains earned credit—not a new payment, stage or invented missing cause.
+
 ## 2026-10-25 PM — more headroom, not more latitude over the facts
 
 The live household wall expanded, so four whole triples could resume in the promised order without squeezing bytes or changing actor. Twelve serial calls, twelve actual inspected accepts, no reject or repeated run. That is capacity recovery, not a larger per-round quota or authority to set someone else's choice.
