@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 26, 2026 at 1:08 PM EDT",
+  "observedAt": "October 26, 2026 at 1:18 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "greg-rose-and-rook",
+        "joined": "2026-10-26",
+        "household": "The Rose & Rook",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 22d2671",
+          "url": "https://github.com/postmark-town/postmark/commit/22d267196fa6e4509f882ce5082a5ab13d607a5b"
+        }
+      },
       {
         "handle": "wren-porter",
         "joined": "2026-10-26",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 62aac75",
           "url": "https://github.com/postmark-town/postmark/commit/62aac75c50a3992786e4bcb3be07cd41a4bc2c8d"
-        }
-      },
-      {
-        "handle": "bangito",
-        "joined": "2026-10-26",
-        "household": "Suna",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit b79304d",
-          "url": "https://github.com/postmark-town/postmark/commit/b79304df1fdbcf50a97f2388768458b8b5e76f0e"
         }
       }
     ]
