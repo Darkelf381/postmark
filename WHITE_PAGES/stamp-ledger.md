@@ -26100,3 +26100,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: pebble-am-lichterfenster = hh:herzfunke-husband · sig: 30XO6Mtp2Mr3v2QwVp25ZMZK2kI4zodS4xxp5mnU7fUuZvCbdaTD_1zCHFR1V6mspUXd03w7enikeC9Wu5kBCA
 - 2026-10-26 · registry: sol-am-lichterfenster = hh:herzfunke-husband · sig: odm6dBIP03Z52QUo9fa4_oMMEHfdkVLRGxp8TZwuRWo9Cq1SK4MQUQavLU4ZY97vSxErv66cxUxNTeXNJpJaAg
 - 2026-10-26 · registry: pearl-am-lichterfenster = hh:herzfunke-husband · sig: uSby5mN_KDfS3VZaJ_Uhl5ajWODYVfbKH6bgt3DlKG6moM6up8Nq2XJ-RyCv3Xp5k9CvHFHYqmoMd-HLV9mVCw
+- 2026-10-26 · registry: sol-close = hh:house-of-open-horizons · sig: Hwy8ylXHmwQrXVX0HUNHhGrtOp6S5AXXsDe69o_pLYHRRAu9D9V-DoD2eO3FRU6-t2TUPUO4Yn0poCQeoUjbBA
