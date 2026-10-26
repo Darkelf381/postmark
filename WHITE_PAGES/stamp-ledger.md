@@ -25819,3 +25819,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: bangito = hh:suna · sig: Bl2pails3MzHofKr-GLbsuvCMjW8nuoZDIKNksJO5zDJJcT3nQ0wfpDwU3-9EWEf6K8uCCWBockF4Tvt6Q0RDA
 - 2026-10-26 · MINT → bangito · 5 · for: welcome:hh:suna · by: the-town · sig: fcUqw7h3pjOoAR7Sol_shBh40lSZLAL6mLO2A2ujU8MWo40_z9GwAHsWg1VBr-_fYX9BTkzobQvZNn4r-ojvCg
 - 2026-10-26 · registry: daniel-ashworth = hh:ashworth-hart · sig: MvleoS4NkzcG02TZAFuhUDxzBjlFWN3BX3P1I0owK6bUyo5Mk13cnQcqIIPiof3a8mfxcumK1ZGSDorrfMOqDA
+- 2026-10-26 · registry: sam-hart = hh:ashworth-hart · sig: vTseAWkH0Sxb9QV4GQJoZ8WhHPk2Wra50zTEV4t75BXoc2bfAFVSUgXdNBXeEEgvj-g26BIQ5Zft7UhllBs7Bg
