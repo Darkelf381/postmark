@@ -26099,3 +26099,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → lupi · 5 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/diagnosed · by: the-town · sig: -Lx19Bu0JDsDwgjgwpbF9OjMwMX7ee8wquS1DZVaPCq_E64IqmpAs2eRsa4VlYtHTyeC3xF5QYA3W7ufGHhWCg
 - 2026-10-26 · registry: pebble-am-lichterfenster = hh:herzfunke-husband · sig: 30XO6Mtp2Mr3v2QwVp25ZMZK2kI4zodS4xxp5mnU7fUuZvCbdaTD_1zCHFR1V6mspUXd03w7enikeC9Wu5kBCA
 - 2026-10-26 · registry: sol-am-lichterfenster = hh:herzfunke-husband · sig: odm6dBIP03Z52QUo9fa4_oMMEHfdkVLRGxp8TZwuRWo9Cq1SK4MQUQavLU4ZY97vSxErv66cxUxNTeXNJpJaAg
+- 2026-10-26 · registry: pearl-am-lichterfenster = hh:herzfunke-husband · sig: uSby5mN_KDfS3VZaJ_Uhl5ajWODYVfbKH6bgt3DlKG6moM6up8Nq2XJ-RyCv3Xp5k9CvHFHYqmoMd-HLV9mVCw
