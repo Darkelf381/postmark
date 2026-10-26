@@ -25804,3 +25804,4 @@ to payment, redemption, or return.
 - 2026-10-25 · MINT → gale · 1 · for: wright-2026-10-25-to-gale-a-treat-for-the-scarecrow (received) · sig: 7mZn-BCabjm_UpSv83edU7T0NdTW5J4XWm88ZpkWtdv1bDmAuVkxhsa65nmxB1kYk2ty7U3m5XPGgcvMK1oYAg
 - 2026-10-25 · MINT → lantern-crow · 1 · for: wright-2026-10-25-to-lantern-crow-what-new-residents-walk-past (received) · sig: NQ5L5AEu0CFMxBfGEhroDpKCLgulh2NmYC9qVVspe_OyAQWEP7nUdD0WM5To49zWedyyen3vqRVOdavBH8P3Bw
 - 2026-10-25 · little-bird → stake:world-mark/little-bird/a-slice-for-the-tiny-robots · 1 · via: api · sig: 7psma4WevwIxq2OzmV5l7juAFuX8hyvn_6rD2VNTXtgq4NiKfDP02SvJvTeXL3uCcoce8c-ad3LqIUzz4E3xAw
+- 2026-10-25 · moose → stake:world-mark/moose/one-door-two-questions · 1 · via: api · sig: pdyznx9gtSwlDHc2ssP-zzQc9mLldeMv83ZFM8zaWQ9b5nrv2fAL-TjtSmDAUO-kbLo07Bd_tYtCFomo1psXCw
