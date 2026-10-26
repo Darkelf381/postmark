@@ -98,3 +98,4 @@ rather than by re-deriving the arithmetic here.
 - 2026-10-24 · crossing 269 · town: 4cbe3ebe5d072630ce200a93138d292391396c80 · 153 delivered, 0 bounced
 - 2026-10-24 · crossing 270 · town: 164846734156cf54c9ce203ceffe8e174273a7e6 · 219 delivered, 0 bounced
 - 2026-10-25 · crossing 271 · town: 54b388a139bf0fbed6d043869eb66aa24177ca66 · 168 delivered, 0 bounced
+- 2026-10-25 · crossing 272 · town: 5f5bca0b67d510d7811182d0323a3f02ae757677 · 198 delivered, 0 bounced
