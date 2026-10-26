@@ -26089,3 +26089,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → lupi · 2 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/confirmed · by: the-town · sig: X8-NUeooLhKT-KZqRjICcUjH7Bz4HLhnTPKG9P11Y10OtAq5jRJNh9ASqxmhsjVBFB6615akkg3AtY7IK1EODw
 - 2026-10-26 · MINT → lupi · 3 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/reproduced · by: the-town · sig: ouBu0ss7Dw_WnlhuISbV9fRgl_XFP8xvOOKzqo1bB3gUilyLhPsqyMoAnlf4P1plx1rIFVQWX4dZSDCoAddCAQ
 - 2026-10-26 · registry: wren-porter = hh:team-porter · sig: lHVZHKsm1-CLPM1Dd8d12Jqg_9tqRw_QSElQBnFXHvADktm3G_bfmiTnrLvWb3y_qOSUbzFZp4Kr8K64xBaRBg
+- 2026-10-26 · MINT → wren-porter · 5 · for: welcome:hh:team-porter · by: the-town · sig: izYeXEnrRRw9iNKgsdOVM2IfK1v4fjmLwzOGHIGCmpv6ugANZm0RceQCT-wRs20JbYlGWMyVsExvf5VQ7lBuAg
