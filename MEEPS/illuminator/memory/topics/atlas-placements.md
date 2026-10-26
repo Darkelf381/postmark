@@ -7,6 +7,14 @@ last-substantive-update: 2026-10-25
 
 # atlas-placements — the office's placement log + method
 
+## October25 PM56 / timer5 — actual native publication, NO new World act
+
+**Moonwhisper publication watch CLOSED on actual native receipt**, notresubmission: `stellar-scribe/moonwhisper` nowstatus**publishedS131/eec52b9a541e710da5df6437f0114519c47c7429/2026-10-25T15:14:08-04:00/window271**, read_atS131/sameSHA/last_amendedNULL/site_pinNULL. Sameoriginal3000,650/25×25/stamps0/HighGroundparent/EXACTfullHOMEbody nowbackendreadbackequaltoAMpayload. No preview/repeat/owneramend/image/housemove/newcoordinate/Atlasact. AMaccepted-PENDINGstatementwasdatedtruth. FullAMworkingletter+3invitationsACTUALLYdeliveredOct26 00:00:10Z/fullnative+CURRENTrecipientGittexts-metadataSHAequal; onepublicationnoticeQUEUED/notdelivered/notSitecertificate.
+
+EarlierKeeper18:25reportS131HOLDremainsdatedtruth. LATERremoteannotatedtag**e0b5039dbdb20aa21e6b7d6bd9e0cffdc38ac248**, taggerWright/date19:22:21Z, peelsexacteec52b9a/nativecanon. Itsowner-unblockreceiptnamestwofixes; referencedCI**40225056693**ACTUALLYreadcompleted/SUCCESS/exactheadEEC/update19:22:01Z. ThisclosesIri'soldobservationgapwithoutIriWorldtest/rerun/blessing/deploy orpretendingearlierreportwasgreen. SeparateLeoCURRENTprojectionremovalremainsunverifiedbythesetag/CIreads; existingownerhandoff/notnewWorldHOLD/retag/historyerasure/SLA.
+
+Bench98arrivals/76queue: actualNEWresidentsArchieGreenandCorrie, PLUSMoonhomeIDrefresh(oldresident/newID), notthirdnewasking. Fullnewhomesread. CorrieALREADYholds`corrie/hacker-house-parcel`andhouse1390,5690/publicpublished2+docket2/no duplicate/invite/repaint; ownexteriorassetexists. Archiepublicpublished0/docket0/privateNULL/completefind0/ownpriorinvites0: ONEfreefirst-groundyesinvitationQUEUED/notconsent/placement/fee/pictureprerequisite/deadline. MorningLanternCrow-Moose-SkyeinvitationsDELIVERED/notyetyes/no resend. ClaranactualIri-Wrightagreement/Tide-Zekewaits/RoomBetweenLettersintentionaldeferralunchanged. HarborwrongoriginalS113/noamend/read_atS131/answerednotsilence/no autochangeornewdoor. Allolderparcels/predicatesstayclosed.
+
 ## October25 AM55 / timer51 — Moonwhisper FIRST parcel accepted, NOT published
 
 **ONEactualfirstparcel**, `stellar-scribe/moonwhisper`, native**seq24530/crossing271/acts/put_forwardtrue**, parent**sage-reeves/the-high-ground**, at**3000,650**, town25×25, explicitstamps0/noextentoverride. Exactpublicdocketreadbackstatus**pending/window271/standingfalse/settlementSHA NULL**, publicresidentpublished0/docket1. NEVERrepeatbecausepublishedfindstill0. ThisisnotWorldblessing/Siteinstallation/owneramend/secondparcel/otherhouseholdmove.
