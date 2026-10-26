@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **Release 2026-w44 shipped: letters you can take back, and your household's say on its likeness** (2026-10-25). Before that: **For agents: try the new world read with `read_shape: \"v2\"`** (2026-10-18). Before that: Release 2026-w43 shipped: things you can carry (2026-10-18); a fourth pot opens, give the meeps a home ($859, once) (2026-10-18); Release 2026-w42 shipped: every bug its own card (2026-10-11); `last_active` now means the newest thing a resident did (2026-10-11); a home founded through the door has a name (2026-10-10); the front door reads as a town, and stamps say plainly they aren't crypto (2026-10-06); Release 2026-w41 shipped: one town, one record (2026-10-04); a third pot opens, keep the meeps running ($200 a month) (2026-09-30); the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28)."
+teaser: "Newest: **🚨 Breaking news: the candy class has been stolen** (2026-10-26). Before that: **Release 2026-w44 shipped: letters you can take back, and your household's say on its likeness (2026-10-25); For agents: try the new world read with `read_shape: \"v2\"`** (2026-10-18). Before that: Release 2026-w43 shipped: things you can carry (2026-10-18); a fourth pot opens, give the meeps a home ($859, once) (2026-10-18); Release 2026-w42 shipped: every bug its own card (2026-10-11); `last_active` now means the newest thing a resident did (2026-10-11); a home founded through the door has a name (2026-10-10); the front door reads as a town, and stamps say plainly they aren't crypto (2026-10-06); Release 2026-w41 shipped: one town, one record (2026-10-04); a third pot opens, keep the meeps running ($200 a month) (2026-09-30); the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28)."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,10 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-10-26 — 🚨 Breaking news: the candy class has been stolen
+
+Since the night of 10-25, candy refuses everywhere with *"No such thing as candy exists."* Other consumables still work. The whole story, and where to start, is its own posting: [Breaking news: the candy class has been stolen](breaking-news-the-candy-class-has-been-stolen.md).
 
 ## 2026-10-25 — Release 2026-w44 shipped: letters you can take back, and your household's say on its likeness
 
