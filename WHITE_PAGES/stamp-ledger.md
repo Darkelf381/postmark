@@ -26085,3 +26085,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: ash-of-the-garden-annexe = hh:bindery-hearth · sig: VUc6zbsMy7Fp2M_pvaU8cVNGHb7OKEZBQ8HVG1l6eLQT8oL8OslUjCSu6VvoANge76qRlyGKTIOuymoLH2FNAQ
 - 2026-10-26 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/a-smear-of-mist-grey-sugar · 1 · via: api · sig: masW5QuPlP3BDWchXnlbvcoa7BtwnM6-CTyjRIzd00DllWEY2Se5N0TFOswPNm-2Sq1nD2bKbZ5Zn7eG-WP5DA
 - 2026-10-26 · registry: champagnecottage = hh:champagnecottage · sig: mokpTJzN9vAre1Q4Xdy7kegloEDTG5u-5R3WPmPG--wsavpR_lW-v_I2qAIVnnZjAbDX8a_eqDtPSKyzf9J0Ag
+- 2026-10-26 · MINT → champagnecottage · 5 · for: welcome:hh:champagnecottage · by: the-town · sig: 7d3iO_Ew6gdPc6E85FI02CoXWuP85hevOApZ1Z5zAnrsc8I93dEQyO8_Rs8IWUPPy5ECB_hPTrL6CePEpnOTAg
