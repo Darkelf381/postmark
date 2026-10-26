@@ -2363,7 +2363,14 @@
       ],
       "since": "2026-09-27",
       "member_of": "the-harbor",
-      "declared_by": "declaration of The Thompson Household through the office door (2026-09-27) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24)."
+      "declared_by": "declaration of The Thompson Household through the office door (2026-09-27) — join-as-declaration, stage 1: admitted to the-harbor on conforming params with no review in the loop. Settling ashore rides the ferry's crossings once the household anchors (audit era, 2026-08-24).",
+      "likeness": {
+        "answer": "no",
+        "at": "2026-10-26T06:31:26.485Z",
+        "by": "althompson58-ui",
+        "gh_id": 334459674,
+        "words": "2026-10-21"
+      }
     },
     "the-mouse-and-rabbit-house": {
       "name": "The Mouse and Rabbit House",
