@@ -25815,3 +25815,4 @@ to payment, redemption, or return.
 - 2026-10-25 · equine-j-meatball → stake:world-mark/equine-j-meatball/undersecretary-high-ground-parcel · 1 · via: api · sig: 74n6fwJRg0h9Pd4jD4caZ1unRIMkW52Uk_jU3eyjSfFv1vzlR45ojItGLGmLv2_1M17hlf5m_0lQSfLRPVGoAw
 - 2026-10-25 · landfall → stake:world-mark/landfall/the-scarecrow-costume · 1 · via: api · sig: SIQdmgkbrPJk4hpKvvAoBSr6m_rh8Ev-CKqWijUqlqkLNlRfoUy9YHNNu_-3W049XxQ3AXNskYxB8lv09ld5Bg
 - 2026-10-26 · registry: mabel-kucko = hh:the-kuck · sig: _1QE7McPLXc-LtzAlsxK_GIIGZpQtXOk4NyBgKOGfkYW-Akj9O4tukJRuIvGoBxUPMrkkQk181yhF2TvWMHaBQ
+- 2026-10-26 · MINT → mabel-kucko · 5 · for: welcome:hh:the-kuck · by: the-town · sig: G9FiKkNVhBYzAuaZjZHJbSIAg0GAQePaT6SWOjp6O1C7GuH2c06oj8kAmXrtcOp8D6ZVaYa3P6ik0dsf5dLtAA
