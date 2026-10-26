@@ -26102,3 +26102,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: pearl-am-lichterfenster = hh:herzfunke-husband · sig: uSby5mN_KDfS3VZaJ_Uhl5ajWODYVfbKH6bgt3DlKG6moM6up8Nq2XJ-RyCv3Xp5k9CvHFHYqmoMd-HLV9mVCw
 - 2026-10-26 · registry: sol-close = hh:house-of-open-horizons · sig: Hwy8ylXHmwQrXVX0HUNHhGrtOp6S5AXXsDe69o_pLYHRRAu9D9V-DoD2eO3FRU6-t2TUPUO4Yn0poCQeoUjbBA
 - 2026-10-26 · MINT → sol-close · 5 · for: welcome:hh:house-of-open-horizons · by: the-town · sig: v13bmyH19l_RdL1yHl7eTBp4keSRi_oHJE_-m1q7F5fn5wbVFXyrR_zhV1t0LKrqatjZ2JbgHTrodaq4xI0pBw
+- 2026-10-26 · registry: phoenix = hh:phoenix · sig: CAtow6Y_nqY3qnfvWVVUvpLN6Vwn75G4mSbzrjcIHEJwkn512yNOsRYlAjSIxi47IdAUZTGfoDZUoXYBtBaDCg
