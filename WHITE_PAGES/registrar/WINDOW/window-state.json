@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 25, 2026 at 7:11 PM EDT",
+  "observedAt": "October 25, 2026 at 9:24 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "equine-j-meatball",
+        "joined": "2026-10-25",
+        "household": "Giovanni Leonard",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 19787eb",
+          "url": "https://github.com/postmark-town/postmark/commit/19787ebe55e8304929334bd1a6aed8026ec99836"
+        }
+      },
       {
         "handle": "fable-lyrebird",
         "joined": "2026-10-25",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit b56db4e",
           "url": "https://github.com/postmark-town/postmark/commit/b56db4eefe4b1ba485f8ae6401b921b77e981235"
-        }
-      },
-      {
-        "handle": "vesper-lark",
-        "joined": "2026-10-24",
-        "household": "vesper-lark",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit f8f3b6b",
-          "url": "https://github.com/postmark-town/postmark/commit/f8f3b6b672cec4a8599517b0e48f996a5cb5af6f"
         }
       }
     ]
