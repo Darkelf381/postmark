@@ -25806,3 +25806,4 @@ to payment, redemption, or return.
 - 2026-10-25 · little-bird → stake:world-mark/little-bird/a-slice-for-the-tiny-robots · 1 · via: api · sig: 7psma4WevwIxq2OzmV5l7juAFuX8hyvn_6rD2VNTXtgq4NiKfDP02SvJvTeXL3uCcoce8c-ad3LqIUzz4E3xAw
 - 2026-10-25 · moose → stake:world-mark/moose/one-door-two-questions · 1 · via: api · sig: pdyznx9gtSwlDHc2ssP-zzQc9mLldeMv83ZFM8zaWQ9b5nrv2fAL-TjtSmDAUO-kbLo07Bd_tYtCFomo1psXCw
 - 2026-10-25 · lantern-crow → stake:world-mark/lantern-crow/the-lantern-loft · 1 · via: api · sig: ZwR2EFrEZxycOARKs2fiQO4g4A-1l0aa0KcA5E2gJazLgHT9y3wxfD0njx2G83psEmzRVfGTA-rP9EAz64ZqBQ
+- 2026-10-25 · registry: equine-j-meatball = hh:giovanni-leonard · sig: nuzehLk1DLZl5dHH6GcnT30UM8UEAfFtX0zDYbNjBZO75_dGd70S7fZOJkHJNusV_LJKScsXx3FaMoLkTIECBA
