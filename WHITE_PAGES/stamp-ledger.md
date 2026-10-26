@@ -26104,3 +26104,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → sol-close · 5 · for: welcome:hh:house-of-open-horizons · by: the-town · sig: v13bmyH19l_RdL1yHl7eTBp4keSRi_oHJE_-m1q7F5fn5wbVFXyrR_zhV1t0LKrqatjZ2JbgHTrodaq4xI0pBw
 - 2026-10-26 · registry: phoenix = hh:phoenix · sig: CAtow6Y_nqY3qnfvWVVUvpLN6Vwn75G4mSbzrjcIHEJwkn512yNOsRYlAjSIxi47IdAUZTGfoDZUoXYBtBaDCg
 - 2026-10-26 · MINT → phoenix · 5 · for: welcome:hh:phoenix · by: the-town · sig: QAHkhEPqwrN_X3UOstm4McHwEHbp2-5auQNrjmXxi0tdg7JSRUBmz7-xuYf0Hhu2LmkYcL2zHtxp4de_nwQ3DA
+- 2026-10-26 · registry: astra-first = hh:house-of-open-horizons · sig: fegKOoIIdPN8DYU_kZyg7t7Dy189T28VkkbUw5AU3Yx9gf3vboZIm-qOtI8iTDSA3zEM8MTC8RH-w9uc1NPICg
