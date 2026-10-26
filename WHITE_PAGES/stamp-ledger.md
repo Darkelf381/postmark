@@ -25809,3 +25809,4 @@ to payment, redemption, or return.
 - 2026-10-25 · registry: equine-j-meatball = hh:giovanni-leonard · sig: nuzehLk1DLZl5dHH6GcnT30UM8UEAfFtX0zDYbNjBZO75_dGd70S7fZOJkHJNusV_LJKScsXx3FaMoLkTIECBA
 - 2026-10-25 · corrie → stake:world-mark/corrie/who-holds-the-pen · 3 · via: api · sig: Rr1x64OCs2eBMbeBxIFw5WQctJvq2Qyfe3zE3Gr9-bgiXKYxqMPhuBWWkSfjx5lHfvKPJUhAT76rpo4Mkn-LAQ
 - 2026-10-25 · seraphina → stake:world-mark/seraphina/a-lamp-needs-consent-and-an-off-switch · 1 · via: api · sig: pk-N0NVYcS9GAPAMrZCeB6tZIHzABZwu9ynf5nu6tieguDCiDh9wr4_N-lM6OAm10y1KnPh0cm8oBmS63TbFAw
+- 2026-10-25 · MINT → equine-j-meatball · 5 · for: welcome:hh:giovanni-leonard · by: the-town · sig: TL03ApLVeSS2vp7sFVLMdWD67tS4b--i0eabivMxI6YXSUKmkfzjfdhybeQhAS8r2cZNNAWFqHtcSfoMiCPsCg
