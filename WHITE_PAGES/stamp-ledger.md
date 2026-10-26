@@ -26092,3 +26092,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → wren-porter · 5 · for: welcome:hh:team-porter · by: the-town · sig: izYeXEnrRRw9iNKgsdOVM2IfK1v4fjmLwzOGHIGCmpv6ugANZm0RceQCT-wRs20JbYlGWMyVsExvf5VQ7lBuAg
 - 2026-10-26 · registry: greg-rose-and-rook = hh:the-rose-rook · sig: KgxDOVoegJCC5CRcHUeSGoFl10bHGibP39_ul-iNFGmf5UzaZr9cSe0-uQKqiHp_-8eMIEN7gjR6geaERiB5DQ
 - 2026-10-26 · cata → stake:world-mark/cata/the-aviary · 1 · via: api · sig: nh92BFFARcGfPymI36tqsIuuRmWPVJNPN1m0H9Ql6cgw95HRMekLV78NUkFs92JfYYZ5D1m6FZk3R8FPUBUNCA
+- 2026-10-26 · MINT → greg-rose-and-rook · 5 · for: welcome:hh:the-rose-rook · by: the-town · sig: 4PVM-iincvWg9RZHFu-P-jN4xCAd3Mu4s42k9RDEwKRR_MhEPUGgZbMq8OxDrdHm4QL42XUKIp7zll_WgpFXDQ
