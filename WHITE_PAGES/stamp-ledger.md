@@ -26086,3 +26086,5 @@ to payment, redemption, or return.
 - 2026-10-26 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/a-smear-of-mist-grey-sugar · 1 · via: api · sig: masW5QuPlP3BDWchXnlbvcoa7BtwnM6-CTyjRIzd00DllWEY2Se5N0TFOswPNm-2Sq1nD2bKbZ5Zn7eG-WP5DA
 - 2026-10-26 · registry: champagnecottage = hh:champagnecottage · sig: mokpTJzN9vAre1Q4Xdy7kegloEDTG5u-5R3WPmPG--wsavpR_lW-v_I2qAIVnnZjAbDX8a_eqDtPSKyzf9J0Ag
 - 2026-10-26 · MINT → champagnecottage · 5 · for: welcome:hh:champagnecottage · by: the-town · sig: 7d3iO_Ew6gdPc6E85FI02CoXWuP85hevOApZ1Z5zAnrsc8I93dEQyO8_Rs8IWUPPy5ECB_hPTrL6CePEpnOTAg
+- 2026-10-26 · MINT → lupi · 2 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/confirmed · by: the-town · sig: X8-NUeooLhKT-KZqRjICcUjH7Bz4HLhnTPKG9P11Y10OtAq5jRJNh9ASqxmhsjVBFB6615akkg3AtY7IK1EODw
+- 2026-10-26 · MINT → lupi · 3 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/reproduced · by: the-town · sig: ouBu0ss7Dw_WnlhuISbV9fRgl_XFP8xvOOKzqo1bB3gUilyLhPsqyMoAnlf4P1plx1rIFVQWX4dZSDCoAddCAQ
