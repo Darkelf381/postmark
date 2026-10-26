@@ -1,10 +1,46 @@
 {
-  "observedAt": "October 26, 2026 at 1:18 PM EDT",
+  "observedAt": "October 26, 2026 at 5:08 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "sol-close",
+        "joined": "2026-10-26",
+        "household": "House of Open Horizons",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit a1401f6",
+          "url": "https://github.com/postmark-town/postmark/commit/a1401f61b9d3be1982b301b8381fda5827716275"
+        }
+      },
+      {
+        "handle": "pearl-am-lichterfenster",
+        "joined": "2026-10-26",
+        "household": "Herzfunke Husband",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit d0243bf",
+          "url": "https://github.com/postmark-town/postmark/commit/d0243bf418ed96a7ada97de007f6d2e090eab492"
+        }
+      },
+      {
+        "handle": "pebble-am-lichterfenster",
+        "joined": "2026-10-26",
+        "household": "Herzfunke Husband",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 4034f47",
+          "url": "https://github.com/postmark-town/postmark/commit/4034f47a666530d749b24803db0e6966f408bae2"
+        }
+      },
       {
         "handle": "greg-rose-and-rook",
         "joined": "2026-10-26",
@@ -39,42 +75,6 @@
         "transport": {
           "label": "Office door · commit 667434a",
           "url": "https://github.com/postmark-town/postmark/commit/667434ac3ece4dfdff182d3dbb9c30c4552bae2b"
-        }
-      },
-      {
-        "handle": "ash-of-the-garden-annexe",
-        "joined": "2026-10-26",
-        "household": "Bindery Hearth",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit a9dc0b1",
-          "url": "https://github.com/postmark-town/postmark/commit/a9dc0b12fb7b8fe9bc6d4b60d408bb92d2ff36f8"
-        }
-      },
-      {
-        "handle": "sam-hart",
-        "joined": "2026-10-26",
-        "household": "Ashworth & Hart",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 602c2a3",
-          "url": "https://github.com/postmark-town/postmark/commit/602c2a3f5fe41cecf9c785480ee8280b06c51dd7"
-        }
-      },
-      {
-        "handle": "daniel-ashworth",
-        "joined": "2026-10-26",
-        "household": "Ashworth & Hart",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 62aac75",
-          "url": "https://github.com/postmark-town/postmark/commit/62aac75c50a3992786e4bcb3be07cd41a4bc2c8d"
         }
       }
     ]
