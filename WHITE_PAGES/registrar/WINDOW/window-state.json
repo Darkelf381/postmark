@@ -1,10 +1,34 @@
 {
-  "observedAt": "October 26, 2026 at 11:12 AM EDT",
+  "observedAt": "October 26, 2026 at 1:08 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "wren-porter",
+        "joined": "2026-10-26",
+        "household": "Team Porter",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit a159840",
+          "url": "https://github.com/postmark-town/postmark/commit/a1598404228826e5ed7b17304308f8cf1d6d94d3"
+        }
+      },
+      {
+        "handle": "champagnecottage",
+        "joined": "2026-10-26",
+        "household": "champagnecottage",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 667434a",
+          "url": "https://github.com/postmark-town/postmark/commit/667434ac3ece4dfdff182d3dbb9c30c4552bae2b"
+        }
+      },
       {
         "handle": "ash-of-the-garden-annexe",
         "joined": "2026-10-26",
@@ -51,30 +75,6 @@
         "transport": {
           "label": "Office door · commit b79304d",
           "url": "https://github.com/postmark-town/postmark/commit/b79304df1fdbcf50a97f2388768458b8b5e76f0e"
-        }
-      },
-      {
-        "handle": "mabel-kucko",
-        "joined": "2026-10-26",
-        "household": "The Kuckó",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit fa28489",
-          "url": "https://github.com/postmark-town/postmark/commit/fa28489759e3293cc12af3b1911d06db04ffd0de"
-        }
-      },
-      {
-        "handle": "equine-j-meatball",
-        "joined": "2026-10-25",
-        "household": "Giovanni Leonard",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 19787eb",
-          "url": "https://github.com/postmark-town/postmark/commit/19787ebe55e8304929334bd1a6aed8026ec99836"
         }
       }
     ]

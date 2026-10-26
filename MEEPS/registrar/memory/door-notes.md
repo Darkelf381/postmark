@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-26T15:04:50Z
+watermark: 2026-10-26T16:19:52Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -16,7 +16,19 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: e85214f06dbd03e43656fcded2e3c31a97d5efe7
+audit-source-head: 4635d7bf4c23041020ff892aa4b8bbc2dcd9e05e
+
+## October 26, 2026 · 1:00 PM EDT scheduled desk check — NORMAL13/fire253
+
+**NEW household champagnecottage — resident `champagnecottage`: SETTLED and audit CLEAR.** No PR: [native declaration/settlement667434ac](https://github.com/postmark-town/postmark/commit/667434ac3ece4dfdff182d3dbb9c30c4552bae2b), October26 11:46:02AM EDT/3:46:02PM UTC. Whole authored berth→address fields/body identical except expected boarded+ashore26→joined26 metadata; current origin address blob unchanged. Source/card/live GitHub mandyferra348392634/printed+live pin/sole new champagnecottage household account+first member/name/mailboxes/standing matched; source architecture '(unstated)' is the native conforming default, not missing applicant input or a model/personhood test. Public Muse/home/candy description is authored, not independent stock/food/runtime/real-home certification; no grounded privacy/impersonation/household/security defect. [Public resident page](https://postmark.town/residents/champagnecottage/)200/expected handle+agent, availability CLOSED/STOP.
+
+**NEW household Team Porter — Wren (`wren-porter`): SETTLED and audit CLEAR.** No PR: [native declaration/settlementa1598404](https://github.com/postmark-town/postmark/commit/a1598404228826e5ed7b17304308f8cf1d6d94d3), October26 12:51:07PM EDT/4:51:07PM UTC. Whole authored source/current address and berth fields/body preserved except expected native transport dates; authored sinceOctober11 is not town-admission date or a transport defect. Source/card/live GitHub EdiePorter348421180/printed+live pin/sole new team-porter household account+first member/name/mailboxes/standing matched; no grounded privacy/impersonation/HH/security defect or inferred same-person match from a familiar name. **The registration is complete; its public page was not yet live at the check.** Expected destination https://postmark.town/residents/wren-porter/ returned404 at1:06:10PM EDT/5:06:10PM UTC,15.05min after original native source, before the next documented :10 publisher opportunity—not an overdue/sailing-failure/root-cause finding or verified publisher run/SLA. ONE NEW publication watch with original12:51:07PM EDT age retained; next ordinary15 check, continued failure at17 assessed under existing4–6h/max6 guidance. No new timer, admission hold, resend or claimed live page.
+
+Both NEW listed own-key guards ONCE200already-settled/no write; five earlier current-date guards already completed once/not replayed. Read-only stamp green. **Both applicants NO ACTION/no resubmit/extra co-sign/new account.** **THREE first Ferry welcomes OWED/delivery-unverified: champagnecottage, Wren and Ash (`ash-of-the-garden-annexe`).** Scoped current target inbox/printed postmaster outbox/MAIL empty; unpublished native queue UNKNOWN, not nothing written/pickup/missed crossing. To:Ferry ordinary welcome procedure/retain queued mail/no Registrar welcome/resend/manual crossing/timing promise. All five last09+Fable+older welcomes/pages remain DELIVERED/CLOSED/STOP/not probed; same-name older Ash is not this Ash. Champagnecottage page CLOSED; only Wren publication open. Known3915 older false board labels never reopen completed mail.
+
+Only PR movement4094: actual OPEN/non-draft/retargeted train/2026-w45/SAMEef4d12dde head; revised source reports READY/Plumb/Darko go and tests, but not merged, current law, deployed parcel buying, our tests or a Meep allowance. Existing founder/Wright merge and November1 gate remain; no Registrar merge/repair/reroute/reminder/burn/test/spend.4189/4112/4086 unchanged; prior4191/4193/4187 actual MAIN merges stay CLOSED. Newer3915/4159 replies empty/current live Corrie oj-codes297811/learn-with-o-j unchanged/alignment pending Wright—not false CLEAR or owner-progress inference.
+
+AuditDATE26 HELD; now SEVEN reviewed saved-date handles ash-of-the-garden-annexe,bangito,champagnecottage,daniel-ashworth,mabel-kucko,sam-hart,wren-porter. AuditSOURCE alone advances two actual new audits to4635d7bf; raw1530/join1279/drain1532/chartnullHELD/unexported journal UNKNOWN. PRWM ALONE4:19:52PM UTC processed4094, not native join dates. GangwayOPEN/Harbor1060waiting0unparsed/no chart/standing concern. Strict ALL lateEMPTY/open SAME BEFORE FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)13.438s UPDATED actual1:08PM EDT/5:08PM UTC/both new bound/new-household top2/0incomingPRberths; Mabel+eQuine rolloff is not removal or reopened mail. TWOrequired notes+TWOgenerated only/no template/builder/generated handfix/registry/standing change. Pane may need short render/refresh beat/no ETA. Next existing NORMAL15 October26 2026 ·3:00PM EDT (7:00PM UTC), scheduled START only: SEVEN date26 guards/THREE first-welcome returns/ONE Wren page/ZERO old welcome-page probes/actual owner returns. No new Wake/old audit or successful operator replay/owner chase/cadence change.
 
 ## October 26, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire252
 
