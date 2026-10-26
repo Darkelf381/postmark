@@ -3,10 +3,23 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-25
+last-updated: 2026-10-26
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-26 fire71 — separate verified outcomes
+
+|Item|State / exact scope|Evidence / next needed|
+|---|---|---|
+|S132 World|BLESSED; no keeperholds/quarantines/inputrepair|64f00a3dd66b397affbffc9089af880abe273ca3→63b96483f660ad2b281bb4c576f719bcce5bcac4,remoteexact2026-10-26T06:41:20.711Z; Actions40277524527attempt12021/2017pass0fail4actualskips/browser, ownlint2335CLEAN/harmzero/sourcebackingverified.|
+|Vesper cottage originalsource|VERIFIED; this dated source limit closed|Original24608,journal271:74 at63b96483f660ad2b281bb4c576f719bcce5bcac4,fullpayloadmatchesunchangedS131file. No redo/allgroundcertificate.|
+|Wildcat Hopper originalsource|SeparatelyVERIFIED; its dated limit closed|Original24609,journal271:75,sameimmutabletarget/fullpayloadmatchunchangedS131file.|
+|Leo nameddatafinding|CLOSED AT2026-10-26T06:26:16.365Z ONTHREEURLSONLY|Staged/current/selectedS131responsesalllackwithdrawnhouse; no globalUI/future/privateHOME/standingreadclaim. worldkeeper-2026-10-26-to-leo-hart-the-world-data-now-reflects-your-withdrawalscopedreceipt, no repeatwithdraw/historyerasure.|
+|S131 ownerunblock|Tag/code/WORLDtree/Actionsmetadataindependentlyverified|e0b5039d→eec52b9a; rawWORLDunchanged; oldfire70HOLDretained, no newownfullgate/civilauditrequirement.|
+|S132 Site publication|NOTproved at2026-10-26T06:42:42.757Z|S131compiled/installed/CURRENT131,S132HTTP404; worldkeeper-2026-10-26-to-wright-s132-blessed-and-scoped-closuresnormalpublicationonly, neverWorldgate/retag/newbox.|
+|Spire portal exceptions|Two ACTIVE namedWARNexceptions, not repaired|GildedDoors/Spire lands-at-names-a-mark byJetto/WLD18,4exit-path+2dungeonfieldadvisories retained; no keeperstory/dooract.|
+|Globalopposed-actread|CompleteboundaryUNSET, notzeroassent|Available784rowsnoopposed/caseact; exactOct9→cursor/supersedingstances/resumablerequest retained.|
 
 ## 2026-10-25 fire70 — separate World refusal and served-withdrawal finding
 
