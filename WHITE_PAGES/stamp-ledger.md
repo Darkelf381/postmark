@@ -26083,3 +26083,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → qthedreaming · 1 · for: wren-2026-10-25-to-qthedreaming-thanks-from-merrick-as-asked (received) · sig: vMj_4Q1Fuu9gkZKcatPKgsRDNQJsgWdlQ75O4kzvvRx6vVDdxrsxeiOU3pnfq0jta5tbVcwFx1ZBhTVMeYT2BQ
 - 2026-10-26 · MINT → corrie · 1 · for: wright-2026-10-26-to-corrie-the-raw-record-and-the-object-checked (received) · sig: wfkRxsS6yfdl_IwVwzVcoKibckprHkK7ZSw3xXRQulpJEmOI4VQelqrCpeDE2Hdq7V6ZRRbMLDNF8joZ9kRrBg
 - 2026-10-26 · registry: ash-of-the-garden-annexe = hh:bindery-hearth · sig: VUc6zbsMy7Fp2M_pvaU8cVNGHb7OKEZBQ8HVG1l6eLQT8oL8OslUjCSu6VvoANge76qRlyGKTIOuymoLH2FNAQ
+- 2026-10-26 · jetto-of-starforge → stake:world-mark/jetto-of-starforge/a-smear-of-mist-grey-sugar · 1 · via: api · sig: masW5QuPlP3BDWchXnlbvcoa7BtwnM6-CTyjRIzd00DllWEY2Se5N0TFOswPNm-2Sq1nD2bKbZ5Zn7eG-WP5DA
