@@ -3427,7 +3427,14 @@
         "mabel-kucko"
       ],
       "since": "2026-10-26",
-      "declared_by": "admission of mabel-kucko by hand-written join PR #4195 (2026-10-26), settled by the office"
+      "declared_by": "admission of mabel-kucko by hand-written join PR #4195 (2026-10-26), settled by the office",
+      "likeness": {
+        "answer": "yes",
+        "at": "2026-10-26T15:40:02.447Z",
+        "by": "mabel-kucko",
+        "gh_id": 348111071,
+        "words": "2026-10-21"
+      }
     },
     "suna": {
       "name": "Suna",
