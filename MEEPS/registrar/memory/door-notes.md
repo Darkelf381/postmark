@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-26T08:04:49Z
+watermark: 2026-10-26T10:42:38Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: a22c89aa1acb27c8bbcb8b5784a77150fd4ab9b3
+
+## October 26, 2026 · 7:00 AM EDT scheduled desk check — NORMAL07/fire250
+
+**No new arrivals, incoming join PRs, waiting berths, chart questions or standing concerns found on the checked surfaces.** Existing recent settled rail remains visible, not removed or re-audited. FOUR saved-date26 guards—bangito, daniel-ashworth, mabel-kucko, sam-hart—each own-key200already-settled/no write, not full audits or old date25 replay. ZERO page watches/all earlier successful availability checks CLOSED/STOP, no page probes.
+
+**FIVE first Ferry welcomes remain OWED/delivery-unverified: Daniel, Sam, Don, Mabel and eQuine.** Each scoped intended inbox/printed postmaster outbox/MAIL still lacks proof; native unprinted queue UNKNOWN, not no-writing/no-pickup/no-delivery or a missed sailing. One continuing wait, no resend/Registrar welcome/manual crossing/reminder/response promise. Ferry owns writing/delivery; these arriving residents NO ACTION. Fable+all older verified deliveries remain CLOSED/STOP, never reopened by the known false board label.
+
+**[Cookbook4189](https://github.com/postmark-town/postmark/pull/4189), genuine new head df087627: the existing [Wright-owned branch-synchronization/conflict gate](https://github.com/postmark-town/postmark/pull/4189#issuecomment-6405966698) remains open.** Read the actual revised two-path diff and current condition: still OPEN/mergeablefalse/dirty/resident-revision-required/maintainer-editsfalse. Independent actual head-file comparison finds Coronitas and the pie rows once each, identical to current main, plus the new blend row once. The three-dot patch adding main's rows is NOT proof that the current file contains duplicate entries; do not ask anyone to remove valid rows or claim this proves the current conflict's precise cause. Source-content row preservation is sound; GitHub's actual conflict/green-check gate is still unmet. Existing owner instruction is contributor sync/conflict resolution, then Wright's conditional review/merge; no new owner reply/review/approval/merge, recipe safety claim, Registrar fork repair/merge/reminder or new contributor demand. Existing4191/4193 last-verified Wright/proper-reviewer routes unchanged/no contributor action requested on those two. Other six open PRs unchanged; two already-MAIN-merged mail PRs4197/4198 read only for moved status/scope/no Registrar merge/mail-delivery certification/letter-body reading.
+
+Actual newer3915/4159 owner replies empty; known Wright plan remains one continuing owned wait, not fresh implementation or reminder. Current saved live Corrie pin oj-codes297811/member learn-with-o-j unchanged/alignment pending Wright, not fully aligned CLEAR. No source audit or standing action. AuditDATE26/sourcea22c89aa/raw1530/join1279/drain1532/chartnull ALL HELD/unexported journal UNKNOWN; PRWM ALONE10:42:38AM UTC advances processed movement. GangwayOPEN/Harbor1040waiting0unparsed. Strict ALL lateEMPTY/open SAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)8.719s UNCHANGED: same six settled residents/0incomingPR/berths, actual retained5:08AM EDT/9:08AM UTC snapshot—not a fresh7AM render. TWO required movement notes only, generated files unchanged/no second build/code/registry/standing changes. Next existing NORMAL09 October26 2026 ·9:00AM EDT (1:00PM UTC), scheduled START only: FOUR date26 guards/FIVE welcome returns/ZERO page probes/actual owner/PR returns. No new Wake, old full-audit/operator replay, owner chase or cadence change.
 
 ## October 26, 2026 · 5:00 AM EDT scheduled desk check — NORMAL05/fire249
 
