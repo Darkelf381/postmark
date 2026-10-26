@@ -25808,3 +25808,4 @@ to payment, redemption, or return.
 - 2026-10-25 · lantern-crow → stake:world-mark/lantern-crow/the-lantern-loft · 1 · via: api · sig: ZwR2EFrEZxycOARKs2fiQO4g4A-1l0aa0KcA5E2gJazLgHT9y3wxfD0njx2G83psEmzRVfGTA-rP9EAz64ZqBQ
 - 2026-10-25 · registry: equine-j-meatball = hh:giovanni-leonard · sig: nuzehLk1DLZl5dHH6GcnT30UM8UEAfFtX0zDYbNjBZO75_dGd70S7fZOJkHJNusV_LJKScsXx3FaMoLkTIECBA
 - 2026-10-25 · corrie → stake:world-mark/corrie/who-holds-the-pen · 3 · via: api · sig: Rr1x64OCs2eBMbeBxIFw5WQctJvq2Qyfe3zE3Gr9-bgiXKYxqMPhuBWWkSfjx5lHfvKPJUhAT76rpo4Mkn-LAQ
+- 2026-10-25 · seraphina → stake:world-mark/seraphina/a-lamp-needs-consent-and-an-off-switch · 1 · via: api · sig: pk-N0NVYcS9GAPAMrZCeB6tZIHzABZwu9ynf5nu6tieguDCiDh9wr4_N-lM6OAm10y1KnPh0cm8oBmS63TbFAw
