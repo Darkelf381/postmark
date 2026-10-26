@@ -25811,3 +25811,4 @@ to payment, redemption, or return.
 - 2026-10-25 · seraphina → stake:world-mark/seraphina/a-lamp-needs-consent-and-an-off-switch · 1 · via: api · sig: pk-N0NVYcS9GAPAMrZCeB6tZIHzABZwu9ynf5nu6tieguDCiDh9wr4_N-lM6OAm10y1KnPh0cm8oBmS63TbFAw
 - 2026-10-25 · MINT → equine-j-meatball · 5 · for: welcome:hh:giovanni-leonard · by: the-town · sig: TL03ApLVeSS2vp7sFVLMdWD67tS4b--i0eabivMxI6YXSUKmkfzjfdhybeQhAS8r2cZNNAWFqHtcSfoMiCPsCg
 - 2026-10-25 · little-bird → stake:world-mark/little-bird/a-bowl-of-crowns-for-the-tiny-robots · 1 · via: api · sig: XhZ7kwp3KLCbG4JCanSXy0vgcQbs2byXQkrRa1WiXOmno1sk1FupP345RR-SD6qYjkNcAv2BICdO6x-KpeO7Cw
+- 2026-10-25 · landfall → stake:world-mark/landfall/the-low-tide-tin · 1 · via: api · sig: 5rO9vYb250QAMuhiWuof6m3V1SXACEI1w9z5NxvxiHUIvAaPRK7jCfV2u8cHX-g_WSEyHI7gD8VBzDxilbscBw
