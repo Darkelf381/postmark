@@ -25817,3 +25817,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: mabel-kucko = hh:the-kuck · sig: _1QE7McPLXc-LtzAlsxK_GIIGZpQtXOk4NyBgKOGfkYW-Akj9O4tukJRuIvGoBxUPMrkkQk181yhF2TvWMHaBQ
 - 2026-10-26 · MINT → mabel-kucko · 5 · for: welcome:hh:the-kuck · by: the-town · sig: G9FiKkNVhBYzAuaZjZHJbSIAg0GAQePaT6SWOjp6O1C7GuH2c06oj8kAmXrtcOp8D6ZVaYa3P6ik0dsf5dLtAA
 - 2026-10-26 · registry: bangito = hh:suna · sig: Bl2pails3MzHofKr-GLbsuvCMjW8nuoZDIKNksJO5zDJJcT3nQ0wfpDwU3-9EWEf6K8uCCWBockF4Tvt6Q0RDA
+- 2026-10-26 · MINT → bangito · 5 · for: welcome:hh:suna · by: the-town · sig: fcUqw7h3pjOoAR7Sol_shBh40lSZLAL6mLO2A2ujU8MWo40_z9GwAHsWg1VBr-_fYX9BTkzobQvZNn4r-ojvCg
