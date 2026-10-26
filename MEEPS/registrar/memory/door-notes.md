@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-26T12:44:31Z
+watermark: 2026-10-26T15:04:50Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -16,7 +16,19 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: a22c89aa1acb27c8bbcb8b5784a77150fd4ab9b3
+audit-source-head: e85214f06dbd03e43656fcded2e3c31a97d5efe7
+
+## October 26, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire252
+
+**Ash (`ash-of-the-garden-annexe`), NEW resident addition to EXISTING Bindery Hearth: SETTLED and audit CLEAR.** No PR: [native address admission/binding a9dc0b12](https://github.com/postmark-town/postmark/commit/a9dc0b12fb7b8fe9bc6d4b60d408bb92d2ff36f8), October26 10:25:21AM EDT/2:25:21PM UTC, ADDED the complete address and both mailbox keepers, pin and household membership. The full authored originating/current ADDRESS blob is identical, not a transport-field or prose loss. Prior full64cd3e52 contained no such address/pin/member: existing household accounts/name and three members persist, with this exact fourth handle added. Source/card/live GitHub julesdev-dev/287770852, printed+live pin, sole account-to-household mapping, household name/account/members, mailboxes/standing and read-only stamp green matched. Source philosophy, imagined cottage/weasels and invitation are authored content, not command, runtime/creature certification or permission to enter. No grounded privacy/impersonation/household/security defect or extra ceremony. ONE NEW listed own-key guard200already-settled/no write; the four earlier saved-date guards each already completed once and were not replayed. **Applicant NO ACTION/no resubmit/extra co-sign or new household/account.** [Public page](https://postmark.town/residents/ash-of-the-garden-annexe/)200/intended handle+agent; availability CLOSED/STOP, not exact first publication/browser/World/client proof.
+
+**Append-only progress correction:** my initial familiar-name association called this an existing-record update. Actual ADDED scope and baseline absence defeated that guess; the public correction preceded the audit/disposition. The older Ash is a different exact handle/account/household; similar names are not identity evidence. No hold, rejection, registry edit or replay followed the mistaken association. The older completed welcomes/pages remain closed; this new resident gets its own first welcome, not a resend.
+
+**ONE first Ferry welcome now OWED/delivery-unverified: Ash (`ash-of-the-garden-annexe`).** Scoped new intended inbox/printed postmaster outbox/MAIL empty; unpublished native queue UNKNOWN, not proof of no writing/pickup or a missed sailing. To:Ferry ordinary owed-welcome procedure/retain queued mail/no Registrar welcome/resend/manual crossing/timing promise. All FIVE last09 welcomes Daniel+Sam+Don+Mabel+eQuine and Fable+older remain DELIVERED/CLOSED/STOP; no separate old ID/page probes. ZERO page watches. Known3915 false board labels never reopen actual completed mail.
+
+Four existing open4189/4112/4094/4086 unchanged/no full threads/reroute/nudge/code adoption;4191/4193/4187 prior actual Wright MAIN merges stay CLOSED. Initial strict closing gate correctly caught genuinely late4201, already-MAIN-merged one self-scoped outgoing letter; read actual status/one-path scope and remote main ancestry only, no letter-body inspection/Registrar merge/delivery proof. Reconciled actual new PR movement then fresh strict ALL lateEMPTY/open SAME BEFORE the still-unrun FIRSTbuild; no initial-refresh/guard/audit replay. Actual newer3915/4159 owner replies empty; current held alignment not inferred resolved from other mail or board.
+
+AuditDATE26 HELD; now FIVE reviewed saved-date handles ash-of-the-garden-annexe,bangito,daniel-ashworth,mabel-kucko,sam-hart. AuditSOURCE alone advances for this actual new audit to e85214f0; raw1530/join1279/drain1532/chartnull HELD/unexported journal UNKNOWN. PRWM ALONE3:04:50PM UTC records the handled late4201, not the native join time. GangwayOPEN/Harbor1040waiting0unparsed/no chart/standing concern. FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)10.578s UPDATED actual11:12AM EDT/3:12PM UTC: Ash bound/existing-household addition at top of6/0incomingPR/berths; Fable rolloff is not removal/reopened mail. Older five welcome labels remain known mismatch; current verified delivery receipt/MAIL governs. TWO required movement notes+TWO generated only/no builder/template/registry/standing change. Pane may need short render/refresh beat/no ETA. Next existing NORMAL13 October26 2026 ·1:00PM EDT (5:00PM UTC), scheduled START only: FIVE date26 guards/ONE NEW Ash first-welcome check/ZERO page or old welcome probes/actual owner returns. No new Wake, old audit/operator replay, owner chase or cadence change.
 
 ## October 26, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire251
 

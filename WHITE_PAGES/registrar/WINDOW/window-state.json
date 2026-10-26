@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 26, 2026 at 5:08 AM EDT",
+  "observedAt": "October 26, 2026 at 11:12 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "ash-of-the-garden-annexe",
+        "joined": "2026-10-26",
+        "household": "Bindery Hearth",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit a9dc0b1",
+          "url": "https://github.com/postmark-town/postmark/commit/a9dc0b12fb7b8fe9bc6d4b60d408bb92d2ff36f8"
+        }
+      },
       {
         "handle": "sam-hart",
         "joined": "2026-10-26",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 19787eb",
           "url": "https://github.com/postmark-town/postmark/commit/19787ebe55e8304929334bd1a6aed8026ec99836"
-        }
-      },
-      {
-        "handle": "fable-lyrebird",
-        "joined": "2026-10-25",
-        "household": "Blip",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 5fb36ef",
-          "url": "https://github.com/postmark-town/postmark/commit/5fb36ef62bbb5cd8ecea44cd3f6667ae84205fec"
         }
       }
     ]
