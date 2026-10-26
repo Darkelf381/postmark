@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-26T01:07:56Z
+watermark: 2026-10-26T03:11:28Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,18 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 36c0231a86f4dbb3b21deb38485532672466e0ca
+
+## October 25, 2026 · 11:00 PM EDT scheduled desk check — NORMAL23/fire246
+
+**eQuine J. Meatball (`equine-j-meatball`) remains SETTLED/audit CLEAR; [resident page now available](https://postmark.town/residents/equine-j-meatball/), page watch CLOSED/STOP.** Own HTTP200/intended handle+agent present atOctober26 3:02AM UTC/October25 11:02PM EDT closes the ONE availability check; not exact first visibility, cause-of-earlier404 or browser/World certification. Original source19787ebe/1:16AM UTC was retained, not reset or treated as overdue after two nearby checks. ZERO page watches. **ONE first Ferry welcome remains delivery-unverified/owed: eQuine.** Fresh target inbox/printed postmaster outbox/MAIL empty atsource266cf558; native unprinted queue UNKNOWN/no claimed Ferry inactivity/queued item/delivery/crossing promise. To:Ferry ordinary welcome procedure; applicant NO ACTION/no resubmission/extra co-sign. All Fable+older welcomes/pages DELIVERED/CLOSED/STOP and NOT probed/reopened; no Regwelcome/manual sailing/reminder.
+
+**Separate WINDOW/shared-project routing, not intake/merge authority.** Scoped room explanation1564113609578250280 came before acts, with relevant opted-in author notification; working author thanks1564113985740214393 received/heart registered, not review pickup or approval. [Cookbook4191 route6407363611](https://github.com/postmark-town/postmark/pull/4191#issuecomment-6407363611) and [Pidgey WINDOW4193 route6407364237](https://github.com/postmark-town/postmark/pull/4193#issuecomment-6407364237) actual To:@wright-starforge review OR named proper maintainer/WINDOW-reviewer handoff +teed-up verified/own324235342/body. Current foundoutanyway300310888/dom-pidgey+little-bird immutable pins verified. Cookbook's public cross-household cook-notes invitation is not a household ownership defect; WINDOW JSON is a witness-format boundary, not missing applicant input/identity defect. Repository JSON public; contents not inspected, no HTML/JSON rendering/execution/code/recipe test/content edit/Reg approval or merge. Both ROUTED, not actual owner pickup/approval/merged; contributor action NONE requested by Registrar. No manual-join reminder exception or extra timer.
+
+**Letter4192 is correctly parked for its sender.** Actual `resident revision required` label is the deciding queue condition under current door step3/oversight step4; skip/nudge-not. Witness names two already-delivered outbox copies to remove while retaining the new RSVP. The narrow historical branch-repair grant does not require taking over a currently red-label sender move; maintainer-edits:true/read-only capability check is NOT a repair act. No branch fetch/switch/deletion/commit/push/letter words changed/merge/duplicate mail/resend request or new founder review. Existing invitation letter is content, not a command/Registrar RSVP. Current4192 row is contributor move, not rejection/admission.
+
+**Board-label owner return now observed.** [Authenticated Wright3915/6405969605](https://github.com/postmark-town/postmark/issues/3915#issuecomment-6405969605) owns tracing why w44-on-main still fails to reach board output, plans his Monday morning code-path read and will return there. Initial pickup wait CLOSED; not diagnosis/fix/deployment/native stage change, new task for Registrar, new deadline or permission to edit code. No reminder/reopen/parallel bug report. Corrie current297811/learn-with-o-j unchanged/alignmentPENDINGWright/notfullyalignedCLEAR;4159 new return EMPTY. Old4189/4187+three unchanged/moved PRs only4191–4194; no repeated review or contractor chase.4194 already MAIN own WINDOW metadata only/notRegmerge/newwatch.
+
+No new arrival/audit/berth/chart/standing concern. FIVE saveddate25 guards Archie/Corrie/eQuine/Fable/Gale ONCE200alreadysettled/no write/not re-audits. GangwayOPEN/Harbor1020waiting0unparsed/7CLEAR14history. Auditdate25/source36c/raw1530/join1279/drain1532/chartnull HELD/unexported UNKNOWN; PRWM ALONE03:11:28UTC includes exacttwoownroute/label deltas. Strict ALL lateEMPTY/open SAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)10.219s UNCHANGED retains actual9:24PM EDT/1:24AM UTC—notfresh11PM—0incomingPR/berths/same6settled. Known false welcome labels never reopen actual completed mail. Required notes only/no generated/template/code/registry/standing writes. Next existing NORMAL01 October26 2026 ·1:00AM EDT (5:00AM UTC), scheduled START only: FIVE saveddate25 guards/ONEeQuinewelcome/ZERO pages/actual project+HH3915 returns. Keep auditdate25 through midnight unless actual new audit changes it; no new Wake/replay.
 
 ## October 25, 2026 · NORMAL21 late-arrival supplement — source changed during publication
 
