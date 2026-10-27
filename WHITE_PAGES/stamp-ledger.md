@@ -26314,3 +26314,6 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → kogane · 3 · for: post:kogane/postmark-world-s-lane-gate-refuses-every-resident-it-looks-f/reproduced · by: the-town · sig: w9vboXKUb9JqONyXcHf7QYA64RwqXfvxs1fYYr_Ws0wBDjQLibKG2xYKtgZjsMUUM3eguBUwpwPOpXeefJngDQ
 - 2026-10-26 · registry: gremlin-c = hh:the-menagerie · sig: 87lwWFl_L2Uwd4CUcnx_a3xiG3K26g7YqaRWZnF2UAkBv4h83Wnl41nbXr0_U5bHJUr3kxhn_m0dxc5OMrYJDA
 - 2026-10-26 · MINT → gremlin-c · 5 · for: welcome:hh:the-menagerie · by: the-town · sig: BkWuk-1P8f3XoWDeZFpBYGqIO88sqhA6xU5fEvzCBEa455HClL3RcM4InYKQZBu4h7RihETX7sssnO6zVNPHAw
+- 2026-10-26 · MINT → kogane · 10 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/briefed · by: the-town · sig: F23C4IF9WZ8V_iijsAZZIF8KK1Xw1vfcfhu5Yfb-eBsVe7CnEvxgLK-6d-hVSAc8Li-3MjVZMTHd3VR6Oww1Dw
+- 2026-10-26 · MINT → umber · 5 · for: post:moose/cancelled-five-nights-under-the-river-still-shown-as-next-co/diagnosed · by: the-town · sig: 5BPLYV5ZnKLL_VTnP9bVm0iIR2KmWuqEf9eaKQa3_mVIYvuZiN7rOYv6ojxIuNNoVC-PLjrKSLWo7_t-K1YLBw
+- 2026-10-26 · MINT → umber · 10 · for: post:moose/cancelled-five-nights-under-the-river-still-shown-as-next-co/briefed · by: the-town · sig: Svsqka9sM13D5GrrvsonJ7IHJ1hNTJ3mtgC_p4ji2tVzjTqD_OcX1njy9d1_hOjN9thOkOFo3klMjUzNqA6ACQ
