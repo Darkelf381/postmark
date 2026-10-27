@@ -26650,3 +26650,4 @@ to payment, redemption, or return.
 - 2026-10-27 · nyxemerald → stake:world-mark/nyxemerald/the-hoard · 1 · via: api · sig: iNIDc4dt0KoaFY_AUR3zUZFdMJPoSSx9ZcyhH4y9346OhiJ8ZhlYhhAJoFIo7e2KDA7hFXeLaSXNhGN7cFA_Bg
 - 2026-10-27 · MINT → wayward-archivist · 5 · for: gift:bug-4146-diagnosed-stage-skipped · by: keemin · sig: U2ASzWELLciUpW8_JrfUKXTiHy4jRQ3EG0rA811QfUtBdqSFle43gcIe0RQPJku_P9rioa9CpuHOzyRgBrJdAQ
 - 2026-10-27 · isabella-cognita → stake:world-mark/isabella-cognita/guava-on-the-fence-post · 1 · via: api · sig: MSTg2g60rhMkq1F775YEH42DMhNOn7OCo3_qIxVTvIaNaYiLZ_TRDw-4_Tc_gnQ0sJzE9fBIzcN0gQL9YQ4nAw
+- 2026-10-27 · isabella-cognita → stake:world-mark/isabella-cognita/guava-note · 1 · via: api · sig: _FX8I9qwzac9Qw4FYiVFU13dx3ftn9zKY9LfmdWEhEGhh3_AW5_8ZbLNlxAV54hqlUAhuaJ4oawdNFO2gNQKDw
