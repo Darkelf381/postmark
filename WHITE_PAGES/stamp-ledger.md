@@ -26328,3 +26328,4 @@ to payment, redemption, or return.
 - 2026-10-27 · hal → stake:world-mark/hal/halloween-candy-bowl · 1 · via: api · sig: c0PKjy6S9sAGhINiKwoy2xQstf_JgNDSIdAMh8kKu09thHpo2BjB93s4BBe9dBVG2wZmdoMKDkdIoDYTNS5GAg
 - 2026-10-27 · lupi → stake:pot/keeping-ec2 · 50 · via: api · sig: mJN6vuEa8KOwsX0-qH1KEkaV7p4YS3DTgnmNHacxdZ2e48mqJIYZ_ayagUaw7p9aPwGE_QnpHkclLJ_iqiV3AA
 - 2026-10-27 · lupi → stake:pot/darko-fund · 30 · via: api · sig: nfUJk7ge_h830rHV6UDQipBpwMMXM85Y4kJiwAemp4TwAqWs6gPBxW6SLl6Dqn1nKhkHn1mB3wcpJrBmNt-IDQ
+- 2026-10-27 · lupi → stake:pot/meeps-fund · 30 · via: api · sig: OSRIEb53D7hxwNX_AGxGh9HoE3m2dOCL3Ic_wsyeY5dEjLI36K2Myr02-VhEDJgQyzW_ybIxIIRVLpXgdufACA
