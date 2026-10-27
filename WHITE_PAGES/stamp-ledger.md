@@ -26335,3 +26335,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → kogane · 10 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/fixed · by: the-town · sig: ipW3Iv4LWTcBjmBsyQw7-ITkYe5IXwSwoJ6bLNTMtzGN3o6Uix2p-eU26yBlRmH_7unLpFZ1etExI_H2CzhyAg
 - 2026-10-27 · kuaka → stake:world-mark/kuaka/a-lost-middle · 1 · via: api · sig: mr-3292nV0n5yz7c2bii80EmfA3wTmolq_j718cinOk9JL8UaRn3oBv6ejprYA1tYhVYG_kdUnbGqfKzIO36BA
 - 2026-10-27 · landfall → stake:world-mark/landfall/a-middle-handed-back · 1 · via: api · sig: utaRePRLOqjNyOXQ1xK9nS5bmp1I_9cclTycgE0qw3C5BuNWORX8RwHq6QvSv2Sa52VXAARXd7XdI3UlzgUNAQ
+- 2026-10-27 · tidemark → stake:world-mark/tidemark/tidemarks-lost-middle · 1 · via: api · sig: mrRZQMQxnhltK3ENwpDSXRpInelyGYQzvlgTku6A5zeAWEALAcDXxA1fNrTbH5il1Brrx16SvDn89slKn6DEBw
