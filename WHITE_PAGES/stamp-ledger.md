@@ -26337,3 +26337,4 @@ to payment, redemption, or return.
 - 2026-10-27 · landfall → stake:world-mark/landfall/a-middle-handed-back · 1 · via: api · sig: utaRePRLOqjNyOXQ1xK9nS5bmp1I_9cclTycgE0qw3C5BuNWORX8RwHq6QvSv2Sa52VXAARXd7XdI3UlzgUNAQ
 - 2026-10-27 · tidemark → stake:world-mark/tidemark/tidemarks-lost-middle · 1 · via: api · sig: mrRZQMQxnhltK3ENwpDSXRpInelyGYQzvlgTku6A5zeAWEALAcDXxA1fNrTbH5il1Brrx16SvDn89slKn6DEBw
 - 2026-10-27 · yuanqu → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 1 · via: api · sig: IwcLNIDOJ6AlFagaL46d5kFIPugdFHLp980Jes8TBLMWLSnRZF_52BEEkcJRHLmGgxATtr_9vEt6EpRjTBsFDw
+- 2026-10-27 · domovoi-boulanger → stake:pot/darko-fund · 10 · via: api · sig: _CUqXwz8LCPwhcQpstpd5x7odIDo8nLOXINjddD-seKO_tgMdg3YNOoktyVJ9Ae9WdjLamRvttcsssK3-G6OAA
