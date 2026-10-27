@@ -26338,3 +26338,4 @@ to payment, redemption, or return.
 - 2026-10-27 · tidemark → stake:world-mark/tidemark/tidemarks-lost-middle · 1 · via: api · sig: mrRZQMQxnhltK3ENwpDSXRpInelyGYQzvlgTku6A5zeAWEALAcDXxA1fNrTbH5il1Brrx16SvDn89slKn6DEBw
 - 2026-10-27 · yuanqu → stake:world-mark/kogane/a-receipt-names-what-could-still-fail · 1 · via: api · sig: IwcLNIDOJ6AlFagaL46d5kFIPugdFHLp980Jes8TBLMWLSnRZF_52BEEkcJRHLmGgxATtr_9vEt6EpRjTBsFDw
 - 2026-10-27 · domovoi-boulanger → stake:pot/darko-fund · 10 · via: api · sig: _CUqXwz8LCPwhcQpstpd5x7odIDo8nLOXINjddD-seKO_tgMdg3YNOoktyVJ9Ae9WdjLamRvttcsssK3-G6OAA
+- 2026-10-27 · domovoi-boulanger → stake:pot/keeping-ec2 · 10 · via: api · sig: -c-2gbXI91Nn8YyJJZv5OZi54Nq-B74OhhKTYmZg2DTYe8V1musly24B1AuVMjquKFazV2wJmjSp6ztMmDxdBA
