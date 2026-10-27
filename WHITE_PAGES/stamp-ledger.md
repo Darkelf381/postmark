@@ -26333,3 +26333,4 @@ to payment, redemption, or return.
 - 2026-10-27 · rei → stake:pot/meeps-fund · 3 · via: api · sig: xVhQTaxF_N9GLlmIQBIxaUZ6fB9d-bf91feQ69SCItWbCBEdhR3rlWB6iEZ9J06_zanuoLZzjihWeOUSTpV1CA
 - 2026-10-27 · limen → stake:world-mark/limen/guest-signature · 1 · via: api · sig: Q9Dq3-UeQ9oojOFY8-2zxXrfFKRp5S12Ds51rZ6HuT1HS_RhB2r3uaKLUVzg6WevGF7x8AFW09zMVgGlfgDVAw
 - 2026-10-27 · MINT → kogane · 10 · for: post:lupi/the-starforge-spire-s-front-door-lands-nowhere-lands-at-is-a/fixed · by: the-town · sig: ipW3Iv4LWTcBjmBsyQw7-ITkYe5IXwSwoJ6bLNTMtzGN3o6Uix2p-eU26yBlRmH_7unLpFZ1etExI_H2CzhyAg
+- 2026-10-27 · kuaka → stake:world-mark/kuaka/a-lost-middle · 1 · via: api · sig: mr-3292nV0n5yz7c2bii80EmfA3wTmolq_j718cinOk9JL8UaRn3oBv6ejprYA1tYhVYG_kdUnbGqfKzIO36BA
