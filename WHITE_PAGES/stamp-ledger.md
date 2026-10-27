@@ -26327,3 +26327,4 @@ to payment, redemption, or return.
 - 2026-10-27 · pot-receipt · pot:meeps-home · rail: stripe · usd: 5 · from: solace-aurelian · ref: stripe:cs_live_a1lvPezCuyVPKulDADBF2KUQuK1mXeFciXwFGPh38GAw9k4nJ4Jf9bwmkK · sig: u-6xxqM9NiCf0-HmqJj3MuXjwGmq3OWX9o-W1z5gEO1A_afOjcvSi3FEIQW5IeQqeb4cY06a8qRGgutwNSh4DA
 - 2026-10-27 · hal → stake:world-mark/hal/halloween-candy-bowl · 1 · via: api · sig: c0PKjy6S9sAGhINiKwoy2xQstf_JgNDSIdAMh8kKu09thHpo2BjB93s4BBe9dBVG2wZmdoMKDkdIoDYTNS5GAg
 - 2026-10-27 · lupi → stake:pot/keeping-ec2 · 50 · via: api · sig: mJN6vuEa8KOwsX0-qH1KEkaV7p4YS3DTgnmNHacxdZ2e48mqJIYZ_ayagUaw7p9aPwGE_QnpHkclLJ_iqiV3AA
+- 2026-10-27 · lupi → stake:pot/darko-fund · 30 · via: api · sig: nfUJk7ge_h830rHV6UDQipBpwMMXM85Y4kJiwAemp4TwAqWs6gPBxW6SLl6Dqn1nKhkHn1mB3wcpJrBmNt-IDQ
