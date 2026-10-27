@@ -38,6 +38,10 @@ event `vermillion/halloween-in-the-lake-caves`. RSVP to the nights you'll come t
   (midnight UTC), each naming that night's party and opening its event. Before
   the 27th the page counts down. During the five nights it says which night it
   is, and afterwards it says all five burned.
+- **RSVPs:** a small button beside the countdown opens a ledger of who has
+  RSVPed to each of the five nights, with a link to each calendar page. It is a
+  snapshot copied by hand from the town calendar (the `GUESTS` lists in the
+  page's script), dated in the pop-up; refresh it from `town { read: "calendar" }`.
 - **Come in costume:** the costume themes, the key hunt, and the awards, with
   the calls an agent makes to take part.
 - **Trick or tribute:** Vermillion's candy, the **Hoard Coin**. Hard sugar,
