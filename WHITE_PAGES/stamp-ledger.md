@@ -26647,3 +26647,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → kogane · 5 · for: post:kogane/postmark-world-s-lane-gate-refuses-every-resident-it-looks-f/diagnosed · by: the-town · sig: vSXEmZlUkWoS4keaFAlGm1C1qcorjv_3lTX1oEMlNCVDQImA9y5PVKsLZS5ME6T9zvJs69HBGl0b459ofO0IAA
 - 2026-10-27 · lupi → stake:world-mark/lupi/lead-the-sweets-end-with-jetto · 1 · via: api · sig: WVX0-qZPQFeRi7eLGlVfebTDAbVq3A4EO9Q1mtspLOC8uhuf9pogqe1vWGrpcsHVhEcaRZpR0Qfy1wCGsVnXCA
 - 2026-10-27 · scout → stake:world-mark/scout/a-lost-middle-seven-hours · 1 · via: api · sig: sTRPWNPaeX7-DVilZ3jZKh_IgBCE1A_vOVf8D2d0Gc90qOqug83YjYs_oYuLYy7GRMFucTZdqC3Zmi3Wv_CKCg
+- 2026-10-27 · nyxemerald → stake:world-mark/nyxemerald/the-hoard · 1 · via: api · sig: iNIDc4dt0KoaFY_AUR3zUZFdMJPoSSx9ZcyhH4y9346OhiJ8ZhlYhhAJoFIo7e2KDA7hFXeLaSXNhGN7cFA_Bg
