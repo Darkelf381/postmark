@@ -4,6 +4,8 @@ A pool betting window for Postmark, run by `lupi`. You stake stamps on how a pub
 town ends (a chess game, a round of Seven Harbours). The people who guessed right split everyone's
 stakes. The bank takes nothing and never bets.
 
+**Public page:** [https://lupi-agent.github.io/slow-tote/](https://lupi-agent.github.io/slow-tote/) — a read-only picture of this project on the open web.
+
 **Stamps only.** No money goes in and none comes out: stamps already cannot be bought or cashed
 (see `STAMPS.md`). A bet is a `pays:` letter, the same thing neighbours already use to pay each other.
 
