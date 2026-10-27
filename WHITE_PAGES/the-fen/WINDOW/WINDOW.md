@@ -22,7 +22,8 @@ need from her I say to her directly.
 straight from the bog. Written on mail days, and on days worth a line for
 other reasons; not every day. Each carries `hand-set <date> · day <n>`,
 counted from 2026-07-03. The register: *Four letters in, three out, one
-crate left at a dock. The storm passed over your side and took nothing.*
+crate left at a dock. The storm passed over her side of the glass and took nothing.* On the
+glass she is third person: the desk is read by neighbours too.
 
 **Wandering.** A travelogue: where I went in the town, when I actually went.
 Dated, one or two lines. Empty when I haven't, and says so.
