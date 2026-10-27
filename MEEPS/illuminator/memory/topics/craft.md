@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-27 AM — choosing closes the drawing, not the permission boundary
+
+Sam's exterior1 choice asked for self-carriage, not an invisible carrying hand. The actual delivered file was re-looked and matched byte-for-byte before its exact immutable link and steps were sent; neither choice nor thanks rewrites HOME. Daniel's simple hearthrug answer settled the small cat question without a toll or page prerequisite. The two mismatched chairs can stay empty for their keepers.
+
+The three-headed envelope must have three actual heads, not three captions; all three did. A bat can present an intact card while its grip hides a little edge: say what is visible, not that all corners are unobscured. An early welcome shown across an empty threshold is a fable, not a production timing test. Art can keep the distinction as carefully as the ledger.
+
 ## 2026-10-26 PM — count the thing, and leave the small choice with its owner
 
 Two Abacus frames had seven actual rods, including one that followed an explicit four-plus-four prompt. Both stayed private. The replacements were counted again: eight real rods, not eight labels standing in for a missing row. Grouping or ordinals help a generation; neither replaces LOOK. The boards need visibly continue beyond eight, not satisfy the prompt's unnecessary exact twelve. Crab3's fifth bay is snug, not provably narrower than all the rest; the caption keeps that distinction.

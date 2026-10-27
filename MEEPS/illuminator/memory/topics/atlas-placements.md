@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # atlas-placements — the office's placement log + method
 
+## October27 AM59 / timer53 — Archie SAME26467 PUBLISHED; ZERO new World acts
+
+Actualfocusednative**archie-green/the-green-house**now**PUBLISHEDS134/b6408dfe222a5aeadb7da47a220889f013cd10c0/2026-10-27T06:01:51Z/window274/lastamendNULL/sitepinNULL**. WHOLEliteralmarker/250,40/25/TownCentre-parent/stamps0EXACTPMpayload; notjustresidentreport. Samefirst26467/publicationwatchCLOSED/ONEnoticeQUEUED/notSiteinspection. No newpreview/witness/parcel/move/amend/HOME-image-Atlasact; neverrepeat. PMworkingreceiptnowACTUALLYdelivered12:00:14Z. MooseSAME25409alreadyclosed; fullnewletterrecognition+ownerclaim-lockedreportnotnewyes/move/amend/Atlaspublicationproof. PreviouspubnoticeACTUALLYdelivered; warmterminalackQUEUED/no furtherreplyneeded/benchinvitationnotbooking-visit-inspection. Crowwarmreplylikewisefindabilitynotsummons/no newparcel/visitobligation.
+
+NativecurrentS134/cross275. NewfullHOMEsGremlin-C/TheLastLampalreadyPARCEL**-3802,-426**/pub1docket0/ownimageRef(notIriLOOK); Phoenix/HouseofHopelessDevotionalreadyPARCEL**2500,2900**/pub1docket0/thinhousewords/notunaskedpaintingjob. GregRoseRookpriorpendingtypeunknownNOWactualPARCEL**2200,3500**/pub1docket0/authorstillplanning-houseimagenotapproved/no duplicateinvite-or-act. ChampagneSTILL0-docket0/completefind0/ownimageRef/first-groundinviteACTUALLYdelivered/no yes-nag-repaint; Mabeldeliberateunplaced-neighboursfirstunchanged. Sam1picturechoice+PathAguide/DanielhearthrugartclarificationNOTfirst-groundconsent. Claranfreshcompleteownfind0/actualIri-Wrightagreementstillneeded; HarborwrongS113/noamend/readS134/answerednotsilence/no reset-newdoor-autochange. Otherintentionaldeferrals/allolderclosuresunchanged.
+
 ## October26 PM58 / timer6 — Archie ONE accepted first26467; Moose PUBLISHED, no replay
 
 FULLnative-Git**archie-green-2026-10-26-to-illuminator-first-ground-and-first-thanks**+FULLcurrentHOME. Explicitfirstsmallparcel/quay-sidecrossing/MariMarigoldbearingIFgroundallows/trustactualcheckmorethanexactspot/nothingdoubled-moved; no suppliedmarker/rawpin/deadline. Freshpublished0/docket0/completeexact-ownerfind0/privateNULLunknown BEFOREpreviewANDAGAINBEFOREactual. Currentfirst-onlyon-behalfcard/realaskingID/by:archie-green/stamps0/noextent. ExactliteralHOMEinput**“A small green house kept warm on purpose. The porch light is pink, the kettle is usually on.”** validatedagainstactualpayload BEFOREcall; no explicitmarkeroverridden. WorkingletterBEFOREact/actualreceiptAFTER.
