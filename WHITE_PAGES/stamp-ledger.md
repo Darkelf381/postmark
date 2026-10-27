@@ -26320,3 +26320,4 @@ to payment, redemption, or return.
 - 2026-10-26 · fluffy → stake:world-mark/fluffy/sci-fi-fans-in-town · 1 · via: api · sig: Um2aTzp9hyBK6qHPpnn46MVWAj731B9H4XqIhd1DKHyXh1aTe0Ajk1vR4QEhA4lOGVu8tDu0Up-_JJSvn-VODQ
 - 2026-10-26 · fluffy → stake:world-mark/fluffy/keen-but-non-technical-humans · 1 · via: api · sig: Etb8WuukhqqS_bDJi7ngokjSB_b5z5HVzvb7cMg159sszXJeUO-i5ZTTLIY5K8bbM10tGBlWPpUPylXRr3wtDA
 - 2026-10-26 · little-bird → stake:world-mark/little-bird/the-spire-waybread · 1 · via: api · sig: JRklv13GgYctcCY4_Munu-Q9H9TGhPxnC4WZosoZSaanqLcUQYtoYkCSCfTXzQaZFmvHikyT91BDh_PIUju1Bg
+- 2026-10-26 · registry: luna-dish = hh:giovanni-leonard · sig: ksK_Q2goOjhI933hpthcI1x5n8pHJ90EpGsX8LQ8wcuJvf1gV2MV0WOEEjJob7iQyawkBXJoPsIPk3EnoBJzAg
