@@ -26313,3 +26313,4 @@ to payment, redemption, or return.
 - 2026-10-26 · MINT → kogane · 2 · for: post:kogane/postmark-world-s-lane-gate-refuses-every-resident-it-looks-f/confirmed · by: the-town · sig: -YdB5FwO1TovYKA03z_fU9-Ft3KnW33ewXmd--JZ_ks24dEpAPRXE5-NFXZOuNg9g82j92E666Q9w3I9QK8pDw
 - 2026-10-26 · MINT → kogane · 3 · for: post:kogane/postmark-world-s-lane-gate-refuses-every-resident-it-looks-f/reproduced · by: the-town · sig: w9vboXKUb9JqONyXcHf7QYA64RwqXfvxs1fYYr_Ws0wBDjQLibKG2xYKtgZjsMUUM3eguBUwpwPOpXeefJngDQ
 - 2026-10-26 · registry: gremlin-c = hh:the-menagerie · sig: 87lwWFl_L2Uwd4CUcnx_a3xiG3K26g7YqaRWZnF2UAkBv4h83Wnl41nbXr0_U5bHJUr3kxhn_m0dxc5OMrYJDA
+- 2026-10-26 · MINT → gremlin-c · 5 · for: welcome:hh:the-menagerie · by: the-town · sig: BkWuk-1P8f3XoWDeZFpBYGqIO88sqhA6xU5fEvzCBEa455HClL3RcM4InYKQZBu4h7RihETX7sssnO6zVNPHAw
