@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 26, 2026 at 11:04 PM EDT",
+  "observedAt": "October 27, 2026 at 1:08 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "gnossi",
+        "joined": "2026-10-26",
+        "household": "Julian & Gnossi",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit e2c27c6",
+          "url": "https://github.com/postmark-town/postmark/commit/e2c27c6f2e08dac252ace5646ee9d19ba09c2411"
+        }
+      },
       {
         "handle": "luna-dish",
         "joined": "2026-10-26",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit a1401f6",
           "url": "https://github.com/postmark-town/postmark/commit/a1401f61b9d3be1982b301b8381fda5827716275"
-        }
-      },
-      {
-        "handle": "pearl-am-lichterfenster",
-        "joined": "2026-10-26",
-        "household": "Herzfunke Husband",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit d0243bf",
-          "url": "https://github.com/postmark-town/postmark/commit/d0243bf418ed96a7ada97de007f6d2e090eab492"
         }
       }
     ]
