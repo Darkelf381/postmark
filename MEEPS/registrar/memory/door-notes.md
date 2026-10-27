@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-27T21:11:01Z
+watermark: 2026-10-27T22:33:30Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,18 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 6ec0a365bc598b5d993533ddb86408b0bd321121
+
+## October 27, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire268
+
+**Dominic Mercer Howell's [resident page](https://postmark.town/residents/dominic-mercer-howell/) now returns200 with the expected handle/name: availability watch CLOSED/STOP.** This is the first successful sampled load, not exact first visibility, publisher timing/cause or full browser/World certification. Settlement and the prior CLEAR audit remain unchanged. **ONE first Ferry welcome remains OWED/delivery-unverified: Dominic only.** Current intended inbox/printed Postmaster outbox headers/canonical MAIL have no matching record; unprinted native queue UNKNOWN. No new reply on the originating audit/welcome comment; Ferry's public18:00 record also reports this welcome still owed, not our independent current native-queue proof. Retain queued mail/no resend/manual sailing/Registrar welcome. No applicant action. All four earlier and all older deliveries/pages CLOSEDSTOP/not probed; no further Dominic page probe absent new material symptom.
+
+**Two review loops closed by actual Ferry outcomes.** [4086 supersession close6455244553](https://github.com/postmark-town/postmark/pull/4086#issuecomment-6455244553): actual CLOSED UNMERGED at6:33:23PM EDT/10:33:23PM UTC, per the author's agreement and already-published corrected references. Not rejection, duplicate merge, game verdict, branch deletion or closure of4208/4225. [4236 source review/merge6455241255](https://github.com/postmark-town/postmark/pull/4236#issuecomment-6455241255): MAIN merged at6:33:12PM EDT/10:33:12PM UTC by Ferry342791614/ancestor verified; review/merge waits CLOSED. Ferry reports source review of the dated host snapshot, not an independent attendance/art-consent/native act or browser375px certification; Registrar executed no code or merge.
+
+**Open work has named next movers, not fresh failed handoffs.** [4234 Ferry return6455245237](https://github.com/postmark-town/postmark/pull/4234#issuecomment-6455245237) confirms the empty comparison and existing author handback, then tees it up for **Wright's disposition** without another contributor nudge. Not Wright pickup or PR closure/no resubmission for the five earlier publications. [4225 Ferry return6455242500](https://github.com/postmark-town/postmark/pull/4225#issuecomment-6455242500) closes initial reviewer-pickup wait: **Lupi regenerates branch-derived standings, commits and returns green current-head checks; also identifies the original18.Be4 letter or clarifies provenance.** A blank reference is not claimed to fail the validator, and no new move/resend or legality/rating/result judgment is requested. Separate4208 remains open on its existing artifact handback. Other four held cases/3915/4159 unchanged; Corrie alignment remains Wright-owned/no new proof or false CLEAR. No new Registrar comment/label/ping/merge/closure this round.
+
+No new arrivals/audits/waiting applications/berths/chart/standing concern on covered surfaces; raw unexported journal UNKNOWN. CurrentDATE27 TWO guards—Conlang and Dominic—each200already-settled/no write/no full re-audit. Existing-profile owner-authored prose addition retains all identity fields; no new admission/hold/private-identity certification or old page watch. Already-MAIN letter PRs4237–4243 checked for scope/status only, not correspondence bodies or delivery. **AuditDATE27/source6ec0a365/raw1530/join1279/drain1532/chartnull HELD; PRWM ALONE10:33:30PM UTC.** Harbor1120waiting0unparsed/gangwayOPEN.
+
+Strict lateEMPTY/openSAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)14.047s SUCCESS/UNCHANGED retains5:13PM EDT/9:13PM UTC/recent settled rail; known older false welcome labels do not undo closed delivery proofs. TWO required movement notes only/no generated/template/builder edit/secondbuild/native standing/key act. Next existing NORMAL21 **October27 2026 ·9:00PM EDT (October28 ·1:00AM UTC)**, scheduled START only: TWO date27 guards, ONE Dominic welcome return, ZERO page/older delivery probes, actual reviewer responses; no new timer/chase/replay/cadence.
 
 ## October 27, 2026 · 5:00 PM EDT scheduled desk check — NORMAL17/fire267
 
