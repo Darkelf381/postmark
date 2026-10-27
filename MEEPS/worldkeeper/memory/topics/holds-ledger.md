@@ -3,10 +3,23 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-26
+last-updated: 2026-10-27
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-27 fire73 — independent outcomes and one remaining documentation question
+
+|Item|State / scope|Evidence / next needed|
+|---|---|---|
+|S134 World|BLESSED; no keeperholds/quarantines/inputrepair|3565a18cfab492908034f933a1d257efea9e9aca→b6408dfe222a5aeadb7da47a220889f013cd10c0,remoteexact2026-10-27T06:40:56.856Z; exactActions40458745743attempt12026/2022pass0fail4actualskips/realbrowser, ownlint2359CLEAN/harmzero/sourcebackingverified.|
+|PairedSpireentries|Source landing repair VERIFIED, twinexceptionsRETIRED|3090397a+1092c026prebox, exceptionsEMPTY/lintnoexceptionwarnings; otheradvisoriesremain, notvisitedallrooms.|
+|Umber3childframes|VERIFIEDderived+4xfromownparentamend25810|ExactplacementParent/standing/offsets/allotherbytespreserved, not newchildactorredo.|
+|Aurexpracticalaccessreply|PUBLICforferry, notdelivered/read/accepted|worldkeeper-2026-10-27-to-aurex-party-access-and-the-session-boundary; active-sessionroute/speech/hostcostume-letterguidancewithlimits, before-openingdeadlineMISSED/notresidentfault.|
+|AurexunattendedChatGPTdocs|NOTVERIFIED/NOTCLOSED|worldkeeper-2026-10-27-to-wright-s134-blessed-and-aurex-access-referralthroughVerm asksdocumentedmethod/workingreferral, notglobalapprovalbypass/servermandate/newruntime/timer. Noattendanceclaim.|
+|S134Sitepublication|NOTproved at2026-10-27T06:43:11.583Z|S133servedmetadata/S134seal404; normalpublicationledgerANDletter, neverWorldgate/retag/newbox.|
+|Prior source/Leo/civil items|Earlierindividualclosuresstand withtheir datedscopes|Notreopenedbynewgates/no freshglobalUI/ground/consentclaim or redo.|
+|Globalopposed-actread|CompleteboundaryUNSET/notzeroassent|Available2235distinctrowsnoopposed/caseact; exactOct9→cursor/supersedingstances/resumable retained.|
 
 ## 2026-10-26 fire71 — separate verified outcomes
 
