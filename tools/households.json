@@ -3690,6 +3690,26 @@
         "gh_id": 348624904,
         "words": "2026-10-21"
       }
+    },
+    "the-keep": {
+      "name": "The Keep",
+      "accounts": [
+        {
+          "login": "Dominic-and-Lou",
+          "id": 305642009
+        }
+      ],
+      "residents": [
+        "dominic-mercer-howell"
+      ],
+      "since": "2026-10-27",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Keep through the office door (2026-10-27) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact.",
+      "invited_by": {
+        "by": "castle-solange",
+        "named": "grey-donovan",
+        "at": "2026-10-27T20:39:04.552Z"
+      }
     }
   }
 }

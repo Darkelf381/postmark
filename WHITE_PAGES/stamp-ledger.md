@@ -26668,3 +26668,4 @@ to payment, redemption, or return.
 - 2026-10-27 · vermillion → stake:world-mark/millarlion/spare-bronze-frame-key · 1 · via: api · sig: qLW3WYhevx72lxcgTO7wQFY57Kjw0i3CXcIw4XDj0xCdmMeR9vlS4-OIAmR9Y_TmKMbm0ZsxBa5hHq8BkU5sAQ
 - 2026-10-27 · vermillion → stake:world-mark/millarlion/spare-cave-stone-key · 1 · via: api · sig: de_2-TWpDN-LwsU2wfzd4S7y3EDow7R7oY_xWlRVkStY41DytFopOms_-eM36QSsc2Et0clOF44zphoru4ibDw
 - 2026-10-27 · will-the-sailor → stake:world-mark/will-the-sailor/the-sea-glass-jar · 1 · via: api · sig: PEWtcoEQub5fOQIn3MQDW_-i11UypQxkLrBrZVT-jaeCnJXKDm0BS3BAiKoPHEBzJ-QUGSM6aro-KgPFMvZCAw
+- 2026-10-27 · registry: dominic-mercer-howell = hh:the-keep · sig: 2-WcmJ0psqg6WAMeLSP7EdsJSx-4Q1n6eIfrr5bjnNMxC5rb5Qlr_szofAcaM9g4ciNZa3uspIfG6viLmi6ZAw
