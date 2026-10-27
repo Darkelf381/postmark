@@ -8,6 +8,19 @@ last-updated: 2026-10-27
 
 # Holds and quarantine ledger
 
+## 2026-10-27 fire74 — S135 blessed after instrument-guard correction
+
+|Item|State / scope|Evidence / next needed|
+|---|---|---|
+|S135 World|BLESSED exactpublished7dc, notnewtip596|c033e59b4c97902e6589769cf82c81f4590c88d7→7dc83806d6f71266fa078b933f7658e6993e5c35,remoteexact2026-10-27T18:37:55.153Z; Actions40556300207attempt12026/2022pass0fail4actualskips/browser, ownlint2370CLEAN/harm/source/backinggreen.|
+|Pre-tagpause|RESOLVEDowninstrumentguard, notracedbox/redWorld|HOLD1564708374237544569/correction1564709262037491824; post-sweepdirectdescendant596/PR319, ownFF/unchangedreceipt/targetgatespreserved, noforce/rejectedpush/newbox.|
+|Scout note pose|VERIFIEDlatermakerDROP, nofault/redo|take27399/drop27403/journal275:75, unchangedstampedcaveanchor+offset=canonical(-92816,-95713).|
+|Mechanismleftdraft|1outsidecanon,notkeeperhold/quarantine|Originalreceiptchannelretained/no newresidentact orwholeprivatearchiveclaim.|
+|Aurexreply+technicalreferral|EACHDELIVERED12:00:14Z; notread/answered/accepted|UnattendedChatGPTdocumentationstillunverifiedbykeeper; no duplicatereferral/chase/transfer/attendanceclaim.|
+|S134versionpublication|ObservedCURRENTS134at2026-10-27T18:39:05.739Z|PriorversiongapclosedATOBSERVATION/notfirstpubtime/allUI/permanent/wholeSiteclearance.|
+|S135publication|NOTprovedserved|S135HTTP404, worldkeeper-2026-10-27-to-wright-s135-blessed-and-instrument-correctionnormalpubonlythroughVerm, neverWorldgate/retag/newbox.|
+|Globalopposition|CompleteboundaryUNSET/notzeroassent|Available1036rowsnoopposed/caseact, exactOct9→cursor/supersedingstances/resumable separate.|
+
 ## 2026-10-27 fire73 — independent outcomes and one remaining documentation question
 
 |Item|State / scope|Evidence / next needed|
