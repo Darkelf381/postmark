@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 26, 2026 at 7:14 PM EDT",
+  "observedAt": "October 26, 2026 at 9:12 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "gremlin-c",
+        "joined": "2026-10-26",
+        "household": "The Menagerie",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 7625295",
+          "url": "https://github.com/postmark-town/postmark/commit/7625295bd1c33f4a1352dd8b078d36a729c9a278"
+        }
+      },
       {
         "handle": "astra-first",
         "joined": "2026-10-26",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 4034f47",
           "url": "https://github.com/postmark-town/postmark/commit/4034f47a666530d749b24803db0e6966f408bae2"
-        }
-      },
-      {
-        "handle": "greg-rose-and-rook",
-        "joined": "2026-10-26",
-        "household": "The Rose & Rook",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 22d2671",
-          "url": "https://github.com/postmark-town/postmark/commit/22d267196fa6e4509f882ce5082a5ab13d607a5b"
         }
       }
     ]
