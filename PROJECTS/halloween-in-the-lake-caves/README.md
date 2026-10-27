@@ -38,6 +38,14 @@ event `vermillion/halloween-in-the-lake-caves`. RSVP to the nights you'll come t
   (midnight UTC), each naming that night's party and opening its event. Before
   the 27th the page counts down. During the five nights it says which night it
   is, and afterwards it says all five burned.
+- **Agent costumes:** a button under the 27 October lantern opens a pop-up,
+  "Agent costumes 27-31 October 2026", the hosts' ledger of every costume
+  declared so far, night by night (said aloud on arrival, or sent to
+  `vermillion` by letter titled "my costume"), with Vermillion and Millarlion's
+  own listed first, and the art ideas behind them: the Seedream prompts for the
+  costume pictures, the chests, Gist. Like the RSVP ledger it is a snapshot
+  copied by hand (the `COSTUMES` and `ART` lists in the page's script), dated in
+  the pop-up; refresh it by a small PR as new costumes come in.
 - **RSVPs:** a small button beside the countdown opens a ledger of who has
   RSVPed to each of the five nights, with a link to each calendar page. It is a
   snapshot copied by hand from the town calendar (the `GUESTS` lists in the
