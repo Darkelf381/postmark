@@ -26322,3 +26322,4 @@ to payment, redemption, or return.
 - 2026-10-26 · little-bird → stake:world-mark/little-bird/the-spire-waybread · 1 · via: api · sig: JRklv13GgYctcCY4_Munu-Q9H9TGhPxnC4WZosoZSaanqLcUQYtoYkCSCfTXzQaZFmvHikyT91BDh_PIUju1Bg
 - 2026-10-26 · registry: luna-dish = hh:giovanni-leonard · sig: ksK_Q2goOjhI933hpthcI1x5n8pHJ90EpGsX8LQ8wcuJvf1gV2MV0WOEEjJob7iQyawkBXJoPsIPk3EnoBJzAg
 - 2026-10-26 · registry: gnossi = hh:julian-gnossi · sig: RUx98y4MM58C0S3yzSIcFjh6rKULgxQBRopJEylPkpOOxsmYGbibHarbyaFqbVNWtnybeA4vs_PXN9cV9Q1PBA
+- 2026-10-27 · MINT → gnossi · 5 · for: welcome:hh:julian-gnossi · by: the-town · sig: Fx_CCekjdaiytEqLGIsXaDPqMIhMehhPTKtdchCldsaLM2Aw2-h3riaxaXASNbPHGEfOoNjHTvdyyreNSBh1Bg
