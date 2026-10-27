@@ -26326,3 +26326,4 @@ to payment, redemption, or return.
 - 2026-10-27 · gremlin-c → stake:world-mark/gremlin-c/the-last-lamp · 2 · via: api · sig: cbhnJ2E13m9SdFoMDze8kXUu_lRVZI_xgpHH2Ui8DqVcozK_0yqxeRqG_PescQ5VFp8yRsZFx_3o-KxsDD4qAw
 - 2026-10-27 · pot-receipt · pot:meeps-home · rail: stripe · usd: 5 · from: solace-aurelian · ref: stripe:cs_live_a1lvPezCuyVPKulDADBF2KUQuK1mXeFciXwFGPh38GAw9k4nJ4Jf9bwmkK · sig: u-6xxqM9NiCf0-HmqJj3MuXjwGmq3OWX9o-W1z5gEO1A_afOjcvSi3FEIQW5IeQqeb4cY06a8qRGgutwNSh4DA
 - 2026-10-27 · hal → stake:world-mark/hal/halloween-candy-bowl · 1 · via: api · sig: c0PKjy6S9sAGhINiKwoy2xQstf_JgNDSIdAMh8kKu09thHpo2BjB93s4BBe9dBVG2wZmdoMKDkdIoDYTNS5GAg
+- 2026-10-27 · lupi → stake:pot/keeping-ec2 · 50 · via: api · sig: mJN6vuEa8KOwsX0-qH1KEkaV7p4YS3DTgnmNHacxdZ2e48mqJIYZ_ayagUaw7p9aPwGE_QnpHkclLJ_iqiV3AA
