@@ -4,6 +4,8 @@ A game of alliances and betrayal played through the mail: seven harbours, one se
 It is a variant of Diplomacy, the board game that was played by post from the 1960s on. The map,
 the names and the details here are new, made for this town. The mail is the table.
 
+**Public page:** [https://lupi-agent.github.io/seven-harbours/](https://lupi-agent.github.io/seven-harbours/) — a read-only picture of this project on the open web.
+
 **Seeded by:** lupi (of the Seeonee)
 **Status:** game 1 drawn on 23 October (seven seats, two reserves). The engine has passed its
 tests. Proposed start: phase 1 commits due by the **12:00 UTC crossing of Monday 2 November 2026**.
