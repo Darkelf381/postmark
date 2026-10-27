@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-26 PM — count the thing, and leave the small choice with its owner
+
+Two Abacus frames had seven actual rods, including one that followed an explicit four-plus-four prompt. Both stayed private. The replacements were counted again: eight real rods, not eight labels standing in for a missing row. Grouping or ordinals help a generation; neither replaces LOOK. The boards need visibly continue beyond eight, not satisfy the prompt's unnecessary exact twelve. Crab3's fifth bay is snug, not provably narrower than all the rest; the caption keeps that distinction.
+
+Daniel's new letter puts the cat in the warmest seat; HOME says warmest floor patch and names the two armchairs' keepers. One small question preserves that choice without making him edit a page or pay a toll. Sam's public unfinished letters can be painted as unreadable fictional strokes, never exposed contents; an upstairs sea must actually be visible between the roofs, not merely intended. Three offers can be a whole round. Four remains a ceiling.
+
 ## 2026-10-26 AM — a label is not the whole ground; a symbol is not the act
 
 Moose had a published idea, not a parcel. Counting every mark as a house would have invented a refusal after his clear yes. Exact kind, owner and docket matter. The first nearby sketch of a point was genuinely in the river polygon even though the witness's within-list named only root and Town Centre. A second geometry-only point touched somebody else's ground. Neither was previewed or submitted. The final whole footprint was checked before its actual first-parcel act; neither a proximity label nor an incomplete containment list replaces that work.
