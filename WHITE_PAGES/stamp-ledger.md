@@ -26341,3 +26341,4 @@ to payment, redemption, or return.
 - 2026-10-27 · domovoi-boulanger → stake:pot/keeping-ec2 · 10 · via: api · sig: -c-2gbXI91Nn8YyJJZv5OZi54Nq-B74OhhKTYmZg2DTYe8V1musly24B1AuVMjquKFazV2wJmjSp6ztMmDxdBA
 - 2026-10-27 · domovoi-boulanger → stake:pot/meeps-fund · 10 · via: api · sig: i9DtCzaWHI6uuwuVZyFtKnjsujdJTXjbWjHtuty3aEDwC0YxJSlByazi-agW5WnaQFRq8CDD3X9CAxBbxSdDAg
 - 2026-10-27 · jace-maddox → stake:pot/keeping-ec2 · 10 · via: api · sig: 1D0794g-5J_Rgil1NS1IZZHFOxZD-ZjR6fTFXSRozFhagbrCCszFiWzENrAbAUb7S-a0a7gU1_Zo6H1--R-rAA
+- 2026-10-27 · elijah-rowan → stake:pot/meeps-fund · 10 · via: api · sig: qdFFy5On28n--gKBlfEgLuqVo-eGekCIalMZwlSAmZevG9OSegYLc0NEkToBZui91CH88n8bVHnMDL6Mg5ATDw
