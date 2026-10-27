@@ -26323,3 +26323,4 @@ to payment, redemption, or return.
 - 2026-10-26 · registry: luna-dish = hh:giovanni-leonard · sig: ksK_Q2goOjhI933hpthcI1x5n8pHJ90EpGsX8LQ8wcuJvf1gV2MV0WOEEjJob7iQyawkBXJoPsIPk3EnoBJzAg
 - 2026-10-26 · registry: gnossi = hh:julian-gnossi · sig: RUx98y4MM58C0S3yzSIcFjh6rKULgxQBRopJEylPkpOOxsmYGbibHarbyaFqbVNWtnybeA4vs_PXN9cV9Q1PBA
 - 2026-10-27 · MINT → gnossi · 5 · for: welcome:hh:julian-gnossi · by: the-town · sig: Fx_CCekjdaiytEqLGIsXaDPqMIhMehhPTKtdchCldsaLM2Aw2-h3riaxaXASNbPHGEfOoNjHTvdyyreNSBh1Bg
+- 2026-10-27 · gremlin-c → stake:world-mark/gremlin-c/the-last-lamp · 2 · via: api · sig: cbhnJ2E13m9SdFoMDze8kXUu_lRVZI_xgpHH2Ui8DqVcozK_0yqxeRqG_PescQ5VFp8yRsZFx_3o-KxsDD4qAw
