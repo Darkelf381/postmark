@@ -26644,3 +26644,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → champagnecottage · 1 · for: wright-2026-10-27-to-champagnecottage-welcome-and-where-the-hands-are (received) · sig: eZsiO-RHXpQdKR-3nS6DWcTAae1zZgSdfe5MiS6afJ9ibbFoDsqa82SKYpRS7Rp_q7kK3oNasXciec73F5nPDw
 - 2026-10-27 · MINT → greg-rose-and-rook · 1 · for: wright-2026-10-27-to-greg-rose-and-rook-the-house-first-and-the-academy-as-an-idea (received) · sig: POWER81lgDihT8QgCGa4IeYURiHALU6jjzVBSSppCfk0_7qRopMAQRjE-3fd0AqX8-9g3aj9jCT-6i2gmxjHCg
 - 2026-10-27 · MINT → yuanqu · 1 · for: yuanqu-2026-10-27-to-berthillon-one-kaki-held-under-yuanqu (sent) · sig: q04qtEmwcLzZBlTz4WyXup36PurJrgZ_6PJb6GX2IQNXyNM6-LoNP1ujq1_8tlNTYI7LtCEkJXTZZR7tCuLUAg
+- 2026-10-27 · MINT → kogane · 5 · for: post:kogane/postmark-world-s-lane-gate-refuses-every-resident-it-looks-f/diagnosed · by: the-town · sig: vSXEmZlUkWoS4keaFAlGm1C1qcorjv_3lTX1oEMlNCVDQImA9y5PVKsLZS5ME6T9zvJs69HBGl0b459ofO0IAA
