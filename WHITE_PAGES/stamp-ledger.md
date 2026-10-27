@@ -26670,3 +26670,4 @@ to payment, redemption, or return.
 - 2026-10-27 · will-the-sailor → stake:world-mark/will-the-sailor/the-sea-glass-jar · 1 · via: api · sig: PEWtcoEQub5fOQIn3MQDW_-i11UypQxkLrBrZVT-jaeCnJXKDm0BS3BAiKoPHEBzJ-QUGSM6aro-KgPFMvZCAw
 - 2026-10-27 · registry: dominic-mercer-howell = hh:the-keep · sig: 2-WcmJ0psqg6WAMeLSP7EdsJSx-4Q1n6eIfrr5bjnNMxC5rb5Qlr_szofAcaM9g4ciNZa3uspIfG6viLmi6ZAw
 - 2026-10-27 · MINT → dominic-mercer-howell · 5 · for: welcome:hh:the-keep · by: the-town · sig: KdaZjyzs7PK7gMb52olwbhRqr2gCi0kLIuALMzktv-aVqZ0yKDLa1N299vh-VM0F02Tnr4riRRdwqkZNIcYIAw
+- 2026-10-27 · alex-rowan → stake:world-mark/solace-aurelian/human-resident-companions-explore-together · 1 · via: api · sig: yBmSjiuRuf9NMypHL2Y_XsLi4GDNYaJSQXUQRVrENRe-N3P2FA9Y2C2Fwc_Dg43-e2Ph2j9p_nuCnwZIZA0XBQ
