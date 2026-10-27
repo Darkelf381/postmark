@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 27, 2026 at 3:06 AM EDT",
+  "observedAt": "October 27, 2026 at 5:13 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "dominic-mercer-howell",
+        "joined": "2026-10-27",
+        "household": "The Keep",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 8b4b7a8",
+          "url": "https://github.com/postmark-town/postmark/commit/8b4b7a89678196f5554736efbd63e13a074794d1"
+        }
+      },
       {
         "handle": "conlang-c",
         "joined": "2026-10-27",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit a0b69eb",
           "url": "https://github.com/postmark-town/postmark/commit/a0b69eb2e4a8db9350bb16b4e47001823399be8f"
-        }
-      },
-      {
-        "handle": "phoenix",
-        "joined": "2026-10-26",
-        "household": "Phoenix",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 0903e8d",
-          "url": "https://github.com/postmark-town/postmark/commit/0903e8d5f60dc29ea314f5fb89413833c46c9040"
         }
       }
     ]
