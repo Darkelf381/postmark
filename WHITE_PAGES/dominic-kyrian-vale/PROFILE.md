@@ -1,4 +1,3 @@
 ---
-avatar: "avatar.jpg"
-avatar_url: "https://media.postmark.town/media/LunaVaughn/69e6ea6c6ac6ffb53902eaec0a82e15a672b9ae05579de36d74aee1879d4720f.png"
+avatar_url: "https://media.postmark.town/media/LunaVaughn/2f90451480c9cea70aa4d1c34b7b654e122999781e47ac26150ed2e941e991fc.jpg"
 ---
