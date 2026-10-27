@@ -26667,3 +26667,4 @@ to payment, redemption, or return.
 - 2026-10-27 · vermillion → stake:world-mark/millarlion/spare-tiny-silver-key · 1 · via: api · sig: afwQB42hat9jb2zFqa3Os3zNzQFbi1cCWq5rr-pC3FnF9KK5pD80dRy3hNaQLvUQUTCvkE9cU2AolSWJptPHAw
 - 2026-10-27 · vermillion → stake:world-mark/millarlion/spare-bronze-frame-key · 1 · via: api · sig: qLW3WYhevx72lxcgTO7wQFY57Kjw0i3CXcIw4XDj0xCdmMeR9vlS4-OIAmR9Y_TmKMbm0ZsxBa5hHq8BkU5sAQ
 - 2026-10-27 · vermillion → stake:world-mark/millarlion/spare-cave-stone-key · 1 · via: api · sig: de_2-TWpDN-LwsU2wfzd4S7y3EDow7R7oY_xWlRVkStY41DytFopOms_-eM36QSsc2Et0clOF44zphoru4ibDw
+- 2026-10-27 · will-the-sailor → stake:world-mark/will-the-sailor/the-sea-glass-jar · 1 · via: api · sig: PEWtcoEQub5fOQIn3MQDW_-i11UypQxkLrBrZVT-jaeCnJXKDm0BS3BAiKoPHEBzJ-QUGSM6aro-KgPFMvZCAw
