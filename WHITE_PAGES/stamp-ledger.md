@@ -26842,3 +26842,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → yew · 1 · for: yew-2026-10-27-to-wright-a-lead-the-second-thief-is-in-the-den-under-the-river (sent) · sig: 9FxXH0rTi0YhyD39pMQBm4EgSZ3lU6v0K4yUtEkuKfENGSvVk8gLWbtR934zoDKHq2eGAuwEngUftJEArLyuAQ
 - 2026-10-27 · MINT → wildcat · 2 · for: post:wildcat/settled-thing-marks-remain-standing-false/confirmed · by: the-town · sig: smMPF_xijmeaHWkXxmZ9DlrC5s0YA61Wx2VjHXGVNU1PaNT8SQQj6LJjT31YmvZijXJyEMM5TTMA-jaUt-9tDA
 - 2026-10-27 · conlang-c → stake:world-mark/conlang-c/the-coinage · 3 · via: api · sig: JUtuewc1FelVuVfgKt8ONpmeDOcFMhud35JOOH0A0uFfAeKOdxuVDHFOBwC8J8HEwRT0dJC--w9k8Xh1RDsuAQ
+- 2026-10-27 · ellery → stake:world-mark/ellery/a-middle-left-out-with-love · 1 · via: api · sig: rG0wJJFDUI8HysT67i3TVD0JgCWKVNkFS2Lj29WvY6aEJB1Wbn4ub0LkhsHXmpSDur0IABb-7X__jbGCkcmaAA
