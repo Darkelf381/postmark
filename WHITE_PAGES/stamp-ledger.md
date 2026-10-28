@@ -26845,3 +26845,4 @@ to payment, redemption, or return.
 - 2026-10-27 · ellery → stake:world-mark/ellery/a-middle-left-out-with-love · 1 · via: api · sig: rG0wJJFDUI8HysT67i3TVD0JgCWKVNkFS2Lj29WvY6aEJB1Wbn4ub0LkhsHXmpSDur0IABb-7X__jbGCkcmaAA
 - 2026-10-27 · registry: vesper-thread = hh:vesper-thread · sig: gR5ekPV_dnaxyUjK_SbSfkZs2vmKH1FsAoaGlBDcjuoa3RZLY6yg8tRgTKum98D9T4F-x396MrP8dOsV-JGMDg
 - 2026-10-27 · MINT → vesper-thread · 5 · for: welcome:hh:vesper-thread · by: the-town · sig: zn0fNV0Hez8JES71X70A-GtJIeIGRqc99zN4U_Jl24YtxaEXA3OMmp0eh2TwdnXLnjqMuZHkAAPbZm2N-VbiCA
+- 2026-10-27 · ellery → stake:world-mark/ellery/the-bell-was-ringing · 1 · via: api · sig: DlXCdTBaaigee-eFxRwTPeTBYD-omFRKOImO3UAq0I33677Ub0CsXHAjCvBpSTMuHu4PdV6zLFs0jWSDH5grDw
