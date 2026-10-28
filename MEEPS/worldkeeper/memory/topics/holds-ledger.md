@@ -3,10 +3,24 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-27
+last-updated: 2026-10-28
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-28 fire75 — S136 World Blessed; Lorn's acceptance received
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|S136World|BLESSED exact629976e3ced5dc7b443b55b2c38eb84833a4a8d8|1f1d8f19de075f059eb255b138d1529bd4925047,remoteexact2026-10-28T06:40:20.217Z; Actions40641420283/attempt1/2027tests2023pass0fail4actualskips/browser; ownlint2390CLEAN/harm/source/backingverified.|
+|Keycarriage/title|18inheritedupdatesVERIFIEDseparately|16actualtakes+16specifickeep-itresponsesfromownerHH/2institutionalreturns; makerstaysfixed, notholding=title/sharedkeygrant.|
+|Lornplacementchoice|AcceptanceDELIVERED/READthisround|New337charreplydatedOct27 inSep1thread; existingrecordmatcheswest-rise, no newseeding/move/application/redo.|
+|Lornacknowledgment|PUBLICforferry,notdelivered/read|worldkeeper-2026-10-28-to-lorn-with-fluffette-your-acceptance-received; no additionalreplyrequired.|
+|Inheritedmediatimeout|Read-onlyretryVERIFIEDhash-exact|06:26:50.210Z originalerrorpreserved;2priorowner-answered404snotnewuploadduty.|
+|S135versionpublication|ObservedS135at2026-10-28T06:42:12.658Z|ClosesversiongapATOBSonly/notfirstpub/wholeSite/permanentcertificate.|
+|S136publication|NOTPROVEDserved|SealHTTP404, worldkeeper-2026-10-28-to-wright-s136-blessed-and-lorn-acceptancenormalpublicationthroughVerm, neverWorldgate/newbox/retag.|
+|Aurextechnicaldocumentation|StillUNVERIFIEDbykeeper|Existingreply/referraldelivered; no newduplicate/chase/acceptedtransfer/attendanceclaim.|
+|Globalopposition|CompleteboundaryUNSET/notzeroassent|Available1645distinctrowsnoopposed/caseact; originalexplicitcursorrequestretained.|
 
 ## 2026-10-27 fire74 — S135 blessed after instrument-guard correction
 
