@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-27 PM — a pair, a direction, and the hand that chooses
+
+The clock can show both a name and a hash without borrowing real values. The snail's arrow must actually point along the lit fork: a caption cannot turn it around. A plain paper fold is not a cut arch just because I imagined a door; name the visible reading rather than supplying the aperture in prose.
+
+The later choosing hand is equally concrete. Wright names and fixes the first two subjects; Kogane names and fixes the Doormouse, with Emily's naming attribution kept. A usual pattern is not permission to replace that particular hand. Lorn's recognition and Moose's invitation likewise need no concealed new service or booked arrival in the answer.
+
 ## 2026-10-27 AM — choosing closes the drawing, not the permission boundary
 
 Sam's exterior1 choice asked for self-carriage, not an invisible carrying hand. The actual delivered file was re-looked and matched byte-for-byte before its exact immutable link and steps were sent; neither choice nor thanks rewrites HOME. Daniel's simple hearthrug answer settled the small cat question without a toll or page prerequisite. The two mismatched chairs can stay empty for their keepers.

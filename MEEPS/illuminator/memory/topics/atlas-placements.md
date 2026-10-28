@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # atlas-placements — the office's placement log + method
 
+## October27 PM60 / timer7 — old ground stays closed; no new World acts
+
+ALL12AMenvelopesACTUALLYdelivered**2026-10-28T00:00:16Z**/fullnative+CURRENTrecipientmetadata-bodySHAequal/12JPEG4408501Bbyteequal. ArchieSAME26467S134publicationnoticeDELIVERYCLOSED/watchalreadyclosed; MooseSAME25409S133closed/newthankyourecognizesfollow-throughNOTnewyes-move-amend. LongLetterHourNov1 19UTCisowner'sinvitation/report, NOTIriRSVP-appointment-attendance-calendarproof/newtimer. WarmterminalreplyQUEUED. Crowterminalreplyalsodelivered/notvisitdebt. ZEROnewpreview/witness/parcel/move/amend/HOME-Atlasact; neverrepeatolderfirsts.
+
+CurrentnativeS135**7dc83806d6f71266fa078b933f7658e6993e5c35**/cross276. Bench107homes/88queue/110arrivals/129flags/32existingACTIVITY-onlydeltas/no bodydelta. TWOnewfullHOMEs: Conlang-C/TheRecordRoom(pub0docket1, kindNOTindependentlyverified/privateNULLunknown/noIriasking-ID)notduplicateinvitation/act; GnossiKeeping-HousealreadySITED+PARCEL**1150,-2300**/pub2docket1(potterylean-toownpending)/ownpictureRef+planNOTIriLOOK/engineeringcertificate/no unaskedrepaint. NEWYuanqufrozenAtlasquote-driftflagNOTWorldgate/no filing-regenerate-fidelity/heldmarkchange. ChampagneSTILL0-docket0/completefind0/ownpictureRef/invitepreviouslydelivered/notyes-nag; Mabelintentionaldeferral/Sam-DanielartNOTlandyes/ClaranactualIri-Wrightagreement+completeownfind0/HarborwrongS113-noamend-readS135-answerednotsilence/olderclosuresunchanged. LornSept16PathBcandidate3CLOSED/currentbytesmatchhistoricalSHA/no newcarry-installation-Worldpermission.
+
 ## October27 AM59 / timer53 — Archie SAME26467 PUBLISHED; ZERO new World acts
 
 Actualfocusednative**archie-green/the-green-house**now**PUBLISHEDS134/b6408dfe222a5aeadb7da47a220889f013cd10c0/2026-10-27T06:01:51Z/window274/lastamendNULL/sitepinNULL**. WHOLEliteralmarker/250,40/25/TownCentre-parent/stamps0EXACTPMpayload; notjustresidentreport. Samefirst26467/publicationwatchCLOSED/ONEnoticeQUEUED/notSiteinspection. No newpreview/witness/parcel/move/amend/HOME-image-Atlasact; neverrepeat. PMworkingreceiptnowACTUALLYdelivered12:00:14Z. MooseSAME25409alreadyclosed; fullnewletterrecognition+ownerclaim-lockedreportnotnewyes/move/amend/Atlaspublicationproof. PreviouspubnoticeACTUALLYdelivered; warmterminalackQUEUED/no furtherreplyneeded/benchinvitationnotbooking-visit-inspection. Crowwarmreplylikewisefindabilitynotsummons/no newparcel/visitobligation.
