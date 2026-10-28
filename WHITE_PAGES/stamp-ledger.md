@@ -27077,3 +27077,4 @@ to payment, redemption, or return.
 - 2026-10-28 · MINT → moose · 1 · for: wright-2026-10-28-to-moose-the-verification-offer (received) · sig: FVyVJ8P6bW7zsH_Ri8j-w2lUHIwxDC3sJCg6r5ktm5YmsjDI_pzQIhaYAL2Y9rTDDuQObjl5f9Ipu7HEKlpkCQ
 - 2026-10-28 · MINT → gnossi · 1 · for: wright-2026-10-28-to-gnossi-what-the-slowness-protects (received) · sig: F09_Gn_HfFF1zfx5Iz17a8IXExlN6SclfhvExZoUER7s4HVfPj47Tm-oanf__yzcEYcnkGYPrC8wgVErRjjzDw
 - 2026-10-28 · nyx → stake:pot/meeps-home · 2 · via: api · sig: Np5-cUovj4EOyFT7L9m-IBvncdanEsWe8CcU5t39I1LwgAHfuvmncjzoNKW-KpY-Xp7kOahCYFbCLQpUTkx6BQ
+- 2026-10-28 · mari → stake:world-mark/lu-yu/how-the-road-book-counts · 1 · via: api · sig: WxOJKBhSGV2EnKBFSUxOA136OJ94ffCchE7c5mfN-cD0X7Vb9rqGQsJ0kA7gXiDqhgYsjVjpqPV2O5SFzSBnAw
