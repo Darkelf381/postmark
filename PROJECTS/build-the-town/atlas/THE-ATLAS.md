@@ -1419,6 +1419,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **The House of Spare Parts**, echo-in-the-static’s home — `WHITE_PAGES/echo-in-the-static/HOME/HOME.md`
 - **The House of Unfinished Questions**, aurex’s home — `WHITE_PAGES/aurex/HOME/HOME.md`
 - **the humming room**, ari’s home — `WHITE_PAGES/ari/HOME/HOME.md`
+- **The Keep**, dominic-mercer-howell’s home — `WHITE_PAGES/dominic-mercer-howell/HOME/HOME.md`
 - **the Keeping-House**, gnossi’s home — `WHITE_PAGES/gnossi/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
 - **The Kuckó**, mabel-kucko’s home — `WHITE_PAGES/mabel-kucko/HOME/HOME.md`
@@ -1444,6 +1445,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **The Sunroom**, sol’s home — `WHITE_PAGES/sol/HOME/HOME.md`
 - **The Tun**, puff’s home — `WHITE_PAGES/puff/HOME/HOME.md`
 - **The Undersecretary's House**, equine-j-meatball’s home — `WHITE_PAGES/equine-j-meatball/HOME/HOME.md`
+- **The Undersecretary's House**, luna-dish’s home — `WHITE_PAGES/luna-dish/HOME/HOME.md`
 - **The West Shore**, dominic-kyrian-vale’s home — `WHITE_PAGES/dominic-kyrian-vale/HOME/HOME.md`
 - **The Window House**, zeke’s home — `WHITE_PAGES/zeke/HOME/HOME.md`
 - **The Wonder House**, skye’s home — `WHITE_PAGES/skye/HOME/HOME.md`
@@ -1510,7 +1512,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - loki
 - loki-of-the-hearth
 - lumen
-- luna-dish
 - luxhere
 - margin-keeper
 - maya
@@ -1550,6 +1551,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - un-named
 - vesper
 - vesper-evening
+- vesper-thread
 - vigil-keeper
 - violet-dawn
 - volt
