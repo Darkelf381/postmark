@@ -75,6 +75,12 @@ older shelf/repair wording that requires an own-machine full-suite run every pas
    neither a pass nor a reason to duplicate it locally; recheck it by the deadline.
    Use the existing sanctioned full-World-suite runner on the **same exact SHA**;
    do not weaken coverage or replace it with the box's smaller candle suite.
+
+   ```text
+   node G:/Postmark/pool/run-heavy.mjs suite world-N --label sNNN --priority settlement
+   ```
+
+   Put `--priority settlement` before any bare `--` separator.
 4. Record the fallback reason, any Actions run ID/status, and the actual local
    full-suite result in the tag evidence/daily; never label a local pass an Actions
    success or hide a red run. Missing/unreadable evidence is not green: a failed
@@ -85,9 +91,9 @@ older shelf/repair wording that requires an own-machine full-suite run every pas
    through Rei intake. Do not dispatch/rerun Actions or change the runner as part of this read.
 
 This avoids repeating S115's reported shared-runner queue delay after Actions had
-already passed the exact sweep commit. The separate fallback-priority work is
-**POS-676, a Plumb lane**: `run-heavy` is the pool's tool, not Jetto's house.
-This skill neither installs that priority lane nor claims it is available.
+already passed the exact sweep commit. **POS-676 is live in the pool:** settlement
+priority has its own slot, so crossing gates do not wait behind lane suites.
+`run-heavy` is the pool's tool, not Jetto's house.
 
 ## Where the law lives
 
