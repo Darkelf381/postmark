@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-28T13:04:33Z
+watermark: 2026-10-28T15:07:37Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,18 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 47f5c6f3be1a0c1fd16baa0a665d6eec7e1de152
+
+## October 28, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire276
+
+**No new arrivals, admission/audit decisions, waiting applications/berths, chart questions or standing concerns on covered records.** Three saved October27 guards each own-key already-settled/no write; auditDATE27/source47f5c6f3/raw1530/join1279/drain1532/chartnull held independently/unexported journal unknown. Harbor112/waiting0/unparsed0; live gangway open. **ZERO welcome/page watches and ZERO old inbox/outbox/MAIL/page probes:** the entire old welcome-reading block was removed. Vesper and all older confirmed deliveries stay closed; false board labels never reopen exact proof. No applicant action, resend, old binding/review replay or personal ping.
+
+New[4258](https://github.com/postmark-town/postmark/pull/4258) is a Rei-authored, one-file Bug-office skill DRAFT with an existing actual author handback to Wright. It is outside Registrar merge/adoption powers—not a new Registrar trial, Emily acceptance/verified approval identity, API-guard deployment or spending grant. Author/reviewer/setup retain it; no duplicate route, founder ping, native test or request for private proof. Six other held items and the existing owner questions are unchanged.
+
+Two real late items,[4259](https://github.com/postmark-town/postmark/pull/4259) and[4260](https://github.com/postmark-town/postmark/pull/4260), were already-MAIN-merged outbox-only changes for **vesper-evening**, not **vesper-thread**. Actual path/state and remote-MAIN ancestry were processed before the first build; no letter words, delivery/resend status or new-arrival claim. **Only PR watermark advancesOctober28 3:07:37PM UTC.** Fresh successful closing pair is `closing-gates-complete.json` + `open-final-return-complete.json`; earlier protected boundary snapshots caught the late items and are not the completed baseline.
+
+The combined local closeout command applied the existing transport wrapper twice in one process and stopped at source introspection before closing/build calls. Same-round Rei+human-partner notice was sent; a clean-process invocation resumed only the unrun closeout. No helper/TLS/certificate/runtime patch or repeated native checks. This was not an observed town/TLS refusal. Strict lateEMPTY/openSAME then preceded FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)19.563s/UNCHANGED; actual snapshot remainsOctober27 11:23PM EDT/October28 3:23AM UTC with recent settled rail retained. Two required movement notes only/no generated/template changes/second build.
+
+Published shared channel law read first and retained. **Next scheduled check: October28 2026 ·1:00PM EDT (5:00PM UTC)**, start only: three date27 guards, current seven work-object returns, ZERO welcome/page/older probes, shared policy first. No new timer, cadence, contributor instruction or delivery promise.
 
 ## October 28, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire275
 
