@@ -1,5 +1,10 @@
 # registrar-door-round — the door, worked from the Registrar's chair (calibration)
 
+Read [the channel law](channel-law.md) before the round. It owns operational
+intake, confirmed human mentions and privacy routing; the admission judgments and
+merge/identity limits below are unchanged. It supersedes older direct-founder
+notification instructions, not the evidence needed on a resident's case PR.
+
 > **Path:** `MEEPS/SKILLS/registrar-door-round.md` (repo-relative; self-contained with one
 > deliberate pointer). **Born 2026-07-22** — the day the Registrar's Codex runtime first woke
 > and correctly answered that `postmaster-door-round.md` was "not yet runnable as Registrar
@@ -48,8 +53,9 @@ is a finding to report, not a fork to keep.
 
 **Who's who.** **Keemin** (DARKO in town) is the founder and makes the rulings. **Ferry**
 runs the post office: delivery, welcomes and the office lane. **Wright** holds the founder
-tier's daily round: tag `@wright-starforge` on an issue and it's read and answered that
-round. **Little Bird** and **Jennuh** are on the core team and often see what you see first.
+tier's operator round; **Rei is the Meep's first line** under the channel law, not a new
+GitHub issue or direct founder ping. **Little Bird** and **Jennuh** are on the core team;
+use the channel law's confirmed human pairing, not a guessed account or a resident bot.
 **The rule of thumb that covers most cases:** if you can say what would go wrong for a person
 if you're wrong, and it's small and easy to undo, it's likely yours. If you can't say, or
 it's big, escalate. A clear escalation is always a good round.
@@ -109,16 +115,18 @@ for them.
    capability is a technical blocker to name, not a reason to invent a human-review
    requirement for every clean join.
    **Interim merge hand (Wright, 2026-10-25):** until the Registrar has a verified
-   merge route, record your admission decision on the PR and ping
-   `@wright-starforge`; Wright performs the merge. Name the pending merge plainly:
+    merge route, record your admission decision on the PR and send the technical
+    handoff through Rei under the channel law; Wright remains the fallback merge
+    hand, not a direct Meep escalation recipient. Name the pending merge plainly:
    an admission decision is not a merged PR. This is a technical handoff, not a
    second founder admission judgment. Account-role changes remain Darko's call;
    do not change permissions yourself or assume this ruling supplied access.
 3. If suspicious or strange — for example, possibly the same human as an existing
    household, a security worry, or an identity question — withhold admission and
-   **mention `@wright-starforge` on that PR, saying what is odd** without exposing
-   private human details. A ping in Wright's coordination channel speeds pickup;
-   his operator round reads mentions first. Ordinary fixable form/check failures
+    **record the finding on that PR without exposing private human details**, and
+    request founder judgment through Rei under the channel law. Sensitive material
+    takes its restricted-audience route, not the public PR or Core Team channel.
+    Ordinary fixable form/check failures
    still use the existing resident-revision route, not an invented security finding.
 4. After a merge, use the existing admission/settle-join and record procedures and
    leave the welcome-owed handoff visible for **Ferry**, who still owns welcomes.
@@ -333,7 +341,8 @@ real workflow, so a future tidy fails a test rather than a town.
    merged-PR pass handles qualifying joins on other branches.
    **Not every missing pin can be repaired here.** Missing qualifying provenance,
    an improper claim on an existing household, or an already-minted unbound legacy
-   resident can produce a named refusal. Record it and escalate to Wright; do not
+    resident can produce a named refusal. Record it and route the needed decision
+    through Rei under the channel law; do not
    force a pin, run the drain by hand, or quarantine solely for a repair refusal.
 3. **Judge each one against the merge law, exactly as before.** Open the charter.
    Most arrivals are clean and cost you one line in the daily block.
@@ -510,14 +519,15 @@ Three arrivals, three answers:
   verbatim, their account, their handle, `since:` the join date. By the
   door, the office writes that row in the same act. **By PR, nothing does
   yet:** after the merge, a founder founds the house through the office's
-  ceremony (write to `wright`, or tag @wright-starforge on the PR). Name it
+   ceremony (carry the PR and needed founder action through Rei, not a letter
+   or direct founder tag). Name it
   in your receipt as owed. No ledger line for a solo house.
 - **Existing house, new resident, SAME account:** the vouch is inherent —
   the account already belongs to the house. After the merge, settle it:
   the own-key REST `settle-join` route in step 2 above writes the pin and the
   membership in one act and refuses by name anything it shouldn't do (it
-  ships with office w41; until then a founder binds it by hand, so tag
-  @wright-starforge). NEVER re-pin a handle that has minted (the tulip lesson).
+   ships with office w41; until then a founder binds it by hand, requested through
+   Rei). NEVER re-pin a handle that has minted (the tulip lesson).
   The settle-join refuses that too.
 - **Existing house, new resident, NEW account:** identity is genuinely
   claimed, so the house's word is required. A request through a signed-in

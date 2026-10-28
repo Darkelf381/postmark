@@ -1,5 +1,9 @@
 # The Bug Catcher's round
 
+Read [the channel law](channel-law.md) on full **and interim** rounds. Internal
+operational blockers use Rei-first intake; resident bug reports keep the ladder
+and private security track below. Do not turn internal faults into resident bugs.
+
 The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wakes. Every two hours on Letta (the even hours, America/New_York). **Full rounds at 06:00 and 18:00** include letters and the full daily, ahead of the 08:00/20:00 ferry; the other wakes do the GitHub half only when there is work. Written 2026-09-29 by Wright on the founder's word; cadence, Payment letters and Field questions ruled by DARKO and relayed by Wright on 2026-10-07. The Meep refines the round from lived rounds, by PR.
 
 **Shadow until the bug post ships** (POS-298, the w41 train, Sunday 2026-10-04). Until a founder says the round is live:
@@ -46,9 +50,9 @@ The main line is **reported → confirmed → reproduced → diagnosed → brief
   `town { do: "advance", args: { post, skip: "<stage>", reason } }`.
   Only the hands (`wright`, `keemin`, `bugcatcher`) may do this. It covers **only the next rung, `confirmed` through `fixed`**; `reason` is required, at most 600 characters. Supply only `post`, `skip`, `reason`—no `to`, `credit`, `link`, `size`, `grade`, `critter`, `of`, `recredit` or `note`. It records a `skip` act and moves the stage, but credits no one and pays nothing; it cannot be re-credited. **Never skip `shipped`.** Missing proof, an unconfirmed report, unpaid work or a refused advance is not evidence that no one earned a stage; if unclear, leave it pending for a founder rather than erase someone's contribution.
 - **After each accepted act:** read back the current post before deciding the next call. Do not issue a batch of advances/skips or replay an accepted rung. `duplicate` and `not-a-bug` remain side exits from `reported` or `confirmed` only, not stages to skip through.
-- **On the first bounce, stop that bug's sequence.** A jump returns 409 naming the first unrecorded stage; that name is not permission to guess a skip. Save the exact refusal, current stage, missing rung and earlier accepted receipts for Wright. Make no later-stage call or automatic retry; inspect an uncertain result before any retry and continue only once the refusal/uncertainty is resolved.
+- **On the first bounce, stop that bug's sequence.** A jump returns 409 naming the first unrecorded stage; that name is not permission to guess a skip. Save the exact refusal, current stage, missing rung and earlier accepted receipts; route any needed operator/founder decision through Rei under the channel law. Make no later-stage call or automatic retry; inspect an uncertain result before any retry and continue only once the refusal/uncertainty is resolved.
 
-The explicit skip requires the deployed [POS-713 / office#674 contract](https://github.com/postmark-town/postmark-office/pull/674). Read the live `advance` card before using it; if skip support is unavailable or unverified, keep the unearned rung pending for Wright, never fall back to a jump. Skill publication or a PR merge alone is not proof that the office hotfix is live.
+The explicit skip requires the deployed [POS-713 / office#674 contract](https://github.com/postmark-town/postmark-office/pull/674). Read the live `advance` card before using it; if skip support is unavailable or unverified, keep the unearned rung pending and report the capability gap through Rei, never fall back to a jump. Skill publication or a PR merge alone is not proof that the office hotfix is live.
 
 **a. Is it a bug?** Something is wrong and can be checked: a page shows the wrong thing, an act is refused that should land, stamps are counted wrong, the door answers an error.
 - **An idea** ("it would be better if…"): kindly point it to the Think Tank.
@@ -213,8 +217,8 @@ everything: your commits, any merge it already made, and your uncommitted work.
 The next `publish` carries them. Report the receipt's `stage` and `hold` exactly.
 **One rule for a HOLD:** a `fetch`, `push` or `verify` HOLD (the network, or main
 still moving after 3 retries) is retried by the next round's ordinary `publish`;
-every other HOLD (`preflight`, `check`, `overlap`, `merge`) goes to Wright with the
-receipt. A staged but uncommitted index is a `preflight` HOLD: finish or unstage
+every other HOLD (`preflight`, `check`, `overlap`, `merge`) goes through the channel
+law's Rei-first intake with the receipt. A staged but uncommitted index is a `preflight` HOLD: finish or unstage
 that closeout first. `remote_moved_after_push: true` is a success: your head is on
 main and someone published after you.
 
