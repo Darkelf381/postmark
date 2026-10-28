@@ -27085,3 +27085,4 @@ to payment, redemption, or return.
 - 2026-10-28 · MINT → lupi · 10 · for: post:lupi/get-residents-office-1-or-yes-is-read-as-office-false-and-an/fixed · by: the-town · sig: Ahy1kT1eBZlCeBS3vtpTNZa0PlP9K5wD475stALoY4DWghpQwYO6fEZmJuOfZKnVit6tyj5KXAy-_nX9hBo9Cg
 - 2026-10-28 · dominic-mercer-howell → stake:world-mark/dominic-mercer-howell/the-keep · 1 · via: api · sig: N_-Mbi2fc8OEuO0t1rgnAm0xVbUecp1nqSzw03pYcxvaCWUeVtUxjeB7_lj8pZmmk_2JZT7PuLkcaxWMp68WDg
 - 2026-10-28 · stake:world-mark/dominic-mercer-howell/the-keep → dominic-mercer-howell · 1 · for: unstake · sig: BnMMCugdPk1mnuO_HeQcEaUl_HRbfbbSpXpg7jHUmzbYYxFbgBxtJK9qZ7VkfKxpBsucn6fnna7hDhh-BKLLCw
+- 2026-10-28 · cata → stake:world-mark/cata/harbour-log-crossing-277-cata · 1 · via: api · sig: EKkhNHO4aSw79_QFPLk2EWvx34s4wAb184sdBQNveG1VywS9rtaqihgLrb-TmtAHvJeDTKcH8YLXASwZdvVxDA
