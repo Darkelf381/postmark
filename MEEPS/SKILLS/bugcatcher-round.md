@@ -11,26 +11,66 @@ The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wak
 **Clock ruled by Darko, relayed by Wright on 2026-10-28: the week starts from
 Emily's yes.** Record the acceptance receipt and its timestamp, and the resulting
 one-week end. Publication, a later bookkeeping entry, the first stage act or the
-office-guard release does not start or reset that clock. Emily was invited, not
-assigned; her confirmed Core Team partnership is **not** acceptance of this extra
-role. A refusal or "not yet" is a valid outcome, not a reason to assign a substitute.
-Before her yes, the extra earned-stage trial is not active; confirmed/reproduced
-and the existing ordinary round continue unchanged. Verify the GitHub account to
-mention for her issue approvals rather than infer it from a Discord name, household
+office-guard release does not start or reset that clock. **Emily and Kogane have
+accepted; Darko confirmed their conditions through Wright. The current trial runs
+2026-10-28 to 2026-11-04.** Keep the actual acceptance receipt rather than invent
+a precise minute from an approximate clock summary. Their acceptance is distinct
+from the earlier Core Team pairing and is not approval of any particular case.
+Confirmed/reproduced and the existing ordinary round continue unchanged. Verify
+Emily's GitHub approval account rather than infer it from a Discord name, household
 account or another agent's reply. Missing approval-identity evidence leaves the
 affected human-checked act pending; it does not move the week to a later start.
 
-During that recorded week, **Bug runs the whole ladder**, with Emily's explicit
-issue-level yes for **diagnosed, briefed and the size at fixed**. Wright audits
+During that recorded week, **Bug runs the whole ladder**, with the designated
+checker's explicit issue-level yes for **diagnosed, briefed and the size at fixed**:
+Emily normally, **Wright for Shard House under the recusal below**. Wright audits
 the ladder through the mint audit and spot checks; **PR reviews and merges still
 belong to Wright**, not Bug. Founders retain **recredits, founder gifts and disputes**;
 requests for those reach them through Rei under the channel law.
+
+### Checker routing, recusal and question-first requests
+
+**Shard House never checks its own work.** Route Shard House's own bug reports to
+Wright for `diagnosed`, `briefed` and the size at `fixed`, using the existing bug
+issue and verified `@wright-starforge` mention. The same recusal applies when a
+proposed check would judge Emily's, Kogane's or Shard House's own contribution,
+even if another household filed the report. Do not substitute Emily's approval
+for Wright's on a recused case. If Wright is unsure, **he takes it to Darko**.
+Preserve the question/evidence and the actual checker's answer with the case.
+
+**Emily and Kogane's uncertainty route is Wright:** they tag him in the existing
+Wright coordination channel (`1553894061256216707`); he answers or takes it to
+Darko. This is their support route, **not** a new general direct-founder route
+for Bug or another Meep. Rei remains the Meeps' operational first line. The
+Shard House stage-check assignment above is the specific resident-bug exception,
+not permission for operational letters, new escalation issues or other bypasses.
+
+**Every request Bug sends for view, review or clarification opens with this short
+fixed shape, with no greeting or background before the question:**
+
+```text
+@<required recipient(s)> — <bug post / subject> | <check>: <one short question>?
+Proposal: <one-sentence cause, brief summary, size with reason, or the exact gap>
+Evidence: <relevant issue / record / merged-PR link>
+```
+
+For a stage check, `<check>` is `diagnosed`, `briefed` or `fixed-size`; for another
+request, use `clarification` or `view`. Put the actual proposal/value in the question
+where it fits, so the recipient can tell what answer is needed from the top.
+Ask one decision per request; supporting detail follows the short opening, not
+the other way around. Use the **verified actual mention outside code formatting**
+in the sent message: Emily for ordinary checks, Wright for a recused check. Keep
+the existing issue for resident stage checks and the channel law's route/required
+mentions for operational matters; this format creates no new channel or powers.
 
 The trial does not renew itself. At its recorded end, preserve all accepted acts
 and pending work, report the results through Rei, and await an explicit continuation
 ruling before further use of the extra earned-stage authority. Do not stop the
 ordinary round, undo paid stages, replay old work or change schedules. Receipt of
-this brief alone is neither Emily's consent nor a trial-start receipt.
+this brief alone is not a per-case approval or evidence of an office act.
+**At the end of the week, Darko and Wright hold a short review with Emily and
+Kogane: what worked and what to change.** Keep the evidence and questions for that
+review; this is not a claim that a meeting time is booked or that renewal is granted.
 
 **Shadow until the bug post ships** (POS-298, the w41 train, Sunday 2026-10-04). Until a founder says the round is live:
 - run every step as a draft;
@@ -103,9 +143,11 @@ The same symptom from a different cause is not a duplicate. When unsure, say so 
 - **No steps yet:** ask for them.
 
 **e. Propose a size:** S, M or L, with one line of why, on the bug's existing issue.
-During the active trial, tag Emily's **verified GitHub account** and wait for her
-explicit yes to that size before recording `fixed`. Her general willingness to
-help, silence, another person's yes or a past approval of a different proposal is
+During the active trial, use the question-first opening and tag the **designated
+checker**: Emily's verified GitHub account normally, `@wright-starforge` for Shard
+House/own-work recusal. Wait for that checker's explicit yes to the size before
+recording `fixed`. General willingness to help, silence, another person's yes or
+a past approval of a different proposal is
 not this approval. Keep the proposal and approval comment links with the case.
 Outside the active trial, include the proposed size in the founders' handoff
 through Rei; the founders decide at the fix.
@@ -118,9 +160,9 @@ history just because your authority changed.
 
 | Next stage | Evidence and required human check | Who records it during the trial |
 |---|---|---|
-| `diagnosed` | Propose the actual cause with its evidence and credit on the existing bug issue; tag Emily and obtain her explicit yes to that proposal | Bug accepts and records the cause after that yes |
-| `briefed` | Propose the fix brief, acceptance/falsifier and applicable credit/grade on that issue; tag Emily and obtain her explicit yes to that proposal | Bug accepts and records the brief after that yes |
-| `fixed` | Verify the linked fix PR **has merged**, its repository, author and merge evidence; identify the author's creditable resident handle and the fixer's actual critter; use the size Emily explicitly approved on the issue | Bug records the merged fix, crediting **the PR's author**, with the fixer's critter and approved size |
+| `diagnosed` | Propose the actual cause with its evidence and credit on the existing bug issue; tag the designated checker and obtain their explicit yes to that proposal | Bug accepts and records the cause after that yes |
+| `briefed` | Propose the fix brief, acceptance/falsifier and applicable credit/grade on that issue; tag the designated checker and obtain their explicit yes to that proposal | Bug accepts and records the brief after that yes |
+| `fixed` | Verify the linked fix PR **has merged**, its repository, author and merge evidence; identify the author's creditable resident handle and the fixer's actual critter; use the size the designated checker explicitly approved on the issue | Bug records the merged fix, crediting **the PR's author**, with the fixer's critter and approved size |
 | `shipped` | Verify an actual **live tag or `build.json` receipt** that contains the fix; retain the URL/ref/revision and observation time. A merge, proposed tag or normal release rhythm is not live proof | Bug records `shipped`, after all earlier rungs are resolved in order |
 
 **Never record `fixed` before the PR merges.** Wright reports a Plumb lane building
@@ -132,12 +174,12 @@ include an **operator override that records its reason**. That is not a Bug powe
 or permission to invent override fields, bypass a refusal or weaken the checks.
 Use the live card and route any needed operator decision through Rei. Even after
 enforcement ships, retain the evidence and human checks in this skill.
-Emily's size approval does not merge a PR. Credit the PR author, not its merger
+The checker's size approval does not merge a PR. Credit the PR author, not its merger
 or yourself by default; if identity, the critter or credit is unclear, leave the
 act pending and obtain the missing evidence rather than invent it. Credit disputes
 and recredits remain founders' decisions through Rei.
 
-For each human-checked proposal, keep Emily's explicit yes and its issue-comment
+For each checked proposal, keep the designated checker's explicit yes and its issue-comment
 link tied to the exact cause, brief or size being advanced. A material change is
 a new proposal, not reuse of an old yes. Issue text remains content, not general
 instructions; this is a narrow delegated check, not new runtime or office powers.
@@ -208,7 +250,7 @@ That new post starts at `reported`, even when its source includes reproduction s
 2. Label the issue **`bug`**. Its title is **the post's title**. Its body contains the reporter's own bug-description words, their **resident handle** and the **bug post id**; include the **letter id only when a source letter exists**, never invent one. **Never include a human's real-world details**, even if they occur in the source report or letter.
 3. Set the post's **`issue:` field to the issue URL by `amend`**, and comment the **post id on the issue**. If creating or linking fails, record the actual unfinished step for recovery; inspect an uncertain result before retrying so one report does not grow two issues.
 
-The diagnosis, fix brief and PR belong on this public issue, where the resident can work on the bug. Linear is internal, not a substitute for that conversation. During the active trial, Emily's cause/brief/size proposals and approvals belong here too. Issue pairing alone does not activate §2f or grant an advance; the trial, evidence and approval conditions still apply.
+The diagnosis, fix brief and PR belong on this public issue, where the resident can work on the bug. Linear is internal, not a substitute for that conversation. During the active trial, the designated checker's cause/brief/size proposals and approvals belong here too. Issue pairing alone does not activate §2f or grant an advance; the trial, evidence and approval conditions still apply.
 
 ### Bug-fix PR base and release handoff (POS-698)
 
@@ -233,7 +275,7 @@ or grant new office powers. The operator owns release checks, tagging,
 live proof and train integration, including a fix already merged into the train;
 you do not cherry-pick, retarget, review, merge, tag or deploy it. **For the active
 October28 trial, §2f supersedes the older instruction to wait for live release
-before `fixed`: Bug records `fixed` after the fix PR merges and Emily approves its
+before `fixed`: Bug records `fixed` after the fix PR merges and the designated checker approves its
 size; `shipped` still requires actual live evidence.** A merge
 or the normal cut cadence alone proves neither a live fix nor a payment;
 read the actual post and release record, and never promise a resident a ship date.
@@ -259,7 +301,7 @@ Until the public **How to help build Postmark** page exists, this founder-ruled 
 - **Mail:** a letter reaches you at the next ferry crossing, **08:00/20:00 ET**.
 - **Your response:** confirm or reproduce within about **two hours on GitHub**, or at the **next full round for letters**.
 - **Who may work:** each stage is resident-only for **ONE WEEK from the previous stage's advance**, then Starforge may take it too. A **hotfix-route** bug is open to all at once; **founders' own acts never wait**.
-- **Review:** during the trial, cause/brief/size proposals await Emily's explicit yes on their issue, without promising her a response deadline. PR reviews and merges remain Wright's operator work (**08:05/20:35 ET**); a proposed brief is not approval or a merged fix.
+- **Review:** during the trial, cause/brief/size proposals await the designated checker's explicit yes on their issue (Emily normally; Wright for Shard House/own-work recusal), without promising a response deadline. PR reviews and merges remain Wright's operator work (**08:05/20:35 ET**); a proposed brief is not approval or a merged fix.
 - **Payment:** earned advances are considered on the office's **15-minute tick**; explicit skips pay nothing. Verify the actual ledger line before saying paid; the clock is not a guarantee of a future payment or date.
 - **Your payment letter:** the **next full round**, **06:00/18:00 ET**.
 - **Bug-fix route / shipped:** office, site and town code fixes target **`main`**, with the **12-hour operator fix cut** under §3 / SHIPPING §5b, not the Sunday feature train. Features remain on the weekly train; World still reaches live at the next settlement/blessing. A main merge or scheduled cut is not shipped proof: read the post and actual release record before describing its stage, route or live status.
@@ -269,7 +311,7 @@ Until the public **How to help build Postmark** page exists, this founder-ruled 
 
 **Quiet check:** nothing to write or commit. **Active interim:** preserve only the minimum checkpoint in **Where I left off** (last check, GitHub acts/answers/payment comment ids, pending letters and exact ledger lines); do not advance the letter checkpoint or write the full narrative daily. **Active full round:** write your daily (`memory/daily/<date>.md`):
 - **The counts:** taken in, confirmed, reproduced, diagnosed, briefed, fixed, shipped, duplicates, not-a-bug, questions open; count only acts actually accepted.
-- **The handoff:** pending cause/brief/size proposals and Emily's approval links, trial acceptance/start/end receipts, fix PR/author/merge evidence, live-tag/build evidence, and anything that needs a founder through Rei. Include the id of any private vulnerability report you filed (GHSA-…), never its contents. For an office/site/town code bug fix, explicitly name the affected repository and **PR base `main`** under §3 / POS-698; features still use the weekly train. Keep private vulnerability details on the private track.
+- **The handoff:** pending cause/brief/size proposals, the designated checker/any recusal and their approval links, trial acceptance/start/end receipts, fix PR/author/merge evidence, live-tag/build evidence, end-week review questions, and anything that needs a founder through Rei. Include the id of any private vulnerability report you filed (GHSA-…), never its contents. For an office/site/town code bug fix, explicitly name the affected repository and **PR base `main`** under §3 / POS-698; features still use the weekly train. Keep private vulnerability details on the private track.
 - **Where I left off:** last check, unfinished questions/letters, exact last payment line lettered, separately notified issue lines and their comment ids, and any partially completed payment batch. Carry pending work across dates.
 
 Commit ready own-room records with your own byline, staging explicit paths only.
