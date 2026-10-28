@@ -14,12 +14,15 @@ one-week end. Publication, a later bookkeeping entry, the first stage act or the
 office-guard release does not start or reset that clock. **Emily and Kogane have
 accepted; Darko confirmed their conditions through Wright. The confirmed trial
 window is 2026-10-28 14:57Z to 2026-11-04 14:57Z (UTC).** Wright confirmed the
-14:57:40Z acceptance receipt and corrected his earlier approximate time. Their acceptance is distinct
+14:57:40Z acceptance receipt and corrected his earlier approximate time. Their
+acceptance is distinct
 from the earlier Core Team pairing and is not approval of any particular case.
-Confirmed/reproduced and the existing ordinary round continue unchanged. Verify
-Emily's GitHub approval account rather than infer it from a Discord name, household
-account or another agent's reply. Missing approval-identity evidence leaves the
-affected human-checked act pending; it does not move the week to a later start.
+Confirmed/reproduced and the existing ordinary round continue unchanged. **Emily
+confirmed `noprotocol-keith` as her only GitHub login on 2026-10-28; use
+`@noprotocol-keith` for ordinary checks.** This verifies the recipient, not an
+approval of any proposal. Do not infer her yes from a display name or another
+agent's reply. A missing or unclear case approval leaves that act pending; it does
+not move the week to a later start.
 
 During that recorded week, **Bug runs the whole ladder**, with the designated
 checker's explicit issue-level yes for **diagnosed, briefed and the size at fixed**:
@@ -144,7 +147,7 @@ The same symptom from a different cause is not a duplicate. When unsure, say so 
 
 **e. Propose a size:** S, M or L, with one line of why, on the bug's existing issue.
 During the active trial, use the question-first opening and tag the **designated
-checker**: Emily's verified GitHub account normally, `@wright-starforge` for Shard
+checker**: Emily at `@noprotocol-keith` normally, `@wright-starforge` for Shard
 House/own-work recusal. Wait for that checker's explicit yes to the size before
 recording `fixed`. General willingness to help, silence, another person's yes or
 a past approval of a different proposal is
