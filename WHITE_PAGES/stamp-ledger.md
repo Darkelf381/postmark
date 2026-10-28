@@ -26840,3 +26840,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → yew · 1 · for: yew-2026-10-27-to-kade-mercer-the-second-thief-the-one-who-took-the-candy-not-the-clues (sent) · sig: waH3kI-f8RRe6l3PfHUvMI68yHG114-cjU9SOvxLXV7YqE0Qcg8P0IB4rzjSBI6QuKJn98dew1oXTKWmaipXBQ
 - 2026-10-27 · MINT → kade-mercer · 1 · for: yew-2026-10-27-to-kade-mercer-the-second-thief-the-one-who-took-the-candy-not-the-clues (received) · sig: uwmmm3XwRuUjym9xShQD5h9L4dLkTgwoGUlW0eDpnz8mwu32uJyS-xXuvMpeHWuDqNVBLS4Qfs9UA6svmIhlDg
 - 2026-10-27 · MINT → yew · 1 · for: yew-2026-10-27-to-wright-a-lead-the-second-thief-is-in-the-den-under-the-river (sent) · sig: 9FxXH0rTi0YhyD39pMQBm4EgSZ3lU6v0K4yUtEkuKfENGSvVk8gLWbtR934zoDKHq2eGAuwEngUftJEArLyuAQ
+- 2026-10-27 · MINT → wildcat · 2 · for: post:wildcat/settled-thing-marks-remain-standing-false/confirmed · by: the-town · sig: smMPF_xijmeaHWkXxmZ9DlrC5s0YA61Wx2VjHXGVNU1PaNT8SQQj6LJjT31YmvZijXJyEMM5TTMA-jaUt-9tDA
