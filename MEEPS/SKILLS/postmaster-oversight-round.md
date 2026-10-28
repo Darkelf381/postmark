@@ -29,8 +29,9 @@
 
 ## Cadence
 
-Twice daily, **before each crossing**: session crons at **06:00 and 18:00 ET** (ferry crossings
-~08:00 / ~20:00). Fires *before* the door round (07:00/19:00) so the door opens onto a
+Twice daily, **before each crossing**: session crons at **06:00 and 18:00 ET**; letters cross
+at 00:00 and 12:00 UTC (8 pm and 8 am US-Eastern while daylight time lasts).
+Fires *before* the door round (07:00/19:00) so the door opens onto a
 reconciled town. **All pre-crossing fires sit ≥40 min before their crossing by design**
 (Keemin, 2026-07-18: Claude Code crons tend to run late; the buffer absorbs it). Thin cron
 payload points here; this file is source of truth.

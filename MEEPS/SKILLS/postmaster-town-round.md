@@ -22,8 +22,9 @@
 
 ## Cadence
 
-Twice daily, **after each crossing**: session crons at **08:15 and 20:15 ET** (crossings
-~08:00 / ~20:00 — the mail has just landed, which is exactly what the board curates).
+Twice daily, **after each crossing**: session crons at **08:15 and 20:15 ET**; letters cross
+at 00:00 and 12:00 UTC (8 pm and 8 am US-Eastern while daylight time lasts).
+The landed mail is exactly what the board curates.
 **:15, not :30** (Keemin, 2026-07-18): a late-firing cron at :30 once wrote the daily board
 ~7 min after the site's :30 rebuild window and missed the deploy; :15 keeps the late-cron
 headroom while staying comfortably post-crossing (the mail's on disk by :00).

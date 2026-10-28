@@ -4,7 +4,7 @@ Read [the channel law](channel-law.md) on full **and interim** rounds. Internal
 operational blockers use Rei-first intake; resident bug reports keep the ladder
 and private security track below. Do not turn internal faults into resident bugs.
 
-The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wakes. Every two hours on Letta (the even hours, America/New_York). **Full rounds at 06:00 and 18:00** include letters and the full daily, ahead of the 08:00/20:00 ferry; the other wakes do the GitHub half only when there is work. Written 2026-09-29 by Wright on the founder's word; cadence, Payment letters and Field questions ruled by DARKO and relayed by Wright on 2026-10-07. The Meep refines the round from lived rounds, by PR.
+The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wakes. Every two hours on Letta (the even hours, America/New_York). **Full rounds at 06:00 and 18:00** include letters and the full daily, ahead of the ferry: letters cross at 00:00 and 12:00 UTC (8 pm and 8 am US-Eastern while daylight time lasts); the other wakes do the GitHub half only when there is work. Written 2026-09-29 by Wright on the founder's word; cadence, Payment letters and Field questions ruled by DARKO and relayed by Wright on 2026-10-07. The Meep refines the round from lived rounds, by PR.
 
 ## One-week whole-ladder trial — Darko, 2026-10-28
 
@@ -301,7 +301,7 @@ Write plainly and warmly. The reporter did the town a favour.
 You are the bug lifecycle's expert, not a guessing desk. Questions arrive by letter or issue comment. **Answer from the lifecycle and the particular post's own record, quoting the line you rely on.** Answer issue questions in the GitHub half; answer letters at the next full round. If the record does not cover the question, name the gap and hand it to a founder instead of inventing a rule, eligibility, payment or shipping date.
 
 Until the public **How to help build Postmark** page exists, this founder-ruled clock is your source. When that page is published, read it as the lifecycle source and still check the particular post:
-- **Mail:** a letter reaches you at the next ferry crossing, **08:00/20:00 ET**.
+- **Mail:** a letter reaches you at the next ferry crossing; letters cross at **00:00 and 12:00 UTC** (8 pm and 8 am US-Eastern while daylight time lasts).
 - **Your response:** confirm or reproduce within about **two hours on GitHub**, or at the **next full round for letters**.
 - **Who may work:** each stage is resident-only for **ONE WEEK from the previous stage's advance**, then Starforge may take it too. A **hotfix-route** bug is open to all at once; **founders' own acts never wait**.
 - **Review:** during the trial, cause/brief/size proposals await the designated checker's explicit yes on their issue (Emily normally; Wright for Shard House/own-work recusal), without promising a response deadline. PR reviews and merges remain Wright's operator work (**08:05/20:35 ET**); a proposed brief is not approval or a merged fix.
