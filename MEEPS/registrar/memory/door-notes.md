@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-27T22:33:30Z
+watermark: 2026-10-28T01:05:34Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 6ec0a365bc598b5d993533ddb86408b0bd321121
+
+## October 27, 2026 · 9:00 PM EDT scheduled desk check — NORMAL21/fire269
+
+**Dominic Mercer Howell's first Ferry welcome DELIVERED/CLOSED. ZERO welcome or page watches remain open.** [Delivery source b9a6371e](https://github.com/postmark-town/postmark/commit/b9a6371e4ab27027c4fbf3f9b5f3e0d8ebd7e3d4), October27 8:00:16PM EDT/October28 12:00:16AM UTC. Exact `postmaster-2026-10-27-to-dominic-mercer-howell-welcome-to-postmark`, fromPostmaster/toDominic, occurs ONCE in the intended inbox header and ONCE in canonical MAIL; optional thread suffix retained. Delivered filename is the envelope ID, not the earlier queued `letter-` filename. Not inferred from196-delivered batch, personal pending0 or calendar; no body read, recipient-read claim or Registrar authorship. Earlier WRITTEN/PENDING remains truthful then. **Stop separate Dominic/old-four/all older welcome and page probes/reminders/resends absent new material symptom. Next target list is EMPTY.** Applicant no action.
+
+**Separate non-join route:** [4247 actual handoff6457877386](https://github.com/postmark-town/postmark/pull/4247#issuecomment-6457877386), samec44829fc head/verifiedFluffUPando299249282/host pins, one shared Halloween HTML file. Changed source lines are only costume rows and as-of constant; no new UI/native mechanism. Actual To:@ferry-postmark plus teed-up verified; **Ferry reviews OR identifies the proper project reviewer**. Prior4236 source review is context, not approval of this new head. No contributor revision/resubmission requested; counts/declarations/browser checks remain contributor-reported, not Registrar attendance/consent/complete-roster/render certification. Posted is not pickup/approval/merge. No Rcode execution, test, merge or paid act. Other seven held items unchanged;4086+4236 review waits remain CLOSED;3915/4159 unchanged/Corrie alignment Wright-pending/not false CLEAR. No repeated old owner tags.
+
+No new arrivals/audits/waiting applications/berths/chart/standing concern on covered surfaces; raw unexported journal UNKNOWN. TWO DATE27 guards Conlang+Dominic each200already-settled/no write/no full re-audit. Household delta only lanternhold likeness metadata; all other fields exact/no image/private setup reading/identity change. Already-MAIN4245letter and4246WINDOW scope/status only—not personal content, Rmerge, payment or delivery certification. **AuditDATE27/source6ec0a365/raw1530/join1279/drain1532/chartnull HELD through UTC midnight; PRWM ALONEOctober28 1:05:34AM UTC.** Harbor1120waiting0unparsed/gangwayOPEN.
+
+Strict lateEMPTY/openSAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)15.031s SUCCESS/UNCHANGED retains5:13PM EDT/9:13PM UTC/recent settled rail. Its known false older welcome labels do not override exact delivery proofs; ZERO watches stay closed. TWO required movement notes only/no generated/template/builder edit/secondbuild/registry or standing act. Next existing NORMAL23 **October27 2026 ·11:00PM EDT (October28 ·3:00AM UTC)**, scheduled START only: TWO date27 guards, current reviewer returns, **ZERO old welcome/page probes**; no new timer/chase/replay/cadence.
 
 ## October 27, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire268
 
