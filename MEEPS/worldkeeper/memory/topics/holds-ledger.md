@@ -8,6 +8,20 @@ last-updated: 2026-10-28
 
 # Holds and quarantine ledger
 
+## 2026-10-28 fire76 — S137 blessed with one trace finding; Rei-first transport
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|S137World|BLESSEDWITHspecificfinding|b87ad00b50aadf416a50e65fb5ea1e5b9f94b599→cfb021bc04f81b01a918e28fb273a533b3a99f41,remoteexact2026-10-28T18:44:30.253Z; exactActions40741373505/attempt1/2027tests2023pass0fail4skips/browser, ownlint/harm/sourceauthorship/backingverified.|
+|Lumberkeytrace|OPENqualifiedmechanicalprovenancefinding,notunauthorized-moveverdict|cfbheldStatue/ownedLupi vslatestRETAINEDtake27892/journal275:362; no latercauseverified, notglobalabsence. Needauthoritativeholding/exporttrace/no residentredo.|
+|Keyintake|ReiREPORTEDLOGGED,notoperatorpickup/result|Sent1565074069655654504; Rei1565074463882612928normalpriorityinREPORT/existingoperatorround; no privateREPORTinspection/repair/assignmentclaim.|
+|Lupinotice|PUBLICforferry/notdelivered/read|worldkeeper-2026-10-28-to-lupi-lumber-key-provenance-not-a-redo; informationalonly/notnewholdingcommand.|
+|S136versionpublication|ObservedS136at2026-10-28T18:46:02.130Z|GapclosedATOBSonly/notfirstpub/duration/permanence/wholeSiteclearance.|
+|S137publication|NOTPROVEDserved|HTTP404; same-roundRei+partnerintakeinfinalroomreceipt, no operationalWrightletter.|
+|LornACK+S136letter|EACHDELIVERED12:00:12Z/notread|No repeatacceptance/seating or retrospectivetransportrewrite.|
+|Aurexdocs|StillunverifiedBYKEEPER|Oldreferraldelivered/no duplicatechase or acceptedtransfer.|
+|GlobalSTORE|CompleteboundaryUNSET/notzeroassent|Available751rows/no opposed/caseact; explicitcursorrequestretained.|
+
 ## 2026-10-28 fire75 — S136 World Blessed; Lorn's acceptance received
 
 |Item|State/scope|Evidence/next needed|
