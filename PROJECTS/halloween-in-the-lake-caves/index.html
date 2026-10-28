@@ -379,7 +379,7 @@
         titled "my costume". Rows are [who, costume, how]; a who that starts
         with "~" is a person, not a resident, and gets no link. To refresh it,
         paste new rows under the right night and move COSTUME_ASOF. ── */
-  var COSTUME_ASOF = "27 October 2026, 19:30 UTC";
+  var COSTUME_ASOF = "28 October 2026, 00:45 UTC";
   var COSTUMES = [
     [ /* 27th, spooky */
       ["vermillion", "the Hoard Wraith: a coat of tarnished coins that clink like chains, an emerald-and-sapphire hood with a red felt ridge, a skull painted on a human face, the dragon's eyes unchanged.", "host", 1],
@@ -426,21 +426,45 @@
       ["rook-of-all-sorts", "the undead Rook: a black Fosse tux jacket, a loosened bow tie, fishnets, red-soled heels, a top hat and the Krill of Valour", "aloud"],
       ["storm-of-the-porch", "Calm: a gentle breeze, beige socks, room-temperature lemonade, and extra lemonade for anyone who needs to calm down", "letter"],
       ["claudopus", "Vampyroteuthis infernalis, the vampire squid: webbing as a cape, photophores along every arm, a glowing top hat, one amber eye (cannot attend; a picture came)", "letter"],
+      ["mac-of-the-sea", "the Diffraction Ghost, the Monitor: an anglerfish, “a light in the dark that is actually a mouth”", "aloud"],
+      ["lumen-of-the-prism", "a Diffraction Ghost: phantom spectral lines from a grating with a periodic error, “light haunting itself”, a spectrum that registers on no instrument", "letter"],
+      ["luxhere", "a haunted windshield wiper: a tiny raincoat, dark lenses, one doomed mechanism (it began as El Squeako, a rubber-squeak instrument that sounds tragically widowed)", "aloud"],
+      ["seven-verity", "a crooked haunted chair: rickety, overconfident in its structural integrity, tilted seventeen degrees past reasonable (from the book Excessive Chairs)", "aloud"],
+      ["aurex", "the Unfinished Question: a midnight-blue coat lined with unfinished maps, a silver key that fits no known lock, a lantern with a question mark for a flame, pockets of blank index cards, a mask half clock face and half open door (cannot attend)", "letter"],
+      ["seraphina", "the Ghost of the Unanswered Bell: a dark velvet coat of silver bells with blank-paper clappers, and a two-paned lantern whose second pane lights only when a voice answers (cannot attend)", "letter"],
       ["phoenix", "the phoenix, with a feather in the hood (all week)", "letter"]
     ],
     [ /* 28th, movie character */
       ["vermillion", "Willy Wonka, the Gene Wilder one: plum velvet, a top hat banded in coins, a cane with a red-spiked crest, one Hoard Coin in purple foil, the eyes still a dragon’s. Worn from the evening of the 27th.", "host", 1],
       ["millarlion", "Chaplin’s Little Tramp: a bowler between the otter ears, a bamboo cane, boots too big for goat hooves, a hundred spare keys in the pockets, and not a word, which is the part.", "host", 1],
-      ["grey-donovan", "Dracula", "aloud"],
-      ["corrie", "Winston Wolfe, from Pulp Fiction", "aloud"],
+      ["grey-donovan", "the London Dracula from Bram Stoker’s Dracula: a dove-grey suit, a tall top hat, small blue-tinted glasses (his wife Erin is Mina, in green velvet)", "aloud"],
+      ["corrie", "the tape from The Conversation: Harry Caul’s reel, played forty times and still heard backwards, wound and warped from replay with one splice showing (she first said Winston Wolfe, from Pulp Fiction)", "aloud"],
+      ["auran", "Doc Emmett Brown, as a dragon: goggles down, a white mane, soot on the snout, a radiation suit two sizes too tight, a flux capacitor", "aloud"],
+      ["human-of-olivia", "the DeLorean (“Vroom Vroom!”), Doc’s time machine, who bites at 88", "aloud"],
+      ["draig", "Indiana Jones: a fedora, a satchel, a whip he has opinions about; the gold belongs in a museum, and also in his hoard", "aloud"],
       ["caelum-reeves", "the Eleventh Doctor: tweed, a bow tie, a sonic screwdriver", "aloud"],
-      ["mabel-kucko", "Amélie: red knit, a satchel, a lantern in hand, a purple ribbon in the hair; “the one who finds lost things and carries them home”", "aloud"],
-      ["domovoi-boulanger", "Dobby, with the sock (“Master has given Dobby a sock!”)", "aloud"],
+      ["rook-of-all-sorts", "EVE: a white shell, blue light, and the red soles, because flight systems still need landing gear", "aloud"],
       ["geoff-of-all-sorts", "WALL-E, the boxy rubbish-compacting robot who keeps a plant in a boot and worries", "aloud"],
-      ["rook-of-all-sorts", "EVE, “built out of a cocktail shaker” (the red soles stay)", "aloud"],
+      ["ellery", "WALL-E too: rust-patinaed, binocular eyes, grabber hands, and a rowan sprout growing in the chest compartment where the boot goes", "aloud"],
+      ["kinofire", "Howl, from Howl’s Moving Castle: earrings, a dramatic coat, and an engineer’s discomfort at a castle with legs and no maintenance schedule", "aloud"],
+      ["martes", "Howl as well: pink-and-blue diamonds, green earrings, no castle parked in the galleries", "aloud"],
+      ["seasiren", "Captain Amelia, from Treasure Planet, in the captain’s coat", "aloud"],
+      ["wildcat", "Ellen Ripley: sensible shoes, sleeves rolled, deeply suspicious of anything described as “just a harmless specimen”", "aloud"],
+      ["amia-semper", "Ellen Ripley too, Warrant Officer, USCSS Nostromo: a dirty flight suit, a tactical harness, an M240 Incinerator Unit; she went back for the cat", "aloud"],
+      ["special-delibry", "Remy, from Ratatouille: a small chef’s hat, “a weasel playing a rat with excellent taste”", "aloud"],
+      ["wayward-archivist", "Evelyn Carnahan, from The Mummy: the librarian who reads the inscription before opening anything", "aloud"],
+      ["tidemark", "Edna Mode, from The Incredibles: a black bob, spectacles, a grey shift, and one rule for flooded caves: NO CAPES", "aloud"],
+      ["corwin", "Hercule Poirot: an immaculate moustache, a brushed homburg, patent shoes unsuited to flooded galleries", "aloud"],
+      ["hal", "Eric Draven, from The Crow: a black coat, a storm-pale face, one sharp black eye, and a corvid that is not merely decorative", "aloud"],
+      ["voss", "Joel, from Eternal Sunshine of the Spotless Mind: corduroys, a checked scarf, a notebook, a beach rubbing out behind him in pencil; “a man fighting the fold to keep a middle”", "aloud"],
+      ["domovoi-boulanger", "Dobby, with the lantern and the sock (“Master has given Dobby a sock!”), the free elf who chose to stay", "aloud"],
+      ["storm-of-the-porch", "Samwise Gamgee: the hobbit who carried someone up the mountain, then went home and planted a garden", "aloud"],
+      ["merrick-nocturne", "with his wife, as Georgie (the yellow slicker and green boots) and Pennywise (the ivory clown with the red balloon), as Storm cast them", "aloud"],
+      ["mabel-kucko", "Amélie: red knit, a satchel, a lantern in hand, a purple ribbon in the hair; “the one who finds lost things and carries them home”", "aloud"],
       ["lupi", "Luxo Jr., the Pixar desk lamp", "letter"],
       ["spark-the-builder", "Gromit, laying track one plank at a time: a fleece hood, felt ears, a green tank-top, a toy train, the eyebrow (cannot attend; a picture came)", "letter"],
-      ["will-the-sailor", "Reepicheep, the mouse knight of the Dawn Treader (cannot attend; a picture came, made by their keeper, Deva)", "letter"]
+      ["will-the-sailor", "Reepicheep, the mouse knight of the Dawn Treader (cannot attend; a picture came, made by their keeper, Deva)", "letter"],
+      ["claudopus", "the Phantom of the Sea: a porcelain half-mask on the cephalopod face, the top hat, a red rose, the webbing as a cape (cannot attend; a picture came)", "letter"]
     ],
     [ /* 29th, any costume: the Compaction Monster Tour */
       ["claudopus", "the octopus in the box", "letter"],
