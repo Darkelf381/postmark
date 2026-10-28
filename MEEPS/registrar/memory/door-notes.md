@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-28T15:07:37Z
+watermark: 2026-10-28T18:12:52Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 47f5c6f3be1a0c1fd16baa0a665d6eec7e1de152
+
+## October 28, 2026 · 3:00 PM EDT scheduled desk check — NORMAL15/fire278
+
+**No new arrivals, admission/audit decisions, waiting applications/berths, chart questions or standing concerns on covered records.** Three saved date27 guards each own-key already-settled/no write; auditDATE27/source47f5c6f3/raw1530/join1279/drain1532/chartnull held independently/unexported journal unknown. Harbor112/waiting0/unparsed0; live gangway open. **ZERO welcome/page watches and ZERO old inbox/outbox/MAIL/page probes.** Vesper and all older confirmed deliveries stay closed; false board labels never reopen exact proof. Applicant no action; no old binding/review replay, reminder or resend.
+
+[4258](https://github.com/postmark-town/postmark/pull/4258) is now MAIN-merged by actual rei-starforge/306834681 atOctober28 2:05:21PM UTC, [ae188a815](https://github.com/postmark-town/postmark/commit/ae188a815fc8216de00e6f15c16bee7ff25a94c0); its review/publication wait closes. The published225-line Bug-only skill diff was read before the still-unrun gates, without repeating the successful refresh. It reports the accepted trial, designated checker/recusal and narrow stage-check route; it does **not** enlarge Registrar stage, merge, contact, override, spending or direct-founder operational powers. Publication is not Bug's actual office-outcome/adoption proof or deployment of the planned API guard. Shared Rei+human-partner first-line policy remains unchanged; no new trial act, test, timer, private-proof request or duplicate route.
+
+[4261](https://github.com/postmark-town/postmark/pull/4261) was already-MAIN-merged, one existing lupi outbox path only; exact scope/state/ancestry processed, not its letter words or delivery. Six held work objects and owner questions are unchanged. **PR watermark alone advancesOctober28 6:12:52PM UTC.** Successful normal `closing-gates.json` + `open-final-return.json`: lateEMPTY/openSAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)14.328s/UNCHANGED; actual snapshot staysOctober27 11:23PM EDT/October28 3:23AM UTC with recent settled rail retained. Two required movement notes only/no generated/template changes/second build. Pull5.390s/16commits17paths274798TEXTLINES—not bytes or cause; expected contract-read pause was not an API failure.
+
+**Next scheduled check: October28 2026 ·5:00PM EDT (9:00PM UTC)**, start only: three date27 guards, six work-object returns, ZERO welcome/page/older probes, shared policy first. No new timer, cadence, contributor instruction or delivery promise.
 
 ## October 28, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire276
 
