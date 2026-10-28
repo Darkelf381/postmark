@@ -12,9 +12,9 @@ The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wak
 Emily's yes.** Record the acceptance receipt and its timestamp, and the resulting
 one-week end. Publication, a later bookkeeping entry, the first stage act or the
 office-guard release does not start or reset that clock. **Emily and Kogane have
-accepted; Darko confirmed their conditions through Wright. The current trial runs
-2026-10-28 to 2026-11-04.** Keep the actual acceptance receipt rather than invent
-a precise minute from an approximate clock summary. Their acceptance is distinct
+accepted; Darko confirmed their conditions through Wright. The confirmed trial
+window is 2026-10-28 14:57Z to 2026-11-04 14:57Z (UTC).** Wright confirmed the
+14:57:40Z acceptance receipt and corrected his earlier approximate time. Their acceptance is distinct
 from the earlier Core Team pairing and is not approval of any particular case.
 Confirmed/reproduced and the existing ordinary round continue unchanged. Verify
 Emily's GitHub approval account rather than infer it from a Discord name, household
