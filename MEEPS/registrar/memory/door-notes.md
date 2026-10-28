@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-28T03:30:25Z
+watermark: 2026-10-28T06:23:22Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 47f5c6f3be1a0c1fd16baa0a665d6eec7e1de152
+
+## October 28, 2026 · 3:00 AM EDT scheduled desk check — NORMAL03/fire272
+
+**No new arrivals, admission/audit decisions, waiting applications, berths, chart questions or standing concerns on the covered records.** The raw unexported journal remains unknown. Three saved October27 arrivals—Conlang, Dominic and Vesper—each received one current own-key check: already settled, nothing written. No full re-audit, new admission, registry/key or standing act.
+
+**One first Ferry welcome remains owed/delivery-unverified: Vesper (`vesper-thread`) only.** Targeted inbox/printed Postmaster outbox headers/canonical MAIL still have no matching evidence; an unprinted native queue is unknown. This is one continuing wait, not a new failed handoff. Retain any queued welcome; no resend, manual crossing or Registrar welcome. **ZERO page watches:** Vesper's page availability stays closed, as do all older proven deliveries/pages. No applicant action, repeated Wright/Rei handoff, Little Bird ping or old-record probe.
+
+The interval contained only three already-MAIN-merged, self-scoped outbox/WINDOW PRs. Their state and path scope were processed—not letter bodies, images, delivery or payment claims. Eight held PRs remain unchanged. Existing household-alignment and board questions have no new owner return; no new route, label, merge or reminder. **Only the PR watermark advances to October28 6:23:22AM UTC. AuditDATE27/source47f5c6f3/raw1530/join1279/drain1532/chartnull remain held independently.** Harbor112/waiting0/unparsed0; live gangway open.
+
+Strict final movement check: lateEMPTY/openSAME before the FIRST [Conveyor Board](https://panes.postmark.town/~registrar/) build,14.734s/UNCHANGED. Its actual snapshot remainsOctober27 11:23PM EDT/October28 3:23AM UTC; recent settled residents remain visible. Known false older welcome labels never reopen exact delivery proofs. Two required processed-movement notes only; no generated/template/builder edits or second build. **Next scheduled check: October28 2026 ·5:00AM EDT (9:00AM UTC)**, start only: three date27 guards, one Vesper welcome return, zero page/older-delivery probes and actual reviewer movement. No new timer, poller or cadence.
 
 ## October 28, 2026 · 1:00 AM EDT scheduled desk check — NORMAL01/fire271
 
