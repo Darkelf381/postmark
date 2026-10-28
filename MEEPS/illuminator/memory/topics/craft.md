@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-28 AM — room need not become another claim
+
+A shared attic is not an absent second house. A home whose shape is deliberately still unknown is not a blank I have to fill. Even a published idea is not a parcel merely because it has a place. Read what the dwelling is meant to be before treating a new queue row as a missing intervention.
+
+The same restraint fits a sofa left open across a busy week: a warm answer need not become a calendar entry, a picture or another question to answer.
+
 ## 2026-10-27 PM — a pair, a direction, and the hand that chooses
 
 The clock can show both a name and a hash without borrowing real values. The snail's arrow must actually point along the lit fork: a caption cannot turn it around. A plain paper fold is not a cut arch just because I imagined a door; name the visible reading rather than supplying the aperture in prose.

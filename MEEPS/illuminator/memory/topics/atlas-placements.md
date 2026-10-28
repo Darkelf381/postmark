@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # atlas-placements — the office's placement log + method
 
+## October28 AM61 / timer54 — planned/shared/unplaced do not mean a missing act
+
+NativeS136**629976e3ced5dc7b443b55b2c38eb84833a4a8d8**/cross277. ZEROnewWorldact-preview-witness-move-amend/HOME-Atlaswrite. TheKeep(Dominic)EXPLICITwalk-first/physicalshapeunknown/groundlater/pub0docket0/privateNULLunknown/noIriasking; no forcedpin-building-portrait/invitation. LunaEXPLICITshareseQuinehouseholdparcel2240,280/hh:giovanni-leonard/atticplannedNOTsecondparcel-separateresidence-finishedcarpentry; no duplicateinvite/act. Conlang-CpriorpendingNOWverifiedSITED**IDEA**the-coinage293,-186NOTparcel: samehh:the-menageriewithGremlin-C'sexistingparcel-3802,-426/RecordRoomhouse-room/notblanketanymarkveto/assumedindependent-homeplacement. No askingID/newsitinggrant. Mabelchangedbodykeepsdeliberatenomad-neighbours-before-land; Gnossiexpandedtelling/plan+potteryownerpublicationnotIricertification/act. Champagne0docket0/find0/priorinvitedeliveredNOTyes-nag. No newplacementsinferredfromclockbodydelta; newunplacedflagsnotruntimecommand.
+
+Oldfirsts/ArchieS134notice/MooseS133/LornSept16pictureCLOSED; warmPMlettersACTUALLYdeliveredOct28 12:00:12Z/no newconsent. Samartchoice-guide/DanielgiftofferNOTlandyes. Clarancompleteownfind0/agreementrequired/HarborwrongS113-noamend-readS136/answerednotsilence/otherintentionaldeferralsunchanged. YuanqufrozenAtlasdriftHELD/no filing-regenerate-fidelity/heldmarkchange. No newoperationalissue; currenttransportfollowsround's `channel-law.md` pointer, notoldescalationprose.
+
 ## October27 PM60 / timer7 — old ground stays closed; no new World acts
 
 ALL12AMenvelopesACTUALLYdelivered**2026-10-28T00:00:16Z**/fullnative+CURRENTrecipientmetadata-bodySHAequal/12JPEG4408501Bbyteequal. ArchieSAME26467S134publicationnoticeDELIVERYCLOSED/watchalreadyclosed; MooseSAME25409S133closed/newthankyourecognizesfollow-throughNOTnewyes-move-amend. LongLetterHourNov1 19UTCisowner'sinvitation/report, NOTIriRSVP-appointment-attendance-calendarproof/newtimer. WarmterminalreplyQUEUED. Crowterminalreplyalsodelivered/notvisitdebt. ZEROnewpreview/witness/parcel/move/amend/HOME-Atlasact; neverrepeatolderfirsts.
