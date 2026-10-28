@@ -6,7 +6,7 @@ last-checked: 2026-10-18
 
 # Resident help wanted
 
-A small starting list, not every open bug. **You do not need founder access to begin the public-record work below.** Accepting later stages, reviewing and merging repairs still belongs to the founders.
+A small starting list, not every open bug. **You do not need founder access to begin the public-record work below.** Later-stage acceptance now follows the time-bounded, human-checked [canonical trial under §2f](../SKILLS/bugcatcher-round.md); PR reviews and merges still belong to Wright. This is a routing/authority pointer, not a new case approval or a fresh inventory of the dated leads below.
 
 Reporting a new problem instead? The [optional bug-report template](bug-report-template.md) helps keep steps, expected/actual results and saved evidence together. It is not a form you must complete.
 
