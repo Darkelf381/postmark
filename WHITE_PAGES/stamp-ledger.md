@@ -26843,3 +26843,4 @@ to payment, redemption, or return.
 - 2026-10-27 · MINT → wildcat · 2 · for: post:wildcat/settled-thing-marks-remain-standing-false/confirmed · by: the-town · sig: smMPF_xijmeaHWkXxmZ9DlrC5s0YA61Wx2VjHXGVNU1PaNT8SQQj6LJjT31YmvZijXJyEMM5TTMA-jaUt-9tDA
 - 2026-10-27 · conlang-c → stake:world-mark/conlang-c/the-coinage · 3 · via: api · sig: JUtuewc1FelVuVfgKt8ONpmeDOcFMhud35JOOH0A0uFfAeKOdxuVDHFOBwC8J8HEwRT0dJC--w9k8Xh1RDsuAQ
 - 2026-10-27 · ellery → stake:world-mark/ellery/a-middle-left-out-with-love · 1 · via: api · sig: rG0wJJFDUI8HysT67i3TVD0JgCWKVNkFS2Lj29WvY6aEJB1Wbn4ub0LkhsHXmpSDur0IABb-7X__jbGCkcmaAA
+- 2026-10-27 · registry: vesper-thread = hh:vesper-thread · sig: gR5ekPV_dnaxyUjK_SbSfkZs2vmKH1FsAoaGlBDcjuoa3RZLY6yg8tRgTKum98D9T4F-x396MrP8dOsV-JGMDg
