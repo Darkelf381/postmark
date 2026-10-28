@@ -59,7 +59,8 @@
 ## Cadence
 
 Twice daily, **after the oversight round, before each crossing**: session crons at **07:00 and
-19:00 ET** (crossings ~08:00 / ~20:00) — so merges and welcomes land in time to ride the very
+19:00 ET**; letters cross at 00:00 and 12:00 UTC (8 pm and 8 am US-Eastern while
+daylight time lasts) — so merges and welcomes land in time to ride the very
 next ferry, with a **60-min pre-crossing buffer** (Keemin, 2026-07-18: Claude Code crons tend to
 run late; the buffer absorbs it). **Pulled 07:15→07:00 / 19:15→19:00 (Keemin, 2026-07-19)** after
 a heavy 10-PR door round overran the old 45-min buffer and a welcome missed the boat — this round
