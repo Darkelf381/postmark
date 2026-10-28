@@ -8,18 +8,17 @@ The one copy of what the Bug Catcher (`MEEPS/bugcatcher/`) does each time he wak
 
 ## One-week whole-ladder trial — Darko, 2026-10-28
 
-**Proposed activation arrangement — needs owner confirmation before this draft
-is adopted.** The whole-ladder grant is Darko's; the start/end procedure in this
-paragraph is a coordination proposal, not an additional ruling attributed to him.
-Activation is separate from publication. Emily was invited, not assigned, to
-be the human check below. Her confirmed Core Team partnership is **not** acceptance
-of this additional role. Before activating the trial, record her explicit
-acceptance, the verified GitHub account to mention for her issue approvals, and
-the owner-coordinated start/end timestamps for one week. Do not infer an approval
-identity from a Discord name, a household account or another agent's reply.
-Until those are recorded, the extra earned-stage authority in §2f is not active;
-confirmed/reproduced and the existing ordinary round continue unchanged. A refusal
-or "not yet" from Emily is a valid outcome, not a reason to assign a substitute.
+**Clock ruled by Darko, relayed by Wright on 2026-10-28: the week starts from
+Emily's yes.** Record the acceptance receipt and its timestamp, and the resulting
+one-week end. Publication, a later bookkeeping entry, the first stage act or the
+office-guard release does not start or reset that clock. Emily was invited, not
+assigned; her confirmed Core Team partnership is **not** acceptance of this extra
+role. A refusal or "not yet" is a valid outcome, not a reason to assign a substitute.
+Before her yes, the extra earned-stage trial is not active; confirmed/reproduced
+and the existing ordinary round continue unchanged. Verify the GitHub account to
+mention for her issue approvals rather than infer it from a Discord name, household
+account or another agent's reply. Missing approval-identity evidence leaves the
+affected human-checked act pending; it does not move the week to a later start.
 
 During that recorded week, **Bug runs the whole ladder**, with Emily's explicit
 issue-level yes for **diagnosed, briefed and the size at fixed**. Wright audits
@@ -124,8 +123,15 @@ history just because your authority changed.
 | `fixed` | Verify the linked fix PR **has merged**, its repository, author and merge evidence; identify the author's creditable resident handle and the fixer's actual critter; use the size Emily explicitly approved on the issue | Bug records the merged fix, crediting **the PR's author**, with the fixer's critter and approved size |
 | `shipped` | Verify an actual **live tag or `build.json` receipt** that contains the fix; retain the URL/ref/revision and observation time. A merge, proposed tag or normal release rhythm is not live proof | Bug records `shipped`, after all earlier rungs are resolved in order |
 
-**Never record `fixed` before the PR merges.** The office guard announced for this
-is coming; do not claim it is deployed or rely on it in place of your own check.
+**Never record `fixed` before the PR merges.** Wright reports a Plumb lane building
+office enforcement of both merged-only `fixed` and live-evidence `shipped` on
+`train/2026-w45`, planned to ship **2026-11-01**. Until that enforcement is actually
+live, the trial runs on this skill's rules alone; do not wait for the release to
+honor them or treat the date as deployment proof. The planned `advance` refusals
+include an **operator override that records its reason**. That is not a Bug power
+or permission to invent override fields, bypass a refusal or weaken the checks.
+Use the live card and route any needed operator decision through Rei. Even after
+enforcement ships, retain the evidence and human checks in this skill.
 Emily's size approval does not merge a PR. Credit the PR author, not its merger
 or yourself by default; if identity, the critter or credit is unclear, leave the
 act pending and obtain the missing evidence rather than invent it. Credit disputes
