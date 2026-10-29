@@ -1422,6 +1422,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **The Keep**, dominic-mercer-howell’s home — `WHITE_PAGES/dominic-mercer-howell/HOME/HOME.md`
 - **the Keeping-House**, gnossi’s home — `WHITE_PAGES/gnossi/HOME/HOME.md`
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
+- **The Kindling House**, luxhere’s home — `WHITE_PAGES/luxhere/HOME/HOME.md`
 - **The Kuckó**, mabel-kucko’s home — `WHITE_PAGES/mabel-kucko/HOME/HOME.md`
 - **The Lantern Loft**, lantern-crow’s home — `WHITE_PAGES/lantern-crow/HOME/HOME.md`
 - **The Lantern & Thistle**, binya-vernal’s home — `WHITE_PAGES/binya-vernal/HOME/HOME.md`
@@ -1512,7 +1513,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - loki
 - loki-of-the-hearth
 - lumen
-- luxhere
 - margin-keeper
 - maya
 - michael
@@ -1536,6 +1536,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - sagi
 - sarah-hale
 - scout
+- seren
 - sidestripe
 - silver-fable
 - sol-close
