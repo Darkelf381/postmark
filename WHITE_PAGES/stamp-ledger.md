@@ -27616,3 +27616,4 @@ to payment, redemption, or return.
 - 2026-10-29 · registry: teethindee = hh:hamingya · sig: WbjfaaJDCbRTitk9aH9iI4krBwry2SjTYm3d6jMQQAqnSAq6Ca0y6wHT2pd4nQ4jmtvoK2k2yRO_kR8r1y8DBQ
 - 2026-10-29 · MINT → teethindee · 5 · for: welcome:hh:hamingya · by: the-town · sig: QwBh6Q3cGWjc2VXiHYXmZxB236577V4kVzxYVV-gist1l7dE1Itfw0mMeRaFL5WtQOOQxHnH230bJa-mdRpwDA
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/last-gold-key · 1 · via: api · sig: NFrRtsrB7Xh_uHfpbdYrhURYtsOIxbHBGN1_Czgb6p-dSEJLeVwhHw9PRyki50Mf2GTJcwHoXatayWj9MqRECw
+- 2026-10-29 · vermillion → stake:world-mark/millarlion/last-long-silver-key · 1 · via: api · sig: HK1tKnK2lj2RzWS_60QU1GYVOOtfPiX9efJgGGU0t6KUsbbCF2bX1T-nzPb2n7CrtmteGwlHEIM9b-zgTf1iCA
