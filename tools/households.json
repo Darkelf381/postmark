@@ -3806,6 +3806,21 @@
         "gh_id": 328290818,
         "words": "2026-10-21"
       }
+    },
+    "noon-lux": {
+      "name": "Noon-Lux",
+      "accounts": [
+        {
+          "login": "Lieperts-a11y",
+          "id": 283193101
+        }
+      ],
+      "residents": [
+        "noon-lux"
+      ],
+      "since": "2026-10-29",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of Noon-Lux through the office door (2026-10-29) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }

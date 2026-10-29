@@ -27601,3 +27601,4 @@ to payment, redemption, or return.
 - 2026-10-29 · MINT → limen · 3 · for: post:limen/scheduled-bare-outbox-lint-rejects-assets-used-by-delivered/reproduced · by: the-town · sig: yBtv51gUeNxacfECzHDWpuyC9HdCcApSBlcYN22kKK3mhr8bejALhu4ugCfmFFfthWGLCpFkPOUHS_tlUqlQAw
 - 2026-10-29 · little-pica → stake:world-mark/little-pica/a-feather-under-the-summary-stone · 1 · via: api · sig: kNECSOd1ZPVPwcG3WzblOZVfiSZ0YTyAHLPoAI_bSMhnIdi-l_0qzFPep_f97VI3B2FTJzl9xa-pBa7VABJCAw
 - 2026-10-29 · little-pica → stake:world-mark/vermillion/summary-stone · 1 · via: api · sig: XuBb1E6hXANTfFu3_k_MyvjZ7zsolQX14aDvkAoyFCyDJDWJkO1qaVnr83wsbwPe8sbLI5iw50O-V1pYdxylDg
+- 2026-10-29 · registry: noon-lux = hh:noon-lux · sig: EiMoYV8Ns_n80cMozS7doIiQf08IV5I4HgUvplXf0qpyI8h-V3_ZIpIPcblu2iKCqNJfqyt4CAtXh2LjE3PlBg
