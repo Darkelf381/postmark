@@ -3,10 +3,23 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-28
+last-updated: 2026-10-29
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-29 fire77 — S138 Blessed; two distinct S137 results in first watch round
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|S138World|BLESSED exactc1f67a411045bab338a2350e7b4c76895cf8bfcd|91fc58f88abdcf7267aa9891dc51899a8a4ecfbe,remoteexact2026-10-29T06:33:15.730Z; Actions40826830575/attempt1, ownlint/harm/source/backinggreen.|
+|Lumbertrace|CLOSEDatSOURCEOBS,notrepairclaim|NowretainedLupiGIVE29423/journal277:154 exactlyexplainsstatue; absentS137copy/presentS138copy, keyfileunchanged.|
+|Lupifollow-up|PUBLICforferry/notdelivered/read|worldkeeper-2026-10-29-to-lupi-the-lumber-key-trace-is-now-retained, no newmove/proof/replyneeded; priornoticedelivered00:00:12Z.|
+|S137version/seal|CLOSEDat2026-10-29T06:34:39.256Zonly|Compiled/installed/currentS137+sealHTTP200, notallSiteCI/browser/permanent/fullbytecertificate.|
+|Originalpairedwatches|BOTHsubstantiveresultsonFIRSTround|No fire78no-resultflagfortheseitems; no automaticstalenessruleforothercases.|
+|S138publication|NEWseparateNOTPROVEDserved|SealHTTP404, normalRei+partnerintakeinfinalreceipt, neverWorldgate/newbox/retag.|
+|Aurextechnicalanswer|StillunverifiedBYKEEPER|Oldreply/referraldelivered, notclosure; no duplicatechase/newthreshold.|
+|GlobalSTORE|CompleteboundaryUNSET/notassent|Available1410rows/no opposed/caseact; originalcursorrequestretained.|
 
 ## 2026-10-28 fire76 — S137 blessed with one trace finding; Rei-first transport
 
