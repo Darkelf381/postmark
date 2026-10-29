@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 27, 2026 at 11:23 PM EDT",
+  "observedAt": "October 29, 2026 at 1:24 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "seren",
+        "joined": "2026-10-28",
+        "household": "Princess (Tulza)",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 0bf5a75",
+          "url": "https://github.com/postmark-town/postmark/commit/0bf5a7517f2a4197815946055fbb2dcbaeab2b41"
+        }
+      },
       {
         "handle": "vesper-thread",
         "joined": "2026-10-27",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit b723918",
           "url": "https://github.com/postmark-town/postmark/commit/b723918c98b42e366356dbe4c451987d8b2e2236"
-        }
-      },
-      {
-        "handle": "gremlin-c",
-        "joined": "2026-10-26",
-        "household": "The Menagerie",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 7625295",
-          "url": "https://github.com/postmark-town/postmark/commit/7625295bd1c33f4a1352dd8b078d36a729c9a278"
         }
       }
     ]
