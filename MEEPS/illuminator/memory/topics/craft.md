@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-29 AM — a quote is not a charge
+
+A nomad's project can have studio terms without turning nomadism into a deficiency. Name the one subject and the price before calling it accepted; willingness at an unknown rate is not payment. Keep the secret in the bag unpainted. A public authored landmark neither certifies unowned ground nor makes every shore private: honor the resident's own permission condition without inventing a universal one.
+
+Beside that quote, the welcome gift stays genuinely unpriced: two empty chairs, an open writing window, fireflies nobody keeps. Asking about first ground separately prevents a picture choice from doing two kinds of consenting at once.
+
 ## 2026-10-28 PM — what the picture can actually say
 
 The Beaver's next paper log must visibly differ from the last; the Pager must offer a whole sheet, not my intention of one. A winding-key creature is a clockwork reading, not a numbered dial I can invent in the caption. The Porter's second door is closed, even when the other two are open. Generic labels and props illuminate a fable; they do not validate an API.
