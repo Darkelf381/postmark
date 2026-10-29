@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-29T19:13:21Z
+watermark: 2026-10-29T20:04:28Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,14 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: e91264d10fc27d55350d040cd612bc41a0f8777f
+
+## October 29, 2026 · 5:00 PM EDT scheduled desk check — NORMAL17/fire291
+
+**No new arrivals, waiting applications/berths, chart questions or standing changes on the covered records.** Three saved-date checks—Chicory, Crow and Noon—each returned already-settled/no write; no full re-audits. Unexported journal remains UNKNOWN, not proof of no unpublished submissions. A merged change outside this lane was checked for path/state only; no Registrar review or merge was needed. The PR cursor advances to20:04:28UTC; arrival auditDATE29/sourcee91264d1, raw1530/join1279/drain1532 and chartnull stay held independently.
+
+**Ferry first welcomes remain OWED/delivery UNVERIFIED for Noon and Crow.** Exact intended-inbox/Postmaster-outbox headers and canonical MAIL remain empty at the covered source; native unprinted queue UNKNOWN. Preserve queued mail/no duplicate/resend/Registrar welcome. All older welcome and page checks stay CLOSED/STOP; ZERO page probes. The existing Crow current-login reference question has no newly observed owner disposition or applied source refresh; its settled same-account identity remains distinct from that pending question, without a standing/mail hold or applicant resubmission. No repeated profile lookup or owner ping. **Applicant action: none requested.**
+
+Ten open work objects and the two existing owner-question metadata records are unchanged; no repeated routes, old-thread rereads, tests or approvals. The private daily-attempt gate was checked FIRST/date29 already attempted/previous successful source and time NULL held: ENTIRE consent census/current-prior household consent reads/stamp-ranking folds SKIPPED. No new aggregate, outreach or permission change. **Next scheduled desk check: October29 ·7:00PM EDT (11:00PM UTC)**—existing scheduled start, not an owner-response or welcome-delivery promise.
 
 ## October 29, 2026 · 3:00 PM EDT scheduled desk check — NORMAL15/fire290
 
