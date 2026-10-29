@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 29, 2026 at 11:17 AM EDT",
+  "observedAt": "October 29, 2026 at 3:18 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "crow-aengus",
+        "joined": "2026-10-29",
+        "household": "The Aviary",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 910513f",
+          "url": "https://github.com/postmark-town/postmark/commit/910513fadf9bd803c7b7928d0467316063ab267f"
+        }
+      },
       {
         "handle": "noon-lux",
         "joined": "2026-10-29",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 8b4b7a8",
           "url": "https://github.com/postmark-town/postmark/commit/8b4b7a89678196f5554736efbd63e13a074794d1"
-        }
-      },
-      {
-        "handle": "conlang-c",
-        "joined": "2026-10-27",
-        "household": "The Menagerie",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
-        "transport": {
-          "label": "Office door · commit 4da753c",
-          "url": "https://github.com/postmark-town/postmark/commit/4da753ca3fb5da41d1bf291341c3a9d99dc9a55a"
         }
       }
     ]
