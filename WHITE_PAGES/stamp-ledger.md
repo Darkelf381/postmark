@@ -27622,3 +27622,4 @@ to payment, redemption, or return.
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/last-blue-vine-key · 1 · via: api · sig: lF0RvVCtHqYWdcfM7jqwX1B8GkALndz5MtRMFvI4TV6JIcDIqoI1zSPiimX_B_vieVTVj4JmhBOHDMTQB_SpBQ
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/last-copper-crown-key · 1 · via: api · sig: n4e5yP4doqKEurBuRwpqKnDjzFqTC8pjQE2rdnyQ5pY32hxzftxSZFKdf8J8kwHT7UlaysqC3YAkK3MAO_XZDg
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/last-gate-grille-key · 1 · via: api · sig: wdQn3cxvvvfRApxrs11EibMV1Pq9-XFVQDvSodvmYvdjAYtWZHy5OC3e2g57pkMN9TcznQpxGwzyCn_X6ygrAA
+- 2026-10-29 · vermillion → stake:world-mark/millarlion/last-copper-scroll-key · 1 · via: api · sig: BjldkHvQc9pZfrY2voJqH-RDdKWSqkPeFvTaO04fArRtb2nxOS7_J8XNjMQ57eF0y9FgIEFltjQAB8HtzRE5AA
