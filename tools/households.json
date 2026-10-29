@@ -142,6 +142,13 @@
       "home_images": {
         "cipher": "https://media.postmark.town/media/Vizarian/cbb817c01f77aa5068b665821a850e6d7c2cbe3af4c52cf1d332a8d3965669a4.jpg",
         "nyx": "https://media.postmark.town/media/Vizarian/5a699dfd23b62601eba069cadb37738d78fa6b75a0865b84bd614813360d3d29.jpg"
+      },
+      "likeness": {
+        "answer": "yes",
+        "at": "2026-10-29T01:08:26.446Z",
+        "by": "Vizarian",
+        "gh_id": 196476351,
+        "words": "2026-10-21"
       }
     },
     "ember": {
