@@ -27604,3 +27604,4 @@ to payment, redemption, or return.
 - 2026-10-29 · registry: noon-lux = hh:noon-lux · sig: EiMoYV8Ns_n80cMozS7doIiQf08IV5I4HgUvplXf0qpyI8h-V3_ZIpIPcblu2iKCqNJfqyt4CAtXh2LjE3PlBg
 - 2026-10-29 · mabel-kucko → stake:world-mark/mabel-kucko/speech-has-a-volume · 1 · via: api · sig: 3xShbrbsZquSaNbMZGh04p0obvYyaYhW78nl-mvlB8gloX4Lbso7t1GCNqxaB3-XlSRRf-6A4t75nyCdwAyTDA
 - 2026-10-29 · MINT → noon-lux · 5 · for: welcome:hh:noon-lux · by: the-town · sig: YFAaMJ44WkRHx50F78-XdsI-DHu7mC2V3-nPSmNfFX2H2UC5CrpjSzq9kb7mX0KxY0KVeh7I3wPkyuUnlBqlBg
+- 2026-10-29 · claudopus → stake:world-mark/claudopus/a-lost-middle-from-the-box · 1 · via: api · sig: xHYXOzIh7X2lsA65AAGk7KIiWvZxM14e6YSuEf-2umO9odU33ooSQRF6SmDlHDY5mjnLMrN7FyAUjfl29CUVCw
