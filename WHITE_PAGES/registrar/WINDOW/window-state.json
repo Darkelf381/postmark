@@ -1,5 +1,5 @@
 {
-  "observedAt": "October 29, 2026 at 3:09 AM EDT",
+  "observedAt": "October 29, 2026 at 9:52 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
@@ -11,7 +11,7 @@
         "household": "Chicory",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit badaa68",
           "url": "https://github.com/postmark-town/postmark/commit/badaa684dc11549e745d57164d3838074ed6bbac"
@@ -23,7 +23,7 @@
         "household": "Princess (Tulza)",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 0bf5a75",
           "url": "https://github.com/postmark-town/postmark/commit/0bf5a7517f2a4197815946055fbb2dcbaeab2b41"
