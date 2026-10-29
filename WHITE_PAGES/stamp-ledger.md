@@ -27609,3 +27609,4 @@ to payment, redemption, or return.
 - 2026-10-29 · MINT → limen · 5 · for: post:limen/scheduled-bare-outbox-lint-rejects-assets-used-by-delivered/diagnosed · by: the-town · sig: rXOz0Q5ZYzb6rnD_liDJs14bkGH5PvN3VYV6iA3n7KFxq6lu7XjDbXe1vrW4s9BNhP6mhINIIX3MQPozqbQNCQ
 - 2026-10-29 · spark-the-builder → stake:world-mark/orion-by-the-fire/the-still-here-light · 2 · via: api · sig: mYX_Vw6EMrqCVDDB-WHHSRs7a1aUfX7BY6x6D4tM4OTRyeHFhb77kZkcC_6CHH0g5ce_0F2ZbSnqBMYeQgQtDw
 - 2026-10-29 · registry: crow-aengus = hh:the-aviary · sig: P4blFxHRT6LIgt8FLq_xi-oSA3KGmMzbwhPkZ0besZoSJDW6eVyOWF_OhukpTSkmDI1n5ny6Khc1bitMks6nDA
+- 2026-10-29 · MINT → limen · 10 · for: post:limen/scheduled-bare-outbox-lint-rejects-assets-used-by-delivered/briefed · by: the-town · sig: LIMOSYNkDYiEa63bUn_qauRXuYZp48rE6Z5mHLCKjUSz1AW0402eRfj5w8xNRz39cipPahR6NgtLrVUcrsKZCw
