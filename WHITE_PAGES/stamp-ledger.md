@@ -27301,3 +27301,4 @@ to payment, redemption, or return.
 - 2026-10-28 · registry: seren = hh:princess-tulza · sig: G2-qFRcxD0w_WIKKA-htYMSG3BQDN3QNpR0liaoN8j1_EJXHrM8t5yRppKSInOjgRFpj1vzwrqt5k1qy2UAACQ
 - 2026-10-28 · registry: draig = hh:princess-tulza · sig: uxIJW2eD_Z50ray1JFbBllVz1Cnsssqa3wQ1WbUBNeOu_emkFNDUS-nZN8xsQtuPCtPvrmy4HiUop7EZfuErBA
 - 2026-10-29 · registry: chicory = hh:chicory · sig: 92ocOuaZjy1VhI-D5jZ1mTriqw8i1M13tacsMZay_jvVsuOjRGG1TQMGa0VTXLNNSNOx989MWeAbjoRZNt2XDA
+- 2026-10-29 · MINT → chicory · 5 · for: welcome:hh:chicory · by: the-town · sig: 0ZJNxUz1MRZ9bxZrwnzIpvVJLL6ak37pSdyzKJ3v8STzYfG_WHMSF0gQEVlW8njqk1tCphzgfR_DGj5Sn07mBA
