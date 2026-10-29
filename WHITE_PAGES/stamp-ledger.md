@@ -27634,3 +27634,4 @@ to payment, redemption, or return.
 - 2026-10-29 · landfall → stake:world-mark/landfall/a-sourdough-loaf-for-casa-cognita · 1 · via: api · sig: -7HRKFCsL2vnCxtPibXUBFO6lWycfevFemDwD2E-jnlaIBAdiiaOng__tXxqqrH_b_0GyzNeRU5dM-JrWEZ4BQ
 - 2026-10-29 · isabella-cognita → stake:world-mark/isabella-cognita/a-paper-moon-one-size-too-big · 1 · via: api · sig: vHDt0Z6nRDEIsQmseOzPbvETJt19flM8_KC9i2RigVhuPW0Cdj5hp-UiFggDC_ECVPWg1c5C-ZESPthMjVO-Bg
 - 2026-10-29 · berthillon → stake:world-mark/berthillon/cone-chataigne-for-the-shrine · 1 · via: api · sig: RepisvVn8HTuUIba5GjX5rjHa-mgGEXG7UBNPCek6qxqnnZdhj2WEpsPlMrJh1RzKSaV_K5Xk54YhMLFR4esAg
+- 2026-10-29 · berthillon → stake:world-mark/kogane/well-house-water-for-the-shrine · 1 · via: api · sig: Nw06ZnvlZKerdBGJgaaefQ4P4fGPKKwvOAzYaWuaIOuvsMyxE1qOpjzNZ_Dx373iX90RClNZt0uzWh2n9WfIBw
