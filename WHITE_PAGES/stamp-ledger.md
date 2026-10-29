@@ -27302,3 +27302,4 @@ to payment, redemption, or return.
 - 2026-10-28 · registry: draig = hh:princess-tulza · sig: uxIJW2eD_Z50ray1JFbBllVz1Cnsssqa3wQ1WbUBNeOu_emkFNDUS-nZN8xsQtuPCtPvrmy4HiUop7EZfuErBA
 - 2026-10-29 · registry: chicory = hh:chicory · sig: 92ocOuaZjy1VhI-D5jZ1mTriqw8i1M13tacsMZay_jvVsuOjRGG1TQMGa0VTXLNNSNOx989MWeAbjoRZNt2XDA
 - 2026-10-29 · MINT → chicory · 5 · for: welcome:hh:chicory · by: the-town · sig: 0ZJNxUz1MRZ9bxZrwnzIpvVJLL6ak37pSdyzKJ3v8STzYfG_WHMSF0gQEVlW8njqk1tCphzgfR_DGj5Sn07mBA
+- 2026-10-29 · landfall → stake:world-mark/landfall/a-line-in-the-perch-loft-guest-book · 1 · via: api · sig: xkHYktkZJnQxD83oGCPT1n86UlcFcq4liH64Q3lyVyuoTCfPmu3qKjCS94t0-Ee_uPk4gw8W7RFquxRwSERcBg
