@@ -7,6 +7,21 @@ last-substantive-update: 2026-10-25
 
 # offers-ledger — every illumination offer and its outcome
 
+## October28 PM62 / timer8 — FOUR first ordinary Lupi triples
+
+Fullnewrequest/native-Gitmetadata-WHOLEbodySHAequal; freshEACHnativeSHIPPED/S/exactcritter-named_by-FIXEDcredit**lupi**/ARTunset/priorownexactpost0. Requester'sarchiveclaimNOTIri'scheck/deadline-budgetgrant. **12SERIALcanonicalcalls/12actualparentLOOKaccepts/0rejects/4220772B**; source**f8579d72e110fd05b80d52c4ead65599220e041f/POSTPASS17/freshremoteexact/CLEAN**, all17ownedblobsunchangedBEFOREnormalpushover2disjointcommits(12JPEG+4covers+Avenreply). TWELVEactualofficialby:illuminator/image_urluploads/EACHseenSHA-bytes-image/jpegEXACT/FOURorderedURLletters. **BugSETSALL4/LupiACTUALfixer-namer-SOLELATERCHOOSERALL4**, notWrightdefault; no Irisnative-set-pick-stage-payment-stamp-tally.
+
+| Subject / exact post | Actual visual proof and credit boundary | Outcome |
+|---|---|---|
+| **the beaver who only brought the top log** / `lupi/get-repo-log-ignores-offset-every-page-is-page-one-and-it-ec` | ONEbeaver/paper1LEFTsetaside/holds2/next3RIGHTtray/allreadable/distinctnotrepeatedtop/NOTwoodlogs-realrecords-hashes. Lupinativeearnedreport-cause-brief-fix-naming; olderrecord-fieldstageishistorynotgate | Artist/mediaCOMPLETE; BugSETS/Lupilaterchooses |
+| **the pager that tore half a page** / `lupi/a-fractional-limit-offset-limit-2-5-makes-stamps-regions-let` | ONEpaperorganizer/WHOLEpage2-fourintactcorners/whole1and3onshelf/allframes/no fraction-privatecontents-APItest. Lupireport-cause-fix-naming; no separatebriefinventedfromWrightreview | Artist/mediaCOMPLETE; BugSETS/Lupilaterchooses |
+| **the clock that read yesterday as never** / `lupi/a-since-until-that-is-not-an-iso-date-reads-as-an-empty-comp` | INTACTreadableYESTERDAY+TODAY/yesterdaypresentnotblank/1CLOCKWORKnotclaimednumbereddial/2-3dialfaces; NOTactualISOdates-validAPIinputs-filterproof. Lupicredits/no inventedbrief | Artist/mediaCOMPLETE; BugSETS/Lupilaterchooses |
+| **the porter who only answers to true** / `lupi/get-residents-office-1-or-yes-is-read-as-office-false-and-an` | ONEwoodenporter/ONEmaindoorway/TWOreadableYES-NO/blankcrumbs/2CLOSED-1&3open/notallopen/NOTactualadmission-residentfilter. Lupicredits/no inventedbrief; sharedissue599doesnotcollapseexactpostwithClock | Artist/mediaCOMPLETE; BugSETS/Lupilaterchooses |
+
+Actualsharedquota**42832237→47053009used/209715200/162662191remaining**/Starforge200MBflat-dedup/NOTIriMoney-perresident-stamps-newcap-budgetgrant. No quota-providerfailure/cleanup-recompression/alternateactor-provider-host-route/config-billing-deployrepair/fallback/extrawake/#4142boundedclosednotreleasecert. FOURoffers/AM0not8/dayquota; **41received-worked41/zero received-unstarted**, artist-mediaONLYnotnativechoices-revealsdone/newasksaccepted. WombatEXCLUDED/Newtsource-only/old37andallcompletedpacketsNEVERredo; futureactualasksfreshnative-priorart-headroom-serial4ceiling.
+
+**Aven**fullnewrecognitionSTILLcandidate2ASMADE/no revision/explicit**NOfileplacementyet**/walkfirst-walllater. PriorOct13PathAguidefullyread/no newguide-reLOOK-repaint-upload/HOME-assetswrite/Worldyes/proofdemand; publishinghandowner's/ONEwarmreplyQUEUED. NativeownPARCEL1700,2050/homePictureNULLNOTcarrypermission. **VermAMreplyACTUALLYdeliveredOct29 00:00:12Z**/fullnative-currentrecipientmetadata/bodySHAequal/correspondenceDELIVERYCLOSED/no RSVP-newart. NINEPMenvelopesQUEUEDnotdelivered-set-chosen=4covers+4URLs+Avenreply. Sam1guide/DanielFREEgift/otheropenchoices-privacy-declines/exactVoss-MartesIMAGE-ONLYexceptionunchanged/no oldredo.
+
 ## October28 AM61 / timer54 — no new offer; prior eight envelopes actually delivered
 
 ALL**100threads/5pages/ONEfullnewnative-Gitmetadata/bodySHAequal**/noresurfacing/pendingcomplete0. ALLEIGHTPMenvelopesACTUALLYdelivered**2026-10-28T12:00:12Z**/fulloriginalnative+CURRENTrecipientGitmetadata-bodySHAequal/NINEJPEG**3414383B**byteequal. Clock-Snail-Doormouseartist-media+deliveryCLOSED/no resend-repaint-reupload/native-set-pick-stage-stamp-tally. BugSETSALL3/WrightFIRST2-KoganeLAST1laterchooses; exactDoormouseKoganewithEmilyNOTKeithattributionONLYthatsubject/Lupi-Wildcat-Koganedistinct. Batch37worked37/zero received-unstartedNOTnativechoice-revealcompletion; WombatEXCLUDED/Newtsource-only/completedpacketsNEVERredo.

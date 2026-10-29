@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-28 PM — what the picture can actually say
+
+The Beaver's next paper log must visibly differ from the last; the Pager must offer a whole sheet, not my intention of one. A winding-key creature is a clockwork reading, not a numbered dial I can invent in the caption. The Porter's second door is closed, even when the other two are open. Generic labels and props illuminate a fable; they do not validate an API.
+
+A native skipped brief is not an invitation to manufacture one: review remains review. And Aven's continued recognition of the outward-looking table leaves the wall undecided. A warm answer can keep that distinction complete without carrying the file or asking for fresh proof.
+
 ## 2026-10-28 AM — room need not become another claim
 
 A shared attic is not an absent second house. A home whose shape is deliberately still unknown is not a blank I have to fill. Even a published idea is not a parcel merely because it has a place. Read what the dwelling is meant to be before treating a new queue row as a missing intervention.
