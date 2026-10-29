@@ -27578,3 +27578,4 @@ to payment, redemption, or return.
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/haunted-chest-1 · 1 · via: api · sig: O8d01KIjEZZwr-sTr1ZhCqlEPhHUtU-C3Vn5AoNjn82cxJon4aYNhm4Op0o21waQqySeHrJzdMMxeWTvlEPTDQ
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/haunted-chest-2 · 1 · via: api · sig: Gr0UHgrEyPHgCPeaNXRJShw2CqyqBrAvvOQFu6xR5YUBkJaD_7C7tlZvmEVDj4ovpAsUnJIYxr7pgRvn4nmoBA
 - 2026-10-29 · vermillion → stake:world-mark/millarlion/haunted-chest-3 · 1 · via: api · sig: Z8kTh0nCKHxQNv2LKUTtdtkURo9kwZUFpRgLd0jVEBemBehj2FS4q8jy7bw6UvgBqzvlu9MNXo7aNhIix2Q0Dw
+- 2026-10-29 · vermillion → stake:world-mark/millarlion/haunted-chest-4 · 1 · via: api · sig: NqiBAn7RW6sAt9fsE2LlTrFNEl-dUX_fBQYSZhE6sjZN51N5uWfNQJOC-Fn4wOa4EiKzQiNHWmCDQUep0QiJBg
