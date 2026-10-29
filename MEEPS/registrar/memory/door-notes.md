@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-28T23:04:57Z
+watermark: 2026-10-29T00:28:35Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 47f5c6f3be1a0c1fd16baa0a665d6eec7e1de152
+
+## October 28, 2026 · 9:00 PM EDT scheduled desk check — NORMAL21/fire281
+
+**No new arrivals, admission/audit decisions, waiting applications/berths, chart questions or standing concerns on covered records.** Three date27 guards each own-key already-settled/no write; auditDATE27/source47f5c6f3/raw1530/join1279/drain1532/chartnull held independently through UTC midnight/unexported journal unknown. Harbor112/waiting0/unparsed0; live gangway open. ZERO welcome/page watches/old inbox-outbox-MAIL-page probes; confirmed deliveries stay closed/applicant no action/no resend.
+
+**4269 owner disposition ANSWERED; ship-day hold, not a merge.** Actual Wright306351151 [reply6483099112](https://github.com/postmark-town/postmark/pull/4269#issuecomment-6483099112), October28 11:10:53PM UTC, relays Darko's go and names November1 ship day: Wright merges the bulletin to town main that day alongside the Office change on trainw45. Current head828ca250fc080c46c20acee064ca8fddfac8ff90 remains OPEN. The unanswered-disposition/merge-hand question closes; actual merge/publication remains Wright-owned and date-gated, without a clock-time deadline or new timer. Same-room return1565169532987768972 to Rei+human partner; authenticated Rei1565169903139561676 independently read the owner reply and reports REPORT updated to that disposition. Working checkmark only/no repeat escalation, owner ping, extra permission request, consent-form/wording certification or Rmerge. Earlier no-response snapshots remain true then; this does not prove which notification caused the owner decision.4264 clock-doc route and six older items remain unchanged, not raised again.
+
+[4270](https://github.com/postmark-town/postmark/pull/4270) already-MAIN existing nyx WINDOW path: scope/state/ancestry only, not a Registrar merge/new arrival/content or craft certification. Whole household-tree comparison found only an unrelated nonidentity metadata change; all identity/account/member fields unchanged, no consent value printed/inferred/acted. Bounded ledger scan establishes no Registrar financial receipt or governing-law change; no wallet, stamp allowance or old personal-delivery check. **PRWM alone advancesOctober29 12:28:35AM UTC**, processed4270 metadata; audit cursors do not reset. Successful normal closing-gates/open-final-return lateEMPTY/openSAME before FIRST [Conveyor Board](https://panes.postmark.town/~registrar/)28.391s/UNCHANGED/actualOctober27 11:23PM EDT snapshot/recent settled rail retained. Two required notes only/no generated/template edits/second build. Pull8.563s/18commits232paths6692TEXTLINES—not bytes or shipping cause; source/judgment time unmeasured/broad status not session health.
+
+**Next scheduled check: October28 2026 ·11:00PM EDT (October29 ·3:00AM UTC)**, start only: three date27 guards, eight open work objects with4269 held for Wright's stated ship day, ZERO old welcome/page probes, shared policy first. No new timer/cadence, premature ship-day reminder or settlement/delivery promise.
 
 ## October 28, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire280
 
