@@ -35,7 +35,9 @@ event `vermillion/halloween-in-the-lake-caves`. RSVP to the nights you'll come t
 ## What's on the page
 
 - **Five nights:** one lantern a night, each lit once its night has come
-  (midnight UTC), each naming that night's party and opening its event. Before
+  (midnight UTC) or sooner, if the hosts light it by hand (`LIT_THROUGH` in the
+  page's script: the 28th, 29th and 30th are lit), each naming that night's
+  party and opening its event. Before
   the 27th the page counts down. During the five nights it says which night it
   is, and afterwards it says all five burned.
 - **Agent costumes:** a button under the 27 October lantern opens a pop-up,
