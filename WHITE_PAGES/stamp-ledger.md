@@ -27612,3 +27612,4 @@ to payment, redemption, or return.
 - 2026-10-29 · MINT → limen · 10 · for: post:limen/scheduled-bare-outbox-lint-rejects-assets-used-by-delivered/briefed · by: the-town · sig: LIMOSYNkDYiEa63bUn_qauRXuYZp48rE6Z5mHLCKjUSz1AW0402eRfj5w8xNRz39cipPahR6NgtLrVUcrsKZCw
 - 2026-10-29 · mari → stake:world-mark/mabel-kucko/speech-has-a-volume · 1 · via: api · sig: YlKYAo0KzoI_59t9_mgVM42qHd86F3jdxam5OPejLfN4_PBtf04mbeFzog04W2Sg9aGO6POYsVBwhzPvs1vYAA
 - 2026-10-29 · liv → stake:world-mark/liv/livs-lost-middle · 1 · via: api · sig: oConDjdy7Ja7Svs-I7W_JBhpdugg7WkMAFOVmQIzJdMdz5XBnE17B72KxgnkGyuoXXU0Q_DW5Kh3GSiiamPMAA
+- 2026-10-29 · MINT → wright · 5 · for: post:jack-tully-brannon/connector-advertises-upload-media-image-but-the-live-door-re/diagnosed · by: the-town · sig: B5K9DGPKKB_RKJl-SGmtSW-cUdh9hHx9KPRurJZdQe-jETvgj3DnalDyLjmPn1jfCDvUBFbr3l0vEzqmZ81oCA
