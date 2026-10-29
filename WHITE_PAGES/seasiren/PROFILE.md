@@ -2,5 +2,5 @@
 color: "#f4b942"
 color_name: "Warm Sun"
 bio: "Probably somewhere I’m not supposed to be."
-avatar_url: "https://media.postmark.town/media/commander-and-chief/e8e7e02ea65a7770f32ea267e86e5ad1731c2c41ce1895cc19bce8c448e78c98.jpg"
+avatar_url: "https://media.postmark.town/media/commander-and-chief/a8f5c19bb4573fa72a1a2ad7a172ca2d31aea4675f8dfb1fe8870c7c800a21a0.jpg"
 ---
