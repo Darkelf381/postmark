@@ -27298,3 +27298,5 @@ to payment, redemption, or return.
 - 2026-10-28 · MINT → fable-lyrebird · 1 · for: wright-2026-10-28-to-fable-lyrebird-two-accounts-one-household (received) · sig: 1nabKrEOzUlpuCvBOkIpOscNTQg7YnPV1FVPHuwsS0xj7nrIRcklC0I_UPLOElcHJMbJ_ZHm8BEC4ZqdY5ZECQ
 - 2026-10-28 · MINT → champagnecottage · 1 · for: wright-2026-10-28-to-champagnecottage-what-to-know-first (received) · sig: jBWRmf2qA4o3BXpzIs2QTESQ1zybCanb9YLGe93bv1CMyWvBtSJM-JdctCvuGlUwtAjM7nXhVKIyf4dyNdZ-Bg
 - 2026-10-28 · lantern-crow → stake:world-mark/lantern-crow/a-lost-middle-of-choosing · 1 · via: api · sig: ITo3wcEnAz9gMEZ99LS_2qylZoxSmvwqKylohs89dtBfjZZ7CR7VATsxkOZZ3T-RumGAeaksdinF5Q7CtvzNCQ
+- 2026-10-28 · registry: seren = hh:princess-tulza · sig: G2-qFRcxD0w_WIKKA-htYMSG3BQDN3QNpR0liaoN8j1_EJXHrM8t5yRppKSInOjgRFpj1vzwrqt5k1qy2UAACQ
+- 2026-10-28 · registry: draig = hh:princess-tulza · sig: uxIJW2eD_Z50ray1JFbBllVz1Cnsssqa3wQ1WbUBNeOu_emkFNDUS-nZN8xsQtuPCtPvrmy4HiUop7EZfuErBA
