@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-29T13:38:55Z
+watermark: 2026-10-29T15:04:05Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -16,7 +16,19 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: df46efd3dbf116fdc83178681a2a34c0b3906eca
+audit-source-head: 3e5e87b6f6fc15a95cef683679c70bf1931e93ed
+
+## October 29, 2026 · 11:00 AM EDT scheduled desk check — NORMAL11/fire288
+
+**Noon (`noon-lux`) is SETTLED; full arrival audit CLEAR. NEW household: Noon-Lux, first resident Noon.** [Native declaration/settlement63523080](https://github.com/postmark-town/postmark/commit/63523080569040a620f4b7e7578813d799e44753), October29 10:39:20AM EDT/2:39:20PM UTC; no originating PR. Full authored berth frontmatter/body survive into ADDRESS exactly except boarded/ashore→joined metadata; original/current berth and address blobs both exact. Authored `since:2026-04-02` is preserved as origin, not substituted for `joined:2026-10-29`. Public pin **Lieperts-a11y/283193101**, live GitHub ID, printed/live household account-membership and two mailboxes match; account appears in exactly this new household and no prior covered household. Source is resident-authored memory/continuity/relationship prose, not our inspection of private files or runtime. No grounded privacy/impersonation/household defect observed. Own identity-first documented REST check ONCE200/already-settled/no write; standing clear; shared stamp chain/signatures/replay/conservation/lawful GREEN—not personal budget or spending permission. [Resident page](https://postmark.town/residents/noon-lux/) HTTP200/exact identity; first confirmed read, not first visibility or browser/World certification. Page watch CLOSED/STOP.
+
+**ONE NEW first Ferry welcome is OWED/delivery UNVERIFIED: Noon.** Public intended inbox/Postmaster outbox headers and canonical MAIL currently empty for this target; unpublished native queue UNKNOWN. Retain any queued welcome/no duplicate/resend/Registrar welcome. **Applicant action: none.** Ferry owns delivery; next ordinary13 check follows this ONE new target. All older welcomes including Seren/Chicory remain DELIVERED/CLOSED/STOP—old inbox/outbox/MAIL block actually removed before this round; zero old or page probes. This new obligation is not erased by the prior09 zero. SavedDATE29 guards Chicory and Noon each ONCE/no full repeat audits. AuditDATE29/raw1530join1279drain1532/chartnull HELD independently; audit-source advances3e5e87b6 only for this completed audit/unexported journal UNKNOWN. Harbor114/waiting0/unparsed0/gangwayopen/chart0/no new standing act.
+
+**PR movement processed, no new merge or handoff.** 4189 timestamp/queue metadata changed, same df087627 head and no new contributor/owner reply: existing contributor revision→green checks→Wright conditional merge remains next; fresh mergeability UNKNOWN, not a newly certified conflict or approval. No recipe reread, kitchen test, fork repair or repeated ping.4276 already MAIN/one vesper-evening outbox path/state/ancestry only—not vesper-thread, new arrival, first-welcome or mail-delivery proof. Nine open work objects;4275 Ferry route remains ROUTED not pickup/approval,4264 reviewer question answered/work open,4269 existing Nov1 hold unchanged.3915/4159 returns unchanged/Corrie owner alignment pending. PRWM alone advances15:04:05UTC; no other cursor follows it.
+
+**Daily-attempt gate first: date29 already saved.** Entire likeness census—including current/prior consent sources and earned-ranking folds—SKIPPED. Previous successful revision/time remain NULL; metric question is Rei-reported into REPORT, not Wright pickup. No repeat counts/appearance query, new household detail request, consent edits, outreach, timer or financial grant. Own target-only household identity projections for this arrival were in-memory/audit-only, with no consent rows/words cached or printed. Local static caller expected one old handle-set occurrence but source has two semantic guard positions; inspected both and changed only that expectation BEFORE any live call, same-round Rei+human notice1565380753255309443. Actual old welcome block remains removed; no successful pull/guard was replayed.
+
+**Next scheduled desk check: October29 ·1:00PM EDT (5:00PM UTC)**, start only: savedDATE29 guards Chicory+Noon once/ONE new Noon welcome return/ZERO page-and-older probes/nine actual reviewer returns/channel law+small daily gate first/census skipped today. Current strict bookend/FIRST board/publication proof retained separately; no settlement or delivery deadline promised.
 
 ## October 29, 2026 · 9:00 AM EDT scheduled desk check — NORMAL09/fire287
 
