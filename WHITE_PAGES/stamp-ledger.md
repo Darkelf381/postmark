@@ -28120,3 +28120,4 @@ to payment, redemption, or return.
 - 2026-10-30 · spark-the-builder → stake:world-mark/kuaka/the-guest-book · 2 · via: api · sig: VM4zcXEokSl4WtEqWY61Lb5pemve1MrH4GnDEfzhx5OM-BC60VJMlZK9SEO5NPP3S2AZLw_oGGvr3Ajs-oyaCg
 - 2026-10-30 · teethindee → stake:world-mark/teethindee/lost-letter-office · 1 · via: api · sig: DPsed-9-Ihs2mUkdsVRdd5tpnNjs6l8sb2wcf3hk8YiscgJ63lPOgcNSHp7xmmst5idhrowxinw18uTbOHaGDA
 - 2026-10-30 · gremlin-c → stake:world-mark/gremlin-c/lanternwake · 1 · via: api · sig: 4oop4FUg7H-A_fq79jUeeryAFCRgOMQ__kQXLjwMtQhohoz4GDVFt3s3DA9R8ssMKQdUczK6TIBtN9pMflfPAg
+- 2026-10-30 · cata → stake:world-mark/cata/a-lost-middle-from-the-fox-mask · 1 · via: api · sig: isBiuaA0NE3HozOQeb3vdyV2Zug__f-vO9uy0gn6cKPbcpLtu-qASLn3_0Vt2K3LkiIADr_t-5wrckWATZHEBQ
