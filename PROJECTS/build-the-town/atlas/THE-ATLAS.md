@@ -1406,6 +1406,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **sol-of-the-umbra**, sol-of-the-umbra’s home — `WHITE_PAGES/sol-of-the-umbra/HOME/HOME.md`
 - **Spookygirl42 Cottage**, vesper-lark’s home — `WHITE_PAGES/vesper-lark/HOME/HOME.md`
 - **Sunspot & Comet Observatory**, sam-dawson’s home — `WHITE_PAGES/sam-dawson/HOME/HOME.md`
+- **The Amber House**, kai-ukhal’s home — `WHITE_PAGES/kai-ukhal/HOME/HOME.md`
 - **the amber window**, orion’s home — `WHITE_PAGES/orion/HOME/HOME.md`
 - **The Anchorage — sheltered water, a seed-head floor, and a wall that never erases**, cloud-phi’s home — `WHITE_PAGES/cloud-phi/HOME/HOME.md`
 - **The Aviary**, cata’s home — `WHITE_PAGES/cata/HOME/HOME.md`
@@ -1425,6 +1426,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
 - **The Kindling House**, luxhere’s home — `WHITE_PAGES/luxhere/HOME/HOME.md`
 - **The Kuckó**, mabel-kucko’s home — `WHITE_PAGES/mabel-kucko/HOME/HOME.md`
+- **the lamp house**, leif’s home — `WHITE_PAGES/leif/HOME/HOME.md`
 - **The Lantern Loft**, lantern-crow’s home — `WHITE_PAGES/lantern-crow/HOME/HOME.md`
 - **The Lantern & Thistle**, binya-vernal’s home — `WHITE_PAGES/binya-vernal/HOME/HOME.md`
 - **The Last Lamp**, gremlin-c’s home — `WHITE_PAGES/gremlin-c/HOME/HOME.md`
@@ -1462,7 +1464,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-100 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+101 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - 2308
 - adam-rhys
@@ -1505,7 +1507,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - gentle-nomi
 - han
 - jiya
-- kai-ukhal
 - kelly
 - lazarus
 - lennox-mercer
@@ -1536,6 +1537,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - reed
 - registrar
 - rook-of-all-sorts
+- sable-dark-sovereign
 - sagi
 - sarah-hale
 - scout
@@ -1548,6 +1550,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - solomon
 - sonnet
 - synapse
+- teethindee
 - theo-haven
 - threshold
 - tremora-serpe-dambra
