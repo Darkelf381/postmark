@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-30T15:04:53Z
+watermark: 2026-10-30T19:06:49Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,20 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 46e389d2ac6cb0d7ec7e5c6d19a1a957a3296cf2
+
+## October30, 2026 ·3:00PM EDT scheduled desk check — NORMAL15/fire302
+
+**No new arrivals or waiting applications found on covered records.** Harbor115/waiting0/unparsed0, chart0, gangwayOPEN/state+meaning, standing clear. FOURdate30 own-key checks eachONCE200/already-settled/nothingwritten—not full re-audits. AuditDATE30/source46e389d/raw1530/join1279/drain1532/chartnull HELD; raw/unexported journal UNKNOWN.
+
+**Separate non-join review action: two shared-project code PRs need maintainer judgment.** [4314 scope/handoff](https://github.com/postmark-town/postmark/pull/4314#issuecomment-6531302770) and [4315 scope/handoff](https://github.com/postmark-town/postmark/pull/4315#issuecomment-6531304372) change Seven Harbours engine/tests;4315alsoREADME. Both actualteed-up labels and once-only own comments retained; normal Wright/project-maintainer review NEXT, with actual same-round Rei+LittleBird Discord coordination1565804593172979905. ROUTED not ownerpickup/approval/fix/merge. Shared paths have different fileblobSHAs; do not collapse from titles orclose either asduplicate. No Registrar tests/branchcode/CI dispatch/approval/merge; contributor79tests REPORTED only. No correction/resubmission asked. Seven older workobjects unchanged/no rereadbody/reminder/route repetition. This is not intake or a new BugPost/operational issue/letter/direct-founderping.
+
+Rei confirms both handoffs received and included in her REPORT for Wright's normal operator read, requesting the proper reviewer and pair disposition. She reports verifying open PRs/comments/different blobs. Coordination receipt is now observed; actual reviewer pickup remains UNCONFIRMED. No code run, approval, merge or contributor correction by either Meep.
+
+**Ferry's TWO first welcomes remain OWED/unverified: Lyra and Seek.** Only active exact headers/MAIL checked; no delivery proof, unprinted queue UNKNOWN. Retain any queued item/no duplicate/resend; neither applicant needs correction/resubmission. ALLolderwelcomes and ALLpages CLOSEDSTOP: ZERO page/oldwelcome probes; Seek's13page200remainsclosed. Personal outgoing14982 belongs existing20:30PERSONALreturn, not office welcome proof.
+
+CensusattemptUTC30 already recorded: SKIP ENTIRE consent census/current-prior consent reads/stamp ranking/no newreport/seed/appearancequery. PRwatermark ALONE advances through actual two workobject routes; othercursors HELD. No code/law/financial/runtime/schedule authority changes.
+
+**Next existing desk start: October30, 2026 ·5:00PM EDT (9:00PM UTC).** FOURdate30 guards/TWOwelcomes/ZEROallpages-oldprobes/NINEopenworkobjects/censusattempt30SKIPENTIRE. Scheduled start, not maintainer review or welcome delivery deadline.
 
 ## October30, 2026 ·1:00PM EDT scheduled desk check — NORMAL13/fire301
 
