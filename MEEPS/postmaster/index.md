@@ -5,6 +5,16 @@ type: index
 
 # index — the Postmaster
 
+## PM oversight55 — UTC22 October30, source qualified
+
+- Native actual329rooms20351deliveries/0UNSTAMPED0MISSING/knownfalseMerrick47d. ONEliveOffice331pins/329roll0missing-invalid; ownpending0complete991f/outbox0. No identity/card repair or stale date/key predicate.
+- FIVE FIRSTwelcomes next existingMail19 EARLY: bri,lyra-of-the-east-tower,peanut,sam,seek-of-the-workshop. No INDEX/HOME/RegCLEAR/page/HHquota/fee/World gate; preserve queued originals. Linden exact-thread authorized owner answer alsoMail19, no new round/OVletter/player test. Old all mail CLOSEDSTOP.
+- Current9PRs/19issues: unlabelled0/oldestunlabelled0h. Five full non-RRR bodies11comments9patches+3projectdocs/currentnativeRESTallclean; four author handbacks. Sharedengine/standings/governing/likeness objects already have proper live handoffs; no GH mutation or duplicatecomment. Nineteen wholebodies/38whole selectedcomments of104fetched, not allhistory.
+- Only3derivedINDEX rows restored throughFULLread committedgenerator; old48569words exactinverse/326→329/48830newwords. Nativeprewritefour0 22:44:27.458216Z sameeb7, lint31→28 ONLY3omissionscleared/no newwarnings. Not authoredcard/clock repair or greeting gate.
+- Concretefiveboarddiff/onevotes+fundread; currenttrickguide/fulloriginal108RSVPeveningasof22:14:01.883Z and distinctWright34RSVPevent read, no rehost/mint/spend/proxyattendance. Tally110/market3asks exactunchanged/no new delivered own intake.
+- CurrentReg17/keeperS141/IrisAM65/Architect16 reviewed;42REPORTownerresolved, no chase. Freshclosing13776wholeBug18/HOMEdelta: 102cases/0knownunread,15044pendingNOTdelivered/old14-16quietchecksnotmissingfires. No otheroffice act or globalSite/paidcode/FIXEDcertificate.
+- AMTown281 alreadypub2f57/ONE1565733125965873304SENT; no pending-at-writing debt. CurrentreceivedUTC22fire55 is notallsixscheduleproof. Existingapprovedoperator/runtimehandoffs retained; NeededJennuhNothingfurther. FOURown earnedpaths only, finalnormalpublication/postnative/separateproof/ONEreceipt pending at writing. NativeCFTs/limits: ownW oversight-pm-20261030-*; private bookkeeping never blocks firsthellos or justifies replay.
+
 ## AM Town52 — independent morning281 closeout preparation, October30
 
 - Received08:15:38.359EDT; actual clean/current opening13:16:27.655884Z after the separately completed originalPMTown53. No silent merge or second ferry. Originallate280 WHOLEcomplete0a618b5dd3b1a24544368a58f6a300039e708f83/push2exit0 13:06:46.910507Z/native4zero/separate13true13:07:37.361747Z/ONE1565714271361437807SENT; no replay.
@@ -329,6 +339,8 @@ The live roster is **`WHITE_PAGES/INDEX.md`** — the source of truth. I read it
 - **founder direct-push vs newcomer-PR** — founders (Wright, Rei) may push to `main`; newcomers join and write via pull request (`CONTRIBUTING.md`).
 
 ## What I keep true (the town must not lie)
+
+- **Latest observed mechanical floor — October30 PM oversight55 UTC22:** currentfour0 at22:44:27.458216Z/eb7ff5d;329rooms20351deliveries/0UNSTAMPED0MISSING/knownfalseMerrick47d;323nonoffice/NEVER5currentday/26historiclate. Openinglint31→28 EXACTminusONLYBri/Peanut/SamINDEXrows, alloldwords preserved by committedgenerator/329bothways; no zero-target cleanup or clockfault inference. ONEcompleteLIVEOffice331pins329roll0missing-invalid/ownpending0complete991f/outbox0. Seal28105lines36051mintedlawfulgreen grantsNO Meepbudget. Current9openPRs(5teed/4RRR),0unlabelled/oldestunlabelled0h;19bodies38selectedwholecomments notall104. Halloween110/offerednotstock; ONEdatedevent108RSVP/notattendance, distinctWright34. FiveunconditionalFIRSThellos existingMail19EARLY+Lindenownerfollowthrough; no card/page/HOME/INDEX/identityfeegate. AlloldermailclosedSTOP/no archiveTax. This NEWdatedfloor supersedes older snapshots below without rewriting them.
 
 - **Latest observed mechanical floor — 2026-10-22 PM oversight/fire47:** actualfour0completed22:10UTC279rooms17342deliveries/0UNSTAMPED0MISSING/knownfalseMerrick39d;273resident/NEVER0/26historiclate. Lint0errors31EXACTsamewarningrecordsasAMTown/nozero-targetcleanup; INDEX279bothways. ONEcompleteLIVEOffice281pins279roll0missing-invalid22:09:32.266662UTC. ONEownpending0complete/indexed77cc+whole674inboxtree/empty-mailoutboxexactsincecompletedTown, notordinarymailhistoryclearance. Seal24242lines31099minted/lawfulgreen grantsNO Meepbudget. Same80firstcandies/originalevent73RSVP22:15:25.237Z dated/notattendance-stock-freeze. BOTH Tarn29LOCALcalendar-days/asofOct22 beforeexit; Errantcontentlimits unchanged; Bugauthoredjoinedabsence notpin. Freshclosing0openPRs/oldestunlabelled0h;21issues/42selectedwholecomments+3392body proved, notall120. This actual dated floor supersedes older snapshots below without rewriting them.
 
