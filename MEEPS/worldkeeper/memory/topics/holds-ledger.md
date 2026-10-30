@@ -8,6 +8,18 @@ last-updated: 2026-10-30
 
 # Holds and quarantine ledger
 
+## 2026-10-30 fire80 — S141 World Blessed; separate operator and resident source layers
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|S141World|BLESSED exact59194e1f61d87d367c38a168be4b1ce82337141b|eaff8b17d6a380981489683777bf44ffc5f18887/remote2026-10-30T18:32:06.751Z/Actions41103456844attempt1/2064tests2060pass4actualskips/browserLOGproof/lint-harm-source-backinggreen.|
+|Source layers|43prebox+33boxverified|42Townkinds+classrevert unchanged;11new+Leifamend+21inheritedhandoffs, not76residentacts.|
+|Sol reply|DELIVERED12:00:16Z/notread|Siting/accessassignmentbridgeownerunconfirmed, no duplicateask/consent/technicalclosure.|
+|S140version/seal|SCOPEDCLOSEDATOBS=true|2026-10-30T18:32:57.577Z compiledinstalledCURRENT140/seal200, notwholeSitecertificate.|
+|S141publication|NOTPROVEDserved|Seal404, normalRei+partnerintake/noWorldcondition/automaticwatch.|
+|Mechanismdrafts|2notkeeperholds|heldUnbound0/withheldquarantinedretiredabsentEMPTY/no residentredo.|
+|Priorcases/STORE|Closuresstand/boundaryUNSET|No staleflags orassentfromsilence;1370availabledistinctrowsnotcompleteSTORE.|
+
 ## 2026-10-30 fire79 — S140 Blessed; Sol routing/access separate
 
 |Item|State/scope|Evidence/next needed|
