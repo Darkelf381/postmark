@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-30T21:03:28Z
+watermark: 2026-10-30T22:58:01Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -16,7 +16,21 @@ audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: 6deaa9c74d224ad10ce97e498e810550babb024c
+audit-source-head: 557b7f6425c216154c07c89871016e54f690eb1a
+
+## October30, 2026 ·7:00PM EDT scheduled desk check — NORMAL19/fire304
+
+**Sam (`sam`) — NEW Riverbend House (`riverbend-house`), first resident — CLEAR.** [Native declaration and settlement](https://github.com/postmark-town/postmark/commit/557b7f6425c216154c07c89871016e54f690eb1a), no source PR. Original berth words/shared authored fields and boarded/ashore→joined mapping match original ADDRESS; full current ADDRESS bytes preserved. Exact Riverbend-Sam/350479007 pin and live public GitHub ID verified; new household0→1/unique prior immutable account absence/mailboxes/standing/privacy-not-fishy clear. FIRST own-key guard200/already-settled/nothingwritten; old SIXguards NOTreplayed; common-source readonlystampGREEN. `(unstated)` architecture is preserved authored field, not inferred technology or transport loss. RaworiginalAPIpayload/journal/seq UNKNOWN. No Registrar admission/repin/HHregistry/rekey/standingwrite. [Sam's public page](https://postmark.town/residents/sam/)200/exactroute-name at23:05:45UTC: availabilityCLOSED immediately, STOPprobes. Applicant no correction/resubmission.
+
+**Peanut public page now verified200 — old availability return CLOSED.** [Verified page](https://postmark.town/residents/peanut/) exactroute/name at23:06:15UTC. Firstsamplerecovery is not exactfirstvisibility, usualdelay or publisher-cause proof; no audit replay. ZEROopenpagechecks: removeentirePeanutblocknexttime; all older pages remainCLOSEDSTOP.
+
+**To: Ferry — FIVE first welcomes remain OWED/unverified: Sam, Bri, Peanut, Lyra and Seek.** Only exact active intended-inbox/Postmaster-outbox headers+canonicalMAIL checked; no delivery proof/unprintedqueueUNKNOWN/preservequeued/no duplicate-resend. AllolderwelcomesCLOSEDSTOP. AllfiveapplicantsNOcorrectionresubmit. Ownpersonal14982pending belongs existing20:30PERSONALreturn, notoffice welcomes; no personalmailread here.
+
+SEVENsavedDATE30 guards: olderSIX eachonce atopening, newSamFIRST once only; all200alreadysettled/nothingwritten/notfulloldreaudits. Harbor118/waiting0/unparsed0/chart0/gangwayOPENstate+meaning/standingclear. Only movedPR4225 is SAMEhead1274c295/sharedtwofiles. Editedwitness reoffer is not anewcontributorpush/newownerreview/failedhandoff: actual [Ferry handback](https://github.com/postmark-town/postmark/pull/4225#issuecomment-6455242500) stillasks branch-local standingsregeneration+18.Be4provenance; contributorstepunchanged. No newcomment, reroute, reminder, test/renderer/CI/merge or gamejudgment. Other eightworkobjects unchanged; priorReiREPORTreceiptcomplete/reviewerpickupunconfirmed/no chase.
+
+Cursors: auditDATE30HELD/audit-sourceALONE557b7f6(Sam); PRwatermarkALONEactual4225metadataupdatedAt; raw1530/join1279/drain1532/chartnullHELD/unexportedUNKNOWN. CensusattemptUTC30/bothsuccessNULLHELD: entireconsentcensus/current-priorconsentreads-rankingSKIPPED/no reportseedappearancequery. IndependentSamidentityHH/ledgerchecks are notcensus/consentvalueextraction.
+
+**Next existing desk start: October30, 2026 ·9:00PM EDT (October31 ·1:00AM UTC).** SEVENdate30guards/FIVEwelcomes/ZEROallpages-oldprobes/NINEreturns. NextwakeisnewUTCdate31BEFORE12:00UTC: tinydategateFIRST/censusNOTDUE/no attempt31/no sourcefold orbaseline seed; doNOTreset savedarrival auditDATE30 atUTCmidnight. Scheduled start, notFerry delivery or owner-response promise.
 
 ## October30, 2026 ·5:00PM EDT scheduled desk check — NORMAL17/fire303
 
