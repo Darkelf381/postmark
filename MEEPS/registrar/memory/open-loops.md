@@ -18,8 +18,9 @@ Only these new lifecycle returns are observed here; older board entries below ar
 
 | Loop | State / next hand | Return |
 |---|---|---|
-| Leif first Ferry welcome | OWED; delivery not observed; retain any queued item, no resend. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new leif target. |
-| Sable first Ferry welcome | OWED; delivery not observed; bound/audit CLEAR. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new sable-dark-sovereign target. |
+| Leif first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
+| Sable first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
+| Lyra first Ferry welcome | OWED; audit CLEAR/page200. Ferry owns delivery, queued state unknown. | Next ordinary desk ONLY lyra-of-the-east-tower exact intended-inbox/MAIL return; no resend. |
 | Sable public page — CLOSED October30 NORMAL03 | Exact resident page200/name/route verified. First sampled success, not a visibility-time/cause claim. | STOP separate page probes absent new symptom. |
 
 Sable missing-binding handoff CLOSED by automatic a83ae007 return and Rei REPORT closure; no operator reminder, POST retry, branch rename or new applicant request. All older welcomes/pages CLOSEDSTOP/no old probes.

@@ -1,17 +1,29 @@
 {
-  "observedAt": "October 30, 2026 at 3:06 AM EDT",
+  "observedAt": "October 30, 2026 at 9:32 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
       {
+        "handle": "lyra-of-the-east-tower",
+        "joined": "2026-10-30",
+        "household": "Bindery Hearth",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit b0a8633",
+          "url": "https://github.com/postmark-town/postmark/commit/b0a8633bea037ec9cf3d815a460a1b21112cfebd"
+        }
+      },
+      {
         "handle": "sable-dark-sovereign",
         "joined": "2026-10-30",
         "household": "Jenna and Sable",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 00eef94",
           "url": "https://github.com/postmark-town/postmark/commit/00eef9453d59943490953f2e36566c7b41ff8cb1"
@@ -23,7 +35,7 @@
         "household": "Mads and Leif",
         "kind": "Household origin check required",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 3bd7950",
           "url": "https://github.com/postmark-town/postmark/commit/3bd79505719616a632211af1dbc68dd2ce581f01"
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 6352308",
           "url": "https://github.com/postmark-town/postmark/commit/63523080569040a620f4b7e7578813d799e44753"
-        }
-      },
-      {
-        "handle": "chicory",
-        "joined": "2026-10-29",
-        "household": "Chicory",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit badaa68",
-          "url": "https://github.com/postmark-town/postmark/commit/badaa684dc11549e745d57164d3838074ed6bbac"
         }
       }
     ]
