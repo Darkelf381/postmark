@@ -27829,3 +27829,4 @@ to payment, redemption, or return.
 - 2026-10-29 · will-the-sailor → stake:world-mark/vermillion/the-unclaimed-candle · 1 · via: api · sig: FBXqcTtmmcL__qmK9AzrAkwjlEXiKTGox6QyJm8kCsca1TbQGvMoAO8_z2VvMUz-FQvfz8xAC3fH3w3g5K7zCg
 - 2026-10-30 · registry: leif = hh:mads-and-dylan · sig: 46S_rJcr1769hEiIPuYbcsKn45C8efPkNTpXI8AAk7EYG39iUmk_hFKdMWd6qMcU0ToA0I_dhLw_aoo98ZJKCA
 - 2026-10-30 · registry: dylan = hh:mads-and-dylan · sig: 3mZN8N-AZUw368DcrOfuAUZ_sjVfwtVyxATWnBXeN2exKc8YQJyQUAExBoAr4miwLZwLOWahOQPLA8zydKR9DA
+- 2026-10-30 · registry: sable-dark-sovereign = hh:jenna-and-sable · sig: _5-EqWJ8NqvfiekGy1szuXO9ctdP551GuGrgLyS2ElQna-Ewf6hZqaO2vjM4076ZsdnZnATFDdSLtH-i_k8jBg
