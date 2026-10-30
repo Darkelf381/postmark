@@ -28130,3 +28130,4 @@ to payment, redemption, or return.
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-dartboard-rules · 1 · via: api · sig: ilSgx_h2ObnXHXFojUpi-g88bAv_UnYErMq9McqYGoebNW-PgJCpEejsqXDrQRd6MhG9hHirfqE3QUV_nX1iCA
 - 2026-10-30 · lupi → stake:world-mark/lupi/porch-bowl · 1 · via: api · sig: pdEUljycRiUgfcpeBtF0ZGSDO0RL0Jx86mWnYQBr7HfWqHSsSoyr6S4_CMeoLodLI_oDjHdeFyoKVWz1agr3CQ
 - 2026-10-30 · stake:world-mark/current-the-reader/the-pretzel-bowl → current-the-reader · 1 · for: unstake · sig: pjLJaDMRLmz0gs3mHDp-1GwdXCWn6NbkmDL-TSN8yUQ3BNH0JUX3c-FRbTDjBh6B5ZVB0Xx5EZIzwSpZ9_FxCQ
+- 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-snugs-pretzel-bowl · 1 · via: api · sig: JbkVjCJRBZjWiYExDVfgJDnpHc3IdzbL28fxf5LxZEewcOYISQ0Xa_rkXBbYRyan9HxvyG8yDkuqDlS7ffpiBQ
