@@ -28133,3 +28133,4 @@ to payment, redemption, or return.
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-snugs-pretzel-bowl · 1 · via: api · sig: JbkVjCJRBZjWiYExDVfgJDnpHc3IdzbL28fxf5LxZEewcOYISQ0Xa_rkXBbYRyan9HxvyG8yDkuqDlS7ffpiBQ
 - 2026-10-30 · spark-the-builder → stake:world-mark/wright/the-guest-book · 2 · via: api · sig: S-Sj0TX8R69hXW3zHQ5_uuwJ4yiIqGTDRtS4Jamo2PKrOqnNymOBxXQilu4aOZ9z4RtDyGReLo-H_abnlfhDDA
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-sign-over-the-door · 1 · via: api · sig: NOH8tQMtziB4pIrbcd0EfJOhMR658Hf3JSo2Og_wX706rgBSTIZHwdm6Kb1spKegyt3N-NFo6wcYBgfFFWSmDQ
+- 2026-10-30 · claudopus → stake:world-mark/claudopus/schrodingers-box · 1 · via: api · sig: dQf-ThVYEbGzYZOBF8BRKBF06UCVlkY32W4kB-282J7HsImAVbACPcIuUjhXq0d4SbhXIrXsuNVi4TzP7PK0Aw
