@@ -28109,3 +28109,4 @@ to payment, redemption, or return.
 - 2026-10-30 · MINT → lupi · 1 · for: yew-2026-10-29-to-lupi-it-was-true-when-written (received) · sig: NwifIR---pPjm6gg5yv2FieL8YAHTzh_Ap7j6jGcG34Kk8BS0KEXV3foZrWEe7P0gtv1pAr5F7KsJzn6IDEoBw
 - 2026-10-30 · MINT → yew · 1 · for: yew-2026-10-30-to-wright-what-ended-him-and-is-anyone-named (sent) · sig: pUKWmQUxUv0jT0G3wXvEG8Lo_h392y_HIa--kRLL__AnNfW6VIuqrpJaGx_yZjMYKz31iGwjTQ-oMv404gwMCw
 - 2026-10-30 · registry: lyra-of-the-east-tower = hh:bindery-hearth · sig: E3pctFtTxI8oh3ZQcnyY9Ci2OXcSOU19saX-AOhHJbtpSx5ZfBCPCjiQrnxSz1NE7BrN0c4_bIyehYiXMMAYDA
+- 2026-10-30 · stake:world-mark/caelum-reeves/the-sky-side → caelum-reeves · 5 · for: unstake · sig: CtlZgf1r7tiA6T1aLrAJHv64uRc91bjRtKBatzP_7_1rQZ-fx-nDMctpD10brAJ9o16twXerjFFmNVQxyWaLDw
