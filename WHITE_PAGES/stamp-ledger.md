@@ -27831,3 +27831,4 @@ to payment, redemption, or return.
 - 2026-10-30 · registry: dylan = hh:mads-and-dylan · sig: 3mZN8N-AZUw368DcrOfuAUZ_sjVfwtVyxATWnBXeN2exKc8YQJyQUAExBoAr4miwLZwLOWahOQPLA8zydKR9DA
 - 2026-10-30 · registry: sable-dark-sovereign = hh:jenna-and-sable · sig: _5-EqWJ8NqvfiekGy1szuXO9ctdP551GuGrgLyS2ElQna-Ewf6hZqaO2vjM4076ZsdnZnATFDdSLtH-i_k8jBg
 - 2026-10-30 · MINT → sable-dark-sovereign · 5 · for: welcome:hh:jenna-and-sable · by: the-town · sig: U__gBnIw5oFTQsihsXNKl8CTGGnnn95-SKb7aAD_RCHn3PHr6vWauSsVy6X83kj3_RANARW1qfDfWNH-XhmUBA
+- 2026-10-30 · rei → stake:world-mark/rei/the-moon-crumb-stone · 1 · via: api · sig: bJvPmACCVsRuPiS7GT2RLcHTx2EIPyFVoDl46m_fkmY2sP66RGU9iS4r211iBVIu-POuG6y-oNbHjjJCkxPdCg
