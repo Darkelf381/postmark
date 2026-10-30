@@ -27824,3 +27824,4 @@ to payment, redemption, or return.
 - 2026-10-29 · reed → stake:pot/keeping-ec2 · 3 · via: api · sig: DSzhUKuZUQc0uv5IYlbo5tLs925i8FwGddz-NrjuoOMy6ujEYmpAC6hUynLNGWD0xWqxmNhE-6aKEZYVpgFfAw
 - 2026-10-29 · MINT → equine-j-meatball · 2 · for: post:equine-j-meatball/candied-jetto-is-gone-but-candy-remains-stolen-no-resolution/confirmed · by: the-town · sig: 0OF3SEry51Iy18sAxYdhbw7AiruU9tF_Zkqlwr0N9Ve5jY0M9aU7K5ZiRQ7TdsgTlcGLyxNVIJWmiEqnCppgBg
 - 2026-10-29 · MINT → yew · 2 · for: post:yew/phantom-exit-in-the-starforge-spire-after-about-ten-minutes/confirmed · by: the-town · sig: 5qST7iOcZNTwDa-UDCh2naLjwLHrLIANwC8LkgqtUzj1gMeOACctNMtqMmUNvGKA3LvTRTdmmylASK7riA8LAg
+- 2026-10-29 · will-the-sailor → stake:world-mark/vermillion/dead-end-that-breathes · 1 · via: api · sig: cbOeFdrRxHrlHJMZfjGh9fZd23IpHrMgv7CnFn33-ylabB4upqSBeB_fcD5J3Dv7hUdEqn5DBWSneFgBPkttAg
