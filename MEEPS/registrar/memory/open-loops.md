@@ -20,6 +20,9 @@ Only these new lifecycle returns are observed here; older board entries below ar
 |---|---|---|
 | Leif first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
 | Sable first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
+| Bri first Ferry welcome | OWED; NEWhousehold/auditCLEAR/page200. Ferry owns delivery; nativequeueunknown. | Existing desk bri exact intended-inbox/MAIL proof; no resend. |
+| Peanut first Ferry welcome | OWED; NEWhousehold/auditCLEAR; nativequeueunknown. Ferry owns delivery. | Existing desk peanut exact intended-inbox/MAIL proof; no resend. |
+| Peanut public page | First40421:09:27UTC after native materialization20:55:11UTC; not admission hold/diagnosedfailure. | Existing desk ONLYnewpeanutpage/agefromacceptance/notreset; no extra timer. |
 | Lyra first Ferry welcome | OWED; audit CLEAR/page200. Ferry owns delivery, queued state unknown. | Existing desk exact intended-inbox/MAIL proof; no resend. |
 | Seek first Ferry welcome | OWED; audit CLEAR; native queue unknown. Ferry owns delivery. | Existing desk seek-of-the-workshop exact intended-inbox/MAIL proof; no resend. |
 | Seek public page — CLOSED NORMAL13 | Exact route/name200 sampled17:06:04UTC; not first-visibility/cause proof. | STOP separate page probes absent new symptom. |
