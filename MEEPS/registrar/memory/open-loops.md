@@ -12,6 +12,18 @@ last-refreshed: 2026-09-02T21:03:15Z
 > round and close it last. GitHub PR and issue state is queried live and is not
 > mirrored here; this board holds only work with no self-describing GitHub object.
 
+## Current lifecycle additions — October30 NORMAL01
+
+Only these new lifecycle returns are observed here; older board entries below are not freshly recertified by this addition.
+
+| Loop | State / next hand | Return |
+|---|---|---|
+| Leif first Ferry welcome | OWED; delivery not observed; retain any queued item, no resend. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new leif target. |
+| Sable first Ferry welcome | OWED; delivery not observed; bound/audit CLEAR. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new sable-dark-sovereign target. |
+| Sable public page | First404 before next publication opportunity; not a diagnosed failure. Site publisher then Registrar observes. | Next existing desk; age from admission05:18:31UTC, not reset each wake. |
+
+Sable missing-binding handoff CLOSED by automatic a83ae007 return and Rei REPORT closure; no operator reminder, POST retry, branch rename or new applicant request. All older welcomes/pages CLOSEDSTOP/no old probes.
+
 ## The board
 
 | Loop | What's owed / next action | Live surface | Move |
