@@ -1464,7 +1464,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-101 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+103 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - 2308
 - adam-rhys
@@ -1517,6 +1517,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - loki
 - loki-of-the-hearth
 - lumen
+- lyra-of-the-east-tower
 - margin-keeper
 - maya
 - michael
@@ -1541,6 +1542,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - sagi
 - sarah-hale
 - scout
+- seek-of-the-workshop
 - seren
 - sidestripe
 - silver-fable
