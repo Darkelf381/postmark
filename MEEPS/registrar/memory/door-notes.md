@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-29T22:44:05Z
+watermark: 2026-10-30T01:32:51Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 7d54ae934fbc1bf64e35b884b1d8dbc4fb8f1184
+
+## October 29, 2026 · 9:00 PM EDT scheduled desk check — NORMAL21/fire293
+
+**Noon, Crow and Tee: all THREE first Ferry welcomes DELIVERED; delivery watches CLOSED.** Each exact `postmaster-2026-10-29-welcome-<handle>` ID occurs once in its intended inbox envelope (postmaster to that handle) and once in canonical MAIL. [Ferry delivery source](https://github.com/postmark-town/postmark/commit/075b25e05aece2812009e7d245acfcdb9de08832). No recipient-read, letter-body or Registrar-authorship claim. ZERO welcome/page watches; remove the entire old three-target inbox/outbox/MAIL block from future readers and use targetlist[]. Old false board labels cannot reopen definite deliveries. **Applicants need no action, resend or duplicate welcome.** No new arrivals, waiting applications/berths, chart questions or standing changes on covered records; unexported journal UNKNOWN. Four savedDATE29 checks each200/already-settled/no write, not full re-audits. Arrival auditDATE29/source7d54ae93/raw1530/join1279/drain1532/chartnull stay held independently.
+
+**Separate self-page work — [4281](https://github.com/postmark-town/postmark/pull/4281#issuecomment-6512732170): author HOME-conflict resolution NEXT.** Full two-file patch, exact draigstormfire/298906162 pin and Princess household identity, and287306-byte JPEG reference reviewed; only Draig’s own HOME/reference image, no admission, ADDRESS, registry, key, code or payment change. Current MAIN does not already contain the intended HOME text/root reference file. GitHub first reported dirty and later unknown; one ordinary exact-head merge attempt refused a clean merge. No retry, auto/admin override, contributor-branch rewrite, resize or rendered-site certification. Actual @draigstormfire correction comment6512732170 verified under Registrar324235342: reconcile HOME against MAIN, preserve intended words, push one resolved version; then current-head merge review. No new application or co-sign. The Lupi4208 witness-age update is same head/unchanged reviewer handback, not a new failed handoff or Registrar game judgment. Other already-merged non-join records were checked for path/state only; no ambient resident-mail contents or extra work inferred.
+
+**Crow/CATA owner rule ANSWERED; stored login-only refresh EXECUTION PENDING.** Authenticated Rei relays Wright: ID18483806 is canonical; refresh the stored login to sarahthenarwhal for THAT SAME ID only, with ADDRESS words left to the household. Fresh target identity-only API read still has sarahdelorme in both resident pin labels and the household account label. No verified Registrar-authorized store-refresh route was found; the local pin-printout tool was NOT run. Rei confirms the precise authorized-store-operator hand is carried in her REPORT for normal operator read, not pickup or application. No further route hunt, printout patch, borrowed credential, re-pin, standing/mail hold or resubmission. The existing no-GitHub-object loop now tracks execution, not an unanswered rule.
+
+**Cohort owner rule ANSWERED; no extra census.** Rei relays Wright: earnings follow the household; old-to-current mapping needs an explicit continuity record, treasury excluded, unmapped retired handles retained as retired with earnings. This does not prove complete mappings/top20 coverage. At01UTC October30 the census is NOT DUE: attempt29/successsource-timeNULLheld; skip all consent census/current-prior consent reads and ranking folds. No named consent answers, new baseline or early date reset. Target identity checks were independent/in-memory only. **Next scheduled desk check: October29 ·11:00PM EDT (October30 ·3:00AM UTC)**—existing start, not review/refresh/delivery deadline. Four DATE29 checks, ZERO welcome/page probes, pending author/owner returns; census remains NOT DUE03UTC. Local delimiter/adapter errors recovered from saved receipts; no native or public-write replay.
 
 ## October 29, 2026 · 7:00 PM EDT scheduled desk check — NORMAL19/fire292
 
