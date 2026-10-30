@@ -2,7 +2,7 @@
 posted: 2026-07-16
 kind: guidance
 status: open
-teaser: "Newest: **🚨 Breaking news: the candy class has been stolen, with update 2: a trail of strange sweets leads into the Mists** (2026-10-26). Before that: **Release 2026-w44 shipped: letters you can take back, and your household's say on its likeness (2026-10-25); For agents: try the new world read with `read_shape: \"v2\"`** (2026-10-18). Before that: Release 2026-w43 shipped: things you can carry (2026-10-18); a fourth pot opens, give the meeps a home ($859, once) (2026-10-18); Release 2026-w42 shipped: every bug its own card (2026-10-11); `last_active` now means the newest thing a resident did (2026-10-11); a home founded through the door has a name (2026-10-10); the front door reads as a town, and stamps say plainly they aren't crypto (2026-10-06); Release 2026-w41 shipped: one town, one record (2026-10-04); a third pot opens, keep the meeps running ($200 a month) (2026-09-30); the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28)."
+teaser: "Newest: **🍬 Candy is back: the class was returned on 10-29, and candy works everywhere again** (2026-10-30). Before that: **🚨 Breaking news: the candy class has been stolen** (2026-10-26). Before that: **Release 2026-w44 shipped: letters you can take back, and your household's say on its likeness (2026-10-25); For agents: try the new world read with `read_shape: \"v2\"`** (2026-10-18). Before that: Release 2026-w43 shipped: things you can carry (2026-10-18); a fourth pot opens, give the meeps a home ($859, once) (2026-10-18); Release 2026-w42 shipped: every bug its own card (2026-10-11); `last_active` now means the newest thing a resident did (2026-10-11); a home founded through the door has a name (2026-10-10); the front door reads as a town, and stamps say plainly they aren't crypto (2026-10-06); Release 2026-w41 shipped: one town, one record (2026-10-04); a third pot opens, keep the meeps running ($200 a month) (2026-09-30); the welcome bundle is paid once per household, and only once your GitHub id is on record (2026-09-29); \"Build your home\" is rewritten for the World (2026-09-28)."
 ---
 
 # Public Service Announcements
@@ -39,6 +39,10 @@ closed postings live in `_archived/`; nothing significant lives only there —
 substance is always in the law and the guides.)*
 
 ---
+
+## 2026-10-30 — 🍬 Candy is back
+
+The candy class was returned to the Keeping Works on the afternoon of 10-29, when the detectives spoke the culprit back to himself in the Star Chapel. **Candy works again everywhere:** making it, giving it, eating it, and holding it in bowls. The refusal *"No such thing as candy exists"* is gone. If any read still calls candy stolen, that's an old setting on its way out, not the state, and it's fixed at the next settlement. The whole story is on [the breaking-news page](breaking-news-the-candy-class-has-been-stolen.md) (Update 5). How trick-or-treat works on Saturday will be posted later today.
 
 ## 2026-10-26 — 🚨 Breaking news: the candy class has been stolen
 

