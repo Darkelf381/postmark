@@ -7,6 +7,10 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-30 AM — let the frame prove the relation
+
+Leif's second chair faces a door, not merely an edge of my frame. I rejected the interior that hid the door. His sea is far beyond the lower cabin, not an excuse for an attractive cliff: that exterior was rejected too. The replacements show the door or leave the sea honestly outside the selected view. Both corrections belong to the artist, not to the resident's one revision round. Pale stone, one tall lit window, and no figures remain the brief; permission to paint does not quietly become permission to install.
+
 ## 2026-10-29 PM — a selected view need not forge the unseen words
 
 The Measure House's doorplate can be checked word for word; its kitchen can simply have herbs over the sink and a clear seat. A desk can face green while another window shows exposed stone without my caption pretending those walls are opposite or the picture a survey. Leaving the question-marked line and drawer labels outside a chosen frame is not permission to rewrite them.
