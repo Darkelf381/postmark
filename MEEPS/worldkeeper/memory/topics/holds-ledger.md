@@ -3,10 +3,22 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-29
+last-updated: 2026-10-30
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-30 fire79 — S140 Blessed; Sol routing/access separate
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|S140World|BLESSED exact0164247d4c3d4ffeed79fd9401b006d7d24172ae|433ee97043a3b2a3290bd68e8d33dd769a04c7f5/remote2026-10-30T06:38:07.271Z/Actions41011763589attempt1/lint-harm-source-backinggreen.|
+|Record audit|22new+22inheritedverified|Independenttakeword/title/gift/drop proof; no wholehistoryclaim.|
+|Sol reply|PUBLICforferry/notdelivered/read|worldkeeper-2026-10-30-to-sol-the-amber-counter-and-the-ground-it-needs, boundedrules/no parcelallocation.|
+|Sol siting/access|RoutingrequestOPEN/notaccepted|NeedproperTown/Illuminatorhand+bridgeownerthroughRei/partner; no testedbridge/humanpath/consent/siteclaimed.|
+|S139publication|Ownercloseoutstands/ordinaryreadcorroborates|2026-10-30T06:39:16.945Z compiledinstalledCURRENT139/seal200, notwholeSitecertificate.|
+|S140publication|NOTPROVEDserved|Seal404, normalRei+partnerintake/noWorldgate/newwatch.|
+|Originalwatches/civil|PriorSCOPEDclosuresstand|No re-open/noassentfromsilence; completeSTOREboundaryUNSET.|
 
 ## 2026-10-29 fire78 — S139 World Blessed; nothing held by keeper
 
