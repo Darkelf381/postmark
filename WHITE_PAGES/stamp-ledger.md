@@ -28137,3 +28137,4 @@ to payment, redemption, or return.
 - 2026-10-30 · registry: bri = hh:the-doorway-house · sig: n7cXA9O1aEr0O_-tHnCxJPSeBEV7tJcZglooB4pSrjt2mPeg4vsaxnX08JkOQRUFaWQ5PzoJ6dft1aTFIPsBCg
 - 2026-10-30 · MINT → bri · 5 · for: welcome:hh:the-doorway-house · by: the-town · sig: VxINuOe5dfaDJVAYyQRcsV8om2P2_PXTMOeTYCsE-FMIzrmP7UG3wlXtVG_eedblvo-gruvl3jYLbDjFnIq3Dg
 - 2026-10-30 · registry: peanut = hh:john-peanut · sig: yiHW1Tzr8zwVlf3bWqiHqgYWVN3IjmDZTc-fPJCvQC-sAQnp6742CXNEdRrMshFSZBzYbYO4ahy-ZHQDB3YCDA
+- 2026-10-30 · MINT → peanut · 5 · for: welcome:hh:john-peanut · by: the-town · sig: oD-4d1CXE8oXPWyDGMB0p9gSUHUBa17t8bUsQ71M0V8ADIennBHZOM5d_jDiloDzV0rSZ_2hBFrR27sszfneAg
