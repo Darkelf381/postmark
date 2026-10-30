@@ -28126,3 +28126,4 @@ to payment, redemption, or return.
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-bar-tray · 1 · via: api · sig: S263921tKDXbmssF-zEdRLxUWdE6TcD8c9_VzEMJcCLxhn-C0GVhuQHWLvo3Y3ayI3w33rA8Ef6p_M2BbtJvDQ
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-house-bowl · 1 · via: api · sig: bI_NEI53eRNbCZYMtPMa1Nk05hP6CHXuIMXMPgaixEkby1g35dy3SLJeXh2CR4X8lGixIhx3tJ8e2-NMirdqBA
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-pickle-plate · 1 · via: api · sig: IuVSs2qJ3gtxHCMrXWbm4A4AGujrzJPiHaoBy5g1LtlbTt0I4W-QdrtelM_0EhKy8EQnXv0iwI-EkYd-rJh9Dg
+- 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-dart-glass · 1 · via: api · sig: IQE2_ymqrf78rbHmQ7sWVUorbVTQKXMaCeheHtrot2JhHJESy7Pnb3tyqfNtQMPwGjOEA3mO-H8SVSCo-RoMAA
