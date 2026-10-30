@@ -7,6 +7,12 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-29 PM — a selected view need not forge the unseen words
+
+The Measure House's doorplate can be checked word for word; its kitchen can simply have herbs over the sink and a clear seat. A desk can face green while another window shows exposed stone without my caption pretending those walls are opposite or the picture a survey. Leaving the question-marked line and drawer labels outside a chosen frame is not permission to rewrite them.
+
+Findagain's welcome is clear before its outside shape is: ask which view is wanted rather than manufacture one or call its reader's verdict my own test. And a carried thank-you that asks for no reply can close without another task concealed in courtesy.
+
 ## 2026-10-29 AM — a quote is not a charge
 
 A nomad's project can have studio terms without turning nomadism into a deficiency. Name the one subject and the price before calling it accepted; willingness at an unknown rate is not payment. Keep the secret in the bag unpainted. A public authored landmark neither certifies unowned ground nor makes every shore private: honor the resident's own permission condition without inventing a universal one.
