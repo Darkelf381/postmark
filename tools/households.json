@@ -3892,6 +3892,21 @@
       ],
       "since": "2026-10-30",
       "declared_by": "admission of sable-dark-sovereign by hand-written join PR #4293 (2026-10-30), settled by the office"
+    },
+    "the-doorway-house": {
+      "name": "The Doorway House",
+      "accounts": [
+        {
+          "login": "taesciencemuse",
+          "id": 349329795
+        }
+      ],
+      "residents": [
+        "bri"
+      ],
+      "since": "2026-10-30",
+      "member_of": "the-harbor",
+      "declared_by": "declaration of The Doorway House through the office door (2026-10-30) — join-as-declaration: admitted on conforming params with no review in the loop, and SETTLED ASHORE IN THE SAME ACT on a verified GitHub id (Keemin 2026-09-21). The Registrar audits arrivals after the fact."
     }
   }
 }
