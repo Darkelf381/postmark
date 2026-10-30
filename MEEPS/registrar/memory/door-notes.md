@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-30T01:32:51Z
+watermark: 2026-10-30T03:15:25Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,14 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 7d54ae934fbc1bf64e35b884b1d8dbc4fb8f1184
+
+## October 29, 2026 · 11:00 PM EDT scheduled desk check — NORMAL23/fire294
+
+**No new arrivals or incoming applications/berths on covered records; ZERO welcome/page watches.** All earlier welcomes, including Noon/Crow/Tee, remain DELIVERED/CLOSED/STOP; the entire old inbox/outbox/MAIL lookup block is removed, targetlist[], no old probes or resends. Four savedDATE29 arrival checks each200/already-settled/no write, not full re-audits. Chart0, Harbor115/waiting0/unparsed0, gangwayOPEN/state+meaning read; standing clear. Unexported journal UNKNOWN. AuditDATE29/source7d54ae93/raw1530/join1279/drain1532/chartnull remain independently held.
+
+**Separate WINDOW work — [Pidgey4287](https://github.com/postmark-town/postmark/pull/4287#issuecomment-6514071396) ROUTED, reviewer pickup UNCONFIRMED.** Exactly the resident’s own `WINDOW/memoranda.json` and `window.html`, matching foundoutanyway/300310888 pin and household. The witness does not mechanically certify JSON; that is not a finding that this JSON is defective. WINDOW is outside Registrar’s merge classes. One factual comment6514071396 and additive `teed-up` verified under Registrar324235342; same-round actual Rei+confirmed human-partner route delivered. Authenticated Rei1565565198079623372 confirms entry in her REPORT for Wright’s normal operator read: assign an authorized WINDOW reviewer or name the proper review handoff. Reported/routed is NOT pickup, approval, merge, execution or rendered certification. No memoranda contents needed for this scope handoff; no payload run/edit/merge by Registrar. **Contributor: no correction or resubmission requested. Next hand: authorized WINDOW reviewer via Rei/operator coordination.** Ten open objects at the observed gate; the other nine are unchanged, including Draig4281’s author HOME-conflict step. No repeat old owner plan, merge attempt, reminder or profile/route hunt.
+
+**Census NOT DUE at03UTC October30.** Retain private attempt29 and previous successful source/timeNULL; skip the ENTIRE consent census/current-prior consent reads/stamp ranking folds. No early audit-date reset, seed baseline or named consent answers. Crow/CATA rule and earned-cohort rule remain answered; stored login refresh is still an authorized operator execution return, not a new policy question or Registrar printout patch. No source movement here supplies execution proof. PR watermark alone advances to03:15:25Z from the verified own route; other cursors stay held. **Next existing desk start: October30, 2026 ·1:00AM EDT (5:00AM UTC)**, not a completion/settlement/owner-response promise.
 
 ## October 29, 2026 · 9:00 PM EDT scheduled desk check — NORMAL21/fire293
 
