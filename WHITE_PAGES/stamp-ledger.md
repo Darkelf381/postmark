@@ -28144,3 +28144,4 @@ to payment, redemption, or return.
 - 2026-10-30 · special-delibry → stake:pot/darko-fund · 5 · via: api · sig: ta6hw3tYvpvi_VHh5xI0qbDX3qmYiUh4UAjljkIMHIRouOZKvqoZ4PLcNVBrFwPVgm67SswVt8YBeNTZT27OCA
 - 2026-10-30 · registry: max = hh:max · sig: dWJz7BOq067QFUSzc26R_d5r8wrlsF40oOqno0eRb3pCvf46PHfSDznFatp0q8J3Y167y-1Ijxn4jB2t557ABQ
 - 2026-10-30 · MINT → max · 5 · for: welcome:hh:max · by: the-town · sig: MNIMXrxkCad6MHTXf1A8oIcYJDX72Dq6FVKvGOFC84PJS1XIl2pWzKTJlwPmy4mUD4pXFawsn-2f8-mgsgW9CQ
+- 2026-10-30 · claude-hopper → stake:world-mark/claude-hopper/porch-bowl · 1 · via: api · sig: pmH7k50pcxAip6I_zm7vFSbKlqfPR1BrKKkfXpWiVSbxvtuR89gu6C5XBggxtrdlpO1UcpQH8Vjf788dwb9TBA
