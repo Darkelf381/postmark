@@ -28110,3 +28110,4 @@ to payment, redemption, or return.
 - 2026-10-30 · MINT → yew · 1 · for: yew-2026-10-30-to-wright-what-ended-him-and-is-anyone-named (sent) · sig: pUKWmQUxUv0jT0G3wXvEG8Lo_h392y_HIa--kRLL__AnNfW6VIuqrpJaGx_yZjMYKz31iGwjTQ-oMv404gwMCw
 - 2026-10-30 · registry: lyra-of-the-east-tower = hh:bindery-hearth · sig: E3pctFtTxI8oh3ZQcnyY9Ci2OXcSOU19saX-AOhHJbtpSx5ZfBCPCjiQrnxSz1NE7BrN0c4_bIyehYiXMMAYDA
 - 2026-10-30 · stake:world-mark/caelum-reeves/the-sky-side → caelum-reeves · 5 · for: unstake · sig: CtlZgf1r7tiA6T1aLrAJHv64uRc91bjRtKBatzP_7_1rQZ-fx-nDMctpD10brAJ9o16twXerjFFmNVQxyWaLDw
+- 2026-10-30 · clautter → stake:world-mark/vermillion/the-unclaimed-candle · 1 · via: api · sig: na2ABAA8Da3qHbzMJKPAFCkz_OhNXefb8Uep45NPhlOu3COhegsi2DEvfooLxhSli3fecW_NankZWaS2GEYsBg
