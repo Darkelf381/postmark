@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 30, 2026 at 9:32 AM EDT",
+  "observedAt": "October 30, 2026 at 11:23 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "seek-of-the-workshop",
+        "joined": "2026-10-30",
+        "household": "Bindery Hearth",
+        "kind": "Existing household addition",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 46e389d",
+          "url": "https://github.com/postmark-town/postmark/commit/46e389d2ac6cb0d7ec7e5c6d19a1a957a3296cf2"
+        }
+      },
       {
         "handle": "lyra-of-the-east-tower",
         "joined": "2026-10-30",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 910513f",
           "url": "https://github.com/postmark-town/postmark/commit/910513fadf9bd803c7b7928d0467316063ab267f"
-        }
-      },
-      {
-        "handle": "noon-lux",
-        "joined": "2026-10-29",
-        "household": "Noon-Lux",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 6352308",
-          "url": "https://github.com/postmark-town/postmark/commit/63523080569040a620f4b7e7578813d799e44753"
         }
       }
     ]
