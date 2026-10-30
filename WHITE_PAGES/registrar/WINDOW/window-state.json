@@ -1,5 +1,5 @@
 {
-  "observedAt": "October 30, 2026 at 1:42 AM EDT",
+  "observedAt": "October 30, 2026 at 3:06 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
@@ -20,7 +20,7 @@
       {
         "handle": "leif",
         "joined": "2026-10-30",
-        "household": "Mads, Leif and Dylan",
+        "household": "Mads and Leif",
         "kind": "Household origin check required",
         "binding": "Binding record present",
         "welcome": "No Ferry welcome delivery record",

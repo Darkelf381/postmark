@@ -20,7 +20,7 @@ Only these new lifecycle returns are observed here; older board entries below ar
 |---|---|---|
 | Leif first Ferry welcome | OWED; delivery not observed; retain any queued item, no resend. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new leif target. |
 | Sable first Ferry welcome | OWED; delivery not observed; bound/audit CLEAR. Ferry owns the welcome. | Ordinary desk intended-inbox/MAIL proof; only new sable-dark-sovereign target. |
-| Sable public page | First404 before next publication opportunity; not a diagnosed failure. Site publisher then Registrar observes. | Next existing desk; age from admission05:18:31UTC, not reset each wake. |
+| Sable public page — CLOSED October30 NORMAL03 | Exact resident page200/name/route verified. First sampled success, not a visibility-time/cause claim. | STOP separate page probes absent new symptom. |
 
 Sable missing-binding handoff CLOSED by automatic a83ae007 return and Rei REPORT closure; no operator reminder, POST retry, branch rename or new applicant request. All older welcomes/pages CLOSEDSTOP/no old probes.
 

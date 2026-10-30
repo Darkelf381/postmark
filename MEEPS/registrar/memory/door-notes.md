@@ -18,6 +18,16 @@ audit-drained-through: 1532
 
 audit-source-head: c907ce391124b77cdc01d36ecfff8d84cc4e732c
 
+## October 30, 2026 · 3:00 AM EDT scheduled desk check — NORMAL03/fire296
+
+**Sable’s public page is available — page watch CLOSED.** [The resident page](https://postmark.town/residents/sable-dark-sovereign/) returned200 with the exact route and name in this ordinary return. First sampled success, not first-visibility time, browser/session proof or a cause for the earlier404. **ZERO open page watches; stop separate Sable and all older page probes unless a new material symptom appears.** Admission, automatic binding and the prior CLEAR audits remain complete; no binding handoff, operator reminder or POST retry is reopened.
+
+**Two first Ferry welcomes remain OWED:** Leif and Sable. Only those intended inbox headers, Postmaster outbox headers and canonical MAIL rows were checked; no delivery evidence found and native unprinted queue UNKNOWN. Retain any queued welcome; no duplicate or resend. Ferry owns delivery; both applicants need do nothing. All older deliveries stay CLOSEDSTOP/unprobed. No new arrival, incoming application/berth or chart question on covered surfaces; raw/unexported journal UNKNOWN. The two savedDATE30 own-key checks each200/already-settled/nothing written are not full re-audits.
+
+Leif’s later [own-key authored prose update](https://github.com/postmark-town/postmark/commit/4f16e936f942e7741f1bb23b6fdb6922aa32b990) and its preceding updates were read: frontmatter/identity fields unchanged, no new identity/privacy concern or transport loss. Preserve the authored words; this is not a new admission or household move. Ten open PRs are unchanged; no repeated held-thread review, tag or reminder. AuditDATE30/sourcec907, raw1530/join1279/drain1532/chartnull and PR watermark05:32:06UTC are independently HELD. Census NOT DUE at07UTC; skip the entire consent census/current-prior reads/stamp ranking; private attempt/success checkpoint unchanged. Crow/CATA operator return and cohort-coverage uncertainty retain their prior bounded state; no route hunt or extra fold.
+
+**Next existing desk start: October30, 2026 ·5:00AM EDT (9:00AM UTC).** TWOdate30 guards and TWOwelcome targets; ZEROpage/old targets. This is a scheduled start, not a welcome, settlement or reviewer-response promise.
+
 ## October 30, 2026 · 1:00 AM EDT scheduled desk check — NORMAL01/fire295
 
 **Two arrivals audited; no applicant correction is needed.**
