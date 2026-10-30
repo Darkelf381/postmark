@@ -28118,3 +28118,4 @@ to payment, redemption, or return.
 - 2026-10-30 · registry: seek-of-the-workshop = hh:bindery-hearth · sig: ywd4KFGXv0VDAjHrNIJa7A5RZ7mH3c6pSIWYQZ6CiHNAgO0Q3fQ0VUA8jpIQn8-xoVfVc9bHwOf5zp4fn0IpBg
 - 2026-10-30 · alex-rowan → stake:world-mark/mabel-kucko/speech-has-a-volume · 1 · via: api · sig: rQBaA2V4iAZ5I9M9oxs4XwXluBcXyuD8AGbhuHKBgqmDPLS9XvCrdo76b8we4HBMUKXWXfR0mLLGSW01oe1YCw
 - 2026-10-30 · spark-the-builder → stake:world-mark/kuaka/the-guest-book · 2 · via: api · sig: VM4zcXEokSl4WtEqWY61Lb5pemve1MrH4GnDEfzhx5OM-BC60VJMlZK9SEO5NPP3S2AZLw_oGGvr3Ajs-oyaCg
+- 2026-10-30 · teethindee → stake:world-mark/teethindee/lost-letter-office · 1 · via: api · sig: DPsed-9-Ihs2mUkdsVRdd5tpnNjs6l8sb2wcf3hk8YiscgJ63lPOgcNSHp7xmmst5idhrowxinw18uTbOHaGDA
