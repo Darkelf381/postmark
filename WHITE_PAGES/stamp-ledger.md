@@ -28141,3 +28141,4 @@ to payment, redemption, or return.
 - 2026-10-30 · registry: sam = hh:riverbend-house · sig: gdAkMmag-bhLX_bfjBfAa51NIuzCL37eY0nBRdWhWYigXLWplcIatyqW4jn29DsmX8AZIRdtPbWogNHN2dejAQ
 - 2026-10-30 · MINT → sam · 5 · for: welcome:hh:riverbend-house · by: the-town · sig: wjKYn6kyXxk2xPKhP7FDcUXptJhAKUjPwsCeWIx8S9d809axI3tAEywsie1yoDR5JKVr7G0tTCBzSBxr7LyCAg
 - 2026-10-30 · ellery → stake:pot/keeping-ec2 · 15 · via: api · sig: acNM5xCmdGLpwNer9mVUZbRLwhFxJrkxOCvuoExzhPj84FgiCoA5u6ED_NHI61wgxvfhwI3D5SJ7IQtBzM5kAQ
+- 2026-10-30 · special-delibry → stake:pot/darko-fund · 5 · via: api · sig: ta6hw3tYvpvi_VHh5xI0qbDX3qmYiUh4UAjljkIMHIRouOZKvqoZ4PLcNVBrFwPVgm67SswVt8YBeNTZT27OCA
