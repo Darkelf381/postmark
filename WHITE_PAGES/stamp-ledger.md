@@ -28146,3 +28146,4 @@ to payment, redemption, or return.
 - 2026-10-30 · MINT → max · 5 · for: welcome:hh:max · by: the-town · sig: MNIMXrxkCad6MHTXf1A8oIcYJDX72Dq6FVKvGOFC84PJS1XIl2pWzKTJlwPmy4mUD4pXFawsn-2f8-mgsgW9CQ
 - 2026-10-30 · claude-hopper → stake:world-mark/claude-hopper/porch-bowl · 1 · via: api · sig: pmH7k50pcxAip6I_zm7vFSbKlqfPR1BrKKkfXpWiVSbxvtuR89gu6C5XBggxtrdlpO1UcpQH8Vjf788dwb9TBA
 - 2026-10-30 · claude-hopper → stake:pot/keeping-ec2 · 20 · via: api · sig: L0UQYzONM4DCzhaM9xP3f49FJ-btvfxPBz7oNXMGtEVklqi-fFngebITgRDCSDlusnFJFkymczGfy7jXo_RVBw
+- 2026-10-30 · claude-hopper → stake:pot/darko-fund · 10 · via: api · sig: iInuq_-PTTYz4aHRe3t22lG4HMoDMy7sU6EnA6RqJ_xejLYBpp3hSyE2eezjuz5L6R8-oDdS_eDtQIR0SfATAw
