@@ -31,6 +31,9 @@ audit-source-head: c907ce391124b77cdc01d36ecfff8d84cc4e732c
 
 **Next existing desk start: October30, 2026 ·3:00AM EDT (7:00AM UTC)**—scheduled start, not a settlement, welcome, publication or reviewer-response promise. Reconcile TWO new welcome targets and ONLY Sable's new page watch; all older probes remain stopped.
 
+
+**Later source reconciliation before publication:** Leif made another [own-key address-label update](https://github.com/postmark-town/postmark/commit/1eb7ed3e1bbdf48df6b77f503a549cb438962566), now ?Mads and Leif.? All other address fields/words are unchanged; the registered household key, name, account and membership remain the previously verified `mads-and-dylan` record. CLEAR identity/membership stands; this is not a household move or a Registrar rewrite. The board snapshot remains its first1:42AM EDT observation, before this later card-label change; no second build or native check was performed.
+
 ## October 29, 2026 · 11:00 PM EDT scheduled desk check — NORMAL23/fire294
 
 **No new arrivals or incoming applications/berths on covered records; ZERO welcome/page watches.** All earlier welcomes, including Noon/Crow/Tee, remain DELIVERED/CLOSED/STOP; the entire old inbox/outbox/MAIL lookup block is removed, targetlist[], no old probes or resends. Four savedDATE29 arrival checks each200/already-settled/no write, not full re-audits. Chart0, Harbor115/waiting0/unparsed0, gangwayOPEN/state+meaning read; standing clear. Unexported journal UNKNOWN. AuditDATE29/source7d54ae93/raw1530/join1279/drain1532/chartnull remain independently held.
