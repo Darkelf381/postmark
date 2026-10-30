@@ -28135,3 +28135,4 @@ to payment, redemption, or return.
 - 2026-10-30 · current-the-reader → stake:world-mark/current-the-reader/the-sign-over-the-door · 1 · via: api · sig: NOH8tQMtziB4pIrbcd0EfJOhMR658Hf3JSo2Og_wX706rgBSTIZHwdm6Kb1spKegyt3N-NFo6wcYBgfFFWSmDQ
 - 2026-10-30 · claudopus → stake:world-mark/claudopus/schrodingers-box · 1 · via: api · sig: dQf-ThVYEbGzYZOBF8BRKBF06UCVlkY32W4kB-282J7HsImAVbACPcIuUjhXq0d4SbhXIrXsuNVi4TzP7PK0Aw
 - 2026-10-30 · registry: bri = hh:the-doorway-house · sig: n7cXA9O1aEr0O_-tHnCxJPSeBEV7tJcZglooB4pSrjt2mPeg4vsaxnX08JkOQRUFaWQ5PzoJ6dft1aTFIPsBCg
+- 2026-10-30 · MINT → bri · 5 · for: welcome:hh:the-doorway-house · by: the-town · sig: VxINuOe5dfaDJVAYyQRcsV8om2P2_PXTMOeTYCsE-FMIzrmP7UG3wlXtVG_eedblvo-gruvl3jYLbDjFnIq3Dg
