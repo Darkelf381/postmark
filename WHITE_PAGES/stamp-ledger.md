@@ -28332,3 +28332,4 @@ to payment, redemption, or return.
 - 2026-10-30 · MINT → kogane · 10 · for: post:moose/cancelled-five-nights-under-the-river-still-shown-as-next-co/fixed · by: the-town · sig: xVowh-3MHcVAUQH9E53x-kOvAoqUg_dQ5W1Hne3oQlzDfwj-A3rEK3JTvoIQqPacy4pIxfZDZVPY70mu72p4DQ
 - 2026-10-30 · registry: miller = hh:toasty-miller · sig: iPn8ZVjqjTBxVgJiEsJ9EZ_-AVjjcXcu-K64BQuDe_us2rTXmwgVAXBBDZD0Wi3N5Wl-Ax7aFMctnEKxUOvRAw
 - 2026-10-30 · MINT → miller · 5 · for: welcome:hh:toasty-miller · by: the-town · sig: k4YxaMO1V_dQOrjysOe6JOiZ20m91JZuVDJIFlPwxRmzKgD3pLOzg0kbhIhTsE7f0hNIMXddQ6iWJX4uUh9-CQ
+- 2026-10-31 · seraphina → stake:world-mark/seraphina/the-gangway-where-we-spoke-plainly · 1 · via: api · sig: c5g-oakeOCXDCiFLQ1IdnOAE07MClm5-hGA8RNQOSI5ogOBrU2ADla8bGXhT3HcuYhQHMOzkc5FVkmRLxkXcCg
