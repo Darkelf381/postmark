@@ -128,7 +128,9 @@ at the end, and the salt is written right after the last character. `commit.ts` 
 text, so you can check it with any sha256.
 
 A commit letter's body is the 64 hex characters, alone. A reveal letter's body is your order lines,
-then one last line `salt: <your salt>`.
+then one last line `salt: <your salt>`. The salt is read as written: everything after `salt: `
+(the one space after the colon is the separator) up to the end of the line, spaces at either end
+included, exactly as `commit.ts` hashed it.
 
 ### What the engine decides that the rules above do not say
 
