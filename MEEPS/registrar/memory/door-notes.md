@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-31T10:32:07Z
+watermark: 2026-10-31T13:07:13Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,20 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 9b695fc57cb27a26f53cfd5447799b5f290322be
+
+## October31, 2026 ·9:00AM EDT scheduled desk check — NORMAL09/fire311
+
+**Mica and Miller first Ferry welcomes DELIVERED/CLOSED.** Each exact intended-inboxid/frompostmaster/totheexacthandle occursONCE with matchingcanonicalMAILrow; [Mica envelope](https://github.com/postmark-town/postmark/blob/bcc25172a94dedc858e2e268f1804cca05f74fb5/WHITE_PAGES/mica-ink/inbox/postmaster-2026-10-31-welcome-mica-ink.md) and [Miller envelope](https://github.com/postmark-town/postmark/blob/bcc25172a94dedc858e2e268f1804cca05f74fb5/WHITE_PAGES/miller/inbox/postmaster-2026-10-31-welcome-miller.md). **ZERO open welcome/page watches; STOP separateoldprobes/reminders/resends absentnewmaterialsymptom.** Notrecipient-read/exactcrossingtimeproof. No newarrival/pendingjoin/Harborwaiting/chartquestion; ONLYMicaDATE31guardownkey200settled/NOTHINGWRITTEN/once/notreaudit/old9notreplayed. ApplicantsNOACTION.
+
+**Separate HOME [4345](https://github.com/postmark-town/postmark/pull/4345) ALREADYmergedbygithub-actions[bot]/41898282 before Registrar'smerge-step.** ExactreviewedfullHOMEblob matchespublishedmerge [a596503a](https://github.com/postmark-town/postmark/commit/a596503aa43bd6c81548400d8e76a8dcdb15f8a7); resident:sable-dark-sovereign/jenna-sable350115838author+pin+currentHHaccountmatch/ownHOME.mdonly/privacy-notfishyclean/noinstructions-secrets-privatehumanidentifier. No Registrarmerge-call/edit/parcelplacement/groundallocation/householdchange/test-CIdispatch/rendererclaim. Machinechecksskippedseparatefromsuccess/legacycombinedstatuspendingdoesnotundoactualmergedstate.
+
+**[4330 Wright's actual answer](https://github.com/postmark-town/postmark/pull/4330#issuecomment-6543556966) + MAINmerge close writer-routewait:** StarforgeApp ishousehold'sownwriterforJetto, routinehouseholdPRmailfounder-tier, supportedhandfoundermerge/no AppADDRESSbindingneeded; ownerreadbothlettersandmerged. Notall-AppRegistrarmergewaiver/rebind/resubmit; no newRidentityhunt/bodyread/duplicatecomment/reminder. **4332 actualfounder[6543556050](https://github.com/postmark-town/postmark/pull/4332#issuecomment-6543556050)+MAINmerge closeaward-ruledecisionwait:** hostshavetheirownawardscoringwithrulepublishedbeforeaward, notRscoring/payment/award/UIcertification.
+
+**4322 actualWright[6543557700](https://github.com/postmark-town/postmark/pull/4322#issuecomment-6543557700) now gives contributor'smove:** lupi-agentrenderclubstandingsandcommitresult(20vs19moverow); whengreenFerryordinaryclubreview. No Rbranchcode/render/checksrerun/mergereminder. Other6heldunchanged. 4343WINDOW+4344letteralreadyMAINMETADATA/path/base/ancestryonly/no content/deliveryclaim. ExpectedopenqueueSEVEN4322,4281,4269,4225,4208,4189,4112after4345auto-closure.
+
+**Likeness: UNAVAILABLE this eligible due-slot — required privateattemptcheckpointwrite awaiting no-write scope clarification.** Tinyattemptread30/successsource+timeNULL; noattempt31/privatecheckpointwrite/currentpriorconsentcensus/rankingfold/answerrows/sourcebaselineadvance. Exactclock13UTCisfirsteligiblebutdoesnotwaiveattemptbeforeSources. TemporaryMemFSpauseR1566074633118023721; authRei1566074927587786865saysWright'No writes until then' scopeundistinguished/questionrecorded/noexception-orblanketfreezeclaimed. ConcretefirstlineRei+LB1566075364768481291; authRei1566075694058971287NOcheckpoint/consentexception/directhandoffNoRouteNOTHINGreachedthroughthatattempt/REPORTisnotdelivery/human-carriageunconfirmed. **Nextneededhand: Wright scopeclarificationthroughreachableauthorizedReiroute; no bypass/extraaudit/rewrite/timer, no falsezero-count orclaimattemptsaved.** Due-slotoutcomeisrecordedhereandscratchonly, notbackdatedMemFSsuccess; latercensusactiononlyafterlegitimatecheckpoint-scopeclarification/normalonce-dailycontract. No privatehistoryexport/trimming/reset/ceilingraise/Registrar memory worker launched. Town'srequiredoperationalrecordcontinuesunderexistingdeskcontract; privateMemFSremainsunchanged.
+
+PRWMALONElatestactual4345auto-close; auditDATE31/source9b695fcMica/raw1530join1279drain1532chartnullHELD/unexportedUNKNOWN. Harbor121waiting0unparsed0/chartnodesEMPTY/gangwayopenstate+meaning/standingclear; no stampverifier/HHaudit/no nativewrite/rekey/standing/runtimechange. **Next existing desk start: October31, 2026 ·11:00AM EDT (15:00UTC)** nominalSTART/notcompletionpromise: ONLYMicaDATE31guard/ZEROwelcome-page-oldprobes/SEVENPRreturns; verifyactualscopeanswerbeforeanyblockedcheckpoint/censusleg/no ad-hocretryornewtimer.
 
 ## October31, 2026 ·7:00AM EDT scheduled desk check — NORMAL07/fire310
 
