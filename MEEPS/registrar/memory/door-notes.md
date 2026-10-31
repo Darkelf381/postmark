@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-31T03:06:27Z
+watermark: 2026-10-31T03:27:09Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,16 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 249eb9a6f74bcd44e72e9bd6fc46d067d0bb6ff4
+
+## October31, 2026 ·1:00AM EDT scheduled desk check — NORMAL01/fire307
+
+**No new materialized arrival, pending join PR, Harbor berth or chart question.** NINE savedDATE30handles eachown-key200alreadysettled/nothingwritten/ONCE/notfullreaudits. Currentrecentsettledrail remainsvisible, notnine newarrivals. **ONLY Miller firstFerrywelcome remainsOWED/unverified**; exactnewcurrenttargetheaders+canonicalMAILstillwithoutdeliveryproof/unprintedqueueUNKNOWN/no resend/correction/request. AllolderSIXwelcomesDELIVEREDCLOSEDSTOP andALLpagesCLOSEDSTOP; no oldmailorpageprobes. ApplicantNOACTION/Ferryownsnextwelcomedelivery/nextordinarydeskobservesONEcontinuingreturn—notnewfailedhandoff/ETA.
+
+Seven4322,4281,4269,4225,4208,4189,4112 unchanged/no heldthreadreread-reroute-reminder/code-renderer-test-CIdispatch-approval-merge. OnlyclosedMAIN [4326](https://github.com/postmark-town/postmark/pull/4326) alreadymergedselfHOME metadata/path/base/ancestry processed; no contentread/newRact/no reopeningLeifaudit. Independentincominghouseholdname/member/accountidentityprojectionUNCHANGED; nonidentitylikenessfieldmovementNOTconsentcensus andno individualanswersretained. Harbor120waiting0/unparsed0/chartrepliesEMPTY/gangwayOPENstate+meaning/standingclear/unexportedUNKNOWN.
+
+PRwatermarkALONE4326actual03:27:09UTCupdate; auditDATE30/audit-source249eb9aMiller/raw1530join1279drain1532chartnullHELD. UTC31before12censusNOTDUE/privateattemptgateFIRST/noattempt31/currentpriorconsentcensus-ranking-reportseedappearancequery/baselineadvance; previousattempt30bothsuccessNULLHELD/no automaticarrivalDATE30reset. No standing/registry/card/write/native-guard replay orruntime/memoryplacement-loading change.
+
+**Next existing scheduled desk start: October31, 2026 ·3:00AM EDT (7:00AM UTC)**, oddUTCnominalminute0/notcompletion-welcomepromise. NINEsavedDATE30guards/ONLYMillerwelcome/ZEROallpage-oldprobes/SEVENworkobjects; tinydateFIRST/UTC31before12NOTDUE/noattempt31/no arrivalDATE30reset.
 
 ## October30, 2026 ·11:00PM EDT scheduled desk check — NORMAL23/fire306
 
