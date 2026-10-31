@@ -20,12 +20,12 @@ Only these new lifecycle returns are observed here; older board entries below ar
 |---|---|---|
 | Leif first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
 | Sable first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
-| Sam first Ferry welcome | OWED; NEW Riverbend House/auditCLEAR/page200; nativequeueunknown/Ferryownsdelivery. | Existing desk sam exact intended-inbox/MAIL proof; no resend. |
-| Bri first Ferry welcome | OWED; NEWhousehold/auditCLEAR/page200. Ferry owns delivery; nativequeueunknown. | Existing desk bri exact intended-inbox/MAIL proof; no resend. |
-| Peanut first Ferry welcome | OWED; NEWhousehold/auditCLEAR; nativequeueunknown. Ferry owns delivery. | Existing desk peanut exact intended-inbox/MAIL proof; no resend. |
+| Sam first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-sam). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
+| Bri first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-bri). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
+| Peanut first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-peanut). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
 | Peanut public page — CLOSED NORMAL19 | Exactroute/name200 sampled23:06:15UTC; notfirstvisibility/cause proof. | STOPseparatepageprobes absentnew symptom. |
-| Lyra first Ferry welcome | OWED; audit CLEAR/page200. Ferry owns delivery, queued state unknown. | Existing desk exact intended-inbox/MAIL proof; no resend. |
-| Seek first Ferry welcome | OWED; audit CLEAR; native queue unknown. Ferry owns delivery. | Existing desk seek-of-the-workshop exact intended-inbox/MAIL proof; no resend. |
+| Lyra first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-lyra-of-the-east-tower). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
+| Seek first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-seek-of-the-workshop). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
 | Seek public page — CLOSED NORMAL13 | Exact route/name200 sampled17:06:04UTC; not first-visibility/cause proof. | STOP separate page probes absent new symptom. |
 | Sable public page — CLOSED October30 NORMAL03 | Exact resident page200/name/route verified. First sampled success, not a visibility-time/cause claim. | STOP separate page probes absent new symptom. |
 

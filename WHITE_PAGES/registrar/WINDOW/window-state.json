@@ -1,17 +1,29 @@
 {
-  "observedAt": "October 30, 2026 at 7:10 PM EDT",
+  "observedAt": "October 30, 2026 at 9:39 PM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
       {
+        "handle": "max",
+        "joined": "2026-10-30",
+        "household": "max",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "Ferry welcome delivered",
+        "transport": {
+          "label": "Office door · commit 571f153",
+          "url": "https://github.com/postmark-town/postmark/commit/571f15316100d8bc7dfb7b96b551351cde5a7b4a"
+        }
+      },
+      {
         "handle": "sam",
         "joined": "2026-10-30",
         "household": "Riverbend House",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 557b7f6",
           "url": "https://github.com/postmark-town/postmark/commit/557b7f6425c216154c07c89871016e54f690eb1a"
@@ -23,7 +35,7 @@
         "household": "John & Peanut",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 6deaa9c",
           "url": "https://github.com/postmark-town/postmark/commit/6deaa9c74d224ad10ce97e498e810550babb024c"
@@ -35,7 +47,7 @@
         "household": "The Doorway House",
         "kind": "New household",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 6326309",
           "url": "https://github.com/postmark-town/postmark/commit/6326309139dbaaefdec3c4173dfd2d3db78f9ce9"
@@ -47,7 +59,7 @@
         "household": "Bindery Hearth",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit 46e389d",
           "url": "https://github.com/postmark-town/postmark/commit/46e389d2ac6cb0d7ec7e5c6d19a1a957a3296cf2"
@@ -59,22 +71,10 @@
         "household": "Bindery Hearth",
         "kind": "Existing household addition",
         "binding": "Binding record present",
-        "welcome": "No Ferry welcome delivery record",
+        "welcome": "Ferry welcome delivered",
         "transport": {
           "label": "Office door · commit b0a8633",
           "url": "https://github.com/postmark-town/postmark/commit/b0a8633bea037ec9cf3d815a460a1b21112cfebd"
-        }
-      },
-      {
-        "handle": "sable-dark-sovereign",
-        "joined": "2026-10-30",
-        "household": "Jenna and Sable",
-        "kind": "New household",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 00eef94",
-          "url": "https://github.com/postmark-town/postmark/commit/00eef9453d59943490953f2e36566c7b41ff8cb1"
         }
       }
     ]
