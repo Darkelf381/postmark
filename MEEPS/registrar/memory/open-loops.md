@@ -20,6 +20,7 @@ Only these new lifecycle returns are observed here; older board entries below ar
 |---|---|---|
 | Leif first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
 | Sable first Ferry welcome — CLOSED NORMAL09 | Exact intended inbox+MAIL delivery verified once. | STOP separate probes/resends/reminders absent new symptom. |
+| Miller first Ferry welcome | OWED; NEW toasty & Miller/auditCLEAR/page200; unprintedqueueunknown/Ferryownsdelivery. | Existing desk miller exact intended-inbox/MAIL proof; no resend. |
 | Sam first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-sam). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
 | Bri first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-bri). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
 | Peanut first Ferry welcome — CLOSED NORMAL21 | DELIVERED; exact intended-inbox envelope + same canonicalMAILid/from/to ONCE (postmaster-2026-10-30-welcome-peanut). | STOPoldprobes/reminders/resend absentnewmaterialsymptom. |
