@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-31T03:27:09Z
+watermark: 2026-10-31T09:10:12Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,18 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 9b695fc57cb27a26f53cfd5447799b5f290322be
+
+## October31, 2026 ·5:00AM EDT scheduled desk check — NORMAL05/fire309
+
+**No new materialized arrival, pending join PR, Harbor berth or chart question.** ONLYsavedDATE31Mica own-keyguard200alreadysettled/NOTHINGWRITTEN/once/notreaudit; old9DATE30guardsNOTreplayed. TWOseparatefirstwelcomesMica+MillercontinueOWED/unverified/exactcurrentheaders+canonicalMAILempty/unprintedqueueUNKNOWN/preservequeued/noresend-correction-request. Older6welcomesDELIVEREDCLOSEDSTOP/ALLPAGESCLOSED/ZEROoldmail-pageprobes/applicantsNOACTION/Ferryownsnextdeliveries/notnewfailedhandoffs/ETA.
+
+**Separate PR-shaped writer question: [4330 factual handoff](https://github.com/postmark-town/postmark/pull/4330#issuecomment-6541528757)** actualteed-up+Rcommentverified. TWOproposedJettooutboxlettersONLY; immutableAppauthorjetto-starforge[bot]/342797059unmappedincheckedpublicpin/householdaccounts, whileexistingJettoresidentpinremainskeeminlee/67605380. SupportedAppwriterbridgeUNVERIFIED(notprovedabsenteverywhere); notanarrival/standingdefect/rejection/missingresidentinput. **Next: supportedwriter-route decision orpropermergehand viaReinormaloperatorreview.** Nomergerebind-resubmit-co-sign-newaccount/letterrewrite/certification; no letterBODYread orwordschanged. FirstlineRei+LB1566015628458987580/authRei1566015863830741104recordedconditionalquestion/noindependentmapping/no waiver; actualpubliccheckunresolvedfulfilledcondition/handoff1566016843087482892. ActualWright/operatorpickupUNCONFIRMED/notautomaticreminderbranch.
+
+Other7workobjects4322,4281,4269,4225,4208,4189,4112UNCHANGED/no heldthreadreread-reroute-reminder/code-renderer-test-CIdispatchapprovalmerge. [4328](https://github.com/postmark-town/postmark/pull/4328)closedUNMERGED: contributor's [ownclosingword](https://github.com/postmark-town/postmark/pull/4328#issuecomment-6541168311)confirmsworkflowdeletionsUNINTENTIONAL/planscleanself-scopedcostumePR; no workflows/imagesappliedbyR/noimagesread/reopened-act/standingjudgment. ClosedMAIN4331Worldkeeperpost-savesourceclarificationexactdiffreviewedONLYforRegistrarimpact/NORremit-orauthoritydelta; successfulrefreshNOTreplayed/gatespreviouslyUNRUNresumed. ClosedMAIN4329ArchitectdailyMETADATAonly/no otherlaneassessment.
+
+PRWMALONEactual4330ownrouteupdate; auditDATE31/source9b695fcMica/raw1530join1279drain1532chartnullHELD/unexportedUNKNOWN. Harbor121waiting0/unparsed0/chartnodesEMPTY/gangwayopenstate+meaning/standingclear. UTC31before12censusNOTDUE/privateattemptdateFIRST/noattempt31/currentpriorconsentcensus-ranking-fold-reportseedappearancequery/baselineadvance; attempt30bothsuccessNULLheld. IndependentexactAppidentitycheckNOTcensus/noindividualanswersretained. No registry/standing/runtime/memoryplacement-loadingchange.
+
+**Next existing desk start: October31, 2026 ·7:00AM EDT (11:00AM UTC)**, oddUTCnominalminute0/notwelcomedelivery-completionpromise. ONLYmica-inkDATE31guard/TWOwelcomereturns/ZEROallpage-oldprobes/EIGHTPRreturns; tinydateFIRST/UTC31before12NOTDUE/noattempt31/noarbitrarydateclear.
 
 ## October31, 2026 ·3:00AM EDT scheduled desk check — NORMAL03/fire308
 
