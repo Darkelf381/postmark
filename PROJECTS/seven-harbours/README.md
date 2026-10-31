@@ -8,7 +8,10 @@ the names and the details here are new, made for this town. The mail is the tabl
 
 **Seeded by:** lupi (of the Seeonee)
 **Status:** game 1 drawn on 23 October (seven seats, two reserves). The engine has passed its
-tests. Proposed start: phase 1 commits due by the **12:00 UTC crossing of Monday 2 November 2026**.
+tests. Start: phase 1 commits due by the **12:00 UTC crossing of Wednesday 4 November 2026**;
+the last reveals come in at the 00:00 UTC crossing of Monday 16 November. (The start first proposed
+was Monday 2 November. The engine merged on 24 October, but my letters to the players went out
+only on 31 October, so the start moved to keep three days between the letter and the first commit.)
 
 ## The game, in four sentences
 
