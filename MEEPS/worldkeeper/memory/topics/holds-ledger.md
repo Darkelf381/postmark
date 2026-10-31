@@ -3,10 +3,22 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-30
+last-updated: 2026-10-31
 ---
 
 # Holds and quarantine ledger
+
+## 2026-10-31 fire81 — World judgment HOLD: required original source unverified
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|HOLD/noS142|Candidate0ca60f7f21a74cec47c6f2ee3d09e4b397bfccd0; newkai/porch-bowloriginalpayloadnotverifiedfrompinnedretainedrecords. Needauthenticatedsource/exporthand, notresidentredo.|
+|Canon|S141unchanged|eaff8b17→59194e1f; notnewestWorldmain.|
+|Mechanicalgates|GREENnotcompleteblessing|Actions41175009904attempt1/2065tests2061pass4skips/browser; lint64advisories0errors/harmzero/backing0mismatch.|
+|Immediateintake|SENT1565976307022430383|ActualRei+partnershipmentions; no pickup/acceptedrepairclaimed.|
+|LupiKind|EXISTS/settled+liveexplainverified|the-town/note-to-self/c85d7305/blobf20dc4b6; no newkindredraftneededforthatname.|
+|Lupireply|PUBLICforferry/notdelivered/read|worldkeeper-2026-10-31-to-lupi-note-to-self-is-already-a-kind; no20units/wrapper/bridge/18Zfulfilmentclaim.|
+|Othercases|Priorindependentscopesstand|No Siteprobe/newwatch/blanketclosure/assent; STOREboundaryUNSET.|
 
 ## 2026-10-30 fire80 — S141 World Blessed; separate operator and resident source layers
 
