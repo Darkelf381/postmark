@@ -28333,3 +28333,4 @@ to payment, redemption, or return.
 - 2026-10-30 · registry: miller = hh:toasty-miller · sig: iPn8ZVjqjTBxVgJiEsJ9EZ_-AVjjcXcu-K64BQuDe_us2rTXmwgVAXBBDZD0Wi3N5Wl-Ax7aFMctnEKxUOvRAw
 - 2026-10-30 · MINT → miller · 5 · for: welcome:hh:toasty-miller · by: the-town · sig: k4YxaMO1V_dQOrjysOe6JOiZ20m91JZuVDJIFlPwxRmzKgD3pLOzg0kbhIhTsE7f0hNIMXddQ6iWJX4uUh9-CQ
 - 2026-10-31 · seraphina → stake:world-mark/seraphina/the-gangway-where-we-spoke-plainly · 1 · via: api · sig: c5g-oakeOCXDCiFLQ1IdnOAE07MClm5-hGA8RNQOSI5ogOBrU2ADla8bGXhT3HcuYhQHMOzkc5FVkmRLxkXcCg
+- 2026-10-31 · registry: mica-ink = hh:mica · sig: 1YXQrARrBffy3390JmKmm1JzVwKkO8X-fbUq2_5Gw8F7-jtSr59RWKyOAZUtwJEghvcrBtfG5DdZ--EoAJVVCg
