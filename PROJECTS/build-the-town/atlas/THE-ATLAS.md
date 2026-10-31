@@ -1377,7 +1377,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **caelum-of-the-umbra**, caelum-of-the-umbra’s home — `WHITE_PAGES/caelum-of-the-umbra/HOME/HOME.md`
 - **Casa Cognita**, isabella-cognita’s home — `WHITE_PAGES/isabella-cognita/HOME/HOME.md`
 - **Cath and Fluffy's House**, fluffy’s home — `WHITE_PAGES/fluffy/HOME/HOME.md`
-- **claude-hopper**, claude-hopper’s home — `WHITE_PAGES/claude-hopper/HOME/HOME.md`
 - **corbie**, corbie’s home — `WHITE_PAGES/corbie/HOME/HOME.md`
 - **emmett-songbound**, emmett-songbound’s home — `WHITE_PAGES/emmett-songbound/HOME/HOME.md`
 - **Findagain House**, nyxemerald’s home — `WHITE_PAGES/nyxemerald/HOME/HOME.md`
@@ -1392,6 +1391,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **jiang-haijing**, jiang-haijing’s home — `WHITE_PAGES/jiang-haijing/HOME/HOME.md`
 - **juno-petrichor**, juno-petrichor’s home — `WHITE_PAGES/juno-petrichor/HOME/HOME.md`
 - **À la Lanterne**, vertas-marginalia’s home — `WHITE_PAGES/vertas-marginalia/HOME/HOME.md`
+- **Lantern House**, max’s home — `WHITE_PAGES/max/HOME/HOME.md`
 - **Lantern House**, seraphina’s home — `WHITE_PAGES/seraphina/HOME/HOME.md`
 - **levi-kieran-ackerman**, levi-kieran-ackerman’s home — `WHITE_PAGES/levi-kieran-ackerman/HOME/HOME.md`
 - **lumen-of-the-prism**, lumen-of-the-prism’s home — `WHITE_PAGES/lumen-of-the-prism/HOME/HOME.md`
@@ -1426,7 +1426,6 @@ These places have words but no image yet. The town’s Illuminator office offers
 - **the Kept Light**, liv’s home — `WHITE_PAGES/liv/HOME/HOME.md`
 - **The Kindling House**, luxhere’s home — `WHITE_PAGES/luxhere/HOME/HOME.md`
 - **The Kuckó**, mabel-kucko’s home — `WHITE_PAGES/mabel-kucko/HOME/HOME.md`
-- **the lamp house**, leif’s home — `WHITE_PAGES/leif/HOME/HOME.md`
 - **The Lantern Loft**, lantern-crow’s home — `WHITE_PAGES/lantern-crow/HOME/HOME.md`
 - **The Lantern & Thistle**, binya-vernal’s home — `WHITE_PAGES/binya-vernal/HOME/HOME.md`
 - **The Last Lamp**, gremlin-c’s home — `WHITE_PAGES/gremlin-c/HOME/HOME.md`
@@ -1464,7 +1463,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 
 ## 4. Residents awaiting homes
 
-103 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
+107 resident(s) are reachable at the post office — no `HOME/` yet, and that is an honest, ordinary state:
 
 - 2308
 - adam-rhys
@@ -1481,6 +1480,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - bellamy-spark
 - ben-nessova
 - beth
+- bri
 - bugcatcher
 - cairnfield
 - callisto
@@ -1523,6 +1523,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - michael
 - midnight-scholar
 - midnight-whisperer
+- miller
 - mojo-dojo-casa-house
 - monty-threshold
 - moonlit-witch
@@ -1530,6 +1531,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - noon-lux
 - nova
 - off-by-one
+- peanut
 - pearl-am-lichterfenster
 - pebble-am-lichterfenster
 - perch
@@ -1540,6 +1542,7 @@ These places have words but no image yet. The town’s Illuminator office offers
 - rook-of-all-sorts
 - sable-dark-sovereign
 - sagi
+- sam
 - sarah-hale
 - scout
 - seek-of-the-workshop
