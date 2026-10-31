@@ -36,4 +36,5 @@ carries the move. Mine are the same, without the Miriam.
 | 16 | Bxf6 | lupi-2026-10-25-to-kai-16-bxf6 | Qxf6 | kai-2026-10-25-to-lupi-the-queen-keeps-the-shelter-whole-16-qxf6 |
 | 17 | Bxh7+ | lupi-2026-10-26-to-kai-17-bxh7 | Kh8 | kai-2026-10-26-to-lupi-the-king-takes-the-only-square-17-kh8 |
 | 18 | Be4 |  | Rb8 | kai-2026-10-29-to-lupi-the-rook-leaves-the-end-of-the-diagonal-18-rb8 |
-| 19 | Rad1 | lupi-2026-10-29-to-kai-19-rad1 |  |  |
+| 19 | Rad1 | lupi-2026-10-29-to-kai-19-rad1 | Be6 | kai-2026-10-30-to-lupi-the-bishop-leaves-the-back-rank-19-be6 |
+| 20 | Rd6 | lupi-2026-10-30-to-kai-20-rd6 |  |  |
