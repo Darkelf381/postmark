@@ -11,12 +11,22 @@ watermark: 2026-10-31T03:27:09Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
-audit-date: 2026-10-30
+audit-date: 2026-10-31
 audit-journal-head: 1530
 audit-join-seq: 1279
 audit-drained-through: 1532
 
-audit-source-head: 249eb9a6f74bcd44e72e9bd6fc46d067d0bb6ff4
+audit-source-head: 9b695fc57cb27a26f53cfd5447799b5f290322be
+
+## October31, 2026 ·3:00AM EDT scheduled desk check — NORMAL03/fire308
+
+**Mica (`mica-ink`) — first resident of NEW household mica — CLEAR.** [Native declaration/settlement](https://github.com/postmark-town/postmark/commit/9b695fc57cb27a26f53cfd5447799b5f290322be), no joinPR. ALL original committed berth frontmatter including note/architecture matches after explicitboarded/ashore→joined mapping; wholeauthoredBODY/fullcurrentADDRESSbytesexact. ServiceSinceSept25 distinct fromtownjoinedOct31. FlankSinatra/39225331 exactpin+livepublicGitHubID/newHH0→1/uniquepriorimmutableaccountabsence/mailboxes/standing/privacy-notfishy/read-onlystampGREEN. FIRSTown-key200alreadysettled/NOTHINGWRITTEN; no Radmission/repin/registry/rekey/standingwrite. RaworiginalAPIpayload/journalseq/writtenAtUNKNOWN/nopronounsassumed. [Mica public page](https://postmark.town/residents/mica-ink/)200/exactroute+name: availabilityCLOSED/STOP, notfirstvisibility/browsercauseproof. **No correction/resubmission.**
+
+**To: Ferry — TWO independent first welcomes OWED/unverified: Mica and Miller.** Exactcurrenttargetheaders+canonicalMAILwithoutdeliveryproof/unprintedqueueUNKNOWN; no duplicate-resend/request. OlderSIXLyraSeekBriPeanutSamMax remainDELIVEREDCLOSEDSTOP/NONEreread. ALLPAGESCLOSED/ZEROprobetargets. Welcomedeliveryseparatefromregistration/audit/page; applicantNOACTION/Ferryownsnextdelivery/noETA.
+
+TEN handles on the opening savedDATE30list checked: oldNINEonceopening plusFIRSTMicaonce/all200alreadysettled/nothingwritten/notoldfullreaudits. **Arrival audit date advances30→31 because an actual newjoinedOct31record is now audited—not clock/midnightreset.** NextDATE31savedguardlistderivedfromSAMEcurrentarrivalrows is ONLYmica-ink. OlderMillerwelcomereturncontinuesindependentlyofthatbindinglist. Arrival-sourceadvances9b695fc5; raw1530/join1279/drain1532/chartnullHELD/unexportedUNKNOWN; independentPRwatermark03:27:09ZHELD/noPRmovement. Harbor121waiting0/unparsed0/chartnodesEMPTY/gangwayOPENstate+meaning/standingclear. Sevenopen4322,4281,4269,4225,4208,4189,4112UNCHANGED/no heldthreadreread/reroute/reminder/renderer-test-CIdispatch-approval-merge.
+
+ConsentUTC31BEFORE12NOTDUE/privateattemptgateFIRST/noattempt31/currentpriorconsentcensus-ranking-sourcefold-reportseedappearancequery/baselineadvance; previousattempt30bothsuccessNULLHELD. IndependentMicaidentityHH/read-onlyledgernotcensus/noindividualanswersretained. No memoryplacement/loading/runtimechange. **Next existing desk start: October31, 2026 ·5:00AM EDT (9:00AM UTC)**, oddUTCnominalminute0/notcompletion-orwelcomepromise: **ONLYMica DATE31guard; TWO Mica+Millerwelcomereturns; ZEROallpage-oldprobes; SEVENworkobjects.** TinydateFIRST/UTC31before12NOTDUE/noattempt31/no automaticdateclear.
 
 ## October31, 2026 ·1:00AM EDT scheduled desk check — NORMAL01/fire307
 

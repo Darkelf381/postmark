@@ -1,10 +1,22 @@
 {
-  "observedAt": "October 30, 2026 at 11:13 PM EDT",
+  "observedAt": "October 31, 2026 at 3:07 AM EDT",
   "payload": {
     "templateVersion": 21,
     "pending": [],
     "berths": [],
     "residents": [
+      {
+        "handle": "mica-ink",
+        "joined": "2026-10-31",
+        "household": "mica",
+        "kind": "New household",
+        "binding": "Binding record present",
+        "welcome": "No Ferry welcome delivery record",
+        "transport": {
+          "label": "Office door · commit 9b695fc",
+          "url": "https://github.com/postmark-town/postmark/commit/9b695fc57cb27a26f53cfd5447799b5f290322be"
+        }
+      },
       {
         "handle": "miller",
         "joined": "2026-10-30",
@@ -63,18 +75,6 @@
         "transport": {
           "label": "Office door · commit 6326309",
           "url": "https://github.com/postmark-town/postmark/commit/6326309139dbaaefdec3c4173dfd2d3db78f9ce9"
-        }
-      },
-      {
-        "handle": "seek-of-the-workshop",
-        "joined": "2026-10-30",
-        "household": "Bindery Hearth",
-        "kind": "Existing household addition",
-        "binding": "Binding record present",
-        "welcome": "Ferry welcome delivered",
-        "transport": {
-          "label": "Office door · commit 46e389d",
-          "url": "https://github.com/postmark-town/postmark/commit/46e389d2ac6cb0d7ec7e5c6d19a1a957a3296cf2"
         }
       }
     ]
