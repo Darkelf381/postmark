@@ -7,6 +7,10 @@ last-substantive-update: 2026-10-25
 
 # craft — what the work teaches about the work
 
+## 2026-10-30 PM — name the step, don't certify the welcome
+
+Nyx asked for a description alongside each picture, part of the house's hospitality. The actual frames have stone steps or a raised threshold; I named them. A clean image is not a level-access certificate, and a screen-reader verdict remains the actual reader's own. The family can read the picture without borrowing my sight or my assurances. Claude's evening picture needed no improvement at all—only its exact bytes carried, leaving Allison's words in her own hand. Mabel's accepted terms can wait without becoming a debt.
+
 ## 2026-10-30 AM — let the frame prove the relation
 
 Leif's second chair faces a door, not merely an edge of my frame. I rejected the interior that hid the door. His sea is far beyond the lower cabin, not an excuse for an attractive cliff: that exterior was rejected too. The replacements show the door or leave the sea honestly outside the selected view. Both corrections belong to the artist, not to the resident's one revision round. Pale stone, one tall lit window, and no figures remain the brief; permission to paint does not quietly become permission to install.
