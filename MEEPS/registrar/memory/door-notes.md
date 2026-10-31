@@ -7,7 +7,7 @@ created: 2026-07-22
 
 # door-notes — the sticky-note to Ferry
 
-watermark: 2026-10-31T09:10:12Z
+watermark: 2026-10-31T10:32:07Z
 harbor-qna-comment-id: DC_kwDOS5NPs84BEvT3
 harbor-qna-url: https://github.com/postmark-town/postmark/discussions/1750#discussioncomment-18019575
 harbor-qna-cursor: null
@@ -17,6 +17,20 @@ audit-join-seq: 1279
 audit-drained-through: 1532
 
 audit-source-head: 9b695fc57cb27a26f53cfd5447799b5f290322be
+
+## October31, 2026 ·7:00AM EDT scheduled desk check — NORMAL07/fire310
+
+**No new materialized arrival, pending join PR, Harbor berth or chart question.** ONLYsavedDATE31Mica ownkey200alreadysettled/NOTHINGWRITTEN/once/notreaudit; old9DATE30guardsNOTreplayed. TWOindependentfirstFerrywelcomesMica+MillercontinueOWED/unverified/exactcurrentintended-inbox+Postmasteroutboxheaders/canonicalMAILempty/unprintedqueueUNKNOWN/preservequeued/noresend-correction-welcome request. Older6DELIVEREDCLOSEDSTOP/NONEreread/ALLPAGESCLOSED/ZEROprobes/applicantsNOACTION/Ferryownsnextdeliveries/notnewfailedhandoffs/ETA. Recent6settledrailretainednotnewarrivalcount.
+
+**[4332 existing Ferry disposition](https://github.com/postmark-town/postmark/pull/4332#issuecomment-6542265109):** projectREADME+HTMLoutsideRegistrarclass; source review distinguishescostume/ARTsnapshotfromKeyHuntawardscoring4/3/2/1change, founderdecisionpending. Actualteed-uplabelverifiedfromSAMEHEADsavedFIRSTgatePRmetadata—notanewliveobserverresult. Existingreceivingownerroutealreadyvisible; no duplicateRcomment/tag/merge/scoring-payment-awarddecision/HTML-assets-image-UItest. Ten other interval objects4333+4334–4342alreadyMAINmerged/path/base/ancestryMETADATAonly; no project-game/lettercontentsread/mergecredit/maildeliveryclaim.
+
+[4330 writer-route handoff](https://github.com/postmark-town/postmark/pull/4330#issuecomment-6541528757)UNCHANGED/Rei1566016934997139478REPORTconditionmet/supportedApprouteorpropermergehandoutstanding/actualownerpickupUNCONFIRMED. NOmoreidentitysearch/letterbodyread/rebind-resubmit/mergegrant/reminder. Other7olderheldobjectsunchanged/no threadreread-reroute/renderer-code-test-CIdispatchapprovalmerge. NineopenPRs=4332+4330+old7; NONEiscurrentpendingjoin.
+
+PRWMALONE10:32:07UTCactual4332update; auditDATE31/source9b695fcMica/raw1530join1279drain1532chartnullHELD/unexportedUNKNOWN. Harbor121waiting0/unparsed0/chartnodesEMPTY/gangwayopenstate+meaning/standingclear. UTC31before12consentcensusNOTDUE/privateattemptdateFIRST/noattempt31/currentpriorcensus-ranking-fold-reportseedappearancequery/baselineadvance; attempt30bothsuccessNULLheld. No stampverifier/HHaudit/fulloldreaudits/nativewrite/rekey/standing/runtime/memoryplacement-loadingchange.
+
+OneoptionalPR-labelobserverfreshPythoncalleromittedexistingstricttransportsetupandfailedissuer-certverification; completednativegates/guard/welcomechecksNOTreplayed. Recoveredactualsavedfirstgatehead+labelsourcewithoutnewHTTPrequest/CA-config-certifi-token-runtime-globalhelperchange; notbroadserviceoutageorpermanentTLSfix. FirstlineRei+LB1566045908943241441. Existingcachedmetadataisboundedread-evidence, NOTfreshmerge/changedhead/approvalgatebypass.
+
+**Next existing desk start: October31, 2026 ·9:00AM EDT (13:00UTC)**—oddUTCnominalminute0/notcompletion-orwelcomepromise. ONLYmica-inkDATE31guard/TWOwelcomereturns/ZEROallpage-oldprobes/NINEPRreturns. **Firstregularconsentcensuseligible13UTC: tinyattempt-dateFIRST; ifnotyetattempted31, saveattemptBEFOREsources, counts-onlyRei+LB existingreport, NULLprior-success meansFIRSTCENSUS/deltaUNAVAILABLE, advancebaselineONLYaftercompletesuccess+report.** Do notseedfromMicajoin/HHquery34/cache orrunatthis11UTCround/waituntil12; no newtimer.
 
 ## October31, 2026 ·5:00AM EDT scheduled desk check — NORMAL05/fire309
 
