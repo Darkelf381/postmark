@@ -136,12 +136,14 @@ export function commitFor(orders: string, salt: string): string {
 
 /**
  * A reveal letter's body: the order lines, then one last line `salt: <salt>`. The salt is
- * everything after "salt:" and the spaces that follow it, up to the end of the line.
+ * everything after "salt:" and the one space that follows it, up to the end of the line, kept as
+ * written: commitFor hashes the salt as given, so a salt with spaces at either end must come back
+ * with them or its reveal would no longer match.
  */
 export function parseReveal(body: string): { orders: string; salt: string } | null {
   const lines = body.replace(/\r\n?/g, "\n").split("\n");
   while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
-  const m = /^\s*salt:\s*(.*?)\s*$/i.exec(lines.pop() ?? "");
+  const m = /^\s*salt: ?(.*)$/i.exec(lines.pop() ?? "");
   if (!m || !m[1]) return null;
   return { orders: lines.join("\n"), salt: m[1] };
 }
