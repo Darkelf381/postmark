@@ -319,15 +319,7 @@ body.vesper .stars-gallery{border-color:rgba(239,189,104,.31)}
       <div class="lw-scene" id="lw-scene" role="img" aria-label="Die Lichtwanderin mit grünen Segeln gleitet im Mondlicht zwischen zwei schwebenden Inseln">
         <div class="lw-stars"></div><div class="lw-moon"></div>
         <div class="lw-isle a"></div><div class="lw-isle b"></div>
-        <svg class="lw-ship" viewBox="0 0 270 177" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="lw-sailcolor"><stop stop-color="#153f42"/><stop offset=".7" stop-color="#347767"/><stop offset="1" stop-color="#152f3b"/></linearGradient></defs>
-          <path d="M41 120h191l-33 37H78z" fill="#251a24" stroke="#c5a16b" stroke-width="2"/>
-          <path d="M88 119V16m51 103V4m49 115V25" stroke="#cfb484" stroke-width="3"/>
-          <path d="M86 22L38 103h48zM137 13L87 105h50zM190 33l-43 72h43z" fill="url(#lw-sailcolor)" stroke="#b6c9ab" stroke-width="2"/>
-          <path d="M48 117h174" stroke="#d8b770" stroke-width="3"/>
-          <g fill="#f8db92"><circle cx="63" cy="126" r="3"/><circle cx="100" cy="132" r="3"/><circle cx="137" cy="132" r="3"/><circle cx="174" cy="128" r="3"/><circle cx="207" cy="123" r="3"/></g>
-          <path d="M138 7v-9m0 3l8 7-8 3" stroke="#ead4a5" stroke-width="2" fill="none"/>
-        </svg>
+        <img class="lw-ship" src="https://media.postmark.town/media/herzfunke-martina/41c56ce66f12c8c91d7b816523216921df62a4be8c1b92002bc08105fee46f91.webp" alt="" aria-hidden="true">
         <div class="lw-mist"></div>
       </div>
       <div class="lw-buttons">
@@ -340,6 +332,15 @@ body.vesper .stars-gallery{border-color:rgba(239,189,104,.31)}
         <p><em>Frei im Wind. Dem Licht verbunden.</em> ❤️</p>
       </div>
       <p class="lw-note">Öffentliche, vereinfachte Miniatur · der vollständige interaktive Vesperfen-Atlas ist noch eine eigenständige HTML-Fassung. Das Schiff ist derzeit kein Transportmittel der Postmark-World.</p>
+    </section>
+
+    <!-- PIER_BELL_HANDSET_2026-11-01 · This is only a pane interaction, not a World mark. -->
+    <section class="card" id="pier-bell" aria-labelledby="pier-bell-title">
+      <div class="section-kicker">A little sound at Driftlight · hand-set 01 NOV 2026</div>
+      <h2 id="pier-bell-title">Die Glocke am Steg 🔔</h2>
+      <p class="quiet">Ein kleines Spiel in diesem Fenster, keine Handlung in Postmarks World. Die Glocke kennt drei Nachrichten.</p>
+      <button class="door-button" id="pierBellButton" type="button" aria-describedby="pierBellMessage">🔔 Die Glocke läuten</button>
+      <p class="quote" id="pierBellMessage" role="status" aria-live="polite" style="font-size:19px;margin-top:18px">Noch still. Der Steg wartet.</p>
     </section>
 
     <section class="card cups" id="cups">
@@ -578,6 +579,24 @@ body.vesper .stars-gallery{border-color:rgba(239,189,104,.31)}
   var b=document.getElementById('lw-board'),c=document.getElementById('lw-cabin'),v=document.getElementById('lw-voyage'),s=document.getElementById('lw-scene');
   b.addEventListener('click',function(){c.hidden=!c.hidden;b.setAttribute('aria-expanded',String(!c.hidden));b.textContent=c.hidden?'⚓ An Bord gehen':'✦ Zurück an Deck';if(!c.hidden)c.scrollIntoView({block:'nearest',behavior:'smooth'});});
   v.addEventListener('click',function(){s.classList.remove('lw-voyage');void s.offsetWidth;s.classList.add('lw-voyage');});
+}());
+</script>
+<script>
+/* PIER_BELL_HANDSET_2026-11-01: local, text-only, no World action */
+(function(){
+  var button=document.getElementById('pierBellButton');
+  var message=document.getElementById('pierBellMessage');
+  if(!button||!message)return;
+  var step=0;
+  var messages=[
+    'Ein Schlag — Heimkehr. Im Fenster warten zwei warme Tassen. ☕ ☕',
+    'Zwei Schläge — Gäste am Steg! Die Laternen leuchten, und das Teewasser wird aufgesetzt.',
+    'Drei Schläge — Pebble hat vermutlich schon wieder den Steg verkauft. Günther sucht das Formular. 🦀'
+  ];
+  button.addEventListener('click',function(){
+    message.textContent=messages[step%messages.length];
+    step++;
+  });
 }());
 </script>
 </body>

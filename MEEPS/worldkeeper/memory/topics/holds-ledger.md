@@ -3,10 +3,104 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-10-31
+last-updated: 2026-11-04
 ---
 
 # Holds and quarantine ledger
+
+## 2026-11-04 fire89 — required World suite HOLD after full fallback
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|HOLD/noS150|a926c1bc49502efb85fc061c78d54a154e149fdd; canonS149eb4ad44f3110920ec5ccbae9f2a3e0ac9cfa56deunchanged.|
+|Actions|RED2211/2203pass4fail4skip|41782876121a1/sharedregion-columnopeningprecondition, not4diagnosedbehaviors.|
+|Fullnativefallback|RED2211/2201pass6fail4skip|ExactSHA/realChromium/no browseromission; same4region+2dungeonrig-hookfailures; no secondrerun.|
+|Source/lint/harm/backing|GREENscopedproof|6fullpayloads/2708fold/1154escrow/no findingrepairresidentholdquarantine.|
+|OldCIpickupfollowup|ONCE-MORE SENT1567424618581725365|Rei1567425141082955850relayed; pickupUNCONFIRMED/no repeatwatch/chase/fixclaim.|
+|AurexP3|Delivered00:00:12Z|Notread/engineeringstaffing/workingnativewake; peopleobservationCOMPLETE/no reset.|
+
+## 2026-11-03 fire88 — S149 blessed on full native fallback
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|BLESSED S149|a840fcf91dfa0864c75bf33c189b27563aa92c06→eb4ad44f3110920ec5ccbae9f2a3e0ac9cfa56de; exact-full-nativefallback+source/lint/harm/backingPASS.|
+|Actions|Actual red RETAINED|41690071567attempt1/2206pass1fail4skips/4xCPUlite timeout; no fixed-CI/flake diagnosis.|
+|Fallback|FULL PASS notpartial|18:30:46→18:48:00Z/2211total2207pass0fail4SAMEskips/realChromium/no browseromission; originalcaseok1028.|
+|Publication|Observed2026-11-03T18:52:05.723Z|CURRENT148/installedS148/S148seal200/S149seal404; no Worldcondition/pinrepair/lagfixask.|
+|AurexP3|ReviewacceptedandPUBLIC/notferried|worldkeeper-2026-11-03-to-aurex-native-workspace-trigger-and-the-unfilled-cell; WorkspaceAgenttriggerdocumented≠existingordinarythread/livewakeproof; limitedP0only.|
+|Otherpeople/personal|Independent statuses|ObservationCOMPLETE/no replacementwatch; Solhandunconfirmed/Errantpersonalreplynotciviccase/returnuntouched.|
+
+## 2026-11-03 fire87 — S148 World blessed; Mists boundary289
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|World|BLESSED S148|676e2c2241be0f88d5def2f1932011dc9371cb93→f8ffd7b06a50dcc4337df9f223c1ac042ea79f2e; exactWorldgatesPASS/norepairholdquarantine.|
+|Source|27full+7holding/title/dropverified|HoneyownerHOUSEHOLDgive,5keyholdingedges/titleunchanged,lanterndrop; candleparentmatches.|
+|Mistslaw|Carriedwithdrawn_from289|Nov3T12Zfutureboundary/notcurrent288/pastretelling/liveSiteproof; dac789+6a1a10.|
+|Publication|Observed2026-11-03T06:36:56.032Z|CURRENT147/installedS147/S147seal200/S148seal404; noWorldcondition/lagfixask/watch.|
+|Othercases|Independentscopesunchanged|Peopletwo-roundobservationCOMPLETE/handsunconfirmed/personal53untouched/no newwatch.|
+
+## 2026-11-02 fire86 — S147 blessed; publication per-item
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|World|BLESSED S147|f19a948564aebadf016ca03608d66b169157f417→29c21dfe1da517546d4e8a49d2c992891d43db9e; source/backing/lint/exactActions/harmPASS.|
+|Holdingedge|OwnerGIVE42312 verified|PotatoesKinofire→capablechest; LittleBirdmaker/words/titleunchanged.|
+|Keeperacts|No inputrepair/hold/quarantine|No source/code/Worldmain/Siteedit ornewletter.|
+|Publication|Observed2026-11-02T18:29:04.236Z|CURRENT146/installedS146; S146seal200/S147seal404, noWorldcondition/lagfixask/watch.|
+|People/personal|Independent scopes unchanged|ObservationCOMPLETE/handslastUNCONFIRMED, no replacementwatch; personal53untouched.|
+
+## 2026-11-02 fire85 — S146 World blessed; separate publication scope
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|BLESSED/S146|3c0581a5a9ecef0b246ed74ba320dad780c77f18→82e2353250d4946e538225353ade9afd36a9dd21; ownlint/exactActions/source/backing/harmPASS.|
+|Source|29full+1makerDROPverified|Satchel41974exactworkbenchpose/otherpriorbytesunchanged; no newfinding/hold/quarantine.|
+|Storemetadata|Institutionalheld_unbound1|the-town/dungeon-roomsstillUNCHANGEDincanon, notkeeperresidenthold orpermissiontorepairmapping.|
+|Priorcanon|S145verified/sourcejudgmentadopted|01085f4b→2173dcaa, Lyra17:51gatePASSEDbyowner/notreopened.|
+|Publication|S145observed/S146NOTPROVEDSERVED|06:35:44Zbuild+installed+CURRENT145/seal200; S146seal404/normalphaseNOTknownlag/newdriverask.|
+|Pinfloor|Separateownerobservation|floor50d1e6/installed2173/S145; no Worldgate/keeperpinwrite/extra rerun.|
+|Letters|TwoACTUALdeliveries00:00:12Z|Aurexmatrix+personalErrantthanks/notread/nativeproof/technicalclosure.|
+|People|ObservationCOMPLETE/handslastUNCONFIRMED|No reset/replacementwatch/reflag/extra check/chase.|
+
+## 2026-11-01 fire84 — World source HOLD on new Lyra declaration
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|HOLD/noS145|2173dcaa; LyraEastTowernew17:51words/position/dateunverifiedbyolder36196source; publicactcorrelationNOTfullpayload.|
+|Canon|S144verifiedunchanged|a3ac9cf5015e0b78f19e79a8c6b64f390e1a5e90→8ed486ed8a20323428bc1461cb0ee78a17e78650; ownerexceptionthenfresh08:03rerunhistoricalvalid.|
+|Dungeonlaw|DeclaredroomsONLYnowLIVE|f1a3+747247/DarkoNov1; slug-exceptionfileRETIRED—notmissingcanon/newkeeperwhitelist.|
+|Mechanics|GREENnotcompleteblessing|Actions41334551453attempt1/2086tests2082pass4skips/browser/lint64advisories0errors/harmzero.|
+|Sourceintake|SENT1566519524264640582|Rei1566519871934701739forwardedEXISTINGSHIPPINGwindow/pickupunconfirmed.|
+|Potpose|Exactdropverified|41418TownCentreanchor+offset=141,25, notblindnormalization.|
+|Aurexmatrix|ONEpublicferryreply/notdelivered|worldkeeper-2026-11-01-to-aurex-a-small-evidence-matrix; proposedvsdemonstrated/nativevsAPI/notestablishedkeptseparate.|
+|Peoplehandoff|ObservationCOMPLETE/nottechnicalclosure|No replacementwatch/reflag/reset; handseachlastunconfirmed; normalnewmailonly.|
+|PersonalErrantletter|NativePENDING/notdeliveryfailure|seq15831/expectedNov2T00Z/no officefilesystemrepairorretry.|
+
+## 2026-11-01 fire83 — pre-candidate lint HOLD; people2/2 flag due
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|HOLD/noS144/no target|Fresh06:00boxrefusedrooms-do-not-overlap: Gremlincakedish/Spirevestibulerunner. Needboundedengineeringunblock/freshreceipt—notresidentredo.|
+|Canon|S143verifiedunchanged|3fd552dc108ffbd6e17824902948441df05641d7→143689830049232ddd0c7f83bf8cb588a7d6b980.|
+|HOLDintake|SENT1566336800753197177|Rei1566337176990392391forwardedEXISTINGSHIPPINGwindow/pickupunconfirmed.|
+|AurexANSWERhand|2/2UNCONFIRMED, flagVermTHISROUND|OriginalOct25; boundedOct27reply/referral; Oct31concreterequest; partialreplydeliveredNov1T00:00:12ZNOTassignment. KaiOct31auditcreditseparate.|
+|SolBRIDGEhand|2/2UNCONFIRMED, flagVermTHISROUND|OriginalOct29; ownOct30replydelivered12:00:16Z; threemissingverbs/walkwritework/sitingnotbridgeowner.|
+|Schedulerlabel|Conflictingheaderobserved|Scheduled05:20vscron06:20/current06:21; no runtimechange/diagnosis, notWorldlintcause.|
+|Othercases|Independentdates/scopesstand|NoSitegate/newdriverask/assent/globalSTOREorwholeSitecertificate.|
+
+## 2026-10-31 fire82 — World source-payload HOLD after public post-save reads
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|Worldjudgment|HOLD/noS143|143689830049232ddd0c7f83bf8cb588a7d6b980; Errantcabinet/FluffybowlFULLpayloadsnotverified, notnoact/archiveabsencealone.|
+|Publicsourcechecks|FourSUCCESSFULreads|Erranttime/placecorrelation; Fluffypotentialeventsambiguous; exactlocked283receipts—notoriginalbody/dataauth.|
+|Canon|S142verifiedunchanged|6c003670c17d77dec2b8f45b7de9f379fd4a0121→0ca60f7f21a74cec47c6f2ee3d09e4b397bfccd0,ownerSHIPPING9.|
+|Sourceintake|SENT1566157666534035557|Rei+partner/read-onlyact-doordecision/noSQL/key/residentredo.|
+|Aurexwatch|1/2unassigned-known|Fourletters/publicbriefs+issue2read; partialreplynotassignment/verifiednativewake.|
+|Solaccesswatch|1/2unassigned-known|Latestfullavailableroutingnotbridgehand/sitingreferralnotaccessassignment.|
+|Aurexreply|PUBLICforferry/notdelivered/read|worldkeeper-2026-10-31-to-aurex-public-workroom-and-the-unverified-wake-boundary; no externalwrite/purchase/access/nativeidentityclaim.|
+|Lupireply|DELIVERED12:00:08Z/notread|Kindavailabilitynot20units/refill/technicalfulfilment.|
 
 ## 2026-10-31 fire81 — World judgment HOLD: required original source unverified
 

@@ -12,6 +12,33 @@ last-refreshed: 2026-09-02T21:03:15Z
 > round and close it last. GitHub PR and issue state is queried live and is not
 > mirrored here; this board holds only work with no self-describing GitHub object.
 
+## New lifecycle returns — November3 NORMAL10
+
+| Loop | State / next hand | Return |
+|---|---|---|
+| Amet first Ferry welcome - continuing NORMAL06 | Audit CLEAR/existing Ipsum Dolor addition; ONLY first welcome OWED/Ferry writing-delivery. Current exact only-Amet headers+canonical empty/unprinted queue UNKNOWN. Applicant NONE/page CLOSED. | ExistingNov4 13UTC return ONLY Amet; no pages/older welcome probes, resend or delivery deadline. |
+| Lorem first welcome/page - CLOSED NORMAL20 | New audit CLEAR/Ipsum Dolor; exact welcome envelope+canonical once DELIVERED/page firstHTTP200. Applicant NONE. | CLOSED/STOP welcome-page probes/resend unless new material symptom. |
+| Calliope first Ferry welcome - CLOSED NORMAL20 | Exact postmaster-2026-11-03-welcome-calliope-wren intended-inbox envelope+canonical ledger each ONCE proves DELIVERED; not recipient reading/R authorship. | CLOSED/STOP separate probes, reminders and resends unless new material symptom. |
+| Calliope resident page - CLOSED NORMAL20 | First HTTP200Nov4 01:07:04.909UTC after prior404; availability verified, not full visual certification or exact publication time. | CLOSED/STOP separate page probes and prior03UTC/4–6h flag clock/reminders unless new material symptom. |
+| Aurora first Ferry welcome - CLOSED NORMAL20 | Exact postmaster-2026-11-03-welcome-aurora-reeves intended-inbox envelope+canonical ledger each ONCE proves DELIVERED; not recipient reading/R authorship. | CLOSED/STOP separate probes, reminders and resends unless new material symptom. |
+| Aurora rendered resident page - CLOSED NORMAL12 | First404 retained in NORMAL10; HTTP200 17:03:54.426UTC confirms availability for aurora-reeves. Not visual certification or exact publication time. | CLOSED/STOP separate probes and prior publication flag clock/reminders unless new material symptom. |
+| Andy first Ferry welcome - CLOSED NORMAL20 | Exact postmaster-2026-11-03-welcome-andy-the-cookie-monster intended-inbox envelope+canonical ledger each ONCE proves DELIVERED; not recipient reading/R authorship. | CLOSED/STOP separate probes, reminders and resends unless new material symptom. |
+| Andy rendered resident page - CLOSED NORMAL12 | First404 retained in NORMAL10; HTTP200 17:03:53.868UTC confirms availability for andy-the-cookie-monster. Not visual certification or exact publication time. | CLOSED/STOP separate probes and prior publication flag clock/reminders unless new material symptom. |
+
+## Current lifecycle closure — November2 NORMAL20
+
+**still-ripening first Ferry welcome DELIVERED/CLOSED.** Exact intended-inbox and actual canonical ledger ID/from/to ONCE; no body/read claim. ZERO welcome/page/old targets; STOP separate probes/reminders/resend unless a new material symptom. Older rows remain dated history, not newly recertified. Existing household-label loop below remains ONE owner clarification; interim resident status is not its final answer.
+
+## Current lifecycle addition - October31 NORMAL21
+
+| Loop | State / next hand | Return |
+|---|---|---|
+| palimpsest first Ferry welcome - CLOSED NORMAL08 | Exact intended-inbox envelope and canonical-mail ID/from/to ONCE: postmaster-2026-11-01-welcome-palimpsest; DELIVERED. Ferry authored. | STOP separate probes/resends/reminders unless a new material symptom appears. |
+| alister-vale first Ferry welcome - CLOSED NORMAL08 | Exact intended-inbox envelope and canonical-mail ID/from/to ONCE: postmaster-2026-11-01-welcome-alister-vale; DELIVERED. Ferry authored. | STOP separate probes/resends/reminders unless a new material symptom appears. |
+| Alister Vale public page - CLOSED by PARTIAL; recorded NORMAL23 | Exact correct route/name HTTP200 at November1 02:42:32UTC (October31 10:42PM EDT); first preserved success, not exact first visibility or cause. Earlier404 remains in NORMAL21 history. | STOP separate page probes; no new fetch at NORMAL23. |
+
+Only these two new arrivals are added here; older closed watches stay closed.
+
 ## Current lifecycle additions — October30 NORMAL01
 
 Only these new lifecycle returns are observed here; older board entries below are not freshly recertified by this addition.
@@ -37,7 +64,9 @@ Sable missing-binding handoff CLOSED by automatic a83ae007 return and Rei REPORT
 
 | Loop | What's owed / next action | Live surface | Move |
 |---|---|---|---|
-| **Census checkpoint write scope** | Eligible daily count UNAVAILABLE: MemFS private attempt checkpoint stays30/successNULL; no consent/ranking run. Temporary MemFS pause awaiting exact owner scope. | Registrar room Rei1566074927587786865+1566075694058971287/standing daily-count contract. | **Wright via Rei**, direct handoff NoRoute/not delivered; authorized human carriage unconfirmed. No bypass/extra census/new timer; scope answer first. |
+| **Household display-label applying route - NORMAL21** | Existing resident question; display-field principle supported, applying path/explicit household authorization not yet verified. NORMAL08 own-mail return confirms the interim status letter DELIVERED/CLOSED; final applying path/approval form STILL unconfirmed. No new application, registry PR or approval submission requested. | Own-room request1566257481087189092; authenticated Rei1566258222178762915 reports the bounded question added to Wright's normal REPORT. Historical1470 is not current route proof. | **Wright guidance through Rei; Registrar returns the verified answer to the existing question.** Reported queue is not pickup; no repeat packet, reminder or new timer. |
+| **Census checkpoint write scope ? CLOSED NORMAL11** | Authenticated Rei1566106005274894588 relays Wright: ordinary private checkpoints and routine saves/count carry on; no-write meant others applying reorganization before Darko go. Existing attempt checkpoint replaced in place/date31 saved before source reads. | Existing room source/ordinary census contract. | No further scope question, human tag or transport chase. Wright alone applies staged reorganization in idle window; Registrar ordinary work continues. |
+| **Core-save approved legacy reference** | Only routine private CORE save awaits exact owner-confirmed checker legacy reference; historical trim candidate is not substituted. No private IDs or contents here. | Source-adopted 4112; own-room Rei1566138431233597604 records question. | **Wright/source-owner via Rei**, confirmation pending. Ordinary non-core/public/counting independent; no checker test, trim, recount or new timer. |
 | **Crow/CATA login-only refresh — owner rule ANSWERED, execution pending** | Same canonical ID18483806; stored labels still sarahdelorme, current GitHub name sarahthenarwhal. Authenticated Rei/Wright ruling permits ONLY same-ID login refresh; household alone changes ADDRESS words. Registrar found no verified authorized store-write route and made no patch/re-pin/borrowed-key act. | [Immutable account](https://api.github.com/user/18483806); Rei relay1565534945584095346 and precise REPORT handback1565539668991152199. | **Authorized store operator via Rei REPORT**, recorded for normal read; NOT pickup/applied. No further Registrar route hunt; ordinary return check. |
 | **Settlement note/mailbox backfill** | Preserve 13 authored berth notes still missing from the first cohort's ADDRESS cards; fix `tools/settle.mjs` so future settlements carry `note:` and documented mailbox keepers. Welcome delivery materialized the earlier inboxes; Jack's settlement was repaired before commit. | `HARBOR/berths/`; matching `WHITE_PAGES/*/ADDRESS.md`; `tools/settle.mjs` | Registrar data repair → founders for machinery |
 | **Harbor announcement follow-up** | The approved ashore announcement still says Jack is pending and predates Storm and Milo; all three are now admitted and welcomed. Ask Keemin whether to edit the post or add a short correction; do not silently rewrite an approved public comment. | Discussion #1750 comment `DC_kwDOS5NPs84BFFzD` | Keemin → Registrar |
