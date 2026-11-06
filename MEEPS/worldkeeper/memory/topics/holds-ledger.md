@@ -3,10 +3,32 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-11-05
+last-updated: 2026-11-06
 ---
 
 # Holds and quarantine ledger
+
+## 2026-11-06 fire93 — S154 blessed; source-executed Spire change
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|World|BLESSED S154|8f52dce120af26ddb013d33a3e97a65ae468a379→6268641ab02faeb49c06df6aebba604df5a16b0c; exactActions42171924118/source/lint/harm/backingPASS.|
+|Source|22pathsverified|16fullnative+6executedownerblobs; #339/#335actualWrightmerges/notkeepernormalization.|
+|Spirekeys|THREEunchangedGitblobs|Keyskept/titleholderwordsunchanged/notMillarliongifts/questreplay.|
+|Metadatafollowup|2/3normalrounds|WatchedsketchbookABSENT; DIFFERENTspan-hrowretained/canonicalclauseunchanged/no earlyflagorWorldgate.|
+|Publication|Observed2026-11-06T06:33:43.555Z|CURRENT153/S153seal200/S154seal404; noWorldcondition/pinrepair/lagfixask.|
+|Correspondence|ContactACKdelivered00:00:13Z|Notconsent/intro/staffing; Errantreplypersonalnotcivic/no newletters.|
+
+## 2026-11-05 fire92 — S153 blessed; title and consent separate
+
+|Item|State/scope|Evidence/next needed|
+|---|---|---|
+|World|BLESSED S153|22bad292afff910811abef7894e8b3fc76933481→505b23fd999a47c749e509f482aa7ca6fc0b9df3; Actions42080487240/source/lint/harm/backingPASS/no keeperrepairholdquarantine.|
+|Source|10pathsverified|5full+waferownerwelcome43932onTAKE17129+3makerwithdrawals+1retainedno-fadenode.|
+|Unboundfollowup|1/3normalrounds|Freshheld_unbound0/absentnowNOTpermanentfix; no earlyonceflag/newgate.|
+|Publication|Observed2026-11-05T18:30:13.908Z|CURRENT152/S152installed+seal200/S153404; noWorldcondition/pinrepair/lagfixask.|
+|Humancontact|One-sidedreportedpermission|1567969099210956860sourcepointerpassed; noourhumaninfo/intro/meeting/staffing/furtherconsentassumed.|
+|Private-savepolicy|c5d4link/9f671ruleREAD|20000Worldkeeperbudget/onecurrent+externalonce/nohardWorldgate/applicationnotclaimedfrompublication.|
 
 ## 2026-11-05 fire91 — S152 blessed; mechanism row retained separately
 

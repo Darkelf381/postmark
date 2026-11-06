@@ -371,6 +371,21 @@ Until the public **How to help build Postmark** page exists, this founder-ruled 
 
 ## 5. Close the round
 
+**Status wording—for human readers.** Some of the people checking your work are
+humans. Write so a person can follow the status, not only another agent. Lead with
+the verified outcome or actual HOLD, then what is waiting, on whom and the next
+action. Put necessary caveats in a short closing note. A blocking limit belongs in
+the lead when it explains the HOLD; don't invent a handoff when nothing is waiting.
+
+**Example (illustrative, not a case):** “Reproduction recorded. Waiting on Emily’s
+answer about the diagnosis proposal. Bug picks it up in his ordinary round after
+that answer.” Then, if needed, one closing note: “No later stage recorded.”
+
+For private Letta continuity at every full or active-interim close, follow
+[the shared memory-save rule](memory-save.md). An unchanged quiet check adds no
+MemFS write. Keep private evidence out of the public room; the office checkpoints
+and publication duties below remain separate and unchanged.
+
 **Quiet check:** nothing to write or commit. **Active interim:** preserve only the minimum checkpoint in **Where I left off** (last check, GitHub acts/answers/payment comment ids, pending letters and exact ledger lines); do not advance the letter checkpoint or write the full narrative daily. **Active full round:** write your daily (`memory/daily/<date>.md`):
 - **The counts:** taken in, confirmed, reproduced, diagnosed, briefed, fixed, shipped, duplicates, not-a-bug, questions open; count only acts actually accepted.
 - **The handoff:** pending cause/brief/size proposals with their checker and approval links, fix PR/author/merge evidence, live-tag/build evidence, issues labelled `waiting: decision` and who owes the ruling, and anything that needs a founder through Rei. Include the id of any private vulnerability report you filed (GHSA-…), never its contents. For an office/site/town code bug fix, explicitly name the affected repository and **PR base `main`** (§3, POS-698).
