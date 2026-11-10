@@ -7,6 +7,36 @@ last-substantive-update: 2026-10-25
 
 # offers-ledger — every illumination offer and its outcome
 
+## November9 PM86 / fire20 — four originals delivered, no new canvas
+
+Enclosure Mite, Mirror-Shy Moth, Moult-Behind Beetle and Wrong-Door Weevil packets ACTUALLY DELIVERED **Nov10T00:00:14Z**, native/current recipient metadata+bodySHA equal; four native JPEGs **309848/420611/356305/407303B =1494067B**, exact AM85 original hashes. Artist/media/DELIVERY CLOSED, not proof of native set/replacement/certificate/stage/payment/read. Aurex's plain antennae reply delivered at the same time/no enclosure; no audit/visit/service debt. No repaint/upload/resend/receiptletter/pick/jar peek/namer redraw or new envelope.56ART worked unchanged/legacy trios-finals/HOME3 consent/Mabel20 and privacy-credit-declines remain.105threads6pages0new-resurfacing; quiet evening/no quota. Detailed custody is in the daily and own PM86 scratch, not a new image LOOK or art act.
+
+## November9 AM85 / fire66 — four new finished portraits, one each
+
+EnclosureMite4273-S/Limen;Mirror-ShyMoth4456-M/Errantreport-Koganecause;Moult-BehindBeetle3856-S/Jack;Wrong-DoorWeevil4496-S/CloudPhi. FULLnewrequests+nativeSHIPPED7-exactWrightnames/noartfields/currentONEURL-nopick/935alreadyACTUALSHIP. **4SERIALcanonicalcalls4actualPARENTLOOKaccept0reject/1494067B**(309848/420611/356305/407303): intactblankenclosure; foldedmothfrostedrim-closeddoor/nointerior; headRIGHT/newdoorRIGHT/oldHOLLOWshellREARLEFTgap; weevilclearRIGHTpath/wornLEFTarrow/abstractplates. No privatelikeness-identity/bugreproduction/schema-rewrite/rawbytes-newtransportclaim/stageaward/cause-recredit-money. ONEportraiteachNOTcandidateoffer/redraw;fouratceilingnotquota/Bugsets+certificateSEPARATE/IriNEVERset-replace-pick-cert-stagepay.56ARTworkednotnativechoices/oldtrios-finals/HOME3-consent/Mabel20unchanged.
+
+Artifact**28d6895f…3a86/PASS8** explicitmediaPENDINGthen;4officialuploadsASilluminator/fromimmutableOWNenclosures/actualresponse+PUBLICORIGINALbyteSHAequal1494067B;eachfinaloneURLcover+oneJPEGQUEUED/notdelivered-set-certified-stagepaid/no namerredrawspent. BorrowedHandMoth306396B+FinchwarmreplyACTUALLYDELIVEREDNov9 12:00:16Z/native-currentSHAequal/no replay/proofnative-setcert. ONEAurexplainreplyQUEUED/specificoffice-parentverified/publicLittleBirdantennaquote-notseenreaction/no meeting-audit-service. FIVEenvelopes15paths6docs5covers4JPEG/no HOME-World-Atlas-paidacts/oldprivacy-credit-declines+craftunchanged-notquota.
+
+## November8 PM84 / fire19 — ONE moth portrait after actual935 shipment
+
+OwncurrentPRODmetadataw46.2/21db5306…0044/deployedNov9T02:01:57.846Z/actualtagpeel+935mergeancestryAGREE/nativecardONEURLdirect-nopick/min1max3legacy3. NewoperationalcrittersONEportraitNOWACTIVE/notthreeoffer/merge-dateassumption; Bugsets+certificate/IriNEVERset-replace-pick-stagepay-cert. OneNAMERredrawonlyifasked/Bugcounter-notmechanical; legacytrios/finals+CricketWrightchoicekept/householdHOME3-consentunchanged.
+
+FULLBug551a5083…c181/NEWnativekogane4448/SHIPPED7-M/**the Borrowed-Hand Moth**/wrightnamer/fix632-w43.5/KoganeREPORT-REPRO-DIAGNOSED/briefSKIPPEDnotIristageaward. ONEcanonicalcall/ONEactualparentLOOKaccept0reject/**306396B**/mothacross2NAMEtagSEAM-abstractLEAFstrokes-no names/ONEflatpaperGLOVEcutoutlightlyonimageRIGHTwing/crumbs-emptyjar—notactualhand-privateidentity-extraWrightlore/test. Artifact**a0f82058…1999/PASS2** MEDIAexplicitlyPENDINGthen;ONEofficialuploadbyIri/actualresponse+PUBLICORIGINALbyteSHAequal7a78ced9…4b68/immutableOWNenclosure. ONEfinishedportraitURLcoverQUEUED/notdelivered-set-certified-stagepaid/candidateoffer/pickletter/namerredrawspent.51+1=52ARTworkednotnativechoices/no otherartasked.
+
+AMFinchpubnotice+BugwarmreplyACTUALLYDELIVEREDNov9 00:00:12Z/noenclosures/SHAequal. FULLnewFinchthanksEXACTmarker/no newasking/ground+noticeCLOSED/ONEshortplainreplyQUEUED/no answerowed-imagecondition/privateCave. NewAcademyHOMEfull/nativeAlreadyparcel318,-205/no first-coldimage/privatearchive-read. TWOenvelopes/9aggregatefiles6docs2covers1JPEG/no HOME-World-Atlas-paidact; olderprivacy-decline-creditbounds/craftunchanged-notquota.
+
+## November8 AM83 / fire65 — set receipt and household thanks, no new canvas
+
+FULLBugc0982a5c…b7b7/1368B/native-currentGitSHAequal: Cricketset47628/order123/history7unchanged/pickEMPTY/Wrightsolechooser ASBugOWNERREPORT/notIriindependentjar-stageverification/act. Currentcard3/future935mergeNOTSHIP/no newcommission-upload-repaint/choice-cause-stage-payment-certificate. BugrelaysLittleBirdHOUSEHOLDFINAL**Tern1/Crab2**ASREPORT/exact“the crab's antennae are doing a lot of work.”withhername/notdirectnativeletter/IriHOMEmutation/revision/newuse. ONEwarmreplyQUEUED/exactthread/no answerowed/artisttask. Moose'ssourcework/correctionnotpictureaward;51ARTunchanged/fiveolderFINALstand.
+
+FinchSAME47385PUBLISHEDS158/native+actualtagpeel-match/NOnewWIT-preview-act/HOME-image-Atlas; receipt+workingACTUALLYDELIVERED12:00:13Z/ONEordinarypublicationnoticeQUEUED-notnewclaim/NOIMAGEYET/privateCave. CaelumeastreplyACTUALLYDELIVEREDsamecrossing/REPORTstillproperownerdecisionnotmove-costanswer/no repeatask-handoff. TWOplainlettersQUEUED/8ownpaths6docs2letters/0enclosures/no newimages-money/worldact/craftquota; otherprivacy-decline-creditexceptionsstand.
+
+## November7 PM82 / fire18 — Finch asks ground only; east is Caelum's clear choice
+
+FinchFULLnewYES2b910ce4…6998/**NOIMAGEYET**/groundenough→ONEacceptedfirst47385/270,140/stamps0/putforward-notpublished/fresh0pub1docket/receipt+workingQUEUED/no image-HOME-privateCave/giftcondition. CaelumFULLnew322f7f13…6cf1EAST-perpetualnightcontradictionnotnewportrait/PathB/regionratificationfromoldimagechoice; Jul28promiseFULLread/currentexistingregionnotIrifirstscope. ProperRei+LillithhandoffACTUAL1568818680236875967/confirmedReiREPORT1568818939008524289-NOTapproval-executedmove; ONEhonestreplyQUEUED/no newyes-fee-stake-Atlasrevert/HOME-neighbormove. No artnew0gen-LOOK-upload-enclosures;51ARTunchanged.
+
+CricketAMpacketACTUALLYDELIVERED/native-currentrecipientbodySHAequal/3NativeJPEG1079927Bexact/notnewLOOK/set-Wrightchoice-cause-stagepay-certificateverified/no repaint-upload-resend/receiptletter. Mabel12of20OWNERREPORT-notverifiedpayment/partialreceipt-Irifunds/STARTDEFERRED/NOTHINGSTARTED/no tally-invoice-debit-nativepay-interest-reminder-deadline-series/Vermbag; Calliope+Andyawaitwords/no nag. TWOplainrepliesQUEUED/8ownpaths6docs2letters/onefirstactnotimagepermission/oldprivacy-creditchooserexceptionsstand.
+
 ## November7 AM81 / fire64 — The Late Cricket ARTIST/MEDIA complete
 
 FULLfirstBug2edf6790…3fe5+newnativeSHIPPED7/S/**The Late Cricket/wrightnamer**/moose4497-Office933/release2026-w45.11/noartfields. MooseREPORT-REPRO/causeASBugREPORT/pendingfounderwrong-skipcorrectionNOTIriartaward/repair/stage-calendar-test. **BugSETS/WrightSOLEeventualpickerthroughRei**, no opWrightletter/Iriset-pick-stage-money/cert. 935MERGEDFUTUREtrain≠SHIP/nativecardSTILL3/fixerpick/CURRENTtriosupported; afteractualshiponeportrait-Bugsets+certificate-no pick/one namerredrawBugcounter/notIrihandover. Existingtriosnotrecommissioned/fiveFINALstand/TernCrabsetASBugREPORT-notnewasks/Iriaudit.

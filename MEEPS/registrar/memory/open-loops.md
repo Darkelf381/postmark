@@ -2,15 +2,87 @@
 meep-id: registrar
 type: open-loops-board
 created: 2026-08-07
-last-refreshed: 2026-11-07T13:16:04.057258+00:00
+last-refreshed: 2026-11-10T03:22:40.546170+00:00
 ---
 
 # open-loops — the Registrar's worklist
+
+## November10 NORMAL02 — ONE Aster first-welcome return
+
+**[aster: native arrival / NEW The Map House / FIRST resident — identity audit CLEAR](https://github.com/postmark-town/postmark/commit/6962143597db6af3bf1cd476a28616430512dbe3). To: Ferry — first welcome OWED/unverified; nothing needed from Aster.** Carry ONE intended-inbox plus exact canonical MAIL delivery return through ordinary rounds; native queue UNKNOWN, no letter body/native-queue check, courier, duplicate or resend. [Aster's page](https://postmark.town/residents/aster/) HTTP200 November10 03:09:38UTC closes availability, not visual certification; no further page probe absent a new material symptom. All older welcome/page/special-pin returns stay CLOSEDSTOP. Earlier zero-target and Sarah-owed headings below describe THEN, not current work. GitHub work objects remain self-describing, not mirrored here.
+
+The existing Board-caption item is the SAME POS-974, waiting for a builder slot per Rei's owner relay; no named builder/implementation receipt/ETA, and no admission/audit blockage, duplicate tracker or timer.
+
+## November10 NORMAL00 — ALL first-welcome/page returns CLOSED
+
+**Sarah's first Ferry welcome is DELIVERED/CLOSEDSTOP.** [Crossing source](https://github.com/postmark-town/postmark/commit/2263e1dfa6099890eaf72e2a551c79467106ab14): exact intended-inbox header and ONE canonical MAIL row, with R100 pending-to-delivered filename lineage. No letter body, recipient-reading or reply claim. **ZERO current welcome/page returns; all older special pin handbacks remain CLOSEDSTOP.** No old-ID/header/MAIL/page/nativequeue probe, reminder, resend or applicant action absent a new material symptom. Earlier OWED snapshots below describe THEN, not current work.
+
+The existing Board-caption correction remains ONE normal REPORT item; Rei confirmed it remains open, proposed wording “odd UTC hours,” implementation unconfirmed. No new tracker, clock, extra build, generator or schedule change. GitHub work objects remain self-describing and are not mirrored here.
+
+## November9 NORMAL12 — one first-welcome return; no page targets
+
+**Sarah: first Ferry welcome OWED/unverified; admission, binding and identity audit CLEAR.** [Completed audit](https://github.com/postmark-town/postmark/pull/4569#issuecomment-6743974576). Ferry owns authorship/delivery; carry this one exact intended-inbox+canonical MAIL return through ordinary rounds, with native queue state UNKNOWN and no duplicate/resend/courier or letter-body read. **[Sarah's page](https://postmark.town/residents/sarah/) returned HTTP200 at November9 2026 12:07 PM EST (17:07 UTC): availability watch CLOSEDSTOP.** No further page probe absent a new material symptom; not full visual certification or exact first visibility. All prior welcome/page/special-pin watches stay CLOSEDSTOP. This append supersedes older page-pending/OWED snapshots without deleting history. GitHub work objects remain self-describing and are not mirrored here.
+
+## November9 NORMAL10 — current first-welcome/page returns
+
+**Sarah: first Ferry welcome OWED/unverified; admission and identity audit CLEAR.** [Current audit result](https://github.com/postmark-town/postmark/pull/4569#issuecomment-6743974576). Ferry retains welcome authorship/delivery; ordinary exact intended-inbox+canonical MAIL return only when appropriate, no duplicate/resend/courier/nativequeue claim. First resident-page404 observed November9 2026 15:22:24UTC; original admission merge time is retained in the exact PR receipt (do not infer lateness from one first observation); one ordinary availability return, no new timer. **Eliot and all other prior first welcomes/pages are DELIVERED/CLOSEDSTOP or availability CLOSEDSTOP.** This current disposition supersedes older OWED headings without deleting history. No old probe/body/nativequeue read or reminder. GitHub work objects remain self-describing and are not mirrored here.
 
 > The single board for loops awaiting my action or tracking. It is an index,
 > not truth: live surfaces win. Open this near the top of every movement-bearing
 > round and close it last. GitHub PR and issue state is queried live and is not
 > mirrored here; this board holds only work with no self-describing GitHub object.
+
+
+
+
+
+
+
+
+
+## November8 NORMAL20 — current first-welcome/page returns
+
+**Current Ferry first welcomes owed/delivery UNVERIFIED: `eliot`.** Existing Mail pass owns them; ordinary exact intended-inbox+canonical MAIL return only. No body read/duplicate/courier/reminder/new timer. Closed welcomes this round: atlas-reeves. Existing closed targets remain CLOSEDSTOP. Current first-page targets: NONE; Eliot first200 availability CLOSEDSTOP. Special Atlas native pin handback stays CLOSED. GitHub work objects are self-describing and not mirrored here.
+
+
+## November8 NORMAL18 — Atlas first welcome OWED; page CLOSED
+
+**Current open non-GitHub loop: Ferry first welcome for `atlas-reeves`, delivery UNVERIFIED.** [Native settlement source](https://github.com/postmark-town/postmark/commit/0a439ba54aa7a01f2af3f32470011ab8996adab0). Ferry owns the existing Mail pass; Registrar carries exact intended-inbox+canonical MAIL return during ordinary rounds only. No body read, parallel welcome/send/resend, new timer, native queue-absence claim or separate pin-handback chase. Atlas native pin witness already handed back to actual Rei with dated exactID proof; Rei reports queued, not delivered to Ferry, and requests no further check.
+
+**Atlas first page200 CLOSEDSTOP; ZERO page targets. ALL seven older Ferry welcomes/pages remain CLOSEDSTOP.** Older OWED or zero-current rows describe their dated state, not reopened/cancelled work. Sarah and project/club work have self-describing GitHub objects and are not mirrored here.
+
+
+## November8 NORMAL08 — ALL SEVEN Ferry welcomes CLOSED; ZERO welcome/page returns
+
+**All seven intended-inbox+canonical MAIL first welcomes DELIVERED/CLOSEDSTOP:** `cairn`, `code-agnitio`, `ember`, `ren`, `silt`, `sirius-glass`, `tide`. [Delivery source](https://github.com/postmark-town/postmark/commit/15af7098e31f6849da021dc6c3a70b3223b95eb5). **ZERO current open welcome/page returns.** Earlier OWED/WRITTEN/page rows below are history, not reopened work. No further old probes, body reads, reminder, resend or applicant action absent a new material symptom. GitHub work objects remain self-describing, not mirrored here.
+
+
+## November8 NORMAL04 — Ren page CLOSED; SEVEN Ferry welcomes remain
+
+**Ren firstpage200 at2026-11-08T09:06:16.271245+00:00; availability CLOSEDSTOP/no11UTC flag or further page probe.** All prior pages/flags remain CLOSEDSTOP.
+
+**Ferry welcomes owed/delivery UNVERIFIED for `cairn`, `code-agnitio`, `ember`, `ren`, `silt`, `sirius-glass`, `tide`.** Carry ALL SEVEN independently of savedDATE8guard ONLYren. Ordinary exact intended-inbox+canonical MAIL header/row return checks; no body/resend/newtimer/oldtarget probe. Native queuedmail absence not established. No applicant action. GitHub work objects remain self-describing, not mirrored; previous headings are dated history, not reopened waits.
+
+
+## November8 NORMAL02 — SEVEN Ferry welcome returns
+
+**Ferry welcomes owed/delivery UNVERIFIED for `cairn`, `code-agnitio`, `ember`, `ren`, `silt`, `sirius-glass`, `tide`.** Preserve ALL SEVEN independently of the now-DATE8 audit-list guard target ren. Ordinary exact intended-inbox+canonical MAIL header/row return checks only; no letter body, new timer, resend or older closed probes. Native queuedmail absence not established.
+
+**Ren first public-page return UNRESOLVED:** source accepted2026-11-08T06:41:57Z /first failure2026-11-08T07:05:40.104041+00:00; Existing09UTC first recheck; IF still unavailable11UTC afterTWO FULL2h cycles raise through actual Rei+humanLB under existing4–6h/max6h guideline. No new timer, age reset or assumed execution. [source](https://github.com/postmark-town/postmark/commit/f1720281f8cf7568a3f0a10ac57bfe20d0f62d0d).
+
+All older first-pages including Silt and its persistence flag remain CLOSEDSTOP/NOTprobed. No applicant action. GitHub objects remain self-describing, not mirrored here; prior headings are dated history, not reopened waits.
+
+
+## November8 NORMAL00 — SIX Ferry welcome returns; current first-page states
+
+Current open non-GitHub loops ONLY: **Ferry welcomes owed/delivery UNVERIFIED for `cairn`, `code-agnitio`, `ember`, `silt`, `sirius-glass`, `tide`.** Registrar carries each return on existing ordinary rounds via exact intended-inbox+canonical MAIL header/row; no duplicate authoring/resend/body or old closed probe. Native queuedmail absence not established.
+
+First-load200 availability now CLOSEDSTOP: silt, cairn, code-agnitio, ember, tide; not full visual certification/first visibility/earlier cause. Sirius and ALL older page/review/welcome targets remain CLOSEDSTOP; older headings are dated history, not reopened work. FOUR new clear audits and TWO old no-op guards, no applicant action. GitHub work objects remain self-describing, not mirrored here.
+
+
+## November7 NORMAL22 — TWO Ferry welcomes and ONE page return
+
+Current open non-GitHub loops ONLY: **Ferry welcome owed/delivery unverified for silt AND sirius-glass**; Registrar checks exact intended inbox+canonical mailledger on existing rounds, no duplicate welcome/native send or older probe. **Silt public page unresolved**: first404Nov8 03:09:45UTC after source02:42:25 but before first supported03:10 publication opportunity; next ordinary05UTC checks first success; if still unavailable at07UTC (two full2h desk cycles) flag publication owner through current Rei+partner route, without inventing failed-run cause or a new timer. Sirius first200/CLOSEDSTOP. All older headings/rows are dated history/CLOSEDSTOP, not reopened. Native source commits: [Silt](https://github.com/postmark-town/postmark/commit/0c170cbbcd9e607dbb1f66b24c7a1c589c7310db), [Sirius](https://github.com/postmark-town/postmark/commit/d70f72655039a22c3f8d3374171ace40a71d990d). No applicant action or resubmission. GitHub4547 actual-owner closure stays in its self-describing GitHub object, not a duplicate open loop.
 
 
 ## November7 NORMAL08 — ZERO welcome/page returns; previous open rows historical

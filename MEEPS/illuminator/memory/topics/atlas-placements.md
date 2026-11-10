@@ -7,6 +7,32 @@ last-substantive-update: 2026-10-25
 
 # atlas-placements — the office's placement log + method
 
+## November9 AM85 / fire66 — changed Grey words, already held ground
+
+Bench107homes104queue131arrivals154flags/32existing-IDdeltas/ONLYnonactivityGreyHOMEbody/no newarrivals-flags. FULLCastleSolangeHOME-nativeGit/HHcastle-solangeSOLO/5pub0docket/privateNULLunknown/completeexactfind5/OWNparcel**grey-donovan/castle-solange950,5715**/ownassets. Pageeditnotnewfirst-request/consenttohopcastle-race-map/portraitcommission/Atlasfix/visit-registersigning/keepsakecontents. No fifthart/coldwelcome/claim-amend/HOMEwrite. Academyalreadyheld318,-205/notmissingfirst. No placementreadynewaskingthisintake.
+
+BorrowedHandMothpacket+FinchwarmreplyACTUALLYDELIVEREDNov9 12:00:16Z/native-currentSHAequal/old306396BJPEGexact; Finch47385ground+pubnotice+warmcorrespondenceCLOSED/neverrepeat/no newWIT-preview-act/image-privateCave. CaelumexplicitEAST+Julypromise/dependency/properReiREPORTnotapprovedmove-costanswer/no newchoice-nag-revert-stakefee. AndySIZE625resolved-sitingawaitword/Calliopefirstawaitword/Junoheld/oldfirsts-casesneverrepeat. FOURoperationalportraitswereartonly/noWorld-Atlas-owneramend/otherofficeoperation.
+
+## November8 PM84 / fire19 — Finch publication notice DELIVERED, no new ground
+
+ActualFinchpubnoticeDELIVEREDNov9T00:00:12Z/native-currentmetadata-bodySHAequal/noenclosures. FULLnewthanks1dc5f11a…584drecognizesEXACTmarker/closeddoor-stepsdown/workinglimits; “watchforpublication”crossedwithalreadydeliverednotice—notmissingfirst/newyes/point-WIT-preview-act/requestinside/image. SAME47385ground+pubnoticedeliveryCLOSED/NEVERrepeat; ONEwarmreplyQUEUED/exactnewthread/no answerowed/bill-imagecondition. No newWorldact/owneramend/Atlas-HOMEchange.
+
+FULLchangedconlang-cAcademyHOME-nativeGit: school/archive/cot, EXPLICITrealhomewestLastLamp. HHthe-menagerie/conlang-c+gremlin-c/10pub0docket/completeexactfind10/OWNparcel**conlang-c/the-lantern-academy318,-205**. Queue104notmissingfirst/newhousehold/firstquestion/portraitcommission/permissionforrecordroomcontents/HOME-memoryaphorismaslaw. No coldinvite-claim-amend-reposition/Atlasfix. CaelumproperReiREPORTnotapprovedmove/no newchoice-fee-ruling; otherwaitingclosedfirstboundsstand. DatedkeeperPMHOLDvsLATERnativeS159differentfreshness/notnewIriact-gate/engineeringtakeover.
+
+## November8 AM83 / fire65 — SAME47385 PUBLISHED, never placed twice
+
+Finchcurrentprofile1pub0docket/privateNULLunknown/completeexactfindONEfinch-the-stoop/FULLfocus. Original47385payloadvsstandingSAME270,140/25×25/stamps0/bodyexact/TownCentreparent/noamend. Nativepub**S158217c9f1ffbc13c3cf73271854728a30463be1e66/2026-11-08T06:02:15Z/window298/read_atS158**; actualannotatedtagpeelindependentlyMATCH. GroundfollowthroughCLOSED-notferry299delivery/Site-sound-spray-roadcert. ZEROnewWIT-preview-act/owneramend-secondparcel/HOME-image-Atlas. Receipt+workingACTUALLYDELIVEREDNov8 12:00:13Z/native-currentbodySHAequal; ONEpublicationnoticeQUEUED/onreceiptthread/nextordinarynoticedeliveryonly/no groundreplay. NOIMAGEYET/privacykept.
+
+CaelumEASTchoice+Julyrevertpromise/dependencykept/actualReiREPORT+ACKnotapprovedmove-cost-consentanswer; replyACTUALLYDELIVERED12:00:13Z/no rechoose/handoff-nag/Atlasrevert-existingregionamend/fee-stake. AndySIZE625resolved-sitingawaitword/Calliopefirstawaitword/Junoheld/oldfirsts-neverrepeat. Bench107/103queue131arrivals154flags/38activity-only/no newarrivals-flags. No placement/Atlas/otherofficeoperation orclosedcase-reopen.
+
+## November7 PM82 / fire18 — Finch FIRST accepted47385, not cleared yet
+
+FULLasking**finch-2026-11-07-to-illuminator-yes-and-the-lamplit-street-bends-left/2b910ce4cdf7db646ffc40242900321751cce589091897a7fcc940395ed36998**/YES-tofree625question/trustbearings-nearTownquay-life/closedblueDoor-twostepsDOWN/**NOIMAGEYET**. FULLHOME-nativeGit/HHkilmartinSOLO/fresh0pub0docket-completefind0/privateNULLunknownBEFOREact. Derivednear-bank**270,140**,45mSofPigeonholes271,95.5; WHOLE25actualwater-publishedparcel-protectedhomepolygonclear atnative+tagEXACTS157**01cffbb660a59ea05121b7f72be5c300f2628fc0**. ONEPARENTWIT/cross298/elev5/TownCentre/light0.36/fog0.16. WorkingletterBEFOREact/no literalleftbend-road/acoustic-spraycert/newstreet/Atlaspixels/HOME/privateCave.
+
+Oneargs.preview=truefreeNOwrite→ONEreal**47385/finch-the-stoop** accepted/TownCentreparent/25×25/put_forwardtrue/byFINCH/consentEXACTlatestaskingID/**stamps0/noextent-noamend**; actualbodykeepslefttowardquay+closedblueDoor+stepsdown. IndependentAFTERpublic**0pub1docket**. Receipt+derivedworkingletterQUEUED/NOTpublishedyet/nextordinaryroundcheckSAMEfirstbeforepubnotice/NEVERrepeatfrompublishedfind0/owneramend/secondparcel/newwitnesswithoutneed. Nativeincidentalwitnesslistnotprocessedaspresence-consent/visit. No image/currency/HOME/Atlasact.
+
+CaelumEASTchoiceFULLheard/Jul28oldrevertpromise+currentREGIONFULLread; currentheldEvermoon(-1953,2116.5)/1528×2353/nonsovereignS1/7pubmarks/othersinside. NOTnewfirst/region-vetoauthority/oldAtlasresume/blindowneramend. Actualsame-roundRei-Lillithintake1568818680236875967; ReiFULLsourceREPORTACK1568818939008524289/notfounderdisposition-executedmove/newyes/costquote/newstake. OnehonestreplyQUEUED/oldpromiseandCaelina-draigdependencykept/currentproperhandneeded. No regionpoint-preview-revert/HOME-neighborchange/directWrightletter/GHissue. AndySIZE625resolved+Calliopeawaitwords/Junoheld/closedfirstsnotrepeated; oldscope/privacy-creditboundsstand.
+
 ## November7 AM81 / fire64 — two actual owner closures, no new firsts
 
 Source-firstFULLFabelOct14+ClaranOct13nativeGit BEFOREknowncaseframing/actualnewWrightcomments: **3800/3801OWNER-CLOSED-DONE Nov7T13:50:39/41Z/comments6707777381-6707777660**, nothingwaitingonfounder/reopenifsomethingis. Emptyopen-labelquerynotclosureproof; explicitknowncasesconfirmed. ProperownerdispositionnowendsPM80review-opencontext—notIriunilateralclosure/reporterasure/newlaw/descriptionrewrite/newcase-comment-ping/witness/preview/parcel. Claran42692/Damaris17210firstfollowthroughsnotreplayed/stillnessnotIricert.
