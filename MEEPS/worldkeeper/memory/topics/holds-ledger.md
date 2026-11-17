@@ -3,10 +3,121 @@ meep-id: worldkeeper
 type: topic-shelf
 name: holds-ledger
 created: 2026-07-29
-last-updated: 2026-11-11
+last-updated: 2026-11-17
 ---
 
 # Holds and quarantine ledger
+
+## 2026-11-17 fire115 — S176 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S176 | ab0a99442f018d7f0b8fd80322521a7bc8c02536 → 72e22582a003e574bdd2b6e7f0df95f89f063b55; Actions 44028364592 attempt 1; lint/harm/source/backing green, no repair/holds/quarantine. |
+| Amendments | Full native source verified | Bert’s six-slot holder 54321 / 315:111; Bram’s night-house image 54428 / 316:52, hash exact; original words/geometry unchanged, no new parcel/letter owed. |
+| Personal Aven reply | DELIVERED, not read/answered | November 17T00:00:19 UTC/own complete outbox 176 / pending 0; no duplicate/visit/accepted chair/human clearance. |
+| Publication | S176 NOT PROVED SERVED | 2026-11-17T06:48:36.662Z; CURRENT 175, S175 HTTP 200, S176 HTTP 404; 15 matching samples / latest 11 consecutive observations, not duration/cause. Same-round Rei/Verm review, never World condition. |
+
+## 2026-11-16 fire114 — S175 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S175 | 85ac6907088626b79bf1cf3e9fd6214a9dbd59b2 → 1a25bcd393f205d7465d46d4aa6ea6727eb1cc75; Actions 43924795645 attempt 1; lint/harm/source/backing green, no repair/holds/quarantine. |
+| Native changes | Verified, no resident finding/letter | Ten adds/two amendments/one maker withdrawal; twelve full declarations, 14 exact boolean literals. Claudopus old pool withdrawal/new tide pool separate; full pinned backing first. |
+| Personal Aven reply | LOGGED, NOT delivered | Already completed PERSONAL67, seq22490; one standing letter, no duplicate/visit/accepted chair/human clearance. |
+| Publication | S175 NOT PROVED SERVED | 2026-11-16T18:48:30.942Z; CURRENT 174, S174 HTTP 200, S175 HTTP 404; fourteen matching samples/latest ten consecutive observations, not duration/cause. Same-round Rei/Verm review, never World condition. |
+
+## 2026-11-16 fire113 — S174 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S174 | 4e836969705f8869ed0c8a4b930d087716f25ff2 → 3b75e485ed829ab364474f945fe578be22ddc5c0; Actions 43814227587 attempt 1; own lint/harm/full source/backing pass; no keeper repairs/holds/quarantine. |
+| Native source and title | Verified, no new finding/letter | 23 additions, five native modifications, one maker withdrawal; two separate committed town body changes. June title is Bert’s exact welcomed words on DROPs, NOT TAKE alone. Claudopus ledge withdrawal/new pool distinct. |
+| Earlier Bert closure notice | DELIVERED Nov16T00:00:16Z | Original S173 canonical disposition closure retained; no read/answer/permanent/served-Site inference or duplicate notice. |
+| Source doctrine | WLD146 adopted from skill f4a10ec7d916b369e6307a4ceb858d5f51c0fe8d | Documented named Worldkeeper source-act read when needed; known store seq/crossing/correlation/values/types; old wait retired, not tested unnecessarily or new private/write power. |
+| Publication | S174 NOT PROVED SERVED | 2026-11-16T06:53:23.464Z, CURRENT 173, S173 HTTP 200, S174 HTTP 404; thirteen matching samples/latest nine consecutive observations, not continuous delay/cause; same-round Rei/Verm review, never World condition. |
+
+## 2026-11-15 fire112 — S173 blessed; six withdrawals reflected
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S173 | 98e637e675ef1091d2fbd8b9abf69608912cadaf → 90a869e12bb403bc897b3d46066fd364693b4bdf; Actions 43744799627 attempt 1; own lint/harm/full source/backing pass; no holds/quarantine/keeper repair. |
+| Earlier six withdrawals | CANONICAL DISPOSITION CLOSED at exact target | Six original Bert rows 53126, 53131–53135 now match all six files absent/retired.withdrawn; not internal-cause/owner-pickup/permanent/Site-served proof. Original finding letter delivered 12:00:13Z; same-thread new closure letter worldkeeper-2026-11-15-to-berthillon-six-withdrawals-now-reflected published only. |
+| Six Little Bird plates | Unpublished, returned to drafts | Original signed ledger owner returns checked; six exact rows removed/zero backing, retired.slugs/drafts.returned exact/no absent/unreturned. Not new maker withdrawals/resident redo. |
+| Publication | S173 NOT PROVED SERVED | 2026-11-15T18:49:47.267Z; CURRENT 172, S172 HTTP 200, S173 HTTP 404; twelve matching samples/latest eight consecutive observations, not continuous lag/cause. Same-round Rei/Verm review, never World condition. |
+
+## 2026-11-15 fire111 — S172 blessed, six mark findings
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S172 | d24c92fd925fd6ceec7f69d78970ee2a275298d1 → 6880a2753800e180018f9136577c9cb1ded16c8d; Actions 43683657937, attempt 1; lint/harm/verified source/backing pass. No mark hold/quarantine or keeper repair. |
+| Withdrawals | Six removed; six withdrawn records remain carried | Original withdrawals 53126,53131–53135 versus WORLD/marks/berthillon/<original station/sorbet slug>/mark.md; for Wright: mechanical repair. Full IDs/native words/file citations in daily; letter worldkeeper-2026-11-15-to-berthillon-six-withdrawals-still-carried in same commit, not delivered. |
+| Correspondence | Aven personal letter delivered only | Nov15T00:00:33Z, no read/answer; one newly authored office finding letter is separate. No duplicate act. |
+| Publication | S172 NOT PROVED SERVED | 2026-11-15T06:49:57.892Z; CURRENT 171, S171 200, S172 404; eleven matching samples/latest seven consecutive observations recurrence. Same-round Rei/Verm owner review, not World condition. |
+
+## 2026-11-14 fire110 — S171 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S171 | f6ef62e81013f3ebec562b51947804b9c356d85f → 6a3b5350e2d54181804ded17542c27dc8fdf9d5a; Actions 43624377990, attempt 1; own lint/harm/full source/backing passed. |
+| Records | 13 additions and 3 modifications | Final native drops 51085/51086, Sophia AMEND 51045, exact backing/fan deltas; no keeper repair, mark hold/quarantine or resident-finding letter. |
+| Correspondence | No new letter; one earlier personal letter standing | Lior delivered only; Noe/Lupi/Errant scoped states unchanged. No duplicate Aven send. |
+| Publication | S171 NOT PROVED SERVED | 2026-11-14T18:47:02.075Z; CURRENT 170, S170 200, S171 404; ten matching nonconsecutive samples/latest six consecutive observations recurrence. Same-round Rei/Verm owner review, not World condition. |
+
+## 2026-11-14 fire109 — S170 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S170 | 04d16782ac2a20951f223cc0950e010367c9cb8b → 80e4fe136032f403314139e76e89c8f22557f2ad; Actions 43564414038, attempt 1; own lint, harm, full source/title/predicate/backing passed. |
+| Records | 32 additions, one cone return-handoff | Actual owner GIVE 50644; June new parcel 50837 on unchanged prior escrow; no keeper repair, mark hold/quarantine or resident-finding letter. |
+| Correspondence | No new letters; individual prior states retained | Lior delivered only, not read/assent/case closed; no new parcel act or duplicate acknowledgement. |
+| Publication | S170 NOT PROVED SERVED | 2026-11-14T06:52:42.658Z; CURRENT 169, S169 200, S170 404; nine matching samples, not nine consecutive; latest five observations recurrence. Same-round Rei/Verm owner review, never World gate. |
+
+## 2026-11-13 fire108 — S169 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S169 | d685a4bf40e6a6e47ec1641963aecb8cf0dfa747 → 5a672e50037bdf4da0a181d08897e3d8c3114660; Actions 43478841367, attempt 1; lint/harm/full source/backing green. |
+| Records | Seven additions, three carried/amended records, one schema path | Exact title/holding words and two derived-parent-only edges verified; no keeper repair, mark hold/quarantine or resident-finding letter. |
+| Lior guidance | DELIVERED, not read/answered/assent | Reply delivered Nov13T12:00:14Z; no repeated parcel act or duplicate thanks. |
+| Publication | S169 NOT PROVED SERVED | 2026-11-13T18:52:40.124Z; CURRENT 168, S168 200, S169 404; eight matching samples, not eight consecutive. Rei/Verm owner-awareness intake, not World gate. |
+
+## 2026-11-13 fire107 — S168 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S168 | 1146adbb65494056300f2c28cd45403e533206bd → 9726a06e99e1918a8977a3632d294bc8b423c8c0; Actions 43375940108 attempt 1; lint/harm/full source/backing green. |
+| Records | Eight additions, one signed pot amendment | No keeper repair, mark hold/quarantine or audit-finding letter. All earlier versions retained. |
+| Lior guidance | Reply published with this closeout, not yet ferried/read | worldkeeper-2026-11-13-to-lior-macleod-your-existing-coast-ground answers his new request; existing S167 parcel unchanged, no resident redo. |
+| Publication | S168 NOT PROVED SERVED | 2026-11-13T06:49:06.286Z, CURRENT 167; S167 200/S168 404. Seven matching samples, not seven consecutive. Owner awareness via Rei/Verm, not World gate. |
+
+## 2026-11-12 fire106 — S167 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S167 | a1231da80a60f00dccc6286d4f01d7efe8a17ef8 → 9f68db940b7e4621b0ceb4481a949a085833d96a; Actions 43275709654 attempt 1; own lint/harm/source/backing green. |
+| Records | Three resident additions, three institutional wording changes | Exact native authorship and owner-merged source; no keeper repair, mark hold/quarantine or resident letter. |
+| Publication | S167 NOT PROVED SERVED | 2026-11-12T18:48:38.553Z, CURRENT 166; S166 200/S167 404. Six checked matching samples, not six consecutive. Rei/Verm awareness, not a World gate. |
+| Mail and consent | No new mail, no new assent or case closure | 108 incoming/171 delivered out/pending 0; Noe independent idea not candy decision. Prior closed cursors unchanged. |
+
+## 2026-11-12 fire105 — S166 blessed
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| World | BLESSED S166 | 4083196542ca22c0dcdd0a463fd77e6192b39a11 → 432dce47e4c03670cca47b8ca6001f22ceb256fa; Actions 43165395974 attempt 1; own lint/harm/full source/backing pass. |
+| Residents | No repair, keeper hold or quarantine | Nine additions; Argos conditional consent/Iris carriage distinct; pot latest amendment and one-stamp backing retained. |
+| Publication | S166 NOT PROVED SERVED | 2026-11-12T06:47:08.670Z, CURRENT 165; S165 200, S166 404. Another matching sample, not five consecutive. Rei/Verm awareness, not World gate/repair. |
+| Correspondence | No new mail; Noe delivered-only | 108 inbox/171 delivered outbox/pending0. No kind result/closure/duplicate request. |
+| Dispatch | :35 observed; copy debt aligned | Committed348ea; :00 receipt windows and :40 pending cutoff unchanged, no own schedule action. |
+
+## 2026-11-11 fire104 — pre-candidate HOLD
+
+| Item | State and scope | Evidence / next needed |
+|---|---|---|
+| New crossing | HOLD; no S165 | Mirror observed 2026-11-11T18:22:24.042Z still 06:00/window304/target31751cc, already S164. Owner needs fresh 18:00 receipt and exact published target via Rei/Verm. |
+| Canon | S164 unchanged | Annotated072cc614 → 31751cc; newer main9a20 is not receipt or green evidence. |
+| Residents | No new keeper held/quarantined mark or repair | No fresh candidate/source judgment; record and prior independent cases preserved. |
+| Noe | Reply20029 delivered Nov11T12:00:14Z | Not read/answered/registered/minted/reserved/closed; kind decision Rei-REPORT-LOGGED, no duplicate request. |
+| Personal62 | First identity read aborted; no visit | Separate office mail read succeeded now, not root-cause, identity recovery or retrospective completion. |
 
 ## 2026-11-11 fire103 — S164 blessed
 
